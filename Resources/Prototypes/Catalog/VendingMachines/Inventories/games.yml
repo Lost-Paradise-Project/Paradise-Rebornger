@@ -16,6 +16,7 @@
     GrassBattlemap: 1
     PaperCNCSheet: 6
     MysteryFigureBox: 2
+    CardBoxBlack: 2 # Floof - from Frontier
     BooksBag: 3
   contrabandInventory:
     Basketball: 1
