@@ -1,0 +1,88 @@
+﻿[game]
+hostname = "🚀 Lost Paradise - 3.0 🐧 [18+]"
+desc = "- Мы проект со средним требованием к отыгрышу с разрешенным ЕРП. \n- Наша цель это создание приятного времяпрепровождения для всех игроков не зависимо от их предпочитаемого геймлпея \n- Присоединяйтесь в наше Дискорд сообщество"
+lobbyduration = 240
+#map_pool = ""
+soft_max_players = 111
+
+[infolinks]
+discord = "https://wiki.lost-paradise.space/discord"
+github = "https://github.com/Lost-Paradise-Project/Goob-Station"
+wiki = "http://wiki.lost-paradise.space/"
+website = "https://boosty.to/lost-paradise"
+
+[game.panic_bunker]
+enabled = true
+show_reason = true
+min_account_age = 10
+min_overall_minutes = 0
+enable_without_admins = true
+disable_with_admins = true
+
+[server]
+rules_file = "LPPRuleset"
+
+[hub]
+tags = "lang:ru,region:eu_e,rp:med,18+"
+
+[shuttle]
+arrivals_planet = false
+emergency_early_launch_allowed = true
+# arrivals_map = "/Maps/_LP/Misc/paradise_terminal.yml"
+
+[viewport]
+maximum_width = 26
+
+[netres]
+store_deletion_days = 7
+limit = 25.0
+
+[admin]
+admins_count_in_playercount = true
+see_own_notes = true
+discord_reply_prefix = "(ДС) "
+
+[ahelp]
+rate_limit_count = 2
+rate_limit_period = 10
+admin_prefix = true
+admin_prefix_webhook = true
+
+[votekick]
+enabled = false
+
+[vote]
+enabled = true
+same_type_timeout = 300.0
+timerrestart = 30
+map_enabled = false
+preset_enabled = false
+restart_enabled = true
+
+[build]
+fork_id = "LPP"
+
+[rules]
+time = 180.0
+
+[discord]
+rich_main_icon_id = "https://iili.io/f85IYyQ.png"
+
+[interaction]
+rate_limit_announce_admins_delay = -1
+
+[skills]
+enabled = false
+
+[atmos]
+space_wind = true
+
+[ic]
+flavor_text = true
+
+[biomass]
+easy_mode = false
+
+[wega]
+night_light_enabled = true
+party_enabled = false

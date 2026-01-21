@@ -162,6 +162,7 @@
     lightEnergy: 0.5
     lightRadius: 5
     lightSoftness: 3
+  - type: NightLightBlocked # Corvax-Wega-NightLight
   - type: Tag
     tags:
     - LightBulb
@@ -316,6 +317,7 @@
     lightSoftness: 0.5
     BurningTemperature: 350
     PowerUse: 60
+  - type: NightLightBlocked # Corvax-Wega-NightLight
 
 - type: entity
   parent: BaseLightTubeCrystal
