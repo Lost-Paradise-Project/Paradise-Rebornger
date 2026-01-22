@@ -62,6 +62,12 @@ internal sealed class ChatManager : IChatManager
                 _consoleHost.ExecuteCommand($"me \"{CommandParsing.Escape(str)}\"");
                 break;
 
+            // LP edit start
+            case ChatSelectChannel.HiddenEmotes:
+                _consoleHost.ExecuteCommand($"hme \"{CommandParsing.Escape(str)}\"");
+                break;
+            // LP edit end
+
             case ChatSelectChannel.Dead:
                 if (_systems.GetEntitySystemOrNull<GhostSystem>() is {IsGhost: true})
                     goto case ChatSelectChannel.Local;

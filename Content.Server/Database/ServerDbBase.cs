@@ -22,6 +22,7 @@ using Robust.Shared.Enums;
 using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using Content.Shared._ERPModule.Data; // LP edit
 
 namespace Content.Server.Database
 {
@@ -224,6 +225,12 @@ namespace Content.Server.Database
                 voice = SharedHumanoidAppearanceSystem.DefaultSexVoice[sex];
             // Corvax-TTS-End
 
+            // LP edit start
+            var erpStatus = ErpStatus.Ask;
+            if (Enum.TryParse<ErpStatus>(profile.ErpStatus, true, out var erpStatusVal))
+                erpStatus = erpStatusVal;
+            // LP edit end
+
             // ReSharper disable once ConditionalAccessQualifierIsNonNullableAccordingToAPIContract
             var markingsRaw = profile.Markings?.Deserialize<List<string>>();
 
@@ -272,6 +279,7 @@ namespace Content.Server.Database
                 profile.Age,
                 sex,
                 gender,
+                erpStatus, // LP edit
                 new HumanoidCharacterAppearance
                 (
                     profile.HairName,
@@ -308,6 +316,7 @@ namespace Content.Server.Database
             profile.Voice = humanoid.Voice; // Corvax-TTS
             profile.Age = humanoid.Age;
             profile.Sex = humanoid.Sex.ToString();
+            profile.ErpStatus = humanoid.ErpStatus.ToString(); // LP edit
             profile.Gender = humanoid.Gender.ToString();
             profile.HairName = appearance.HairStyleId;
             profile.HairColor = appearance.HairColor.ToHex();

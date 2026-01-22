@@ -8,6 +8,7 @@ using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
+using Content.Shared._ERPModule.Data; // LP edit
 
 namespace Content.Shared.Humanoid;
 
@@ -29,6 +30,11 @@ public sealed partial class HumanoidAppearanceComponent : Component
 
     [DataField, AutoNetworkedField]
     public Gender Gender;
+
+    // LP edit start
+    [DataField, AutoNetworkedField]
+    public ErpStatus ErpStatus;
+    // LP edit end
 
     [DataField, AutoNetworkedField]
     public int Age = 18;

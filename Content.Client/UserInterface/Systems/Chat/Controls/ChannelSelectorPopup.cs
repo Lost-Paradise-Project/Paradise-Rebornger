@@ -12,6 +12,7 @@ public sealed class ChannelSelectorPopup : Popup
         ChatSelectChannel.Local,
         ChatSelectChannel.Whisper,
         ChatSelectChannel.Emotes,
+        ChatSelectChannel.HiddenEmotes, // LP edit
         ChatSelectChannel.Radio,
         ChatSelectChannel.LOOC,
         ChatSelectChannel.OOC,

@@ -787,6 +787,11 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("TEXT")
                         .HasColumnName("char_name");
 
+                    b.Property<string>("ErpStatus")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasColumnName("erp_status");
+
                     b.Property<string>("EyeColor")
                         .IsRequired()
                         .HasColumnType("TEXT")

@@ -79,6 +79,13 @@
                                     <Control HorizontalExpand="True"/>
                                     <OptionButton Name="PronounsButton" HorizontalAlignment="Right" />
                                 </BoxContainer>
+                                <!-- LP edit start: ERP-MODULE -->
+                                <BoxContainer Name="ERPStatusContainer" HorizontalExpand="True" Visible="False">
+                                    <Label Text="{Loc 'humanoid-profile-editor-erp-label'}" />
+                                    <Control HorizontalExpand="True"/>
+                                    <OptionButton Name="ErpStatusButton" HorizontalAlignment="Right" />
+                                </BoxContainer>
+                                <!-- LP edit end: ERP-MODULE -->
                                 <!-- Show clothing -->
                                 <BoxContainer HorizontalExpand="True">
                                     <Label Text="{Loc 'humanoid-profile-editor-clothing'}" />

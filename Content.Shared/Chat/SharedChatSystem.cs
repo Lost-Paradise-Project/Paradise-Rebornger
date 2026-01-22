@@ -29,7 +29,10 @@ public abstract partial class SharedChatSystem : EntitySystem
     public const char OOCPrefix = '[';
     public const char EmotesPrefix = '%'; // Corvax-Localization
     public const char EmotesAltPrefix = '*';
+    // LP edit start
+    public const char HiddenEmotesPrefix = ')';
     public const char AdminPrefix = ']';
+    // LP edit end
     public const char WhisperPrefix = ',';
     public const char DefaultChannelKey = 'р'; // Corvax-Localization
 
@@ -475,6 +478,7 @@ public enum InGameICChatType : byte
 {
     Speak,
     Emote,
+    HiddenEmote, // LP edit
     Whisper
 }
 

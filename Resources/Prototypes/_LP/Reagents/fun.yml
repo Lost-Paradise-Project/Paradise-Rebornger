@@ -1,0 +1,76 @@
+﻿- type: reagent
+  id: MaleCum
+  name: reagent-name-malecum
+  group: Biological
+  desc: reagent-desc-malecum
+  flavor: salty
+  color: "#f5f5dc"
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  recognizable: true
+  physicalDesc: reagent-physical-desc-sticky
+  viscosity: 0.15
+  tileReactions:
+  - !type:SpillTileReaction
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 0.3
+      - !type:AdjustReagent
+        reagent: UncookedAnimalProteins
+        amount: 0.15
+    Food:
+      effects:
+      - !type:SatiateHunger
+        factor: 0.2
+      - !type:AdjustReagent
+        reagent: UncookedAnimalProteins
+        amount: 0.1
+  plantMetabolism:
+  - !type:PlantAdjustWater
+    amount: 0.3
+  - !type:PlantAdjustNutrition
+    amount: 0.2
+  footstepSound:
+    collection: FootstepBlood
+    params:
+      volume: 4
+
+- type: reagent
+  id: FemaleCum
+  name: reagent-name-femalecum
+  group: Biological
+  desc: reagent-desc-femalecum
+  flavor: sweet
+  color: "#f0f8ff"
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  recognizable: true
+  physicalDesc: reagent-physical-desc-sticky
+  viscosity: 0.08
+  tileReactions:
+  - !type:SpillTileReaction
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 0.5
+      - !type:AdjustReagent
+        reagent: Sugar
+        amount: 0.05
+    Food:
+      effects:
+      - !type:SatiateHunger
+        factor: 0.1
+  plantMetabolism:
+  - !type:PlantAdjustWater
+    amount: 0.4
+  - !type:PlantAdjustNutrition
+    amount: 0.1
+  footstepSound:
+    collection: FootstepBlood
+    params:
+      volume: 3

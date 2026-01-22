@@ -60,35 +60,42 @@ namespace Content.Shared.Chat
         /// </summary>
         Emotes = 1 << 9,
 
+        // LP edit start
+        /// <summary>
+        ///     HiddenEmotes
+        /// </summary>
+        HiddenEmotes = 1 << 10, // LP edit
+        // LP edit end
+
         /// <summary>
         ///     Deadchat
         /// </summary>
-        Dead = 1 << 10,
+        Dead = 1 << 11, // LP edit
 
         /// <summary>
         ///     Misc admin messages
         /// </summary>
-        Admin = 1 << 11,
+        Admin = 1 << 12, // LP edit
 
         /// <summary>
         ///     Admin alerts, messages likely of elevated importance to admins
         /// </summary>
-        AdminAlert = 1 << 12,
+        AdminAlert = 1 << 13, // LP edit
 
         /// <summary>
         ///     Admin chat
         /// </summary>
-        AdminChat = 1 << 13,
+        AdminChat = 1 << 14, // LP edit
 
         /// <summary>
         ///     Unspecified.
         /// </summary>
-        Unspecified = 1 << 14,
+        Unspecified = 1 << 15, // LP edit
 
         /// <summary>
         ///     Channels considered to be IC.
         /// </summary>
-        IC = Local | Whisper | Radio | Dead | Emotes | Damage | Visual | Notifications,
+        IC = Local | Whisper | Radio | Dead | Emotes | HiddenEmotes | Damage | Visual | Notifications, // LP edit
 
         AdminRelated = Admin | AdminAlert | AdminChat,
     }

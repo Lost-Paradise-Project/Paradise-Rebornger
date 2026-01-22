@@ -28,6 +28,10 @@ using Content.Shared.IoC;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.Players.RateLimiting;
 
+#if LP
+using Content.Client._ERPModule.Services;
+#endif
+
 namespace Content.Client.IoC
 {
     internal static class ClientContentIoC
@@ -63,6 +67,14 @@ namespace Content.Client.IoC
             collection.Register<SharedPlayerRateLimitManager, PlayerRateLimitManager>();
             collection.Register<TitleWindowManager>();
             collection.Register<ClientsidePlaytimeTrackingManager>();
+            // LP edit start
+#if LP
+            collection.Register<SponsorsManager>();
+            collection.Register<DiscordAuthManager>();
+            collection.Register<JoinQueueManager>();
+            collection.Register<CustomInteractionService, CustomInteractionService>(true);
+#endif
+            // LP edit end
         }
     }
 }

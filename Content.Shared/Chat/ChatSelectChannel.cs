@@ -41,6 +41,13 @@
         /// </summary>
         Emotes = ChatChannel.Emotes,
 
+        // LP edit start
+        /// <summary>
+        ///     HiddenEmotes
+        /// </summary>
+        HiddenEmotes = ChatChannel.HiddenEmotes,
+        // LP edit end
+
         /// <summary>
         ///     Deadchat
         /// </summary>

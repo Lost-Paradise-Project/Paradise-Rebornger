@@ -173,6 +173,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         SetSex(target, sourceHumanoid.Sex, false, targetHumanoid);
         SetGender((target, targetHumanoid), sourceHumanoid.Gender);
 
+        targetHumanoid.ErpStatus = sourceHumanoid.ErpStatus; // LP edit
         Dirty(target, targetHumanoid);
     }
 
@@ -468,6 +469,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         EnsureDefaultMarkings(uid, humanoid);
         SetTTSVoice(uid, profile.Voice, humanoid); // Corvax-TTS
 
+        humanoid.ErpStatus = profile.ErpStatus; // LP edit
         humanoid.Gender = profile.Gender;
         if (TryComp<GrammarComponent>(uid, out var grammar))
         {
