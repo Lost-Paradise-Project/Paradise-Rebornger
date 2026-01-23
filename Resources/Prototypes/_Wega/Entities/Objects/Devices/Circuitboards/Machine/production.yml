@@ -12,3 +12,19 @@
       Manipulator: 2
       Glass: 5
       Cable: 2
+
+- type: entity
+  id: MiningServerCircuitboard
+  parent: BaseMachineCircuitboard
+  name: mining server board
+  description: A machine printed circuit board for an mining server.
+  components:
+  - type: Sprite
+    state: engineering
+  - type: MachineBoard
+    prototype: MiningServer
+    stackRequirements:
+      Manipulator: 4
+      Steel: 5
+      Glass: 2
+      Cable: 5
