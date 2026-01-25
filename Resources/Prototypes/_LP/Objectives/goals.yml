@@ -5,3 +5,23 @@
 - type: stationGoal
   id: Renovation
   text: station-goal-renovation
+
+- type: stationGoal
+  id: BorgsForAI
+  text: station-goal-borgs-for-ai
+  minPlayers: 10
+
+- type: stationGoal
+  id: ReserveEnergy
+  text: station-goal-reserv-energy
+  minPlayers: 20
+
+- type: stationGoal
+  id: StationPreparation
+  text: station-goal-podgotovka-k-stroike
+  minPlayers: 10
+
+- type: stationGoal
+  id: CorporateEvent
+  text: station-goal-podgotovka-k-korporativu
+  minPlayers: 10

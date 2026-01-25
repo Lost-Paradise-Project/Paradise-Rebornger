@@ -1,4 +1,4 @@
-﻿- type: vendingMachineInventory
+- type: vendingMachineInventory
   id: UnderwearVendingMachineServitorInventory
   startingInventory:
     LPPBeeShorts: 3

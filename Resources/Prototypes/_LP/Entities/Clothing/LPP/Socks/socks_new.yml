@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: ClothingShoesBase
   id: LPPClothingUnderSocksDartBee
   name: dart bee socks

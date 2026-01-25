@@ -1,4 +1,4 @@
-﻿- type: vendingMachineInventory
+- type: vendingMachineInventory
   id: ERPVendingMachineServitorInventory
   startingInventory:
     LPPBigGreenButtplug: 3

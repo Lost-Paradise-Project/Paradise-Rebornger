@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   name: fleshlight green
   id: LPPFleshlightGreen
   parent: BaseItem

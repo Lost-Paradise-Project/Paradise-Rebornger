@@ -1,4 +1,4 @@
-﻿- type: vendingMachineInventory
+- type: vendingMachineInventory
   id: BrasVendingMachineServitorInventory
   startingInventory:
     LPPBraBlack: 3

@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: LPPBaseWhips
   id: LPPWhips
   name: Whip
