@@ -30,7 +30,6 @@ marking-VulpEarOtie-otie-inner = Короткие уши (Внутренняя �
 marking-VulpEarOtie = Вульпканин Сближенные
 marking-VulpEarShock-shock = Сближенные уши (Основа)
 marking-VulpEarShock-shock-inner = Сближенные уши (Внутренняя часть)
-marking-VulpEarShock-inner = Сближенные уши (Внутренняя часть)
 marking-VulpEarShock = Вульпканин Сближенные
 
 # Snout
