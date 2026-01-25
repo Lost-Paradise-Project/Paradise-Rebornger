@@ -40,7 +40,7 @@ limit = 25.0
 [admin]
 admins_count_in_playercount = true
 see_own_notes = true
-discord_reply_prefix = "(ДС) "
+# discord_reply_prefix = "(ДС) "
 
 [ahelp]
 rate_limit_count = 2
@@ -71,9 +71,6 @@ rich_main_icon_id = "https://iili.io/f85IYyQ.png"
 [interaction]
 rate_limit_announce_admins_delay = -1
 
-[skills]
-enabled = false
-
 [atmos]
 space_wind = true
 
@@ -81,7 +78,7 @@ space_wind = true
 flavor_text = true
 
 [biomass]
-easy_mode = false
+п = false
 
 [wega]
 night_light_enabled = true
