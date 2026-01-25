@@ -1,0 +1,22 @@
+﻿{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "buttplug sprites (buttplug-inhand-left || right) from Kasey https://github.com/BitBoxxxer on github",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "yellow_big"
+        },
+        {
+            "name": "buttplug-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "buttplug-inhand-right",
+            "directions": 4
+        }
+    ]
+}

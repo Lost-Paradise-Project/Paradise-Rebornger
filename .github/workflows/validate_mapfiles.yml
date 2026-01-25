@@ -9,25 +9,21 @@ on:
 jobs:
   yaml-schema-validation:
     name: YAML map schema validator
-    if: github.actor != 'IanComradeBot' && github.event.pull_request.draft == false
+    if: github.actor != 'IanComradeBot' && github.event.pull_request.draft == false && github.actor != 'Lost-Paradise-Bot'
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4.2.2
     - name: Setup Submodule
       run: git submodule update --init
-    # Corvax-Secrets-Start
-    - name: Setup secrets
-      env:
-        SSH_KEY: ${{ secrets.SECRETS_PRIVATE_KEY }}
-      if: ${{ env.SSH_KEY != '' }}
+    - name: Download parts
+      if: ${{ vars.SECRETSLINK != '' }}
       run: |
-        mkdir ~/.ssh
-        echo "${{ secrets.SECRETS_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        echo "HOST *" > ~/.ssh/config
-        echo "StrictHostKeyChecking no" >> ~/.ssh/config
-        git -c submodule.Secrets.update=checkout submodule update --init
-    # Corvax-Secrets-End
+        git clone ${{ secrets.SECRETS }}
+        mv NewSecrets/PResources/PPrototypes Resources/Prototypes/
+        mv NewSecrets/PResources/PTextures Resources/Textures/
+        mv NewSecrets/PShared Content.Shared/PShared
+        mv NewSecrets/PServer Content.Server/PServer
+        mv NewSecrets/PClient Content.Client/PClient
     - name: Pull engine updates
       uses: space-wizards/submodule-dependency@v0.1.5
     - uses: PaulRitter/yaml-schema-validator@v1

@@ -1,4 +1,5 @@
 ﻿- type: entity
+  categories: [ HideSpawnMenu ]
   parent: BaseItem
   id: DebugItemShapeWeird
   name: weirdly shaped item

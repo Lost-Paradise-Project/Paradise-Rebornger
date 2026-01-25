@@ -17,7 +17,7 @@ namespace Content.Client.Clickable
             "/Textures/Interface",
             "/Textures/LobbyScreens",
             "/Textures/Parallaxes",
-            "/Textures/Logo",
+            "/Textures/_LP/Logo", // LP edit
         };
 
         private const float Threshold = 0.1f;

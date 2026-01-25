@@ -2,7 +2,11 @@
 - type: roleLoadout
   id: JobCaptain
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - CaptainHead
   - CaptainNeck
   - CaptainJumpsuit
@@ -16,7 +20,11 @@
 - type: roleLoadout
   id: JobHeadOfPersonnel
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - HoPHead
   - HoPNeck
@@ -44,7 +52,11 @@
 - type: roleLoadout
   id: JobPassenger
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - PassengerJumpsuit
   - CommonBackpack
@@ -62,7 +74,11 @@
 - type: roleLoadout
   id: JobBartender
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - BartenderHead
   - BartenderJumpsuit
@@ -77,7 +93,11 @@
 - type: roleLoadout
   id: JobServiceWorker
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - BartenderJumpsuit
   - CommonBackpack
@@ -90,7 +110,11 @@
 - type: roleLoadout
   id: JobChef
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - ChefHead
   - ChefMask
@@ -106,7 +130,11 @@
 - type: roleLoadout
   id: JobLibrarian
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - LibrarianJumpsuit
   - CommonBackpack
@@ -119,7 +147,11 @@
 - type: roleLoadout
   id: JobLawyer
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - LawyerNeck
   - LawyerJumpsuit
@@ -133,7 +165,11 @@
 - type: roleLoadout
   id: JobChaplain
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - ChaplainHead
   - ChaplainMask
@@ -151,7 +187,11 @@
 - type: roleLoadout
   id: JobJanitor
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - JanitorHead
   - JanitorJumpsuit
@@ -167,7 +207,11 @@
 - type: roleLoadout
   id: JobBotanist
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - BotanistHead
   - BotanistJumpsuit
@@ -183,7 +227,11 @@
   id: JobClown
   canCustomizeName: true
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - ClownHead
   - ClownJumpsuit
@@ -199,7 +247,11 @@
   id: JobMime
   canCustomizeName: true
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - MimeHead
   - MimeMask
@@ -216,7 +268,11 @@
   id: JobMusician
   canCustomizeName: true
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - MusicianJumpsuit
   - CommonBackpack
@@ -232,7 +288,11 @@
 - type: roleLoadout
   id: JobQuartermaster
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - QuartermasterHead
   - QuartermasterNeck
@@ -249,7 +309,11 @@
 - type: roleLoadout
   id: JobCargoTechnician
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - CargoTechnicianHead
   - CargoTechnicianJumpsuit
@@ -266,7 +330,11 @@
 - type: roleLoadout
   id: JobSalvageSpecialist
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - SalvageSpecialistBackpack
   - SalvageSpecialistOuterClothing
@@ -281,7 +349,11 @@
 - type: roleLoadout
   id: JobChiefEngineer
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - ChiefEngineerHead
   - ChiefEngineerJumpsuit
@@ -297,7 +369,11 @@
 - type: roleLoadout
   id: JobTechnicalAssistant
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - TechnicalAssistantJumpsuit
   - StationEngineerBackpack
@@ -309,7 +385,11 @@
 - type: roleLoadout
   id: JobStationEngineer
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - StationEngineerHead
   - StationEngineerJumpsuit
@@ -325,7 +405,11 @@
 - type: roleLoadout
   id: JobAtmosphericTechnician
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - AtmosphericTechnicianJumpsuit
   - AtmosphericTechnicianBackpack
@@ -340,7 +424,11 @@
 - type: roleLoadout
   id: JobResearchDirector
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - ResearchDirectorHead
   - ResearchDirectorNeck
@@ -358,7 +446,11 @@
 - type: roleLoadout
   id: JobScientist
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - ScientistHead
   - ScientistNeck
@@ -377,7 +469,11 @@
 - type: roleLoadout
   id: JobResearchAssistant
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - ResearchAssistantJumpsuit
   - ScientistBackpack
@@ -391,7 +487,11 @@
 - type: roleLoadout
   id: JobHeadOfSecurity
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - HeadofSecurityHead
   - HeadofSecurityNeck
   - HeadofSecurityJumpsuit
@@ -407,7 +507,11 @@
 - type: roleLoadout
   id: JobWarden
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - WardenHead
   - WardenJumpsuit
   - SecurityBackpack
@@ -422,7 +526,11 @@
 - type: roleLoadout
   id: JobSecurityOfficer
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - SecurityHead
   - SecurityJumpsuit
   - SecurityBackpack
@@ -438,7 +546,11 @@
 - type: roleLoadout
   id: JobDetective
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - DetectiveHead
   - DetectiveNeck
   - DetectiveJumpsuit
@@ -453,7 +565,11 @@
 - type: roleLoadout
   id: JobSecurityCadet
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - SecurityCadetJumpsuit
   - SecurityBackpack
   - SurvivalSecurity
@@ -465,7 +581,11 @@
 - type: roleLoadout
   id: JobChiefMedicalOfficer
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - ChiefMedicalOfficerHead
   - MedicalMask
@@ -484,7 +604,11 @@
 - type: roleLoadout
   id: JobMedicalDoctor
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - MedicalDoctorHead
   - MedicalMask
@@ -503,7 +627,11 @@
 - type: roleLoadout
   id: JobMedicalIntern
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - MedicalInternJumpsuit
   - MedicalBackpack
@@ -516,7 +644,11 @@
 - type: roleLoadout
   id: JobChemist
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - MedicalMask
   - ChemistJumpsuit
@@ -532,7 +664,11 @@
 - type: roleLoadout
   id: JobParamedic
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - ParamedicHead
   - MedicalMask
@@ -551,7 +687,11 @@
 - type: roleLoadout
   id: JobReporter
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - ReporterJumpsuit
   - CommonBackpack
@@ -564,7 +704,11 @@
 - type: roleLoadout
   id: JobPsychologist
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - PsychologistJumpsuit
   - MedicalBackpack

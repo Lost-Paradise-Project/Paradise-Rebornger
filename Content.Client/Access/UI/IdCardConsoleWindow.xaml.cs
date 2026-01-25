@@ -29,6 +29,7 @@ namespace Content.Client.Access.UI
 
         private AccessLevelControl _accessButtons = new();
         private readonly List<string> _jobPrototypeIds = new();
+        private readonly List<string> _accessGroupIds = new(); // Corvax-Wega-Add
 
         private string? _lastFullName;
         private string? _lastJobTitle;
@@ -79,11 +80,12 @@ namespace Content.Client.Access.UI
                 JobPresetOptionButton.AddItem(Loc.GetString(job.Name), _jobPrototypeIds.Count - 1);
             }
 
-            SelectAllButton.OnPressed += _ =>
-            {
-                SetAllAccess(true);
-                SubmitData();
-            };
+            // Corvax-Wega-Edit
+            // SelectAllButton.OnPressed += _ =>
+            // {
+            //     SetAllAccess(true);
+            //     SubmitData();
+            // };
 
             DeselectAllButton.OnPressed += _ =>
             {
@@ -92,6 +94,23 @@ namespace Content.Client.Access.UI
             };
 
             JobPresetOptionButton.OnItemSelected += SelectJobPreset;
+
+            // Corvax-Wega-Add-start
+            var accessGroups = _prototypeManager.EnumeratePrototypes<AccessGroupPrototype>().Where(a => a.ConsoleAvaible).ToList();
+            accessGroups.Sort((x, y) => string.Compare(x.GetAccessGroupName(), y.GetAccessGroupName(), StringComparison.CurrentCulture));
+
+            AccessGroupOptionButton.AddItem(Loc.GetString("id-card-console-window-access-group-none"), 0);
+            _accessGroupIds.Add(string.Empty);
+
+            foreach (var group in accessGroups)
+            {
+                _accessGroupIds.Add(group.ID);
+                AccessGroupOptionButton.AddItem(group.GetAccessGroupName(), _accessGroupIds.Count - 1);
+            }
+
+            AccessGroupOptionButton.OnItemSelected += SelectAccessGroup;
+            // Corvax-Wega-Add-end
+
             _accessButtons.Populate(accessLevels, prototypeManager);
             AccessLevelControlContainer.AddChild(_accessButtons);
 
@@ -101,7 +120,6 @@ namespace Content.Client.Access.UI
             }
         }
 
-        /// <param name="enabled">If true, every individual access button will be pressed. If false, each will be depressed.</param>
         private void SetAllAccess(bool enabled)
         {
             foreach (var button in _accessButtons.ButtonsList.Values)
@@ -148,6 +166,36 @@ namespace Content.Client.Access.UI
                 }
             }
 
+            AccessGroupOptionButton.SelectId(0); // Corvax-Wega-Add
+
+            SubmitData(); // Corvax-Wega-Add
+        }
+
+        // Corvax-Wega-Add-start
+        private void SelectAccessGroup(OptionButton.ItemSelectedEventArgs args)
+        {
+            var groupId = _accessGroupIds[args.Id];
+            if (string.IsNullOrEmpty(groupId))
+            {
+                args.Button.SelectId(args.Id);
+                return;
+            }
+
+            if (!_prototypeManager.TryIndex(groupId, out AccessGroupPrototype? group))
+                return;
+
+            SetAllAccess(false);
+
+            foreach (var access in group.Tags)
+            {
+                if (_accessButtons.ButtonsList.TryGetValue(access, out var button))
+                {
+                    button.Pressed = true;
+                }
+            }
+
+            args.Button.SelectId(args.Id);
+            // Corvax-Wega-Add-end
             SubmitData();
         }
 
@@ -190,6 +238,9 @@ namespace Content.Client.Access.UI
             JobTitleSaveButton.Disabled = !interfaceEnabled || !jobTitleDirty;
 
             JobPresetOptionButton.Disabled = !interfaceEnabled;
+            AccessGroupOptionButton.Disabled = !interfaceEnabled; // Corvax-Wega-Add
+
+            DeselectAllButton.Disabled = !interfaceEnabled; // Corvax-Wega-Add
 
             _accessButtons.UpdateState(state.TargetIdAccessList?.ToList() ??
                                        new List<ProtoId<AccessLevelPrototype>>(),
@@ -206,6 +257,7 @@ namespace Content.Client.Access.UI
             }
 
             JobPresetOptionButton.SelectId(jobIndex);
+            AccessGroupOptionButton.SelectId(0); // Corvax-Wega-Add
 
             _lastFullName = state.TargetIdFullName;
             _lastJobTitle = state.TargetIdJobTitle;

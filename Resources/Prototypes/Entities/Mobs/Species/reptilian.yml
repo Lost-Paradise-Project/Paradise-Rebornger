@@ -12,7 +12,6 @@
     - HeadTop
     - HeadSide
     - Tail
-    undergarmentBottom: UndergarmentBottomBoxersReptilian
   - type: Hunger
   - type: Puller
     needsHands: false
@@ -74,6 +73,18 @@
   - type: Inventory
     speciesId: reptilian
     femaleDisplacements:
+      # LP edit start
+      socks:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi # Corvax-Digitigrade
+            state: shoes
+      underwear:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi # Corvax-Digitigrade
+            state: jumpsuit-female
+      # LP edit end
       jumpsuit:
         sizeMaps:
           32:
@@ -97,6 +108,18 @@
             state: shoes
       # Corvax-Displacements-End
     displacements:
+      # LP edit start
+      socks:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi # Corvax-Digitigrade
+            state: shoes
+      underwear:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi # Corvax-Digitigrade
+            state: jumpsuit
+      # LP edit end
       head:
         sizeMaps:
           32:
@@ -132,10 +155,21 @@
     - Snout
     - HeadTop
     - HeadSide
-    undergarmentBottom: UndergarmentBottomBoxersReptilian
   - type: Inventory
     speciesId: reptilian
     femaleDisplacements:
+      # LP edit start
+      socks:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi # Corvax-Digitigrade
+            state: shoes
+      underwear:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi # Corvax-Digitigrade
+            state: jumpsuit-female
+      # LP edit end
       jumpsuit:
         sizeMaps:
           32:
@@ -159,6 +193,18 @@
             state: shoes
       # Corvax-Digitigrade-Ens
     displacements:
+      # LP edit start
+      socks:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi # Corvax-Digitigrade
+            state: shoes
+      underwear:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi # Corvax-Digitigrade
+            state: jumpsuit
+      # LP edit end
       head:
         sizeMaps:
           32:

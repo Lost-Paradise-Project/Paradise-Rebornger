@@ -1,4 +1,5 @@
 - type: entity
+  categories: [ HideSpawnMenu ]
   name: bang hitscan 1dmg
   parent: BaseWeaponBatterySmall
   id: WeaponHitscanDebug
@@ -30,6 +31,7 @@
     proto: DebugLaserGib
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   name: bang, ded
   parent: BaseWeaponPistol
   id: WeaponPistolDebug
@@ -70,6 +72,7 @@
             - CartridgeDebug
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   id: MagazinePistolDebug
   name: bang, ded mag
   parent: BaseMagazinePistol
@@ -97,6 +100,7 @@
         Blunt: 20000
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   id: CartridgeDebug
   name: bang, ded cartridge
   parent: BaseCartridgePistol
@@ -109,6 +113,7 @@
     proto: BulletDebug
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   name: bang stick gibber
   parent: BaseItem
   id: MeleeDebugGib
@@ -127,6 +132,7 @@
     sprite: Objects/Weapons/Melee/debug.rsi
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   name: bang stick 100dmg
   parent: MeleeDebugGib
   id: MeleeDebug100
@@ -137,6 +143,7 @@
         Blunt: 100
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   name: bang stick 200dmg
   parent: MeleeDebugGib
   id: MeleeDebug200

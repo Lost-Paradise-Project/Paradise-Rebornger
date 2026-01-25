@@ -55,9 +55,6 @@
     HeadTop:
       points: 2
       required: true
-    UndergarmentTop:
-      points: 1
-      required: true
 
 
 - type: humanoidBaseSprite

@@ -143,3 +143,35 @@
       dependsOnComponents:
       - type: AllowSuitStorage
       displayName: Suit Storage
+      # LP edit start
+    - name: breast
+      slotTexture: breast
+      slotFlags: BREAST
+      stripTime: 6
+      uiWindowPos: 3,3
+      strippingWindowPos: 3,1
+      displayName: Breast
+      # whitelist:
+      #   tags:
+      #     - breast
+    - name: underwear
+      slotTexture: underwear
+      slotFlags: UNDERWEAR
+      stripTime: 6
+      uiWindowPos: 3,2
+      strippingWindowPos: 3,2
+      displayName: Underwear
+      # whitelist:
+      #   tags:
+      #     - underwear
+    - name: socks
+      slotTexture: socks
+      slotFlags: SOCKS
+      stripTime: 6
+      uiWindowPos: 3,1
+      strippingWindowPos: 3,3
+      displayName: Socks
+      # whitelist:
+      #   tags:
+      #     - socks
+      # LP edit end

@@ -1,0 +1,222 @@
+﻿- type: entity
+  name: dildo avian
+  id: LPPDildoAvian
+  parent: [LPPClothingUnderwearBase, Plunger]
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Dildo/avian.rsi
+    scale: 1.0, 1.0
+    state: dildo_avian
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Dildo/avian.rsi
+    heldPrefix: dildo_avian
+  - type: Tag
+    tags:
+    - Dildo
+  - type: Clothing
+    sprite: _LP/Objects/Fun/ERP/Dildo/avian.rsi
+    slots:
+      - HEAD
+    clothingVisuals:
+      head:
+        - state: equipped-HELMET
+          offset: "0, 0.15625"
+  - type: StaminaDamageOnHit
+    damage: 8
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    soundHit:
+      collection: Dildo
+      params:
+        variation: 0.03
+        volume: 3
+    soundNoDamage:
+      collection: Dildo
+      params:
+        variation: 0.03
+        volume: 3
+    damage:
+      types:
+        Blunt: 0
+
+- type: entity
+  name: dildo canine
+  id: LPPDildoCanine
+  parent: LPPDildoAvian
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Dildo/canine.rsi
+    state: dildo_canine
+    scale: 1.0, 1.0
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Dildo/canine.rsi
+    heldPrefix: dildo
+  - type: Clothing
+    sprite: _LP/Objects/Fun/ERP/Dildo/canine.rsi
+    clothingVisuals:
+      head:
+        - state: equipped-HELMET
+          offset: "0, 0.15625"
+
+- type: entity
+  name: dildo double
+  id: LPPDildoDouble
+  parent: LPPDildoAvian
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Dildo/double.rsi
+    state: dildo_double
+    scale: 1.0, 1.0
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Dildo/double.rsi
+    heldPrefix: dildo
+  - type: Clothing
+    sprite: _LP/Objects/Fun/ERP/Dildo/double.rsi
+    clothingVisuals:
+      head:
+        - state: equipped-HELMET
+          offset: "0, 0.15625"
+
+- type: entity
+  name: dildo dragon
+  id: LPPDildoDragon
+  parent: LPPDildoAvian
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Dildo/dragon.rsi
+    state: dildo_dragon
+    scale: 1.0, 1.0
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Dildo/dragon.rsi
+    heldPrefix: dildo
+  - type: Clothing
+    sprite: _LP/Objects/Fun/ERP/Dildo/dragon.rsi
+    clothingVisuals:
+      head:
+        - state: equipped-HELMET
+          offset: "0, 0.15625"
+
+- type: entity
+  name: dildo equine
+  id: LPPDildoEquine
+  parent: LPPDildoAvian
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Dildo/equine.rsi
+    state: dildo_equine
+    scale: 1.0, 1.0
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Dildo/equine.rsi
+    heldPrefix: dildo
+  - type: Clothing
+    sprite: _LP/Objects/Fun/ERP/Dildo/equine.rsi
+    clothingVisuals:
+      head:
+        - state: equipped-HELMET
+          offset: "0, 0.15625"
+
+- type: entity
+  name: dildo human
+  id: LPPDildoHuman
+  parent: LPPDildoAvian
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Dildo/human.rsi
+    state: dildo_human
+    scale: 1.0, 1.0
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Dildo/human.rsi
+    heldPrefix: dildo
+  - type: Clothing
+    sprite: _LP/Objects/Fun/ERP/Dildo/human.rsi
+    clothingVisuals:
+      head:
+        - state: equipped-HELMET
+          offset: "0, 0.15625"
+
+- type: entity
+  name: dildo tentacle
+  id: LPPDildoTentacle
+  parent: LPPDildoAvian
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Dildo/tentacle.rsi
+    state: dildo_tentacle
+    scale: 1.0, 1.0
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Dildo/tentacle.rsi
+    heldPrefix: dildo
+  - type: Clothing
+    sprite: _LP/Objects/Fun/ERP/Dildo/tentacle.rsi
+    clothingVisuals:
+      head:
+        - state: equipped-HELMET
+          offset: "0, 0.15625"
+
+- type: entity
+  name: polydildo big
+  id: LPPPolydildoBig
+  parent: LPPDildoAvian
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Dildo/polydildo_big.rsi
+    state: polydildo_big
+    scale: 1.0, 1.0
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Dildo/polydildo_big.rsi
+    heldPrefix: dildo
+  - type: Clothing
+    sprite: _LP/Objects/Fun/ERP/Dildo/polydildo_big.rsi
+    clothingVisuals:
+      head:
+        - state: equipped-HELMET
+          offset: "0, 0.15625"
+
+- type: entity
+  name: polydildo med
+  id: LPPPolydildoMed
+  parent: LPPDildoAvian
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Dildo/polydildo_med.rsi
+    state: polydildo_med
+    scale: 1.0, 1.0
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Dildo/polydildo_med.rsi
+    heldPrefix: dildo
+  - type: Clothing
+    sprite: _LP/Objects/Fun/ERP/Dildo/polydildo_med.rsi
+    clothingVisuals:
+      head:
+        - state: equipped-HELMET
+          offset: "0, 0.15625"
+
+- type: entity
+  name: polydildo small
+  id: LPPPolydildoSmall
+  parent: LPPDildoAvian
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Dildo/polydildo_small.rsi
+    state: polydildo_small
+    scale: 1.0, 1.0
+    # map: [ "enum.DamageStateVisualLayers.Base" ]
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Dildo/polydildo_small.rsi
+    heldPrefix: dildo
+  - type: Clothing
+    sprite: _LP/Objects/Fun/ERP/Dildo/polydildo_small.rsi
+    clothingVisuals:
+      head:
+        - state: equipped-HELMET
+          offset: "0, 0.15625"

@@ -1,0 +1,741 @@
+﻿- type: entity
+  parent: Paper
+  id: BasePaperForm
+  components:
+  - type: PaperVisuals
+    headerImagePath: "/Textures/_LP/Paper/nanotrasen_form_header.png"
+    contentMargin: 32.0, 16.0, 32.0, 0.0
+
+- type: entity
+  parent: BasePaperForm
+  id: PaperFormSec
+  components:
+  - type: PaperVisuals
+    headerImagePath: "/Textures/_LP/Paper/nanotrasen_sec_form_header.png"
+
+- type: entity
+  parent: BasePaperForm
+  id: PaperFormLaw
+  components:
+  - type: PaperVisuals
+    headerImagePath: "/Textures/_LP/Paper/nanotrasen_law_form_header.png"
+
+- type: entity
+  parent: BasePaperForm
+  id: PaperFormSci
+  components:
+  - type: PaperVisuals
+    headerImagePath: "/Textures/_LP/Paper/nanotrasen_sci_form_header.png"
+
+- type: entity
+  parent: BasePaperForm
+  id: PaperFormCmd
+  components:
+  - type: PaperVisuals
+    headerImagePath: "/Textures/_LP/Paper/nanotrasen_cmd_form_header.png"
+
+- type: entity
+  parent: BasePaperForm
+  id: PaperFormMed
+  components:
+  - type: PaperVisuals
+    headerImagePath: "/Textures/_LP/Paper/nanotrasen_med_form_header.png"
+
+- type: entity
+  parent: BasePaperForm
+  id: PaperFormCargo
+  components:
+  - type: PaperVisuals
+    headerImagePath: "/Textures/_LP/Paper/nanotrasen_cargo_form_header.png"
+
+- type: entity
+  parent: BasePaperForm
+  id: PaperFormEng
+  components:
+  - type: PaperVisuals
+    headerImagePath: "/Textures/_LP/Paper/nanotrasen_eng_form_header.png"
+
+- type: entity
+  parent: BasePaperForm
+  id: PaperFormCC
+  components:
+  - type: PaperVisuals
+    headerImagePath: "/Textures/_LP/Paper/nanotrasen_cc_form_header.png"
+
+- type: entity
+  parent: BasePaperForm
+  id: PaperFormCCSecure
+  components:
+  - type: PaperVisuals
+    headerImagePath: "/Textures/_LP/Paper/nanotrasen_cc_secure_form_header.png"
+
+- type: entity
+  parent: BasePaperForm
+  id: PaperFormSyndie
+  components:
+  - type: PaperVisuals
+    headerImagePath: "/Textures/_LP/Paper/syndie_form_header.png"
+
+- type: entity
+  parent: PaperFormCmd
+  id: DocStReport
+  name: Station Situation Report
+  components:
+  - type: Paper
+    content: doc-text-printer-report-station
+
+- type: entity
+  parent: PaperFormCmd
+  id: DocADStatement
+  name: Acting Director appointment statement
+  components:
+  - type: Paper
+    content: doc-text-printer-acting-director-statement
+
+- type: entity
+  parent: PaperFormCmd
+  id: DocRRTInquiriesAndAppeals
+  name: Emergency Response Team Inquiry
+  components:
+  - type: Paper
+    content: doc-text-printer-emergency-response-team-inquiry
+
+- type: entity
+  parent: PaperFormCmd
+  id: DocESStatement
+  name: Evacuation Shuttle Inquiry
+  components:
+  - type: Paper
+    content: doc-text-printer-evacuation-shuttle-statement
+
+- type: entity
+  parent: PaperFormCmd
+  id: DocCCRStatement
+  name: Central Command Representative Inquiry
+  components:
+  - type: Paper
+    content: doc-text-printer-cent-comm-representative-statement
+
+- type: entity
+  parent: PaperFormCmd
+  id: DocBASStatement
+  name: Bluespace Artillery Strike Inquiry
+  components:
+  - type: Paper
+    content: doc-text-printer-bluespace-artillery-strike-statement
+
+- type: entity
+  parent: PaperFormCmd
+  id: DocDWReport
+  name: Department Work Report
+  components:
+  - type: Paper
+    content: doc-text-printer-department-work-report
+
+- type: entity
+  parent: PaperFormCmd
+  id: DocRAOrders
+  name: Order for revocation of access
+  components:
+  - type: Paper
+    content: doc-text-printer-revocation-of-access-order
+
+- type: entity
+  parent: PaperFormCmd
+  id: DocEWReport
+  name: Employer Work report
+  components:
+  - type: Paper
+    content: doc-text-printer-employer-work-report
+
+- type: entity
+  parent: PaperFormCmd
+  id: DocDHMReport
+  name: Heads of Department Meeting Report
+  components:
+  - type: Paper
+    content: doc-text-printer-department-heads-meeting-report
+
+- type: entity
+  parent: PaperFormCmd
+  id: DocPAStatement
+  name: Promotion Application Inquiry
+  components:
+  - type: Paper
+    content: doc-text-printer-promotion-application-statement
+
+- type: entity
+  parent: PaperFormCmd
+  id: DocJAStatment
+  name: Job Application Inquiry
+  components:
+  - type: Paper
+    content: doc-text-printer-job-application-statement
+
+- type: entity
+  parent: PaperFormCmd
+  id: DocJRStatment
+  name: Job Resignation Inquiry
+  components:
+  - type: Paper
+    content: doc-text-printer-job-resignation-statement
+
+- type: entity
+  parent: PaperFormCmd
+  id: DocAAStatement
+  name: Application for Access Inquiry
+  components:
+  - type: Paper
+    content: doc-text-printer-application-for-access-statment
+
+- type: entity
+  parent: PaperFormCmd
+  id: DocJRSOrder
+  name: Job Resignation Order
+  components:
+  - type: Paper
+    content: doc-text-printer-job-resignation-order
+
+- type: entity
+  parent: PaperFormCmd
+  id: DocROrder
+  name: Order to reward
+  components:
+  - type: Paper
+    content: doc-text-printer-reward-order
+
+- type: entity
+  parent: PaperFormCmd
+  id: DocCPDStatements
+  name: Certificate of Professional Development Statement
+  components:
+  - type: Paper
+    content: doc-text-printer-certificate-of-professional-development-statement
+
+- type: entity
+  parent: PaperFormCmd
+  id: DocAFEStatements
+  name: Application for Equipment Statement
+  components:
+  - type: Paper
+    content: doc-text-printer-application-for-equipment-statement
+
+- type: entity
+  parent: PaperFormCmd
+  id: DocPFEPermissions
+  name: Permission for Equipment
+  components:
+  - type: Paper
+    content: doc-text-printer-permission-for-equipment
+
+- type: entity
+  parent: PaperFormCmd
+  id: DocAmenstyStatements
+  name: Amnesty Statement
+  components:
+  - type: Paper
+    content: doc-text-printer-amensty-statement
+
+- type: entity
+  parent: PaperFormLaw
+  id: DocVOLOComplaints
+  name: Violation of Labor Order Complaints
+  components:
+  - type: Paper
+    content: doc-text-printer-violation-of-the-labor-order-complaintst
+
+- type: entity
+  parent: PaperFormLaw
+  id: DocIAAReport
+  name: Internal Affairs Agent Report
+  components:
+  - type: Paper
+    content: doc-text-printer-internal-affairs-agent-report
+
+- type: entity
+  parent: PaperFormLaw
+  id: DocIFRLDInquiriesAndAppeals
+  name: Inquiry for Removal of Legal Defense
+  components:
+  - type: Paper
+    content: doc-text-printer-inquiry-for-remove-legal-defense
+
+- type: entity
+  parent: PaperFormLaw
+  id: DocCTOrder
+  name: Conduct Trial Order
+  components:
+  - type: Paper
+    content: doc-text-printer-conduct-trial-order
+
+- type: entity
+  parent: PaperFormLaw
+  id: DocParoleInquiriesAndAppeals
+  name: Parole Inquiry
+  components:
+  - type: Paper
+    content: doc-text-printer-parole-inquiry
+
+- type: entity
+  parent: PaperFormLaw
+  id: DocROCStatement
+  name: Reconsideration of Case Statement
+  components:
+  - type: Paper
+    content: doc-text-printer-reconsideration-of-the-case-statement
+
+- type: entity
+  parent: PaperFormLaw
+  id: DocCTWStatement
+  name: Calling the Witness Statement
+  components:
+  - type: Paper
+    content: doc-text-printer-calling-the-witness-statement
+
+- type: entity
+  parent: PaperFormLaw
+  id: DocInquiriesAndAppeals
+  name: Document Inquiry
+  components:
+  - type: Paper
+    content: doc-text-printer-document-inquiry
+
+- type: entity
+  parent: PaperFormLaw
+  id: DocRILDOrder
+  name: Remove or Impose Legal Defense Order
+  components:
+  - type: Paper
+    content: doc-text-printer-remove-or-impose-legal-defense-order
+
+- type: entity
+  parent: PaperFormLaw
+  id: DocCVConclusionsAndDecisions
+  name: Court Verdict
+  components:
+  - type: Paper
+    content: doc-text-printer-court-verdict
+
+- type: entity
+  parent: PaperFormLaw
+  id: DocBIRStatement
+  name: Bill Initiation Request
+  components:
+  - type: Paper
+    content: doc-text-printer-bill-initiation-request
+
+- type: entity
+  parent: PaperFormLaw
+  id: DocBIOrder
+  name: Bill Integration Order
+  components:
+  - type: Paper
+    content: doc-text-printer-bill-integration-order
+
+- type: entity
+  parent: PaperFormLaw
+  id: DocAdjustmentOrder
+  name: Adjustment in Order
+  components:
+  - type: Paper
+    content: doc-text-printer-adjustment-in-order
+
+- type: entity
+  parent: PaperFormSec
+  id: DocCAOComplaints
+  name: Complaint About Offense
+  components:
+  - type: Paper
+    content: doc-text-printer-complaint-about-offense
+
+- type: entity
+  parent: PaperFormSec
+  id: DocATWOrder
+  name: Appointment of Temporary Warden
+  components:
+  - type: Paper
+    content: doc-text-printer-appointment-of-temporary-warden
+
+- type: entity
+  parent: PaperFormSec
+  id: DocDutyOrder
+  name: Duty Order
+  components:
+  - type: Paper
+    content: doc-text-printer-duty-order
+
+- type: entity
+  parent: PaperFormSec
+  id: DocPFSDWPermissions
+  name: Permission for Self Defense Weapon
+  components:
+  - type: Paper
+    content: doc-text-printer-permission-for-self-defense-weapon
+
+- type: entity
+  parent: PaperFormSec
+  id: DocILOAReport
+  name: Inventory List of Arsenal
+  components:
+  - type: Paper
+    content: doc-text-printer-inventory-list-of-arsenal
+
+- type: entity
+  parent: PaperFormSec
+  id: DocIReport
+  name: Investigation Report
+  components:
+  - type: Paper
+    content: doc-text-printer-investigation-report
+
+- type: entity
+  parent: PaperFormSec
+  id: DocVerdictConclusionsAndDecisions
+  name: Verdict
+  components:
+  - type: Paper
+    content: doc-text-printer-verdict
+
+- type: entity
+  parent: PaperFormSec
+  id: DocCOOReport
+  name: Certificate of Offense
+  components:
+  - type: Paper
+    content: doc-text-printer-certificate-of-offense
+
+- type: entity
+  parent: PaperFormSec
+  id: DocSWPermission
+  name: Search Warrant Permission
+  components:
+  - type: Paper
+    content: doc-text-printer-search-warrant-permission
+
+- type: entity
+  parent: PaperFormSec
+  id: DocWAPermission
+  name: Warrant Arrest Permission
+  components:
+  - type: Paper
+    content: doc-text-printer-warrant-arrest-permission
+
+- type: entity
+  parent: PaperFormSec
+  id: DocPPOrder
+  name: Prisoner Parole Order
+  components:
+  - type: Paper
+    content: doc-text-printer-prisoner-parole-order
+
+- type: entity
+  parent: PaperFormSec
+  id: DocMIOrder
+  name: Medical Intervention Order
+  components:
+  - type: Paper
+    content: doc-text-printer-medical-intervention-order
+
+- type: entity
+  parent: PaperFormMed
+  id: DocProductionInquiriesAndAppeals
+  name: Medical Production Request
+  components:
+  - type: Paper
+    content: doc-text-printer-medical-prosuction-request
+
+- type: entity
+  parent: PaperFormMed
+  id: DocCMIOrder
+  name: Compulsory Medical Intervention Order
+  components:
+  - type: Paper
+    content: doc-text-printer-compulsory-medical-intervention-order
+
+- type: entity
+  parent: PaperFormMed
+  id: DocCMIReport
+  name: Compulsory Medical Intervention Report
+  components:
+  - type: Paper
+    content: doc-text-printer-compulsory-medical-intervention-report
+
+- type: entity
+  parent: PaperFormMed
+  id: DocPSReport
+  name: Psychological Status Report
+  components:
+  - type: Paper
+    content: doc-text-printer-psychological-status-report
+
+- type: entity
+  parent: PaperFormMed
+  id: DocAFPDPermission
+  name: Authorization for Prescription Drug
+  components:
+  - type: Paper
+    content: doc-text-printer-authorization-for-a-prescription-drug
+
+- type: entity
+  parent: PaperFormMed
+  id: DocSHReport
+  name: Conclusion on State of Health
+  components:
+  - type: Paper
+    content: doc-text-printer-conclusion-on-the-state-of-health
+
+- type: entity
+  parent: PaperFormMed
+  id: DocMDDOrder
+  name: List of Medical Department Duties
+  components:
+  - type: Paper
+    content: doc-text-printer-list-of-medical-department-duties
+
+- type: entity
+  parent: PaperFormMed
+  id: DocEuthanasiaInquiriesAndAppeals
+  name: Euthanasia Inquiry
+  components:
+  - type: Paper
+    content: doc-text-printer-euthanasia-inquiry
+
+- type: entity
+  parent: PaperFormMed
+  id: DocDeathReport
+  name: Death Certificate
+  components:
+  - type: Paper
+    content: doc-text-printer-death-certificate
+
+- type: entity
+  parent: PaperFormMed
+  id: DocBDPermission
+  name: Permission to Dispose of Body
+  components:
+  - type: Paper
+    content: doc-text-printer-permission-to-dispose-of-the-body
+
+- type: entity
+  parent: PaperFormMed
+  id: DocInfectionReport
+  name: Evidence of Infection
+  components:
+  - type: Paper
+    content: doc-text-printer-evidence-of-infection
+
+- type: entity
+  parent: PaperFormMed
+  id: DocQuarantineOrder
+  name: Quarantine Order
+  components:
+  - type: Paper
+    content: doc-text-printer-quarantine-order
+
+- type: entity
+  parent: PaperFormMed
+  id: DocEpidemiologicalReport
+  name: Epidemiological Conclusion
+  components:
+  - type: Paper
+    content: doc-text-printer-epidemiological-conclusion
+
+- type: entity
+  parent: PaperFormEng
+  id: DocEPPInquiriesAndAppeals
+  name: Engineer Product Production Inquiry
+  components:
+  - type: Paper
+    content: doc-text-printer-engeneer-product-production-inquiry
+
+- type: entity
+  parent: PaperFormEng
+  id: DocLEDReport
+  name: List of Engineer Duties
+  components:
+  - type: Paper
+    content: doc-text-printer-list-of-engeneer-duties
+
+- type: entity
+  parent: PaperFormEng
+  id: DocBuildingPermission
+  name: Building Permission
+  components:
+  - type: Paper
+    content: doc-text-printer-building-permission
+
+- type: entity
+  parent: PaperFormEng
+  id: DocTCReport
+  name: Technical Condition Report
+  components:
+  - type: Paper
+    content: doc-text-printer-technical-condition-report
+
+- type: entity
+  parent: PaperFormEng
+  id: DocRCWInquiriesAndAppeals
+  name: Construction Work Request
+  components:
+  - type: Paper
+    content: doc-text-printer-construction-work-request
+
+- type: entity
+  parent: PaperFormSci
+  id: DocPPInquiriesAndAppeals
+  name: Science Product Request
+  components:
+  - type: Paper
+    content: doc-text-printer-science-product-request
+
+- type: entity
+  parent: PaperFormSci
+  id: DocOSReport
+  name: Object Study Report
+  components:
+  - type: Paper
+    content: doc-text-printer-object-study-report
+
+- type: entity
+  parent: PaperFormSci
+  id: DocExperimentReport
+  name: Experiment Report
+  components:
+  - type: Paper
+    content: doc-text-printer-experiment-report
+
+- type: entity
+  parent: PaperFormSci
+  id: DocExpeditionReport
+  name: Expedition Report
+  components:
+  - type: Paper
+    content: doc-text-printer-expedition-report
+
+- type: entity
+  parent: PaperFormSci
+  id: DocADReport
+  name: Anomaly Documentation
+  components:
+  - type: Paper
+    content: doc-text-printer-anomaly-documentation
+
+- type: entity
+  parent: PaperFormSci
+  id: DocRRBOrder
+  name: Recognizing Reasonableness of Being Order
+  components:
+  - type: Paper
+    content: doc-text-printer-recognizing-the-reasonableness-of-a-being-order
+
+- type: entity
+  parent: PaperFormSci
+  id: DocLOSDReport
+  name: List of Scientists Duties
+  components:
+  - type: Paper
+    content: doc-text-printer-list-of-scientists-duties
+
+- type: entity
+  parent: PaperFormCargo
+  id: DocDisposalReport
+  name: Disposal Report
+  components:
+  - type: Paper
+    content: doc-text-printer-disposal-report
+
+- type: entity
+  parent: PaperFormCargo
+  id: DocExpeditionPermission
+  name: Cargo Permission to Expedition
+  components:
+  - type: Paper
+    content: doc-text-printer-cargo-permission-to-an-expedition
+
+- type: entity
+  parent: PaperFormCargo
+  id: DocPOInquiriesAndAppeals
+  name: Purchase Order
+  components:
+  - type: Paper
+    content: doc-text-printer-purchase-order
+
+- type: entity
+  parent: PaperFormCC
+  id: DocEvacOrder
+  name: Evacuation Order
+  components:
+  - type: Paper
+    content: doc-text-printer-evacuation-order
+
+- type: entity
+  parent: PaperFormCC
+  id: DocSGOrder
+  name: Station Goal Order
+  components:
+  - type: Paper
+    content: doc-text-printer-station-goal-order
+
+- type: entity
+  parent: PaperFormCC
+  id: DocSSROrder
+  name: Station Situation Report Order
+  components:
+  - type: Paper
+    content: doc-text-printer-station-situation-report-order
+
+- type: entity
+  parent: PaperFormCC
+  id: DocAOHInquiriesAndAppeals
+  name: Decree on Availability of Headers
+  components:
+  - type: Paper
+    content: doc-text-printer-decree-on-the-availability-of-headers
+
+- type: entity
+  parent: PaperFormCC
+  id: DocExecutiveOrder
+  name: Executive Order
+  components:
+  - type: Paper
+    content: doc-text-printer-executive-order
+
+- type: entity
+  parent: PaperFormCC
+  id: DocDeliveryOrder
+  name: Delivery Order
+  components:
+  - type: Paper
+    content: doc-text-printer-delivery-order
+
+- type: entity
+  parent: PaperFormCC
+  id: DocCCReport
+  name: Central Command Report
+  components:
+  - type: Paper
+    content: doc-text-printer-cent-comm-report
+
+- type: entity
+  parent: PaperFormCC
+  id: DocCCFMReport
+  name: Central Command Fire Mission Report
+  components:
+  - type: Paper
+    content: doc-text-printer-cent-comm-fire-mission-report
+
+- type: entity
+  parent: PaperFormCC
+  id: DocOperationOrder
+  name: Operation Order
+  components:
+  - type: Paper
+    content: doc-text-printer-operation-order
+
+- type: entity
+  parent: PaperFormCC
+  id: DocOperationReport
+  name: Operation Report
+  components:
+  - type: Paper
+    content: doc-text-printer-operation-report

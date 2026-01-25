@@ -27,9 +27,6 @@
     runningState: building
     staticPacks:
     - CorvaxDocumentsPack
-  - type: EmagLatheRecipes
-    emagStaticPacks:
-    - CorvaxEmagDocumentsPack
   - type: Fixtures
     fixtures:
       fix1:
@@ -47,7 +44,7 @@
       - Document
     storage:
       PrinterPaper: 0
-  - type: DocumentPrinter 
+  - type: DocumentPrinter
   - type: ContainerContainer
     containers:
       machine_board: !type:Container

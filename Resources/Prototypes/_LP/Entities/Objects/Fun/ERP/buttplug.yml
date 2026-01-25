@@ -1,0 +1,256 @@
+﻿- type: entity
+  name: big green buttplug
+  id: LPPBigGreenButtplug
+  parent: LPPClothingUnderwearBase
+  description: A hamburger bun. Round and convenient to hold.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Buttplug/BGreen.rsi
+    scale: 1.0, 1.0
+    layers:
+      - state: green_big
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Buttplug/BGreen.rsi
+    heldPrefix: buttplug
+    size: Tiny
+  - type: Tag
+    tags:
+    - Buttplug
+
+- type: entity
+  name: Medium green buttplug
+  id: LPPMedGreenButtplug
+  parent: LPPBigGreenButtplug
+  description: A hamburger bun. Round and convenient to hold.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Buttplug/MGreen.rsi
+    layers:
+      - state: green_med
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Buttplug/MGreen.rsi
+    heldPrefix: buttplug
+
+- type: entity
+  name: Small green buttplug
+  id: LPPSmallGreenButtplug
+  parent: LPPBigGreenButtplug
+  description: A hamburger bun. Round and convenient to hold.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Buttplug/SGreen.rsi
+    layers:
+      - state: green_small
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Buttplug/SGreen.rsi
+    heldPrefix: buttplug
+
+- type: entity
+  name: big metal buttplug
+  id: LPPBigmetalButtplug
+  parent: LPPBigGreenButtplug
+  description: A hamburger bun. Round and convenient to hold.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Buttplug/BMetal.rsi
+    layers:
+      - state: metal_big
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Buttplug/BMetal.rsi
+    heldPrefix: buttplug
+
+- type: entity
+  name: Medium metal buttplug
+  id: LPPMedmetalButtplug
+  parent: LPPBigGreenButtplug
+  description: A hamburger bun. Round and convenient to hold.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Buttplug/MMetal.rsi
+    layers:
+      - state: metal_med
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Buttplug/MMetal.rsi
+    heldPrefix: buttplug
+
+- type: entity
+  name: Small metal buttplug
+  id: LPPSmallmetalButtplug
+  parent: LPPBigGreenButtplug
+  description: A hamburger bun. Round and convenient to hold.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Buttplug/SMetal.rsi
+    layers:
+      - state: metal_small
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Buttplug/SMetal.rsi
+    heldPrefix: buttplug
+
+- type: entity
+  name: big pink buttplug
+  id: LPPBigpinkButtplug
+  parent: LPPBigGreenButtplug
+  description: A hamburger bun. Round and convenient to hold.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Buttplug/BPink.rsi
+    layers:
+      - state: pink_big
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Buttplug/BPink.rsi
+    heldPrefix: buttplug
+
+- type: entity
+  name: Medium pink buttplug
+  id: LPPMedpinkButtplug
+  parent: LPPBigGreenButtplug
+  description: A hamburger bun. Round and convenient to hold.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Buttplug/MPink.rsi
+    layers:
+      - state: pink_med
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Buttplug/MPink.rsi
+    heldPrefix: buttplug
+
+- type: entity
+  name: Small pink buttplug
+  id: LPPSmallpinkButtplug
+  parent: LPPBigGreenButtplug
+  description: A hamburger bun. Round and convenient to hold.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Buttplug/SPink.rsi
+    layers:
+      - state: pink_small
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Buttplug/SPink.rsi
+    heldPrefix: buttplug
+
+- type: entity
+  name: big tail buttplug
+  id: LPPBigtailButtplug
+  parent: LPPBigGreenButtplug
+  description: A hamburger bun. Round and convenient to hold.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/buttplugtail/big.rsi
+    layers:
+    - state: icon
+  - type: Item
+    sprite: _LP/Clothing/Underwear/buttplugtail/big.rsi
+    heldPrefix: buttplug
+
+- type: entity
+  name: Medium tail buttplug
+  id: LPPMedtailButtplug
+  parent: LPPBigGreenButtplug
+  description: A hamburger bun. Round and convenient to hold.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/buttplugtail/medium.rsi
+    layers:
+    - state: icon
+  - type: Item
+    sprite: _LP/Clothing/Underwear/buttplugtail/medium.rsi
+    heldPrefix: buttplug
+
+- type: entity
+  name: Small tail buttplug
+  id: LPPSmalltailButtplug
+  parent: LPPBigGreenButtplug
+  description: A hamburger bun. Round and convenient to hold.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/buttplugtail/small.rsi
+    layers:
+    - state: icon
+  - type: Item
+    sprite: _LP/Clothing/Underwear/buttplugtail/small.rsi
+    heldPrefix: buttplug
+
+- type: entity
+  name: big teal buttplug
+  id: LPPBigtealButtplug
+  parent: LPPBigGreenButtplug
+  description: A hamburger bun. Round and convenient to hold.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Buttplug/BTeal.rsi
+    layers:
+      - state: teal_big
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Buttplug/BTeal.rsi
+    heldPrefix: buttplug
+
+- type: entity
+  name: Medium teal buttplug
+  id: LPPMedtealButtplug
+  parent: LPPBigGreenButtplug
+  description: A hamburger bun. Round and convenient to hold.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Buttplug/MTeal.rsi
+    layers:
+      - state: teal_med
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Buttplug/MTeal.rsi
+    heldPrefix: buttplug
+
+- type: entity
+  name: Small teal buttplug
+  id: LPPSmalltealButtplug
+  parent: LPPBigGreenButtplug
+  description: A hamburger bun. Round and convenient to hold.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Buttplug/STeal.rsi
+    layers:
+      - state: teal_small
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Buttplug/STeal.rsi
+    heldPrefix: buttplug
+
+- type: entity
+  name: big yellow buttplug
+  id: LPPBigyellowButtplug
+  parent: LPPBigGreenButtplug
+  description: A hamburger bun. Round and convenient to hold.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Buttplug/BYellow.rsi
+    layers:
+      - state: yellow_big
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Buttplug/BYellow.rsi
+    heldPrefix: buttplug
+
+- type: entity
+  name: Medium yellow buttplug
+  id: LPPMedyellowButtplug
+  parent: LPPBigGreenButtplug
+  description: A hamburger bun. Round and convenient to hold.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Buttplug/MYellow.rsi
+    layers:
+      - state: yellow_med
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Buttplug/MYellow.rsi
+    heldPrefix: buttplug
+
+- type: entity
+  name: Small yellow buttplug
+  id: LPPSmallyellowButtplug
+  parent: LPPBigGreenButtplug
+  description: A hamburger bun. Round and convenient to hold.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Buttplug/SYellow.rsi
+    layers:
+      - state: yellow_small
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Buttplug/SYellow.rsi
+    heldPrefix: buttplug

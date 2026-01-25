@@ -1,0 +1,26 @@
+﻿{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Dildo sprites (equipped-HELMET, plunger-inhand-left || right) from Kasey https://github.com/BitBoxxxer on github",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "dildo_canine"
+        },
+        {
+            "name": "dildo-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "dildo-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "equipped-HELMET",
+            "directions": 4
+        }
+    ]
+}

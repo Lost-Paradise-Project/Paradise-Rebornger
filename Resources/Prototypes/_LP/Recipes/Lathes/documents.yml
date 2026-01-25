@@ -1,0 +1,849 @@
+﻿- type: latheRecipe
+  id: RecipeDocStReport
+  result: DocStReport
+  categories:
+  - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocADStatement
+  result: DocADStatement
+  categories:
+  - Statements
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocRRTInquiriesAndAppeals
+  result: DocRRTInquiriesAndAppeals
+  categories:
+  - InquiriesAndAppeals
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocESStatement
+  result: DocESStatement
+  categories:
+  - Statements
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocBASStatement
+  result: DocBASStatement
+  categories:
+  - Statements
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocDWReport
+  result: DocDWReport
+  categories:
+  - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocRAOrders
+  result: DocRAOrders
+  categories:
+  - Orders
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocEWReport
+  result: DocEWReport
+  categories:
+  - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocDHMReport
+  result: DocDHMReport
+  categories:
+  - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocPAStatement
+  result: DocPAStatement
+  categories:
+  - Statements
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocAAStatement
+  result: DocAAStatement
+  categories:
+  - Statements
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocJRSOrder
+  result: DocJRSOrder
+  categories:
+  - Orders
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocROrder
+  result: DocROrder
+  categories:
+  - Orders
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocAFEStatements
+  result: DocAFEStatements
+  categories:
+  - Statements
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocPFEPermissions
+  result: DocPFEPermissions
+  categories:
+  - Permissions
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocVOLOComplaints
+  result: DocVOLOComplaints
+  categories:
+  - Complaintst
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocIAAReport
+  result: DocIAAReport
+  categories:
+  - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocIFRLDInquiriesAndAppeals
+  result: DocIFRLDInquiriesAndAppeals
+  categories:
+  - InquiriesAndAppeals
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocCTOrder
+  result: DocCTOrder
+  categories:
+  - Orders
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocParoleInquiriesAndAppeals
+  result: DocParoleInquiriesAndAppeals
+  categories:
+  - InquiriesAndAppeals
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocROCStatement
+  result: DocROCStatement
+  categories:
+  - Statements
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocCTWStatement
+  result: DocCTWStatement
+  categories:
+  - Statements
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocInquiriesAndAppeals
+  result: DocInquiriesAndAppeals
+  categories:
+  - InquiriesAndAppeals
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocRILDOrder
+  result: DocRILDOrder
+  categories:
+  - Orders
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocCVConclusionsAndDecisions
+  result: DocCVConclusionsAndDecisions
+  categories:
+  - ConclusionsAndDecisions
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocBIRStatement
+  result: DocBIRStatement
+  categories:
+  - Statements
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocBIOrder
+  result: DocBIOrder
+  categories:
+  - Orders
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocAdjustmentOrder
+  result: DocAdjustmentOrder
+  categories:
+  - Orders
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocCAOComplaints
+  result: DocCAOComplaints
+  categories:
+  - Complaintst
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocATWOrder
+  result: DocATWOrder
+  categories:
+  - Orders
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocDutyOrder
+  result: DocDutyOrder
+  categories:
+  - Orders
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocPFSDWPermissions
+  result: DocPFSDWPermissions
+  categories:
+  - Permissions
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocILOAReport
+  result: DocILOAReport
+  categories:
+  - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocIReport
+  result: DocIReport
+  categories:
+  - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocVerdictConclusionsAndDecisions
+  result: DocVerdictConclusionsAndDecisions
+  categories:
+  - ConclusionsAndDecisions
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocCOOReport
+  result: DocCOOReport
+  categories:
+  - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocSWPermission
+  result: DocSWPermission
+  categories:
+  - Permissions
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocWAPermission
+  result: DocWAPermission
+  categories:
+  - Permissions
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocPPOrder
+  result: DocPPOrder
+  categories:
+  - Orders
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocMIOrder
+  result: DocMIOrder
+  categories:
+  - Orders
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocProductionInquiriesAndAppeals
+  result: DocProductionInquiriesAndAppeals
+  categories:
+  - InquiriesAndAppeals
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocCMIOrder
+  result: DocCMIOrder
+  categories:
+  - Orders
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocCMIReport
+  result: DocCMIReport
+  categories:
+  - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocPSReportMed
+  result: DocPSReport
+  categories:
+  - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocAFPDPermission
+  result: DocAFPDPermission
+  categories:
+  - Permissions
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocSHReport
+  result: DocSHReport
+  categories:
+  - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocMDDOrder
+  result: DocMDDOrder
+  categories:
+  - Orders
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocEuthanasiaInquiriesAndAppeals
+  result: DocEuthanasiaInquiriesAndAppeals
+  categories:
+  - InquiriesAndAppeals
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocDeathReport
+  result: DocDeathReport
+  categories:
+  - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocBDPermission
+  result: DocBDPermission
+  categories:
+  - Permissions
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocInfectionReport
+  result: DocInfectionReport
+  categories:
+  - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocQuarantineOrder
+  result: DocQuarantineOrder
+  categories:
+  - Orders
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocEpidemiologicalReport
+  result: DocEpidemiologicalReport
+  categories:
+  - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocEPPInquiriesAndAppeals
+  result: DocEPPInquiriesAndAppeals
+  categories:
+  - InquiriesAndAppeals
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocLEDReport
+  result: DocLEDReport
+  categories:
+  - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocBuildingPermission
+  result: DocBuildingPermission
+  categories:
+  - Permissions
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocTCReport
+  result: DocTCReport
+  categories:
+  - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocRCWInquiriesAndAppeals
+  result: DocRCWInquiriesAndAppeals
+  categories:
+  - InquiriesAndAppeals
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocPPInquiriesAndAppeals
+  result: DocPPInquiriesAndAppeals
+  categories:
+  - InquiriesAndAppeals
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocPSReportSci
+  result: DocPSReport
+  categories:
+  - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocExperimentReport
+  result: DocExperimentReport
+  categories:
+  - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocExpeditionReport
+  result: DocExpeditionReport
+  categories:
+  - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocADReport
+  result: DocADReport
+  categories:
+  - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocRRBOrder
+  result: DocRRBOrder
+  categories:
+  - Orders
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocLOSDReport
+  result: DocLOSDReport
+  categories:
+  - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocDisposalReport
+  result: DocDisposalReport
+  categories:
+  - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocExpeditionPermission
+  result: DocExpeditionPermission
+  categories:
+  - Permissions
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocPOInquiriesAndAppeals
+  result: DocPOInquiriesAndAppeals
+  categories:
+  - InquiriesAndAppeals
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocEvacOrder
+  result: DocEvacOrder
+  categories:
+  - Orders
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocSGOrder
+  result: DocSGOrder
+  categories:
+  - Orders
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocSSROrder
+  result: DocSSROrder
+  categories:
+  - Orders
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocAOHInquiriesAndAppeals
+  result: DocAOHInquiriesAndAppeals
+  categories:
+  - InquiriesAndAppeals
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocExecutiveOrder
+  result: DocExecutiveOrder
+  categories:
+  - Orders
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocDeliveryOrder
+  result: DocDeliveryOrder
+  categories:
+  - Orders
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocCCReport
+  result: DocCCReport
+  categories:
+  - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocCCFMReport
+  result: DocCCFMReport
+  categories:
+  - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocOperationOrder
+  result: DocOperationOrder
+  categories:
+  - Orders
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocOperationReport
+  result: DocOperationReport
+  categories:
+  - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocCCRStatement
+  result: DocCCRStatement
+  categories:
+  - Statements
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocJAStatment
+  result: DocJAStatment
+  categories:
+  - Statements
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocJRStatment
+  result: DocJRStatment
+  categories:
+  - Statements
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocCPDStatements
+  result: DocCPDStatements
+  categories:
+  - Statements
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocAmenstyStatements
+  result: DocAmenstyStatements
+  categories:
+  - Statements
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocPSReport
+  result: DocPSReport
+  categories:
+  - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: RecipeDocOSReport
+  result: DocOSReport
+  categories:
+  - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    Paper: 100

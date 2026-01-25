@@ -1,4 +1,5 @@
 - type: entity
+  categories: [ HideSpawnMenu ]
   name: spanish army knife
   parent: BaseItem
   id: ToolDebug

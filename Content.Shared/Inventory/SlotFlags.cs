@@ -22,6 +22,11 @@ public enum SlotFlags
     BELT = 1 << 9,
     GLOVES = 1 << 10,
     IDCARD = 1 << 11,
+    // LP edit start
+    SOCKS = 1 << 16,
+    UNDERWEAR = 1 << 17,
+    BREAST = 1 << 18,
+    // LP edit end
     POCKET = 1 << 12,
     LEGS = 1 << 13,
     FEET = 1 << 14,

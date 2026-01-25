@@ -1,0 +1,28 @@
+﻿{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "vibrator sprites (vibrator-inhand-left || right) from Kasey https://github.com/BitBoxxxer on github. Taken from BlueMoon github https://github.com/BlueMoon-Labs/SERP-BlueMoon-Station-13",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "vibrator_green"
+        },
+        {
+            "name": "vibrator-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "vibrator-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "vibrator_green_gif",
+            "delays": [
+                [ 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2 ]
+            ]
+        }
+    ]
+}

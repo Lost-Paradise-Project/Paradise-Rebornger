@@ -1,0 +1,105 @@
+﻿- type: entity
+  name: magicwand
+  id: LPPMagicwand
+  parent: LPPClothingUnderwearBase
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Vibrator/magicwand.rsi
+    scale: 1.0, 1.0
+    layers:
+      - state: magicwand_gif
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Vibrator/magicwand.rsi
+    heldPrefix: vibrator
+    size: Normal
+  - type: Tag
+    tags:
+    - Vibrator
+  - type: StaminaDamageOnHit
+    damage: 8
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    soundHit:
+      collection: Dildo
+      params:
+        variation: 0.03
+        volume: 3
+    soundNoDamage:
+      collection: Dildo
+      params:
+        variation: 0.03
+        volume: 3
+    damage:
+      types:
+        Blunt: 0
+
+- type: entity
+  name: vibrator green
+  id: LPPVibratorGreen
+  parent: LPPMagicwand
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Vibrator/vibrator_green.rsi
+    layers:
+      - state: vibrator_green_gif
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Vibrator/vibrator_green.rsi
+    heldPrefix: vibrator
+
+- type: entity
+  name: vibrator pink
+  id: LPPVibratorPink
+  parent: LPPMagicwand
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Vibrator/vibrator_pink.rsi
+    layers:
+      - state: vibrator_pink_gif
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Vibrator/vibrator_pink.rsi
+    heldPrefix: vibrator
+
+- type: entity
+  name: vibrator red
+  id: LPPVibratorRed
+  parent: LPPMagicwand
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Vibrator/vibrator_red.rsi
+    layers:
+      - state: vibrator_red_gif
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Vibrator/vibrator_red.rsi
+    heldPrefix: vibrator
+
+- type: entity
+  name: vibrator teal
+  id: LPPVibratorTeal
+  parent: LPPMagicwand
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Vibrator/vibrator_teal.rsi
+    layers:
+      - state: vibrator_teal_gif
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Vibrator/vibrator_teal.rsi
+    heldPrefix: vibrator
+
+- type: entity
+  name: vibrator yellow
+  id: LPPVibratorYellow
+  parent: LPPMagicwand
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Vibrator/vibrator_yellow.rsi
+    layers:
+      - state: vibrator_yellow_gif
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Vibrator/vibrator_yellow.rsi
+    heldPrefix: vibrator

@@ -1,4 +1,5 @@
 - type: entity
+  categories: [ HideSpawnMenu ]
   id: PathfindPoint
   parent: MarkerBase
   name: pathfind point

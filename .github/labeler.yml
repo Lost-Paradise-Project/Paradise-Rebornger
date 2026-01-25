@@ -1,31 +1,64 @@
-﻿"Changes: Sprites":
+﻿":musical_note: Звуки :musical_note:":
 - changed-files:
-  - any-glob-to-any-file: '**/*.rsi/*.png'
+  - any-glob-to-any-file: "**/*.ogg"
 
-"Changes: Map":
+":shark: C# :shark:":
+- changed-files:
+  - any-glob-to-any-file: "**/*.cs"
+
+":gear: Конфиги :gear:":
 - changed-files:
   - any-glob-to-any-file:
-    - 'Resources/Maps/**/*.yml'
-    - 'Resources/Prototypes/Maps/**/*.yml'
-    - 'Resources/Prototypes/Corvax/Maps/**/*.yml'
+    - "**/*.toml"
+    - "**/*.config"
+    - "*.json"
+    - ".github/*.yml"
+    - ".github/*.json"
+    - ".vscode/*.json"
+    - ".editorconfig"
 
-"Changes: UI":
+":book: Документация :book:":
 - changed-files:
-  - any-glob-to-any-file: '**/*.xaml*'
+  - any-glob-to-any-file:
+    - "**/*.xml"
+    - "**/*.md"
 
-"Changes: Shaders":
+":page_facing_up: Локализация :page_facing_up:":
+- changed-files:
+  - any-glob-to-any-file: 'Resources/Locale/**/*.ftl'
+
+":world_map: Карты :world_map:":
+- changed-files:
+  - any-glob-to-any-file:
+    - "Resources/Maps/**/*.yml"
+    - "Resources/Prototypes/Maps/**/*.yml"
+
+":art: Спрайты :art:":
+- changed-files:
+  - any-glob-to-any-file:
+    - "**/*.rsi/*.png"
+    - "**/*.rsi/*.json"
+
+":computer: Интерфейс :computer:":
+- changed-files:
+  - any-glob-to-any-file: "**/*.xaml*"
+
+":baby_chick: YML :baby_chick:":
+- changed-files:
+  - any-glob-to-any-file:
+    - "**/*.yml"
+  - all-globs-to-all-files:
+    - "!Resources/Maps/**/*.yml"
+    - "!Resources/Prototypes/Maps/**/*.yml"
+
+":wrench: GitHub Workflow :wrench:":
+- changed-files:
+  - any-glob-to-any-file: ".github/workflows/*.yml"
+
+":crystal_ball: Шейдеры :crystal_ball:":
 - changed-files:
   - any-glob-to-any-file: '**/*.swsl'
 
-"Changes: Audio":
+":no_entry: Не C# :no_entry:":
 - changed-files:
-  - any-glob-to-any-file: '**/*.ogg'
-
-"Changes: Localization":
-- changed-files:
-  - any-glob-to-any-file: '**/*.ftl'
-
-"Changes: No C#":
-- changed-files:
-  # Equiv to any-glob-to-all as long as this has one matcher. If ALL changed files are not C# files, then apply label.
   - all-globs-to-all-files: "!**/*.cs"

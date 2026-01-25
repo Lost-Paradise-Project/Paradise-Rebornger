@@ -71,8 +71,6 @@
   id: DresserMainLootEntityTable
   table: !type:GroupSelector
     children:
-    - id: ClothingNeckLGBTPin
-      weight: 0.06
     - id: ClothingUniformJumpsuitColorGrey
       weight: 0.06
     - id: ClothingUniformJumpskirtColorGrey

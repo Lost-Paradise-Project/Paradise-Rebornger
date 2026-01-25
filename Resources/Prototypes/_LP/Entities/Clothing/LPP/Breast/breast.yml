@@ -1,0 +1,2873 @@
+﻿- type: entity
+  abstract: true
+  parent: Clothing
+  id: LPPClothingBreastBase
+  name: based breast
+  components:
+  - type: Sprite
+    state: icon
+  - type: Item
+    size: Tiny
+  - type: Clothing
+    slots: BREAST
+  - type: Tag
+    tags:
+    - breast
+
+
+#------------------------Bra------------------------
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBlack
+  name: bra
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Bra/white.rsi
+    layers:
+    - state: icon
+      color: "#0C0C0C"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Bra/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#0C0C0C"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBlue
+  name: bra
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Bra/white.rsi
+    layers:
+    - state: icon
+      color: "#52AECC"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Bra/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#52AECC"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBrown
+  name: bra
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Bra/white.rsi
+    layers:
+    - state: icon
+      color: "#A17229"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Bra/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#A17229"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraGreen
+  name: bra
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Bra/white.rsi
+    layers:
+    - state: icon
+      color: "#6FBC22"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Bra/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#6FBC22"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraGrey
+  name: bra
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Bra/white.rsi
+    layers:
+    - state: icon
+      color: "#B3B3B3"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Bra/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#B3B3B3"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraLightpurple
+  name: bra
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Bra/white.rsi
+    layers:
+    - state: icon
+      color: "#944DFE"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Bra/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#944DFE"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraMaroon
+  name: bra
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Bra/white.rsi
+    layers:
+    - state: icon
+      color: "#BE273E"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Bra/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#BE273E"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraOrange
+  name: bra
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Bra/white.rsi
+    layers:
+    - state: icon
+      color: "#FF8C19"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Bra/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FF8C19"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraRed
+  name: bra
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Bra/white.rsi
+    layers:
+    - state: icon
+      color: "#EE1511"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Bra/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#EE1511"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraTeal
+  name: bra
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Bra/white.rsi
+    layers:
+    - state: icon
+      color: "#77F3B7"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Bra/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#77F3B7"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraWhite
+  name: bra
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Bra/white.rsi
+    layers:
+    - state: icon
+      color: "#FFFFFF"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Bra/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FFFFFF"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraAlt
+  name: bra alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraAlt/white.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraYellow
+  name: bra
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Bra/white.rsi
+    layers:
+    - state: icon
+      color: "#FBC72D"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Bra/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FBC72D"
+
+#---------------------------------------------------
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBeeKini
+  name: bra bee kini
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/bra_bee-kini.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraCommie
+  name: bra commie
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/bra_commie.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraKinky
+  name: bra kinky
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/bra_kinky.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraThin
+  name: bra thin
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/bra_thin.rsi
+
+#-----------------------BraAlt----------------------
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraAltBlack
+  name: bra alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#0C0C0C"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#0C0C0C"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraAltBlue
+  name: bra alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#52AECC"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#52AECC"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraAltBrown
+  name: bra alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#A17229"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#A17229"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraAltGreen
+  name: bra alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#6FBC22"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#6FBC22"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraAltGrey
+  name: bra alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#B3B3B3"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#B3B3B3"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraAltLightpurple
+  name: bra alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#944DFE"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#944DFE"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraAltMaroon
+  name: bra alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#BE273E"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#BE273E"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraAltOrange
+  name: bra alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#FF8C19"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FF8C19"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraAltRed
+  name: bra alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#EE1511"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#EE1511"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraAltTeal
+  name: bra alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#77F3B7"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#77F3B7"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraAltWhite
+  name: bra alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#FFFFFF"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FFFFFF"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraAltYellow
+  name: bra alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#FBC72D"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FBC72D"
+
+#---------------------BraBinder----------------------
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderBlack
+  name: bra binder
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    layers:
+    - state: icon
+      color: "#0C0C0C"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#0C0C0C"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderBlue
+  name: bra binder
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    layers:
+    - state: icon
+      color: "#52AECC"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#52AECC"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderBrown
+  name: bra binder
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    layers:
+    - state: icon
+      color: "#A17229"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#A17229"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderGreen
+  name: bra binder
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    layers:
+    - state: icon
+      color: "#6FBC22"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#6FBC22"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderGrey
+  name: bra binder
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    layers:
+    - state: icon
+      color: "#B3B3B3"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#B3B3B3"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderLightpurple
+  name: bra binder
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    layers:
+    - state: icon
+      color: "#944DFE"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#944DFE"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderMaroon
+  name: bra binder
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    layers:
+    - state: icon
+      color: "#BE273E"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#BE273E"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderOrange
+  name: bra binder
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    layers:
+    - state: icon
+      color: "#FF8C19"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FF8C19"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderRed
+  name: bra binder
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    layers:
+    - state: icon
+      color: "#EE1511"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#EE1511"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderTeal
+  name: bra binder
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    layers:
+    - state: icon
+      color: "#77F3B7"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#77F3B7"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderWhite
+  name: bra binder
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    layers:
+    - state: icon
+      color: "#FFFFFF"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FFFFFF"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderYellow
+  name: bra binder
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    layers:
+    - state: icon
+      color: "#FBC72D"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FBC72D"
+
+#-----------------BraBinderStrapless-----------------
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderStraplessBlack
+  name: bra binder strapless
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#0C0C0C"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#0C0C0C"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderStraplessBlue
+  name: bra binder strapless
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#52AECC"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#52AECC"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderStraplessBrown
+  name: bra binder strapless
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#A17229"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#A17229"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderStraplessGreen
+  name: bra binder strapless
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#6FBC22"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#6FBC22"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderStraplessGrey
+  name: bra binder strapless
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#B3B3B3"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#B3B3B3"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderStraplessLightpurple
+  name: bra binder strapless
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#944DFE"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#944DFE"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderStraplessMaroon
+  name: bra binder strapless
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#BE273E"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#BE273E"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderStraplessOrange
+  name: bra binder strapless
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#FF8C19"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FF8C19"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderStraplessRed
+  name: bra binder strapless
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#EE1511"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#EE1511"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderStraplessTeal
+  name: bra binder strapless
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#77F3B7"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#77F3B7"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderStraplessWhite
+  name: bra binder strapless
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#FFFFFF"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FFFFFF"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderStraplessYellow
+  name: bra binder strapless
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#FBC72D"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FBC72D"
+
+#---------------------BraNeko----------------------
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraNekoBlack
+  name: bra neko
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraNeko/white.rsi
+    layers:
+    - state: icon
+      color: "#0C0C0C"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraNeko/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#0C0C0C"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraNekoBlue
+  name: bra neko
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraNeko/white.rsi
+    layers:
+    - state: icon
+      color: "#52AECC"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraNeko/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#52AECC"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraNekoBrown
+  name: bra neko
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraNeko/white.rsi
+    layers:
+    - state: icon
+      color: "#A17229"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraNeko/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#A17229"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraNekoGreen
+  name: bra neko
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraNeko/white.rsi
+    layers:
+    - state: icon
+      color: "#6FBC22"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraNeko/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#6FBC22"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraNekoGrey
+  name: bra neko
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraNeko/white.rsi
+    layers:
+    - state: icon
+      color: "#B3B3B3"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraNeko/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#B3B3B3"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraNekoLightpurple
+  name: bra neko
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraNeko/white.rsi
+    layers:
+    - state: icon
+      color: "#944DFE"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraNeko/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#944DFE"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraNekoMaroon
+  name: bra neko
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraNeko/white.rsi
+    layers:
+    - state: icon
+      color: "#BE273E"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraNeko/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#BE273E"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraNekoOrange
+  name: bra neko
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraNeko/white.rsi
+    layers:
+    - state: icon
+      color: "#FF8C19"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraNeko/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FF8C19"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraNekoRed
+  name: bra neko
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraNeko/white.rsi
+    layers:
+    - state: icon
+      color: "#EE1511"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraNeko/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#EE1511"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraNekoTeal
+  name: bra neko
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraNeko/white.rsi
+    layers:
+    - state: icon
+      color: "#77F3B7"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraNeko/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#77F3B7"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraNekoWhite
+  name: bra neko
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraNeko/white.rsi
+    layers:
+    - state: icon
+      color: "#FFFFFF"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraNeko/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FFFFFF"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraNekoYellow
+  name: bra neko
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraNeko/white.rsi
+    layers:
+    - state: icon
+      color: "#FBC72D"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraNeko/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FBC72D"
+
+#------------------BraStrapless-------------------
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraStraplessBlack
+  name: bra strapless
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#0C0C0C"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#0C0C0C"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraStraplessBlue
+  name: bra strapless
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#52AECC"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#52AECC"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraStraplessBrown
+  name: bra strapless
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#A17229"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#A17229"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraStraplessGreen
+  name: bra strapless
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#6FBC22"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#6FBC22"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraStraplessGrey
+  name: bra strapless
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#B3B3B3"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#B3B3B3"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraStraplessLightpurple
+  name: bra strapless
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#944DFE"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#944DFE"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraStraplessMaroon
+  name: bra strapless
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#BE273E"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#BE273E"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraStraplessOrange
+  name: bra strapless
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#FF8C19"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FF8C19"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraStraplessRed
+  name: bra strapless
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#EE1511"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#EE1511"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraStraplessTeal
+  name: bra strapless
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#77F3B7"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#77F3B7"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraStraplessWhite
+  name: bra strapless
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#FFFFFF"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FFFFFF"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraStraplessYellow
+  name: bra strapless
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#FBC72D"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FBC72D"
+
+#------------------BraStraplessAlt---------------------
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraStraplessAltBlack
+  name: bra strapless alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#0C0C0C"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#0C0C0C"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraStraplessAltBlue
+  name: bra strapless alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#52AECC"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#52AECC"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraStraplessAltBrown
+  name: bra strapless alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#A17229"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#A17229"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraStraplessAltGreen
+  name: bra strapless alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#6FBC22"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#6FBC22"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraStraplessAltGrey
+  name: bra strapless alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#B3B3B3"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#B3B3B3"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraStraplessAltLightpurple
+  name: bra strapless alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#944DFE"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#944DFE"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraStraplessAltMaroon
+  name: bra strapless alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#BE273E"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#BE273E"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraStraplessAltOrange
+  name: bra strapless alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#FF8C19"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FF8C19"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraStraplessAltRed
+  name: bra strapless alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#EE1511"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#EE1511"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraStraplessAltTeal
+  name: bra strapless alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#77F3B7"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#77F3B7"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraStraplessAltWhite
+  name: bra strapless alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#FFFFFF"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FFFFFF"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraStraplessAltYellow
+  name: bra strapless alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#FBC72D"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FBC72D"
+
+#----------------------BraSwimming------------------------
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraSwimmingBlack
+  name: bra swimming
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
+    layers:
+    - state: icon
+      color: "#0C0C0C"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#0C0C0C"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraSwimmingBlue
+  name: bra swimming
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
+    layers:
+    - state: icon
+      color: "#52AECC"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#52AECC"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraSwimmingBrown
+  name: bra swimming
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
+    layers:
+    - state: icon
+      color: "#A17229"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#A17229"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraSwimmingGreen
+  name: bra swimming
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
+    layers:
+    - state: icon
+      color: "#6FBC22"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#6FBC22"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraSwimmingGrey
+  name: bra swimming
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
+    layers:
+    - state: icon
+      color: "#B3B3B3"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#B3B3B3"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraSwimmingLightpurple
+  name: bra swimming
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
+    layers:
+    - state: icon
+      color: "#944DFE"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#944DFE"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraSwimmingMaroon
+  name: bra swimming
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
+    layers:
+    - state: icon
+      color: "#BE273E"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#BE273E"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraSwimmingOrange
+  name: bra swimming
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
+    layers:
+    - state: icon
+      color: "#FF8C19"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FF8C19"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraSwimmingRed
+  name: bra swimming
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
+    layers:
+    - state: icon
+      color: "#EE1511"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#EE1511"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraSwimmingTeal
+  name: bra swimming
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
+    layers:
+    - state: icon
+      color: "#77F3B7"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#77F3B7"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraSwimmingWhite
+  name: bra swimming
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
+    layers:
+    - state: icon
+      color: "#FFFFFF"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FFFFFF"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraSwimmingYellow
+  name: bra swimming
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
+    layers:
+    - state: icon
+      color: "#FBC72D"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FBC72D"
+
+#----------------------BraSwimmingAlt------------------------
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraSwimmingAltBlack
+  name: bra swimming alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#0C0C0C"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#0C0C0C"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraSwimmingAltBlue
+  name: bra swimming alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#52AECC"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#52AECC"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraSwimmingAltBrown
+  name: bra swimming alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#A17229"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#A17229"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraSwimmingAltGreen
+  name: bra swimming alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#6FBC22"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#6FBC22"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraSwimmingAltGrey
+  name: bra swimming alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#B3B3B3"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#B3B3B3"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraSwimmingAltLightpurple
+  name: bra swimming alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#944DFE"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#944DFE"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraSwimmingAltMaroon
+  name: bra swimming alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#BE273E"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#BE273E"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraSwimmingAltOrange
+  name: bra swimming alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#FF8C19"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FF8C19"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraSwimmingAltRed
+  name: bra swimming alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#EE1511"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#EE1511"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraSwimmingAltTeal
+  name: bra swimming alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#77F3B7"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#77F3B7"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraSwimmingAltWhite
+  name: bra swimming alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#FFFFFF"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FFFFFF"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraSwimmingAltYellow
+  name: bra swimming alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#FBC72D"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FBC72D"
+
+#---------------------------------------------------
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPFishnetBody
+  name: fishnet body
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/fishnet_body.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPFishnetGloves
+  name: fishnet gloves
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/fishnet_gloves.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPFishnetSleeves
+  name: fishnet sleeves
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/fishnet_sleeves.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraHalterneck
+  name: bra halterneck
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/halterneck_bra.rsi
+
+#----------------------SportsBra------------------------
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPSportsBraBlack
+  name: sports bra
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/SportsBra/white.rsi
+    layers:
+    - state: icon
+      color: "#0C0C0C"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/SportsBra/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#0C0C0C"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPSportsBraBlue
+  name: sports bra
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/SportsBra/white.rsi
+    layers:
+    - state: icon
+      color: "#52AECC"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/SportsBra/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#52AECC"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPSportsBraBrown
+  name: sports bra
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/SportsBra/white.rsi
+    layers:
+    - state: icon
+      color: "#A17229"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/SportsBra/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#A17229"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPSportsBraGreen
+  name: sports bra
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/SportsBra/white.rsi
+    layers:
+    - state: icon
+      color: "#6FBC22"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/SportsBra/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#6FBC22"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPSportsBraGrey
+  name: sports bra
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/SportsBra/white.rsi
+    layers:
+    - state: icon
+      color: "#B3B3B3"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/SportsBra/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#B3B3B3"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPSportsBraLightpurple
+  name: sports bra
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/SportsBra/white.rsi
+    layers:
+    - state: icon
+      color: "#944DFE"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/SportsBra/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#944DFE"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPSportsBraMaroon
+  name: sports bra
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/SportsBra/white.rsi
+    layers:
+    - state: icon
+      color: "#BE273E"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/SportsBra/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#BE273E"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPSportsBraOrange
+  name: sports bra
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/SportsBra/white.rsi
+    layers:
+    - state: icon
+      color: "#FF8C19"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/SportsBra/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FF8C19"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPSportsBraRed
+  name: sports bra
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/SportsBra/white.rsi
+    layers:
+    - state: icon
+      color: "#EE1511"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/SportsBra/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#EE1511"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPSportsBraTeal
+  name: sports bra
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/SportsBra/white.rsi
+    layers:
+    - state: icon
+      color: "#77F3B7"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/SportsBra/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#77F3B7"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPSportsBraWhite
+  name: sports bra
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/SportsBra/white.rsi
+    layers:
+    - state: icon
+      color: "#FFFFFF"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/SportsBra/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FFFFFF"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPSportsBraYellow
+  name: sports bra
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/SportsBra/white.rsi
+    layers:
+    - state: icon
+      color: "#FBC72D"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/SportsBra/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FBC72D"
+
+#--------------------SportsBraAlt------------------------
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPSportsBraAltBlack
+  name: sports bra alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#0C0C0C"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#0C0C0C"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPSportsBraAltBlue
+  name: sports bra alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#52AECC"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#52AECC"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPSportsBraAltBrown
+  name: sports bra alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#A17229"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#A17229"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPSportsBraAltGreen
+  name: sports bra alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#6FBC22"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#6FBC22"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPSportsBraAltGrey
+  name: sports bra alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#B3B3B3"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#B3B3B3"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPSportsBraAltLightpurple
+  name: sports bra alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#944DFE"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#944DFE"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPSportsBraAltMaroon
+  name: sports bra alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#BE273E"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#BE273E"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPSportsBraAltOrange
+  name: sports bra alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#FF8C19"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FF8C19"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPSportsBraAltRed
+  name: sports bra alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#EE1511"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#EE1511"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPSportsBraAltTeal
+  name: sports bra alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#77F3B7"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#77F3B7"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPSportsBraAltWhite
+  name: sports bra alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#FFFFFF"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FFFFFF"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPSportsBraAltYellow
+  name: sports bra alt
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#FBC72D"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FBC72D"
+
+#---------------------------------------------------
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPStripedBra
+  name: striped bra
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/striped_bra.rsi
+
+#--------------------Tubetop------------------------
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPTubetopBlack
+  name: tubetop
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    layers:
+    - state: icon
+      color: "#0C0C0C"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#0C0C0C"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPTubetopBlue
+  name: tubetop
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    layers:
+    - state: icon
+      color: "#52AECC"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#52AECC"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPTubetopBrown
+  name: tubetop
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    layers:
+    - state: icon
+      color: "#A17229"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#A17229"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPTubetopGreen
+  name: tubetop
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    layers:
+    - state: icon
+      color: "#6FBC22"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#6FBC22"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPTubetopGrey
+  name: tubetop
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    layers:
+    - state: icon
+      color: "#B3B3B3"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#B3B3B3"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPTubetopLightpurple
+  name: tubetop
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    layers:
+    - state: icon
+      color: "#944DFE"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#944DFE"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPTubetopMaroon
+  name: tubetop
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    layers:
+    - state: icon
+      color: "#BE273E"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#BE273E"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPTubetopOrange
+  name: tubetop
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    layers:
+    - state: icon
+      color: "#FF8C19"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FF8C19"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPTubetopRed
+  name: tubetop
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    layers:
+    - state: icon
+      color: "#EE1511"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#EE1511"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPTubetopTeal
+  name: tubetop
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    layers:
+    - state: icon
+      color: "#77F3B7"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#77F3B7"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPTubetopWhite
+  name: tubetop
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    layers:
+    - state: icon
+      color: "#FFFFFF"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FFFFFF"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPTubetopYellow
+  name: tubetop
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    layers:
+    - state: icon
+      color: "#FBC72D"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FBC72D"
+
+#---------------------------------------------------
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBodyBra
+  name: Body Bra
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/bra/LPPBodyBra1.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/bra/LPPBodyBra1.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBodyBraCut
+  name: Body Bra Cut
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/bra/LPPBodyBra1Cut.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/bra/LPPBodyBra1Cut.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPLBodyBraCut2
+  name: Body Bra Cut v2
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/bra/LPPBodyBra1Cut2.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/bra/LPPBodyBra1Cut2.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBodyBraCut3
+  name: Body Bra Cut v3
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/bra/LPPBodyBraCut3.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/bra/LPPBodyBraCut3.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBodyBraCut4
+  name: Body Bra Cut v4
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/bra/LPPBodyBraCut4.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/bra/LPPBodyBraCut4.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBodyBra2
+  name: Body Bra v2
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/bra/LPPBodyBra2.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/bra/LPPBodyBra2.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPCutOutBodyBra2
+  name: Cut Out Body Bra v2
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/bra/LPPCutOutBodyBra2.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/bra/LPPCutOutBodyBra2.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPSwimsuitBodyBra2
+  name: Swimsuit Body Bra v2
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/bra/LPPSwimsuitBodyBra2.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/bra/LPPSwimsuitBodyBra2.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPSwimsuitplusTightsBodyBra2
+  name: Swimsuit+Tights Body Bra v2
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/bra/LPPSwimsuitplusTightsBodyBra2.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/bra/LPPSwimsuitplusTightsBodyBra2.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPTranslucentBodyBra
+  name: Translucent Body Bra
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/bra/LPPTranslucentBodyBra.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/bra/LPPTranslucentBodyBra.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPTranslucentBodyBra2
+  name: Translucent Body Bra v2
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/bra/LPPTranslucentBodyBra2.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/bra/LPPTranslucentBodyBra2.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPCutOutTop
+  name: Cut Out Top
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/bra/LPPCutOutTop.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/bra/LPPCutOutTop.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPCutOutTop2
+  name: Cut Out Top v2
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/bra/LPPCutOutTop2.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/bra/LPPCutOutTop2.rsi

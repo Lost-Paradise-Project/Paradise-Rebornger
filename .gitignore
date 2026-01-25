@@ -14,12 +14,12 @@
 *.userprefs
 
 # Secret
-Secrets
-Resources/Prototypes/CorvaxSecrets
-Resources/Prototypes/CorvaxSecretsServer
-Resources/Textures/CorvaxSecrets
-Resources/Audio/CorvaxSecrets
-Resources/Locale/ru-RU/corvax-secrets
+NewSecrets
+PShared*
+PServer*
+PClient*
+Resources/Prototypes/PPrototypes
+Resources/Textures/PTextures
 
 # Build results
 [Dd]ebug/
@@ -317,3 +317,8 @@ Resources/MapImages
 
 # Direnv stuff
 .direnv/
+
+config.json
+.github/workflows/update-prs.yaml
+# locale fix
+!Resources/Locale/**

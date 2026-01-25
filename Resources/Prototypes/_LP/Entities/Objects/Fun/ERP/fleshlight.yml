@@ -1,0 +1,112 @@
+﻿- type: entity
+  name: fleshlight green
+  id: LPPFleshlightGreen
+  parent: BaseItem
+  description: A hamburger bun. Round and convenient to hold.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Fun/ERP/Fleshlight/fleshlight_green.rsi
+    scale: 1.0, 1.0
+    state: fleshlight_green
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Fleshlight/fleshlight_green.rsi
+    heldPrefix: fleshlight
+    size: Normal
+  - type: Tag
+    tags:
+    - Fleshlight
+  - type: StaminaDamageOnHit
+    damage: 5
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    soundHit:
+      collection: Dildo
+      params:
+        variation: 0.03
+        volume: 3
+    soundNoDamage:
+      collection: Dildo
+      params:
+        variation: 0.03
+        volume: 3
+    damage:
+      types:
+        Blunt: 0
+
+- type: entity
+  name: fleshlight pink
+  id: LPPFleshlightPink
+  parent: LPPFleshlightGreen
+  description: A hamburger bun. Round and convenient to hold.
+  components:
+  - type: Sprite
+    state: fleshlight_pink
+    sprite: _LP/Objects/Fun/ERP/Fleshlight/fleshlight_pink.rsi
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Fleshlight/fleshlight_pink.rsi
+    heldPrefix: fleshlight
+
+- type: entity
+  name: fleshlight red
+  id: LPPFleshlightRed
+  parent: LPPFleshlightGreen
+  description: A hamburger bun. Round and convenient to hold.
+  components:
+  - type: Sprite
+    state: fleshlight_red
+    sprite: _LP/Objects/Fun/ERP/Fleshlight/fleshlight_red.rsi
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Fleshlight/fleshlight_red.rsi
+    heldPrefix: fleshlight
+
+- type: entity
+  name: fleshlight teal
+  id: LPPFleshlightTeal
+  parent: LPPFleshlightGreen
+  description: A hamburger bun. Round and convenient to hold.
+  components:
+  - type: Sprite
+    state: fleshlight_teal
+    sprite: _LP/Objects/Fun/ERP/Fleshlight/fleshlight_teal.rsi
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Fleshlight/fleshlight_teal.rsi
+    heldPrefix: fleshlight
+
+- type: entity
+  name: fleshlight yellow
+  id: LPPFleshlightYellow
+  parent: LPPFleshlightGreen
+  description: A hamburger bun. Round and convenient to hold.
+  components:
+  - type: Sprite
+    state: fleshlight_yellow
+    sprite: _LP/Objects/Fun/ERP/Fleshlight/fleshlight_yellow.rsi
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Fleshlight/fleshlight_yellow.rsi
+    heldPrefix: fleshlight
+
+- type: entity
+  name: pillow pink round
+  id: LPPPillowPinkRound
+  parent: LPPFleshlightGreen
+  description: A soft pillow that is comfortable to sit on.
+  components:
+  - type: Sprite
+    state: pillow_pink_round
+    sprite: _LP/Objects/Fun/ERP/Fleshlight/pillow_pink_round.rsi
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Fleshlight/pillow_pink_round.rsi
+    heldPrefix: pillow
+
+- type: entity
+  name: pillow teal round
+  id: LPPPillowTealRound
+  parent: LPPFleshlightGreen
+  description: A soft pillow that is comfortable to sit on.
+  components:
+  - type: Sprite
+    state: pillow_teal_round
+    sprite: _LP/Objects/Fun/ERP/Fleshlight/pillow_teal_round.rsi
+  - type: Item
+    sprite: _LP/Objects/Fun/ERP/Fleshlight/pillow_teal_round.rsi
+    heldPrefix: pillow

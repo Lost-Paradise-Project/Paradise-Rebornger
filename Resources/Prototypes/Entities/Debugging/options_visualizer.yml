@@ -1,4 +1,5 @@
 ﻿- type: entity
+  categories: [ HideSpawnMenu ]
   id: OptionsVisualizerTest
   suffix: DEBUG
   components:

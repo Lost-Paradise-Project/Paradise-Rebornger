@@ -1,11 +1,22 @@
 # Last match in file takes precedence.
 
-# Ping for all PRs
-* @Morb0 @JerryImMouse @DIMMoon1
+# Ping for all PR's
+* @BL02DL
 
-# Maps
-/Resources/Prototypes/Maps/** @Morb0 @DIMMoon1 @kvant8
-/Resources/Maps/** @Morb0 @DIMMoon1 @kvant8
+# Prototypes
+*.yml @MegaDaimond @BL02DL
 
-# Sprites
-/Resources/Textures/** @Morb0 @DIMMoon1 @SonicHDC
+# C#
+*.cs @BL02DL @SpicyDarkFox
+*.xaml @BL02DL @SpicyDarkFox
+
+# Map files
+/Resources/Prototypes/Maps/** @PowerKAT1 @BL02DL
+/Resources/Prototypes/**/Maps/** @PowerKAT1 @BL02DL
+/Resources/Maps/** @PowerKAT1 @BL02DL
+
+# Translations
+*.ftl @PowerKAT1 @Evgencheg
+
+# Guides
+*.xml @PowerKAT1 @BL02DL

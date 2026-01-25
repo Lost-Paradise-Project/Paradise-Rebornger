@@ -1,12 +1,10 @@
-#!/usr/bin/env python3
-
 import os
 import re
 import chardet
 from datetime import datetime
 
 def find_top_level_dir(start_dir):
-    marker_file = 'SpaceStation14.slnx'
+    marker_file = 'SpaceStation14.sln'
     current_dir = start_dir
     while True:
         if marker_file in os.listdir(current_dir):

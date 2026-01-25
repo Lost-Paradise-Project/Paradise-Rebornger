@@ -59,9 +59,6 @@
       points: 1
       required: false
       # defaultMarkings: [ Inears ]
-    UndergarmentTop:
-      points: 1
-      required: false
     # HeadSide:
     #   points: 1
     #   required: false

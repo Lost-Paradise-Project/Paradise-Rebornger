@@ -1,0 +1,22 @@
+﻿{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "fleshlight sprites (fleshlight-inhand-left || right) from Kasey https://github.com/BitBoxxxer on github",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "fleshlight_yellow"
+        },
+        {
+            "name": "fleshlight-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "fleshlight-inhand-right",
+            "directions": 4
+        }
+    ]
+}

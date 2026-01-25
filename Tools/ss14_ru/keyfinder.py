@@ -1,7 +1,6 @@
-#!/usr/bin/env python3
-
-import typing
+﻿import typing
 import logging
+import os
 
 from pydash import py_
 
@@ -13,7 +12,7 @@ from fluent.syntax import ast, FluentParser, FluentSerializer
 
 
 # Осуществляет актуализацию ключей. Находит файлы английского перевода, проверяет: есть ли русскоязычная пара
-# Если нет - создаёт файл с копией переводов из англоязычного
+# Если нет - создает файл с копией переводов из англоязычного
 # Далее, пофайлово проверяются ключи. Если в английском файле больше ключей - создает недостающие в русском, с английской копией перевода
 # Отмечает русские файлы, в которых есть те ключи, что нет в аналогичных английских
 # Отмечает русские файлы, у которых нет англоязычной пары
@@ -30,6 +29,7 @@ class FilesFinder:
     def __init__(self, project: Project):
         self.project: Project = project
         self.created_files: typing.List[FluentFile] = []
+        self.deleted_files: typing.List[FluentFile] = []
 
     def get_relative_path_dict(self, file: FluentFile, locale):
         if locale == 'ru-RU':
@@ -49,6 +49,7 @@ class FilesFinder:
 
     def execute(self):
         self.created_files = []
+        self.deleted_files = []
         groups = self.get_files_pars()
         keys_without_pair = list(filter(lambda g: len(groups[g]) < 2, groups))
 
@@ -62,11 +63,12 @@ class FilesFinder:
                 is_engine_files = "robust-toolbox" in (relative_file.file.full_path)
                 is_corvax_files = "corvax" in (relative_file.file.full_path)
                 if not is_engine_files and not is_corvax_files:
-                    self.warn_en_analog_not_exist(relative_file)
+                    # Pass the full path to delete_ru_file_without_en_analog
+                    self.delete_ru_file_without_en_analog(relative_file.file.full_path)
             else:
                 raise Exception(f'Файл {relative_file.file.full_path} имеет неизвестную локаль "{relative_file.locale}"')
 
-        return self.created_files
+        return self.created_files, self.deleted_files
 
     def get_files_pars(self):
         en_fluent_files = self.project.get_fluent_files_by_dir(project.en_locale_dir_path)
@@ -89,20 +91,31 @@ class FilesFinder:
 
         return ru_file
 
-    def warn_en_analog_not_exist(self, ru_relative_file: RelativeFile):
-        file: FluentFile = ru_relative_file.file
-        en_file_path = file.full_path.replace('ru-RU', 'en-US')
+    def delete_ru_file_without_en_analog(self, ru_file_full_path: str): # Modified to accept full path directly
+        # Normalize paths to lowercase for robust comparison, especially on Windows
+        normalized_ru_file_path = ru_file_full_path.lower()
+        normalized_en_file_path = normalized_ru_file_path.replace('ru-ru', 'en-us') # Ensure consistent replacement
 
-        logging.warning(f'Файл {file.full_path} не имеет английского аналога по пути {en_file_path}')
-
+        # Check if the English analog exists (case-insensitively)
+        if not os.path.exists(normalized_en_file_path):
+            try:
+                os.remove(ru_file_full_path) # Remove the file using its original path
+                logging.warning(f'Файл {ru_file_full_path} был удален, так как не имеет английского аналога по пути {normalized_en_file_path}')
+                # You might need to adjust how you add to self.deleted_files if it expects a FluentFile object
+                # For now, let's assume it can take the full path for logging/tracking.
+                self.deleted_files.append(FluentFile(ru_file_full_path)) # Re-create FluentFile for tracking
+            except OSError as e:
+                logging.error(f'Ошибка при удалении файла {ru_file_full_path}: {e}')
 
 class KeyFinder:
     def __init__(self, files_dict):
         self.files_dict = files_dict
         self.changed_files: typing.List[FluentFile] = []
+        self.deleted_keys: typing.Dict[str, typing.List[str]] = {} # Добавляем словарь для удаленных ключей
 
     def execute(self) -> typing.List[FluentFile]:
         self.changed_files = []
+        self.deleted_keys = {} # Сбрасываем список удаленных ключей при каждом выполнении
         for pair in self.files_dict:
             ru_relative_file = py_.find(self.files_dict[pair], {'locale': 'ru-RU'})
             en_relative_file = py_.find(self.files_dict[pair], {'locale': 'en-US'})
@@ -115,7 +128,7 @@ class KeyFinder:
 
             self.compare_files(en_file, ru_file)
 
-        return self.changed_files
+        return self.changed_files, self.deleted_keys # Возвращаем оба списка
 
 
     def compare_files(self, en_file, ru_file):
@@ -123,7 +136,8 @@ class KeyFinder:
         en_file_parsed: ast.Resource = en_file.parse_data(en_file.read_data())
 
         self.write_to_ru_files(ru_file, ru_file_parsed, en_file_parsed)
-        self.log_not_exist_en_files(en_file, ru_file_parsed, en_file_parsed)
+        # Изменяем вызов метода для удаления ключей
+        self.delete_not_exist_en_keys(en_file, ru_file, ru_file_parsed, en_file_parsed)
 
 
     def write_to_ru_files(self, ru_file, ru_file_parsed, en_file_parsed):
@@ -157,9 +171,11 @@ class KeyFinder:
 
             if have_changes:
                 serialized = serializer.serialize(ru_file_parsed)
-                self.save_and_log_file(ru_file, serialized, en_message)
+                self.save_and_log_file(ru_file, serialized, en_message, "добавлен")
 
-    def log_not_exist_en_files(self, en_file, ru_file_parsed, en_file_parsed):
+
+    def delete_not_exist_en_keys(self, en_file, ru_file, ru_file_parsed: ast.Resource, en_file_parsed: ast.Resource):
+        keys_to_remove = []
         for idx, ru_message in enumerate(ru_file_parsed.body):
             if isinstance(ru_message, ast.ResourceComment) or isinstance(ru_message, ast.GroupComment) or isinstance(ru_message, ast.Comment):
                 continue
@@ -167,7 +183,22 @@ class KeyFinder:
             en_message_analog = py_.find(en_file_parsed.body, lambda en_message: self.find_duplicate_message_id_name(ru_message, en_message))
 
             if not en_message_analog:
-                logging.warning(f'Ключ "{FluentAstAbstract.get_id_name(ru_message)}" не имеет английского аналога по пути {en_file.full_path}"')
+                key_name = FluentAstAbstract.get_id_name(ru_message)
+                logging.warning(f'Ключ "{key_name}" в файле {ru_file.full_path} не имеет английского аналога по пути {en_file.full_path}. Будет удален.')
+                keys_to_remove.append(ru_message)
+
+                if ru_file.full_path not in self.deleted_keys:
+                    self.deleted_keys[ru_file.full_path] = []
+                self.deleted_keys[ru_file.full_path].append(key_name)
+
+        if keys_to_remove:
+            # Удаляем ключи из тела AST
+            ru_file_parsed.body = [item for item in ru_file_parsed.body if item not in keys_to_remove]
+            serialized = serializer.serialize(ru_file_parsed)
+            # Сохраняем файл после удаления ключей
+            ru_file.save_data(serialized)
+            self.changed_files.append(ru_file) # Отмечаем файл как измененный
+
 
     def append_message(self, ru_file_parsed, en_message, en_message_idx):
         ru_message_part_1 = ru_file_parsed.body[0:en_message_idx]
@@ -182,10 +213,11 @@ class KeyFinder:
         ru_file_parsed.body.append(en_message)
         return ru_file_parsed
 
-    def save_and_log_file(self, file, file_data, message):
+    def save_and_log_file(self, file, file_data, message, action_type):
         file.save_data(file_data)
-        logging.info(f'В файл {file.full_path} добавлен ключ "{FluentAstAbstract.get_id_name(message)}"')
-        self.changed_files.append(file)
+        logging.info(f'В файл {file.full_path} {action_type} ключ "{FluentAstAbstract.get_id_name(message)}"')
+        if file not in self.changed_files: # Избегаем дублирования в списке измененных файлов
+            self.changed_files.append(file)
 
     def find_duplicate_message_id_name(self, ru_message, en_message):
         ru_element_id_name = FluentAstAbstract.get_id_name(ru_message)
@@ -211,12 +243,22 @@ key_finder = KeyFinder(files_finder.get_files_pars())
 ########################################################################################################################
 
 print('Проверка актуальности файлов ...')
-created_files = files_finder.execute()
+created_files, deleted_files = files_finder.execute()
 if len(created_files):
     print('Форматирование созданных файлов ...')
     FluentFormatter.format(created_files)
-print('Проверка актуальности ключей ...')
-changed_files = key_finder.execute()
+if len(deleted_files):
+    print('\nУдалены файлы без английского аналога:')
+    for file in deleted_files:
+        print(f'  - {file.full_path}')
+print('\nПроверка актуальности ключей ...')
+changed_files, deleted_keys_by_file = key_finder.execute()
 if len(changed_files):
     print('Форматирование изменённых файлов ...')
     FluentFormatter.format(changed_files)
+if len(deleted_keys_by_file):
+    print('\nУдалены ключи без английского аналога:')
+    for file_path, keys in deleted_keys_by_file.items():
+        print(f'  В файле {file_path}:')
+        for key in keys:
+            print(f'    - {key}')

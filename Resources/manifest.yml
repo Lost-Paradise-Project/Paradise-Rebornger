@@ -1,5 +1,3 @@
-defaultWindowTitle: Space Station 14 - Corvax Station [RU]
-windowIconSet: /Textures/Logo/icon-ru # Corvax-Theme
-splashLogo: /Textures/Logo/logo-ru.png # Corvax-Theme
-
-# PJB PLEASE
+defaultWindowTitle: Lost Paradise
+windowIconSet: /Textures/_LP/Logo/icon
+splashLogo: /Textures/_LP/Logo/splashlogo.png

@@ -2,7 +2,11 @@
 - type: roleLoadout
   id: JobIAA
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - LawyerNeck
   - LawyerJumpsuit
   - CommonBackpack
@@ -14,7 +18,11 @@
 - type: roleLoadout
   id: JobSeniorEngineer
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - SeniorEngineerHead
   - SeniorEngineerJumpsuit
@@ -29,7 +37,11 @@
 - type: roleLoadout
   id: JobSeniorResearcher
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - SeniorResearcherHead
   - SeniorResearcherJumpsuit
@@ -46,7 +58,11 @@
 - type: roleLoadout
   id: JobPilot
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - PilotHead
   - PilotJumpsuit
   - SecurityBackpack
@@ -60,7 +76,11 @@
 - type: roleLoadout
   id: JobBrigmedic
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - BrigmedicHead
   - BrigmedicMask
   - BrigmedicJumpsuit
@@ -75,7 +95,11 @@
 - type: roleLoadout
   id: JobSeniorOfficer
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - SeniorOfficerHead
   - SeniorOfficerJumpsuit
   - SeniorOfficerBackpack
@@ -90,7 +114,11 @@
 - type: roleLoadout
   id: JobSeniorPhysician
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - SeniorPhysicianHead
   - MedicalMask
