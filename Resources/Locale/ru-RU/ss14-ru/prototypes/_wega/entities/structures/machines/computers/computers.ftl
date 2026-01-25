@@ -1,2 +1,2 @@
-﻿ent-MiningMonitoringConsole = консоль мониторинга майнинга
+ent-MiningMonitoringConsole = консоль мониторинга майнинга
     .desc = Центральная консоль управления майнинг-серверами.

@@ -21,6 +21,11 @@ public sealed partial class MagbootsComponent : Component
     [DataField] // Corvax-Wega-AdvMagboots
     public bool DisabledAutoOff = false; // Corvax-Wega-AdvMagboots
 
+    /// <summary>
+    /// Slot the clothing has to be worn in to work.
+    /// </summary>
+    [DataField]
+    public string Slot = "shoes";
 }
 
 // Corvax-Wega-AdvMagboots-start

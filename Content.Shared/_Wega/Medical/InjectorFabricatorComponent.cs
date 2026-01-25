@@ -1,6 +1,6 @@
-﻿using Content.Goobstation.Maths.FixedPoint;
-using Content.Shared.Chemistry.Reagent;
+﻿using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Containers.ItemSlots;
+using Content.Shared.FixedPoint;
 using Robust.Shared.Prototypes;
 
 namespace Content.Shared._Wega.Medical;

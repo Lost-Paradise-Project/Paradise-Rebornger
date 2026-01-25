@@ -1,4 +1,4 @@
-﻿ent-DrinkShotGlass = стопка
+ent-DrinkShotGlass = стопка
     .desc = Идеально подходит для того, чтобы со злостью ударить ей по столу.
 ent-DrinkIceBucket = ведёрко для льда
     .desc = Специальное ведёрко с освежающим льдом. Запрещено использовать для одноимённого челленджа!
@@ -6,8 +6,6 @@ ent-DrinkTeapot = чайник
     .desc = Элегантный заварочный чайник. Он излучает теплоту.
 ent-DrinkCanPack = держатель для напитков
     .desc = { ent-BaseStorageItem.desc }
-ent-BartenderMixer = { "" }
-    .desc = { "" }
 ent-DrinkShaker = шейкер
     .desc = Верный, смешивающий приятель бармена. Хэй, диджей...
 ent-DrinkShakerGold = золотой шейкер

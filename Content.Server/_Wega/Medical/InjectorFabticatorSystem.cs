@@ -1,5 +1,4 @@
 ﻿using System.Linq;
-using Content.Goobstation.Maths.FixedPoint;
 using Content.Server.Power.EntitySystems;
 using Content.Shared._Wega.Medical;
 using Content.Shared._Wega.Medical.Ui;
@@ -9,6 +8,7 @@ using Content.Shared.Chemistry.Components.SolutionManager;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Containers.ItemSlots;
+using Content.Shared.FixedPoint;
 using Robust.Server.GameObjects;
 using Robust.Shared.Containers;
 

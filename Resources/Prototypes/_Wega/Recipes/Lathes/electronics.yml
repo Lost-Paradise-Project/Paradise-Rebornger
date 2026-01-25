@@ -7,3 +7,8 @@
   parent: BaseGoldCircuitboardRecipe
   id: MiningMonitoringComputerCircuitboard
   result: MiningMonitoringComputerCircuitboard
+
+- type: latheRecipe
+  parent: BaseCircuitboardRecipe
+  id: WashingMachineCircuitboard
+  result: WashingMachineCircuitboard

@@ -22,7 +22,7 @@
     - reagents: [Water, SpaceCleaner]
       methods: [Touch]
       effects:
-      - !type:WashDirtReaction
+      - !type:WashDirt
   # Corvax-Wega-Dirtable-end
 
 - type: entity

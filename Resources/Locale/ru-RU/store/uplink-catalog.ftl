@@ -23,7 +23,7 @@ uplink-gloves-north-star-name = Перчатки Полярной звезды
 uplink-gloves-north-star-desc = Пара перчаток, которые значительно сокращают время между ударами, позволяя избивать людей до смерти шквалом ударов.
 uplink-gloves-knuckleduster-name = Кастеты Синдиката
 uplink-gloves-knuckleduster-desc = Пара пластитановых кастетов, позволяющий вам сломать челюсть капитана вдребезги всего одним ударом.
-uplink-hushpup-name = ХашПуп
+uplink-hushpup-name = Хашпап
 uplink-hushpup-desc = Мощный бесшумный дробовик с малой ёмкостью магазина. Поставляется с запасной коробкой картечи. Использует боеприпасы .50 калибра.
 # Explosives
 uplink-explosive-grenade-name = Разрывная граната

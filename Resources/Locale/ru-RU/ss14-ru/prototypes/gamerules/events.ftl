@@ -74,5 +74,3 @@ ent-DerelictMiningCyborgSpawn = { ent-BaseGameRule }
     .desc = { ent-BaseGameRule.desc }
 ent-DerelictSyndicateAssaultCyborgSpawn = { ent-BaseGameRule }
     .desc = { ent-BaseGameRule.desc }
-ent-DerelictCyborgSpawn = { ent-BaseGameRule }
-    .desc = { ent-BaseGameRule.desc }

@@ -1,4 +1,5 @@
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: MarkerBase
   id: IntegrationTestMarker
   name: Integration Test Marker

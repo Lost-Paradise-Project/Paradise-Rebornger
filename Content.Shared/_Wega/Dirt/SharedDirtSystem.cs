@@ -1,4 +1,5 @@
-﻿using Content.Shared.Body.Components;
+﻿using Content.Shared._Wega.Dirt.Components;
+using Content.Shared.Body.Components;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Damage;
