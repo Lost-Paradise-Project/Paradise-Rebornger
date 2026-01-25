@@ -4,6 +4,10 @@
   description: job-description-intern
   playTimeTracker: JobMedicalIntern
   requirements:
+      # LP edit start
+    - !type:OverallPlaytimeRequirement
+      time: 1h
+      # LP edit end
     - !type:DepartmentTimeRequirement
       department: Medical
       time: 10h # Corvax-RoleTime 5

@@ -6,6 +6,11 @@
   startingGear: CargoTechGear
   icon: "JobIconCargoTechnician"
   supervisors: job-supervisors-qm
+  # LP edit start
+  requirements:
+  - !type:OverallPlaytimeRequirement
+    time: 1h
+  # LP edit end
   access:
   - Cargo
   - Maintenance

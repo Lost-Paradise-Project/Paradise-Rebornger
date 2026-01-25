@@ -5,6 +5,11 @@
   playTimeTracker: JobPsychologist
   startingGear: PsychologistGear
   icon: "JobIconPsychologist"
+  # LP edit start
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 1h
+  # LP edit end
   supervisors: job-supervisors-cmo
   access:
   - Medical

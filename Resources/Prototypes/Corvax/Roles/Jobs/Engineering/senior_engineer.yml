@@ -12,7 +12,7 @@
       time: 6h
     - !type:DepartmentTimeRequirement
       department: Engineering
-      time: 60h
+      time: 20h # LP edit
   weight: 9
   startingGear: SeniorEngineerGear
   icon: "JobIconSeniorEngineer"

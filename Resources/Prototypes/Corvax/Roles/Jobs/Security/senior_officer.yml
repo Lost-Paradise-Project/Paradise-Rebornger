@@ -15,7 +15,7 @@
       time: 6h
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 60h
+      time: 20h # LP edit
   weight: 9
   startingGear: SeniorOfficerGear
   icon: "JobIconSeniorOfficer"

@@ -6,21 +6,21 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Engineering
-      time: 20h # Corvax-RoleTime 4
+      time: 10h # LP edit
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 20h # Corvax-RoleTime 4
+      time: 10h # LP edit
     - !type:DepartmentTimeRequirement
       department: Science
-      time: 4h
+      time: 10h # LP edit
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 20h # Corvax-RoleTime 4
+      time: 10h # LP edit
 #    - !type:DepartmentTimeRequirement
 #      department: Command
 #      time: 4h
     - !type:OverallPlaytimeRequirement
-      time: 140h # Corvax-RoleTime 4
+      time: 50h # LP edit
     - !type:TraitsRequirement #Corvax-TraitsRequirement
       inverted: true
       traits:

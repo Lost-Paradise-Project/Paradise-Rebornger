@@ -6,7 +6,13 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 10h # Corvax-RoleTime
+      time: 2h # LP edit
+    # LP edit start
+    - !type:SpeciesRequirement
+      inverted: true
+      species:
+      - Diona
+    # LP edit end
     - !type:TraitsRequirement #Corvax-TraitsRequirement
       inverted: true
       traits:

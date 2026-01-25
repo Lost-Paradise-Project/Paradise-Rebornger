@@ -4,6 +4,12 @@
   description: job-description-botanist
   playTimeTracker: JobBotanist
   startingGear: BotanistGear
+  # LP edit start
+  requirements:
+  - !type:DepartmentTimeRequirement
+    department: Civilian
+    time: 1h # Corvax-RoleTime
+  # LP edit end
   icon: "JobIconBotanist"
   supervisors: job-supervisors-hop
   access:

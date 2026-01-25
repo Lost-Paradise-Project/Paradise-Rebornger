@@ -7,15 +7,12 @@
     - !type:RoleTimeRequirement
       role: JobWarden
       time: 10h # Corvax-RoleTime 1
-    #- !type:RoleTimeRequirement
-    #  role: JobDetective
-    #  time: 1h # knowing how to use the tools is important
-    #- !type:RoleTimeRequirement
-    #  role: JobSecurityOfficer
-    #  time: 5h
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 50h # Corvax-RoleTime 10
+    # LP edit start
+    - !type:SpeciesRequirement
+      inverted: true
+      species:
+      - Diona
+    # LP edit end
     - !type:TraitsRequirement #Corvax-TraitsRequirement
       inverted: true
       traits:

@@ -6,6 +6,11 @@
   description: job-description-station-ai
   playTimeTracker: JobStationAi
   requirements:
+    # LP edit start
+  - !type:DepartmentTimeRequirement
+    department: Command
+    time: 20h
+    # LP edit end
   - !type:RoleTimeRequirement
     role: JobBorg
     time: 5h
@@ -24,7 +29,7 @@
   playTimeTracker: JobBorg
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 10h
+      time: 1h # LP edit
   canBeAntag: false
   icon: JobIconBorg
   supervisors: job-supervisors-rd

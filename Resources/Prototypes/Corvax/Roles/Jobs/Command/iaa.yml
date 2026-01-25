@@ -6,10 +6,10 @@
   requirements:
   - !type:DepartmentTimeRequirement
     department: Command
-    time: 20h
+    time: 25h # LP edit
   - !type:DepartmentTimeRequirement
     department: Security
-    time: 10h
+    time: 20h # LP edit
   - !type:TraitsRequirement
     inverted: true
     traits:
