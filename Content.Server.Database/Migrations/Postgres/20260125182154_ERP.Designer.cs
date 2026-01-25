@@ -16,7 +16,7 @@ using NpgsqlTypes;
 namespace Content.Server.Database.Migrations.Postgres
 {
     [DbContext(typeof(PostgresServerDbContext))]
-    [Migration("20260122155313_ERP")]
+    [Migration("20260125182154_ERP")]
     partial class ERP
     {
         /// <inheritdoc />
@@ -24,7 +24,7 @@ namespace Content.Server.Database.Migrations.Postgres
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.1")
+                .HasAnnotation("ProductVersion", "10.0.0")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
@@ -750,10 +750,6 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("last_read_rules");
 
-                    b.Property<TimeSpan?>("LastRolledAntag")
-                        .HasColumnType("interval")
-                        .HasColumnName("last_rolled_antag");
-
                     b.Property<IPAddress>("LastSeenAddress")
                         .IsRequired()
                         .HasColumnType("inet")
@@ -838,11 +834,6 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("integer")
                         .HasColumnName("age");
 
-                    b.Property<string>("BarkVoice")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("bark_voice");
-
                     b.Property<string>("CharacterName")
                         .IsRequired()
                         .HasColumnType("text")
@@ -888,10 +879,6 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("text")
                         .HasColumnName("hair_name");
 
-                    b.Property<float>("Height")
-                        .HasColumnType("real")
-                        .HasColumnName("height");
-
                     b.Property<JsonDocument>("Markings")
                         .HasColumnType("jsonb")
                         .HasColumnName("markings");
@@ -931,10 +918,6 @@ namespace Content.Server.Database.Migrations.Postgres
                         .IsRequired()
                         .HasColumnType("text")
                         .HasColumnName("voice");
-
-                    b.Property<float>("Width")
-                        .HasColumnType("real")
-                        .HasColumnName("width");
 
                     b.HasKey("Id")
                         .HasName("PK_profile");
@@ -1377,45 +1360,6 @@ namespace Content.Server.Database.Migrations.Postgres
                         .IsUnique();
 
                     b.ToTable("server_unban", (string)null);
-                });
-
-            modelBuilder.Entity("Content.Server.Database.Sponsor", b =>
-                {
-                    b.Property<Guid>("UserId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid")
-                        .HasColumnName("user_id");
-
-                    b.Property<bool>("AllowJob")
-                        .HasColumnType("boolean")
-                        .HasColumnName("allow_job");
-
-                    b.Property<string>("AllowedMarkings")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("allowed_markings");
-
-                    b.Property<int>("ExtraSlots")
-                        .HasColumnType("integer")
-                        .HasColumnName("extra_slots");
-
-                    b.Property<bool>("HavePriorityJoin")
-                        .HasColumnType("boolean")
-                        .HasColumnName("have_priority_join");
-
-                    b.Property<string>("OOCColor")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("ooccolor");
-
-                    b.Property<int>("Tier")
-                        .HasColumnType("integer")
-                        .HasColumnName("tier");
-
-                    b.HasKey("UserId")
-                        .HasName("PK_sponsors");
-
-                    b.ToTable("sponsors", (string)null);
                 });
 
             modelBuilder.Entity("Content.Server.Database.Trait", b =>

@@ -11,14 +11,14 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Content.Server.Database.Migrations.Sqlite
 {
     [DbContext(typeof(SqliteServerDbContext))]
-    [Migration("20260122155309_ERP")]
+    [Migration("20260125182141_ERP")]
     partial class ERP
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "9.0.1");
+            modelBuilder.HasAnnotation("ProductVersion", "10.0.0");
 
             modelBuilder.Entity("Content.Server.Database.Admin", b =>
                 {
@@ -708,10 +708,6 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("TEXT")
                         .HasColumnName("last_read_rules");
 
-                    b.Property<TimeSpan?>("LastRolledAntag")
-                        .HasColumnType("TEXT")
-                        .HasColumnName("last_rolled_antag");
-
                     b.Property<string>("LastSeenAddress")
                         .IsRequired()
                         .HasColumnType("TEXT")
@@ -789,11 +785,6 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("INTEGER")
                         .HasColumnName("age");
 
-                    b.Property<string>("BarkVoice")
-                        .IsRequired()
-                        .HasColumnType("TEXT")
-                        .HasColumnName("bark_voice");
-
                     b.Property<string>("CharacterName")
                         .IsRequired()
                         .HasColumnType("TEXT")
@@ -839,10 +830,6 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("TEXT")
                         .HasColumnName("hair_name");
 
-                    b.Property<float>("Height")
-                        .HasColumnType("REAL")
-                        .HasColumnName("height");
-
                     b.Property<byte[]>("Markings")
                         .HasColumnType("jsonb")
                         .HasColumnName("markings");
@@ -882,10 +869,6 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .IsRequired()
                         .HasColumnType("TEXT")
                         .HasColumnName("voice");
-
-                    b.Property<float>("Width")
-                        .HasColumnType("REAL")
-                        .HasColumnName("width");
 
                     b.HasKey("Id")
                         .HasName("PK_profile");
@@ -1304,45 +1287,6 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .IsUnique();
 
                     b.ToTable("server_unban", (string)null);
-                });
-
-            modelBuilder.Entity("Content.Server.Database.Sponsor", b =>
-                {
-                    b.Property<Guid>("UserId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TEXT")
-                        .HasColumnName("user_id");
-
-                    b.Property<bool>("AllowJob")
-                        .HasColumnType("INTEGER")
-                        .HasColumnName("allow_job");
-
-                    b.Property<string>("AllowedMarkings")
-                        .IsRequired()
-                        .HasColumnType("TEXT")
-                        .HasColumnName("allowed_markings");
-
-                    b.Property<int>("ExtraSlots")
-                        .HasColumnType("INTEGER")
-                        .HasColumnName("extra_slots");
-
-                    b.Property<bool>("HavePriorityJoin")
-                        .HasColumnType("INTEGER")
-                        .HasColumnName("have_priority_join");
-
-                    b.Property<string>("OOCColor")
-                        .IsRequired()
-                        .HasColumnType("TEXT")
-                        .HasColumnName("ooccolor");
-
-                    b.Property<int>("Tier")
-                        .HasColumnType("INTEGER")
-                        .HasColumnName("tier");
-
-                    b.HasKey("UserId")
-                        .HasName("PK_sponsors");
-
-                    b.ToTable("sponsors", (string)null);
                 });
 
             modelBuilder.Entity("Content.Server.Database.Trait", b =>
