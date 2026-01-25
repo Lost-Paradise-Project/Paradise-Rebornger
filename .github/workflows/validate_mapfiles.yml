@@ -15,15 +15,6 @@ jobs:
     - uses: actions/checkout@v4.2.2
     - name: Setup Submodule
       run: git submodule update --init
-    - name: Download parts
-      if: ${{ vars.SECRETSLINK != '' }}
-      run: |
-        git clone ${{ secrets.SECRETS }}
-        mv NewSecrets/PResources/PPrototypes Resources/Prototypes/
-        mv NewSecrets/PResources/PTextures Resources/Textures/
-        mv NewSecrets/PShared Content.Shared/PShared
-        mv NewSecrets/PServer Content.Server/PServer
-        mv NewSecrets/PClient Content.Client/PClient
     - name: Pull engine updates
       uses: space-wizards/submodule-dependency@v0.1.5
     - uses: PaulRitter/yaml-schema-validator@v1

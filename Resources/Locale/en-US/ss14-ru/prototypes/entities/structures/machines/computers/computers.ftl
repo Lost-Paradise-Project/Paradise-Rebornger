@@ -73,6 +73,8 @@ ent-ComputerSurveillanceCameraMonitor = camera monitor
     .desc = A surveillance camera monitor. You're watching them. Maybe.
 ent-ComputerSurveillanceWirelessCameraMonitor = wireless camera monitor
     .desc = A wireless surveillance camera monitor. You're watching them. Maybe.
+ent-ComputerSurveillanceWirelessXenoborgCameraMonitor = xenoborg camera monitor
+    .desc = A wireless xenoborg camera monitor. You're watching them. Maybe.
 ent-ComputerPalletConsole = cargo sale computer
     .desc = Used to sell goods loaded onto cargo pallets.
 ent-ComputerMassMedia = news manager console
@@ -81,6 +83,14 @@ ent-ComputerSensorMonitoring = sensor monitoring computer
     .desc = A flexible console for monitoring all kinds of sensors.
     .suffix = TESTING, DO NOT MAP
 ent-ComputerRoboticsControl = robotics control console
-    .desc = Used to remotely monitor, disable and destroy the station's cyborgs.
+    .desc = Used to remotely monitor the station's cyborgs.
+ent-ComputerXenoborgsControl = xenoborgs control console
+    .desc = Used to remotely monitor all xenoborgs.
 ent-StationAiUploadComputer = AI upload console
     .desc = Used to update the laws of the station AI.
+ent-StationAiFixerComputer = AI restoration console
+    .desc = Used to repair damaged artifical intelligences.
+ent-ComputerNukieDelivery = syndicate delivery computer
+    .desc =
+        A computer that can bluespace in certain equipment for Nuclear Operations.
+        The circuitboard is integrated into the frame and can't be recovered if deconstructed.

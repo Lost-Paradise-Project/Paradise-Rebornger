@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     # Hey there fork dev! If you like to include your own contributors in this then you can probably just change this to your own repo
     # Do this in dump_github_contributors.ps1 too into your own repo
-    if: github.repository == 'space-wizards/space-station-14'
+    if: github.repository == 'Lost-Paradise-Project/Paradise-Rebornger'
 
     steps:
       - uses: actions/checkout@v4.2.2
@@ -47,8 +47,8 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
         with:
-          commit-message: Update Credits
-          title: Update Credits
-          body: This is an automated Pull Request. This PR updates the github contributors in the credits section.
-          author: PJBot <pieterjan.briers+bot@gmail.com>
+          commit-message: Обновление кредитов
+          title: Обновление кредитов
+          body: Это автоматизированный PR. Этот PR обновляет список участников github в разделе кредитов.
+          author: ${{ vars.CHANGELOG_USER }} <${{ vars.CHANGELOG_EMAIL }}>
           branch: automated/credits-${{env.NOW}}

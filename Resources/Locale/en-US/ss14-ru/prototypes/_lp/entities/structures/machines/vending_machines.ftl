@@ -1,0 +1,12 @@
+﻿ent-LPPErpMachine = Erp machine
+    .desc = Fashionable suits for Varden!
+ent-LPPBrasMat = Bras machine
+    .desc = a machine that decorates the appearance of customers and makes them beautiful!
+ent-LPPNascaMat = Nasca machine
+    .desc = a machine that decorates the appearance of customers and makes them beautiful!
+ent-LPPPillowVendingMachine = Pillow vending machine
+    .desc = For when you need seeds fast. Hands down the best seed selection on the station!
+ent-LPPUnderpantsMat = Underpants machine
+    .desc = a machine that decorates the appearance of customers and makes them beautiful!
+ent-LPPWithSoftAnimals = With soft animals machine
+    .desc = For when you need seeds fast. Hands down the best seed selection on the station!

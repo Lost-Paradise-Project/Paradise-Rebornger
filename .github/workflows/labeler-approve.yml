@@ -12,5 +12,5 @@ jobs:
     - uses: actions-ecosystem/action-remove-labels@v1
       with:
         labels: |
-          Status: Needs Review
-          Status: Awaiting Changes
+          Статус: Ожидание проверки
+          Статус: Ожидание изменений

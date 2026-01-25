@@ -1,47 +1,83 @@
 ﻿Entries:
 - author: Evgencheg
   changes:
-    - message: Начало начал!
-      type: Add
+  - message: Начало начал!
+    type: Add
   id: 5605
   time: '2026-01-13T01:01:01.0000000+00:00'
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлены ссылки при заходе в игру и в ESC меню
-    - type: Fix
-      message: Исправил сортировку в панели выдачи времени
-    - type: Remove
-      message: Удалил маркинги нижнего белья
-    - type: Fix
-      message: Исправил переводы
-    - type: Tweak
-      message: Настроил конфиги, пресеты игры и режим секрета
-    - type: Tweak
-      message: Вернул вульпу в выбор рас
+  - type: Add
+    message: Добавлены ссылки при заходе в игру и в ESC меню
+  - type: Fix
+    message: Исправил сортировку в панели выдачи времени
+  - type: Remove
+    message: Удалил маркинги нижнего белья
+  - type: Fix
+    message: Исправил переводы
+  - type: Tweak
+    message: Настроил конфиги, пресеты игры и режим секрета
+  - type: Tweak
+    message: Вернул вульпу в выбор рас
   id: 5606
   time: '2026-01-13T22:32:13.0000000+00:00'
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлен перевод всего!
+  - type: Add
+    message: Добавлен перевод всего!
   id: 5608
   time: '2026-01-12T23:03:57.0000000+00:00'
 - author: BL02DL
   changes:
-    - type: Add
-      message: Добавлена новая музыка в лобби и для ядерной боеголовки!
+  - type: Add
+    message: Добавлена новая музыка в лобби и для ядерной боеголовки!
   id: 5609
   time: '2026-01-14T08:53:59.0000000+00:00'
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлен биокодинг на скафандры ЭС, ЯО и ОБР
+  - type: Add
+    message: Добавлен биокодинг на скафандры ЭС, ЯО и ОБР
   id: 5610
   time: '2026-01-14T19:37:06.0000000+00:00'
 - author: c2ebe0e4
   changes:
-    - type: Add
-      message: Добавлен бан-лог для дискорда через webhook.
+  - type: Add
+    message: Добавлен бан-лог для дискорда через webhook.
   id: 5612
   time: '2026-01-15T12:16:38.0000000+00:00'
+- author: Evgencheg
+  changes:
+  - type: Add
+    message: Добавлена система загрязнения одежды!
+  id: 5613
+  time: '2026-01-22T14:48:26.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/9
+- author: Evgencheg
+  changes:
+  - type: Add
+    message: Добавлена ерп панель!
+  - type: Add
+    message: Добавлен тет-а-тет чат в 1 тайл.
+  - type: Add
+    message: Добавлен ерп статус!
+  id: 5614
+  time: '2026-01-22T20:24:14.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/18
+- author: Inari
+  changes:
+  - type: Add
+    message: Добавлена система кастомных призраков
+  id: 5615
+  time: '2026-01-23T15:45:05.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/20
+- author: Wordik156
+  changes:
+  - type: Add
+    message: Добавлены новые (4) цели станции для увеличения вариативности смен
+  - type: Tweak
+    message: >-
+      Обновлён пул целей для карт Астра, Дельта, Гласир, Пакет, Пёрл,
+      Пилигрим, Силли.
+  id: 5616
+  time: '2026-01-23T17:02:29.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/21

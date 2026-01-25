@@ -12,13 +12,13 @@
 
 ## Лицензии кода
 
-Проект в целом лицензирован по условиям [AGPLv3](https://github.com/Lost-Paradise-Project/space-station-14/blob/master/LICENSE-AGPLv3.txt), которые должны соблюдаться независимо от родительских лицензий.
+Проект в целом лицензирован по условиям [AGPLv3](https://github.com/Lost-Paradise-Project/Paradise-Rebornger/blob/master/LICENSE-AGPLv3.txt), которые должны соблюдаться независимо от родительских лицензий.
 
 Для кода под лицензией MIT запрещается удалять копию лицензии MIT из любых дистрибутивов.
 
 Код, созданный участниками Lost Paradise - находится в пространствах имён `_LP`
 
-Исходный код из [Space Station 14](https://github.com/space-wizards/space-station-14) взят под [лицензией MIT](https://github.com/Lost-Paradise-Project/space-station-14/blob/master/LICENSE-MIT.txt). Весь код вне конкретных пространств имён распространяется как MIT + AGPLv3 от Space Wizards Federation.
+Исходный код из [Space Station 14](https://github.com/space-wizards/space-station-14) взят под [лицензией MIT](https://github.com/Lost-Paradise-Project/Paradise-Rebornger/blob/master/LICENSE-MIT.txt). Весь код вне конкретных пространств имён распространяется как MIT + AGPLv3 от Space Wizards Federation.
 
 ## Особые требования к ассетам
 

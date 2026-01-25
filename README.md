@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/Lost-Paradise-Project/Goob-Station/master/Resources/Textures/_LP/Logo/splashlogo.png" width="512px" /></p>
+<p align="center"><img src="https://raw.githubusercontent.com/Lost-Paradise-Project/Paradise-Rebornger/master/Resources/Textures/_LP/Logo/splashlogo.png" width="512px" /></p>
 
 Это репозиторий первого русскоязычного сервера по Space Station 14, целью которого является полный перевод игры на русский язык, поддержка актуальных изменений из основного репозитория, а так же добавление собственных изменений по необходимости.
 

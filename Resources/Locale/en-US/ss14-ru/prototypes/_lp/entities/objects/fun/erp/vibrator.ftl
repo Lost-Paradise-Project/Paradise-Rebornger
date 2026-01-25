@@ -1,0 +1,12 @@
+﻿ent-LPPMagicwand = magicwand
+    .desc = { ent-LPPClothingUnderwearBase.desc }
+ent-LPPVibratorGreen = vibrator green
+    .desc = { ent-LPPMagicwand.desc }
+ent-LPPVibratorPink = vibrator pink
+    .desc = { ent-LPPMagicwand.desc }
+ent-LPPVibratorRed = vibrator red
+    .desc = { ent-LPPMagicwand.desc }
+ent-LPPVibratorTeal = vibrator teal
+    .desc = { ent-LPPMagicwand.desc }
+ent-LPPVibratorYellow = vibrator yellow
+    .desc = { ent-LPPMagicwand.desc }
