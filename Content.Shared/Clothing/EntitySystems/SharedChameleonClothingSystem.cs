@@ -5,6 +5,7 @@ using Content.Shared.Contraband;
 using Content.Shared.Emp;
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
+using Content.Shared._Wega.Dirt.Components; // Corvax-Wega-Dirtable
 using Content.Shared.Item;
 using Content.Shared.Lock;
 using Content.Shared.Tag;
@@ -108,6 +109,19 @@ public abstract class SharedChameleonClothingSystem : EntitySystem
         {
             _clothingSystem.CopyVisuals(uid, otherClothing, clothing);
         }
+
+        // Corvax-Wega-Dirtable-start
+        // dirtable logic
+        if (TryComp(uid, out DirtableComponent? dirtable) &&
+            proto.TryGetComponent("Dirtable", out DirtableComponent? protoDirtable))
+        {
+            dirtable.DirtSpritePath = protoDirtable.DirtSpritePath;
+            dirtable.DirtState = protoDirtable.DirtState;
+            dirtable.FoldingDirtState = protoDirtable.FoldingDirtState;
+            dirtable.EquippedDirtState = protoDirtable.EquippedDirtState;
+            Dirty(uid, dirtable);
+        }
+        // Corvax-Wega-Dirtable-end
 
         // appearance data logic
         if (TryComp(uid, out AppearanceComponent? appearance) &&

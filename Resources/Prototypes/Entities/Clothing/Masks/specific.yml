@@ -19,6 +19,11 @@
     - type: HideLayerClothing
       slots:
       - Snout
+  # Corvax-Wega-Dirtable-start
+    - type: Dirtable
+      dirtState: gasmask
+      equippedDirtState: equipped-gasmask
+  # Corvax-Wega-Dirtable-end
 
 - type: entity
   parent: ClothingMaskGasChameleon

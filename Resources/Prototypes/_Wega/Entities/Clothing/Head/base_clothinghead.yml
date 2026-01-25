@@ -1,0 +1,17 @@
+﻿- type: entity
+  abstract: true
+  id: ClothingHeadBaseBeret
+  parent: ClothingHeadBase
+  components:
+  - type: Dirtable
+    dirtState: beret
+    equippedDirtState: equipped-beret
+
+- type: entity
+  abstract: true
+  id: ClothingHeadBaseSurgcap
+  parent: ClothingHeadBase
+  components:
+  - type: Dirtable
+    dirtState: surgcap
+    equippedDirtState: equipped-surgcap
