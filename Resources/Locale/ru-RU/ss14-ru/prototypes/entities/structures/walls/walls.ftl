@@ -109,5 +109,7 @@ ent-WallChromiteCobblebrick = хромитовая булыжниковая ст
     .desc = { ent-WallCobblebrick.desc }
 ent-WallAndesiteCobblebrick = андезитовая булыжниковая стена
     .desc = { ent-WallCobblebrick.desc }
+ent-WallIronsandCobblebrick = кирпичная стена из железистого песка
+    .desc = Бледные округлые формы, из которых состоит эта стена, разительно отличаются от железистого песка, из которого она якобы сделана.
 ent-Cardwall = картонная стена
     .desc = Сокращение бюджета наносит сильный удар.

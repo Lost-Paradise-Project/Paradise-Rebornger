@@ -1,4 +1,5 @@
 ﻿- type: entity
+  categories: [ HideSpawnMenu ]
   id: DebugGenerator
   parent: BaseGenerator
   suffix: DEBUG
@@ -9,6 +10,7 @@
     supplyRampTolerance: 500
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   id: DebugConsumer
   name: consumer
   suffix: DEBUG
@@ -51,6 +53,7 @@
   - type: Anchorable
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   id: DebugBatteryStorage
   name: battery storage
   suffix: DEBUG
@@ -86,6 +89,7 @@
   - type: Anchorable
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   id: DebugBatteryDischarger
   name: battery discharger
   suffix: DEBUG
@@ -123,6 +127,7 @@
   - type: Anchorable
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: BaseSMES
   id: DebugSMESRecharging
   suffix: DEBUG, AutoRecharge
@@ -131,6 +136,7 @@
     autoRechargeRate: 50000
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: BaseSubstation
   id: DebugSubstationRecharging
   suffix: DEBUG, AutoRecharge
@@ -139,6 +145,7 @@
     autoRechargeRate: 50000
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: BaseSubstationWall
   id: DebugSubstationWallRecharging
   suffix: DEBUG, AutoRecharge
@@ -147,6 +154,7 @@
     autoRechargeRate: 50000
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: BaseAPC
   id: DebugAPCRecharging
   suffix: DEBUG, AutoRecharge
@@ -155,6 +163,7 @@
     autoRechargeRate: 50000
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   id: DebugPowerReceiver
   name: power receiver
   suffix: DEBUG
