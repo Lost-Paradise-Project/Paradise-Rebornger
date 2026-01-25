@@ -1,4 +1,4 @@
-﻿ent-LPPSoftToysToys = { ent-BaseItem }
+ent-LPPSoftToysToys = { ent-BaseItem }
     .desc = { ent-BaseItem.desc }
 ent-LPPAxolotl = Axolotl
     .desc = { ent-LPPSoftToysToys.desc }

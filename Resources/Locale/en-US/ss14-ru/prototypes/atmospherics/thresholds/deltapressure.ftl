@@ -1,4 +1,4 @@
-﻿ent-BaseDeltaPressureReinforcedPlasma = { "" }
+ent-BaseDeltaPressureReinforcedPlasma = { "" }
     .desc = { "" }
 ent-BaseDeltaPressureReinforcedPlasmaQuarter = { "" }
     .desc = { "" }

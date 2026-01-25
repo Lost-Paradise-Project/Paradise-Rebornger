@@ -1,4 +1,4 @@
-﻿ent-IronsandStep = ironsand step
+ent-IronsandStep = ironsand step
     .desc = Takes your ironsand up a level.
 ent-IronsandStepConvexCorner = ironsand step convex corner
     .desc = { ent-IronsandStep.desc }

@@ -1,4 +1,4 @@
-﻿ent-BasePaperForm = { ent-Paper }
+ent-BasePaperForm = { ent-Paper }
     .desc = { ent-Paper.desc }
 ent-PaperFormSec = { ent-BasePaperForm }
     .desc = { ent-BasePaperForm.desc }

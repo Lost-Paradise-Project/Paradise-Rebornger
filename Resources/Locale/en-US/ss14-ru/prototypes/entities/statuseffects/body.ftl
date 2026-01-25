@@ -1,4 +1,4 @@
-﻿ent-BloodstreamStatusEffectBase = { ent-MobStatusEffectBase }
+ent-BloodstreamStatusEffectBase = { ent-MobStatusEffectBase }
     .desc = { ent-MobStatusEffectBase.desc }
 ent-BloodstreamStatusEffectDebuff = { ent-BloodstreamStatusEffectBase }
     .desc = { ent-BloodstreamStatusEffectBase.desc }

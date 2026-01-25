@@ -1,4 +1,4 @@
-﻿ent-BaseToyGun = { "" }
+ent-BaseToyGun = { "" }
     .desc = { "" }
 ent-FoamCrossbow = foam crossbow
     .desc = Aiming this at Security may get you filled with lead.

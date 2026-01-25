@@ -11,7 +11,6 @@ forensic-pad-unused = Она ещё не использовалась
 forensic-pad-sample = Она содержит образец: { $sample }
 forensic-pad-no-access-due = Не удаётся получить доступ к отпечатку пальца из-за { $entity }.
 forensic-pad-no-access = Не удаётся получить доступ к отпечатку пальца.
-forensic-pad-gloves = { CAPITALIZE($target) } носит перчатки.
 forensic-pad-start-scan-target = { CAPITALIZE($user) } пытается снять отпечатки ваших пальцев.
 forensic-pad-start-scan-user = Вы начинаете снимать отпечатки пальцев { CAPITALIZE($target) }.
 forensic-pad-already-used = Эта пластинка уже использована.

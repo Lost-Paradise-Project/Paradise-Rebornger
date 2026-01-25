@@ -1,4 +1,4 @@
-﻿ent-BaseSportsBall = { "" }
+ent-BaseSportsBall = { "" }
     .desc = { "" }
 ent-Basketball = basketball
     .desc = Where dah courts at?

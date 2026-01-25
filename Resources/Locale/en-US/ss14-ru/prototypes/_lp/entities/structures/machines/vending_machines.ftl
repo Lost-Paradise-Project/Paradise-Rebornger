@@ -1,4 +1,4 @@
-﻿ent-LPPErpMachine = Erp machine
+ent-LPPErpMachine = Erp machine
     .desc = Fashionable suits for Varden!
 ent-LPPBrasMat = Bras machine
     .desc = a machine that decorates the appearance of customers and makes them beautiful!

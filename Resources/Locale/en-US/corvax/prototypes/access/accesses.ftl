@@ -1,1 +1,1 @@
-id-card-access-level-ipc = IPC
+id-card-access-level-ipc = КПБ

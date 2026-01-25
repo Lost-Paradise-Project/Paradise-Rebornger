@@ -1,4 +1,4 @@
-﻿ent-LPPMagicwand = magicwand
+ent-LPPMagicwand = magicwand
     .desc = { ent-LPPClothingUnderwearBase.desc }
 ent-LPPVibratorGreen = vibrator green
     .desc = { ent-LPPMagicwand.desc }

@@ -1,4 +1,4 @@
-﻿ent-LPPClothingUnderSocksDartBee = dart bee socks
+ent-LPPClothingUnderSocksDartBee = dart bee socks
     .desc = These are dark orange striped stockings for those who love honey sweets.
 ent-LPPClothingUnderSocksDark = dark socks
     .desc = Ordinary dark stockings that will emphasize the slenderness of your legs.

@@ -1,4 +1,4 @@
-﻿ent-LPPBigGreenButtplug = big green buttplug
+ent-LPPBigGreenButtplug = big green buttplug
     .desc = A hamburger bun. Round and convenient to hold.
 ent-LPPMedGreenButtplug = Medium green buttplug
     .desc = A hamburger bun. Round and convenient to hold.

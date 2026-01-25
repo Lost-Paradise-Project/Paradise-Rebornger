@@ -13,11 +13,5 @@ xenoborgs-cond-all-xenoborgs-dead-core-dead = Ядро материнского 
 xenoborg-number-xenoborg-alive-end = Выжило ксеноборгов: { $count }
 xenoborg-number-crew-alive-end = Выжило экипажа: { $count }
 xenoborg-max-number = Наибольшее количество ксеноборгов: { $count }
-xenoborgs-cond-xenoborgs-alive =
-    { $count ->
-        [one] Выжил только один ксеноборг.
-        [few] В конце осталось { $count } ксеноборга.
-       *[other] В конце осталось { $count } ксеноборгоа.
-    }
 xenoborgs-list-start = Начальным составом команды ксеноборгов были:
 xenoborgs-list = - [color=White]{ $name }[/color] ([color=gray]{ $user }[/color])

@@ -1,4 +1,4 @@
-﻿ent-BaseHandheldGrinder = { ent-BaseItem }
+ent-BaseHandheldGrinder = { ent-BaseItem }
     .desc = { ent-BaseItem.desc }
 ent-MortarAndPestle = mortar and pestle
     .desc = Used for grinding small amounts of objects.

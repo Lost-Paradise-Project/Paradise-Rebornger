@@ -1,4 +1,4 @@
-﻿ent-BasePlushieLizardJob = { ent-PlushieLizard }
+ent-BasePlushieLizardJob = { ent-PlushieLizard }
     .desc = { ent-PlushieLizard.desc }
 ent-PlushieLizardJobAtmospherictechnician = atmospheric technician lizard plushie
     .desc = An adorable stuffed toy that resembles a lizardperson as an atmospheric technician. Smells faintly of frezon.

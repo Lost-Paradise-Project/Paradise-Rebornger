@@ -1,4 +1,4 @@
-﻿ent-SmokeGrenade = smoke grenade
+ent-SmokeGrenade = smoke grenade
     .desc = A tactical grenade that releases a large, long-lasting cloud of smoke when used.
 ent-CleanerGrenade = cleanade
     .desc = Special grenade for janitors, releasing large cloud of space cleaner foam.

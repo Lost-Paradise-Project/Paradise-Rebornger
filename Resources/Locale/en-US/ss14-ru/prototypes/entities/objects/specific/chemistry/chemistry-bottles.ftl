@@ -1,4 +1,4 @@
-﻿ent-BaseChemistryEmptyBottle = bottle
+ent-BaseChemistryEmptyBottle = bottle
     .desc = A small bottle.
 ent-ChemistryEmptyBottle01 = { ent-BaseChemistryEmptyBottle }
     .desc = { ent-BaseChemistryEmptyBottle.desc }

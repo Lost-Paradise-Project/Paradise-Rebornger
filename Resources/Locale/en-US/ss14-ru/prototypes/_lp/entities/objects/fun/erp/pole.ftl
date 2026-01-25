@@ -1,2 +1,2 @@
-﻿ent-LPPPole = LPPPole
+ent-LPPPole = LPPPole
     .desc = LPPPole

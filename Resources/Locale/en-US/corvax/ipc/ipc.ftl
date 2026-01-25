@@ -1,3 +1,3 @@
-ipc-component-ready = Ready to drain
-ipc-component-disabled = Battery charging disabled.
-ipc-face-menu-title = IPC monitor
+ipc-component-ready = Готов к разрядке
+ipc-component-disabled = Зарядка батареи отключена.
+ipc-face-menu-title = Выбор экрана

@@ -1,4 +1,4 @@
-﻿ent-LPPFleshlightGreen = fleshlight green
+ent-LPPFleshlightGreen = fleshlight green
     .desc = A hamburger bun. Round and convenient to hold.
 ent-LPPFleshlightPink = fleshlight pink
     .desc = A hamburger bun. Round and convenient to hold.

@@ -1,4 +1,4 @@
-﻿ent-BaseBalloon = { ent-BaseItem }
+ent-BaseBalloon = { ent-BaseItem }
     .desc = { ent-BaseItem.desc }
 ent-BalloonSyn = syndie balloon
     .desc = Handed out to the bravest souls who survived the "atomic twister" ride at Syndieland.

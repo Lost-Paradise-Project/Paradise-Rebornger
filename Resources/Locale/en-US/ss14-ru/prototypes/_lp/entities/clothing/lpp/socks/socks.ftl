@@ -1,4 +1,4 @@
-﻿ent-LPPClothingUnderwearSocksBase = based socks
+ent-LPPClothingUnderwearSocksBase = based socks
     .desc = { ent-Clothing.desc }
 ent-LPPClothingUnderBeeKnee = bee knee
     .desc = { ent-LPPClothingUnderwearSocksBase.desc }

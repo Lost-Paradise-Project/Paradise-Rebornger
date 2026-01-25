@@ -1,4 +1,4 @@
-﻿ent-NukeOpsLootSpawner = nuke ops loot spawner
+ent-NukeOpsLootSpawner = nuke ops loot spawner
     .desc = { ent-MarkerBase.desc }
 ent-NukeOpsWeaponSpawner = nuke ops weapon spawner
     .desc = { ent-MarkerBase.desc }

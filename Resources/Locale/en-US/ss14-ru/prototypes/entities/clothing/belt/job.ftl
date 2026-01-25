@@ -1,4 +1,4 @@
-﻿ent-BaseClothingBeltEngineering = { ent-ClothingBeltStorageBase }
+ent-BaseClothingBeltEngineering = { ent-ClothingBeltStorageBase }
     .desc = { ent-ClothingBeltStorageBase.desc }
 ent-ClothingBeltUtility = utility belt
     .desc = Can hold various things.

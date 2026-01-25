@@ -1,4 +1,4 @@
-﻿ent-LPPDildoAvian = dildo avian
+ent-LPPDildoAvian = dildo avian
     .desc = { ent-LPPClothingUnderwearBase.desc }
 ent-LPPDildoCanine = dildo canine
     .desc = { ent-LPPDildoAvian.desc }

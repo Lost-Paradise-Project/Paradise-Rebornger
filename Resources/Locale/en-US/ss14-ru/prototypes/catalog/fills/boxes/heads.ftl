@@ -1,4 +1,4 @@
-﻿ent-BoxCaptainCircuitboards = bridge circuit tote
+ent-BoxCaptainCircuitboards = bridge circuit tote
     .desc = { ent-ToteBase.desc }
 ent-BoxCECircuitboards = engineering circuit tote
     .desc = { ent-ToteBase.desc }

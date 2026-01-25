@@ -1,4 +1,4 @@
-﻿stack-steel =
+stack-steel =
     { $amount ->
         [1] лист
         [few] листа
@@ -374,6 +374,9 @@ stack-gray-concrete-smooth = серый бетонный пол
 stack-old-concrete-tile = старая бетонная плитка
 stack-old-concrete-mono-tile = старая бетонная плита
 stack-old-concrete-smooth = старый бетонный пол
+stack-ironsand-concrete-tile = бетонная плитка из железистого песка
+stack-ironsand-concrete-mono-tile = монотонная бетонная плитка из железистого песка
+stack-ironsand-concrete-smooth = гладкий бетон из железистого песка
 stack-silver-floor-tile = серебряная плитка
 stack-bcircuit-floor-tile = плитка голубых микросхем
 stack-grass-floor-tile = плитка травы
@@ -405,3 +408,5 @@ stack-white-marble-floor = белый мраморный пол
 stack-dark-marble-floor = чёрный мраморный пол
 stack-plasma-marble-floor = плазменный мраморный пол
 stack-uranium-marble-floor = урановый мраморный пол
+stack-astro-ironsand-floor = пол из астро-железистого песка
+stack-astro-ironsand-floor-borderless = пол из астро-железистого песка (безрамочный)

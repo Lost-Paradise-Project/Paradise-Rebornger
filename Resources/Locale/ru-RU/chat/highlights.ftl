@@ -38,10 +38,7 @@ highlights-librarian = библиотекар, библиотека
 highlights-mime = мим
 highlights-passenger = пассажир, грейтайдер, "тайдер"
 highlights-service-worker = сервисный работник, сервисник
-# Station-specific
-highlights-boxer = боксёр, боксер
 highlights-reporter = репортёр, репортер, журналист
-highlights-zookeeper = зоотехник
 highlights-psychologist = психолог
 # Silicon
 highlights-personal-ai = персональный ии, "пии"

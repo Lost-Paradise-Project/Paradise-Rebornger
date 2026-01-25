@@ -1,4 +1,4 @@
-﻿ent-LPPAuroraPillow = AuroraPillow
+ent-LPPAuroraPillow = AuroraPillow
     .desc = Little cute AuroraPillow! UwU
 ent-LPPCalliePillow = CalliePillow
     .desc = Little Callie!

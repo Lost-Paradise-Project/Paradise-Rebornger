@@ -1,4 +1,4 @@
-﻿ent-LPPClothingBreastBase = based breast
+ent-LPPClothingBreastBase = based breast
     .desc = { ent-Clothing.desc }
 ent-LPPBraBlack = bra
     .desc = { ent-LPPClothingBreastBase.desc }

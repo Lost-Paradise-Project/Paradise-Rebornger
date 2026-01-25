@@ -1,4 +1,4 @@
-﻿ent-DrinkGlass = metamorphic glass
+ent-DrinkGlass = metamorphic glass
     .desc = A metamorphic glass that automagically turns into a glass appropriate for the drink within. There's a sanded off patent number on the bottom.
 ent-DrinkJar = jar
     .desc = The hipster's cup.

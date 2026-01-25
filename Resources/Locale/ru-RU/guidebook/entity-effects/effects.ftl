@@ -181,7 +181,8 @@ entity-effect-guidebook-status-effect =
             } эффекта { LOC($key) }
     } { $delay ->
         [0] немедленно
-       *[other] после задержки в { NATURALFIXED($delay, 3) } { $delay ->
+       *[other]
+            после задержки в { NATURALFIXED($delay, 3) } { $delay ->
                 [one] секунду
                 [few] секунды
                *[other] секунд
@@ -211,7 +212,8 @@ entity-effect-guidebook-status-effect-indef =
             } эффект { LOC($key) }
     } { $delay ->
         [0] немедленно
-       *[other] после задержки в { NATURALFIXED($delay, 3) } { $delay ->
+       *[other]
+            после задержки в { NATURALFIXED($delay, 3) } { $delay ->
                 [one] секунду
                 [few] секунды
                *[other] секунд

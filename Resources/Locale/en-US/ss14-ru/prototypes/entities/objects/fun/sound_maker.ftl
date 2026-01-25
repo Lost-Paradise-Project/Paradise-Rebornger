@@ -1,4 +1,4 @@
-﻿ent-BikeHorn = bike horn
+ent-BikeHorn = bike horn
     .desc = A horn off of a bicycle.
 ent-CluwneHorn = broken bike horn
     .desc = A broken horn off of a bicycle.

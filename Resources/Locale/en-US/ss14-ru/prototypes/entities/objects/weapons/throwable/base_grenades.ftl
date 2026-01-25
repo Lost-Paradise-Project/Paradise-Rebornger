@@ -1,4 +1,4 @@
-﻿ent-GrenadeBase = { ent-BaseItem }
+ent-GrenadeBase = { ent-BaseItem }
     .desc = { ent-BaseItem.desc }
 ent-VolatileGrenadeBase = { "" }
     .desc = { "" }

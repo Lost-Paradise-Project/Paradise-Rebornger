@@ -1,3 +1,3 @@
-﻿ent-HandTeleporterAdmemeCNInvisible = { ent-HandTeleporter }
+ent-HandTeleporterAdmemeCNInvisible = { ent-HandTeleporter }
     .suffix = Admeme, Invisible
     .desc = { ent-HandTeleporter.desc }

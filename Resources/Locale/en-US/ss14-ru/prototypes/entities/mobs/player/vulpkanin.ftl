@@ -1,2 +1,2 @@
-﻿ent-MobVulpkanin = Urist McBark
+ent-MobVulpkanin = Urist McBark
     .desc = { ent-BaseMobVulpkanin.desc }
