@@ -107,7 +107,7 @@ public sealed class MiningConsoleSystem : EntitySystem
 
         if (account.Credits >= 1)
         {
-            _stack.Spawn((int)account.Credits, Credit, Transform(entity).Coordinates);
+            _stack.SpawnAtPosition((int)account.Credits, Credit, Transform(entity).Coordinates);
             account.Credits = 0;
         }
 
