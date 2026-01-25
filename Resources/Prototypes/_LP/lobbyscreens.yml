@@ -1,53 +1,35 @@
 ﻿- type: lobbyBackground
   id: bigmoon
   background: /Textures/_LP/LobbyScreens/bigmoon.png
-  name: BigMoon
-  artist: unkima
 
 - type: lobbyBackground
   id: Borman
   background: /Textures/_LP/LobbyScreens/borman.png
-  name: Borman
-  artist: Borman
 
 - type: lobbyBackground
   id: Nukies
   background: /Textures/_LP/LobbyScreens/breaddot_nukies.png
-  name: Nukies
-  artist: breaddotdoodles
 
 - type: lobbyBackground
   id: Clara
   background: /Textures/_LP/LobbyScreens/clara.png
-  name: Clara
-  artist: the_kira_san
 
 - type: lobbyBackground
   id: Darkmoon
   background: /Textures/_LP/LobbyScreens/darkmoon.png
-  name: Darkmoon
-  artist: darkmoonmilkyway
 
 - type: lobbyBackground
   id: Girls
   background: /Textures/_LP/LobbyScreens/girls.png
-  name: Girls
-  artist: unkima
 
 - type: lobbyBackground
   id: Kirashet
   background: /Textures/_LP/LobbyScreens/kirashet.png
-  name: Kirashet
-  artist: the_kira_san
 
 - type: lobbyBackground
   id: OhShit
   background: /Textures/_LP/LobbyScreens/ohshit.png
-  name: OhShit
-  artist: tongandroch
 
 - type: lobbyBackground
   id: Teftelka
   background: /Textures/_LP/LobbyScreens/teftelka.png
-  name: Teftelka
-  artist: push1nkaa

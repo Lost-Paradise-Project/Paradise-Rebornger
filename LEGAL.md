@@ -38,9 +38,18 @@
 
 В таблице перечислены все пространства имён (включая поддиректорию Nyanotrasen) с указанием исходных репозиториев и лицензий.
 
-| Поддиректория | Форк | Исходный репозиторий                   | Лицензия |
-|---------------|------|----------------------------------------|----------|
-| `_Wega`       | Wega | https://github.com/wega-team/ss14-wega | GPL 3.0  |
+| Поддиректория    | Форк             | Исходный репозиторий                                    | Лицензия |
+|------------------|------------------|---------------------------------------------------------|----------|
+| `_Wega`          | Wega             | https://github.com/wega-team/ss14-wega                  | GPL 3.0  |
+| `_Goob`          | Goob Station     | https://github.com/Goob-Station/Goob-Station            | AGPL 3.0 |
+| `_EE`            | Einstein Engines | https://github.com/Simple-Station/Einstein-Engines      | AGPL 3.0 |
+| `_ADT`           | Adventure Time   | https://github.com/AdventureTimeSS14/space_station_ADT  | AGPL 3.0 |
+| `_NF`            | New Froniters    | https://github.com/new-frontiers-14/frontier-station-14 | AGPL 3.0 |
+| `_Floof`         | Floof Station    | https://github.com/Floof-Station/Floof-Station          | AGPL 3.0 |
+| `_CD`            | Cosmatic Drift   | https://github.com/cosmatic-drift-14/cosmatic-drift     | MIT      |
+| `_NC`            | Nuclear 14       | https://github.com/Vault-Overseers/nuclear-14           | AGPL 3.0 |
+| `_DV`            | Delta V          | https://github.com/DeltaV-Station/Delta-v/              | AGPL 3.0 |
+| `_EstacaoPirata` | Estacao Pirata   | https://github.com/estacao-pirata/estacao-pirata        | AGPL 3.0 |
 
 ## Отказ от гарантий
 

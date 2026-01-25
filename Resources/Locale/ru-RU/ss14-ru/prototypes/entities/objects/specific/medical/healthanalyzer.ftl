@@ -1,2 +1,2 @@
-ent-HandheldHealthAnalyzer = { ent-HandheldHealthAnalyzerUnpowered }
-    .desc = { ent-HandheldHealthAnalyzerUnpowered.desc }
+ent-HandheldHealthAnalyzer = анализатор здоровья
+    .desc = Портативный сканер тела, способный определять жизненные показатели человека.
