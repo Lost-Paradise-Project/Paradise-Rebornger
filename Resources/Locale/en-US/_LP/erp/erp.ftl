@@ -1,4 +1,4 @@
-﻿# ERP Module Localization
+# ERP Module Localization
 
 # ERP Status options in the character creator
 humanoid-profile-editor-erp-label = ERP Предпочтения

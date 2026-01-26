@@ -1,4 +1,4 @@
-﻿player-uuid-requirement = It do {$inverted ->
+player-uuid-requirement = It do {$inverted ->
     [true]{" "} not
     *[other]{""}
 } belong to you
