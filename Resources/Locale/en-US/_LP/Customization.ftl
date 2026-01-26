@@ -1,4 +1,4 @@
-﻿player-uuid-requirement =
+player-uuid-requirement =
     Это { $inverted ->
         [true] { " " } не
        *[other] { "" }

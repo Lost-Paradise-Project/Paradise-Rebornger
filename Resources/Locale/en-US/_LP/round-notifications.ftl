@@ -1,1 +1,1 @@
-﻿discord-round-notifications-title = Уведомление о раунде
+discord-round-notifications-title = Уведомление о раунде
