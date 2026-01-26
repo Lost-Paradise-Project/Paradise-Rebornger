@@ -122,6 +122,18 @@
     speciesId: vulpkanin #временно не corvaxvulpkanin Corvax-CorvaxVulp_Port
     #vulpkanin Corvax-CorvaxVulp_Port start
     femaleDisplacements:
+    # LP edit start
+      underwear:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi
+            state: jumpsuit-female
+      socks:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi
+            state: shoes
+    # LP edit end
       jumpsuit:
         sizeMaps:
           32:
@@ -138,6 +150,16 @@
           32:
             sprite: Corvax/Mobs/Species/displacement.rsi
             state: jumpsuit
+      underwear:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi
+            state: jumpsuit
+      socks:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi
+            state: shoes
       shoes:
         sizeMaps:
           32:

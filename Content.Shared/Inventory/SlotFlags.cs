@@ -23,14 +23,14 @@ public enum SlotFlags
     GLOVES = 1 << 10,
     IDCARD = 1 << 11,
     // LP edit start
-    SOCKS = 1 << 16,
-    UNDERWEAR = 1 << 17,
-    BREAST = 1 << 18,
+    SOCKS = 1 << 12,
+    UNDERWEAR = 1 << 13,
+    BREAST = 1 << 14,
+    POCKET = 1 << 15,
+    LEGS = 1 << 16,
+    FEET = 1 << 17,
+    SUITSTORAGE = 1 << 18,
     // LP edit end
-    POCKET = 1 << 12,
-    LEGS = 1 << 13,
-    FEET = 1 << 14,
-    SUITSTORAGE = 1 << 15,
     All = ~NONE,
 
     WITHOUT_POCKET = All & ~POCKET

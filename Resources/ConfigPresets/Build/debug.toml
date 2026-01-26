@@ -1,1 +1,3 @@
-﻿
+﻿[vote]
+map_autovote_enabled = false
+preset_autovote_enabled = false

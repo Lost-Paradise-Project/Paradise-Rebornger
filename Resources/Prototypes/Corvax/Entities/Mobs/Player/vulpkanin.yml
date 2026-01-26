@@ -1,5 +1,6 @@
 - type: entity
   save: false
+  categories: [ HideSpawnMenu ] # LP edit
   name: Urist McVulp
   parent: [BaseMobCorvaxVulpkanin, BaseMob]
   id: MobCorvaxVulpkanin
