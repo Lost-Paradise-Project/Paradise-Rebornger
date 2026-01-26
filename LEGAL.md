@@ -57,7 +57,7 @@
 
 ## Устаревший код
 
-Если вы не согласны с условиями этих лицензий, вы можете использовать код до [этого коммита](https://github.com/new-frontiers-14/frontier-station-14/commit/2fca06eaba205ae6fe3aceb8ae2a0594f0effee0), доступный под лицензией MIT.
+Если вы не согласны с условиями этих лицензий, вы можете использовать код до [этого коммита](https://github.com/Lost-Paradise-Project/Paradise-Rebornger/commit/80acc36543c98a5773da7bd8c7011b5fa7e9b105), доступный под лицензией MIT.
 
 ## Важные примечания
 
