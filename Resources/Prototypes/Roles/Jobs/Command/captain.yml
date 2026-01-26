@@ -39,11 +39,7 @@
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
-  # LP edit start
-  - !type:AddComponentSpecial
-    components:
-    - type: CPRTraining
-  # LP edit end
+      - type: CPRTraining # LP edit
 
 - type: startingGear
   id: CaptainGear
