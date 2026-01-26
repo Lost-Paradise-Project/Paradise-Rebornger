@@ -1,1 +1,1 @@
-loadout-sponsor-only = [color=yellow]Доступно только спонсорам.[/color]
+loadout-sponsor-only = [color=yellow]Available only to sponsors of level 3 and above.[/color]

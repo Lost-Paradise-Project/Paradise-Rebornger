@@ -4,6 +4,7 @@
     <WarningsAsErrors>RA0032;nullable</WarningsAsErrors>
   </PropertyGroup>
   <Import Project="../MSBuild/Content.props" />
+  <Import Project=".\PShared\LP_GlobalDefines.props" Condition="Exists('.\PShared\LP_GlobalDefines.props')" />
   <ItemGroup>
     <PackageReference Include="JetBrains.Annotations" PrivateAssets="All" />
     <PackageReference Include="YamlDotNet" />

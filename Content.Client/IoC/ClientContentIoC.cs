@@ -30,6 +30,9 @@ using Content.Shared.Players.RateLimiting;
 
 #if LP
 using Content.Client._ERPModule.Services;
+using Content.Client._LP.Sponsors;
+using Content.Client._NC.DiscordAuth;
+using Content.Client.PClient._NC.JoinQueue;
 #endif
 
 namespace Content.Client.IoC

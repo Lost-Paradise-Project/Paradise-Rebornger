@@ -146,7 +146,7 @@ public sealed class LoadoutSystem : EntitySystem
     }
 
     public void Equip(EntityUid uid, List<ProtoId<StartingGearPrototype>>? startingGear,
-        List<ProtoId<RoleLoadoutPrototype>>? loadoutGroups)
+        List<ProtoId<RoleLoadoutPrototype>>? loadoutGroups, int sponsorTier = 0, string uuid = "")  //LP edit
     {
         // First, randomly pick a startingGear profile from those specified, and equip it.
         if (startingGear != null && startingGear.Count > 0)
@@ -163,7 +163,7 @@ public sealed class LoadoutSystem : EntitySystem
         var id = _random.Pick(loadoutGroups);
         var proto = _protoMan.Index(id);
         var loadout = new RoleLoadout(id);
-        loadout.SetDefault(GetProfile(uid), _actors.GetSession(uid), _protoMan, true);
+        loadout.SetDefault(GetProfile(uid), _actors.GetSession(uid), _protoMan, true, sponsorTier, uuid);  //LP edit
         _station.EquipRoleLoadout(uid, loadout, proto);
 
         GearEquipped(uid);

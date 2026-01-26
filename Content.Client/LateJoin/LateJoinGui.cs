@@ -18,6 +18,7 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using static Robust.Client.UserInterface.Controls.BoxContainer;
+using Content.Client._LP.Sponsors;  //LP edit
 
 namespace Content.Client.LateJoin
 {
@@ -171,6 +172,11 @@ namespace Content.Client.LateJoin
 
                 _jobButtons[id] = new Dictionary<string, List<JobButton>>();
 
+                //LP edit start
+                var uuid = SponsorSimpleManager.GetUUID();
+                var sponsorTier = SponsorSimpleManager.GetTier();
+                //LP edit end
+
                 foreach (var department in departments)
                 {
                     var departmentName = Loc.GetString(department.Name);
@@ -260,7 +266,7 @@ namespace Content.Client.LateJoin
 
                         jobButton.OnPressed += _ => SelectedId.Invoke((id, jobButton.JobId));
 
-                        if (!_jobRequirements.IsAllowed(prototype, (HumanoidCharacterProfile?)_preferencesManager.Preferences?.SelectedCharacter, out var reason))
+                        if (!_jobRequirements.IsAllowed(prototype, (HumanoidCharacterProfile?)_preferencesManager.Preferences?.SelectedCharacter, out var reason, sponsorTier, uuid))   //LP edit
                         {
                             jobButton.Disabled = true;
 

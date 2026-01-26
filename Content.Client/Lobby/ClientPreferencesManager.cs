@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.Client._LP.Sponsors;      //LP edit
 using Content.Corvax.Interfaces.Shared;
 using Content.Shared.Construction.Prototypes;
 using Content.Shared.Preferences;
@@ -66,10 +67,10 @@ namespace Content.Client.Lobby
         {
             var collection = IoCManager.Instance!;
             // Corvax-Sponsors-Start
-            var sponsorPrototypes = _sponsorsManager?.GetClientPrototypes().ToArray() ?? [];
-            profile.EnsureValid(_playerManager.LocalSession!, collection, sponsorPrototypes);
+            var sponsorPrototypes = SponsorSimpleManager.GetMarkings().ToArray();    //LP edit только маркинги
+            profile.EnsureValid(_playerManager.LocalSession!, collection, sponsorPrototypes, SponsorSimpleManager.GetTier(), SponsorSimpleManager.GetUUID());   //LP edit
             // Corvax-Sponsors-End
-            var characters = new Dictionary<int, ICharacterProfile>(Preferences.Characters) {[slot] = profile};
+            var characters = new Dictionary<int, ICharacterProfile>(Preferences.Characters) { [slot] = profile };
             Preferences = new PlayerPreferences(characters, Preferences.SelectedCharacterIndex, Preferences.AdminOOCColor, Preferences.ConstructionFavorites);
             var msg = new MsgUpdateCharacter
             {
@@ -82,7 +83,7 @@ namespace Content.Client.Lobby
         public void CreateCharacter(ICharacterProfile profile)
         {
             var characters = new Dictionary<int, ICharacterProfile>(Preferences.Characters);
-            var lowest = Enumerable.Range(0, Settings.MaxCharacterSlots)
+            var lowest = Enumerable.Range(0, Settings.MaxCharacterSlots + SponsorSimpleManager.GetMaxCharacterSlots())
                 .Except(characters.Keys)
                 .FirstOrNull();
 

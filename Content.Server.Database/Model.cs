@@ -46,6 +46,7 @@ namespace Content.Server.Database
         public DbSet<RoleWhitelist> RoleWhitelists { get; set; } = null!;
         public DbSet<BanTemplate> BanTemplate { get; set; } = null!;
         public DbSet<IPIntelCache> IPIntelCache { get; set; } = null!;
+        public DbSet<Sponsor> Sponsors { get; set; } = null!;  // LP edit
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -1332,4 +1333,19 @@ namespace Content.Server.Database
         /// </summary>
         public float Score { get; set; }
     }
+
+    // LP edit start: sponsor system
+    [Table("sponsors")]
+    public sealed class Sponsor
+    {
+        [Required, Key] public Guid UserId { get; set; }
+        public int Tier { get; set; }
+        public string OOCColor { get; set; } = "#00FF00";
+        public bool HavePriorityJoin { get; set; } = false;
+        public string AllowedMarkings { get; set; } = String.Empty;
+        public int ExtraSlots { get; set; } = 0;
+        //public DateTime ExpireDate {get;set;}
+        public bool AllowJob { get; set; } = false;
+    }
+    // LP edit end: sponsor system
 }

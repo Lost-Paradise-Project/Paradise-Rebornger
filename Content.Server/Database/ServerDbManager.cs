@@ -96,7 +96,7 @@ namespace Content.Server.Database
             NetUserId? userId,
             ImmutableArray<byte>? hwId,
             ImmutableArray<ImmutableArray<byte>>? modernHWIds,
-            bool includeUnbanned=true);
+            bool includeUnbanned = true);
 
         Task AddServerBanAsync(ServerBanDef serverBan);
         Task AddServerUnbanAsync(ServerUnbanDef serverBan);
@@ -363,6 +363,13 @@ namespace Content.Server.Database
         Task SendNotification(DatabaseNotification notification);
 
         #endregion
+
+#if LP
+        #region Sponsors
+        Task<Sponsor?> GetSponsorInfo(NetUserId userId, CancellationToken cancel = default);
+        Task<Sponsor[]> GetSponsorList(CancellationToken cancel = default);
+        #endregion
+#endif
     }
 
     /// <summary>
@@ -537,7 +544,7 @@ namespace Content.Server.Database
             NetUserId? userId,
             ImmutableArray<byte>? hwId,
             ImmutableArray<ImmutableArray<byte>>? modernHWIds,
-            bool includeUnbanned=true)
+            bool includeUnbanned = true)
         {
             DbReadOpsMetric.Inc();
             return RunDbCommand(() => _db.GetServerBansAsync(address, userId, hwId, modernHWIds, includeUnbanned));
@@ -1081,6 +1088,20 @@ namespace Content.Server.Database
                 }
             }
         }
+
+#if LP
+        public async Task<Sponsor?> GetSponsorInfo(NetUserId userId, CancellationToken cancel = default)
+        {
+            DbReadOpsMetric.Inc();
+            return await _db.GetSponsorInfo(userId);
+        }
+
+        public async Task<Sponsor[]> GetSponsorList(CancellationToken cancel = default)
+        {
+            DbReadOpsMetric.Inc();
+            return await _db.GetSponsorList();
+        }
+#endif
 
         // Wrapper functions to run DB commands from the thread pool.
         // This will avoid SynchronizationContext capturing and avoid running CPU work on the main thread.

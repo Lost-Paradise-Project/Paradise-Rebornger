@@ -1,6 +1,7 @@
 - type: species
   id: Arachnid
   name: species-name-arachnid
+  sponsorOnly: true
   roundStart: true
   prototype: MobArachnid
   sprites: MobArachnidSprites

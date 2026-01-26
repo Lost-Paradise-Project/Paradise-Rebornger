@@ -31,6 +31,13 @@ using Content.Shared.IoC;
 using Content.Shared.Kitchen;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.Players.RateLimiting;
+//LP edit start
+#if LP
+using Content.Server._LP.Sponsors;
+using Content.Server._NC.DiscordAuth;
+using Content.Server._NC.JoinQueue;
+#endif
+//LP eedit end
 
 namespace Content.Server.IoC;
 
@@ -82,5 +89,12 @@ internal static class ServerContentIoC
         deps.Register<DiscordLink>();
         deps.Register<DiscordChatLink>();
         IoCManager.Register<TTSManager>(); // Corvax-TTS
+        // LP edit start
+#if LP
+        IoCManager.Register<SponsorsManager>();
+        IoCManager.Register<DiscordAuthManager>();
+        IoCManager.Register<JoinQueueManager>();
+#endif
+        // LP edit end
     }
 }

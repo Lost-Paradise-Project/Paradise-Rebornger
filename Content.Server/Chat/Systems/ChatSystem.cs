@@ -21,7 +21,6 @@ using Content.Shared.Players;
 using Content.Shared.Players.RateLimiting;
 using Content.Shared.Radio;
 using Content.Shared.Station.Components;
-using Content.Shared.Whitelist;
 using Robust.Server.Player;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
@@ -33,6 +32,9 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Replays;
 using Robust.Shared.Utility;
+#if LP
+using Content.Server._LP.Sponsors;
+#endif
 
 namespace Content.Server.Chat.Systems;
 
@@ -242,7 +244,7 @@ public sealed partial class ChatSystem : SharedChatSystem
             case InGameICChatType.HiddenEmote:
                 SendHiddenEntityEmote(source, message, range, nameOverride, hideLog: hideLog, ignoreActionBlocker: ignoreActionBlocker);
                 break;
-            // LP edit end
+                // LP edit end
         }
     }
 
@@ -643,6 +645,13 @@ public sealed partial class ChatSystem : SharedChatSystem
         var wrappedMessage = Loc.GetString("chat-manager-entity-looc-wrap-message",
             ("entityName", name),
             ("message", FormattedMessage.EscapeText(message)));
+
+#if LP
+        if (IoCManager.Resolve<SponsorsManager>().TryGetInfo(player.UserId, out var sponsorData) && sponsorData.Tier > 0)
+        {
+            wrappedMessage = Loc.GetString("chat-manager-entity-looc-patron-wrap-message", ("patronColor", sponsorData.OOCColor), ("playerName", player.Name), ("message", FormattedMessage.EscapeText(message)));
+        }
+#endif
 
         SendInVoiceRange(ChatChannel.LOOC, message, wrappedMessage, source, hideChat ? ChatTransmitRange.HideChat : ChatTransmitRange.Normal, player.UserId);
         _adminLogger.Add(LogType.Chat, LogImpact.Low, $"LOOC from {source}: {message}");

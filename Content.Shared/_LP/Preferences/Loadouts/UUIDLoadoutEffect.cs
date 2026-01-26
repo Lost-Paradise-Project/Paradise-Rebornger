@@ -1,4 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
+using System.Diagnostics.CodeAnalysis;
 using Content.Corvax.Interfaces.Shared;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
@@ -7,10 +7,12 @@ using Robust.Shared.Utility;
 namespace Content.Shared.Preferences.Loadouts.Effects;
 
 /// <summary>
-/// Only sponsor that have it can select this loadout
+/// Only player with correct uuid can select this loadout
 /// </summary>
-public sealed partial class SponsorLoadoutEffect : LoadoutEffect
+public sealed partial class UUIDLoadoutEffect : LoadoutEffect
 {
+    [DataField("UUID", required: true)]
+    public string UUID = default!;
     public override bool Validate(HumanoidCharacterProfile profile,
         RoleLoadout loadout,
         LoadoutPrototype proto, // Corvax-Sponsors
@@ -26,9 +28,9 @@ public sealed partial class SponsorLoadoutEffect : LoadoutEffect
         if (session == null)
             return true;
 
-        if (sponsorTier < 3)    //LP edit - любые лодауты спонсорам 3+ уровня
+        if (uuid.ToLower() != UUID.ToLower())
         {
-            reason = FormattedMessage.FromMarkupOrThrow(Loc.GetString("loadout-sponsor-only"));
+            reason = FormattedMessage.FromMarkupOrThrow(Loc.GetString("loadout-uuid-only"));
             return false;
         }
 
