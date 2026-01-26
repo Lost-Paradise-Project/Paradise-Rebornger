@@ -19,6 +19,12 @@
   access:
   - Medical
   - Maintenance
+  # LP edit start
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: CPRTraining
+  # LP edit end
 
 - type: startingGear
   id: MedicalInternGear

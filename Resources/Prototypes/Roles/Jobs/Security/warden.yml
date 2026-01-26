@@ -35,6 +35,11 @@
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
+  # LP edit start
+  - !type:AddComponentSpecial
+    components:
+    - type: CPRTraining
+  # LP edit end
 
 - type: startingGear
   id: WardenGear
