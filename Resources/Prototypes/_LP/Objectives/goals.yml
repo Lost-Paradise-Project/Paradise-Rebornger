@@ -25,3 +25,13 @@
   id: CorporateEvent
   text: station-goal-podgotovka-k-korporativu
   minPlayers: 10
+
+- type: stationGoal
+  id: TestPoligon
+  text: station-goal-test-range-prep
+  minPlayers: 10
+
+- type: stationGoal
+  id: TunnelInventory
+  text: station-goal-maintenance-salvage
+  minPlayers: 10
