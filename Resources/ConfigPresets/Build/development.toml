@@ -45,7 +45,3 @@ new_player_threshold = 120
 random_characters = true
 random_species_weights = ""
 ssd_sleep_time = 3600
-
-[vote]
-map_autovote_enabled = false
-preset_autovote_enabled = false
