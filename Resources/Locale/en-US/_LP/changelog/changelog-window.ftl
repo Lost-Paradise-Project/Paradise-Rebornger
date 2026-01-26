@@ -1,1 +1,1 @@
-﻿changelog-tab-title-ChangelogLPP = Lost Paradise
+changelog-tab-title-ChangelogLPP = Lost Paradise

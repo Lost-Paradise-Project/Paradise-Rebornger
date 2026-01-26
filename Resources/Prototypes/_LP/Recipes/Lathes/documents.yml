@@ -6,7 +6,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocADStatement
@@ -16,7 +16,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocRRTInquiriesAndAppeals
@@ -26,7 +26,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocESStatement
@@ -36,7 +36,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocBASStatement
@@ -46,7 +46,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocDWReport
@@ -56,7 +56,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocRAOrders
@@ -66,7 +66,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocEWReport
@@ -76,7 +76,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocDHMReport
@@ -86,7 +86,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocPAStatement
@@ -96,7 +96,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocAAStatement
@@ -106,7 +106,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocJRSOrder
@@ -116,7 +116,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocROrder
@@ -126,7 +126,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocAFEStatements
@@ -136,7 +136,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocPFEPermissions
@@ -146,7 +146,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocVOLOComplaints
@@ -156,7 +156,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocIAAReport
@@ -166,7 +166,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocIFRLDInquiriesAndAppeals
@@ -176,7 +176,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocCTOrder
@@ -186,7 +186,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocParoleInquiriesAndAppeals
@@ -196,7 +196,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocROCStatement
@@ -206,7 +206,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocCTWStatement
@@ -216,7 +216,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocInquiriesAndAppeals
@@ -226,7 +226,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocRILDOrder
@@ -236,7 +236,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocCVConclusionsAndDecisions
@@ -246,7 +246,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocBIRStatement
@@ -256,7 +256,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocBIOrder
@@ -266,7 +266,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocAdjustmentOrder
@@ -276,7 +276,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocCAOComplaints
@@ -286,7 +286,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocATWOrder
@@ -296,7 +296,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocDutyOrder
@@ -306,7 +306,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocPFSDWPermissions
@@ -316,7 +316,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocILOAReport
@@ -326,7 +326,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocIReport
@@ -336,7 +336,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocVerdictConclusionsAndDecisions
@@ -346,7 +346,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocCOOReport
@@ -356,7 +356,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocSWPermission
@@ -366,7 +366,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocWAPermission
@@ -376,7 +376,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocPPOrder
@@ -386,7 +386,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocMIOrder
@@ -396,7 +396,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocProductionInquiriesAndAppeals
@@ -406,7 +406,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocCMIOrder
@@ -416,7 +416,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocCMIReport
@@ -426,7 +426,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocPSReportMed
@@ -436,7 +436,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocAFPDPermission
@@ -446,7 +446,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocSHReport
@@ -456,7 +456,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocMDDOrder
@@ -466,7 +466,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocEuthanasiaInquiriesAndAppeals
@@ -476,7 +476,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocDeathReport
@@ -486,7 +486,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocBDPermission
@@ -496,7 +496,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocInfectionReport
@@ -506,7 +506,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocQuarantineOrder
@@ -516,7 +516,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocEpidemiologicalReport
@@ -526,7 +526,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocEPPInquiriesAndAppeals
@@ -536,7 +536,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocLEDReport
@@ -546,7 +546,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocBuildingPermission
@@ -556,7 +556,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocTCReport
@@ -566,7 +566,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocRCWInquiriesAndAppeals
@@ -576,7 +576,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocPPInquiriesAndAppeals
@@ -586,7 +586,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocPSReportSci
@@ -596,7 +596,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocExperimentReport
@@ -606,7 +606,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocExpeditionReport
@@ -616,7 +616,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocADReport
@@ -626,7 +626,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocRRBOrder
@@ -636,7 +636,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocLOSDReport
@@ -646,7 +646,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocDisposalReport
@@ -656,7 +656,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocExpeditionPermission
@@ -666,7 +666,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocPOInquiriesAndAppeals
@@ -676,7 +676,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocEvacOrder
@@ -686,7 +686,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocSGOrder
@@ -696,7 +696,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocSSROrder
@@ -706,7 +706,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocAOHInquiriesAndAppeals
@@ -716,7 +716,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocExecutiveOrder
@@ -726,7 +726,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocDeliveryOrder
@@ -736,7 +736,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocCCReport
@@ -746,7 +746,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocCCFMReport
@@ -756,7 +756,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocOperationOrder
@@ -766,7 +766,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocOperationReport
@@ -776,7 +776,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocCCRStatement
@@ -786,7 +786,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocJAStatment
@@ -796,7 +796,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocJRStatment
@@ -806,7 +806,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocCPDStatements
@@ -816,7 +816,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocAmenstyStatements
@@ -826,7 +826,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocPSReport
@@ -836,7 +836,7 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100
 
 - type: latheRecipe
   id: RecipeDocOSReport
@@ -846,4 +846,4 @@
   completetime: 2
   applyMaterialDiscount: false
   materials:
-    Paper: 100
+    PrinterPaper: 100

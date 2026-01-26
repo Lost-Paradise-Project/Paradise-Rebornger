@@ -1,0 +1,17 @@
+﻿- type: localizedDataset
+  id: NamesHumanLastEnglish
+  values:
+    prefix: english-names-last-dataset-
+    count: 553
+
+- type: localizedDataset
+  id: NamesHumanFirstFemaleEnglish
+  values:
+    prefix: english-names-first-female-dataset-
+    count: 1145
+
+- type: localizedDataset
+  id: NamesHumanFirstMaleEnglish
+  values:
+    prefix: english-names-first-male-dataset-
+    count: 666

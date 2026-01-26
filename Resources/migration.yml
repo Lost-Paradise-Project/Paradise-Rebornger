@@ -860,3 +860,17 @@ ClothingNeckSolarisPin: null
 ClothingNeckVitezstviPin: null
 ClothingNeckWhiteListPin: null
 VendingMachinePride: null
+
+# LP edit 2026-01-26
+PrintedDocumentPermissionToCarryWeapons: null
+PrintedDocumentSentence: null
+PrintedDocumentReportStation: null
+PrintedDocumentPrescriptionDrugAuthorization: null
+PrintedDocumentOrderDismissal: null
+PrintedDocumentComplaintViolationLaborRules: null
+PrintedDocumentPermissionDisposeBody: null
+PrintedDocumentJudgment: null
+PrintedDocumentDecisionToStartTrial: null
+PrintedDocumentDeathCertificate: null
+PrintedDocumentApplicationAccess: null
+PrintedDocumentApplicationEmployment: null

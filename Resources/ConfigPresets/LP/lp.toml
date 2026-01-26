@@ -58,6 +58,8 @@ timerrestart = 30
 map_enabled = false
 preset_enabled = false
 restart_enabled = true
+map_autovote_enabled = true
+preset_autovote_enabled = true
 
 [build]
 fork_id = "LPP"

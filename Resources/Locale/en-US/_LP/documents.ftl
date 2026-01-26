@@ -1,4 +1,4 @@
-﻿doc-text-printer-acting-director-statement =
+doc-text-printer-acting-director-statement =
     ⠀[bold](Название станции) | XX-000 ПД-КОМ[/bold]
     ⠀
     ⠀═══════[color=#2369AF]ЗАЯВЛЕНИЕ О НАЗНАЧЕНИИ НА ВРИО[/color]════════
