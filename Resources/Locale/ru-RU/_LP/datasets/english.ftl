@@ -1,4 +1,4 @@
-﻿english-names-last-dataset-1 = Акерли
+english-names-last-dataset-1 = Акерли
 english-names-last-dataset-2 = Адамс
 english-names-last-dataset-3 = Аддисон
 english-names-last-dataset-4 = Агг
@@ -551,7 +551,6 @@ english-names-last-dataset-550 = Заун
 english-names-last-dataset-551 = Зил
 english-names-last-dataset-552 = Циммер
 english-names-last-dataset-553 = Зукс
-
 english-names-first-female-dataset-1 = Алия
 english-names-first-female-dataset-2 = Эбби
 english-names-first-female-dataset-3 = Эбигейл
@@ -1698,7 +1697,6 @@ english-names-first-female-dataset-1142 = Янина
 english-names-first-female-dataset-1143 = Ярина
 english-names-first-female-dataset-1144 = Ярослава
 english-names-first-female-dataset-1145 = Ясмина
-
 english-names-first-male-dataset-1 = Ааден
 english-names-first-male-dataset-2 = Аарон
 english-names-first-male-dataset-3 = Авель

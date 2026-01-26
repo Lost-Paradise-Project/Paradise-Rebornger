@@ -1,4 +1,4 @@
-﻿ent-BaseToyGun = { "" }
+ent-BaseToyGun = { "" }
     .desc = { "" }
 ent-FoamCrossbow = поролоновый арбалет
     .desc = Если нацелить его на охрану, в вас могут выпустить настоящую дробь.

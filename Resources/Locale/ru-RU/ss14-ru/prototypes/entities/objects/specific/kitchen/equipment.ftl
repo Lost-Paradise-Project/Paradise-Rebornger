@@ -1,4 +1,4 @@
-﻿ent-BaseHandheldGrinder = { ent-BaseItem }
+ent-BaseHandheldGrinder = { ent-BaseItem }
     .desc = { ent-BaseItem.desc }
 ent-MortarAndPestle = ступка и пестик
     .desc = Используется для измельчения небольшого количества предметов.

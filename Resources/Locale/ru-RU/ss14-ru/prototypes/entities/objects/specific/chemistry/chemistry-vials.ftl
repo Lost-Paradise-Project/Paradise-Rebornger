@@ -1,4 +1,4 @@
-﻿ent-BaseChemistryVial = { ent-DrinkBaseMaterialGlass }
+ent-BaseChemistryVial = { ent-DrinkBaseMaterialGlass }
     .desc = { ent-DrinkBaseMaterialGlass.desc }
 ent-ChemistryEmptyVial = флакон
     .desc = Маленький флакон.

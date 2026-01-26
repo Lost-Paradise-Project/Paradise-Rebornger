@@ -1,4 +1,4 @@
-﻿ent-PartCorvaxVulpkanin = часть тела вульпканина
+ent-PartCorvaxVulpkanin = часть тела вульпканина
     .desc = { ent-BaseItem.desc }
 ent-TorsoCorvaxVulpkanin = туловище вульпканина
     .desc = { ent-PartCorvaxVulpkanin.desc }

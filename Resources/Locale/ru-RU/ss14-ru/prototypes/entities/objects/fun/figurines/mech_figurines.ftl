@@ -1,4 +1,4 @@
-﻿ent-BaseFigurineMech = { ent-BaseFigurine }
+ent-BaseFigurineMech = { ent-BaseFigurine }
     .desc = { ent-BaseFigurine.desc }
 ent-ToyRipley = игрушечный Рипли
     .desc = Экшен-фигурка мини-меха! На спине написано «Меха №1/12».
