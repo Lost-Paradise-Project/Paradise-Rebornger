@@ -109,7 +109,7 @@ station-goal-podgotovka-k-korporativu =
     Качественная организация мероприятия будет отражена в итоговой оценке работы командного состава.
     
     { station-goal-end }
-   station-goal-test-range-prep =
+station-goal-test-range-prep =
     { station-goal-start }[bold]
     
     Цель смены станции { $station } — подготовка испытательного полигона для габаритного оборудования.[/bold]
