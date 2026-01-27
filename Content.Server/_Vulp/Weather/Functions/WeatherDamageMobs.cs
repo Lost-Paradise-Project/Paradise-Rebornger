@@ -91,12 +91,7 @@ public sealed partial class WeatherDamageMobs : WeatherFunction
                 uid,
                 resultingDamage,
                 false,
-                false,
-                damageable,
-                null,
-                false,
-                false,
-                2f); // TODO: what is a good value for partMultiplier?
+                false); // TODO: what is a good value for partMultiplier?
         }
     }
 }
