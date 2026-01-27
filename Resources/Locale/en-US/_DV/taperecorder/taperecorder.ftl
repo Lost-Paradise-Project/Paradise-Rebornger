@@ -25,3 +25,8 @@ tape-recorder-menu-no-cassette-label = Cassette tape is not inserted
 tape-recorder-print-start-text = [bold]Start of recorded transcript[/bold]
 tape-recorder-print-message-text = [bold][{$time}] {$source}: [/bold] {$message}
 tape-recorder-print-end-text = [bold]End of recorded transcript[/bold]
+
+signal-port-description-playback = Start audio playback.
+signal-port-description-record = Start recording audio.
+signal-port-description-rewind = Rewind audio.
+signal-port-description-pause = Stop playing, recording, or rewinding.

@@ -23,3 +23,7 @@ tape-recorder-menu-no-cassette-label = Кассета не вставлена
 tape-recorder-print-start-text = [bold]Начало стенограммы записи[/bold]
 tape-recorder-print-message-text = [bold][{ $time }] { $source }: [/bold] { $message }
 tape-recorder-print-end-text = [bold]Конец стенограммы записи[/bold]
+signal-port-description-playback = Проиграть запись.
+signal-port-description-record = Начать запись.
+signal-port-description-rewind = Отмотать назад.
+signal-port-description-pause = Остановить.

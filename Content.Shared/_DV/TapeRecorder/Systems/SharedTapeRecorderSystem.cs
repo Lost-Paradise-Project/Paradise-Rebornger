@@ -1,16 +1,19 @@
 ﻿using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Damage;
+using Content.Shared.Damage.Systems;
+using Content.Shared.Damage.Components;
 using Content.Shared._DV.TapeRecorder.Components;
 using Content.Shared.Destructible;
 using Content.Shared.DoAfter;
 using Content.Shared.Examine;
 using Content.Shared.Interaction;
 using Content.Shared.Labels.Components;
-using Content.Shared.Popups;
 using Content.Shared.Tag;
 using Content.Shared.Toggleable;
 using Content.Shared.UserInterface;
 using Content.Shared.Whitelist;
+using Content.Shared.DeviceLinking;
+using Content.Shared.DeviceLinking.Events;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
 using Robust.Shared.Random;
@@ -30,10 +33,11 @@ public abstract class SharedTapeRecorderSystem : EntitySystem
     [Dependency] protected readonly SharedAudioSystem Audio = default!;
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly ItemSlotsSystem _slots = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly SharedUserInterfaceSystem _ui = default!;
 
     protected const string SlotName = "cassette_tape";
+
+    private EntityQuery<TapeCassetteComponent> _casette;
 
     public override void Initialize()
     {
@@ -45,11 +49,14 @@ public abstract class SharedTapeRecorderSystem : EntitySystem
         SubscribeLocalEvent<TapeRecorderComponent, ExaminedEvent>(OnRecorderExamined);
         SubscribeLocalEvent<TapeRecorderComponent, ChangeModeTapeRecorderMessage>(OnChangeModeMessage);
         SubscribeLocalEvent<TapeRecorderComponent, AfterActivatableUIOpenEvent>(OnUIOpened);
+        SubscribeLocalEvent<TapeRecorderComponent, SignalReceivedEvent>(OnSignalReceived);
 
         SubscribeLocalEvent<TapeCassetteComponent, ExaminedEvent>(OnTapeExamined);
         SubscribeLocalEvent<TapeCassetteComponent, DamageChangedEvent>(OnDamagedChanged);
         SubscribeLocalEvent<TapeCassetteComponent, InteractUsingEvent>(OnInteractingWithCassette);
         SubscribeLocalEvent<TapeCassetteComponent, TapeCassetteRepairDoAfterEvent>(OnTapeCassetteRepair);
+
+        _casette = GetEntityQuery<TapeCassetteComponent>();
     }
 
     /// <summary>
@@ -59,11 +66,11 @@ public abstract class SharedTapeRecorderSystem : EntitySystem
     {
         base.Update(frameTime);
 
-        var query = EntityQueryEnumerator<ActiveTapeRecorderComponent, TapeRecorderComponent>();
-        while (query.MoveNext(out var uid, out _, out var comp))
+        var query = EntityQueryEnumerator<ActiveTapeRecorderComponent, TapeRecorderComponent, ItemSlotsComponent>();
+        while (query.MoveNext(out var uid, out _, out var comp, out var slots))
         {
             var ent = (uid, comp);
-            if (!TryGetTapeCassette(uid, out var tape))
+            if (!TryGetTapeCassette(uid, out var tape, slots))
             {
                 SetMode(ent, TapeRecorderMode.Stopped);
                 continue;
@@ -210,7 +217,7 @@ public abstract class SharedTapeRecorderSystem : EntitySystem
         if (HasComp<FitsInTapeRecorderComponent>(ent))
             return;
 
-        _appearance.SetData(ent, ToggleVisuals.Toggled, false);
+        _appearance.SetData(ent, ToggleableVisuals.Enabled, false);
         AddComp<FitsInTapeRecorderComponent>(ent);
         args.Handled = true;
     }
@@ -223,7 +230,7 @@ public abstract class SharedTapeRecorderSystem : EntitySystem
         if (args.DamageDelta == null || args.DamageDelta.GetTotal() < 5)
             return;
 
-        _appearance.SetData(ent, ToggleVisuals.Toggled, true);
+        _appearance.SetData(ent, ToggleableVisuals.Enabled, true);
 
         RemComp<FitsInTapeRecorderComponent>(ent);
         CorruptRandomEntry(ent);
@@ -361,15 +368,15 @@ public abstract class SharedTapeRecorderSystem : EntitySystem
         UpdateUI(ent);
     }
 
-    protected bool TryGetTapeCassette(EntityUid ent, [NotNullWhen(true)] out Entity<TapeCassetteComponent> tape)
+    protected bool TryGetTapeCassette(EntityUid ent, out Entity<TapeCassetteComponent> tape, ItemSlotsComponent? slots = null)
     {
-        if (_slots.GetItemOrNull(ent, SlotName) is not {} cassette)
+        if (_slots.GetItemOrNull(ent, SlotName, slots) is not {} cassette)
         {
             tape = default!;
             return false;
         }
 
-        if (!TryComp<TapeCassetteComponent>(cassette, out var comp))
+        if (!_casette.TryComp(cassette, out var comp))
         {
             tape = default!;
             return false;
@@ -412,6 +419,26 @@ public abstract class SharedTapeRecorderSystem : EntitySystem
             cooldown);
 
         _ui.SetUiState(uid, TapeRecorderUIKey.Key, state);
+    }
+
+    private void OnSignalReceived(Entity<TapeRecorderComponent> ent, ref SignalReceivedEvent args)
+    {
+        if (args.Port == ent.Comp.PausePort)
+        {
+            SetMode(ent, TapeRecorderMode.Stopped);
+        }
+        else if (args.Port == ent.Comp.RecordPort)
+        {
+            SetMode(ent, TapeRecorderMode.Recording);
+        }
+        else if (args.Port == ent.Comp.PlaybackPort)
+        {
+            SetMode(ent, TapeRecorderMode.Playing);
+        }
+        else if (args.Port == ent.Comp.RewindPort)
+        {
+            SetMode(ent, TapeRecorderMode.Rewinding);
+        }
     }
 }
 
