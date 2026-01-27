@@ -33,7 +33,10 @@ public sealed class WeatherSystem : SharedWeatherSystem
         var ent = _playerManager.LocalEntity;
 
         if (ent == null)
+        {
+            weather.Stream = _audio.Stop(weather.Stream); // Vulpstation
             return;
+        }
 
         var mapUid = Transform(uid).MapUid;
         var entXform = Transform(ent.Value);
@@ -45,8 +48,13 @@ public sealed class WeatherSystem : SharedWeatherSystem
             return;
         }
 
-        if (!Timing.IsFirstTimePredicted || weatherProto.Sound == null)
+        // Vulpstation - who thought it was a good idea to only calculate occlusion on the first tick? Removed the relevant lines.
+        if (weatherProto.Sound == null)
             return;
+
+        // Vulpstation
+        if (weather.Stream is not null and not { Valid: true })
+            weather.Stream = null;
 
         weather.Stream ??= _audio.PlayGlobal(weatherProto.Sound, Filter.Local(), true)?.Entity;
 
@@ -84,7 +92,7 @@ public sealed class WeatherSystem : SharedWeatherSystem
                         {
                             if (Math.Abs(x) == 1 && Math.Abs(y) == 1 ||
                                 x == 0 && y == 0 ||
-                                (new Vector2(x, y) + node.GridIndices - seed.GridIndices).Length() > 3)
+                                (new Vector2(x, y) + node.GridIndices - seed.GridIndices).Length() > 5) // Floofstation - increase max search radius to 5
                             {
                                 continue;
                             }
@@ -112,7 +120,7 @@ public sealed class WeatherSystem : SharedWeatherSystem
             }
             else
             {
-                occlusion = 3f;
+                occlusion = 6f; // Floofstation - increase default occlusion so snowfall noise is less annoying indoors
             }
         }
 
