@@ -1,7 +1,10 @@
 ﻿using Content.Server.Body.Systems;
 using Content.Shared._Vulp.Weather;
 using Content.Shared.Alert;
+using Content.Shared.Body.Components;
 using Content.Shared.Damage;
+using Content.Shared.Damage.Components;
+using Content.Shared.Damage.Systems;
 using Content.Shared.Maps;
 using Content.Shared.Mobs.Components;
 using Content.Shared.NPC;
