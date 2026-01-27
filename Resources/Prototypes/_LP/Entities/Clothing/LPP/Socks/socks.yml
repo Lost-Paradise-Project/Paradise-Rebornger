@@ -18,7 +18,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderBeeKnee
   name: bee knee
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/bee_knee.rsi
@@ -27,7 +26,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderBeeNorm
   name: bee norm
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/bee_norm.rsi
@@ -36,7 +34,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderBeeThigh
   name: bee thigh
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/bee_thigh.rsi
@@ -45,7 +42,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderCommieKnee
   name: commie knee
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/commie_knee.rsi
@@ -54,7 +50,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderCommieThigh
   name: commie thigh
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/commie_thigh.rsi
@@ -65,7 +60,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderPantyhoseBlack
   name: pantyhose
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Pantyhose/white.rsi
@@ -83,7 +77,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderPantyhoseBlue
   name: pantyhose
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Pantyhose/white.rsi
@@ -101,7 +94,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderPantyhoseBrown
   name: pantyhose
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Pantyhose/white.rsi
@@ -119,7 +111,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderPantyhoseGreen
   name: pantyhose
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Pantyhose/white.rsi
@@ -137,7 +128,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderPantyhoseGrey
   name: pantyhose
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Pantyhose/white.rsi
@@ -155,7 +145,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderPantyhoseLightpurple
   name: pantyhose
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Pantyhose/white.rsi
@@ -173,7 +162,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderPantyhoseMaroon
   name: pantyhose
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Pantyhose/white.rsi
@@ -191,7 +179,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderPantyhoseOrange
   name: pantyhose
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Pantyhose/white.rsi
@@ -209,7 +196,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderPantyhose
   name: pantyhose
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Pantyhose/white.rsi
@@ -217,7 +203,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderPantyhoseRed
   name: pantyhose
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Pantyhose/white.rsi
@@ -235,7 +220,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderPantyhoseTeal
   name: pantyhose
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Pantyhose/white.rsi
@@ -253,7 +237,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderPantyhoseYellow
   name: pantyhose
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Pantyhose/white.rsi
@@ -273,7 +256,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderRainbowKnee
   name: rainbow knee
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/rainbow_knee.rsi
@@ -282,7 +264,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderRainbowThigh
   name: rainbow thigh
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/rainbow_thigh.rsi
@@ -294,7 +275,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksKneeBlack
   name: socks knee
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksKnee/white.rsi
@@ -312,7 +292,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksKneeBlue
   name: socks knee
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksKnee/white.rsi
@@ -330,7 +309,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksKneeBrown
   name: socks knee
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksKnee/white.rsi
@@ -348,7 +326,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksKneeGreen
   name: socks knee
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksKnee/white.rsi
@@ -366,7 +343,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksKneeGrey
   name: socks knee
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksKnee/white.rsi
@@ -384,7 +360,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksKneeLightpurple
   name: socks knee
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksKnee/white.rsi
@@ -402,7 +377,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksKneeMaroon
   name: socks knee
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksKnee/white.rsi
@@ -420,7 +394,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksKneeOrange
   name: socks knee
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksKnee/white.rsi
@@ -438,7 +411,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksKnee
   name: socks knee
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksKnee/white.rsi
@@ -456,7 +428,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksKneeRed
   name: socks knee
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksKnee/white.rsi
@@ -474,7 +445,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksKneeTeal
   name: socks knee
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksKnee/white.rsi
@@ -492,7 +462,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksKneeYellow
   name: socks knee
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksKnee/white.rsi
@@ -512,7 +481,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksNormBlack
   name: socks norm
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksNorm/white.rsi
@@ -530,7 +498,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksNormBlue
   name: socks norm
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksNorm/white.rsi
@@ -548,7 +515,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksNormBrown
   name: socks norm
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksNorm/white.rsi
@@ -566,7 +532,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksNormGreen
   name: socks norm
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksNorm/white.rsi
@@ -584,7 +549,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksNormGrey
   name: socks norm
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksNorm/white.rsi
@@ -602,7 +566,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksNormLightpurple
   name: socks norm
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksNorm/white.rsi
@@ -620,7 +583,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksNormMaroon
   name: socks norm
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksNorm/white.rsi
@@ -638,7 +600,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksNormOrange
   name: socks norm
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksNorm/white.rsi
@@ -656,7 +617,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksNorm
   name: socks norm
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksNorm/white.rsi
@@ -674,7 +634,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksNormRed
   name: socks norm
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksNorm/white.rsi
@@ -692,7 +651,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksNormTeal
   name: socks norm
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksNorm/white.rsi
@@ -710,7 +668,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksNormYellow
   name: socks norm
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksNorm/white.rsi
@@ -730,7 +687,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksShortBlack
   name: socks short
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksShort/white.rsi
@@ -748,7 +704,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksShortBlue
   name: socks short
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksShort/white.rsi
@@ -766,7 +721,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksShortBrown
   name: socks short
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksShort/white.rsi
@@ -784,7 +738,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksShortGreen
   name: socks short
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksShort/white.rsi
@@ -802,7 +755,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksShortGrey
   name: socks short
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksShort/white.rsi
@@ -820,7 +772,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksShortLightpurple
   name: socks short
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksShort/white.rsi
@@ -838,7 +789,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksShortMaroon
   name: socks short
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksShort/white.rsi
@@ -856,7 +806,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksShortOrange
   name: socks short
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksShort/white.rsi
@@ -874,7 +823,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksShort
   name: socks short
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksShort/white.rsi
@@ -892,7 +840,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksShortRed
   name: socks short
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksShort/white.rsi
@@ -910,7 +857,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksShortTeal
   name: socks short
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksShort/white.rsi
@@ -928,7 +874,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksShortYellow
   name: socks short
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksShort/white.rsi
@@ -948,7 +893,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksThighBlack
   name: socks thigh
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksThigh/white.rsi
@@ -966,7 +910,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksThighBlue
   name: socks thigh
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksThigh/white.rsi
@@ -984,7 +927,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksThighBrown
   name: socks thigh
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksThigh/white.rsi
@@ -1002,7 +944,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksThighGreen
   name: socks thigh
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksThigh/white.rsi
@@ -1020,7 +961,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksThighGrey
   name: socks thigh
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksThigh/white.rsi
@@ -1038,7 +978,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksThighLightpurple
   name: socks thigh
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksThigh/white.rsi
@@ -1056,7 +995,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksThighMaroon
   name: socks thigh
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksThigh/white.rsi
@@ -1074,7 +1012,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksThighOrange
   name: socks thigh
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksThigh/white.rsi
@@ -1092,7 +1029,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksThigh
   name: socks thigh
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksThigh/white.rsi
@@ -1110,7 +1046,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksThighRed
   name: socks thigh
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksThigh/white.rsi
@@ -1128,7 +1063,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksThighTeal
   name: socks thigh
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksThigh/white.rsi
@@ -1146,7 +1080,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksThighYellow
   name: socks thigh
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/Socks/SocksThigh/white.rsi
@@ -1166,7 +1099,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderStripedKnee
   name: striped knee
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/striped_knee.rsi
@@ -1175,7 +1107,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderStripedThigh
   name: striped thigh
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/striped_thigh.rsi
@@ -1186,7 +1117,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderThinKneeBlack
   name: thin knee
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
@@ -1204,7 +1134,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderThinKneeBlue
   name: thin knee
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
@@ -1222,7 +1151,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderThinKneeBrown
   name: thin knee
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
@@ -1240,7 +1168,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderThinKneeGreen
   name: thin knee
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
@@ -1258,7 +1185,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderThinKneeGrey
   name: thin knee
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
@@ -1276,7 +1202,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderThinKneeLightpurple
   name: thin knee
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
@@ -1294,7 +1219,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderThinKneeMaroon
   name: thin knee
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
@@ -1312,7 +1236,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderThinKneeOrange
   name: thin knee
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
@@ -1330,7 +1253,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderThinKnee
   name: thin knee
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
@@ -1348,7 +1270,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderThinKneeRed
   name: thin knee
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
@@ -1366,7 +1287,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderThinKneeTeal
   name: thin knee
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
@@ -1384,7 +1304,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderThinKneeYellow
   name: thin knee
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
@@ -1404,7 +1323,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderThinThighBlack
   name: thin thigh
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/ThinThigh/white.rsi
@@ -1422,7 +1340,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderThinThighBlue
   name: thin thigh
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/ThinThigh/white.rsi
@@ -1440,7 +1357,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderThinThighBrown
   name: thin thigh
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/ThinThigh/white.rsi
@@ -1458,7 +1374,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderThinThighGreen
   name: thin thigh
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/ThinThigh/white.rsi
@@ -1476,7 +1391,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderThinThighGrey
   name: thin thigh
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/ThinThigh/white.rsi
@@ -1494,7 +1408,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderThinThighLightpurple
   name: thin thigh
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/ThinThigh/white.rsi
@@ -1512,7 +1425,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderThinThighMaroon
   name: thin thigh
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/ThinThigh/white.rsi
@@ -1530,7 +1442,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderThinThighOrange
   name: thin thigh
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/ThinThigh/white.rsi
@@ -1548,7 +1459,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderThinThigh
   name: thin thigh
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/ThinThigh/white.rsi
@@ -1566,7 +1476,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderThinThighRed
   name: thin thigh
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/ThinThigh/white.rsi
@@ -1584,7 +1493,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderThinThighTeal
   name: thin thigh
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/ThinThigh/white.rsi
@@ -1602,7 +1510,6 @@
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderThinThighYellow
   name: thin thigh
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/ThinThigh/white.rsi

@@ -103,7 +103,8 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
         List<ProtoId<JobPrototype>>? jobs,
         List<ProtoId<AntagPrototype>>? antags,
         HumanoidCharacterProfile? profile,
-        [NotNullWhen(false)] out FormattedMessage? reason)
+        [NotNullWhen(false)] out FormattedMessage? reason,
+        int sponsorTier = 0, string uuid = "")   //LP edit
     {
         reason = null;
 
@@ -111,7 +112,7 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
         {
             foreach (var proto in antags)
             {
-                if (!IsAllowed(_prototypes.Index(proto), profile, out reason))
+                if (!IsAllowed(_prototypes.Index(proto), profile, out reason, sponsorTier, uuid))   //LP edit
                     return false;
             }
         }
@@ -120,7 +121,7 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
         {
             foreach (var proto in jobs)
             {
-                if (!IsAllowed(_prototypes.Index(proto), profile, out reason))
+                if (!IsAllowed(_prototypes.Index(proto), profile, out reason, sponsorTier, uuid))   //LP edit
                     return false;
             }
         }
@@ -134,7 +135,7 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
     public bool IsAllowed(
         JobPrototype job,
         HumanoidCharacterProfile? profile,
-        [NotNullWhen(false)] out FormattedMessage? reason)
+        [NotNullWhen(false)] out FormattedMessage? reason, int sponsorTier = 0, string uuid = "")   //LP edit
     {
         // Check the player's bans
         if (_jobBans.Contains(job.ID))
@@ -149,7 +150,7 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
 
         // Check other role requirements
         var reqs = _entManager.System<SharedRoleSystem>().GetRoleRequirements(job);
-        if (!CheckRoleRequirements(reqs, profile, out reason))
+        if (!CheckRoleRequirements(reqs, profile, out reason, sponsorTier, uuid))   //LP edit
             return false;
 
         return true;
@@ -161,7 +162,7 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
     public bool IsAllowed(
         AntagPrototype antag,
         HumanoidCharacterProfile? profile,
-        [NotNullWhen(false)] out FormattedMessage? reason)
+        [NotNullWhen(false)] out FormattedMessage? reason, int sponsorTier = 0, string uuid = "")   //LP edit
     {
         // Check the player's bans
         if (_antagBans.Contains(antag.ID))
@@ -176,14 +177,15 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
 
         // Check other role requirements
         var reqs = _entManager.System<SharedRoleSystem>().GetRoleRequirements(antag);
-        if (!CheckRoleRequirements(reqs, profile, out reason))
+        if (!CheckRoleRequirements(reqs, profile, out reason, sponsorTier, uuid))   //LP edit
             return false;
 
         return true;
     }
 
     // This must be private so code paths can't accidentally skip requirement overrides. Call this through IsAllowed()
-    private bool CheckRoleRequirements(HashSet<JobRequirement>? requirements, HumanoidCharacterProfile? profile, [NotNullWhen(false)] out FormattedMessage? reason)
+    private bool CheckRoleRequirements(HashSet<JobRequirement>? requirements, HumanoidCharacterProfile? profile, [NotNullWhen(false)] out FormattedMessage? reason,
+        int sponsorTier = 0, string uuid = "")   //LP edit
     {
         reason = null;
 
@@ -193,7 +195,7 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
         var reasons = new List<string>();
         foreach (var requirement in requirements)
         {
-            if (requirement.Check(_entManager, _prototypes, profile, _roles, out var jobReason))
+            if (requirement.Check(_entManager, _prototypes, profile, _roles, out var jobReason, sponsorTier, uuid)) //LP edit
                 continue;
 
             reasons.Add(jobReason.ToMarkup());

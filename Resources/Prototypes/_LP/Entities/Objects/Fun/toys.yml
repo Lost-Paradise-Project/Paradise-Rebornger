@@ -27,7 +27,6 @@
   parent: LPPSoftToysToys
   id: LPPAxolotl
   name: Axolotl
-  description:
   components:
   - type: Sprite
     state: axolotl
@@ -51,7 +50,6 @@
   parent: LPPSoftToysToys
   id: LPPCorgi
   name: Corgi
-  description:
   components:
   - type: Sprite
     state: corgi
@@ -75,7 +73,6 @@
   parent: LPPSoftToysToys
   id: LPPDeer
   name: Deer
-  description:
   components:
   - type: Sprite
     state: deer
@@ -99,7 +96,6 @@
   parent: LPPSoftToysToys
   id: LPPMedihound
   name: Medihound
-  description:
   components:
   - type: Sprite
     state: medihound
@@ -210,7 +206,6 @@
   parent: LPPSoftToysToys
   id: LPPPlushieSynth
   name: Plushie synth
-  description:
   components:
   - type: Sprite
     state: plushie_synth
@@ -234,7 +229,6 @@
   parent: LPPSoftToysToys
   id: LPPProtogen
   name: Protogen
-  description:
   components:
   - type: Sprite
     state: protogen
@@ -258,7 +252,6 @@
   parent: LPPSoftToysToys
   id: LPPPupdozer
   name: Pupdozer
-  description:
   components:
   - type: Sprite
     state: pupdozer
@@ -282,7 +275,6 @@
   parent: LPPSoftToysToys
   id: LPPScrubpuppy
   name: Scrubpuppy
-  description:
   components:
   - type: Sprite
     state: scrubpuppy
@@ -306,7 +298,6 @@
   parent: LPPSoftToysToys
   id: LPPSergal
   name: Sergal
-  description:
   components:
   - type: Sprite
     state: sergal
@@ -330,7 +321,6 @@
   parent: LPPSoftToysToys
   id: LPPYch
   name: Ych
-  description:
   components:
   - type: Sprite
     state: ych
@@ -368,7 +358,6 @@
   parent: LPPSoftToysToys
   id: LPPJayPlushie
   name: jay plushie
-  description:
   components:
   - type: Sprite
     state: jay
@@ -394,7 +383,6 @@
   parent: LPPSoftToysToys
   id: LPPCrab
   name: crab
-  description:
   components:
   - type: Sprite
     state: crab
@@ -418,7 +406,6 @@
   parent: LPPSoftToysToys
   id: LPPNinjaPlushie
   name: ninja plushie
-  description:
   components:
   - type: Sprite
     state: ninja_plushie
@@ -442,7 +429,6 @@
   parent: LPPSoftToysToys
   id: LPPMedDrake
   name: med drake
-  description:
   components:
   - type: Sprite
     state: meddrake
@@ -466,7 +452,6 @@
   parent: LPPSoftToysToys
   id: LPPSecDrake
   name: sec drake
-  description:
   components:
   - type: Sprite
     state: secdrake
@@ -490,7 +475,6 @@
   parent: LPPSoftToysToys
   id: LPPGoat
   name: goat
-  description:
   components:
   - type: Sprite
     state: goat
@@ -514,7 +498,6 @@
   parent: LPPSoftToysToys
   id: LPPBoxs
   name: box
-  description:
   components:
   - type: Sprite
     state: boxs
@@ -601,7 +584,6 @@
   parent: LPPSoftToysCat
   id: LPPBlackcat
   name: Black cat
-  description:
   components:
   - type: Sprite
     state: blackcat
@@ -622,7 +604,6 @@
   parent: LPPSoftToysCat
   id: LPPGreycat
   name: Grey cat
-  description:
   components:
   - type: Sprite
     state: greycat
@@ -643,7 +624,6 @@
   parent: LPPSoftToysCat
   id: LPPOrangecat
   name: Orange cat
-  description:
   components:
   - type: Sprite
     state: orangecat
@@ -664,7 +644,6 @@
   parent: LPPSoftToysCat
   id: LPPSiamesecat
   name: Siamese cat
-  description:
   components:
   - type: Sprite
     state: siamesecat
@@ -685,7 +664,6 @@
   parent: LPPSoftToysCat
   id: LPPTabbycat
   name: Tabby cat
-  description:
   components:
   - type: Sprite
     state: tabbycat
@@ -706,7 +684,6 @@
   parent: LPPSoftToysCat
   id: LPPTuxedocat
   name: Tuxedo cat
-  description:
   components:
   - type: Sprite
     state: tuxedocat
@@ -727,7 +704,6 @@
   parent: LPPSoftToysCat
   id: LPPWhitecat
   name: White cat
-  description:
   components:
   - type: Sprite
     state: whitecat

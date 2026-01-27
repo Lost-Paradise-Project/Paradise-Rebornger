@@ -61,6 +61,8 @@
       enum.GeneralStationRecordConsoleKey.Key:
       # who the fuck named this bruh
         type: GeneralStationRecordConsoleBoundUserInterface
+      enum.JobSlotsConsoleUiKey.Key: # _CD
+        type: JobSlotsConsoleBoundUserInterface
   - type: IntrinsicUI
     uis:
       enum.SolarControlConsoleUiKey.Key:
@@ -75,6 +77,8 @@
         toggleAction: ActionAGhostShowCrewMonitoring
       enum.GeneralStationRecordConsoleKey.Key:
         toggleAction: ActionAGhostShowStationRecords
+      enum.JobSlotsConsoleUiKey.Key: # _CD
+        toggleAction: ActionAGhostShowJobSlotsConsole
   - type: SolarControlConsole # look ma i AM the computer!
   - type: CommunicationsConsole
     title: comms-console-announcement-title-centcom
@@ -114,6 +118,8 @@
   - type: MovementSpeedModifier
     baseWalkSpeed: 30
   # Corvax-End
+  - type: JobSlotsConsole # _CD
+    debug: true
 
 - type: entity
   abstract: true

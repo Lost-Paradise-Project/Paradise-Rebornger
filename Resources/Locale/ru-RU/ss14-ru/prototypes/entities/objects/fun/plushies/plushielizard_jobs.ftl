@@ -1,4 +1,4 @@
-﻿ent-BasePlushieLizardJob = { ent-PlushieLizard }
+ent-BasePlushieLizardJob = { ent-PlushieLizard }
     .desc = { ent-PlushieLizard.desc }
 ent-PlushieLizardJobAtmospherictechnician = плюшевая ящерица-атмосферный техник
     .desc = Очаровательная мягкая игрушка в виде ящеролюда, работающего атмосферным техником. Слегка пахнет фрезоном.

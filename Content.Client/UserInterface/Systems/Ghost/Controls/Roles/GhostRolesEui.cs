@@ -5,6 +5,7 @@ using Content.Shared.Eui;
 using Content.Shared.Ghost.Roles;
 using JetBrains.Annotations;
 using Robust.Client.GameObjects;
+using Content.Client._LP.Sponsors;  //LP edit
 
 namespace Content.Client.UserInterface.Systems.Ghost.Controls.Roles
 {
@@ -95,8 +96,7 @@ namespace Content.Client.UserInterface.Systems.Ghost.Controls.Roles
                 role => (
                     role.Name,
                     role.Description,
-                    //  Check the prototypes for role requirements and bans
-                    requirementsManager.IsAllowed(role.RolePrototypes.Item1, role.RolePrototypes.Item2, null, out var reason),
+                    requirementsManager.IsAllowed(role.RolePrototypes.Item1, role.RolePrototypes.Item2, null, out var reason, SponsorSimpleManager.GetTier(), SponsorSimpleManager.GetUUID()),      //  Check the prototypes for role requirements and bans
                     reason));
 
             // Add a new entry for each role group

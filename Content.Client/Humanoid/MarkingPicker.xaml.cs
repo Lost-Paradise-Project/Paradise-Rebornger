@@ -13,6 +13,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using static Robust.Client.UserInterface.Controls.BoxContainer;
 using static Content.Client.Corvax.SponsorOnlyHelpers; // Corvax-Sponsors
+using Content.Client._LP.Sponsors;      //LP edit
 
 namespace Content.Client.Humanoid;
 
@@ -22,8 +23,7 @@ public sealed partial class MarkingPicker : Control
     [Dependency] private readonly MarkingManager _markingManager = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly IEntityManager _entityManager = default!;
-	private ISharedSponsorsManager? _sponsorsManager; // Corvax-Sponsors
-	
+
     private readonly SpriteSystem _sprite;
 
     public Action<MarkingSet>? OnMarkingAdded;
@@ -130,7 +130,6 @@ public sealed partial class MarkingPicker : Control
     {
         RobustXamlLoader.Load(this);
         IoCManager.InjectDependencies(this);
-        IoCManager.Instance!.TryResolveType(out _sponsorsManager); // Corvax-Sponsors
 
         _sprite = _entityManager.System<SpriteSystem>();
 
@@ -225,6 +224,11 @@ public sealed partial class MarkingPicker : Control
             GetMarkingName(m).ToLower().Contains(filter.ToLower())
         ).OrderBy(p => Loc.GetString(GetMarkingName(p)));
 
+        //LP edit start
+        var sponsorTier = SponsorSimpleManager.GetTier();
+        var sponsorMarkings = SponsorSimpleManager.GetMarkings();
+        //LP edit ednt
+
         foreach (var marking in sortedMarkings)
         {
             if (_currentMarkings.TryGetMarking(_selectedMarkingCategory, marking.ID, out _))
@@ -239,8 +243,8 @@ public sealed partial class MarkingPicker : Control
             // Corvax-Sponsors-End
             item.Metadata = marking;
             // Corvax-Sponsors-Start
-            if (marking.SponsorOnly && _sponsorsManager != null)
-                item.Disabled = !_sponsorsManager.GetClientPrototypes().Contains(marking.ID);
+            if (marking.SponsorOnly && sponsorTier < 3)     //LP edit
+                item.Disabled = !sponsorMarkings.Contains(marking.ID);   //LP edit
             // Corvax-Sponsors-End
         }
 

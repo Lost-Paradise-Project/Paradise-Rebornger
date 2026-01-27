@@ -35,6 +35,13 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 using Content.Shared.Emp;
+// LP edit start
+#if LP
+using Content.Server._LP.Sponsors;
+using Content.Server._NC.DiscordAuth;
+using Content.Server._NC.JoinQueue;
+#endif
+// LP edit end
 
 namespace Content.Server.Entry
 {
@@ -134,6 +141,12 @@ namespace Content.Server.Entry
             _job.Initialize();
             _rateLimit.Initialize();
             IoCManager.Resolve<TTSManager>().Initialize(); // Corvax-TTS
+
+#if LP
+            IoCManager.Resolve<SponsorsManager>().Initialize();
+            IoCManager.Resolve<DiscordAuthManager>().Initialize();
+            IoCManager.Resolve<JoinQueueManager>().Initialize();
+#endif
         }
 
         public override void PostInit()
@@ -205,11 +218,11 @@ namespace Content.Server.Entry
             switch (level)
             {
                 case ModUpdateLevel.PostEngine:
-                {
-                    _euiManager.SendUpdates();
-                    _voteManager.Update();
-                    break;
-                }
+                    {
+                        _euiManager.SendUpdates();
+                        _voteManager.Update();
+                        break;
+                    }
 
                 case ModUpdateLevel.FramePostEngine:
                     _updateManager.Update();

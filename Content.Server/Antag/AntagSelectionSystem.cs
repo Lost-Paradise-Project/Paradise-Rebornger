@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.Server._LP.Sponsors;      //LP edit
 using Content.Server.Administration.Managers;
 using Content.Server.Antag.Components;
 using Content.Server.Chat.Managers;
@@ -393,15 +394,15 @@ public sealed partial class AntagSelectionSystem : GameRuleSystem<AntagSelection
                 ent.Comp.PreSelectedSessions.Add(def, set = new HashSet<ICommonSession>());
             set.Add(session);
             ent.Comp.AssignedSessions.Add(session);
-            
+
             // Corvax-start
             if (def.RoundstartEntity != null && ent.Comp.SelectionTime == AntagSelectionTime.PrePlayerSpawn)
                 antagEnt = Spawn(def.RoundstartEntity);
-                else
-            // Corvax-end
-            // we shouldn't be blocking the entity if they're just a ghost or smth.
-            if (!HasComp<GhostComponent>(session.AttachedEntity))
-                antagEnt = session.AttachedEntity;
+            else
+                // Corvax-end
+                // we shouldn't be blocking the entity if they're just a ghost or smth.
+                if (!HasComp<GhostComponent>(session.AttachedEntity))
+                    antagEnt = session.AttachedEntity;
         }
         else if (!ignoreSpawner && def.SpawnerPrototype != null) // don't add spawners if we have a player, dummy.
         {
@@ -474,7 +475,7 @@ public sealed partial class AntagSelectionSystem : GameRuleSystem<AntagSelection
         if (def.StartingGear is not null)
             gear.Add(def.StartingGear.Value);
 
-        _loadout.Equip(player, gear, def.RoleLoadout);
+        _loadout.Equip(player, gear, def.RoleLoadout, SponsorSimpleManager.GetTier(player), SponsorSimpleManager.GetUUID(player));  //LP edit
 
         if (session != null)
         {

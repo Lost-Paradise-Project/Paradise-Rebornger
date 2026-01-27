@@ -1,4 +1,4 @@
-﻿ent-BaseSportsBall = { "" }
+ent-BaseSportsBall = { "" }
     .desc = { "" }
 ent-Basketball = баскетбольный мяч
     .desc = И где тут площадка?
