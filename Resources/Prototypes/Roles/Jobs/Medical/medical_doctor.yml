@@ -19,11 +19,6 @@
   - !type:GiveItemOnHolidaySpecial
     holiday: DoctorDay
     prototype: WehMedipen
-  # LP edit start
-  - !type:AddComponentSpecial
-    components:
-    - type: CPRTraining
-  # LP edit end
 
 - type: startingGear
   id: DoctorGear

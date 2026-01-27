@@ -40,7 +40,6 @@
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
-      - type: CPRTraining # LP edit
 
 - type: startingGear
   id: HoSGear
