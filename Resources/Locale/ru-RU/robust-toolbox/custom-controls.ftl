@@ -4,6 +4,9 @@ entity-spawn-window-title = Панель спавна сущностей
 entity-spawn-window-replace-button-text = Заменить
 entity-spawn-window-override-menu-tooltip = Перезапись размещения
 
+tile-spawn-window-title = Поставить тайлы
+tile-spawn-window-mirror-button-text = Отзеркалить тайлы
+
 ## Console
 
 console-line-edit-placeholder = Введите сюда команду
