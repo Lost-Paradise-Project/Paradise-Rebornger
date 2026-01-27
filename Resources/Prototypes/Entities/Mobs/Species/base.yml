@@ -213,7 +213,10 @@
     - FootstepSound
     - DoorBumpOpener
     - AnomalyHost
-  - type: ERPBounder # LP edit
+  # LP edit start
+  - type: ERPBounder
+  - type: CPRTraining
+  # LP edit end
 
 - type: entity
   save: false

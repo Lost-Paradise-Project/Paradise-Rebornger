@@ -36,6 +36,7 @@ using Robust.Shared.Toolshed;
 using Robust.Shared.Utility;
 using System.Linq;
 using static Content.Shared.Configurable.ConfigurationComponent;
+using Content.Server._LP.Sponsors;      //LP edit
 
 namespace Content.Server.Administration.Systems
 {
@@ -92,6 +93,11 @@ namespace Content.Server.Administration.Systems
 
             var player = actor.PlayerSession;
 
+            //LP edit start
+            var sponsorTier = SponsorSimpleManager.GetTier(actor.PlayerSession.UserId);
+            var uuid = SponsorSimpleManager.GetUUID(actor.PlayerSession.UserId);
+            //LP edit end
+
             if (_adminManager.IsAdmin(player))
             {
                 Verb mark = new();
@@ -145,7 +151,7 @@ namespace Content.Server.Administration.Systems
                             var stationUid = _stations.GetOwningStation(args.Target);
 
                             var profile = _gameTicker.GetPlayerProfile(targetActor.PlayerSession);
-                            var mobUid = _spawning.SpawnPlayerMob(coords.Value, null, profile, stationUid);
+                            var mobUid = _spawning.SpawnPlayerMob(coords.Value, null, profile, stationUid, sponsorTier: sponsorTier, uuid: uuid);  //LP edit
 
                             if (_mindSystem.TryGetMind(args.Target, out var mindId, out var mindComp))
                                 _mindSystem.TransferTo(mindId, mobUid, true, mind: mindComp);
@@ -171,7 +177,7 @@ namespace Content.Server.Administration.Systems
                             var stationUid = _stations.GetOwningStation(args.Target);
 
                             var profile = _gameTicker.GetPlayerProfile(targetActor.PlayerSession);
-                            _spawning.SpawnPlayerMob(coords.Value, null, profile, stationUid);
+                            _spawning.SpawnPlayerMob(coords.Value, null, profile, stationUid, sponsorTier: sponsorTier, uuid: uuid);  //LP edit
                         },
                         ConfirmationPopup = true,
                         Impact = LogImpact.High,

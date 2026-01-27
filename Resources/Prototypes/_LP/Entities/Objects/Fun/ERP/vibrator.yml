@@ -2,7 +2,6 @@
   name: magicwand
   id: LPPMagicwand
   parent: LPPClothingUnderwearBase
-  description:
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Vibrator/magicwand.rsi
@@ -38,7 +37,6 @@
   name: vibrator green
   id: LPPVibratorGreen
   parent: LPPMagicwand
-  description:
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Vibrator/vibrator_green.rsi
@@ -52,7 +50,6 @@
   name: vibrator pink
   id: LPPVibratorPink
   parent: LPPMagicwand
-  description:
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Vibrator/vibrator_pink.rsi
@@ -66,7 +63,6 @@
   name: vibrator red
   id: LPPVibratorRed
   parent: LPPMagicwand
-  description:
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Vibrator/vibrator_red.rsi
@@ -80,7 +76,6 @@
   name: vibrator teal
   id: LPPVibratorTeal
   parent: LPPMagicwand
-  description:
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Vibrator/vibrator_teal.rsi
@@ -94,7 +89,6 @@
   name: vibrator yellow
   id: LPPVibratorYellow
   parent: LPPMagicwand
-  description:
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Vibrator/vibrator_yellow.rsi

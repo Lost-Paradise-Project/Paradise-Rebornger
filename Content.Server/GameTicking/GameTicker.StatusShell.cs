@@ -5,6 +5,9 @@ using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
 using Robust.Server.ServerStatus;
 using Robust.Shared.Configuration;
+#if LP
+using Content.Server._NC.JoinQueue;
+#endif
 
 namespace Content.Server.GameTicking
 {
@@ -29,6 +32,9 @@ namespace Content.Server.GameTicking
         ///     For access to the round ID in status responses.
         /// </summary>
         [Dependency] private readonly SharedGameTicker _gameTicker = default!;
+#if LP
+        [Dependency] private readonly JoinQueueManager _joinQueue = default!;
+#endif
 
         private void InitializeStatusShell()
         {
@@ -42,15 +48,16 @@ namespace Content.Server.GameTicking
             // This method is raised from another thread, so this better be thread safe!
             lock (_statusShellLock)
             {
-                // Corvax-Queue-Start
-                var players = IoCManager.Instance?.TryResolveType<IServerJoinQueueManager>(out var joinQueueManager) ?? false
-                    ? joinQueueManager.ActualPlayersCount
-                    : _playerManager.PlayerCount;
-
-                players = _cfg.GetCVar(CCVars.AdminsCountInReportedPlayerCount)
-                    ? players
-                    : players - _adminManager.ActiveAdmins.Count();
-                // Corvax-Queue-End
+                //LP edit
+                var players =
+#if LP
+                _cfg.GetCVar(CCVars.AdminsCountInReportedPlayerCount)
+                    ? _joinQueue.ActualPlayersCount
+                    : _joinQueue.ActualPlayersCount - _adminManager.ActiveAdmins.Count();
+#else
+                    _playerManager.PlayerCount;
+#endif
+                //LP edit
 
                 jObject["name"] = _baseServer.ServerName;
                 jObject["map"] = _gameMapManager.GetSelectedMap()?.MapName;
@@ -58,7 +65,7 @@ namespace Content.Server.GameTicking
                 jObject["players"] = players; // Corvax-Queue
                 jObject["soft_max_players"] = _cfg.GetCVar(CCVars.SoftMaxPlayers);
                 jObject["panic_bunker"] = _cfg.GetCVar(CCVars.PanicBunkerEnabled);
-                jObject["run_level"] = (int) _runLevel;
+                jObject["run_level"] = (int)_runLevel;
                 if (preset != null)
                     jObject["preset"] = (Decoy == null) ? Loc.GetString(preset.ModeTitle) : Loc.GetString(Decoy.ModeTitle);
                 if (_runLevel >= GameRunLevel.InRound)

@@ -1,2 +1,2 @@
-﻿popup-copy-button = Скопировать
+popup-copy-button = Скопировать
 popup-title = Внимание!

@@ -25,6 +25,11 @@ using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+using Content.Server.Preferences.Managers;
+
+#if LP
+using Content.Server._LP.Sponsors;
+#endif
 
 namespace Content.Server.Administration.Systems
 {
@@ -43,8 +48,9 @@ namespace Content.Server.Administration.Systems
         [Dependency] private readonly IAfkManager _afkManager = default!;
         [Dependency] private readonly IServerDbManager _dbManager = default!;
         [Dependency] private readonly PlayerRateLimitManager _rateLimit = default!;
+        [Dependency] private readonly IServerPreferencesManager _preferencesManager = default!;
 
-        [GeneratedRegex(@"^https://discord\.com/api/webhooks/(\d+)/((?!.*/).*)$")]
+        [GeneratedRegex(@"^https://(?:(?:canary|ptb)\.)?discord\.com/api/webhooks/(\d+)/((?!.*/).*)$")]
         private static partial Regex DiscordRegex();
 
         private string _webhookUrl = string.Empty;
@@ -110,7 +116,7 @@ namespace Content.Server.Administration.Systems
             SubscribeNetworkEvent<BwoinkClientTypingUpdated>(OnClientTypingUpdated);
             SubscribeLocalEvent<RoundRestartCleanupEvent>(_ => _activeConversations.Clear());
 
-        	_rateLimit.Register(
+            _rateLimit.Register(
                 RateLimitKey,
                 new RateLimitRegistration(CCVars.AhelpRateLimitPeriod,
                     CCVars.AhelpRateLimitCount,
@@ -139,10 +145,7 @@ namespace Content.Server.Administration.Systems
                 return;
             }
 
-            var webhookId = match.Groups[1].Value;
-            var webhookToken = match.Groups[2].Value;
-
-            _onCallData = await GetWebhookData(webhookId, webhookToken);
+            _onCallData = await GetWebhookData(url);
         }
 
         private void PlayerRateLimitedAction(ICommonSession obj)
@@ -351,6 +354,7 @@ namespace Content.Server.Administration.Systems
             {
                 // TODO: Ideally, CVar validation during setting should be better integrated
                 Log.Warning("Webhook URL does not appear to be valid. Using anyways...");
+                _webhookData = await GetWebhookData(url);
                 return;
             }
 
@@ -360,22 +364,19 @@ namespace Content.Server.Administration.Systems
                 return;
             }
 
-            var webhookId = match.Groups[1].Value;
-            var webhookToken = match.Groups[2].Value;
-
             // Fire and forget
-            _webhookData = await GetWebhookData(webhookId, webhookToken);
+            _webhookData = await GetWebhookData(url);
         }
 
-        private async Task<WebhookData?> GetWebhookData(string id, string token)
+        private async Task<WebhookData?> GetWebhookData(string url)
         {
-            var response = await _httpClient.GetAsync($"https://discord.com/api/v10/webhooks/{id}/{token}");
+            var response = await _httpClient.GetAsync(url);
 
             var content = await response.Content.ReadAsStringAsync();
             if (!response.IsSuccessStatusCode)
             {
                 _sawmill.Log(LogLevel.Error,
-                    $"Discord returned bad status code when trying to get webhook data (perhaps the webhook URL is invalid?): {response.StatusCode}\nResponse: {content}");
+                    $"Webhook returned bad status code when trying to get webhook data (perhaps the webhook URL is invalid?): {response.StatusCode}\nResponse: {content}");
                 return null;
             }
 
@@ -409,7 +410,7 @@ namespace Content.Server.Administration.Systems
                 if (lookup == null)
                 {
                     _sawmill.Log(LogLevel.Error,
-                        $"Unable to find player for NetUserId {userId} when sending discord webhook.");
+                        $"Unable to find player for NetUserId {userId} when sending webhook.");
                     _relayMessages.Remove(userId);
                     return;
                 }
@@ -480,21 +481,37 @@ namespace Content.Server.Administration.Systems
 
             var payload = GeneratePayload(existingEmbed.Description,
                 existingEmbed.Username,
+                userId.UserId,
                 existingEmbed.CharacterName);
 
             // If there is no existing embed, create a new one
             // Otherwise patch (edit) it
             if (existingEmbed.Id == null)
             {
-                var request = await _httpClient.PostAsync($"{_webhookUrl}?wait=true",
-                    new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json"));
+                //LP edit start
+                HttpResponseMessage request;
+                try
+                {
+                    request = await _httpClient.PostAsync($"{_webhookUrl}?wait=true",
+                        new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json"));
+                }
+                catch (Exception ex)
+                {
+                    _sawmill.Log(LogLevel.Error,
+                        $"Webhook POST failed (network / refused) for user {userId}: {ex.Message}\n{ex}");
+                    _relayMessages.Remove(userId);
+                    _processingChannels.Remove(userId); // Frontier: Very Basic "Retry" logic, There might be times were Source or Target have temporarily network issues.
+                    return;
+                }
+                //LP edit end
 
                 var content = await request.Content.ReadAsStringAsync();
                 if (!request.IsSuccessStatusCode)
                 {
                     _sawmill.Log(LogLevel.Error,
-                        $"Discord returned bad status code when posting message (perhaps the message is too long?): {request.StatusCode}\nResponse: {content}");
+                        $"Webhook returned bad status code when posting message (perhaps the message is too long?): {request.StatusCode}\nResponse: {content}");
                     _relayMessages.Remove(userId);
+                    _processingChannels.Remove(userId); // LP edit
                     return;
                 }
 
@@ -502,7 +519,7 @@ namespace Content.Server.Administration.Systems
                 if (id == null)
                 {
                     _sawmill.Log(LogLevel.Error,
-                        $"Could not find id in json-content returned from discord webhook: {content}");
+                        $"Could not find id in json-content returned from webhook: {content}");
                     _relayMessages.Remove(userId);
                     return;
                 }
@@ -511,15 +528,30 @@ namespace Content.Server.Administration.Systems
             }
             else
             {
-                var request = await _httpClient.PatchAsync($"{_webhookUrl}/messages/{existingEmbed.Id}",
-                    new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json"));
+                //LP edit start
+                HttpResponseMessage request;
+                try
+                {
+                    request = await _httpClient.PatchAsync($"{_webhookUrl}/messages/{existingEmbed.Id}",
+                        new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json"));
+                }
+                catch (Exception ex)
+                {
+                    _sawmill.Log(LogLevel.Error,
+                        $"Webhook PATCH failed (network / refused) for user {userId} (will discard current embed state): {ex.Message}\n{ex}");
+                    _relayMessages.Remove(userId);
+                    _processingChannels.Remove(userId); // Frontier: Very Basic "Retry" logic, There might be times were Source or Target have temporarily network issues.
+                    return;
+                }
+                //LP edit end
 
                 if (!request.IsSuccessStatusCode)
                 {
                     var content = await request.Content.ReadAsStringAsync();
                     _sawmill.Log(LogLevel.Error,
-                        $"Discord returned bad status code when patching message (perhaps the message is too long?): {request.StatusCode}\nResponse: {content}");
+                        $"Webhook returned bad status code when patching message (perhaps the message is too long?): {request.StatusCode}\nResponse: {content}");
                     _relayMessages.Remove(userId);
+                    _processingChannels.Remove(userId); //LP edit
                     return;
                 }
             }
@@ -546,16 +578,31 @@ namespace Content.Server.Administration.Systems
                             $"**[Go to ahelp](https://discord.com/channels/{guildId}/{channelId}/{existingEmbed.Id})**");
                     }
 
-                    payload = GeneratePayload(message.ToString(), existingEmbed.Username, existingEmbed.CharacterName);
+                    payload = GeneratePayload(message.ToString(), existingEmbed.Username, userId, existingEmbed.CharacterName);
 
-                    var request = await _httpClient.PostAsync($"{_onCallUrl}?wait=true",
-                        new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json"));
-
-                    var content = await request.Content.ReadAsStringAsync();
-                    if (!request.IsSuccessStatusCode)
+                    //LP edit start
+                    HttpResponseMessage request;
+                    try
                     {
-                        _sawmill.Log(LogLevel.Error, $"Discord returned bad status code when posting relay message (perhaps the message is too long?): {request.StatusCode}\nResponse: {content}");
+                        request = await _httpClient.PostAsync($"{_onCallUrl}?wait=true",
+                            new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json"));
                     }
+                    catch (Exception ex)
+                    {
+                        _sawmill.Log(LogLevel.Error,
+                            $"On-call webhook POST failed (network / refused) for user {userId}: {ex.Message}\n{ex}");
+                        request = null!;
+                    }
+
+                    if (request != null)
+                    {
+                        var content = await request.Content.ReadAsStringAsync();
+                        if (!request.IsSuccessStatusCode)
+                        {
+                            _sawmill.Log(LogLevel.Error, $"Webhook returned bad status code when posting relay message (perhaps the message is too long?): {request.StatusCode}\nResponse: {content}");
+                        }
+                    }
+                    //LP edit end
                 }
             }
             else
@@ -566,7 +613,7 @@ namespace Content.Server.Administration.Systems
             _processingChannels.Remove(userId);
         }
 
-        private WebhookPayload GeneratePayload(string messages, string username, string? characterName = null)
+        private WebhookPayload GeneratePayload(string messages, string username, Guid userId, string? characterName = null)
         {
             // Add character name
             if (characterName != null)
@@ -592,6 +639,7 @@ namespace Content.Server.Administration.Systems
             return new WebhookPayload
             {
                 Username = username,
+                UserID = userId,
                 AvatarUrl = string.IsNullOrWhiteSpace(_avatarUrl) ? null : _avatarUrl,
                 Embeds = new List<WebhookEmbed>
                 {
@@ -629,10 +677,28 @@ namespace Content.Server.Administration.Systems
             }
         }
 
+        public void OnWebhookBwoinkTextMessage(BwoinkTextMessage message, ServerApi.BwoinkActionBody body)
+        {
+            // Note for forks:
+            AdminData webhookAdminData = new();
+
+            var bwoinkParams = new BwoinkParams(
+                message,
+                SystemUserId,
+                webhookAdminData,
+                body.Username,
+                null,
+                body.UserOnly,
+                body.WebhookUpdate,
+                true,
+                body.RoleName,
+                body.RoleColor);
+            OnBwoinkInternal(bwoinkParams);
+        }
+
         protected override void OnBwoinkTextMessage(BwoinkTextMessage message, EntitySessionEventArgs eventArgs)
         {
             base.OnBwoinkTextMessage(message, eventArgs);
-            _activeConversations[message.UserId] = DateTime.Now;
             var senderSession = eventArgs.SenderSession;
 
             // TODO: Sanitize text?
@@ -650,57 +716,115 @@ namespace Content.Server.Administration.Systems
             if (_rateLimit.CountAction(eventArgs.SenderSession, RateLimitKey) != RateLimitStatus.Allowed)
                 return;
 
-            var escapedText = FormattedMessage.EscapeText(message.Text);
+            var bwoinkParams = new BwoinkParams(message,
+                eventArgs.SenderSession.UserId,
+                senderAdmin,
+                eventArgs.SenderSession.Name,
+                eventArgs.SenderSession.Channel,
+                false,
+                true,
+                false);
+            OnBwoinkInternal(bwoinkParams);
+        }
 
-            string bwoinkText;
-            string adminPrefix = "";
+        /// <summary>
+        /// Sends a bwoink. Common to both internal messages (sent via the ahelp or admin interface) and webhook messages (sent through the webhook, e.g. via Discord)
+        /// </summary>
+        /// <param name="message">The message being sent.</param>
+        /// <param name="senderId">The network GUID of the person sending the message.</param>
+        /// <param name="senderAdmin">The admin privileges of the person sending the message.</param>
+        /// <param name="senderName">The name of the person sending the message.</param>
+        /// <param name="senderChannel">The channel to send a message to, e.g. in case of failure to send</param>
+        /// <param name="sendWebhook">If true, message should be sent off through the webhook if possible</param>
+        /// <param name="fromWebhook">Message originated from a webhook (e.g. Discord)</param>
+        private void OnBwoinkInternal(BwoinkParams bwoinkParams)
+        {
+            _activeConversations[bwoinkParams.Message.UserId] = DateTime.Now;
+
+            var escapedText = FormattedMessage.EscapeText(bwoinkParams.Message.Text);
+            var adminColor = _config.GetCVar(CCVars.AdminBwoinkColor);
+            var adminPrefix = "";
+            var bwoinkText = $"{bwoinkParams.SenderName}";
+            string sponsorColor = adminColor;   // LOP edit
 
             //Getting an administrator position
-            if (_config.GetCVar(CCVars.AhelpAdminPrefix) && senderAdmin is not null && senderAdmin.Title is not null)
+            if (_config.GetCVar(CCVars.AhelpAdminPrefix))
             {
-                adminPrefix = $"[bold]\\[{senderAdmin.Title}\\][/bold] ";
+                if (bwoinkParams.SenderAdmin is not null && bwoinkParams.SenderAdmin.Title is not null)
+                    adminPrefix = $"[bold]\\[{bwoinkParams.SenderAdmin.Title}\\][/bold] ";
+
+                if (_config.GetCVar(CCVars.UseDiscordRoleName) && bwoinkParams.RoleName is not null)
+                    adminPrefix = $"[bold]\\[{bwoinkParams.RoleName}\\][/bold] ";
             }
 
-            if (senderAdmin is not null &&
-                senderAdmin.Flags ==
-                AdminFlags.Adminhelp) // Mentor. Not full admin. That's why it's colored differently.
+            if (!bwoinkParams.FromWebhook
+                && _config.GetCVar(CCVars.UseAdminOOCColorInBwoinks)
+                && bwoinkParams.SenderAdmin is not null)
             {
-                bwoinkText = $"[color=purple]{adminPrefix}{senderSession.Name}[/color]";
-            }
-            else if (senderAdmin is not null && senderAdmin.HasFlag(AdminFlags.Adminhelp))
-            {
-                bwoinkText = $"[color=red]{adminPrefix}{senderSession.Name}[/color]";
-            }
-            else
-            {
-                bwoinkText = $"{senderSession.Name}";
+                var prefs = _preferencesManager.GetPreferences(bwoinkParams.SenderId);
+                adminColor = prefs.AdminOOCColor.ToHex();
+
+                sponsorColor = adminColor;  //LP edit
             }
 
-            bwoinkText = $"{(message.AdminOnly ? Loc.GetString("bwoink-message-admin-only") : !message.PlaySound ? Loc.GetString("bwoink-message-silent") : "")} {bwoinkText}: {escapedText}";
+            //LP edit start
+#if LP
+            if (IoCManager.Resolve<SponsorsManager>().TryGetInfo(bwoinkParams.SenderId, out var sponsorInfo) && sponsorInfo.Tier > 0)
+            {
+                sponsorColor = sponsorInfo.OOCColor;
+                if (!bwoinkParams.FromWebhook)
+                    bwoinkText = $"[color={sponsorColor}]{bwoinkParams.SenderName}[/color]";    //ставим цвет нику игрока, если спонсор
+            }
+#endif
+            //LP edit end
 
-            // If it's not an admin / admin chooses to keep the sound and message is not an admin only message, then play it.
-            var playSound = (!senderAHelpAdmin || message.PlaySound) && !message.AdminOnly;
-            var msg = new BwoinkTextMessage(message.UserId, senderSession.UserId, bwoinkText, playSound: playSound, adminOnly: message.AdminOnly);
+            // If role color is enabled and exists, use it, otherwise use the discord reply color
+            if (_config.GetCVar(CCVars.DiscordReplyColor) != string.Empty && bwoinkParams.FromWebhook)
+                adminColor = _config.GetCVar(CCVars.DiscordReplyColor);
+
+            if (_config.GetCVar(CCVars.UseDiscordRoleColor) && bwoinkParams.RoleColor is not null)
+                adminColor = bwoinkParams.RoleColor;
+
+            if (bwoinkParams.SenderAdmin is not null)
+            {
+                if (bwoinkParams.SenderAdmin.Flags ==
+                    AdminFlags.Adminhelp) // Mentor. Not full admin. That's why it's colored differently.
+                    bwoinkText = $"[color=purple]{adminPrefix}[/color][color={sponsorColor}]{bwoinkParams.SenderName}[/color]"; //LP edit
+                else if (bwoinkParams.FromWebhook || bwoinkParams.SenderAdmin.HasFlag(AdminFlags.Adminhelp)) // Frontier: anything sent via webhooks are from an admin.
+                    bwoinkText = $"[color={adminColor}]{adminPrefix}[/color][color={sponsorColor}]{bwoinkParams.SenderName}[/color]";   //LP edit
+            }
+
+            if (bwoinkParams.FromWebhook)
+                bwoinkText = $"{_config.GetCVar(CCVars.DiscordReplyPrefix)}{bwoinkText}";
+
+            bwoinkText = $"{(bwoinkParams.Message.AdminOnly ? Loc.GetString("bwoink-message-admin-only") : !bwoinkParams.Message.PlaySound ? Loc.GetString("bwoink-message-silent") : "")}{(bwoinkParams.FromWebhook ? Loc.GetString("bwoink-message-discord") : "")} {bwoinkText}: {escapedText}"; // LP edit
+
+            // If it's not an admin / admin chooses to keep the sound then play it.
+            var playSound = bwoinkParams.SenderAdmin == null || bwoinkParams.Message.PlaySound && !bwoinkParams.Message.AdminOnly;
+            var msg = new BwoinkTextMessage(bwoinkParams.Message.UserId, bwoinkParams.SenderId, bwoinkText, playSound: playSound, adminOnly: bwoinkParams.Message.AdminOnly);
 
             LogBwoink(msg);
 
             var admins = GetTargetAdmins();
 
             // Notify all admins
-            foreach (var channel in admins)
+            if (!bwoinkParams.UserOnly)
             {
-                RaiseNetworkEvent(msg, channel);
+                foreach (var channel in admins)
+                {
+                    RaiseNetworkEvent(msg, channel);
+                }
             }
 
             string adminPrefixWebhook = "";
 
-            if (_config.GetCVar(CCVars.AhelpAdminPrefixWebhook) && senderAdmin is not null && senderAdmin.Title is not null)
+            if (_config.GetCVar(CCVars.AhelpAdminPrefixWebhook) && bwoinkParams.SenderAdmin is not null && bwoinkParams.SenderAdmin.Title is not null)
             {
-                adminPrefixWebhook = $"[bold]\\[{senderAdmin.Title}\\][/bold] ";
+                adminPrefixWebhook = $"[bold]\\[{bwoinkParams.SenderAdmin.Title}\\][/bold] ";
             }
 
             // Notify player
-            if (_playerManager.TryGetSessionById(message.UserId, out var session) && !message.AdminOnly)
+            if (_playerManager.TryGetSessionById(bwoinkParams.Message.UserId, out var session) && !bwoinkParams.Message.AdminOnly)
             {
                 if (!admins.Contains(session.Channel))
                 {
@@ -709,25 +833,22 @@ namespace Content.Server.Administration.Systems
                     {
                         string overrideMsgText;
                         // Doing the same thing as above, but with the override name. Theres probably a better way to do this.
-                        if (senderAdmin is not null &&
-                            senderAdmin.Flags ==
+                        if (bwoinkParams.SenderAdmin is not null &&
+                            bwoinkParams.SenderAdmin.Flags ==
                             AdminFlags.Adminhelp) // Mentor. Not full admin. That's why it's colored differently.
-                        {
                             overrideMsgText = $"[color=purple]{adminPrefixWebhook}{_overrideClientName}[/color]";
-                        }
-                        else if (senderAdmin is not null && senderAdmin.HasFlag(AdminFlags.Adminhelp))
-                        {
+                        else if (bwoinkParams.SenderAdmin is not null && bwoinkParams.SenderAdmin.HasFlag(AdminFlags.Adminhelp))
                             overrideMsgText = $"[color=red]{adminPrefixWebhook}{_overrideClientName}[/color]";
-                        }
                         else
-                        {
-                            overrideMsgText = $"{senderSession.Name}"; // Not an admin, name is not overridden.
-                        }
+                            overrideMsgText = $"{bwoinkParams.SenderName}"; // Not an admin, name is not overridden.
 
-                        overrideMsgText = $"{(message.PlaySound ? "" : "(S) ")}{overrideMsgText}: {escapedText}";
+                        if (bwoinkParams.FromWebhook)
+                            overrideMsgText = $"{_config.GetCVar(CCVars.DiscordReplyPrefix)}{overrideMsgText}";
 
-                        RaiseNetworkEvent(new BwoinkTextMessage(message.UserId,
-                                senderSession.UserId,
+                        overrideMsgText = $"{(bwoinkParams.Message.PlaySound ? "" : "(S) ")}{overrideMsgText}: {escapedText}";
+
+                        RaiseNetworkEvent(new BwoinkTextMessage(bwoinkParams.Message.UserId,
+                                bwoinkParams.SenderId,
                                 overrideMsgText,
                                 playSound: playSound),
                             session.Channel);
@@ -738,13 +859,13 @@ namespace Content.Server.Administration.Systems
             }
 
             var sendsWebhook = _webhookUrl != string.Empty;
-            if (sendsWebhook)
+            if (sendsWebhook && bwoinkParams.SendWebhook)
             {
                 if (!_messageQueues.ContainsKey(msg.UserId))
                     _messageQueues[msg.UserId] = new Queue<DiscordRelayedData>();
 
-                var str = message.Text;
-                var unameLength = senderSession.Name.Length;
+                var str = bwoinkParams.Message.Text;
+                var unameLength = bwoinkParams.SenderName.Length;
 
                 if (unameLength + str.Length + _maxAdditionalChars > DescriptionMax)
                 {
@@ -753,13 +874,13 @@ namespace Content.Server.Administration.Systems
 
                 var nonAfkAdmins = GetNonAfkAdmins();
                 var messageParams = new AHelpMessageParams(
-                    senderSession.Name,
+                    bwoinkParams.SenderName,
                     str,
-                    !personalChannel,
+                    bwoinkParams.SenderId != bwoinkParams.Message.UserId,
                     _gameTicker.RoundDuration().ToString("hh\\:mm\\:ss"),
                     _gameTicker.RunLevel,
                     playedSound: playSound,
-                    adminOnly: message.AdminOnly,
+                    isDiscord: bwoinkParams.FromWebhook,
                     noReceivers: nonAfkAdmins.Count == 0
                 );
                 _messageQueues[msg.UserId].Enqueue(GenerateAHelpMessage(messageParams));
@@ -769,9 +890,12 @@ namespace Content.Server.Administration.Systems
                 return;
 
             // No admin online, let the player know
-            var systemText = Loc.GetString("bwoink-system-starmute-message-no-other-users");
-            var starMuteMsg = new BwoinkTextMessage(message.UserId, SystemUserId, systemText);
-            RaiseNetworkEvent(starMuteMsg, senderSession.Channel);
+            if (bwoinkParams.SenderChannel != null)
+            {
+                var systemText = Loc.GetString("bwoink-system-starmute-message-no-other-users");
+                var starMuteMsg = new BwoinkTextMessage(bwoinkParams.Message.UserId, SystemUserId, systemText);
+                RaiseNetworkEvent(starMuteMsg, bwoinkParams.SenderChannel);
+            }
         }
 
         private IList<INetChannel> GetNonAfkAdmins()
@@ -808,6 +932,8 @@ namespace Content.Server.Administration.Systems
                 stringbuilder.Append($" **{parameters.RoundTime}**");
             if (!parameters.PlayedSound)
                 stringbuilder.Append($" **{(parameters.AdminOnly ? Loc.GetString("bwoink-message-admin-only") : Loc.GetString("bwoink-message-silent"))}**");
+            if (parameters.IsDiscord)
+                stringbuilder.Append(" **(DC)**");
             if (parameters.Icon == null)
                 stringbuilder.Append($" **{parameters.Username}:** ");
             else
@@ -872,6 +998,7 @@ namespace Content.Server.Administration.Systems
         public bool PlayedSound { get; set; }
         public readonly bool AdminOnly;
         public bool NoReceivers { get; set; }
+        public bool IsDiscord { get; set; }
         public string? Icon { get; set; }
 
         public AHelpMessageParams(
@@ -881,6 +1008,7 @@ namespace Content.Server.Administration.Systems
             string roundTime,
             GameRunLevel roundState,
             bool playedSound,
+            bool isDiscord = false,
             bool adminOnly = false,
             bool noReceivers = false,
             string? icon = null)
@@ -890,6 +1018,7 @@ namespace Content.Server.Administration.Systems
             IsAdmin = isAdmin;
             RoundTime = roundTime;
             RoundState = roundState;
+            IsDiscord = isDiscord;
             PlayedSound = playedSound;
             AdminOnly = adminOnly;
             NoReceivers = noReceivers;
@@ -902,5 +1031,43 @@ namespace Content.Server.Administration.Systems
         Connected,
         Disconnected,
         Banned,
+    }
+
+    public sealed class BwoinkParams
+    {
+        public SharedBwoinkSystem.BwoinkTextMessage Message { get; set; }
+        public NetUserId SenderId { get; set; }
+        public AdminData? SenderAdmin { get; set; }
+        public string SenderName { get; set; }
+        public INetChannel? SenderChannel { get; set; }
+        public bool UserOnly { get; set; }
+        public bool SendWebhook { get; set; }
+        public bool FromWebhook { get; set; }
+        public string? RoleName { get; set; }
+        public string? RoleColor { get; set; }
+
+        public BwoinkParams(
+            SharedBwoinkSystem.BwoinkTextMessage message,
+            NetUserId senderId,
+            AdminData? senderAdmin,
+            string senderName,
+            INetChannel? senderChannel,
+            bool userOnly,
+            bool sendWebhook,
+            bool fromWebhook,
+            string? roleName = null,
+            string? roleColor = null)
+        {
+            Message = message;
+            SenderId = senderId;
+            SenderAdmin = senderAdmin;
+            SenderName = senderName;
+            SenderChannel = senderChannel;
+            UserOnly = userOnly;
+            SendWebhook = sendWebhook;
+            FromWebhook = fromWebhook;
+            RoleName = roleName;
+            RoleColor = roleColor;
+        }
     }
 }

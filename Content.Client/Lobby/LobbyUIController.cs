@@ -25,6 +25,7 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using Content.Client._LP.Sponsors;  //LP edit
 
 namespace Content.Client.Lobby;
 
@@ -339,7 +340,7 @@ public sealed partial class LobbyUIController : UIController, IOnStateEntered<Lo
 
         if (_prototypeManager.HasIndex<RoleLoadoutPrototype>(LoadoutSystem.GetJobPrototype(job.ID)))
         {
-            var loadout = profile.GetLoadoutOrDefault(LoadoutSystem.GetJobPrototype(job.ID), _playerManager.LocalSession, profile.Species, EntityManager, _prototypeManager);
+            var loadout = profile.GetLoadoutOrDefault(LoadoutSystem.GetJobPrototype(job.ID), _playerManager.LocalSession, profile.Species, EntityManager, _prototypeManager, SponsorSimpleManager.GetTier(), SponsorSimpleManager.GetUUID()); //LP edit
             GiveDummyLoadout(dummy, loadout);
         }
     }
@@ -489,7 +490,7 @@ public sealed partial class LobbyUIController : UIController, IOnStateEntered<Lo
 
             if (_prototypeManager.HasIndex<RoleLoadoutPrototype>(LoadoutSystem.GetJobPrototype(job.ID)))
             {
-                var loadout = humanoid.GetLoadoutOrDefault(LoadoutSystem.GetJobPrototype(job.ID), _playerManager.LocalSession, humanoid.Species, EntityManager, _prototypeManager);
+                var loadout = humanoid.GetLoadoutOrDefault(LoadoutSystem.GetJobPrototype(job.ID), _playerManager.LocalSession, humanoid.Species, EntityManager, _prototypeManager, SponsorSimpleManager.GetTier(), SponsorSimpleManager.GetUUID()); //LP edit
                 GiveDummyLoadout(dummyEnt, loadout);
             }
         }

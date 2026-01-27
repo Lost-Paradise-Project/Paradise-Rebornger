@@ -21,11 +21,14 @@ public static class JobRequirements
         [NotNullWhen(false)] out FormattedMessage? reason,
         IEntityManager entManager,
         IPrototypeManager protoManager,
-        HumanoidCharacterProfile? profile)
+        HumanoidCharacterProfile? profile,
+        int sponsorTier = 0,    //LP edit
+        string uuid = ""        //LP edit
+    )
     {
         var sys = entManager.System<SharedRoleSystem>();
         var requirements = sys.GetRoleRequirements(job);
-        return TryRequirementsMet(requirements, playTimes, out reason, entManager, protoManager, profile);
+        return TryRequirementsMet(requirements, playTimes, out reason, entManager, protoManager, profile, sponsorTier, uuid);    //LP edit
     }
 
     /// <summary>
@@ -41,7 +44,10 @@ public static class JobRequirements
         [NotNullWhen(false)] out FormattedMessage? reason,
         IEntityManager entManager,
         IPrototypeManager protoManager,
-        HumanoidCharacterProfile? profile)
+        HumanoidCharacterProfile? profile,
+        int sponsorTier = 0,    //LP edit
+        string uuid = ""        //LP edit
+    )
     {
         reason = null;
         if (requirements == null)
@@ -49,7 +55,7 @@ public static class JobRequirements
 
         foreach (var requirement in requirements)
         {
-            if (!requirement.Check(entManager, protoManager, profile, playTimes, out reason))
+            if (!requirement.Check(entManager, protoManager, profile, playTimes, out reason, sponsorTier, uuid))    //LP edit
                 return false;
         }
 
@@ -72,5 +78,7 @@ public abstract partial class JobRequirement
         IPrototypeManager protoManager,
         HumanoidCharacterProfile? profile,
         IReadOnlyDictionary<string, TimeSpan> playTimes,
-        [NotNullWhen(false)] out FormattedMessage? reason);
+        [NotNullWhen(false)] out FormattedMessage? reason,
+        int sponsorTier = 0,  //LP edit
+        string uuid = "");  //LP edit
 }

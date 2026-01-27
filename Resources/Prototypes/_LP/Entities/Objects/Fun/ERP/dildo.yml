@@ -2,7 +2,6 @@
   name: dildo avian
   id: LPPDildoAvian
   parent: [LPPClothingUnderwearBase, Plunger]
-  description:
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Dildo/avian.rsi
@@ -44,7 +43,6 @@
   name: dildo canine
   id: LPPDildoCanine
   parent: LPPDildoAvian
-  description:
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Dildo/canine.rsi
@@ -64,7 +62,6 @@
   name: dildo double
   id: LPPDildoDouble
   parent: LPPDildoAvian
-  description:
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Dildo/double.rsi
@@ -84,7 +81,6 @@
   name: dildo dragon
   id: LPPDildoDragon
   parent: LPPDildoAvian
-  description:
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Dildo/dragon.rsi
@@ -104,7 +100,6 @@
   name: dildo equine
   id: LPPDildoEquine
   parent: LPPDildoAvian
-  description:
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Dildo/equine.rsi
@@ -124,7 +119,6 @@
   name: dildo human
   id: LPPDildoHuman
   parent: LPPDildoAvian
-  description:
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Dildo/human.rsi
@@ -144,7 +138,6 @@
   name: dildo tentacle
   id: LPPDildoTentacle
   parent: LPPDildoAvian
-  description:
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Dildo/tentacle.rsi
@@ -164,7 +157,6 @@
   name: polydildo big
   id: LPPPolydildoBig
   parent: LPPDildoAvian
-  description:
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Dildo/polydildo_big.rsi
@@ -184,7 +176,6 @@
   name: polydildo med
   id: LPPPolydildoMed
   parent: LPPDildoAvian
-  description:
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Dildo/polydildo_med.rsi
@@ -204,7 +195,6 @@
   name: polydildo small
   id: LPPPolydildoSmall
   parent: LPPDildoAvian
-  description:
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Dildo/polydildo_small.rsi

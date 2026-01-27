@@ -32,8 +32,33 @@ public sealed partial class RoleLoadoutPrototype : IPrototype
     /// <summary>
     /// Groups that comprise this role loadout.
     /// </summary>
-    [DataField]
-    public List<ProtoId<LoadoutGroupPrototype>> Groups = new();
+    // LP edit start
+    [DataField("groups")]
+    private List<ProtoId<LoadoutGroupPrototype>> _groups = new();
+
+    private bool _initialized;
+
+    /// <summary>
+    /// Groups that comprise this role loadout.
+    /// </summary>
+    public List<ProtoId<LoadoutGroupPrototype>> Groups
+    {
+        get
+        {
+            if (!_initialized)
+            {
+                _initialized = true;
+#if LP
+                if (!_groups.Contains("SponsorsClothing"))
+                {
+                    _groups.Add("SponsorsClothing");
+                }
+#endif
+            }
+            return _groups;
+        }
+    }
+    // LP edit end
 
     /// <summary>
     /// How many points are allotted for this role loadout prototype.

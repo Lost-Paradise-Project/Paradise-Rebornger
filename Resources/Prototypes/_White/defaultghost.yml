@@ -1,0 +1,4 @@
+- type: customGhost
+  id: default
+  category: color
+  proto: MobObserver

@@ -1,3 +1,4 @@
+using Content.Client._LP.Sponsors;      //LP edit
 using Content.Corvax.Interfaces.Shared;
 using Content.Shared.Clothing;
 using Content.Shared.Preferences;
@@ -230,7 +231,7 @@ public sealed partial class LoadoutGroupContainer : BoxContainer
 
         var pressed = selected.Any(e => e.Prototype == proto.ID);
 
-        var enabled = loadout.IsValid(profile, session, proto.ID, collection, out var reason);
+        var enabled = loadout.IsValid(profile, session, proto.ID, collection, out var reason, SponsorSimpleManager.GetTier(), SponsorSimpleManager.GetUUID());  //LP edit
 
         var cont = new LoadoutContainer(proto, !enabled, reason);
 

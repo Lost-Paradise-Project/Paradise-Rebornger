@@ -11,8 +11,16 @@ public sealed partial class SpeciesLoadoutEffect : LoadoutEffect
     [DataField(required: true)]
     public List<ProtoId<SpeciesPrototype>> Species = new();
 
-    public override bool Validate(HumanoidCharacterProfile profile, RoleLoadout loadout, LoadoutPrototype proto, ICommonSession? session, IDependencyCollection collection, // Corvax-Sponsors
-        [NotNullWhen(false)] out FormattedMessage? reason)
+    public override bool Validate(
+        HumanoidCharacterProfile profile,
+        RoleLoadout loadout,
+        LoadoutPrototype proto,
+        ICommonSession? session,
+        IDependencyCollection collection, // Corvax-Sponsors
+        [NotNullWhen(false)] out FormattedMessage? reason,
+        int sponsorTier = 0,    //LP edit
+        string uuid = ""        //LP edit
+    )
     {
         if (Species.Contains(profile.Species))
         {

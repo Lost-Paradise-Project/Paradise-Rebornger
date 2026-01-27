@@ -13,6 +13,7 @@ using Content.Shared.Station;
 using Content.Shared.Timing;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
+using Content.Server._LP.Sponsors;  //LP edit
 
 namespace Content.Server.Implants;
 
@@ -100,7 +101,7 @@ public sealed class ChameleonControllerSystem : SharedChameleonControllerSystem
             return;
 
         defaultRoleLoadout = new RoleLoadout(jobProtoId);
-        defaultRoleLoadout.SetDefault(profile, null, _proto); // only sets the default if the player has no loadout
+        defaultRoleLoadout.SetDefault(profile, null, _proto, sponsorTier: SponsorSimpleManager.GetTier(userId), uuid: SponsorSimpleManager.GetUUID(userId)); // only sets the default if the player has no loadout  //LP edit
     }
 
     private void ChameleonControllerOutfitItemSelected(Entity<ChameleonClothingComponent> ent, ref InventoryRelayedEvent<ChameleonControllerOutfitSelectedEvent> args)

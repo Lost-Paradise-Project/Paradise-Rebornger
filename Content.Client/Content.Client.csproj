@@ -6,6 +6,7 @@
     <WarningsAsErrors>RA0032;nullable</WarningsAsErrors>
   </PropertyGroup>
   <Import Project="../MSBuild/Content.props" />
+  <Import Project="..\Content.Shared\PShared\LP_GlobalDefines.props" Condition="Exists('..\Content.Shared\PShared\LP_GlobalDefines.props')" />
   <ItemGroup>
     <PackageReference Include="Nett" />
     <PackageReference Include="JetBrains.Annotations" PrivateAssets="All" />

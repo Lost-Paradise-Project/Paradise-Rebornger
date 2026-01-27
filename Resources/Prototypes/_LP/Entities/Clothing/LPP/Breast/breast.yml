@@ -21,7 +21,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraBlack
   name: bra
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/Bra/white.rsi
@@ -39,7 +38,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraBlue
   name: bra
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/Bra/white.rsi
@@ -57,7 +55,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraBrown
   name: bra
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/Bra/white.rsi
@@ -75,7 +72,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraGreen
   name: bra
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/Bra/white.rsi
@@ -93,7 +89,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraGrey
   name: bra
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/Bra/white.rsi
@@ -111,7 +106,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraLightpurple
   name: bra
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/Bra/white.rsi
@@ -129,7 +123,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraMaroon
   name: bra
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/Bra/white.rsi
@@ -147,7 +140,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraOrange
   name: bra
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/Bra/white.rsi
@@ -165,7 +157,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraRed
   name: bra
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/Bra/white.rsi
@@ -183,7 +174,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraTeal
   name: bra
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/Bra/white.rsi
@@ -201,7 +191,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraWhite
   name: bra
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/Bra/white.rsi
@@ -219,7 +208,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraAlt
   name: bra alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraAlt/white.rsi
@@ -228,7 +216,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraYellow
   name: bra
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/Bra/white.rsi
@@ -248,7 +235,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraBeeKini
   name: bra bee kini
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/bra_bee-kini.rsi
@@ -257,7 +243,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraCommie
   name: bra commie
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/bra_commie.rsi
@@ -266,7 +251,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraKinky
   name: bra kinky
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/bra_kinky.rsi
@@ -275,7 +259,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraThin
   name: bra thin
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/bra_thin.rsi
@@ -286,7 +269,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraAltBlack
   name: bra alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraAlt/white.rsi
@@ -304,7 +286,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraAltBlue
   name: bra alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraAlt/white.rsi
@@ -322,7 +303,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraAltBrown
   name: bra alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraAlt/white.rsi
@@ -340,7 +320,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraAltGreen
   name: bra alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraAlt/white.rsi
@@ -358,7 +337,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraAltGrey
   name: bra alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraAlt/white.rsi
@@ -376,7 +354,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraAltLightpurple
   name: bra alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraAlt/white.rsi
@@ -394,7 +371,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraAltMaroon
   name: bra alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraAlt/white.rsi
@@ -412,7 +388,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraAltOrange
   name: bra alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraAlt/white.rsi
@@ -430,7 +405,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraAltRed
   name: bra alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraAlt/white.rsi
@@ -448,7 +422,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraAltTeal
   name: bra alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraAlt/white.rsi
@@ -466,7 +439,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraAltWhite
   name: bra alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraAlt/white.rsi
@@ -484,7 +456,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraAltYellow
   name: bra alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraAlt/white.rsi
@@ -504,7 +475,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraBinderBlack
   name: bra binder
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraBinder/white.rsi
@@ -522,7 +492,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraBinderBlue
   name: bra binder
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraBinder/white.rsi
@@ -540,7 +509,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraBinderBrown
   name: bra binder
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraBinder/white.rsi
@@ -558,7 +526,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraBinderGreen
   name: bra binder
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraBinder/white.rsi
@@ -576,7 +543,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraBinderGrey
   name: bra binder
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraBinder/white.rsi
@@ -594,7 +560,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraBinderLightpurple
   name: bra binder
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraBinder/white.rsi
@@ -612,7 +577,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraBinderMaroon
   name: bra binder
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraBinder/white.rsi
@@ -630,7 +594,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraBinderOrange
   name: bra binder
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraBinder/white.rsi
@@ -648,7 +611,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraBinderRed
   name: bra binder
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraBinder/white.rsi
@@ -666,7 +628,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraBinderTeal
   name: bra binder
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraBinder/white.rsi
@@ -684,7 +645,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraBinderWhite
   name: bra binder
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraBinder/white.rsi
@@ -702,7 +662,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraBinderYellow
   name: bra binder
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraBinder/white.rsi
@@ -722,7 +681,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraBinderStraplessBlack
   name: bra binder strapless
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
@@ -740,7 +698,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraBinderStraplessBlue
   name: bra binder strapless
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
@@ -758,7 +715,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraBinderStraplessBrown
   name: bra binder strapless
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
@@ -776,7 +732,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraBinderStraplessGreen
   name: bra binder strapless
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
@@ -794,7 +749,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraBinderStraplessGrey
   name: bra binder strapless
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
@@ -812,7 +766,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraBinderStraplessLightpurple
   name: bra binder strapless
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
@@ -830,7 +783,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraBinderStraplessMaroon
   name: bra binder strapless
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
@@ -848,7 +800,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraBinderStraplessOrange
   name: bra binder strapless
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
@@ -866,7 +817,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraBinderStraplessRed
   name: bra binder strapless
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
@@ -884,7 +834,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraBinderStraplessTeal
   name: bra binder strapless
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
@@ -902,7 +851,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraBinderStraplessWhite
   name: bra binder strapless
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
@@ -920,7 +868,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraBinderStraplessYellow
   name: bra binder strapless
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
@@ -940,7 +887,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraNekoBlack
   name: bra neko
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraNeko/white.rsi
@@ -958,7 +904,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraNekoBlue
   name: bra neko
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraNeko/white.rsi
@@ -976,7 +921,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraNekoBrown
   name: bra neko
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraNeko/white.rsi
@@ -994,7 +938,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraNekoGreen
   name: bra neko
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraNeko/white.rsi
@@ -1012,7 +955,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraNekoGrey
   name: bra neko
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraNeko/white.rsi
@@ -1030,7 +972,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraNekoLightpurple
   name: bra neko
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraNeko/white.rsi
@@ -1048,7 +989,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraNekoMaroon
   name: bra neko
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraNeko/white.rsi
@@ -1066,7 +1006,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraNekoOrange
   name: bra neko
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraNeko/white.rsi
@@ -1084,7 +1023,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraNekoRed
   name: bra neko
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraNeko/white.rsi
@@ -1102,7 +1040,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraNekoTeal
   name: bra neko
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraNeko/white.rsi
@@ -1120,7 +1057,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraNekoWhite
   name: bra neko
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraNeko/white.rsi
@@ -1138,7 +1074,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraNekoYellow
   name: bra neko
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraNeko/white.rsi
@@ -1158,7 +1093,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraStraplessBlack
   name: bra strapless
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
@@ -1176,7 +1110,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraStraplessBlue
   name: bra strapless
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
@@ -1194,7 +1127,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraStraplessBrown
   name: bra strapless
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
@@ -1212,7 +1144,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraStraplessGreen
   name: bra strapless
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
@@ -1230,7 +1161,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraStraplessGrey
   name: bra strapless
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
@@ -1248,7 +1178,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraStraplessLightpurple
   name: bra strapless
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
@@ -1266,7 +1195,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraStraplessMaroon
   name: bra strapless
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
@@ -1284,7 +1212,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraStraplessOrange
   name: bra strapless
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
@@ -1302,7 +1229,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraStraplessRed
   name: bra strapless
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
@@ -1320,7 +1246,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraStraplessTeal
   name: bra strapless
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
@@ -1338,7 +1263,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraStraplessWhite
   name: bra strapless
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
@@ -1356,7 +1280,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraStraplessYellow
   name: bra strapless
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraStrapless/white.rsi
@@ -1376,7 +1299,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraStraplessAltBlack
   name: bra strapless alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
@@ -1394,7 +1316,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraStraplessAltBlue
   name: bra strapless alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
@@ -1412,7 +1333,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraStraplessAltBrown
   name: bra strapless alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
@@ -1430,7 +1350,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraStraplessAltGreen
   name: bra strapless alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
@@ -1448,7 +1367,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraStraplessAltGrey
   name: bra strapless alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
@@ -1466,7 +1384,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraStraplessAltLightpurple
   name: bra strapless alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
@@ -1484,7 +1401,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraStraplessAltMaroon
   name: bra strapless alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
@@ -1502,7 +1418,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraStraplessAltOrange
   name: bra strapless alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
@@ -1520,7 +1435,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraStraplessAltRed
   name: bra strapless alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
@@ -1538,7 +1452,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraStraplessAltTeal
   name: bra strapless alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
@@ -1556,7 +1469,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraStraplessAltWhite
   name: bra strapless alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
@@ -1574,7 +1486,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraStraplessAltYellow
   name: bra strapless alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraStraplessAlt/white.rsi
@@ -1594,7 +1505,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraSwimmingBlack
   name: bra swimming
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
@@ -1612,7 +1522,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraSwimmingBlue
   name: bra swimming
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
@@ -1630,7 +1539,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraSwimmingBrown
   name: bra swimming
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
@@ -1648,7 +1556,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraSwimmingGreen
   name: bra swimming
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
@@ -1666,7 +1573,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraSwimmingGrey
   name: bra swimming
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
@@ -1684,7 +1590,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraSwimmingLightpurple
   name: bra swimming
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
@@ -1702,7 +1607,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraSwimmingMaroon
   name: bra swimming
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
@@ -1720,7 +1624,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraSwimmingOrange
   name: bra swimming
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
@@ -1738,7 +1641,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraSwimmingRed
   name: bra swimming
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
@@ -1756,7 +1658,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraSwimmingTeal
   name: bra swimming
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
@@ -1774,7 +1675,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraSwimmingWhite
   name: bra swimming
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
@@ -1792,7 +1692,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraSwimmingYellow
   name: bra swimming
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraSwimming/white.rsi
@@ -1812,7 +1711,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraSwimmingAltBlack
   name: bra swimming alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
@@ -1830,7 +1728,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraSwimmingAltBlue
   name: bra swimming alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
@@ -1848,7 +1745,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraSwimmingAltBrown
   name: bra swimming alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
@@ -1866,7 +1762,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraSwimmingAltGreen
   name: bra swimming alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
@@ -1884,7 +1779,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraSwimmingAltGrey
   name: bra swimming alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
@@ -1902,7 +1796,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraSwimmingAltLightpurple
   name: bra swimming alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
@@ -1920,7 +1813,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraSwimmingAltMaroon
   name: bra swimming alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
@@ -1938,7 +1830,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraSwimmingAltOrange
   name: bra swimming alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
@@ -1956,7 +1847,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraSwimmingAltRed
   name: bra swimming alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
@@ -1974,7 +1864,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraSwimmingAltTeal
   name: bra swimming alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
@@ -1992,7 +1881,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraSwimmingAltWhite
   name: bra swimming alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
@@ -2010,7 +1898,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraSwimmingAltYellow
   name: bra swimming alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/BraSwimmingAlt/white.rsi
@@ -2030,7 +1917,6 @@
   parent: LPPClothingBreastBase
   id: LPPFishnetBody
   name: fishnet body
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/fishnet_body.rsi
@@ -2039,7 +1925,6 @@
   parent: LPPClothingBreastBase
   id: LPPFishnetGloves
   name: fishnet gloves
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/fishnet_gloves.rsi
@@ -2048,7 +1933,6 @@
   parent: LPPClothingBreastBase
   id: LPPFishnetSleeves
   name: fishnet sleeves
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/fishnet_sleeves.rsi
@@ -2057,7 +1941,6 @@
   parent: LPPClothingBreastBase
   id: LPPBraHalterneck
   name: bra halterneck
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/halterneck_bra.rsi
@@ -2068,7 +1951,6 @@
   parent: LPPClothingBreastBase
   id: LPPSportsBraBlack
   name: sports bra
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/SportsBra/white.rsi
@@ -2086,7 +1968,6 @@
   parent: LPPClothingBreastBase
   id: LPPSportsBraBlue
   name: sports bra
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/SportsBra/white.rsi
@@ -2104,7 +1985,6 @@
   parent: LPPClothingBreastBase
   id: LPPSportsBraBrown
   name: sports bra
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/SportsBra/white.rsi
@@ -2122,7 +2002,6 @@
   parent: LPPClothingBreastBase
   id: LPPSportsBraGreen
   name: sports bra
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/SportsBra/white.rsi
@@ -2140,7 +2019,6 @@
   parent: LPPClothingBreastBase
   id: LPPSportsBraGrey
   name: sports bra
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/SportsBra/white.rsi
@@ -2158,7 +2036,6 @@
   parent: LPPClothingBreastBase
   id: LPPSportsBraLightpurple
   name: sports bra
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/SportsBra/white.rsi
@@ -2176,7 +2053,6 @@
   parent: LPPClothingBreastBase
   id: LPPSportsBraMaroon
   name: sports bra
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/SportsBra/white.rsi
@@ -2194,7 +2070,6 @@
   parent: LPPClothingBreastBase
   id: LPPSportsBraOrange
   name: sports bra
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/SportsBra/white.rsi
@@ -2212,7 +2087,6 @@
   parent: LPPClothingBreastBase
   id: LPPSportsBraRed
   name: sports bra
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/SportsBra/white.rsi
@@ -2230,7 +2104,6 @@
   parent: LPPClothingBreastBase
   id: LPPSportsBraTeal
   name: sports bra
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/SportsBra/white.rsi
@@ -2248,7 +2121,6 @@
   parent: LPPClothingBreastBase
   id: LPPSportsBraWhite
   name: sports bra
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/SportsBra/white.rsi
@@ -2266,7 +2138,6 @@
   parent: LPPClothingBreastBase
   id: LPPSportsBraYellow
   name: sports bra
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/SportsBra/white.rsi
@@ -2286,7 +2157,6 @@
   parent: LPPClothingBreastBase
   id: LPPSportsBraAltBlack
   name: sports bra alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
@@ -2304,7 +2174,6 @@
   parent: LPPClothingBreastBase
   id: LPPSportsBraAltBlue
   name: sports bra alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
@@ -2322,7 +2191,6 @@
   parent: LPPClothingBreastBase
   id: LPPSportsBraAltBrown
   name: sports bra alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
@@ -2340,7 +2208,6 @@
   parent: LPPClothingBreastBase
   id: LPPSportsBraAltGreen
   name: sports bra alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
@@ -2358,7 +2225,6 @@
   parent: LPPClothingBreastBase
   id: LPPSportsBraAltGrey
   name: sports bra alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
@@ -2376,7 +2242,6 @@
   parent: LPPClothingBreastBase
   id: LPPSportsBraAltLightpurple
   name: sports bra alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
@@ -2394,7 +2259,6 @@
   parent: LPPClothingBreastBase
   id: LPPSportsBraAltMaroon
   name: sports bra alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
@@ -2412,7 +2276,6 @@
   parent: LPPClothingBreastBase
   id: LPPSportsBraAltOrange
   name: sports bra alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
@@ -2430,7 +2293,6 @@
   parent: LPPClothingBreastBase
   id: LPPSportsBraAltRed
   name: sports bra alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
@@ -2448,7 +2310,6 @@
   parent: LPPClothingBreastBase
   id: LPPSportsBraAltTeal
   name: sports bra alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
@@ -2466,7 +2327,6 @@
   parent: LPPClothingBreastBase
   id: LPPSportsBraAltWhite
   name: sports bra alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
@@ -2484,7 +2344,6 @@
   parent: LPPClothingBreastBase
   id: LPPSportsBraAltYellow
   name: sports bra alt
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/SportsBraAlt/white.rsi
@@ -2504,7 +2363,6 @@
   parent: LPPClothingBreastBase
   id: LPPStripedBra
   name: striped bra
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/striped_bra.rsi
@@ -2515,7 +2373,6 @@
   parent: LPPClothingBreastBase
   id: LPPTubetopBlack
   name: tubetop
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/Tubetop/white.rsi
@@ -2533,7 +2390,6 @@
   parent: LPPClothingBreastBase
   id: LPPTubetopBlue
   name: tubetop
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/Tubetop/white.rsi
@@ -2551,7 +2407,6 @@
   parent: LPPClothingBreastBase
   id: LPPTubetopBrown
   name: tubetop
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/Tubetop/white.rsi
@@ -2569,7 +2424,6 @@
   parent: LPPClothingBreastBase
   id: LPPTubetopGreen
   name: tubetop
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/Tubetop/white.rsi
@@ -2587,7 +2441,6 @@
   parent: LPPClothingBreastBase
   id: LPPTubetopGrey
   name: tubetop
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/Tubetop/white.rsi
@@ -2605,7 +2458,6 @@
   parent: LPPClothingBreastBase
   id: LPPTubetopLightpurple
   name: tubetop
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/Tubetop/white.rsi
@@ -2623,7 +2475,6 @@
   parent: LPPClothingBreastBase
   id: LPPTubetopMaroon
   name: tubetop
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/Tubetop/white.rsi
@@ -2641,7 +2492,6 @@
   parent: LPPClothingBreastBase
   id: LPPTubetopOrange
   name: tubetop
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/Tubetop/white.rsi
@@ -2659,7 +2509,6 @@
   parent: LPPClothingBreastBase
   id: LPPTubetopRed
   name: tubetop
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/Tubetop/white.rsi
@@ -2677,7 +2526,6 @@
   parent: LPPClothingBreastBase
   id: LPPTubetopTeal
   name: tubetop
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/Tubetop/white.rsi
@@ -2695,7 +2543,6 @@
   parent: LPPClothingBreastBase
   id: LPPTubetopWhite
   name: tubetop
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/Tubetop/white.rsi
@@ -2713,7 +2560,6 @@
   parent: LPPClothingBreastBase
   id: LPPTubetopYellow
   name: tubetop
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Breast/Tubetop/white.rsi
@@ -2733,7 +2579,6 @@
   parent: LPPClothingBreastBase
   id: LPPBodyBra
   name: Body Bra
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Underwear/bra/LPPBodyBra1.rsi
@@ -2744,7 +2589,6 @@
   parent: LPPClothingBreastBase
   id: LPPBodyBraCut
   name: Body Bra Cut
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Underwear/bra/LPPBodyBra1Cut.rsi
@@ -2755,7 +2599,6 @@
   parent: LPPClothingBreastBase
   id: LPPLBodyBraCut2
   name: Body Bra Cut v2
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Underwear/bra/LPPBodyBra1Cut2.rsi
@@ -2766,7 +2609,6 @@
   parent: LPPClothingBreastBase
   id: LPPBodyBraCut3
   name: Body Bra Cut v3
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Underwear/bra/LPPBodyBraCut3.rsi
@@ -2777,7 +2619,6 @@
   parent: LPPClothingBreastBase
   id: LPPBodyBraCut4
   name: Body Bra Cut v4
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Underwear/bra/LPPBodyBraCut4.rsi
@@ -2788,7 +2629,6 @@
   parent: LPPClothingBreastBase
   id: LPPBodyBra2
   name: Body Bra v2
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Underwear/bra/LPPBodyBra2.rsi
@@ -2799,7 +2639,6 @@
   parent: LPPClothingBreastBase
   id: LPPCutOutBodyBra2
   name: Cut Out Body Bra v2
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Underwear/bra/LPPCutOutBodyBra2.rsi
@@ -2810,7 +2649,6 @@
   parent: LPPClothingBreastBase
   id: LPPSwimsuitBodyBra2
   name: Swimsuit Body Bra v2
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Underwear/bra/LPPSwimsuitBodyBra2.rsi
@@ -2821,7 +2659,6 @@
   parent: LPPClothingBreastBase
   id: LPPSwimsuitplusTightsBodyBra2
   name: Swimsuit+Tights Body Bra v2
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Underwear/bra/LPPSwimsuitplusTightsBodyBra2.rsi
@@ -2832,7 +2669,6 @@
   parent: LPPClothingBreastBase
   id: LPPTranslucentBodyBra
   name: Translucent Body Bra
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Underwear/bra/LPPTranslucentBodyBra.rsi
@@ -2843,7 +2679,6 @@
   parent: LPPClothingBreastBase
   id: LPPTranslucentBodyBra2
   name: Translucent Body Bra v2
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Underwear/bra/LPPTranslucentBodyBra2.rsi
@@ -2854,7 +2689,6 @@
   parent: LPPClothingBreastBase
   id: LPPCutOutTop
   name: Cut Out Top
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Underwear/bra/LPPCutOutTop.rsi
@@ -2865,7 +2699,6 @@
   parent: LPPClothingBreastBase
   id: LPPCutOutTop2
   name: Cut Out Top v2
-  description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Underwear/bra/LPPCutOutTop2.rsi

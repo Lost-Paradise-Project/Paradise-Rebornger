@@ -1,4 +1,4 @@
-﻿ent-IronsandStep = ступень из железистого песка
+ent-IronsandStep = ступень из железистого песка
     .desc = Поднимает ваш железистый песок на уровень выше.
 ent-IronsandStepConvexCorner = внешний угол ступени из железистого песка
     .desc = { ent-IronsandStep.desc }
