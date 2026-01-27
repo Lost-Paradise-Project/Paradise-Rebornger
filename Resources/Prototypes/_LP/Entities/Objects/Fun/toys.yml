@@ -144,6 +144,49 @@
       path: /Audio/Voice/Moth/moth_scream.ogg
 
 - type: entity
+  parent: LPPMoff
+  id: LPPMoffRandom
+  name: Moff
+  suffix: Random
+  description:
+  components:
+  - type: Sprite
+    sprite: _Nyanotrasen/Objects/Fun/Toys/moff.rsi
+    layers:
+      - state: moff1
+        map: [ "base" ]
+  - type: RandomSprite
+    available:
+      - base:
+          moff1: ""
+      - base:
+          moff2: ""
+      - base:
+          moff3: ""
+      - base:
+          moff4: ""
+      - base:
+          moff5: ""
+      - base:
+          moff6: ""
+      - base:
+          moff7: ""
+      - base:
+          moff8: ""
+      - base:
+          moff9: ""
+      - base:
+          moff10: ""
+      - base:
+          moff11: ""
+      - base:
+          moff12: ""
+      - base:
+          moff13: ""
+      - base:
+          moff14: ""
+
+- type: entity
   parent: LPPSoftToysToys
   id: LPPPlushieSynth
   name: Plushie synth

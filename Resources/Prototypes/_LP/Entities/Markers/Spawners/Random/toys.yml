@@ -1,0 +1,18 @@
+type: entity
+name: random moth plushie spawner
+id: LPPMoffPlushieRandomSpawner
+parent: MarkerBase
+components:
+-
+type: Sprite
+layers:
+- state: green
+- sprite: _Nyanotrasen/Objects/Fun/Toys/moff.rsi # Как я понял, это та текстурка, которая будет для мапперов? state: moff1
+-
+type: RandomSpawner
+prototypes:
+- LPPMoffRandom
+- LPPMoffMusician
+- LPPMoffBartender
+chance: 1
+offset: 0.0
