@@ -395,6 +395,7 @@ namespace Content.Server.Database
         public string AdminOOCColor { get; set; } = null!;
         public List<string> ConstructionFavorites { get; set; } = new();
         public List<Profile> Profiles { get; } = new();
+        public string GhostId { get; set; } = null!; // WWDP EDIT
     }
 
     public class Profile

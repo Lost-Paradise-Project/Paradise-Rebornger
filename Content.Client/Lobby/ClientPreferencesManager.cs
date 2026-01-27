@@ -1,6 +1,5 @@
 using System.Linq;
 using Content.Client._LP.Sponsors;      //LP edit
-using Content.Corvax.Interfaces.Shared;
 using Content.Shared.Construction.Prototypes;
 using Content.Shared.Preferences;
 using Robust.Client;
@@ -8,6 +7,7 @@ using Robust.Client.Player;
 using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using Content.Shared._White.CustomGhostSystem;  //WWDP edit
 
 namespace Content.Client.Lobby
 {
@@ -16,12 +16,11 @@ namespace Content.Client.Lobby
     ///     connection.
     ///     Stores preferences on the server through <see cref="SelectCharacter" /> and <see cref="UpdateCharacter" />.
     /// </summary>
-    public partial class ClientPreferencesManager : IClientPreferencesManager
+    public sealed partial class ClientPreferencesManager : IClientPreferencesManager
     {
         [Dependency] private readonly IClientNetManager _netManager = default!;
         [Dependency] private readonly IBaseClient _baseClient = default!;
         [Dependency] private readonly IPlayerManager _playerManager = default!;
-        private ISharedSponsorsManager? _sponsorsManager; // Corvax-Sponsors
 
         public event Action? OnServerDataLoaded;
 
@@ -30,7 +29,6 @@ namespace Content.Client.Lobby
 
         public void Initialize()
         {
-            IoCManager.Instance!.TryResolveType(out _sponsorsManager); // Corvax-Sponsors
             _netManager.RegisterNetMessage<MsgPreferencesAndSettings>(HandlePreferencesAndSettings);
             _netManager.RegisterNetMessage<MsgUpdateCharacter>();
             _netManager.RegisterNetMessage<MsgSelectCharacter>();
@@ -55,7 +53,7 @@ namespace Content.Client.Lobby
 
         public void SelectCharacter(int slot)
         {
-            Preferences = new PlayerPreferences(Preferences.Characters, slot, Preferences.AdminOOCColor, Preferences.ConstructionFavorites);
+            Preferences = Preferences.WithSlot(slot);
             var msg = new MsgSelectCharacter
             {
                 SelectedCharacterIndex = slot
@@ -71,7 +69,7 @@ namespace Content.Client.Lobby
             profile.EnsureValid(_playerManager.LocalSession!, collection, sponsorPrototypes, SponsorSimpleManager.GetTier(), SponsorSimpleManager.GetUUID());   //LP edit
             // Corvax-Sponsors-End
             var characters = new Dictionary<int, ICharacterProfile>(Preferences.Characters) { [slot] = profile };
-            Preferences = new PlayerPreferences(characters, Preferences.SelectedCharacterIndex, Preferences.AdminOOCColor, Preferences.ConstructionFavorites);
+            Preferences = Preferences.WithCharacters(characters); //WWDP edit
             var msg = new MsgUpdateCharacter
             {
                 Profile = profile,
@@ -94,7 +92,7 @@ namespace Content.Client.Lobby
 
             var l = lowest.Value;
             characters.Add(l, profile);
-            Preferences = new PlayerPreferences(characters, Preferences.SelectedCharacterIndex, Preferences.AdminOOCColor, Preferences.ConstructionFavorites);
+            Preferences = Preferences.WithCharacters(characters); //WWDP edit
 
             UpdateCharacter(profile, l);
         }
@@ -107,7 +105,7 @@ namespace Content.Client.Lobby
         public void DeleteCharacter(int slot)
         {
             var characters = Preferences.Characters.Where(p => p.Key != slot);
-            Preferences = new PlayerPreferences(characters, Preferences.SelectedCharacterIndex, Preferences.AdminOOCColor, Preferences.ConstructionFavorites);
+            Preferences = Preferences.WithCharacters(characters); //WWDP edit
             var msg = new MsgDeleteCharacter
             {
                 Slot = slot
@@ -117,13 +115,18 @@ namespace Content.Client.Lobby
 
         public void UpdateConstructionFavorites(List<ProtoId<ConstructionPrototype>> favorites)
         {
-            Preferences = new PlayerPreferences(Preferences.Characters, Preferences.SelectedCharacterIndex, Preferences.AdminOOCColor, favorites);
+            Preferences = Preferences.WithFavorites(favorites); //WWDP edit
             var msg = new MsgUpdateConstructionFavorites
             {
                 Favorites = favorites
             };
             _netManager.ClientSendMessage(msg);
         }
+
+        // WWDP EDIT START
+        public void SetCustomGhost(ProtoId<CustomGhostPrototype> ghostProto) =>
+            Preferences = Preferences.WithCustomGhost(ghostProto);
+        // WWDP EDIT END
 
         private void HandlePreferencesAndSettings(MsgPreferencesAndSettings message)
         {
