@@ -1,5 +1,5 @@
 - type: entity
-  name: random moth plushie spawner
+  name: lp random moth plushie spawner
   id: LPPMoffPlushieRandomSpawner
   parent: MarkerBase
   components:
