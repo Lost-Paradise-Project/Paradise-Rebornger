@@ -85,7 +85,7 @@ public sealed class RadioSystem : EntitySystem
         var evt = new TransformSpeakerNameEvent(messageSource, MetaData(messageSource).EntityName);
         RaiseLocalEvent(messageSource, evt);
 
-        // start 🌟Starlight🌟
+        // Starlight start
 
         var jobIcon = "JobIconNoId";
         var jobName = "";
@@ -123,6 +123,7 @@ public sealed class RadioSystem : EntitySystem
             jobIcon = "JobIconStationAi";
             jobName = Loc.GetString("job-name-station-ai");
         }
+        // Starlight end
 
         var name = evt.VoiceName;
         name = FormattedMessage.EscapeText(name);

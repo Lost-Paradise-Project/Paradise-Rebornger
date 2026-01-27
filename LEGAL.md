@@ -50,6 +50,7 @@
 | `_NC`            | Nuclear 14       | https://github.com/Vault-Overseers/nuclear-14           | AGPL 3.0 |
 | `_DV`            | Delta V          | https://github.com/DeltaV-Station/Delta-v/              | AGPL 3.0 |
 | `_EstacaoPirata` | Estacao Pirata   | https://github.com/estacao-pirata/estacao-pirata        | AGPL 3.0 |
+| `_StarLight`     | StarLight        | https://github.com/ss14Starlight/space-station-14       | mod MIT  |
 
 ## Отказ от гарантий
 
