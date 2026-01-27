@@ -1,2 +1,2 @@
-ent-PPMoffPlushieRandomSpawner = спавнер случайного плюшевого ниана
+ent-LPMoffPlushieRandomSpawner = спавнер случайного плюшевого ниана
     .desc = Спавнит случайного плюшевого ниана, 16 вариантов.

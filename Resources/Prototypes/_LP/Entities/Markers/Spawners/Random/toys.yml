@@ -1,6 +1,6 @@
 - type: entity
   name: lp random moth plushie spawner
-  id: LPPMoffPlushieRandomSpawner
+  id: LPMoffPlushieRandomSpawner
   parent: MarkerBase
   components:
   - type: Sprite
@@ -8,10 +8,11 @@
     - state: green
     - sprite: _Nyanotrasen/Objects/Fun/Toys/moff.rsi
       state: moff7
+
   - type: RandomSpawner
-  prototypes:
-  - LPPMoffRandom
-  rarePrototypes:
-  - LPPlushieMothMusician
-  - LPPlushieMothBartender
-  rareChance: 0.1
+    prototypes:
+    - LPPMoffRandom
+    rarePrototypes:
+    - LPPlushieMothMusician
+    - LPPlushieMothBartender
+    rareChance: 0.1
