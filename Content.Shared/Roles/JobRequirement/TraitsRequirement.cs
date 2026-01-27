@@ -24,7 +24,10 @@ public sealed partial class TraitsRequirement : JobRequirement
         IPrototypeManager protoManager,
         HumanoidCharacterProfile? profile,
         IReadOnlyDictionary<string, TimeSpan> playTimes,
-        [NotNullWhen(false)] out FormattedMessage? reason)
+        [NotNullWhen(false)] out FormattedMessage? reason,
+        int sponsorTier = 0,  //LP edit
+        string uuid = ""  //LP edit
+    )
     {
         reason = new FormattedMessage();
 

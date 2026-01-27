@@ -1,27 +1,37 @@
 ﻿- type: stationGoal
-  id: Transit
+  id: LPTransit
   text: station-goal-transit
 
 - type: stationGoal
-  id: Renovation
+  id: LPRenovation
   text: station-goal-renovation
 
 - type: stationGoal
-  id: BorgsForAI
+  id: LPBorgsForAI
   text: station-goal-borgs-for-ai
   minPlayers: 10
 
 - type: stationGoal
-  id: ReserveEnergy
+  id: LPReserveEnergy
   text: station-goal-reserv-energy
   minPlayers: 20
 
 - type: stationGoal
-  id: StationPreparation
+  id: LPStationPreparation
   text: station-goal-podgotovka-k-stroike
   minPlayers: 10
 
 - type: stationGoal
-  id: CorporateEvent
+  id: LPCorporateEvent
   text: station-goal-podgotovka-k-korporativu
+  minPlayers: 10
+
+- type: stationGoal
+  id: LPTestPoligon
+  text: station-goal-test-range-prep
+  minPlayers: 10
+
+- type: stationGoal
+  id: LPTunnelInventory
+  text: station-goal-maintenance-salvage
   minPlayers: 10

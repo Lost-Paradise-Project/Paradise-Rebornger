@@ -40,6 +40,13 @@ using Robust.Shared.ContentPack;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Replays;
 using Robust.Shared.Timing;
+// LP edit start
+#if LP
+using Content.Client._LP.Sponsors;
+using Content.Client._NC.DiscordAuth;
+using Content.Client.PClient._NC.JoinQueue;
+#endif
+// LP edit end
 
 namespace Content.Client.Entry
 {
@@ -78,6 +85,13 @@ namespace Content.Client.Entry
         [Dependency] private readonly TitleWindowManager _titleWindowManager = default!;
         [Dependency] private readonly IEntitySystemManager _entitySystemManager = default!;
         [Dependency] private readonly ClientsidePlaytimeTrackingManager _clientsidePlaytimeManager = default!;
+        // LP edit start
+#if LP
+        [Dependency] private readonly SponsorsManager _sponsorsManager = default!;
+        [Dependency] private readonly DiscordAuthManager _discordAuthManager = default!;
+        [Dependency] private readonly JoinQueueManager _joinQueue = default!;
+#endif
+        // LP edit end
 
         public override void PreInit()
         {
@@ -143,6 +157,14 @@ namespace Content.Client.Entry
             _jobRequirements.Initialize();
             _playbackMan.Initialize();
             _clientsidePlaytimeManager.Initialize();
+
+            // LP edit start
+#if LP
+            _sponsorsManager.Initialize();
+            _discordAuthManager.Initialize();
+            _joinQueue.Initialize();
+#endif
+            // LP edit end
 
             //AUTOSCALING default Setup!
             _configManager.SetCVar("interface.resolutionAutoScaleUpperCutoffX", 1080);

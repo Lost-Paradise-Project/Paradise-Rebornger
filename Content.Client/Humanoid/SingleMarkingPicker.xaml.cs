@@ -7,6 +7,7 @@ using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.XAML;
 using Robust.Client.Utility;
 using static Content.Client.Corvax.SponsorOnlyHelpers; // Corvax-Sponsors
+using Content.Client._LP.Sponsors;  //LP edit
 
 namespace Content.Client.Humanoid;
 
@@ -15,8 +16,7 @@ public sealed partial class SingleMarkingPicker : BoxContainer
 {
     [Dependency] private readonly MarkingManager _markingManager = default!;
     [Dependency] private readonly IEntityManager _entityManager = default!;
-	private ISharedSponsorsManager? _sponsorsManager; // Corvax-Sponsors
-	
+
     private readonly SpriteSystem _sprite;
 
     /// <summary>
@@ -72,7 +72,7 @@ public sealed partial class SingleMarkingPicker : BoxContainer
 
             foreach (var item in MarkingList)
             {
-                item.Selected = (string) item.Metadata! == _markings[_slot].MarkingId;
+                item.Selected = (string)item.Metadata! == _markings[_slot].MarkingId;
             }
 
             _ignoreItemSelected = false;
@@ -129,7 +129,6 @@ public sealed partial class SingleMarkingPicker : BoxContainer
     {
         RobustXamlLoader.Load(this);
         IoCManager.InjectDependencies(this);
-        IoCManager.Instance!.TryResolveType(out _sponsorsManager); // Corvax-Sponsors
 
         _sprite = _entityManager.System<SpriteSystem>();
         MarkingList.OnItemSelected += SelectMarking;
@@ -195,6 +194,11 @@ public sealed partial class SingleMarkingPicker : BoxContainer
             GetMarkingName(m.Value).ToLower().Contains(filter.ToLower())
         ).OrderBy(p => Loc.GetString($"marking-{p.Key}"));
 
+        //LP edit start
+        var sponsorTier = SponsorSimpleManager.GetTier();
+        var sponsorMarkings = SponsorSimpleManager.GetMarkings();
+        //LP edit ednt
+
         foreach (var (id, marking) in sortedMarkings)
         {
             var item = MarkingList.AddItem(Loc.GetString($"marking-{id}"), _sprite.Frame0(marking.Sprites[0]));
@@ -202,8 +206,8 @@ public sealed partial class SingleMarkingPicker : BoxContainer
             // Corvax-Sponsors-Start
             if (marking.SponsorOnly)
                 item.Text += GetSponsorOnlySuffix();
-            if (marking.SponsorOnly && _sponsorsManager != null)
-                item.Disabled = !_sponsorsManager.GetClientPrototypes().Contains(marking.ID);
+            if (marking.SponsorOnly && sponsorTier < 3)     //LP edit
+                item.Disabled = !sponsorMarkings.Contains(marking.ID);   //LP edit
             // Corvax-Sponsors-End
 
             if (_markings[Slot].MarkingId == id)
@@ -287,7 +291,7 @@ public sealed partial class SingleMarkingPicker : BoxContainer
         Search.Visible = Slot >= 0;
         AddButton.HorizontalExpand = Slot < 0;
         RemoveButton.HorizontalExpand = Slot < 0;
-        AddButton.Disabled = PointsLeft == 0 && _totalPoints > -1 ;
+        AddButton.Disabled = PointsLeft == 0 && _totalPoints > -1;
         RemoveButton.Disabled = PointsUsed == 0;
         SlotSelector.Clear();
 

@@ -26,12 +26,16 @@ chat-manager-entity-whisper-wrap-message = [font size=11][italic][BubbleHeader][
 chat-manager-entity-whisper-unknown-wrap-message = [font size=11][italic][BubbleHeader]Кто-то[/BubbleHeader] шепчет, "[BubbleContent]{ $message }[/BubbleContent]"[/italic][/font]
 chat-manager-entity-me-wrap-message = [italic]{ CAPITALIZE($entityName) } { $message }[/italic]
 chat-manager-entity-looc-wrap-message = LOOC: [bold]{ $entityName }:[/bold] { $message }
+chat-manager-entity-looc-patron-wrap-message = LOOC: [bold][color={$patronColor}]{$playerName}[/color]:[/bold] {$message}
 chat-manager-send-ooc-wrap-message = OOC: [bold]{ $playerName }:[/bold] { $message }
 chat-manager-send-ooc-patron-wrap-message = OOC: [bold][color={ $patronColor }]{ $playerName }[/color]:[/bold] { $message }
 chat-manager-send-dead-chat-wrap-message = { $deadChannelName }: [bold][BubbleHeader]{ $playerName }[/BubbleHeader]:[/bold] [BubbleContent]{ $message }[/BubbleContent]
 chat-manager-send-admin-dead-chat-wrap-message = { $adminChannelName }: [bold]([BubbleHeader]{ $userName }[/BubbleHeader]):[/bold] [BubbleContent]{ $message }[/BubbleContent]
-chat-manager-send-admin-chat-wrap-message = { $adminChannelName }: [bold]{ $playerName }:[/bold] { $message }
+chat-manager-send-admin-chat-wrap-message = {$adminChannelName}: [bold][color={ $adminColor }]\[{ $adminTitle }\][/color]{ $playerName }:[/bold] { $message }
+chat-manager-send-admin-chat-patron-wrap-message = {$adminChannelName}: [bold][color={ $adminColor }]\[{ $adminTitle }\][/color] [color={ $patronColor }]{ $playerName }:[/color][/bold] { $message }
 chat-manager-send-admin-announcement-wrap-message = [bold]{ $adminChannelName }: { $message }[/bold]
+chat-manager-send-ooc-admin-wrap-message = OOC: [bold][color={ $adminColor }]\[{ $adminTitle }\][/color]{ $playerName }:[/bold] { $message }
+chat-manager-send-ooc-admin-sponsor-wrap-message = OOC: [bold][color={ $adminColor }]\[{ $adminTitle }\][/color] [color={ $patronColor }]{ $playerName }:[/color][/bold] { $message }
 chat-manager-send-hook-ooc-wrap-message = OOC: [bold](D){ $senderName }:[/bold] { $message }
 chat-manager-send-hook-admin-wrap-message = АДМИН: [bold](D){ $senderName }:[/bold] { $message }
 chat-manager-dead-channel-name = МЁРТВЫЕ
