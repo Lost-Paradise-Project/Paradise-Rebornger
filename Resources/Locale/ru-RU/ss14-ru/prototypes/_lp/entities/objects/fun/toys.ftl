@@ -12,6 +12,7 @@ ent-LPPMoff = плюшевая Моль
     .desc = { ent-LPPSoftToysToys.desc }
 ent-LPPMoffRandom = Плюшевая Моль
     .desc = { ent-LPPSoftToysToys.desc }
+    .suffix = Random
 ent-LPPlushieMothMusician = Плюшевая Моль музыкант
     .desc = Маленькая моль-музыкант. Пищит в реминоре.
 ent-LPPlushieMothBartender = Плюшевая Моль бармен
