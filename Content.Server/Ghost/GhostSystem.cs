@@ -485,8 +485,8 @@ namespace Content.Server.Ghost
 
             // WWDP EDIT START
             CustomGhostPrototype? customGhost = null;
-            if (mind.Comp.UserId is NetUserId userId) //LP edit вынужденый хардкод
-                customGhost = _prototypeManager.Index(_prefs.GetPreferences(userId).CustomGhost);
+            if (mind.Comp.UserId is NetUserId userId && _prefs.TryGetCachedPreferences(userId, out var CustomGhost)) //LP edit вынужденый хардкод
+                customGhost = _prototypeManager.Index(CustomGhost.CustomGhost);
 
             var ghost = SpawnAtPosition(customGhost?.GhostEntityPrototype ?? GameTicker.ObserverPrototypeName, spawnPosition.Value);
             // WWDP EDIT END
