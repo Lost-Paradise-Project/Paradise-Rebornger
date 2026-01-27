@@ -95,3 +95,18 @@ Entries:
   id: 5618
   time: '2026-01-27T16:56:23.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/7
+- author: Inari
+  changes:
+    - type: Add
+      message: Добавлена система спонсорских подписок
+    - type: Add
+      message: Добавлена авторизация через Discord
+    - type: Add
+      message: Добавлена система очередей
+    - type: Add
+      message: Добавлены кастомные призраки
+    - type: Add
+      message: Добавлена возможность писать в АХелп из Discord и не только
+  id: 5619
+  time: '2026-01-27T16:59:34.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/12
