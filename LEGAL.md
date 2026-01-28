@@ -56,13 +56,6 @@
 | `DEN`            | The Den          | https://github.com/TheDenSS14/TheDen                     | AGPL 3.0 |
 | `_Next`          | Corvax Next      | https://github.com/space-syndicate/space-station-14-next | AGPL 3.0 |
 | `_FunkyStation`  | Funky Station    | https://github.com/funky-station/funky-station           | AGPL 3.0 |
-|                  |                  |                                                          |          |
-|                  |                  |                                                          |          |
-|                  |                  |                                                          |          |
-|                  |                  |                                                          |          |
-|                  |                  |                                                          |          |
-|                  |                  |                                                          |          |
-|                  |                  |                                                          |          |
 
 
 ## Отказ от гарантий
