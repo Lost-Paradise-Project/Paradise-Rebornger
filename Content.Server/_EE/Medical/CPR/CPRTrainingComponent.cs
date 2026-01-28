@@ -1,13 +1,13 @@
 ﻿using Content.Shared.Damage;
 using Robust.Shared.Audio;
 
-namespace Content.Server._EinsteinEngines.Medical.CPR;
+namespace Content.Server._EE.Medical.CPR;
 
 [RegisterComponent]
 public sealed partial class CPRTrainingComponent : Component
 {
     [DataField]
-    public SoundSpecifier CPRSound = new SoundPathSpecifier("/Audio/_EinsteinEngines/Effects/CPR.ogg");
+    public SoundSpecifier CPRSound = new SoundPathSpecifier("/Audio/_EE/Effects/CPR.ogg");
 
     [DataField]
     public TimeSpan DoAfterDuration = TimeSpan.FromSeconds(4);

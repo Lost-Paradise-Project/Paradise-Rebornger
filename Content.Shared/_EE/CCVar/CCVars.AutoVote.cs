@@ -5,7 +5,7 @@
 
 using Robust.Shared.Configuration;
 
-namespace Content.Shared.CCVar;
+namespace Content.Shared._EE.CCVar;
 
 public sealed partial class CCVars
 {

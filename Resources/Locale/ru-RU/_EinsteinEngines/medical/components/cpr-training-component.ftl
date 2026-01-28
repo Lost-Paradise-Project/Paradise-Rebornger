@@ -1,4 +1,4 @@
-﻿cpr-start-second-person = Вы начинаете проводить СЛР { CAPITALIZE($target) }.
+cpr-start-second-person = Вы начинаете проводить СЛР { CAPITALIZE($target) }.
 cpr-start-second-person-patient = { CAPITALIZE($user) } начинает проводить вам СЛР.
 cpr-must-remove = Нужно снять { $clothing } с существа.
 cpr-must-remove-own-mask = Вам нужно снять { $clothing }.
