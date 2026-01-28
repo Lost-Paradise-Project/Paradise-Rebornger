@@ -27,4 +27,4 @@
 
 Пожалуйста, ознакомьтесь с файлом [LEGAL.md](./LEGAL.md), чтобы получить информацию о лицензиях кода и ресурсов в этом репозитории.
 
-
+![Alt](https://repobeats.axiom.co/api/embed/96e90cc51f1a4c9ba3b302973f55246ed6236796.svg "Repobeats analytics image")

@@ -1,21 +1,48 @@
 <controls:FancyWindow xmlns="https://spacestation14.io"
                       xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+                      xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
                       Title="{Loc 'job-slots-console-title'}"
-                      SetSize="600 400"
+                      SetSize="800 500"
                       MinSize="600 300">
-    <BoxContainer Orientation="Vertical" Margin="4">
-        <LineEdit Name="SearchBar"
-                  PlaceHolder="{Loc 'job-slots-console-search-placeholder'}"
+    <BoxContainer Orientation="Horizontal"
+                  VerticalExpand="True"
                   HorizontalExpand="True"
-                  Margin="0 0 0 4" />
+                  Margin="4">
 
-        <ScrollContainer VerticalExpand="True" HorizontalExpand="True">
-            <BoxContainer Name="DepartmentsList"
-                          Orientation="Vertical"
-                          VerticalExpand="True"
-                          HorizontalExpand="True">
-                <!-- Populated with departments -->
+        <!-- Vertical tabs on the left -->
+        <Control MinWidth="220">
+            <BoxContainer Orientation="Vertical" SeparationOverride="4" HorizontalExpand="True">
+                <LineEdit Name="SearchBar"
+                        PlaceHolder="{Loc 'job-slots-console-search-placeholder'}"
+                        />
+                <ScrollContainer VerticalExpand="True">
+                    <BoxContainer Name="DepartmentsTabHeaders"
+                                Orientation="Vertical"
+                                SeparationOverride="4"
+                                />
+                </ScrollContainer>
             </BoxContainer>
-        </ScrollContainer>
+        </Control>
+
+        <controls:StripeBack VerticalExpand="True" MinWidth="15"/>
+
+        <!-- Content area on the right with background -->
+        <PanelContainer StyleClasses="BackgroundTransparent"
+                    HorizontalExpand="True"
+                    VerticalExpand="True">
+            <PanelContainer.PanelOverride>
+                <gfx:StyleBoxFlat BackgroundColor="#171717" />
+            </PanelContainer.PanelOverride>
+
+            <ScrollContainer Name="TabContentScroll"
+                            VerticalExpand="True"
+                            HorizontalExpand="True">
+                <BoxContainer Name="DepartmentsList"
+                            Orientation="Vertical"
+                            VerticalExpand="True"
+                            HorizontalExpand="True" />
+            </ScrollContainer>
+        </PanelContainer>
+
     </BoxContainer>
 </controls:FancyWindow>
