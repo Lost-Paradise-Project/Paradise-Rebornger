@@ -1,13 +1,8 @@
-﻿// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 MarkerWicker <markerWicker@proton.me>
-//
-// SPDX-License-Identifier: AGPL-3.0-or-later
+﻿using Robust.Shared.Configuration;
 
-using Robust.Shared.Configuration;
+namespace Content.Shared.CCVar;
 
-namespace Content.Shared._EE.CCVar;
-
-public sealed class EECCVars
+public sealed partial class CCVars
 {
 
     /// Automatically starts a map vote when returning to the lobby.
