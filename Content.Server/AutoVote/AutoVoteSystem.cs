@@ -2,9 +2,9 @@
 using Content.Server.Voting.Managers;
 using Content.Shared.GameTicking;
 using Content.Shared.Voting;
+using Content.Shared.CCVar;
 using Robust.Server.Player;
 using Content.Server.GameTicking;
-using Content.Shared._EE.CCVar;
 
 namespace Content.Server.AutoVote;
 

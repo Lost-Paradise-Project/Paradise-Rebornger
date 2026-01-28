@@ -2,7 +2,6 @@
 using Content.Server.Body.Components;
 using Content.Server.DoAfter;
 using Content.Server.Popups;
-using Content.Shared._EE.Medical.CPR;
 using Content.Shared.Atmos.Rotting;
 using Content.Shared.DoAfter;
 using Content.Shared.Inventory;
@@ -18,7 +17,7 @@ using Robust.Shared.Audio;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
 
-namespace Content.Server._EE.Medical.CPR;
+namespace Content.Server._EinsteinEngines.Medical.CPR;
 
 public sealed class CPRSystem : EntitySystem
 {
@@ -35,11 +34,11 @@ public sealed class CPRSystem : EntitySystem
 
     public override void Initialize()
     {
-        base.Initialize(); SubscribeLocalEvent<CPRTrainingComponent, GetVerbsEvent<InnateVerb>>(AddCPRVerb);
-        SubscribeLocalEvent<CPRTrainingComponent, CPRDoAfterEvent>(OnCPRDoAfter);
+        base.Initialize(); SubscribeLocalEvent<_EinsteinEngines.Medical.CPR.CPRTrainingComponent, GetVerbsEvent<InnateVerb>>(AddCPRVerb);
+        SubscribeLocalEvent<_EinsteinEngines.Medical.CPR.CPRTrainingComponent, Shared._EinsteinEngines.Medical.CPR.CPRDoAfterEvent>(OnCPRDoAfter);
     }
 
-    private void AddCPRVerb(Entity<CPRTrainingComponent> performer, ref GetVerbsEvent<InnateVerb> args)
+    private void AddCPRVerb(Entity<_EinsteinEngines.Medical.CPR.CPRTrainingComponent> performer, ref GetVerbsEvent<InnateVerb> args)
     {
         if (!args.CanInteract || !args.CanAccess || !TryComp<MobStateComponent>(args.Target, out var targetState)
             || targetState.CurrentState == MobState.Alive)
@@ -57,7 +56,7 @@ public sealed class CPRSystem : EntitySystem
         args.Verbs.Add(verb);
     }
 
-    private void StartCPR(Entity<CPRTrainingComponent> performer, EntityUid target)
+    private void StartCPR(Entity<_EinsteinEngines.Medical.CPR.CPRTrainingComponent> performer, EntityUid target)
     {
         if (HasComp<RottingComponent>(target))
         {
@@ -84,7 +83,7 @@ public sealed class CPRSystem : EntitySystem
         _popupSystem.PopupEntity(Loc.GetString("cpr-start-second-person-patient", ("user", performer)), target, target);
 
         var doAfterArgs = new DoAfterArgs(
-            EntityManager, performer, performer.Comp.DoAfterDuration, new CPRDoAfterEvent(), performer, target,
+            EntityManager, performer, performer.Comp.DoAfterDuration, new Shared._EinsteinEngines.Medical.CPR.CPRDoAfterEvent(), performer, target,
             performer)
         {
             BreakOnMove = true,
@@ -101,7 +100,7 @@ public sealed class CPRSystem : EntitySystem
         performer.Comp.CPRPlayingStream = playingStream.Value.Entity;
     }
 
-    private void OnCPRDoAfter(Entity<CPRTrainingComponent> performer, ref CPRDoAfterEvent args)
+    private void OnCPRDoAfter(Entity<_EinsteinEngines.Medical.CPR.CPRTrainingComponent> performer, ref Shared._EinsteinEngines.Medical.CPR.CPRDoAfterEvent args)
     {
         if (args.Cancelled || args.Handled || !args.Target.HasValue)
         {
