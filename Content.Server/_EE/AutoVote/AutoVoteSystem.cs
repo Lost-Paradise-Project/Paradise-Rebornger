@@ -4,6 +4,7 @@ using Content.Shared.GameTicking;
 using Content.Shared.Voting;
 using Robust.Server.Player;
 using Content.Server.GameTicking;
+using Content.Shared._EE.CCVar;
 using Content.Shared.CCVar;
 
 namespace Content.Server._EE.AutoVote;
@@ -43,9 +44,9 @@ public sealed class AutoVoteSystem : EntitySystem
             return;
         }
 
-        if (_cfgManager.GetCVar(CCVars.MapAutoVoteEnabled))
+        if (_cfgManager.GetCVar(EECCVars.MapAutoVoteEnabled))
             _voteManager.CreateStandardVote(null, StandardVoteType.Map);
-        if (_cfgManager.GetCVar(CCVars.PresetAutoVoteEnabled))
+        if (_cfgManager.GetCVar(EECCVars.PresetAutoVoteEnabled))
             _voteManager.CreateStandardVote(null, StandardVoteType.Preset);
     }
 }
