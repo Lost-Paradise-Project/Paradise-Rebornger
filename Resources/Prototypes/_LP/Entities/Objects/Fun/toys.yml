@@ -121,10 +121,8 @@
   name: Moff
   components:
   - type: Sprite
-    state: moff
-  - type: Item
-    sprite: _LP/Objects/Fun/toys.rsi
-    heldPrefix: moff
+    sprite: Objects/Fun/Plushies/moth.rsi
+    state: icon
   - type: EmitSoundOnUse
     sound:
       path: /Audio/Voice/Moth/moth_scream.ogg
