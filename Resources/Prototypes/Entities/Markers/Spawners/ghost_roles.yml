@@ -58,6 +58,7 @@
       - state: green
       - sprite: Mobs/Animals/bat.rsi
         state: bat
+  - type: Carriable #DeltaV
 
 - type: entity
   id: SpawnPointGhostCerberus

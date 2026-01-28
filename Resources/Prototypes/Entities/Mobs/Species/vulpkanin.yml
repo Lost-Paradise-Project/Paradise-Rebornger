@@ -232,6 +232,7 @@
       types:
         Asphyxiation: -2.0
 #vulpkanin Corvax-CorvaxVulp_Port end
+  - type: Carriable # Carrying system from nyanotrasen.
 
 - type: entity
   parent: [BaseSpeciesDummy]
