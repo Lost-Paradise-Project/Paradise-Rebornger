@@ -16,6 +16,7 @@ public sealed partial class JobRow : BoxContainer
 
     public event Action<JobSlotAdjustment>? OnAdjustPressed;
     public string JobName { get; }
+    public ProtoId<JobPrototype> JobId { get; }
 
     public JobRow(ProtoId<JobPrototype> job, int? slots, bool blacklisted)
     {
@@ -24,6 +25,7 @@ public sealed partial class JobRow : BoxContainer
 
         var spriteSystem = _entitySystem.GetEntitySystem<SpriteSystem>();
 
+        JobId = job; // ID
         var proto = _protoManager.Index(job);
         JobName = Loc.GetString(proto.Name);
         JobNameLabel.Text = JobName;
@@ -62,7 +64,7 @@ public sealed partial class JobRow : BoxContainer
         ToggleInfiniteButton.Visible = show;
     }
 
-    private void UpdateSlots(int? slots, bool blacklisted)
+    public void UpdateSlots(int? slots, bool blacklisted)
     {
         SlotsLabel.Text = slots?.ToString() ?? "∞";
 

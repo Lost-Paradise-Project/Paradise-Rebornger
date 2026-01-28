@@ -1,0 +1,19 @@
+﻿name: Sync Maps API
+
+on:
+  push:
+    paths:
+    - 'Resources/Maps/_LP/**/*.yml'
+    - 'Resources/Maps/_LP/*.yml'
+
+jobs:
+  sync-maps:
+    if: ${{ vars.SECRETSLINK != '' }}
+    runs-on: ubuntu-latest
+    steps:
+    - name: Send Sync Request
+      run: |
+        curl -X POST "${{ secrets.MAPS_URL_SYNC }}" \
+        -H "X-API-Key: ${{ secrets.MAPS_API_KEY }}" \
+        -H "Content-Type: application/json" \
+        -d "[]"

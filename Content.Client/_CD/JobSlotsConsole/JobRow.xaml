@@ -1,33 +1,53 @@
 <BoxContainer xmlns="https://spacestation14.io"
+              xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
               Orientation="Horizontal"
               HorizontalExpand="True"
               MinHeight="32"
-              Margin="8 0 8 2">
-    <BoxContainer Name="JobTitleContainer"
-                  Orientation="Horizontal"
-                  HorizontalExpand="True"
-                  VerticalAlignment="Center">
-        <TextureRect Name="JobIcon"
-                     TextureScale="2 2"
-                     VerticalAlignment="Center"
-                     Margin="0 0 4 0" />
-        <Label Name="JobNameLabel"
-               HorizontalExpand="True"
-               VerticalAlignment="Center" />
-    </BoxContainer>
-    <Button Name="DecreaseButton"
-            Text="-"
-            MinWidth="32" />
-    <Label Name="SlotsLabel"
-           MinWidth="60"
-           Align="Center"
-           VerticalAlignment="Center" />
-    <Button Name="IncreaseButton"
-            Text="+"
-            MinWidth="32"
-            Margin="0 0 4 0" />
-    <Button Name="ToggleInfiniteButton"
-            Text="∞"
-            MinWidth="32"
-            Visible="False" />
+              Margin="2">
+
+    <PanelContainer StyleClasses="LowDivider" Margin="0 5 0 5" />
+
+    <PanelContainer StyleClasses="BackgroundTransparent" HorizontalExpand="True">
+        <PanelContainer.PanelOverride>
+            <gfx:StyleBoxFlat BackgroundColor="#1a1a1a" />
+        </PanelContainer.PanelOverride>
+
+        <BoxContainer Orientation="Horizontal"
+                      HorizontalExpand="True"
+                      VerticalAlignment="Center"
+                      Margin="4">
+
+            <BoxContainer Name="JobTitleContainer"
+                        Orientation="Horizontal"
+                        HorizontalExpand="True"
+                        VerticalAlignment="Center">
+                <TextureRect Name="JobIcon"
+                            TextureScale="2 2"
+                            VerticalAlignment="Center"
+                            Margin="0 0 4 0" />
+                <Label Name="JobNameLabel"
+                    HorizontalExpand="True"
+                    VerticalAlignment="Center" />
+            </BoxContainer>
+
+            <BoxContainer Orientation="Horizontal"
+                      VerticalAlignment="Center">
+                <Button Name="DecreaseButton"
+                        Text="-"
+                        MinWidth="32" />
+                <Label Name="SlotsLabel"
+                    MinWidth="60"
+                    Align="Center"
+                    VerticalAlignment="Center" />
+                <Button Name="IncreaseButton"
+                        Text="+"
+                        MinWidth="32"
+                        Margin="0 0 4 0" />
+                <Button Name="ToggleInfiniteButton"
+                        Text="∞"
+                        MinWidth="32"
+                        Visible="False" />
+            </BoxContainer>
+        </BoxContainer>
+    </PanelContainer>
 </BoxContainer>
