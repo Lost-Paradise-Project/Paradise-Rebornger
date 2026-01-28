@@ -147,3 +147,10 @@ Entries:
   id: 5624
   time: '2026-01-28T16:28:06.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/22
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлены игральные карты!
+  id: 5625
+  time: '2026-01-28T16:28:24.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/20
