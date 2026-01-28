@@ -4,9 +4,9 @@ using Content.Shared.GameTicking;
 using Content.Shared.Voting;
 using Robust.Server.Player;
 using Content.Server.GameTicking;
-using Content.Shared._EE.CCVar;
+using Content.Shared.CCVar;
 
-namespace Content.Server.AutoVote;
+namespace Content.Server._EE.AutoVote;
 
 public sealed class AutoVoteSystem : EntitySystem
 {
