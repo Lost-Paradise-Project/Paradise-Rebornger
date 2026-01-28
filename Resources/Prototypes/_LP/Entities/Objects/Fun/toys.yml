@@ -119,7 +119,6 @@
   parent: LPPSoftToysToys
   id: LPPMoff
   name: Moff
-  description:
   components:
   - type: Sprite
     state: moff
