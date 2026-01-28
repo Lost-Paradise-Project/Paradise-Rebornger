@@ -162,8 +162,10 @@
   - type: Item
     sprite: _Goobstation/Objects/Specific/Fishing/fish.rsi
   - type: Bloodstream
-    bloodMaxVolume: 20
-    bloodReagent: Laughter
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: Laughter
+        Quantity: 20
 
 - type: entity
   id: FishNukeDisk
@@ -273,8 +275,10 @@
   - type: Item
     sprite: _Goobstation/Objects/Specific/Fishing/fish.rsi
   - type: Bloodstream
-    bloodMaxVolume: 10
-    bloodReagent: Laughter
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: Laughter
+        Quantity: 10
 
 - type: entity
   id: FishIan
