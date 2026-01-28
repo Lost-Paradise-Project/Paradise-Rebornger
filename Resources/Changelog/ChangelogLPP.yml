@@ -110,3 +110,19 @@ Entries:
   id: 5619
   time: '2026-01-27T16:59:34.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/12
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлены иконки ролей в радио!
+  id: 5620
+  time: '2026-01-27T18:29:12.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/14
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлена смена погоды!
+    - type: Add
+      message: Добавлена смена времени дня и ночи!
+  id: 5621
+  time: '2026-01-27T18:51:40.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/10
