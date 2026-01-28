@@ -143,7 +143,6 @@
   id: LPPMoffRandom
   name: Moff
   suffix: Random
-  description:
   components:
   - type: Sprite
     sprite: _Nyanotrasen/Objects/Fun/Toys/moff.rsi
