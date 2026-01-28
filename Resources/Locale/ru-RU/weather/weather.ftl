@@ -1,5 +1,5 @@
 cmd-weather-desc = Устанавливает погоду для текущей карты.
-cmd-weather-help = weather <mapId> <prototype / null>
+cmd-weather-help = weather <mapId> <prototype / null> [duration]
 cmd-weather-hint = Прототип погоды
 cmd-weather-null = Очищает погоду
 cmd-weather-error-no-arguments = Недостаточно аргументов!

@@ -1,10 +1,15 @@
 using Content.Server.Administration.Logs;
 using Content.Server.Chat.Systems;
 using Content.Server.Power.Components;
+using Content.Shared.Access.Components;
+using Content.Shared.Access.Systems;
 using Content.Shared.Chat;
 using Content.Shared.Database;
+using Content.Shared.PDA;
 using Content.Shared.Radio;
 using Content.Shared.Radio.Components;
+using Content.Shared.Silicons.Borgs.Components;
+using Content.Shared.Silicons.StationAi;
 using Content.Shared.Speech;
 using Robust.Shared.Map;
 using Robust.Shared.Network;
@@ -24,6 +29,7 @@ public sealed class RadioSystem : EntitySystem
     [Dependency] private readonly INetManager _netMan = default!;
     [Dependency] private readonly IReplayRecordingManager _replay = default!;
     [Dependency] private readonly IAdminLogManager _adminLogger = default!;
+    [Dependency] private readonly AccessReaderSystem _accessReader = default!; // Goobstation - radio icons
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly ChatSystem _chat = default!;
@@ -79,6 +85,46 @@ public sealed class RadioSystem : EntitySystem
         var evt = new TransformSpeakerNameEvent(messageSource, MetaData(messageSource).EntityName);
         RaiseLocalEvent(messageSource, evt);
 
+        // Starlight start
+
+        var jobIcon = "JobIconNoId";
+        var jobName = "";
+
+        if (_accessReader.FindAccessItemsInventory(messageSource, out var items))
+        {
+            foreach (var item in items)
+            {
+                // ID Card
+                if (TryComp<IdCardComponent>(item, out var id))
+                {
+                    jobIcon = id.JobIcon;
+                    jobName = id.LocalizedJobTitle;
+                    break;
+                }
+
+                // PDA
+                if (TryComp<PdaComponent>(item, out var pda)
+                    && pda.ContainedId != null
+                    && TryComp(pda.ContainedId, out id))
+                {
+                    jobIcon = id.JobIcon;
+                    jobName = id.LocalizedJobTitle;
+                    break;
+                }
+            }
+        }
+        else if (HasComp<BorgChassisComponent>(messageSource))
+        {
+            jobIcon = "JobIconBorg";
+            jobName = Loc.GetString("job-name-borg");
+        }
+        else if (HasComp<StationAiHeldComponent>(messageSource))
+        {
+            jobIcon = "JobIconStationAi";
+            jobName = Loc.GetString("job-name-station-ai");
+        }
+        // Starlight end
+
         var name = evt.VoiceName;
         name = FormattedMessage.EscapeText(name);
 
@@ -98,7 +144,7 @@ public sealed class RadioSystem : EntitySystem
             ("fontSize", speech.FontSize),
             ("verb", Loc.GetString(_random.Pick(speech.SpeechVerbStrings))),
             ("channel", $"\\[{channel.LocalizedName}\\]"),
-            ("name", name),
+            ("name", $"[icon src=\"{jobIcon}\" tooltip=\"{jobName}\"] {name}"),  // 🌟Starlight🌟
             ("message", content));
 
         // most radios are relayed to chat, so lets parse the chat message beforehand
