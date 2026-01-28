@@ -1,4 +1,3 @@
-using Content.Client.Administration.UI.CustomControls;
 using Content.Client.UserInterface.Controls;
 using Content.Shared.Roles;
 using Content.Shared._CD.JobSlotsConsole;
@@ -16,8 +15,10 @@ public sealed partial class JobSlotsConsoleMenu : FancyWindow
     [Dependency] private readonly IPrototypeManager _protoManager = default!;
 
     private readonly Dictionary<ProtoId<DepartmentPrototype>, List<JobRow>> _departmentRows = new();
-    private readonly Dictionary<ProtoId<DepartmentPrototype>, Label> _departmentLabels = new();
+    private readonly Dictionary<ProtoId<DepartmentPrototype>, Button> _tabButtons = new();
+    private readonly Dictionary<ProtoId<DepartmentPrototype>, BoxContainer> _departmentSections = new();
     private JobSlotsConsoleState? _currentState;
+    private ProtoId<DepartmentPrototype>? _currentTab;
 
     public event Action<ProtoId<JobPrototype>, JobSlotAdjustment>? OnAdjustPressed;
 
@@ -33,9 +34,14 @@ public sealed partial class JobSlotsConsoleMenu : FancyWindow
     {
         _currentState = state;
 
+        var previousTab = _currentTab;
+        var previousSearch = SearchBar.Text;
+
+        DepartmentsTabHeaders.RemoveAllChildren();
         DepartmentsList.RemoveAllChildren();
         _departmentRows.Clear();
-        _departmentLabels.Clear();
+        _tabButtons.Clear();
+        _departmentSections.Clear();
 
         var jobsByDepartment = new Dictionary<DepartmentPrototype, List<(JobPrototype proto, int? slots, bool blacklisted)>>();
 
@@ -57,27 +63,59 @@ public sealed partial class JobSlotsConsoleMenu : FancyWindow
             jobs.Add((proto, slots, blacklisted));
         }
 
-        // Sort and add departments
-        foreach (var (department, jobs) in jobsByDepartment.OrderBy(x => x.Key, DepartmentUIComparer.Instance))
+        // Sort departments
+        var sortedDepartments = jobsByDepartment.Keys
+            .OrderBy(d => d, DepartmentUIComparer.Instance)
+            .ToList();
+
+        // Create tabs for each department
+        foreach (var department in sortedDepartments)
         {
+            var jobs = jobsByDepartment[department];
             var sortedJobs = jobs
                 .OrderByDescending(x => x.proto.RealDisplayWeight)
                 .ThenBy(x => x.proto.LocalizedName)
                 .ToList();
 
-            AddDepartmentSection(department, sortedJobs);
+            AddDepartmentTab(department, sortedJobs);
         }
 
+        if (previousTab.HasValue && _tabButtons.ContainsKey(previousTab.Value))
+        {
+            SwitchTab(previousTab.Value);
+        }
+        else if (sortedDepartments.Count > 0)
+        {
+            SwitchTab(sortedDepartments[0].ID);
+        }
+
+        SearchBar.Text = previousSearch;
         UpdateJobList();
     }
 
-    private void AddDepartmentSection(DepartmentPrototype department, List<(JobPrototype proto, int? slots, bool blacklisted)> jobs)
+    private void AddDepartmentTab(DepartmentPrototype department, List<(JobPrototype proto, int? slots, bool blacklisted)> jobs)
     {
+        var tabButton = new Button
+        {
+            Text = Loc.GetString(department.Name),
+            ToggleMode = true,
+            HorizontalAlignment = HAlignment.Left,
+            TextAlign = Label.AlignMode.Left,
+            Margin = new Thickness(2, 1),
+            MinHeight = 32,
+        };
+
+        tabButton.OnPressed += _ => SwitchTab(department.ID);
+        _tabButtons[department.ID] = tabButton;
+        DepartmentsTabHeaders.AddChild(tabButton);
+
         var departmentBox = new BoxContainer
         {
+            Name = $"DepartmentSection_{department.ID}",
             Orientation = BoxContainer.LayoutOrientation.Vertical,
             HorizontalExpand = true,
-            Margin = new Thickness(0, 5),
+            VerticalExpand = true,
+            Visible = false
         };
 
         // Add department header
@@ -86,13 +124,9 @@ public sealed partial class JobSlotsConsoleMenu : FancyWindow
             Text = Loc.GetString(department.Name),
             HorizontalAlignment = HAlignment.Center,
             StyleClasses = { "LabelHeading" },
-            ModulateSelfOverride = department.Color,
-            FontColorOverride = department.Color, // css trolling
+            Margin = new Thickness(0, 5, 0, 10)
         };
-
-        _departmentLabels[department.ID] = label;
         departmentBox.AddChild(label);
-        departmentBox.AddChild(new HSeparator { Margin = new Thickness(5, 3, 5, 5) });
 
         // Add job rows
         var jobRows = new List<JobRow>();
@@ -107,27 +141,117 @@ public sealed partial class JobSlotsConsoleMenu : FancyWindow
         }
 
         _departmentRows[department.ID] = jobRows;
+        _departmentSections[department.ID] = departmentBox;
         DepartmentsList.AddChild(departmentBox);
+    }
+
+    private void SwitchTab(ProtoId<DepartmentPrototype> departmentId)
+    {
+        // Deactivate previous tab if exists
+        if (_currentTab.HasValue && _currentTab.Value != departmentId)
+        {
+            if (_tabButtons.TryGetValue(_currentTab.Value, out var prevButton))
+            {
+                prevButton.Pressed = false;
+            }
+
+            if (_departmentSections.TryGetValue(_currentTab.Value, out var prevSection))
+            {
+                prevSection.Visible = false;
+            }
+        }
+
+        // Activate new tab
+        if (_tabButtons.TryGetValue(departmentId, out var button))
+        {
+            button.Pressed = true;
+            _currentTab = departmentId;
+        }
+
+        if (_departmentSections.TryGetValue(departmentId, out var section))
+        {
+            section.Visible = true;
+        }
     }
 
     private void UpdateJobList()
     {
         var search = SearchBar.Text.Trim().ToLowerInvariant();
 
+        if (string.IsNullOrEmpty(search))
+        {
+            // Show all tabs when search is empty
+            foreach (var button in _tabButtons.Values)
+            {
+                button.Visible = true;
+            }
+
+            foreach (var (_, rows) in _departmentRows)
+            {
+                foreach (var row in rows)
+                {
+                    row.Visible = true;
+                }
+            }
+
+            // Show only active department
+            foreach (var (departmentId, section) in _departmentSections)
+            {
+                section.Visible = departmentId == _currentTab;
+            }
+
+            return;
+        }
+
+        // Search mode
+        var activeTabChanged = false;
+
         foreach (var (departmentId, rows) in _departmentRows)
         {
-            var departmentLabel = _departmentLabels[departmentId];
             var hasVisibleJobs = false;
 
             foreach (var row in rows)
             {
-                var visible = string.IsNullOrEmpty(search) ||
-                             row.JobName.Contains(search, StringComparison.InvariantCultureIgnoreCase);
+                var visible = row.JobName.Contains(search, StringComparison.InvariantCultureIgnoreCase);
                 row.Visible = visible;
                 hasVisibleJobs |= visible;
             }
 
-            departmentLabel.Parent!.Visible = hasVisibleJobs;
+            // Update tab visibility
+            if (_tabButtons.TryGetValue(departmentId, out var button))
+            {
+                button.Visible = hasVisibleJobs;
+            }
+
+            // Show/hide department sections
+            if (_departmentSections.TryGetValue(departmentId, out var section))
+            {
+                section.Visible = hasVisibleJobs && (departmentId == _currentTab);
+
+                // If current tab has no results, we need to switch to another tab
+                if (departmentId == _currentTab && !hasVisibleJobs)
+                {
+                    activeTabChanged = true;
+                }
+            }
+        }
+
+        // If current tab has no search results, switch to first visible tab
+        if (activeTabChanged || !_currentTab.HasValue || !_tabButtons[_currentTab.Value].Visible)
+        {
+            var firstVisible = _tabButtons.FirstOrDefault(kv => kv.Value.Visible);
+            if (firstVisible.Key != "")
+            {
+                SwitchTab(firstVisible.Key);
+            }
+            else if (_tabButtons.Count > 0)
+            {
+                // No tabs visible, hide all sections
+                foreach (var section in _departmentSections.Values)
+                {
+                    section.Visible = false;
+                }
+            }
         }
     }
 
