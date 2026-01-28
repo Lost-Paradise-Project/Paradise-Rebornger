@@ -8,7 +8,6 @@
     - state: green
     - sprite: _Nyanotrasen/Objects/Fun/Toys/moff.rsi
       state: moff7
-
   - type: RandomSpawner
     prototypes:
     - LPPMoffRandom
