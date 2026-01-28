@@ -7,7 +7,7 @@ using Robust.Shared.Configuration;
 
 namespace Content.Shared._EE.CCVar;
 
-public sealed partial class CCVars
+public sealed class EECCVars
 {
 
     /// Automatically starts a map vote when returning to the lobby.
