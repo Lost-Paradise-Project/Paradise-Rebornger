@@ -40,7 +40,7 @@
   - type: Item
     size: Small
   - type: CardStack
-  # - type: StripMenuHidden # Floof
+  - type: StripMenuHidden # Floof
   - type: ContainerContainer # Frontier
     containers: # Frontier
       cardstack-container: !type:Container # Frontier
