@@ -118,6 +118,7 @@
 - type: entity
   parent: LPPSoftToysToys
   id: LPPMoff
+  categories: [ HideSpawnMenu ]
   name: Moff
   components:
   - type: Sprite
