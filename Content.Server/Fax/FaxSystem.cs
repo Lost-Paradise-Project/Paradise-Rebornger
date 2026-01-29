@@ -1,3 +1,4 @@
+using Content.Server._CorvaxGoob.Photo;
 using Content.Server.Administration;
 using Content.Server.Administration.Managers;
 using Content.Server.Chat.Managers;
@@ -460,21 +461,37 @@ public sealed class FaxSystem : EntitySystem
         if (sendEntity == null)
             return;
 
-        if (!TryComp(sendEntity, out MetaDataComponent? metadata) ||
-            !TryComp<PaperComponent>(sendEntity, out var paper))
+        // CorvaxGoob-PhotoCamera-Start
+        if (!TryComp(sendEntity, out MetaDataComponent? metadata))
             return;
 
         TryComp<LabelComponent>(sendEntity, out var labelComponent);
         TryComp<NameModifierComponent>(sendEntity, out var nameMod);
 
+        FaxPrintout? printout = null;
+
+        if (TryComp<PaperComponent>(sendEntity, out var paper))
+        {
+            printout = new FaxPrintout(paper.Content,
+                                           nameMod?.BaseName ?? metadata.EntityName,
+                                           labelComponent?.CurrentLabel,
+                                           metadata.EntityPrototype?.ID ?? component.PrintPaperId,
+                                           paper.StampState,
+                                           paper.StampedBy,
+                                           paper.EditingDisabled);
+        }
+        else if (TryComp<PhotoCardComponent>(sendEntity, out var photo) )
+        {
+            var meta = MetaData(sendEntity.Value);
+
+            if (meta.EntityPrototype is not null)
+                printout = new FaxPrintout("", meta.EntityName, prototypeId: meta.EntityPrototype.ID, entityUid: sendEntity);
+        }
         // TODO: See comment in 'Send()' about not being able to copy whole entities
-        var printout = new FaxPrintout(paper.Content,
-                                       nameMod?.BaseName ?? metadata.EntityName,
-                                       labelComponent?.CurrentLabel,
-                                       metadata.EntityPrototype?.ID ?? component.PrintPaperId,
-                                       paper.StampState,
-                                       paper.StampedBy,
-                                       paper.EditingDisabled);
+
+        if (printout is null)
+            return;
+        // CorvaxGoob-PhotoCamera-End
 
         component.PrintingQueue.Enqueue(printout);
         component.SendTimeoutRemaining += component.SendTimeout;
@@ -608,6 +625,8 @@ public sealed class FaxSystem : EntitySystem
 
             paper.EditingDisabled = printout.Locked;
         }
+        else if (printout.EntityUid.HasValue && TryComp<PhotoCardComponent>(printout.EntityUid, out var photo)) // CorvaxGoob-PhotoCamera
+            EnsureComp<PhotoCardComponent>(printed).ImageData = photo.ImageData;
 
         _metaData.SetEntityName(printed, printout.Name);
 

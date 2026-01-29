@@ -124,6 +124,7 @@
     - !type:GroupSelector
       weight: 2
       children:
+      - id: PhotoCameraFilled # CorvaxGoob-PhotoCamera
       - id: DrinkMugDog
       - id: CigarGold
       - id: ClothingUniformJumpsuitFamilyGuy
