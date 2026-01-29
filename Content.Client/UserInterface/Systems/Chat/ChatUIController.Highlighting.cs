@@ -8,6 +8,7 @@ using Robust.Shared.Player;
 using Content.Shared.CCVar;
 using Content.Client.CharacterInfo;
 using Content.Client.Gameplay;
+using Content.Shared._GoobStation.CCVar;
 using Robust.Shared.Utility;
 using static Content.Client.CharacterInfo.CharacterInfoSystem;
 
@@ -59,11 +60,11 @@ public sealed partial class ChatUIController : IOnSystemChanged<CharacterInfoSys
         if (_state.CurrentState is not GameplayStateBase)
             return;
 
-        if (!_config.GetCVar(CCVars.ChatHighlightSound))
+        if (!_config.GetCVar(GoobCVars.ChatHighlightSound))
             return;
 
         // Get the volume setting and apply it to the audio params
-        var volume = _config.GetCVar(CCVars.ChatHighlightVolume);
+        var volume = _config.GetCVar(GoobCVars.ChatHighlightVolume);
         var volumeDb = MathF.Log10(Math.Clamp(volume, 0f, 1f)) * 20f;
         var audioParams = AudioParams.Default.WithVolume(volumeDb);
 
