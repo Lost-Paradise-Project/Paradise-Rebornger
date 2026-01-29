@@ -9,6 +9,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
 using Content.Shared._ERPModule.Data; // LP edit
+using Content.Shared._GoobStation.Barks; // Goob Station - Barks
 
 namespace Content.Shared.Humanoid;
 
@@ -38,6 +39,9 @@ public sealed partial class HumanoidAppearanceComponent : Component
 
     [DataField, AutoNetworkedField]
     public int Age = 18;
+
+    [DataField] // Goob Station - Barks
+    public ProtoId<BarkPrototype> BarkVoice { get; set; } = SharedHumanoidAppearanceSystem.DefaultBarkVoice; // Goob Station - Barks
 
     /// <summary>
     ///     Any custom base layers this humanoid might have. See:
