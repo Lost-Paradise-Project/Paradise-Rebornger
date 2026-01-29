@@ -167,6 +167,8 @@
     - id: RCDAmmo
     - id: RubberStampCE
     - id: MetalFoamGrenade
+    - id: NuclearCentrifugeMachineCircuitboard # FH edit
+    - id: NuclearFabricatorMachineCircuitboard # FH edit
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
