@@ -3,6 +3,7 @@
 # With cut-out
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: DrinkBaseCup
   id: DrinkVisualizerTestCut
   name: solution container vis cut-out
@@ -31,6 +32,7 @@
 # Without (For food, non cut-out stuff)
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: DrinkBaseCup
   id: DrinkVisualizerTestNot
   name: solution container vis cut-not

@@ -1,4 +1,5 @@
 - type: entity
+  categories: [ HideSpawnMenu ]
   save: false
   name: pathfinding dummy
   parent: BaseMobHuman
