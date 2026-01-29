@@ -170,40 +170,6 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: LPPClothingNeckShemagNPZ
-  name: NPZ shemag
-  description: A warm silk fabric that protects from dust and cold, as well as gives brutality and tacticool to the wearer. Now with the colors of NPZ!
-  components:
-  - type: Sprite
-    sprite: _LP/Clothing/Neck/shemags/NPZdown.rsi
-  - type: Clothing
-    sprite: _LP/Clothing/Neck/shemags/NPZdown.rsi
-  - type: ToggleableClothing
-    clothingPrototype: LPPClothingMaskShemagNPZ
-    requiredSlot:
-    - neck
-    slot: mask
-  - type: ContainerContainer
-    containers:
-    toggleable-clothing: !type:ContainerSlot
-      showEnts: False
-      occludes: True
-      ent: null
-
-- type: entity
-  parent: ClothingMaskBase
-  id: LPPClothingMaskShemagNPZ
-  categories: [ HideSpawnMenu ]
-  name: NPZ shemag
-  components:
-  - type: Sprite
-    sprite: _LP/Clothing/Neck/shemags/NPZup.rsi
-  - type: Clothing
-    sprite: _LP/Clothing/Neck/shemags/NPZup.rsi
-  - type: IdentityBlocker
-
-- type: entity
-  parent: ClothingNeckBase
   id: LPPClothingNeckShemagWhite
   name: White shemag
   description: A warm silk fabric that protects from dust and cold, as well as gives brutality and tacticool to the wearer.
