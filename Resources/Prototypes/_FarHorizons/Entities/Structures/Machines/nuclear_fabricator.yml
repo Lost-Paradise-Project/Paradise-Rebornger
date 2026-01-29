@@ -31,12 +31,36 @@
     runningState: building
     unlitIdleState: unlit
     unlitRunningState: unlit-building
-    staticPacks:
-    - ReactorPartsBasic
-    dynamicPacks:
-    - ReactorFuelRods
-    - ReactorControlRods
-    - ReactorGasChannels
-    - ReactorHeatExchangers
-    - GasTurbineBlades
-    - GasTurbineStators
+
+    staticRecipes:
+    - SteelReactorGasChannel
+    - SteelReactorHeatExchanger
+    - CerenkiteReactorFuelRod
+    - BohrumReactorControlRod
+    - BrassReactorControlRod
+    - BrassReactorGasChannel
+    - BrassReactorHeatExchanger
+    - GlassReactorControlRod
+    - GlassReactorGasChannel
+    - GlassReactorHeatExchanger
+    dynamicRecipes:
+    - UraniumReactorFuelRod
+    - UraniumGlassReactorFuelRod
+    - PlutoniumReactorFuelRod
+    - PlasmaReactorFuelRod
+    - BananiumReactorFuelRod
+    - DiamondReactorControlRod
+    - GoldReactorControlRod
+    - PlasmaGlassReactorControlRod
+    - PlasteelReactorControlRod
+    - SilverReactorControlRod
+    - DiamondReactorHeatExchanger
+    - GoldReactorHeatExchanger
+    - PlasmaGlassReactorHeatExchanger
+    - PlasteelReactorHeatExchanger
+    - SilverReactorHeatExchanger
+    - DiamondReactorGasChannel
+    - GoldReactorGasChannel
+    - PlasmaGlassReactorGasChannel
+    - PlasteelReactorGasChannel
+    - SilverReactorGasChannel
