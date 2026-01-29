@@ -170,3 +170,10 @@ Entries:
   id: 5627
   time: '2026-01-29T11:28:45.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/26
+- author: MegaDaimond
+  changes:
+    - type: Tweak
+      message: Изменены спрайты для унатхов, людей, таяров, вульп и слаймолюдов
+  id: 5628
+  time: '2026-01-29T11:33:00.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/33
