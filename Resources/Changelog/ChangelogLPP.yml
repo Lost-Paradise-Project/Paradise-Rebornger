@@ -154,3 +154,12 @@ Entries:
   id: 5625
   time: '2026-01-28T16:28:24.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/20
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлен новый кастом для ии!
+    - type: Add
+      message: Добавлен новый шейдер в виде карты для ИИ!
+  id: 5626
+  time: '2026-01-29T11:28:28.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/24
