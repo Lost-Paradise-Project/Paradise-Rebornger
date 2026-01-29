@@ -610,7 +610,7 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
         {
             foreach (var (userId, userName) in banDef.Users)
             {
-                targetName = string.Concat(targetName, "; " + (await _db.GetPlayerRecordByUserId(userId))?.LastSeenUserName ?? Loc.GetString("server-ban-no-name", ("hwid", userName)));
+                targetName = string.Concat(targetName, "  " + (await _db.GetPlayerRecordByUserId(userId))?.LastSeenUserName ?? Loc.GetString("server-ban-no-name", ("hwid", userName)));
             }
         }
 
