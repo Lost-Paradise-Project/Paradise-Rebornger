@@ -1,0 +1,27 @@
+- type: decal
+  id: LPPindletterAB
+  tags: ["letter"]
+  sprite:
+    sprite: _LP/Decals/ind-letters.rsi
+    state: letter_A
+
+- type: decal
+  id: LPPindletterBB
+  tags: ["letter"]
+  sprite:
+    sprite: _LP/Decals/ind-letters.rsi
+    state: letter_B
+
+- type: decal
+  id: LPPindletterCB
+  tags: ["letter"]
+  sprite:
+    sprite: _LP/Decals/ind-letters.rsi
+    state: letter_C
+
+- type: decal
+  id: LPPindletterDB
+  tags: ["letter"]
+  sprite:
+    sprite: _LP/Decals/ind-letters.rsi
+    state: letter_D

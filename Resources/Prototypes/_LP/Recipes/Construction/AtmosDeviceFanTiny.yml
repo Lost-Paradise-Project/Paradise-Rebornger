@@ -1,0 +1,11 @@
+ - type: construction
+   id: AtmosDeviceFanDirectional
+   graph: AtmosDeviceFanDirectional
+   startNode: start
+   targetNode: AtmosDeviceFanDirectional
+   category: construction-category-structures
+   canBuildInImpassable: true
+   objectType: Structure
+   placementMode: SnapgridCenter
+   conditions:
+     - !type:TileNotBlocked

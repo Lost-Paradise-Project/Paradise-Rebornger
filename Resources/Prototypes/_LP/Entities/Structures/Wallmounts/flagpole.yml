@@ -1,0 +1,112 @@
+﻿- type: entity
+  parent: BaseStructure
+  id: LPPFlagWallBase
+  abstract: true
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Clickable
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.5
+        density: 100
+        mask:
+        - TableMask
+  - type: Pullable
+
+- type: entity
+  parent: LPPFlagWallBase
+  id: LPPFlagPoleBase
+  name: flag pole
+  description: Metal flagpole with a flag hanging from it.
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _LP/Structures/Decoration/flagpole.rsi
+  - type: InteractionOutline
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 20
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 1
+            max: 2
+          MaterialCloth1:
+            min: 2
+            max: 4
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: LPPFlagPoleBase
+  id: LPPFlagPoleNT
+  suffix: NT
+  components:
+  - type: Sprite
+    sprite: _LP/Structures/Decoration/flagpole.rsi
+    layers:
+    - state: flagpole
+    - state: flagpole-nt
+
+- type: entity
+  parent: LPPFlagPoleBase
+  id: LPPFlagPoleCC
+  suffix: Central Command
+  components:
+  - type: Sprite
+    sprite: _LP/Structures/Decoration/flagpole.rsi
+    layers:
+    - state: flagpole
+    - state: flagpole-cc
+
+- type: entity
+  parent: LPPFlagPoleBase
+  id: LPPFlagPoleWhite
+  suffix: White
+  components:
+  - type: Sprite
+    sprite: _LP/Structures/Decoration/flagpole.rsi
+    layers:
+    - state: flagpole
+    - state: flagpole-white
+
+- type: entity
+  parent: LPPFlagPoleBase
+  id: LPPFlagPoleRed
+  name: flag pole
+  description: text
+  suffix: Red
+  components:
+  - type: Sprite
+    sprite: _LP/Structures/Decoration/flagpole.rsi
+    layers:
+    - state: flagpole
+    - state: flagpole-red
+
+- type: entity
+  parent: LPPFlagPoleBase
+  id: LPPFlagPoleBlue
+  suffix: Blue
+  components:
+  - type: Sprite
+    sprite: _LP/Structures/Decoration/flagpole.rsi
+    layers:
+    - state: flagpole
+    - state: flagpole-blue

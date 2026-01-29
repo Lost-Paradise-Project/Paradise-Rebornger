@@ -1,0 +1,323 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPSchoolgirl
+  name: schoolgirl
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Costume/schoolgirl.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Costume/schoolgirl.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPSchoolgirlgreen
+  name: schoolgirlgreen
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Costume/schoolgirlgreen.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Costume/schoolgirlgreen.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPSchoolgirlorange
+  name: schoolgirlorange
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Costume/schoolgirlorange.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Costume/schoolgirlorange.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPSchoolgirlred
+  name: schoolgirlred
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Costume/schoolgirlred.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Costume/schoolgirlred.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPSwagOutfit
+  name: swag outfit
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Costume/swag_outfit.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Costume/swag_outfit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPPomniJumpskirt
+  name: Pomni Jumpskir
+  description: it's a Pomni uniform
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Costume/clownPomni.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Costume/clownPomni.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitFleece
+  name: Stylish fleece jumpsuit
+  description: Clothes for those who prefer reading cells and tactics.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Costume/fleece.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Costume/fleece.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPReallyBlackSuit
+  name: Black suit
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Wedding/really_black_suit_s.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Wedding/really_black_suit_s.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPRedEveningGown
+  name: Red evening gown
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Wedding/red_evening_gown_s.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Wedding/red_evening_gown_s.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPJanimaid
+  name: Janimaid
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/ERP/janimaid.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/ERP/janimaid.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPLatexCatsuitMale
+  name: Latex catsuit male
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/ERP/latex_catsuit_male.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/ERP/latex_catsuit_male.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPLewdmaid
+  name: Lewdmaid
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/ERP/lewdmaid.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/ERP/lewdmaid.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPBikinisBlack
+  name: Bikinis black
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_black.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_black.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPBikinisCyan
+  name: Bikinis cyan
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_cyan.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_cyan.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPBikinisGreen
+  name: Bikinis green
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_green.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_green.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPBikinisLatex
+  name: Bikinis latex
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_latex.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_latex.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPBikinisOrange
+  name: Bikinis orange
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_orange.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_orange.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPBikinisPurple
+  name: Bikinis purple
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_purple.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_purple.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPBikinisRed
+  name: Bikinis red
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_red.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_red.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPBikinisTealblack
+  name: Bikinis tealblack
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_tealblack.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_tealblack.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPBikinisWhite
+  name: Bikinis white
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_white.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_white.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPBikinisYellow
+  name: Bikinis yellow
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_yellow.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_yellow.rsi
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPSwimmingTrunksBlack
+  name: Swimming trunks black
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Summer/Swimming-trunks/swimming_trunks_black.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Summer/Swimming-trunks/swimming_trunks_black.rsi
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPSwimmingTrunksCyan
+  name: Swimming trunks cyan
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Summer/Swimming-trunks/swimming_trunks_cyan.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Summer/Swimming-trunks/swimming_trunks_cyan.rsi
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPSwimmingTrunksGreen
+  name: Swimming trunks green
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Summer/Swimming-trunks/swimming_trunks_green.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Summer/Swimming-trunks/swimming_trunks_green.rsi
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPSwimmingTrunksRed
+  name: Swimming trunks red
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Summer/Swimming-trunks/swimming_trunks_red.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Summer/Swimming-trunks/swimming_trunks_red.rsi
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPSwimmingTrunksOrange
+  name: Swimming trunks orange
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Summer/Swimming-trunks/swimming_trunks_orange.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Summer/Swimming-trunks/swimming_trunks_orange.rsi
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPSwimmingTrunksWhite
+  name: Swimming trunks white
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Summer/Swimming-trunks/swimming_trunks_white.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Summer/Swimming-trunks/swimming_trunks_white.rsi
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPSwimmingTrunksTurquoise
+  name: Swimming trunks Turquoise
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Summer/Swimming-trunks/swimming_trunks_tealblack.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Summer/Swimming-trunks/swimming_trunks_tealblack.rsi
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPSwimmingTrunksYellow
+  name: Swimming trunks yellow
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Summer/Swimming-trunks/swimming_trunks_yellow.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Summer/Swimming-trunks/swimming_trunks_yellow.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: LPPClothingUniformDressWedding
+  name: wedding dress
+  description: For wedding.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Dresses/wedding.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Dresses/wedding.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformboobasuit
+  name: Top BIG BOOBA
+  description: A top and shorts, with a print of an embarrassed emoji, which was greatly stretched due to the large boobies. Let's remember.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/BOOBAsuit.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/BOOBAsuit.rsi

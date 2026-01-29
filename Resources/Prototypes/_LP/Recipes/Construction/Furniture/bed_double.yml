@@ -1,0 +1,25 @@
+#______________________________________|
+#              кровать
+- type: construction
+  id: LPPBedDoubleUp
+  graph: LPPBedDouble
+  startNode: start
+  targetNode: LPPBedDoubleUp
+  category: construction-category-structures
+  conditions:
+    - !type:TileNotBlocked
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+
+- type: construction
+  id: LPPBedDoubleDown
+  graph: LPPBedDouble
+  startNode: start
+  targetNode: LPPBedDoubleDown
+  category: construction-category-structures
+  conditions:
+    - !type:TileNotBlocked
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false

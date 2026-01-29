@@ -1,0 +1,51 @@
+- type: entity
+  parent: ClothingEyesBase
+  id: LPPHypnogogglesPink
+  name: Hypnogoggles pink
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Eyes/hypnogoggles_pink.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Eyes/hypnogoggles_pink.rsi
+
+- type: entity
+  parent: ClothingEyesBase
+  id: LPPHypnogogglesTeal
+  name: Hypnogoggles teal
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Eyes/hypnogoggles_teal.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Eyes/hypnogoggles_teal.rsi
+
+- type: entity
+  parent: ClothingEyesBase
+  id: LPPClothingKblindfoldTeal
+  name: Kblindfold teal
+  description: The bind leading the blind.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Eyes/kblindfold_teal.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Eyes/kblindfold_teal.rsi
+  - type: Blindfold
+  - type: Construction
+    graph: Blindfold
+    node: blindfold
+  - type: FlashImmunity
+
+- type: entity
+  parent: ClothingEyesBase
+  id: LPPClothingKblindfoldPink
+  name: Kblindfold pink
+  description: The bind leading the blind.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Eyes/kblindfold_pink.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Eyes/kblindfold_pink.rsi
+  - type: Blindfold
+  - type: Construction
+    graph: Blindfold
+    node: blindfold
+  - type: FlashImmunity
