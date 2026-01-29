@@ -163,3 +163,10 @@ Entries:
   id: 5626
   time: '2026-01-29T11:28:28.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/24
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлен рост и ширина в редактор персонажа!
+  id: 5627
+  time: '2026-01-29T11:28:45.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/26
