@@ -1,4 +1,5 @@
 using Content.Server._CorvaxGoob.Photo;
+using System.Linq;
 using Content.Server.Administration;
 using Content.Server.Administration.Managers;
 using Content.Server.Chat.Managers;
@@ -6,6 +7,8 @@ using Content.Server.DeviceNetwork.Systems;
 using Content.Server.Popups;
 using Content.Server.Power.Components;
 using Content.Server.Tools;
+using Content.Shared._DEN.Fax; // DEN edit
+using Content.Shared.UserInterface;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Database;
@@ -572,9 +575,7 @@ public sealed class FaxSystem : EntitySystem
             $"of {ToPrettyString(sendEntity):subject}: {paper.Content}");
 
         component.SendTimeoutRemaining += component.SendTimeout;
-
         _audioSystem.PlayPvs(component.SendSound, uid);
-
         UpdateUserInterface(uid, component);
     }
 
@@ -594,8 +595,18 @@ public sealed class FaxSystem : EntitySystem
         _popupSystem.PopupEntity(Loc.GetString("fax-machine-popup-received", ("from", faxName)), uid);
         _appearanceSystem.SetData(uid, FaxMachineVisuals.VisualState, FaxMachineVisualState.Printing);
 
+        // DEN edit start
         if (component.NotifyAdmins)
+        {
+            var stampedBy = printout.StampedBy
+                .Select(stamp => Loc.GetString(stamp.StampedName))
+                .ToList();
+
+            var faxSent = new FaxSentEvent(printout.Content, faxName, stampedBy);
+            RaiseLocalEvent(faxSent);
             NotifyAdmins(faxName);
+        }
+        // DEN edit end
 
         component.PrintingQueue.Enqueue(printout);
     }

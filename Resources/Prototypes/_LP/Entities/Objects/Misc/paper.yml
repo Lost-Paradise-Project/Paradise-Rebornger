@@ -1,6 +1,7 @@
 ﻿- type: entity
   parent: Paper
   id: BasePaperForm
+  categories: [ HideSpawnMenu ]
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/_LP/Paper/nanotrasen_form_header.png"
@@ -9,6 +10,7 @@
 - type: entity
   parent: BasePaperForm
   id: PaperFormSec
+  name: PaperFormSecurity
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/_LP/Paper/nanotrasen_sec_form_header.png"
@@ -16,6 +18,7 @@
 - type: entity
   parent: BasePaperForm
   id: PaperFormLaw
+  name: PaperFormLaw
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/_LP/Paper/nanotrasen_law_form_header.png"
@@ -23,6 +26,7 @@
 - type: entity
   parent: BasePaperForm
   id: PaperFormSci
+  name: PaperFormScience
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/_LP/Paper/nanotrasen_sci_form_header.png"
@@ -30,6 +34,7 @@
 - type: entity
   parent: BasePaperForm
   id: PaperFormCmd
+  name: PaperFormCommand
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/_LP/Paper/nanotrasen_cmd_form_header.png"
@@ -37,6 +42,7 @@
 - type: entity
   parent: BasePaperForm
   id: PaperFormMed
+  name: PaperFormMedical
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/_LP/Paper/nanotrasen_med_form_header.png"
@@ -44,6 +50,7 @@
 - type: entity
   parent: BasePaperForm
   id: PaperFormCargo
+  name: PaperFormCargo
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/_LP/Paper/nanotrasen_cargo_form_header.png"
@@ -51,6 +58,7 @@
 - type: entity
   parent: BasePaperForm
   id: PaperFormEng
+  name: PaperFormEngineer
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/_LP/Paper/nanotrasen_eng_form_header.png"
@@ -58,6 +66,7 @@
 - type: entity
   parent: BasePaperForm
   id: PaperFormCC
+  name: PaperFormCentCom
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/_LP/Paper/nanotrasen_cc_form_header.png"
@@ -65,6 +74,7 @@
 - type: entity
   parent: BasePaperForm
   id: PaperFormCCSecure
+  name: PaperFormCCSecure
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/_LP/Paper/nanotrasen_cc_secure_form_header.png"
@@ -72,6 +82,7 @@
 - type: entity
   parent: BasePaperForm
   id: PaperFormSyndie
+  name: PaperFormSyndie
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/_LP/Paper/syndie_form_header.png"

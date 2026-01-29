@@ -292,6 +292,8 @@ namespace Content.Server.Database
                 profile.FlavorText,
                 profile.Species,
                 voice, // Corvax-TTS
+                profile.Height, // Goobstation: port EE height/width sliders
+                profile.Width, // Goobstation: port EE height/width sliders
                 profile.Age,
                 sex,
                 gender,
@@ -330,6 +332,8 @@ namespace Content.Server.Database
             profile.FlavorText = humanoid.FlavorText;
             profile.Species = humanoid.Species;
             profile.Voice = humanoid.Voice; // Corvax-TTS
+            profile.Height = humanoid.Height; // Goobstation: port EE height/width sliders
+            profile.Width = humanoid.Width; // Goobstation: port EE height/width sliders
             profile.Age = humanoid.Age;
             profile.Sex = humanoid.Sex.ToString();
             profile.ErpStatus = humanoid.ErpStatus.ToString(); // LP edit
