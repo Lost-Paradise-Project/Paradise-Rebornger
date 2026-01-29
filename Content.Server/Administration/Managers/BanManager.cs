@@ -606,11 +606,11 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
             : (await _db.GetPlayerRecordByUserId(banDef.BanningAdmin.Value))?.LastSeenUserName ?? Loc.GetString("system-user");
 
         string targetName = "";
-        if (banDef.HWIds.Count > 0)
+        if (banDef.Users.Count > 0)
         {
             foreach (var (userId, userName) in banDef.Users)
             {
-                targetName = string.Concat(targetName, "; " + (await _db.GetPlayerRecordByUserId(userId))?.LastSeenUserName ?? Loc.GetString("server-ban-no-name", ("hwid", userId)));
+                targetName = string.Concat(targetName, "; " + (await _db.GetPlayerRecordByUserId(userId))?.LastSeenUserName ?? Loc.GetString("server-ban-no-name", ("hwid", userName)));
             }
         }
 
@@ -622,6 +622,13 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
         var reason = banDef.Reason;
         var id = banid;
         var round = "" + string.Join("; ", banDef.RoundIds.OrderBy(x => x));
+        _systems.TryGetEntitySystem(out GameTicker? ticker);
+        int? roundId = ticker == null || ticker.RoundId == 0 ? null : ticker.RoundId;
+        if (!(banDef.RoundIds.Count > 0 || roundId == null))
+        {
+            round = $"{roundId}";
+        }
+
         var severity = "" + banDef.Severity;
         var serverName = _serverName[..Math.Min(_serverName.Length, 1500)];
         var timeNow = $"<t:{((DateTimeOffset)DateTimeOffset.Now.UtcDateTime).ToUnixTimeSeconds()}:R>";
@@ -740,11 +747,11 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
             : (await _db.GetPlayerRecordByUserId(banDef.BanningAdmin.Value))?.LastSeenUserName ?? Loc.GetString("system-user");
 
         string targetName = "";
-        if (banDef.HWIds.Count > 0)
+        if (banDef.Users.Count > 0)
         {
             foreach (var (userId, userName) in banDef.Users)
             {
-                targetName = string.Concat(targetName, "; " + (await _db.GetPlayerRecordByUserId(userId))?.LastSeenUserName ?? Loc.GetString("server-ban-no-name", ("hwid", userId)));
+                targetName = string.Concat(targetName, "  " + (await _db.GetPlayerRecordByUserId(userId))?.LastSeenUserName ?? Loc.GetString("server-ban-no-name", ("hwid", userName)));
             }
         }
 
@@ -755,6 +762,13 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
 
         var reason = banDef.Reason;
         var round = "" + string.Join("; ", banDef.RoundIds.OrderBy(x => x));
+        _systems.TryGetEntitySystem(out GameTicker? ticker);
+        int? roundId = ticker == null || ticker.RoundId == 0 ? null : ticker.RoundId;
+        if (!(banDef.RoundIds.Count > 0 || roundId == null))
+        {
+            round = $"{roundId}";
+        }
+
         var severity = "" + banDef.Severity;
         var serverName = _serverName[..Math.Min(_serverName.Length, 1500)];
         var timeNow = $"<t:{((DateTimeOffset)DateTimeOffset.Now.UtcDateTime).ToUnixTimeSeconds()}:R>";
