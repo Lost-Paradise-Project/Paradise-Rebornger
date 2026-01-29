@@ -1,8 +1,4 @@
-﻿// SPDX-FileCopyrightText: 2025 corresp0nd <46357632+corresp0nd@users.noreply.github.com>
-//
-// SPDX-License-Identifier: MIT
-
-using Content.Server._Funkystation.Records;
+﻿using Content.Server._Funkystation.Records;
 using Content.Server.Station.Systems;
 using Content.Server.StationRecords.Systems;
 using Content.Server.StationRecords;

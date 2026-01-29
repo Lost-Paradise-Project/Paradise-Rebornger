@@ -1,8 +1,4 @@
-﻿// SPDX-FileCopyrightText: 2025 corresp0nd <46357632+corresp0nd@users.noreply.github.com>
-//
-// SPDX-License-Identifier: MIT
-
-using Content.Client._Funkystation.Medical.MedicalRecordsConsole.UI;
+﻿using Content.Client._Funkystation.Medical.MedicalRecordsConsole.UI;
 using Content.Shared._Funkystation.Medical.MedicalRecords;
 using Content.Shared.StationRecords;
 using JetBrains.Annotations;

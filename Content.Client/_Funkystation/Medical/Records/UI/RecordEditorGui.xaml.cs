@@ -1,8 +1,4 @@
-﻿// SPDX-FileCopyrightText: 2025 corresp0nd <46357632+corresp0nd@users.noreply.github.com>
-//
-// SPDX-License-Identifier: MIT
-
-using System.Linq;
+﻿using System.Linq;
 using System.Numerics;
 using Content.Shared.Preferences;
 using Content.Shared._Funkystation.Records;
