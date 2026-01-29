@@ -1,6 +1,5 @@
 # To do:
 # Использовать спрайты не ксеноборгов
-# Баланс оружия - баланс скорости зарядки - глянуть как у ксеносов
 # свой модуль медицины, с генератором эпинефрина
 # что со звуком шасси делать емае
 # теги еще проверить, мб проебал (скорее всего проебал)
@@ -27,6 +26,12 @@
     - Common
     - Security
     - Command
+  
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      200: Critical
+      300: Dead # Same as destruction threshold. Borgs act exactly like crit when dead, except for ghosting on move
 
   - type: AmbientSound
     enabled: false
@@ -34,10 +39,6 @@
     volume: -4
     sound:
       path: /Audio/Effects/shuttle_thruster.ogg
-  # - type: FootstepModifier
-  #   footstepSoundCollection:
-  #     collection: FootstepBorg
-  #   volume: -100 # но все равно играет :(
 
   - type: MovementSpeedModifier
     baseWalkSpeed: 5
@@ -80,9 +81,6 @@
       - LPBorgModuleSecurityLaserCarbine
       - BorgModuleTool
 
-  # - type: RandomMetadata
-  #   nameSegments: [NamesBorg] # А оно нужно в этом случае? 
-
   - type: Access
     groups:
     - AllAccess
@@ -92,6 +90,7 @@
     access: [["Security"], ["Command"], ["Research"]]
   - type: FlashImmunity
 
+
 # === МОДУЛИ ДЛЯ БОРГОВ ===
 # Модуль с оружием (станбатон + дизейблер)
 - type: entity
@@ -100,10 +99,6 @@
   name: security weapon cyborg module
   description: A module containing non-lethal security equipment.
   components:
-  # - type: Sprite
-  #   layers:
-  #   - state: xenoborg_heavy # ЗАМЕНИТЬ 
-  #   - state: icon-xenoborg-laser # ЗАМЕНИТЬ 
   - type: ItemBorgModule
     hands:
     - item: LPStunbatonBorgSec
@@ -145,10 +140,6 @@
   name: security laser cyborg module
   description: A module containing a lethal laser weapon for extreme situations.
   components:
-  # - type: Sprite
-  #   layers:
-  #   - state: xenoborg_heavy # ЗАМЕНИТЬ 
-  #   - state: icon-xenoborg-laser2 # ЗАМЕНИТЬ 
   - type: ItemBorgModule
     hands:
     - item: LPWeaponLaserCarbineBorgSec
@@ -168,6 +159,7 @@
       - state: base-part-inhand-left
       - state: base-stripes-inhand-left
         color: "#8B0000"
+
 
 # === ОРУЖИЕ С САМОЗАРЯДКОЙ ===
 # Станбатон с самозарядкой
