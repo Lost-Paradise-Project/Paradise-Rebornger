@@ -34,10 +34,10 @@
     volume: -4
     sound:
       path: /Audio/Effects/shuttle_thruster.ogg
-  - type: FootstepModifier
-    footstepSoundCollection:
-      collection: FootstepBorg
-    volume: -100
+  # - type: FootstepModifier
+  #   footstepSoundCollection:
+  #     collection: FootstepBorg
+  #   volume: -100 # но все равно играет :(
 
   - type: MovementSpeedModifier
     baseWalkSpeed: 5
@@ -57,7 +57,7 @@
       map: ["light"]
       visible: false
   - type: BorgChassis
-    maxModules: 5
+    maxModules: 4
     moduleWhitelist:
       tags:
       - BorgModuleGeneric
@@ -76,8 +76,12 @@
       - PositronicBrain
       borg_module:
       - LPBorgModuleSecurityWeapon
-      - LPBorgModuleSecurityLaser
+      - LPBorgModuleSecurityLaserCarbine
       - BorgModuleTool
+
+  # - type: RandomMetadata
+  #   nameSegments: [NamesBorg] # А оно нужно в этом случае? 
+
   - type: Access
     groups:
     - AllAccess
@@ -112,7 +116,9 @@
           tags:
           - Handcuffs
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-laser-module } # ЗАМЕНИТЬ 
+    icon: 
+      - sprite: Interface/Actions/actions_borg.rsi
+      - state: xenoborg-laser-module # ЗАМЕНИТЬ 
   - type: Item
     inhandVisuals:
       left:
@@ -134,7 +140,7 @@
 
 # Модуль с лазерной самозарядным карабином, баланс - только одна рука (низкая точность)
 - type: entity
-  id: LPBorgModuleSecurityLaser
+  id: LPBorgModuleSecurityLaserCarbine
   parent: [BaseBorgModule, BaseProviderBorgModule]
   name: security laser cyborg module
   description: A module containing a lethal laser weapon for extreme situations.
@@ -147,7 +153,9 @@
     hands:
     - item: LPWeaponLaserCarbineBorgSec
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-laser2-module } # ЗАМЕНИТЬ 
+    icon: 
+    - sprite: Interface/Actions/actions_borg.rsi
+    - state: xenoborg-laser2-module # ЗАМЕНИТЬ 
   - type: StaticPrice
     price: 1500
   - type: Item
@@ -159,14 +167,6 @@
         color: "#1F1F1F"
       - state: base-part-inhand-left
       - state: base-stripes-inhand-left
-        color: "#8B0000"
-      right:
-      - state: base-icon-inhand-right
-        color: "#DE3A3A"
-      - state: base-module-inhand-right
-        color: "#1F1F1F"
-      - state: base-part-inhand-right
-      - state: base-stripes-inhand-right
         color: "#8B0000"
 
 # === ОРУЖИЕ С САМОЗАРЯДКОЙ ===
