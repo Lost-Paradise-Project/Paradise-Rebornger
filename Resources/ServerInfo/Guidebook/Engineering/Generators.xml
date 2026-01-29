@@ -16,17 +16,6 @@
   </Box>
 
   <Box>
-	  <GuideEntityEmbed Entity="BaseNuclearReactor" Caption=""/>
-	  <GuideEntityEmbed Entity="Turbine" Caption=""/>
-  </Box>
-  <Box>
-    ## Ядерный Реактор
-  </Box>
-  <Box>
-    [color=#999999][italic]Использует энергию ядерного деления для питания станции..[italic][/color]
-  </Box>
-
-  <Box>
     <GuideEntityEmbed Entity="AmeController" Caption=""/>
     <GuideEntityEmbed Entity="AmePartFlatpack" Caption=""/>
   </Box>

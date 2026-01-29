@@ -1,5 +1,0 @@
-﻿- type: latheRecipePack
-  id: NuclearBoardsPack
-  recipes:
-  - NuclearFabricatorMachineCircuitboard
-  - NuclearCentrifugeMachineCircuitboard
