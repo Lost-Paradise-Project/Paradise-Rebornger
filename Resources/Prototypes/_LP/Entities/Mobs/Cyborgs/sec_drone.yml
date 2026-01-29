@@ -1,8 +1,6 @@
 # To do:
 # Использовать спрайты не ксеноборгов
 # свой модуль медицины, с генератором эпинефрина
-# что со звуком шасси делать емае
-# теги еще проверить, мб проебал (скорее всего проебал)
 
 - type: entity
   id: LPPBorgSecurityGeneric
@@ -27,19 +25,21 @@
     - Security
     - Command
   
-  - type: MobThresholds
+  - type: MobThresholds # Сколько урона надо получить, чтобы перейти на стадию. 
     thresholds:
-      0: Alive
+      0: Alive 
       200: Critical
-      300: Dead # Same as destruction threshold. Borgs act exactly like crit when dead, except for ghosting on move
+      300: Dead 
 
   - type: AmbientSound
-    enabled: false
+    enabled: true
     range: 4
     volume: -4
     sound:
       path: /Audio/Effects/shuttle_thruster.ogg
-
+  - type: FootstepModifier
+    footstepSoundCollection: null
+      
   - type: MovementSpeedModifier
     baseWalkSpeed: 5
     baseSprintSpeed: 9
