@@ -64,7 +64,6 @@ public sealed partial class RecordEditorGui : Control
         {
             if (!int.TryParse(args.Text, out var newHeight))
                 return;
-            UpdateImperialHeight(newHeight);
             UpdateRecords(_records.WithHeight(newHeight));
         };
 
@@ -72,7 +71,6 @@ public sealed partial class RecordEditorGui : Control
         {
             if (!int.TryParse(args.Text, out var newWeight))
                 return;
-            UpdateImperialWeight(newWeight);
             UpdateRecords(_records.WithWeight(newWeight));
         };
 
@@ -143,9 +141,7 @@ public sealed partial class RecordEditorGui : Control
     {
         // general information
         HeightEdit.SetText(_records.Height.ToString());
-        UpdateImperialHeight(_records.Height);
         WeightEdit.SetText(_records.Weight.ToString());
-        UpdateImperialWeight(_records.Weight);
 
         IdentifyingFeaturesEdit.SetText(_records.IdentifyingFeatures);
 
