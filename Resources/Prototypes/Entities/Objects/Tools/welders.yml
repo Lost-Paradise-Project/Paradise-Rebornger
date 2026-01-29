@@ -7,7 +7,7 @@
   # Goobstation edit start
   - type: EmitSoundOnPickup
     sound:
-      path: /Audio/_Goobstation/Items/handling/weldingtool_pickup.ogg
+      path: /Audio/_GoobStation/Items/handling/weldingtool_pickup.ogg
   - type: EmitSoundOnDrop
     sound:
       path: /Audio/Items/welder_drop.ogg

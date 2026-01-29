@@ -7,7 +7,7 @@
   # Goobstation edit start
   - type: EmitSoundOnPickup
     sound:
-      path: /Audio/_Goobstation/Items/handling/wirecutter_pickup.ogg
+      path: /Audio/_GoobStation/Items/handling/wirecutter_pickup.ogg
   - type: EmitSoundOnDrop
     sound:
       path: /Audio/Items/wirecutter_drop.ogg
@@ -61,7 +61,7 @@
   # Goobstation edit start
   - type: EmitSoundOnPickup
     sound:
-      path: /Audio/_Goobstation/Items/handling/screwdriver_pickup.ogg
+      path: /Audio/_GoobStation/Items/handling/screwdriver_pickup.ogg
   - type: EmitSoundOnDrop
     sound:
       path: /Audio/Items/screwdriver_drop.ogg
@@ -113,7 +113,7 @@
   # Goobstation edit start
   - type: EmitSoundOnPickup
     sound:
-      path: /Audio/_Goobstation/Items/handling/wrench_pickup.ogg
+      path: /Audio/_GoobStation/Items/handling/wrench_pickup.ogg
       params:
         volume: -2
   - type: EmitSoundOnDrop
@@ -167,7 +167,7 @@
   # Goobstation edit start
   - type: EmitSoundOnPickup
     sound:
-      path: /Audio/_Goobstation/Items/handling/multitool_pickup.ogg
+      path: /Audio/_GoobStation/Items/handling/multitool_pickup.ogg
   - type: EmitSoundOnDrop
     sound:
       path: /Audio/Items/multitool_drop.ogg

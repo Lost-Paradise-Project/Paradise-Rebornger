@@ -703,8 +703,8 @@
   # Goobstation edit start
   - type: EmitSoundOnPickup
     sound:
-      path: /Audio/_Goobstation/Items/handling/pillbottle_pickup.ogg
+      path: /Audio/_GoobStation/Items/handling/pillbottle_pickup.ogg
   - type: EmitSoundOnDrop
     sound:
-      path: /Audio/_Goobstation/Items/handling/pillbottle_drop.ogg
+      path: /Audio/_GoobStation/Items/handling/pillbottle_drop.ogg
   # Goobstation edit end

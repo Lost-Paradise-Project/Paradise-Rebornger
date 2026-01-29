@@ -8,13 +8,13 @@
   # Goobstation edit start
   - type: EmitSoundOnPickup
     sound:
-      path: /Audio/_Goobstation/Items/handling/accessory_pickup.ogg
+      path: /Audio/_GoobStation/Items/handling/accessory_pickup.ogg
   - type: EmitSoundOnDrop
     sound:
-      path: /Audio/_Goobstation/Items/handling/accessory_drop.ogg
+      path: /Audio/_GoobStation/Items/handling/accessory_drop.ogg
   - type: EmitSoundOnLand
     sound:
-      path: /Audio/_Goobstation/Items/handling/accessory_drop.ogg
+      path: /Audio/_GoobStation/Items/handling/accessory_drop.ogg
   # Goobstation edit end
   - type: Sprite
     sprite: Clothing/Neck/Medals/bronzeheart.rsi
@@ -44,13 +44,13 @@
   # Goobstation edit start
   - type: EmitSoundOnPickup
     sound:
-      path: /Audio/_Goobstation/Items/handling/accessory_pickup.ogg
+      path: /Audio/_GoobStation/Items/handling/accessory_pickup.ogg
   - type: EmitSoundOnDrop
     sound:
-      path: /Audio/_Goobstation/Items/handling/accessory_drop.ogg
+      path: /Audio/_GoobStation/Items/handling/accessory_drop.ogg
   - type: EmitSoundOnLand
     sound:
-      path: /Audio/_Goobstation/Items/handling/accessory_drop.ogg
+      path: /Audio/_GoobStation/Items/handling/accessory_drop.ogg
   # Goobstation edit end
   - type: Sprite
     sprite: Clothing/Neck/Medals/gold.rsi
@@ -82,13 +82,13 @@
   # Goobstation edit start
   - type: EmitSoundOnPickup
     sound:
-      path: /Audio/_Goobstation/Items/handling/accessory_pickup.ogg
+      path: /Audio/_GoobStation/Items/handling/accessory_pickup.ogg
   - type: EmitSoundOnDrop
     sound:
-      path: /Audio/_Goobstation/Items/handling/accessory_drop.ogg
+      path: /Audio/_GoobStation/Items/handling/accessory_drop.ogg
   - type: EmitSoundOnLand
     sound:
-      path: /Audio/_Goobstation/Items/handling/accessory_drop.ogg
+      path: /Audio/_GoobStation/Items/handling/accessory_drop.ogg
   # Goobstation edit end
   - type: Sprite
     sprite: Clothing/Neck/Medals/cargomedal.rsi
@@ -118,13 +118,13 @@
   # Goobstation edit start
   - type: EmitSoundOnPickup
     sound:
-      path: /Audio/_Goobstation/Items/handling/accessory_pickup.ogg
+      path: /Audio/_GoobStation/Items/handling/accessory_pickup.ogg
   - type: EmitSoundOnDrop
     sound:
-      path: /Audio/_Goobstation/Items/handling/accessory_drop.ogg
+      path: /Audio/_GoobStation/Items/handling/accessory_drop.ogg
   - type: EmitSoundOnLand
     sound:
-      path: /Audio/_Goobstation/Items/handling/accessory_drop.ogg
+      path: /Audio/_GoobStation/Items/handling/accessory_drop.ogg
   # Goobstation edit end
   - type: Sprite
     sprite: Clothing/Neck/Medals/engineermedal.rsi
@@ -154,13 +154,13 @@
   # Goobstation edit start
   - type: EmitSoundOnPickup
     sound:
-      path: /Audio/_Goobstation/Items/handling/accessory_pickup.ogg
+      path: /Audio/_GoobStation/Items/handling/accessory_pickup.ogg
   - type: EmitSoundOnDrop
     sound:
-      path: /Audio/_Goobstation/Items/handling/accessory_drop.ogg
+      path: /Audio/_GoobStation/Items/handling/accessory_drop.ogg
   - type: EmitSoundOnLand
     sound:
-      path: /Audio/_Goobstation/Items/handling/accessory_drop.ogg
+      path: /Audio/_GoobStation/Items/handling/accessory_drop.ogg
   # Goobstation edit end
   - type: Sprite
     sprite: Clothing/Neck/Medals/medicalmedal.rsi
@@ -190,13 +190,13 @@
   # Goobstation edit start
   - type: EmitSoundOnPickup
     sound:
-      path: /Audio/_Goobstation/Items/handling/accessory_pickup.ogg
+      path: /Audio/_GoobStation/Items/handling/accessory_pickup.ogg
   - type: EmitSoundOnDrop
     sound:
-      path: /Audio/_Goobstation/Items/handling/accessory_drop.ogg
+      path: /Audio/_GoobStation/Items/handling/accessory_drop.ogg
   - type: EmitSoundOnLand
     sound:
-      path: /Audio/_Goobstation/Items/handling/accessory_drop.ogg
+      path: /Audio/_GoobStation/Items/handling/accessory_drop.ogg
   # Goobstation edit end
   - type: Sprite
     sprite: Clothing/Neck/Medals/sciencemedal.rsi
@@ -226,13 +226,13 @@
   # Goobstation edit start
   - type: EmitSoundOnPickup
     sound:
-      path: /Audio/_Goobstation/Items/handling/accessory_pickup.ogg
+      path: /Audio/_GoobStation/Items/handling/accessory_pickup.ogg
   - type: EmitSoundOnDrop
     sound:
-      path: /Audio/_Goobstation/Items/handling/accessory_drop.ogg
+      path: /Audio/_GoobStation/Items/handling/accessory_drop.ogg
   - type: EmitSoundOnLand
     sound:
-      path: /Audio/_Goobstation/Items/handling/accessory_drop.ogg
+      path: /Audio/_GoobStation/Items/handling/accessory_drop.ogg
   # Goobstation edit end
   - type: Sprite
     sprite: Clothing/Neck/Medals/securitymedal.rsi
@@ -262,13 +262,13 @@
   # Goobstation edit start
   - type: EmitSoundOnPickup
     sound:
-      path: /Audio/_Goobstation/Items/handling/accessory_pickup.ogg
+      path: /Audio/_GoobStation/Items/handling/accessory_pickup.ogg
   - type: EmitSoundOnDrop
     sound:
-      path: /Audio/_Goobstation/Items/handling/accessory_drop.ogg
+      path: /Audio/_GoobStation/Items/handling/accessory_drop.ogg
   - type: EmitSoundOnLand
     sound:
-      path: /Audio/_Goobstation/Items/handling/accessory_drop.ogg
+      path: /Audio/_GoobStation/Items/handling/accessory_drop.ogg
   # Goobstation edit end
   - type: Sprite
     sprite: Clothing/Neck/Medals/clownmedal.rsi

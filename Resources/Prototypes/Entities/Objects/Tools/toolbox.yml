@@ -10,7 +10,7 @@
   # Goobstation edit start
   - type: EmitSoundOnPickup
     sound:
-      path: /Audio/_Goobstation/Items/handling/toolbox_pickup.ogg
+      path: /Audio/_GoobStation/Items/handling/toolbox_pickup.ogg
   - type: EmitSoundOnDrop
     sound:
       path: /Audio/Items/toolbox_drop.ogg

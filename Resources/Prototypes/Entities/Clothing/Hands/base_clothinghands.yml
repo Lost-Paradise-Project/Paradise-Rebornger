@@ -9,7 +9,7 @@
     slots: [gloves]
   # Goobstation edit start
     equipSound:
-      path: /Audio/_Goobstation/Items/handling/generic_equip2.ogg
+      path: /Audio/_GoobStation/Items/handling/generic_equip2.ogg
       params:
         volume: -4
   # Goobstation edit end
