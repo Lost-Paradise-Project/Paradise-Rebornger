@@ -1,6 +1,6 @@
 using Content.Shared.EntityTable.EntitySelectors;
 
-namespace Content.Shared._Goobstation.Fishing.Components;
+namespace Content.Shared._GoobStation.Fishing.Components;
 
 [RegisterComponent]
 public sealed partial class FishingSpotComponent : Component

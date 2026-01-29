@@ -1,5 +1,5 @@
-using Content.Shared._Goobstation.Fishing.Components;
-using Content.Shared._Goobstation.Fishing.Events;
+using Content.Shared._GoobStation.Fishing.Components;
+using Content.Shared._GoobStation.Fishing.Events;
 using Content.Shared.Actions;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Popups;
@@ -11,7 +11,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 
-namespace Content.Shared._Goobstation.Fishing.Systems;
+namespace Content.Shared._GoobStation.Fishing.Systems;
 
 /// <summary>
 /// This handles... da fish

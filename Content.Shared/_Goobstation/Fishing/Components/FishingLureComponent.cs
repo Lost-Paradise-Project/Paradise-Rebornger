@@ -1,6 +1,6 @@
 using Robust.Shared.GameStates;
 
-namespace Content.Shared._Goobstation.Fishing.Components;
+namespace Content.Shared._GoobStation.Fishing.Components;
 
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 public sealed partial class FishingLureComponent : Component

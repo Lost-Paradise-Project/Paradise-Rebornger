@@ -1,7 +1,7 @@
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 
-namespace Content.Shared._Goobstation.Fishing.Components;
+namespace Content.Shared._GoobStation.Fishing.Components;
 
 /// <summary>
 /// Dynamic component, that is assigned to active fishing spots that are currently waiting for da fish.

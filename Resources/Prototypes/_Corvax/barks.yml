@@ -268,12 +268,12 @@
 - type: soundCollection
   id: DurkBark
   files:
-    - /Audio/_Goobstation/Voice/Barks/Durk/a.wav
-    - /Audio/_Goobstation/Voice/Barks/Durk/e.wav
-    - /Audio/_Goobstation/Voice/Barks/Durk/i.wav
-    - /Audio/_Goobstation/Voice/Barks/Durk/o.wav
-    - /Audio/_Goobstation/Voice/Barks/Durk/u.wav
-    - /Audio/_Goobstation/Voice/Barks/Durk/y.wav
+    - /Audio/_GoobStation/Voice/Barks/Durk/a.wav
+    - /Audio/_GoobStation/Voice/Barks/Durk/e.wav
+    - /Audio/_GoobStation/Voice/Barks/Durk/i.wav
+    - /Audio/_GoobStation/Voice/Barks/Durk/o.wav
+    - /Audio/_GoobStation/Voice/Barks/Durk/u.wav
+    - /Audio/_GoobStation/Voice/Barks/Durk/y.wav
 
 - type: bark
   id: Durk
@@ -289,12 +289,12 @@
 - type: soundCollection
   id: Aviu1Bark
   files:
-    - /Audio/_Goobstation/Voice/Barks/aviu1/1.ogg
-    - /Audio/_Goobstation/Voice/Barks/aviu1/2.ogg
-    - /Audio/_Goobstation/Voice/Barks/aviu1/3.ogg
-    - /Audio/_Goobstation/Voice/Barks/aviu1/4.ogg
-    - /Audio/_Goobstation/Voice/Barks/aviu1/5.ogg
-    - /Audio/_Goobstation/Voice/Barks/aviu1/6.ogg
+    - /Audio/_GoobStation/Voice/Barks/aviu1/1.ogg
+    - /Audio/_GoobStation/Voice/Barks/aviu1/2.ogg
+    - /Audio/_GoobStation/Voice/Barks/aviu1/3.ogg
+    - /Audio/_GoobStation/Voice/Barks/aviu1/4.ogg
+    - /Audio/_GoobStation/Voice/Barks/aviu1/5.ogg
+    - /Audio/_GoobStation/Voice/Barks/aviu1/6.ogg
 
 - type: bark
   id: Aviu1
@@ -305,12 +305,12 @@
 - type: soundCollection
   id: Aviu2Bark
   files:
-    - /Audio/_Goobstation/Voice/Barks/aviu2/1.ogg
-    - /Audio/_Goobstation/Voice/Barks/aviu2/2.ogg
-    - /Audio/_Goobstation/Voice/Barks/aviu2/3.ogg
-    - /Audio/_Goobstation/Voice/Barks/aviu2/4.ogg
-    - /Audio/_Goobstation/Voice/Barks/aviu2/5.ogg
-    - /Audio/_Goobstation/Voice/Barks/aviu2/6.ogg
+    - /Audio/_GoobStation/Voice/Barks/aviu2/1.ogg
+    - /Audio/_GoobStation/Voice/Barks/aviu2/2.ogg
+    - /Audio/_GoobStation/Voice/Barks/aviu2/3.ogg
+    - /Audio/_GoobStation/Voice/Barks/aviu2/4.ogg
+    - /Audio/_GoobStation/Voice/Barks/aviu2/5.ogg
+    - /Audio/_GoobStation/Voice/Barks/aviu2/6.ogg
 
 - type: bark
   id: Aviu2
@@ -321,12 +321,12 @@
 - type: soundCollection
   id: Aviu3Bark
   files:
-    - /Audio/_Goobstation/Voice/Barks/aviu3/1.ogg
-    - /Audio/_Goobstation/Voice/Barks/aviu3/2.ogg
-    - /Audio/_Goobstation/Voice/Barks/aviu3/3.ogg
-    - /Audio/_Goobstation/Voice/Barks/aviu3/4.ogg
-    - /Audio/_Goobstation/Voice/Barks/aviu3/5.ogg
-    - /Audio/_Goobstation/Voice/Barks/aviu3/6.ogg
+    - /Audio/_GoobStation/Voice/Barks/aviu3/1.ogg
+    - /Audio/_GoobStation/Voice/Barks/aviu3/2.ogg
+    - /Audio/_GoobStation/Voice/Barks/aviu3/3.ogg
+    - /Audio/_GoobStation/Voice/Barks/aviu3/4.ogg
+    - /Audio/_GoobStation/Voice/Barks/aviu3/5.ogg
+    - /Audio/_GoobStation/Voice/Barks/aviu3/6.ogg
 
 - type: bark
   id: Aviu3
@@ -337,12 +337,12 @@
 - type: soundCollection
   id: Aviu4Bark
   files:
-    - /Audio/_Goobstation/Voice/Barks/aviu4/1.ogg
-    - /Audio/_Goobstation/Voice/Barks/aviu4/2.ogg
-    - /Audio/_Goobstation/Voice/Barks/aviu4/3.ogg
-    - /Audio/_Goobstation/Voice/Barks/aviu4/4.ogg
-    - /Audio/_Goobstation/Voice/Barks/aviu4/5.ogg
-    - /Audio/_Goobstation/Voice/Barks/aviu4/6.ogg
+    - /Audio/_GoobStation/Voice/Barks/aviu4/1.ogg
+    - /Audio/_GoobStation/Voice/Barks/aviu4/2.ogg
+    - /Audio/_GoobStation/Voice/Barks/aviu4/3.ogg
+    - /Audio/_GoobStation/Voice/Barks/aviu4/4.ogg
+    - /Audio/_GoobStation/Voice/Barks/aviu4/5.ogg
+    - /Audio/_GoobStation/Voice/Barks/aviu4/6.ogg
 
 - type: bark
   id: Aviu4

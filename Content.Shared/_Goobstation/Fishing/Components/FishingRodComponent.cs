@@ -3,7 +3,7 @@ using Robust.Shared.GameStates;
 using Robust.Shared.Utility;
 using System.Numerics;
 
-namespace Content.Shared._Goobstation.Fishing.Components;
+namespace Content.Shared._GoobStation.Fishing.Components;
 
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 public sealed partial class FishingRodComponent : Component
@@ -38,7 +38,7 @@ public sealed partial class FishingRodComponent : Component
 
     [DataField]
     public SpriteSpecifier RopeSprite =
-        new SpriteSpecifier.Rsi(new ResPath("_Goobstation/Objects/Specific/Fishing/fishing_lure.rsi"), "rope");
+        new SpriteSpecifier.Rsi(new ResPath("_GoobStation/Objects/Specific/Fishing/fishing_lure.rsi"), "rope");
 
     [DataField, ViewVariables]
     public Vector2 RopeUserOffset = new (0f, 0f);

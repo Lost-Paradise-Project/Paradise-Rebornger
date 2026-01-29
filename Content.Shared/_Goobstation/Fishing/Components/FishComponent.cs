@@ -1,4 +1,4 @@
-namespace Content.Shared._Goobstation.Fishing.Components;
+namespace Content.Shared._GoobStation.Fishing.Components;
 
 /// <summary>
 /// The fish itself!

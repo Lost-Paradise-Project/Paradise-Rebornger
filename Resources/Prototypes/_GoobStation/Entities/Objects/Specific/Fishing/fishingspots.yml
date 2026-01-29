@@ -32,10 +32,10 @@
   - type: InteractionOutline
   # TODO: change visuals when it's active
   - type: Sprite
-    sprite: _Goobstation/Objects/Specific/Fishing/fishing_spot.rsi
+    sprite: _GoobStation/Objects/Specific/Fishing/fishing_spot.rsi
     state: water
   - type: Icon
-    sprite: _Goobstation/Objects/Specific/Fishing/fishing_spot.rsi
+    sprite: _GoobStation/Objects/Specific/Fishing/fishing_spot.rsi
     state: water
 
 - type: entity

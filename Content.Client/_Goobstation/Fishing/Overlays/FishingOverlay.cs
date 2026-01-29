@@ -1,13 +1,13 @@
 using System.Numerics;
 using Content.Client.UserInterface.Systems;
-using Content.Shared._Goobstation.Fishing.Components;
+using Content.Shared._GoobStation.Fishing.Components;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Shared.Enums;
 using Robust.Client.Player;
 using Robust.Shared.Utility;
 
-namespace Content.Client._Goobstation.Fishing.Overlays;
+namespace Content.Client._GoobStation.Fishing.Overlays;
 
 public sealed class FishingOverlay : Overlay
 {
@@ -37,7 +37,7 @@ public sealed class FishingOverlay : Overlay
         _progressColor = _entManager.System<ProgressColorSystem>();
         _sprite = _entManager.System<SpriteSystem>();
         // Load the progress bar texture
-        var sprite = new SpriteSpecifier.Rsi(new("/Textures/_Goobstation/Interface/Misc/fish_bar.rsi"), "icon");
+        var sprite = new SpriteSpecifier.Rsi(new("/Textures/_GoobStation/Interface/Misc/fish_bar.rsi"), "icon");
         _barTexture = _entManager.EntitySysManager.GetEntitySystem<SpriteSystem>().Frame0(sprite);
     }
 
