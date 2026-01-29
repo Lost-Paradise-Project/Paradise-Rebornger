@@ -69,6 +69,12 @@ public sealed partial class AudioTab : Control
             SliderVolumeInterface,
             scale: ContentAudioSystem.InterfaceMultiplier);
 
+        // Goobstation - Highlight Chat Ping/Audio!
+        Control.AddOptionPercentSlider(
+            GoobCVars.ChatHighlightVolume,
+            SliderHighlightVolume,
+            scale: 1f);
+
         Control.AddOptionSlider(
             CCVars.MaxAmbientSources,
             SliderMaxAmbienceSounds,
