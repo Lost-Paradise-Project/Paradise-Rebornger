@@ -45,6 +45,10 @@ using Content.Client._LP.Sponsors;
 using Content.Shared._GoobStation.CCVar;
 
 // LP edit end
+// Begin CD - Character Records
+using Content.Client._Funkystation.Medical.Records.UI;
+using Content.Shared._Funkystation.Records;
+// End CD - Character Records
 
 namespace Content.Client.Lobby.UI
 {
@@ -117,6 +121,9 @@ namespace Content.Client.Lobby.UI
         private bool _isDirty;
 
         private static readonly ProtoId<GuideEntryPrototype> DefaultSpeciesGuidebook = "Species";
+        // Begin CD - Station Records
+        private readonly RecordEditorGui _recordsTab;
+        // End CD - Station Records
 
         public event Action<List<ProtoId<GuideEntryPrototype>>>? OnOpenGuidebook;
 
@@ -490,6 +497,16 @@ namespace Content.Client.Lobby.UI
 
             #endregion Markings
 
+            // Begin CD - Character Records
+            #region CosmaticRecords
+
+            _recordsTab = new RecordEditorGui(UpdateProfileRecords, prototypeManager);
+            TabContainer.AddChild(_recordsTab);
+            TabContainer.SetTabTitle(TabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-cd-records-tab"));
+
+            #endregion CosmaticRecords
+            // End CD - Character Records
+
             RefreshFlavorText();
 
             RefreshVoiceTab(); // Corvax-TTS
@@ -549,8 +566,12 @@ namespace Content.Client.Lobby.UI
                     return;
 
                 _flavorText = new FlavorText.FlavorText();
-                TabContainer.AddChild(_flavorText);
-                TabContainer.SetTabTitle(TabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-flavortext-tab"));
+
+                // begin funky - flavor text is in the Records tab now
+                _recordsTab.PersonalInfoContainer.Visible = true;
+                _recordsTab.PersonalInfoContainer.AddChild(_flavorText);
+                // end funky
+
                 _flavorTextEdit = _flavorText.CFlavorTextInput;
 
                 _flavorText.OnFlavorTextChanged += OnFlavorTextChange;
@@ -560,7 +581,11 @@ namespace Content.Client.Lobby.UI
                 if (_flavorText == null)
                     return;
 
-                TabContainer.RemoveChild(_flavorText);
+                // begin funky - flavor text is in the Records tab now
+                _recordsTab.PersonalInfoContainer.Visible = false;
+                _recordsTab.PersonalInfoContainer.RemoveChild(_flavorText);
+                // end funky
+
                 _flavorText.OnFlavorTextChanged -= OnFlavorTextChange;
                 _flavorText.Dispose();
                 _flavorTextEdit?.Dispose();
@@ -914,6 +939,10 @@ namespace Content.Client.Lobby.UI
             UpdateHeightWidthSliders(); // Goobstation: port EE height/width sliders
             UpdateWeight(); // Goobstation: port EE height/width sliders
 
+            // Begin CD - Character Records
+            _recordsTab.Update(profile);
+            // End CD - Character Records
+
             RefreshAntags();
             RefreshJobs();
             RefreshLoadouts();
@@ -1225,6 +1254,16 @@ namespace Content.Client.Lobby.UI
 
             UpdateJobPriorities();
         }
+
+        // Start CD - Character Records
+        private void UpdateProfileRecords(PlayerProvidedCharacterRecords records)
+        {
+            if (Profile is null)
+                return;
+            Profile = Profile.WithCDCharacterRecords(records);
+            IsDirty = true;
+        }
+        // End CD - Character Records
 
         private void OnFlavorTextChange(string content)
         {
@@ -1844,6 +1883,8 @@ namespace Content.Client.Lobby.UI
             var name = HumanoidCharacterProfile.GetName(Profile.Species, Profile.Gender);
             SetName(name);
             UpdateNameEdit();
+
+            _recordsTab.Update(Profile); // CD - Character Records
         }
 
         private async void ExportImage()
