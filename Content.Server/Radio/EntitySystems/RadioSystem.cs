@@ -152,7 +152,7 @@ public sealed class RadioSystem : EntitySystem
             ChatChannel.Radio,
             message,
             wrappedMessage,
-            NetEntity.Invalid,
+            GetNetEntity(messageSource), // Goob edit
             null);
         var chatMsg = new MsgChatMessage { Message = chat };
         var ev = new RadioReceiveEvent(message, messageSource, channel, radioSource, chatMsg);

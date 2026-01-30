@@ -36,11 +36,14 @@ using Robust.Shared.Physics;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using Direction = Robust.Shared.Maths.Direction;
+using Content.Shared._GoobStation.Barks; // Goob Station - Barks
 using static Content.Client.Corvax.SponsorOnlyHelpers; // Corvax-Sponsors
 using Content.Client.Corvax.TTS; // Corvax-TTS
 // LP edit start
 using Content.Shared._ERPModule.Data;
 using Content.Client._LP.Sponsors;
+using Content.Shared._GoobStation.CCVar;
+
 // LP edit end
 
 namespace Content.Client.Lobby.UI
@@ -242,6 +245,17 @@ namespace Content.Client.Lobby.UI
             };
 
             #endregion Gender
+
+            // Goob Station
+            #region Barks
+
+            if (configurationManager.GetCVar(GoobCVars.BarksEnabled))
+            {
+                BarksContainer.Visible = true;
+                InitializeBarkVoice();
+            }
+
+            #endregion
 
             RefreshSpecies();
 
@@ -892,6 +906,7 @@ namespace Content.Client.Lobby.UI
             UpdateSaveButton();
             UpdateMarkings();
             UpdateTTSVoicesControls(); // Corvax-TTS
+            UpdateBarkVoice(); // Goob Station - Barks
             UpdateHairPickers();
             UpdateCMarkingsHair();
             UpdateCMarkingsFacialHair();
@@ -1352,6 +1367,7 @@ namespace Content.Client.Lobby.UI
             UpdateSexControls(); // update sex for new species
             UpdateSpeciesGuidebookIcon();
             ReloadPreview();
+            UpdateBarkVoice(); // Goob Station - Barks
             // begin Goobstation: port EE height/width sliders
             // Changing species provides inaccurate sliders without these
             UpdateHeightWidthSliders();
@@ -1416,7 +1432,7 @@ namespace Content.Client.Lobby.UI
         #endregion
         // LP edit end
 
-        // begin Goobstation: port EE height/width sliders
+        // Goob Station - Start
         private void SetProfileHeight(float height)
         {
             Profile = Profile?.WithHeight(height);
@@ -1430,7 +1446,12 @@ namespace Content.Client.Lobby.UI
             ReloadProfilePreview();
             IsDirty = true;
         }
-        // end Goobstation: port EE height/width sliders
+        private void SetBarkVoice(BarkPrototype newVoice)
+        {
+            Profile = Profile?.WithBarkVoice(newVoice);
+            IsDirty = true;
+        }
+        // Goob Station - End
 
         public bool IsDirty
         {
