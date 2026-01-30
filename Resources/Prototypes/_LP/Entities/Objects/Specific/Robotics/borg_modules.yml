@@ -1,3 +1,6 @@
+# To do:
+# Использовать спрайты не ксеноборгов (остались только кнопки)
+
 # Модуль с оружием (станбатон + дизейблер)
 - type: entity
   id: LPBorgModuleSecurityWeapon
@@ -24,7 +27,7 @@
   - type: BorgModuleIcon
     icon: 
       sprite: Interface/Actions/actions_borg.rsi
-      state: xenoborg-laser-module
+      state: xenoborg-laser-module # ЗАМЕНИТЬ 
   - type: Item
     inhandVisuals:
       left:
