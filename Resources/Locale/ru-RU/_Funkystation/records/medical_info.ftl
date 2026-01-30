@@ -1,0 +1,54 @@
+﻿medical-info-no-info = Нет медицинской информации.
+# categories
+medical-info-category-allergies = Аллергии
+medical-info-category-prescriptions = Рецепты
+medical-info-category-family-history = Семейный анамнез
+# allergies
+medical-info-allergies-dander = Перхоть
+medical-info-allergies-eggs = Яйца
+medical-info-allergies-fragrances = Ароматизаторы
+medical-info-allergies-hugs = Объятия
+medical-info-allergies-latex = Латекс
+medical-info-allergies-milk = Молоко
+medical-info-allergies-mold = Плесень
+medical-info-allergies-nickel = Никель
+medical-info-allergies-nuts = Орехи
+medical-info-allergies-pollen = Пыльца
+medical-info-allergies-shellfish = Молюски
+medical-info-allergies-wheat = Пшеница
+# prescriptions
+medical-info-prescriptions-antacids = Антациды
+medical-info-prescriptions-antianxiety = Противотревожные препараты
+medical-info-prescriptions-antiarrhythmics = Антиаритмические средства
+medical-info-prescriptions-antidepressants = Антидепрессанты
+medical-info-prescriptions-anticonvulsants = Противосудорожные препараты
+medical-info-prescriptions-antiepileptics = Противоэпилептические препараты
+medical-info-prescriptions-antihistamines = Антигистаминные препараты
+medical-info-prescriptions-betablockers = Бета-блокаторы
+medical-info-prescriptions-bloodthinners = Препараты для разжижения крови
+medical-info-prescriptions-hormones = Гормоны
+medical-info-prescriptions-immunosuppressives = Иммунодепрессанты
+medical-info-prescriptions-painrelievers = Обезболивающие
+medical-info-prescriptions-sleepingdrugs = Снотворные
+# family history
+medical-info-familyhistory-anemia = Анемия
+medical-info-familyhistory-arthritis = Артрит
+medical-info-familyhistory-asthma = Астма
+medical-info-familyhistory-autoimmune = Аутоиммунное расстройство
+medical-info-familyhistory-bloodclots = Сгустки крови
+medical-info-familyhistory-cancer = Рак
+medical-info-familyhistory-chronicpain = Хроническая боль
+medical-info-familyhistory-depression = Депрессия
+medical-info-familyhistory-diabetes = Диабет
+medical-info-familyhistory-heartdisease = Болезни сердца
+medical-info-familyhistory-bloodpressure = Высокое кровяное давление
+medical-info-familyhistory-hiv = ВИЧ
+medical-info-familyhistory-kidneydisease = Заболевания почек
+medical-info-familyhistory-kidneystones = Камни в почках
+medical-info-familyhistory-liverdisease = Заболевания печени
+medical-info-familyhistory-lungdisease = Заболевания легких
+medical-info-familyhistory-migraines = Мигрени
+medical-info-familyhistory-osteoporosis = Остеопороз
+medical-info-familyhistory-seizures = Судороги
+medical-info-familyhistory-sleepapnea = Апноэ во сне
+medical-info-familyhistory-stroke = Инсульт

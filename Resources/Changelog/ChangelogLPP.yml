@@ -198,3 +198,10 @@ Entries:
   id: 5631
   time: '2026-01-29T15:43:24.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/35
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлена возможность настройки мед записей и просмотра их в консоли!
+  id: 5632
+  time: '2026-01-30T14:13:05.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/39
