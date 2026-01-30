@@ -64,7 +64,7 @@ public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSyst
         }
 
         Gui.Visible = _system?.IsGhost ?? false;
-        Gui.Update(_system?.AvailableGhostRoleCount, _system?.Player?.CanReturnToBody);
+        Gui.Update(_system?.AvailableGhostRoleCount, _system?.Player?.CanReturnToBody, _system?.Player?.CanEnterGhostBar, _system?.Player?.CanTakeGhostRoles); // CorvaxGoob-GhostBar edit
     }
 
     private void OnPlayerRemoved(GhostComponent component)
@@ -125,6 +125,8 @@ public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSyst
         Gui.RequestWarpsPressed += RequestWarps;
         Gui.ReturnToBodyPressed += ReturnToBody;
         Gui.GhostRolesPressed += GhostRolesPressed;
+        Gui.GhostBarPressed += GhostBarPressed; // CorvaxGoob-GhostBar
+        Gui.GhostBarWindow.SpawnButtonPressed += GhostBarSpawnPressed; // CorvaxGoob-GhostBar
         Gui.TargetWindow.WarpClicked += OnWarpClicked;
         Gui.ReturnToRoundPressed += ReturnToRound;
         Gui.TargetWindow.OnGhostnadoClicked += OnGhostnadoClicked; // Port Respawn EE
@@ -172,4 +174,15 @@ public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSyst
     {
         _system?.OpenGhostRoles();
     }
+
+    private void GhostBarPressed() // CorvaxGoob-GhostBar
+    {
+        Gui?.GhostBarWindow.OpenCentered();
+    }
+
+    private void GhostBarSpawnPressed() // CorvaxGoob-GhostBar
+    {
+        _system?.GhostBarSpawn();
+    }
+
 }

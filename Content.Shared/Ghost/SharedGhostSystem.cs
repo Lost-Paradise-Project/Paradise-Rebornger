@@ -111,6 +111,14 @@ namespace Content.Shared.Ghost
     {
     }
 
+    // Ghostbar Port CorvaxGoob Start
+
+    // CorvaxGoob-GhostBar
+    [Serializable, NetSerializable]
+    public sealed class GhostBarSpawnEvent : EntityEventArgs;
+
+    // Ghostbar Port CorvaxGoob End
+
     /// <summary>
     /// An individual place a ghost can warp to.
     /// This is used as part of <see cref="GhostWarpsResponseEvent"/>
