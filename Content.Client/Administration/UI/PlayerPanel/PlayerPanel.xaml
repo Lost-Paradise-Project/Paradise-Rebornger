@@ -1,38 +1,59 @@
 <ui:FancyWindow
     xmlns="https://spacestation14.io"
+    xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
     xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
     xmlns:ui="clr-namespace:Content.Client.UserInterface.Controls"
-    Title="{Loc ban-panel-title}" MinSize="300 300">
-    <BoxContainer Orientation="Vertical">
-        <BoxContainer Orientation="Horizontal">
-        <Label Name="PlayerName"/>
-        <Button Name="UsernameCopyButton" Text="{Loc player-panel-copy-username}"/>
-        </BoxContainer>
-       <BoxContainer Orientation="Horizontal">
-           <Label Name="Whitelisted"/>
-           <controls:ConfirmButton Name="WhitelistToggle" Text="{Loc 'player-panel-false'}" Visible="False"></controls:ConfirmButton>
-       </BoxContainer>
-       <Label Name="Playtime"/>
-       <Label Name="Notes"/>
-       <Label Name="Bans"/>
-       <Label Name="RoleBans"/>
-       <Label Name="SharedConnections"/>
+    Title="{Loc ban-panel-title}" MinSize="350 400"> <!-- LP edit start + LP edit xmlns:gfx -->
 
-       <BoxContainer Align="Center">
-           <GridContainer Rows="6">
-            <Button Name="NotesButton" Text="{Loc player-panel-show-notes}" SetWidth="136" Disabled="True"/>
-            <Button Name="AhelpButton" Text="{Loc player-panel-help}" Disabled="True"/>
-            <Button Name="FreezeButton" Text = "{Loc player-panel-freeze}" Disabled="True"/>
-            <controls:ConfirmButton Name="KickButton" Text="{Loc player-panel-kick}" Disabled="True"/>
-            <controls:ConfirmButton Name="DeleteButton" Text="{Loc player-panel-delete}" Disabled="True"/>
-            <Button Name="FollowButton" Text="{Loc player-panel-follow}"/>
-            <Button Name="ShowBansButton" Text="{Loc player-panel-show-bans}" SetWidth="136" Disabled="True"/>
-            <Button Name="LogsButton" Text="{Loc player-panel-logs}" Disabled="True"/>
-            <Button Name="FreezeAndMuteToggleButton" Text="{Loc player-panel-freeze-and-mute}" Disabled="True"/>
-            <Button Name="BanButton" Text="{Loc player-panel-ban}" Disabled="True"/>
-            <controls:ConfirmButton Name="RejuvenateButton" Text="{Loc player-panel-rejuvenate}" Disabled="True"/>
-            <Button Name="CameraButton" Text="{Loc player-panel-camera}" Disabled="True"/>
-           </GridContainer>
-       </BoxContainer>
+    <BoxContainer Orientation="Vertical" Margin="8">
+        <BoxContainer Orientation="Horizontal" Margin="4">
+            <Label Name="PlayerName"/>
+            <Button Name="UsernameCopyButton" Text="{Loc player-panel-copy-username}"/>
+        </BoxContainer>
+        <BoxContainer Orientation="Horizontal" Margin="4">
+            <Label Name="Whitelisted"/>
+            <controls:ConfirmButton Name="WhitelistToggle" Text="{Loc 'player-panel-false'}" Visible="False"/>
+        </BoxContainer>
+        <Label Name="Playtime"/>
+        <Label Name="Notes"/>
+        <Label Name="Bans"/>
+        <Label Name="RoleBans"/>
+        <Label Name="SharedConnections"/>
+
+        <Control MinHeight="10" />
+        <controls:StripeBack>
+            <Label Name="WarningLabel" Text=" " HorizontalAlignment="Center" Margin="4 4 0 4"/>
+        </controls:StripeBack>
+        <Control MinHeight="10" />
+
+        <BoxContainer Align="Center">
+            <PanelContainer VerticalExpand="True">
+                <PanelContainer.PanelOverride>
+                    <gfx:StyleBoxFlat BackgroundColor="#1b1b1e" />
+                </PanelContainer.PanelOverride>
+                <BoxContainer Align="Center" Margin="6">
+                    <GridContainer Columns="2">
+                        <GridContainer Rows="6">
+                            <Button Name="NotesButton" Text="{Loc player-panel-show-notes}" SetWidth="136" Disabled="True"/>
+                            <Button Name="AhelpButton" Text="{Loc player-panel-help}" Disabled="True"/>
+                            <Button Name="FreezeButton" Text="{Loc player-panel-freeze}" Disabled="True"/>
+                            <controls:ConfirmButton Name="KickButton" Text="{Loc player-panel-kick}" Disabled="True"/>
+                            <controls:ConfirmButton Name="DeleteButton" Text="{Loc player-panel-delete}" Disabled="True"/>
+                            <Button Name="FollowButton" Text="{Loc player-panel-follow}"/>
+                            <Button Name="ShowBansButton" Text="{Loc player-panel-show-bans}" Disabled="True"/>
+                            <Button Name="LogsButton" Text="{Loc player-panel-logs}" Disabled="True"/>
+                            <Button Name="FreezeAndMuteToggleButton" Text="{Loc player-panel-freeze-and-mute}" Disabled="True"/>
+                            <Button Name="BanButton" Text="{Loc player-panel-ban}" Disabled="True"/>
+                            <controls:ConfirmButton Name="RejuvenateButton" Text="{Loc player-panel-rejuvenate}" Disabled="True"/>
+                            <Button Name="CameraButton" Text="{Loc player-panel-camera}" Disabled="True"/>
+                        </GridContainer>
+                        <GridContainer Rows="2" Margin="0,15,0,0">
+                            <Button Name="TimeButton" Text="{Loc player-panel-time}" Disabled="True"/>
+                        </GridContainer>
+                    </GridContainer>
+                </BoxContainer>
+            </PanelContainer>
+        </BoxContainer>
+        <!-- LP edit end -->
     </BoxContainer>
 </ui:FancyWindow>

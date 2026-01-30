@@ -1,10 +1,18 @@
 using Content.Shared.Chat;
 using Content.Shared.Speech;
 using Robust.Shared.Audio;
+using Content.Server.Chat.Systems;
+using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
+
+// Goob Station
+using Content.Shared._GoobStation.Barks;
+using Content.Shared._GoobStation.CCVar;
+using Robust.Shared.Configuration;
+
 
 namespace Content.Server.Speech
 {
@@ -14,6 +22,9 @@ namespace Content.Server.Speech
         [Dependency] private readonly IPrototypeManager _protoManager = default!;
         [Dependency] private readonly IRobustRandom _random = default!;
         [Dependency] private readonly SharedAudioSystem _audio = default!;
+
+        // Goobs tation
+        [Dependency] private readonly IConfigurationManager _cfg = default!;
 
         public override void Initialize()
         {
@@ -58,8 +69,12 @@ namespace Content.Server.Speech
 
         private void OnEntitySpoke(EntityUid uid, SpeechComponent component, EntitySpokeEvent args)
         {
-            if (component.SpeechSounds == null)
+            // Goob station - Barks
+            if (component.SpeechSounds == null
+                || _cfg.GetCVar(GoobCVars.BarksEnabled) // Goob Station - Barks
+                && HasComp<SpeechSynthesisComponent>(uid))
                 return;
+            // END
 
             var currentTime = _gameTiming.CurTime;
             var cooldown = TimeSpan.FromSeconds(component.SoundCooldownTime);

@@ -55,4 +55,46 @@ public sealed partial class EECCVars : CVars
         CVarDef.Create("contests.default_max_throw_distance", 4.0f, CVar.REPLICATED | CVar.SERVER);
 
     #endregion
+
+    #region Vote
+    /// Automatically starts a map vote when returning to the lobby.
+    /// Requires auto voting to be enabled.
+    public static readonly CVarDef<bool> MapAutoVoteEnabled =
+        CVarDef.Create("vote.map_autovote_enabled", false, CVar.SERVERONLY);
+
+    /// Automatically starts a gamemode vote when returning to the lobby.
+    /// Requires auto voting to be enabled.
+    public static readonly CVarDef<bool> PresetAutoVoteEnabled =
+        CVarDef.Create("vote.preset_autovote_enabled", false, CVar.SERVERONLY);
+    #endregion
+
+    #region Height
+    /// <summary>
+    ///     Whether height & width sliders adjust a character's Fixture Component
+    /// </summary>
+    public static readonly CVarDef<bool> HeightAdjustModifiesHitbox =
+        CVarDef.Create("heightadjust.modifies_hitbox", true, CVar.SERVERONLY);
+
+    /// <summary>
+    ///     Whether height & width sliders adjust a player's max view distance
+    /// </summary>
+    public static readonly CVarDef<bool> HeightAdjustModifiesZoom =
+        CVarDef.Create("heightadjust.modifies_zoom", false, CVar.SERVERONLY);
+    #endregion
+
+    #region Jetpack System
+
+    /// <summary>
+    ///     When true, Jetpacks can be enabled anywhere, even in gravity.
+    /// </summary>
+    public static readonly CVarDef<bool> JetpackEnableAnywhere =
+        CVarDef.Create("ee.jetpack.enable_anywhere", false, CVar.REPLICATED);
+
+    /// <summary>
+    ///     When true, jetpacks can be enabled on grids that have zero gravity.
+    /// </summary>
+    public static readonly CVarDef<bool> JetpackEnableInNoGravity =
+        CVarDef.Create("ee.jetpack.enable_in_no_gravity", true, CVar.REPLICATED);
+
+    #endregion
 }

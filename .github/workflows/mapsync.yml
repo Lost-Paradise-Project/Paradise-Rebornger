@@ -2,6 +2,7 @@
 
 on:
   push:
+    branches: [ master ]
     paths:
     - 'Resources/Maps/_LP/**/*.yml'
     - 'Resources/Maps/_LP/*.yml'

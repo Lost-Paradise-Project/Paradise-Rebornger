@@ -9,6 +9,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
 using Content.Shared._ERPModule.Data; // LP edit
+using Content.Shared._GoobStation.Barks; // Goob Station - Barks
 
 namespace Content.Shared.Humanoid;
 
@@ -38,6 +39,9 @@ public sealed partial class HumanoidAppearanceComponent : Component
 
     [DataField, AutoNetworkedField]
     public int Age = 18;
+
+    [DataField] // Goob Station - Barks
+    public ProtoId<BarkPrototype> BarkVoice { get; set; } = SharedHumanoidAppearanceSystem.DefaultBarkVoice; // Goob Station - Barks
 
     /// <summary>
     ///     Any custom base layers this humanoid might have. See:
@@ -112,6 +116,22 @@ public sealed partial class HumanoidAppearanceComponent : Component
     /// </summary>
     [DataField]
     public Dictionary<HumanoidVisualLayers, DisplacementData> MarkingsDisplacement = new();
+
+    // begin Goobstation: port EE height/width sliders
+
+    /// <summary>
+    ///     The height of this humanoid.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public float Height = 1f;
+
+    /// <summary>
+    ///     The width of this humanoid.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public float Width = 1f;
+
+    // end Goobstation: port EE height/width sliders
 }
 
 [DataDefinition]

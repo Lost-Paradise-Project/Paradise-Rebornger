@@ -154,3 +154,47 @@ Entries:
   id: 5625
   time: '2026-01-28T16:28:24.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/20
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлен новый кастом для ии!
+    - type: Add
+      message: Добавлен новый шейдер в виде карты для ИИ!
+  id: 5626
+  time: '2026-01-29T11:28:28.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/24
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлен рост и ширина в редактор персонажа!
+  id: 5627
+  time: '2026-01-29T11:28:45.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/26
+- author: MegaDaimond
+  changes:
+    - type: Tweak
+      message: Изменены спрайты для унатхов, людей, таяров, вульп и слаймолюдов
+  id: 5628
+  time: '2026-01-29T11:33:00.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/33
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлены пинги при подсветке сообщений в чате!
+  id: 5629
+  time: '2026-01-29T15:42:27.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/38
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлено большое количество звуков к взаимодействиям с предметами!
+  id: 5630
+  time: '2026-01-29T15:42:56.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/37
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлена возможность включения джетпаков на гридах без гравитации!
+  id: 5631
+  time: '2026-01-29T15:43:24.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/35

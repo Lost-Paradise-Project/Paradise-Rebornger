@@ -4,6 +4,9 @@ desc = "- Мы проект со средним требованием к оты
 lobbyduration = 240
 #map_pool = ""
 soft_max_players = 111
+hostname_in_titlebar = false
+admin_job_tracking = true
+peaceful_end = true
 
 [infolinks]
 discord = "https://wiki.lost-paradise.space/discord"
@@ -21,6 +24,8 @@ disable_with_admins = true
 
 [server]
 rules_file = "LPPRuleset"
+lobby_name = "Lost Paradise 3.0"
+force_client_hud_version_watermark = true
 
 [hub]
 tags = "lang:ru,region:eu_e,rp:med,18+"

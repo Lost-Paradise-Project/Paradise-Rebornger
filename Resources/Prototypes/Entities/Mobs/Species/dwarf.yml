@@ -17,8 +17,9 @@
     damageRecovery:
       types:
         Asphyxiation: -1.0
-  - type: ScaleVisuals
-    scale: 1, 0.8
+# Goobstation: port EE height/width sliders (below is not needed with height/width sliders implemented)
+#  - type: ScaleData # Goobstation
+#    scale: 1.1, 0.75
   - type: Body
     prototype: Dwarf
     requiredLegs: 2
@@ -32,9 +33,8 @@
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 0.35
-        # they r smaller
-        density: 120
+          radius: 0.35 # Goobstation: port EE height/width sliders (previous value was lower (also a goobstation change), but the height/width sliders will lower this size automatically)
+        density: 240 # goob edit - but they r buff
         restitution: 0.0
         mask:
         - MobMask
@@ -68,8 +68,8 @@
   id: MobDwarfDummy
   categories: [ HideSpawnMenu ]
   components:
-  - type: ScaleVisuals
-    scale: 1, 0.8
+#  - type: ScaleVisuals GoobStation - no scale for dwarf
+#    scale: 1, 0.8
   - type: Inventory
     femaleDisplacements:
       jumpsuit:

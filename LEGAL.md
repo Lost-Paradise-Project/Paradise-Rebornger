@@ -36,7 +36,7 @@
 
 ## Таблица атрибуции
 
-В таблице перечислены все пространства имён (включая поддиректорию Nyanotrasen) с указанием исходных репозиториев и лицензий.
+В таблице перечислены все пространства имён с указанием исходных репозиториев и лицензий.
 
 | Поддиректория    | Форк             | Исходный репозиторий                                     | Лицензия |
 |------------------|------------------|----------------------------------------------------------|----------|
@@ -53,9 +53,11 @@
 | `_StarLight`     | StarLight        | https://github.com/ss14Starlight/space-station-14        | MIT      |
 | `_NyanoTrasen`   | NyanoTrasen      | https://github.com/Nyanotrasen/Nyanotrasen               | MIT      |
 | `_FarHorizons`   | Far Horizons     | https://github.com/Far-Horizons-SS14/Far-Horizons-SS14   | MIT      |
-| `DEN`            | The Den          | https://github.com/TheDenSS14/TheDen                     | AGPL 3.0 |
+| `_DEN`           | The Den          | https://github.com/TheDenSS14/TheDen                     | AGPL 3.0 |
 | `_Next`          | Corvax Next      | https://github.com/space-syndicate/space-station-14-next | AGPL 3.0 |
 | `_FunkyStation`  | Funky Station    | https://github.com/funky-station/funky-station           | AGPL 3.0 |
+| `_CorvaxGoob`    | Corvax Goob      | https://github.com/space-syndicate/Goob-Station          | AGPL 3.0 |
+| `_Mono`          | Monolith Station | https://github.com/Monolith-Station/Monolith             | AGPL 3.0 |
 
 
 ## Отказ от гарантий
