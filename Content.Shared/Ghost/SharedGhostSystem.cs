@@ -201,4 +201,12 @@ namespace Content.Shared.Ghost
             AvailableGhostRoles = availableGhostRoleCount;
         }
     }
+
+    // Port Respawn EE Start
+
+    [Serializable, NetSerializable]
+    public sealed class GhostReturnToRoundRequest : EntityEventArgs;
+
+    // Port Respawn EE End
+
 }

@@ -37,4 +37,19 @@ public sealed partial class CCVars : CVars
     /// </summary>
     public static readonly CVarDef<bool> DebugPow3rDisableParallel =
         CVarDef.Create("debug.pow3r_disable_parallel", false, CVar.SERVERONLY);
+    
+    // Port Respawn EE Start
+
+    #region GhostRespawn
+
+    public static readonly CVarDef<double> GhostRespawnTime =
+        CVarDef.Create("ghost.respawn_time", 15d, CVar.SERVERONLY);
+
+    public static readonly CVarDef<int> GhostRespawnMaxPlayers =
+        CVarDef.Create("ghost.respawn_max_players", 40, CVar.SERVERONLY);
+
+    #endregion
+
+    // Port Respawn EE End
+
 }
