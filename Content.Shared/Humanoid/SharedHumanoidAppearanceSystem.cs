@@ -12,6 +12,7 @@ using Content.Shared.IdentityManagement;
 using Content.Shared.Inventory;
 using Content.Shared.Preferences;
 using Content.Shared._EE.HeightAdjust;
+using Content.Shared._GoobStation.Barks; // Goob Station - Barks
 using Robust.Shared;
 using Robust.Shared.Configuration;
 using Robust.Shared.Enums;
@@ -57,6 +58,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         {Sex.Unsexed, "Myron"},
     };
     // Corvax-TTS-End
+    public static readonly ProtoId<BarkPrototype> DefaultBarkVoice = "Alto"; // Goob Station - Barks
 
     public override void Initialize()
     {
@@ -533,6 +535,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
 
         EnsureDefaultMarkings(uid, humanoid);
         SetTTSVoice(uid, profile.Voice, humanoid); // Corvax-TTS
+        SetBarkVoice(uid, profile.BarkVoice, humanoid); // Goob Station - Barks
 
         humanoid.ErpStatus = profile.ErpStatus; // LP edit
         humanoid.Gender = profile.Gender;
@@ -635,6 +638,35 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         comp.VoicePrototypeId = voiceId;
     }
     // Corvax-TTS-End
+
+    //  Goob Station - Barks Start
+    #region Goob - Barks
+    public void SetBarkVoice(EntityUid uid, string? barkvoiceId, HumanoidAppearanceComponent humanoid)
+    {
+        var voicePrototypeId = DefaultBarkVoice;
+
+        if (barkvoiceId != null &&
+            _proto.TryIndex<BarkPrototype>(barkvoiceId, out var bark) &&
+            (bark.SpeciesWhitelist == null || bark.SpeciesWhitelist.Contains(humanoid.Species)))
+        {
+            voicePrototypeId = barkvoiceId;
+        }
+        else
+        {
+            var barks = _proto.EnumeratePrototypes<BarkPrototype>()
+                .Where(o => o.RoundStart && (o.SpeciesWhitelist is null || o.SpeciesWhitelist.Contains(humanoid.Species)))
+                .ToList();
+
+            voicePrototypeId = _proto.Index(barks.Count > 0 ? barks[0] : DefaultBarkVoice);
+        }
+
+        EnsureComp<SpeechSynthesisComponent>(uid, out var comp);
+        comp.VoicePrototypeId = voicePrototypeId;
+        humanoid.BarkVoice = voicePrototypeId;
+        Dirty(uid, comp);
+    }
+    #endregion
+    // Goob Station - Barks End
 
     /// <summary>
     /// Takes ID of the species prototype, returns UI-friendly name of the species.

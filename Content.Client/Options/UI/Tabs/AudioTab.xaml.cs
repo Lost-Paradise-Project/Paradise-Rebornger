@@ -1,5 +1,6 @@
 using Content.Client.Administration.Managers;
 using Content.Client.Audio;
+using Content.Shared._GoobStation.CCVar;
 using Content.Shared.CCVar;
 using Content.Shared.Corvax.CCCVars;
 using Robust.Client.Audio;
@@ -36,6 +37,13 @@ public sealed partial class AudioTab : Control
             scale: ContentAudioSystem.TtsMultiplier);
         // Corvax-TTS-End
 
+        // Goob Station - Barks-start
+        Control.AddOptionPercentSlider(
+            GoobCVars.BarksVolume,
+            SliderVolumeBarks,
+            scale: ContentAudioSystem.BarksMultiplier);
+        // Goob Station - Barks-end
+
         Control.AddOptionPercentSlider(
             CVars.MidiVolume,
             SliderVolumeMidi,
@@ -60,6 +68,12 @@ public sealed partial class AudioTab : Control
             CCVars.InterfaceVolume,
             SliderVolumeInterface,
             scale: ContentAudioSystem.InterfaceMultiplier);
+
+        // Goobstation - Highlight Chat Ping/Audio!
+        Control.AddOptionPercentSlider(
+            GoobCVars.ChatHighlightVolume,
+            SliderHighlightVolume,
+            scale: 1f);
 
         Control.AddOptionSlider(
             CCVars.MaxAmbientSources,
