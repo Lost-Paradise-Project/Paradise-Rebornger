@@ -152,9 +152,8 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
     {
         var (banDef, expires) = await CreateBanDef(banInfo, BanType.Server, null);
 
-        await _db.AddBanAsync(banDef);
-
         banDef = await _db.AddBanAsync(banDef);
+
         foreach (var (userId, _) in banInfo.Users)
         {
             if (_cfg.GetCVar(CCVars.ServerBanResetLastReadRules))
