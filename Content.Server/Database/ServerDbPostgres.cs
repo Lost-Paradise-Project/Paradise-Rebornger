@@ -213,7 +213,7 @@ namespace Content.Server.Database
             }
 
             NetUserId? aUid = null;
-            if (ban.BanningAdmin is {} aGuid)
+            if (ban.BanningAdmin is { } aGuid)
             {
                 aUid = new NetUserId(aGuid);
             }
@@ -223,18 +223,18 @@ namespace Content.Server.Database
             ImmutableArray<BanRoleDef>? roles = null;
             if (ban.Type == BanType.Role)
             {
-                roles = [..ban.Roles!.Select(br => new BanRoleDef(br.RoleType, br.RoleId))];
+                roles = [.. ban.Roles!.Select(br => new BanRoleDef(br.RoleType, br.RoleId))];
             }
 
             return new BanDef(
                 ban.Id,
                 ban.Type,
-                [..ban.Players!.Select(bp => new NetUserId(bp.UserId))],
-                [..ban.Addresses!.Select(ba => ba.Address.ToTuple())],
-                [..ban.Hwids!.Select(bh => bh.HWId)],
+                [.. ban.Players!.Select(bp => new NetUserId(bp.UserId))],
+                [.. ban.Addresses!.Select(ba => ba.Address.ToTuple())],
+                [.. ban.Hwids!.Select(bh => bh.HWId)],
                 ban.BanTime,
                 ban.ExpirationTime,
-                [..ban.Rounds!.Select(r => r.RoundId)],
+                [.. ban.Rounds!.Select(r => r.RoundId)],
                 ban.PlaytimeAtNote,
                 ban.Reason,
                 ban.Severity,
@@ -252,7 +252,7 @@ namespace Content.Server.Database
             }
 
             NetUserId? aUid = null;
-            if (unban.UnbanningAdmin is {} aGuid)
+            if (unban.UnbanningAdmin is { } aGuid)
             {
                 aUid = new NetUserId(aGuid);
             }
@@ -270,24 +270,24 @@ namespace Content.Server.Database
             var banEntity = new Ban
             {
                 Type = ban.Type,
-                Addresses = [..ban.Addresses.Select(ba => new BanAddress { Address = ba.ToNpgsqlInet() })],
-                Hwids = [..ban.HWIds.Select(bh => new BanHwid { HWId = bh })],
+                Addresses = [.. ban.Addresses.Select(ba => new BanAddress { Address = ba.ToNpgsqlInet() })],
+                Hwids = [.. ban.HWIds.Select(bh => new BanHwid { HWId = bh })],
                 Reason = ban.Reason,
                 Severity = ban.Severity,
                 BanningAdmin = ban.BanningAdmin?.UserId,
                 BanTime = ban.BanTime.UtcDateTime,
                 ExpirationTime = ban.ExpirationTime?.UtcDateTime,
-                Rounds = [..ban.RoundIds.Select(bri => new BanRound { RoundId = bri })],
+                Rounds = [.. ban.RoundIds.Select(bri => new BanRound { RoundId = bri })],
                 PlaytimeAtNote = ban.PlaytimeAtNote,
-                Players = [..ban.UserIds.Select(bp => new BanPlayer { UserId = bp.UserId })],
+                Players = [.. ban.UserIds.Select(bp => new BanPlayer { UserId = bp.UserId })],
                 ExemptFlags = ban.ExemptFlags,
                 Roles = ban.Roles == null
                     ? []
                     : ban.Roles.Value.Select(brd => new BanRole
-                        {
-                            RoleType = brd.RoleType,
-                            RoleId = brd.RoleId
-                        })
+                    {
+                        RoleType = brd.RoleType,
+                        RoleId = brd.RoleId
+                    })
                         .ToList(),
             };
             db.PgDbContext.Ban.Add(banEntity);
@@ -353,8 +353,8 @@ namespace Content.Server.Database
             // Join with the player table to find their last seen username, if they have one.
             var admins = await db.PgDbContext.Admin
                 .Include(a => a.Flags)
-                .GroupJoin(db.PgDbContext.Player, a => a.UserId, p => p.UserId, (a, grouping) => new {a, grouping})
-                .SelectMany(t => t.grouping.DefaultIfEmpty(), (t, p) => new {t.a, p!.LastSeenUserName})
+                .GroupJoin(db.PgDbContext.Player, a => a.UserId, p => p.UserId, (a, grouping) => new { a, grouping })
+                .SelectMany(t => t.grouping.DefaultIfEmpty(), (t, p) => new { t.a, p!.LastSeenUserName })
                 .ToArrayAsync(cancel);
 
             var adminRanks = await db.DbContext.AdminRank.Include(a => a.Flags).ToArrayAsync(cancel);

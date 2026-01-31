@@ -205,3 +205,14 @@ Entries:
   id: 5632
   time: '2026-01-30T14:13:05.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/39
+- author: MegaDaimond
+  changes:
+    - type: Tweak
+      message: Изменены спрайты скафандров
+    - type: Tweak
+      message: Изменены спрайты цветных комбинезонов
+    - type: Fix
+      message: Фикс лишнего пикселя на ногах унатхов
+  id: 5633
+  time: '2026-01-31T16:33:31.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/43
