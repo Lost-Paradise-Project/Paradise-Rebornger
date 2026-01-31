@@ -797,7 +797,7 @@ namespace Content.Server.Administration.Systems
             if (bwoinkParams.FromWebhook)
                 bwoinkText = $"{_config.GetCVar(CCVars.DiscordReplyPrefix)}{bwoinkText}";
 
-            bwoinkText = $"{(bwoinkParams.Message.AdminOnly ? Loc.GetString("bwoink-message-admin-only") : !bwoinkParams.Message.PlaySound ? Loc.GetString("bwoink-message-silent") : "")}{(bwoinkParams.FromWebhook ? Loc.GetString("bwoink-message-discord") : "")} {bwoinkText}: {escapedText}"; // LP edit
+            bwoinkText = $"{(bwoinkParams.Message.AdminOnly ? Loc.GetString("bwoink-message-admin-only") : !bwoinkParams.Message.PlaySound ? Loc.GetString("bwoink-message-silent") : "")}{bwoinkText}: {escapedText}"; // LP edit
 
             // If it's not an admin / admin chooses to keep the sound then play it.
             var playSound = bwoinkParams.SenderAdmin == null || bwoinkParams.Message.PlaySound && !bwoinkParams.Message.AdminOnly;
