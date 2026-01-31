@@ -24,6 +24,8 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using Content.Shared._ERPModule.Data; // LP edit
 using Content.Shared._White.CustomGhostSystem;  //WWDP edit
+using Content.Server._Funkystation.Records; // CD - Character Records
+using Content.Shared._Funkystation.Records; // CD - Character Records
 
 namespace Content.Server.Database
 {
@@ -50,6 +52,10 @@ namespace Content.Server.Database
                 .Include(p => p.Profiles).ThenInclude(h => h.Jobs)
                 .Include(p => p.Profiles).ThenInclude(h => h.Antags)
                 .Include(p => p.Profiles).ThenInclude(h => h.Traits)
+                // Begin CD - Character Records
+                .Include(p => p.Profiles)
+                    .ThenInclude(h => h.CDProfile)
+                // End CD - Character Records
                 .Include(p => p.Profiles)
                     .ThenInclude(h => h.Loadouts)
                     .ThenInclude(l => l.Groups)
@@ -101,6 +107,7 @@ namespace Content.Server.Database
             }
 
             var oldProfile = db.DbContext.Profile
+                .Include(p => p.CDProfile) // CD - Character Records
                 .Include(p => p.Preference)
                 .Where(p => p.Preference.UserId == userId.UserId)
                 .Include(p => p.Jobs)
@@ -263,6 +270,11 @@ namespace Content.Server.Database
                 }
             }
 
+            // Begin CD - Chracter Records
+            var cdRecords = profile.CDProfile?.CharacterRecords != null
+                ? RecordsSerialization.Deserialize(profile.CDProfile.CharacterRecords)
+                : PlayerProvidedCharacterRecords.DefaultRecords();
+            // End CD - Character Records
             var loadouts = new Dictionary<string, RoleLoadout>();
 
             foreach (var role in profile.Loadouts)
@@ -316,7 +328,8 @@ namespace Content.Server.Database
                 antags.ToHashSet(),
                 traits.ToHashSet(),
                 loadouts,
-                barkVoice // Goob Station - Barks
+                barkVoice, // Goob Station - Barks
+                cdRecords // CD - Character Records
             );
         }
 
@@ -372,6 +385,12 @@ namespace Content.Server.Database
             );
 
             profile.BarkVoice = humanoid.BarkVoice; // Goob Station - Barks
+
+            // Begin CD - Character Records
+            profile.CDProfile ??= new CDModel.CDProfile();
+            // There are JsonIgnore annotations to ensure that entries are not stored as JSON.
+            profile.CDProfile.CharacterRecords = JsonSerializer.SerializeToDocument(humanoid.CDCharacterRecords ?? PlayerProvidedCharacterRecords.DefaultRecords());
+            // End CD - Character Records
 
             profile.Loadouts.Clear();
 
@@ -1564,8 +1583,8 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
             return new BanNoteRecord(
                 ban.Id,
                 ban.Type,
-                [..ban.Rounds!.Select(br => MakeRoundRecord(br.Round!))],
-                [..playerRecords],
+                [.. ban.Rounds!.Select(br => MakeRoundRecord(br.Round!))],
+                [.. playerRecords],
                 ban.PlaytimeAtNote,
                 ban.Reason,
                 ban.Severity,
@@ -1581,7 +1600,7 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
                         ban.Unban.UnbanningAdmin.Value,
                         await dbContext.Player.SingleOrDefaultAsync(p => p.UserId == ban.Unban.UnbanningAdmin.Value)),
                 NormalizeDatabaseTime(ban.Unban?.UnbanTime),
-                [..ban.Roles!.Select(br => new BanRoleDef(br.RoleType, br.RoleId))]);
+                [.. ban.Roles!.Select(br => new BanRoleDef(br.RoleType, br.RoleId))]);
         }
 
         // These two are here because they get converted into notes later
@@ -1804,7 +1823,7 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
                 results.Add(await selector(item));
             }
 
-            return [..results];
+            return [.. results];
         }
     }
 }

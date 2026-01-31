@@ -92,9 +92,9 @@ public sealed class BanPanelEui : BaseEui
             }
 
             if (hidInt == 0)
-                hidInt = (uint) (ipAddress.AddressFamily == AddressFamily.InterNetworkV6 ? Ipv6_CIDR : Ipv4_CIDR);
+                hidInt = (uint)(ipAddress.AddressFamily == AddressFamily.InterNetworkV6 ? Ipv6_CIDR : Ipv4_CIDR);
 
-            addressRange = (ipAddress, (int) hidInt);
+            addressRange = (ipAddress, (int)hidInt);
         }
 
         var targetUid = ban.Target is not null ? PlayerId : null;
@@ -143,24 +143,13 @@ public sealed class BanPanelEui : BaseEui
                 roleBanInfo.AddAntag(row);
             }
 
-            _banManager.CreateRoleBan(roleBanInfo);
+            var bids = await _banManager.CreateRoleBan(roleBanInfo);
+            _banManager.WebhookUpdateRoleBans(roleBanInfo, bids.Item1, bids.Item2);
         }
         else
         {
-            if (ban.Erase && targetUid is not null)
-            {
-                try
-                {
-                    if (_entities.TrySystem(out AdminSystem? adminSystem))
-                        adminSystem.Erase(targetUid.Value);
-                }
-                catch (Exception e)
-                {
-                    _sawmill.Error($"Error while erasing banned player:\n{e}");
-                }
-            }
-
-            _banManager.CreateServerBan((CreateServerBanInfo)banInfo);
+            var banid = await _banManager.CreateServerBan((CreateServerBanInfo)banInfo);
+            _banManager.WebhookUpdateBans((CreateServerBanInfo)banInfo, banid); // LP edit BanWebhook
         }
 
         Close();

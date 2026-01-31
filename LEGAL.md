@@ -58,6 +58,7 @@
 | `_FunkyStation`  | Funky Station    | https://github.com/funky-station/funky-station           | AGPL 3.0 |
 | `_CorvaxGoob`    | Corvax Goob      | https://github.com/space-syndicate/Goob-Station          | AGPL 3.0 |
 | `_Mono`          | Monolith Station | https://github.com/Monolith-Station/Monolith             | AGPL 3.0 |
+| `_RMC14`         | RMC-14           | https://github.com/RMC-14/RMC-14                         | MIT      |
 
 
 ## Отказ от гарантий

@@ -17,7 +17,7 @@ public interface IBanManager
     /// <summary>
     /// Create a server ban in the database, blocking connection for matching players.
     /// </summary>
-    void CreateServerBan(CreateServerBanInfo banInfo);
+    Task<int> CreateServerBan(CreateServerBanInfo banInfo);
 
     /// <summary>
     /// Bans the specified target, address range and / or HWID. One of them must be non-null
@@ -97,7 +97,7 @@ public interface IBanManager
     /// <summary>
     /// Creates a role ban, preventing matching players from playing said roles.
     /// </summary>
-    public void CreateRoleBan(CreateRoleBanInfo banInfo);
+    public Task<(int, List<string>)> CreateRoleBan(CreateRoleBanInfo banInfo);
 
     /// <summary>
     /// Pardons a role ban by its ID.
@@ -112,6 +112,15 @@ public interface IBanManager
     /// </summary>
     /// <param name="pSession">Player's session</param>
     public void SendRoleBans(ICommonSession pSession);
+
+    //LP edit start
+    /// <summary>
+    /// Отправляет вебхук с информацией по бану.
+    /// </summary>
+    public void WebhookUpdateRoleBans(CreateRoleBanInfo banInfo, int banId, List<string> roles);
+
+    public void WebhookUpdateBans(CreateServerBanInfo banInfo, int banId);
+    //LP edit end
 }
 
 /// <summary>
