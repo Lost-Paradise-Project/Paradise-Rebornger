@@ -1,0 +1,30 @@
+# === ОРУЖИЕ С САМОЗАРЯДКОЙ ===
+# Станбатон с самозарядкой
+- type: entity
+  id: LPPStunbatonBorgSec
+  parent: Stunbaton
+  suffix: Cyborg, Security
+  components:
+  - type: BatterySelfRecharger
+    # autoRecharge: true
+    autoRechargeRate: 30 
+
+# Тайзер с самозарядкой
+- type: entity
+  id: LPPWeaponDisablerBorgSec
+  parent: WeaponDisabler
+  suffix: Cyborg, Security
+  components:
+  - type: BatterySelfRecharger
+    # autoRecharge: true
+    autoRechargeRate: 30 
+
+# Лазерный карабин с самозарядкой
+- type: entity
+  id: LPPWeaponLaserCarbineBorgSec
+  parent: WeaponLaserCarbine
+  suffix: Cyborg, Security
+  components:
+  - type: BatterySelfRecharger
+    # autoRecharge: true
+    autoRechargeRate: 30 # ~0.5 выстрелов в секунду или ~32 секунды на полную зарядку.

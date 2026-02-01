@@ -1,0 +1,15 @@
+# Tier 1
+
+# Tier 2
+- type: technology
+  id: LPPBorgModuleSecurityAllow
+  name: research-technology-borg-module-security
+  icon:
+    sprite: _LP/Objects/Specific/Robotics/borgmodule.rsi
+    state: lp-security
+  discipline: Arsenal
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - LPPBorgModuleSecurityWeapon
+  - LPPBorgModuleSecurityLaserCarbine

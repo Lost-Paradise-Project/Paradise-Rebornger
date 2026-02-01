@@ -1,0 +1,92 @@
+- type: entity
+  id: LPPBorgSecurityGeneric
+  parent: BaseBorgChassisNT
+  name: security chellnock
+  components:
+  - type: BorgTransponder
+    name: security chellnock
+    sprite:
+      sprite: _LP/Mobs/Silicon/sec_drone.rsi
+      state: robot
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Binary
+    - Common
+    - Security
+    - Command
+  - type: ActiveRadio
+    channels:
+    - Binary
+    - Common
+    - Security
+    - Command
+  - type: MobThresholds
+    thresholds:
+      0: Alive 
+      300: Critical
+      500: Dead 
+  - type: AmbientSound
+    enabled: true
+    range: 4
+    volume: -4
+    sound:
+      path: /Audio/Effects/shuttle_thruster.ogg
+  - type: FootstepModifier
+    footstepSoundCollection: null      
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 5
+    baseSprintSpeed: 9
+  - type: MovementIgnoreGravity
+  - type: Sprite
+    sprite: _LP/Mobs/Silicon/sec_drone.rsi
+    layers:
+    - state: robot
+    - state: robot_e_r
+      map: ["enum.BorgVisualLayers.Light"]
+      shader: unshaded
+      visible: false
+    - state: robot_l
+      shader: unshaded
+      map: ["light"]
+      visible: false
+  - type: BorgChassis
+    maxModules: 4
+    moduleWhitelist:
+      tags:
+      - BorgModuleGeneric
+    hasMindState: robot_e
+    noMindState: robot
+  - type: Speech
+    speechVerb: Robotic
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellHigh
+  - type: ContainerFill
+    containers:
+      borg_brain:
+      - PositronicBrain
+      borg_module:
+      - LPPBorgModuleSecurityWeapon
+      - LPPBorgModuleSecurityLaserCarbine
+      - BorgModuleTool
+  - type: Access
+    groups:
+    - AllAccess
+    tags:
+    - Borg
+  - type: AccessReader
+    access: [["Security"], ["Command"], ["Research"]]
+  - type: FlashImmunity
+  # Консоль записей экипажа
+  - type: GeneralStationRecordConsole
+  - type: UserInterface 
+    interfaces:
+      enum.GeneralStationRecordConsoleKey.Key:
+        type: GeneralStationRecordConsoleBoundUserInterface
+  - type: IntrinsicUI
+    uis:
+      enum.GeneralStationRecordConsoleKey.Key:
+        toggleAction: ActionAGhostShowStationRecords
+

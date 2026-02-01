@@ -406,6 +406,7 @@
     - SecurityAmmo
     - SecurityWeapons
     - SecurityDisablers
+    - LPPSecurityModuls # Lost Paridise edit 2026.01.30 Модули для боргов
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SyndicateAmmoStatic
