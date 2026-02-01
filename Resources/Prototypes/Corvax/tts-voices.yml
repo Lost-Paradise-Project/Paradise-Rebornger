@@ -397,7 +397,6 @@
   speaker: adventure_core
   id: adventure_core
   roundStart: false
-  borgVoice: true
 
 - type: ttsVoice
   name: tts-voice-name-fact_core
@@ -405,7 +404,6 @@
   speaker: fact_core
   id: fact_core
   roundStart: false
-  borgVoice: true
 
 - type: ttsVoice
   name: tts-voice-name-space_core
@@ -413,7 +411,6 @@
   speaker: space_core
   id: space_core
   roundStart: false
-  borgVoice: true
 
 - type: ttsVoice
   name: tts-voice-name-turret_floor
@@ -421,7 +418,6 @@
   speaker: turret_floor
   id: turret_floor
   roundStart: false
-  borgVoice: true
 
 - type: ttsVoice
   name: tts-voice-name-geralt
@@ -669,7 +665,6 @@
   speaker: skippy
   id: skippy
   roundStart: false
-  borgVoice: true
 
 - type: ttsVoice
   name: tts-voice-name-jackie
@@ -719,7 +714,6 @@
   speaker: officer_enclave
   id: officer_enclave
   roundStart: false
-  borgVoice: true
 
 - type: ttsVoice
   name: tts-voice-name-richardson
