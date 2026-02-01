@@ -5,6 +5,9 @@
   placement:
     mode: SnapgridCenter
   components:
+    - type: Construction
+      graph: FloorDrain
+      node: FloorDrain
     - type: Sprite
       drawdepth: FloorObjects
       sprite: Objects/Specific/Janitorial/drain.rsi

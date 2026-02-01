@@ -1,0 +1,10 @@
+﻿- type: entity
+  parent: ClothingBeltBase
+  id: LPPClothingBeltFlamingo
+  name: inflatable flamingo
+  description: Happy happy happy! HAPPY HAPPY HAPPY HAPPY HAPPY HAPPY HAPPY HAPPY HAPPY!!!
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Belt/flamingo.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Belt/flamingo.rsi

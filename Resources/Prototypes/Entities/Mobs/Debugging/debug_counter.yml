@@ -1,4 +1,5 @@
 - type: entity
+  categories: [ HideSpawnMenu ]
   parent: MobHuman
   id: MobDebugCounter
   name: debug counter

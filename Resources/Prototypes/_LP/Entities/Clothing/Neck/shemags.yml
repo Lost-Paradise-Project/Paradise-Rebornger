@@ -1,0 +1,185 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: LPPClothingNeckShemagGreen
+  name: Green shemag
+  description: A warm silk fabric that protects from dust and cold, as well as gives brutality and tacticool to the wearer.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Neck/shemags/greendown.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Neck/shemags/greendown.rsi
+  - type: ToggleableClothing
+    clothingPrototype: LPPClothingMaskShemagGreen
+    requiredSlot:
+    - neck
+    slot: mask
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+
+- type: entity
+  parent: ClothingMaskBase
+  id: LPPClothingMaskShemagGreen
+  categories: [ HideSpawnMenu ]
+  name: Green shemag
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Neck/shemags/greenup.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Neck/shemags/greenup.rsi
+  - type: IdentityBlocker
+
+- type: entity
+  parent: ClothingNeckBase
+  id: LPPClothingNeckShemagRed
+  name: Red shemag
+  description: A warm silk fabric that protects from dust and cold, as well as gives brutality and tacticool to the wearer.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Neck/shemags/reddown.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Neck/shemags/reddown.rsi
+  - type: ToggleableClothing
+    clothingPrototype: LPPClothingMaskShemagRed
+    requiredSlot:
+    - neck
+    slot: mask
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+
+- type: entity
+  parent: ClothingMaskBase
+  id: LPPClothingMaskShemagRed
+  categories: [ HideSpawnMenu ]
+  name: Red shemag
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Neck/shemags/redup.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Neck/shemags/redup.rsi
+  - type: IdentityBlocker
+
+- type: entity
+  parent: ClothingNeckBase
+  id: LPPClothingNeckShemagBlue
+  name: Blue shemag
+  description: A warm silk fabric that protects from dust and cold, as well as gives brutality and tacticool to the wearer.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Neck/shemags/bluedown.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Neck/shemags/bluedown.rsi
+  - type: ToggleableClothing
+    clothingPrototype: LPPClothingMaskShemagBlue
+    requiredSlot:
+    - neck
+    slot: mask
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+
+- type: entity
+  parent: ClothingMaskBase
+  id: LPPClothingMaskShemagBlue
+  categories: [ HideSpawnMenu ]
+  name: Blue shemag
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Neck/shemags/blueup.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Neck/shemags/blueup.rsi
+  - type: IdentityBlocker
+
+- type: entity
+  parent: ClothingNeckBase
+  id: LPPClothingNeckShemagBrown
+  name: Brown shemag
+  description: A warm silk fabric that protects from dust and cold, as well as gives brutality and tacticool to the wearer.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Neck/shemags/browndown.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Neck/shemags/browndown.rsi
+  - type: ToggleableClothing
+    clothingPrototype: LPPClothingMaskShemagBrown
+    requiredSlot:
+    - neck
+    slot: mask
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+
+- type: entity
+  parent: ClothingMaskBase
+  id: LPPClothingMaskShemagBrown
+  categories: [ HideSpawnMenu ]
+  name: Brown shemag
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Neck/shemags/brownup.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Neck/shemags/brownup.rsi
+  - type: IdentityBlocker
+
+- type: entity
+  parent: ClothingNeckBase
+  id: LPPClothingNeckShemagPurple
+  name: Purple shemag
+  description: A warm silk fabric that protects from dust and cold, as well as gives brutality and tacticool to the wearer.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Neck/shemags/purpledown.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Neck/shemags/purpledown.rsi
+  - type: ToggleableClothing
+    clothingPrototype: LPPClothingMaskShemagPurple
+    requiredSlot:
+    - neck
+    slot: mask
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+
+- type: entity
+  parent: ClothingMaskBase
+  id: LPPClothingMaskShemagPurple
+  categories: [ HideSpawnMenu ]
+  name: Purple shemag
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Neck/shemags/purpleup.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Neck/shemags/purpleup.rsi
+  - type: IdentityBlocker
+
+- type: entity
+  parent: ClothingNeckBase
+  id: LPPClothingNeckShemagWhite
+  name: White shemag
+  description: A warm silk fabric that protects from dust and cold, as well as gives brutality and tacticool to the wearer.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Neck/shemags/whitedown.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Neck/shemags/whitedown.rsi
+  - type: ToggleableClothing
+    clothingPrototype: LPPClothingMaskShemagWhite
+    requiredSlot:
+    - neck
+    slot: mask
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+
+- type: entity
+  parent: ClothingMaskBase
+  id: LPPClothingMaskShemagWhite
+  categories: [ HideSpawnMenu ]
+  name: White shemag
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Neck/shemags/whiteup.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Neck/shemags/whiteup.rsi
+  - type: IdentityBlocker

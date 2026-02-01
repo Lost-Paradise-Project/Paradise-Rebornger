@@ -1,9 +1,9 @@
 ent-AsteroidRock = астероидный камень
     .desc = Каменистый астероид.
     .suffix = Низкое содержание руды
-ent-BaseRockGibtonite = { "" }
+ent-BaseRockGibtonite = { ent-AsteroidRock }
     .suffix = Гибтонит
-    .desc = { "" }
+    .desc = { ent-AsteroidRock }
 ent-AsteroidRockCoal = { ent-AsteroidRock }
     .desc = Рудная жила, богатая углём.
     .suffix = Уголь

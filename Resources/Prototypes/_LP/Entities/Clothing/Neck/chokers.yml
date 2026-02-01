@@ -1,0 +1,98 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: LPPClothingNeckBellCollarWhite
+  name: White choker with a bell
+  description: A choker with a bell, so that your master will definitely not lose you somewhere in the dorms.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Neck/chokers/white.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Neck/chokers/white.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: LPPClothingNeckBellCollarBlack
+  name: Black choker with a bell
+  description: A choker with a bell, so that your master will definitely not lose you somewhere in the dorms.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Neck/chokers/black.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Neck/chokers/black.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: LPPClothingNeckBellCollarRed
+  name: Red choker with a bell
+  description: A choker with a bell, so that your master will definitely not lose you somewhere in the dorms.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Neck/chokers/red.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Neck/chokers/red.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: LPPClothingNeckBellCollarCyan
+  name: Cyan choker with a bell
+  description: A choker with a bell, so that your master will definitely not lose you somewhere in the dorms.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Neck/chokers/cyan.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Neck/chokers/cyan.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: LPPClothingNeckBellCollarGreen
+  name: Green choker with a bell
+  description: A choker with a bell, so that your master will definitely not lose you somewhere in the dorms.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Neck/chokers/green.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Neck/chokers/green.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: LPPClothingNeckBellCollarPurple
+  name: Purple choker with a bell
+  description: A choker with a bell, so that your master will definitely not lose you somewhere in the dorms.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Neck/chokers/purple.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Neck/chokers/purple.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: LPPClothingNeckBellCollarOrange
+  name: Orange choker with a bell
+  description: A choker with a bell, so that your master will definitely not lose you somewhere in the dorms.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Neck/chokers/orange.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Neck/chokers/orange.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: LPPClothingNeckCollarSpiked
+  name: Spiked choker
+  description: A choker with spikes, you are either a goth or a metalhead, you are allowed to wear this.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Neck/chokers/spiked.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Neck/chokers/spiked.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: LPPClothingNeckCollarHeart
+  name: Heart choker
+  description: Choker with a heart, you are either a cutie or a pet if you decide to wear one.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Neck/chokers/heart.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Neck/chokers/heart.rsi

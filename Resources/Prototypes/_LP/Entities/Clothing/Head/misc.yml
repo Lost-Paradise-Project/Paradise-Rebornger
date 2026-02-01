@@ -1,0 +1,43 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: LPPClothingHeadHatBlackBeanie
+  name: black beanie
+  description: It's a black beanie.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Hats/black-beanie.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Hats/black-beanie.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: LPPClothingHeadHatBlueBeanie
+  name: blue beanie
+  description: It's a blue beanie.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Hats/blue-beanie.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Hats/blue-beanie.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: LPPClothingHeadHatGreenBeanie
+  name: green beanie
+  description: It's a green beanie.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Hats/green-beanie.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Hats/green-beanie.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: LPPClothingHeadHatRedBeanie
+  name: red beanie
+  description: It's a red beanie.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Hats/red-beanie.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Hats/red-beanie.rsi
