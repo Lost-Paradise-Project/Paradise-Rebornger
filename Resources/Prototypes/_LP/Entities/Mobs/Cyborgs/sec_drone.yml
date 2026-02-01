@@ -79,8 +79,14 @@
   - type: AccessReader
     access: [["Security"], ["Command"], ["Research"]]
   - type: FlashImmunity
-
-
-
-
+  # Консоль записей экипажа
+  - type: GeneralStationRecordConsole
+  - type: UserInterface 
+    interfaces:
+      enum.GeneralStationRecordConsoleKey.Key:
+        type: GeneralStationRecordConsoleBoundUserInterface
+  - type: IntrinsicUI
+    uis:
+      enum.GeneralStationRecordConsoleKey.Key:
+        toggleAction: ActionAGhostShowStationRecords
 
