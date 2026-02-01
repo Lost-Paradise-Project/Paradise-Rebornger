@@ -128,7 +128,7 @@
       gender: male
   - type: Sharp
   - type: TTS # Corvax-TTS
-    voice: Rat
+    voice: nyx_assassin_dota_2
 
 - type: entity
   id: MobRatKingBuff
