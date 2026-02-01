@@ -274,6 +274,7 @@
     - CameraBoards
     - MechBoards
     - ShuttleBoards
+    - ReactorCircuitboards # FH edit
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityBoards
