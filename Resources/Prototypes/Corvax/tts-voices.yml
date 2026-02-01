@@ -167,7 +167,6 @@
   speaker: sentrybot
   id: sentrybot
   roundStart: false
-  borgVoice: true
 
 - type: ttsVoice
   name: tts-voice-name-moira_brown
