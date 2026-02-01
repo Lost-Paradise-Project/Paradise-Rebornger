@@ -216,3 +216,10 @@ Entries:
   id: 5633
   time: '2026-01-31T16:33:31.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/43
+- author: MegaDaimond
+  changes:
+    - type: Tweak
+      message: Изменён спрайт ДАМа
+  id: 5634
+  time: '2026-01-31T19:47:36.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/47
