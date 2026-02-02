@@ -223,3 +223,12 @@ Entries:
   id: 5634
   time: '2026-01-31T19:47:36.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/47
+- author: BL02DL
+  changes:
+    - type: Add
+      message: Добавлен призрачный бар!
+    - type: Add
+      message: Добавлена возможность вернутся в лобби для гостов спустя 15 минут!
+  id: 5635
+  time: '2026-02-01T13:01:05.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/45
