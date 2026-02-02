@@ -588,8 +588,8 @@
             </Box>
         </ColorBox>
         <ColorBox>
-            <Box HorizontalAlignment="center" VerticalAlignment="Stretch" Margin="2">
-                3.5
+            <Box HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="2">
+                ф
             </Box>
         </ColorBox>
         <ColorBox>
