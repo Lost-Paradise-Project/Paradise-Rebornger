@@ -1,0 +1,35 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: LPPBestMedic
+  name: best medic
+  description:
+  components:
+    - type: Sprite
+      sprite: _LP/Clothing/Neck/Cloaks/best_medic.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: LPPBestMedicGif
+  name: best medic+
+  description:
+  components:
+    - type: Sprite
+      sprite: _LP/Clothing/Neck/Cloaks/best_medic_gif.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: LPPZulieParamedic
+  name: zulie paramedic
+  description:
+  components:
+    - type: Sprite
+      sprite: _LP/Clothing/Neck/Cloaks/zulie_paramedic.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: LPPZulieParamedicGif
+  name: zulie paramedic+
+  description:
+  components:
+    - type: Sprite
+      sprite: _LP/Clothing/Neck/Cloaks/zulie_paramedic_gif.rsi

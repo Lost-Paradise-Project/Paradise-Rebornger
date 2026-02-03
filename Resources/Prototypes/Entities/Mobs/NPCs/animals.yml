@@ -3789,7 +3789,7 @@
     popupText: diona-reform-attempt
     reformPrototype: MobDionaReformed
   - type: TTS # Corvax-TTS
-    voice: Omu
+    voice: uther_hs
 
 - type: entity
   parent: MobDionaNymph

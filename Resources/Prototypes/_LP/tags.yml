@@ -21,3 +21,6 @@
 
 - type: Tag
   id: socks
+
+- type: Tag
+  id: CoatRack

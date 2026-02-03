@@ -144,7 +144,7 @@
     rootTask:
       task: SimpleHostileCompound
   - type: TTS # Corvax-TTS
-    voice: Chen
+    voice: squidward
 
 - type: entity
   name: blue slime

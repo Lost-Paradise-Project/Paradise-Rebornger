@@ -253,7 +253,7 @@
     - Critical
     - Dead
   - type: TTS # Corvax-TTS
-    voice: TrainingRobot
+    voice: turret_floor
   - type: SpeechSynthesis # Corvax-Frontier-Barks
     voice: Borg
 

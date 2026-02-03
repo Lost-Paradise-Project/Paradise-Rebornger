@@ -1,0 +1,101 @@
+{
+    "version": 2,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Draw by Hqlle (Github)",
+    "size": {
+      "x": 32,
+      "y": 32
+    },
+    "states": [
+    {
+      "name": "letter_A"
+    },
+    {
+      "name": "letter_B"
+    },
+    {
+      "name": "letter_C"
+    },
+    {
+      "name": "letter_D"
+    },
+    {
+      "name": "letter_E"
+    },
+    {
+      "name": "letter_F"
+    },
+    {
+      "name": "letter_G"
+    },
+    {
+      "name": "letter_H"
+    },
+    {
+      "name": "letter_I"
+    },
+    {
+      "name": "letter_J"
+    },
+    {
+      "name": "letter_K"
+    },
+    {
+      "name": "letter_L"
+    },
+    {
+      "name": "letter_M"
+    },
+    {
+      "name": "letter_N"
+    },
+    {
+      "name": "letter_O"
+    },
+    {
+      "name": "letter_P"
+    },
+    {
+      "name": "letter_Q"
+    },
+    {
+      "name": "letter_R"
+    },
+    {
+      "name": "letter_S"
+    },
+    {
+      "name": "letter_T"
+    },
+    {
+      "name": "letter_U"
+    },
+    {
+      "name": "letter_V"
+    },
+    {
+      "name": "letter_W"
+    },
+    {
+      "name": "letter_X"
+    },
+    {
+      "name": "letter_Y"
+    },
+    {
+      "name": "letter_Z"
+    },
+    {
+      "name": "letter_AA"
+    },
+    {
+      "name": "letter_OO"
+    },
+    {
+      "name": "letter_UU"
+    },
+    {
+      "name": "letter_OOO"
+    }
+  ]
+}
