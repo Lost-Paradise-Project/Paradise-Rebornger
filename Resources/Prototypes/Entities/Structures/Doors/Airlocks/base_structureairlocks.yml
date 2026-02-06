@@ -75,11 +75,11 @@
       types:
         Blunt: 15
     openSound:
-      path: /Audio/Machines/airlock_open.ogg
+      path: /Audio/_RMC14/Machines/airlock.ogg
     closeSound:
-      path: /Audio/Machines/airlock_close.ogg
+      path: /Audio/_RMC14/Machines/airlock.ogg
     denySound:
-      path: /Audio/Machines/airlock_deny.ogg
+      path: /Audio/_RMC14/Machines/buzz_two.ogg
   - type: ContainerContainer
     containers:
       board: !type:Container

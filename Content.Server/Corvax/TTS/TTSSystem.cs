@@ -109,16 +109,15 @@ public sealed partial class TTSSystem : EntitySystem
 
     private async void HandleWhisper(EntityUid uid, string message, string obfMessage, string speaker)
     {
-        var fullSoundData = await GenerateTTS(message, speaker, true);
+        var fullSoundData = await GenerateTTS(message, speaker, isWhisper: true, isMuffled: false);
         if (fullSoundData is null) return;
 
-        var obfSoundData = await GenerateTTS(obfMessage, speaker, true);
+        var obfSoundData = await GenerateTTS(obfMessage, speaker, isWhisper: true, isMuffled: true);
         if (obfSoundData is null) return;
 
         var fullTtsEvent = new PlayTTSEvent(fullSoundData, GetNetEntity(uid), true);
         var obfTtsEvent = new PlayTTSEvent(obfSoundData, GetNetEntity(uid), true);
 
-        // TODO: Check obstacles
         var xformQuery = GetEntityQuery<TransformComponent>();
         var sourcePos = _xforms.GetWorldPosition(xformQuery.GetComponent(uid), xformQuery);
         var receptions = Filter.Pvs(uid).Recipients;
@@ -127,26 +126,45 @@ public sealed partial class TTSSystem : EntitySystem
             if (!session.AttachedEntity.HasValue) continue;
             var xform = xformQuery.GetComponent(session.AttachedEntity.Value);
             var distance = (sourcePos - _xforms.GetWorldPosition(xform, xformQuery)).Length();
-            if (distance > ChatSystem.VoiceRange * ChatSystem.VoiceRange)
+            if (distance > SharedChatSystem.WhisperMuffledRange)
                 continue;
 
-            RaiseNetworkEvent(distance > ChatSystem.WhisperClearRange ? obfTtsEvent : fullTtsEvent, session);
+            RaiseNetworkEvent(distance > SharedChatSystem.WhisperClearRange ? obfTtsEvent : fullTtsEvent, session);
         }
     }
 
-    // ReSharper disable once InconsistentNaming
-    private async Task<byte[]?> GenerateTTS(string text, string speaker, bool isWhisper = false)
+    private async Task<byte[]?> GenerateTTS(string text, string speaker, bool isWhisper = false, bool isMuffled = false)
     {
         var textSanitized = Sanitize(text);
-        if (textSanitized == "") return null;
+        if (string.IsNullOrWhiteSpace(textSanitized))
+            return null;
+
         if (char.IsLetter(textSanitized[^1]))
             textSanitized += ".";
 
-        var ssmlTraits = SoundTraits.RateFast;
-        if (isWhisper)
-            ssmlTraits = SoundTraits.PitchVerylow;
-        var textSsml = ToSsmlText(textSanitized, ssmlTraits);
+        string pitch;
+        string rate;
+        string? effect = null;
 
-        return await _ttsManager.ConvertTextToSpeech(speaker, textSsml);
+        if (isWhisper)
+        {
+            if (isMuffled)
+            {
+                pitch = (-SharedChatSystem.WhisperMuffledRange).ToString();
+                rate = "-2";
+            }
+            else
+            {
+                pitch = (-SharedChatSystem.WhisperClearRange).ToString();
+                rate = "0";
+            }
+        }
+        else
+        {
+            pitch = "0";
+            rate = (SharedChatSystem.VoiceRange / 2).ToString();
+        }
+
+        return await _ttsManager.ConvertTextToSpeech(speaker, textSanitized, pitch, rate, effect);
     }
 }

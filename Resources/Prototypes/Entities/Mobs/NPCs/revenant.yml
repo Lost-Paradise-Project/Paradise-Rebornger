@@ -26,7 +26,7 @@
     damageModifierSet: ManifestedSpirit
   - type: NoSlip
   - type: TTS # Corvax-TTS
-    voice: Kelthuzad
+    voice: shadow_fiend_dota_2
   - type: Eye
     drawFov: false
     visMask:

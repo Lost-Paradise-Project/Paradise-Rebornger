@@ -1,0 +1,32 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: LPPClothingHeadClownPomni
+  name: Clown Pomni Head
+  description: It's a pomni head
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Hats/clownPomni.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Hats/clownPomni.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: LPPClothingHeadSecHat
+  name: security service's hat
+  description: black hat, to show who's the sherif.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Hats/sec-hat.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Hats/sec-hat.rsi
+
+- type: entity
+  parent: ClothingMaskBase
+  id: LPPClothingAnonMask
+  name: Anonymous mask
+  description: Anon!
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Hats/anon.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Hats/anon.rsi

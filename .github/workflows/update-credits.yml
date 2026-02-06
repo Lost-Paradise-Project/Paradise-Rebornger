@@ -52,3 +52,4 @@ jobs:
           body: Это автоматизированный PR. Этот PR обновляет список участников github в разделе кредитов.
           author: ${{ vars.CHANGELOG_USER }} <${{ vars.CHANGELOG_EMAIL }}>
           branch: automated/credits-${{env.NOW}}
+          token: ${{ secrets.BOT_TOKEN }}

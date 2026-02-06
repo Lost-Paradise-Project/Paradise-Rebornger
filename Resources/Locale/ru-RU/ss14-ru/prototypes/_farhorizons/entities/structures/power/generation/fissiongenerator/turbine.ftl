@@ -1,0 +1,12 @@
+ent-Turbine = газовая турбина
+    .desc = Большая турбина, используемая для выработки электроэнергии с помощью горячего газа.
+ent-TurbineSmall = малая газовая турбина
+    .desc = Небольшая турбина, используемая для выработки электроэнергии с помощью горячего газа.
+ent-TurbineFlowArrow = { "" }
+    .desc = { "" }
+ent-TurbineSmallFlowArrow = { ent-TurbineFlowArrow }
+    .desc = { ent-TurbineFlowArrow.desc }
+ent-TurbineGasPipe = { "" }
+    .desc = { "" }
+ent-GasTurbineAlarmEntity = { "" }
+    .desc = { "" }
