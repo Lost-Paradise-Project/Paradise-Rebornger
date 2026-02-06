@@ -232,3 +232,10 @@ Entries:
   id: 5635
   time: '2026-02-01T13:01:05.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/45
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлен ядерный реактор!
+  id: 5636
+  time: '2026-02-06T17:17:56.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/42
