@@ -239,3 +239,12 @@ Entries:
   id: 5636
   time: '2026-02-06T17:17:56.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/42
+- author: MegaDaimond
+  changes:
+    - type: Tweak
+      message: >-
+        Изменён максимальный рост вульпканинов, людей, нианов, унатхов,
+        слаймолюдов и таяров
+  id: 5637
+  time: '2026-02-07T04:42:42.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/53

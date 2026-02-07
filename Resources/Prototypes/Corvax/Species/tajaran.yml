@@ -13,14 +13,14 @@
   femaleFirstNames: NamesTajaranFirstFemale
   maleLastNames: NamesTajaranLast # Corvax-LastnameGender
   femaleLastNames: NamesTajaranLast # Corvax-LastnameGender
-  # begin Goobstation: port EE height/width sliders
-  minHeight: 0.85
-  defaultHeight: 0.90
-  maxHeight: 1.15
-  minWidth: 0.85
-  defaultWidth: 0.90
-  maxWidth: 1.10
-  # end Goobstation: port EE height/width sliders
+#LP edit start
+  minHeight: 0.75
+  defaultHeight: 0.85
+  maxHeight: 1.04
+  minWidth: 0.75
+  defaultWidth: 0.85
+  maxWidth: 1.04
+#LP edit end
 
 - type: speciesBaseSprites
   id: MobTajaranSprites

@@ -12,15 +12,14 @@
   femaleFirstNames: NamesMothFirstFemale
   maleLastNames: NamesMothLast # Corvax-LastnameGender
   femaleLastNames: NamesMothLast # Corvax-LastnameGender
-  # begin Goobstation: port EE height/width sliders
-  # Moths have massive sprites, so they can get away with being scaled smaller (totally not biased)
+#LP edit start
   minHeight: 0.75
-  defaultHeight: 1
-  maxHeight: 1.20
-  minWidth: 0.80
-  defaultWidth: 1
-  maxWidth: 1.20
-  # end Goobstation: port EE height/width sliders
+  defaultHeight: 0.85
+  maxHeight: 1.0
+  minWidth: 0.75
+  defaultWidth: 0.85
+  maxWidth: 1.0
+#LP edit end
 
 - type: speciesBaseSprites
   id: MobMothSprites

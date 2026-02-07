@@ -8,7 +8,14 @@
   markingLimits: MobSlimeMarkingLimits
   dollPrototype: MobSlimePersonDummy
   skinColoration: Hues
-
+#LP edit start
+  minHeight: 0.75
+  defaultHeight: 1.05
+  maxHeight: 1.15
+  minWidth: 0.75
+  defaultWidth: 1.05
+  maxWidth: 1.15
+#LP edit end
 - type: speciesBaseSprites
   id: MobSlimeSprites
   sprites:

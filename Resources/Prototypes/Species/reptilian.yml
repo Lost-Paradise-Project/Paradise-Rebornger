@@ -11,6 +11,14 @@
   maleFirstNames: NamesReptilianMale
   femaleFirstNames: NamesReptilianFemale
   naming: FirstDashFirst
+#LP edit start
+  minHeight: 0.9
+  defaultHeight: 1.05
+  maxHeight: 1.22
+  minWidth: 0.9
+  defaultWidth: 1.05
+  maxWidth: 1.22
+#LP edit end
 
 - type: speciesBaseSprites
   id: MobReptilianSprites
