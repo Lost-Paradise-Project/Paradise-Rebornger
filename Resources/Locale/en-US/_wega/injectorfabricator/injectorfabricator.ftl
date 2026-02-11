@@ -1,4 +1,4 @@
-﻿injector-fabticator-label-beaker = Beaker:
+injector-fabticator-label-beaker = Beaker:
 injector-fabticator-button-eject = Eject
 injector-fabticator-no-beaker = No beaker inserted
 injector-fabticator-label-transfer-reagents = Transfer reagents:

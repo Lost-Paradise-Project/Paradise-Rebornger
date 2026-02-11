@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 using Content.Client.UserInterface.Controls;
 using Content.Shared._FarHorizons.Power.Generation.FissionGenerator;
 using Content.Shared.Atmos;

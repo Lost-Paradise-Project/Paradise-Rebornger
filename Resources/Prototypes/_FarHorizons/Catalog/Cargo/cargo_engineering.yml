@@ -1,4 +1,4 @@
-﻿- type: cargoProduct
+- type: cargoProduct
   id: NuclearReactorFlatpackPurchase
   icon:
     sprite: _FarHorizons/Structures/Power/Generation/FissionGenerator/cargo_icons.rsi

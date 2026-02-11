@@ -1,4 +1,4 @@
-﻿- type: damageModifierSet
+- type: damageModifierSet
   id: StructuralReactorCasing # StructuralMetallicStrong(er), it's going to take more than a mere baseball bat to do any real damage
   coefficients:
     Blunt: 0.1          # you

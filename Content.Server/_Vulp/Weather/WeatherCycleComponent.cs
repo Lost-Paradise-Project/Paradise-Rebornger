@@ -1,4 +1,4 @@
-﻿using Content.Shared._Vulp.Weather;
+using Content.Shared._Vulp.Weather;
 using Content.Shared.Weather;
 using JetBrains.Annotations;
 using Robust.Shared.Prototypes;

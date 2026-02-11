@@ -1,4 +1,4 @@
-﻿using Content.Shared._CorvaxGoob.RoundEnd;
+using Content.Shared._CorvaxGoob.RoundEnd;
 
 namespace Content.Client._CorvaxGoob.RoundEnd.PhotoAlbum;
 

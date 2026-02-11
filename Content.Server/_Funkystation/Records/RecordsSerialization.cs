@@ -1,4 +1,4 @@
-﻿using Content.Server.Database;
+using Content.Server.Database;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.Json;
 using Content.Shared._Funkystation.Records;

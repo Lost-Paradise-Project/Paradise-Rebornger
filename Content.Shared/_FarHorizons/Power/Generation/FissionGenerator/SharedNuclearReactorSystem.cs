@@ -1,4 +1,4 @@
-﻿using Content.Shared.Popups;
+using Content.Shared.Popups;
 using Content.Shared.Containers.ItemSlots;
 using Robust.Shared.Prototypes;
 

@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   id: NuclearFabricator
   parent: BaseLatheLube
   name: nuclear fabricator

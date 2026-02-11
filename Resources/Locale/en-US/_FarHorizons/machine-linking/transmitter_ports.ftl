@@ -1,4 +1,4 @@
-﻿signal-port-name-nuclear-reactor-data-sender = Nuclear Reactor
+signal-port-name-nuclear-reactor-data-sender = Nuclear Reactor
 signal-port-description-nuclear-reactor-data-sender = Sending info about a nuclear reactor to a monitor.
 
 signal-port-name-gas-turbine-speed-high = High Speed

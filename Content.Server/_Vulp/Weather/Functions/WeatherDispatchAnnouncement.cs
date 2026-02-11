@@ -1,4 +1,4 @@
-﻿using Content.Server.Chat.Managers;
+using Content.Server.Chat.Managers;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Chat;
 using Content.Shared.Dataset;

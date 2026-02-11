@@ -1,4 +1,4 @@
-﻿using Content.Server.GameTicking;
+using Content.Server.GameTicking;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Clothing;
 using Content.Shared._CorvaxNext.CrewMedal;

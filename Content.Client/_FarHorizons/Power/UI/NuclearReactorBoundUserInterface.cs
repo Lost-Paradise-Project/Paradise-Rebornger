@@ -1,4 +1,4 @@
-﻿using Robust.Client.UserInterface;
+using Robust.Client.UserInterface;
 using JetBrains.Annotations;
 using Content.Shared._FarHorizons.Power.Generation.FissionGenerator;
 

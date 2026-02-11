@@ -1,1 +1,1 @@
-﻿steal-target-groups-reactorfuelrod = reactor fuel rod
+steal-target-groups-reactorfuelrod = reactor fuel rod

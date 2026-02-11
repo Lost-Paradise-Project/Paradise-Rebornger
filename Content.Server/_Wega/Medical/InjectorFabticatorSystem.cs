@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using Content.Server.Power.EntitySystems;
 using Content.Shared._Wega.Medical;
 using Content.Shared._Wega.Medical.Ui;

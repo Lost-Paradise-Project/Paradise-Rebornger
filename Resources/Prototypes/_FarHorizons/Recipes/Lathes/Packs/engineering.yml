@@ -1,4 +1,4 @@
-﻿- type: latheRecipePack
+- type: latheRecipePack
   id: ReactorCircuitboards
   recipes:
   - NuclearFabricatorMachineCircuitboard

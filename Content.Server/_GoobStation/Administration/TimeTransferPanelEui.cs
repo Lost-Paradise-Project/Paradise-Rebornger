@@ -1,4 +1,4 @@
-﻿using Content.Server.Administration;
+using Content.Server.Administration;
 using Content.Server.Administration.Commands;
 using Content.Server.Administration.Managers;
 using Content.Server.Database;

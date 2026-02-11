@@ -1,4 +1,4 @@
-﻿funky-medical-records-window-title = Медицинские записи
+funky-medical-records-window-title = Медицинские записи
 funky-medical-records-yes = Да
 funky-medical-records-no = Нет
 cd-character-records-viewer-unknown = Неизвестно

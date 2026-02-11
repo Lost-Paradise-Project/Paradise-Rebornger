@@ -1,4 +1,4 @@
-﻿- type: accessGroup
+- type: accessGroup
   id: ExtendedAccess
   name: extended-access-group
   consoleAvaible: true

@@ -1,4 +1,4 @@
-﻿- type: decal
+- type: decal
   id: LPPFullTileOverlayGreyscaleS
   tags: ["station", "overlay"]
   defaultCustomColor: true

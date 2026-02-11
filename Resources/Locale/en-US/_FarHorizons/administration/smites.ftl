@@ -1,4 +1,4 @@
-﻿## Smite names
+## Smite names
 
 admin-smite-become-fuelrod-name = Become Fuel Rod
 

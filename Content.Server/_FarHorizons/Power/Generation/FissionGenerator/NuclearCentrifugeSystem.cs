@@ -1,4 +1,4 @@
-﻿using Content.Server.Popups;
+using Content.Server.Popups;
 using Content.Server.Power.EntitySystems;
 using Content.Server.Stack;
 using Content.Shared._FarHorizons.Power.Generation.FissionGenerator;

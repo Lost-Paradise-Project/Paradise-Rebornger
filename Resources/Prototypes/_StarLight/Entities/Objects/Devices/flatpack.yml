@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: BaseStructureDynamic
   id: BaseStructureFlatpack
   name: base structure flatpack

@@ -1,4 +1,4 @@
-﻿using Content.Shared._Funkystation.Records;
+using Content.Shared._Funkystation.Records;
 
 namespace Content.Server._Funkystation.Records;
 

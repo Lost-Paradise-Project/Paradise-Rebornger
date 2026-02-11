@@ -1,4 +1,4 @@
-﻿namespace Content.Shared._FarHorizons.Materials.Systems;
+namespace Content.Shared._FarHorizons.Materials.Systems;
 
 public sealed class MaterialSystem
 {

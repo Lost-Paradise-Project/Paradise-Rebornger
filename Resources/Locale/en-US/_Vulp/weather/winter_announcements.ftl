@@ -1,4 +1,4 @@
-﻿weather-winter-stabilizing-1 = The weather outside is stabilizing.
+weather-winter-stabilizing-1 = The weather outside is stabilizing.
 weather-winter-stabilizing-2 = The atmosphere is settling down.
 
 weather-winter-hot-1 = It's getting quite warm outside.

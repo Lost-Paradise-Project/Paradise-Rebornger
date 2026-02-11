@@ -1,4 +1,4 @@
-﻿### Popups
+### Popups
 reactor-smoke-start = The {$owner} begins to smoke!
 reactor-smoke-stop = The {$owner} stops smoking.
 reactor-fire-start = The {$owner} begins to burn!

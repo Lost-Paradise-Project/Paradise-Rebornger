@@ -1,4 +1,4 @@
-﻿signal-port-name-nuclear-reactor-data-receiver = Reactor Monitor
+signal-port-name-nuclear-reactor-data-receiver = Reactor Monitor
 signal-port-description-nuclear-reactor-data-receiver = Receiving info about a nuclear reactor.
 
 signal-port-name-nuclear-reactor-receiver-insert = Control Rods In

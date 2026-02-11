@@ -1,4 +1,4 @@
-﻿#if LP
+#if LP
 using Content.Shared._ERPModule.Data.Helpers;
 #endif
 

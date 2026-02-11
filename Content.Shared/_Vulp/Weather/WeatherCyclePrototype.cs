@@ -1,4 +1,4 @@
-﻿using Content.Shared.Destructible.Thresholds;
+using Content.Shared.Destructible.Thresholds;
 using Content.Shared.Weather;
 using Robust.Shared.Prototypes;
 

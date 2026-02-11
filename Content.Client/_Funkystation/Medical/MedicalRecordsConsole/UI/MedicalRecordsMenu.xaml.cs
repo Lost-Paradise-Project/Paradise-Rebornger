@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using Content.Client._CD.Records.UI;
 using Content.Client.UserInterface.Controls;
 using Content.Shared._Funkystation.Medical.MedicalRecords;

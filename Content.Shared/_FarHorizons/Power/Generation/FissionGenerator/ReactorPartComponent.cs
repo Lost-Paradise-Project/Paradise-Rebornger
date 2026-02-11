@@ -1,4 +1,4 @@
-﻿using Content.Shared._FarHorizons.Materials;
+using Content.Shared._FarHorizons.Materials;
 using Content.Shared.Atmos;
 using Content.Shared.Materials;
 using Robust.Shared.GameStates;

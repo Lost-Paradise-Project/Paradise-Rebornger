@@ -1,4 +1,4 @@
-﻿# tab headers
+# tab headers
 humanoid-profile-editor-cd-records-tab = Записи
 # headers
 humanoid-profile-editor-cd-records-header-general = Общая информация

@@ -1,4 +1,4 @@
-﻿<DefaultWindow xmlns="https://spacestation14.io"
+<DefaultWindow xmlns="https://spacestation14.io"
                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                Title="{Loc 'crew-medal-ui-header'}">
     <BoxContainer Orientation="Vertical" SeparationOverride="4" MinWidth="150">

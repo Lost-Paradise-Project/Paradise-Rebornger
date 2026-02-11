@@ -1,4 +1,4 @@
-﻿# Nuclear Reactor
+# Nuclear Reactor
 - type: sourcePort
   id: NuclearReactorDataSender
   name: signal-port-name-nuclear-reactor-data-sender

@@ -1,4 +1,4 @@
-﻿{
+{
     "version": 1,
     "license": "CC-BY-SA-3.0",
     "copyright": "TODO IT",
@@ -7,25 +7,25 @@
         "y": 32
     },
     "states": [
-		{
-			"name": "icon"
-		},
+        {
+            "name": "icon"
+        },
         {
             "name": "album-empty"
         },
         {
             "name": "filled-0"
         },
-		{
+        {
             "name": "filled-1"
         },
-		{
+        {
             "name": "filled-2"
         },
-		{
+        {
             "name": "filled-3"
         },
-		{
+        {
             "name": "filled-4"
         }
     ]

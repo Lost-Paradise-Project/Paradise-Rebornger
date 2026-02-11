@@ -1,4 +1,4 @@
-﻿tts-voice-name-papich = Папич (Media)
+tts-voice-name-papich = Папич (Media)
 tts-voice-name-bebey = Бэбэй (Media)
 tts-voice-name-puchkow = Дмитрий Пучков (Media)
 tts-voice-name-moriarti = Мориарти (Media)

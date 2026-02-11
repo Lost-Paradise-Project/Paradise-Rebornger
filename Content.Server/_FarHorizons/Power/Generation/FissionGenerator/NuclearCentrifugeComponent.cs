@@ -1,4 +1,4 @@
-﻿using Robust.Shared.Audio;
+using Robust.Shared.Audio;
 
 namespace Content.Server._FarHorizons.Power.Generation.FissionGenerator;
 

@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   name: chemical injector
   parent: [ChemicalMedipen, BaseSyndicateContraband]
   id: StimpackEmpty

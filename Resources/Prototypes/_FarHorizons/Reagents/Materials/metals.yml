@@ -1,4 +1,4 @@
-﻿- type: material
+- type: material
   parent: Steel # TODO: Materials
   id: Bohrum
   name: materials-bohrum

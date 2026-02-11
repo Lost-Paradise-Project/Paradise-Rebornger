@@ -1,4 +1,4 @@
-﻿<controls:FancyWindow
+<controls:FancyWindow
     MinSize="850 750"
     Resizable="True"
     SetSize="1000 750"

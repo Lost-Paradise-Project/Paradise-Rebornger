@@ -1,4 +1,4 @@
-﻿using Robust.Shared.Map;
+using Robust.Shared.Map;
 using Content.Shared._FarHorizons.Power.Generation.FissionGenerator;
 using Content.Client.Examine;
 using Robust.Client.GameObjects;

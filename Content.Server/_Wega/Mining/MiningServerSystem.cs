@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using System.Diagnostics.CodeAnalysis;
 using Content.Server.Power.Components;
 using Content.Shared._Wega.Mining.Components;

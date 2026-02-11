@@ -1,4 +1,4 @@
-﻿using Robust.Client.GameObjects;
+using Robust.Client.GameObjects;
 using Content.Shared._Wega.Medical;
 
 namespace Content.Client._Wega.Medical;

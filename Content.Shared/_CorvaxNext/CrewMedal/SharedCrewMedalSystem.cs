@@ -1,4 +1,4 @@
-﻿using Content.Shared.Examine;
+using Content.Shared.Examine;
 
 namespace Content.Shared._CorvaxNext.CrewMedal;
 

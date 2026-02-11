@@ -1,4 +1,4 @@
-﻿# interaction
+# interaction
 comp-crew-medal-inspection-text = Вручено {$recipient} за {$reason}.
 comp-crew-medal-award-text = {$recipient} награжден(а) {$medal}.
 # round end screen

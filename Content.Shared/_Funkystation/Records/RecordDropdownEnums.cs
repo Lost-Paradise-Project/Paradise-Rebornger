@@ -1,4 +1,4 @@
-﻿namespace Content.Shared._Funkystation.Records;
+namespace Content.Shared._Funkystation.Records;
 
 /// <summary>
 /// For initializing the "insurance provider" dropdown in the "Records" tab of the character creator.

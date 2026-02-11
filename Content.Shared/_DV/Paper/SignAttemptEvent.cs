@@ -1,4 +1,4 @@
-﻿namespace Content.Shared._DV.Paper;
+namespace Content.Shared._DV.Paper;
 
 /// <summary>
 /// Raised on the pen when trying to sign a paper.

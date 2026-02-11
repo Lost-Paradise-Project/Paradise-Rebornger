@@ -1,4 +1,4 @@
-﻿using Content.Shared._GoobStation.GPS;
+using Content.Shared._GoobStation.GPS;
 using JetBrains.Annotations;
 using Robust.Client.UserInterface;
 

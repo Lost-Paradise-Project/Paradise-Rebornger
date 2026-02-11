@@ -1,4 +1,4 @@
-﻿namespace Content.Shared._FarHorizons.Materials;
+namespace Content.Shared._FarHorizons.Materials;
 
 /// <summary>
 /// A data type that stores information on a material's properties

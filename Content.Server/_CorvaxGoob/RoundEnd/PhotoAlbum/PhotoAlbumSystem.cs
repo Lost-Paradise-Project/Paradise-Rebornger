@@ -1,4 +1,4 @@
-﻿using Content.Server._CorvaxGoob.Photo;
+using Content.Server._CorvaxGoob.Photo;
 using Content.Server.GameTicking;
 using Content.Server.Popups;
 using Content.Shared._CorvaxGoob.RoundEnd;

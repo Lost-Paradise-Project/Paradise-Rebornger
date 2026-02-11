@@ -1,4 +1,4 @@
-﻿using Content.Shared.Pinpointer;
+using Content.Shared.Pinpointer;
 using Content.Shared._GoobStation.GPS;
 using Content.Shared._GoobStation.GPS.Components;
 using System.Linq;
