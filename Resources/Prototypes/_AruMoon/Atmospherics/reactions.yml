@@ -1,4 +1,4 @@
-﻿- type: gasReaction
+- type: gasReaction
   id: BZProductionReaction
   priority: 3
   maximumTemperature: 313.149
