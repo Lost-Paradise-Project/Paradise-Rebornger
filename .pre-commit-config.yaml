@@ -19,7 +19,6 @@ repos:
         args: ["--unsafe"]
       - id: check-json
         files: "^Resources/Textures/_[^/]+/.*meta\\.json$"
-        args: ["--unsafe"]
       - id: check-toml
         files: "^Resources/ConfigPresets/.*\\.toml$"
       - id: check-xml
