@@ -19,9 +19,15 @@ public sealed class RCDFAPMenuBoundUserInterface : BoundUserInterface
     private static readonly Dictionary<string, (string Tooltip, SpriteSpecifier Sprite)> PrototypesGroupingInfo
         = new Dictionary<string, (string Tooltip, SpriteSpecifier Sprite)>
         {
-            ["Devices"] = ("rcd-component-devices", new SpriteSpecifier.Texture(new ResPath("/Textures/_LP/Interface/Radial/RCDFAP/Devices.png"))),
-            ["Gaspipes"] = ("rcd-component-gaspipes", new SpriteSpecifier.Texture(new ResPath("/Textures/_LP/Interface/Radial/RCDFAP/Gaspipes.png"))),
-            ["DisposalPipe"] = ("rcd-component-disposalpipe", new SpriteSpecifier.Texture(new ResPath("/Textures/_LP/Interface/Radial/RCDFAP/DisposalPipe.png"))),
+            ["DevicesAndAtmos"] = ("rcdfap-component-devices-and-atmos", new SpriteSpecifier.Texture(new ResPath("/Textures/_LP/Interface/Radial/RCDFAP/Category/Devices.png"))),
+            ["GaspipesMain"] = ("rcdfap-component-gaspipes-main", new SpriteSpecifier.Texture(new ResPath("/Textures/_LP/Interface/Radial/RCDFAP/Category/GaspipesMain.png"))),
+            ["GaspipesAlt1"] = ("rcdfap-component-gaspipes-alt1", new SpriteSpecifier.Texture(new ResPath("/Textures/_LP/Interface/Radial/RCDFAP/Category/GaspipesRight.png"))),
+            ["GaspipesAlt2"] = ("rcdfap-component-gaspipes-alt2", new SpriteSpecifier.Texture(new ResPath("/Textures/_LP/Interface/Radial/RCDFAP/Category/GaspipesLeft.png"))),
+            ["DisposalPipe"] = ("rcdfap-component-disposalpipe", new SpriteSpecifier.Texture(new ResPath("/Textures/_LP/Interface/Radial/RCDFAP/Category/DisposalPipe.png"))),
+            ["Tiles"] = ("rcdfap-component-tiles", new SpriteSpecifier.Texture(new ResPath("/Textures/_LP/Interface/Radial/RCDFAP/Category/Tiles.png"))),
+            ["Airlocks"] = ("rcdfap-component-airlocks", new SpriteSpecifier.Texture(new ResPath("/Textures/_LP/Interface/Radial/RCDFAP/Category/Airlocks.png"))),
+            ["Windows"] = ("rcdfap-component-windows", new SpriteSpecifier.Texture(new ResPath("/Textures/_LP/Interface/Radial/RCDFAP/Category/Windows.png"))),
+            ["Cables"] = ("rcdfap-component-cables", new SpriteSpecifier.Texture(new ResPath("/Textures/_LP/Interface/Radial/RCDFAP/Category/Cables.png"))),
         };
 
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
@@ -150,6 +156,13 @@ public sealed class RCDFAPMenuBoundUserInterface : BoundUserInterface
         {
             tooltip = Loc.GetString(proto.SetName);
         }
+
+        if (string.IsNullOrWhiteSpace(tooltip))
+        {
+            Logger.Warning($"RCDFAP tooltip is empty for prototype {proto.ID}");
+            return proto.ID;
+        }
+
 
         tooltip = OopsConcat(char.ToUpper(tooltip[0]).ToString(), tooltip.Remove(0, 1));
 

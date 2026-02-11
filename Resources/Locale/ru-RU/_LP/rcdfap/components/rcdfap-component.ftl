@@ -27,11 +27,15 @@ rcdfap-component-cannot-build-identical-tile = Эта клетка уже тут
 
 ### Category names
 
-rcdfap-component-walls-and-flooring = Стены и полы
-rcdfap-component-windows-and-grilles = Окна и решётки
+rcdfap-component-devices-and-atmos = Станционные устройста и Атмос
+rcdfap-component-gaspipes-main = Центральные
+rcdfap-component-gaspipes-alt1 = Правые
+rcdfap-component-gaspipes-alt2 = Левые
+rcdfap-component-disposalpipe = Утилизационные трубы
+rcdfap-component-tiles = Тайлы
 rcdfap-component-airlocks = Шлюзы
-rcdfap-component-electrical = Электроприборы
-rcdfap-component-lighting = Освещение
+rcdfap-component-windows = Окна
+rcdfap-component-cables = Кабеля
 
 ### Prototype names (note: constructable items will be puralized)
 

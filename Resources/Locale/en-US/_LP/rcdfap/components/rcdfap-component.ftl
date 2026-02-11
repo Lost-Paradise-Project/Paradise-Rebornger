@@ -33,18 +33,18 @@ rcdfap-component-cannot-build-identical-tile = That tile already exists there!
 
 ### Category names
 
-rcdfap-component-walls-and-flooring = Walls and flooring
-rcdfap-component-windows-and-grilles = Windows and grilles
+rcdfap-component-devices-and-atmos = Station devices and Atmos
+rcdfap-component-gaspipes-main = Central
+rcdfap-component-gaspipes-alt1 = Right
+rcdfap-component-gaspipes-alt2 = Left
+rcdfap-component-disposalpipe = Disposal pipes
+rcdfap-component-tiles = Tiles
 rcdfap-component-airlocks = Airlocks
-rcdfap-component-electrical = Electrical
-rcdfap-component-lighting = Lighting
-
+rcdfap-component-windows = Windows
+rcdfap-component-cables = Cables
 
 ### Prototype names (note: constructable items will be puralized)
 
 rcdfap-component-deconstruct = deconstruct
 rcdfap-component-floor-steel = steel tile
 rcdfap-component-plating = hull plate
-rcdfap-component-layer-Primary = Центральные
-rcdfap-component-layer-Secondary = Левые
-rcdfap-component-layer-Tertiary = Правые

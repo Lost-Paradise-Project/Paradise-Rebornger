@@ -1,4 +1,4 @@
-﻿gases-bz = БЗ
+gases-bz = БЗ
 gases-pluoxium = Плюоксиум
 gases-hydrogen = Водород
 gases-nitrium = Нитриум

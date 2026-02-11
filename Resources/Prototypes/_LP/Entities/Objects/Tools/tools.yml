@@ -2,48 +2,63 @@
   id: LPPRCDFAP
   parent: [ BaseItem, BaseEngineeringContraband ]
   name: RCDFAP
-  description: The rapid construction device can be used to quickly place and remove various station structures and fixtures. Requires compressed matter to function.
+  description: The rapid construction device for atmospheric purposes can be used to quickly place and remove various station structures and fixtures. Requires compressed matter to function.
   components:
   - type: RCDFAP
     availablePrototypes:
-    - LPPFireAlarm
+    #Gaspipes
     #Layer1
     - LPPGasPipeBend
     - LPPGasPipeStraight
     - LPPGasPipeHalf
     - LPPGasPipeFourway
     - LPPGasPipeTJunction
+    - LPPGasVentPump
+    - LPPGasPressurePump
+    - LPPGasVolumePump
+    - LPPGasPassiveVent
+    - LPPGasOutletInjector
+    - LPPGasValve
+    - LPPGasVentScrubber
+    - LPPGasPassiveGate
+    - LPPSignalControlledValve
+    - LPPPressureControlledValve
+    - LPPGasPipeSensor
+    - LPPGasPressureRegulator
     #Layer2
     - LPPGasPipeBendAlt1
     - LPPGasPipeStraightAlt1
     - LPPGasPipeHalfAlt1
     - LPPGasPipeFourwayAlt1
     - LPPGasPipeTJunctionAlt1
+    - LPPGasVentPumpAlt1
+    - LPPGasPressurePumpAlt1
+    - LPPGasVolumePumpAlt1
+    - LPPGasPassiveVentAlt1
+    - LPPGasValveAlt1
+    - LPPGasVentScrubberAlt1
+    - LPPGasPassiveGateAlt1
+    - LPPSignalControlledValveAlt1
+    - LPPGasPipeSensorAlt1
+    - LPPGasPressureRegulatorAlt1
     #Layer3
     - LPPGasPipeBendAlt2
     - LPPGasPipeStraightAlt2
     - LPPGasPipeHalfAlt2
     - LPPGasPipeFourwayAlt2
     - LPPGasPipeTJunctionAlt2
-    - LPPGasPressurePump
-    - LPPGasMixer
-    - LPPGasMixerFlipped
-    - LPPGasFilter
-    - LPPGasFilterFlipped
-    - LPPGasVolumePump
-    - LPPGasPassiveVent
-    - LPPGasOutletInjector
-    - LPPGasVentPump
-    - LPPGasValve
-    - LPPGasVentScrubber
-    - LPPAtmosDeviceFanTiny
-    - LPPGasPassiveGate
-    - LPPGasDualPortVentPump
-    - LPPSignalControlledValve
-    - LPPPressureControlledValve
+    - LPPGasVentPumpAlt2
+    - LPPGasPressurePumpAlt2
+    - LPPGasVolumePumpAlt2
+    - LPPGasPassiveVentAlt2
+    - LPPGasValveAlt2
+    - LPPGasVentScrubberAlt2
+    - LPPGasPassiveGateAlt2
+    - LPPSignalControlledValveAlt2
+    - LPPGasPipeSensorAlt2
+    - LPPGasPressureRegulatorAlt2
+    #DisposalPipes
     - LPPDisposalUnit
-    - LPPMailingUnit
-    - LPPGasPort
     - LPPDisposalJunctionFlipped
     - LPPDisposalJunction
     - LPPDisposalRouterFlipped
@@ -55,10 +70,45 @@
     - LPPDisposalSignalRouterFlipped
     - LPPDisposalTrunk
     - LPPDisposalPipe
+    - LPPMailingUnit
+    #DevicesAndAtmos
+    - LPPGasMixer
+    - LPPGasMixerFlipped
+    - LPPGasFilter
+    - LPPGasFilterFlipped
+    - LPPHeatExchanger
+    - LPPAtmosDeviceFanTiny
+    - LPPAtmosDeviceFanDirectional
+    - LPPGasDualPortVentPump
+    - LPPGasPort
     - LPPAirSensor
     - LPPFloorDrain
     - LPPAirAlarm
+    - LPPFireAlarm
+    #Tiles
+    - LPPPlating
+    - LPPFloorSteel
+    - LPPCatwalk
+    #Windows
+    - LPPPlasmaWindow
+    - LPPPlasmaWindowDirectional
+    - LPPReinforcedPlasmaWindow
+    - LPPPlasmaReinforcedWindowDirectional
+    - LPPGrille
+    #Airlocks
+    - LPPAirlock
+    - LPPAirlockGlass
+    - LPPFirelock
+    - LPPAirlockShuttle
+    - LPPAirlockGlassShuttle
+    #Cables
+    - LPPLVCable
+    - LPPMVCable
+    - LPPHVCable
+    - LPPCableTerminal
+    #Other
     - LPPDeconstruct
+    - LPPGasPipeManifold
   - type: LimitedCharges
     maxCharges: 130
     charges: 130
@@ -98,7 +148,7 @@
   id: LPPRCDFAPRecharging
   parent: LPPRCDFAP
   name: experimental RCDFAP
-  description: Cyborg-mounted Rapid Construction Device which creates compressed matter on the fly using an internal fabricator.
+  description: Cyborg-mounted Rapid Construction Device For Atmospheric Purposes which creates compressed matter on the fly using an internal fabricator.
   suffix: AutoRecharge
   components:
   - type: LimitedCharges
@@ -111,7 +161,7 @@
   parent: LPPRCDFAP
   suffix: Admeme
   name: experimental RCDFAP
-  description: A bluespace-enhanced rapid construction device that passively generates its own compressed matter.
+  description: A bluespace-enhanced rapid construction device for atmospheric purposes that passively generates its own compressed matter.
   components:
   - type: AutoRecharge
     rechargeDuration: 1
