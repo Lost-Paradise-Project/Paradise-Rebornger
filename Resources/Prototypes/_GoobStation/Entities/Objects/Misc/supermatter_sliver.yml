@@ -12,13 +12,11 @@
     - type: RadiationSource
       intensity: 1.5
     - type: Icon
-      sprite: _Goobstation/Supermatter/supermatter_sliver.rsi
+      sprite: _GoobStation/Supermatter/supermatter_sliver.rsi
       state: icon
     - type: Sprite
-      sprite: _Goobstation/Supermatter/supermatter_sliver.rsi
+      sprite: _GoobStation/Supermatter/supermatter_sliver.rsi
       state: icon
-    - type: StealTarget
-      stealGroup: SupermatterSliver
     - type: Tag
       tags:
         - HighRiskItem

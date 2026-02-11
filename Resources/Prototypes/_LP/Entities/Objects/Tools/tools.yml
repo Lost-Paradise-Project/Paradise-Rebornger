@@ -111,7 +111,6 @@
     - LPPGasPipeManifold
   - type: LimitedCharges
     maxCharges: 130
-    charges: 130
   - type: Sprite
     sprite: _LP/Objects/Tools/rcdfap.rsi
     state: icon

@@ -24,3 +24,6 @@
 
 - type: Tag
   id: CoatRack
+
+- type: Tag
+  id: Tesla

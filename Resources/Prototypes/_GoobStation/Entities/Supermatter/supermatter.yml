@@ -34,7 +34,7 @@
       range: 5
       volume: 0
       sound:
-        path: /Audio/_Goobstation/Supermatter/calm.ogg
+        path: /Audio/_GoobStation/Supermatter/calm.ogg
     - type: Physics
     - type: Speech
       speechSounds: Pai
@@ -65,11 +65,11 @@
     - type: InteractionOutline
     - type: Sprite
       drawdepth: WallMountedItems
-      sprite: _Goobstation/Supermatter/supermatter.rsi
+      sprite: _GoobStation/Supermatter/supermatter.rsi
       offset: 0, 0.25 # Corvax-Goob-SupermatterSpriteOffset
       state: supermatter
     - type: Icon
-      sprite: _Goobstation/Supermatter/supermatter.rsi
+      sprite: _GoobStation/Supermatter/supermatter.rsi
       state: supermatter
     - type: PointLight
       enabled: true
