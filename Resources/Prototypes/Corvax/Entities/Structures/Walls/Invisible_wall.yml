@@ -27,4 +27,3 @@
         density: 1000
   - type: Physics
     bodyType: Static
-
