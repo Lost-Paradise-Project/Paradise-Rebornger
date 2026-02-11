@@ -1,1 +1,1 @@
-﻿nano-chat-program-name = NanoChat
+nano-chat-program-name = NanoChat

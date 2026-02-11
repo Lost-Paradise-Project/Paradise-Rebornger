@@ -1,4 +1,4 @@
-﻿using Content.Shared._GoobStation.GPS.Components;
+using Content.Shared._GoobStation.GPS.Components;
 using Content.Shared.UserInterface;
 using Robust.Shared.Timing;
 

@@ -1,4 +1,4 @@
-﻿using Content.Shared._Funkystation.Records;
+using Content.Shared._Funkystation.Records;
 using Content.Shared.StationRecords;
 using Robust.Shared.Serialization;
 

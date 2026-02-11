@@ -1,4 +1,4 @@
-﻿- files:
+- files:
     - "accessory_drop.ogg"
     - "accessory_pickup.ogg"
     - "ammobox_drop.ogg"
@@ -68,4 +68,3 @@
   license: "CC-BY-SA-3.0"
   copyright: "Taken from Paradise SS13"
   source: "https://github.com/ss220-space/Paradise/tree/master220/sound/items/handling"
-

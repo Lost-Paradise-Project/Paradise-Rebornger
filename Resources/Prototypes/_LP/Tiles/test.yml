@@ -1,4 +1,4 @@
-﻿- type: tile
+- type: tile
   id: LPPWoodLarge
   name: tiles-wood-large
   sprite: /Textures/_LP/Tiles/wood_large.png

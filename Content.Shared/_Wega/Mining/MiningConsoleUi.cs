@@ -1,4 +1,4 @@
-﻿using Content.Shared._Wega.Mining.Components;
+using Content.Shared._Wega.Mining.Components;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared._Wega.Mining;

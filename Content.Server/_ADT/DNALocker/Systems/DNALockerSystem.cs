@@ -1,4 +1,4 @@
-﻿using Content.Server.Explosion.EntitySystems;
+using Content.Server.Explosion.EntitySystems;
 using Content.Shared.Emag.Systems;
 using Content.Shared.Forensics.Components;
 using Content.Shared.Interaction.Components;

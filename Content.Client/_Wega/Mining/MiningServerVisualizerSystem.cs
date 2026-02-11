@@ -1,4 +1,4 @@
-﻿using Robust.Client.GameObjects;
+using Robust.Client.GameObjects;
 using Content.Shared._Wega.Mining.Components;
 
 namespace Content.Client._Wega.Mining

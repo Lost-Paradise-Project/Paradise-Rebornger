@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: BaseComputerAiAccess
   id: ComputerJobSlots
   name: job slots console

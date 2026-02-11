@@ -1,4 +1,4 @@
-﻿english-names-last-dataset-1 = Акерли
+english-names-last-dataset-1 = Акерли
 english-names-last-dataset-2 = Адамс
 english-names-last-dataset-3 = Аддисон
 english-names-last-dataset-4 = Агг

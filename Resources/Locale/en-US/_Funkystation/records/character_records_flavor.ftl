@@ -1,4 +1,4 @@
-﻿# insurance providers
+# insurance providers
 character-records-insurance-provider-none = None
 character-records-insurance-provider-nanocare = NanoCare
 character-records-insurance-provider-unitedcare = UnitedCare

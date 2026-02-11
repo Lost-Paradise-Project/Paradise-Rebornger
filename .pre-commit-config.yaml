@@ -1,0 +1,36 @@
+ci:
+  autofix_commit_msg: '[pre-commit.ci] auto fixes from pre-commit hooks'
+  autofix_prs: true
+  autoupdate_commit_msg: '[pre-commit.ci] pre-commit autoupdate'
+  autoupdate_schedule: weekly
+  skip: []
+  submodules: false
+
+fail_fast: false
+files: "/_[^/]+/"
+
+repos:
+  - repo: "https://github.com/pre-commit/pre-commit-hooks"
+    rev: "v6.0.0"
+    hooks:
+      - id: fix-byte-order-marker
+      - id: check-yaml
+        files: "^Resources/Prototypes/_[^/]+/.*\\.yml$"
+        args: ["--unsafe"]
+      - id: check-json
+        files: "^Resources/Textures/_[^/]+/.*meta\\.json$"
+      - id: check-toml
+        files: "^Resources/ConfigPresets/.*\\.toml$"
+      - id: check-xml
+        files: "^Content.Client/_[^/]+/.*\\.xaml$"
+        types: ["text"]
+      - id: check-case-conflict
+      - id: check-symlinks
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: ['--maxkb=2000']
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: pretty-format-json
+        files: "^Resources/Textures/_[^/]+/.*meta\\.json$"
+        args: ["--autofix", "--indent", "4", "--no-ensure-ascii", "--no-sort-keys"]

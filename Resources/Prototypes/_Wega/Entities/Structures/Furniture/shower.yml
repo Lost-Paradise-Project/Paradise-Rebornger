@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   id: Shower
   name: shower
   description: "Caution: wet floor and wet people. Not designed for firefighting or escaping security guards."

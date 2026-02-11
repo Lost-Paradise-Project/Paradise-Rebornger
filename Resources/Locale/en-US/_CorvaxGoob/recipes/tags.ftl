@@ -1,1 +1,1 @@
-﻿construction-graph-tag-pen = ручка
+construction-graph-tag-pen = ручка

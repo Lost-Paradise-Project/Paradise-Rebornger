@@ -1,4 +1,4 @@
-﻿using Content.Shared._Wega.Dirt;
+using Content.Shared._Wega.Dirt;
 using Content.Shared._Wega.Dirt.Components;
 using Content.Shared.EntityEffects;
 using Robust.Shared.Prototypes;

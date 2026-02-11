@@ -25,9 +25,9 @@
           tags:
           - Handcuffs
   - type: BorgModuleIcon
-    icon: 
+    icon:
       sprite: Interface/Actions/actions_borg.rsi
-      state: xenoborg-laser-module # ЗАМЕНИТЬ 
+      state: xenoborg-laser-module # ЗАМЕНИТЬ
   - type: Item
     inhandVisuals:
       left:
@@ -64,9 +64,9 @@
     hands:
     - item: LPPWeaponLaserCarbineBorgSec
   - type: BorgModuleIcon
-    icon: 
+    icon:
       sprite: Interface/Actions/actions_borg.rsi
-      state: xenoborg-laser2-module # ЗАМЕНИТЬ 
+      state: xenoborg-laser2-module # ЗАМЕНИТЬ
   - type: StaticPrice
     price: 1500
   - type: Item

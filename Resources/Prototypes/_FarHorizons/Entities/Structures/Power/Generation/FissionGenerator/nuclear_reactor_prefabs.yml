@@ -1,4 +1,4 @@
-﻿- type: nuclearReactorPrefab
+- type: nuclearReactorPrefab
   id: ReactorPrefabEmpty
   parts:
    -1,-1: BaseReactorPart # Can't be empty, so I'll put this nothing part in an inaccessible spot

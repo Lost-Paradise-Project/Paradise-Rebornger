@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: BaseComputerAiAccess
   id: NuclearReactorMonitor
   name: nuclear reactor monitor

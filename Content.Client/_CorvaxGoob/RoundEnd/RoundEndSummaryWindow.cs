@@ -1,4 +1,4 @@
-﻿using Content.Client._CorvaxGoob.RoundEnd.PhotoAlbum;
+using Content.Client._CorvaxGoob.RoundEnd.PhotoAlbum;
 using Content.Client.Message;
 using Content.Client.Stylesheets;
 using Robust.Client.GameObjects;

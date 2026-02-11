@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   id: InjectorFabricator
   parent: [ BaseMachinePowered, ConstructibleMachine ]
   name: injector fabricator

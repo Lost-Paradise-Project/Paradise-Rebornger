@@ -1,4 +1,4 @@
-﻿gps-window-title = GLOBAL POSITIONING SYSTEM
+gps-window-title = GLOBAL POSITIONING SYSTEM
 gps-window-name-label = Designation
 
 gps-window-gps-position-label = GPS Coords

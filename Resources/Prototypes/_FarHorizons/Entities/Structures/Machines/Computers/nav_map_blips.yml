@@ -1,4 +1,4 @@
-﻿- type: navMapBlip
+- type: navMapBlip
   id: NuclearReactor
   scale: 2.75
   color: LightGray

@@ -1,4 +1,4 @@
-﻿medical-info-no-info = No medical information.
+medical-info-no-info = No medical information.
 
 # categories
 medical-info-category-allergies = Allergies

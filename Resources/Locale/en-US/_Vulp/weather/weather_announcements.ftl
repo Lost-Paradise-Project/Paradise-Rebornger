@@ -1,4 +1,4 @@
-﻿weather-stabilizing-1 = The atmosphere is settling down.
+weather-stabilizing-1 = The atmosphere is settling down.
 weather-stabilizing-2 = The weather outside is stabilizing.
 weather-stabilizing-3 = Air outside seems calmer.
 weather-stabilizing-4 = The skies are clearing up.

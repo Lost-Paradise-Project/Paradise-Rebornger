@@ -1,4 +1,4 @@
-﻿using Content.Shared._Funkystation.Medical.MedicalRecords;
+using Content.Shared._Funkystation.Medical.MedicalRecords;
 using Content.Shared.StationRecords;
 
 namespace Content.Server._Funkystation.Medical.MedicalRecords;

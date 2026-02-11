@@ -1,4 +1,4 @@
-﻿using Content.Shared._Wega.Medical.Ui;
+using Content.Shared._Wega.Medical.Ui;
 using JetBrains.Annotations;
 
 namespace Content.Client._Wega.Medical.Ui;

@@ -1,4 +1,4 @@
-﻿- type: polymorph
+- type: polymorph
   id: AdminFuelRodSmite
   configuration:
     entity: MeatReactorFuelRod

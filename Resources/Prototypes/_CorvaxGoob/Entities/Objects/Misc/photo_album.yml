@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   id: PhotoAlbum
   parent: BaseItem
   name: photo album

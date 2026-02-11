@@ -1,4 +1,4 @@
-﻿using Content.Server.Administration;
+using Content.Server.Administration;
 using Content.Server.EUI;
 using Content.Shared.Administration;
 using Robust.Shared.Console;

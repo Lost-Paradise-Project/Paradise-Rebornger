@@ -1,4 +1,4 @@
-﻿medical-info-no-info = Нет медицинской информации.
+medical-info-no-info = Нет медицинской информации.
 # categories
 medical-info-category-allergies = Аллергии
 medical-info-category-prescriptions = Рецепты

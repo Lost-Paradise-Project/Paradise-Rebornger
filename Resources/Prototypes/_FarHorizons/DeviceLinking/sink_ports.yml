@@ -1,4 +1,4 @@
-﻿# Nuclear Reactor
+# Nuclear Reactor
 - type: sinkPort
   id: InsertControlRods
   name: signal-port-name-nuclear-reactor-receiver-insert

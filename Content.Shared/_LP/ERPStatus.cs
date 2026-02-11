@@ -1,4 +1,4 @@
-﻿namespace Content.Shared._ERPModule.Data;
+namespace Content.Shared._ERPModule.Data;
 
 public enum ErpStatus
 {

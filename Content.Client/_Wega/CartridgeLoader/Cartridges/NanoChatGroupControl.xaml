@@ -1,4 +1,4 @@
-﻿<Control xmlns="https://spacestation14.io">
+<Control xmlns="https://spacestation14.io">
     <Button Name="MainButton" StyleClasses="ButtonSquare">
         <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
             <Label Name="GroupName" HorizontalExpand="True"/>

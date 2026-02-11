@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: BaseComputerCircuitboard
   id: NuclearReactorMonitorComputerCircuitboard
   name: nuclear reactor monitor computer board

@@ -1,4 +1,4 @@
-﻿mining-console-title = Консоль майнинг-серверов
+mining-console-title = Консоль майнинг-серверов
 mining-console-mode = Режим работы:
 mining-console-toggle-mode = Переключить
 mining-console-global-activation = Глоб. активация:

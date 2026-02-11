@@ -1,4 +1,4 @@
-﻿using Content.Client._Funkystation.Medical.MedicalRecordsConsole.UI;
+using Content.Client._Funkystation.Medical.MedicalRecordsConsole.UI;
 using Content.Shared._Funkystation.Medical.MedicalRecords;
 using Content.Shared.StationRecords;
 using JetBrains.Annotations;

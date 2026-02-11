@@ -1,4 +1,4 @@
-﻿funky-medical-records-window-title = Medical Records
+funky-medical-records-window-title = Medical Records
 
 funky-medical-records-yes = Yes
 funky-medical-records-no = No
@@ -36,4 +36,3 @@ funky-medical-records-post-mortem-title = Post Mortem Instructions:
 funky-medical-records-doctors-notes-title = Doctor's Notes
 
 funky-medical-records-autopsy-info = Autopsy Report
-

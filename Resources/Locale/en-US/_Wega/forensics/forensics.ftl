@@ -1,4 +1,4 @@
-﻿forensic-scanner-print-chat-history-text = Напечатать историю чатов
+forensic-scanner-print-chat-history-text = Напечатать историю чатов
 forensic-scanner-print-chat-history-message = Распечатать все сообщения чатов из этого КПК
 
 forensic-scanner-chat-history-title = Отчет истории чатов КПК

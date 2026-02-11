@@ -1,4 +1,4 @@
-﻿- type: guideEntry
+- type: guideEntry
   id: NuclearReactor
   name: guide-entry-nuclear-reactor
   text: "/ServerInfo/_FarHorizons/Guidebook/Engineering/NuclearReactor.xml"

@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: BaseComputerCircuitboard
   id: MiningMonitoringComputerCircuitboard
   name: mining monitoring console computer board

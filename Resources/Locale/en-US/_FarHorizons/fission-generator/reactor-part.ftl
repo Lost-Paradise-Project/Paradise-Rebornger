@@ -1,4 +1,4 @@
-﻿reactor-part-nrad-0 = It's glowing slightly blue.
+reactor-part-nrad-0 = It's glowing slightly blue.
 reactor-part-nrad-1 = It's glowing somewhat blue.
 reactor-part-nrad-2 = It's glowing blue.
 reactor-part-nrad-3 = It's brightly glowing blue.

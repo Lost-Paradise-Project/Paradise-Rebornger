@@ -1,4 +1,4 @@
-﻿using Content.Shared.Access.Systems;
+using Content.Shared.Access.Systems;
 using Content.Shared.Paper;
 using Content.Shared.Popups;
 using Content.Shared.Tag;

@@ -1,4 +1,4 @@
-﻿- type: localizedDataset
+- type: localizedDataset
   id: NamesHumanLastEnglish
   values:
     prefix: english-names-last-dataset-

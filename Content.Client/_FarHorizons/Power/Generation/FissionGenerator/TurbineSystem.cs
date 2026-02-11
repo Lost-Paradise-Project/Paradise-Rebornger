@@ -1,4 +1,4 @@
-﻿using Robust.Shared.Map;
+using Robust.Shared.Map;
 using Robust.Client.GameObjects;
 using Content.Shared.Repairable;
 using Content.Shared._FarHorizons.Power.Generation.FissionGenerator;

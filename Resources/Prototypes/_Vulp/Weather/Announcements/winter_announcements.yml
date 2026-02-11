@@ -1,4 +1,4 @@
-﻿# TODO: whenever wizden fixes their 0-based indexing, update the ftl file
+# TODO: whenever wizden fixes their 0-based indexing, update the ftl file
 # It's currently caused by RobustRandom not respective LocalizedDataset's 1-based indexing
 
 # Specific datasets for winter.

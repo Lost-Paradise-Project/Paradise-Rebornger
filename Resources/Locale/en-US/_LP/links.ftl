@@ -1,1 +1,1 @@
-﻿launcher-heading-name = Ссылки
+launcher-heading-name = Ссылки

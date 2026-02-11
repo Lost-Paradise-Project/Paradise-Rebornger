@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using Content.Server.Weather;
 using Content.Shared._Vulp.Weather;
 using Content.Shared.Weather;

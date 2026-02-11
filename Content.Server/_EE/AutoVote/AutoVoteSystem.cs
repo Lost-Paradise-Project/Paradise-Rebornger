@@ -1,4 +1,4 @@
-﻿using Robust.Shared.Configuration;
+using Robust.Shared.Configuration;
 using Content.Server.Voting.Managers;
 using Content.Shared.GameTicking;
 using Content.Shared.Voting;

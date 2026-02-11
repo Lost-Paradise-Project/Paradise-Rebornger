@@ -1,4 +1,4 @@
-﻿using Content.Server._Funkystation.Records;
+using Content.Server._Funkystation.Records;
 using Content.Server.Station.Systems;
 using Content.Server.StationRecords.Systems;
 using Content.Server.StationRecords;

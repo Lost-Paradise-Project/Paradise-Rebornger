@@ -1,4 +1,4 @@
-﻿using Content.Shared.Humanoid;
+using Content.Shared.Humanoid;
 using Robust.Shared.Enums;
 using Robust.Shared.Serialization;
 

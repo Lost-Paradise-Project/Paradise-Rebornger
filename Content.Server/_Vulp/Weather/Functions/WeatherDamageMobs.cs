@@ -1,4 +1,4 @@
-﻿using Content.Server.Body.Systems;
+using Content.Server.Body.Systems;
 using Content.Shared._Vulp.Weather;
 using Content.Shared.Alert;
 using Content.Shared.Body.Components;

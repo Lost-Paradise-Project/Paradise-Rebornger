@@ -1,4 +1,4 @@
-﻿# Ui
+# Ui
 nano-chat-ui-add = Добавить
 nano-chat-ui-add-contact-title = Добавить контакт
 nano-chat-ui-add-contact-tooltip = Добавить контакт

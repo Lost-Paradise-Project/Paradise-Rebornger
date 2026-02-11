@@ -1,4 +1,4 @@
-﻿- type: stationGoal
+- type: stationGoal
   id: LPTransit
   text: station-goal-transit
 

@@ -1,4 +1,4 @@
-﻿using Content.Server.Forensics;
+using Content.Server.Forensics;
 using Content.Server.GameTicking;
 using Content.Server.StationRecords.Systems;
 using Content.Server.StationRecords;

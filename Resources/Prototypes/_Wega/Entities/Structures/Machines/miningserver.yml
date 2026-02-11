@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   id: MiningServer
   name: mining server
   parent: SmallConstructibleMachine

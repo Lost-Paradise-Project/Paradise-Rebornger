@@ -1,4 +1,4 @@
-﻿using Content.Server.Atmos.Rotting;
+using Content.Server.Atmos.Rotting;
 using Content.Server.Body.Components;
 using Content.Server.DoAfter;
 using Content.Server.Popups;

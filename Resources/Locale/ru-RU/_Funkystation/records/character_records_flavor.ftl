@@ -1,4 +1,4 @@
-﻿# insurance providers
+# insurance providers
 character-records-insurance-provider-none = Нет
 character-records-insurance-provider-nanocare = НаноЗабота
 character-records-insurance-provider-unitedcare = ЕдинаяЗабота
