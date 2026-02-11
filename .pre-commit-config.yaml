@@ -1,24 +1,25 @@
 ci:
-    autofix_commit_msg: '[pre-commit.ci] auto fixes from pre-commit hooks'
-    autofix_prs: true
-    autoupdate_commit_msg: '[pre-commit.ci] pre-commit autoupdate'
-    autoupdate_schedule: weekly
-    skip: []
-    submodules: false
+  autofix_commit_msg: '[pre-commit.ci] auto fixes from pre-commit hooks'
+  autofix_prs: true
+  autoupdate_commit_msg: '[pre-commit.ci] pre-commit autoupdate'
+  autoupdate_schedule: weekly
+  skip: []
+  submodules: false
 
 fail_fast: false
-
 files: "/_[^/]+/"
 
 repos:
   - repo: "https://github.com/pre-commit/pre-commit-hooks"
     rev: "v6.0.0"
     hooks:
+      - id: fix-byte-order-marker
       - id: check-yaml
         files: "^Resources/Prototypes/_[^/]+/.*\\.yml$"
         args: ["--unsafe"]
       - id: check-json
         files: "^Resources/Textures/_[^/]+/.*meta\\.json$"
+        args: ["--unsafe"]
       - id: check-toml
         files: "^Resources/ConfigPresets/.*\\.toml$"
       - id: check-xml
