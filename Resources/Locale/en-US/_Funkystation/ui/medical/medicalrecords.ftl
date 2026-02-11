@@ -36,4 +36,3 @@ funky-medical-records-post-mortem-title = Post Mortem Instructions:
 funky-medical-records-doctors-notes-title = Doctor's Notes
 
 funky-medical-records-autopsy-info = Autopsy Report
-

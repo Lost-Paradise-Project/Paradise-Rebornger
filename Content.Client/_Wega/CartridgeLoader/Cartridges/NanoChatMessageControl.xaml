@@ -12,7 +12,7 @@
                 <RichTextLabel Name="MessageText"/>
             </BoxContainer>
         </PanelContainer>
-        
+
         <!-- Flexible space -->
         <Control HorizontalExpand="True"/>
     </BoxContainer>

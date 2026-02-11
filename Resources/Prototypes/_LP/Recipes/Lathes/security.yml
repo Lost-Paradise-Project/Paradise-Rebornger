@@ -1,5 +1,5 @@
 # За баланс хз, вроде достаточно дорогие
-- type: latheRecipe 
+- type: latheRecipe
   id: LPPBorgModuleSecurityWeapon
   result: LPPBorgModuleSecurityWeapon
   materials:
@@ -7,7 +7,7 @@
     Glass: 800
     Plastic: 500
 
-- type: latheRecipe 
+- type: latheRecipe
   id: LPPBorgModuleSecurityLaserCarbine
   result: LPPBorgModuleSecurityLaserCarbine
   materials:

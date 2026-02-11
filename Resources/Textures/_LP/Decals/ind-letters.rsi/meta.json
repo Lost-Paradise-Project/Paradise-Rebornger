@@ -7,17 +7,17 @@
         "y": 32
     },
     "states": [
-      {
-        "name": "letter_A"
-      },
-      {
-        "name": "letter_B"
-      },
-      {
-        "name": "letter_C"
-      },
-      {
-        "name": "letter_D"
-      }
+        {
+            "name": "letter_A"
+        },
+        {
+            "name": "letter_B"
+        },
+        {
+            "name": "letter_C"
+        },
+        {
+            "name": "letter_D"
+        }
     ]
 }

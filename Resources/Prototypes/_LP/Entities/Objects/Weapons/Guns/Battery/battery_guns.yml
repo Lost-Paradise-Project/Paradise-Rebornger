@@ -7,7 +7,7 @@
   components:
   - type: BatterySelfRecharger
     # autoRecharge: true
-    autoRechargeRate: 30 
+    autoRechargeRate: 30
 
 # Тайзер с самозарядкой
 - type: entity
@@ -17,7 +17,7 @@
   components:
   - type: BatterySelfRecharger
     # autoRecharge: true
-    autoRechargeRate: 30 
+    autoRechargeRate: 30
 
 # Лазерный карабин с самозарядкой
 - type: entity

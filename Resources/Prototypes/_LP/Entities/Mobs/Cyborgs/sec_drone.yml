@@ -22,9 +22,9 @@
     - Command
   - type: MobThresholds
     thresholds:
-      0: Alive 
+      0: Alive
       300: Critical
-      500: Dead 
+      500: Dead
   - type: AmbientSound
     enabled: true
     range: 4
@@ -32,7 +32,7 @@
     sound:
       path: /Audio/Effects/shuttle_thruster.ogg
   - type: FootstepModifier
-    footstepSoundCollection: null      
+    footstepSoundCollection: null
   - type: MovementSpeedModifier
     baseWalkSpeed: 5
     baseSprintSpeed: 9
@@ -81,7 +81,7 @@
   - type: FlashImmunity
   # Консоль записей экипажа
   - type: GeneralStationRecordConsole
-  - type: UserInterface 
+  - type: UserInterface
     interfaces:
       enum.GeneralStationRecordConsoleKey.Key:
         type: GeneralStationRecordConsoleBoundUserInterface
@@ -89,4 +89,3 @@
     uis:
       enum.GeneralStationRecordConsoleKey.Key:
         toggleAction: ActionAGhostShowStationRecords
-

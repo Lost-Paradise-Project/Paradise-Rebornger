@@ -62,4 +62,3 @@ public sealed partial class PhotoCardWindow : BaseWindow
         return mode & _allowedResizeModes;
     }
 }
-
