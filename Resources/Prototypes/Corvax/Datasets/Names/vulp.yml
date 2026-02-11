@@ -9,7 +9,7 @@
   values:
     prefix: names-vulp-first-female-dataset-
     count: 345
-  
+
 - type: localizedDataset
   id: NamesVulpLast
   values:

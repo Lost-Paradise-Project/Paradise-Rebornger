@@ -75,4 +75,3 @@ public sealed partial class MechMenu : FancyWindow
         }
     }
 }
-

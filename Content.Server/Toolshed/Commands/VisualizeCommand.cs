@@ -47,4 +47,3 @@ internal sealed class ToolshedVisualizeEui : BaseEui
         return new ToolshedVisualizeEuiState(_entities);
     }
 }
-

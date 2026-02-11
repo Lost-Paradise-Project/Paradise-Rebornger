@@ -38,4 +38,3 @@ public sealed partial class GeneratedParallaxTextureSource : IParallaxTextureSou
         cache.Unload(Identifier);
     }
 }
-

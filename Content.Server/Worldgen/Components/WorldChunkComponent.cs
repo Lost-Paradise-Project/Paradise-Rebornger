@@ -19,4 +19,3 @@ public sealed partial class WorldChunkComponent : Component
     /// </summary>
     [DataField("map")] public EntityUid Map;
 }
-

@@ -5,4 +5,3 @@ public enum MicrowaveVisualizerLayers : byte
     Base,
     BaseUnlit
 }
-

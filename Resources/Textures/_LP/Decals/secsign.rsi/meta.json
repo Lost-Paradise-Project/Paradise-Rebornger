@@ -7,32 +7,32 @@
         "y": 32
     },
     "states": [
-      {
-        "name": "secsign1"
-      },
-      {
-        "name": "secsign2"
-      },
-      {
-        "name": "secsign3"
-      },
-      {
-        "name": "secsign4"
-      },
-      {
-        "name": "secsign5"
-      },
-      {
-        "name": "secsign6"
-      },
-      {
-        "name": "secsign7"
-      },
-      {
-        "name": "secsign8"
-      },
-      {
-        "name": "secsign9"
-      }
+        {
+            "name": "secsign1"
+        },
+        {
+            "name": "secsign2"
+        },
+        {
+            "name": "secsign3"
+        },
+        {
+            "name": "secsign4"
+        },
+        {
+            "name": "secsign5"
+        },
+        {
+            "name": "secsign6"
+        },
+        {
+            "name": "secsign7"
+        },
+        {
+            "name": "secsign8"
+        },
+        {
+            "name": "secsign9"
+        }
     ]
 }

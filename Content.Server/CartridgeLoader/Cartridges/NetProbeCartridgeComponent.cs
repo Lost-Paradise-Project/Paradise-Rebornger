@@ -21,5 +21,3 @@ public sealed partial class NetProbeCartridgeComponent : Component
     [DataField("soundScan")]
     public SoundSpecifier SoundScan = new SoundPathSpecifier("/Audio/Machines/scan_finish.ogg");
 }
-
-

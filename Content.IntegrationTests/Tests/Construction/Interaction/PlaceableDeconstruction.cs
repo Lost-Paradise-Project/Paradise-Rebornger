@@ -20,4 +20,3 @@ public sealed class PlaceableDeconstruction : InteractionTest
         await AssertEntityLookup((Steel, 1), (Rod, 2));
     }
 }
-

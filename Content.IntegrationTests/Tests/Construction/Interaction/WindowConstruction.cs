@@ -47,4 +47,3 @@ public sealed class WindowConstruction : InteractionTest
         await AssertEntityLookup((RGlass, 2));
     }
 }
-

@@ -34,4 +34,3 @@ public sealed partial class GatewayGeneratorDestinationComponent : Component
     [DataField]
     public Vector2i Origin;
 }
-

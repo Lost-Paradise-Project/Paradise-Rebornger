@@ -501,4 +501,3 @@
   components:
   - type: AccessReader
     access: [["Chemistry"]]
-

@@ -57,4 +57,3 @@ public sealed class NoiseDrivenDebrisSelectorSystem : BaseWorldSystem
         args.DebrisProto = l[0];
     }
 }
-

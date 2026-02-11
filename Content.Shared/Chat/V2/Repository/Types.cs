@@ -57,4 +57,3 @@ public sealed class MessagesNukedEvent(List<uint> set) : EntityEventArgs
 {
     public uint[] MessageIds = CollectionsMarshal.AsSpan(set).ToArray();
 }
-

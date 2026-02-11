@@ -29,4 +29,3 @@ public sealed partial class AccessibilityTab : Control
         Control.Initialize();
     }
 }
-

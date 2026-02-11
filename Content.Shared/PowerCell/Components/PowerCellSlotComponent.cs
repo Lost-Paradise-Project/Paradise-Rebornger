@@ -24,4 +24,3 @@ public sealed partial class PowerCellSlotComponent : Component
     public bool FitsInCharger = true;
 
 }
-

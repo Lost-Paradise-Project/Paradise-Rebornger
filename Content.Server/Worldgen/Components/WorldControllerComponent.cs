@@ -22,4 +22,3 @@ public sealed partial class WorldControllerComponent : Component
     /// </summary>
     [DataField("chunks")] public Dictionary<Vector2i, EntityUid> Chunks = new();
 }
-

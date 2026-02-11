@@ -44,4 +44,3 @@ public sealed class NoiseIndexSystem : EntitySystem
         return gen.Evaluate(coords);
     }
 }
-

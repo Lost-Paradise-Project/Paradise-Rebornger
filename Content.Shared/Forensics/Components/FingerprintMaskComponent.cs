@@ -8,4 +8,3 @@ namespace Content.Shared.Forensics.Components;
 /// </summary>
 [RegisterComponent, NetworkedComponent]
 public sealed partial class FingerprintMaskComponent : Component;
-

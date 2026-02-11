@@ -61,4 +61,3 @@ sealed class SalvageRulerCommand : IConsoleCommand
         shell.WriteLine(total.ToString());
     }
 }
-

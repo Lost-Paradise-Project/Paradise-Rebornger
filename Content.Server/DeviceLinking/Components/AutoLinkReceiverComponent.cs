@@ -9,4 +9,3 @@ public sealed partial class AutoLinkReceiverComponent : Component
     [DataField("channel", required: true)]
     public string AutoLinkChannel = default!;
 }
-

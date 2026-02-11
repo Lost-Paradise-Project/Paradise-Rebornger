@@ -167,4 +167,3 @@ public abstract partial class NoisePostProcess
 {
     public abstract float Process(float inp);
 }
-

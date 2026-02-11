@@ -12,4 +12,3 @@ public sealed partial class MappingActionsButton : Button
         RobustXamlLoader.Load(this);
     }
 }
-

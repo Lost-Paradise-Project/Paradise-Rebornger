@@ -86,4 +86,3 @@ public sealed class BlobFloorPlanBuilderSystem : BaseWorldSystem
         _map.SetTiles(gridUid, grid, taken.Select(x => (x.Key, x.Value)).ToList());
     }
 }
-

@@ -4,4 +4,3 @@ public sealed partial class PlantAdjustWater : BasePlantAdjustAttribute<PlantAdj
 {
     public override string GuidebookAttributeName { get; set; } = "plant-attribute-water";
 }
-

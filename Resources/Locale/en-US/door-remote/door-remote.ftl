@@ -13,4 +13,3 @@ door-remote-switch-state-toggle-bolts = You switch the remote to toggle bolts
 door-remote-switch-state-toggle-emergency-access = You switch the remote to toggle emergency access
 door-remote-no-power = The door is not powered
 door-remote-denied = Access denied
-

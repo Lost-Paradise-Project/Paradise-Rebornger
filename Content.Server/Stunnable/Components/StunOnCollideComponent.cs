@@ -63,4 +63,3 @@ public sealed partial class StunOnCollideComponent : Component
     /// </summary>
     [DataField("fixture")] public string FixtureID = "projectile";
 }
-

@@ -112,4 +112,3 @@ public sealed partial class DevourerComponent : Component
     public float HealRate = 15f;
 
 }
-

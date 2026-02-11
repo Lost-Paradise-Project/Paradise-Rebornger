@@ -79,4 +79,3 @@ public sealed class BotanySwabSystem : EntitySystem
         args.Handled = true;
     }
 }
-

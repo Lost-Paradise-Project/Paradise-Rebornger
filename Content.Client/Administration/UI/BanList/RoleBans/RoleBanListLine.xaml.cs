@@ -37,4 +37,3 @@ public sealed partial class RoleBanListLine : BoxContainer, IBanListLine<SharedB
         IdsClicked = null;
     }
 }
-

@@ -145,4 +145,3 @@ namespace Content.Client.Radiation.Overlays
         };
     }
 }
-

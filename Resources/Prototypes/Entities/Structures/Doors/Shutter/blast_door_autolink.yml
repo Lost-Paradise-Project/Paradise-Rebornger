@@ -126,4 +126,3 @@
   components:
     - type: AutoLinkReceiver
       channel: Windows
-

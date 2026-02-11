@@ -60,4 +60,3 @@ public readonly record struct ResearchServerPointsChangedEvent(EntityUid Server,
 /// <param name="Points"></param>
 [ByRefEvent]
 public record struct ResearchServerGetPointsPerSecondEvent(EntityUid Server, int Points);
-

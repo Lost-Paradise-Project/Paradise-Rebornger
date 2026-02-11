@@ -11,4 +11,3 @@ public sealed partial class PreventCollideComponent : Component
     [AutoNetworkedField]
     public EntityUid Uid;
 }
-

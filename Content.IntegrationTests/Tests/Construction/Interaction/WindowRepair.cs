@@ -43,4 +43,3 @@ public sealed class WindowRepair : InteractionTest
         await AssertEntityLookup((RGlass, 2));
     }
 }
-

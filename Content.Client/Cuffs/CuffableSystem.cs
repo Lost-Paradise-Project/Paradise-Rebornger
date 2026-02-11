@@ -60,4 +60,3 @@ public sealed class CuffableSystem : SharedCuffableSystem
         }
     }
 }
-

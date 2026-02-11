@@ -242,4 +242,3 @@
     startAnnouncement: station-event-unknown-shuttle-incoming #!!
   - type: LoadMapRule
     gridPath: /Maps/Shuttles/ShuttleEvent/spacebus.yml
-

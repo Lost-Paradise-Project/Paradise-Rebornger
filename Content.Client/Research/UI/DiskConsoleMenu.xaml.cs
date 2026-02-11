@@ -26,4 +26,3 @@ public sealed partial class DiskConsoleMenu : FancyWindow
         CostLabel.Text = Loc.GetString("tech-disk-ui-cost-label", ("amount", state.PointCost));
     }
 }
-

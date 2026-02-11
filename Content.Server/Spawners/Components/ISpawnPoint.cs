@@ -4,4 +4,3 @@ public interface ISpawnPoint
 {
     SpawnPointType SpawnType { get; set; }
 }
-

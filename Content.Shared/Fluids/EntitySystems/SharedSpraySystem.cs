@@ -77,4 +77,3 @@ public abstract class SharedSpraySystem : EntitySystem
 }
 
 public sealed partial class SprayLiquidEvent : InstantActionEvent;
-

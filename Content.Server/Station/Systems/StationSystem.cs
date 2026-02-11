@@ -506,4 +506,3 @@ public sealed class StationRenamedEvent : EntityEventArgs
         NewName = newName;
     }
 }
-

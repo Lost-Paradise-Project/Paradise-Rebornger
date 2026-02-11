@@ -123,4 +123,3 @@ public enum NavMapChunkType : byte
     Wall = SharedNavMapSystem.Directions,
     Airlock = 2 * SharedNavMapSystem.Directions,
 }
-

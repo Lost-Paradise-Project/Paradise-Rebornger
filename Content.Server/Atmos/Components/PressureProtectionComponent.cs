@@ -30,4 +30,3 @@ public record struct GetPressureProtectionValuesEvent
     public float LowPressureMultiplier;
     public float LowPressureModifier;
 }
-

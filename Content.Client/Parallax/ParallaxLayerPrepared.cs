@@ -20,4 +20,3 @@ public struct ParallaxLayerPrepared
     /// </summary>
     public ParallaxLayerConfig Config { get; set; }
 }
-

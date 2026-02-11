@@ -21,4 +21,3 @@ public sealed partial class OwnedDebrisComponent : Component
     /// </summary>
     [DataField("owningController")] public EntityUid OwningController;
 }
-

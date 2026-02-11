@@ -33,4 +33,3 @@ public sealed partial class BlobFloorPlanBuilderComponent : Component
     [DataField("floorPlacements", required: true)]
     public int FloorPlacements { get; private set; }
 }
-

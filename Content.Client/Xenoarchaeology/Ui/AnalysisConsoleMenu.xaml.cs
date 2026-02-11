@@ -230,4 +230,3 @@ public sealed partial class AnalysisConsoleMenu : FancyWindow
             ("class", Loc.GetString($"artifact-node-class-{Math.Min(6, predecessorNodes.Count + 1)}"))));
     }
 }
-

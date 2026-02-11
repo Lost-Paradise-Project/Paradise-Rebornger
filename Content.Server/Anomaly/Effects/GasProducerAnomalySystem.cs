@@ -93,4 +93,3 @@ public sealed class GasProducerAnomalySystem : EntitySystem
         }
     }
 }
-

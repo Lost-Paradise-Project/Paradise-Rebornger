@@ -49,4 +49,3 @@ ent-CaptainGunStealObjective = { ent-BaseCaptainObjective }
 
 # ent-NukeDiskStealObjective = { ent-BaseCaptainObjective }
 #     .desc = { ent-BaseCaptainObjective.desc }
-

@@ -58,4 +58,3 @@ public sealed partial class BiomePrototype : IPrototype, IInheritingPrototype
         }
     }
 }
-

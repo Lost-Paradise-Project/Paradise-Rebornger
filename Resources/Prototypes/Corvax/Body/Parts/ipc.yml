@@ -104,4 +104,3 @@
     - type: Sprite
       sprite: Corvax/Mobs/Species/Ipc/parts.rsi
       state: "r_foot"
-

@@ -4,4 +4,3 @@ public sealed partial class PlantAdjustHealth : BasePlantAdjustAttribute<PlantAd
 {
     public override string GuidebookAttributeName { get; set; } = "plant-attribute-health";
 }
-

@@ -24,5 +24,3 @@ public sealed partial class MeleeSpeechWindow : DefaultWindow
 	}
 
 }
-
-

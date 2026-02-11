@@ -56,4 +56,3 @@ public struct GridPointsNearEnumerator
         return true;
     }
 }
-

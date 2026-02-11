@@ -82,4 +82,3 @@ public sealed class WorldgenConfigSystem : EntitySystem
         DebugTools.Assert(HasComp<WorldControllerComponent>(target));
     }
 }
-

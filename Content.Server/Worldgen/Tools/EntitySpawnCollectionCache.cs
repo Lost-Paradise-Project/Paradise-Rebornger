@@ -93,4 +93,3 @@ public sealed class EntitySpawnCollectionCache
         [ViewVariables] public float CumulativeProbability { get; set; }
     }
 }
-

@@ -7,4 +7,3 @@ cmd-lockeyes-help = Usage: lockeyes <true/false>
 cmd-rotateeyes-desc = Rotates every player's current eye to the specified rotation
 cmd-rotateeyes-help = rotateeyes <degrees (default 0)>
 cmd-rotateeyes-command-count = Set {$count} eye rotations
-

@@ -82,4 +82,3 @@ public sealed partial class AdminOptionsTab : Control
             OverlayGhostHideMax);
     }
 }
-

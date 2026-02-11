@@ -6,4 +6,3 @@
 #         driver = Tools/mapping-merge-driver.sh %A %O %B
 
 dotnet run --project ./Content.Tools "$@"
-

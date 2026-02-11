@@ -42,4 +42,3 @@ public sealed class BarSignBoundUserInterface(EntityUid owner, Enum uiKey) : Bou
             _menu?.UpdateState(signPrototype);
     }
 }
-

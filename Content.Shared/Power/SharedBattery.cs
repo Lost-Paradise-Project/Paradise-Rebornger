@@ -79,4 +79,3 @@ public sealed class BatterySetDischargeRateMessage(float rate) : BoundUserInterf
 {
     public float Rate = rate;
 }
-

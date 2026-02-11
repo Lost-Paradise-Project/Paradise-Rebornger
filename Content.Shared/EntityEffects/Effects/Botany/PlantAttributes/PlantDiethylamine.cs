@@ -8,4 +8,3 @@ public sealed partial class PlantDiethylamine : EntityEffectBase<PlantDiethylami
     public override string EntityEffectGuidebookText(IPrototypeManager prototype, IEntitySystemManager entSys) =>
         Loc.GetString("entity-effect-guidebook-plant-diethylamine", ("chance", Probability));
 }
-

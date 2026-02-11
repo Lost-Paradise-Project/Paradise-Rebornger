@@ -46,4 +46,3 @@ injector-component-cannot-toggle-draw-message = Больше не набрать
 injector-component-cannot-toggle-inject-message = Нечего вводить!
 
 ## mob-inject doafter messages
-

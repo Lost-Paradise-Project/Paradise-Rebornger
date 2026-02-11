@@ -15,4 +15,3 @@ public sealed partial class WorldLoaderComponent : Component
     [ViewVariables(VVAccess.ReadWrite)] [DataField("radius")]
     public int Radius = 128;
 }
-

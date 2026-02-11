@@ -129,4 +129,3 @@ public sealed partial class SericultureActionEvent : InstantActionEvent { }
 /// </summary>
 [Serializable, NetSerializable]
 public sealed partial class SericultureDoAfterEvent : SimpleDoAfterEvent { }
-

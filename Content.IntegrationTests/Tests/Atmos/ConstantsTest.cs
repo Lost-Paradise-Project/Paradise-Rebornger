@@ -48,4 +48,3 @@ public sealed class ConstantsTest
         await pair.CleanReturnAsync();
     }
 }
-

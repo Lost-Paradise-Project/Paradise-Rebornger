@@ -57,4 +57,3 @@ public abstract class BaseWorldSystem : EntitySystem
         return _worldController.GetOrCreateChunk(chunk, map, controller);
     }
 }
-

@@ -17,4 +17,3 @@ public sealed partial class RadiationReceiverComponent : Component
     [ViewVariables(VVAccess.ReadOnly)]
     public float CurrentRadiation;
 }
-

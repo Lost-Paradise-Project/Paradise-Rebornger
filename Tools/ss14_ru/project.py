@@ -28,4 +28,3 @@ class Project:
                 continue
 
         return files
-

@@ -64,4 +64,3 @@ public sealed class MagicMirrorBoundUserInterface : BoundUserInterface
         _window.UpdateState(data);
     }
 }
-

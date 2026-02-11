@@ -117,4 +117,3 @@ public sealed class ParallaxOverlay : Overlay
         worldHandle.UseShader(null);
     }
 }
-

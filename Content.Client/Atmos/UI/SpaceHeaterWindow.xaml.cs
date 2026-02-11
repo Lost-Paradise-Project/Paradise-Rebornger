@@ -70,4 +70,3 @@ public sealed partial class SpaceHeaterWindow : DefaultWindow
         DecreaseTempRange.Disabled = targetTemperature - TemperatureChangeDelta < MinTemp;
     }
 }
-

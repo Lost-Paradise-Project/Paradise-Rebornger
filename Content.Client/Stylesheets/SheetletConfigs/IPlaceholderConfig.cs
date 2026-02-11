@@ -6,4 +6,3 @@ public interface IPlaceholderConfig : ISheetletConfig
 {
     public ResPath PlaceholderPath { get; }
 }
-

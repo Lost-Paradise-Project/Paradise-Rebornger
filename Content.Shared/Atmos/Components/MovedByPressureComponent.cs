@@ -34,4 +34,3 @@ public sealed partial class MovedByPressureComponent : Component
     [DataField]
     public HashSet<string> TableLayerRemoved = new();
 }
-

@@ -50,4 +50,3 @@ public static class MetaLicenseGenerator
         file.Write(JsonSerializer.Serialize(output, serializeOptions));
     }
 }
-

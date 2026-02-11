@@ -7,7 +7,7 @@
     "y": 32
   },
   "states": [
-    { 
+    {
       "name": "tray-on" , "delays": [[0.2, 0.2]]
     },
     {

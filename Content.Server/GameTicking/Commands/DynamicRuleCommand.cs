@@ -100,4 +100,3 @@ public sealed class DynamicRuleCommand : ToolshedCommand
         return _dynamicRuleSystem.Rules(input);
     }
 }
-

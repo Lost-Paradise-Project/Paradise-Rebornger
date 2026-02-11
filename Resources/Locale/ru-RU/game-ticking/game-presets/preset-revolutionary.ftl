@@ -57,6 +57,6 @@ rev-headrev-name = [color=#5e9cff]{ $name }[/color] конвертировал {
 rev-deconverted-title = Разконвертированы!
 rev-deconverted-text =
     Со смертью последнего главы революции, революция оканчивается.
-    
+
     Вы больше не революционер, так что ведите себя хорошо.
 rev-deconverted-confirm = Подтвердить

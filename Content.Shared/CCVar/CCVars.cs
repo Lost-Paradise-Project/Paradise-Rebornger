@@ -37,7 +37,7 @@ public sealed partial class CCVars : CVars
     /// </summary>
     public static readonly CVarDef<bool> DebugPow3rDisableParallel =
         CVarDef.Create("debug.pow3r_disable_parallel", false, CVar.SERVERONLY);
-    
+
     // Port Respawn EE Start
 
     #region GhostRespawn

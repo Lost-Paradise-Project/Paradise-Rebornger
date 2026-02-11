@@ -14,4 +14,3 @@ public sealed partial class PermanentBlindnessComponent : Component
     [DataField, AutoNetworkedField]
     public int Blindness = 0;
 }
-

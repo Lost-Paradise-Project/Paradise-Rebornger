@@ -52,4 +52,3 @@ public sealed partial class ChangelingTransformComponent : Component
 
     public override bool SendOnlyToOwner => true;
 }
-

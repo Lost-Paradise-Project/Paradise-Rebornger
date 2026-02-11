@@ -69,4 +69,3 @@ public static class WorldGen
         return inp * ChunkSize + Vector2i.One * (ChunkSize / 2);
     }
 }
-

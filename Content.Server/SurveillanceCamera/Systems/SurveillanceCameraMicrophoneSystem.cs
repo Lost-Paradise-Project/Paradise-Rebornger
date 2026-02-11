@@ -107,4 +107,3 @@ public sealed class SurveillanceCameraSpeechSendEvent : EntityEventArgs
         Message = message;
     }
 }
-

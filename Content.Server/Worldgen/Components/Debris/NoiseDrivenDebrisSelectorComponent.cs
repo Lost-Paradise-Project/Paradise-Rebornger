@@ -41,4 +41,3 @@ public sealed partial class NoiseDrivenDebrisSelectorComponent : Component
     [DataField("noiseChannel", customTypeSerializer: typeof(PrototypeIdSerializer<NoiseChannelPrototype>))]
     public string NoiseChannel { get; private set; } = default!;
 }
-

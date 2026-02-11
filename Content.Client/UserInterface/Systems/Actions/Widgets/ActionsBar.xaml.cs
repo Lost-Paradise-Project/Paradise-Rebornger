@@ -12,4 +12,3 @@ public sealed partial class ActionsBar : UIWidget
         RobustXamlLoader.Load(this);
     }
 }
-

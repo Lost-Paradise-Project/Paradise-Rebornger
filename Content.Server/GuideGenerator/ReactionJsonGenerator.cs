@@ -36,4 +36,3 @@ public sealed partial class ReactionJsonGenerator
         file.Write(JsonSerializer.Serialize(reactions, serializeOptions));
     }
 }
-

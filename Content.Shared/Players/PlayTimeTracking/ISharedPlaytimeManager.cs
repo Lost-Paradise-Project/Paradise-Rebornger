@@ -9,4 +9,3 @@ public interface ISharedPlaytimeManager
     /// </summary>
     IReadOnlyDictionary<string, TimeSpan> GetPlayTimes(ICommonSession session);
 }
-

@@ -18,4 +18,3 @@ public sealed partial class BiomeSelectionComponent : Component
     [DataField(required: true)]
     public List<ProtoId<BiomePrototype>> Biomes = new();
 }
-

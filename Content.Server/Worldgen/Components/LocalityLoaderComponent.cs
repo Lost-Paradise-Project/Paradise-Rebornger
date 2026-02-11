@@ -16,4 +16,3 @@ public sealed partial class LocalityLoaderComponent : Component
     /// </summary>
     [DataField("loadingDistance")] public int LoadingDistance = 32;
 }
-

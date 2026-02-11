@@ -56,5 +56,3 @@ public sealed class HumanoidMarkingModifierBoundUserInterface : BoundUserInterfa
         SendMessage(new HumanoidMarkingModifierBaseLayersSetMessage(layer, info, true));
     }
 }
-
-

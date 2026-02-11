@@ -17,4 +17,3 @@ public sealed partial class NoiseIndexComponent : Component
     [Access(typeof(NoiseIndexSystem), Friend = AccessPermissions.ReadWriteExecute, Other = AccessPermissions.None)]
     public Dictionary<string, NoiseGenerator> Generators { get; } = new();
 }
-

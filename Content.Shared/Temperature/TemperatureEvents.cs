@@ -27,4 +27,3 @@ public sealed class OnTemperatureChangeEvent : EntityEventArgs
         TemperatureDelta = delta;
     }
 }
-

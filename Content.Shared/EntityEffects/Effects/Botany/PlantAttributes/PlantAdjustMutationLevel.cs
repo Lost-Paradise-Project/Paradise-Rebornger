@@ -4,4 +4,3 @@ public sealed partial class PlantAdjustMutationLevel : BasePlantAdjustAttribute<
 {
     public override string GuidebookAttributeName { get; set; } = "plant-attribute-mutation-level";
 }
-

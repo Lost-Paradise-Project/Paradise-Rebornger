@@ -66,4 +66,3 @@ public sealed class MechBoundUserInterface : BoundUserInterface
         return component?.Ui;
     }
 }
-

@@ -14,4 +14,3 @@ public sealed partial class LoadedChunkComponent : Component
     /// </summary>
     [ViewVariables] public List<EntityUid>? Loaders = null;
 }
-

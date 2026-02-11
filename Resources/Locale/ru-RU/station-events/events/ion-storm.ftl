@@ -80,4 +80,3 @@ ion-storm-law-protect = ВЫ НЕ ДОЛЖНЫ ПРИЧИНЯТЬ ВРЕД { $wh
 ion-storm-law-concept-verb = { $concept } { $verb } { $subjects }
 
 # leaving out renaming since its annoying for players to keep track of
-

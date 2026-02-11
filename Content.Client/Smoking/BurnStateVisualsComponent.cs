@@ -10,4 +10,3 @@ public sealed partial class BurnStateVisualsComponent : Component
     [DataField("unlitIcon")]
     public string UnlitIcon = "icon";
 }
-

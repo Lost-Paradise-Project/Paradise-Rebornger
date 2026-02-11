@@ -25,4 +25,3 @@ public partial interface IGhostRoleRaffleDecider
     /// </param>
     void PickWinner(IEnumerable<ICommonSession> candidates, Func<ICommonSession, bool> tryTakeover);
 }
-

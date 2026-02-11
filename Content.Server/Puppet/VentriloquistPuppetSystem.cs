@@ -94,4 +94,3 @@ namespace Content.Server.Puppet
         }
     }
 }
-

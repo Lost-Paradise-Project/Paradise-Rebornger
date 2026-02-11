@@ -4,4 +4,3 @@ public sealed partial class PlantAdjustMutationMod : BasePlantAdjustAttribute<Pl
 {
     public override string GuidebookAttributeName { get; set; } = "plant-attribute-mutation-mod";
 }
-

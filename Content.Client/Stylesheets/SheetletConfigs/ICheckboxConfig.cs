@@ -7,4 +7,3 @@ public interface ICheckboxConfig
     public ResPath CheckboxUncheckedPath { get; }
     public ResPath CheckboxCheckedPath { get; }
 }
-

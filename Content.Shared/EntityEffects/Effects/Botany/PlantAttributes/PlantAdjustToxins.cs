@@ -6,4 +6,3 @@ public sealed partial class PlantAdjustToxins : BasePlantAdjustAttribute<PlantAd
 
     public override bool GuidebookIsAttributePositive { get; protected set; } = false;
 }
-

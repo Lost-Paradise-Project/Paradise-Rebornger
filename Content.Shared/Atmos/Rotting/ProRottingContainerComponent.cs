@@ -11,4 +11,3 @@ public sealed partial class ProRottingContainerComponent : Component
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     public float DecayModifier = 3f;
 }
-

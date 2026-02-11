@@ -74,4 +74,3 @@ public abstract class MovementTest : InteractionTest
         return delta.X;
     }
 }
-

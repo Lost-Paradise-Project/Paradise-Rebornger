@@ -50,4 +50,3 @@ public sealed partial class GrabberDoAfterEvent : SimpleDoAfterEvent
 public sealed partial class InsertEquipmentEvent : SimpleDoAfterEvent
 {
 }
-

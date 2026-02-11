@@ -12,4 +12,3 @@ public sealed partial class ResearchConsoleComponent : Component
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     public ProtoId<RadioChannelPrototype> AnnouncementChannel = "Science";
 }
-

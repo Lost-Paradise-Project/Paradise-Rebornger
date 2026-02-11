@@ -1,4 +1,4 @@
-ghost-respawn-time-left = Before the opportunity to return to the round { $time } 
+ghost-respawn-time-left = Before the opportunity to return to the round { $time }
     { $time ->
         [one] minute
        *[other] minutes

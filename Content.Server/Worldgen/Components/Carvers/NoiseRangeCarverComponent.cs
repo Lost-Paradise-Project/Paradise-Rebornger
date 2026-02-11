@@ -25,4 +25,3 @@ public sealed partial class NoiseRangeCarverComponent : Component
     [DataField("ranges", required: true)]
     public List<Vector2> Ranges { get; private set; } = default!;
 }
-

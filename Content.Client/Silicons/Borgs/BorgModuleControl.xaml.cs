@@ -23,4 +23,3 @@ public sealed partial class BorgModuleControl : PanelContainer
         RemoveButton.Visible = canRemove;
     }
 }
-
