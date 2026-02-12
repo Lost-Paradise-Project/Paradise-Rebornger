@@ -2,7 +2,7 @@
   parent: BaseComputerAiAccess
   id: ComputerSupermatter
   name: supermatter monitoring console
-  description: Used to monitor the status of supermatter crystals.
+  description: Used to monitor the status of supermatter crystals. It has a label "BL CORP Engineering Technology".
   components:
   - type: Computer
     board: SupermatterComputerCircuitboard

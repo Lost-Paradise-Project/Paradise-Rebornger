@@ -17,7 +17,7 @@
 - type: entity
   id: Supermatter
   name: supermatter crystal
-  description: A strangely translucent and iridescent crystal.
+  description: A strangely translucent and iridescent crystal. It has a label "BL CORP Engineering Technology".
   placement:
     mode: SnapgridCenter
   components:
