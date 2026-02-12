@@ -2,7 +2,7 @@
   parent: BaseStructure
   id: LPPReflector
   name: reflector
-  description: A special reflective panel specialized for reflecting emitter bolts in any direction.
+  description: A special reflective panel specialized for reflecting emitter bolts in any direction. It has a label "BL CORP Engineering Technology".
   components:
   - type: Fixtures
     fixtures:

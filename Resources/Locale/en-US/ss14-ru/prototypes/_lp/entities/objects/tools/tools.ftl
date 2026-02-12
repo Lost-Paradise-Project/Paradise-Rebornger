@@ -1,13 +1,13 @@
 ent-LPPRCDFAP = RCDFAP
-    .desc = The rapid construction device for atmospheric purposes can be used to quickly place and remove various station structures and fixtures. Requires compressed matter to function.
+    .desc = The rapid construction device for atmospheric purposes can be used to quickly place and remove various station structures and fixtures. Requires compressed matter to function. It has a label "BL CORP Engineering Technology".
 ent-LPPRCDFAPEmpty = { ent-LPPRCDFAP }
     .suffix = Empty
     .desc = { ent-LPPRCDFAP.desc }
 ent-LPPRCDFAPRecharging = experimental RCDFAP
-    .desc = Cyborg-mounted Rapid Construction Device For Atmospheric Purposes which creates compressed matter on the fly using an internal fabricator.
+    .desc = Cyborg-mounted Rapid Construction Device For Atmospheric Purposes which creates compressed matter on the fly using an internal fabricator. It has a label "BL CORP Engineering Technology".
     .suffix = AutoRecharge
 ent-LPPRCDFAPExperimental = experimental RCDFAP
-    .desc = A bluespace-enhanced rapid construction device for atmospheric purposes that passively generates its own compressed matter.
+    .desc = A bluespace-enhanced rapid construction device for atmospheric purposes that passively generates its own compressed matter. It has a label "BL CORP Engineering Technology".
     .suffix = Admeme
 ent-LPPRCDFAPAmmo = compressed matter
     .desc = A cartridge of raw matter compacted by bluespace technology. Used in rapid construction devices for atmospheric purposes.
