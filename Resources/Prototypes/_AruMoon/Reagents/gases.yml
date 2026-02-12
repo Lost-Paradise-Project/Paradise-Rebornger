@@ -71,9 +71,9 @@
         conditions:
         - !type:MetabolizerTypeCondition
           type: [ Human, Animal, Rat, Plant, Vox ]
-        ratios:
-          CarbonDioxide: 1.0
-          Pluoxium: -1.0
+          ratios:
+            CarbonDioxide: 1.0
+            Pluoxium: -1.0
 
 - type: reagent
   id: Hydrogen
@@ -102,7 +102,6 @@
         - !type:ReagentCondition
           reagent: Nitrium
           min: 3
-        statusLifetime: 64
         walkSpeedModifier: 1.5
         sprintSpeedModifier: 1.5
       - !type:ModifyStatusEffect
