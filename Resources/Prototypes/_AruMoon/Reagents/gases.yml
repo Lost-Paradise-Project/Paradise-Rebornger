@@ -71,9 +71,11 @@
         conditions:
         - !type:MetabolizerTypeCondition
           type: [ Human, Animal, Rat, Plant, Vox ]
-          ratios:
-            CarbonDioxide: 1.0
-            Pluoxium: -1.0
+      # Convert Oxygen into CO2.
+      - !type:ModifyLungGas
+        ratios:
+          CarbonDioxide: 1.0
+          Oxygen: -1.0
 
 - type: reagent
   id: Hydrogen
