@@ -463,6 +463,11 @@ namespace Content.Client.Lobby.UI
 
                 _flavorText = new FlavorText.FlavorText();
 
+                // begin funky - flavor text is in the Records tab now
+                _recordsTab.PersonalInfoContainer.Visible = true;
+                _recordsTab.PersonalInfoContainer.AddChild(_flavorText);
+                // end funky
+
                 //LP edit start
                 _erpStatusButton = new OptionButton() { HorizontalAlignment = HAlignment.Right };
                 _erpStatusContainer = new BoxContainer()
@@ -473,13 +478,14 @@ namespace Content.Client.Lobby.UI
                 _erpStatusContainer.AddChild(new Label() { Text = Loc.GetString("humanoid-profile-editor-erp-label") });
                 _erpStatusContainer.AddChild(new Control() { HorizontalExpand = true });
                 _erpStatusContainer.AddChild(_erpStatusButton);
-                _flavorText.AddChild(_erpStatusContainer);
-                //LP edit end
+                _recordsTab.PersonalInfoContainer.AddChild(_erpStatusContainer);
 
-                // begin funky - flavor text is in the Records tab now
-                _recordsTab.PersonalInfoContainer.Visible = true;
-                _recordsTab.PersonalInfoContainer.AddChild(_flavorText);
-                // end funky
+                _erpStatusButton?.OnItemSelected += args =>
+                {
+                    _erpStatusButton.SelectId(args.Id);
+                    SetErpStatus((ErpStatus)args.Id);
+                };
+                //LP edit end
 
                 _flavorTextEdit = _flavorText.CFlavorTextInput;
 
@@ -494,6 +500,20 @@ namespace Content.Client.Lobby.UI
                 _recordsTab.PersonalInfoContainer.Visible = false;
                 _recordsTab.PersonalInfoContainer.RemoveChild(_flavorText);
                 // end funky
+
+                //LP edit start
+                if (_erpStatusContainer != null)
+                {
+                    _recordsTab.PersonalInfoContainer.RemoveChild(_erpStatusContainer);
+
+                    if (_erpStatusButton != null)
+                    {
+                        _erpStatusContainer.RemoveChild(_erpStatusButton);
+                        _erpStatusButton = null;
+                    }
+                    _erpStatusContainer = null;
+                }
+                //LP edit end
 
                 _flavorText.OnFlavorTextChanged -= OnFlavorTextChange;
                 _flavorText.Dispose();
