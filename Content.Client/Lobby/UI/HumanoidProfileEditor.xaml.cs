@@ -76,6 +76,11 @@ namespace Content.Client.Lobby.UI
         private FlavorText.FlavorText? _flavorText;
         private TextEdit? _flavorTextEdit;
 
+        //  LP edit start
+        private BoxContainer? _erpStatusContainer;
+        private OptionButton? _erpStatusButton;
+        //LP edit end
+
         // One at a time.
         private LoadoutWindow? _loadoutWindow;
 
@@ -217,9 +222,9 @@ namespace Content.Client.Lobby.UI
             // LP edit start
             #region ERP-MODULE
 
-            ErpStatusButton.OnItemSelected += args =>
+            _erpStatusButton?.OnItemSelected += args =>
             {
-                ErpStatusButton.SelectId(args.Id);
+                _erpStatusButton.SelectId(args.Id);
                 SetErpStatus((ErpStatus)args.Id);
             };
 
@@ -440,7 +445,7 @@ namespace Content.Client.Lobby.UI
 
         private void UpdateErpControlsVisibility(bool obj)
         {
-            ERPStatusContainer.Visible = obj;
+            _erpStatusContainer?.Visible = obj;
         }
 
         #endregion
@@ -457,6 +462,19 @@ namespace Content.Client.Lobby.UI
                     return;
 
                 _flavorText = new FlavorText.FlavorText();
+
+                //LP edit start
+                _erpStatusButton = new OptionButton() { HorizontalAlignment = HAlignment.Right };
+                _erpStatusContainer = new BoxContainer()
+                {
+                    HorizontalExpand = true,
+                    Visible = false
+                };
+                _erpStatusContainer.AddChild(new Label() { Text = Loc.GetString("humanoid-profile-editor-erp-label") });
+                _erpStatusContainer.AddChild(new Control() { HorizontalExpand = true });
+                _erpStatusContainer.AddChild(_erpStatusButton);
+                _flavorText.AddChild(_erpStatusContainer);
+                //LP edit end
 
                 // begin funky - flavor text is in the Records tab now
                 _recordsTab.PersonalInfoContainer.Visible = true;
@@ -1319,7 +1337,7 @@ namespace Content.Client.Lobby.UI
 
             const ErpStatus defaultStatus = ErpStatus.Ask;
 
-            ErpStatusButton.Clear();
+            _erpStatusButton?.Clear();
 
             var statusLabels = new Dictionary<ErpStatus, string>
             {
@@ -1332,17 +1350,17 @@ namespace Content.Client.Lobby.UI
             {
                 if (statusLabels.TryGetValue(status, out var label))
                 {
-                    ErpStatusButton.AddItem(label, (int)status);
+                    _erpStatusButton?.AddItem(label, (int)status);
                 }
             }
 
             if (Enum.IsDefined(Profile.ErpStatus))
             {
-                ErpStatusButton.SelectId((int)Profile.ErpStatus);
+                _erpStatusButton?.SelectId((int)Profile.ErpStatus);
             }
             else
             {
-                ErpStatusButton.SelectId((int)defaultStatus);
+                _erpStatusButton?.SelectId((int)defaultStatus);
             }
         }
 
@@ -1552,10 +1570,10 @@ namespace Content.Client.Lobby.UI
             WidthSlider.SetValueWithoutEvent(Profile?.Width ?? species.DefaultWidth);
 
             var height = MathF.Round(species.AverageHeight * HeightSlider.Value);
-            HeightLabel.Text = Loc.GetString("humanoid-profile-editor-height-label", ("height", (int) height));
+            HeightLabel.Text = Loc.GetString("humanoid-profile-editor-height-label", ("height", (int)height));
 
             var width = MathF.Round(species.AverageWidth * WidthSlider.Value);
-            WidthLabel.Text = Loc.GetString("humanoid-profile-editor-width-label", ("width", (int) width));
+            WidthLabel.Text = Loc.GetString("humanoid-profile-editor-width-label", ("width", (int)width));
 
             UpdateDimensions(SliderUpdate.Both);
         }
@@ -1597,10 +1615,10 @@ namespace Content.Client.Lobby.UI
             SetProfileWidth(widthValue);
 
             var height = MathF.Round(species.AverageHeight * HeightSlider.Value);
-            HeightLabel.Text = Loc.GetString("humanoid-profile-editor-height-label", ("height", (int) height));
+            HeightLabel.Text = Loc.GetString("humanoid-profile-editor-height-label", ("height", (int)height));
 
             var width = MathF.Round(species.AverageWidth * WidthSlider.Value);
-            WidthLabel.Text = Loc.GetString("humanoid-profile-editor-width-label", ("width", (int) width));
+            WidthLabel.Text = Loc.GetString("humanoid-profile-editor-width-label", ("width", (int)width));
 
             UpdateWeight();
         }
@@ -1620,10 +1638,10 @@ namespace Content.Client.Lobby.UI
                 var density = fixture.Fixtures["fix1"].Density;
                 var avg = (Profile.Width + Profile.Height) / 2;
                 var weight = MathF.Round(MathF.PI * MathF.Pow(radius * avg, 2) * density);
-                WeightLabel.Text = Loc.GetString("humanoid-profile-editor-weight-label", ("weight", (int) weight));
+                WeightLabel.Text = Loc.GetString("humanoid-profile-editor-weight-label", ("weight", (int)weight));
             }
             else // Whelp, the fixture doesn't exist, guesstimate it instead
-                WeightLabel.Text = Loc.GetString("humanoid-profile-editor-weight-label", ("weight", (int) 71));
+                WeightLabel.Text = Loc.GetString("humanoid-profile-editor-weight-label", ("weight", (int)71));
 
             // SpriteViewS.InvalidateMeasure();
             // SpriteViewN.InvalidateMeasure();

@@ -2,6 +2,7 @@ using System.Linq;
 using System.Numerics;
 using System.Threading;
 using Content.Client.Verbs;
+using Content.Shared._ERPModule.Data;       //LP edit
 using Content.Shared.Examine;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Input;
@@ -74,7 +75,7 @@ namespace Content.Client.Examine
 
         public override void Update(float frameTime)
         {
-            if (_examineTooltipOpen is not {Visible: true}) return;
+            if (_examineTooltipOpen is not { Visible: true }) return;
             if (!_examinedEntity.Valid || _playerManager.LocalEntity is not { } player) return;
 
             if (!CanExamine(player, _examinedEntity))
@@ -137,7 +138,7 @@ namespace Content.Client.Examine
             // Center it on the entity if they use the verb instead.
             verb.Act = () => DoExamine(args.Target, false);
             verb.Text = Loc.GetString("examine-verb-name");
-            verb.Icon = new SpriteSpecifier.Texture(new ("/Textures/Interface/VerbIcons/examine.svg.192dpi.png"));
+            verb.Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/examine.svg.192dpi.png"));
             verb.ShowOnExamineTooltip = false;
             verb.ClientExclusive = true;
             args.Verbs.Add(verb);
@@ -159,7 +160,7 @@ namespace Content.Client.Examine
             var entity = GetEntity(ev.EntityUid);
 
             OpenTooltip(player.Value, entity, ev.CenterAtCursor, ev.OpenAtOldTooltip, ev.KnowTarget);
-            UpdateTooltipInfo(player.Value, entity, ev.Message, ev.Verbs, getVerbs: false);
+            UpdateTooltipInfo(player.Value, entity, ev.Message, ev.Verbs, getVerbs: false, erpStatus: ev.ERPstatus);    //LP edit
         }
 
         public override void SendExamineTooltip(EntityUid player, EntityUid target, FormattedMessage message, bool getVerbs, bool centerAtCursor)
@@ -173,7 +174,7 @@ namespace Content.Client.Examine
         ///     not fill it with information. This is done when the server sends examine info/verbs,
         ///     or immediately if it's entirely clientside.
         /// </summary>
-        public void OpenTooltip(EntityUid player, EntityUid target, bool centeredOnCursor=true, bool openAtOldTooltip=true, bool knowTarget = true)
+        public void OpenTooltip(EntityUid player, EntityUid target, bool centeredOnCursor = true, bool openAtOldTooltip = true, bool knowTarget = true)
         {
             // Close any examine tooltip that might already be opened
             // Before we do that, save its position. We'll prioritize opening any new popups there if
@@ -260,7 +261,7 @@ namespace Content.Client.Examine
         /// <summary>
         ///     Fills the examine tooltip with a message and buttons if applicable.
         /// </summary>
-        public void UpdateTooltipInfo(EntityUid player, EntityUid target, FormattedMessage message, List<Verb>? verbs=null, bool getVerbs = true)
+        public void UpdateTooltipInfo(EntityUid player, EntityUid target, FormattedMessage message, List<Verb>? verbs = null, bool getVerbs = true, ErpStatus? erpStatus = null)
         {
             var vBox = _examineTooltipOpen?.GetChild(0).GetChild(0);
             if (vBox == null)
@@ -278,11 +279,35 @@ namespace Content.Client.Examine
                 if (string.IsNullOrWhiteSpace(text))
                     continue;
 
-                var richLabel = new RichTextLabel() { Margin = new Thickness(4, 4, 0, 4)};
+                var richLabel = new RichTextLabel() { Margin = new Thickness(4, 4, 0, 4) };
                 richLabel.SetMessage(message);
                 vBox.AddChild(richLabel);
                 break;
             }
+
+            //LP edit start
+            if (erpStatus != null)
+            {
+                var erpLabel = new Label
+                {
+                    FontColorOverride = erpStatus switch
+                    {
+                        ErpStatus.No => Color.OrangeRed,
+                        ErpStatus.Ask => Color.LightGoldenrodYellow,
+                        ErpStatus.Yes => Color.LawnGreen,
+                        _ => Color.DarkRed
+                    },
+                    Text = erpStatus switch
+                    {
+                        ErpStatus.No => "ЕРП: Отказ",
+                        ErpStatus.Ask => "ЕРП: Спросить",
+                        ErpStatus.Yes => "ЕРП: Согласие",
+                        _ => "Ошибка статуса"
+                    }
+                };
+                vBox.AddChild(erpLabel);
+            }
+            //LP edit end
 
             var totalVerbs = _verbSystem.GetLocalVerbs(target, player, typeof(ExamineVerb));
 
