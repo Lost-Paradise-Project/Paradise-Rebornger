@@ -14,7 +14,7 @@ public sealed class HeightAdjustSystem : EntitySystem
 {
     [Dependency] private readonly SharedPhysicsSystem _physics = default!;
     [Dependency] private readonly SharedContentEyeSystem _eye = default!;
-    [Dependency] private readonly SharedHumanoidAppearanceSystem _appearance = default!;
+    [Dependency] private readonly HumanoidProfileSystem _appearance = default!;
     [Dependency] private readonly IConfigurationManager _config = default!;
 
 
@@ -51,7 +51,7 @@ public sealed class HeightAdjustSystem : EntitySystem
         else
             succeeded = false;
 
-        if (EntityManager.HasComponent<HumanoidAppearanceComponent>(uid))
+        if (EntityManager.HasComponent<HumanoidProfileComponent>(uid))
             _appearance.SetScale(uid, scale);
         else
             succeeded = false;

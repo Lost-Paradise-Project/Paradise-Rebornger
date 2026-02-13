@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Markings;
 
 namespace Content.Client._LP.Sponsors;
@@ -38,9 +39,12 @@ public static class SponsorSimpleManager
             var sponsorTier = sponsorInfo.Tier;
             if (sponsorTier >= 3)
             {
-                var sponsormarks = IoCManager.Resolve<MarkingManager>().Markings.Select((a, _) => a.Value).Where(a => a.SponsorOnly == true).Select((a, _) => a.ID).ToList();
-                sponsormarks.AddRange(sponsorInfo.AllowedMarkings.AsEnumerable());
-                marks.AddRange(sponsormarks);
+                foreach (var layer in Enum.GetValues<HumanoidVisualLayers>())
+                {
+                    var sponsormarks = IoCManager.Resolve<MarkingManager>().MarkingsByLayer(layer).Select((a, _) => a.Value).Where(a => a.SponsorOnly == true).Select((a, _) => a.ID).ToList();
+                    sponsormarks.AddRange(sponsorInfo.AllowedMarkings.AsEnumerable());
+                    marks.AddRange(sponsormarks);
+                }
             }
         }
 #endif

@@ -78,7 +78,7 @@
   id: StationAiIconBase
   previewKey: Occupied
   previewBackground:
-    sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+    sprite: _StarLight/Mobs/Silicon/station_ai.rsi
     state: base
 
 # icons
@@ -88,10 +88,10 @@
   name: station-ai-icon-ai
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
       sprite: Objects/Devices/ai_card.rsi
@@ -103,13 +103,13 @@
   name: station-ai-icon-angel
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_angel
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_angel_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: angel
 
 - type: stationAiCustomization
@@ -118,13 +118,13 @@
   name: station-ai-icon-bliss
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_bliss
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: bliss
 
 - type: stationAiCustomization
@@ -133,13 +133,13 @@
   name: station-ai-icon-clown
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_clown
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_clown_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: clown
 
 - type: stationAiCustomization
@@ -148,13 +148,13 @@
   name: station-ai-icon-dorf
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dorf
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: dorf
 
 - type: stationAiCustomization
@@ -163,13 +163,13 @@
   name: station-ai-icon-heartline
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_heartline
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_heartline_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: heartline
 
 - type: stationAiCustomization
@@ -178,13 +178,13 @@
   name: station-ai-icon-alien
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_alien
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_alien_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: alien
 
 - type: stationAiCustomization
@@ -193,10 +193,10 @@
   name: station-ai-icon-thinking
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_thinking
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
       sprite: Objects/Devices/ai_card.rsi
@@ -208,13 +208,13 @@
   name: station-ai-icon-database
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_database
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_database_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: database
 
 - type: stationAiCustomization
@@ -223,13 +223,13 @@
   name: station-ai-icon-firewall
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_firewall
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: magma
 
 - type: stationAiCustomization
@@ -238,13 +238,13 @@
   name: station-ai-icon-glitchman
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_glitchman
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_glitchman_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: glitchman
 
 - type: stationAiCustomization
@@ -253,13 +253,13 @@
   name: station-ai-icon-goon
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_goon
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_goon_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: goon
 
 - type: stationAiCustomization
@@ -268,13 +268,13 @@
   name: station-ai-icon-hades
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_hades
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_hades_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: hades
 
 - type: stationAiCustomization
@@ -283,13 +283,13 @@
   name: station-ai-icon-helios
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_helios
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: helios
 
 - type: stationAiCustomization
@@ -298,13 +298,13 @@
   name: station-ai-icon-inverted
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_inverted
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_inverted_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: u
 
 - type: stationAiCustomization
@@ -313,13 +313,13 @@
   name: station-ai-icon-matrix
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_matrix
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: matrix
 
 - type: stationAiCustomization
@@ -328,13 +328,13 @@
   name: station-ai-icon-monochrome
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_monochrome
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_monochrome_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: monochrome
 
 - type: stationAiCustomization
@@ -343,13 +343,13 @@
   name: station-ai-icon-murica
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_murica
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_murica_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: murica
 
 - type: stationAiCustomization
@@ -358,13 +358,13 @@
   name: station-ai-icon-nanotrasen
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_nanotrasen
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: nt
 
 - type: stationAiCustomization
@@ -373,13 +373,13 @@
   name: station-ai-icon-not-malf
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_not_malf
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: malf
 
 - type: stationAiCustomization
@@ -388,13 +388,13 @@
   name: station-ai-icon-president
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_president
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: president
 
 - type: stationAiCustomization
@@ -403,13 +403,13 @@
   name: station-ai-icon-rainbow
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_rainbow
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_rainbow_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: rainbow
 
 - type: stationAiCustomization
@@ -418,13 +418,13 @@
   name: station-ai-icon-red
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_red
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_red_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: red
 
 - type: stationAiCustomization
@@ -433,13 +433,13 @@
   name: station-ai-icon-red-october
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_red_october
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_red_october_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: redoctober
 
 - type: stationAiCustomization
@@ -448,13 +448,13 @@
   name: station-ai-icon-static
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_static
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_static_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: static
 
 - type: stationAiCustomization
@@ -463,13 +463,13 @@
   name: station-ai-icon-meow
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_syndicat_meow
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: syndicatmeow
 
 - type: stationAiCustomization
@@ -478,13 +478,13 @@
   name: station-ai-icon-text
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_text
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: text
 
 - type: stationAiCustomization
@@ -493,10 +493,10 @@
   name: station-ai-icon-too-deep
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_too_deep
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
       sprite: Objects/Devices/ai_card.rsi
@@ -508,13 +508,13 @@
   name: station-ai-icon-triumvirate
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_triumvirate
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: triumvirate
 
 - type: stationAiCustomization
@@ -523,13 +523,13 @@
   name: station-ai-icon-weird
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_weird
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_weird_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: weird
 
 - type: stationAiCustomization
@@ -538,13 +538,13 @@
   name: station-ai-icon-cat
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_cat
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: catamari
 
 - type: stationAiCustomization
@@ -553,10 +553,10 @@
   name: station-ai-icon-blob
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_blob
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
       sprite: Objects/Devices/ai_card.rsi
@@ -568,10 +568,10 @@
   name: station-ai-icon-gondola
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_gondola
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
       sprite: Objects/Devices/ai_card.rsi
@@ -583,10 +583,10 @@
   name: station-ai-icon-malicious
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_malicious
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_malicious_dead
     Intellicard:
       sprite: Objects/Devices/ai_card.rsi
@@ -598,10 +598,10 @@
   name: station-ai-icon-plain
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_plain
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
       sprite: Objects/Devices/ai_card.rsi
@@ -613,13 +613,13 @@
   name: station-ai-icon-smiley
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_smiley
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: smiley
 
 - type: stationAiCustomization
@@ -628,13 +628,13 @@
   name: station-ai-icon-fox
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_fox
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: fox
 
 - type: stationAiCustomization
@@ -643,13 +643,13 @@
   name: station-ai-icon-bee
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_bee
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: bee
 
 - type: stationAiCustomization
@@ -658,13 +658,13 @@
   name: station-ai-icon-borb
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_borb
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: borb
 
 - type: stationAiCustomization
@@ -673,13 +673,13 @@
   name: station-ai-icon-darkmatter
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_darkmatter
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: darkmatter
 
 - type: stationAiCustomization
@@ -688,13 +688,13 @@
   name: station-ai-icon-nadburn
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_nadburn
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: nadburn
 
 - type: stationAiCustomization
@@ -703,13 +703,13 @@
   name: station-ai-icon-voiddonut
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_voiddonut
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: voiddonut
 
 - type: stationAiCustomization
@@ -718,13 +718,13 @@
   name: station-ai-icon-tiger
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_tiger
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: tiger
 
 - type: stationAiCustomization
@@ -733,13 +733,13 @@
   name: station-ai-icon-vox
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_vox
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: vox
 
 - type: stationAiCustomization
@@ -748,13 +748,13 @@
   name: station-ai-icon-liz
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_liz
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: liz
 
 - type: stationAiCustomization
@@ -763,13 +763,13 @@
   name: station-ai-icon-sparkles
   layerData:
     Occupied:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_sparkles
     Dead:
-      sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+      sprite: _StarLight/Mobs/Silicon/station_ai.rsi
       state: ai_dead
     Intellicard:
-      sprite: _Starlight/Objects/Devices/ai_card.rsi
+      sprite: _StarLight/Objects/Devices/ai_card.rsi
       state: sparkles
 
 # holos
@@ -779,7 +779,7 @@
   previewKey: Hologram
   layerData:
     Hologram:
-      sprite: _Starlight/Mobs/Silicon/holograms.rsi
+      sprite: _StarLight/Mobs/Silicon/holograms.rsi
       state: ai_alien
 
 - type: stationAiCustomization
@@ -788,7 +788,7 @@
   previewKey: Hologram
   layerData:
     Hologram:
-      sprite: _Starlight/Mobs/Silicon/holograms.rsi
+      sprite: _StarLight/Mobs/Silicon/holograms.rsi
       state: ai_bees
 
 - type: stationAiCustomization
@@ -797,7 +797,7 @@
   previewKey: Hologram
   layerData:
     Hologram:
-      sprite: _Starlight/Mobs/Silicon/holograms.rsi
+      sprite: _StarLight/Mobs/Silicon/holograms.rsi
       state: ai_big_moth
 
 - type: stationAiCustomization
@@ -806,7 +806,7 @@
   previewKey: Hologram
   layerData:
     Hologram:
-      sprite: _Starlight/Mobs/Silicon/holograms.rsi
+      sprite: _StarLight/Mobs/Silicon/holograms.rsi
       state: ai_ghost
 
 - type: stationAiCustomization
@@ -815,7 +815,7 @@
   previewKey: Hologram
   layerData:
     Hologram:
-      sprite: _Starlight/Mobs/Silicon/holograms.rsi
+      sprite: _StarLight/Mobs/Silicon/holograms.rsi
       state: ai_horror
 
 - type: stationAiCustomization
@@ -824,7 +824,7 @@
   previewKey: Hologram
   layerData:
     Hologram:
-      sprite: _Starlight/Mobs/Silicon/holograms.rsi
+      sprite: _StarLight/Mobs/Silicon/holograms.rsi
       state: ai_leaves
 
 - type: stationAiCustomization
@@ -833,7 +833,7 @@
   previewKey: Hologram
   layerData:
     Hologram:
-      sprite: _Starlight/Mobs/Silicon/holograms.rsi
+      sprite: _StarLight/Mobs/Silicon/holograms.rsi
       state: ai_narsie
 
 - type: stationAiCustomization
@@ -842,7 +842,7 @@
   previewKey: Hologram
   layerData:
     Hologram:
-      sprite: _Starlight/Mobs/Silicon/holograms.rsi
+      sprite: _StarLight/Mobs/Silicon/holograms.rsi
       state: ai_ratvar
 
 - type: stationAiCustomization
@@ -851,7 +851,7 @@
   previewKey: Hologram
   layerData:
     Hologram:
-      sprite: _Starlight/Mobs/Silicon/holograms.rsi
+      sprite: _StarLight/Mobs/Silicon/holograms.rsi
       state: ai_semi
 
 - type: stationAiCustomization
@@ -860,7 +860,7 @@
   previewKey: Hologram
   layerData:
     Hologram:
-      sprite: _Starlight/Mobs/Silicon/holograms.rsi
+      sprite: _StarLight/Mobs/Silicon/holograms.rsi
       state: ai_cy
 
 - type: stationAiCustomization
@@ -869,7 +869,7 @@
   previewKey: Hologram
   layerData:
     Hologram:
-      sprite: _Starlight/Mobs/Silicon/holograms.rsi
+      sprite: _StarLight/Mobs/Silicon/holograms.rsi
       state: ai_cloudkat
 
 - type: stationAiCustomization
