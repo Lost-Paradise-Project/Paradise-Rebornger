@@ -14,20 +14,14 @@
   tileReactions:
   - !type:SpillTileReaction
   metabolisms:
-    Drink:
+    Digestion:
+      metabolites:
+        UncookedAnimalProteins: 0.25
       effects:
       - !type:SatiateThirst
         factor: 0.3
-      - !type:AdjustReagent
-        reagent: UncookedAnimalProteins
-        amount: 0.15
-    Food:
-      effects:
       - !type:SatiateHunger
         factor: 0.2
-      - !type:AdjustReagent
-        reagent: UncookedAnimalProteins
-        amount: 0.1
   plantMetabolism:
   - !type:PlantAdjustWater
     amount: 0.3
@@ -54,15 +48,12 @@
   tileReactions:
   - !type:SpillTileReaction
   metabolisms:
-    Drink:
+    Digestion:
+      metabolites:
+        Sugar: 0.05
       effects:
       - !type:SatiateThirst
         factor: 0.5
-      - !type:AdjustReagent
-        reagent: Sugar
-        amount: 0.05
-    Food:
-      effects:
       - !type:SatiateHunger
         factor: 0.1
   plantMetabolism:

@@ -204,7 +204,7 @@ namespace Content.Server.GameTicking
                     }
 
                     speciesId = roundStart.Count == 0
-                        ? SharedHumanoidAppearanceSystem.DefaultSpecies
+                        ? HumanoidCharacterProfile.DefaultSpecies
                         : _robustRandom.Pick(roundStart);
                 }
                 else
@@ -214,6 +214,10 @@ namespace Content.Server.GameTicking
                 }
 
                 character = HumanoidCharacterProfile.RandomWithSpecies(speciesId);
+                // Corvax-Sponsors-Start
+                var sponsorPrototypes = _sponsors != null && _sponsors.TryGetServerPrototypes(player.UserId, out var prototypes) ? prototypes.ToArray() : [];
+                character.Appearance = HumanoidCharacterAppearance.EnsureValid(character.Appearance, character.Species, character.Sex, sponsorPrototypes);
+                // Corvax-Sponsors-End
             }
 
             // Port Respawn EE Start

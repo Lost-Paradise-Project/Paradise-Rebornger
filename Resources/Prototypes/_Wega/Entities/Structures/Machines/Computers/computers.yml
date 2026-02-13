@@ -31,7 +31,7 @@
       enum.WiresUiKey.Key:
         type: WiresBoundUserInterface
   - type: ApcPowerReceiver
-    powerLoad: 250
+    powerLoad: 50
   - type: Computer
     board: MiningMonitoringComputerCircuitboard
   - type: AccessReader

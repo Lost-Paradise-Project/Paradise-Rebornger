@@ -1,4 +1,4 @@
-﻿@echo off
+@echo off
 
 call pip install -r requirements.txt --no-warn-script-location
 call py ./yamlextractor.py

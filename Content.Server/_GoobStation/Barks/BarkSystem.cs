@@ -2,6 +2,7 @@ using Content.Shared._GoobStation.Barks;
 using Robust.Shared.Configuration;
 using Content.Shared._GoobStation.CCVar;
 using Content.Shared.Chat;
+using Content.Shared.Humanoid;
 using Robust.Shared.Player;
 
 namespace Content.Server._GoobStation.Barks;
@@ -14,6 +15,12 @@ public sealed class BarkSystem : EntitySystem
     {
         base.Initialize();
         SubscribeLocalEvent<SpeechSynthesisComponent, EntitySpokeEvent>(OnEntitySpoke);
+        SubscribeLocalEvent<SpeechSynthesisComponent, ApplyBarkVoiceEvent>(OnApplyBarkVoice);
+    }
+
+    private void OnApplyBarkVoice(EntityUid uid, SpeechSynthesisComponent component, ref ApplyBarkVoiceEvent args)
+    {
+        component.VoicePrototypeId = args.BarkVoice;
     }
 
     private void OnEntitySpoke(EntityUid uid, SpeechSynthesisComponent comp, EntitySpokeEvent args)

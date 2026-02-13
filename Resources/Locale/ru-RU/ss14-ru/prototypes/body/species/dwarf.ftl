@@ -1,0 +1,15 @@
+ent-AppearanceDwarf = внешний вид дворфа
+    .desc = { ent-AppearanceHuman.desc }
+ent-MobDwarf = Урист Мак Дворф
+    .desc = { ent-AppearanceDwarf.desc }
+ent-OrganDwarf = { ent-OrganBase }
+    .suffix = Дворф
+    .desc = { ent-OrganBase.desc }
+ent-OrganDwarfMetabolizer = { "" }
+    .desc = { "" }
+ent-OrganDwarfStomach = { ent-OrganDwarfMetabolizer }
+    .desc = { ent-OrganDwarfMetabolizer.desc }
+ent-OrganDwarfLiver = { ent-OrganDwarfMetabolizer }
+    .desc = { ent-OrganDwarfMetabolizer.desc }
+ent-OrganDwarfHeart = { ent-OrganDwarfMetabolizer }
+    .desc = { ent-OrganDwarfMetabolizer.desc }
