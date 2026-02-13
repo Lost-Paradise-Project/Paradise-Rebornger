@@ -178,7 +178,7 @@ public sealed partial class TTSTab : Control
 
         _allVoices = _prototypeManager
             .EnumeratePrototypes<TTSVoicePrototype>()
-            .Where(o => o.RoundStart && HumanoidCharacterProfile.CanHaveVoice(o, sex, SponsorSimpleManager.GetTier()))  //LP edit
+            .Where(o => o.RoundStart && HumanoidCharacterProfile.CanHaveVoice(o, sex))
             .OrderBy(o => Loc.GetString(o.Name))
             .ToList();
 
