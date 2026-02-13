@@ -1,14 +1,17 @@
 using Content.Shared.Administration.Logs;
 using Content.Shared.Charges.Systems;
-using Content.Shared.LPP.Construction;
+using Content.Shared.Construction;
+using Content.Shared._LP.Construction;
 using Content.Shared.Database;
 using Content.Shared.DoAfter;
 using Content.Shared.Examine;
+using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Interaction;
 using Content.Shared.Maps;
 using Content.Shared.Physics;
 using Content.Shared.Popups;
 using Content.Shared._LP.RCDFAP.Components;
+using Content.Shared._LP.RCDFAP;
 using Content.Shared.Tag;
 using Content.Shared.Tiles;
 using Robust.Shared.Audio.Systems;
@@ -20,16 +23,11 @@ using Robust.Shared.Physics.Collision.Shapes;
 using Robust.Shared.Physics.Dynamics;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
-using Robust.Shared.Timing;
 using System.Linq;
-using Content.Shared.Hands.EntitySystems;
-using Content.Shared.Construction;
-
 
 namespace Content.Shared._LP.RCDFAP.Systems;
 
-[Virtual]
-public class RCDFAPSystem : EntitySystem
+public sealed class RCDFAPSystem : EntitySystem
 {
     [Dependency] private readonly INetManager _net = default!;
     [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
@@ -42,17 +40,17 @@ public class RCDFAPSystem : EntitySystem
     [Dependency] private readonly SharedInteractionSystem _interaction = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly TurfSystem _turf = default!;
+    [Dependency] private readonly TileSystem _tile = default!;
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
     [Dependency] private readonly IPrototypeManager _protoManager = default!;
     [Dependency] private readonly SharedMapSystem _mapSystem = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly TagSystem _tags = default!;
-    [Dependency] private readonly IGameTiming _timing = default!;
 
     private readonly int _instantConstructionDelay = 0;
     private readonly EntProtoId _instantConstructionFx = "EffectRCDConstruct0";
-    private readonly ProtoId<RCDFAPPrototype> _deconstructTileProto = "DeconstructTile";
-    private readonly ProtoId<RCDFAPPrototype> _deconstructLatticeProto = "DeconstructLattice";
+    private readonly ProtoId<RCDFAPPrototype> _deconstructTileProto = "LPPDeconstructTile";
+    private readonly ProtoId<RCDFAPPrototype> _deconstructLatticeProto = "LPPDeconstructLattice";
     private static readonly ProtoId<TagPrototype> CatwalkTag = "Catwalk";
 
     private HashSet<EntityUid> _intersectingEntities = new();
@@ -96,7 +94,7 @@ public class RCDFAPSystem : EntitySystem
         if (!_protoManager.Resolve<RCDFAPPrototype>(args.ProtoId, out var prototype))
             return;
 
-        // Set the current RCD prototype to the one supplied
+        // Set the current RCDFAP prototype to the one supplied
         component.ProtoId = args.ProtoId;
 
         _adminLogger.Add(LogType.RCDFAP, LogImpact.Low, $"{args.Actor} set RCDFAP mode to: {prototype.Mode} : {prototype.Prototype}");
@@ -140,7 +138,13 @@ public class RCDFAPSystem : EntitySystem
         if (!location.IsValid(EntityManager))
             return;
 
-        var gridUid = _transform.GetGrid(location);
+        // Get grid corresponding to user's click location.
+        // If that doesn't exist, try using the one they're standing on.
+        // In the future we might want to also check adjacent spaces for grids,
+        // in case the user is floating in space for whatever reason.
+        var clickGridUid = _transform.GetGrid(location);
+        var userGridUid = _transform.GetGrid(user);
+        var gridUid = clickGridUid.HasValue ? clickGridUid : userGridUid;
 
         if (!TryComp<MapGridComponent>(gridUid, out var mapGrid))
         {
@@ -150,7 +154,7 @@ public class RCDFAPSystem : EntitySystem
         var tile = _mapSystem.GetTileRef(gridUid.Value, mapGrid, location);
         var position = _mapSystem.TileIndicesFor(gridUid.Value, mapGrid, location);
 
-        if (!IsRCDFAPOperationStillValid(uid, component, gridUid.Value, mapGrid, tile, position, args.Target, args.User))
+        if (!IsRCDFAPOperationStillValid(uid, component, gridUid.Value, mapGrid, tile, position, component.ConstructionDirection, args.Target, args.User))
             return;
 
         if (!_net.IsServer)
@@ -178,6 +182,7 @@ public class RCDFAPSystem : EntitySystem
                         effectPrototype = destructible.Effect;
                     }
                 }
+
                 // Deconstructing a tile
                 else
                 {
@@ -193,6 +198,7 @@ public class RCDFAPSystem : EntitySystem
                 }
 
                 break;
+
             case RcdfapMode.ConstructTile:
 
                 // If replacing a tile, make the construction instant
@@ -210,8 +216,14 @@ public class RCDFAPSystem : EntitySystem
         #endregion
 
         // Try to start the do after
-        var effect = Spawn(effectPrototype, location);
-        var ev = new RCDFAPDoAfterEvent(GetNetCoordinates(location), component.ConstructionDirection, component.ProtoId, cost, EntityManager.GetNetEntity(effect));
+        var effect = Spawn(effectPrototype, _mapSystem.ToCenterCoordinates(tile, mapGrid));
+        var ev = new RCDFAPDoAfterEvent(
+            GetNetCoordinates(location),
+            GetNetEntity(gridUid.Value),
+            component.ConstructionDirection,
+            component.ProtoId,
+            cost,
+            GetNetEntity(effect));
 
         var doAfterArgs = new DoAfterArgs(EntityManager, user, delay, ev, uid, target: args.Target, used: uid)
         {
@@ -242,9 +254,7 @@ public class RCDFAPSystem : EntitySystem
         }
 
         // Ensure the RCDFAP operation is still valid
-        var location = GetCoordinates(args.Event.Location);
-
-        var gridUid = _transform.GetGrid(location);
+        var gridUid = GetEntity(args.Event.TargetGridId);
 
         if (!TryComp<MapGridComponent>(gridUid, out var mapGrid))
         {
@@ -252,11 +262,11 @@ public class RCDFAPSystem : EntitySystem
             return;
         }
 
+        var location = GetCoordinates(args.Event.Location);
+        var tile = _mapSystem.GetTileRef(gridUid, mapGrid, location);
+        var position = _mapSystem.TileIndicesFor(gridUid, mapGrid, location);
 
-        var tile = _mapSystem.GetTileRef(gridUid.Value, mapGrid, location);
-        var position = _mapSystem.TileIndicesFor(gridUid.Value, mapGrid, location);
-
-        if (!IsRCDFAPOperationStillValid(uid, component, gridUid.Value, mapGrid, tile, position, args.Event.Target, args.Event.User))
+        if (!IsRCDFAPOperationStillValid(uid, component, gridUid, mapGrid, tile, position, args.Event.Direction, args.Event.Target, args.Event.User))
             args.Cancel();
     }
 
@@ -275,22 +285,23 @@ public class RCDFAPSystem : EntitySystem
 
         args.Handled = true;
 
-        var location = GetCoordinates(args.Location);
-
-        var gridUid = _transform.GetGrid(location);
+        var gridUid = GetEntity(args.TargetGridId);
 
         if (!TryComp<MapGridComponent>(gridUid, out var mapGrid))
             return;
 
-        var tile = _mapSystem.GetTileRef(gridUid.Value, mapGrid, location);
-        var position = _mapSystem.TileIndicesFor(gridUid.Value, mapGrid, location);
+        var location = GetCoordinates(args.Location);
+        var tile = _mapSystem.GetTileRef(gridUid, mapGrid, location);
+        var position = _mapSystem.TileIndicesFor(gridUid, mapGrid, location);
 
-        // Ensure the RCD operation is still valid
-        if (!IsRCDFAPOperationStillValid(uid, component, gridUid.Value, mapGrid, tile, position, args.Target, args.User))
+        // Ensure the RCDFAP operation is still valid
+        if (!IsRCDFAPOperationStillValid(uid, component, gridUid, mapGrid, tile, position, args.Direction, args.Target, args.User))
+        {
             return;
+        }
 
         // Finalize the operation (this should handle prediction properly)
-        FinalizeRCDFAPOperation(uid, component, gridUid.Value, mapGrid, tile, position, args.Direction, args.Target, args.User);
+        FinalizeRCDFAPOperation(uid, component, gridUid, mapGrid, tile, position, args.Direction, args.Target, args.User);
 
         // Play audio and consume charges
         _audio.PlayPredicted(component.SuccessSound, uid, args.User);
@@ -322,9 +333,14 @@ public class RCDFAPSystem : EntitySystem
 
     public bool IsRCDFAPOperationStillValid(EntityUid uid, RCDFAPComponent component, EntityUid gridUid, MapGridComponent mapGrid, TileRef tile, Vector2i position, EntityUid? target, EntityUid user, bool popMsgs = true)
     {
+        return IsRCDFAPOperationStillValid(uid, component, gridUid, mapGrid, tile, position, component.ConstructionDirection, target, user, popMsgs);
+    }
+
+    public bool IsRCDFAPOperationStillValid(EntityUid uid, RCDFAPComponent component, EntityUid gridUid, MapGridComponent mapGrid, TileRef tile, Vector2i position, Direction direction, EntityUid? target, EntityUid user, bool popMsgs = true)
+    {
         var prototype = _protoManager.Index(component.ProtoId);
 
-        // Check that the RCD has enough ammo to get the job done
+        // Check that the RCDFAP has enough ammo to get the job done
         var charges = _sharedCharges.GetCurrentCharges(uid);
 
         // Both of these were messages were suppose to be predicted, but HasInsufficientCharges wasn't being checked on the client for some reason?
@@ -357,7 +373,7 @@ public class RCDFAPSystem : EntitySystem
         {
             case RcdfapMode.ConstructTile:
             case RcdfapMode.ConstructObject:
-                return IsConstructionLocationValid(uid, component, gridUid, mapGrid, tile, position, user, popMsgs);
+                return IsConstructionLocationValid(uid, component, gridUid, mapGrid, tile, position, direction, user, popMsgs);
             case RcdfapMode.Deconstruct:
                 return IsDeconstructionStillValid(uid, tile, target, user, popMsgs);
         }
@@ -365,7 +381,7 @@ public class RCDFAPSystem : EntitySystem
         return false;
     }
 
-    private bool IsConstructionLocationValid(EntityUid uid, RCDFAPComponent component, EntityUid gridUid, MapGridComponent mapGrid, TileRef tile, Vector2i position, EntityUid user, bool popMsgs = true)
+    private bool IsConstructionLocationValid(EntityUid uid, RCDFAPComponent component, EntityUid gridUid, MapGridComponent mapGrid, TileRef tile, Vector2i position, Direction direction, EntityUid user, bool popMsgs = true)
     {
         var prototype = _protoManager.Index(component.ProtoId);
 
@@ -408,8 +424,24 @@ public class RCDFAPSystem : EntitySystem
                 return false;
             }
 
+            var tileDef = _turf.GetContentTileDefinition(tile);
+
+            // Check rule: Respect baseTurf and baseWhitelist
+            if (prototype.Prototype != null && _tileDefMan.TryGetDefinition(prototype.Prototype, out var replacementDef))
+            {
+                var replacementContentDef = (ContentTileDefinition) replacementDef;
+
+                if (replacementContentDef.BaseTurf != tileDef.ID && !replacementContentDef.BaseWhitelist.Contains(tileDef.ID))
+                {
+                    if (popMsgs)
+                        _popup.PopupClient(Loc.GetString("rcdfap-component-cannot-build-on-empty-tile-message"), uid, user);
+
+                    return false;
+                }
+            }
+
             // Check rule: Tiles can't be identical
-            if (_turf.GetContentTileDefinition(tile).ID == prototype.Prototype)
+            if (tileDef.ID == prototype.Prototype)
             {
                 if (popMsgs)
                     _popup.PopupClient(Loc.GetString("rcdfap-component-cannot-build-identical-tile"), uid, user);
@@ -424,7 +456,6 @@ public class RCDFAPSystem : EntitySystem
         // Entity specific rules
 
         // Check rule: The tile is unoccupied
-        // Check rule: The tile is unoccupied
         var isWindow = prototype.ConstructionRules.Contains(RcdfapConstructionRule.IsWindow);
         var isCatwalk = prototype.ConstructionRules.Contains(RcdfapConstructionRule.IsCatwalk);
         var isWall = prototype.ConstructionRules.Contains(RcdfapConstructionRule.IsWall);
@@ -434,7 +465,29 @@ public class RCDFAPSystem : EntitySystem
 
         foreach (var ent in _intersectingEntities)
         {
-            if (isWindow && HasComp<SharedCanBuildWindowOnTopComponent>(ent))
+            // If the entity is the exact same prototype as what we are trying to build, then block it.
+            // This is to prevent spamming objects on the same tile (e.g. lights)
+            if (prototype.Prototype != null && MetaData(ent).EntityPrototype?.ID == prototype.Prototype)
+            {
+                var isIdentical = true;
+
+                if (prototype.AllowMultiDirection)
+                {
+                    var entDirection = Transform(ent).LocalRotation.GetCardinalDir();
+                    if (entDirection != direction)
+                        isIdentical = false;
+                }
+
+                if (isIdentical)
+                {
+                    if (popMsgs)
+                        _popup.PopupClient(Loc.GetString("rcdfap-component-cannot-build-identical-entity"), uid, user);
+
+                    return false;
+                }
+            }
+
+            if (isWindow && HasComp<SharedCanBuildWindowOnTopRCDFAPComponent>(ent))
                 continue;
 
             if (isCatwalk && _tags.HasTag(ent, CatwalkTag))
@@ -541,7 +594,10 @@ public class RCDFAPSystem : EntitySystem
         switch (prototype.Mode)
         {
             case RcdfapMode.ConstructTile:
-                _mapSystem.SetTile(gridUid, mapGrid, position, new Tile(_tileDefMan[prototype.Prototype].TileId));
+                if (!_tileDefMan.TryGetDefinition(prototype.Prototype, out var tileDef))
+                    return;
+
+                _tile.ReplaceTile(tile, (ContentTileDefinition) tileDef, gridUid, mapGrid);
                 _adminLogger.Add(LogType.RCDFAP, LogImpact.High, $"{ToPrettyString(user):user} used RCDFAP to set grid: {gridUid} {position} to {prototype.Prototype}");
                 break;
 
@@ -568,10 +624,9 @@ public class RCDFAPSystem : EntitySystem
 
                 if (target == null)
                 {
-                    // Deconstruct tile (either converts the tile to lattice, or removes lattice)
-                    var tileDef = (_turf.GetContentTileDefinition(tile).ID != "Lattice") ? new Tile(_tileDefMan["Lattice"].TileId) : Tile.Empty;
-                    _mapSystem.SetTile(gridUid, mapGrid, position, tileDef);
-                    _adminLogger.Add(LogType.RCDFAP, LogImpact.High, $"{ToPrettyString(user):user} used RCDFAP to set grid: {gridUid} tile: {position} open to space");
+                    // Deconstruct tile, don't drop tile as item
+                    if (_tile.DeconstructTile(tile, spawnItem: false))
+                        _adminLogger.Add(LogType.RCDFAP, LogImpact.High, $"{ToPrettyString(user):user} used RCDFAP to set grid: {gridUid} tile: {position} open to space");
                 }
                 else
                 {
@@ -605,6 +660,9 @@ public sealed partial class RCDFAPDoAfterEvent : DoAfterEvent
     [DataField(required: true)]
     public NetCoordinates Location { get; private set; }
 
+    [DataField(required: true)]
+    public NetEntity TargetGridId {get ; private set; }
+
     [DataField]
     public Direction Direction { get; private set; }
 
@@ -619,9 +677,17 @@ public sealed partial class RCDFAPDoAfterEvent : DoAfterEvent
 
     private RCDFAPDoAfterEvent() { }
 
-    public RCDFAPDoAfterEvent(NetCoordinates location, Direction direction, ProtoId<RCDFAPPrototype> startingProtoId, int cost, NetEntity? effect = null)
+    public RCDFAPDoAfterEvent(
+        NetCoordinates location,
+        NetEntity targetGridId,
+        Direction direction,
+        ProtoId<RCDFAPPrototype>
+        startingProtoId,
+        int cost,
+        NetEntity? effect = null)
     {
         Location = location;
+        TargetGridId = targetGridId;
         Direction = direction;
         StartingProtoId = startingProtoId;
         Cost = cost;

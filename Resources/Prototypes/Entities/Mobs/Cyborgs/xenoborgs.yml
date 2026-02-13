@@ -40,7 +40,6 @@
       - BorgModuleAdvancedTool
       - BorgModuleConstruction
       - BorgModuleRCD
-      - LPPBorgModuleRCDFAP # LP Edit
       - BorgModuleCable
       - XenoborgModuleAccessBreaker
       - XenoborgModuleFireExtinguisher
@@ -271,7 +270,6 @@
       - BorgModuleAdvancedTool
       - BorgModuleConstruction
       - BorgModuleRCD
-      - LPPBorgModuleRCDFAP # LP Edit
       - BorgModuleCable
       - XenoborgModuleAccessBreaker
       - XenoborgModuleFireExtinguisher

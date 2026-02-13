@@ -29,7 +29,7 @@ rcdfap-component-must-build-on-subfloor-message = You can only build that on exp
 rcdfap-component-cannot-build-on-subfloor-message = You can't build that on exposed subfloor!
 rcdfap-component-cannot-build-on-occupied-tile-message = You can't build here, the space is already occupied!
 rcdfap-component-cannot-build-identical-tile = That tile already exists there!
-
+rcdfap-component-cannot-build-identical-entity = That already exists there!
 
 ### Category names
 

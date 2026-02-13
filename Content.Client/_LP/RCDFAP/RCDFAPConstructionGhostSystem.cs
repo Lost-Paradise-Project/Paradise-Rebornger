@@ -1,19 +1,21 @@
-using Content.Shared.Hands.Components;
+using Content.Client.Hands.Systems;
 using Content.Shared.Interaction;
 using Content.Shared._LP.RCDFAP;
 using Content.Shared._LP.RCDFAP.Components;
-using Content.Shared._LP.RCDFAP.Systems;
 using Robust.Client.Placement;
 using Robust.Client.Player;
 using Robust.Shared.Enums;
-using Content.Client.Hands.Systems;
 using Robust.Shared.Prototypes;
 
 namespace Content.Client._LP.RCDFAP;
 
+/// <summary>
+/// System for handling structure ghost placement in places where RCDFAP can create objects.
+/// </summary>
 public sealed class RCDFAPConstructionGhostSystem : EntitySystem
 {
     private const string PlacementMode = nameof(AlignRCDFAPConstruction);
+
     [Dependency] private readonly IPlayerManager _playerManager = default!;
     [Dependency] private readonly IPlacementManager _placementManager = default!;
     [Dependency] private readonly IPrototypeManager _protoManager = default!;
@@ -44,9 +46,10 @@ public sealed class RCDFAPConstructionGhostSystem : EntitySystem
         // This may happen when predictively spawning one in your hands.
         if (heldEntity != null && IsClientSide(heldEntity.Value))
             return;
+
         if (!TryComp<RCDFAPComponent>(heldEntity, out var rcdfap))
         {
-            // If the player was holding an RCD, but is no longer, cancel placement
+            // If the player was holding an RCDFAP, but is no longer, cancel placement
             if (placerIsRCDFAP)
                 _placementManager.Clear();
 
@@ -54,7 +57,7 @@ public sealed class RCDFAPConstructionGhostSystem : EntitySystem
         }
         var prototype = _protoManager.Index(rcdfap.ProtoId);
 
-        // Update the direction the RCD prototype based on the placer direction
+        // Update the direction the RCDFAP prototype based on the placer direction
         if (_placementDirection != _placementManager.Direction)
         {
             _placementDirection = _placementManager.Direction;

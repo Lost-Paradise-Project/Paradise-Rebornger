@@ -24,6 +24,7 @@ rcdfap-component-must-build-on-subfloor-message = Это может быть п�
 rcdfap-component-cannot-build-on-subfloor-message = Это не может быть построено на покрытии!
 rcdfap-component-cannot-build-on-occupied-tile-message = Здесь нельзя строить, место уже занято!
 rcdfap-component-cannot-build-identical-tile = Эта клетка уже тут имеется!
+rcdfap-component-cannot-build-identical-entity = Это уже есть тут!
 
 ### Category names
 
