@@ -1322,7 +1322,7 @@
   delay: 4
   collisionMask: FullTileMask
   rotation: Camera
-  fx: EffectRCDConstruc4
+  fx: EffectRCDConstruct4
 
 - type: LPPRCDFAP
   id: LPPAirlockExternalLocked
