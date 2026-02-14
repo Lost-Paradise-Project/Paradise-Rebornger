@@ -48,6 +48,8 @@
         type: SiliconLawBoundUserInterface
       enum.CommunicationsConsoleUiKey.Key:
         type: CommunicationsConsoleBoundUserInterface
+      enum.StoreUiKey.Key: # DeltaV - AI shop system
+        type: StoreBoundUserInterface
   - type: IntrinsicUI
     uis:
       enum.RadarConsoleUiKey.Key:
@@ -76,6 +78,17 @@
   - type: DamagedSiliconAccent
     startPowerCorruptionAtCharIdx: 4
     maxPowerCorruptionAtCharIdx: 20
+  # Begin DeltaV - AI Shop System
+  - type: StationAiShop
+  - type: Store
+    categories:
+    - AiAbilities
+    currencyWhitelist:
+    - AiMemory
+    balance:
+      AiMemory: 3
+    grantActionsToMind: false
+  # End DeltaV - AI Shop System
 
 - type: entity
   id: AiHeldIntellicard
