@@ -11,7 +11,7 @@
   cost: 5000
   recipeUnlocks:
   - ProximitySensor
-  position: 1,6
+  position: 2, 6
 
 - type: technology
   id: BasicAnomalousResearch
@@ -28,7 +28,7 @@
   - AnomalyLocatorWide
   - APECircuitboard
   - AnomalyVesselCircuitboard
-  position: 0,7
+  position: 1, 7
   technologyPrerequisites:
   - BasicRobotics
 
@@ -45,7 +45,7 @@
   - NodeScanner
   - AnalysisComputerCircuitboard
   - ArtifactAnalyzerMachineCircuitboard
-  position: -1,7
+  position: 2, 7
   technologyPrerequisites:
   - BasicRobotics
 
@@ -60,9 +60,9 @@
   cost: 5000
   recipeUnlocks:
   - TechDiskComputerCircuitboard
+  position: 3, 7
   technologyPrerequisites:
   - BasicRobotics
-  position: 2,7
 
 - type: technology
   id: MagnetsTech
@@ -76,7 +76,7 @@
   recipeUnlocks:
   - ClothingShoesBootsMagSci
   - ClothingShoesBootsMoon
-  position: 3,8
+  position: 3, 8
   technologyPrerequisites:
   - AlternativeResearch
 
@@ -91,7 +91,7 @@
   cost: 10000
   recipeUnlocks:
   - WeaponGauntletGorilla
-  position: 0,8
+  position: 1, 8
   technologyPrerequisites:
   - BasicAnomalousResearch
 
@@ -108,7 +108,7 @@
   cost: 5000
   recipeUnlocks:
   - ArtifactCrusherMachineCircuitboard
-  position: -1,8
+  position: 2, 8
   technologyPrerequisites:
   - BasicXenoArcheology
 
@@ -125,9 +125,9 @@
   - WeaponPistolCHIMP
   - AnomalySynchronizerCircuitboard
   - AnomalyVesselExperimentalCircuitboard
+  position: 1, 9
   technologyPrerequisites:
   - BasicAnomalousResearch
-  position: 0,9
 
 - type: technology
   id: DeterrenceTechnologies
@@ -141,7 +141,7 @@
   recipeUnlocks:
   - WeaponParticleDecelerator
   - HoloprojectorField
-  position: 2,8
+  position: 3, 9
   technologyPrerequisites:
   - AlternativeResearch
 
@@ -157,7 +157,7 @@
   recipeUnlocks:
     - WeaponForceGun
     - WeaponTetherGun
-  position: -1,9
+  position: 2, 9
   technologyPrerequisites:
   - AbnormalArtifactManipulation
   - AnomalyCoreHarnessing
@@ -175,7 +175,7 @@
   cost: 10000
   recipeUnlocks:
   - DeviceQuantumSpinInverter
-  position: -1,10
+  position: 1, 10
   technologyPrerequisites:
   - GravityManipulation
 
@@ -190,6 +190,6 @@
   cost: 10000
   recipeUnlocks:
   - DeviceDesynchronizer
-  position: 0,10
+  position: 3, 10
   technologyPrerequisites:
   - GravityManipulation
