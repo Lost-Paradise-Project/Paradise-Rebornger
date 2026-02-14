@@ -1,7 +1,7 @@
 ﻿contract-nt-name = NanoTrasen
 contract-nt-desc = Заключен контракт с компанией NanoTrasen на строительство и обслуживание станции.
-contract-gex-name = Горлекс
-contract-gex-desc = По контракту вам было поручено нарушать и вмешиваться в работу станции NanoTrasen.
+contract-gorlex-name = Горлекс
+contract-gorlex-desc = По контракту вам было поручено нарушать и вмешиваться в работу станции NanoTrasen.
 contract-independent-name = Независимый
 contract-independent-desc = Без контракта
 contract-admin-name = Админ
