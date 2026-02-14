@@ -12,7 +12,7 @@ public sealed class CustomGhostsMenuOpenButton : Button
         OnPressed += Pressed;
     }
 
-    private void Pressed(ButtonEventArgs args)
+    private new void Pressed(ButtonEventArgs args)
     {
         _customGhostWindow.TryOpenCenteredLeft();
     }

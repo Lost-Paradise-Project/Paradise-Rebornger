@@ -125,7 +125,6 @@ public sealed partial class PlaytimeJobRestriction : CustomGhostRestriction
 public sealed partial class PlaytimeDepartmentRestriction : CustomGhostRestriction
 {
     private static ISharedPlaytimeManager? _playtime = null;
-    private static IConfigurationManager? _cfg = null;
     private static IPrototypeManager? _proto = null;
 
     [DataField(required: true)]

@@ -18,10 +18,7 @@ public sealed class TimeTransferPanelEui : BaseEui
     [Dependency] private readonly IAdminManager _adminMan = default!;
     [Dependency] private readonly ILogManager _log = default!;
     [Dependency] private readonly IPlayerLocator _playerLocator = default!;
-    [Dependency] private readonly IPlayerManager _playerMan = default!;
-    [Dependency] private readonly IPrototypeManager _protoMan = default!;
     [Dependency] private readonly IServerDbManager _databaseMan = default!;
-    [Dependency] private readonly PlayTimeTrackingManager _playTimeMan = default!;
 
     private readonly ISawmill _sawmill;
 
