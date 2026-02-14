@@ -5,7 +5,7 @@ using Robust.Shared.Console;
 
 namespace Content.Server._GoobStation.Administration.Commands;
 
-[AdminCommand(AdminFlags.Moderator)]
+[AdminCommand(AdminFlags.Playtime)] // Corvax-DiscordRoles
 public sealed class TimeTransferPanelCommand : LocalizedCommands
 {
     [Dependency] private readonly EuiManager _euis = default!;

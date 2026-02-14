@@ -9,6 +9,7 @@ using Content.Shared.Verbs;
 using Robust.Server.Audio;
 using Robust.Server.Containers;
 using Robust.Server.Player;
+using Robust.Shared.Prototypes;
 
 namespace Content.Server._CorvaxGoob.RoundEnd.PhotoAlbum;
 public sealed class PhotoAlbumSystem : EntitySystem
@@ -32,7 +33,7 @@ public sealed class PhotoAlbumSystem : EntitySystem
         if (!args.CanAccess || !args.CanInteract || args.Hands == null || entity.Comp.IsSigned)
             return;
 
-        if (args.Using is not { } pen || !_tags.HasTag(pen, "Write"))
+        if (args.Using is not { } pen || !_tags.HasTag(pen, new ProtoId<TagPrototype>("Write")))
             return;
 
         var target = args.Target;
