@@ -1,4 +1,4 @@
-﻿using Content.Shared.Actions;
+using Content.Shared.Actions;
 using Content.Shared.Damage.Systems;
 using Content.Shared.Light.Components;
 using Robust.Shared.Audio.Systems;
