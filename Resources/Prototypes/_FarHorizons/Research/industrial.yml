@@ -28,6 +28,7 @@
   - PlasteelGasTurbineBlade
   technologyPrerequisites:
   - PowerGeneration
+  position: -2, -2
 
 - type: technology
   id: NuclearPowerRecycling
@@ -53,3 +54,4 @@
   - DiamondGasTurbineBlade
   technologyPrerequisites:
   - NuclearPowerGeneration
+  position: -1, -5

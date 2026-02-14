@@ -15,6 +15,9 @@
   - OreProcessorIndustrialMachineCircuitboard
   - ClothingMaskWeldingGas
   - ClothingShoesBootsJump
+  position: 0,-3
+  technologyPrerequisites:
+  - SpaceScanning
 
 - type: technology
   id: SpaceScanning
@@ -28,6 +31,9 @@
   recipeUnlocks:
   - RadarConsoleCircuitboard
   - HandHeldMassScanner
+  position: 1,-2
+  technologyPrerequisites:
+  - PowerGeneration
 
 - type: technology
   id: AdvancedPowercells
@@ -42,6 +48,9 @@
   - PowerCellHigh
   - TurboItemRechargerCircuitboard
   - SMESAdvancedMachineCircuitboard
+  position: 3,-4
+  technologyPrerequisites:
+  - IndustrialEngineering
 
 - type: technology
   id: MechanicalCompression
@@ -54,6 +63,9 @@
   cost: 10000
   recipeUnlocks:
   - FlatpackerMachineCircuitboard
+  position: 2,-3
+  technologyPrerequisites:
+  - SpaceScanning
 
 - type: technology
   id: IndustrialEngineering
@@ -69,6 +81,9 @@
   - ProtolatheHyperConvectionMachineCircuitboard
   - CircuitImprinterHyperConvectionMachineCircuitboard
   - SheetifierMachineCircuitboard
+  position: 3,-3
+  technologyPrerequisites:
+  - MechanicalCompression
 
 - type: technology
   id: PowerGeneration
@@ -86,6 +101,7 @@
   - SolarControlComputerCircuitboard
   - SolarTrackerElectronics
   - EmitterCircuitboard
+  position: 1,-1
 
 - type: technology
   id: AtmosphericTech
@@ -99,6 +115,9 @@
   recipeUnlocks:
   - ThermomachineFreezerMachineCircuitBoard
   - GasRecyclerMachineCircuitboard
+  position: -1,-3
+  technologyPrerequisites:
+  - SpaceScanning
 
 - type: technology
   id: RipleyAPLU
@@ -118,6 +137,9 @@
   - RipleyCentralElectronics
   - RipleyPeripheralsElectronics
   - MechEquipmentGrabber
+  position: 0,-4
+  technologyPrerequisites:
+  - SalvageEquipment
 
 # Tier 2
 
@@ -135,6 +157,9 @@
   - ThrusterMachineCircuitboard
   - GyroscopeMachineCircuitboard
   - MiniGravityGeneratorCircuitboard
+  position: 2,-4
+  technologyPrerequisites:
+  - MechanicalCompression
 
 - type: technology
   id: AdvancedAtmospherics
@@ -151,6 +176,7 @@
   - HolofanProjector
   technologyPrerequisites:
   - AtmosphericTech
+  position: -1,-4
 
 - type: technology
   id: AdvancedToolsTechnology
@@ -168,6 +194,9 @@
     - BorgModuleAdvancedTool
     - Fulton
     - FultonBeacon
+  position: 2,-5
+  technologyPrerequisites:
+  - Shuttlecraft
 
 - type: technology
   id: MassExcavation
@@ -184,6 +213,9 @@
     - AdvancedMineralScannerEmpty
     - BorgModuleAdvancedMining
     - SalvageExpeditionsComputerCircuitboard # Corvax-Cringe
+  position: 0,-5
+  technologyPrerequisites:
+  - RipleyAPLU
 
 # Tier 3
 
@@ -200,6 +232,9 @@
   - ClothingBackpackHolding
   - ClothingBackpackSatchelHolding
   - ClothingBackpackDuffelHolding
+  position: 3,-6
+  technologyPrerequisites:
+  - OptimizedMicrogalvanism
 
 - type: technology
   id: OptimizedMicrogalvanism
@@ -215,3 +250,4 @@
   - PowerCellHyper
   technologyPrerequisites:
   - AdvancedPowercells
+  position: 3,-5
