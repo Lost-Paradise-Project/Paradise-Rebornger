@@ -765,6 +765,7 @@
     - state: icon-rcd
   - type: ItemBorgModule
     hands:
+    - item: LPPRCDFAPRecharging # LP Edit
     - item: RCDRecharging
     - item: BorgFireExtinguisher
     - item: BorgHandheldGPSBasic

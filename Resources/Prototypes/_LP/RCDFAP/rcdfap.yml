@@ -1,0 +1,1459 @@
+- type: LPPRCDFAP
+  id: Invalid   # Hidden prototype - do not add to LPPRCDFAPDevice
+  mode: Invalid
+
+- type: LPPRCDFAP
+  id: LPPDeconstruct
+  name: rcdfap-component-deconstruct
+  category: Main
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Category/deconstruct.png
+  mode: Deconstruct
+  prototype: EffectRCDDeconstructPreview
+  rotation: Camera
+
+- type: LPPRCDFAP
+  id: LPPDeconstructLattice   # Hidden prototype - do not add to RCDFAPs
+  name: rcdfap-component-deconstruct
+  mode: Deconstruct
+  cost: 2
+  delay: 0
+  rotation: Camera
+  fx: EffectRCDConstruct0
+
+- type: LPPRCDFAP
+  id: LPPDeconstructTile      # Hidden prototype - do not add to RCDFAPs
+  name: rcdfap-component-deconstruct
+  mode: Deconstruct
+  cost: 4
+  delay: 4
+  rotation: Camera
+  fx: EffectRCDDeconstruct4
+
+- type: LPPRCDFAP
+  id: LPPGasPipeManifold
+  name: rcdfap-component-GasPipeManifold
+  category: Main
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/GasPipeManifold.png
+  mode: ConstructObject
+  prototype: GasPipeManifold
+  cost: 1
+  delay: 0
+  collisionMask: InteractImpassable
+  rules:
+    - IsWall
+  rotation: User
+  fx: EffectRCDConstruct0
+
+# DevicesAndAtmos
+
+- type: LPPRCDFAP
+  id: LPPHeatExchanger
+  name: rcdfap-component-HeatExchanger
+  category: DevicesAndAtmos
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/DevicesAndAtmos/HeatExchanger.png
+  mode: ConstructObject
+  prototype: HeatExchanger
+  cost: 1
+  delay: 0
+  collisionMask: InteractImpassable
+  rules:
+    - IsWall
+  rotation: User
+  fx: EffectRCDConstruct0
+
+- type: LPPRCDFAP
+  id: LPPFireAlarm
+  name: rcdfap-component-FireAlarm
+  category: DevicesAndAtmos
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/DevicesAndAtmos/FireAlarm.png
+  mode: ConstructObject
+  prototype: FireAlarm
+  cost: 1
+  delay: 0
+  collisionMask: InteractImpassable
+  rules:
+    - IsWall
+  rotation: User
+  fx: EffectRCDConstruct0
+
+- type: LPPRCDFAP
+  id: LPPGasMixer
+  name: rcdfap-component-GasMixer
+  category: DevicesAndAtmos
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/DevicesAndAtmos/GasMixer.png
+  mode: ConstructObject
+  prototype: GasMixer
+  cost: 3
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasMixerFlipped
+  name: rcdfap-component-GasMixerFlipped
+  category: DevicesAndAtmos
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/DevicesAndAtmos/GasMixerFlipped.png
+  mode: ConstructObject
+  prototype: GasMixerFlipped
+  cost: 3
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasFilter
+  name: rcdfap-component-GasFilter
+  category: DevicesAndAtmos
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/DevicesAndAtmos/GasFilter.png
+  mode: ConstructObject
+  prototype: GasFilter
+  cost: 3
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasFilterFlipped
+  name: rcdfap-component-GasFilterFlipped
+  category: DevicesAndAtmos
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/DevicesAndAtmos/GasFilterFlipped.png
+  mode: ConstructObject
+  prototype: GasFilterFlipped
+  cost: 3
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasOutletInjector
+  name: rcdfap-component-GasOutletInjector
+  category: DevicesAndAtmos
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/DevicesAndAtmos/GasOutletInjector.png
+  mode: ConstructObject
+  prototype: GasOutletInjector
+  cost: 4
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPAtmosDeviceFanTiny
+  name: rcdfap-component-AtmosDeviceFanTiny
+  category: DevicesAndAtmos
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/DevicesAndAtmos/AtmosDeviceFanTiny.png
+  mode: ConstructObject
+  prototype: AtmosDeviceFanTiny
+  cost: 6
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - MustBuildOnSubfloor
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPAtmosDeviceFanDirectional
+  name: rcdfap-component-AtmosDeviceFanDirectional
+  category: DevicesAndAtmos
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/DevicesAndAtmos/AtmosDeviceFanDirectional.png
+  mode: ConstructObject
+  prototype: AtmosDeviceFanDirectional
+  cost: 6
+  delay: 4
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - MustBuildOnSubfloor
+  rotation: User
+  fx: EffectRCDConstruct4
+
+- type: LPPRCDFAP
+  id: LPPGasDualPortVentPump
+  name: rcdfap-component-GasDualPortVentPump
+  category: DevicesAndAtmos
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/DevicesAndAtmos/GasDualPortVentPump.png
+  mode: ConstructObject
+  prototype: GasDualPortVentPump
+  cost: 4
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPPressureControlledValve
+  name: rcdfap-component-PressureControlledValve
+  category: DevicesAndAtmos
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/DevicesAndAtmos/PressureControlledValve.png
+  mode: ConstructObject
+  prototype: PressureControlledValve
+  cost: 4
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasPort
+  name: rcdfap-component-GasPort
+  category: DevicesAndAtmos
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/DevicesAndAtmos/GasPort.png
+  mode: ConstructObject
+  prototype: GasPort
+  cost: 5
+  delay: 3
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct3
+
+- type: LPPRCDFAP
+  id: LPPAirSensor
+  name: rcdfap-component-AirSensor
+  category: DevicesAndAtmos
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/DevicesAndAtmos/AirSensor.png
+  mode: ConstructObject
+  prototype: AirSensor
+  cost: 4
+  delay: 3
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct3
+
+- type: LPPRCDFAP
+  id: LPPFloorDrain
+  name: rcdfap-component-FloorDrain
+  category: DevicesAndAtmos
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/DevicesAndAtmos/FloorDrain.png
+  mode: ConstructObject
+  prototype: FloorDrain
+  cost: 10
+  delay: 4
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct4
+
+- type: LPPRCDFAP
+  id: LPPAirAlarm
+  name: rcdfap-component-AirAlarm
+  category: DevicesAndAtmos
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/DevicesAndAtmos/AirAlarm.png
+  mode: ConstructObject
+  prototype: AirAlarm
+  cost: 6
+  delay: 4
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWall
+  rotation: User
+  fx: EffectRCDConstruct4
+
+# Gas Pipes
+## Layer1 - Primary
+- type: LPPRCDFAP
+  id: LPPGasPipeStraight
+  name: rcdfap-component-GasPipeStraight
+  category: GaspipesMain
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasPipeStraight.png
+  mode: ConstructObject
+  prototype: GasPipeStraight
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWall
+    - IsWindow
+    - MustBuildOnSubfloor
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasPipeHalf
+  name: rcdfap-component-GasPipeHalf
+  category: GaspipesMain
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasPipeHalf.png
+  mode: ConstructObject
+  prototype: GasPipeHalf
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWall
+    - IsWindow
+    - MustBuildOnSubfloor
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasPipeFourway
+  name: rcdfap-component-GasPipeFourway
+  category: GaspipesMain
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasPipeFourway.png
+  mode: ConstructObject
+  prototype: GasPipeFourway
+  cost: 4
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWall
+    - IsWindow
+    - MustBuildOnSubfloor
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasPipeTJunction
+  name: rcdfap-component-GasPipeTJunction
+  category: GaspipesMain
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasPipeTJunction.png
+  mode: ConstructObject
+  prototype: GasPipeTJunction
+  cost: 3
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWall
+    - IsWindow
+    - MustBuildOnSubfloor
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasPipeBend
+  name: rcdfap-component-GasPipeBend
+  category: GaspipesMain
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasPipeBend.png
+  mode: ConstructObject
+  prototype: GasPipeBend
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWall
+    - IsWindow
+    - MustBuildOnSubfloor
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasPressurePump
+  name: rcdfap-component-GasPressurePump
+  category: GaspipesMain
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasPressurePump.png
+  mode: ConstructObject
+  prototype: GasPressurePump
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasVolumePump
+  name: rcdfap-component-GasVolumePump
+  category: GaspipesMain
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasVolumePump.png
+  mode: ConstructObject
+  prototype: GasVolumePump
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasPassiveGate
+  name: rcdfap-component-GasPassiveGate
+  category: GaspipesMain
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasPassiveGate.png
+  mode: ConstructObject
+  prototype: GasPassiveGate
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasValve
+  name: rcdfap-component-GasValve
+  category: GaspipesMain
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasValve.png
+  mode: ConstructObject
+  prototype: GasValve
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPSignalControlledValve
+  name: rcdfap-component-SignalControlledValve
+  category: GaspipesMain
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/SignalControlledValve.png
+  mode: ConstructObject
+  prototype: SignalControlledValve
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasPipeSensor
+  name: rcdfap-component-GasPipeSensor
+  category: GaspipesMain
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasPipeSensor.png
+  mode: ConstructObject
+  prototype: GasPipeSensor
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasPressureRegulator
+  name: rcdfap-component-GasPressureRegulator
+  category: GaspipesMain
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasPressureRegulator.png
+  mode: ConstructObject
+  prototype: GasPressureRegulator
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasVentPump
+  name: rcdfap-component-GasVentPump
+  category: GaspipesMain
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/AtmosDevices/GasVentPump.png
+  mode: ConstructObject
+  prototype: GasVentPump
+  cost: 4
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasPassiveVent
+  name: rcdfap-component-GasPassiveVent
+  category: GaspipesMain
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/AtmosDevices/GasPassiveVent.png
+  mode: ConstructObject
+  prototype: GasPassiveVent
+  cost: 4
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasVentScrubber
+  name: rcdfap-component-GasVentScrubber
+  category: GaspipesMain
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/AtmosDevices/GasVentScrubber.png
+  mode: ConstructObject
+  prototype: GasVentScrubber
+  cost: 4
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+# Layer2 - Secondary
+
+- type: LPPRCDFAP
+  id: LPPGasPipeStraightAlt1
+  name: rcdfap-component-GasPipeStraightAlt1
+  category: GaspipesAlt1
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasPipeStraight.png
+  mode: ConstructObject
+  prototype: GasPipeStraightAlt1
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWall
+    - IsWindow
+    - MustBuildOnSubfloor
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasPipeHalfAlt1
+  name: rcdfap-component-GasPipeHalfAlt1
+  category: GaspipesAlt1
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasPipeHalf.png
+  mode: ConstructObject
+  prototype: GasPipeHalfAlt1
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWall
+    - IsWindow
+    - MustBuildOnSubfloor
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasPipeFourwayAlt1
+  name: rcdfap-component-GasPipeFourwayAlt1
+  category: GaspipesAlt1
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasPipeFourway.png
+  mode: ConstructObject
+  prototype: GasPipeFourwayAlt1
+  cost: 4
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWall
+    - IsWindow
+    - MustBuildOnSubfloor
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasPipeTJunctionAlt1
+  name: rcdfap-component-GasPipeTJunctionAlt1
+  category: GaspipesAlt1
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasPipeTJunction.png
+  mode: ConstructObject
+  prototype: GasPipeTJunctionAlt1
+  cost: 3
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWall
+    - IsWindow
+    - MustBuildOnSubfloor
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasPipeBendAlt1
+  name: rcdfap-component-GasPipeBendAlt1
+  category: GaspipesAlt1
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasPipeBend.png
+  mode: ConstructObject
+  prototype: GasPipeBendAlt1
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWall
+    - IsWindow
+    - MustBuildOnSubfloor
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasPressurePumpAlt1
+  name: rcdfap-component-GasPressurePumpAlt1
+  category: GaspipesAlt1
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasPressurePump.png
+  mode: ConstructObject
+  prototype: GasPressurePumpAlt1
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasVolumePumpAlt1
+  name: rcdfap-component-GasVolumePumpAlt1
+  category: GaspipesAlt1
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasVolumePump.png
+  mode: ConstructObject
+  prototype: GasVolumePumpAlt1
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasPassiveGateAlt1
+  name: rcdfap-component-GasPassiveGateAlt1
+  category: GaspipesAlt1
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasPassiveGate.png
+  mode: ConstructObject
+  prototype: GasPassiveGateAlt1
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasValveAlt1
+  name: rcdfap-component-GasValveAlt1
+  category: GaspipesAlt1
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasValve.png
+  mode: ConstructObject
+  prototype: GasValveAlt1
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPSignalControlledValveAlt1
+  name: rcdfap-component-SignalControlledValveAlt1
+  category: GaspipesAlt1
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/SignalControlledValve.png
+  mode: ConstructObject
+  prototype: SignalControlledValveAlt1
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasPipeSensorAlt1
+  name: rcdfap-component-GasPipeSensorAlt1
+  category: GaspipesAlt1
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasPipeSensor.png
+  mode: ConstructObject
+  prototype: GasPipeSensorAlt1
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasPressureRegulatorAlt1
+  name: rcdfap-component-GasPressureRegulatorAlt1
+  category: GaspipesAlt1
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasPressureRegulator.png
+  mode: ConstructObject
+  prototype: GasPressureRegulatorAlt1
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasVentPumpAlt1
+  name: rcdfap-component-LPPGasVentPumpAlt1
+  category: GaspipesAlt1
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/AtmosDevices/GasVentPump.png
+  mode: ConstructObject
+  prototype: LPPGasVentPumpAlt1
+  cost: 4
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasPassiveVentAlt1
+  name: rcdfap-component-LPPGasPassiveVentAlt1
+  category: GaspipesAlt1
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/AtmosDevices/GasPassiveVent.png
+  mode: ConstructObject
+  prototype: LPPGasPassiveVentAlt1
+  cost: 4
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasVentScrubberAlt1
+  name: rcdfap-component-LPPGasVentScrubberAlt1
+  category: GaspipesAlt1
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/AtmosDevices/GasVentScrubber.png
+  mode: ConstructObject
+  prototype: LPPGasVentScrubberAlt1
+  cost: 4
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+# Layer3 - Tertiary
+
+- type: LPPRCDFAP
+  id: LPPGasPipeStraightAlt2
+  name: rcdfap-component-GasPipeStraightAlt2
+  category: GaspipesAlt2
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasPipeStraight.png
+  mode: ConstructObject
+  prototype: GasPipeStraightAlt2
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWall
+    - IsWindow
+    - MustBuildOnSubfloor
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasPipeHalfAlt2
+  name: rcdfap-component-GasPipeHalfAlt2
+  category: GaspipesAlt2
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasPipeHalf.png
+  mode: ConstructObject
+  prototype: GasPipeHalfAlt2
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWall
+    - IsWindow
+    - MustBuildOnSubfloor
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasPipeFourwayAlt2
+  name: rcdfap-component-GasPipeFourwayAlt2
+  category: GaspipesAlt2
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasPipeFourway.png
+  mode: ConstructObject
+  prototype: GasPipeFourwayAlt2
+  cost: 4
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWall
+    - IsWindow
+    - MustBuildOnSubfloor
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasPipeTJunctionAlt2
+  name: rcdfap-component-GasPipeTJunctionAlt2
+  category: GaspipesAlt2
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasPipeTJunction.png
+  mode: ConstructObject
+  prototype: GasPipeTJunctionAlt2
+  cost: 3
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWall
+    - IsWindow
+    - MustBuildOnSubfloor
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasPipeBendAlt2
+  name: rcdfap-component-GasPipeBendAlt2
+  category: GaspipesAlt2
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasPipeBend.png
+  mode: ConstructObject
+  prototype: GasPipeBendAlt2
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWall
+    - IsWindow
+    - MustBuildOnSubfloor
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasPressurePumpAlt2
+  name: rcdfap-component-GasPressurePumpAlt2
+  category: GaspipesAlt2
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasPressurePump.png
+  mode: ConstructObject
+  prototype: GasPressurePumpAlt2
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasVolumePumpAlt2
+  name: rcdfap-component-GasVolumePumpAlt2
+  category: GaspipesAlt2
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasVolumePump.png
+  mode: ConstructObject
+  prototype: GasVolumePumpAlt2
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasPassiveGateAlt2
+  name: rcdfap-component-GasPassiveGateAlt2
+  category: GaspipesAlt2
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasPassiveGate.png
+  mode: ConstructObject
+  prototype: GasPassiveGateAlt2
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasValveAlt2
+  name: rcdfap-component-GasValveAlt2
+  category: GaspipesAlt2
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasValve.png
+  mode: ConstructObject
+  prototype: GasValveAlt2
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPSignalControlledValveAlt2
+  name: rcdfap-component-SignalControlledValveAlt2
+  category: GaspipesAlt2
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/SignalControlledValve.png
+  mode: ConstructObject
+  prototype: SignalControlledValveAlt2
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasPipeSensorAlt2
+  name: rcdfap-component-GasPipeSensorAlt2
+  category: GaspipesAlt2
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasPipeSensor.png
+  mode: ConstructObject
+  prototype: GasPipeSensorAlt2
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasPressureRegulatorAlt2
+  name: rcdfap-component-GasPressureRegulatorAlt2
+  category: GaspipesAlt2
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Pipes/GasPressureRegulator.png
+  mode: ConstructObject
+  prototype: GasPressureRegulatorAlt2
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasVentPumpAlt2
+  name: rcdfap-component-LPPGasVentPumpAlt2
+  category: GaspipesAlt2
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/AtmosDevices/GasVentPump.png
+  mode: ConstructObject
+  prototype: LPPGasVentPumpAlt2
+  cost: 4
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasPassiveVentAlt2
+  name: rcdfap-component-LPPGasPassiveVentAlt2
+  category: GaspipesAlt2
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/AtmosDevices/GasPassiveVent.png
+  mode: ConstructObject
+  prototype: LPPGasPassiveVentAlt2
+  cost: 4
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPGasVentScrubberAlt2
+  name: rcdfap-component-LPPGasVentScrubberAlt2
+  category: GaspipesAlt2
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/AtmosDevices/GasVentScrubber.png
+  mode: ConstructObject
+  prototype: LPPGasVentScrubberAlt2
+  cost: 4
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct2
+
+# DisposalPipes
+
+- type: LPPRCDFAP
+  id: LPPDisposalUnit
+  name: rcdfap-component-DisposalUnit
+  category: DisposalPipe
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/DisposalPipes/DisposalUnit.png
+  mode: ConstructObject
+  prototype: DisposalUnit
+  cost: 10
+  delay: 4
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct4
+
+- type: LPPRCDFAP
+  id: LPPMailingUnit
+  name: rcdfap-component-MailingUnit
+  category: DisposalPipe
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/DisposalPipes/MailingUnit.png
+  mode: ConstructObject
+  prototype: MailingUnit
+  cost: 10
+  delay: 4
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rotation: User
+  fx: EffectRCDConstruct4
+
+- type: LPPRCDFAP
+  id: LPPDisposalJunctionFlipped
+  name: rcdfap-component-DisposalJunctionFlipped
+  category: DisposalPipe
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/DisposalPipes/DisposalJunctionFlipped.png
+  mode: ConstructObject
+  prototype: DisposalJunctionFlipped
+  cost: 3
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWall
+    - IsWindow
+    - MustBuildOnSubfloor
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPDisposalJunction
+  name: rcdfap-component-DisposalJunction
+  category: DisposalPipe
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/DisposalPipes/DisposalJunction.png
+  mode: ConstructObject
+  prototype: DisposalJunction
+  cost: 3
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWall
+    - IsWindow
+    - MustBuildOnSubfloor
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPDisposalRouterFlipped
+  name: rcdfap-component-DisposalRouterFlipped
+  category: DisposalPipe
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/DisposalPipes/DisposalRouterFlipped.png
+  mode: ConstructObject
+  prototype: DisposalRouterFlipped
+  cost: 3
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWall
+    - IsWindow
+    - MustBuildOnSubfloor
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPDisposalRouter
+  name: rcdfap-component-DisposalRouter
+  category: DisposalPipe
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/DisposalPipes/DisposalRouter.png
+  mode: ConstructObject
+  prototype: DisposalRouter
+  cost: 3
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWall
+    - IsWindow
+    - MustBuildOnSubfloor
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPDisposalTagger
+  name: rcdfap-component-DisposalTagger
+  category: DisposalPipe
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/DisposalPipes/DisposalTagger.png
+  mode: ConstructObject
+  prototype: DisposalTagger
+  cost: 3
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWall
+    - IsWindow
+    - MustBuildOnSubfloor
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPDisposalBend
+  name: rcdfap-component-DisposalBend
+  category: DisposalPipe
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/DisposalPipes/DisposalBend.png
+  mode: ConstructObject
+  prototype: DisposalBend
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWall
+    - IsWindow
+    - MustBuildOnSubfloor
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPDisposalYJunction
+  name: rcdfap-component-DisposalYJunction
+  category: DisposalPipe
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/DisposalPipes/DisposalYJunction.png
+  mode: ConstructObject
+  prototype: DisposalYJunction
+  cost: 3
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWall
+    - IsWindow
+    - MustBuildOnSubfloor
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPDisposalSignalRouter
+  name: rcdfap-component-DisposalSignalRouter
+  category: DisposalPipe
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/DisposalPipes/DisposalSignalRouter.png
+  mode: ConstructObject
+  prototype: DisposalSignalRouter
+  cost: 3
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWall
+    - IsWindow
+    - MustBuildOnSubfloor
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPDisposalSignalRouterFlipped
+  name: rcdfap-component-DisposalSignalRouterFlipped
+  category: DisposalPipe
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/DisposalPipes/DisposalSignalRouterFlipped.png
+  mode: ConstructObject
+  prototype: DisposalSignalRouterFlipped
+  cost: 3
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWall
+    - IsWindow
+    - MustBuildOnSubfloor
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPDisposalTrunk
+  name: rcdfap-component-DisposalTrunk
+  category: DisposalPipe
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/DisposalPipes/DisposalTrunk.png
+  mode: ConstructObject
+  prototype: DisposalTrunk
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWall
+    - IsWindow
+    - MustBuildOnSubfloor
+  rotation: User
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPDisposalPipe
+  name: rcdfap-component-DisposalPipe
+  category: DisposalPipe
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/DisposalPipes/DisposalPipe.png
+  mode: ConstructObject
+  prototype: DisposalPipe
+  cost: 2
+  delay: 2
+  collisionMask: FullTileMask
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWall
+    - IsWindow
+    - MustBuildOnSubfloor
+  rotation: User
+  fx: EffectRCDConstruct2
+
+# Windows
+- type: LPPRCDFAP
+  id: LPPPlasmaWindow
+  category: Windows
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Windows/PlasmaWindow.png
+  mode: ConstructObject
+  prototype: PlasmaWindow
+  cost: 3
+  delay: 2
+  collisionMask: Impassable
+  rules:
+    - IsWindow
+  rotation: Fixed
+  fx: EffectRCDConstruct2
+
+- type: LPPRCDFAP
+  id: LPPPlasmaWindowDirectional
+  category: Windows
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Windows/PlasmaWindowDirectional.png
+  mode: ConstructObject
+  prototype: PlasmaWindowDirectional
+  cost: 2
+  delay: 1
+  collisionMask: Impassable
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWindow
+  rotation: User
+  fx: EffectRCDConstruct1
+  allowMultiDirection: true
+
+- type: LPPRCDFAP
+  id: LPPReinforcedPlasmaWindow
+  category: Windows
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Windows/ReinforcedPlasmaWindow.png
+  mode: ConstructObject
+  prototype: ReinforcedPlasmaWindow
+  cost: 4
+  delay: 3
+  collisionMask: Impassable
+  rules:
+    - IsWindow
+  rotation: User
+  fx: EffectRCDConstruct3
+
+- type: LPPRCDFAP
+  id: LPPPlasmaReinforcedWindowDirectional
+  category: Windows
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Windows/PlasmaReinforcedWindowDirectional.png
+  mode: ConstructObject
+  prototype: PlasmaReinforcedWindowDirectional
+  cost: 3
+  delay: 2
+  collisionMask: Impassable
+  collisionBounds: "-0.23,-0.49,0.23,-0.36"
+  rules:
+    - IsWindow
+  rotation: User
+  fx: EffectRCDConstruct2
+  allowMultiDirection: true
+
+- type: LPPRCDFAP
+  id: LPPGrille
+  category: Windows
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Windows/Grille.png
+  mode: ConstructObject
+  prototype: Grille
+  cost: 4
+  delay: 2
+  collisionMask: Impassable
+  rules:
+    - IsWindow
+  rotation: Fixed
+  fx: EffectRCDConstruct2
+
+# Airlocks
+- type: LPPRCDFAP
+  id: LPPAirlock
+  category: Airlocks
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Airlocks/Airlock.png
+  mode: ConstructObject
+  prototype: Airlock
+  cost: 4
+  delay: 4
+  collisionMask: FullTileMask
+  rotation: Camera
+  fx: EffectRCDConstruct4
+
+- type: LPPRCDFAP
+  id: LPPAirlockGlass
+  category: Airlocks
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Airlocks/AirlockGlass.png
+  mode: ConstructObject
+  prototype: AirlockGlass
+  cost: 4
+  delay: 4
+  collisionMask: FullTileMask
+  rotation: Camera
+  fx: EffectRCDConstruct4
+
+- type: LPPRCDFAP
+  id: LPPFirelock
+  category: Airlocks
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Airlocks/Firelock.png
+  mode: ConstructObject
+  prototype: Firelock
+  cost: 4
+  delay: 4
+  collisionMask: FullTileMask
+  rotation: Camera
+  fx: EffectRCDConstruct4
+
+- type: LPPRCDFAP
+  id: LPPAirlockShuttle
+  category: Airlocks
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Airlocks/AirlockShuttle.png
+  mode: ConstructObject
+  prototype: AirlockShuttle
+  cost: 10
+  delay: 4
+  collisionMask: FullTileMask
+  rotation: Camera
+  fx: EffectRCDConstruct4
+
+- type: LPPRCDFAP
+  id: LPPAirlockGlassShuttle
+  category: Airlocks
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Airlocks/AirlockGlassShuttle.png
+  mode: ConstructObject
+  prototype: AirlockGlassShuttle
+  cost: 10
+  delay: 4
+  collisionMask: FullTileMask
+  rotation: Camera
+  fx: EffectRCDConstruct4
+
+- type: LPPRCDFAP
+  id: LPPAirlockExternalLocked
+  category: Airlocks
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Airlocks/AirlockExternalLocked.png
+  mode: ConstructObject
+  prototype: AirlockExternalLocked
+  cost: 10
+  delay: 4
+  collisionMask: FullTileMask
+  rotation: Camera
+  fx: EffectRCDConstruct4
+
+- type: LPPRCDFAP
+  id: LPPAirlockExternalGlassLocked
+  category: Airlocks
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Airlocks/AirlockExternalGlassLocked.png
+  mode: ConstructObject
+  prototype: AirlockExternalGlassLocked
+  cost: 10
+  delay: 4
+  collisionMask: FullTileMask
+  rotation: Camera
+  fx: EffectRCDConstruct4
+
+# Cables
+- type: LPPRCDFAP
+  id: LPPLVCable
+  category: Cables
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Cables/CableApcExtension.png
+  mode: ConstructObject
+  prototype: CableApcExtension
+  cost: 1
+  delay: 0
+  rules:
+  - MustBuildOnSubfloor
+  rotation: Fixed
+  fx: EffectRCDConstruct0
+
+- type: LPPRCDFAP
+  id: LPPMVCable
+  category: Cables
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Cables/CableMV.png
+  mode: ConstructObject
+  prototype: CableMV
+  cost: 1
+  delay: 0
+  rules:
+  - MustBuildOnSubfloor
+  rotation: Fixed
+  fx: EffectRCDConstruct0
+
+- type: LPPRCDFAP
+  id: LPPHVCable
+  category: Cables
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Cables/CableHV.png
+  mode: ConstructObject
+  prototype: CableHV
+  cost: 1
+  delay: 0
+  rules:
+  - MustBuildOnSubfloor
+  rotation: Fixed
+  fx: EffectRCDConstruct0
+
+- type: LPPRCDFAP
+  id: LPPCableTerminal
+  category: Cables
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Cables/CableTerminal.png
+  mode: ConstructObject
+  prototype: CableTerminal
+  cost: 1
+  delay: 0
+  collisionMask: Impassable
+  rotation: User
+  fx: EffectRCDConstruct0
+
+# Tiles
+- type: LPPRCDFAP
+  id: LPPLattice
+  name: tiles-lattice
+  category: Tiles
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Tiles/Lattice.png
+  mode: ConstructTile
+  prototype: LPPLatticeRCDFAP
+  cost: 1
+  delay: 1
+  collisionMask: InteractImpassable
+  rules:
+    - CanBuildOnEmptyTile
+  fx: EffectRCDConstruct1
+
+- type: LPPRCDFAP
+  id: LPPPlating
+  name: rcdfap-component-plating
+  category: Tiles
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Tiles/Plating.png
+  mode: ConstructTile
+  prototype: LPPPlatingRCDFAP
+  cost: 1
+  delay: 1
+  collisionMask: InteractImpassable
+  rules:
+    - CanBuildOnEmptyTile
+  fx: EffectRCDConstruct1
+
+- type: LPPRCDFAP
+  id: LPPFloorSteel
+  name: rcdfap-component-floor-steel
+  category: Tiles
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Tiles/FloorSteel.png
+  mode: ConstructTile
+  prototype: FloorSteel
+  cost: 1
+  delay: 1
+  collisionMask: InteractImpassable
+  rules:
+    - CanBuildOnEmptyTile
+  fx: EffectRCDConstruct1
+
+- type: LPPRCDFAP
+  id: LPPCatwalk
+  category: Tiles
+  sprite: /Textures/_LP/Interface/Radial/RCDFAP/Tiles/Catwalk.png
+  mode: ConstructObject
+  prototype: Catwalk
+  cost: 1
+  delay: 1
+  collisionMask: InteractImpassable
+  rules:
+    - MustBuildOnSubfloor
+    - IsCatwalk
+  rotation: Fixed
+  fx: EffectRCDConstruct1

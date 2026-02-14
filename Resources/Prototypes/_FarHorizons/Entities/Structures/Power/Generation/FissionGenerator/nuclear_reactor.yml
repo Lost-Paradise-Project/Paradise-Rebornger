@@ -190,7 +190,7 @@
 
 - type: entity
   id: NuclearReactorMelted # This is more of a decoration than anything else
-  parent: BaseStructure
+  parent: [BaseStructure, GasMinerTritium]
   suffix: Melted
   name: nuclear reactor
   description: A broken nuclear reactor vessel. It glows with heat and radiation.
@@ -213,7 +213,7 @@
         - MachineLayer
         - HighImpassable
   - type: RadiationSource
-    intensity: 7
+    intensity: 50
   - type: InteractionOutline
   - type: PointLight
     energy: 0.1

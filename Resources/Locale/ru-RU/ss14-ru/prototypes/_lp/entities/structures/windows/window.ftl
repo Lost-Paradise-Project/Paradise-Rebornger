@@ -1,0 +1,2 @@
+ent-LPPWindowRCDFAPDeconstructable = { "" }
+    .desc = { "" }

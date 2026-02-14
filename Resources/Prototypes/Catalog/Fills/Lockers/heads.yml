@@ -171,6 +171,10 @@
     - id: BoxCECircuitboards
     - id: RCD
     - id: RCDAmmo
+    # LP Edit Start
+    - id: LPPRCDFAP
+    - id: LPPRCDFAPAmmo
+    # LP Edit End
     - id: RubberStampCE
     - id: MetalFoamGrenade
     - id: PlushieLizardJobChiefengineer

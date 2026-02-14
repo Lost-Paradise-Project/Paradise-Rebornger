@@ -31,6 +31,7 @@
     shootMaxInterval: 10
     shootRange: 3
     lightningPrototype: Lightning
+  - type: ContainmentFieldIgnore # to replace the cursed mass threshold system
 
 - type: entity
   id: TeslaEnergyBall
@@ -92,6 +93,7 @@
   - type: Tag
     tags:
     - GhostOnlyWarp
+    - Tesla # LP Edit
   - type: WarpPoint
     follow: true
     location: tesla ball
@@ -114,6 +116,7 @@
     interactSuccessString: petting-success-tesla
     interactFailureString: petting-failure-tesla
     interactSuccessSpawn: EffectHearts
+  - type: SupermatterImmune # Goobstation
   - type: GuideHelp # For the curious among the brave.
     guides:
     - TeslaEngine

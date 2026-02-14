@@ -8,6 +8,12 @@
     snap:
     - Disposal
   components:
+  # LP Edit Start
+  - type: RCDFAPDeconstructable
+    cost: 10
+    delay: 8
+    fx: EffectRCDDeconstruct8
+  # LP Edit End
   - type: Climbable
     vaultable: false
   - type: Sprite

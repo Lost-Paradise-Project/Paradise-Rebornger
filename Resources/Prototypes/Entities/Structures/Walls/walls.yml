@@ -9,6 +9,7 @@
     snap:
     - Wall
   components:
+  - type: CanBuildWallOnTopRCDFAP # LP Edit
   - type: Anchorable
     flags:
     - Anchorable
