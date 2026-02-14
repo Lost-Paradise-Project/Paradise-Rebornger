@@ -257,3 +257,26 @@ Entries:
   id: 5638
   time: '2026-02-07T04:46:26.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/44
+- author: BL02DL
+  changes:
+    - type: Add
+      message: Добавлена суперматерия!
+    - type: Add
+      message: Добавлено 11 новых газов!
+    - type: Add
+      message: Добавлен отражатель для эмиттеров!
+    - type: Add
+      message: Добавлен РСУАП!
+    - type: Add
+      message: Добавлена защита от отталкивания для скафандра СИ!
+    - type: Add
+      message: Добавлена защита от теслы для скафандра СИ!
+    - type: Tweak
+      message: Изменен звук счётчика гейгера!
+    - type: Tweak
+      message: >-
+        Изменён сломанный ядерный реактор, теперь он излучает крайне много
+        радиации и генерирует тритий!
+  id: 5639
+  time: '2026-02-14T16:51:25.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/54

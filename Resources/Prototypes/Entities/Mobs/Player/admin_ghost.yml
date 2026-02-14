@@ -120,6 +120,7 @@
   # Corvax-End
   - type: JobSlotsConsole # _CD
     debug: true
+  - type: SupermatterImmune # Goobstation
 
 - type: entity
   abstract: true

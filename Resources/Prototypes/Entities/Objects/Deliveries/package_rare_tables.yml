@@ -118,6 +118,10 @@
       tableId: PackageEngineeringMaterialBundle
     - !type:NestedSelector
       tableId: PackageEngineeringRCDBundle
+    # LP Edit Start
+    - !type:NestedSelector
+      tableId: LPPPackageEngineeringRCDFAPBundle
+    # LP Edit End
     - !type:NestedSelector
       tableId: PackageEngineeringClothingBundle
 

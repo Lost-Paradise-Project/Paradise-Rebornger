@@ -191,6 +191,7 @@
     - CrateEngineeringTeslaGroundingRod
     - CrateEngineeringParticleAccelerator
     - CrateRCD
+    - LPPCrateRCDFAP # LP Edit
     - CrateEngineeringGear
     rareChance: 0.2
     prototypes:
@@ -198,6 +199,7 @@
     - CrateElectrical
     - CrateEngineeringElectricalSupplies
     - CrateRCDAmmo
+    - LPPCrateRCDFAPAmmo # LP Edit
     - CrateEngineeringCableLV
     - CrateEngineeringCableMV
     - CrateEngineeringCableHV
