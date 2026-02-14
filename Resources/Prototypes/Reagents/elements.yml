@@ -113,16 +113,20 @@
   boilingPoint: 2700.0
   meltingPoint: 1064.76
 
-- type: reagent
-  id: Hydrogen
-  name: reagent-name-hydrogen
-  group: Elements
-  desc: reagent-desc-hydrogen
-  physicalDesc: reagent-physical-desc-gaseous
-  flavor: bitter
-  color: "#cccccc"
-  boilingPoint: -253.0
-  meltingPoint: -259.2
+# AruMoon Gas Port Start
+
+# - type: reagent
+#   id: Hydrogen
+#   name: reagent-name-hydrogen
+#   group: Elements
+#   desc: reagent-desc-hydrogen
+#   physicalDesc: reagent-physical-desc-gaseous
+#   flavor: bitter
+#   color: "#cccccc"
+#   boilingPoint: -253.0
+#   meltingPoint: -259.2
+
+# AruMoon Gas Port End
 
 - type: reagent
   id: Iodine
