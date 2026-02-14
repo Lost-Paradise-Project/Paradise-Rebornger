@@ -1,0 +1,353 @@
+- type: entity
+  id: LPPServiceProtolathe
+  parent: [BaseLatheLube, BaseSiloUtilizer]
+  name: service protolathe
+  description: Prints equipment and circuitboards for use by service department.
+  components:
+  - type: Sprite
+    sprite: _LP/Structures/Machines/serv_protolathe.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: LPPServiceProtolatheCircuitboard
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    staticPacks:
+    - SharedBoardsStatic
+    - CircuitFloorsStatic
+    - ToolsStatic
+    - PartsStatic
+    - AtmosStatic
+    - CablesStatic
+    - MaterialsStatic
+    - LightsStatic
+    - PowerCellsStatic
+    - ElectronicsStatic
+    - MiscSignallersStatic
+    - NailgunStatic
+    - NailsStatic
+    dynamicPacks:
+    - ServiceTools
+    - AtmosTools
+    - PowerCells
+    - Equipment
+    - SpecOpsGoogles
+    - EngineeringBoards
+    - SharedBoards
+    - CameraBoards
+    - UpgradeKits
+    # CorvaxGoob Packs
+    - WorkBeltsSharedDynamic # WorkBelts-Techfab
+    - WokrBeltsEngDynamic # WorkBelts-Techfab
+  - type: EmagLatheRecipes
+    emagStaticPacks:
+    - NailgunEvilStatic
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - Sheet
+        - RawMaterial
+        - Ingot
+
+- type: entity
+  id: LPPScienceProtolathe
+  parent: [BaseLatheLube, BaseSiloUtilizer]
+  name: science protolathe
+  description: Prints equipment and circuitboards for use by RnD department.
+  components:
+  - type: Sprite
+    sprite: _LP/Structures/Machines/serv_protolathe.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: LPPScienceProtolatheCircuitboard
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    staticPacks:
+    - SharedBoardsStatic
+    - CircuitFloorsStatic
+    - ToolsStatic
+    - PartsStatic
+    - AtmosStatic
+    - CablesStatic
+    - MaterialsStatic
+    - LightsStatic
+    - PowerCellsStatic
+    - ElectronicsStatic
+    - MiscSignallersStatic
+    - NailgunStatic
+    - NailsStatic
+    dynamicPacks:
+    - ServiceTools
+    - AtmosTools
+    - PowerCells
+    - Equipment
+    - SpecOpsGoogles
+    - EngineeringBoards
+    - SharedBoards
+    - CameraBoards
+    - UpgradeKits
+    # CorvaxGoob Packs
+    - WorkBeltsSharedDynamic # WorkBelts-Techfab
+    - WokrBeltsEngDynamic # WorkBelts-Techfab
+  - type: EmagLatheRecipes
+    emagStaticPacks:
+    - NailgunEvilStatic
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - Sheet
+        - RawMaterial
+        - Ingot
+
+- type: entity
+  id: LPPEngineeringProtolathe
+  parent: [BaseLatheLube, BaseSiloUtilizer]
+  name: engineering protolathe
+  description: Prints equipment and circuitboards for use by engineering department.
+  components:
+  - type: Sprite
+    sprite: _LP/Structures/Machines/serv_protolathe.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: LPPEngineeringProtolatheCircuitboard
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    staticPacks:
+    - SharedBoardsStatic
+    - CircuitFloorsStatic
+    - ToolsStatic
+    - PartsStatic
+    - AtmosStatic
+    - CablesStatic
+    - MaterialsStatic
+    - LightsStatic
+    - PowerCellsStatic
+    - ElectronicsStatic
+    - MiscSignallersStatic
+    - NailgunStatic
+    - NailsStatic
+    dynamicPacks:
+    - ServiceTools
+    - AtmosTools
+    - PowerCells
+    - Equipment
+    - SpecOpsGoogles
+    - EngineeringBoards
+    - SharedBoards
+    - CameraBoards
+    - UpgradeKits
+    # CorvaxGoob Packs
+    - WorkBeltsSharedDynamic # WorkBelts-Techfab
+    - WokrBeltsEngDynamic # WorkBelts-Techfab
+  - type: EmagLatheRecipes
+    emagStaticPacks:
+    - NailgunEvilStatic
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - Sheet
+        - RawMaterial
+        - Ingot
+
+- type: entity
+  id: LPPCargoProtolathe
+  parent: [BaseLatheLube, BaseSiloUtilizer]
+  name: cargo protolathe
+  description: Prints equipment and circuitboards for use by cargo department.
+  components:
+  - type: Sprite
+    sprite: _LP/Structures/Machines/serv_protolathe.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: LPPCargoProtolatheCircuitboard
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    staticPacks:
+    - SharedBoardsStatic
+    - CircuitFloorsStatic
+    - ToolsStatic
+    - PartsStatic
+    - AtmosStatic
+    - CablesStatic
+    - MaterialsStatic
+    - LightsStatic
+    - PowerCellsStatic
+    - ElectronicsStatic
+    - MiscSignallersStatic
+    - NailgunStatic
+    - NailsStatic
+    dynamicPacks:
+    - ServiceTools
+    - AtmosTools
+    - PowerCells
+    - Equipment
+    - SpecOpsGoogles
+    - EngineeringBoards
+    - SharedBoards
+    - CameraBoards
+    - UpgradeKits
+    # CorvaxGoob Packs
+    - WorkBeltsSharedDynamic # WorkBelts-Techfab
+    - WokrBeltsEngDynamic # WorkBelts-Techfab
+  - type: EmagLatheRecipes
+    emagStaticPacks:
+    - NailgunEvilStatic
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - Sheet
+        - RawMaterial
+        - Ingot
+
+- type: entity
+  id: LPPSpaceForge
+  parent: [BaseLatheLube, BaseSiloUtilizer]
+  name: service protolathe
+  description: Prints equipment and circuitboards for use by engineering department.
+  components:
+  - type: Sprite
+    sprite: _LP/Structures/Machines/serv_protolathe.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: LPPSpaceForgeCircuitboard
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    staticPacks:
+    - SharedBoardsStatic
+    - CircuitFloorsStatic
+    - ToolsStatic
+    - PartsStatic
+    - AtmosStatic
+    - CablesStatic
+    - MaterialsStatic
+    - LightsStatic
+    - PowerCellsStatic
+    - ElectronicsStatic
+    - MiscSignallersStatic
+    - NailgunStatic
+    - NailsStatic
+    dynamicPacks:
+    - ServiceTools
+    - AtmosTools
+    - PowerCells
+    - Equipment
+    - SpecOpsGoogles
+    - EngineeringBoards
+    - SharedBoards
+    - CameraBoards
+    - UpgradeKits
+    # CorvaxGoob Packs
+    - WorkBeltsSharedDynamic # WorkBelts-Techfab
+    - WokrBeltsEngDynamic # WorkBelts-Techfab
+  - type: EmagLatheRecipes
+    emagStaticPacks:
+    - NailgunEvilStatic
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - Sheet
+        - RawMaterial
+        - Ingot
+
+- type: entity
+  id: LPPSpaceForgeCMD
+  parent: [BaseLatheLube, BaseSiloUtilizer]
+  name: service protolathe
+  description: Prints equipment and circuitboards for use by engineering department.
+  components:
+  - type: Sprite
+    sprite: _LP/Structures/Machines/serv_protolathe.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: LPPSpaceForgeCMDCircuitboard
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    staticPacks:
+    - SharedBoardsStatic
+    - CircuitFloorsStatic
+    - ToolsStatic
+    - PartsStatic
+    - AtmosStatic
+    - CablesStatic
+    - MaterialsStatic
+    - LightsStatic
+    - PowerCellsStatic
+    - ElectronicsStatic
+    - MiscSignallersStatic
+    - NailgunStatic
+    - NailsStatic
+    dynamicPacks:
+    - ServiceTools
+    - AtmosTools
+    - PowerCells
+    - Equipment
+    - SpecOpsGoogles
+    - EngineeringBoards
+    - SharedBoards
+    - CameraBoards
+    - UpgradeKits
+    # CorvaxGoob Packs
+    - WorkBeltsSharedDynamic # WorkBelts-Techfab
+    - WokrBeltsEngDynamic # WorkBelts-Techfab
+  - type: EmagLatheRecipes
+    emagStaticPacks:
+    - NailgunEvilStatic
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - Sheet
+        - RawMaterial
+        - Ingot
