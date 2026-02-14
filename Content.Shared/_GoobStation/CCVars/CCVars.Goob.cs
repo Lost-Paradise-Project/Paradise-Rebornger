@@ -23,6 +23,12 @@ public sealed partial class GoobCVars
     public static readonly CVarDef<float> BarksVolume =
         CVarDef.Create("voice.barks_volume", 1f, CVar.CLIENTONLY | CVar.ARCHIVE);
 
+    /// <summary>
+    ///     Is ore silo enabled.
+    /// </summary>
+    public static readonly CVarDef<bool> SiloEnabled =
+        CVarDef.Create("goob.silo_enabled", true, CVar.SERVER | CVar.REPLICATED);
+
     #region Goobstation - Chat Highlight sounds!
     // Goobstation - Chat Highlight sounds!
     /// <summary>

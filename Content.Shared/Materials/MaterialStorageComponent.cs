@@ -67,6 +67,20 @@ public sealed partial class MaterialStorageComponent : Component
     /// </summary>
     [DataField]
     public bool CanEjectStoredMaterials = true;
+
+    // Goobstation Change Start
+    [DataField, ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
+    public bool ConnectToSilo;
+
+    [DataField, AutoNetworkedField]
+    public bool DisconnectSiloOffMap;
+
+    [DataField, AutoNetworkedField]
+    public bool DisallowOreEjection = true;
+
+    [DataField, AutoNetworkedField]
+    public bool IgnoreMaterialWhiteList;
+    // Goobstation Change End
 }
 
 [Serializable, NetSerializable]
@@ -76,30 +90,15 @@ public enum MaterialStorageVisuals : byte
 }
 
 /// <summary>
-/// Collects all the materials stored on a <see cref="MaterialStorageComponent"/>
-/// </summary>
-/// <param name="Entity">The entity holding all these materials</param>
-/// <param name="Materials">A dictionary of all materials held</param>
-/// <param name="LocalOnly">An optional specifier. Non-local sources (silo, etc.) should not add materials when this is false.</param>
-[ByRefEvent]
-public readonly record struct GetStoredMaterialsEvent(Entity<MaterialStorageComponent> Entity, Dictionary<ProtoId<MaterialPrototype>, int> Materials, bool LocalOnly);
-
-/// <summary>
-/// After using materials, removes them from storage.
-/// </summary>
-/// <param name="Entity">The entity that held the materials and is being used up</param>
-/// <param name="Materials">A dictionary of the difference of materials left.</param>
-/// <param name="LocalOnly">An optional specifier. Non-local sources (silo, etc.) should not consume materials when this is false.</param>
-[ByRefEvent]
-public readonly record struct ConsumeStoredMaterialsEvent(Entity<MaterialStorageComponent> Entity, Dictionary<ProtoId<MaterialPrototype>, int> Materials, bool LocalOnly);
-
-/// <summary>
-/// event raised on the materialStorage when a material entity is inserted into it.
+/// Lavaland Change: Event raised on the materialStorage when a material entity is inserted into it.
 /// </summary>
 [ByRefEvent]
-public readonly record struct MaterialEntityInsertedEvent(MaterialComponent MaterialComp)
+public readonly record struct MaterialEntityInsertedEvent(EntityUid User, EntityUid Inserted, MaterialComponent MaterialComp, int Count)
 {
+    public readonly EntityUid User = User;
+    public readonly EntityUid Inserted = Inserted;
     public readonly MaterialComponent MaterialComp = MaterialComp;
+    public readonly int Count = Count;
 }
 
 /// <summary>
@@ -136,4 +135,3 @@ public sealed class EjectMaterialMessage : EntityEventArgs
         SheetsToExtract = sheetsToExtract;
     }
 }
-

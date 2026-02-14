@@ -1,4 +1,5 @@
-﻿<controls:FancyWindow xmlns="https://spacestation14.io"
+﻿<!-- LP Edit -> Goob Silo Port Start -->
+<!-- <controls:FancyWindow xmlns="https://spacestation14.io"
                      xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
                      xmlns:graphics="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
                      xmlns:ui="clr-namespace:Content.Client.Materials.UI"
@@ -39,4 +40,5 @@
             </PanelContainer>
         </BoxContainer>
     </BoxContainer>
-</controls:FancyWindow>
+</controls:FancyWindow> -->
+<!--LP Edit Goob Silo Port End-->

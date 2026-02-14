@@ -1,6 +1,8 @@
-using Content.Shared.Materials.OreSilo;
+// LP Edit -> Goob Silo Port Start
+// using Content.Shared.Materials.OreSilo;
 
-namespace Content.Client.Materials;
+// namespace Content.Client.Materials;
 
-/// <inheritdoc/>
-public sealed class OreSiloSystem : SharedOreSiloSystem;
+// /// <inheritdoc/>
+// public sealed class OreSiloSystem : SharedOreSiloSystem;
+// LP Edit -> Goob Silo Port End
