@@ -48,7 +48,6 @@ public sealed class RCDFAPSystem : EntitySystem
     [Dependency] private readonly TagSystem _tags = default!;
 
     private readonly int _instantConstructionDelay = 0;
-    private readonly EntProtoId _instantConstructionFx = "EffectRCDConstruct0";
     private readonly ProtoId<RCDFAPPrototype> _deconstructTileProto = "LPPDeconstructTile";
     private readonly ProtoId<RCDFAPPrototype> _deconstructLatticeProto = "LPPDeconstructLattice";
     private static readonly ProtoId<TagPrototype> CatwalkTag = "Catwalk";
@@ -207,7 +206,7 @@ public sealed class RCDFAPSystem : EntitySystem
                 if (!contructedTile.Tile.IsEmpty)
                 {
                     delay = _instantConstructionDelay;
-                    effectPrototype = _instantConstructionFx;
+                    effectPrototype = effectPrototype;
                 }
 
                 break;

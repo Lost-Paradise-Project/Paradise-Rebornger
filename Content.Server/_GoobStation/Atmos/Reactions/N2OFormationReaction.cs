@@ -1,7 +1,3 @@
-// SPDX-FileCopyrightText: 2025 lambdatiger <11843718+lambdatiger@users.noreply.github.com>
-//
-// SPDX-License-Identifier: AGPL-3.0-or-lat
-
 using Content.Shared.Goobstation.Atmos;
 using Content.Server.Atmos;
 using Content.Server.Atmos.EntitySystems;

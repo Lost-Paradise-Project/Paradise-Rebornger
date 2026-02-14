@@ -165,8 +165,118 @@
   name: experimental RCDFAP
   description: A bluespace-enhanced rapid construction device for atmospheric purposes that passively generates its own compressed matter.
   components:
+  - type: LimitedCharges
+    maxCharges: 300
+  - type: RCDFAP
+    availablePrototypes:
+    #Gaspipes
+    #Layer1
+    - LPPNoFXGasPipeBend
+    - LPPNoFXGasPipeStraight
+    - LPPNoFXGasPipeHalf
+    - LPPNoFXGasPipeFourway
+    - LPPNoFXGasPipeTJunction
+    - LPPNoFXGasVentPump
+    - LPPNoFXGasPressurePump
+    - LPPNoFXGasVolumePump
+    - LPPNoFXGasPassiveVent
+    - LPPNoFXGasOutletInjector
+    - LPPNoFXGasValve
+    - LPPNoFXGasVentScrubber
+    - LPPNoFXGasPassiveGate
+    - LPPNoFXSignalControlledValve
+    - LPPNoFXPressureControlledValve
+    - LPPNoFXGasPipeSensor
+    - LPPNoFXGasPressureRegulator
+    #Layer2
+    - LPPNoFXGasPipeBendAlt1
+    - LPPNoFXGasPipeStraightAlt1
+    - LPPNoFXGasPipeHalfAlt1
+    - LPPNoFXGasPipeFourwayAlt1
+    - LPPNoFXGasPipeTJunctionAlt1
+    - LPPNoFXGasVentPumpAlt1
+    - LPPNoFXGasPressurePumpAlt1
+    - LPPNoFXGasVolumePumpAlt1
+    - LPPNoFXGasPassiveVentAlt1
+    - LPPNoFXGasValveAlt1
+    - LPPNoFXGasVentScrubberAlt1
+    - LPPNoFXGasPassiveGateAlt1
+    - LPPNoFXSignalControlledValveAlt1
+    - LPPNoFXGasPipeSensorAlt1
+    - LPPNoFXGasPressureRegulatorAlt1
+    #Layer3
+    - LPPNoFXGasPipeBendAlt2
+    - LPPNoFXGasPipeStraightAlt2
+    - LPPNoFXGasPipeHalfAlt2
+    - LPPNoFXGasPipeFourwayAlt2
+    - LPPNoFXGasPipeTJunctionAlt2
+    - LPPNoFXGasVentPumpAlt2
+    - LPPNoFXGasPressurePumpAlt2
+    - LPPNoFXGasVolumePumpAlt2
+    - LPPNoFXGasPassiveVentAlt2
+    - LPPNoFXGasValveAlt2
+    - LPPNoFXGasVentScrubberAlt2
+    - LPPNoFXGasPassiveGateAlt2
+    - LPPNoFXSignalControlledValveAlt2
+    - LPPNoFXGasPipeSensorAlt2
+    - LPPNoFXGasPressureRegulatorAlt2
+    #DisposalPipes
+    - LPPNoFXDisposalUnit
+    - LPPNoFXDisposalJunctionFlipped
+    - LPPNoFXDisposalJunction
+    - LPPNoFXDisposalRouterFlipped
+    - LPPNoFXDisposalRouter
+    - LPPNoFXDisposalTagger
+    - LPPNoFXDisposalBend
+    - LPPNoFXDisposalYJunction
+    - LPPNoFXDisposalSignalRouter
+    - LPPNoFXDisposalSignalRouterFlipped
+    - LPPNoFXDisposalTrunk
+    - LPPNoFXDisposalPipe
+    - LPPNoFXMailingUnit
+    #DevicesAndAtmos
+    - LPPNoFXGasMixer
+    - LPPNoFXGasMixerFlipped
+    - LPPNoFXGasFilter
+    - LPPNoFXGasFilterFlipped
+    - LPPNoFXHeatExchanger
+    - LPPNoFXAtmosDeviceFanTiny
+    - LPPNoFXAtmosDeviceFanDirectional
+    - LPPNoFXGasDualPortVentPump
+    - LPPNoFXGasPort
+    - LPPNoFXAirSensor
+    - LPPNoFXFloorDrain
+    - LPPNoFXAirAlarm
+    - LPPNoFXFireAlarm
+    #Tiles
+    - LPPNoFXLattice
+    - LPPNoFXPlating
+    - LPPNoFXFloorSteel
+    - LPPNoFXCatwalk
+    #Windows
+    - LPPNoFXPlasmaWindow
+    - LPPNoFXPlasmaWindowDirectional
+    - LPPNoFXReinforcedPlasmaWindow
+    - LPPNoFXPlasmaReinforcedWindowDirectional
+    - LPPNoFXGrille
+    #Airlocks
+    - LPPNoFXAirlock
+    - LPPNoFXAirlockGlass
+    - LPPNoFXFirelock
+    - LPPNoFXAirlockShuttle
+    - LPPNoFXAirlockGlassShuttle
+    - LPPNoFXAirlockExternalLocked
+    - LPPNoFXAirlockExternalGlassLocked
+    #Cables
+    - LPPNoFXLVCable
+    - LPPNoFXMVCable
+    - LPPNoFXHVCable
+    - LPPNoFXCableTerminal
+    #Other
+    - LPPDeconstruct
+    - LPPNoFXGasPipeManifold
   - type: AutoRecharge
-    rechargeDuration: 1
+    rechargeDuration: 0.1
 
 - type: entity
   name: compressed matter for atmospheric purposes
