@@ -139,8 +139,6 @@
   - CryostasisBeaker
   - SyringeCryostasis
   position: -1,4
-  technologyPrerequisites:
-  - AccessibilityTech
 
 - type: technology # Merge with other T2 medical research if possible!
   id: MechanizedTreatment
@@ -264,7 +262,6 @@
   position: 2,7
   technologyPrerequisites:
   - BluespaceCargoTransport
-  - HighEndSurgery
 
 - type: technology
   id: BluespaceChemistry

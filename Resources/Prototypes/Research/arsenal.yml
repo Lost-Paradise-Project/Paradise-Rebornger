@@ -52,8 +52,6 @@
   recipeUnlocks:
   - WeaponLaserCarbine
   position: 3,0
-  technologyPrerequisites:
-  - WeaponLaserCellRevolverTech
 
 - type: technology
   id: NonlethalAmmunition
@@ -152,7 +150,6 @@
   position: 0,3
   technologyPrerequisites:
   - AdvancedRiotControl
-  - RestraintTechnology
 
 # Tier 2
 
