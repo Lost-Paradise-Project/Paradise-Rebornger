@@ -1,3 +1,4 @@
+using Content.Shared._L5.Contract;
 using Content.Shared.StatusIcon;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
@@ -28,12 +29,26 @@ namespace Content.Shared.Access.Systems
         public string CurrentName { get; }
         public string CurrentJob { get; }
         public string CurrentJobIconId { get; }
+        public string CurrentContract { get; } // L5
 
-        public AgentIDCardBoundUserInterfaceState(string currentName, string currentJob, string currentJobIconId)
+        public AgentIDCardBoundUserInterfaceState(string currentName, string currentJob, string currentJobIconId, string currentContract)
         {
             CurrentName = currentName;
             CurrentJob = currentJob;
             CurrentJobIconId = currentJobIconId;
+            CurrentContract = currentContract; // L5
+        }
+    }
+
+    // L5 — contract changed message
+    [Serializable, NetSerializable]
+    public sealed class AgentIdCardContractChangedMessage : BoundUserInterfaceMessage
+    {
+        public ProtoId<ContractPrototype> ContractId {get; }
+
+        public AgentIdCardContractChangedMessage(ProtoId<ContractPrototype> contractId)
+        {
+            ContractId = contractId;
         }
     }
 

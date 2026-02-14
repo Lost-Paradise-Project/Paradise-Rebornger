@@ -42,6 +42,8 @@
       params:
         volume: -5
   # Goobstation edit end
+  - type: Contract # L5
+    contract: ContractNT
 
 #IDs with layers
 
@@ -188,6 +190,8 @@
     heldPrefix: silver
   - type: PresetIdCard
     job: HeadOfSecurity
+  - type: Contract # L5
+    contract: ContractNT
 
 - type: entity
   parent: IDCardStandard
@@ -462,6 +466,8 @@
       state: SecurityCadet
   - type: PresetIdCard
     job: SecurityCadet
+  - type: Contract # L5
+    contract: ContractNT
 
 - type: entity
   parent: IDCardStandard
@@ -480,6 +486,8 @@
       state: SecurityOfficer
   - type: PresetIdCard
     job: SecurityOfficer
+  - type: Contract # L5
+    contract: ContractNT
 
 - type: entity
   parent: IDCardStandard
@@ -498,6 +506,8 @@
       state: Warden
   - type: PresetIdCard
     job: Warden
+  - type: Contract # L5
+    contract: ContractNT
 
 - type: entity
   parent: IDCardStandard
@@ -516,6 +526,8 @@
       state: Detective
   - type: PresetIdCard
     job: Detective
+  - type: Contract # L5
+    contract: ContractNT
 
 - type: entity
   parent: IDCardStandard
@@ -532,6 +544,8 @@
     - sprite: *icon-rsi
       offset: *icon-offset
       state: Brigmedic
+  - type: Contract # L5
+    contract: ContractNT
 
 - type: entity
   parent: SecurityIDCard
@@ -548,6 +562,8 @@
     - sprite: *icon-rsi
       offset: *icon-offset
       state: SeniorOfficer
+  - type: Contract # L5
+    contract: ContractNT
 
 #Service
 
@@ -962,6 +978,8 @@
         type: AgentIDCardBoundUserInterface
       enum.ChameleonUiKey.Key:
         type: ChameleonBoundUserInterface
+  - type: Contract # L5
+    contract: ContractNT
 
 - type: entity
   parent: AgentIDCard
@@ -973,6 +991,8 @@
     - Maintenance
     - SyndicateAgent
     - NuclearOperative
+  - type: Contract # L5
+    contract: ContractGorlex
 
 - type: entity
   parent: [ IDCardStandard, BaseSyndicateContraband ]
@@ -995,6 +1015,8 @@
     tags:
     - NuclearOperative
     - SyndicateAgent
+  - type: Contract # L5
+    contract: ContractNT
 
 - type: entity
   parent: [ SyndicateIDCard, BaseSyndicateContraband ]
@@ -1014,6 +1036,8 @@
   - type: AgentIDCard
   - type: IdCard
     jobIcon: JobIconSyndicateOperative
+  - type: Contract # L5
+    contract: ContractGorlex
 
 - type: entity
   parent: [ SyndiOperativeIDCard, BaseSyndicateContraband ]
@@ -1032,6 +1056,8 @@
       state: SyndicateCorpsman
   - type: IdCard
     jobIcon: JobIconSyndicateCorpsman
+  - type: Contract # L5
+    contract: ContractGorlex
 
 - type: entity
   parent: [ SyndiOperativeIDCard, BaseSyndicateContraband ]
@@ -1166,6 +1192,8 @@
     heldPrefix: gold
   - type: PresetIdCard
     job: ERTLeader
+  - type: Contract # L5
+    contract: ContractNT
 
 - type: entity
   parent: IDCardStandard
@@ -1186,6 +1214,8 @@
     heldPrefix: blue
   - type: PresetIdCard
     job: ERTChaplain
+  - type: Contract # L5
+    contract: ContractNT
 
 - type: entity
   parent: IDCardStandard
@@ -1206,6 +1236,8 @@
     heldPrefix: blue
   - type: PresetIdCard
     job: ERTEngineer
+  - type: Contract # L5
+    contract: ContractNT
 
 - type: entity
   parent: IDCardStandard
@@ -1226,6 +1258,8 @@
     heldPrefix: blue
   - type: PresetIdCard
     job: ERTJanitor
+  - type: Contract # L5
+    contract: ContractNT
 
 - type: entity
   parent: IDCardStandard
@@ -1246,6 +1280,8 @@
     heldPrefix: blue
   - type: PresetIdCard
     job: ERTMedical
+  - type: Contract # L5
+    contract: ContractNT
 
 - type: entity
   parent: IDCardStandard
@@ -1266,6 +1302,10 @@
     heldPrefix: blue
   - type: PresetIdCard
     job: ERTSecurity
+  - type: Contract # L5
+    contract: ContractNT
+
+# End L5 — ERT to ERT
 
 - type: entity
   parent: IDCardStandard
@@ -1284,6 +1324,8 @@
       state: DeathSquad
   - type: PresetIdCard
     job: DeathSquad
+  - type: Contract # L5
+    contract: ContractIndependent
 
 - type: entity
   parent: IDCardStandard
@@ -1305,6 +1347,8 @@
     heldPrefix: blue
   - type: PresetIdCard
     job: CBURN
+  - type: Contract # L5
+    contract: ContractNT
 
 - type: entity
   parent: IDCardStandard
@@ -1348,3 +1392,5 @@
     interfaces:
       enum.AgentIDCardUiKey.Key:
         type: AgentIDCardBoundUserInterface
+  - type: Contract
+    contract: ContractAdmin

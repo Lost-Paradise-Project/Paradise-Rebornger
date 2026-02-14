@@ -2,6 +2,7 @@ using Content.Shared.Access.Systems;
 using Content.Shared.StatusIcon;
 using Robust.Client.GameObjects;
 using Robust.Client.UserInterface;
+using Content.Shared._L5.Contract;
 using Robust.Shared.Prototypes;
 
 namespace Content.Client.Access.UI
@@ -26,6 +27,13 @@ namespace Content.Client.Access.UI
             _window.OnNameChanged += OnNameChanged;
             _window.OnJobChanged += OnJobChanged;
             _window.OnJobIconChanged += OnJobIconChanged;
+            _window.OnContractChanged += OnContractChanged; // L5
+        }
+
+        // L5 — Contracts
+        private void OnContractChanged(ProtoId<ContractPrototype> newContract)
+        {
+            SendMessage(new AgentIdCardContractChangedMessage(newContract));
         }
 
         private void OnNameChanged(string newName)
@@ -56,6 +64,7 @@ namespace Content.Client.Access.UI
             _window.SetCurrentName(cast.CurrentName);
             _window.SetCurrentJob(cast.CurrentJob);
             _window.SetAllowedIcons(cast.CurrentJobIconId);
+            _window.SetCurrentContract(cast.CurrentContract); // L5
         }
     }
 }
