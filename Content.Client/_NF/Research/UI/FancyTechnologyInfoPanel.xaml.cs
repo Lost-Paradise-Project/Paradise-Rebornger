@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using Content.Client.Lathe;
 using Content.Client.Research;
 using Content.Client.Research.UI;

@@ -1,4 +1,4 @@
-﻿<LayoutContainer xmlns="https://spacestation14.io"
+<LayoutContainer xmlns="https://spacestation14.io"
                  xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
                  xmlns:graphics="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
                  xmlns:nf="clr-namespace:Content.Client._NF.Research.UI"

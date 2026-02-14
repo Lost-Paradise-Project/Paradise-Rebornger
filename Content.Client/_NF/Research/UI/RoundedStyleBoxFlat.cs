@@ -1,4 +1,4 @@
-﻿using System.Numerics;
+using System.Numerics;
 using Robust.Client.Graphics;
 
 namespace Content.Client._NF.Research.UI;

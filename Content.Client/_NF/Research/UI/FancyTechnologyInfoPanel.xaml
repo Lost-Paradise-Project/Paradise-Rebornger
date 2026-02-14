@@ -1,4 +1,4 @@
-﻿<Control xmlns="https://spacestation14.io"
+<Control xmlns="https://spacestation14.io"
          xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
          xmlns:customControls="clr-namespace:Content.Client.Administration.UI.CustomControls;assembly=Content.Client"
          Margin="5"

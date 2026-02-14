@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using Content.Shared.Research.Prototypes;
 using Robust.Shared.Maths;
 using Robust.Shared.Prototypes;

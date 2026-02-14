@@ -1,4 +1,4 @@
-﻿using Content.Shared.Research.Components;
+using Content.Shared.Research.Components;
 using Content.Shared.Research.Prototypes;
 using Content.Shared.Research.Systems;
 using Robust.Shared.Prototypes;

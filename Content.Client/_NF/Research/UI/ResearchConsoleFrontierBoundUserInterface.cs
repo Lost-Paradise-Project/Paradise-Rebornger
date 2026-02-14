@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using Content.Shared._NF.Research;
 using Content.Shared.Research.Components;
 using Content.Shared.Research.Prototypes;

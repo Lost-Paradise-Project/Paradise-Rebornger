@@ -1,4 +1,4 @@
-﻿using Content.Client.Parallax;
+using Content.Client.Parallax;
 using Content.Client.Research;
 using Content.Client.UserInterface.Controls;
 using Content.Shared._NF.Research;

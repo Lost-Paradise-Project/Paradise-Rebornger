@@ -1,4 +1,4 @@
-﻿using Robust.Client.Graphics;
+using Robust.Client.Graphics;
 using Robust.Client.UserInterface.Controls;
 using Content.Shared._NF.Research;
 using Content.Shared.Research.Prototypes;
