@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: BaseItem
   id: AiRemoteBrain
   name: "B.O.R.I.S. AI-Cyborg Remote Control"
