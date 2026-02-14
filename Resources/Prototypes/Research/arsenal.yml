@@ -235,7 +235,6 @@
   recipeUnlocks:
   - ClothingBackpackHarmpack
   technologyPrerequisites:
-  - SmartWeaponry
   - SpecialMeans
   position: 0, 4
 
