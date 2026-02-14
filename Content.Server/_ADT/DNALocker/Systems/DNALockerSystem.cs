@@ -2,7 +2,6 @@ using Content.Server.Explosion.EntitySystems;
 using Content.Shared.Emag.Systems;
 using Content.Shared.Forensics.Components;
 using Content.Shared.Interaction.Components;
-using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Popups;
 using Content.Shared.Verbs;
@@ -17,7 +16,6 @@ public sealed partial class DNALockerSystem : EntitySystem
     [Dependency] private readonly SharedAudioSystem _audioSystem = default!;
     [Dependency] private readonly ExplosionSystem _explosion = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly InventorySystem _inventorySystem = default!;
 
     public override void Initialize()
     {

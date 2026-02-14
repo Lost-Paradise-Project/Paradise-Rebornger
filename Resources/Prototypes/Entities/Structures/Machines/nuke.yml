@@ -117,6 +117,7 @@
       tags:
       - GhostOnlyWarp
   - type: FTLSmashImmune
+  - type: SupermatterImmune # Goobstation
 
 - type: entity
   parent: NuclearBomb

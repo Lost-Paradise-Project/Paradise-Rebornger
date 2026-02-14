@@ -1,0 +1,19 @@
+- type: cargoProduct
+  id: LPPEngineeringRCDFAPAmmo
+  icon:
+    sprite: _LP/Objects/Tools/rcdfap.rsi
+    state: ammo
+  product: LPPCrateRCDFAPAmmo
+  cost: 2500
+  category: cargoproduct-category-name-engineering
+  group: market
+
+- type: cargoProduct
+  id: LPPEngineeringRCDFAP
+  icon:
+    sprite: _LP/Objects/Tools/rcdfap.rsi
+    state: icon
+  product: LPPCrateRCDFAP
+  cost: 800
+  category: cargoproduct-category-name-engineering
+  group: market

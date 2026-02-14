@@ -6,6 +6,7 @@ using Content.Shared.Interaction;
 using Content.Shared.Item;
 using Content.Shared.Popups;
 using Content.Shared.Verbs;
+using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
 using Robust.Shared.Network;
@@ -24,10 +25,9 @@ public sealed class CardDeckSystem : EntitySystem
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly CardStackSystem _cardStackSystem = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly INetManager _net = default!;
     [Dependency] private readonly SharedContainerSystem _container = default!;
-    public readonly EntProtoId CardDeckBaseName = "CardDeckBase";
+    public readonly EntProtoId CardDeckBaseName = new("CardDeckBase");
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -97,7 +97,7 @@ public sealed class CardDeckSystem : EntitySystem
         if (_net.IsClient)
             return;
 
-        _audio.PlayPvs(comp.ShuffleSound, deck, AudioHelpers.WithVariation(0.05f, _random));
+        _audio.PlayPvs(comp.ShuffleSound, deck, AudioParams.Default.WithVariation(0.05f));
         _popup.PopupEntity(Loc.GetString("card-verb-shuffle-success", ("target", MetaData(deck).EntityName)), deck);
     }
 
@@ -107,11 +107,11 @@ public sealed class CardDeckSystem : EntitySystem
             return;
         _cardStackSystem.FlipAllCards(deck, stack, isFlipped: isFlipped);
 
-        _audio.PlayPvs(comp.ShuffleSound, deck, AudioHelpers.WithVariation(0.05f, _random));
+        _audio.PlayPvs(comp.ShuffleSound, deck, AudioParams.Default.WithVariation(0.05f));
         _popup.PopupEntity(Loc.GetString("card-verb-organize-success", ("target", MetaData(deck).EntityName), ("facedown", isFlipped)), deck);
     }
 
-    private EntityUid SpawnInSameParent(string prototype, EntityUid uid)
+    private EntityUid SpawnInSameParent(EntProtoId prototype, EntityUid uid)
     {
         if (_container.IsEntityOrParentInContainer(uid) &&
             _container.TryGetOuterContainer(uid, Transform(uid), out var container))

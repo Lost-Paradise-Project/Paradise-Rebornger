@@ -1,0 +1,63 @@
+- type: entity
+  parent: BaseStructure
+  id: LPPReflector
+  name: reflector
+  description: A special reflective panel specialized for reflecting emitter bolts in any direction. It has a label "BL CORP Engineering Technology".
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.4
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - WallLayer
+  - type: Anchorable
+  - type: Sprite
+    sprite: _LP/Structures/Reflecting/reflector.rsi
+    state: reflector_box
+  - type: Icon
+    sprite: _LP/Structures/Reflecting/reflector.rsi
+    state: reflector_box
+  - type: Reflector
+    # You can use here 5 modes for different directions: Forward, Backward, Left, Right, Mirror.
+    # Mirror mode is set as default.
+    # Вы можете использовать 5 разных режимов для разных направлений отражения: Forward, Backward, Left, Right, Mirror.
+    # Режим Mirror стоит как изначальное значение.
+    ReflectingMode: Forward
+  - type: Appearance
+
+# DO IN THE FUTURE!!! NEED TO REFACTOR REFLECTOR SYSTEM FOR THAT!!!
+
+# - type: entity
+#   parent: LPPReflector
+#   id: LPPReflectorCornerLeft
+#   name: left corner reflector
+#   description: A special reflective panel specialized for reflecting emitter bolts in left direction.
+#   components:
+#   - type: Sprite
+#     sprite: _LP/Structures/Reflecting/reflector.rsi
+#     state: reflector_corner_left
+#   - type: Icon
+#     sprite: _LP/Structures/Reflecting/reflector.rsi
+#     state: reflector_corner_left
+#   - type: Reflector
+#     ReflectingMode: Left
+
+# - type: entity
+#   parent: LPPReflector
+#   id: LPPReflectorCornerRight
+#   name: right corner reflector
+#   description: A special reflective panel specialized for reflecting emitter bolts in right direction.
+#   components:
+#   - type: Sprite
+#     sprite: _LP/Structures/Reflecting/reflector.rsi
+#     state: reflector_corner_right
+#   - type: Icon
+#     sprite: _LP/Structures/Reflecting/reflector.rsi
+#     state: reflector_corner_right
+#   - type: Reflector
+#     ReflectingMode: Right

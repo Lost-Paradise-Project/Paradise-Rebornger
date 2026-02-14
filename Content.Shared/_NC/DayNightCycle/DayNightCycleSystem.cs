@@ -1,13 +1,11 @@
 using System.Linq;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Network;
-using Robust.Shared.Timing;
 
 namespace Content.Shared._NC14.DayNightCycle
 {
     public sealed class DayNightCycleSystem : EntitySystem
     {
-        [Dependency] private readonly IGameTiming _gameTiming = default!;
         [Dependency] private readonly INetManager _net = default!;
 
         private const float EARLY_MORNING_TIME = 0.2f; // This represents 20% into the cycle, which is early morning

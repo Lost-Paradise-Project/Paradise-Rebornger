@@ -37,6 +37,10 @@
       - NetworkConfigurator
       - RCD
       - RCDAmmo
+      # LP Edit Start
+      - RCDFAP
+      - RCDFAPAmmo
+      # LP Edit End
       - Welder
       - PowerCell
       - Geiger

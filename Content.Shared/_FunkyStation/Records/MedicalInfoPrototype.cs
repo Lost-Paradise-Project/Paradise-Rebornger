@@ -2,7 +2,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Shared._FunkyStation.Records;
 
-[Prototype("medicalInfo"), Serializable]
+[Prototype]
 public sealed partial class MedicalInfoPrototype : IPrototype
 {
     [ViewVariables]

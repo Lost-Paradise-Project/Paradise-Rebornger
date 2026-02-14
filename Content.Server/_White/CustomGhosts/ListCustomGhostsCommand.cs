@@ -1,7 +1,4 @@
 using Content.Server._LP.Sponsors;
-using Content.Server.Database;
-using Content.Server.Players.PlayTimeTracking;
-using Content.Server.Preferences.Managers;
 using Content.Shared._White.CustomGhostSystem;
 using Content.Shared.Administration;
 using Robust.Shared.Console;
@@ -15,10 +12,7 @@ namespace Content.Server._White.Commands;
 [AnyCommand]
 public sealed class ListCustomGhostsCommand : IConsoleCommand
 {
-    [Dependency] private readonly IServerDbManager _db = default!;
     [Dependency] private readonly IPrototypeManager _proto = default!;
-    [Dependency] private readonly IServerPreferencesManager _prefMan = default!;
-    [Dependency] private readonly PlayTimeTrackingManager _playTimeTracking = default!;
 
     public string Command => "listcustomghosts";
     public string Description => Loc.GetString("listcustomghosts-command-description");

@@ -61,3 +61,9 @@
             - !type:PlaySoundBehavior
               sound:
                 collection: MetalBreak
+    # LP Edit Start
+    - type: RCDFAPDeconstructable
+      cost: 10
+      delay: 6
+      fx: EffectRCDDeconstruct6
+    # LP Edit End
