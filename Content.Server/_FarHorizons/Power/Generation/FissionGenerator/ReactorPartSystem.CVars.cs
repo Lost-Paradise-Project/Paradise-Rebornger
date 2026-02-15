@@ -1,4 +1,4 @@
-﻿using Content.Shared._FarHorizons.CCVar;
+using Content.Shared._FarHorizons.CCVar;
 using Robust.Shared.Configuration;
 
 namespace Content.Server._FarHorizons.Power.Generation.FissionGenerator;
