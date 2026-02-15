@@ -1,4 +1,4 @@
-﻿using Content.Shared._GoobStation.Singularity;
+using Content.Shared._GoobStation.Singularity;
 
 namespace Content.Server._GoobStation.Singularity.ContainmentField;
 

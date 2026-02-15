@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Content.Shared._GoobStation.Supermatter.Components;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Serialization;

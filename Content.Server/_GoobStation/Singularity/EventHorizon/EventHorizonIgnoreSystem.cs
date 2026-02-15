@@ -1,4 +1,4 @@
-﻿using Content.Server.Singularity.Events;
+using Content.Server.Singularity.Events;
 using Content.Shared.Whitelist;
 
 namespace Content.Server._GoobStation.Singularity.EventHorizon;

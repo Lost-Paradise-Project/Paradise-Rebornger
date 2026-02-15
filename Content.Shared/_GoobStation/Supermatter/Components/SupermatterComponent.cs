@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Content.Shared._GoobStation.Supermatter.Systems;
 using Content.Shared.Atmos;

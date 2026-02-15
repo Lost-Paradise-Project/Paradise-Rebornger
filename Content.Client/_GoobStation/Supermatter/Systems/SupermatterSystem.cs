@@ -1,4 +1,4 @@
-﻿using Content.Shared._GoobStation.Supermatter.Components;
+using Content.Shared._GoobStation.Supermatter.Components;
 using Content.Shared._GoobStation.Supermatter.Systems;
 using Robust.Shared.GameStates;
 

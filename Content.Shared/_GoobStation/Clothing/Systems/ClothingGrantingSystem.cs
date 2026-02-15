@@ -1,4 +1,4 @@
-﻿using Content.Shared._GoobStation.Clothing.Components;
+using Content.Shared._GoobStation.Clothing.Components;
 using Content.Shared.Clothing.Components;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Tag;

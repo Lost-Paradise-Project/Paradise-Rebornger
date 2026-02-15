@@ -1,4 +1,4 @@
-﻿namespace Content.Shared._GoobStation.Atmos
+namespace Content.Shared._GoobStation.Atmos
 {
     /// <summary>
     ///     Class to store atmos constants.

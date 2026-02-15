@@ -1,4 +1,4 @@
-﻿fax-machine-paper-empty = В факсе не осталось бумаги!
+fax-machine-paper-empty = В факсе не осталось бумаги!
 fax-machine-examine-papers-remaining = Листов в хранилище: [color=yellow]{$count}[/color].
 fax-machine-examine-is-storage-open = Хранилище бумаги: {$isopen ->
     [true] [color=green]открыто[/color]

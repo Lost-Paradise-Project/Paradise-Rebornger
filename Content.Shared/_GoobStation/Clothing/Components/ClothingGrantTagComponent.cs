@@ -1,4 +1,4 @@
-﻿namespace Content.Shared._GoobStation.Clothing.Components;
+namespace Content.Shared._GoobStation.Clothing.Components;
 
 [RegisterComponent]
 public sealed partial class ClothingGrantTagComponent : Component
