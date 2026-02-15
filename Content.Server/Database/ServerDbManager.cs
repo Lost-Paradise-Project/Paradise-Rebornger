@@ -162,6 +162,9 @@ namespace Content.Server.Database
             ImmutableTypedHwid? hwId);
         Task<PlayerRecord?> GetPlayerRecordByUserName(string userName, CancellationToken cancel = default);
         Task<PlayerRecord?> GetPlayerRecordByUserId(NetUserId userId, CancellationToken cancel = default);
+
+        Task<bool> SetLastRolledAntag(NetUserId userId, TimeSpan to); // Goobstation
+        Task<TimeSpan> GetLastRolledAntag(NetUserId userId); // Goobstation
         #endregion
 
         #region Connection Logs
@@ -596,6 +599,18 @@ namespace Content.Server.Database
         {
             DbReadOpsMetric.Inc();
             return RunDbCommand(() => _db.GetPlayerRecordByUserId(userId, cancel));
+        }
+
+        public Task<TimeSpan> GetLastRolledAntag(NetUserId userId) // Goobstation
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetLastRolledAntag(userId));
+        }
+
+        public Task<bool> SetLastRolledAntag(NetUserId userId, TimeSpan to) // Goobstation
+        {
+            DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.SetLastRolledAntag(userId, to));
         }
 
         public Task<int> AddConnectionLogAsync(

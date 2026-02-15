@@ -1,7 +1,4 @@
-shared-solution-container-component-on-examine-main-text = It contains {INDEFINITE($desc)} [color={$color}]{$desc}[/color] { $chemCount ->
-    [1] chemical.
-   *[other] mixture of chemicals.
-    }
+shared-solution-container-component-on-examine-main-text = It contains [color={ $color }]{ $desc }[/color] { $wordedAmount }
 
 examinable-solution-has-recognizable-chemicals = You can recognize {$recognizedString} in the solution.
 examinable-solution-recognized = [color={$color}]{$chemical}[/color]

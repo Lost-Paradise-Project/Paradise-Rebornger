@@ -1,4 +1,19 @@
 # Tier 1
+# Tree layout: Two main branches from roots
+# Branch 1: SalvageWeapons -> NonlethalAmmunition -> AdvancedRiotControl -> ExplosiveTechnology
+#                                                           -> SpecialMeans -> DualWieldingTechnology
+#                    -> DraconicMunitions -> UraniumMunitions
+# Branch 2: WeaponizedLaserManipulation -> ConcentratedLaserWeaponry -> PortableMicrofusionWeaponry -> ThermalWeaponry
+#                                    -> WaveParticleHarnessing -> KineticModifications
+# Cross-discipline: BasicShuttleArmament (from Industrial Shuttlecraft) -> AdvancedShuttleWeapon
+
+- type: technology
+  id: SalvageWeapons
+  name: research-technology-salvage-weapons
+  icon:
+    sprite: Objects/Weapons/Guns/Basic/kinetic_accelerator.rsi
+    state: icon
+  discipline: Arsenal
   tier: 1
   cost: 5000
   recipeUnlocks:

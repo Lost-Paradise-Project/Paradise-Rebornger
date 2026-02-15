@@ -10,6 +10,7 @@
     size: Tiny
   - type: Clothing
     slots: BREAST
+    preferredSlots: BREAST
   - type: Tag
     tags:
     - breast

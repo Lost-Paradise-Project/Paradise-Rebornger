@@ -1,5 +1,3 @@
-# Tier 1
-
 - type: technology
   id: BasicRobotics
   name: research-technology-basic-robotics
@@ -179,7 +177,7 @@
   technologyPrerequisites:
   - GravityManipulation
 
-- type: technology
+ type: technology
   id: BluespaceTimeManipulation
   name: research-technology-bluespace-time-manipulation
   icon:
