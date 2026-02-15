@@ -9,12 +9,12 @@
 
 - type: loadout
   id: LPPClothingUniformJumpsuitSecEngineer
-  equipment: 
+  equipment:
     jumpsuit: LPPClothingUniformJumpsuitSecEngineer
 
 - type: loadout
   id: LPPClothingUniformJumpSkirtSecEngineer
-  equipment: 
+  equipment:
     jumpsuit: LPPClothingUniformJumpSkirtSecEngineer
 
 - type: loadoutGroup
@@ -29,15 +29,15 @@
 
 - type: loadout
   id: LPPClothingBackpackSecurityEngineer
-  equipment: 
+  equipment:
     back: LPPClothingBackpackSecurityEngineer
 
 - type: loadout
   id: LPPClothingSatchelSecurityEngineer
-  equipment: 
+  equipment:
     back: LPPClothingSatchelSecurityEngineer
 
 - type: loadout
   id: LPPClothingBackpackDuffelSecurityEngineer
-  equipment: 
+  equipment:
     back: LPPClothingBackpackDuffelSecurityEngineer
