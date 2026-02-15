@@ -373,6 +373,7 @@
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
+  - type: ReflectorTarget # LP Edit
   - type: Sprite
     sprite: Structures/Power/Generation/Singularity/emitter.rsi
     layers:

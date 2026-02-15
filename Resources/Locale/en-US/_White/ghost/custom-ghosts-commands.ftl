@@ -1,9 +1,9 @@
-listcustomghosts-command-description = Lists ghosts that are available to you.
+listcustomghosts-command-description = Перечисляет виды призраков, которыми вы можете пользоваться.
 listcustomghosts-command-help-text = listcustomghosts [all]
-listcustomghosts-available-ghosts = Available ghosts:
-listcustomghosts-all-ghosts = All ghosts:
-listcustomghosts-locked = (locked)
-setcustomghost-command-description = Changes your ghost type. If you're already ghosted, the changes will apply the next time you leave your body.
+listcustomghosts-available-ghosts = Доступные призраки:
+listcustomghosts-all-ghosts = Все призраки:
+listcustomghosts-locked = (закрыт)
+setcustomghost-command-description = Устанавливает вид призрака, которым вы будете пользоваться. Если вы уже призрак, изменения будут применены, когда вы снова покинете своё тело.
 setcustomghost-command-help-text = setcustomghost ghost_id
-setcustomghost-command-invalid-ghost-id = Unknown ghost id.
-setcustomghost-command-saved = New ghost type saved. If you're already ghosted, the changes will apply the next time you leave your body.
+setcustomghost-command-invalid-ghost-id = Неправильно указан id призрака.
+setcustomghost-command-saved = Призрак сохранён. Если вы уже призрак, изменения будут применены при следующем выходе из тела.

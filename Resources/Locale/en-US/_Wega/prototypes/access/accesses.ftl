@@ -1,1 +1,1 @@
-id-card-access-level-empty = Empty
+id-card-access-level-empty = Пустой

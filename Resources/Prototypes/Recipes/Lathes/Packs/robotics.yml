@@ -33,6 +33,7 @@
   id: Robotics
   recipes:
   - ProximitySensor
+  - AiRemoteBrain # GoobStation
 
 - type: latheRecipePack
   id: BorgModules

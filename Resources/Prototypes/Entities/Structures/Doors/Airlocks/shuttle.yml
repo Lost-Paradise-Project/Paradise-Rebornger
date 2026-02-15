@@ -5,6 +5,12 @@
   name: external airlock
   description: Necessary for connecting two space craft together.
   components:
+  # LP Edit Start
+  - type: RCDFAPDeconstructable
+    cost: 4
+    delay: 2
+    fx: EffectRCDDeconstruct2
+  # LP Edit End
   - type: Docking
   - type: DockingSignalControl
   - type: DeviceLinkSource

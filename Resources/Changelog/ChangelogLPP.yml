@@ -257,3 +257,69 @@ Entries:
   id: 5638
   time: '2026-02-07T04:46:26.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/44
+- author: BL02DL
+  changes:
+    - type: Add
+      message: Добавлена суперматерия!
+    - type: Add
+      message: Добавлено 11 новых газов!
+    - type: Add
+      message: Добавлен отражатель для эмиттеров!
+    - type: Add
+      message: Добавлен РСУАП!
+    - type: Add
+      message: Добавлена защита от отталкивания для скафандра СИ!
+    - type: Add
+      message: Добавлена защита от теслы для скафандра СИ!
+    - type: Tweak
+      message: Изменен звук счётчика гейгера!
+    - type: Tweak
+      message: >-
+        Изменён сломанный ядерный реактор, теперь он излучает крайне много
+        радиации и генерирует тритий!
+  id: 5639
+  time: '2026-02-14T16:51:25.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/54
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлен магазин с функционалом для ИИ!
+  id: 5640
+  time: '2026-02-15T09:45:36.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/64
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: >-
+        Добавлена система повышения шанса выпадания антагов в зависимости от
+        последнего раза игры антаганистом!
+  id: 5641
+  time: '2026-02-15T09:45:52.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/61
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлен кулдаун на грабы в 3 секунды!
+    - type: Fix
+      message: Исправлено одевание нижнего белья!
+    - type: Fix
+      message: Исправлены баги ядерного реактора!
+  id: 5642
+  time: '2026-02-15T11:50:34.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/63
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлены подносы для сервиса!
+    - type: Add
+      message: Добавлен планшет для сб!
+  id: 5643
+  time: '2026-02-15T13:36:19.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/68
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлены контракты для определенных работ!
+  id: 5644
+  time: '2026-02-15T13:36:32.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/65

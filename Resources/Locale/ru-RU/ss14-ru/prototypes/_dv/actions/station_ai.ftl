@@ -1,0 +1,16 @@
+ent-ActionStationAiOpenShop = Выбрать программы
+    .desc = Позволяет установить программы для использования
+ent-ActionStationAiRgbLighting = ai-rgb-lighting-name
+    .desc = ai-rgb-lighting-desc
+ent-ActionStationAiLightSynthesizer = ai-light-synthesizer-name
+    .desc = ai-light-synthesizer-desc
+ent-ActionStationAiBikeHorn = ai-bike-horn-name
+    .desc = ai-bike-horn-desc
+ent-ActionStationAiHoloPointer = ai-holopointer-name
+    .desc = ai-holopointer-desc
+ent-StationAiHolopointer = Голо указатель
+    .desc = Голограмма который ИИ указывает тебе на что-то.
+ent-ActionStationAiRepairNanites = ai-repair-nanites-name
+    .desc = ai-repair-nanites-desc
+ent-ActionStationAiEmergencySealant = ai-emergency-sealant-name
+    .desc = ai-emergency-sealant-desc
