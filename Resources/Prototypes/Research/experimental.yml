@@ -1,13 +1,4 @@
 # Tier 1
-# Tree layout: BasicRobotics (root) -> three branches
-# Branch 1: BasicAnomalousResearch -> AnomalyCoreHarnessing ->
-#                                      AdvancedAnomalyResearch ->
-#                                      (merges with AbnormalArtifactManipulation) -> GravityManipulation
-# Branch 2: BasicXenoArcheology -> AbnormalArtifactManipulation -> (merges for GravityManipulation)
-# Branch 3: AlternativeResearch -> MagnetsTech
-#                                -> DeterrenceTechnologies
-# GravityManipulation -> QuantumLeaping
-#                     -> BluespaceTimeManipulation
 
 - type: technology
   id: BasicRobotics

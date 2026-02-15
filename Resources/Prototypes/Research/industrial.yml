@@ -1,9 +1,4 @@
 # Tier 1
-# Tree layout: PowerGeneration (root) -> SpaceScanning -> branches to SalvageEquipment, MechanicalCompression, AtmosphericTech
-#                                                                                    -> IndustrialEngineering -> AdvancedPowercells -> OptimizedMicrogalvanism
-#                              -> RipleyAPLU -> MassExcavation -> BluespaceStorage
-#                              -> Shuttlecraft -> AdvancedToolsTechnology
-#                              -> AdvancedAtmospherics
 
 - type: technology
   id: PowerGeneration

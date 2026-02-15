@@ -1,12 +1,4 @@
 # Tier 1
-# Tree layout: Multiple roots with cross-discipline dependencies
-# Root 1: AdvancedEntertainment -> Hydroponics -> MeatManipulation -> BluespaceCargoTransport -> QuantumFiberWeaving
-#                            -> AudioVisualCommunication -> FauxAstroTiles -> (merges with MeatManipulation)
-#                            -> CritterMechs -> PushHorn
-#                            -> MechanizedTreatment (also needs BasicRobotics from Experimental)
-#                            -> AdvancedCleaning -> AdvancedSpray
-# Root 2: BiochemicalStasis -> BluespaceChemistry -> LauncherSyringe
-# Cross-discipline: HONKMech (needs RipleyAPLU from Industrial)
 
 - type: technology
   id: AdvancedEntertainment

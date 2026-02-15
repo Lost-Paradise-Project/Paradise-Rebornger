@@ -1,5 +1,3 @@
-# Independent technology in Industrial discipline (no prerequisites)
-# Placed near other Industrial mining technologies (MassExcavation at 0, 4)
 - type: technology
   id: MiningServersTechnology
   name: research-technology-mining-servers
