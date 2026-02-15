@@ -33,6 +33,7 @@ using Content.Shared.IoC;
 using Content.Shared.Kitchen;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.Players.RateLimiting;
+using Content.Server._GoobStation.Antag;
 //LP edit start
 #if LP
 using Content.Server._LP.Sponsors;
@@ -93,6 +94,7 @@ internal static class ServerContentIoC
         deps.Register<ServerFeedbackManager>();
         deps.Register<ISharedFeedbackManager, ServerFeedbackManager>();
         IoCManager.Register<TTSManager>(); // Corvax-TTS
+        IoCManager.Register<LastRolledAntagManager>(); // Goobstation - antag pity
         // LP edit start
 #if LP
         IoCManager.Register<SponsorsManager>();
