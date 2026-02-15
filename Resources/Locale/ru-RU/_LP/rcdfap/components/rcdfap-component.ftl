@@ -1,4 +1,4 @@
-﻿### UI
+### UI
 
 rcdfap-component-examine-mode-details = Выбран режим: '{ $mode }'.
 rcdfap-component-examine-build-details = Выбран режим строительства: { $name }.

@@ -1,4 +1,4 @@
-﻿ent-GasTurbineSparkEffect = { "" }
+ent-GasTurbineSparkEffect = { "" }
     .desc = { "" }
 ent-GasTurbineSmokeEffect = { "" }
     .desc = { "" }

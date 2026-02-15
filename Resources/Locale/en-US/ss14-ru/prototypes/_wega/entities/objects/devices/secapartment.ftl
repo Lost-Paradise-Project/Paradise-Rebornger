@@ -1,4 +1,4 @@
-﻿ent-SecApartmentTabletUnpowered = SecApartment handheld tablet
+ent-SecApartmentTabletUnpowered = SecApartment handheld tablet
     .desc = A NanoTrasen-approved device for organizing and coordinating the actions of security personnel at corporate facilities.
 ent-SecApartmentTablet = { ent-SecApartmentTabletUnpowered }
     .suffix = Powered

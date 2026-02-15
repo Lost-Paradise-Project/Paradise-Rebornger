@@ -1,4 +1,4 @@
-﻿supermatter-announcer = Automatic Supermatter Engine
+supermatter-announcer = Automatic Supermatter Engine
 
 supermatter-examine-integrity =
     It's integrity is [color=yellow]{$integrity}%[/color].

@@ -1,4 +1,4 @@
-﻿ent-ActionStationAiOpenShop = Выбрать программы
+ent-ActionStationAiOpenShop = Выбрать программы
     .desc = Позволяет установить программы для использования
 ent-ActionStationAiRgbLighting = ai-rgb-lighting-name
     .desc = ai-rgb-lighting-desc

@@ -1,4 +1,4 @@
-﻿ent-LPPGasVentPumpAlt1 = { ent-GasPipeLayerAlt1 }
+ent-LPPGasVentPumpAlt1 = { ent-GasPipeLayerAlt1 }
     .desc = { ent-GasPipeLayerAlt1.desc }
 ent-LPPGasVentPumpAlt2 = { ent-GasPipeLayerAlt2 }
     .desc = { ent-GasPipeLayerAlt2.desc }

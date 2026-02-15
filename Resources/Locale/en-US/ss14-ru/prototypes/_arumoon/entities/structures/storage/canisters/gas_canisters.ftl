@@ -1,4 +1,4 @@
-﻿ent-BZCanister = { ent-GasCanister }
+ent-BZCanister = { ent-GasCanister }
     .desc = { ent-GasCanister.desc }
 ent-PluoxiumCanister = { ent-GasCanister }
     .desc = { ent-GasCanister.desc }

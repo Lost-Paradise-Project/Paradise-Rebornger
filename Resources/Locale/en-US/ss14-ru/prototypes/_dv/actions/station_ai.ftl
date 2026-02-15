@@ -1,4 +1,4 @@
-﻿ent-ActionStationAiOpenShop = Choose programs
+ent-ActionStationAiOpenShop = Choose programs
     .desc = Configure your installed programs
 ent-ActionStationAiRgbLighting = { ent-BaseAction }
     .desc = { ent-BaseAction.desc }

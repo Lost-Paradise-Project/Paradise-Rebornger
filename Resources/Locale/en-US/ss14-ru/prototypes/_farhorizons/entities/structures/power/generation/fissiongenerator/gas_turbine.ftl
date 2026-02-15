@@ -1,4 +1,4 @@
-﻿ent-BaseGasTurbine = Gas Turbine
+ent-BaseGasTurbine = Gas Turbine
     .desc = A large turbine used for generating power using hot gas.
 ent-BaseGasTurbineSmall = Small Gas Turbine
     .desc = A small turbine used for generating power using hot gas.

@@ -1,4 +1,4 @@
-﻿
+
 ### UI
 
 rcdfap-component-examine-mode-details = It's currently set to '{$mode}' mode.

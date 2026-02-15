@@ -1,4 +1,4 @@
-﻿supermatter-console-window-title = Консоль мониторинга Суперматерии
+supermatter-console-window-title = Консоль мониторинга Суперматерии
 supermatter-console-window-station-name = [color=white][font size=14]{ $stationName }[/font][/color]
 supermatter-console-window-unknown-location = Местоположение неизвестно
 supermatter-console-window-no-supermatters = [font size=16][color=white]Суперматерия не обнаружена[/font]

@@ -1,1 +1,1 @@
-﻿store-currency-display-ai-memory = ТБ
+store-currency-display-ai-memory = ТБ

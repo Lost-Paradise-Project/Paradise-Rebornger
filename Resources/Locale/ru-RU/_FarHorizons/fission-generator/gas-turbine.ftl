@@ -1,4 +1,4 @@
-﻿### Examine
+### Examine
 
 gas-turbine-examine-stator-null = Кажется, здесь не хватает статора.
 gas-turbine-examine-stator = Статор на месте.

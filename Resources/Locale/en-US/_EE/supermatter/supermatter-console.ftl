@@ -1,4 +1,4 @@
-﻿supermatter-console-window-title = Supermatter Monitoring Console
+supermatter-console-window-title = Supermatter Monitoring Console
 supermatter-console-window-station-name = [color=white][font size=14]{$stationName}[/font][/color]
 supermatter-console-window-unknown-location = Unknown location
 supermatter-console-window-no-supermatters = [font size=16][color=white]No supermatter detected[/font]

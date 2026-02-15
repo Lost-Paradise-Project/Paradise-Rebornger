@@ -1,4 +1,4 @@
-﻿ent-NuclearReactorSmokeEffect = { "" }
+ent-NuclearReactorSmokeEffect = { "" }
     .desc = { "" }
 ent-NuclearReactorFireEffect = { "" }
     .desc = { "" }

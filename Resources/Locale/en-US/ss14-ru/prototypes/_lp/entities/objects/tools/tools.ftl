@@ -1,4 +1,4 @@
-﻿ent-LPPRCDFAP = RCDFAP
+ent-LPPRCDFAP = RCDFAP
     .desc = The rapid construction device for atmospheric purposes can be used to quickly place and remove various station structures and fixtures. Requires compressed matter to function. It has a label "BL CORP Engineering Technology".
 ent-LPPRCDFAPEmpty = { ent-LPPRCDFAP }
     .suffix = Empty

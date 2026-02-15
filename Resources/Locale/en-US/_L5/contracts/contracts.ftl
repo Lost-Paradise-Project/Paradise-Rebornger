@@ -1,4 +1,4 @@
-﻿contract-nt-name = NanoTrasen
+contract-nt-name = NanoTrasen
 contract-nt-desc = Заключен контракт с компанией NanoTrasen на строительство и обслуживание станции.
 contract-gorlex-name = Gorlex Marauders
 contract-gorlex-desc = По контракту вам было поручено нарушать и вмешиваться в работу станции NanoTrasen.

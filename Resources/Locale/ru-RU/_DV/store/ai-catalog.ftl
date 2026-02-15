@@ -1,4 +1,4 @@
-﻿ai-rgb-lighting-name = RGB Подсветка
+ai-rgb-lighting-name = RGB Подсветка
 ai-rgb-lighting-desc = Меняет цвет лампочки на переливающийся RGB
 ai-light-synthesizer-name = Синтезатор ламп
 ai-light-synthesizer-desc = Отправьте нанитов для замены лампочки

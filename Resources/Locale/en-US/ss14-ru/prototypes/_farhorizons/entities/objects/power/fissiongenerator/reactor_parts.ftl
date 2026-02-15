@@ -1,4 +1,4 @@
-﻿ent-BaseReactorPart = { ent-BaseItem }
+ent-BaseReactorPart = { ent-BaseItem }
     .desc = { ent-BaseItem.desc }
 ent-BaseReactorFuelRod = Fuel Rod
     .desc = A fuel rod for a nuclear reactor.

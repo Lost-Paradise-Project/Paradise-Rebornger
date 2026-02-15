@@ -1,2 +1,2 @@
-﻿ent-LPPWindowRCDFAPDeconstructable = { "" }
+ent-LPPWindowRCDFAPDeconstructable = { "" }
     .desc = { "" }
