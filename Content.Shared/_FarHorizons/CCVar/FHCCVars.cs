@@ -1,7 +1,8 @@
-using Robust.Shared.Configuration;
+﻿using Robust.Shared.Configuration;
 
 namespace Content.Shared._FarHorizons.CCVar;
 
+[CVarDefs]
 public sealed class FHCCVars
 {
     /// <summary>
