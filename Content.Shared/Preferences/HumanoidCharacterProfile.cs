@@ -480,7 +480,7 @@ namespace Content.Shared.Preferences
         {
             return new(this)
             {
-                _antagPreferences = new (antagPreferences),
+                _antagPreferences = new(antagPreferences),
             };
         }
 
@@ -772,7 +772,7 @@ namespace Content.Shared.Preferences
 
             // Corvax-TTS-Start
             prototypeManager.TryIndex<TTSVoicePrototype>(Voice, out var voice);
-            if (voice is null || !CanHaveVoice(voice, Sex))
+            if (voice is null || !CanHaveVoice(voice, Sex, sponsorTier))
                 Voice = HumanoidProfileSystem.DefaultSexVoice[sex];
             // Corvax-TTS-End
 
@@ -851,7 +851,7 @@ namespace Content.Shared.Preferences
 
         // Corvax-TTS-Start
         // SHOULD BE NOT PUBLIC, BUT....
-        public static bool CanHaveVoice(TTSVoicePrototype voice, Sex sex)
+        public static bool CanHaveVoice(TTSVoicePrototype voice, Sex sex, int sponsorTier = 0)
         {
             return voice.RoundStart && sex == Sex.Unsexed || (voice.Sex == sex || voice.Sex == Sex.Unsexed);
         }
