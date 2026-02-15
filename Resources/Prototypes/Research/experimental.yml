@@ -177,7 +177,7 @@
   technologyPrerequisites:
   - GravityManipulation
 
- type: technology
+- type: technology
   id: BluespaceTimeManipulation
   name: research-technology-bluespace-time-manipulation
   icon:
