@@ -6,7 +6,7 @@
     lifetime: 1
   - type: Sprite
     drawdepth: Effects
-    sprite: _Starlight/Effects/armor_sparks.rsi
+    sprite: _StarLight/Effects/armor_sparks.rsi
     layers:
     - state: armor_sparks
       map: ["armor_sparks"]
