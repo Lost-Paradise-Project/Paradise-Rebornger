@@ -41,6 +41,7 @@
 | Поддиректория    | Форк                 | Исходный репозиторий                                     | Лицензия |
 |------------------|----------------------|----------------------------------------------------------|----------|
 | `_Wega`          | Wega                 | https://github.com/wega-team/ss14-wega                   | GPL 3.0  |
+| `_WL`            | Corvax WL            | https://github.com/corvax-team/ss14-wl                   | GPL 3.0  |
 | `_GoobStation`   | Goob Station         | https://github.com/Goob-Station/Goob-Station             | AGPL 3.0 |
 | `_EE`            | Einstein Engines     | https://github.com/Simple-Station/Einstein-Engines       | AGPL 3.0 |
 | `_ADT`           | Adventure Time       | https://github.com/AdventureTimeSS14/space_station_ADT   | AGPL 3.0 |
