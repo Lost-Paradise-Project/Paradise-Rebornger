@@ -110,6 +110,9 @@
         },
         {
             "name": "idpilot"
+        },
+        {
+            "name": "idsecurityenginer"
         }
     ]
 }

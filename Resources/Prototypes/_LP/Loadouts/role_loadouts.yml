@@ -1,0 +1,10 @@
+- type: roleLoadout
+  id: JobLPPSecurityEnginer
+  groups:
+  - LPPBrigtechUniform
+  - LPPSecurityEngineerBackpack
+  - Trinkets
+  - SurvivalSecurity
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout

@@ -1,0 +1,8 @@
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: LPPClothingSatchelSecurityEngineer
+  name: hop duffel bag
+  description: Twice as many handcuffs!
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Back/Satchels/securityEngineer.rsi

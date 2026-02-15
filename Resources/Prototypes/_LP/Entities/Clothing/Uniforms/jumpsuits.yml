@@ -668,3 +668,14 @@
     sprite: _LP/Clothing/Uniforms/Cargo/exploreralt.rsi
   - type: Clothing
     sprite: _LP/Clothing/Uniforms/Cargo/exploreralt.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitSecEngineer
+  name: security engineer jumpskirt
+  description: A jumpsuit made of strong material, providing robust protection.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Sec/Engineer/securityEngineerJumpSuit.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Sec/Engineer/securityEngineerJumpSuit.rsi

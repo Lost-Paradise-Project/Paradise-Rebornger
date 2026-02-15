@@ -1,0 +1,11 @@
+- type: entity
+  parent: IDCardStandard
+  id: LPPSecurityEnginerIDCard
+  name: field engineer ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idsecurityenginer
+  - type: PresetIdCard
+    job: LPPSecurityEnginer

@@ -52,3 +52,12 @@
     sprite: _LP/Clothing/Shoes/Boots/clownPomni.rsi
   - type: Clothing
     sprite: _LP/Clothing/Shoes/Boots/clownPomni.rsi
+
+- type: entity
+  parent: ClothingShoesBootsJack
+  id: LPPClothingShoesBootsJackSecEnginer
+  components:
+    - type: Sprite
+      sprite: _LP/Clothing/Shoes/Boots/jackboots_sec_enginer.rsi
+    - type: Clothing
+      sprite: _LP/Clothing/Shoes/Boots/jackboots_sec_enginer.rsi

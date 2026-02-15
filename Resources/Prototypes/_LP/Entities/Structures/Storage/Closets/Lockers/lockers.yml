@@ -1,0 +1,14 @@
+# Security Enginer
+
+- type: entity
+  id: LPPLockerSecEng
+  parent: LockerBaseSecure
+  name: field engineer locker
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: sec_engi
+    stateDoorOpen: sec_open
+    stateDoorClosed: sec_eng_door
+  - type: AccessReader
+    access: [["Engineering"]]
