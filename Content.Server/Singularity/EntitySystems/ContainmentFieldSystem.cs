@@ -6,7 +6,7 @@ using Content.Shared.Singularity.Components;
 using Content.Shared.Throwing;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Events;
-using Content.Shared.Goobstation.Singularity; // LP Edit
+using Content.Shared._GoobStation.Singularity; // LP Edit
 
 namespace Content.Server.Singularity.EntitySystems;
 
