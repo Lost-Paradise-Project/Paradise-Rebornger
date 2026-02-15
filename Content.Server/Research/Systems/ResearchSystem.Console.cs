@@ -63,6 +63,7 @@ public sealed partial class ResearchSystem
 
             _radio.SendRadioMessage(uid, message, component.AnnouncementChannel, uid, escapeMarkup: false);
 
+            // Starlight edit start
             if (technologyPrototype.RadioChannels.Any())
                 foreach (var radioChannelId in technologyPrototype.RadioChannels)
                 {
@@ -71,6 +72,7 @@ public sealed partial class ResearchSystem
                         _radio.SendRadioMessage(uid, message, radioChannel, uid, escapeMarkup: false);
                     }
                 }
+            // Starlight edit end
         }
 
         SyncClientWithServer(uid);
