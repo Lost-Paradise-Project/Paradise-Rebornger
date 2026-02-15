@@ -9,6 +9,7 @@
   cost: 5000
   recipeUnlocks:
   - ProximitySensor
+  - AiRemoteBrain # GoobStation
   position: 2, 20
 
 - type: technology
