@@ -137,6 +137,12 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
         DragContainer.OnKeyBindUp += OnKeybindUp;
         RecenterButton.OnPressed += _ => Recenter();
 
+        // Navigation buttons - direct Y scroll positions
+        NavIndustrialButton.OnPressed += _ => TechScrollContainer.VScrollTarget = 0;
+        NavArsenalButton.OnPressed += _ => TechScrollContainer.VScrollTarget = 900;
+        NavExperimentalButton.OnPressed += _ => TechScrollContainer.VScrollTarget = 1800;
+        NavCivilianButton.OnPressed += _ => TechScrollContainer.VScrollTarget = 2700;
+
         // Empty initialization
         UpdatePanels(List);
     }

@@ -1,90 +1,9 @@
 # Tier 1
-
-- type: technology
-  id: SalvageEquipment
-  name: research-technology-salvage-equipment
-  icon:
-    sprite: Objects/Tools/handdrill.rsi
-    state: handdrill
-  discipline: Industrial
-  tier: 1
-  cost: 7500
-  prerequisiteLineType: Diagonal
-  recipeUnlocks:
-  - MiningDrill
-  - MineralScannerEmpty
-  - OreProcessorIndustrialMachineCircuitboard
-  - ClothingMaskWeldingGas
-  - ClothingShoesBootsJump
-  position: 1, 2
-  technologyPrerequisites:
-  - SpaceScanning
-
-- type: technology
-  id: SpaceScanning
-  name: research-technology-space-scanning
-  icon:
-    sprite: Objects/Tools/handheld_mass_scanner.rsi
-    state: icon
-  discipline: Industrial
-  tier: 1
-  cost: 5000
-  recipeUnlocks:
-  - RadarConsoleCircuitboard
-  - HandHeldMassScanner
-  position: 2, 1
-  technologyPrerequisites:
-  - PowerGeneration
-
-- type: technology
-  id: AdvancedPowercells
-  name: research-technology-advanced-powercells
-  icon:
-    sprite: Structures/Power/turbo_recharger.rsi
-    state: empty
-  discipline: Industrial
-  tier: 1
-  cost: 7500
-  recipeUnlocks:
-  - PowerCellHigh
-  - TurboItemRechargerCircuitboard
-  - SMESAdvancedMachineCircuitboard
-  position: 3, 4
-  technologyPrerequisites:
-  - IndustrialEngineering
-
-- type: technology
-  id: MechanicalCompression
-  name: research-technology-mechanical-compression
-  icon:
-    sprite: Structures/Machines/flatpacker.rsi
-    state: base
-  discipline: Industrial
-  tier: 1
-  cost: 10000
-  recipeUnlocks:
-  - FlatpackerMachineCircuitboard
-  position: 2, 2
-  technologyPrerequisites:
-  - SpaceScanning
-
-- type: technology
-  id: IndustrialEngineering
-  name: research-technology-industrial-engineering
-  icon:
-    sprite: Structures/Machines/protolathe_hypercon.rsi
-    state: building
-  discipline: Industrial
-  tier: 1
-  cost: 10000
-  recipeUnlocks:
-  - AutolatheHyperConvectionMachineCircuitboard
-  - ProtolatheHyperConvectionMachineCircuitboard
-  - CircuitImprinterHyperConvectionMachineCircuitboard
-  - SheetifierMachineCircuitboard
-  position: 2, 3
-  technologyPrerequisites:
-  - MechanicalCompression
+# Tree layout: PowerGeneration (root) -> SpaceScanning -> branches to SalvageEquipment, MechanicalCompression, AtmosphericTech
+#                                                                                    -> IndustrialEngineering -> AdvancedPowercells -> OptimizedMicrogalvanism
+#                              -> RipleyAPLU -> MassExcavation -> BluespaceStorage
+#                              -> Shuttlecraft -> AdvancedToolsTechnology
+#                              -> AdvancedAtmospherics
 
 - type: technology
   id: PowerGeneration
@@ -105,6 +24,57 @@
   position: 2, 0
 
 - type: technology
+  id: SpaceScanning
+  name: research-technology-space-scanning
+  icon:
+    sprite: Objects/Tools/handheld_mass_scanner.rsi
+    state: icon
+  discipline: Industrial
+  tier: 1
+  cost: 5000
+  recipeUnlocks:
+  - RadarConsoleCircuitboard
+  - HandHeldMassScanner
+  position: 2, 1
+  technologyPrerequisites:
+  - PowerGeneration
+
+- type: technology
+  id: SalvageEquipment
+  name: research-technology-salvage-equipment
+  icon:
+    sprite: Objects/Tools/handdrill.rsi
+    state: handdrill
+  discipline: Industrial
+  tier: 1
+  cost: 7500
+  prerequisiteLineType: Diagonal
+  recipeUnlocks:
+  - MiningDrill
+  - MineralScannerEmpty
+  - OreProcessorIndustrialMachineCircuitboard
+  - ClothingMaskWeldingGas
+  - ClothingShoesBootsJump
+  position: 0, 2
+  technologyPrerequisites:
+  - SpaceScanning
+
+- type: technology
+  id: MechanicalCompression
+  name: research-technology-mechanical-compression
+  icon:
+    sprite: Structures/Machines/flatpacker.rsi
+    state: base
+  discipline: Industrial
+  tier: 1
+  cost: 10000
+  recipeUnlocks:
+  - FlatpackerMachineCircuitboard
+  position: 2, 2
+  technologyPrerequisites:
+  - SpaceScanning
+
+- type: technology
   id: AtmosphericTech
   name: research-technology-atmospheric-tech
   icon:
@@ -117,7 +87,7 @@
   recipeUnlocks:
   - ThermomachineFreezerMachineCircuitBoard
   - GasRecyclerMachineCircuitboard
-  position: 3, 2
+  position: 4, 2
   technologyPrerequisites:
   - SpaceScanning
 
@@ -139,11 +109,65 @@
   - RipleyCentralElectronics
   - RipleyPeripheralsElectronics
   - MechEquipmentGrabber
-  position: 1, 3
+  position: 0, 3
   technologyPrerequisites:
   - SalvageEquipment
 
+- type: technology
+  id: IndustrialEngineering
+  name: research-technology-industrial-engineering
+  icon:
+    sprite: Structures/Machines/protolathe_hypercon.rsi
+    state: building
+  discipline: Industrial
+  tier: 1
+  cost: 10000
+  recipeUnlocks:
+  - AutolatheHyperConvectionMachineCircuitboard
+  - ProtolatheHyperConvectionMachineCircuitboard
+  - CircuitImprinterHyperConvectionMachineCircuitboard
+  - SheetifierMachineCircuitboard
+  position: 2, 3
+  technologyPrerequisites:
+  - MechanicalCompression
+
+- type: technology
+  id: AdvancedAtmospherics
+  name: research-technology-advanced-atmospherics
+  icon:
+    sprite: Objects/Devices/Holoprojectors/atmos.rsi
+    state: icon
+  discipline: Industrial
+  tier: 2
+  cost: 7500
+  recipeUnlocks:
+  - HellfireFreezerMachineCircuitBoard
+  - PortableScrubberMachineCircuitBoard
+  - HolofanProjector
+  technologyPrerequisites:
+  - AtmosphericTech
+  position: 4, 3
+
 # Tier 2
+
+- type: technology
+  id: MassExcavation
+  name: research-technology-excavation
+  icon:
+    sprite: Objects/Tools/handdrilldiamond.rsi
+    state: handdrill
+  discipline: Industrial
+  tier: 2
+  cost: 12500
+  recipeUnlocks:
+    - OreBagOfHolding
+    - MiningDrillDiamond
+    - AdvancedMineralScannerEmpty
+    - BorgModuleAdvancedMining
+    - SalvageExpeditionsComputerCircuitboard
+  position: 0, 4
+  technologyPrerequisites:
+  - RipleyAPLU
 
 - type: technology
   id: Shuttlecraft
@@ -164,21 +188,40 @@
   - MechanicalCompression
 
 - type: technology
-  id: AdvancedAtmospherics
-  name: research-technology-advanced-atmospherics
+  id: AdvancedPowercells
+  name: research-technology-advanced-powercells
   icon:
-    sprite: Objects/Devices/Holoprojectors/atmos.rsi
-    state: icon
+    sprite: Structures/Power/turbo_recharger.rsi
+    state: empty
   discipline: Industrial
-  tier: 2
+  tier: 1
   cost: 7500
   recipeUnlocks:
-  - HellfireFreezerMachineCircuitBoard
-  - PortableScrubberMachineCircuitBoard
-  - HolofanProjector
+  - PowerCellHigh
+  - TurboItemRechargerCircuitboard
+  - SMESAdvancedMachineCircuitboard
+  position: 4, 4
   technologyPrerequisites:
-  - AtmosphericTech
-  position: 3, 3
+  - IndustrialEngineering
+
+# Tier 3
+
+- type: technology
+  id: BluespaceStorage
+  name: research-technology-bluespace-storage
+  icon:
+    sprite: Clothing/Back/Backpacks/holding.rsi
+    state: holding
+  discipline: Industrial
+  tier: 3
+  cost: 15000
+  recipeUnlocks:
+  - ClothingBackpackHolding
+  - ClothingBackpackSatchelHolding
+  - ClothingBackpackDuffelHolding
+  position: 0, 5
+  technologyPrerequisites:
+  - MassExcavation
 
 - type: technology
   id: AdvancedToolsTechnology
@@ -201,44 +244,6 @@
   - Shuttlecraft
 
 - type: technology
-  id: MassExcavation
-  name: research-technology-excavation
-  icon:
-    sprite: Objects/Tools/handdrilldiamond.rsi
-    state: handdrill
-  discipline: Industrial
-  tier: 2
-  cost: 12500
-  recipeUnlocks:
-    - OreBagOfHolding
-    - MiningDrillDiamond
-    - AdvancedMineralScannerEmpty
-    - BorgModuleAdvancedMining
-    - SalvageExpeditionsComputerCircuitboard
-  position: 1, 4
-  technologyPrerequisites:
-  - RipleyAPLU
-
-# Tier 3
-
-- type: technology
-  id: BluespaceStorage
-  name: research-technology-bluespace-storage
-  icon:
-    sprite: Clothing/Back/Backpacks/holding.rsi
-    state: holding
-  discipline: Industrial
-  tier: 3
-  cost: 15000
-  recipeUnlocks:
-  - ClothingBackpackHolding
-  - ClothingBackpackSatchelHolding
-  - ClothingBackpackDuffelHolding
-  position: 1, 5
-  technologyPrerequisites:
-  - OptimizedMicrogalvanism
-
-- type: technology
   id: OptimizedMicrogalvanism
   name: research-technology-optimized-microgalvanism
   icon:
@@ -250,6 +255,6 @@
   recipeUnlocks:
   - PowerCellMicroreactor
   - PowerCellHyper
-  position: 3, 5
+  position: 4, 5
   technologyPrerequisites:
   - AdvancedPowercells

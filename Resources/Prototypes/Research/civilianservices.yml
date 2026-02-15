@@ -1,4 +1,29 @@
 # Tier 1
+# Tree layout: Multiple roots with cross-discipline dependencies
+# Root 1: AdvancedEntertainment -> Hydroponics -> MeatManipulation -> BluespaceCargoTransport -> QuantumFiberWeaving
+#                            -> AudioVisualCommunication -> FauxAstroTiles -> (merges with MeatManipulation)
+#                            -> CritterMechs -> PushHorn
+#                            -> MechanizedTreatment (also needs BasicRobotics from Experimental)
+#                            -> AdvancedCleaning -> AdvancedSpray
+# Root 2: BiochemicalStasis -> BluespaceChemistry -> LauncherSyringe
+# Cross-discipline: HONKMech (needs RipleyAPLU from Industrial)
+
+- type: technology
+  id: AdvancedEntertainment
+  name: research-technology-advanced-entertainment
+  icon:
+    sprite: Structures/Machines/computers.rsi
+    state: television
+  discipline: CivilianServices
+  tier: 1
+  cost: 7500
+  recipeUnlocks:
+    - ComputerTelevisionCircuitboard
+    - SynthesizerInstrument
+    - DawInstrumentMachineCircuitboard
+    - MassMediaCircuitboard
+    - JukeboxCircuitBoard
+  position: 2, 30
 
 - type: technology
   id: Hydroponics
@@ -13,7 +38,7 @@
   - SeedExtractorMachineCircuitboard
   - HydroponicsTrayMachineCircuitboard
   - ReagentGrinderIndustrialMachineCircuitboard
-  position: 1, 17
+  position: 0, 31
   technologyPrerequisites:
   - AdvancedEntertainment
 
@@ -36,7 +61,7 @@
   - HamtrPeripheralsElectronics
   - MechEquipmentGrabberSmall
   - VimHarness
-  position: 2, 17
+  position: 2, 31
   technologyPrerequisites:
   - AdvancedEntertainment
   - RipleyAPLU
@@ -59,26 +84,9 @@
   - SurveillanceWirelessCameraMonitorCircuitboard
   - TelecomServerCircuitboard
   - HolopadMachineCircuitboard
-  position: 3, 17
+  position: 4, 31
   technologyPrerequisites:
   - AdvancedEntertainment
-
-- type: technology
-  id: AdvancedEntertainment
-  name: research-technology-advanced-entertainment
-  icon:
-    sprite: Structures/Machines/computers.rsi
-    state: television
-  discipline: CivilianServices
-  tier: 1
-  cost: 7500
-  recipeUnlocks:
-    - ComputerTelevisionCircuitboard
-    - SynthesizerInstrument
-    - DawInstrumentMachineCircuitboard
-    - MassMediaCircuitboard
-    - JukeboxCircuitBoard
-  position: 2, 18
 
 - type: technology
   id: MeatManipulation
@@ -93,9 +101,32 @@
   - FatExtractorMachineCircuitboard
   - BiofabricatorMachineCircuitboard
   - BiomassReclaimerMachineCircuitboard
-  position: 1, 18
+  position: 0, 32
   technologyPrerequisites:
   - Hydroponics
+
+- type: technology
+  id: HONKMech
+  name: research-technology-honk-mech
+  icon:
+    sprite: Objects/Specific/Mech/mecha.rsi
+    state: honker
+  discipline: CivilianServices
+  tier: 2
+  cost: 7500
+  recipeUnlocks:
+  - HonkerHarness
+  - HonkerLArm
+  - HonkerRArm
+  - HonkerLLeg
+  - HonkerRLeg
+  - HonkerCentralElectronics
+  - HonkerPeripheralsElectronics
+  - HonkerTargetingElectronics
+  - MechEquipmentHorn
+  position: 6, 31
+  technologyPrerequisites:
+  - RipleyAPLU
 
 # Tier 2
 
@@ -120,7 +151,7 @@
   - FauxTileDesertAstroSand
   - FauxTileAstroIronsand
   - FauxTileAstroIronsandBorderless
-  position: 3, 18
+  position: 4, 32
   technologyPrerequisites:
   - AudioVisualCommunication
 
@@ -138,7 +169,7 @@
   - CryoPodMachineCircuitboard
   - CryostasisBeaker
   - SyringeCryostasis
-  position: 2, 19
+  position: 8, 30
 
 - type: technology
   id: MechanizedTreatment
@@ -152,7 +183,7 @@
   recipeUnlocks:
   - BorgModuleAdvancedTopical
   - AdvancedJetInjector
-  position: 3, 19
+  position: 2, 32
   technologyPrerequisites:
   - AdvancedEntertainment
   - BasicRobotics
@@ -170,65 +201,10 @@
   - AdvMopItem
   - MegaSprayBottle
   - BorgModuleAdvancedCleaning
-  position: 3, 20
+  position: 4, 33
   technologyPrerequisites:
   - AdvancedEntertainment
   - BasicRobotics
-
-- type: technology
-  id: HONKMech
-  name: research-technology-honk-mech
-  icon:
-    sprite: Objects/Specific/Mech/mecha.rsi
-    state: honker
-  discipline: CivilianServices
-  tier: 2
-  cost: 7500
-  recipeUnlocks:
-  - HonkerHarness
-  - HonkerLArm
-  - HonkerRArm
-  - HonkerLLeg
-  - HonkerRLeg
-  - HonkerCentralElectronics
-  - HonkerPeripheralsElectronics
-  - HonkerTargetingElectronics
-  - MechEquipmentHorn
-  position: 1, 19
-  technologyPrerequisites:
-  - RipleyAPLU
-
-- type: technology
-  id: AdvancedSpray
-  name: research-technology-advanced-spray
-  icon:
-    sprite: Objects/Weapons/Guns/Basic/spraynozzle.rsi
-    state: icon
-  discipline: CivilianServices
-  tier: 2
-  cost: 10000
-  recipeUnlocks:
-  - WeaponSprayNozzle
-  - ClothingBackpackWaterTank
-  position: 3, 21
-  technologyPrerequisites:
-  - AdvancedCleaning
-
-- type: technology
-  id: BluespaceCargoTransport
-  name: research-technology-bluespace-cargo-transport
-  icon:
-    sprite: Structures/cargo_telepad.rsi
-    state: display
-  discipline: CivilianServices
-  tier: 2
-  cost: 15000
-  recipeUnlocks:
-  - CargoTelepadMachineCircuitboard
-  position: 1, 20
-  technologyPrerequisites:
-  - MeatManipulation
-  - FauxAstroTiles
 
 - type: technology
   id: PushHorn
@@ -242,9 +218,41 @@
   recipeUnlocks:
   - PushHorn
   - BorgModuleAdvancedClowning
-  position: 2, 20
+  position: 2, 33
   technologyPrerequisites:
   - CritterMechs
+
+- type: technology
+  id: BluespaceCargoTransport
+  name: research-technology-bluespace-cargo-transport
+  icon:
+    sprite: Structures/cargo_telepad.rsi
+    state: display
+  discipline: CivilianServices
+  tier: 2
+  cost: 15000
+  recipeUnlocks:
+  - CargoTelepadMachineCircuitboard
+  position: 0, 33
+  technologyPrerequisites:
+  - MeatManipulation
+  - FauxAstroTiles
+
+- type: technology
+  id: AdvancedSpray
+  name: research-technology-advanced-spray
+  icon:
+    sprite: Objects/Weapons/Guns/Basic/spraynozzle.rsi
+    state: icon
+  discipline: CivilianServices
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - WeaponSprayNozzle
+  - ClothingBackpackWaterTank
+  position: 4, 34
+  technologyPrerequisites:
+  - AdvancedCleaning
 
 # Tier 3
 
@@ -259,7 +267,7 @@
   cost: 10000
   recipeUnlocks:
   - ClothingShoesBootsSpeed
-  position: 1, 21
+  position: 0, 34
   technologyPrerequisites:
   - BluespaceCargoTransport
 
@@ -275,7 +283,7 @@
   recipeUnlocks:
   - BluespaceBeaker
   - SyringeBluespace
-  position: 2, 21
+  position: 8, 31
   technologyPrerequisites:
   - BiochemicalStasis
 
@@ -291,6 +299,6 @@
   recipeUnlocks:
   - LauncherSyringe
   - MiniSyringe
-  position: 2, 22
+  position: 8, 32
   technologyPrerequisites:
   - BluespaceChemistry

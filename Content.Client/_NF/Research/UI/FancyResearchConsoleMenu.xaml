@@ -4,7 +4,7 @@
                       xmlns:customControls="clr-namespace:Content.Client.Administration.UI.CustomControls;assembly=Content.Client"
                       xmlns:nf="clr-namespace:Content.Client._NF.Research.UI"
                       Title="{Loc 'research-console-menu-title'}"
-                      SetSize="1000 600"
+                      SetSize="1200 800"
                       MinSize="800 400">
     <BoxContainer Orientation="Vertical"
                   HorizontalExpand="True"
@@ -23,6 +23,13 @@
             <BoxContainer Orientation="Vertical" VerticalExpand="True" HorizontalAlignment="Right">
                 <Button Name="ServerButton" Text="{Loc 'research-console-menu-server-selection-button'}" MinHeight="40"/>
             </BoxContainer>
+        </BoxContainer>
+        <!-- Discipline navigation buttons -->
+        <BoxContainer Orientation="Horizontal" HorizontalExpand="True" Margin="10, 0, 10, 5">
+            <Button Name="NavIndustrialButton" Text="{Loc 'research-discipline-industrial'}" MinHeight="30" MinWidth="100"/>
+            <Button Name="NavArsenalButton" Text="{Loc 'research-discipline-arsenal'}" MinHeight="30" MinWidth="100"/>
+            <Button Name="NavExperimentalButton" Text="{Loc 'research-discipline-experimental'}" MinHeight="30" MinWidth="100"/>
+            <Button Name="NavCivilianButton" Text="{Loc 'research-discipline-civilian-services'}" MinHeight="30" MinWidth="100"/>
         </BoxContainer>
         <BoxContainer Orientation="Horizontal"
                       HorizontalExpand="True"

@@ -1,3 +1,6 @@
+# Nuclear power technologies - branch from PowerGeneration (position 2, 0 in Industrial)
+# NuclearPowerGeneration -> NuclearPowerRecycling
+
 - type: technology
   id: NuclearPowerGeneration
   name: research-technology-nuclear-power
@@ -29,7 +32,7 @@
   - PlasteelGasTurbineBlade
   technologyPrerequisites:
   - PowerGeneration
-  position: 3, 1
+  position: 5, 1
 
 - type: technology
   id: NuclearPowerRecycling
@@ -55,4 +58,4 @@
   - DiamondGasTurbineBlade
   technologyPrerequisites:
   - NuclearPowerGeneration
-  position: 4, 1
+  position: 6, 2
