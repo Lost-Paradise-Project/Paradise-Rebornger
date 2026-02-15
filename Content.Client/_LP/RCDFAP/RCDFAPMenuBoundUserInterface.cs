@@ -1,4 +1,4 @@
-﻿using Content.Client.Popups;
+using Content.Client.Popups;
 using Content.Client.UserInterface.Controls;
 using Content.Shared._LP.RCDFAP;
 using Content.Shared._LP.RCDFAP.Components;

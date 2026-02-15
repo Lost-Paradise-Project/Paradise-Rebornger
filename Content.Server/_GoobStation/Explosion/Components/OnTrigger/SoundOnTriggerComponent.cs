@@ -1,4 +1,4 @@
-﻿using Content.Server.Explosion.EntitySystems;
+using Content.Server.Explosion.EntitySystems;
 using Robust.Shared.Audio;
 
 namespace Content.Server.Explosion.Components;

@@ -1,4 +1,4 @@
-﻿using Content.Shared._LP.RCDFAP.Systems;
+using Content.Shared._LP.RCDFAP.Systems;
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
 using Robust.Shared.Physics;

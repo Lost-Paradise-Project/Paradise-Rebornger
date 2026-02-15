@@ -1,4 +1,4 @@
-﻿using Content.Shared.Administration.Logs;
+using Content.Shared.Administration.Logs;
 using Content.Shared.Charges.Systems;
 using Content.Shared.Construction;
 using Content.Shared._LP.Construction;

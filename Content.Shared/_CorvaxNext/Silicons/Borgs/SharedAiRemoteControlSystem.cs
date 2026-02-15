@@ -1,4 +1,4 @@
-﻿using Content.Shared._CorvaxNext.Silicons.Borgs.Components;
+using Content.Shared._CorvaxNext.Silicons.Borgs.Components;
 using Content.Shared.Actions;
 using Content.Shared.Mind;
 using Content.Shared.Silicons.StationAi;

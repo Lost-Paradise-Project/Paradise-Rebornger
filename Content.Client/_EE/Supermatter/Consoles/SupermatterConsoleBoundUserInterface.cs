@@ -1,4 +1,4 @@
-﻿using Content.Shared._EE.Supermatter.Components;
+using Content.Shared._EE.Supermatter.Components;
 
 namespace Content.Client._EE.Supermatter.Consoles;
 

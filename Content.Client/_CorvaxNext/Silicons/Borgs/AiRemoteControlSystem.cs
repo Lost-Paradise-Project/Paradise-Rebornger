@@ -1,4 +1,4 @@
-﻿using Content.Shared._CorvaxNext.Silicons.Borgs;
+using Content.Shared._CorvaxNext.Silicons.Borgs;
 
 namespace Content.Client._CorvaxNext.Silicons.Borgs;
 

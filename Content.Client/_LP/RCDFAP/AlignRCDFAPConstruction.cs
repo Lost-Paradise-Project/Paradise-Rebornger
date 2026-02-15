@@ -1,4 +1,4 @@
-﻿using System.Numerics;
+using System.Numerics;
 using Content.Client.Gameplay;
 using Content.Shared.Hands.Components;
 using Content.Shared.Interaction;

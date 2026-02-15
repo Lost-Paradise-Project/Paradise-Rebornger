@@ -1,4 +1,4 @@
-﻿# GasVentPump
+# GasVentPump
 
 - type: entity
   parent: [GasPipeLayerAlt1, GasVentPump]
