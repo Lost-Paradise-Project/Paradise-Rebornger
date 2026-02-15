@@ -1,4 +1,4 @@
-﻿namespace Content.Shared._WL.Tray;
+namespace Content.Shared._WL.Tray;
 
 [RegisterComponent]
 public sealed partial class OnTrayComponent : Component

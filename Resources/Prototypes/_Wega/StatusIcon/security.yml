@@ -1,4 +1,4 @@
-﻿- type: securityIcon
+- type: securityIcon
   id: SecuritySquadIcon
   abstract: true
   priority: 4

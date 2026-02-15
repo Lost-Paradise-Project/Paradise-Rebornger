@@ -1,4 +1,4 @@
-﻿using Content.Client.Items.Systems;
+using Content.Client.Items.Systems;
 using Content.Shared._WL.Tray;
 using Content.Shared.Hands;
 using Robust.Client.GameObjects;
@@ -65,4 +65,3 @@ public sealed partial class TraySystem : SharedTraySystem
         _sprite.LayerSetVisible(uid, TrayVisualLayers.Cap, closed);
     }
 }
-

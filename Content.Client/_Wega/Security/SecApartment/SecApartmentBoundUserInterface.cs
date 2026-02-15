@@ -1,4 +1,4 @@
-﻿using Content.Shared.SecApartment;
+using Content.Shared.SecApartment;
 using JetBrains.Annotations;
 using Robust.Client.UserInterface;
 

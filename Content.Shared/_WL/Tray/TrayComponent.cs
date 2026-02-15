@@ -1,4 +1,4 @@
-﻿using Content.Shared.Hands.Components;
+using Content.Shared.Hands.Components;
 using Content.Shared.Item;
 using Robust.Shared.Audio;
 using Robust.Shared.Map;

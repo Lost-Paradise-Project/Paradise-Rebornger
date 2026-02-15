@@ -1,4 +1,4 @@
-﻿{
+{
     "version": 1,
     "license": "CC-BY-SA-3.0",
     "copyright": "Created by svarshiksatanist 414799795463651332 on discord",
@@ -12,7 +12,15 @@
         },
         {
             "name": "powered",
-            "delays": [ [ 0.35, 0.35, 0.35, 0.35, 0.35 ] ]
+            "delays": [
+                [
+                    0.35,
+                    0.35,
+                    0.35,
+                    0.35,
+                    0.35
+                ]
+            ]
         },
         {
             "name": "inhand-left",

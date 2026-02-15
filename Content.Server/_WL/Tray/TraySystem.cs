@@ -1,4 +1,4 @@
-﻿using Content.Server.Item;
+using Content.Server.Item;
 using Content.Server.Popups;
 using Content.Shared._WL.Tray;
 using Content.Shared.Destructible;
