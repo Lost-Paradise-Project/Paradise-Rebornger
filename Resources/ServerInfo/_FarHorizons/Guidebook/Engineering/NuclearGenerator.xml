@@ -1,4 +1,4 @@
-﻿<Document>
+<Document>
   # Ядерный генератор
   <Box>
     <GuideEntityEmbed Entity="NuclearReactorNormal" Caption="" Scale="1.5"/>

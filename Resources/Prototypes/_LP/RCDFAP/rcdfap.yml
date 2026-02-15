@@ -1,4 +1,4 @@
-﻿- type: LPPRCDFAP
+- type: LPPRCDFAP
   id: Invalid   # Hidden prototype - do not add to LPPRCDFAPDevice
   mode: Invalid
 

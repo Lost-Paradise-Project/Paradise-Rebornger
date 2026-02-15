@@ -1,4 +1,4 @@
-﻿- type: explosion
+- type: explosion
   id: Supermatter
   damagePerIntensity:
     types:

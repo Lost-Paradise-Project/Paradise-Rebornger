@@ -1,4 +1,4 @@
-﻿using Content.Shared.Goobstation.Atmos;
+using Content.Shared.Goobstation.Atmos;
 using Content.Server.Atmos;
 using Content.Server.Atmos.EntitySystems;
 using Content.Shared.Atmos;

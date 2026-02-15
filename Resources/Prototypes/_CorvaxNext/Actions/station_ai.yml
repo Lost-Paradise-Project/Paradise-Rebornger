@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   id: ActionBackToAi
   name: Back to Ai
   description: Sends your mind back to the core.

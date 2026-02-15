@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using System.Numerics;
 using Content.Client._Wega.Stylesheets;
 using Content.Client.GameTicking.Managers;

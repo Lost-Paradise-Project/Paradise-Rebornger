@@ -1,4 +1,4 @@
-﻿<Document>
+<Document>
   # Газовая турбина
   <Box>
     <GuideEntityEmbed Entity="GasTurbineNormal" Scale="1.5"/>

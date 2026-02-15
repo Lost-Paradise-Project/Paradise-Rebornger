@@ -1,4 +1,4 @@
-﻿using Content.Server.Database;
+using Content.Server.Database;
 using Robust.Shared.Asynchronous;
 using Robust.Shared.Network;
 using System.Threading.Tasks;

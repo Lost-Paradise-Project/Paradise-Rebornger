@@ -1,4 +1,4 @@
-﻿using Content.Client.Hands.Systems;
+using Content.Client.Hands.Systems;
 using Content.Shared.Interaction;
 using Content.Shared._LP.RCDFAP;
 using Content.Shared._LP.RCDFAP.Components;

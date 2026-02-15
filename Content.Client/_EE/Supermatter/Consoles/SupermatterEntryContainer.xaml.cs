@@ -1,4 +1,4 @@
-﻿using Content.Client.Atmos.EntitySystems;
+using Content.Client.Atmos.EntitySystems;
 using Content.Client.Stylesheets;
 using Content.Shared._EE.Supermatter.Components;
 using Content.Shared._EE.Supermatter.Monitor;

@@ -1,4 +1,4 @@
-﻿- type: cargoProduct
+- type: cargoProduct
   id: LPPEngineeringRCDFAPAmmo
   icon:
     sprite: _LP/Objects/Tools/rcdfap.rsi

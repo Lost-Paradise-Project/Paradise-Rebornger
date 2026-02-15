@@ -1,4 +1,4 @@
-﻿using Content.Shared._DV.Silicons;
+using Content.Shared._DV.Silicons;
 
 namespace Content.Client._DV.Silicons;
 

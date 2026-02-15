@@ -1,4 +1,4 @@
-﻿- type: entityTable
+- type: entityTable
   id: LPPPackageEngineeringRCDFAPBundle
   table: !type:AllSelector
     children:

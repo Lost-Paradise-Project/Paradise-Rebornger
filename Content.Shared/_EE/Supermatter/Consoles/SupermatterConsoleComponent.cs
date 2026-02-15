@@ -1,4 +1,4 @@
-﻿using Content.Shared._EE.Supermatter.Consoles;
+using Content.Shared._EE.Supermatter.Consoles;
 using Content.Shared._EE.Supermatter.Monitor;
 using Content.Shared.Atmos;
 using Robust.Shared.GameStates;

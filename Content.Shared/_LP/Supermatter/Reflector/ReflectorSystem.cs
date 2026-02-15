@@ -1,4 +1,4 @@
-﻿using System.Numerics;
+using System.Numerics;
 using Content.Shared.Projectiles;
 using Content.Shared._LP.Supermatter.Reflector.Components;
 using Robust.Shared.Audio.Systems;

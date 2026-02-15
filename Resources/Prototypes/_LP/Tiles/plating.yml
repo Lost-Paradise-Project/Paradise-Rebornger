@@ -1,4 +1,4 @@
-﻿- type: tile
+- type: tile
   id: LPPPlatingRCDFAP
   parent: Plating
   name: tiles-plating

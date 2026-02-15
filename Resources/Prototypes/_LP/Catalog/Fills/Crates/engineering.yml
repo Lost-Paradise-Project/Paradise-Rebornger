@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: CrateEngineering
   id: LPPCrateRCDFAPAmmo
   name: compressed matter for atmospheric purpases crate
