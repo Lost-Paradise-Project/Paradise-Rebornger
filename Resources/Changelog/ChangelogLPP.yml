@@ -296,3 +296,14 @@ Entries:
   id: 5641
   time: '2026-02-15T09:45:52.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/61
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлен кулдаун на грабы в 3 секунды!
+    - type: Fix
+      message: Исправлено одевание нижнего белья!
+    - type: Fix
+      message: Исправлены баги ядерного реактора!
+  id: 5642
+  time: '2026-02-15T11:50:34.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/63
