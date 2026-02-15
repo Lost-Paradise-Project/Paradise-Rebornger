@@ -54,6 +54,7 @@
         max: 15
     - id: PlushieLizardJobCaptain
       prob: 0.02
+    - id: SecApartmentTablet # Corvax-Wega-SecApartment
     # Corvax-Resprite-Start
     - id: ClothingHeadCaptainHat
     - id: ClothingOuterCoatCaptain
@@ -348,6 +349,7 @@
     - id: DrinkHosFlask
     - id: PlushieLizardJobHeadofsecurity
       prob: 0.02
+    - id: SecApartmentTablet # Corvax-Wega-SecApartment
     # Corvax-Start
     - id: ClothingHeadHatCapHoS
       prob: 0.5

@@ -15,6 +15,7 @@ using Content.Shared.Implants;
 using Content.Shared.Inventory;
 using Content.Shared.Lock;
 using Content.Shared.PDA;
+using Content.Shared._L5.Contract; // L5
 
 namespace Content.Server.Access.Systems
 {
@@ -39,6 +40,7 @@ namespace Content.Server.Access.Systems
             SubscribeLocalEvent<AgentIDCardComponent, AgentIDCardJobChangedMessage>(OnJobChanged);
             SubscribeLocalEvent<AgentIDCardComponent, AgentIDCardJobIconChangedMessage>(OnJobIconChanged);
             SubscribeLocalEvent<AgentIDCardComponent, InventoryRelayedEvent<ChameleonControllerOutfitSelectedEvent>>(OnChameleonControllerOutfitChangedItem);
+            SubscribeLocalEvent<AgentIDCardComponent, AgentIdCardContractChangedMessage>(OnContractChanged); // L5
         }
 
         private void OnChameleonControllerOutfitChangedItem(Entity<AgentIDCardComponent> ent, ref InventoryRelayedEvent<ChameleonControllerOutfitSelectedEvent> args)
@@ -80,6 +82,15 @@ namespace Content.Server.Access.Systems
             _chameleon.SetSelectedPrototype(ent, comp.IdCard);
         }
 
+        // L5 — Contracts
+        private void OnContractChanged(Entity<AgentIDCardComponent> ent, ref AgentIdCardContractChangedMessage args)
+        {
+            if (!TryComp<ContractComponent>(ent, out var contract))
+                return;
+
+            contract.Contract = _prototypeManager.Index(args.ContractId);
+        }
+
         private void OnAfterInteract(EntityUid uid, AgentIDCardComponent component, AfterInteractEvent args)
         {
             if (args.Target == null || !args.CanReach || _lock.IsLocked(uid) ||
@@ -106,7 +117,11 @@ namespace Content.Server.Access.Systems
             if (!TryComp<IdCardComponent>(uid, out var idCard))
                 return;
 
-            var state = new AgentIDCardBoundUserInterfaceState(idCard.FullName ?? "", idCard.LocalizedJobTitle ?? "", idCard.JobIcon);
+            var currentContract = string.Empty;
+            if (TryComp<ContractComponent>(uid, out var contract))
+                currentContract = contract.Contract;
+
+            var state = new AgentIDCardBoundUserInterfaceState(idCard.FullName ?? "", idCard.LocalizedJobTitle ?? "", idCard.JobIcon, currentContract);// L5 — current contract ID
             _uiSystem.SetUiState(uid, AgentIDCardUiKey.Key, state);
         }
 

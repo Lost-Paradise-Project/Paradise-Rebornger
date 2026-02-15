@@ -51,6 +51,7 @@
     - id: Binoculars
     - id: PlushieLizardJobWarden
       prob: 0.02
+    - id: SecApartmentTablet # Corvax-Wega-SecApartment
 
 - type: entityTable
   id: FillLockerWardenHarduit
