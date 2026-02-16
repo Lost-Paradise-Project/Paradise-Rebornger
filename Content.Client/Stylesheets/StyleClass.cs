@@ -30,6 +30,7 @@ public static class StyleClass
 
     public const string BorderedWindowPanel = "BorderedWindowPanel";
     public const string AlertWindowHeader = "windowHeaderAlert";
+    public const string CuratorWindowHeader = "windowHeaderCurator";
     public const string WindowContentsContainer = "WindowContentsContainer";
 
     public const string HighDivider = "HighDivider";

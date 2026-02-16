@@ -53,6 +53,7 @@ public abstract class CommonStylesheet : PalettedStylesheet, IButtonConfig, IWin
 
     ResPath IWindowConfig.WindowHeaderTexturePath => new("window_header.png");
     ResPath IWindowConfig.WindowHeaderAlertTexturePath => new("window_header_alert.png");
+    ResPath IWindowConfig.WindowHeaderCuratorTexturePath => new("/Textures/_DV/Interface/Nano/window_header_curator.png");
     ResPath IWindowConfig.WindowBackgroundPath => new("window_background.png");
     ResPath IWindowConfig.WindowBackgroundBorderedPath => new("window_background_bordered.png");
     ResPath IWindowConfig.TransparentWindowBackgroundBorderedPath => new("transparent_window_background_bordered.png");

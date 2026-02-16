@@ -11,6 +11,7 @@ using Content.Server.Database;
 using Content.Server.Discord;
 using Content.Server.GameTicking;
 using Content.Server.Players.RateLimiting;
+using Content.Shared._DV.CCVars;
 using Content.Shared.Administration;
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
@@ -742,7 +743,7 @@ namespace Content.Server.Administration.Systems
             _activeConversations[bwoinkParams.Message.UserId] = DateTime.Now;
 
             var escapedText = FormattedMessage.EscapeText(bwoinkParams.Message.Text);
-            var adminColor = _config.GetCVar(CCVars.AdminBwoinkColor);
+            var adminColor = _config.GetCVar(DCCVars.AdminBwoinkColor);
             var adminPrefix = "";
             var bwoinkText = $"{bwoinkParams.SenderName}";
             string sponsorColor = adminColor;   // LP edit
@@ -753,12 +754,12 @@ namespace Content.Server.Administration.Systems
                 if (bwoinkParams.SenderAdmin is not null && bwoinkParams.SenderAdmin.Title is not null)
                     adminPrefix = $"[bold]\\[{bwoinkParams.SenderAdmin.Title}\\][/bold] ";
 
-                if (_config.GetCVar(CCVars.UseDiscordRoleName) && bwoinkParams.RoleName is not null)
+                if (_config.GetCVar(DCCVars.UseDiscordRoleName) && bwoinkParams.RoleName is not null)
                     adminPrefix = $"[bold]\\[{bwoinkParams.RoleName}\\][/bold] ";
             }
 
             if (!bwoinkParams.FromWebhook
-                && _config.GetCVar(CCVars.UseAdminOOCColorInBwoinks)
+                && _config.GetCVar(DCCVars.UseAdminOOCColorInBwoinks)
                 && bwoinkParams.SenderAdmin is not null)
             {
                 var prefs = _preferencesManager.GetPreferences(bwoinkParams.SenderId);
@@ -779,10 +780,10 @@ namespace Content.Server.Administration.Systems
             //LP edit end
 
             // If role color is enabled and exists, use it, otherwise use the discord reply color
-            if (_config.GetCVar(CCVars.DiscordReplyColor) != string.Empty && bwoinkParams.FromWebhook)
-                adminColor = _config.GetCVar(CCVars.DiscordReplyColor);
+            if (_config.GetCVar(DCCVars.DiscordReplyColor) != string.Empty && bwoinkParams.FromWebhook)
+                adminColor = _config.GetCVar(DCCVars.DiscordReplyColor);
 
-            if (_config.GetCVar(CCVars.UseDiscordRoleColor) && bwoinkParams.RoleColor is not null)
+            if (_config.GetCVar(DCCVars.UseDiscordRoleColor) && bwoinkParams.RoleColor is not null)
                 adminColor = bwoinkParams.RoleColor;
 
             if (bwoinkParams.SenderAdmin is not null)
@@ -795,7 +796,7 @@ namespace Content.Server.Administration.Systems
             }
 
             if (bwoinkParams.FromWebhook)
-                bwoinkText = $"{_config.GetCVar(CCVars.DiscordReplyPrefix)}{bwoinkText}";
+                bwoinkText = $"{_config.GetCVar(DCCVars.DiscordReplyPrefix)}{bwoinkText}";
 
             bwoinkText = $"{(bwoinkParams.Message.AdminOnly ? Loc.GetString("bwoink-message-admin-only") : !bwoinkParams.Message.PlaySound ? Loc.GetString("bwoink-message-silent") : "")}{(bwoinkParams.FromWebhook ? Loc.GetString("bwoink-message-discord") : "")} {bwoinkText}: {escapedText}"; // LP edit
 
@@ -843,7 +844,7 @@ namespace Content.Server.Administration.Systems
                             overrideMsgText = $"{bwoinkParams.SenderName}"; // Not an admin, name is not overridden.
 
                         if (bwoinkParams.FromWebhook)
-                            overrideMsgText = $"{_config.GetCVar(CCVars.DiscordReplyPrefix)}{overrideMsgText}";
+                            overrideMsgText = $"{_config.GetCVar(DCCVars.DiscordReplyPrefix)}{overrideMsgText}";
 
                         overrideMsgText = $"{(bwoinkParams.Message.PlaySound ? "" : "(S) ")}{overrideMsgText}: {escapedText}";
 
