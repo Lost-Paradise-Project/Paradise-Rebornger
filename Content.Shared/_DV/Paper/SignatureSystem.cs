@@ -5,6 +5,7 @@ using Content.Shared.Tag;
 using Content.Shared.Verbs;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Player;
+using Robust.Shared.Prototypes;
 
 namespace Content.Shared._DV.Paper;
 
@@ -29,7 +30,7 @@ public sealed class SignatureSystem : EntitySystem
         if (!args.CanAccess || !args.CanInteract)
             return;
 
-        if (args.Using is not {} pen || !_tag.HasTag(pen, "Write"))
+        if (args.Using is not {} pen || !_tag.HasTag(pen, new ProtoId<TagPrototype>("Write")))
             return;
 
         var user = args.User;

@@ -2,7 +2,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Shared._FunkyStation.Records;
 
-[Prototype("medicalInfoCategory"), Serializable]
+[Prototype]
 public sealed partial class MedicalInfoCategoryPrototype : IPrototype
 {
     public const string Default = "Default";

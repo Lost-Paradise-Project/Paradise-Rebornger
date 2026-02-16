@@ -10,6 +10,7 @@ using Robust.Shared.Prototypes;
 using Content.Client.Stylesheets;
 using Content.Shared.Humanoid;
 using System.Text.RegularExpressions;
+using Content.Client._LP.Sponsors;  //LP edit
 
 namespace Content.Client.Corvax.TTS;
 
@@ -165,8 +166,7 @@ public sealed partial class TTSTab : Control
         if (!voice.SponsorOnly)
             return true;
 
-        var sponsorsManager = IoCManager.Resolve<ISharedSponsorsManager>();
-        return sponsorsManager?.GetClientPrototypes().Contains(voice.ID) == true;
+        return SponsorSimpleManager.GetTier() >= 3; //LP edit
     }
 
     public void UpdateControls(HumanoidCharacterProfile? profile, Sex sex)

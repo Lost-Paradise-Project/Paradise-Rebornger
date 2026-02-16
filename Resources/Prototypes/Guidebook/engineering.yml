@@ -319,10 +319,11 @@
   - PortableGenerator
   - AME
   - SingularityTeslaEngine
-  - NuclearReactor # FH edit
+  - NuclearGenerator # FH edit
   - TEG
   - RTG
   - SolarPanels
+  - Supermatter # Goobstation
 
 - type: guideEntry
   id: AME

@@ -6,6 +6,7 @@ using Content.Server.Afk;
 using Content.Server.Chat.Managers;
 using Content.Server.Connection;
 using Content.Server.Corvax.GuideGenerator;
+using Content.Server._GoobStation.Antag;
 using Content.Server.Corvax.TTS;
 using Content.Server.Database;
 using Content.Server.Discord.DiscordLink;
@@ -52,6 +53,7 @@ namespace Content.Server.Entry
     {
         internal const string ConfigPresetsDir = "/ConfigPresets/";
         private const string ConfigPresetsDirBuild = $"{ConfigPresetsDir}Build/";
+        private LastRolledAntagManager? _lastAntagManager; // Goobstation
 
         [Dependency] private readonly CVarControlManager _cvarCtrl = default!;
         [Dependency] private readonly ContentLocalizationManager _loc = default!;
@@ -90,6 +92,7 @@ namespace Content.Server.Entry
         [Dependency] private readonly ServerInfoManager _serverInfo = default!;
         [Dependency] private readonly ServerUpdateManager _updateManager = default!;
         [Dependency] private readonly ServerFeedbackManager _feedbackManager = null!;
+
 
         public override void PreInit()
         {
@@ -147,6 +150,8 @@ namespace Content.Server.Entry
             _job.Initialize();
             _rateLimit.Initialize();
             IoCManager.Resolve<TTSManager>().Initialize(); // Corvax-TTS
+            _lastAntagManager = IoCManager.Resolve<LastRolledAntagManager>(); // Goobstation
+            _lastAntagManager.Initialize(); // Goobstation
 
 #if LP
             IoCManager.Resolve<SponsorsManager>().Initialize();

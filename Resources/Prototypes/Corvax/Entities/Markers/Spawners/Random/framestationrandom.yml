@@ -25,6 +25,7 @@
         - CrateEngineeringShuttle
         - CrateEngineeringToolbox
         - CrateRCDAmmo
+        - LPPCrateRCDFAPAmmo # LP Edit
       rareChance: 0.4
       prototypes:
         - CrateSalvageAssortedGoodies

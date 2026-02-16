@@ -1,0 +1,12 @@
+ent-LPPGasVentPumpAlt1 = { ent-GasVentPump }
+    .desc = { ent-GasVentPump.desc }
+ent-LPPGasVentPumpAlt2 = { ent-GasVentPump }
+    .desc = { ent-GasVentPump.desc }
+ent-LPPGasPassiveVentAlt1 = { ent-GasPassiveVent }
+    .desc = { ent-GasPassiveVent.desc }
+ent-LPPGasPassiveVentAlt2 = { ent-GasPassiveVent }
+    .desc = { ent-GasPassiveVent.desc }
+ent-LPPGasVentScrubberAlt1 = { ent-GasVentScrubber }
+    .desc = { ent-GasVentScrubber.desc }
+ent-LPPGasVentScrubberAlt2 = { ent-GasVentScrubber }
+    .desc = { ent-GasVentScrubber.desc }

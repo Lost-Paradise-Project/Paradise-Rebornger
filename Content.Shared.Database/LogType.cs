@@ -277,6 +277,15 @@ public enum LogType
     /// </summary>
     RCD = 63,
 
+    // LP Edit Start
+
+    /// <summary>
+    /// A player used RCDFAP.
+    /// </summary>
+    RCDFAP = 20063,
+
+    // LP Edit End
+
     /// <summary>
     /// Construction related interactions.
     /// </summary>
@@ -483,4 +492,9 @@ public enum LogType
     /// Events related to players connecting/disconnecting.
     /// </summary>
     Connection = 104,
+
+    /// <summary>
+    /// Supermatter events, mostly activations.
+    /// </summary>
+    Supermatter = 10003, // Goobstation
 }
