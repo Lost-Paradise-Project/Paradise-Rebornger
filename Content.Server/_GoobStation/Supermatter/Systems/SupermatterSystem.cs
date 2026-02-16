@@ -1,9 +1,9 @@
 using System;
 using System.Linq;
 using System.Text;
-using Content.Shared.Goobstation.Supermatter;
-using Content.Shared.Goobstation.Supermatter.Components;
-using Content.Shared.Goobstation.Supermatter.Systems;
+using Content.Shared._GoobStation.Supermatter;
+using Content.Shared._GoobStation.Supermatter.Components;
+using Content.Shared._GoobStation.Supermatter.Systems;
 using Content.Server.AlertLevel;
 using Content.Server.Atmos.EntitySystems;
 using Content.Server.Audio;
@@ -39,7 +39,7 @@ using Robust.Shared.Physics.Events;
 using Robust.Shared.Random; // CorvaxGoob-SM-Accent-Sound
 using Robust.Shared.Timing;
 
-namespace Content.Server.Goobstation.Supermatter.Systems;
+namespace Content.Server._GoobStation.Supermatter.Systems;
 
 public sealed class SupermatterSystem : SharedSupermatterSystem
 {

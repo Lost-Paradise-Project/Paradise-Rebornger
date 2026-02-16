@@ -330,3 +330,12 @@ Entries:
   id: 5645
   time: '2026-02-15T17:42:07.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/66
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлено требование бумаги у факса!
+    - type: Fix
+      message: Исправлены микро ошибки!
+  id: 5646
+  time: '2026-02-16T16:06:02.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/70

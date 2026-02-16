@@ -1,4 +1,3 @@
-using Content.Shared._ERPModule.Data;
 using Content.Shared._GoobStation.Barks;
 using Content.Shared.Corvax.TTS;
 using Content.Shared.Humanoid.Prototypes;
@@ -18,11 +17,6 @@ public sealed partial class HumanoidProfileComponent : Component
 {
     [DataField, AutoNetworkedField]
     public Gender Gender;
-
-    // LP edit start
-    [DataField, AutoNetworkedField]
-    public ErpStatus ErpStatus;
-    // LP edit end
 
     [DataField, AutoNetworkedField]
     public Sex Sex;

@@ -1,5 +1,5 @@
 using Content.Server.Pinpointer;
-using Content.Shared.Goobstation.Supermatter.Components;
+using Content.Shared._GoobStation.Supermatter.Components;
 using Content.Shared._EE.Supermatter.Components;
 using Content.Shared._EE.Supermatter.Consoles;
 using Content.Shared._EE.Supermatter.Monitor;

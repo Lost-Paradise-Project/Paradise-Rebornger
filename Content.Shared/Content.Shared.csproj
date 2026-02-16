@@ -19,11 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="_FarHorizons\Power\Generation\FissionGenerator\SharedReactorPartSystem.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Remove="_FarHorizons\Power\Generation\FissionGenerator\SharedNuclearReactorSystem.cs" />
+    <Compile Remove="_LP\ERPStatus.cs" />
   </ItemGroup>
 
   <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
