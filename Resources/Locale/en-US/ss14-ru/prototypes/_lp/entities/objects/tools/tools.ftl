@@ -9,5 +9,3 @@ ent-LPPRCDFAPRecharging = experimental RCDFAP
 ent-LPPRCDFAPExperimental = experimental RCDFAP
     .desc = A bluespace-enhanced rapid construction device for atmospheric purposes that passively generates its own compressed matter.
     .suffix = Admeme
-ent-LPPRCDFAPAmmo = compressed matter for atmospheric purposes
-    .desc = A cartridge of raw matter compacted by bluespace technology. Used in rapid construction devices.

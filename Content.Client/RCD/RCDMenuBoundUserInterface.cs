@@ -24,7 +24,17 @@ public sealed class RCDMenuBoundUserInterface : BoundUserInterface
             ["Airlocks"] = ("rcd-component-airlocks", new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/Radial/RCD/airlocks.png"))),
             ["Electrical"] = ("rcd-component-electrical", new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/Radial/RCD/multicoil.png"))),
             ["Lighting"] = ("rcd-component-lighting", new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/Radial/RCD/lighting.png"))),
+            // Starlight Start: RPD
+            ["Piping"] = ("rcdfap-component-piping", new SpriteSpecifier.Texture(new ResPath("/Textures/_LP/Interface/Radial/RCDFAP/fourway.png"))),
+            ["AtmosphericUtility"] = ("rcdfap-component-atmosphericutility", new SpriteSpecifier.Texture(new ResPath("/Textures/_LP/Interface/Radial/RCDFAP/port.png"))),
+            ["PumpsValves"] = ("rcdfap-component-pumps", new SpriteSpecifier.Texture(new ResPath("/Textures/_LP/Interface/Radial/RCDFAP/pump_volume.png"))),
+            ["Vents"] = ("rcdfap-component-vents", new SpriteSpecifier.Texture(new ResPath("/Textures/_LP/Interface/Radial/RCDFAP/vent_passive.png"))),
+            ["SensorsMonitors"] = ("rcdfap-component-sensors-monitors", new SpriteSpecifier.Texture(new ResPath("/Textures/_LP/Interface/Radial/RCDFAP/airalarm.png"))),
+            // Starlight End: RPD
+            ["DisposalPipe"] = ("rcdfap-component-disposalpipe", new SpriteSpecifier.Texture(new ResPath("/Textures/_LP/Interface/Radial/RCDFAP/Category/DisposalPipe.png"))), // LP edit
         };
+
+    private bool IsRpd => EntMan.TryGetComponent<RCDComponent>(Owner, out var rcd) && rcd.IsRpd; // Starlight: RPD
 
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly ISharedPlayerManager _playerManager = default!;

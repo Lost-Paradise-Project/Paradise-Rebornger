@@ -6,6 +6,6 @@
       children:
       - id: LPPRCDFAP
       - id: LPPRCDFAPEmpty
-    - id: LPPRCDFAPAmmo
+    - id: RCDAmmo
       amount: !type:RangeNumberSelector
         range: 1, 2
