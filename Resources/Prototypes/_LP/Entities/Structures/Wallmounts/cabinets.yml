@@ -49,7 +49,7 @@
         ejectOnInteract: true
         whitelist:
           tags:
-          - LPPHammer
+          - Hammer
   - type: Lock
   - type: AccessReader
     access: [["Engineering"], ["Salvage"], ["Security"]]

@@ -6,7 +6,7 @@
   components:
   - type: Tag
     tags:
-      - LPPHammer
+      - Hammer
   - type: Sprite
     sprite: _LP/Objects/Weapons/Melee/LPPHammer.rsi
     state: icon

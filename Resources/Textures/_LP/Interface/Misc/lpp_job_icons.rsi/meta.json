@@ -39,6 +39,24 @@
         },
         {
             "name": "LPPSecurityEnginer"
+        },
+        {
+            "name": "Geneticist"
+        },
+        {
+            "name": "NoId"
+        },
+        {
+            "name": "Lawyer"
+        },
+        {
+            "name": "Passenger"
+        },
+        {
+            "name": "Prisoner"
+        },
+        {
+            "name": "Nanotrasen"
         }
     ]
 }

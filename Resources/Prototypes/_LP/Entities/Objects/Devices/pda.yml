@@ -1,5 +1,5 @@
 - type: entity
-  parent: BasePDA
+  parent: BaseSecurityPDA
   id: LPPSecurityEnginerPDA
   name: field engineer PDA
   description: Red to hide the stains of passenger blood.
