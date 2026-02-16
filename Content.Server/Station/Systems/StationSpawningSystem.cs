@@ -3,6 +3,7 @@ using Content.Server.Humanoid;
 using Content.Server.Mind;
 using Content.Server.PDA;
 using Content.Server.Station.Components;
+using Content.Shared._ERPModule.Data;
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
 using Content.Shared.Body;
@@ -144,7 +145,21 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
 
             if (profile.FlavorText != "" && _configurationManager.GetCVar(CCVars.FlavorText))
             {
-                AddComp<DetailExaminableComponent>(entity.Value).Content = profile.FlavorText;
+                Color erpcolor = profile.ErpStatus switch
+                {
+                    ErpStatus.No => Color.OrangeRed,
+                    ErpStatus.Ask => Color.LightGoldenrodYellow,
+                    ErpStatus.Yes => Color.LawnGreen,
+                    _ => Color.DarkRed
+                };
+                string erp = profile.ErpStatus switch
+                {
+                    ErpStatus.No => Loc.GetString("erp-status-examine-no"),
+                    ErpStatus.Ask => Loc.GetString("erp-status-examine-ask"),
+                    ErpStatus.Yes => Loc.GetString("erp-status-examine-yes"),
+                    _ => "Ошибка статуса"
+                };
+                AddComp<DetailExaminableComponent>(entity.Value).Content = profile.FlavorText + $"\n{erp}";
             }
         }
 

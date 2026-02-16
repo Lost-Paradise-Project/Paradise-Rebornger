@@ -1,6 +1,5 @@
 using System.Linq;
 using Content.Server.Verbs;
-using Content.Shared._ERPModule.Data;   //LP edit
 using Content.Shared.Examine;
 using Content.Shared.Humanoid;
 using Content.Shared.Verbs;
@@ -38,16 +37,9 @@ namespace Content.Server.Examine
             if (getVerbs)
                 verbs = _verbSystem.GetLocalVerbs(target, player, typeof(ExamineVerb));
 
-            //LP edit start
-            ErpStatus? erpStatus = null;
-            if (EntityManager.TryGetComponent<HumanoidProfileComponent>(target, out var examinecomp))
-            {
-                erpStatus = examinecomp.ErpStatus;
-            }
-            //LP edit end
 
             var ev = new ExamineSystemMessages.ExamineInfoResponseMessage(
-                GetNetEntity(target), 0, message, verbs?.ToList(), centerAtCursor, erp: erpStatus   //LP edit
+                GetNetEntity(target), 0, message, verbs?.ToList(), centerAtCursor
             );
 
             RaiseNetworkEvent(ev, session.Channel);
@@ -79,17 +71,9 @@ namespace Content.Server.Examine
             if (request.GetVerbs)
                 verbs = _verbSystem.GetLocalVerbs(entity, playerEnt, typeof(ExamineVerb));
 
-            //LP edit start
-            ErpStatus? erpStatus = null;
-            if (EntityManager.TryGetComponent<HumanoidProfileComponent>(player.AttachedEntity, out var examinecomp))
-            {
-                erpStatus = examinecomp.ErpStatus;
-            }
-            //LP edit end
-
             var text = GetExamineText(entity, player.AttachedEntity);
             RaiseNetworkEvent(new ExamineSystemMessages.ExamineInfoResponseMessage(
-                request.NetEntity, request.Id, text, verbs?.ToList(), erp: erpStatus), channel);    //LP edit
+                request.NetEntity, request.Id, text, verbs?.ToList()), channel);
         }
     }
 }

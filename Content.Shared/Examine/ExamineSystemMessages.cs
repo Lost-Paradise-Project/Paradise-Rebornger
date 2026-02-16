@@ -30,7 +30,6 @@ namespace Content.Shared.Examine
             public readonly NetEntity EntityUid;
             public readonly int Id;
             public readonly FormattedMessage Message;
-            public readonly ErpStatus? ERPstatus;   //LP edit
 
             public List<Verb>? Verbs;
 
@@ -40,7 +39,7 @@ namespace Content.Shared.Examine
             public readonly bool KnowTarget;
 
             public ExamineInfoResponseMessage(NetEntity entityUid, int id, FormattedMessage message, List<Verb>? verbs = null,
-                bool centerAtCursor = true, bool openAtOldTooltip = true, bool knowTarget = true, ErpStatus? erp = null)    //LP edit
+                bool centerAtCursor = true, bool openAtOldTooltip = true, bool knowTarget = true)
             {
                 EntityUid = entityUid;
                 Id = id;
@@ -49,7 +48,6 @@ namespace Content.Shared.Examine
                 CenterAtCursor = centerAtCursor;
                 OpenAtOldTooltip = openAtOldTooltip;
                 KnowTarget = knowTarget;
-                ERPstatus = erp;    //LP edit
             }
         }
     }

@@ -160,7 +160,7 @@ namespace Content.Client.Examine
             var entity = GetEntity(ev.EntityUid);
 
             OpenTooltip(player.Value, entity, ev.CenterAtCursor, ev.OpenAtOldTooltip, ev.KnowTarget);
-            UpdateTooltipInfo(player.Value, entity, ev.Message, ev.Verbs, getVerbs: false, erpStatus: ev.ERPstatus);    //LP edit
+            UpdateTooltipInfo(player.Value, entity, ev.Message, ev.Verbs, getVerbs: false);
         }
 
         public override void SendExamineTooltip(EntityUid player, EntityUid target, FormattedMessage message, bool getVerbs, bool centerAtCursor)
@@ -261,7 +261,7 @@ namespace Content.Client.Examine
         /// <summary>
         ///     Fills the examine tooltip with a message and buttons if applicable.
         /// </summary>
-        public void UpdateTooltipInfo(EntityUid player, EntityUid target, FormattedMessage message, List<Verb>? verbs = null, bool getVerbs = true, ErpStatus? erpStatus = null)
+        public void UpdateTooltipInfo(EntityUid player, EntityUid target, FormattedMessage message, List<Verb>? verbs = null, bool getVerbs = true)
         {
             var vBox = _examineTooltipOpen?.GetChild(0).GetChild(0);
             if (vBox == null)
@@ -284,30 +284,6 @@ namespace Content.Client.Examine
                 vBox.AddChild(richLabel);
                 break;
             }
-
-            //LP edit start
-            if (erpStatus != null)
-            {
-                var erpLabel = new Label
-                {
-                    FontColorOverride = erpStatus switch
-                    {
-                        ErpStatus.No => Color.OrangeRed,
-                        ErpStatus.Ask => Color.LightGoldenrodYellow,
-                        ErpStatus.Yes => Color.LawnGreen,
-                        _ => Color.DarkRed
-                    },
-                    Text = erpStatus switch
-                    {
-                        ErpStatus.No => "ЕРП: Отказ",
-                        ErpStatus.Ask => "ЕРП: Спросить",
-                        ErpStatus.Yes => "ЕРП: Согласие",
-                        _ => "Ошибка статуса"
-                    }
-                };
-                vBox.AddChild(erpLabel);
-            }
-            //LP edit end
 
             var totalVerbs = _verbSystem.GetLocalVerbs(target, player, typeof(ExamineVerb));
 
