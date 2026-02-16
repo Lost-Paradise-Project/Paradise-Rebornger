@@ -14,7 +14,6 @@ repos:
     rev: "v6.0.0"
     hooks:
       - id: fix-byte-order-marker
-        exclude: \.ftl$
       - id: check-yaml
         files: "^Resources/Prototypes/_[^/]+/.*\\.yml$"
         args: ["--unsafe"]
@@ -30,9 +29,7 @@ repos:
       - id: check-merge-conflict
       - id: check-added-large-files
         args: ['--maxkb=2000']
-        exclude: \.ftl$
       - id: end-of-file-fixer
-        exclude: \.ftl$
       - id: trailing-whitespace
         exclude: \.ftl$
       - id: pretty-format-json

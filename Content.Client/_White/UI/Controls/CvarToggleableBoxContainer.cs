@@ -1,5 +1,6 @@
 using Robust.Client.UserInterface.Controls;
 using Robust.Shared.Configuration;
+using System;
 
 namespace Content.Client._White.UI.Controls;
 
@@ -45,6 +46,7 @@ public sealed class CvarToggleableBoxContainer : BoxContainer
             UpdateVisibility(_cfg.GetCVar<bool>(_cvar));
     }
 
+    [Obsolete("Controls should only be removed from UI tree instead of being disposed")]
     protected override void Dispose(bool disposing)
     {
         base.Dispose(disposing);

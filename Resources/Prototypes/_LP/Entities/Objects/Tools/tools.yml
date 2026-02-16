@@ -1,0 +1,299 @@
+- type: entity
+  id: LPPRCDFAP
+  parent: [ BaseItem, BaseEngineeringContraband ]
+  name: RCDFAP
+  description: The rapid construction device for atmospheric purposes can be used to quickly place and remove various station structures and fixtures. Requires compressed matter to function. It has a label "BL CORP Engineering Technology".
+  components:
+  - type: RCDFAP
+    availablePrototypes:
+    #Gaspipes
+    #Layer1
+    - LPPGasPipeBend
+    - LPPGasPipeStraight
+    - LPPGasPipeHalf
+    - LPPGasPipeFourway
+    - LPPGasPipeTJunction
+    - LPPGasVentPump
+    - LPPGasPressurePump
+    - LPPGasVolumePump
+    - LPPGasPassiveVent
+    - LPPGasOutletInjector
+    - LPPGasValve
+    - LPPGasVentScrubber
+    - LPPGasPassiveGate
+    - LPPSignalControlledValve
+    - LPPPressureControlledValve
+    - LPPGasPipeSensor
+    - LPPGasPressureRegulator
+    #Layer2
+    - LPPGasPipeBendAlt1
+    - LPPGasPipeStraightAlt1
+    - LPPGasPipeHalfAlt1
+    - LPPGasPipeFourwayAlt1
+    - LPPGasPipeTJunctionAlt1
+    - LPPGasVentPumpAlt1
+    - LPPGasPressurePumpAlt1
+    - LPPGasVolumePumpAlt1
+    - LPPGasPassiveVentAlt1
+    - LPPGasValveAlt1
+    - LPPGasVentScrubberAlt1
+    - LPPGasPassiveGateAlt1
+    - LPPSignalControlledValveAlt1
+    - LPPGasPipeSensorAlt1
+    - LPPGasPressureRegulatorAlt1
+    #Layer3
+    - LPPGasPipeBendAlt2
+    - LPPGasPipeStraightAlt2
+    - LPPGasPipeHalfAlt2
+    - LPPGasPipeFourwayAlt2
+    - LPPGasPipeTJunctionAlt2
+    - LPPGasVentPumpAlt2
+    - LPPGasPressurePumpAlt2
+    - LPPGasVolumePumpAlt2
+    - LPPGasPassiveVentAlt2
+    - LPPGasValveAlt2
+    - LPPGasVentScrubberAlt2
+    - LPPGasPassiveGateAlt2
+    - LPPSignalControlledValveAlt2
+    - LPPGasPipeSensorAlt2
+    - LPPGasPressureRegulatorAlt2
+    #DisposalPipes
+    - LPPDisposalUnit
+    - LPPDisposalJunctionFlipped
+    - LPPDisposalJunction
+    - LPPDisposalRouterFlipped
+    - LPPDisposalRouter
+    - LPPDisposalTagger
+    - LPPDisposalBend
+    - LPPDisposalYJunction
+    - LPPDisposalSignalRouter
+    - LPPDisposalSignalRouterFlipped
+    - LPPDisposalTrunk
+    - LPPDisposalPipe
+    - LPPMailingUnit
+    #DevicesAndAtmos
+    - LPPGasMixer
+    - LPPGasMixerFlipped
+    - LPPGasFilter
+    - LPPGasFilterFlipped
+    - LPPHeatExchanger
+    - LPPAtmosDeviceFanTiny
+    - LPPAtmosDeviceFanDirectional
+    - LPPGasDualPortVentPump
+    - LPPGasPort
+    - LPPAirSensor
+    - LPPFloorDrain
+    - LPPAirAlarm
+    - LPPFireAlarm
+    #Tiles
+    - LPPLattice
+    - LPPPlating
+    - LPPFloorSteel
+    - LPPCatwalk
+    #Windows
+    - LPPPlasmaWindow
+    - LPPPlasmaWindowDirectional
+    - LPPReinforcedPlasmaWindow
+    - LPPPlasmaReinforcedWindowDirectional
+    - LPPGrille
+    #Airlocks
+    - LPPAirlock
+    - LPPAirlockGlass
+    - LPPFirelock
+    - LPPAirlockShuttle
+    - LPPAirlockGlassShuttle
+    - LPPAirlockExternalLocked
+    - LPPAirlockExternalGlassLocked
+    #Cables
+    - LPPLVCable
+    - LPPMVCable
+    - LPPHVCable
+    - LPPCableTerminal
+    #Other
+    - LPPDeconstruct
+    - LPPGasPipeManifold
+  - type: LimitedCharges
+    maxCharges: 130
+  - type: Sprite
+    sprite: _LP/Objects/Tools/rcdfap.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: Clothing
+    sprite: _LP/Objects/Tools/rcdfap.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 600
+      Plastic: 100
+  - type: StaticPrice
+    price: 110
+  - type: UserInterface
+    interfaces:
+      enum.RcdfapUiKey.Key:
+        type: RCDFAPMenuBoundUserInterface
+  - type: ActivatableUI
+    inHandsOnly: true
+    key: enum.RcdfapUiKey.Key
+
+- type: entity
+  id: LPPRCDFAPEmpty
+  parent: LPPRCDFAP
+  suffix: Empty
+  components:
+  - type: LimitedCharges
+    lastCharges: -1
+
+- type: entity
+  id: LPPRCDFAPRecharging
+  parent: LPPRCDFAP
+  name: experimental RCDFAP
+  description: Cyborg-mounted Rapid Construction Device For Atmospheric Purposes which creates compressed matter on the fly using an internal fabricator.
+  suffix: AutoRecharge
+  components:
+  - type: LimitedCharges
+    maxCharges: 120
+  - type: AutoRecharge
+    rechargeDuration: 3
+
+- type: entity
+  id: LPPRCDFAPExperimental
+  parent: LPPRCDFAP
+  suffix: Admeme
+  name: experimental RCDFAP
+  description: A bluespace-enhanced rapid construction device for atmospheric purposes that passively generates its own compressed matter.
+  components:
+  - type: LimitedCharges
+    maxCharges: 300
+  - type: RCDFAP
+    availablePrototypes:
+    #Gaspipes
+    #Layer1
+    - LPPNoFXGasPipeBend
+    - LPPNoFXGasPipeStraight
+    - LPPNoFXGasPipeHalf
+    - LPPNoFXGasPipeFourway
+    - LPPNoFXGasPipeTJunction
+    - LPPNoFXGasVentPump
+    - LPPNoFXGasPressurePump
+    - LPPNoFXGasVolumePump
+    - LPPNoFXGasPassiveVent
+    - LPPNoFXGasOutletInjector
+    - LPPNoFXGasValve
+    - LPPNoFXGasVentScrubber
+    - LPPNoFXGasPassiveGate
+    - LPPNoFXSignalControlledValve
+    - LPPNoFXPressureControlledValve
+    - LPPNoFXGasPipeSensor
+    - LPPNoFXGasPressureRegulator
+    #Layer2
+    - LPPNoFXGasPipeBendAlt1
+    - LPPNoFXGasPipeStraightAlt1
+    - LPPNoFXGasPipeHalfAlt1
+    - LPPNoFXGasPipeFourwayAlt1
+    - LPPNoFXGasPipeTJunctionAlt1
+    - LPPNoFXGasVentPumpAlt1
+    - LPPNoFXGasPressurePumpAlt1
+    - LPPNoFXGasVolumePumpAlt1
+    - LPPNoFXGasPassiveVentAlt1
+    - LPPNoFXGasValveAlt1
+    - LPPNoFXGasVentScrubberAlt1
+    - LPPNoFXGasPassiveGateAlt1
+    - LPPNoFXSignalControlledValveAlt1
+    - LPPNoFXGasPipeSensorAlt1
+    - LPPNoFXGasPressureRegulatorAlt1
+    #Layer3
+    - LPPNoFXGasPipeBendAlt2
+    - LPPNoFXGasPipeStraightAlt2
+    - LPPNoFXGasPipeHalfAlt2
+    - LPPNoFXGasPipeFourwayAlt2
+    - LPPNoFXGasPipeTJunctionAlt2
+    - LPPNoFXGasVentPumpAlt2
+    - LPPNoFXGasPressurePumpAlt2
+    - LPPNoFXGasVolumePumpAlt2
+    - LPPNoFXGasPassiveVentAlt2
+    - LPPNoFXGasValveAlt2
+    - LPPNoFXGasVentScrubberAlt2
+    - LPPNoFXGasPassiveGateAlt2
+    - LPPNoFXSignalControlledValveAlt2
+    - LPPNoFXGasPipeSensorAlt2
+    - LPPNoFXGasPressureRegulatorAlt2
+    #DisposalPipes
+    - LPPNoFXDisposalUnit
+    - LPPNoFXDisposalJunctionFlipped
+    - LPPNoFXDisposalJunction
+    - LPPNoFXDisposalRouterFlipped
+    - LPPNoFXDisposalRouter
+    - LPPNoFXDisposalTagger
+    - LPPNoFXDisposalBend
+    - LPPNoFXDisposalYJunction
+    - LPPNoFXDisposalSignalRouter
+    - LPPNoFXDisposalSignalRouterFlipped
+    - LPPNoFXDisposalTrunk
+    - LPPNoFXDisposalPipe
+    - LPPNoFXMailingUnit
+    #DevicesAndAtmos
+    - LPPNoFXGasMixer
+    - LPPNoFXGasMixerFlipped
+    - LPPNoFXGasFilter
+    - LPPNoFXGasFilterFlipped
+    - LPPNoFXHeatExchanger
+    - LPPNoFXAtmosDeviceFanTiny
+    - LPPNoFXAtmosDeviceFanDirectional
+    - LPPNoFXGasDualPortVentPump
+    - LPPNoFXGasPort
+    - LPPNoFXAirSensor
+    - LPPNoFXFloorDrain
+    - LPPNoFXAirAlarm
+    - LPPNoFXFireAlarm
+    #Tiles
+    - LPPNoFXLattice
+    - LPPNoFXPlating
+    - LPPNoFXFloorSteel
+    - LPPNoFXCatwalk
+    #Windows
+    - LPPNoFXPlasmaWindow
+    - LPPNoFXPlasmaWindowDirectional
+    - LPPNoFXReinforcedPlasmaWindow
+    - LPPNoFXPlasmaReinforcedWindowDirectional
+    - LPPNoFXGrille
+    #Airlocks
+    - LPPNoFXAirlock
+    - LPPNoFXAirlockGlass
+    - LPPNoFXFirelock
+    - LPPNoFXAirlockShuttle
+    - LPPNoFXAirlockGlassShuttle
+    - LPPNoFXAirlockExternalLocked
+    - LPPNoFXAirlockExternalGlassLocked
+    #Cables
+    - LPPNoFXLVCable
+    - LPPNoFXMVCable
+    - LPPNoFXHVCable
+    - LPPNoFXCableTerminal
+    #Other
+    - LPPDeconstruct
+    - LPPNoFXGasPipeManifold
+  - type: AutoRecharge
+    rechargeDuration: 0.1
+
+- type: entity
+  name: compressed matter for atmospheric purposes
+  parent: BaseItem
+  id: LPPRCDFAPAmmo
+  description: A cartridge of raw matter compacted by bluespace technology. Used in rapid construction devices.
+  components:
+  - type: RCDFAPAmmo
+  - type: Sprite
+    sprite: _LP/Objects/Tools/rcdfap.rsi
+    state: ammo
+  - type: Item
+    sprite: _LP/Objects/Tools/rcdfap.rsi
+    heldPrefix: ammo
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 100
+      Plastic: 100
+  - type: StaticPrice
+    price: 60

@@ -10,6 +10,7 @@
     size: Tiny
   - type: Clothing
     slots: UNDERWEAR
+    preferredSlots: UNDERWEAR
   - type: Tag
     tags:
     - underwear

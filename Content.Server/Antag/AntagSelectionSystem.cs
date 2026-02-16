@@ -1,5 +1,6 @@
 using System.Linq;
 using Content.Server._LP.Sponsors;      //LP edit
+using Content.Server._GoobStation.Antag; // GoobStation edit
 using Content.Server.Administration.Managers;
 using Content.Server.Antag.Components;
 using Content.Server.Chat.Managers;
@@ -45,6 +46,8 @@ public sealed partial class AntagSelectionSystem : GameRuleSystem<AntagSelection
     [Dependency] private readonly IBanManager _ban = default!;
     [Dependency] private readonly IChatManager _chat = default!;
     [Dependency] private readonly GhostRoleSystem _ghostRole = default!;
+    [Dependency] private readonly LastRolledAntagManager _lastRolled = default!; // Goobstation
+    [Dependency] private readonly PlayTimeTrackingManager _playTime1 = default!; // Goobstation
     [Dependency] private readonly JobSystem _jobs = default!;
     [Dependency] private readonly LoadoutSystem _loadout = default!;
     [Dependency] private readonly MindSystem _mind = default!;
@@ -253,6 +256,18 @@ public sealed partial class AntagSelectionSystem : GameRuleSystem<AntagSelection
         AssignPreSelectedSessions((uid, component));
     }
 
+    // GoobStation edit start
+    public Dictionary<ICommonSession, float> ToWeightsDict(IList<ICommonSession> pool)
+    {
+        Dictionary<ICommonSession, float> weights = new();
+
+        // weight by playtime since last rolled
+        foreach (var se in pool)
+            weights[se] = (float)(_playTime1.GetOverallPlaytime(se) - _lastRolled.GetLastRolled(se.UserId)).TotalSeconds;
+        return weights;
+    }
+    // GoobStation edit end
+
     /// <summary>
     /// Chooses antagonists from the given selection of players
     /// </summary>
@@ -363,6 +378,17 @@ public sealed partial class AntagSelectionSystem : GameRuleSystem<AntagSelection
 
         if (!IsSessionValid(ent, session, def) || !IsEntityValid(session?.AttachedEntity, def))
             return false;
+
+        // GoobStation edit start
+        if (session != null)
+        {
+            try // tests die without this
+            {
+                _lastRolled.SetLastRolled(session.UserId, _playTime1.GetOverallPlaytime(session));
+            }
+            catch { }
+        }
+        // GoobStation edit end
 
         if (onlyPreSelect && session != null)
         {
@@ -528,7 +554,7 @@ public sealed partial class AntagSelectionSystem : GameRuleSystem<AntagSelection
             }
         }
 
-        return new AntagSelectionPlayerPool(new() { preferredList, fallbackList });
+        return new AntagSelectionPlayerPool(new() { ToWeightsDict(preferredList), ToWeightsDict(fallbackList) }); // GoobStation
     }
 
     /// <summary>

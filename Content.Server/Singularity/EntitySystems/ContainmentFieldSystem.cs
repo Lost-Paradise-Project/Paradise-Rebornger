@@ -6,6 +6,7 @@ using Content.Shared.Singularity.Components;
 using Content.Shared.Throwing;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Events;
+using Content.Shared.Goobstation.Singularity; // LP Edit
 
 namespace Content.Server.Singularity.EntitySystems;
 
@@ -27,13 +28,19 @@ public sealed class ContainmentFieldSystem : EntitySystem
     {
         var otherBody = args.OtherEntity;
 
+        // Goobstation
+        var ev = new ContainmentFieldThrowEvent(uid);
+        RaiseLocalEvent(otherBody, ref ev);
+        if (ev.Cancelled)
+            return;
+
         if (component.DestroyGarbage && HasComp<SpaceGarbageComponent>(otherBody))
         {
             _popupSystem.PopupEntity(Loc.GetString("comp-field-vaporized", ("entity", otherBody)), uid, PopupType.LargeCaution);
             QueueDel(otherBody);
         }
 
-        if (TryComp<PhysicsComponent>(otherBody, out var physics) && physics.Mass <= component.MaxMass && physics.Hard)
+        if (TryComp<PhysicsComponent>(otherBody, out var physics) && physics.Hard) // Goobstation - removed mass check
         {
             var fieldDir = _transformSystem.GetWorldPosition(uid);
             var playerDir = _transformSystem.GetWorldPosition(otherBody);

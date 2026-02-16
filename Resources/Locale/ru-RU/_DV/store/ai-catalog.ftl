@@ -1,0 +1,12 @@
+ai-rgb-lighting-name = RGB Подсветка
+ai-rgb-lighting-desc = Меняет цвет лампочки на переливающийся RGB
+ai-light-synthesizer-name = Синтезатор ламп
+ai-light-synthesizer-desc = Отправьте нанитов для замены лампочки
+ai-bike-horn-name = ХОНК.mp3
+ai-bike-horn-desc = Проиграйте прекрасный звук из голо-пада
+ai-holopointer-name = Голо указатель
+ai-holopointer-desc = Пометьте зону голограммой, которая видна людям
+ai-repair-nanites-name = Наниты ремонтники
+ai-repair-nanites-desc = Отправьте нанитов для починки борга
+ai-emergency-sealant-name = Аварийный герметик
+ai-emergency-sealant-desc = Выпустите металическую пену для срочного заделывания брешей

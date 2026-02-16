@@ -24,7 +24,6 @@ public sealed partial class CustomGhostsWindow : DefaultWindow
     [Dependency] private readonly IPrototypeManager _proto = default!;
     [Dependency] private readonly ISharedPlayerManager _player = default!;
     [Dependency] private readonly IClientPreferencesManager _pref = default!;
-    [Dependency] private readonly IClientConsoleHost _conhost = default!;
     [Dependency] private readonly IEntityManager _entMan = default!;
     [Dependency] private readonly IEntitySystemManager _entSys = default!;
     [Dependency] private readonly IClientNetManager _netManager = default!;

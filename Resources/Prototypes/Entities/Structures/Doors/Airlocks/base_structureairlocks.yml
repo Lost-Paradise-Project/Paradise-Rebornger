@@ -4,6 +4,12 @@
   name: airlock
   description: It opens, it closes, and maybe crushes you.
   components:
+  # LP Edit Start
+  - type: RCDFAPDeconstructable
+    cost: 4
+    delay: 2
+    fx: EffectRCDDeconstruct2
+  # LP Edit End
   - type: Anchorable
     flags:
     - Anchorable
