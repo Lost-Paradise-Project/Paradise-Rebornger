@@ -9,7 +9,7 @@ public sealed partial class DCCVars
     * Curator Help
     */
     public static readonly CVarDef<SoundPathSpecifier> CHelpSound =
-        CVarDef.Create("audio.chelp_sound", new SoundPathSpecifier("/Audio/_RMC14/Effects/Admin/mhelp.ogg"), CVar.ARCHIVE | CVar.CLIENTONLY);
+        CVarDef.Create("audio.chelp_sound", new SoundPathSpecifier("/Audio/_LP/Effects/Admin/Effect_CHelp.ogg"), CVar.ARCHIVE | CVar.CLIENTONLY);
 
     /// <summary>
     ///     URL of the Discord webhook which will relay all chelp messages.
