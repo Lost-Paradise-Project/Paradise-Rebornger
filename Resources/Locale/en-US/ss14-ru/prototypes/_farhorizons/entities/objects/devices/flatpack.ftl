@@ -1,4 +1,4 @@
-ent-NuclearReactorFlatpack = nuclear reactor flatpack
+ent-NuclearReactorFlatpack = Nuclear Reactor Flatpack
     .desc = A flatpack used for constructing a nuclear reactor. Parts sold separately.
-ent-GasTurbineFlatpack = gas turbine flatpack
+ent-GasTurbineFlatpack = Gas Turbine Flatpack
     .desc = A flatpack used for constructing a gas turbine.

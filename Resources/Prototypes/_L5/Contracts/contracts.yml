@@ -1,0 +1,37 @@
+- type: contract
+  id: ContractNT
+  name: contract-nt-name
+  description: contract-nt-desc
+
+- type: contract
+  id: ContractGorlex
+  name: contract-gorlex-name
+  description: contract-gorlex-desc
+
+- type: contract
+  id: ContractBLCorp
+  name: contract-blcorp-name
+  description: contract-blcorp-desc
+
+- type: contract
+  id: ContractKosmolog
+  name: contract-kosmologistika-name
+  description: contract-kosmologistika-desc
+
+- type: contract
+  id: ContractInterdyne
+  name: contract-interdyne-name
+  description: contract-interdyne-desc
+
+# Contracts for cards that aren't generally used in-game
+
+- type: contract
+  id: ContractIndependent
+  name: contract-independent-name
+  description: contract-independent-desc
+
+- type: contract
+  id: ContractAdmin
+  name: contract-admin-name
+  description: contract-admin-desc
+  selectable: false

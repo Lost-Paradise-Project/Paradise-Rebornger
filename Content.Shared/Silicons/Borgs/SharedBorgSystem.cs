@@ -1,3 +1,4 @@
+using Content.Shared._CorvaxNext.Silicons.Borgs.Components;
 using Content.Shared.Access.Systems;
 using Content.Shared.Actions;
 using Content.Shared.Administration.Logs;
@@ -22,6 +23,7 @@ using Content.Shared.PowerCell;
 using Content.Shared.PowerCell.Components;
 using Content.Shared.Roles;
 using Content.Shared.Silicons.Borgs.Components;
+using Content.Shared.StationAi;
 using Content.Shared.Throwing;
 using Content.Shared.UserInterface;
 using Content.Shared.Wires;
@@ -191,6 +193,14 @@ public abstract partial class SharedBorgSystem : EntitySystem
         {
             _mind.TransferTo(mindId, args.Entity, mind: mind);
         }
+
+        // Corvax-Next-AiRemoteControl-Start
+        if (HasComp<AiRemoteBrainComponent>(args.Entity))
+        {
+            RemComp<AiRemoteControllerComponent>(chassis);
+            RemComp<StationAiVisionComponent>(chassis);
+        }
+        // Corvax-Next-AiRemoteControl-End
     }
 
     private void OnMindAdded(Entity<BorgChassisComponent> chassis, ref MindAddedMessage args)
@@ -226,6 +236,7 @@ public abstract partial class SharedBorgSystem : EntitySystem
         var used = args.Used;
         TryComp<BorgBrainComponent>(used, out var brain);
         TryComp<BorgModuleComponent>(used, out var module);
+        TryComp<AiRemoteBrainComponent>(used, out var aiBrain); // Corvax-Next-AiRemoteControl
 
         if (TryComp<WiresPanelComponent>(chassis, out var panel) && !panel.Open)
         {
@@ -260,6 +271,18 @@ public abstract partial class SharedBorgSystem : EntitySystem
                 $"{args.User} installed module {used} into borg {chassis.Owner}");
             args.Handled = true;
         }
+
+        // Corvax-Next-AiRemoteControl-Start
+        if (chassis.Comp.BrainEntity == null && aiBrain != null &&
+            _whitelist.IsWhitelistPassOrNull(chassis.Comp.BrainWhitelist, used))
+        {
+            EnsureComp<AiRemoteControllerComponent>(chassis);
+            _container.Insert(used, chassis.Comp.BrainContainer);
+            _adminLog.Add(LogType.Action, LogImpact.Medium,
+                $"{ToPrettyString(args.User):player} installed ai remote brain {ToPrettyString(used)} into borg {ToPrettyString(chassis)}");
+            args.Handled = true;
+        }
+        // Corvax-Next-AiRemoteControl-End
     }
 
     // Make the borg slower without power.

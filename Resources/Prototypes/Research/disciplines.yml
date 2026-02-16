@@ -1,7 +1,7 @@
 - type: techDiscipline
   id: Industrial
   name: research-discipline-industrial
-  color: "#eeac34"
+  color: "#d1bf68"
   icon:
     sprite: Interface/Misc/research_disciplines.rsi
     state: industrial
@@ -13,7 +13,7 @@
 - type: techDiscipline
   id: Arsenal
   name: research-discipline-arsenal
-  color: "#dc373b"
+  color: "#4b653e"
   icon:
     sprite: Interface/Misc/research_disciplines.rsi
     state: arsenal
@@ -25,7 +25,7 @@
 - type: techDiscipline
   id: Experimental
   name: research-discipline-experimental
-  color: "#9a6ef0"
+  color: "#794284"
   icon:
     sprite: Interface/Misc/research_disciplines.rsi
     state: experimental
@@ -37,7 +37,7 @@
 - type: techDiscipline
   id: CivilianServices
   name: research-discipline-civilian-services
-  color: "#7ecd48"
+  color: "#559E4F"
   icon:
     sprite: Interface/Misc/research_disciplines.rsi
     state: civilianservices

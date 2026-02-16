@@ -6,6 +6,10 @@
         <LineEdit Name="NameLineEdit" />
         <Label Name="CurrentJob" Text="{Loc 'agent-id-card-current-job'}" />
         <LineEdit Name="JobLineEdit" />
+        <!-- L5 — contract -->
+        <Label Name="CurrentContract" Text="{Loc 'agent-id-card-current-contract'}"/>
+        <OptionButton Name="ContractEdit"/>
+        <!-- end L5 — contract -->
         <Label Text="{Loc 'agent-id-card-job-icon-label'}"/>
         <GridContainer Name="IconGrid" Columns="10">
             <!-- Job icon buttons are generated in the code -->

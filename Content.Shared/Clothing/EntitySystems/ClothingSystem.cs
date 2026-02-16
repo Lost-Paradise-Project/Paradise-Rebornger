@@ -1,3 +1,4 @@
+using System.Linq;
 using Content.Shared.Clothing.Components;
 using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
@@ -50,8 +51,19 @@ public abstract class ClothingSystem : EntitySystem
         Entity<ClothingComponent> toEquipEnt,
         Entity<InventoryComponent, HandsComponent> userEnt)
     {
-        foreach (var slotDef in userEnt.Comp1.Slots)
+        // Begin L5 - prioritized quickequips
+        var slots = userEnt.Comp1.Slots;
+        if (toEquipEnt.Comp.PreferredSlots != SlotFlags.NONE)
         {
+            // We want to sort so we have the ordering 1) empty prio slots, 2) empty slots, 3) full piro slots, 4) rest
+            slots = slots
+                .OrderBy(a => _invSystem.TryGetSlotEntity(userEnt, a.Name, out _, userEnt))
+                .ThenBy(a => (a.SlotFlags & toEquipEnt.Comp.PreferredSlots) == 0)
+                .ToArray();
+        }
+        foreach (var slotDef in slots)
+        {
+            // End L5        {
             if (!_invSystem.CanEquip(userEnt, toEquipEnt, slotDef.Name, out _, slotDef, userEnt, toEquipEnt))
                 continue;
 

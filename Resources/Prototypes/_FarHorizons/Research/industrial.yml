@@ -1,10 +1,14 @@
+# Nuclear power technologies - branch from PowerGeneration (position 2, 0 in Industrial)
+# NuclearPowerGeneration -> NuclearPowerRecycling
+
 - type: technology
   id: NuclearPowerGeneration
   name: research-technology-nuclear-power
   icon:
-    sprite: _FarHorizons/Structures/Power/Generation/FissionGenerator/reactor_parts.rsi
+    sprite: _FarHorizons/Objects/Power/FissionGenerator/reactor_parts.rsi
     state: default_rod
   discipline: Industrial
+  prerequisiteLineType: Diagonal
   tier: 1
   cost: 7500
   recipeUnlocks:
@@ -28,12 +32,13 @@
   - PlasteelGasTurbineBlade
   technologyPrerequisites:
   - PowerGeneration
+  position: 5, 1
 
 - type: technology
   id: NuclearPowerRecycling
   name: research-technology-nuclear-recycling
   icon:
-    sprite: _FarHorizons/Structures/Power/Generation/FissionGenerator/reactor_parts.rsi
+    sprite: _FarHorizons/Objects/Power/FissionGenerator/reactor_parts.rsi
     state: nuclear_waste
   discipline: Industrial
   tier: 2
@@ -53,3 +58,4 @@
   - DiamondGasTurbineBlade
   technologyPrerequisites:
   - NuclearPowerGeneration
+  position: 6, 2
