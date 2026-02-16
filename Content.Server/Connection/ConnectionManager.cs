@@ -312,7 +312,12 @@ namespace Content.Server.Connection
             }
 
             // Corvax-Queue-Start
-            var isQueueEnabled = _cfg.GetCVar(Content.Server._NC.CCCvars.CCCVars.QueueEnabled); //LP edit start
+            var isQueueEnabled =
+#if LP
+            _cfg.GetCVar(Content.Server._NC.CCCvars.CCCVars.QueueEnabled); //LP edit start
+#else
+            false;
+#endif
             var isprivileger = await HavePrivilegedJoin(userId);
             if (isQueueEnabled || isprivileger)
                 return null;    //LP edit end
