@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using Content.Shared.Atmos;
 using Content.Shared.Atmos.Components;
 using Content.Shared._Starlight.Atmos;

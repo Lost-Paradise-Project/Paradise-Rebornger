@@ -1,4 +1,4 @@
-﻿using Content.Shared._Starlight.Atmos.EntitySystems;
+using Content.Shared._Starlight.Atmos.EntitySystems;
 
 namespace Content.Shared._Starlight.Atmos.Components;
 

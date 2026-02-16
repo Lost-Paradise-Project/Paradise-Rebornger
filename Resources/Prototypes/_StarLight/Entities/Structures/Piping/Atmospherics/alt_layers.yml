@@ -1,4 +1,4 @@
-﻿# region unary
+# region unary
 - type: entity
   parent: [GasPipeLayerAlt1, GasVentPump]
   id: GasVentPumpAlt1
