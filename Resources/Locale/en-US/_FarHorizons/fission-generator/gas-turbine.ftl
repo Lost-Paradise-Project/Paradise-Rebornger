@@ -1,4 +1,4 @@
-﻿### Examine
+### Examine
 
 gas-turbine-examine-stator-null = It seems to be missing a stator.
 gas-turbine-examine-stator = It has a stator.
