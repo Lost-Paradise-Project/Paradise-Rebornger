@@ -19,6 +19,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="_FarHorizons\Power\Generation\FissionGenerator\SharedReactorPartSystem.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="_FarHorizons\Power\Generation\FissionGenerator\SharedNuclearReactorSystem.cs" />
   </ItemGroup>
 
