@@ -2,7 +2,6 @@ using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using Content.Corvax.Interfaces.Shared;
-using Content.Shared._ERPModule.Data; // LP edit
 using Content.Shared.CCVar;
 using Content.Shared.Corvax.TTS;
 using Content.Shared.GameTicking;
@@ -94,16 +93,6 @@ namespace Content.Shared.Preferences
         [DataField]
         public int Age { get; set; } = 18;
 
-        // LP edit start
-        [DataField]
-        public ErpStatus ErpStatus { get; set; } = ErpStatus.Ask;
-
-        public HumanoidCharacterProfile WithErpStatus(ErpStatus erpStatus)
-        {
-            return new(this) { ErpStatus = erpStatus };
-        }
-        // LP edit end
-
         [DataField]
         public Sex Sex { get; private set; } = Sex.Male;
 
@@ -167,7 +156,6 @@ namespace Content.Shared.Preferences
             int age,
             Sex sex,
             Gender gender,
-            ErpStatus erpStatus, // LP edit
             HumanoidCharacterAppearance appearance,
             SpawnPriorityPreference spawnPriority,
             Dictionary<ProtoId<JobPrototype>, JobPriority> jobPriorities,
@@ -189,7 +177,6 @@ namespace Content.Shared.Preferences
             Age = age;
             Sex = sex;
             Gender = gender;
-            ErpStatus = erpStatus; // LP edit
             Appearance = appearance;
             SpawnPriority = spawnPriority;
             _jobPriorities = jobPriorities;
@@ -228,7 +215,6 @@ namespace Content.Shared.Preferences
                 other.Age,
                 other.Sex,
                 other.Gender,
-                other.ErpStatus, // LP edit
                 other.Appearance.Clone(),
                 other.SpawnPriority,
                 new Dictionary<ProtoId<JobPrototype>, JobPriority>(other.JobPriorities),
@@ -576,7 +562,6 @@ namespace Content.Shared.Preferences
             if (Sex != other.Sex) return false;
             if (Gender != other.Gender) return false;
             if (Species != other.Species) return false;
-            if (ErpStatus != other.ErpStatus) return false; // LP edit
             if (Height != other.Height) return false; // Goobstation: port EE height/width sliders
             if (Width != other.Width) return false; // Goobstation: port EE height/width sliders
             if (BarkVoice != other.BarkVoice) return false; // Goob Station - Barks
@@ -618,16 +603,6 @@ namespace Content.Shared.Preferences
                 Sex.Unsexed => Sex.Unsexed,
                 _ => Sex.Male // Invalid enum values.
             };
-
-            // LP edit start
-            var erpStatus = ErpStatus switch
-            {
-                ErpStatus.Yes => ErpStatus.Yes,
-                ErpStatus.Ask => ErpStatus.Ask,
-                ErpStatus.No => ErpStatus.No,
-                _ => ErpStatus.Ask
-            };
-            // LP edit end
 
             // ensure the species can be that sex and their age fits the founds
             if (!speciesPrototype.Sexes.Contains(sex))
@@ -751,7 +726,6 @@ namespace Content.Shared.Preferences
             Width = width; // Goobstation: port EE height/width sliders
             Sex = sex;
             Gender = gender;
-            ErpStatus = erpStatus; // LP edit
             Appearance = appearance;
             SpawnPriority = spawnPriority;
 
@@ -899,7 +873,6 @@ namespace Content.Shared.Preferences
             hashCode.Add(Age);
             hashCode.Add((int)Sex);
             hashCode.Add((int)Gender);
-            hashCode.Add((int)ErpStatus); // LP edit
             hashCode.Add(Appearance);
             hashCode.Add(BarkVoice); // Goob Station - Barks
             hashCode.Add((int)SpawnPriority);

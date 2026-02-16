@@ -25,7 +25,6 @@ using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.Manager;
 using Robust.Shared.Utility;
-using Content.Shared._ERPModule.Data; // LP edit
 using Content.Shared._White.CustomGhostSystem;  //WWDP edit
 using Content.Server._FunkyStation.Records; // CD - Character Records
 using Content.Shared._FunkyStation.Records; // CD - Character Records
@@ -265,12 +264,6 @@ namespace Content.Server.Database
             var markings =
                 new Dictionary<ProtoId<OrganCategoryPrototype>, Dictionary<HumanoidVisualLayers, List<Marking>>>();
 
-            // LP edit start
-            var erpStatus = ErpStatus.Ask;
-            if (Enum.TryParse<ErpStatus>(profile.ErpStatus, true, out var erpStatusVal))
-                erpStatus = erpStatusVal;
-            // LP edit end
-
             if (profile.OrganMarkings?.RootElement is { } element)
             {
                 var data = element.ToDataNode();
@@ -357,7 +350,6 @@ namespace Content.Server.Database
                 profile.Age,
                 sex,
                 gender,
-                erpStatus, // LP edit
                 new HumanoidCharacterAppearance
                 (
                     Color.FromHex(profile.EyeColor),
@@ -389,7 +381,6 @@ namespace Content.Server.Database
             profile.Width = humanoid.Width; // Goobstation: port EE height/width sliders
             profile.Age = humanoid.Age;
             profile.Sex = humanoid.Sex.ToString();
-            profile.ErpStatus = humanoid.ErpStatus.ToString(); // LP edit
             profile.Gender = humanoid.Gender.ToString();
             profile.EyeColor = appearance.EyeColor.ToHex();
             profile.SkinColor = appearance.SkinColor.ToHex();
