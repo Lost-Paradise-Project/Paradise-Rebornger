@@ -1,0 +1,22 @@
+- type: entity
+  parent: CrateEngineering
+  id: LPPCrateRCDFAPAmmo
+  name: compressed matter for atmospheric purpases crate
+  description: Contains three compressed matter cartridges.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: LPPRCDFAPAmmo
+        amount: 3
+
+- type: entity
+  parent: CrateEngineeringSecure
+  id: LPPCrateRCDFAP
+  name: RCDFAP crate
+  description: A crate containing a single rapid construction device.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage:
+        id: LPPRCDFAP

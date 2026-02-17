@@ -18,10 +18,7 @@ public sealed class TimeTransferPanelEui : BaseEui
     [Dependency] private readonly IAdminManager _adminMan = default!;
     [Dependency] private readonly ILogManager _log = default!;
     [Dependency] private readonly IPlayerLocator _playerLocator = default!;
-    [Dependency] private readonly IPlayerManager _playerMan = default!;
-    [Dependency] private readonly IPrototypeManager _protoMan = default!;
     [Dependency] private readonly IServerDbManager _databaseMan = default!;
-    [Dependency] private readonly PlayTimeTrackingManager _playTimeMan = default!;
 
     private readonly ISawmill _sawmill;
 
@@ -34,7 +31,7 @@ public sealed class TimeTransferPanelEui : BaseEui
 
     public override TimeTransferPanelEuiState GetNewState()
     {
-        var hasFlag = _adminMan.HasAdminFlag(Player, AdminFlags.Moderator);
+        var hasFlag = _adminMan.HasAdminFlag(Player, AdminFlags.Playtime); // Corvax-DiscordRoles
 
         return new TimeTransferPanelEuiState(hasFlag);
     }
@@ -51,7 +48,7 @@ public sealed class TimeTransferPanelEui : BaseEui
 
     public async void TransferTime(string playerId, List<TimeTransferData> timeData, bool overwrite)
     {
-        if (!_adminMan.HasAdminFlag(Player, AdminFlags.Moderator))
+        if (!_adminMan.HasAdminFlag(Player, AdminFlags.Playtime)) // Corvax-DiscordRoles
         {
             _sawmill.Warning($"{Player.Name} ({Player.UserId} tried to add roles time without moderator flag)");
             return;

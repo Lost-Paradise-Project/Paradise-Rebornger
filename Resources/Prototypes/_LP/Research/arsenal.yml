@@ -1,6 +1,4 @@
-# Tier 1
-
-# Tier 2
+# Depends on ConcentratedLaserWeaponry (position 4, 11 in Arsenal)
 - type: technology
   id: LPPBorgModuleSecurityAllow
   name: research-technology-borg-module-security
@@ -13,3 +11,6 @@
   recipeUnlocks:
   - LPPBorgModuleSecurityWeapon
   - LPPBorgModuleSecurityLaserCarbine
+  technologyPrerequisites:
+  - ConcentratedLaserWeaponry
+  position: 5, 12

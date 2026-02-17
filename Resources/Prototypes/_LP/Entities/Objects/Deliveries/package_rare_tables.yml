@@ -1,0 +1,11 @@
+- type: entityTable
+  id: LPPPackageEngineeringRCDFAPBundle
+  table: !type:AllSelector
+    children:
+    - !type:GroupSelector
+      children:
+      - id: LPPRCDFAP
+      - id: LPPRCDFAPEmpty
+    - id: LPPRCDFAPAmmo
+      amount: !type:RangeNumberSelector
+        range: 1, 2

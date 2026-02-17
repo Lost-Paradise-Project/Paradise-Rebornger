@@ -158,6 +158,10 @@
     - id: HolofanProjector
     - id: RCD
     - id: RCDAmmo
+    # LP Edit Start
+    - id: LPPRCDFAP
+    - id: LPPRCDFAPAmmo
+    # LP Edit End
     - id: AirGrenade
     - id: PlushieLizardJobAtmospherictechnician
       prob: 0.02

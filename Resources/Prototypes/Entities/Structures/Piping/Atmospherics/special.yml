@@ -6,6 +6,12 @@
   placement:
     mode: SnapgridCenter
   components:
+  # LP Edit Start
+  - type: RCDFAPDeconstructable
+    cost: 4
+    delay: 2
+    fx: EffectRCDDeconstruct2
+  # LP Edit End
   - type: Transform
     anchored: true
   - type: Physics

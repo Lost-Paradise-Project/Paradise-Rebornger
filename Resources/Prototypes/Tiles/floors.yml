@@ -23,6 +23,7 @@
   - FloorSnow
   - FloorDirt
   - PlatingRCD
+  - LPPPlatingRCDFAP # LP Edit
   - FloorHullReinforced
 
 - type: tile

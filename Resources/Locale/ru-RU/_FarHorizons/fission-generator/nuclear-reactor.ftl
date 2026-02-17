@@ -31,7 +31,6 @@ comp-nuclear-reactor-ui-eject-button = Извлечь
 comp-nuclear-reactor-ui-view-change = Сменить вид
 comp-nuclear-reactor-ui-view-temp = Температура
 comp-nuclear-reactor-ui-view-neutron = Нейтроны
-comp-nuclear-reactor-ui-view-target = Цель
 comp-nuclear-reactor-ui-view-fuel = Топливо
 comp-nuclear-reactor-ui-status-panel = Статус реактора
 comp-nuclear-reactor-ui-reactor-temp = Температура

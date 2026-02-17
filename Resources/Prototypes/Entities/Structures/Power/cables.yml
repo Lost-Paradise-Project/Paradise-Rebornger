@@ -64,6 +64,12 @@
   name: HV power cable
   description: An orange high voltage power cable.
   components:
+  # LP Edit Start
+  - type: RCDFAPDeconstructable
+    cost: 4
+    delay: 2
+    fx: EffectRCDDeconstruct2
+  # LP Edit End
   - type: Sprite
     sprite: Structures/Power/Cables/hv_cable.rsi
     state: hvcable_0
@@ -122,6 +128,10 @@
   name: MV power cable
   description: A medium voltage power cable.
   components:
+  - type: RCDFAPDeconstructable
+    cost: 4
+    delay: 2
+    fx: EffectRCDDeconstruct2
   - type: Sprite
     sprite: Structures/Power/Cables/mv_cable.rsi
     layers:
@@ -176,6 +186,10 @@
   name: LV power cable
   description: A cable used to connect machines to an APC. #APCs aren't area defined anymore so need this cable to connect things to the APC. This description should be dynamic in future.
   components:
+  - type: RCDFAPDeconstructable
+    cost: 4
+    delay: 2
+    fx: EffectRCDDeconstruct2
   - type: Sprite
     color: Green
     sprite: Structures/Power/Cables/lv_cable.rsi
