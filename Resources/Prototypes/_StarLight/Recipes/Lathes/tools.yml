@@ -1,4 +1,4 @@
-﻿- type: latheRecipe
+- type: latheRecipe
   parent: BaseToolRecipe
   id: RPD
   result: RPDEmpty

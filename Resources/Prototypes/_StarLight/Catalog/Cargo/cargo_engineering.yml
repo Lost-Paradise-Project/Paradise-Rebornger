@@ -1,4 +1,4 @@
-﻿- type: cargoProduct
+- type: cargoProduct
   id: EngineeringRPD
   icon:
     sprite: _Starlight/Objects/Tools/rpd.rsi

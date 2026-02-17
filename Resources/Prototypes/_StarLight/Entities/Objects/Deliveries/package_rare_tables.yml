@@ -1,4 +1,4 @@
-﻿- type: entityTable
+- type: entityTable
   id: PackageEngineeringRPDBundle
   table: !type:AllSelector
     children:

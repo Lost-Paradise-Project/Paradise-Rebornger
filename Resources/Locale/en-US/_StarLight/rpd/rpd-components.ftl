@@ -1,4 +1,4 @@
-﻿rpd-component-piping = Piping
+rpd-component-piping = Piping
 rpd-component-atmospheric-utility = Atmospheric Utility
 rpd-component-pumps = Pumps & Valves
 rpd-component-vents = Vents

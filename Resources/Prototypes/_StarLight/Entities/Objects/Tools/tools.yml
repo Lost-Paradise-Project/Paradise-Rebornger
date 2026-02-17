@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   id: RPD
   parent: RCD
   name: RPD
