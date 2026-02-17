@@ -1,15 +1,15 @@
 using System.Linq;
 using Content.Shared.Atmos;
 using Content.Shared.Atmos.Components;
-using Content.Shared._Starlight.Atmos;
-using Content.Shared._Starlight.Atmos.Components;
+using Content.Shared._StarLight.Atmos;
+using Content.Shared._StarLight.Atmos.Components;
 using Content.Shared.NodeContainer;
 using Content.Shared.Popups;
 using Content.Shared.Construction.Components;
 using JetBrains.Annotations;
 using Robust.Shared.Map.Components;
 
-namespace Content.Shared._Starlight.Atmos.EntitySystems;
+namespace Content.Shared._StarLight.Atmos.EntitySystems;
 
 /// <summary>
 /// This handles restricting pipe-based entities from overlapping outlets/inlets with other entities.

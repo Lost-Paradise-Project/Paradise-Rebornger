@@ -8,7 +8,7 @@ using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
 // Starlight Start
 using Robust.Shared.Input;
-using Content.Client._Starlight.RCD;
+using Content.Client._StarLight.RCD;
 using Robust.Shared.Input.Binding;
 using Content.Client.Atmos;
 using Content.Shared.Input;

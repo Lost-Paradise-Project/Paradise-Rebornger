@@ -1,7 +1,7 @@
 using Content.Client.Gameplay;
 using Content.Client.Hands.Systems;
 using Content.Shared.Atmos.Components;
-using Content.Shared._Starlight.Atmos.EntitySystems;
+using Content.Shared._StarLight.Atmos.EntitySystems;
 using Content.Shared.Hands.Components;
 using Content.Shared.Interaction;
 using Content.Shared.RCD;
@@ -20,7 +20,7 @@ using System.Numerics;
 using static Robust.Client.Placement.PlacementManager;
 using Content.Shared.Atmos.EntitySystems;
 
-namespace Content.Client._Starlight.RCD;
+namespace Content.Client._StarLight.RCD;
 
 /// <summary>
 /// Funkystation

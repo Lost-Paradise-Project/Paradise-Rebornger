@@ -92,6 +92,7 @@
       - id: BoxSyringe
       - id: BoxBottle
       - id: BoxVial
+      - id: RPLD # Starlight
       - id: BoxBeaker
       - id: BoxPillCanister
       - !type:GroupSelector # Remind chemists once in a while of alternate storage options

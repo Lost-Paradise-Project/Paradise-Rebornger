@@ -1,6 +1,6 @@
-using Content.Shared._Starlight.Atmos.EntitySystems;
+using Content.Shared._StarLight.Atmos.EntitySystems;
 
-namespace Content.Shared._Starlight.Atmos.Components;
+namespace Content.Shared._StarLight.Atmos.Components;
 
 /// <summary>
 /// This is used for restricting anchoring pipes so that they do not overlap.

@@ -1,4 +1,4 @@
-// Starlight Start: Moved to Shared ``Content.Shared\_Starlight\Atmos\Components\PipeRestrictOverlapComponent.cs``
+// Starlight Start: Moved to Shared ``Content.Shared\_StarLight\Atmos\Components\PipeRestrictOverlapComponent.cs``
 /*
 using Content.Server.Atmos.EntitySystems;
 

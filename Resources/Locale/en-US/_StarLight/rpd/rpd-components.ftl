@@ -7,6 +7,6 @@ rpd-mode-primary = Primary
 rpd-mode-secondary = Secondary
 rpd-mode-tertiary = Tertiary
 rpd-mode-free = Free
-rpd-component-examine-rpd-mode = Current mode: [color=cyan]{$mode}[/color]
+rpd-component-examine-mode = Current mode: [color=cyan]{$mode}[/color]
 rpd-verb-switch-mode = Switch mode
 rpd-item-status-mode = Mode: {$mode}

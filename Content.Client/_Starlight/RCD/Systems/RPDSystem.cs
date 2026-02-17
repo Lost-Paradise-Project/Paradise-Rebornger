@@ -7,7 +7,7 @@ using Robust.Client.UserInterface.Controls;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 
-namespace Content.Client._Starlight.RCD.Systems;
+namespace Content.Client._StarLight.RCD.Systems;
 
 public sealed class RPDSystem : EntitySystem
 {
