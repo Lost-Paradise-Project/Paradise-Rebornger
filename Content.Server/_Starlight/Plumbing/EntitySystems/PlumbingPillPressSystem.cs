@@ -34,7 +34,6 @@ public sealed class PlumbingPillPressSystem : EntitySystem
     [Dependency] private readonly PlumbingPullSystem _pullSystem = default!;
 
     private static readonly EntProtoId PillPrototypeId = "Pill";
-    private static readonly EntProtoId PatchPrototypeId = "Patch";
 
     /// <summary>Max dosage matches the ChemMaster limit.</summary>
     private const uint MaxDosage = 20;
