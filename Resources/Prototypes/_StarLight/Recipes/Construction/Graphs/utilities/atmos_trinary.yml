@@ -66,25 +66,6 @@
         amount: 2
         doAfter: 1
 
-    # Inline Filter
-    - to: inline_filter
-      steps:
-      - material: Steel
-        amount: 2
-        doAfter: 1
-
-    - to: inline_filterAlt1
-      steps:
-      - material: Steel
-        amount: 2
-        doAfter: 1
-
-    - to: inline_filterAlt2
-      steps:
-      - material: Steel
-        amount: 2
-        doAfter: 1
-
   # filter
   - node: filterAlt1
     entity: GasFilterAlt1
