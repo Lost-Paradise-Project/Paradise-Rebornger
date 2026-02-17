@@ -402,7 +402,7 @@ namespace Content.Server.Connection
             var havePriority = false;
 #if LP
             if (IoCManager.Resolve<SponsorsManager>().TryGetInfo(userId, out var sponsorInfo))
-                havePriority = sponsorInfo.HavePriorityJoin;
+                havePriority = sponsorInfo.Tier > 1;
 #endif
             //LP edit end
 
