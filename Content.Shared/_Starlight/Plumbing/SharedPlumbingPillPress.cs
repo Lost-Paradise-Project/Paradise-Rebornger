@@ -4,16 +4,6 @@ using Robust.Shared.Serialization;
 namespace Content.Shared._StarLight.Plumbing;
 
 /// <summary>
-///     Whether the pill press produces pills or patches.
-/// </summary>
-[Serializable, NetSerializable]
-public enum PillPressOutputMode : byte
-{
-    Pill,
-    Patch,
-}
-
-/// <summary>
 ///     UI key for the plumbing pill press interface.
 /// </summary>
 [Serializable, NetSerializable]
@@ -30,7 +20,6 @@ public sealed class PlumbingPillPressBoundUserInterfaceState : BoundUserInterfac
 {
     public FixedPoint2 BufferVolume { get; }
     public uint Dosage { get; }
-    public PillPressOutputMode OutputMode { get; }
     public uint PillType { get; }
     public bool Enabled { get; }
 
@@ -44,7 +33,6 @@ public sealed class PlumbingPillPressBoundUserInterfaceState : BoundUserInterfac
     public PlumbingPillPressBoundUserInterfaceState(
         FixedPoint2 bufferVolume,
         uint dosage,
-        PillPressOutputMode outputMode,
         uint pillType,
         bool enabled,
         bool mixingEnabled,
@@ -55,7 +43,6 @@ public sealed class PlumbingPillPressBoundUserInterfaceState : BoundUserInterfac
     {
         BufferVolume = bufferVolume;
         Dosage = dosage;
-        OutputMode = outputMode;
         PillType = pillType;
         Enabled = enabled;
         MixingEnabled = mixingEnabled;
@@ -91,20 +78,6 @@ public sealed class PlumbingPillPressSetDosageMessage : BoundUserInterfaceMessag
     public PlumbingPillPressSetDosageMessage(uint dosage)
     {
         Dosage = dosage;
-    }
-}
-
-/// <summary>
-///     Message to switch between pill and patch output.
-/// </summary>
-[Serializable, NetSerializable]
-public sealed class PlumbingPillPressSetOutputModeMessage : BoundUserInterfaceMessage
-{
-    public PillPressOutputMode OutputMode { get; }
-
-    public PlumbingPillPressSetOutputModeMessage(PillPressOutputMode outputMode)
-    {
-        OutputMode = outputMode;
     }
 }
 

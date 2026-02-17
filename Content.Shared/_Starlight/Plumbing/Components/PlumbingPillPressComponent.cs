@@ -27,12 +27,6 @@ public sealed partial class PlumbingPillPressComponent : Component
     public uint Dosage = 10;
 
     /// <summary>
-    ///     Whether we're producing pills or patches.
-    /// </summary>
-    [DataField, AutoNetworkedField]
-    public PillPressOutputMode OutputMode = PillPressOutputMode.Pill;
-
-    /// <summary>
     ///     The pill visual type (0–19). Only relevant for pills.
     /// </summary>
     [DataField, AutoNetworkedField]

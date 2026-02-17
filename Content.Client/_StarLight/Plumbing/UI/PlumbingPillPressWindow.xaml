@@ -1,4 +1,4 @@
-<DefaultWindow xmlns="https://spacestation14.io"
+﻿<DefaultWindow xmlns="https://spacestation14.io"
                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                MinSize="380 420"
                Title="{Loc plumbing-pill-press-window-title}">
@@ -10,12 +10,6 @@
         </BoxContainer>
 
         <PanelContainer StyleClasses="LowDivider" />
-
-        <!-- Output mode selector -->
-        <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
-            <Label Text="{Loc plumbing-pill-press-output-mode}" />
-            <OptionButton Name="OutputModeSelector" MinWidth="100" HorizontalExpand="True" />
-        </BoxContainer>
 
         <!-- Dosage input -->
         <BoxContainer Orientation="Horizontal" HorizontalExpand="True">

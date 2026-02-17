@@ -48,7 +48,6 @@ public sealed class PlumbingPillPressSystem : EntitySystem
         SubscribeLocalEvent<PlumbingPillPressComponent, PlumbingDeviceUpdateEvent>(OnDeviceUpdate);
         SubscribeLocalEvent<PlumbingPillPressComponent, PlumbingPillPressToggleMessage>(OnToggle);
         SubscribeLocalEvent<PlumbingPillPressComponent, PlumbingPillPressSetDosageMessage>(OnSetDosage);
-        SubscribeLocalEvent<PlumbingPillPressComponent, PlumbingPillPressSetOutputModeMessage>(OnSetOutputMode);
         SubscribeLocalEvent<PlumbingPillPressComponent, PlumbingPillPressSetPillTypeMessage>(OnSetPillType);
         SubscribeLocalEvent<PlumbingPillPressComponent, PlumbingPillPressSetMixingMessage>(OnSetMixing);
         SubscribeLocalEvent<PlumbingPillPressComponent, PlumbingPillPressSetInletRatioMessage>(OnSetInletRatio);
@@ -84,34 +83,18 @@ public sealed class PlumbingPillPressSystem : EntitySystem
 
             // Spawn on the same tile, offset slightly south
             var spawnCoords = Transform(ent.Owner).Coordinates.Offset(new Vector2(0, -0.3f));
+            var item = Spawn(PillPrototypeId, spawnCoords);
+            _solutionSystem.EnsureSolutionEntity(item,
+                SharedChemMaster.PillSolutionName,
+                out var itemSolution,
+                dosage);
 
-            if (ent.Comp.OutputMode == PillPressOutputMode.Pill)
-            {
-                var item = Spawn(PillPrototypeId, spawnCoords);
-                _solutionSystem.EnsureSolutionEntity(item,
-                    SharedChemMaster.PillSolutionName,
-                    out var itemSolution,
-                    dosage);
+            if (itemSolution.HasValue)
+                _solutionSystem.TryAddSolution(itemSolution.Value, withdrawal);
 
-                if (itemSolution.HasValue)
-                    _solutionSystem.TryAddSolution(itemSolution.Value, withdrawal);
-
-                var pill = Comp<PillComponent>(item);
-                pill.PillType = ent.Comp.PillType;
-                Dirty(item, pill);
-            }
-            else
-            {
-                var item = Spawn(PatchPrototypeId, spawnCoords);
-
-                _solutionSystem.EnsureSolutionEntity(item,
-                    SharedChemMaster.PatchSolutionName,
-                    out var itemSolution,
-                    dosage);
-
-                if (itemSolution.HasValue)
-                    _solutionSystem.TryAddSolution(itemSolution.Value, withdrawal);
-            }
+            var pill = Comp<PillComponent>(item);
+            pill.PillType = ent.Comp.PillType;
+            Dirty(item, pill);
         }
 
         _appearance.SetData(ent.Owner, PlumbingVisuals.Running, produced || solution.Volume >= dosage);
@@ -208,14 +191,6 @@ public sealed class PlumbingPillPressSystem : EntitySystem
         UpdateUiState(ent);
     }
 
-    private void OnSetOutputMode(Entity<PlumbingPillPressComponent> ent, ref PlumbingPillPressSetOutputModeMessage args)
-    {
-        ent.Comp.OutputMode = args.OutputMode;
-        DirtyField(ent, ent.Comp, nameof(PlumbingPillPressComponent.OutputMode));
-        ClickSound(ent);
-        UpdateUiState(ent);
-    }
-
     private void OnSetPillType(Entity<PlumbingPillPressComponent> ent, ref PlumbingPillPressSetPillTypeMessage args)
     {
         if (args.PillType >= MaxPillTypes)
@@ -287,7 +262,6 @@ public sealed class PlumbingPillPressSystem : EntitySystem
         var state = new PlumbingPillPressBoundUserInterfaceState(
             bufferVolume,
             ent.Comp.Dosage,
-            ent.Comp.OutputMode,
             ent.Comp.PillType,
             ent.Comp.Enabled,
             ent.Comp.MixingEnabled,
