@@ -1,4 +1,4 @@
-﻿# Base plumbing machine entity - all plumbing machines inherit from this
+# Base plumbing machine entity - all plumbing machines inherit from this
 - type: entity
   abstract: true
   id: PlumbingMachineBase

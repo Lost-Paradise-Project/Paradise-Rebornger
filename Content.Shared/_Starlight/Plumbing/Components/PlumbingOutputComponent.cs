@@ -1,4 +1,4 @@
-﻿namespace Content.Shared._StarLight.Plumbing.Components;
+namespace Content.Shared._StarLight.Plumbing.Components;
 
 /// <summary>
 ///     A plumbing output that players can draw reagents from using containers.

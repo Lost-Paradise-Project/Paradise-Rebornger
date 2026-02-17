@@ -1,4 +1,4 @@
-﻿using Content.Server.NodeContainer.NodeGroups;
+using Content.Server.NodeContainer.NodeGroups;
 using Content.Shared.NodeContainer;
 using Content.Shared.NodeContainer.NodeGroups;
 

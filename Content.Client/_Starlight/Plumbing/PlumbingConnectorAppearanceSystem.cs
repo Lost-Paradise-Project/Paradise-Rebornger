@@ -1,4 +1,4 @@
-﻿using System.Numerics;
+using System.Numerics;
 using Content.Shared._StarLight.Plumbing;
 using Content.Shared._StarLight.Plumbing.Components;
 using Content.Client.SubFloor;

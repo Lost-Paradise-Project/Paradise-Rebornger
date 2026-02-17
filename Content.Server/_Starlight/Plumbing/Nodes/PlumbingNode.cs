@@ -1,4 +1,4 @@
-﻿using Content.Server._StarLight.Plumbing.NodeGroups;
+using Content.Server._StarLight.Plumbing.NodeGroups;
 using Content.Server.NodeContainer.Nodes;
 
 namespace Content.Server._StarLight.Plumbing.Nodes;

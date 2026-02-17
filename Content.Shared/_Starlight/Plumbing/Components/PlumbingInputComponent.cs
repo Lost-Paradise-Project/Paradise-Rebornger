@@ -1,4 +1,4 @@
-﻿namespace Content.Shared._StarLight.Plumbing.Components;
+namespace Content.Shared._StarLight.Plumbing.Components;
 
 /// <summary>
 ///     A plumbing input that players can pour reagents into using containers.

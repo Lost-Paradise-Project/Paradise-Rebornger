@@ -1,4 +1,4 @@
-﻿plumbing-smart-dispenser-window-title = Smart Dispenser
+plumbing-smart-dispenser-window-title = Smart Dispenser
 plumbing-smart-dispenser-header = Chemical Storage
 plumbing-smart-dispenser-reagent-entry = {$reagent}: {$amount}u
 plumbing-smart-dispenser-empty = No reagents stored.

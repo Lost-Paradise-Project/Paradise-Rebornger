@@ -1,4 +1,4 @@
-﻿using System.Numerics;
+using System.Numerics;
 using Content.Server._StarLight.Plumbing.Components;
 using Content.Server._StarLight.Plumbing.Nodes;
 using Content.Shared._StarLight.Plumbing;

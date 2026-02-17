@@ -1,4 +1,4 @@
-﻿using Content.Shared._StarLight.Plumbing;
+using Content.Shared._StarLight.Plumbing;
 using Content.Shared.FixedPoint;
 using JetBrains.Annotations;
 using Robust.Client.UserInterface;

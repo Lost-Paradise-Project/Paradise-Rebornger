@@ -1,4 +1,4 @@
-﻿# Plumbing system localization
+# Plumbing system localization
 
 plumbing-input-full = The input buffer is full!
 plumbing-input-poured = Poured {$amount}u into the plumbing network.

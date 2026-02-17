@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using Robust.Shared.GameStates;
 
 namespace Content.Shared._StarLight.Plumbing.Components;

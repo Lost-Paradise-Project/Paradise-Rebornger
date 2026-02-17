@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using Content.Server._StarLight.Plumbing.Components;
 using Content.Shared._StarLight.Plumbing;
 using Content.Shared._StarLight.Plumbing.Components;
