@@ -50,10 +50,10 @@ public sealed class RPDSystem : EntitySystem
 
             var currentMode = _rcdSystem.GetCurrentRpdMode(_uid);
 
-            var modeKey = $"rcd-rcdfap-mode-{currentMode.ToString().ToLowerInvariant()}";
+            var modeKey = $"rcd-mode-{currentMode.ToString().ToLowerInvariant()}";
             var modeName = Robust.Shared.Localization.Loc.GetString(modeKey);
 
-            _label.SetMarkup(Robust.Shared.Localization.Loc.GetString("rcd-item-status-mode",
+            _label.SetMarkup(Robust.Shared.Localization.Loc.GetString("rpd-item-status-mode",
                 ("mode", $"[color=cyan]{modeName}[/color]")));
         }
     }

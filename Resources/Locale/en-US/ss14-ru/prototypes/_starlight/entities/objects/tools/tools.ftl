@@ -1,0 +1,11 @@
+ent-RPD = RPD
+    .desc = A device used to rapidly pipe things.
+ent-RPDEmpty = { ent-RPD }
+    .suffix = Empty
+    .desc = { ent-RPD.desc }
+ent-RPDRecharging = experimental RPD
+    .desc = Cyborg-mounted Rapid Piping Device which creates compressed matter on the fly using an internal fabricator.
+    .suffix = AutoRecharge
+ent-RPDExperimental = experimental RPD
+    .desc = A bluespace-enhanced rapid piping device that passively generates its own compressed matter.
+    .suffix = Admeme

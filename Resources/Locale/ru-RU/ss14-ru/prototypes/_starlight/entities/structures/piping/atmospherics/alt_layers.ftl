@@ -1,4 +1,4 @@
-﻿ent-GasVentPumpAlt1 = { ent-GasVentPump }
+ent-GasVentPumpAlt1 = { ent-GasVentPump }
     .desc = { ent-GasVentPump.desc }
 ent-GasVentPumpAlt2 = { ent-GasVentPump }
     .desc = { ent-GasVentPump.desc }

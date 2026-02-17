@@ -157,8 +157,8 @@
     - id: MedkitOxygenFilled
     - id: HolofanProjector
     - id: RCD
+    - id: RPD # Starlight: RPD
     - id: RCDAmmo
-    - id: LPPRCDFAP # LP Edit
     - id: AirGrenade
     - id: PlushieLizardJobAtmospherictechnician
       prob: 0.02

@@ -169,8 +169,8 @@ public sealed class RCDSystem : EntitySystem
     // Starlight Start
         if (component.IsRpd)
         {
-            var modeLoc = $"rcd-rcdfap-mode-{component.CurrentMode.ToString().ToLowerInvariant()}";
-            args.PushMarkup(Loc.GetString("rcd-component-examine-rcdfap-mode", ("mode", Loc.GetString(modeLoc))));
+            var modeLoc = $"rpd-mode-{component.CurrentMode.ToString().ToLowerInvariant()}";
+            args.PushMarkup(Loc.GetString("rpd-component-examine-mode", ("mode", Loc.GetString(modeLoc))));
         }
     }
 
