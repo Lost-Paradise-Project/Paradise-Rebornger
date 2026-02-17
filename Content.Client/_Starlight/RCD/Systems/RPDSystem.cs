@@ -1,4 +1,4 @@
-﻿using Content.Client.Items;
+using Content.Client.Items;
 using Content.Client.Message;
 using Content.Shared.RCD.Components;
 using Content.Shared.RCD.Systems;
