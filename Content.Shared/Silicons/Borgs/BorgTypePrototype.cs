@@ -5,6 +5,7 @@ using Content.Shared.Silicons.Borgs.Components;
 using Content.Shared.Whitelist;
 using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Utility;
 
 namespace Content.Shared.Silicons.Borgs;
 
@@ -91,6 +92,12 @@ public sealed partial class BorgTypePrototype : IPrototype
     //
     // Visual information
     //
+
+    /// <summary>
+    /// The path to the borg type's sprites.
+    /// </summary>
+    [DataField]
+    public ResPath SpritePath { get; set; } = new("Mobs/Silicon/chassis.rsi");
 
     /// <summary>
     /// The sprite state for the main borg body.

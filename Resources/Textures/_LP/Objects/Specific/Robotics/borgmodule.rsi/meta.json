@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC0-1.0",
-    "copyright": "Made by Pe4henika. Created by EmoGarbage404 (github) for Space Station 14. icon-construction.png created by deltanedas (github). syndicateborgbomb.png created by Mangohydra (github).",
+    "copyright": "Made by Pe4henika. Created by EmoGarbage404 (github) for Space Station 14. icon-construction.png created by deltanedas (github). syndicateborgbomb.png created by Mangohydra (github). icon-loupe.png created by SanitarDurkovic (github)",
     "size": {
         "x": 32,
         "y": 32
@@ -159,6 +159,9 @@
         },
         {
             "name": "syndicate"
+        },
+        {
+            "name": "icon-loupe"
         }
     ]
 }
