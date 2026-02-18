@@ -1,4 +1,4 @@
-﻿namespace Content.Shared._StarLight.FiringPins.Functionality;
+namespace Content.Shared._StarLight.FiringPins.Functionality;
 
 /// <summary>
 /// Prevents gun from being fired on any station

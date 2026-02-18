@@ -1,4 +1,4 @@
-﻿- type: stealTargetGroup
+- type: stealTargetGroup
   id: FiringPin
   name: steal-target-groups-firing-pin
   sprite:

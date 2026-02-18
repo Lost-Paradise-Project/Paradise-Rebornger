@@ -1,4 +1,4 @@
-﻿using Content.Shared.Station;
+using Content.Shared.Station;
 
 namespace Content.Shared._StarLight.FiringPins.Functionality;
 
