@@ -1,0 +1,412 @@
+#---------------------BraBinder----------------------
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderBlack
+  name: bra binder
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    layers:
+    - state: icon
+      color: "#0C0C0C"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#0C0C0C"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderBlue
+  name: bra binder
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    layers:
+    - state: icon
+      color: "#52AECC"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#52AECC"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderBrown
+  name: bra binder
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    layers:
+    - state: icon
+      color: "#A17229"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#A17229"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderGreen
+  name: bra binder
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    layers:
+    - state: icon
+      color: "#6FBC22"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#6FBC22"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderGrey
+  name: bra binder
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    layers:
+    - state: icon
+      color: "#B3B3B3"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#B3B3B3"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderLightpurple
+  name: bra binder
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    layers:
+    - state: icon
+      color: "#944DFE"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#944DFE"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderMaroon
+  name: bra binder
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    layers:
+    - state: icon
+      color: "#BE273E"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#BE273E"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderOrange
+  name: bra binder
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    layers:
+    - state: icon
+      color: "#FF8C19"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FF8C19"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderRed
+  name: bra binder
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    layers:
+    - state: icon
+      color: "#EE1511"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#EE1511"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderTeal
+  name: bra binder
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    layers:
+    - state: icon
+      color: "#77F3B7"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#77F3B7"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderWhite
+  name: bra binder
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    layers:
+    - state: icon
+      color: "#FFFFFF"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FFFFFF"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderYellow
+  name: bra binder
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    layers:
+    - state: icon
+      color: "#FBC72D"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinder/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FBC72D"
+
+
+#-----------------BraBinderStrapless-----------------
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderStraplessBlack
+  name: bra binder strapless
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#0C0C0C"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#0C0C0C"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderStraplessBlue
+  name: bra binder strapless
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#52AECC"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#52AECC"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderStraplessBrown
+  name: bra binder strapless
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#A17229"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#A17229"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderStraplessGreen
+  name: bra binder strapless
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#6FBC22"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#6FBC22"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderStraplessGrey
+  name: bra binder strapless
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#B3B3B3"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#B3B3B3"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderStraplessLightpurple
+  name: bra binder strapless
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#944DFE"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#944DFE"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderStraplessMaroon
+  name: bra binder strapless
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#BE273E"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#BE273E"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderStraplessOrange
+  name: bra binder strapless
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#FF8C19"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FF8C19"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderStraplessRed
+  name: bra binder strapless
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#EE1511"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#EE1511"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderStraplessTeal
+  name: bra binder strapless
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#77F3B7"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#77F3B7"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderStraplessWhite
+  name: bra binder strapless
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#FFFFFF"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FFFFFF"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBraBinderStraplessYellow
+  name: bra binder strapless
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    layers:
+    - state: icon
+      color: "#FBC72D"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/BraBinderStrapless/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FBC72D"

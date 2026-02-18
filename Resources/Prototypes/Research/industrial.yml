@@ -22,6 +22,8 @@
   - SolarTrackerElectronics
   - EmitterCircuitboard
   position: 2, 0
+  radioChannels:
+  - Engineering
 
 - type: technology
   id: SpaceScanning
@@ -38,6 +40,8 @@
   position: 2, 1
   technologyPrerequisites:
   - PowerGeneration
+  radioChannels:
+  - Engineering
 
 - type: technology
   id: SalvageEquipment
@@ -58,6 +62,8 @@
   position: 0, 2
   technologyPrerequisites:
   - SpaceScanning
+  radioChannels:
+  - Engineering
 
 - type: technology
   id: MechanicalCompression
@@ -73,6 +79,8 @@
   position: 2, 2
   technologyPrerequisites:
   - SpaceScanning
+  radioChannels:
+  - Engineering
 
 - type: technology
   id: AtmosphericTech
@@ -90,6 +98,8 @@
   position: 4, 2
   technologyPrerequisites:
   - SpaceScanning
+  radioChannels:
+  - Engineering
 
 - type: technology
   id: RipleyAPLU
@@ -112,6 +122,8 @@
   position: 0, 3
   technologyPrerequisites:
   - SalvageEquipment
+  radioChannels:
+  - Engineering
 
 - type: technology
   id: IndustrialEngineering
@@ -130,6 +142,8 @@
   position: 2, 3
   technologyPrerequisites:
   - MechanicalCompression
+  radioChannels:
+  - Engineering
 
 - type: technology
   id: AdvancedAtmospherics
@@ -147,6 +161,8 @@
   technologyPrerequisites:
   - AtmosphericTech
   position: 4, 3
+  radioChannels:
+  - Engineering
 
 # Tier 2
 
@@ -168,6 +184,8 @@
   position: 0, 4
   technologyPrerequisites:
   - RipleyAPLU
+  radioChannels:
+  - Engineering
 
 - type: technology
   id: Shuttlecraft
@@ -186,6 +204,8 @@
   position: 2, 4
   technologyPrerequisites:
   - MechanicalCompression
+  radioChannels:
+  - Engineering
 
 - type: technology
   id: AdvancedPowercells
@@ -203,6 +223,8 @@
   position: 4, 4
   technologyPrerequisites:
   - IndustrialEngineering
+  radioChannels:
+  - Engineering
 
 # Tier 3
 
@@ -222,6 +244,8 @@
   position: 0, 5
   technologyPrerequisites:
   - MassExcavation
+  radioChannels:
+  - Engineering
 
 - type: technology
   id: AdvancedToolsTechnology
@@ -242,6 +266,8 @@
   position: 2, 5
   technologyPrerequisites:
   - Shuttlecraft
+  radioChannels:
+  - Engineering
 
 - type: technology
   id: OptimizedMicrogalvanism
@@ -258,3 +284,5 @@
   position: 4, 5
   technologyPrerequisites:
   - AdvancedPowercells
+  radioChannels:
+  - Engineering

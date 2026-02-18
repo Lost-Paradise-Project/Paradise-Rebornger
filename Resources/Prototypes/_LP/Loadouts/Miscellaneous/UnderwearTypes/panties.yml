@@ -1,0 +1,218 @@
+# Alt
+- type: loadout
+  id: LPPantiesAlt
+  equipment:
+    underwear: LPPPantiesAlt
+  groupBy: "panties_alt"
+
+- type: loadout
+  id: LPPantiesAltBlack
+  equipment:
+    underwear: LPPPantiesAltBlack
+  groupBy: "panties_alt"
+
+- type: loadout
+  id: LPPantiesAltBlue
+  equipment:
+    underwear: LPPPantiesAltBlue
+  groupBy: "panties_alt"
+
+- type: loadout
+  id: LPPantiesAltBrown
+  equipment:
+    underwear: LPPPantiesAltBrown
+  groupBy: "panties_alt"
+
+- type: loadout
+  id: LPPantiesAltGreen
+  equipment:
+    underwear: LPPPantiesAltGreen
+  groupBy: "panties_alt"
+
+- type: loadout
+  id: LPPantiesAltGrey
+  equipment:
+    underwear: LPPPantiesAltGrey
+  groupBy: "panties_alt"
+
+- type: loadout
+  id: LPPantiesAltLightpurple
+  equipment:
+    underwear: LPPPantiesAltLightpurple
+  groupBy: "panties_alt"
+
+- type: loadout
+  id: LPPantiesAltMaroon
+  equipment:
+    underwear: LPPPantiesAltMaroon
+  groupBy: "panties_alt"
+
+- type: loadout
+  id: LPPantiesAltOrange
+  equipment:
+    underwear: LPPPantiesAltOrange
+  groupBy: "panties_alt"
+
+- type: loadout
+  id: LPPantiesAltRed
+  equipment:
+    underwear: LPPPantiesAltRed
+  groupBy: "panties_alt"
+
+- type: loadout
+  id: LPPantiesAltTeal
+  equipment:
+    underwear: LPPPantiesAltTeal
+  groupBy: "panties_alt"
+
+- type: loadout
+  id: LPPantiesAltYellow
+  equipment:
+    underwear: LPPPantiesAltYellow
+  groupBy: "panties_alt"
+
+# Neko
+- type: loadout
+  id: LPPantiesNeko
+  equipment:
+    underwear: LPPPantiesNeko
+  groupBy: "panties_neko"
+
+- type: loadout
+  id: LPPantiesNekoBlack
+  equipment:
+    underwear: LPPPantiesNekoBlack
+  groupBy: "panties_neko"
+
+- type: loadout
+  id: LPPantiesNekoBlue
+  equipment:
+    underwear: LPPPantiesNekoBlue
+  groupBy: "panties_neko"
+
+- type: loadout
+  id: LPPantiesNekoBrown
+  equipment:
+    underwear: LPPPantiesNekoBrown
+  groupBy: "panties_neko"
+
+- type: loadout
+  id: LPPantiesNekoGreen
+  equipment:
+    underwear: LPPPantiesNekoGreen
+  groupBy: "panties_neko"
+
+- type: loadout
+  id: LPPantiesNekoGrey
+  equipment:
+    underwear: LPPPantiesNekoGrey
+  groupBy: "panties_neko"
+
+- type: loadout
+  id: LPPantiesNekoLightpurple
+  equipment:
+    underwear: LPPPantiesNekoLightpurple
+  groupBy: "panties_neko"
+
+- type: loadout
+  id: LPPantiesNekoMaroon
+  equipment:
+    underwear: LPPPantiesNekoMaroon
+  groupBy: "panties_neko"
+
+- type: loadout
+  id: LPPantiesNekoOrange
+  equipment:
+    underwear: LPPPantiesNekoOrange
+  groupBy: "panties_neko"
+
+- type: loadout
+  id: LPPantiesNekoRed
+  equipment:
+    underwear: LPPPantiesNekoRed
+  groupBy: "panties_neko"
+
+- type: loadout
+  id: LPPantiesNekoTeal
+  equipment:
+    underwear: LPPPantiesNekoTeal
+  groupBy: "panties_neko"
+
+- type: loadout
+  id: LPPantiesNekoYellow
+  equipment:
+    underwear: LPPPantiesNekoYellow
+  groupBy: "panties_neko"
+
+# Thin
+- type: loadout
+  id: LPPantiesThin
+  equipment:
+    underwear: LPPPantiesThin
+  groupBy: "panties_thin"
+
+- type: loadout
+  id: LPPantiesThinBlack
+  equipment:
+    underwear: LPPPantiesThinBlack
+  groupBy: "panties_thin"
+
+- type: loadout
+  id: LPPantiesThinBlue
+  equipment:
+    underwear: LPPPantiesThinBlue
+  groupBy: "panties_thin"
+
+- type: loadout
+  id: LPPantiesThinBrown
+  equipment:
+    underwear: LPPPantiesThinBrown
+  groupBy: "panties_thin"
+
+- type: loadout
+  id: LPPantiesThinGreen
+  equipment:
+    underwear: LPPPantiesThinGreen
+  groupBy: "panties_thin"
+
+- type: loadout
+  id: LPPantiesThinGrey
+  equipment:
+    underwear: LPPPantiesThinGrey
+  groupBy: "panties_thin"
+
+- type: loadout
+  id: LPPantiesThinLightpurple
+  equipment:
+    underwear: LPPPantiesThinLightpurple
+  groupBy: "panties_thin"
+
+- type: loadout
+  id: LPPantiesThinMaroon
+  equipment:
+    underwear: LPPPantiesThinMaroon
+  groupBy: "panties_thin"
+
+- type: loadout
+  id: LPPantiesThinOrange
+  equipment:
+    underwear: LPPPantiesThinOrange
+  groupBy: "panties_thin"
+
+- type: loadout
+  id: LPPantiesThinRed
+  equipment:
+    underwear: LPPPantiesThinRed
+  groupBy: "panties_thin"
+
+- type: loadout
+  id: LPPantiesThinTeal
+  equipment:
+    underwear: LPPPantiesThinTeal
+  groupBy: "panties_thin"
+
+- type: loadout
+  id: LPPantiesThinYellow
+  equipment:
+    underwear: LPPPantiesThinYellow
+  groupBy: "panties_thin"

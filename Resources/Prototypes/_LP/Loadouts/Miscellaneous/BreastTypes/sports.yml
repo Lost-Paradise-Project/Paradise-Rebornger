@@ -1,0 +1,143 @@
+- type: loadout
+  id: LPSportsBraBlack
+  equipment:
+    breast: LPPSportsBraBlack
+  groupBy: "sports"
+
+- type: loadout
+  id: LPSportsBraAltBlack
+  equipment:
+    breast: LPPSportsBraAltBlack
+  groupBy: "alt_sports"
+
+- type: loadout
+  id: LPSportsBraBlue
+  equipment:
+    breast: LPPSportsBraBlue
+  groupBy: "sports"
+
+- type: loadout
+  id: LPSportsBraAltBlue
+  equipment:
+    breast: LPPSportsBraAltBlue
+  groupBy: "alt_sports"
+
+- type: loadout
+  id: LPSportsBraBrown
+  equipment:
+    breast: LPPSportsBraBrown
+  groupBy: "sports"
+
+- type: loadout
+  id: LPSportsBraAltBrown
+  equipment:
+    breast: LPPSportsBraAltBrown
+  groupBy: "alt_sports"
+
+- type: loadout
+  id: LPSportsBraGreen
+  equipment:
+    breast: LPPSportsBraGreen
+  groupBy: "sports"
+
+- type: loadout
+  id: LPSportsBraAltGreen
+  equipment:
+    breast: LPPSportsBraAltGreen
+  groupBy: "alt_sports"
+
+- type: loadout
+  id: LPSportsBraGrey
+  equipment:
+    breast: LPPSportsBraGrey
+  groupBy: "sports"
+
+- type: loadout
+  id: LPSportsBraAltGrey
+  equipment:
+    breast: LPPSportsBraAltGrey
+  groupBy: "alt_sports"
+
+- type: loadout
+  id: LPSportsBraLightpurple
+  equipment:
+    breast: LPPSportsBraLightpurple
+  groupBy: "sports"
+
+- type: loadout
+  id: LPSportsBraAltLightpurple
+  equipment:
+    breast: LPPSportsBraAltLightpurple
+  groupBy: "alt_sports"
+
+- type: loadout
+  id: LPSportsBraMaroon
+  equipment:
+    breast: LPPSportsBraMaroon
+  groupBy: "sports"
+
+- type: loadout
+  id: LPSportsBraAltMaroon
+  equipment:
+    breast: LPPSportsBraAltMaroon
+  groupBy: "alt_sports"
+
+- type: loadout
+  id: LPSportsBraOrange
+  equipment:
+    breast: LPPSportsBraOrange
+  groupBy: "sports"
+
+- type: loadout
+  id: LPSportsBraAltOrange
+  equipment:
+    breast: LPPSportsBraAltOrange
+  groupBy: "alt_sports"
+
+- type: loadout
+  id: LPSportsBraRed
+  equipment:
+    breast: LPPSportsBraRed
+  groupBy: "sports"
+
+- type: loadout
+  id: LPSportsBraAltRed
+  equipment:
+    breast: LPPSportsBraAltRed
+  groupBy: "alt_sports"
+
+- type: loadout
+  id: LPSportsBraTeal
+  equipment:
+    breast: LPPSportsBraTeal
+  groupBy: "sports"
+
+- type: loadout
+  id: LPSportsBraAltTeal
+  equipment:
+    breast: LPPSportsBraAltTeal
+  groupBy: "alt_sports"
+
+- type: loadout
+  id: LPSportsBraWhite
+  equipment:
+    breast: LPPSportsBraWhite
+  groupBy: "sports"
+
+- type: loadout
+  id: LPSportsBraAltWhite
+  equipment:
+    breast: LPPSportsBraAltWhite
+  groupBy: "alt_sports"
+
+- type: loadout
+  id: LPSportsBraYellow
+  equipment:
+    breast: LPPSportsBraYellow
+  groupBy: "sports"
+
+- type: loadout
+  id: LPSportsBraAltYellow
+  equipment:
+    breast: LPPSportsBraAltYellow
+  groupBy: "alt_sports"

@@ -1,0 +1,4 @@
+- type: loadout
+  id: LPCEPanties
+  equipment:
+    underwear: LPPCEPanties

@@ -1,0 +1,86 @@
+- type: entity
+  abstract: true
+  parent: Clothing
+  id: LPPClothingUnderwearBase
+  name: based underwear
+  components:
+  - type: Sprite
+    state: icon
+  - type: Item
+    size: Tiny
+  - type: Clothing
+    slots: UNDERWEAR
+    preferredSlots: UNDERWEAR
+  - type: Tag
+    tags:
+    - underwear
+
+#-------------------------------------------------
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPBeeShorts
+  name: bee shorts
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/bee_shorts.rsi
+
+#-------------------------------------------------
+
+#------------------CommandUnderwear--------------------
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPCMOPanties
+  name: cmo panties
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/Command/cmo.rsi
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPRDPanties
+  name: rd panties
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/Command/rd.rsi
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPHOSPanties
+  name: hos panties
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/Command/hos.rsi
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPCEPanties
+  name: ce panties
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/Command/ce.rsi
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPQMPanties
+  name: qm panties
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/Command/qm.rsi
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPHOPPanties
+  name: hop panties
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/Command/hop.rsi
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPCapPanties
+  name: cap panties
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/Command/cap.rsi

@@ -1,0 +1,71 @@
+- type: loadout
+  id: LPThong
+  equipment:
+    underwear: LPPThong
+  groupBy: "thong"
+
+- type: loadout
+  id: LPThongBlack
+  equipment:
+    underwear: LPPThongBlack
+  groupBy: "thong"
+
+- type: loadout
+  id: LPThongBlue
+  equipment:
+    underwear: LPPThongBlue
+  groupBy: "thong"
+
+- type: loadout
+  id: LPThongBrown
+  equipment:
+    underwear: LPPThongBrown
+  groupBy: "thong"
+
+- type: loadout
+  id: LPThongGreen
+  equipment:
+    underwear: LPPThongGreen
+  groupBy: "thong"
+
+- type: loadout
+  id: LPThongGrey
+  equipment:
+    underwear: LPPThongGrey
+  groupBy: "thong"
+
+- type: loadout
+  id: LPThongLightpurple
+  equipment:
+    underwear: LPPThongLightpurple
+  groupBy: "thong"
+
+- type: loadout
+  id: LPThongMaroon
+  equipment:
+    underwear: LPPThongMaroon
+  groupBy: "thong"
+
+- type: loadout
+  id: LPThongOrange
+  equipment:
+    underwear: LPPThongOrange
+  groupBy: "thong"
+
+- type: loadout
+  id: LPThongRed
+  equipment:
+    underwear: LPPThongRed
+  groupBy: "thong"
+
+- type: loadout
+  id: LPThongTeal
+  equipment:
+    underwear: LPPThongTeal
+  groupBy: "thong"
+
+- type: loadout
+  id: LPThongYellow
+  equipment:
+    underwear: LPPThongYellow
+  groupBy: "thong"
