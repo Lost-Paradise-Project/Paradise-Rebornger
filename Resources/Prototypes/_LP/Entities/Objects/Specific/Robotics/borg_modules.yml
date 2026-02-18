@@ -27,14 +27,14 @@
           - Handcuffs
     - item: Zipties
       hand:
-        emptyLabel: borg-slot-Zipties-empty
+        emptyLabel: borg-slot-zipties-empty
         emptyRepresentative: Zipties
         whitelist:
           tags:
           - Zipties
     - item: Zipties
       hand:
-        emptyLabel: borg-slot-Zipties-empty
+        emptyLabel: borg-slot-zipties-empty
         emptyRepresentative: Zipties
         whitelist:
           tags:
