@@ -2,5 +2,5 @@ ent-LPPBorgModuleSecurityWeapon = Модуль нелетального снар
     .desc = Модуль с нелетальным снаряжением для боргов службы безопасности, содержит тайзер, станбатон и наручники.
 ent-LPPBorgModuleSecurityLaserCarbine = Модуль с лазерным карабином
     .desc = Модуль с летальным снаряжением для боргов службы безопасности, содержит лазерный карабин.
-ent-LPPBorgModuleSecurityCriminologist = security criminologist cyborg module
-    .desc = A module containing a forensic kit for conducting rapid investigations.
+ent-LPPBorgModuleSecurityCriminologist = Модуль криминалиста
+    .desc = Модуль с набором криминалиста для проведения быстрых расследований. Содержит проектор голобарьера, монитор криминальных записей и криминалистический сканер.

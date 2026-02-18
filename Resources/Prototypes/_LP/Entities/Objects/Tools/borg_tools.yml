@@ -1,3 +1,4 @@
+# Самозаряжающийся проектор голобарьера
 - type: entity
   id: LPPHoloprojectorSecurityBorgSec
   parent: HoloprojectorSecurity
@@ -8,6 +9,7 @@
     # autoRecharge: true
     autoRechargeRate: 15
 
+# Монитор, имеющий функционал монитора криминальных записей
 - type: entity
   id: LPPMonitorCriminalRecordsBorgSec
   parent: BaseItem
