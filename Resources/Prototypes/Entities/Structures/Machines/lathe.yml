@@ -487,6 +487,7 @@
     - SurgeryStatic
     dynamicPacks:
     - Chemistry
+    - LPPExperimentalRPLD # LP edit
   - type: Machine
     board: MedicalTechFabCircuitboard
   - type: StealTarget
