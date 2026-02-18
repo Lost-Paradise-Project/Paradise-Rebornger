@@ -348,3 +348,10 @@ Entries:
   id: 5647
   time: '2026-02-18T17:33:47.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/76
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлено оповещение при изучении в РНД в соответствующий отдел
+  id: 5648
+  time: '2026-02-18T17:53:31.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/74
