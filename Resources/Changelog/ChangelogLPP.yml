@@ -339,3 +339,12 @@ Entries:
   id: 5646
   time: '2026-02-16T16:06:02.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/70
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлен электронный замок!
+    - type: Add
+      message: Добавлена возможность открытии тех панели на шкафах!
+  id: 5647
+  time: '2026-02-18T17:33:47.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/76
