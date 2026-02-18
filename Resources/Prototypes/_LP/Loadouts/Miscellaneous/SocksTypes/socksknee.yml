@@ -1,0 +1,65 @@
+- type: loadout
+  id: LPClothingUnderSocksKneeBlack
+  equipment:
+    socks: LPPClothingUnderSocksKneeBlack
+  groupBy: "socksknee"
+
+- type: loadout
+  id: LPClothingUnderSocksKneeBlue
+  equipment:
+    socks: LPPClothingUnderSocksKneeBlue
+  groupBy: "socksknee"
+
+- type: loadout
+  id: LPClothingUnderSocksKneeBrown
+  equipment:
+    socks: LPPClothingUnderSocksKneeBrown
+  groupBy: "socksknee"
+
+- type: loadout
+  id: LPClothingUnderSocksKneeGreen
+  equipment:
+    socks: LPPClothingUnderSocksKneeGreen
+  groupBy: "socksknee"
+
+- type: loadout
+  id: LPClothingUnderSocksKneeGrey
+  equipment:
+    socks: LPPClothingUnderSocksKneeGrey
+  groupBy: "socksknee"
+
+- type: loadout
+  id: LPClothingUnderSocksKneeLightpurple
+  equipment:
+    socks: LPPClothingUnderSocksKneeLightpurple
+  groupBy: "socksknee"
+
+- type: loadout
+  id: LPClothingUnderSocksKneeMaroon
+  equipment:
+    socks: LPPClothingUnderSocksKneeMaroon
+  groupBy: "socksknee"
+
+- type: loadout
+  id: LPClothingUnderSocksKneeOrange
+  equipment:
+    socks: LPPClothingUnderSocksKneeOrange
+  groupBy: "socksknee"
+
+- type: loadout
+  id: LPClothingUnderSocksKneeRed
+  equipment:
+    socks: LPPClothingUnderSocksKneeRed
+  groupBy: "socksknee"
+
+- type: loadout
+  id: LPClothingUnderSocksKneeTeal
+  equipment:
+    socks: LPPClothingUnderSocksKneeTeal
+  groupBy: "socksknee"
+
+- type: loadout
+  id: LPClothingUnderSocksKneeYellow
+  equipment:
+    socks: LPPClothingUnderSocksKneeYellow
+  groupBy: "socksknee"

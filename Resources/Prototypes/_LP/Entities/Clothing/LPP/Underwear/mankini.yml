@@ -1,0 +1,198 @@
+#-----------------------Mankini-------------------------
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPMankiniBlack
+  name: mankini
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/Mankini/white.rsi
+    layers:
+    - state: icon
+      color: "#0C0C0C"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/Mankini/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#0C0C0C"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPMankiniBlue
+  name: mankini
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/Mankini/white.rsi
+    layers:
+    - state: icon
+      color: "#52AECC"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/Mankini/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#52AECC"
+
+#-------белая одежда
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPMankini
+  name: mankini
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/Mankini/white.rsi
+
+#-------------------
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPMankiniBrown
+  name: mankini
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/Mankini/white.rsi
+    layers:
+    - state: icon
+      color: "#A17229"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/Mankini/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#A17229"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPMankiniGreen
+  name: mankini
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/Mankini/white.rsi
+    layers:
+    - state: icon
+      color: "#6FBC22"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/Mankini/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#6FBC22"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPMankiniGrey
+  name: mankini
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/Mankini/white.rsi
+    layers:
+    - state: icon
+      color: "#B3B3B3"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/Mankini/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#B3B3B3"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPMankiniLightpurple
+  name: mankini
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/Mankini/white.rsi
+    layers:
+    - state: icon
+      color: "#944DFE"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/Mankini/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#944DFE"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPMankiniMaroon
+  name: mankini
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/Mankini/white.rsi
+    layers:
+    - state: icon
+      color: "#BE273E"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/Mankini/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#BE273E"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPMankiniOrange
+  name: mankini
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/Mankini/white.rsi
+    layers:
+    - state: icon
+      color: "#FF8C19"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/Mankini/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#FF8C19"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPMankiniRed
+  name: mankini
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/Mankini/white.rsi
+    layers:
+    - state: icon
+      color: "#EE1511"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/Mankini/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#EE1511"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPMankiniTeal
+  name: mankini
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/Mankini/white.rsi
+    layers:
+    - state: icon
+      color: "#77F3B7"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/Mankini/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#77F3B7"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPMankiniYellow
+  name: mankini
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/Mankini/white.rsi
+    layers:
+    - state: icon
+      color: "#FBC72D"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/Mankini/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#FBC72D"

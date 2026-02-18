@@ -1,0 +1,4 @@
+- type: loadout
+  id: LPCMOPanties
+  equipment:
+    underwear: LPPCMOPanties

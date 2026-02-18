@@ -1,0 +1,128 @@
+- type: loadout
+  id: LPClothingUnderSocksPink
+  equipment:
+    socks: LPPClothingUnderSocksPink
+
+- type: loadout
+  id: LPClothingUnderBeeKnee
+  equipment:
+    socks: LPPClothingUnderBeeKnee
+  groupBy: "bee"
+
+- type: loadout
+  id: LPClothingUnderBeeNorm
+  equipment:
+    socks: LPPClothingUnderBeeNorm
+  groupBy: "bee"
+
+- type: loadout
+  id: LPClothingUnderBeeThigh
+  equipment:
+    socks: LPPClothingUnderBeeThigh
+  groupBy: "bee"
+
+- type: loadout
+  id: LPClothingUnderSocksDartBee
+  equipment:
+    socks: LPPClothingUnderSocksDartBee
+  groupBy: "bee"
+
+- type: loadout
+  id: LPClothingUnderCommieKnee
+  equipment:
+    socks: LPPClothingUnderCommieKnee
+  groupBy: "commie"
+
+- type: loadout
+  id: LPClothingUnderCommieThigh
+  equipment:
+    socks: LPPClothingUnderCommieThigh
+  groupBy: "commie"
+
+- type: loadout
+  id: LPClothingUnderPantyhose
+  equipment:
+    socks: LPPClothingUnderPantyhose
+
+- type: loadout
+  id: LPClothingUnderRainbowKnee
+  equipment:
+    socks: LPPClothingUnderRainbowKnee
+  groupBy: "rainbow"
+
+- type: loadout
+  id: LPClothingUnderRainbowThigh
+  equipment:
+    socks: LPPClothingUnderRainbowThigh
+  groupBy: "rainbow"
+
+- type: loadout
+  id: LPClothingUnderSocksKnee
+  equipment:
+    socks: LPPClothingUnderSocksKnee
+  groupBy: "rainbow"
+
+- type: loadout
+  id: LPClothingUnderStripedKnee
+  equipment:
+    socks: LPPClothingUnderStripedKnee
+
+- type: loadout
+  id: LPClothingUnderStripedThigh
+  equipment:
+    socks: LPPClothingUnderStripedThigh
+
+- type: loadout
+  id: LPClothingUnderThinKnee
+  equipment:
+    socks: LPPClothingUnderThinKnee
+
+- type: loadout
+  id: LPClothingUnderThinThigh
+  equipment:
+    socks: LPPClothingUnderThinThigh
+
+- type: loadout
+  id: LPClothingUnderSocksDark
+  equipment:
+    socks: LPPClothingUnderSocksDark
+
+- type: loadout
+  id: LPClothingUnderSocksDarkBlue
+  equipment:
+    socks: LPPClothingUnderSocksDarkBlue
+
+- type: loadout
+  id: LPClothingUnderSocksDarkGrid
+  equipment:
+    socks: LPPClothingUnderSocksDarkGrid
+
+- type: loadout
+  id: LPClothingUnderSocksDarkLace
+  equipment:
+    socks: LPPClothingUnderSocksDarkLace
+
+- type: loadout
+  id: LPClothingUnderSocksDarkRedLace
+  equipment:
+    socks: LPPClothingUnderSocksDarkRedLace
+
+- type: loadout
+  id: LPClothingUnderSocksDarkRedLine
+  equipment:
+    socks: LPPClothingUnderSocksDarkRedLine
+
+- type: loadout
+  id: LPClothingUnderSocksDarkWhiteLace
+  equipment:
+    socks: LPPClothingUnderSocksDarkWhiteLace
+
+- type: loadout
+  id: LPClothingUnderSocksBlue
+  equipment:
+    socks: LPPClothingUnderSocksBlue
+
+- type: loadout
+  id: LPClothingUnderSocksMime
+  equipment:
+    socks: LPPClothingUnderSocksMime
