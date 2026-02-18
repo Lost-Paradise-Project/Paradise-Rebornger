@@ -7,8 +7,9 @@
   components:
   - type: Sprite
     sprite: Structures/dispensers.rsi
+    layers:
     state: industrial-working
-    snapCardinals: true
+    snapCardinals: false # Starlight-edit: allow non-cardinal rotation for chem dispenser to avoid conflict with 4 direction plumbing connector sprites
   - type: Storage
     openOnActivate: false
     whitelist:
