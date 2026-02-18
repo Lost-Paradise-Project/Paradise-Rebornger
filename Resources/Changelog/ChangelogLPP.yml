@@ -296,3 +296,46 @@ Entries:
   id: 5641
   time: '2026-02-15T09:45:52.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/61
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлен кулдаун на грабы в 3 секунды!
+    - type: Fix
+      message: Исправлено одевание нижнего белья!
+    - type: Fix
+      message: Исправлены баги ядерного реактора!
+  id: 5642
+  time: '2026-02-15T11:50:34.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/63
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлены подносы для сервиса!
+    - type: Add
+      message: Добавлен планшет для сб!
+  id: 5643
+  time: '2026-02-15T13:36:19.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/68
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлены контракты для определенных работ!
+  id: 5644
+  time: '2026-02-15T13:36:32.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/65
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлен новый интерфейс консоли исследований!
+  id: 5645
+  time: '2026-02-15T17:42:07.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/66
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлено требование бумаги у факса!
+    - type: Fix
+      message: Исправлены микро ошибки!
+  id: 5646
+  time: '2026-02-16T16:06:02.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/70

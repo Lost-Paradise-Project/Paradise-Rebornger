@@ -34,6 +34,14 @@
             <ContainerButton Name="IdInfoButton">
                 <RichTextLabel Name="IdInfoLabel" Access="Public"/>
             </ContainerButton>
+            <!-- Begin L5 changes -->
+            <ContainerButton Name="ContractNameButton">
+                <RichTextLabel Name="ContractNameLabel" Access="Public"/>
+            </ContainerButton>
+            <ContainerButton Name="ContractDescButton">
+                <RichTextLabel Margin="10, 0, 0, 0" Name="ContractDescLabel" Access="Public"/>
+            </ContainerButton>
+            <!-- End L5 changes -->
             <ContainerButton Name="StationNameButton">
                 <RichTextLabel Name="StationNameLabel" Access="Public"/>
             </ContainerButton>

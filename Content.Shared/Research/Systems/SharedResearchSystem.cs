@@ -38,7 +38,7 @@ public abstract class SharedResearchSystem : EntitySystem
         component.CurrentTechnologyCards.Clear();
         foreach (var discipline in component.SupportedDisciplines)
         {
-            var selected = availableTechnology.FirstOrDefault(p => p.Discipline == discipline);
+            var selected = availableTechnology.FirstOrDefault(p => p.HasDiscipline(discipline)); // Frontier: Updated to support dual-discipline technologies
             if (selected == null)
                 continue;
 
@@ -70,11 +70,12 @@ public abstract class SharedResearchSystem : EntitySystem
         if (tech.Hidden)
             return false;
 
-        if (!component.SupportedDisciplines.Contains(tech.Discipline))
+        var techDisciplines = tech.GetAllDisciplines(); // Frontier: Updated to support dual-discipline technologies - tech is available if ANY of its disciplines are supported
+        if (!techDisciplines.Any(discipline => component.SupportedDisciplines.Contains(discipline)))
             return false;
 
-        if (tech.Tier > disciplineTiers[tech.Discipline])
-            return false;
+        // if (tech.Tier > disciplineTiers[tech.Discipline]) // Goobstation R&D Console rework - removed main discipline checks
+        //     return false;
 
         if (component.UnlockedTechnologies.Contains(tech.ID))
             return false;
@@ -107,12 +108,12 @@ public abstract class SharedResearchSystem : EntitySystem
     public int GetHighestDisciplineTier(TechnologyDatabaseComponent component, TechDisciplinePrototype techDiscipline)
     {
         var allTech = PrototypeManager.EnumeratePrototypes<TechnologyPrototype>()
-            .Where(p => p.Discipline == techDiscipline.ID && !p.Hidden).ToList();
+            .Where(p => p.HasDiscipline(techDiscipline.ID) && !p.Hidden).ToList(); // Frontier: Updated to support dual-discipline technologies
         var allUnlocked = new List<TechnologyPrototype>();
         foreach (var recipe in component.UnlockedTechnologies)
         {
             var proto = PrototypeManager.Index<TechnologyPrototype>(recipe);
-            if (proto.Discipline != techDiscipline.ID)
+            if (!proto.HasDiscipline(techDiscipline.ID)) // Frontier: Updated to support dual-discipline technologies
                 continue;
             allUnlocked.Add(proto);
         }
@@ -127,7 +128,7 @@ public abstract class SharedResearchSystem : EntitySystem
             // we need to get the tech for the tier 1 below because that's
             // what the percentage in TierPrerequisites is referring to.
             var unlockedTierTech = allUnlocked.Where(p => p.Tier == tier - 1).ToList();
-            var allTierTech = allTech.Where(p => p.Discipline == techDiscipline.ID && p.Tier == tier - 1).ToList();
+            var allTierTech = allTech.Where(p => p.HasDiscipline(techDiscipline.ID) && p.Tier == tier - 1).ToList(); // Frontier: Updated to support dual-discipline technologies
 
             if (allTierTech.Count == 0)
                 break;

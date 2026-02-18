@@ -53,3 +53,14 @@ jobs:
           author: ${{ vars.CHANGELOG_USER }} <${{ vars.CHANGELOG_EMAIL }}>
           branch: automated/credits-${{env.NOW}}
           token: ${{ secrets.BOT_TOKEN }}
+
+      - name: Auto-merge PR with bypass
+        if: steps.cpr.outputs.pull-request-number != ''
+        env:
+          GH_TOKEN: ${{secrets.BOT_TOKEN}}
+        run: |
+          gh pr merge ${{ steps.cpr.outputs.pull-request-number }} \
+            --squash \
+            --admin \
+            --delete-branch \
+            --repo ${{ github.repository }}

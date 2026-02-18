@@ -1,1 +1,1 @@
-﻿borg-slot-handcuffs-empty = Пусто
+borg-slot-handcuffs-empty = Пусто

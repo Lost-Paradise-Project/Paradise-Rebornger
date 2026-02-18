@@ -1,7 +1,7 @@
 using Content.Server.Singularity.Events;
 using Content.Shared.Whitelist;
 
-namespace Content.Goobstation.Server.Singularity.EventHorizon;
+namespace Content.Server._GoobStation.Singularity.EventHorizon;
 
 public sealed class EventHorizonIgnoreSystem : EntitySystem
 {

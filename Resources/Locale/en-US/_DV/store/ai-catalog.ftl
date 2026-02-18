@@ -1,4 +1,4 @@
-﻿ai-rgb-lighting-name = RGB Lighting
+ai-rgb-lighting-name = RGB Lighting
 ai-rgb-lighting-desc = Adjust a light's color controller to add or remove an RGB effect
 
 ai-light-synthesizer-name = Light Synthesizer

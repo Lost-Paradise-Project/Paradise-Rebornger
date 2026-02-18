@@ -1,8 +1,8 @@
-using Content.Shared.Goobstation.Supermatter.Components;
-using Content.Shared.Goobstation.Supermatter.Systems;
+using Content.Shared._GoobStation.Supermatter.Components;
+using Content.Shared._GoobStation.Supermatter.Systems;
 using Robust.Shared.GameStates;
 
-namespace Content.Client.Goobstation.Supermatter.Systems;
+namespace Content.Client._GoobStation.Supermatter.Systems;
 
 public sealed class SupermatterSystem : SharedSupermatterSystem
 {

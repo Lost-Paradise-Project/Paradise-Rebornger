@@ -1,4 +1,4 @@
-namespace Content.Shared.Goobstation.Singularity;
+namespace Content.Shared._GoobStation.Singularity;
 
 /// <summary>
 /// Raised on an entity that just collided with a containment field

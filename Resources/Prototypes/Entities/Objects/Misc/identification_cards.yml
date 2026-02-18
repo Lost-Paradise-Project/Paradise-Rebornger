@@ -42,6 +42,8 @@
       params:
         volume: -5
   # Goobstation edit end
+  - type: Contract # L5
+    contract: ContractNT
 
 #IDs with layers
 
@@ -228,6 +230,8 @@
       state: TechnicalAssistant
   - type: PresetIdCard
     job: TechnicalAssistant
+  - type: Contract # L5
+    contract: ContractBLCorp
 
 - type: entity
   parent: IDCardStandard
@@ -246,6 +250,8 @@
       state: StationEngineer
   - type: PresetIdCard
     job: StationEngineer
+  - type: Contract # L5
+    contract: ContractBLCorp
 
 - type: entity
   parent: IDCardStandard
@@ -264,6 +270,8 @@
       state: AtmosphericTechnician
   - type: PresetIdCard
     job: AtmosphericTechnician
+  - type: Contract # L5
+    contract: ContractBLCorp
 
 - type: entity
   parent: EngineeringIDCard
@@ -280,6 +288,8 @@
     - sprite: *icon-rsi
       offset: *icon-offset
       state: SeniorEngineer
+  - type: Contract # L5
+    contract: ContractBLCorp
 
 #Medical
 
@@ -300,6 +310,8 @@
       state: MedicalIntern
   - type: PresetIdCard
     job: MedicalIntern
+  - type: Contract # L5
+    contract: ContractInterdyne
 
 - type: entity
   parent: IDCardStandard
@@ -318,6 +330,8 @@
       state: MedicalDoctor
   - type: PresetIdCard
     job: MedicalDoctor
+  - type: Contract # L5
+    contract: ContractInterdyne
 
 - type: entity
   parent: IDCardStandard
@@ -336,6 +350,8 @@
       state: Paramedic
   - type: PresetIdCard
     job: Paramedic
+  - type: Contract # L5
+    contract: ContractInterdyne
 
 - type: entity
   parent: IDCardStandard
@@ -354,6 +370,8 @@
       state: Chemist
   - type: PresetIdCard
     job: Chemist
+  - type: Contract # L5
+    contract: ContractInterdyne
 
 - type: entity
   parent: IDCardStandard
@@ -372,6 +390,8 @@
       state: Psychologist
   - type: PresetIdCard
     job: Psychologist
+  - type: Contract # L5
+    contract: ContractInterdyne
 
 - type: entity
   parent: MedicalIDCard
@@ -388,6 +408,8 @@
     - sprite: *icon-rsi
       offset: *icon-offset
       state: SeniorPhysician
+  - type: Contract # L5
+    contract: ContractInterdyne
 
 #Science
 
@@ -568,6 +590,8 @@
       state: ServiceWorker
   - type: PresetIdCard
     job: ServiceWorker
+  - type: Contract # L5
+    contract: ContractIndependent
 
 - type: entity
   parent: IDCardStandard
@@ -583,6 +607,8 @@
       state: Clown
   - type: PresetIdCard
     job: Clown
+  - type: Contract # L5
+    contract: ContractIndependent
 
 - type: entity
   parent: IDCardStandard
@@ -601,6 +627,8 @@
       state: Mime
   - type: PresetIdCard
     job: Mime
+  - type: Contract # L5
+    contract: ContractIndependent
 
 - type: entity
   parent: IDCardStandard
@@ -619,6 +647,8 @@
       state: Musician
   - type: PresetIdCard
     job: Musician
+  - type: Contract # L5
+    contract: ContractIndependent
 
 - type: entity
   parent: IDCardStandard
@@ -637,6 +667,8 @@
       state: Chaplain
   - type: PresetIdCard
     job: Chaplain
+  - type: Contract # L5
+    contract: ContractIndependent
 
 - type: entity
   parent: IDCardStandard
@@ -655,6 +687,8 @@
       state: Janitor
   - type: PresetIdCard
     job: Janitor
+  - type: Contract # L5
+    contract: ContractIndependent
 
 - type: entity
   parent: IDCardStandard
@@ -673,6 +707,8 @@
       state: Bartender
   - type: PresetIdCard
     job: Bartender
+  - type: Contract # L5
+    contract: ContractIndependent
 
 - type: entity
   parent: IDCardStandard
@@ -695,6 +731,8 @@
   - type: Tag #  Ignore Chameleon tags
     tags:
     - DoorBumpOpener
+  - type: Contract # L5
+    contract: ContractIndependent
 
 - type: entity
   parent: IDCardStandard
@@ -713,6 +751,8 @@
       state: Chef
   - type: PresetIdCard
     job: Chef
+  - type: Contract # L5
+    contract: ContractIndependent
 
 - type: entity
   parent: IDCardStandard
@@ -731,6 +771,8 @@
       state: Botanist
   - type: PresetIdCard
     job: Botanist
+  - type: Contract # L5
+    contract: ContractIndependent
 
 - type: entity
   parent: IDCardStandard
@@ -749,6 +791,8 @@
       state: Librarian
   - type: PresetIdCard
     job: Librarian
+  - type: Contract # L5
+    contract: ContractIndependent
 
 - type: entity
   parent: IDCardStandard
@@ -767,6 +811,8 @@
       state: Lawyer
   - type: PresetIdCard
     job: Lawyer
+  - type: Contract # L5
+    contract: ContractIndependent
 
 - type: entity
   parent: IDCardStandard
@@ -785,6 +831,8 @@
       state: Reporter
   - type: PresetIdCard
     job: Reporter
+  - type: Contract # L5
+    contract: ContractIndependent
 
 - type: entity
   parent: IDCardStandard
@@ -801,6 +849,8 @@
     - sprite: *icon-rsi
       offset: *icon-offset
       state: Boxer
+  - type: Contract # L5
+    contract: ContractIndependent
 
 - type: entity
   parent: IDCardStandard
@@ -817,6 +867,8 @@
     - sprite: *icon-rsi
       offset: *icon-offset
       state: Zookeeper
+  - type: Contract # L5
+    contract: ContractIndependent
 
 #Supply
 
@@ -837,6 +889,8 @@
       state: CargoTechnician
   - type: PresetIdCard
     job: CargoTechnician
+  - type: Contract # L5
+    contract: ContractKosmolog
 
 - type: entity
   parent: IDCardStandard
@@ -855,6 +909,8 @@
       state: ShaftMiner
   - type: PresetIdCard
     job: SalvageSpecialist
+  - type: Contract # L5
+    contract: ContractKosmolog
 
 #Misc.
 
@@ -894,6 +950,8 @@
     - Recyclable
   - type: StaticPrice # these are infinitely producible.
     price: 0
+  - type: Contract # L5
+    contract: ContractIndependent
 
 - type: entity
   parent: IDCardStandard
@@ -915,6 +973,8 @@
     jobTitle: job-title-cluwne
     jobIcon: JobIconCluwne
   - type: Unremoveable
+  - type: Contract # L5
+    contract: ContractIndependent
 
 - type: entity
   parent: IDCardStandard
@@ -932,6 +992,8 @@
     jobIcon: JobIconVisitor
   - type: PresetIdCard
     job: Visitor
+  - type: Contract # L5
+    contract: ContractIndependent
 
 #Antags
 
@@ -973,6 +1035,8 @@
     - Maintenance
     - SyndicateAgent
     - NuclearOperative
+  - type: Contract # L5
+    contract: ContractGorlex
 
 - type: entity
   parent: [ IDCardStandard, BaseSyndicateContraband ]
@@ -995,6 +1059,8 @@
     tags:
     - NuclearOperative
     - SyndicateAgent
+  - type: Contract # L5
+    contract: ContractGorlex
 
 - type: entity
   parent: [ SyndicateIDCard, BaseSyndicateContraband ]
@@ -1014,6 +1080,8 @@
   - type: AgentIDCard
   - type: IdCard
     jobIcon: JobIconSyndicateOperative
+  - type: Contract # L5
+    contract: ContractGorlex
 
 - type: entity
   parent: [ SyndiOperativeIDCard, BaseSyndicateContraband ]
@@ -1032,6 +1100,8 @@
       state: SyndicateCorpsman
   - type: IdCard
     jobIcon: JobIconSyndicateCorpsman
+  - type: Contract # L5
+    contract: ContractGorlex
 
 - type: entity
   parent: [ SyndiOperativeIDCard, BaseSyndicateContraband ]
@@ -1050,6 +1120,8 @@
       state: SyndicateCommander
   - type: IdCard
     jobIcon: JobIconSyndicateCommander
+  - type: Contract # L5
+    contract: ContractGorlex
 
 - type: entity
   parent: [ IDCardStandard, BaseHighlyIllegalContraband ]
@@ -1284,6 +1356,8 @@
       state: DeathSquad
   - type: PresetIdCard
     job: DeathSquad
+  - type: Contract # L5
+    contract: ContractIndependent
 
 - type: entity
   parent: IDCardStandard
@@ -1348,3 +1422,5 @@
     interfaces:
       enum.AgentIDCardUiKey.Key:
         type: AgentIDCardBoundUserInterface
+  - type: Contract
+    contract: ContractAdmin
