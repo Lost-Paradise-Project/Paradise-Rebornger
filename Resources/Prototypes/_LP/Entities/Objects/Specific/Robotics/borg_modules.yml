@@ -28,17 +28,17 @@
     - item: Zipties
       hand:
         emptyLabel: borg-slot-zipties-empty
-        emptyRepresentative: Zipties
+        emptyRepresentative: Handcuffs
         whitelist:
           tags:
-          - Zipties
+          - Handcuffs
     - item: Zipties
       hand:
         emptyLabel: borg-slot-zipties-empty
-        emptyRepresentative: Zipties
+        emptyRepresentative: Handcuffs
         whitelist:
           tags:
-          - Zipties
+          - Handcuffs
   - type: BorgModuleIcon
     icon:
       sprite: _LP/Interface/Actions/actions_borg.rsi
