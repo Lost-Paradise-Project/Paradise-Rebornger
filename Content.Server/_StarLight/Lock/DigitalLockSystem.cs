@@ -2,7 +2,7 @@ using Content.Shared.Lock;
 using Content.Shared.Audio;
 using Content.Shared.Tools.Systems;
 using Content.Shared.Interaction;
-using Content.Shared._Starlight.Lock;
+using Content.Shared._StarLight.Lock;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.GameObjects;
@@ -13,7 +13,7 @@ using Content.Shared.Examine;
 using Robust.Shared.Utility;
 using Content.Shared.Atmos.Piping.Components;
 
-namespace Content.Server._Starlight.Lock;
+namespace Content.Server._StarLight.Lock;
 
 public sealed class DigitalLockSystem : EntitySystem
 {

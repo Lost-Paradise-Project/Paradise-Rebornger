@@ -5,8 +5,8 @@ using Content.Server.Power.EntitySystems;
 using Content.Server.Wires;
 using Content.Shared.Power;
 using Content.Shared.Wires;
-using Content.Shared._Starlight.Power.Components; // Starlight-edit
-using Content.Shared._Starlight.Power.EntitySystems; // Starlight-edit
+using Content.Shared._StarLight.Power.Components; // Starlight-edit
+using Content.Shared._StarLight.Power.EntitySystems; // Starlight-edit
 
 namespace Content.Server.Power;
 

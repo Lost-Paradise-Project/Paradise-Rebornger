@@ -1,8 +1,8 @@
-using Content.Shared._Starlight.Power.Components;
+using Content.Shared._StarLight.Power.Components;
 using Content.Shared.Power;
 using Robust.Shared.GameObjects;
 
-namespace Content.Shared._Starlight.Power.EntitySystems;
+namespace Content.Shared._StarLight.Power.EntitySystems;
 
 public sealed class PoweredLockerSystem : EntitySystem
 {

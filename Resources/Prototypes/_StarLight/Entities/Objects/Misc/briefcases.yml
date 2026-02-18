@@ -40,7 +40,7 @@
   name: secure briefcase
   components:
   - type: Sprite
-    sprite: _Starlight/Objects/Storage/Briefcases/briefcase_secure.rsi
+    sprite: _StarLight/Objects/Storage/Briefcases/briefcase_secure.rsi
     layers:
       - state: icon
       - state: open
@@ -56,4 +56,4 @@
     stateLocked: closed
     stateUnlocked: open
   - type: Item
-    sprite: _Starlight/Objects/Storage/Briefcases/briefcase_secure.rsi
+    sprite: _StarLight/Objects/Storage/Briefcases/briefcase_secure.rsi

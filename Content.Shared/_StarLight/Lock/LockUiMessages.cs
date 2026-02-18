@@ -1,6 +1,6 @@
 using Robust.Shared.Serialization;
 
-namespace Content.Shared._Starlight.Lock;
+namespace Content.Shared._StarLight.Lock;
 
 public enum DigitalLockStatus : byte
 {

@@ -17,7 +17,7 @@ using JetBrains.Annotations;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
-using Content.Shared._Starlight.Power.Components; // Starlight-edit
+using Content.Shared._StarLight.Power.Components; // Starlight-edit
 
 namespace Content.Shared.Lock;
 

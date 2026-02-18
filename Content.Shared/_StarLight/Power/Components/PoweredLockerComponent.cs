@@ -1,7 +1,7 @@
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
 
-namespace Content.Shared._Starlight.Power.Components;
+namespace Content.Shared._StarLight.Power.Components;
 
 [RegisterComponent, NetworkedComponent]
 [AutoGenerateComponentState]
