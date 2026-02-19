@@ -44,3 +44,9 @@
   - type: MovementSpeedModifier
     baseWalkSpeed: 3
     baseSprintSpeed: 5
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
+  - type: Construction
+    graph: GlassesSecHUD
+    node: glassesSec

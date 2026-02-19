@@ -51,7 +51,7 @@ public sealed class BorgSwitchableTypeSystem : SharedBorgSwitchableTypeSystem
         {
             _borgSystem.SetTransponderSprite(
                 (ent.Owner, transponder),
-                new SpriteSpecifier.Rsi(prototype.SpritePath, prototype.SpriteBodyState)); /// LPP edit
+                new SpriteSpecifier.Rsi(prototype.SpritePath, prototype.SpriteBodyState)); // LP edit
 
             _borgSystem.SetTransponderName(
                 (ent.Owner, transponder),

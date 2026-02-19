@@ -5,7 +5,7 @@ using Content.Shared.Silicons.Borgs.Components;
 using Content.Shared.Whitelist;
 using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Utility; /// LPP edit
+using Robust.Shared.Utility; // LP edit
 
 namespace Content.Shared.Silicons.Borgs;
 
@@ -93,13 +93,13 @@ public sealed partial class BorgTypePrototype : IPrototype
     // Visual information
     //
 
-    /// LPP edit start
+    // LP edit start
     /// <summary>
     /// The path to the borg type's sprites.
     /// </summary>
     [DataField]
     public ResPath SpritePath { get; set; } = new("Mobs/Silicon/chassis.rsi");
-    /// LPP edit end
+    // LP edit end
 
     /// <summary>
     /// The sprite state for the main borg body.

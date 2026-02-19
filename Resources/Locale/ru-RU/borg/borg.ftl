@@ -46,6 +46,3 @@ borg-type-medical-transponder = киборг-доктор
 borg-type-service-name = Сервисный
 borg-type-service-desc = Помогайте членам экипажа в самых разных ситуациях — от подачи закусок и напитков до занятий ботаникой и развлечений.
 borg-type-service-transponder = киборг-официант
-borg-type-secborg-name = Патрульный
-borg-type-secborg-desc = Помогайте отделу Службы Безопасности бороться с преступностью на станции. Ну, или просто избивайте клоуна дубинкой заодно со своими кожаными товарищами.
-borg-type-secborg-transponder = киборг-патрульный
