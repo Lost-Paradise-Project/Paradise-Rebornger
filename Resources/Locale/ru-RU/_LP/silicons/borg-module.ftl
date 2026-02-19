@@ -1,1 +1,1 @@
-borg-type-security = [color= #de3a3a]киборга-патрульного[/color]
+borg-type-security = [color=#de3a3a]киборга-патрульного[/color]
