@@ -2,8 +2,8 @@
 using Content.Shared.Silicons.Borgs;
 using Content.Shared.Silicons.Borgs.Components;
 using Robust.Client.GameObjects;
-using Robust.Client.ResourceManagement; //LP edit
-using Robust.Shared.Serialization.TypeSerializers.Implementations; //PP edit
+using Robust.Client.ResourceManagement;
+using Robust.Shared.Serialization.TypeSerializers.Implementations;
 
 namespace Content.Client.Silicons.Borgs;
 
