@@ -10,6 +10,8 @@ using Content.Shared.Research.Prototypes;
 using Content.Shared._NF.Research; // Frontier
 using System.Linq; // Frontier
 using Robust.Shared.Prototypes; // Frontier
+using System.Linq;
+using Content.Shared.Radio;
 
 namespace Content.Server.Research.Systems;
 
@@ -58,7 +60,19 @@ public sealed partial class ResearchSystem
                 ("amount", technologyPrototype.Cost),
                 ("approver", getIdentityEvent.Title ?? string.Empty)
             );
+
             _radio.SendRadioMessage(uid, message, component.AnnouncementChannel, uid, escapeMarkup: false);
+
+            // Starlight edit start
+            if (technologyPrototype.RadioChannels.Any())
+                foreach (var radioChannelId in technologyPrototype.RadioChannels)
+                {
+                    if (PrototypeManager.TryIndex<RadioChannelPrototype>(radioChannelId, out var radioChannel))
+                    {
+                        _radio.SendRadioMessage(uid, message, radioChannel, uid, escapeMarkup: false);
+                    }
+                }
+            // Starlight edit end
         }
 
         SyncClientWithServer(uid);

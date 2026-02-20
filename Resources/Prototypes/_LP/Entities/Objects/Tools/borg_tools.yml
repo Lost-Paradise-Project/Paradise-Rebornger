@@ -1,0 +1,32 @@
+# Самозаряжающийся проектор голобарьера
+- type: entity
+  id: LPPHoloprojectorSecurityBorgSec
+  parent: HoloprojectorSecurity
+  name: borg holobarrier projector
+  suffix: Cyborg, Security
+  components:
+  - type: BatterySelfRecharger
+    # autoRecharge: true
+    autoRechargeRate: 15
+
+# Монитор, имеющий функционал монитора криминальных записей
+- type: entity
+  id: LPPMonitorCriminalRecordsBorgSec
+  parent: BaseItem
+  name: borg monitor criminal records
+  description: A small screen that provides access to the Security Service database. It can be used for criminal background checks.
+  suffix: Cyborg, Security
+  components:
+  - type: Sprite
+    sprite: Structures/Machines/computers.rsi
+    layers:
+    - state: telescreen_frame
+  - type: CriminalRecordsConsole
+  - type: UserInterface
+    interfaces:
+      enum.CriminalRecordsConsoleKey.Key:
+        type: CriminalRecordsConsoleBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
+  - type: ActivatableUI
+    key: enum.CriminalRecordsConsoleKey.Key

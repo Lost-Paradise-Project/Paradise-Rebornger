@@ -1,0 +1,20 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "sec-laser-module modify from xenoborg-laser-module, which was created by Samuka-C (github), by SanitarDurkovic (github), another create by SanitarDurkoviс (github)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "sec-laser-module"
+        },
+        {
+            "name": "sec-nonlethal-module"
+        },
+        {
+            "name": "sec-criminologist-module"
+        }
+    ]
+}

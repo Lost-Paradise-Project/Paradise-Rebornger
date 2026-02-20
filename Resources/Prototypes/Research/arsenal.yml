@@ -20,6 +20,8 @@
   - WeaponProtoKineticAccelerator
   - ShuttleGunKineticCircuitboard
   position: 0, 10
+  radioChannels:
+  - Security
 
 - type: technology
   id: WeaponizedLaserManipulation
@@ -33,6 +35,8 @@
   recipeUnlocks:
   - WeaponLaserCarbine
   position: 4, 10
+  radioChannels:
+  - Security
 
 - type: technology
   id: NonlethalAmmunition
@@ -51,6 +55,8 @@
   position: 0, 11
   technologyPrerequisites:
   - SalvageWeapons
+  radioChannels:
+  - Security
 
 - type: technology
   id: DraconicMunitions
@@ -76,6 +82,8 @@
   position: 2, 11
   technologyPrerequisites:
   - SalvageWeapons
+  radioChannels:
+  - Security
 
 - type: technology
   id: ConcentratedLaserWeaponry
@@ -91,6 +99,8 @@
   position: 4, 11
   technologyPrerequisites:
   - WeaponizedLaserManipulation
+  radioChannels:
+  - Security
 
 - type: technology
   id: WaveParticleHarnessing
@@ -106,6 +116,8 @@
   position: 6, 11
   technologyPrerequisites:
   - WeaponizedLaserManipulation
+  radioChannels:
+  - Security
 
 - type: technology
   id: AdvancedRiotControl
@@ -124,6 +136,8 @@
   position: 0, 12
   technologyPrerequisites:
   - NonlethalAmmunition
+  radioChannels:
+  - Security
 
 - type: technology
   id: UraniumMunitions
@@ -148,6 +162,8 @@
   position: 2, 12
   technologyPrerequisites:
   - DraconicMunitions
+  radioChannels:
+  - Security
 
 - type: technology
   id: SpecialMeans
@@ -163,6 +179,8 @@
   position: 0, 13
   technologyPrerequisites:
   - AdvancedRiotControl
+  radioChannels:
+  - Security
 
 - type: technology
   id: ExplosiveTechnology
@@ -186,6 +204,8 @@
   position: 2, 13
   technologyPrerequisites:
   - AdvancedRiotControl
+  radioChannels:
+  - Security
 
 # Tier 2
 
@@ -203,6 +223,8 @@
   position: 0, 14
   technologyPrerequisites:
   - SpecialMeans
+  radioChannels:
+  - Security
 
 - type: technology
   id: BasicShuttleArmament
@@ -226,6 +248,8 @@
   position: 2, 14
   technologyPrerequisites:
   - Shuttlecraft
+  radioChannels:
+  - Security
 
 - type: technology
   id: KineticModifications
@@ -243,6 +267,8 @@
   position: 6, 12
   technologyPrerequisites:
   - WaveParticleHarnessing
+  radioChannels:
+  - Security
 
 - type: technology
   id: PortableMicrofusionWeaponry
@@ -259,6 +285,8 @@
   position: 4, 12
   technologyPrerequisites:
   - ConcentratedLaserWeaponry
+  radioChannels:
+  - Security
 
 # Tier 3
 
@@ -279,6 +307,8 @@
   technologyPrerequisites:
   - BasicShuttleArmament
   - Shuttlecraft
+  radioChannels:
+  - Security
 
 - type: technology
   id: ThermalWeaponry
@@ -294,3 +324,5 @@
   position: 4, 13
   technologyPrerequisites:
   - PortableMicrofusionWeaponry
+  radioChannels:
+  - Security
