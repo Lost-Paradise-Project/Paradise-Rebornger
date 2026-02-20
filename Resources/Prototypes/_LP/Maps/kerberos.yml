@@ -4,7 +4,7 @@
   mapPath: /Maps/_LP/LP_kerberos.yml
   minPlayers: 30 # Lost Paradis AK PowerKAT
   stations:
-    Boxstation:
+    LPKerberos:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

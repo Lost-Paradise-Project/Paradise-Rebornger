@@ -4,7 +4,7 @@
   mapPath: /Maps/_LP/LP_aspid.yml
   maxPlayers: 40
   stations:
-    Bagel:
+    LPAspid:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup
