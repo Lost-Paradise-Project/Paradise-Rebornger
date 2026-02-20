@@ -45,6 +45,11 @@
       machine_board: !type:Container
       machine_parts: !type:Container
   - type: ItemSlots
+    slots:
+      beakerSlot:
+        whitelist:
+          components:
+          - FitsInDispenser
   - type: AmbientSound
     range: 5
     enabled: false
