@@ -1,5 +1,5 @@
 - type: gameMap
-  id: Cyberiad
+  id: LPCyberiad
   mapName: 'Cyberiad Station'
   mapPath: /Maps/_LP/LP_cyberiad.yml
   minPlayers: 30 # Lost Paradis AK PowerKAT

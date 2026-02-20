@@ -8900,7 +8900,7 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: BecomesStation
-      id: Aspid
+      id: LPAspid
     - type: Joint
       joints:
         docking21483: !type:WeldJoint
