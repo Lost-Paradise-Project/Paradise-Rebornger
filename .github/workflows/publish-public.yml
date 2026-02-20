@@ -27,13 +27,15 @@ jobs:
     - name: Package server
       run: dotnet run --project Content.Packaging server --platform win-x64 --platform linux-x64 --platform osx-arm64 --hybrid-acz
 
-    - name: Create GitHub Release
+    - name: Update GitHub Release
       uses: softprops/action-gh-release@v2
       with:
         tag_name: ${{ github.ref_name }}
         name: Release ${{ github.ref_name }}
-        files: release/*
-        generate_release_notes: true
+        files: |
+          release/*
+          !release/SS14.Client.zip
+        generate_release_notes: false
       env:
         GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
 
