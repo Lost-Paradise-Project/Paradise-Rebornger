@@ -7,7 +7,6 @@
   - type: Sprite
     sprite: _LP/Clothing/Socks/New/bee.rsi
 
-
 - type: entity
   parent: LPPClothingUnderwearSocksBase
   id: LPPClothingUnderSocksDark

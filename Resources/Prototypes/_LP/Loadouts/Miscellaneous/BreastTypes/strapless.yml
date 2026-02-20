@@ -1,0 +1,143 @@
+- type: loadout
+  id: LPBraStraplessBlack
+  equipment:
+    breast: LPPBraStraplessBlack
+  groupBy: "strapless"
+
+- type: loadout
+  id: LPBraStraplessAltBlack
+  equipment:
+    breast: LPPBraStraplessAltBlack
+  groupBy: "strapless_alt"
+
+- type: loadout
+  id: LPBraStraplessBlue
+  equipment:
+    breast: LPPBraStraplessBlue
+  groupBy: "strapless"
+
+- type: loadout
+  id: LPBraStraplessAltBlue
+  equipment:
+    breast: LPPBraStraplessAltBlue
+  groupBy: "strapless_alt"
+
+- type: loadout
+  id: LPBraStraplessBrown
+  equipment:
+    breast: LPPBraStraplessBrown
+  groupBy: "strapless"
+
+- type: loadout
+  id: LPBraStraplessAltBrown
+  equipment:
+    breast: LPPBraStraplessAltBrown
+  groupBy: "strapless_alt"
+
+- type: loadout
+  id: LPBraStraplessGreen
+  equipment:
+    breast: LPPBraStraplessGreen
+  groupBy: "strapless"
+
+- type: loadout
+  id: LPBraStraplessAltGreen
+  equipment:
+    breast: LPPBraStraplessAltGreen
+  groupBy: "strapless_alt"
+
+- type: loadout
+  id: LPBraStraplessGrey
+  equipment:
+    breast: LPPBraStraplessGrey
+  groupBy: "strapless"
+
+- type: loadout
+  id: LPBraStraplessAltGrey
+  equipment:
+    breast: LPPBraStraplessAltGrey
+  groupBy: "strapless_alt"
+
+- type: loadout
+  id: LPBraStraplessLightpurple
+  equipment:
+    breast: LPPBraStraplessLightpurple
+  groupBy: "strapless"
+
+- type: loadout
+  id: LPBraStraplessAltLightpurple
+  equipment:
+    breast: LPPBraStraplessAltLightpurple
+  groupBy: "strapless_alt"
+
+- type: loadout
+  id: LPBraStraplessMaroon
+  equipment:
+    breast: LPPBraStraplessMaroon
+  groupBy: "strapless"
+
+- type: loadout
+  id: LPBraStraplessAltMaroon
+  equipment:
+    breast: LPPBraStraplessAltMaroon
+  groupBy: "strapless_alt"
+
+- type: loadout
+  id: LPBraStraplessOrange
+  equipment:
+    breast: LPPBraStraplessOrange
+  groupBy: "strapless"
+
+- type: loadout
+  id: LPBraStraplessAltOrange
+  equipment:
+    breast: LPPBraStraplessAltOrange
+  groupBy: "strapless_alt"
+
+- type: loadout
+  id: LPBraStraplessRed
+  equipment:
+    breast: LPPBraStraplessRed
+  groupBy: "strapless"
+
+- type: loadout
+  id: LPBraStraplessAltRed
+  equipment:
+    breast: LPPBraStraplessAltRed
+  groupBy: "strapless_alt"
+
+- type: loadout
+  id: LPBraStraplessTeal
+  equipment:
+    breast: LPPBraStraplessTeal
+  groupBy: "strapless"
+
+- type: loadout
+  id: LPBraStraplessAltTeal
+  equipment:
+    breast: LPPBraStraplessAltTeal
+  groupBy: "strapless_alt"
+
+- type: loadout
+  id: LPBraStraplessWhite
+  equipment:
+    breast: LPPBraStraplessWhite
+  groupBy: "strapless"
+
+- type: loadout
+  id: LPBraStraplessAltWhite
+  equipment:
+    breast: LPPBraStraplessAltWhite
+  groupBy: "strapless_alt"
+
+- type: loadout
+  id: LPBraStraplessYellow
+  equipment:
+    breast: LPPBraStraplessYellow
+  groupBy: "strapless"
+
+- type: loadout
+  id: LPBraStraplessAltYellow
+  equipment:
+    breast: LPPBraStraplessAltYellow
+  groupBy: "strapless_alt"

@@ -1,0 +1,71 @@
+- type: loadout
+  id: LPBriefs
+  equipment:
+    underwear: LPPBriefs
+  groupBy: "briefs"
+
+- type: loadout
+  id: LPBriefsBlack
+  equipment:
+    underwear: LPPBriefsBlack
+  groupBy: "briefs"
+
+- type: loadout
+  id: LPBriefsBlue
+  equipment:
+    underwear: LPPBriefsBlue
+  groupBy: "briefs"
+
+- type: loadout
+  id: LPBriefsBrown
+  equipment:
+    underwear: LPPBriefsBrown
+  groupBy: "briefs"
+
+- type: loadout
+  id: LPBriefsGreen
+  equipment:
+    underwear: LPPBriefsGreen
+  groupBy: "briefs"
+
+- type: loadout
+  id: LPBriefsGrey
+  equipment:
+    underwear: LPPBriefsGrey
+  groupBy: "briefs"
+
+- type: loadout
+  id: LPBriefsLightpurple
+  equipment:
+    underwear: LPPBriefsLightpurple
+  groupBy: "briefs"
+
+- type: loadout
+  id: LPBriefsMaroon
+  equipment:
+    underwear: LPPBriefsMaroon
+  groupBy: "briefs"
+
+- type: loadout
+  id: LPBriefsOrange
+  equipment:
+    underwear: LPPBriefsOrange
+  groupBy: "briefs"
+
+- type: loadout
+  id: LPBriefsRed
+  equipment:
+    underwear: LPPBriefsRed
+  groupBy: "briefs"
+
+- type: loadout
+  id: LPBriefsTeal
+  equipment:
+    underwear: LPPBriefsTeal
+  groupBy: "briefs"
+
+- type: loadout
+  id: LPBriefsYellow
+  equipment:
+    underwear: LPPBriefsYellow
+  groupBy: "briefs"

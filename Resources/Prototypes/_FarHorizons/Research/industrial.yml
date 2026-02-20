@@ -33,6 +33,8 @@
   technologyPrerequisites:
   - PowerGeneration
   position: 5, 1
+  radioChannels:
+  - Engineering
 
 - type: technology
   id: NuclearPowerRecycling
@@ -59,3 +61,5 @@
   technologyPrerequisites:
   - NuclearPowerGeneration
   position: 6, 2
+  radioChannels:
+  - Engineering

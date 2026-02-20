@@ -1,0 +1,71 @@
+- type: loadout
+  id: LPClothingUnderSocksNorm
+  equipment:
+    socks: LPPClothingUnderSocksNorm
+  groupBy: "socksnorm"
+
+- type: loadout
+  id: LPClothingUnderSocksNormBlack
+  equipment:
+    socks: LPPClothingUnderSocksNormBlack
+  groupBy: "socksnorm"
+
+- type: loadout
+  id: LPClothingUnderSocksNormBlue
+  equipment:
+    socks: LPPClothingUnderSocksNormBlue
+  groupBy: "socksnorm"
+
+- type: loadout
+  id: LPClothingUnderSocksNormBrown
+  equipment:
+    socks: LPPClothingUnderSocksNormBrown
+  groupBy: "socksnorm"
+
+- type: loadout
+  id: LPClothingUnderSocksNormGreen
+  equipment:
+    socks: LPPClothingUnderSocksNormGreen
+  groupBy: "socksnorm"
+
+- type: loadout
+  id: LPClothingUnderSocksNormGrey
+  equipment:
+    socks: LPPClothingUnderSocksNormGrey
+  groupBy: "socksnorm"
+
+- type: loadout
+  id: LPClothingUnderSocksNormLightpurple
+  equipment:
+    socks: LPPClothingUnderSocksNormLightpurple
+  groupBy: "socksnorm"
+
+- type: loadout
+  id: LPClothingUnderSocksNormMaroon
+  equipment:
+    socks: LPPClothingUnderSocksNormMaroon
+  groupBy: "socksnorm"
+
+- type: loadout
+  id: LPClothingUnderSocksNormOrange
+  equipment:
+    socks: LPPClothingUnderSocksNormOrange
+  groupBy: "socksnorm"
+
+- type: loadout
+  id: LPClothingUnderSocksNormRed
+  equipment:
+    socks: LPPClothingUnderSocksNormRed
+  groupBy: "socksnorm"
+
+- type: loadout
+  id: LPClothingUnderSocksNormTeal
+  equipment:
+    socks: LPPClothingUnderSocksNormTeal
+  groupBy: "socksnorm"
+
+- type: loadout
+  id: LPClothingUnderSocksNormYellow
+  equipment:
+    socks: LPPClothingUnderSocksNormYellow
+  groupBy: "socksnorm"

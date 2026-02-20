@@ -1,0 +1,71 @@
+- type: loadout
+  id: LPClothingUnderSocksShort
+  equipment:
+    socks: LPPClothingUnderSocksShort
+  groupBy: "sockstshort"
+
+- type: loadout
+  id: LPClothingUnderSocksShortBlack
+  equipment:
+    socks: LPPClothingUnderSocksShortBlack
+  groupBy: "sockstshort"
+
+- type: loadout
+  id: LPClothingUnderSocksShortBlue
+  equipment:
+    socks: LPPClothingUnderSocksShortBlue
+  groupBy: "sockstshort"
+
+- type: loadout
+  id: LPClothingUnderSocksShortBrown
+  equipment:
+    socks: LPPClothingUnderSocksShortBrown
+  groupBy: "sockstshort"
+
+- type: loadout
+  id: LPClothingUnderSocksShortGreen
+  equipment:
+    socks: LPPClothingUnderSocksShortGreen
+  groupBy: "sockstshort"
+
+- type: loadout
+  id: LPClothingUnderSocksShortGrey
+  equipment:
+    socks: LPPClothingUnderSocksShortGrey
+  groupBy: "sockstshort"
+
+- type: loadout
+  id: LPClothingUnderSocksShortLightpurple
+  equipment:
+    socks: LPPClothingUnderSocksShortLightpurple
+  groupBy: "sockstshort"
+
+- type: loadout
+  id: LPClothingUnderSocksShortMaroon
+  equipment:
+    socks: LPPClothingUnderSocksShortMaroon
+  groupBy: "sockstshort"
+
+- type: loadout
+  id: LPClothingUnderSocksShortOrange
+  equipment:
+    socks: LPPClothingUnderSocksShortOrange
+  groupBy: "sockstshort"
+
+- type: loadout
+  id: LPClothingUnderSocksShortRed
+  equipment:
+    socks: LPPClothingUnderSocksShortRed
+  groupBy: "sockstshort"
+
+- type: loadout
+  id: LPClothingUnderSocksShortTeal
+  equipment:
+    socks: LPPClothingUnderSocksShortTeal
+  groupBy: "sockstshort"
+
+- type: loadout
+  id: LPClothingUnderSocksShortYellow
+  equipment:
+    socks: LPPClothingUnderSocksShortYellow
+  groupBy: "sockstshort"
