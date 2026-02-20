@@ -11,6 +11,8 @@ namespace Content.Shared.Preferences.Loadouts.Effects;
 /// </summary>
 public sealed partial class SponsorLoadoutEffect : LoadoutEffect
 {
+    [DataField]
+    public int tier = 3;
     public override bool Validate(HumanoidCharacterProfile profile,
         RoleLoadout loadout,
         LoadoutPrototype proto, // Corvax-Sponsors
@@ -26,7 +28,7 @@ public sealed partial class SponsorLoadoutEffect : LoadoutEffect
         if (session == null)
             return true;
 
-        if (sponsorTier < 3)    //LP edit - любые лодауты спонсорам 3+ уровня
+        if (sponsorTier < tier)    //LP edit - любые лодауты спонсорам 3+ уровня
         {
             reason = FormattedMessage.FromMarkupOrThrow(Loc.GetString("loadout-sponsor-only"));
             return false;
