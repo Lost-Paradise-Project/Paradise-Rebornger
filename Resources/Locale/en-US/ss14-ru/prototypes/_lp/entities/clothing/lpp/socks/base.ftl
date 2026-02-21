@@ -1,0 +1,12 @@
+ent-LPPClothingUnderwearSocksBase = based socks
+    .desc = { ent-Clothing.desc }
+ent-LPPClothingUnderBeeKnee = bee knee
+    .desc = { ent-LPPClothingUnderwearSocksBase.desc }
+ent-LPPClothingUnderBeeNorm = bee norm
+    .desc = { ent-LPPClothingUnderwearSocksBase.desc }
+ent-LPPClothingUnderBeeThigh = bee thigh
+    .desc = { ent-LPPClothingUnderwearSocksBase.desc }
+ent-LPPClothingUnderCommieKnee = commie knee
+    .desc = { ent-LPPClothingUnderwearSocksBase.desc }
+ent-LPPClothingUnderCommieThigh = commie thigh
+    .desc = { ent-LPPClothingUnderwearSocksBase.desc }

@@ -1,0 +1,56 @@
+- type: entity
+  abstract: true
+  parent: Clothing
+  id: LPPClothingUnderwearSocksBase
+  name: based socks
+  components:
+  - type: Sprite
+    state: icon
+  - type: Item
+    size: Small
+  - type: Clothing
+    slots: SOCKS
+    preferredSlots: SOCKS
+  - type: Tag
+    tags:
+    - socks
+
+- type: entity
+  parent: LPPClothingUnderwearSocksBase
+  id: LPPClothingUnderBeeKnee
+  name: bee knee
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Socks/bee_knee.rsi
+
+- type: entity
+  parent: LPPClothingUnderwearSocksBase
+  id: LPPClothingUnderBeeNorm
+  name: bee norm
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Socks/bee_norm.rsi
+
+- type: entity
+  parent: LPPClothingUnderwearSocksBase
+  id: LPPClothingUnderBeeThigh
+  name: bee thigh
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Socks/bee_thigh.rsi
+
+- type: entity
+  parent: LPPClothingUnderwearSocksBase
+  id: LPPClothingUnderCommieKnee
+  name: commie knee
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Socks/commie_knee.rsi
+
+- type: entity
+  parent: LPPClothingUnderwearSocksBase
+  id: LPPClothingUnderCommieThigh
+  name: commie thigh
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Socks/commie_thigh.rsi

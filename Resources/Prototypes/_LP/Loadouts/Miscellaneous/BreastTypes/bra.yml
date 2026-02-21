@@ -1,0 +1,161 @@
+- type: loadout
+  id: LPBraAlt
+  equipment:
+    breast: LPPBraAlt
+  groupBy: "bra_alt"
+
+- type: loadout
+  id: LPBraBlack
+  equipment:
+    breast: LPPBraBlack
+  groupBy: "bra"
+
+- type: loadout
+  id: LPBraAltBlack
+  equipment:
+    breast: LPPBraAltBlack
+  groupBy: "bra_alt"
+
+- type: loadout
+  id: LPBraBlue
+  equipment:
+    breast: LPPBraBlue
+  groupBy: "bra"
+
+- type: loadout
+  id: LPBraAltBlue
+  equipment:
+    breast: LPPBraAltBlue
+  groupBy: "bra_alt"
+
+- type: loadout
+  id: LPBraBrown
+  equipment:
+    breast: LPPBraBrown
+  groupBy: "bra"
+
+- type: loadout
+  id: LPBraAltBrown
+  equipment:
+    breast: LPPBraAltBrown
+  groupBy: "bra_alt"
+
+- type: loadout
+  id: LPBraGreen
+  equipment:
+    breast: LPPBraGreen
+  groupBy: "bra"
+
+- type: loadout
+  id: LPBraAltGreen
+  equipment:
+    breast: LPPBraAltGreen
+  groupBy: "bra_alt"
+
+- type: loadout
+  id: LPBraGrey
+  equipment:
+    breast: LPPBraGrey
+  groupBy: "bra"
+
+- type: loadout
+  id: LPBraAltGrey
+  equipment:
+    breast: LPPBraAltGrey
+  groupBy: "bra_alt"
+
+- type: loadout
+  id: LPBraLightpurple
+  equipment:
+    breast: LPPBraLightpurple
+  groupBy: "bra"
+
+- type: loadout
+  id: LPBraAltLightpurple
+  equipment:
+    breast: LPPBraAltLightpurple
+  groupBy: "bra_alt"
+
+- type: loadout
+  id: LPBraMaroon
+  equipment:
+    breast: LPPBraMaroon
+  groupBy: "bra"
+
+- type: loadout
+  id: LPBraAltMaroon
+  equipment:
+    breast: LPPBraAltMaroon
+  groupBy: "bra_alt"
+
+- type: loadout
+  id: LPBraOrange
+  equipment:
+    breast: LPPBraOrange
+  groupBy: "bra"
+
+- type: loadout
+  id: LPBraAltOrange
+  equipment:
+    breast: LPPBraAltOrange
+  groupBy: "bra_alt"
+
+- type: loadout
+  id: LPBraRed
+  equipment:
+    breast: LPPBraRed
+  groupBy: "bra"
+
+- type: loadout
+  id: LPBraAltRed
+  equipment:
+    breast: LPPBraAltRed
+  groupBy: "bra_alt"
+
+- type: loadout
+  id: LPBraTeal
+  equipment:
+    breast: LPPBraTeal
+  groupBy: "bra"
+
+- type: loadout
+  id: LPBraAltTeal
+  equipment:
+    breast: LPPBraAltTeal
+  groupBy: "bra_alt"
+
+- type: loadout
+  id: LPBraWhite
+  equipment:
+    breast: LPPBraWhite
+  groupBy: "bra"
+
+- type: loadout
+  id: LPBraAltWhite
+  equipment:
+    breast: LPPBraAltWhite
+  groupBy: "bra_alt"
+
+- type: loadout
+  id: LPBraYellow
+  equipment:
+    breast: LPPBraYellow
+  groupBy: "bra"
+
+- type: loadout
+  id: LPBraAltYellow
+  equipment:
+    breast: LPPBraAltYellow
+  groupBy: "bra_alt"
+
+- type: loadout
+  id: LPBraBeeKini
+  equipment:
+    breast: LPPBraBeeKini
+  groupBy: "bra"
+
+- type: loadout
+  id: LPBraCommie
+  equipment:
+    breast: LPPBraCommie
+  groupBy: "bra"

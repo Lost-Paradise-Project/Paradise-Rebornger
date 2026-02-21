@@ -1,0 +1,65 @@
+- type: loadout
+  id: LPClothingUnderThinKneeBlack
+  equipment:
+    socks: LPPClothingUnderThinKneeBlack
+  groupBy: "thinknee"
+
+- type: loadout
+  id: LPClothingUnderThinKneeBlue
+  equipment:
+    socks: LPPClothingUnderThinKneeBlue
+  groupBy: "thinknee"
+
+- type: loadout
+  id: LPClothingUnderThinKneeBrown
+  equipment:
+    socks: LPPClothingUnderThinKneeBrown
+  groupBy: "thinknee"
+
+- type: loadout
+  id: LPClothingUnderThinKneeGreen
+  equipment:
+    socks: LPPClothingUnderThinKneeGreen
+  groupBy: "thinknee"
+
+- type: loadout
+  id: LPClothingUnderThinKneeGrey
+  equipment:
+    socks: LPPClothingUnderThinKneeGrey
+  groupBy: "thinknee"
+
+- type: loadout
+  id: LPClothingUnderThinKneeLightpurple
+  equipment:
+    socks: LPPClothingUnderThinKneeLightpurple
+  groupBy: "thinknee"
+
+- type: loadout
+  id: LPClothingUnderThinKneeMaroon
+  equipment:
+    socks: LPPClothingUnderThinKneeMaroon
+  groupBy: "thinknee"
+
+- type: loadout
+  id: LPClothingUnderThinKneeOrange
+  equipment:
+    socks: LPPClothingUnderThinKneeOrange
+  groupBy: "thinknee"
+
+- type: loadout
+  id: LPClothingUnderThinKneeRed
+  equipment:
+    socks: LPPClothingUnderThinKneeRed
+  groupBy: "thinknee"
+
+- type: loadout
+  id: LPClothingUnderThinKneeTeal
+  equipment:
+    socks: LPPClothingUnderThinKneeTeal
+  groupBy: "thinknee"
+
+- type: loadout
+  id: LPClothingUnderThinKneeYellow
+  equipment:
+    socks: LPPClothingUnderThinKneeYellow
+  groupBy: "thinknee"

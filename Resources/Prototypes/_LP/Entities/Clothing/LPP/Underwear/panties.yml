@@ -1,0 +1,635 @@
+#-----------------------Panties-------------------------
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesBeeKini
+  name: panties bee kini
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/panties_bee-kini.rsi
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesCommie
+  name: panties commie
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/panties_commie.rsi
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesKinky
+  name: panties kinky
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/panties_kinky.rsi
+
+#---------------------PantiesAlt-----------------------
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesAltBlack
+  name: panties alt
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#0C0C0C"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesAlt/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#0C0C0C"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesAltBlue
+  name: panties alt
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#52AECC"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesAlt/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#52AECC"
+
+#-------белая одежда
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesAlt
+  name: panties alt
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesAlt/white.rsi
+
+#-------------------
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesAltBrown
+  name: panties alt
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#A17229"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesAlt/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#A17229"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesAltGreen
+  name: panties alt
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#6FBC22"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesAlt/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#6FBC22"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesAltGrey
+  name: panties alt
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#B3B3B3"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesAlt/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#B3B3B3"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesAltLightpurple
+  name: panties alt
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#944DFE"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesAlt/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#944DFE"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesAltMaroon
+  name: panties alt
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#BE273E"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesAlt/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#BE273E"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesAltOrange
+  name: panties alt
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#FF8C19"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesAlt/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#FF8C19"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesAltRed
+  name: panties alt
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#EE1511"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesAlt/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#EE1511"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesAltTeal
+  name: panties alt
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#77F3B7"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesAlt/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#77F3B7"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesAltYellow
+  name: panties alt
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesAlt/white.rsi
+    layers:
+    - state: icon
+      color: "#FBC72D"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesAlt/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#FBC72D"
+
+#---------------------PantiesNeko-----------------------
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesNekoBlack
+  name: panties neko
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesNeko/white.rsi
+    layers:
+    - state: icon
+      color: "#0C0C0C"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesNeko/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#0C0C0C"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesNekoBlue
+  name: panties neko
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesNeko/white.rsi
+    layers:
+    - state: icon
+      color: "#52AECC"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesNeko/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#52AECC"
+
+#-------белая одежда
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesNeko
+  name: panties neko
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesNeko/white.rsi
+
+#-------------------
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesNekoBrown
+  name: panties neko
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesNeko/white.rsi
+    layers:
+    - state: icon
+      color: "#A17229"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesNeko/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#A17229"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesNekoGreen
+  name: panties neko
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesNeko/white.rsi
+    layers:
+    - state: icon
+      color: "#6FBC22"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesNeko/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#6FBC22"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesNekoGrey
+  name: panties neko
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesNeko/white.rsi
+    layers:
+    - state: icon
+      color: "#B3B3B3"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesNeko/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#B3B3B3"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesNekoLightpurple
+  name: panties neko
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesNeko/white.rsi
+    layers:
+    - state: icon
+      color: "#944DFE"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesNeko/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#944DFE"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesNekoMaroon
+  name: panties neko
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesNeko/white.rsi
+    layers:
+    - state: icon
+      color: "#BE273E"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesNeko/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#BE273E"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesNekoOrange
+  name: panties neko
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesNeko/white.rsi
+    layers:
+    - state: icon
+      color: "#FF8C19"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesNeko/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#FF8C19"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesNekoRed
+  name: panties neko
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesNeko/white.rsi
+    layers:
+    - state: icon
+      color: "#EE1511"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesNeko/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#EE1511"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesNekoTeal
+  name: panties neko
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesNeko/white.rsi
+    layers:
+    - state: icon
+      color: "#77F3B7"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesNeko/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#77F3B7"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesNekoYellow
+  name: panties neko
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesNeko/white.rsi
+    layers:
+    - state: icon
+      color: "#FBC72D"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesNeko/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#FBC72D"
+
+#---------------------PantiesThin-----------------------
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesThinBlack
+  name: panties thin
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesThin/white.rsi
+    layers:
+    - state: icon
+      color: "#0C0C0C"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesThin/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#0C0C0C"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesThinBlue
+  name: panties thin
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesThin/white.rsi
+    layers:
+    - state: icon
+      color: "#52AECC"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesThin/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#52AECC"
+
+#-------белая одежда
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesThin
+  name: panties thin
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesThin/white.rsi
+
+#-------------------
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesThinBrown
+  name: panties thin
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesThin/white.rsi
+    layers:
+    - state: icon
+      color: "#A17229"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesThin/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#A17229"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesThinGreen
+  name: panties thin
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesThin/white.rsi
+    layers:
+    - state: icon
+      color: "#6FBC22"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesThin/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#6FBC22"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesThinGrey
+  name: panties thin
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesThin/white.rsi
+    layers:
+    - state: icon
+      color: "#B3B3B3"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesThin/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#B3B3B3"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesThinLightpurple
+  name: panties thin
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesThin/white.rsi
+    layers:
+    - state: icon
+      color: "#944DFE"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesThin/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#944DFE"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesThinMaroon
+  name: panties thin
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesThin/white.rsi
+    layers:
+    - state: icon
+      color: "#BE273E"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesThin/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#BE273E"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesThinOrange
+  name: panties thin
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesThin/white.rsi
+    layers:
+    - state: icon
+      color: "#FF8C19"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesThin/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#FF8C19"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesThinRed
+  name: panties thin
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesThin/white.rsi
+    layers:
+    - state: icon
+      color: "#EE1511"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesThin/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#EE1511"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesThinTeal
+  name: panties thin
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesThin/white.rsi
+    layers:
+    - state: icon
+      color: "#77F3B7"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesThin/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#77F3B7"
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPPantiesThinYellow
+  name: panties thin
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/PantiesThin/white.rsi
+    layers:
+    - state: icon
+      color: "#FBC72D"
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/PantiesThin/white.rsi
+    clothingVisuals:
+      underwear:
+      - state: equipped-UNDERWEAR
+        color: "#FBC72D"
+
+#-------------------------------------
+
+
+- type: entity
+  parent: LPPClothingUnderwearBase
+  id: LPPStripedPanties
+  name: striped panties
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/striped_panties.rsi
+
+#---------------------------------------------------

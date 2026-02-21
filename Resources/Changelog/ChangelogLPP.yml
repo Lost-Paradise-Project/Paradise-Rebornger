@@ -339,3 +339,36 @@ Entries:
   id: 5646
   time: '2026-02-16T16:06:02.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/70
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлен электронный замок!
+    - type: Add
+      message: Добавлена возможность открытии тех панели на шкафах!
+  id: 5647
+  time: '2026-02-18T17:33:47.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/76
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлено оповещение при изучении в РНД в соответствующий отдел
+  id: 5648
+  time: '2026-02-18T17:53:31.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/74
+- author: SanitarDurkovic Evgencheg
+  changes:
+    - type: Add
+      message: Добавлена возможность выбора Патрульного борга.
+    - type: Add
+      message: Добавлен новый модуль "Криминалиста".
+    - type: Remove
+      message: Удален ненужный прототип борга.
+    - type: Remove
+      message: Удалены некоторые лишние спрайты.
+    - type: Tweak
+      message: Изменены спрайты кнопок активации модулей.
+    - type: Tweak
+      message: Изменен код выбора пути спрайтов борга.
+  id: 5649
+  time: '2026-02-20T14:00:17.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/78

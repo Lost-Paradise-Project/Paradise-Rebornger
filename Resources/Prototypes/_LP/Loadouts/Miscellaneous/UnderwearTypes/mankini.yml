@@ -1,0 +1,71 @@
+- type: loadout
+  id: LPMankini
+  equipment:
+    underwear: LPPMankini
+  groupBy: "mankini"
+
+- type: loadout
+  id: LPMankiniBlack
+  equipment:
+    underwear: LPPMankiniBlack
+  groupBy: "mankini"
+
+- type: loadout
+  id: LPMankiniBlue
+  equipment:
+    underwear: LPPMankiniBlue
+  groupBy: "mankini"
+
+- type: loadout
+  id: LPMankiniBrown
+  equipment:
+    underwear: LPPMankiniBrown
+  groupBy: "mankini"
+
+- type: loadout
+  id: LPMankiniGreen
+  equipment:
+    underwear: LPPMankiniGreen
+  groupBy: "mankini"
+
+- type: loadout
+  id: LPMankiniGrey
+  equipment:
+    underwear: LPPMankiniGrey
+  groupBy: "mankini"
+
+- type: loadout
+  id: LPMankiniLightpurple
+  equipment:
+    underwear: LPPMankiniLightpurple
+  groupBy: "mankini"
+
+- type: loadout
+  id: LPMankiniMaroon
+  equipment:
+    underwear: LPPMankiniMaroon
+  groupBy: "mankini"
+
+- type: loadout
+  id: LPMankiniOrange
+  equipment:
+    underwear: LPPMankiniOrange
+  groupBy: "mankini"
+
+- type: loadout
+  id: LPMankiniRed
+  equipment:
+    underwear: LPPMankiniRed
+  groupBy: "mankini"
+
+- type: loadout
+  id: LPMankiniTeal
+  equipment:
+    underwear: LPPMankiniTeal
+  groupBy: "mankini"
+
+- type: loadout
+  id: LPMankiniYellow
+  equipment:
+    underwear: LPPMankiniYellow
+  groupBy: "mankini"
