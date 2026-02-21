@@ -133,7 +133,10 @@ public sealed class HumanoidProfileSystem : EntitySystem
         RaiseLocalEvent(ent, ref sexChanged);
 
         var profileLoaded = new HumanoidProfileLoadedEvent(ent);
+        // LP edit start
+        var profileLoaded = new HumanoidProfileLoadedEvent(ent);
         RaiseLocalEvent(ent, ref profileLoaded);
+        // LP edit end
 
         if (TryComp<GrammarComponent>(ent, out var grammar))
         {
@@ -187,8 +190,10 @@ public sealed class HumanoidProfileSystem : EntitySystem
     }
 }
 
+// LP edit start
 [ByRefEvent]
 public record struct ApplyBarkVoiceEvent(string BarkVoice);
 
 [ByRefEvent]
 public record struct HumanoidProfileLoadedEvent(EntityUid Entity);
+// LP edit end
