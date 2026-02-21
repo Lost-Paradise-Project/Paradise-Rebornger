@@ -962,6 +962,28 @@ public sealed partial class CwoinkSystem : SharedCwoinkSystem
     {
         return _recentMessages;
     }
+
+    /// <summary>
+    /// Handles incoming cwoink messages from the Discord webhook.
+    /// </summary>
+    public void OnWebhookCwoinkTextMessage(CwoinkTextMessage message, CwoinkActionBody body)
+    {
+        // Note for forks:
+        AdminData webhookAdminData = new();
+
+        var cwoinkParams = new CwoinkParams(
+            message,
+            SharedCwoinkSystem.SystemUserId,
+            webhookAdminData,
+            body.Username,
+            null,
+            body.UserOnly,
+            body.WebhookUpdate,
+            true,
+            body.RoleName,
+            body.RoleColor);
+        OnCwoinkInternal(cwoinkParams);
+    }
 }
 
 public struct CHelpMessageParams(
