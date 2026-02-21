@@ -12,6 +12,8 @@
       inverted: true
       species:
       - Diona
+    - !type:AgeRequirement
+      requiredAge: 24
     # LP edit end
     - !type:TraitsRequirement #Corvax-TraitsRequirement
       inverted: true
