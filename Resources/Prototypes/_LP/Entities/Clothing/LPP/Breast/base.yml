@@ -1,0 +1,158 @@
+- type: entity
+  abstract: true
+  parent: Clothing
+  id: LPPClothingBreastBase
+  name: based breast
+  components:
+  - type: Sprite
+    state: icon
+  - type: Item
+    size: Tiny
+  - type: Clothing
+    slots: BREAST
+    preferredSlots: BREAST
+  - type: Tag
+    tags:
+    - breast
+
+#---------------------------------------------------
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPStripedBra
+  name: striped bra
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/striped_bra.rsi
+
+#---------------------------------------------------
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBodyBra
+  name: Body Bra
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/bra/LPPBodyBra1.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/bra/LPPBodyBra1.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBodyBraCut
+  name: Body Bra Cut
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/bra/LPPBodyBra1Cut.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/bra/LPPBodyBra1Cut.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBodyBraCut2
+  name: Body Bra Cut v2
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/bra/LPPBodyBra1Cut2.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/bra/LPPBodyBra1Cut2.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBodyBraCut3
+  name: Body Bra Cut v3
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/bra/LPPBodyBraCut3.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/bra/LPPBodyBraCut3.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBodyBraCut4
+  name: Body Bra Cut v4
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/bra/LPPBodyBraCut4.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/bra/LPPBodyBraCut4.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPBodyBra2
+  name: Body Bra v2
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/bra/LPPBodyBra2.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/bra/LPPBodyBra2.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPCutOutBodyBra2
+  name: Cut Out Body Bra v2
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/bra/LPPCutOutBodyBra2.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/bra/LPPCutOutBodyBra2.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPSwimsuitBodyBra2
+  name: Swimsuit Body Bra v2
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/bra/LPPSwimsuitBodyBra2.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/bra/LPPSwimsuitBodyBra2.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPSwimsuitplusTightsBodyBra2
+  name: Swimsuit+Tights Body Bra v2
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/bra/LPPSwimsuitplusTightsBodyBra2.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/bra/LPPSwimsuitplusTightsBodyBra2.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPTranslucentBodyBra
+  name: Translucent Body Bra
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/bra/LPPTranslucentBodyBra.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/bra/LPPTranslucentBodyBra.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPTranslucentBodyBra2
+  name: Translucent Body Bra v2
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/bra/LPPTranslucentBodyBra2.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/bra/LPPTranslucentBodyBra2.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPCutOutTop
+  name: Cut Out Top
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/bra/LPPCutOutTop.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/bra/LPPCutOutTop.rsi
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPCutOutTop2
+  name: Cut Out Top v2
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Underwear/bra/LPPCutOutTop2.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Underwear/bra/LPPCutOutTop2.rsi

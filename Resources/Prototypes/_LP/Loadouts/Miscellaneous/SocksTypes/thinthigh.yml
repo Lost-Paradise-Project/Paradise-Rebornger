@@ -1,0 +1,65 @@
+- type: loadout
+  id: LPClothingUnderThinThighBlack
+  equipment:
+    socks: LPPClothingUnderThinThighBlack
+  groupBy: "thinthigh"
+
+- type: loadout
+  id: LPClothingUnderThinThighBlue
+  equipment:
+    socks: LPPClothingUnderThinThighBlue
+  groupBy: "thinthigh"
+
+- type: loadout
+  id: LPClothingUnderThinThighBrown
+  equipment:
+    socks: LPPClothingUnderThinThighBrown
+  groupBy: "thinthigh"
+
+- type: loadout
+  id: LPClothingUnderThinThighGreen
+  equipment:
+    socks: LPPClothingUnderThinThighGreen
+  groupBy: "thinthigh"
+
+- type: loadout
+  id: LPClothingUnderThinThighGrey
+  equipment:
+    socks: LPPClothingUnderThinThighGrey
+  groupBy: "thinthigh"
+
+- type: loadout
+  id: LPClothingUnderThinThighLightpurple
+  equipment:
+    socks: LPPClothingUnderThinThighLightpurple
+  groupBy: "thinthigh"
+
+- type: loadout
+  id: LPClothingUnderThinThighMaroon
+  equipment:
+    socks: LPPClothingUnderThinThighMaroon
+  groupBy: "thinthigh"
+
+- type: loadout
+  id: LPClothingUnderThinThighOrange
+  equipment:
+    socks: LPPClothingUnderThinThighOrange
+  groupBy: "thinthigh"
+
+- type: loadout
+  id: LPClothingUnderThinThighRed
+  equipment:
+    socks: LPPClothingUnderThinThighRed
+  groupBy: "thinthigh"
+
+- type: loadout
+  id: LPClothingUnderThinThighTeal
+  equipment:
+    socks: LPPClothingUnderThinThighTeal
+  groupBy: "thinthigh"
+
+- type: loadout
+  id: LPClothingUnderThinThighYellow
+  equipment:
+    socks: LPPClothingUnderThinThighYellow
+  groupBy: "thinthigh"

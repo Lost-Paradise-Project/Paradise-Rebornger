@@ -1,0 +1,167 @@
+- type: loadout
+  id: LPBoxer
+  equipment:
+    underwear: LPPBoxer
+  groupBy: "boxers"
+
+- type: loadout
+  id: LPBoxerBriefs
+  equipment:
+    underwear: LPPBoxerBriefs
+  groupBy: "boxers_briefs"
+
+- type: loadout
+  id: LPBeeShorts
+  equipment:
+    underwear: LPPBeeShorts
+  groupBy: "boxers"
+
+- type: loadout
+  id: LPBoxersCommie
+  equipment:
+    underwear: LPPBoxersCommie
+  groupBy: "boxers"
+
+- type: loadout
+  id: LPBoxersHeart
+  equipment:
+    underwear: LPPBoxersHeart
+  groupBy: "boxers"
+
+- type: loadout
+  id: LPBoxersStriped
+  equipment:
+    underwear: LPPBoxersStriped
+  groupBy: "boxers"
+
+- type: loadout
+  id: LPBoxerBlack
+  equipment:
+    underwear: LPPBoxerBlack
+  groupBy: "boxers"
+
+- type: loadout
+  id: LPBoxerBriefsBlack
+  equipment:
+    underwear: LPPBoxerBriefsBlack
+  groupBy: "boxers_briefs"
+
+- type: loadout
+  id: LPBoxerBlue
+  equipment:
+    underwear: LPPBoxerBlue
+  groupBy: "boxers"
+
+- type: loadout
+  id: LPBoxerBriefsBlue
+  equipment:
+    underwear: LPPBoxerBriefsBlue
+  groupBy: "boxers_briefs"
+
+- type: loadout
+  id: LPBoxerBrown
+  equipment:
+    underwear: LPPBoxerBrown
+  groupBy: "boxers"
+
+- type: loadout
+  id: LPBoxerBriefsBrown
+  equipment:
+    underwear: LPPBoxerBriefsBrown
+  groupBy: "boxers_briefs"
+
+- type: loadout
+  id: LPBoxerGreen
+  equipment:
+    underwear: LPPBoxerGreen
+  groupBy: "boxers"
+
+- type: loadout
+  id: LPBoxerBriefsGreen
+  equipment:
+    underwear: LPPBoxerBriefsGreen
+  groupBy: "boxers_briefs"
+
+- type: loadout
+  id: LPBoxerGrey
+  equipment:
+    underwear: LPPBoxerGrey
+  groupBy: "boxers"
+
+- type: loadout
+  id: LPBoxerBriefsGrey
+  equipment:
+    underwear: LPPBoxerBriefsGrey
+  groupBy: "boxers_briefs"
+
+- type: loadout
+  id: LPBoxerLightpurple
+  equipment:
+    underwear: LPPBoxerLightpurple
+  groupBy: "boxers"
+
+- type: loadout
+  id: LPBoxerBriefsLightpurple
+  equipment:
+    underwear: LPPBoxerBriefsLightpurple
+  groupBy: "boxers_briefs"
+
+- type: loadout
+  id: LPBoxerMaroon
+  equipment:
+    underwear: LPPBoxerMaroon
+  groupBy: "boxers"
+
+- type: loadout
+  id: LPBoxerBriefsMaroon
+  equipment:
+    underwear: LPPBoxerBriefsMaroon
+  groupBy: "boxers_briefs"
+
+- type: loadout
+  id: LPBoxerOrange
+  equipment:
+    underwear: LPPBoxerOrange
+  groupBy: "boxers"
+
+- type: loadout
+  id: LPBoxerBriefsOrange
+  equipment:
+    underwear: LPPBoxerBriefsOrange
+  groupBy: "boxers_briefs"
+
+- type: loadout
+  id: LPBoxerRed
+  equipment:
+    underwear: LPPBoxerRed
+  groupBy: "boxers"
+
+- type: loadout
+  id: LPBoxerBriefsRed
+  equipment:
+    underwear: LPPBoxerBriefsRed
+  groupBy: "boxers_briefs"
+
+- type: loadout
+  id: LPBoxerTeal
+  equipment:
+    underwear: LPPBoxerTeal
+  groupBy: "boxers"
+
+- type: loadout
+  id: LPBoxerBriefsTeal
+  equipment:
+    underwear: LPPBoxerBriefsTeal
+  groupBy: "boxers_briefs"
+
+- type: loadout
+  id: LPBoxerYellow
+  equipment:
+    underwear: LPPBoxerYellow
+  groupBy: "boxers"
+
+- type: loadout
+  id: LPBoxerBriefsYellow
+  equipment:
+    underwear: LPPBoxerBriefsYellow
+  groupBy: "boxers_briefs"

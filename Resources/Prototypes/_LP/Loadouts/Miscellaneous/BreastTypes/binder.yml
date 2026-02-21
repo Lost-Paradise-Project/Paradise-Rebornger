@@ -1,0 +1,143 @@
+- type: loadout
+  id: LPBraBinderBlack
+  equipment:
+    breast: LPPBraBinderBlack
+  groupBy: "binder"
+
+- type: loadout
+  id: LPBraBinderStraplessBlack
+  equipment:
+    breast: LPPBraBinderStraplessBlack
+  groupBy: "binder_strapless"
+
+- type: loadout
+  id: LPBraBinderBlue
+  equipment:
+    breast: LPPBraBinderBlue
+  groupBy: "binder"
+
+- type: loadout
+  id: LPBraBinderStraplessBlue
+  equipment:
+    breast: LPPBraBinderStraplessBlue
+  groupBy: "binder_strapless"
+
+- type: loadout
+  id: LPBraBinderBrown
+  equipment:
+    breast: LPPBraBinderBrown
+  groupBy: "binder"
+
+- type: loadout
+  id: LPBraBinderStraplessBrown
+  equipment:
+    breast: LPPBraBinderStraplessBrown
+  groupBy: "binder_strapless"
+
+- type: loadout
+  id: LPBraBinderGreen
+  equipment:
+    breast: LPPBraBinderGreen
+  groupBy: "binder"
+
+- type: loadout
+  id: LPBraBinderStraplessGreen
+  equipment:
+    breast: LPPBraBinderStraplessGreen
+  groupBy: "binder_strapless"
+
+- type: loadout
+  id: LPBraBinderGrey
+  equipment:
+    breast: LPPBraBinderGrey
+  groupBy: "binder"
+
+- type: loadout
+  id: LPBraBinderStraplessGrey
+  equipment:
+    breast: LPPBraBinderStraplessGrey
+  groupBy: "binder_strapless"
+
+- type: loadout
+  id: LPBraBinderLightpurple
+  equipment:
+    breast: LPPBraBinderLightpurple
+  groupBy: "binder"
+
+- type: loadout
+  id: LPBraBinderStraplessLightpurple
+  equipment:
+    breast: LPPBraBinderStraplessLightpurple
+  groupBy: "binder_strapless"
+
+- type: loadout
+  id: LPBraBinderMaroon
+  equipment:
+    breast: LPPBraBinderMaroon
+  groupBy: "binder"
+
+- type: loadout
+  id: LPBraBinderStraplessMaroon
+  equipment:
+    breast: LPPBraBinderStraplessMaroon
+  groupBy: "binder_strapless"
+
+- type: loadout
+  id: LPBraBinderOrange
+  equipment:
+    breast: LPPBraBinderOrange
+  groupBy: "binder"
+
+- type: loadout
+  id: LPBraBinderStraplessOrange
+  equipment:
+    breast: LPPBraBinderStraplessOrange
+  groupBy: "binder_strapless"
+
+- type: loadout
+  id: LPBraBinderRed
+  equipment:
+    breast: LPPBraBinderRed
+  groupBy: "binder"
+
+- type: loadout
+  id: LPBraBinderStraplessRed
+  equipment:
+    breast: LPPBraBinderStraplessRed
+  groupBy: "binder_strapless"
+
+- type: loadout
+  id: LPBraBinderTeal
+  equipment:
+    breast: LPPBraBinderTeal
+  groupBy: "binder"
+
+- type: loadout
+  id: LPBraBinderStraplessTeal
+  equipment:
+    breast: LPPBraBinderStraplessTeal
+  groupBy: "binder_strapless"
+
+- type: loadout
+  id: LPBraBinderWhite
+  equipment:
+    breast: LPPBraBinderWhite
+  groupBy: "binder"
+
+- type: loadout
+  id: LPBraBinderStraplessWhite
+  equipment:
+    breast: LPPBraBinderStraplessWhite
+  groupBy: "binder_strapless"
+
+- type: loadout
+  id: LPBraBinderYellow
+  equipment:
+    breast: LPPBraBinderYellow
+  groupBy: "binder"
+
+- type: loadout
+  id: LPBraBinderStraplessYellow
+  equipment:
+    breast: LPPBraBinderStraplessYellow
+  groupBy: "binder_strapless"

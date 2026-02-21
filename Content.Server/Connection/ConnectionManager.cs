@@ -68,7 +68,6 @@ namespace Content.Server.Connection
         [Dependency] private readonly IHttpClientHolder _http = default!;
         [Dependency] private readonly IAdminManager _adminManager = default!;
         [Dependency] private readonly IEntityManager _entityManager = default!;
-        private ISharedSponsorsManager? _sponsorsMgr; // Corvax-Sponsors
 
         private GameTicker? _ticker;
 
@@ -313,8 +312,16 @@ namespace Content.Server.Connection
             }
 
             // Corvax-Queue-Start
-            var isQueueEnabled = IoCManager.Instance!.TryResolveType<IServerJoinQueueManager>(out var mgr) && mgr.IsEnabled;
-            if ((softPlayerCount >= _cfg.GetCVar(CCVars.SoftMaxPlayers) && !adminBypass) && !wasInGame && !isQueueEnabled)
+            var isQueueEnabled =
+#if LP
+            _cfg.GetCVar(Content.Server._NC.CCCvars.CCCVars.QueueEnabled); //LP edit start
+#else
+            false;
+#endif
+            var isprivileger = await HavePrivilegedJoin(userId);
+            if (isQueueEnabled || isprivileger)
+                return null;    //LP edit end
+            else if (softPlayerCount >= _cfg.GetCVar(CCVars.SoftMaxPlayers) && !adminBypass && !wasInGame)
             // Corvax-Queue-End
             {
                 return (ConnectionDenyReason.Full, Loc.GetString("soft-player-cap-full"), null);
@@ -395,7 +402,7 @@ namespace Content.Server.Connection
             var havePriority = false;
 #if LP
             if (IoCManager.Resolve<SponsorsManager>().TryGetInfo(userId, out var sponsorInfo))
-                havePriority = sponsorInfo.HavePriorityJoin;
+                havePriority = sponsorInfo.Tier > 1;
 #endif
             //LP edit end
 

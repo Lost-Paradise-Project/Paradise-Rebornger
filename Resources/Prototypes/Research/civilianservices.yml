@@ -24,6 +24,8 @@
     - MassMediaCircuitboard
     - JukeboxCircuitBoard
   position: 2, 30
+  radioChannels:
+  - Service
 
 - type: technology
   id: Hydroponics
@@ -41,6 +43,8 @@
   position: 0, 31
   technologyPrerequisites:
   - AdvancedEntertainment
+  radioChannels:
+  - Service
 
 - type: technology
   id: CritterMechs
@@ -65,6 +69,8 @@
   technologyPrerequisites:
   - AdvancedEntertainment
   - RipleyAPLU
+  radioChannels:
+  - Service
 
 - type: technology
   id: AudioVisualCommunication
@@ -87,6 +93,8 @@
   position: 4, 31
   technologyPrerequisites:
   - AdvancedEntertainment
+  radioChannels:
+  - Service
 
 - type: technology
   id: MeatManipulation
@@ -104,6 +112,8 @@
   position: 0, 32
   technologyPrerequisites:
   - Hydroponics
+  radioChannels:
+  - Service
 
 - type: technology
   id: HONKMech
@@ -127,6 +137,8 @@
   position: 6, 31
   technologyPrerequisites:
   - RipleyAPLU
+  radioChannels:
+  - Service
 
 # Tier 2
 
@@ -154,6 +166,8 @@
   position: 4, 32
   technologyPrerequisites:
   - AudioVisualCommunication
+  radioChannels:
+  - Service
 
 - type: technology
   id: BiochemicalStasis
@@ -170,6 +184,8 @@
   - CryostasisBeaker
   - SyringeCryostasis
   position: 8, 30
+  radioChannels:
+  - Service
 
 - type: technology
   id: MechanizedTreatment
@@ -187,6 +203,8 @@
   technologyPrerequisites:
   - AdvancedEntertainment
   - BasicRobotics
+  radioChannels:
+  - Service
 
 - type: technology
   id: AdvancedCleaning
@@ -205,6 +223,8 @@
   technologyPrerequisites:
   - AdvancedEntertainment
   - BasicRobotics
+  radioChannels:
+  - Service
 
 - type: technology
   id: PushHorn
@@ -221,6 +241,8 @@
   position: 2, 33
   technologyPrerequisites:
   - CritterMechs
+  radioChannels:
+  - Service
 
 - type: technology
   id: BluespaceCargoTransport
@@ -237,6 +259,8 @@
   technologyPrerequisites:
   - MeatManipulation
   - FauxAstroTiles
+  radioChannels:
+  - Service
 
 - type: technology
   id: AdvancedSpray
@@ -253,6 +277,8 @@
   position: 4, 34
   technologyPrerequisites:
   - AdvancedCleaning
+  radioChannels:
+  - Service
 
 # Tier 3
 
@@ -270,6 +296,8 @@
   position: 0, 34
   technologyPrerequisites:
   - BluespaceCargoTransport
+  radioChannels:
+  - Service
 
 - type: technology
   id: BluespaceChemistry
@@ -286,6 +314,8 @@
   position: 8, 31
   technologyPrerequisites:
   - BiochemicalStasis
+  radioChannels:
+  - Service
 
 - type: technology
   id: LauncherSyringe
@@ -302,3 +332,5 @@
   position: 8, 32
   technologyPrerequisites:
   - BluespaceChemistry
+  radioChannels:
+  - Service

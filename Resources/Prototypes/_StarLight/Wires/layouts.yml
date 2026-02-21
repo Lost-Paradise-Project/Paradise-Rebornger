@@ -1,0 +1,11 @@
+- type: wireLayout
+  id: Locker
+  wires:
+  - !type:PowerWireAction
+  - !type:PowerWireAction
+    pulseTimeout: 15
+  - !type:AccessWireAction
+    electrify: true
+  - !type:AiInteractWireAction
+  - !type:LogWireAction
+  dummyWires: 1

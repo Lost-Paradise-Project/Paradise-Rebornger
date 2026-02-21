@@ -1,0 +1,65 @@
+- type: loadout
+  id: LPClothingUnderPantyhoseBlack
+  equipment:
+    socks: LPPClothingUnderPantyhoseBlack
+  groupBy: "pantyhose"
+
+- type: loadout
+  id: LPClothingUnderPantyhoseBlue
+  equipment:
+    socks: LPPClothingUnderPantyhoseBlue
+  groupBy: "pantyhose"
+
+- type: loadout
+  id: LPClothingUnderPantyhoseBrown
+  equipment:
+    socks: LPPClothingUnderPantyhoseBrown
+  groupBy: "pantyhose"
+
+- type: loadout
+  id: LPClothingUnderPantyhoseGreen
+  equipment:
+    socks: LPPClothingUnderPantyhoseGreen
+  groupBy: "pantyhose"
+
+- type: loadout
+  id: LPClothingUnderPantyhoseGrey
+  equipment:
+    socks: LPPClothingUnderPantyhoseGrey
+  groupBy: "pantyhose"
+
+- type: loadout
+  id: LPClothingUnderPantyhoseLightpurple
+  equipment:
+    socks: LPPClothingUnderPantyhoseLightpurple
+  groupBy: "pantyhose"
+
+- type: loadout
+  id: LPClothingUnderPantyhoseMaroon
+  equipment:
+    socks: LPPClothingUnderPantyhoseMaroon
+  groupBy: "pantyhose"
+
+- type: loadout
+  id: LPClothingUnderPantyhoseOrange
+  equipment:
+    socks: LPPClothingUnderPantyhoseOrange
+  groupBy: "pantyhose"
+
+- type: loadout
+  id: LPClothingUnderPantyhoseRed
+  equipment:
+    socks: LPPClothingUnderPantyhoseRed
+  groupBy: "pantyhose"
+
+- type: loadout
+  id: LPClothingUnderPantyhoseTeal
+  equipment:
+    socks: LPPClothingUnderPantyhoseTeal
+  groupBy: "pantyhose"
+
+- type: loadout
+  id: LPClothingUnderPantyhoseYellow
+  equipment:
+    socks: LPPClothingUnderPantyhoseYellow
+  groupBy: "pantyhose"

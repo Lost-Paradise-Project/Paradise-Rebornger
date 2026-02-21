@@ -14,3 +14,11 @@
     Steel: 3000
     Glass: 1000
     Plastic: 500
+
+- type: latheRecipe
+  id: LPPBorgModuleSecurityCriminologist
+  result: LPPBorgModuleSecurityCriminologist
+  materials:
+    Steel: 2000
+    Glass: 800
+    Plastic: 800
