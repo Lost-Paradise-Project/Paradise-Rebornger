@@ -1,0 +1,11 @@
+dexalin-10u = дексалин 10у
+dylovene-10u = диловен 10у
+hyronalin-10u = хироналин 10у
+potassium-iodide-10u = иодид калия 10у
+iron-10u = ирон 10у
+copper-10u = медь 10у
+kelotane-10u = келотан 10у
+dermaline-10u = дермалин 10у
+tricordrazine-10u = трикордразин 10у
+bicaridine-10u = бикаридин 10у
+charcoal-10u = уголь 10у
