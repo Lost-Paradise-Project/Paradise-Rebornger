@@ -89,6 +89,14 @@ namespace Content.Server.Administration.Systems
         private int _maxAdditionalChars;
         private readonly Dictionary<NetUserId, DateTime> _activeConversations = new();
 
+        // AHelp config settings
+        private bool _useAdminOOCColorInBwoinks = false;
+        private bool _useDiscordRoleColor = false;
+        private bool _useDiscordRoleName = false;
+        private string _discordReplyPrefix = "(DC) ";
+        private string _adminBwoinkColor = "red";
+        private string _discordReplyColor = string.Empty;
+
         public override void Initialize()
         {
             base.Initialize();
@@ -100,6 +108,15 @@ namespace Content.Server.Administration.Systems
             Subs.CVar(_config, CCVars.DiscordAHelpAvatar, OnAvatarChanged, true);
             Subs.CVar(_config, CVars.GameHostName, OnServerNameChanged, true);
             Subs.CVar(_config, CCVars.AdminAhelpOverrideClientName, OnOverrideChanged, true);
+
+            // DV CVar subscriptions for AHelp
+            Subs.CVar(_config, DCCVars.UseAdminOOCColorInBwoinks, OnUseAdminOOCColorInBwoinksChanged, true);
+            Subs.CVar(_config, DCCVars.UseDiscordRoleColor, OnUseDiscordRoleColorChanged, true);
+            Subs.CVar(_config, DCCVars.UseDiscordRoleName, OnUseDiscordRoleNameChanged, true);
+            Subs.CVar(_config, DCCVars.DiscordReplyPrefix, OnDiscordReplyPrefixChanged, true);
+            Subs.CVar(_config, DCCVars.AdminBwoinkColor, OnAdminBwoinkColorChanged, true);
+            Subs.CVar(_config, DCCVars.DiscordReplyColor, OnDiscordReplyColorChanged, true);
+
             _sawmill = IoCManager.Resolve<ILogManager>().GetSawmill("AHELP");
 
             var defaultParams = new AHelpMessageParams(
@@ -159,6 +176,36 @@ namespace Content.Server.Administration.Systems
         private void OnOverrideChanged(string obj)
         {
             _overrideClientName = obj;
+        }
+
+        private void OnUseAdminOOCColorInBwoinksChanged(bool newValue)
+        {
+            _useAdminOOCColorInBwoinks = newValue;
+        }
+
+        private void OnUseDiscordRoleColorChanged(bool newValue)
+        {
+            _useDiscordRoleColor = newValue;
+        }
+
+        private void OnUseDiscordRoleNameChanged(bool newValue)
+        {
+            _useDiscordRoleName = newValue;
+        }
+
+        private void OnDiscordReplyPrefixChanged(string newValue)
+        {
+            _discordReplyPrefix = newValue;
+        }
+
+        private void OnAdminBwoinkColorChanged(string newValue)
+        {
+            _adminBwoinkColor = newValue;
+        }
+
+        private void OnDiscordReplyColorChanged(string newValue)
+        {
+            _discordReplyColor = newValue;
         }
 
         private async void OnPlayerStatusChanged(object? sender, SessionStatusEventArgs e)
@@ -743,7 +790,7 @@ namespace Content.Server.Administration.Systems
             _activeConversations[bwoinkParams.Message.UserId] = DateTime.Now;
 
             var escapedText = FormattedMessage.EscapeText(bwoinkParams.Message.Text);
-            var adminColor = _config.GetCVar(DCCVars.AdminBwoinkColor);
+            var adminColor = _adminBwoinkColor;
             var adminPrefix = "";
             var bwoinkText = $"{bwoinkParams.SenderName}";
             string sponsorColor = adminColor;   // LP edit
@@ -754,12 +801,12 @@ namespace Content.Server.Administration.Systems
                 if (bwoinkParams.SenderAdmin is not null && bwoinkParams.SenderAdmin.Title is not null)
                     adminPrefix = $"[bold]\\[{bwoinkParams.SenderAdmin.Title}\\][/bold] ";
 
-                if (_config.GetCVar(DCCVars.UseDiscordRoleName) && bwoinkParams.RoleName is not null)
+                if (_useDiscordRoleName && bwoinkParams.RoleName is not null)
                     adminPrefix = $"[bold]\\[{bwoinkParams.RoleName}\\][/bold] ";
             }
 
             if (!bwoinkParams.FromWebhook
-                && _config.GetCVar(DCCVars.UseAdminOOCColorInBwoinks)
+                && _useAdminOOCColorInBwoinks
                 && bwoinkParams.SenderAdmin is not null)
             {
                 var prefs = _preferencesManager.GetPreferences(bwoinkParams.SenderId);
@@ -780,10 +827,10 @@ namespace Content.Server.Administration.Systems
             //LP edit end
 
             // If role color is enabled and exists, use it, otherwise use the discord reply color
-            if (_config.GetCVar(DCCVars.DiscordReplyColor) != string.Empty && bwoinkParams.FromWebhook)
-                adminColor = _config.GetCVar(DCCVars.DiscordReplyColor);
+            if (_discordReplyColor != string.Empty && bwoinkParams.FromWebhook)
+                adminColor = _discordReplyColor;
 
-            if (_config.GetCVar(DCCVars.UseDiscordRoleColor) && bwoinkParams.RoleColor is not null)
+            if (_useDiscordRoleColor && bwoinkParams.RoleColor is not null)
                 adminColor = bwoinkParams.RoleColor;
 
             if (bwoinkParams.SenderAdmin is not null)
@@ -796,7 +843,7 @@ namespace Content.Server.Administration.Systems
             }
 
             if (bwoinkParams.FromWebhook)
-                bwoinkText = $"{_config.GetCVar(DCCVars.DiscordReplyPrefix)}{bwoinkText}";
+                bwoinkText = $"{_discordReplyPrefix}{bwoinkText}";
 
             bwoinkText = $"{(bwoinkParams.Message.AdminOnly ? Loc.GetString("bwoink-message-admin-only") : !bwoinkParams.Message.PlaySound ? Loc.GetString("bwoink-message-silent") : "")}{(bwoinkParams.FromWebhook ? Loc.GetString("bwoink-message-discord") : "")} {bwoinkText}: {escapedText}"; // LP edit
 
@@ -844,7 +891,7 @@ namespace Content.Server.Administration.Systems
                             overrideMsgText = $"{bwoinkParams.SenderName}"; // Not an admin, name is not overridden.
 
                         if (bwoinkParams.FromWebhook)
-                            overrideMsgText = $"{_config.GetCVar(DCCVars.DiscordReplyPrefix)}{overrideMsgText}";
+                            overrideMsgText = $"{_discordReplyPrefix}{overrideMsgText}";
 
                         overrideMsgText = $"{(bwoinkParams.Message.PlaySound ? "" : "(S) ")}{overrideMsgText}: {escapedText}";
 
