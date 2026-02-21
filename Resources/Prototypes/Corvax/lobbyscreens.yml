@@ -286,11 +286,11 @@
   title: lobby-state-background-silly-title
   artist: lobby-state-background-silly-artist
 
-- type: lobbyBackground
-  id: EchoTeam
-  background: /Textures/Corvax/LobbyScreens/echo-team.webp
-  title: lobby-state-background-echoteam-title
-  artist: lobby-state-background-echoteam-artist
+# - type: lobbyBackground
+#   id: EchoTeam
+#   background: /Textures/Corvax/LobbyScreens/echo-team.webp
+#   title: lobby-state-background-echoteam-title
+#   artist: lobby-state-background-echoteam-artist
 
 - type: lobbyBackground
   id: YouAreNotFunny

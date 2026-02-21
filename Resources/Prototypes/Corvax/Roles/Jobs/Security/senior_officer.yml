@@ -30,6 +30,12 @@
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
+#LP edit start
+  - !type:SpeciesRequirement
+      inverted: true
+      species:
+      - Diona
+#LP edit end
 
 - type: startingGear
   id: SeniorOfficerGear
