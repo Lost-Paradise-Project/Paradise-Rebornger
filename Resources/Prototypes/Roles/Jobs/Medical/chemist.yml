@@ -7,6 +7,10 @@
     - !type:DepartmentTimeRequirement
       department: Medical
       time: 5h
+    #LP edit start
+    - !type:AgeRequirement
+      requiredAge: 22
+    #LP edit end
   startingGear: ChemistGear
   icon: "JobIconChemist"
   supervisors: job-supervisors-cmo
