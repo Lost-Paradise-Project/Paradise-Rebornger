@@ -1,0 +1,14 @@
+- type: technology
+  id: LPPTechRPLD
+  name: research-technology-rpld
+  icon:
+    sprite: _StarLight/Objects/Tools/rpld.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - LPPRPLD
+  technologyPrerequisites:
+  - GravityManipulation
+  position: 1, 24
