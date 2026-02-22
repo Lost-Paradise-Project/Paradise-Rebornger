@@ -402,3 +402,14 @@ Entries:
   id: 5653
   time: '2026-02-22T16:16:24.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/87
+- author: MegaDaimond
+  changes:
+    - type: Add
+      message: Добавлены ограничения по возрасту для ролей
+    - type: Remove
+      message: Убраны сезонные задние фоны лобби
+    - type: Fix
+      message: Поправка ограничений по расам для инструктора СБ
+  id: 5654
+  time: '2026-02-22T16:12:50.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/84
