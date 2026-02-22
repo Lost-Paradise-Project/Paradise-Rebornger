@@ -1,35 +1,69 @@
+### Borman
 - type: lobbyBackground
   id: bigmoon
   background: /Textures/_LP/LobbyScreens/bigmoon.png
+  title: lobby-state-background-bigmoon-title
+  artist: lobby-state-background-bormann64-artist
 
 - type: lobbyBackground
   id: Borman
   background: /Textures/_LP/LobbyScreens/borman.png
+  title: lobby-state-background-borman-title
+  artist: lobby-state-background-bormann64-artist
 
-- type: lobbyBackground
-  id: Nukies
-  background: /Textures/_LP/LobbyScreens/breaddot_nukies.png
-
+### Kira_san
 - type: lobbyBackground
   id: Clara
   background: /Textures/_LP/LobbyScreens/clara.png
-
-- type: lobbyBackground
-  id: Darkmoon
-  background: /Textures/_LP/LobbyScreens/darkmoon.png
-
-- type: lobbyBackground
-  id: Girls
-  background: /Textures/_LP/LobbyScreens/girls.png
+  title: lobby-state-background-clara-title
+  artist: lobby-state-background-the_kira_san-artist
 
 - type: lobbyBackground
   id: Kirashet
   background: /Textures/_LP/LobbyScreens/kirashet.png
+  title: lobby-state-background-kirashet-title
+  artist: lobby-state-background-the_kira_san-artist
+
+### Rewokin / Reworkin
+- type: lobbyBackground
+  id: Awareness
+  background: /Textures/_LP/LobbyScreens/awareness.png
+  title: lobby-state-background-awareness-title
+  artist: lobby-state-background-rewokin-artist
+
+- type: lobbyBackground
+  id: Armaturow
+  background: /Textures/_LP/LobbyScreens/armaturow.png
+  title: lobby-state-background-armaturow-title
+  artist: lobby-state-background-rewokin-artist
+
+# Another
+- type: lobbyBackground
+  id: Nukies
+  background: /Textures/_LP/LobbyScreens/breaddot_nukies.png
+  title: lobby-state-background-breaddot_nukies-title
+  artist: lobby-state-background-cum_inflation-artist
+
+- type: lobbyBackground
+  id: Darkmoon
+  background: /Textures/_LP/LobbyScreens/darkmoon.png
+  title: lobby-state-background-darkmoon-title
+  artist: lobby-state-background-darkmoonmilkyway-artist
+
+- type: lobbyBackground
+  id: Girls
+  background: /Textures/_LP/LobbyScreens/girls.png
+  title: lobby-state-background-girls-title
+  artist: lobby-state-background-canceredpussy-artist
 
 - type: lobbyBackground
   id: OhShit
   background: /Textures/_LP/LobbyScreens/ohshit.png
+  title: lobby-state-background-ohshit-title
+  artist: lobby-state-background-tongandroch-artist
 
 - type: lobbyBackground
   id: Teftelka
   background: /Textures/_LP/LobbyScreens/teftelka.png
+  title: lobby-state-background-teftelka-title
+  artist: lobby-state-background-push1nkaa-artist
