@@ -372,3 +372,10 @@ Entries:
   id: 5649
   time: '2026-02-20T14:00:17.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/78
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлена система жидкостей в трубах!
+  id: 5650
+  time: '2026-02-22T08:14:45.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/75
