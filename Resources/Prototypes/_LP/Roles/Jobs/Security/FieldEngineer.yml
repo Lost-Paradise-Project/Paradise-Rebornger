@@ -10,6 +10,8 @@
     - !type:DepartmentTimeRequirement
       department: Engineering
       time: 5h
+    - !type:AgeRequirement
+      requiredAge: 22
     - !type:TraitsRequirement
       inverted: true
       traits:
