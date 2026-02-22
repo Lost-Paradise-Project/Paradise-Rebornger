@@ -5,3 +5,11 @@
   materials:
     Plastic: 500
     Glass: 300
+
+- type: latheRecipe
+  id: LPPSecMedHud
+  result: LPPClothingEyesHudSecMed
+  completetime: 10
+  materials:
+    Plastic: 500
+    Glass: 300
