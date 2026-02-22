@@ -24,10 +24,10 @@ public sealed partial class ProfilePreviewSpriteView
     private void ReloadHumanoidEntity(HumanoidCharacterProfile humanoid)
     {
         if (!EntMan.EntityExists(PreviewDummy) ||
-            !EntMan.HasComponent<VisualBodyComponent>(PreviewDummy))
+            !EntMan.HasComponent<HumanoidProfileComponent>(PreviewDummy)) // LP edit
             return;
 
-        EntMan.System<SharedVisualBodySystem>().ApplyProfileTo(PreviewDummy, humanoid);
+        EntMan.System<HumanoidProfileSystem>().ApplyProfileTo(PreviewDummy, humanoid); // LP edit
     }
 
     /// <summary>
@@ -52,7 +52,7 @@ public sealed partial class ProfilePreviewSpriteView
         {
             var dummy = _prototypeManager.Index(humanoid.Species).DollPrototype;
             PreviewDummy = EntMan.SpawnEntity(dummy, MapCoordinates.Nullspace);
-            EntMan.System<SharedVisualBodySystem>().ApplyProfileTo(PreviewDummy, humanoid);
+            EntMan.System<HumanoidProfileSystem>().ApplyProfileTo(PreviewDummy, humanoid); // LP edit
         }
         else
         {

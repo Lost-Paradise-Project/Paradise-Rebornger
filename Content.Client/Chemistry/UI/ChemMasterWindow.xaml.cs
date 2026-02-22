@@ -288,7 +288,7 @@ namespace Content.Client.Chemistry.UI
             bufferHBox.AddChild(bufferLabel);
             var bufferVol = new Label
             {
-                Text = $"{state.BufferCurrentVolume}u",
+                Text = $"{state.BufferCurrentVolume}ед.", // LP edit
                 StyleClasses = { StyleClass.LabelWeak }
             };
             bufferHBox.AddChild(bufferVol);
@@ -412,7 +412,7 @@ namespace Content.Client.Chemistry.UI
                     new Label { Text = $"{name}: " },
                     new Label
                     {
-                        Text = $"{quantity}u",
+                        Text = $"{quantity}ед.", // LP edit
                         StyleClasses = { StyleClass.LabelWeak }
                     },
 
@@ -454,7 +454,7 @@ namespace Content.Client.Chemistry.UI
 
         private void SetBufferText(FixedPoint2? volume, string text)
         {
-            BufferCurrentVolume.Text = $" {volume ?? FixedPoint2.Zero}u";
+            BufferCurrentVolume.Text = $" {volume ?? FixedPoint2.Zero}ед."; // LP edit
             DrawSource.Text = Loc.GetString(text);
         }
     }

@@ -14,21 +14,21 @@
       shader: unshaded
       map: ["enum.PowerDeviceVisualLayers.Powered"]
     - state: running
-      map: ["enum.InjectorFabticatorVisuals.IsRunning"]
+      map: ["enum.InjectorFabricatorVisuals.IsRunning"]
       visible: false
     snapCardinals: true
-  - type: InjectorFabticator
+  - type: InjectorFabricator
     injector: StimpackEmpty
   - type: WiresPanel
   - type: Appearance
   - type: ActivatableUI
     singleUser: true
-    key: enum.InjectorFabticatorUiKey.Key
+    key: enum.InjectorFabricatorUiKey.Key
   - type: ActivatableUIRequiresPower
   - type: UserInterface
     interfaces:
-      enum.InjectorFabticatorUiKey.Key:
-        type: InjectorFabticatorBoundUserInterface
+      enum.InjectorFabricatorUiKey.Key:
+        type: InjectorFabricatorBoundUserInterface
       enum.WiresUiKey.Key:
         type: WiresBoundUserInterface
   - type: ApcPowerReceiver
@@ -45,6 +45,11 @@
       machine_board: !type:Container
       machine_parts: !type:Container
   - type: ItemSlots
+    slots:
+      beakerSlot:
+        whitelist:
+          components:
+          - FitsInDispenser
   - type: AmbientSound
     range: 5
     enabled: false
