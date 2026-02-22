@@ -15,7 +15,15 @@
       time: 6h
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 20h # LP edit
+#LP edit start
+      time: 20h
+    - !type:SpeciesRequirement
+      inverted: true
+      species:
+      - Diona
+    - !type:AgeRequirement
+      requiredAge: 24
+#LP edit end
   weight: 9
   startingGear: SeniorOfficerGear
   icon: "JobIconSeniorOfficer"
