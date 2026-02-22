@@ -766,6 +766,8 @@
   - type: ItemBorgModule
     hands:
     - item: RCDRecharging
+    - item: RPDRecharging # Starlight: RPD
+    - item: RPLDRecharging # Starlight: RPLD
     - item: BorgFireExtinguisher
     - item: BorgHandheldGPSBasic
     - item: GasAnalyzer

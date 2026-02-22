@@ -1,4 +1,4 @@
-﻿# Currently unused on Floof, port from Vulpstation. Serves as an example.
+# Currently unused on Floof, port from Vulpstation. Serves as an example.
 # Features more dangerous weathers due to the abundance of shelter
 - type: weatherCycle
   id: Harsh
@@ -258,5 +258,3 @@
         alert: Toxins
         ignoreNpcs: true
         ignoreInternalBreathers: true
-
-

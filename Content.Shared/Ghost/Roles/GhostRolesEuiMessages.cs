@@ -16,7 +16,7 @@ namespace Content.Shared.Ghost.Roles
         /// <summary>
         /// A list of all antag and job prototype IDs of the ghost role and its mind role(s).
         /// </summary>
-        public (List<ProtoId<JobPrototype>>?,List<ProtoId<AntagPrototype>>?)  RolePrototypes;
+        public (List<ProtoId<JobPrototype>>?, List<ProtoId<AntagPrototype>>?) RolePrototypes;
 
         /// <inheritdoc cref="GhostRoleKind"/>
         public GhostRoleKind Kind { get; set; }

@@ -1,0 +1,1 @@
+research-technology-borg-module-security = Модули СБ боргов

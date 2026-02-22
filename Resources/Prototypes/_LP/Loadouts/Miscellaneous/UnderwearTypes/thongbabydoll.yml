@@ -1,0 +1,71 @@
+- type: loadout
+  id: LPThongBabydoll
+  equipment:
+    underwear: LPPThongBabydoll
+  groupBy: "thongbabydoll"
+
+- type: loadout
+  id: LPThongBabydollBlack
+  equipment:
+    underwear: LPPThongBabydollBlack
+  groupBy: "thongbabydoll"
+
+- type: loadout
+  id: LPThongBabydollBlue
+  equipment:
+    underwear: LPPThongBabydollBlue
+  groupBy: "thongbabydoll"
+
+- type: loadout
+  id: LPThongBabydollBrown
+  equipment:
+    underwear: LPPThongBabydollBrown
+  groupBy: "thongbabydoll"
+
+- type: loadout
+  id: LPThongBabydollGreen
+  equipment:
+    underwear: LPPThongBabydollGreen
+  groupBy: "thongbabydoll"
+
+- type: loadout
+  id: LPThongBabydollGrey
+  equipment:
+    underwear: LPPThongBabydollGrey
+  groupBy: "thongbabydoll"
+
+- type: loadout
+  id: LPThongBabydollLightpurple
+  equipment:
+    underwear: LPPThongBabydollLightpurple
+  groupBy: "thongbabydoll"
+
+- type: loadout
+  id: LPThongBabydollMaroon
+  equipment:
+    underwear: LPPThongBabydollMaroon
+  groupBy: "thongbabydoll"
+
+- type: loadout
+  id: LPThongBabydollOrange
+  equipment:
+    underwear: LPPThongBabydollOrange
+  groupBy: "thongbabydoll"
+
+- type: loadout
+  id: LPThongBabydollRed
+  equipment:
+    underwear: LPPThongBabydollRed
+  groupBy: "thongbabydoll"
+
+- type: loadout
+  id: LPThongBabydollTeal
+  equipment:
+    underwear: LPPThongBabydollTeal
+  groupBy: "thongbabydoll"
+
+- type: loadout
+  id: LPThongBabydollYellow
+  equipment:
+    underwear: LPPThongBabydollYellow
+  groupBy: "thongbabydoll"

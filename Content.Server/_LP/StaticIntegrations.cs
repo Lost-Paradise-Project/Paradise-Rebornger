@@ -1,4 +1,5 @@
 using Robust.Shared.Network;
+using Content.Shared.Humanoid;
 using Content.Shared.Mind;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Player;
@@ -59,9 +60,12 @@ public static class SponsorSimpleManager
             var sponsorTier = sponsorInfo.Tier;
             if (sponsorTier >= 3)
             {
-                var sponsormarks = IoCManager.Resolve<MarkingManager>().Markings.Select((a, _) => a.Value).Where(a => a.SponsorOnly == true).Select((a, _) => a.ID).ToList();
-                sponsormarks.AddRange(sponsorInfo.AllowedMarkings.AsEnumerable());
-                marks.AddRange(sponsormarks);
+                foreach (var layer in Enum.GetValues<HumanoidVisualLayers>())
+                {
+                    var sponsormarks = IoCManager.Resolve<MarkingManager>().MarkingsByLayer(layer).Select((a, _) => a.Value).Where(a => a.SponsorOnly == true).Select((a, _) => a.ID).ToList();
+                    sponsormarks.AddRange(sponsorInfo.AllowedMarkings.AsEnumerable());
+                    marks.AddRange(sponsormarks);
+                }
             }
         }
 #endif

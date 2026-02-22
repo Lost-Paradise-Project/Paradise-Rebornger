@@ -1,4 +1,4 @@
-﻿# Generally cold, but not overly cold weather for winter maps
+# Generally cold, but not overly cold weather for winter maps
 - type: weatherCycle
   id: Winter
   weathers:
@@ -205,5 +205,3 @@
         maxRefilled: 25
         amount: 2
         reagent: Ash
-
-

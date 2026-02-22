@@ -1,0 +1,16 @@
+ent-ActionStationAiOpenShop = Выбрать программы
+    .desc = Позволяет установить программы для использования
+ent-ActionStationAiRgbLighting = RGB Подсветка
+    .desc = Меняет цвет лампочки на переливающийся RGB
+ent-ActionStationAiLightSynthesizer = Синтезатор ламп
+    .desc = Отправьте нанитов для замены лампочки
+ent-ActionStationAiBikeHorn = ХОНК.mp3
+    .desc = Проиграйте прекрасный звук из голо-пада
+ent-ActionStationAiHoloPointer = Голо указатель
+    .desc = Пометьте зону голограммой, которая видна людям
+ent-StationAiHolopointer = Голо указатель
+    .desc = Голограмма который ИИ указывает тебе на что-то.
+ent-ActionStationAiRepairNanites = Наниты ремонтники
+    .desc = Отправьте нанитов для починки борга
+ent-ActionStationAiEmergencySealant = Аварийный герметик
+    .desc = Выпустите металическую пену для срочного заделывания брешей

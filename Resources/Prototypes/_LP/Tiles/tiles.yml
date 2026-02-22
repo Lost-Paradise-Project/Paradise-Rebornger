@@ -1,0 +1,101 @@
+- type: tile
+  id: LPPKitchenSmall
+  name: kitchen-small
+  sprite: /Textures/_LP/Tiles/kitchen/kitchen_small.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemBar
+  heatCapacity: 10000
+
+- type: tile
+  id: LPPFloorDarkMiniS
+  name: tiles-dark-floor-mini
+  sprite: /Textures/_LP/Tiles/dark-s/dark_mini.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: LPPFloorTileItemDarkMiniS
+  heatCapacity: 10000
+
+- type: tile
+  id: LPPFloorDarkMonoS
+  name: tiles-dark-floor-mono
+  sprite: /Textures/_LP/Tiles/dark-s/dark_mono.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: LPPFloorTileItemDarkMonoS
+  heatCapacity: 10000
+
+- type: tile
+  id: LPPFloorDarkPavementS
+  name: tiles-dark-floor-pavement
+  sprite: /Textures/_LP/Tiles/dark-s/dark_pavement.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: LPPFloorTileItemDarkPavementS
+  heatCapacity: 10000
+
+- type: tile
+  id: LPPFloorSteelS
+  name: tiles-steel-floor
+  sprite: /Textures/_LP/Tiles/steel-s/steel.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: LPPFloorTileItemSteelS
+  heatCapacity: 10000
+
+- type: tile
+  id: LPPFloorWhiteS
+  name: tiles-white-floor
+  sprite: /Textures/_LP/Tiles/white-s/white.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: LPPFloorTileItemWhiteS
+  heatCapacity: 10000

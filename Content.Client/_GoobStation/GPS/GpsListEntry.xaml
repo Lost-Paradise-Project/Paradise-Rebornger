@@ -1,4 +1,4 @@
-﻿<Button xmlns="https://spacestation14.io"
+<Button xmlns="https://spacestation14.io"
         MinHeight="30" >
     <BoxContainer Orientation="Horizontal" Margin="5 0">
         <TextureRect Name="EntryIcon"

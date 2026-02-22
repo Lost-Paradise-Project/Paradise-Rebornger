@@ -8,6 +8,13 @@
     snap:
     - Disposal
   components:
+  # Starlight Start: RPD
+  - type: RCDDeconstructable
+    cost: 1
+    delay: 2
+    fx: EffectRCDDeconstruct8
+    rpd: true
+  # Starlight End
   - type: Climbable
     vaultable: false
   - type: Sprite

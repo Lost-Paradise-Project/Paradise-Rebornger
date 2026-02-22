@@ -1,10 +1,8 @@
 using System.Threading.Tasks;
 using Content.Server.Discord.DiscordLink;
-using Content.Server.Paper;
 using Content.Shared._DEN.CCVar;
 using Content.Shared._DEN.Fax;
 using Content.Shared.CCVar;
-using Content.Shared.Paper;
 using Robust.Shared.Configuration;
 using Robust.Shared.Utility;
 
@@ -20,7 +18,6 @@ public sealed class FaxLoggingSystem : EntitySystem
     [Dependency] private readonly DiscordLink _discordLink = default!;
     [Dependency] private readonly IConfigurationManager _cfg = default!;
     [Dependency] private readonly ILogManager _log = default!;
-    [Dependency] private readonly PaperSystem _paperSystem = default!;
 
     private ISawmill _sawmill = default!;
     private string? _discordFaxChannelId;

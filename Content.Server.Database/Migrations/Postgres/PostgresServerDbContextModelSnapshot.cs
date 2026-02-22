@@ -992,6 +992,10 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("timestamp with time zone")
                         .HasColumnName("last_read_rules");
 
+                    b.Property<TimeSpan?>("LastRolledAntag")
+                        .HasColumnType("interval")
+                        .HasColumnName("last_rolled_antag");
+
                     b.Property<IPAddress>("LastSeenAddress")
                         .IsRequired()
                         .HasColumnType("inet")
@@ -1091,11 +1095,6 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("text")
                         .HasColumnName("char_name");
 
-                    b.Property<string>("ErpStatus")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("erp_status");
-
                     b.Property<string>("EyeColor")
                         .IsRequired()
                         .HasColumnType("text")
@@ -1138,6 +1137,10 @@ namespace Content.Server.Database.Migrations.Postgres
                     b.Property<JsonDocument>("Markings")
                         .HasColumnType("jsonb")
                         .HasColumnName("markings");
+
+                    b.Property<JsonDocument>("OrganMarkings")
+                        .HasColumnType("jsonb")
+                        .HasColumnName("organ_markings");
 
                     b.Property<int>("PreferenceId")
                         .HasColumnType("integer")

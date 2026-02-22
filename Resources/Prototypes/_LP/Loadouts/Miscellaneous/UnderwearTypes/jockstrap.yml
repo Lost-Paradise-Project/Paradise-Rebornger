@@ -1,0 +1,71 @@
+- type: loadout
+  id: LPJockstrap
+  equipment:
+    underwear: LPPJockstrap
+  groupBy: "jockstrap"
+
+- type: loadout
+  id: LPJockstrapBlack
+  equipment:
+    underwear: LPPJockstrapBlack
+  groupBy: "jockstrap"
+
+- type: loadout
+  id: LPJockstrapBlue
+  equipment:
+    underwear: LPPJockstrapBlue
+  groupBy: "jockstrap"
+
+- type: loadout
+  id: LPJockstrapBrown
+  equipment:
+    underwear: LPPJockstrapBrown
+  groupBy: "jockstrap"
+
+- type: loadout
+  id: LPJockstrapGreen
+  equipment:
+    underwear: LPPJockstrapGreen
+  groupBy: "jockstrap"
+
+- type: loadout
+  id: LPJockstrapGrey
+  equipment:
+    underwear: LPPJockstrapGrey
+  groupBy: "jockstrap"
+
+- type: loadout
+  id: LPJockstrapLightpurple
+  equipment:
+    underwear: LPPJockstrapLightpurple
+  groupBy: "jockstrap"
+
+- type: loadout
+  id: LPJockstrapMaroon
+  equipment:
+    underwear: LPPJockstrapMaroon
+  groupBy: "jockstrap"
+
+- type: loadout
+  id: LPJockstrapOrange
+  equipment:
+    underwear: LPPJockstrapOrange
+  groupBy: "jockstrap"
+
+- type: loadout
+  id: LPJockstrapRed
+  equipment:
+    underwear: LPPJockstrapRed
+  groupBy: "jockstrap"
+
+- type: loadout
+  id: LPJockstrapTeal
+  equipment:
+    underwear: LPPJockstrapTeal
+  groupBy: "jockstrap"
+
+- type: loadout
+  id: LPJockstrapYellow
+  equipment:
+    underwear: LPPJockstrapYellow
+  groupBy: "jockstrap"

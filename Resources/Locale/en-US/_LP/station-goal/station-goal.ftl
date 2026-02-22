@@ -133,7 +133,6 @@ station-goal-test-range-prep =
     При оценке выполнения цели учитывается скорость изменения параметров атмосферы.
     
     { station-goal-end }
-
 station-goal-maintenance-salvage =
     { station-goal-start }[bold]
     

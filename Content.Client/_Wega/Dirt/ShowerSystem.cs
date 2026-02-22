@@ -1,4 +1,4 @@
-﻿using Content.Shared._Wega.Dirt.Components;
+using Content.Shared._Wega.Dirt.Components;
 using Robust.Client.GameObjects;
 
 namespace Content.Client._Wega.Dirt

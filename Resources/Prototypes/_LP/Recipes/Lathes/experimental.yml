@@ -1,0 +1,7 @@
+- type: latheRecipe
+  id: LPPRPLD
+  result: RPLD
+  materials:
+    Steel: 3000
+    Glass: 1000
+    Plastic: 500

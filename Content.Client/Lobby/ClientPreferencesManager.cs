@@ -46,7 +46,7 @@ namespace Content.Client.Lobby
             }
         }
 
-        public void SelectCharacter(ICharacterProfile profile)
+        public void SelectCharacter(HumanoidCharacterProfile profile)
         {
             SelectCharacter(Preferences.IndexOfCharacter(profile));
         }
@@ -61,14 +61,14 @@ namespace Content.Client.Lobby
             _netManager.ClientSendMessage(msg);
         }
 
-        public void UpdateCharacter(ICharacterProfile profile, int slot)
+        public void UpdateCharacter(HumanoidCharacterProfile profile, int slot)
         {
             var collection = IoCManager.Instance!;
             // Corvax-Sponsors-Start
             var sponsorPrototypes = SponsorSimpleManager.GetMarkings().ToArray();    //LP edit только маркинги
             profile.EnsureValid(_playerManager.LocalSession!, collection, sponsorPrototypes, SponsorSimpleManager.GetTier(), SponsorSimpleManager.GetUUID());   //LP edit
             // Corvax-Sponsors-End
-            var characters = new Dictionary<int, ICharacterProfile>(Preferences.Characters) { [slot] = profile };
+            var characters = new Dictionary<int, HumanoidCharacterProfile>(Preferences.Characters) { [slot] = profile };
             Preferences = Preferences.WithCharacters(characters); //WWDP edit
             var msg = new MsgUpdateCharacter
             {
@@ -78,9 +78,9 @@ namespace Content.Client.Lobby
             _netManager.ClientSendMessage(msg);
         }
 
-        public void CreateCharacter(ICharacterProfile profile)
+        public void CreateCharacter(HumanoidCharacterProfile profile)
         {
-            var characters = new Dictionary<int, ICharacterProfile>(Preferences.Characters);
+            var characters = new Dictionary<int, HumanoidCharacterProfile>(Preferences.Characters);
             var lowest = Enumerable.Range(0, Settings.MaxCharacterSlots + SponsorSimpleManager.GetMaxCharacterSlots())
                 .Except(characters.Keys)
                 .FirstOrNull();
@@ -97,7 +97,7 @@ namespace Content.Client.Lobby
             UpdateCharacter(profile, l);
         }
 
-        public void DeleteCharacter(ICharacterProfile profile)
+        public void DeleteCharacter(HumanoidCharacterProfile profile)
         {
             DeleteCharacter(Preferences.IndexOfCharacter(profile));
         }

@@ -339,13 +339,13 @@ namespace Content.Server.Database
         public string FlavorText { get; set; } = null!;
         public int Age { get; set; }
         public string Sex { get; set; } = null!;
-        public string ErpStatus { get; set; } = null!; // LP edit
         public string Gender { get; set; } = null!;
         public string Species { get; set; } = null!;
         public string Voice { get; set; } = null!; // Corvax-TTS
         public float Height { get; set; } = 1f; // Goobstation: port EE height/width sliders
         public float Width { get; set; } = 1f; // Goobstation: port EE height/width sliders
         public string BarkVoice { get; set; } = null!; // Goob Station - Barks
+        [Column(TypeName = "jsonb")] public JsonDocument? OrganMarkings { get; set; } = null!;
         [Column(TypeName = "jsonb")] public JsonDocument? Markings { get; set; } = null!;
         public string HairName { get; set; } = null!;
         public string HairColor { get; set; } = null!;
@@ -517,6 +517,8 @@ namespace Content.Server.Database
         // Data that changes with each round
         public List<Round> Rounds { get; set; } = null!;
         public List<AdminLogPlayer> AdminLogs { get; set; } = null!;
+
+        public TimeSpan? LastRolledAntag { get; set; } // Goobstation
 
         public DateTime? LastReadRules { get; set; }
 

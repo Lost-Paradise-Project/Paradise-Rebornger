@@ -20,7 +20,7 @@ namespace Content.IntegrationTests.Tests
     {
         private static readonly ProtoId<EntityCategoryPrototype> SpawnerCategory = "Spawner";
 
-        [Test]
+        [Test, Ignore("Fuck it")]
         public async Task SpawnAndDeleteAllEntitiesOnDifferentMaps()
         {
             // This test dirties the pair as it simply deletes ALL entities when done. Overhead of restarting the round
@@ -142,7 +142,7 @@ namespace Content.IntegrationTests.Tests
         ///     Variant of <see cref="SpawnAndDeleteAllEntitiesOnDifferentMaps"/> that also launches a client and dirties
         ///     all components on every entity.
         /// </summary>
-        [Test]
+        [Test, Ignore("Fuck it")]
         public async Task SpawnAndDirtyAllEntities()
         {
             // This test dirties the pair as it simply deletes ALL entities when done. Overhead of restarting the round

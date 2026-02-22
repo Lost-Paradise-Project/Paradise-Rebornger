@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from cev-eris at https://github.com/discordia-space/CEV-Eris/raw/167a810bc8534a56c74ffa8f1373acd3b1ac70ee/icons/obj/guns/energy/xray.dmi, backpack sprite by peptide, backpack sling sprite edited by Boaz1111, wield sprites by RiceMar1244",
+  "copyright": "Taken from cev-eris at https://github.com/discordia-space/CEV-Eris/raw/167a810bc8534a56c74ffa8f1373acd3b1ac70ee/icons/obj/guns/energy/xray.dmi, heavily edited by DVD Player, back-pack and wield sprites by DVD Player",
   "size": {
     "x": 32,
     "y": 32
@@ -33,6 +33,9 @@
         },
         {
             "name": "mag-unshaded-4"
+        },
+		{
+            "name": "mag-unshaded-5"
         },
         {
             "name": "inhand-left",

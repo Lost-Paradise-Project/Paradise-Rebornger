@@ -187,7 +187,7 @@
       types:
         Blunt: 2
   - type: TTS # Corvax-TTS
-    voice: Meepo
+    voice: meepo_dota_2
 
 - type: entity
   parent: MrChips
@@ -197,7 +197,7 @@
   - type: Sprite
     sprite: Objects/Fun/mrdips.rsi
   - type: TTS # Corvax-TTS
-    voice: Zibb
+    voice: ernielark
 
 - type: entity
   parent: BaseItem

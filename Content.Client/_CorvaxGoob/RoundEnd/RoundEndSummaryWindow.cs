@@ -1,4 +1,4 @@
-﻿using Content.Client._CorvaxGoob.RoundEnd.PhotoAlbum;
+using Content.Client._CorvaxGoob.RoundEnd.PhotoAlbum;
 using Content.Client.Message;
 using Content.Client.Stylesheets;
 using Robust.Client.GameObjects;
@@ -92,7 +92,7 @@ public sealed partial class RoundEndSummaryWindow
 
                 var panel = new PanelContainer
                 {
-                    StyleClasses = { StyleNano.StyleClassBackgroundBaseDark },
+                    StyleClasses = { StyleClass.BackgroundPanelDark },
                 };
 
                 imageContainer.AddChild(textureRect);
@@ -115,7 +115,7 @@ public sealed partial class RoundEndSummaryWindow
 
             var stationAlbumAuthorHeaderPanel = new PanelContainer
             {
-                StyleClasses = { StyleNano.StyleClassBackgroundBaseDark },
+                StyleClasses = { StyleClass.BackgroundPanelDark },
                 SetSize = new Vector2(556, 30),
                 HorizontalAlignment = HAlignment.Left
             };

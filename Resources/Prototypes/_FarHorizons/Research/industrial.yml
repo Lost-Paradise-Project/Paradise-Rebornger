@@ -1,0 +1,65 @@
+# Nuclear power technologies - branch from PowerGeneration (position 2, 0 in Industrial)
+# NuclearPowerGeneration -> NuclearPowerRecycling
+
+- type: technology
+  id: NuclearPowerGeneration
+  name: research-technology-nuclear-power
+  icon:
+    sprite: _FarHorizons/Objects/Power/FissionGenerator/reactor_parts.rsi
+    state: default_rod
+  discipline: Industrial
+  prerequisiteLineType: Diagonal
+  tier: 1
+  cost: 7500
+  recipeUnlocks:
+  - NuclearFabricatorMachineCircuitboard
+  - NuclearReactorMonitorComputerCircuitboard
+  - GasTurbineMonitorComputerCircuitboard
+  - UraniumReactorFuelRod
+  - PlasmaReactorFuelRod
+  - UraniumGlassReactorFuelRod
+  - SilverReactorControlRod
+  - PlasteelReactorControlRod
+  - PlasmaGlassReactorControlRod
+  - SilverReactorGasChannel
+  - PlasteelReactorGasChannel
+  - PlasmaGlassReactorGasChannel
+  - SilverReactorHeatExchanger
+  - PlasteelReactorHeatExchanger
+  - PlasmaGlassReactorHeatExchanger
+  - BrassGasTurbineBlade
+  - SilverGasTurbineStator
+  - PlasteelGasTurbineBlade
+  technologyPrerequisites:
+  - PowerGeneration
+  position: 5, 1
+  radioChannels:
+  - Engineering
+
+- type: technology
+  id: NuclearPowerRecycling
+  name: research-technology-nuclear-recycling
+  icon:
+    sprite: _FarHorizons/Objects/Power/FissionGenerator/reactor_parts.rsi
+    state: nuclear_waste
+  discipline: Industrial
+  tier: 2
+  cost: 12500
+  recipeUnlocks:
+  - NuclearCentrifugeMachineCircuitboard
+  - PlutoniumReactorFuelRod
+  - BananiumReactorFuelRod
+  - GoldReactorControlRod
+  - DiamondReactorControlRod
+  - GoldReactorGasChannel
+  - DiamondReactorGasChannel
+  - GoldReactorHeatExchanger
+  - DiamondReactorHeatExchanger
+  - GoldGasTurbineStator
+  - GoldGasTurbineBlade
+  - DiamondGasTurbineBlade
+  technologyPrerequisites:
+  - NuclearPowerGeneration
+  position: 6, 2
+  radioChannels:
+  - Engineering

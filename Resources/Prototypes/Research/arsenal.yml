@@ -1,4 +1,11 @@
 # Tier 1
+# Tree layout: Two main branches from roots
+# Branch 1: SalvageWeapons -> NonlethalAmmunition -> AdvancedRiotControl -> ExplosiveTechnology
+#                                                           -> SpecialMeans -> DualWieldingTechnology
+#                    -> DraconicMunitions -> UraniumMunitions
+# Branch 2: WeaponizedLaserManipulation -> ConcentratedLaserWeaponry -> PortableMicrofusionWeaponry -> ThermalWeaponry
+#                                    -> WaveParticleHarnessing -> KineticModifications
+# Cross-discipline: BasicShuttleArmament (from Industrial Shuttlecraft) -> AdvancedShuttleWeapon
 
 - type: technology
   id: SalvageWeapons
@@ -12,7 +19,44 @@
   recipeUnlocks:
   - WeaponProtoKineticAccelerator
   - ShuttleGunKineticCircuitboard
-  # These are roundstart but not replenishable for salvage
+  position: 0, 10
+  radioChannels:
+  - Security
+
+- type: technology
+  id: WeaponizedLaserManipulation
+  name: research-technology-weaponized-laser-manipulation
+  icon:
+    sprite: Objects/Weapons/Guns/Battery/laser_gun.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 1
+  cost: 7500
+  recipeUnlocks:
+  - WeaponLaserCarbine
+  position: 4, 10
+  radioChannels:
+  - Security
+
+- type: technology
+  id: NonlethalAmmunition
+  name: research-technology-nonlethal-ammunition
+  icon:
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
+    state: beanbag
+  discipline: Arsenal
+  tier: 1
+  cost: 5000
+  recipeUnlocks:
+  - MagazineShotgunBeanbag
+  - BoxShellTranquilizer
+  - BoxBeanbag
+  - WeaponDisabler
+  position: 0, 11
+  technologyPrerequisites:
+  - SalvageWeapons
+  radioChannels:
+  - Security
 
 - type: technology
   id: DraconicMunitions
@@ -35,33 +79,65 @@
   - MagazineBoxMagnumIncendiary
   - MagazineBoxLightRifleIncendiary
   - MagazineBoxRifleIncendiary
+  position: 2, 11
+  technologyPrerequisites:
+  - SalvageWeapons
+  radioChannels:
+  - Security
 
 - type: technology
-  id: WeaponizedLaserManipulation
-  name: research-technology-weaponized-laser-manipulation
+  id: ConcentratedLaserWeaponry
+  name: research-technology-concentrated-laser-weaponry
   icon:
-    sprite: Objects/Weapons/Guns/Battery/laser_gun.rsi
+    sprite: Objects/Weapons/Guns/Battery/laser_cannon.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - WeaponLaserCannon
+  position: 4, 11
+  technologyPrerequisites:
+  - WeaponizedLaserManipulation
+  radioChannels:
+  - Security
+
+- type: technology
+  id: WaveParticleHarnessing
+  name: research-technology-wave-particle-harnessing
+  icon:
+    sprite: Objects/Weapons/Guns/Battery/xray.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - WeaponXrayCannon
+  position: 6, 11
+  technologyPrerequisites:
+  - WeaponizedLaserManipulation
+  radioChannels:
+  - Security
+
+- type: technology
+  id: AdvancedRiotControl
+  name: research-technology-advanced-riot-control
+  icon:
+    sprite: Objects/Weapons/Melee/truncheon.rsi
     state: icon
   discipline: Arsenal
   tier: 1
-  cost: 7500
+  cost: 8000
   recipeUnlocks:
-  - WeaponLaserCarbine
-
-- type: technology
-  id: NonlethalAmmunition
-  name: research-technology-nonlethal-ammunition
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/shotgun_shell.rsi
-    state: beanbag
-  discipline: Arsenal
-  tier: 1
-  cost: 5000
-  recipeUnlocks:
-  - MagazineShotgunBeanbag
-  - BoxShellTranquilizer
-  - BoxBeanbag
-  - WeaponDisabler
+  - Truncheon
+  - TelescopicShield
+  - HoloprojectorSecurity
+  - WeaponDisablerSMG
+  position: 0, 12
+  technologyPrerequisites:
+  - NonlethalAmmunition
+  radioChannels:
+  - Security
 
 - type: technology
   id: UraniumMunitions
@@ -83,21 +159,28 @@
   - MagazineBoxLightRifleUranium
   - MagazineBoxRifleUranium
   - BoxShotgunUranium
+  position: 2, 12
+  technologyPrerequisites:
+  - DraconicMunitions
+  radioChannels:
+  - Security
 
 - type: technology
-  id: AdvancedRiotControl
-  name: research-technology-advanced-riot-control
+  id: SpecialMeans
+  name: research-technology-special-means
   icon:
-    sprite: Objects/Weapons/Melee/truncheon.rsi
+    sprite: Clothing/Back/Backpacks/electropack.rsi
     state: icon
   discipline: Arsenal
   tier: 1
-  cost: 8000
+  cost: 5000
   recipeUnlocks:
-  - Truncheon
-  - TelescopicShield
-  - HoloprojectorSecurity
-  - WeaponDisablerSMG
+  - ClothingBackpackElectropack
+  position: 0, 13
+  technologyPrerequisites:
+  - AdvancedRiotControl
+  radioChannels:
+  - Security
 
 - type: technology
   id: ExplosiveTechnology
@@ -118,58 +201,30 @@
   - ChemicalPayload
   - CableDetStack1
   - EmptyDetonator
-
-- type: technology
-  id: SpecialMeans
-  name: research-technology-special-means
-  icon:
-    sprite: Clothing/Back/Backpacks/electropack.rsi
-    state: icon
-  discipline: Arsenal
-  tier: 1
-  cost: 5000
-  recipeUnlocks:
-  - ClothingBackpackElectropack
+  position: 2, 13
+  technologyPrerequisites:
+  - AdvancedRiotControl
+  radioChannels:
+  - Security
 
 # Tier 2
 
 - type: technology
-  id: ConcentratedLaserWeaponry
-  name: research-technology-concentrated-laser-weaponry
+  id: DualWieldingTechnology
+  name: research-technology-dual-wielding-technology
   icon:
-    sprite: Objects/Weapons/Guns/Battery/laser_cannon.rsi
+    sprite: Clothing/Back/Specific/harmpack.rsi
     state: icon
   discipline: Arsenal
   tier: 2
   cost: 10000
   recipeUnlocks:
-  - WeaponLaserCannon
-
-- type: technology
-  id: WaveParticleHarnessing
-  name: research-technology-wave-particle-harnessing
-  icon:
-    sprite: Objects/Weapons/Guns/Battery/xray.rsi
-    state: icon
-  discipline: Arsenal
-  tier: 2
-  cost: 10000
-  recipeUnlocks:
-  - WeaponXrayCannon
-
-- type: technology
-  id: KineticModifications
-  name: research-technology-kinetic-modifications
-  icon:
-    sprite: Objects/Tools/upgrade.rsi
-    state: display
-  discipline: Arsenal
-  tier: 2
-  cost: 7500
-  recipeUnlocks:
-  - PKAUpgradeDamage
-  - PKAUpgradeRange
-  - PKAUpgradeFireRate
+  - ClothingBackpackHarmpack
+  position: 0, 14
+  technologyPrerequisites:
+  - SpecialMeans
+  radioChannels:
+  - Security
 
 - type: technology
   id: BasicShuttleArmament
@@ -190,22 +245,30 @@
   - ShuttleGunSvalinnMachineGunCircuitboard
   - ShuttleGunPerforatorCircuitboard
   - ShuttleGunFriendshipCircuitboard
+  position: 2, 14
   technologyPrerequisites:
-  - SalvageWeapons
+  - Shuttlecraft
+  radioChannels:
+  - Security
 
 - type: technology
-  id: DualWieldingTechnology
-  name: research-technology-dual-wielding-technology
+  id: KineticModifications
+  name: research-technology-kinetic-modifications
   icon:
-    sprite: Clothing/Back/Specific/harmpack.rsi
-    state: icon
+    sprite: Objects/Tools/upgrade.rsi
+    state: display
   discipline: Arsenal
   tier: 2
-  cost: 10000
+  cost: 7500
   recipeUnlocks:
-  - ClothingBackpackHarmpack
-
-# Tier 3
+  - PKAUpgradeDamage
+  - PKAUpgradeRange
+  - PKAUpgradeFireRate
+  position: 6, 12
+  technologyPrerequisites:
+  - WaveParticleHarnessing
+  radioChannels:
+  - Security
 
 - type: technology
   id: PortableMicrofusionWeaponry
@@ -219,18 +282,13 @@
   recipeUnlocks:
   - WeaponAdvancedLaser
   - PortableRecharger
+  position: 4, 12
+  technologyPrerequisites:
+  - ConcentratedLaserWeaponry
+  radioChannels:
+  - Security
 
-- type: technology
-  id: ThermalWeaponry
-  name: research-technology-thermal-weaponry
-  icon:
-    sprite: Objects/Weapons/Guns/Battery/temp_gun.rsi
-    state: icon
-  discipline: Arsenal
-  tier: 3
-  cost: 15000
-  recipeUnlocks:
-  - WeaponTemperatureGun
+# Tier 3
 
 - type: technology
   id: AdvancedShuttleWeapon
@@ -245,5 +303,26 @@
   - GrenadeEMP
   - PowerCageHigh
   - ShuttleGunDusterCircuitboard
+  position: 2, 15
   technologyPrerequisites:
   - BasicShuttleArmament
+  - Shuttlecraft
+  radioChannels:
+  - Security
+
+- type: technology
+  id: ThermalWeaponry
+  name: research-technology-thermal-weaponry
+  icon:
+    sprite: Objects/Weapons/Guns/Battery/temp_gun.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 3
+  cost: 15000
+  recipeUnlocks:
+  - WeaponTemperatureGun
+  position: 4, 13
+  technologyPrerequisites:
+  - PortableMicrofusionWeaponry
+  radioChannels:
+  - Security

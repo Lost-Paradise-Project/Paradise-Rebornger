@@ -1,4 +1,4 @@
-﻿using Content.Client._CorvaxNext.CrewMedal.UI;
+using Content.Client._CorvaxNext.CrewMedal.UI;
 using Content.Shared._CorvaxNext.CrewMedal;
 
 namespace Content.Client._CorvaxNext.CrewMedal;

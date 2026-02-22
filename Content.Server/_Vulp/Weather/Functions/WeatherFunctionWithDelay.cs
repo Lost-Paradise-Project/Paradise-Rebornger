@@ -1,4 +1,4 @@
-﻿using System.Threading;
+using System.Threading;
 using Content.Shared._Vulp.Weather;
 using Content.Shared.Destructible.Thresholds;
 using Content.Shared.Weather;

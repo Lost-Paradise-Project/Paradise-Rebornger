@@ -1,0 +1,52 @@
+# Security borg
+- type: borgType
+  id: secborg
+
+  # Description
+  dummyPrototype: LPPBorgSecurityGeneric
+
+  # Functional
+  extraModuleCount: 3
+  moduleWhitelist:
+    tags:
+    - BorgModuleGeneric
+    - BorgModuleCargo
+
+  defaultModules:
+  - BorgModuleTool
+  - LPPBorgModuleSecurityLaserCarbine
+  - LPPBorgModuleSecurityWeapon
+  - LPPBorgModuleSecurityCriminologist
+
+  radioChannels:
+  - Security
+  - Science
+  - Command
+
+  # Visual
+  inventoryTemplateId: borgTall
+  spriteBodyState: robot
+  spriteHasMindState: robot_e
+  spriteNoMindState: robot_e_r
+  spriteToggleLightState: robot_l
+  spritePath: _LP/Mobs/Silicon/chassis.rsi
+
+  # Pet
+  petSuccessString: petting-success-salvage-cyborg
+  petFailureString: petting-failure-salvage-cyborg
+
+  # Sounds
+  footstepCollection:
+    collection: FootstepHoverBorg
+
+  addComponents:
+  - type: MovementIgnoreGravity
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3
+    baseSprintSpeed: 5
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
+  - type: Construction
+    graph: GlassesSecHUD
+    node: glassesSec

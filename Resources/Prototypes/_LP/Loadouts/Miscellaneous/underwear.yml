@@ -1,0 +1,19 @@
+- type: loadout
+  id: LPPantiesBeeKini
+  equipment:
+    underwear: LPPPantiesBeeKini
+
+- type: loadout
+  id: LPPantiesCommie
+  equipment:
+    underwear: LPPPantiesCommie
+
+- type: loadout
+  id: LPPantiesKinky
+  equipment:
+    underwear: LPPPantiesKinky
+
+- type: loadout
+  id: LPStripedPanties
+  equipment:
+    underwear: LPPStripedPanties

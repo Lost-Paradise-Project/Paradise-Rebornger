@@ -9,6 +9,7 @@ using Robust.Client.UserInterface.XAML;
 using Robust.Shared.Prototypes;
 using System.Numerics;
 using System.Linq;
+using Content.Shared._L5.Contract;
 
 namespace Content.Client.Access.UI
 {
@@ -20,6 +21,10 @@ namespace Content.Client.Access.UI
         private readonly SpriteSystem _spriteSystem;
 
         private const int JobIconColumnCount = 10;
+
+        // L5 — contracts
+        public event Action<ProtoId<ContractPrototype>>? OnContractChanged;
+        private List<string> _contracts = [];
 
         public event Action<string>? OnNameChanged;
         public event Action<string>? OnJobChanged;
@@ -37,6 +42,29 @@ namespace Content.Client.Access.UI
 
             JobLineEdit.OnTextEntered += e => OnJobChanged?.Invoke(e.Text);
             JobLineEdit.OnFocusExit += e => OnJobChanged?.Invoke(e.Text);
+
+            // L5 — Contracts
+            foreach (var contract in _prototypeManager.EnumeratePrototypes<ContractPrototype>())
+            {
+                if (contract.Selectable)
+                {
+                    ContractEdit.AddItem(Loc.GetString(contract.Name));
+                    _contracts.Add(contract.ID);
+                }
+            }
+
+            ContractEdit.OnItemSelected += args =>
+            {
+                ContractEdit.SelectId(args.Id);
+                OnContractChanged!.Invoke(_prototypeManager.Index<ContractPrototype>(_contracts[args.Id]));
+            };
+            // End L5 — Contracts
+        }
+
+        // L5 — contracts
+        public void SetCurrentContract(string contractId)
+        {
+            ContractEdit.SelectId(_contracts.IndexOf(contractId));
         }
 
         public void SetAllowedIcons(string currentJobIconId)

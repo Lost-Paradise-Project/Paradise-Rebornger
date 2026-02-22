@@ -4,6 +4,13 @@
   name: fire alarm
   description: A fire alarm. Spicy!
   components:
+  # Starlight Start: RPD
+  - type: RCDDeconstructable
+    cost: 1
+    delay: 2
+    fx: EffectRCDDeconstruct2
+    rpd: true
+  # Starlight End
   - type: LightningTarget
     priority: 0
   - type: Electrified

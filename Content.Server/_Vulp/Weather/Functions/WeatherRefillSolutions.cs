@@ -1,4 +1,4 @@
-﻿using Content.Server.Atmos.Components;
+using Content.Server.Atmos.Components;
 using Content.Shared._Vulp.Weather;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.EntitySystems;

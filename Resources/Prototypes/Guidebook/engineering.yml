@@ -6,6 +6,7 @@
   - Construction
   - Power
   - Atmospherics
+  - Plumbing # Starlight
   - ShuttleCraft
   - Networking
 
@@ -319,9 +320,11 @@
   - PortableGenerator
   - AME
   - SingularityTeslaEngine
+  - NuclearGenerator # FH edit
   - TEG
   - RTG
   - SolarPanels
+  - Supermatter # Goobstation
 
 - type: guideEntry
   id: AME

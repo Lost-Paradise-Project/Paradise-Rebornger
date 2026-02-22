@@ -86,6 +86,12 @@ public sealed class RoleBanCommand : IConsoleCommand
                 return;
         }
 
+        if (!_proto.HasIndex<JobPrototype>(role))
+        {
+            shell.WriteError(Loc.GetString("cmd-roleban-job-parse", ("job", role)));
+            return;
+        }
+
         var located = await _locator.LookupIdByNameOrIdAsync(target);
         if (located == null)
         {
@@ -119,7 +125,8 @@ public sealed class RoleBanCommand : IConsoleCommand
             return;
         }
 
-        _bans.CreateRoleBan(banInfo);
+        var bids = await _bans.CreateRoleBan(banInfo);
+        _bans.WebhookUpdateRoleBans(banInfo, bids.Item1, bids.Item2);
     }
 
     public CompletionResult GetCompletion(IConsoleShell shell, string[] args)

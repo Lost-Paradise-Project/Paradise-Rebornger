@@ -1,4 +1,4 @@
-﻿using Content.Client.Clothing;
+using Content.Client.Clothing;
 using Content.Shared._Wega.Dirt.Components;
 using Content.Shared.Foldable;
 using Content.Shared.Inventory;

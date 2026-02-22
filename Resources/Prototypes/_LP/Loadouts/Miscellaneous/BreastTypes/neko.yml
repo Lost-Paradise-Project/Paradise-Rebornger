@@ -1,0 +1,71 @@
+- type: loadout
+  id: LPBraNekoBlack
+  equipment:
+    breast: LPPBraNekoBlack
+  groupBy: "neko"
+
+- type: loadout
+  id: LPBraNekoBlue
+  equipment:
+    breast: LPPBraNekoBlue
+  groupBy: "neko"
+
+- type: loadout
+  id: LPBraNekoBrown
+  equipment:
+    breast: LPPBraNekoBrown
+  groupBy: "neko"
+
+- type: loadout
+  id: LPBraNekoGreen
+  equipment:
+    breast: LPPBraNekoGreen
+  groupBy: "neko"
+
+- type: loadout
+  id: LPBraNekoGrey
+  equipment:
+    breast: LPPBraNekoGrey
+  groupBy: "neko"
+
+- type: loadout
+  id: LPBraNekoLightpurple
+  equipment:
+    breast: LPPBraNekoLightpurple
+  groupBy: "neko"
+
+- type: loadout
+  id: LPBraNekoMaroon
+  equipment:
+    breast: LPPBraNekoMaroon
+  groupBy: "neko"
+
+- type: loadout
+  id: LPBraNekoOrange
+  equipment:
+    breast: LPPBraNekoOrange
+  groupBy: "neko"
+
+- type: loadout
+  id: LPBraNekoRed
+  equipment:
+    breast: LPPBraNekoRed
+  groupBy: "neko"
+
+- type: loadout
+  id: LPBraNekoTeal
+  equipment:
+    breast: LPPBraNekoTeal
+  groupBy: "neko"
+
+- type: loadout
+  id: LPBraNekoWhite
+  equipment:
+    breast: LPPBraNekoWhite
+  groupBy: "neko"
+
+- type: loadout
+  id: LPBraNekoYellow
+  equipment:
+    breast: LPPBraNekoYellow
+  groupBy: "neko"

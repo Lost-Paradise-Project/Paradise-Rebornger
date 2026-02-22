@@ -1,4 +1,4 @@
-﻿using Content.Shared._Wega.Mining;
+using Content.Shared._Wega.Mining;
 using Robust.Client.UserInterface;
 
 namespace Content.Client._Wega.Mining;

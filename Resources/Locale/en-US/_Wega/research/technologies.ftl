@@ -1,1 +1,1 @@
-﻿research-technology-mining-servers = Майнинг сервера
+research-technology-mining-servers = Майнинг сервера

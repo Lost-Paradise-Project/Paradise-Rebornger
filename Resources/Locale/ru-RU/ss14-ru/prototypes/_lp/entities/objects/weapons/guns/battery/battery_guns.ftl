@@ -1,0 +1,9 @@
+ent-LPPStunbatonBorgSec = { ent-Stunbaton }
+    .suffix = Киборг, Безопасность
+    .desc = { ent-Stunbaton.desc }
+ent-LPPWeaponDisablerBorgSec = { ent-WeaponDisabler }
+    .suffix = Киборг, Безопасность
+    .desc = { ent-WeaponDisabler.desc }
+ent-LPPWeaponLaserCarbineBorgSec = { ent-WeaponLaserCarbine }
+    .suffix = Киборг, Безопасность
+    .desc = { ent-WeaponLaserCarbine.desc }

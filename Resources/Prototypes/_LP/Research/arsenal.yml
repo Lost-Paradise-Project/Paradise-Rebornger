@@ -1,0 +1,19 @@
+# Depends on ConcentratedLaserWeaponry (position 4, 11 in Arsenal)
+- type: technology
+  id: LPPBorgModuleSecurityAllow
+  name: research-technology-borg-module-security
+  icon:
+    sprite: _LP/Objects/Specific/Robotics/borgmodule.rsi
+    state: lp-security
+  discipline: Arsenal
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - LPPBorgModuleSecurityWeapon
+  - LPPBorgModuleSecurityLaserCarbine
+  - LPPBorgModuleSecurityCriminologist
+  technologyPrerequisites:
+  - ConcentratedLaserWeaponry
+  position: 5, 12
+  radioChannels:
+  - Security

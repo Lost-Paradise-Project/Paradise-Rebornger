@@ -1,0 +1,7 @@
+# Модули для боргов
+- type: latheRecipePack
+  id: LPPSecurityModuls
+  recipes:
+  - LPPBorgModuleSecurityWeapon
+  - LPPBorgModuleSecurityLaserCarbine
+  - LPPBorgModuleSecurityCriminologist

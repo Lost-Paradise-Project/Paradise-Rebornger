@@ -1,0 +1,23 @@
+{
+    "version": 1,
+    "license": "CC0-1.0",
+    "copyright": "Made by Pe4henika. Created by EmoGarbage404 (github) for Space Station 14. icon-loupe.png created by SanitarDurkovic (github)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "lp-security"
+        },
+        {
+            "name": "icon-laser-r"
+        },
+        {
+            "name": "icon-arest"
+        },
+        {
+            "name": "icon-loupe"
+        }
+    ]
+}

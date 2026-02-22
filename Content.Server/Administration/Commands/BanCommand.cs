@@ -98,7 +98,8 @@ public sealed class BanCommand : LocalizedCommands
             banInfo.WithMinutes(minutes);
         banInfo.WithSeverity(severity);
 
-        _bans.CreateServerBan(banInfo);
+        var banid = await _bans.CreateServerBan(banInfo);
+        _bans.WebhookUpdateBans(banInfo, banid);
     }
 
     public override CompletionResult GetCompletion(IConsoleShell shell, string[] args)

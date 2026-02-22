@@ -1,4 +1,4 @@
-﻿using Content.Server.Chat.Systems;
+using Content.Server.Chat.Systems;
 using Content.Server.Hands.Systems;
 using Content.Server.Speech;
 using Content.Server.Speech.Components;

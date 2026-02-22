@@ -1,4 +1,4 @@
-﻿using System.Numerics;
+using System.Numerics;
 using Content.Client._Emberfall.Weapons.Ranged.Overlays.Tracer;
 using Content.Shared._Emberfall.Weapons.Ranged;
 using Robust.Client.Graphics;

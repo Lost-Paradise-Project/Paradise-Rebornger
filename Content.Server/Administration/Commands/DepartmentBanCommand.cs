@@ -109,7 +109,8 @@ public sealed class DepartmentBanCommand : IConsoleCommand
             banInfo.AddJob(job);
         }
 
-        _banManager.CreateRoleBan(banInfo);
+        var bids = await _banManager.CreateRoleBan(banInfo);
+        _banManager.WebhookUpdateRoleBans(banInfo, bids.Item1, bids.Item2);
     }
 
     public CompletionResult GetCompletion(IConsoleShell shell, string[] args)

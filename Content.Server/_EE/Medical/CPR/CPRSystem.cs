@@ -1,4 +1,4 @@
-﻿using Content.Server.Atmos.Rotting;
+using Content.Server.Atmos.Rotting;
 using Content.Server.Body.Components;
 using Content.Server.DoAfter;
 using Content.Server.Popups;
@@ -77,7 +77,7 @@ public sealed class CPRSystem : EntitySystem
             return;
         }
 
-        if (_ingestion.HasMouthAvailable(performer, performer) || _ingestion.HasMouthAvailable(target, performer))
+        if (!_ingestion.HasMouthAvailable(performer, performer) || !_ingestion.HasMouthAvailable(target, performer))
             return;
 
         _popupSystem.PopupEntity(Loc.GetString("cpr-start-second-person", ("target", target)), target, performer);

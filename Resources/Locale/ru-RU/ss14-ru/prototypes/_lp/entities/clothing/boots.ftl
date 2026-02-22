@@ -1,0 +1,10 @@
+ent-LPPGlowShoes = светящиеся кроссовки
+    .desc = { ent-ClothingShoesBaseButcherable.desc }
+ent-LPPIceboots = зимние ботинки
+    .desc = { ent-ClothingShoesBaseButcherable.desc }
+ent-LPPSwagShoes = сваг кроссовки
+    .desc = { ent-ClothingShoesBaseButcherable.desc }
+ent-LPPWhiteShoes = белые туфли
+    .desc = Это писк моды, и они предварительно отполированы!
+ent-LPPClothingShoesClownPomni = ботинки шута
+    .desc = Такие приятные ботинки с мягкой подкладкой внутри, что заставляет вас чувствовать, что ваши ноги закованы в них...

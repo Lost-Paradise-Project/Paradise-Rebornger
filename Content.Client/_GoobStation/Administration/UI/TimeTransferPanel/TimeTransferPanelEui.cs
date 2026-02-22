@@ -1,4 +1,4 @@
-﻿using Content.Client.Eui;
+using Content.Client.Eui;
 using Content.Shared._GoobStation.Administration;
 using Content.Shared.Eui;
 

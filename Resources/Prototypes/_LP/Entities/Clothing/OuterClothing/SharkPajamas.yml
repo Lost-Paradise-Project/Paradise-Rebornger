@@ -1,0 +1,125 @@
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: LPPClothingOuterCoatPajamsSharkPink
+  name: Pink shark pajamas
+  description: And I'm a fish, I'm a fish, I'm a fish....
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/OuterClothing/Pajams/shark_pink.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/OuterClothing/Pajams/shark_pink.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - WhitelistChameleon
+  - type: ToggleableClothing
+    clothingPrototype: LPPHelmetPajamsSharkPink
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        showEnts: False
+        occludes: True
+        ents: []
+      toggleable-clothing: !type:ContainerSlot
+        showEnts: False
+        occludes: True
+        ent: null
+
+- type: entity
+  parent: ClothingHeadBase
+  id: LPPHelmetPajamsSharkPink
+  categories: [ HideSpawnMenu ]
+  name: shark pajama hood
+  description: Cuteness :3
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Pajams/shark_pink.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Pajams/shark_pink.rsi
+  - type: Tag
+    tags:
+    - HidesHair
+
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: LPPClothingOuterCoatPajamsSharkBlue
+  name: Blue shark pajamas
+  description: And I'm a fish, I'm a fish, I'm a fish....
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/OuterClothing/Pajams/shark_blue.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/OuterClothing/Pajams/shark_blue.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - WhitelistChameleon
+  - type: ToggleableClothing
+    clothingPrototype: LPPHelmetPajamsSharkBlue
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        showEnts: False
+        occludes: True
+        ents: []
+      toggleable-clothing: !type:ContainerSlot
+        showEnts: False
+        occludes: True
+        ent: null
+
+- type: entity
+  parent: ClothingHeadBase
+  id: LPPHelmetPajamsSharkBlue
+  categories: [ HideSpawnMenu ]
+  name: shark pajama hood
+  description: Cuteness :3
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Pajams/shark_blue.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Pajams/shark_blue.rsi
+  - type: Tag
+    tags:
+    - HidesHair
+
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: LPPClothingOuterCoatPajamsSharkGray
+  name: Grey shark pajamas
+  description: And I'm a fish, I'm a fish, I'm a fish....
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/OuterClothing/Pajams/shark_gray.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/OuterClothing/Pajams/shark_gray.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - WhitelistChameleon
+  - type: ToggleableClothing
+    clothingPrototype: LPPHelmetPajamsSharkGray
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        showEnts: False
+        occludes: True
+        ents: []
+      toggleable-clothing: !type:ContainerSlot
+        showEnts: False
+        occludes: True
+        ent: null
+
+- type: entity
+  parent: ClothingHeadBase
+  id: LPPHelmetPajamsSharkGray
+  categories: [ HideSpawnMenu ]
+  name: shark pajama hood
+  description: Cuteness :3
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Pajams/shark_gray.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Pajams/shark_gray.rsi
+  - type: Tag
+    tags:
+    - HidesHair

@@ -1,4 +1,5 @@
 ﻿- type: entity
+  categories: [ HideSpawnMenu ]
   name: pointing arrow
   id: PointingArrow
   save: false

@@ -7,6 +7,11 @@ using Content.Shared.Emag.Systems;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Research.Components;
 using Content.Shared.Research.Prototypes;
+using Content.Shared._NF.Research; // Frontier
+using System.Linq; // Frontier
+using Robust.Shared.Prototypes; // Frontier
+using System.Linq;
+using Content.Shared.Radio;
 
 namespace Content.Server.Research.Systems;
 
@@ -55,7 +60,19 @@ public sealed partial class ResearchSystem
                 ("amount", technologyPrototype.Cost),
                 ("approver", getIdentityEvent.Title ?? string.Empty)
             );
+
             _radio.SendRadioMessage(uid, message, component.AnnouncementChannel, uid, escapeMarkup: false);
+
+            // Starlight edit start
+            if (technologyPrototype.RadioChannels.Any())
+                foreach (var radioChannelId in technologyPrototype.RadioChannels)
+                {
+                    if (PrototypeManager.TryIndex<RadioChannelPrototype>(radioChannelId, out var radioChannel))
+                    {
+                        _radio.SendRadioMessage(uid, message, radioChannel, uid, escapeMarkup: false);
+                    }
+                }
+            // Starlight edit end
         }
 
         SyncClientWithServer(uid);
@@ -65,6 +82,7 @@ public sealed partial class ResearchSystem
     private void OnConsoleBeforeUiOpened(EntityUid uid, ResearchConsoleComponent component, BeforeActivatableUIOpenEvent args)
     {
         SyncClientWithServer(uid);
+        UpdateConsoleInterface(uid, component); // Frontier: ensure first open has a valid tech state
     }
 
     private void UpdateConsoleInterface(EntityUid uid, ResearchConsoleComponent? component = null, ResearchClientComponent? clientComponent = null)
@@ -72,19 +90,41 @@ public sealed partial class ResearchSystem
         if (!Resolve(uid, ref component, ref clientComponent, false))
             return;
 
-        ResearchConsoleBoundInterfaceState state;
+        // Frontier: R&D Console Rework Start
+        var allTechs = PrototypeManager.EnumeratePrototypes<TechnologyPrototype>();
+        Dictionary<string, ResearchAvailability> techList;
+        var points = 0;
 
-        if (TryGetClientServer(uid, out _, out var serverComponent, clientComponent))
+        if (TryGetClientServer(uid, out var serverUid, out var server, clientComponent) &&
+            TryComp<TechnologyDatabaseComponent>(serverUid, out var db))
         {
-            var points = clientComponent.ConnectedToServer ? serverComponent.Points : 0;
-            state = new ResearchConsoleBoundInterfaceState(points);
+            var unlockedTechs = new HashSet<ProtoId<TechnologyPrototype>>(db.UnlockedTechnologies);
+            techList = allTechs.ToDictionary(
+                proto => proto.ID,
+                proto =>
+                {
+                    if (unlockedTechs.Contains(proto.ID))
+                        return ResearchAvailability.Researched;
+
+                    var prereqsMet = proto.TechnologyPrerequisites.All(p => unlockedTechs.Contains(p));
+                    var canAfford = server.Points >= proto.Cost;
+
+                    return prereqsMet
+                        ? (canAfford ? ResearchAvailability.Available : ResearchAvailability.PrereqsMet)
+                        : ResearchAvailability.Unavailable;
+                });
+
+            if (clientComponent != null)
+                points = clientComponent.ConnectedToServer ? server.Points : 0;
         }
         else
         {
-            state = new ResearchConsoleBoundInterfaceState(default);
+            techList = allTechs.ToDictionary(proto => proto.ID, _ => ResearchAvailability.Unavailable);
         }
 
-        _uiSystem.SetUiState(uid, ResearchConsoleUiKey.Key, state);
+        _uiSystem.SetUiState(uid, ResearchConsoleUiKey.Key,
+            new ResearchConsoleBoundInterfaceState(points, techList));
+        // Frontier: R&D Console Rework End
     }
 
     private void OnPointsChanged(EntityUid uid, ResearchConsoleComponent component, ref ResearchServerPointsChangedEvent args)

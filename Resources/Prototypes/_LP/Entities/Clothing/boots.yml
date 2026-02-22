@@ -1,0 +1,54 @@
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: LPPGlowShoes
+  name: glow shoes
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Shoes/Boots/glow_shoes.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Shoes/Boots/glow_shoes.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: LPPIceboots
+  name: iceboots
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Shoes/Boots/iceboots.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Shoes/Boots/iceboots.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: LPPSwagShoes
+  name: swag shoes
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Shoes/Boots/swag_shoes.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Shoes/Boots/swag_shoes.rsi
+
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: LPPWhiteShoes
+  name: white laceup shoes
+  description: The height of fashion, and they're pre-polished!
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Shoes/Boots/white_laceups.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Shoes/Boots/white_laceups.rsi
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: LPPClothingShoesClownPomni
+  name: Clown Pomni
+  description: Clown?
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Shoes/Boots/clownPomni.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Shoes/Boots/clownPomni.rsi

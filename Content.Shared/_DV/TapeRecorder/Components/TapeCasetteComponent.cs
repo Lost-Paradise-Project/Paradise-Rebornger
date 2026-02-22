@@ -1,4 +1,4 @@
-﻿using Content.Shared._DV.TapeRecorder.Systems;
+using Content.Shared._DV.TapeRecorder.Systems;
 using Content.Shared.Whitelist;
 using Robust.Shared.GameStates;
 

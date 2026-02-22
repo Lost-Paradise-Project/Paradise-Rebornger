@@ -5,6 +5,16 @@
   placement:
     mode: SnapgridCenter
   components:
+    # Starlight Start: RPD
+    - type: RCDDeconstructable
+      cost: 1
+      delay: 2
+      fx: EffectRCDDeconstruct2
+      rpd: true
+    # Starlight End
+    - type: Construction
+      graph: FloorDrain
+      node: FloorDrain
     - type: Sprite
       drawdepth: FloorObjects
       sprite: Objects/Specific/Janitorial/drain.rsi

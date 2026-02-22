@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   id: ActionAGhostShowJobSlotsConsole
   name: Job Slots Interface
   description: View and adjust job slots

@@ -1,4 +1,4 @@
-﻿using Content.Client._Emberfall.Weapons.Ranged.Overlays.Systems;
+using Content.Client._Emberfall.Weapons.Ranged.Overlays.Systems;
 using Robust.Client.Graphics;
 using Robust.Shared.Enums;
 

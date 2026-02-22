@@ -1,4 +1,4 @@
-﻿- type: Tag
+- type: Tag
   id: Whips
 
 - type: Tag
@@ -21,3 +21,9 @@
 
 - type: Tag
   id: socks
+
+- type: Tag
+  id: CoatRack
+
+- type: Tag
+  id: Tesla

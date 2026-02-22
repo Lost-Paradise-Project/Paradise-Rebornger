@@ -61,8 +61,7 @@ class FilesFinder:
                 self.created_files.append(ru_file)
             elif relative_file.locale == 'ru-RU':
                 is_engine_files = "robust-toolbox" in (relative_file.file.full_path)
-                is_corvax_files = "corvax" in (relative_file.file.full_path)
-                if not is_engine_files and not is_corvax_files:
+                if not is_engine_files:
                     # Pass the full path to delete_ru_file_without_en_analog
                     self.delete_ru_file_without_en_analog(relative_file.file.full_path)
             else:

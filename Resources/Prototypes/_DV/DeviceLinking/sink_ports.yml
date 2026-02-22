@@ -1,4 +1,4 @@
-﻿- type: sinkPort
+- type: sinkPort
   id: Pause
   name: tape-recorder-menu-stopped-button
   description: signal-port-description-pause

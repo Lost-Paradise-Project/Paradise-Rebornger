@@ -49,6 +49,11 @@
     price: 800
   - type: ResearchClient
   - type: TechnologyDatabase
+  - type: ApcPowerReceiver
+    powerLoad: 150
+  - type: PowerState
+    idlePowerDraw: 150
+    workingPowerDraw: 1000
   - type: SpamEmitSound # Goobstation - random lathe sounds
     minInterval: 300
     maxInterval: 900
@@ -274,6 +279,7 @@
     - CameraBoards
     - MechBoards
     - ShuttleBoards
+    - ReactorCircuitboards # FH edit
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityBoards
@@ -406,6 +412,7 @@
     - SecurityAmmo
     - SecurityWeapons
     - SecurityDisablers
+    - LPPSecurityModuls # Lost Paridise edit 2026.01.30 Модули для боргов
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SyndicateAmmoStatic
@@ -480,6 +487,7 @@
     - SurgeryStatic
     dynamicPacks:
     - Chemistry
+    - LPPExperimentalRPLD # LP edit
   - type: Machine
     board: MedicalTechFabCircuitboard
   - type: StealTarget

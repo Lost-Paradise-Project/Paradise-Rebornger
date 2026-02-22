@@ -1,4 +1,4 @@
-﻿# Currently unused on Floof, port from Vulpstation. Serves as an example.
+# Currently unused on Floof, port from Vulpstation. Serves as an example.
 - type: weatherCycle
   id: Tropical
   weathers:
@@ -184,5 +184,3 @@
         maxRefilled: 25
         amount: 2
         reagent: Ash
-
-
