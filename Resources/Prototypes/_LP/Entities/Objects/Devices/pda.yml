@@ -2,7 +2,7 @@
   parent: BasePDA
   id: LPPSecurityEnginerPDA
   name: field engineer PDA
-  description: Red to hide the stains of passenger blood.
+  description: Red to hide the stains of passenger blood, orange to reduce electric shock.
   components:
   - type: Pda
     id: LPPSecurityEnginerIDCard

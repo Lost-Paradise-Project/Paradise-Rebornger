@@ -1,2 +1,2 @@
-ent-LPPSpawnPointSecurityEngineer = LPPsecurityEnginer
+ent-LPPSpawnPointSecurityEngineer = field engineer
     .desc = { ent-SpawnPointJobBase.desc }

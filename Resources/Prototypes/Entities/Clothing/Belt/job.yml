@@ -189,6 +189,10 @@
       - SurgeryTool
       - Dropper
       components:
+      # LP Edit Start
+      - Defibrillator
+      - Hypospray
+      # LP Edit End
       - Injector
       - Pill
       - HandLabeler

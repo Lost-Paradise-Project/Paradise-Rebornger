@@ -1,2 +1,2 @@
-ent-LPPClothingBackpackSecurityEngineer = field engineer duffel bag
+ent-LPPClothingBackpackSecurityEngineer = hop duffel bag
     .desc = Twice as many handcuffs!

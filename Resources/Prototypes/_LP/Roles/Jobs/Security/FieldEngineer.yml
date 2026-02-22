@@ -6,10 +6,14 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 36000
+      time: 5h
     - !type:DepartmentTimeRequirement
       department: Engineering
-      time: 72000
+      time: 5h
+    - !type:TraitsRequirement
+      inverted: true
+      traits:
+      - Muted
   startingGear: LPPSecurityEngineerGear
   icon: "LPPJobIconSecurityEnginer"
   supervisors: job-supervisors-hos
@@ -41,3 +45,16 @@
     - SheetGlass10
     - SheetPlasteel10
     - LPPC4Low
+
+- type: chameleonOutfit
+  id: LPPSecurityEnginerChameleonOutfit
+  job: LPPSecurityEnginer
+  equipment:
+    shoes: LPPClothingShoesBootsJackSecEnginer
+    eyes: LPPClothingEyesHudSecEng
+    gloves: ClothingHandsGlovesColorYellow
+    head: ClothingHeadHatHardhatYellow
+    id: LPPSecurityEnginerPDA
+    outerClothing: ClothingOuterVestHazard
+    ears: LPPClothingHeadsetSecurityEngineer
+    belt: LPPClothingMilitaryWebbingSecEng
