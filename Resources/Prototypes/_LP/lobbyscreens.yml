@@ -1,35 +1,65 @@
 - type: lobbyBackground
   id: bigmoon
   background: /Textures/_LP/LobbyScreens/bigmoon.png
+  title: lobby-state-background-bigmoon-title
+  artist: lobby-state-background-bigmoon-artist
 
 - type: lobbyBackground
   id: Borman
   background: /Textures/_LP/LobbyScreens/borman.png
+  title: lobby-state-background-borman-title
+  artist: lobby-state-background-borman-artist
 
 - type: lobbyBackground
   id: Nukies
   background: /Textures/_LP/LobbyScreens/breaddot_nukies.png
+  title: lobby-state-background-breaddotnukies-title
+  artist: lobby-state-background-breaddotnukies-artist
 
 - type: lobbyBackground
   id: Clara
   background: /Textures/_LP/LobbyScreens/clara.png
+  title: lobby-state-background-clara-title
+  artist: lobby-state-background-clara-artist
 
 - type: lobbyBackground
   id: Darkmoon
   background: /Textures/_LP/LobbyScreens/darkmoon.png
+  title: lobby-state-background-darkmoon-title
+  artist: lobby-state-background-darkmoon-artist
 
 - type: lobbyBackground
   id: Girls
   background: /Textures/_LP/LobbyScreens/girls.png
+  title: lobby-state-background-girls-title
+  artist: lobby-state-background-girls-artist
 
 - type: lobbyBackground
   id: Kirashet
   background: /Textures/_LP/LobbyScreens/kirashet.png
+  title: lobby-state-background-kirashet-title
+  artist: lobby-state-background-kirashet-artist
 
 - type: lobbyBackground
   id: OhShit
   background: /Textures/_LP/LobbyScreens/ohshit.png
+  title: lobby-state-background-ohshit-title
+  artist: lobby-state-background-ohshit-artist
 
 - type: lobbyBackground
   id: Teftelka
   background: /Textures/_LP/LobbyScreens/teftelka.png
+  title: lobby-state-background-teftelka-title
+  artist: lobby-state-background-teftelka-artist
+
+- type: lobbyBackground
+  id: Awareness
+  background: /Textures/_LP/LobbyScreens/awareness.png
+  title: lobby-state-background-awareness-title
+  artist: lobby-state-background-awareness-artist
+
+- type: lobbyBackground
+  id: Armaturow
+  background: /Textures/_LP/LobbyScreens/armaturow.png
+  title: lobby-state-background-armaturow-title
+  artist: lobby-state-background-armaturow-artist
