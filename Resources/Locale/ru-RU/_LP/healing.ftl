@@ -1,7 +1,7 @@
 dexalin-10u = дексалин 10ед.
 dylovene-10u = диловен 10ед.
 hyronalin-10u = хироналин 10ед.
-potassium-iodide-10u = йодид калия 10ед.
+potassium-iodide-10u = йодистый калий 10ед.
 iron-10u = железо 10ед.
 copper-10u = медь 10ед.
 kelotane-10u = келотан 10ед.
