@@ -31,6 +31,10 @@ using Robust.Shared.Player;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 
+#if LP
+using Content.Server._LP.Sponsors;
+#endif
+
 namespace Content.Server._DV.Curation.Systems;
 
 public sealed partial class CwoinkSystem : SharedCwoinkSystem
@@ -339,7 +343,8 @@ public sealed partial class CwoinkSystem : SharedCwoinkSystem
         var admins = _activeCurators;
         foreach (var admin in admins)
         {
-            RaiseNetworkEvent(cwoinkMessage, admin);
+            if (admin.IsConnected)
+                RaiseNetworkEvent(cwoinkMessage, admin);
         }
 
         // Enqueue the message for Discord relay
@@ -399,7 +404,8 @@ public sealed partial class CwoinkSystem : SharedCwoinkSystem
             if (admin.UserId == args.SenderSession.UserId)
                 continue;
 
-            RaiseNetworkEvent(update, admin);
+            if (admin.IsConnected)
+                RaiseNetworkEvent(update, admin);
         }
     }
 
@@ -727,6 +733,7 @@ public sealed partial class CwoinkSystem : SharedCwoinkSystem
         var adminColor = _adminBwoinkColor;
         var adminPrefix = "";
         var cwoinkText = $"{senderName}";
+        string sponsorColor = adminColor;   // LP edit
 
         //Getting an administrator position
         if (_config.GetCVar(CCVars.AhelpAdminPrefix))
@@ -738,24 +745,60 @@ public sealed partial class CwoinkSystem : SharedCwoinkSystem
                 adminPrefix = $"[bold]\\[{roleName}\\][/bold] ";
         }
 
+        // Для webhook
+        if (fromWebhook && !string.IsNullOrEmpty(roleName))
+        {
+            adminPrefix = $"[bold]\\[{roleName}\\][/bold] ";
+        }
+
         if (!fromWebhook
             && _useAdminOOCColorInBwoinks
             && senderAdmin is not null)
         {
             var prefs = _preferencesManager.GetPreferences(senderId);
             adminColor = prefs.AdminOOCColor.ToHex();
+
+            sponsorColor = adminColor;  //LP edit
         }
+
+        //LP edit start
+#if LP
+        if (IoCManager.Resolve<SponsorsManager>().TryGetInfo(senderId, out var sponsorInfo) && sponsorInfo.Tier > 0)
+        {
+            sponsorColor = sponsorInfo.OOCColor;
+            if (!fromWebhook)
+                cwoinkText = $"[color={sponsorColor}]{senderName}[/color]";    // если спонсор
+        }
+#endif
+        //LP edit end
 
         // If role color is enabled and exists, use it, otherwise use the discord reply color
         if (_discordReplyColor != string.Empty && fromWebhook)
             adminColor = _discordReplyColor;
 
         if (_useDiscordRoleColor && roleColor is not null)
-            adminColor = roleColor;
-
-        if (senderAdmin is not null && (fromWebhook || senderAdmin.HasFlag(AdminFlags.CuratorHelp) || senderAdmin.HasFlag(AdminFlags.Adminhelp)))
         {
-            cwoinkText = $"[color={adminColor}]{adminPrefix}{senderName}[/color]";
+            adminColor = roleColor;
+        }
+
+        // Для webhook - RoleColor
+        if (fromWebhook && !string.IsNullOrEmpty(roleColor))
+        {
+            // # если его нет
+            var color = roleColor.StartsWith("#") ? roleColor : $"#{roleColor}";
+            adminColor = color;
+        }
+
+        if (senderAdmin is not null)
+        {
+            if (senderAdmin.Flags == AdminFlags.Adminhelp) // Mentor. Not full admin. That's why it's colored differently.
+                cwoinkText = $"[color=purple]{adminPrefix}[/color][color={sponsorColor}]{senderName}[/color]"; //LP edit
+            else if (fromWebhook)
+            {
+                cwoinkText = $"[color={adminColor}]{adminPrefix}[/color][color={sponsorColor}]{senderName}[/color]";   //LP edit - webhook сообщения
+            }
+            else if (senderAdmin.HasFlag(AdminFlags.CuratorHelp) || senderAdmin.HasFlag(AdminFlags.Adminhelp))
+                cwoinkText = $"[color={adminColor}]{adminPrefix}[/color][color={sponsorColor}]{senderName}[/color]";   //LP edit
         }
 
         if (fromWebhook)
@@ -776,7 +819,8 @@ public sealed partial class CwoinkSystem : SharedCwoinkSystem
         {
             foreach (var channel in admins)
             {
-                RaiseNetworkEvent(msg, channel);
+                if (channel.IsConnected)
+                    RaiseNetworkEvent(msg, channel);
             }
         }
 
@@ -788,7 +832,7 @@ public sealed partial class CwoinkSystem : SharedCwoinkSystem
         }
 
         // Notify player
-        if (_playerManager.TryGetSessionById(message.UserId, out var session) && !message.AdminOnly)
+        if (_playerManager.TryGetSessionById(message.UserId, out var session) && !message.AdminOnly && session.Channel.IsConnected)
         {
             if (!admins.Contains(session.Channel))
             {
@@ -807,13 +851,14 @@ public sealed partial class CwoinkSystem : SharedCwoinkSystem
 
                     overrideMsgText = $"{(message.PlaySound ? "" : "(S) ")}{overrideMsgText}: {escapedText}";
 
-                    RaiseNetworkEvent(new CwoinkTextMessage(message.UserId,
-                            senderId,
-                            overrideMsgText,
-                            playSound: playSound),
-                        session.Channel);
+                    if (session.Channel.IsConnected)
+                        RaiseNetworkEvent(new CwoinkTextMessage(message.UserId,
+                                senderId,
+                                overrideMsgText,
+                                playSound: playSound),
+                            session.Channel);
                 }
-                else
+                else if (session.Channel.IsConnected)
                     RaiseNetworkEvent(msg, session.Channel);
             }
         }
@@ -851,7 +896,7 @@ public sealed partial class CwoinkSystem : SharedCwoinkSystem
             return;
 
         // No admin online, let the player know
-        if (senderChannel != null)
+        if (senderChannel != null && senderChannel.IsConnected)
         {
             var systemText = Loc.GetString("cwoink-system-starmute-message-no-other-users");
             var starMuteMsg = new CwoinkTextMessage(message.UserId, SystemUserId, systemText);

@@ -308,7 +308,8 @@ namespace Content.Server.Administration.Systems
             var admins = GetTargetAdmins();
             foreach (var admin in admins)
             {
-                RaiseNetworkEvent(bwoinkMessage, admin);
+                if (admin.IsConnected)
+                    RaiseNetworkEvent(bwoinkMessage, admin);
             }
 
             // Enqueue the message for Discord relay
@@ -805,6 +806,12 @@ namespace Content.Server.Administration.Systems
                     adminPrefix = $"[bold]\\[{bwoinkParams.RoleName}\\][/bold] ";
             }
 
+            // Для webhook сообщений - RoleName напрямую если передан
+            if (bwoinkParams.FromWebhook && !string.IsNullOrEmpty(bwoinkParams.RoleName))
+            {
+                adminPrefix = $"[bold]\\[{bwoinkParams.RoleName}\\][/bold] ";
+            }
+
             if (!bwoinkParams.FromWebhook
                 && _useAdminOOCColorInBwoinks
                 && bwoinkParams.SenderAdmin is not null)
@@ -833,6 +840,14 @@ namespace Content.Server.Administration.Systems
             if (_useDiscordRoleColor && bwoinkParams.RoleColor is not null)
                 adminColor = bwoinkParams.RoleColor;
 
+            // webhook
+            if (bwoinkParams.FromWebhook && !string.IsNullOrEmpty(bwoinkParams.RoleColor))
+            {
+                // # если его нет
+                var color = bwoinkParams.RoleColor.StartsWith("#") ? bwoinkParams.RoleColor : $"#{bwoinkParams.RoleColor}";
+                adminColor = color;
+            }
+
             if (bwoinkParams.SenderAdmin is not null)
             {
                 if (bwoinkParams.SenderAdmin.Flags ==
@@ -860,7 +875,8 @@ namespace Content.Server.Administration.Systems
             {
                 foreach (var channel in admins)
                 {
-                    RaiseNetworkEvent(msg, channel);
+                    if (channel.IsConnected)
+                        RaiseNetworkEvent(msg, channel);
                 }
             }
 
@@ -872,7 +888,7 @@ namespace Content.Server.Administration.Systems
             }
 
             // Notify player
-            if (_playerManager.TryGetSessionById(bwoinkParams.Message.UserId, out var session) && !bwoinkParams.Message.AdminOnly)
+            if (_playerManager.TryGetSessionById(bwoinkParams.Message.UserId, out var session) && !bwoinkParams.Message.AdminOnly && session.Channel.IsConnected)
             {
                 if (!admins.Contains(session.Channel))
                 {
@@ -895,13 +911,14 @@ namespace Content.Server.Administration.Systems
 
                         overrideMsgText = $"{(bwoinkParams.Message.PlaySound ? "" : "(S) ")}{overrideMsgText}: {escapedText}";
 
-                        RaiseNetworkEvent(new BwoinkTextMessage(bwoinkParams.Message.UserId,
-                                bwoinkParams.SenderId,
-                                overrideMsgText,
-                                playSound: playSound),
-                            session.Channel);
+                        if (session.Channel.IsConnected)
+                            RaiseNetworkEvent(new BwoinkTextMessage(bwoinkParams.Message.UserId,
+                                    bwoinkParams.SenderId,
+                                    overrideMsgText,
+                                    playSound: playSound),
+                                session.Channel);
                     }
-                    else
+                    else if (session.Channel.IsConnected)
                         RaiseNetworkEvent(msg, session.Channel);
                 }
             }
@@ -938,7 +955,7 @@ namespace Content.Server.Administration.Systems
                 return;
 
             // No admin online, let the player know
-            if (bwoinkParams.SenderChannel != null)
+            if (bwoinkParams.SenderChannel != null && bwoinkParams.SenderChannel.IsConnected)
             {
                 var systemText = Loc.GetString("bwoink-system-starmute-message-no-other-users");
                 var starMuteMsg = new BwoinkTextMessage(bwoinkParams.Message.UserId, SystemUserId, systemText);
