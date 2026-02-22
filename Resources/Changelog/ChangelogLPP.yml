@@ -413,3 +413,12 @@ Entries:
   id: 5654
   time: '2026-02-22T16:12:50.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/84
+- author: Wordik156
+  changes:
+    - type: Tweak
+      message: >-
+        Локализованы баночки с таблетками и сами таблетки из аптечек + теперь
+        вещества измеряются в "ед." (было "u")
+  id: 5655
+  time: '2026-02-22T19:31:59.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/83
