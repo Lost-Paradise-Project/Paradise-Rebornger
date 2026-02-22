@@ -59,10 +59,19 @@
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
+      firing_pin: !type:Container # Starlight
   - type: StaticPrice
     price: 500
   - type: UseDelay
     delay: 1
+  # starlight start
+  - type: ContainerFill
+    containers:
+      firing_pin:
+      - FiringPin
+  - type: FiringPinHolder
+    supportedPins: [ Rifle ]
+  # starlight end
   # Goobstation edit start
   - type: EmitSoundOnPickup
     sound:

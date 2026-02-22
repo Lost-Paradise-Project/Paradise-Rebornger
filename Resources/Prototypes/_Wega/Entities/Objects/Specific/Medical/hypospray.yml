@@ -31,3 +31,9 @@
     maxFillLevels: 1
     changeColor: false
     emptySpriteName: stimpen_empty
+  - type: Injector
+    solutionName: pen
+    currentTransferAmount: null
+    activeModeProtoId: HyposprayInjectMode
+    allowedModes:
+    - HyposprayInjectMode

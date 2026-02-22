@@ -2,12 +2,6 @@
   id: AirSensorBase
   abstract: true
   components:
-  # LP Edit Start
-  - type: RCDFAPDeconstructable
-    cost: 4
-    delay: 2
-    fx: EffectRCDDeconstruct2
-  # LP Edit End
   - type: DeviceNetwork
     deviceNetId: AtmosDevices
     receiveFrequencyId: AtmosMonitor
@@ -109,6 +103,13 @@
     tags:
     - AirSensor
     - ForceFixRotations
+  # Starlight Start: RPD
+  - type: RCDDeconstructable
+    cost: 2
+    delay: 2
+    fx: EffectRCDDeconstruct2
+    rpd: true
+  # Starlight End: RPD
 
 - type: entity
   parent: BaseItem

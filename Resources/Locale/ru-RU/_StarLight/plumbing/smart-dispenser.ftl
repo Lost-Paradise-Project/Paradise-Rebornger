@@ -1,0 +1,10 @@
+plumbing-smart-dispenser-window-title = Умный дозатор
+plumbing-smart-dispenser-header = Хранилище химикатов
+plumbing-smart-dispenser-reagent-entry = { $reagent }: { $amount }ед.
+plumbing-smart-dispenser-empty = Нет сохраненных реагентов.
+plumbing-smart-dispenser-total = { $count } реагент(ов) — { $total }ед. всего
+plumbing-smart-dispenser-no-label = У контейнера нет этикетки.
+plumbing-smart-dispenser-no-match = Не удалось сопоставить этикетку с каким-либо известным реагентом.
+plumbing-smart-dispenser-not-in-stock = { $reagent } отсутствует на складе.
+plumbing-smart-dispenser-jug-full = Контейнер уже полон.
+plumbing-smart-dispenser-filled = Наполнено { $amount }ед. { $reagent }.

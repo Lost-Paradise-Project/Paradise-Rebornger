@@ -7,13 +7,13 @@ using Robust.Shared.Serialization;
 namespace Content.Shared._Wega.Medical.Ui;
 
 [Serializable, NetSerializable]
-public enum InjectorFabticatorUiKey : byte
+public enum InjectorFabricatorUiKey : byte
 {
     Key
 }
 
 [Serializable, NetSerializable]
-public sealed class InjectorFabticatorBoundUserInterfaceState : BoundUserInterfaceState
+public sealed class InjectorFabricatorBoundUserInterfaceState : BoundUserInterfaceState
 {
     public readonly bool IsProducing;
     public readonly bool CanProduce;
@@ -27,7 +27,7 @@ public sealed class InjectorFabticatorBoundUserInterfaceState : BoundUserInterfa
     public readonly int InjectorsToProduce;
     public readonly int InjectorsProduced;
 
-    public InjectorFabticatorBoundUserInterfaceState(
+    public InjectorFabricatorBoundUserInterfaceState(
         bool isProducing,
         bool canProduce,
         NetEntity? beaker,
@@ -56,12 +56,12 @@ public sealed class InjectorFabticatorBoundUserInterfaceState : BoundUserInterfa
 }
 
 [Serializable, NetSerializable]
-public sealed class InjectorFabticatorTransferBufferToBeakerMessage : BoundUserInterfaceMessage
+public sealed class InjectorFabricatorTransferBufferToBeakerMessage : BoundUserInterfaceMessage
 {
     public readonly ReagentId ReagentId;
     public readonly FixedPoint2 Amount;
 
-    public InjectorFabticatorTransferBufferToBeakerMessage(ReagentId reagentId, FixedPoint2 amount)
+    public InjectorFabricatorTransferBufferToBeakerMessage(ReagentId reagentId, FixedPoint2 amount)
     {
         ReagentId = reagentId;
         Amount = amount;
@@ -69,12 +69,12 @@ public sealed class InjectorFabticatorTransferBufferToBeakerMessage : BoundUserI
 }
 
 [Serializable, NetSerializable]
-public sealed class InjectorFabticatorTransferBeakerToBufferMessage : BoundUserInterfaceMessage
+public sealed class InjectorFabricatorTransferBeakerToBufferMessage : BoundUserInterfaceMessage
 {
     public readonly ReagentId ReagentId;
     public readonly FixedPoint2 Amount;
 
-    public InjectorFabticatorTransferBeakerToBufferMessage(ReagentId reagentId, FixedPoint2 amount)
+    public InjectorFabricatorTransferBeakerToBufferMessage(ReagentId reagentId, FixedPoint2 amount)
     {
         ReagentId = reagentId;
         Amount = amount;
@@ -82,12 +82,12 @@ public sealed class InjectorFabticatorTransferBeakerToBufferMessage : BoundUserI
 }
 
 [Serializable, NetSerializable]
-public sealed class InjectorFabticatorSetReagentMessage : BoundUserInterfaceMessage
+public sealed class InjectorFabricatorSetReagentMessage : BoundUserInterfaceMessage
 {
     public readonly ReagentId ReagentId;
     public readonly FixedPoint2 Amount;
 
-    public InjectorFabticatorSetReagentMessage(ReagentId reagentId, FixedPoint2 amount)
+    public InjectorFabricatorSetReagentMessage(ReagentId reagentId, FixedPoint2 amount)
     {
         ReagentId = reagentId;
         Amount = amount;
@@ -95,23 +95,23 @@ public sealed class InjectorFabticatorSetReagentMessage : BoundUserInterfaceMess
 }
 
 [Serializable, NetSerializable]
-public sealed class InjectorFabticatorRemoveReagentMessage : BoundUserInterfaceMessage
+public sealed class InjectorFabricatorRemoveReagentMessage : BoundUserInterfaceMessage
 {
     public readonly ReagentId ReagentId;
 
-    public InjectorFabticatorRemoveReagentMessage(ReagentId reagentId)
+    public InjectorFabricatorRemoveReagentMessage(ReagentId reagentId)
     {
         ReagentId = reagentId;
     }
 }
 
 [Serializable, NetSerializable]
-public sealed class InjectorFabticatorProduceMessage : BoundUserInterfaceMessage
+public sealed class InjectorFabricatorProduceMessage : BoundUserInterfaceMessage
 {
     public readonly int Amount;
     public readonly string? CustomName;
 
-    public InjectorFabticatorProduceMessage(int amount, string? customName)
+    public InjectorFabricatorProduceMessage(int amount, string? customName)
     {
         Amount = amount;
         CustomName = customName;
@@ -119,14 +119,14 @@ public sealed class InjectorFabticatorProduceMessage : BoundUserInterfaceMessage
 }
 
 [Serializable, NetSerializable]
-public sealed class InjectorFabticatorEjectMessage : BoundUserInterfaceMessage { }
+public sealed class InjectorFabricatorEjectMessage : BoundUserInterfaceMessage { }
 
 [Serializable, NetSerializable]
-public sealed class InjectorFabticatorSyncRecipeMessage : BoundUserInterfaceMessage
+public sealed class InjectorFabricatorSyncRecipeMessage : BoundUserInterfaceMessage
 {
     public readonly Dictionary<ReagentId, FixedPoint2>? Recipe;
 
-    public InjectorFabticatorSyncRecipeMessage(Dictionary<ReagentId, FixedPoint2>? recipe)
+    public InjectorFabricatorSyncRecipeMessage(Dictionary<ReagentId, FixedPoint2>? recipe)
     {
         Recipe = recipe;
     }
