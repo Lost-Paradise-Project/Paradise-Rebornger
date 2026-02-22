@@ -7,6 +7,10 @@
   - !type:DepartmentTimeRequirement
     department: Medical
     time: 2.5h
+    #LP edit start
+  - !type:AgeRequirement
+    requiredAge: 22
+    #LP edit end
   startingGear: ParamedicGear
   icon: "JobIconParamedic"
   supervisors: job-supervisors-cmo

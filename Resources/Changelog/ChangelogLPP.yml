@@ -379,3 +379,17 @@ Entries:
   id: 5650
   time: '2026-02-22T08:14:45.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/75
+- author: SanitarDurkovic
+  changes:
+    - type: Add
+      message: Добавлен СБ-худ боргу-патрульному.
+  id: 5651
+  time: '2026-02-22T16:12:30.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/82
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлены курки для пушек!
+  id: 5652
+  time: '2026-02-22T16:15:20.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/79
