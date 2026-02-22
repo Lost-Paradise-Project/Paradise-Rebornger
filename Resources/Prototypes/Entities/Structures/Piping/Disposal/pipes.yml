@@ -8,12 +8,13 @@
     snap:
     - Disposal
   components:
-  # LP Edit Start
-  - type: RCDFAPDeconstructable
-    cost: 4
-    delay: 4
-    fx: EffectRCDDeconstruct4
-  # LP Edit End
+  # Starlight Start: RPD
+  - type: RCDDeconstructable
+    cost: 1
+    delay: 2
+    fx: EffectRCDDeconstruct2
+    rpd: true
+  # Starlight End
   - type: Sprite
     drawdepth: ThickPipe
     sprite: Structures/Piping/disposal.rsi

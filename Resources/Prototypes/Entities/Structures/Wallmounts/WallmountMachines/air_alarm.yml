@@ -4,12 +4,6 @@
   name: air alarm
   description: An air alarm. Alarms... air?
   components:
-  # LP Edit Start
-  - type: RCDFAPDeconstructable
-    cost: 5
-    delay: 6
-    fx: EffectRCDDeconstruct6
-  # LP Edit End
   - type: StationAiWhitelist
   - type: Electrified
     enabled: false
@@ -116,6 +110,13 @@
     guides:
     - AirAlarms
     - DeviceMonitoringAndControl
+  # Starlight Start: RPD
+  - type: RCDDeconstructable
+    cost: 3
+    delay: 2
+    fx: EffectRCDDeconstruct2
+    rpd: true
+  # Starlight End: RPD
 
 - type: entity
   parent: BaseWallmountMetallic
@@ -123,12 +124,6 @@
   name: air alarm assembly
   description: An air alarm. Doesn't look like it'll be alarming air any time soon.
   components:
-  # LP Edit Start
-  - type: RCDFAPDeconstructable
-    cost: 5
-    delay: 6
-    fx: EffectRCDDeconstruct6
-  # LP Edit End
   - type: Sprite
     sprite: Structures/Wallmounts/air_monitors.rsi
     layers:

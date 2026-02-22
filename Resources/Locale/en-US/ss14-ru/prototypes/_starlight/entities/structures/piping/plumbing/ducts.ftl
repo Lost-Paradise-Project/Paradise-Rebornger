@@ -1,0 +1,14 @@
+ent-PlumbingDuctBase = fluid duct
+    .desc = A duct for transporting reagents through the plumbing network.
+ent-PlumbingDuctStraight = fluid duct
+    .suffix = Straight
+    .desc = { ent-PlumbingDuctBase.desc }
+ent-PlumbingDuctBend = fluid duct
+    .suffix = Bend
+    .desc = { ent-PlumbingDuctBase.desc }
+ent-PlumbingDuctTJunction = fluid duct
+    .suffix = T-Junction
+    .desc = { ent-PlumbingDuctBase.desc }
+ent-PlumbingDuctFourway = fluid duct
+    .suffix = Fourway
+    .desc = { ent-PlumbingDuctBase.desc }

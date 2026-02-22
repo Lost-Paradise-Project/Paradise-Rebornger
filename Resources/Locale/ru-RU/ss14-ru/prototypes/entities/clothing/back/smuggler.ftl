@@ -18,5 +18,5 @@ ent-ClothingBackpackSatchelSmugglerFilled = { ent-ClothingBackpackSatchelSmuggle
     .suffix = Контрабанда, Не Маппить
     .desc = { ent-ClothingBackpackSatchelSmuggler.desc }
 ent-RandomSatchelSpawner = спавнер случайная сумка контрабандиста
-    .suffix = Не Маппить
+    .suffix = НЕ МАППИТЬ
     .desc = { ent-MarkerBase.desc }
