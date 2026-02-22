@@ -132,7 +132,6 @@ public sealed class HumanoidProfileSystem : EntitySystem
         var sexChanged = new SexChangedEvent(ent.Comp.Sex, profile.Sex);
         RaiseLocalEvent(ent, ref sexChanged);
 
-        var profileLoaded = new HumanoidProfileLoadedEvent(ent);
         // LP edit start
         var profileLoaded = new HumanoidProfileLoadedEvent(ent);
         RaiseLocalEvent(ent, ref profileLoaded);
