@@ -11,6 +11,7 @@
   recipeUnlocks:
   - LPPBorgModuleSecurityWeapon
   - LPPBorgModuleSecurityLaserCarbine
+  - LPPBorgModuleSecurityCriminologist
   technologyPrerequisites:
   - ConcentratedLaserWeaponry
   position: 5, 12

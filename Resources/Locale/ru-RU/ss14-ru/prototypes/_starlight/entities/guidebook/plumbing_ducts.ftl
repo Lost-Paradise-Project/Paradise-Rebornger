@@ -1,0 +1,12 @@
+ent-GuidebookPlumbingDuctStraight = жидкостная труба
+    .suffix = Прямая, Руководство
+    .desc = { "" }
+ent-GuidebookPlumbingDuctBend = жидкостная труба
+    .suffix = Угловая, Руководство
+    .desc = { "" }
+ent-GuidebookPlumbingDuctTJunction = жидкостная труба
+    .suffix = Тройник, Руководство
+    .desc = { "" }
+ent-GuidebookPlumbingDuctFourway = жидкостная труба
+    .suffix = Крестовина, Руководство
+    .desc = { "" }
