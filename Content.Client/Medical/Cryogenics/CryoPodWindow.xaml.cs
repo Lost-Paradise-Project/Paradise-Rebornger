@@ -144,7 +144,7 @@ public sealed partial class CryoPodWindow : FancyWindow
 
         if (injectingQuantity != 0)
         {
-            var injectingText = (injectingQuantity > 1 ? $"{injectingQuantity}u" : "");
+            var injectingText = (injectingQuantity > 1 ? $"{injectingQuantity}ед." : ""); // LP edit
             ChemicalsChart.SetEntry(
                 "injecting",
                 injectingText,

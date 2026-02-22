@@ -246,7 +246,7 @@ public sealed partial class InjectorFabricatorWindow : FancyWindow
 
             row.AddChild(new Label
             {
-                Text = $"{reagent.Quantity}u",
+                Text = $"{reagent.Quantity}ед.", // LP edit
                 Align = Label.AlignMode.Right
             });
 
