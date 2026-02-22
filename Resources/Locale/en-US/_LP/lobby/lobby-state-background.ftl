@@ -1,22 +1,26 @@
-lobby-state-background-bormann1-title = Big Moon
-lobby-state-background-bormann1-artist = bormann64
-lobby-state-background-bormann2-title = Borman
-lobby-state-background-bormann2-artist = bormann64
-lobby-state-background-cum_inflation1-title = Nukies
-lobby-state-background-cum_inflation1-artist = cum_inflation
-lobby-state-background-the_kira_san1-title = Clara
-lobby-state-background-the_kira_san1-artist = the_kira_san
-lobby-state-background-darkmoonmilkyway1-title = Dark Moon
-lobby-state-background-darkmoonmilkyway1-artist = darkmoonmilkyway
-lobby-state-background-canceredpussy1-title = Girls
+lobby-state-background-bigmoon-title = Big Moon
+lobby-state-background-borman-title = Borman
+lobby-state-background-bormann64-artist = bormann64
+
+lobby-state-background-breaddot_nukies-title = Nukies
+lobby-state-background-cum_inflation-artist = cum_inflation
+
+lobby-state-background-clara-title = Clara
+lobby-state-background-kirashet-title = Kirashet
+lobby-state-background-the_kira_san-artist = the_kira_san
+
+lobby-state-background-darkmoon-title = Dark Moon
+lobby-state-background-darkmoonmilkyway-artist = darkmoonmilkyway
+
+lobby-state-background-girls-title = Girls
 lobby-state-background-canceredpussy-artist = canceredpussy
-lobby-state-background-the_kira_san2-title = Kirashet
-lobby-state-background-the_kira_san2-artist = the_kira_san
-lobby-state-background-tongandroch1-title = Oh shit
-lobby-state-background-tongandroch1-artist = tongandroch
-lobby-state-background-push1nkaa1-title = Teftelka
-lobby-state-background-push1nkaa1-artist = @push1nkaa
-lobby-state-background-rewokin1-title = Awareness
-lobby-state-background-rewokin1-artist = rewokin
-lobby-state-background-rewokin2-title = Armaturow
-lobby-state-background-rewokin2-artist = rewokin
+
+lobby-state-background-ohshit-title = Oh shit
+lobby-state-background-tongandroch-artist = tongandroch
+
+lobby-state-background-teftelka-title = Teftelka
+lobby-state-background-push1nkaa-artist = @push1nkaa
+
+lobby-state-background-awareness-title = Awareness
+lobby-state-background-armaturow-title = Armaturow
+lobby-state-background-rewokin-artist = rewokin

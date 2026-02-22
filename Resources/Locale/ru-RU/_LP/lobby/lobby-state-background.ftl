@@ -1,22 +1,26 @@
-lobby-state-background-bormann1-title = Большая луна
-lobby-state-background-bormann1-artist = bormann64
-lobby-state-background-bormann2-title = Борман
-lobby-state-background-bormann2-artist = bormann64
-lobby-state-background-cum_inflation1-title = Ядерщики
-lobby-state-background-cum_inflation1-artist = cum_inflation
-lobby-state-background-the_kira_san1-title = Клара
-lobby-state-background-the_kira_san1-artist = the_kira_san
-lobby-state-background-darkmoonmilkyway1-title = Тёмная луна
-lobby-state-background-darkmoonmilkyway1-artist = darkmoonmilkyway
-lobby-state-background-canceredpussy1-title = Девушки
-lobby-state-background-canceredpussy1-artist = canceredpussy
-lobby-state-background-the_kira_san2-title = Кирашет
-lobby-state-background-the_kira_san2-artist = the_kira_san
-lobby-state-background-tongandroch1-title = Вот чёрт
-lobby-state-background-tongandroch1-artist = tongandroch
-lobby-state-background-push1nkaa1-title = Тефтелька
-lobby-state-background-push1nkaa1-artist = @push1nkaa
-lobby-state-background-rewokin1-title = Осознание
-lobby-state-background-rewokin1-artist = rewokin
-lobby-state-background-rewokin2-title = Арматуров
-lobby-state-background-rewokin2-artist = rewokin
+lobby-state-background-bigmoon-title = Большая луна
+lobby-state-background-borman-title = Борман
+lobby-state-background-bormann64-artist = bormann64
+
+lobby-state-background-breaddot_nukies-title = Ядерщики
+lobby-state-background-cum_inflation-artist = cum_inflation
+
+lobby-state-background-clara-title = Калара
+lobby-state-background-kirashet-title = Кирашет
+lobby-state-background-the_kira_san-artist = the_kira_san
+
+lobby-state-background-darkmoon-title = Тёмная луна
+lobby-state-background-darkmoonmilkyway-artist = darkmoonmilkyway
+
+lobby-state-background-girls-title = Девушки
+lobby-state-background-canceredpussy-artist = canceredpussy
+
+lobby-state-background-ohshit-title = Вот чёрт
+lobby-state-background-tongandroch-artist = tongandroch
+
+lobby-state-background-teftelka-title = Тефтелька
+lobby-state-background-push1nkaa-artist = @push1nkaa
+
+lobby-state-background-awareness-title = Осознание
+lobby-state-background-armaturow-title = Арматуров
+lobby-state-background-rewokin-artist = rewokin
