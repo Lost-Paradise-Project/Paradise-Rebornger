@@ -12,7 +12,7 @@ using Robust.Shared.Prototypes;
 namespace Content.Client._Wega.Medical.Ui;
 
 [GenerateTypedNameReferences]
-public sealed partial class InjectorFabticatorWindow : FancyWindow
+public sealed partial class InjectorFabricatorWindow : FancyWindow
 {
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly IEntityManager _entityManager = default!;
@@ -27,7 +27,7 @@ public sealed partial class InjectorFabticatorWindow : FancyWindow
     private Dictionary<ReagentId, ReagentPrototype> _beakerReagents = new();
     private Dictionary<ReagentId, ReagentPrototype> _bufferReagents = new();
 
-    public InjectorFabticatorWindow()
+    public InjectorFabricatorWindow()
     {
         RobustXamlLoader.Load(this);
         IoCManager.InjectDependencies(this);
@@ -106,7 +106,7 @@ public sealed partial class InjectorFabticatorWindow : FancyWindow
         ReagentSelector.SelectId(args.Id);
     }
 
-    public void UpdateState(InjectorFabticatorBoundUserInterfaceState state)
+    public void UpdateState(InjectorFabricatorBoundUserInterfaceState state)
     {
         // Update beaker slot
         if (state.Beaker == null)
@@ -156,7 +156,7 @@ public sealed partial class InjectorFabticatorWindow : FancyWindow
             : Loc.GetString("injector-fabticator-status-ready");
     }
 
-    private void UpdateReagentSelectors(InjectorFabticatorBoundUserInterfaceState state)
+    private void UpdateReagentSelectors(InjectorFabricatorBoundUserInterfaceState state)
     {
         // Clear and update buffer reagents
         _beakerReagents.Clear();

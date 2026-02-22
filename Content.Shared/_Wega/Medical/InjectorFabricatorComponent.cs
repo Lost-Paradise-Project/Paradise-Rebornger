@@ -6,7 +6,7 @@ using Robust.Shared.Prototypes;
 namespace Content.Shared._Wega.Medical;
 
 [RegisterComponent]
-public sealed partial class InjectorFabticatorComponent : Component
+public sealed partial class InjectorFabricatorComponent : Component
 {
     public const string BeakerSlotId = "beakerSlot";
     public const string BufferSolutionName = "buffer";
