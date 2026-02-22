@@ -277,15 +277,6 @@ public enum LogType
     /// </summary>
     RCD = 63,
 
-    // LP Edit Start
-
-    /// <summary>
-    /// A player used RCDFAP.
-    /// </summary>
-    RCDFAP = 20063,
-
-    // LP Edit End
-
     /// <summary>
     /// Construction related interactions.
     /// </summary>

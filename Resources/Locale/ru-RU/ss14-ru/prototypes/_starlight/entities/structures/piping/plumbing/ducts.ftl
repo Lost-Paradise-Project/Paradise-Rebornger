@@ -1,0 +1,14 @@
+ent-PlumbingDuctBase = жидкостная труба
+    .desc = Труба для транспортировки реагентов по водопроводной сети.
+ent-PlumbingDuctStraight = жидкостная труба
+    .suffix = Прямая
+    .desc = { ent-PlumbingDuctBase.desc }
+ent-PlumbingDuctBend = жидкостная труба
+    .suffix = Угловая
+    .desc = { ent-PlumbingDuctBase.desc }
+ent-PlumbingDuctTJunction = жидкостная труба
+    .suffix = Тройник
+    .desc = { ent-PlumbingDuctBase.desc }
+ent-PlumbingDuctFourway = жидкостная труба
+    .suffix = Крестовина
+    .desc = { ent-PlumbingDuctBase.desc }
