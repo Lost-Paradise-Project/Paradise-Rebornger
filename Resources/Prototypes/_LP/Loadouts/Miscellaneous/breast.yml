@@ -1,0 +1,112 @@
+- type: loadout
+  id: LPCutOutTop
+  equipment:
+    breast: LPPCutOutTop
+  groupBy: "cut_top"
+
+- type: loadout
+  id: LPCutOutTop2
+  equipment:
+    breast: LPPCutOutTop2
+  groupBy: "cut_top"
+
+- type: loadout
+  id: LPFishnetBody
+  equipment:
+    breast: LPPFishnetBody
+  groupBy: "fishnet"
+
+- type: loadout
+  id: LPFishnetGloves
+  equipment:
+    breast: LPPFishnetGloves
+  groupBy: "fishnet"
+
+- type: loadout
+  id: LPFishnetSleeves
+  equipment:
+    breast: LPPFishnetSleeves
+  groupBy: "fishnet"
+
+- type: loadout
+  id: LPBraHalterneck
+  equipment:
+    breast: LPPBraHalterneck
+
+- type: loadout
+  id: LPBraKinky
+  equipment:
+    breast: LPPBraKinky
+
+- type: loadout
+  id: LPBraThin
+  equipment:
+    breast: LPPBraThin
+
+- type: loadout
+  id: LPStripedBra
+  equipment:
+    breast: LPPStripedBra
+
+- type: loadout
+  id: LPBodyBra
+  equipment:
+    breast: LPPBodyBra
+  groupBy: "body"
+
+- type: loadout
+  id: LPBodyBra2
+  equipment:
+    breast: LPPBodyBra2
+  groupBy: "body"
+
+- type: loadout
+  id: LPBodyBraCut
+  equipment:
+    breast: LPPBodyBraCut
+  groupBy: "body_cut"
+
+- type: loadout
+  id: LPBodyBraCut2
+  equipment:
+    breast: LPPBodyBraCut2
+  groupBy: "body_cut"
+
+- type: loadout
+  id: LPBodyBraCut3
+  equipment:
+    breast: LPPBodyBraCut3
+  groupBy: "body_cut"
+
+- type: loadout
+  id: LPBodyBraCut4
+  equipment:
+    breast: LPPBodyBraCut4
+  groupBy: "body_cut"
+
+- type: loadout
+  id: LPCutOutBodyBra2
+  equipment:
+    breast: LPPCutOutBodyBra2
+
+- type: loadout
+  id: LPSwimsuitBodyBra2
+  equipment:
+    breast: LPPSwimsuitBodyBra2
+
+- type: loadout
+  id: LPSwimsuitplusTightsBodyBra2
+  equipment:
+    breast: LPPSwimsuitplusTightsBodyBra2
+
+- type: loadout
+  id: LPTranslucentBodyBra
+  equipment:
+    breast: LPPTranslucentBodyBra
+  groupBy: "translucent"
+
+- type: loadout
+  id: LPTranslucentBodyBra2
+  equipment:
+    breast: LPPTranslucentBodyBra2
+  groupBy: "translucent"

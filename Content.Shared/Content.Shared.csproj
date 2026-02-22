@@ -18,14 +18,6 @@
     <ProjectReference Include="..\Corvax\Content.Corvax.Interfaces.Shared\Content.Corvax.Interfaces.Shared.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Compile Remove="_FarHorizons\Power\Generation\FissionGenerator\SharedReactorPartSystem.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Remove="_FarHorizons\Power\Generation\FissionGenerator\SharedNuclearReactorSystem.cs" />
-  </ItemGroup>
-
   <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
   <Import Project="..\RobustToolbox\MSBuild\Robust.CompNetworkGenerator.targets" />
 </Project>

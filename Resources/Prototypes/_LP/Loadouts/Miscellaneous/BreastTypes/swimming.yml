@@ -1,0 +1,143 @@
+- type: loadout
+  id: LPBraSwimmingBlack
+  equipment:
+    breast: LPPBraSwimmingBlack
+  groupBy: "swimming"
+
+- type: loadout
+  id: LPBraSwimmingAltBlack
+  equipment:
+    breast: LPPBraSwimmingAltBlack
+  groupBy: "alt_swimming"
+
+- type: loadout
+  id: LPBraSwimmingBlue
+  equipment:
+    breast: LPPBraSwimmingBlue
+  groupBy: "swimming"
+
+- type: loadout
+  id: LPBraSwimmingAltBlue
+  equipment:
+    breast: LPPBraSwimmingAltBlue
+  groupBy: "alt_swimming"
+
+- type: loadout
+  id: LPBraSwimmingBrown
+  equipment:
+    breast: LPPBraSwimmingBrown
+  groupBy: "swimming"
+
+- type: loadout
+  id: LPBraSwimmingAltBrown
+  equipment:
+    breast: LPPBraSwimmingAltBrown
+  groupBy: "alt_swimming"
+
+- type: loadout
+  id: LPBraSwimmingGreen
+  equipment:
+    breast: LPPBraSwimmingGreen
+  groupBy: "swimming"
+
+- type: loadout
+  id: LPBraSwimmingAltGreen
+  equipment:
+    breast: LPPBraSwimmingAltGreen
+  groupBy: "alt_swimming"
+
+- type: loadout
+  id: LPBraSwimmingGrey
+  equipment:
+    breast: LPPBraSwimmingGrey
+  groupBy: "swimming"
+
+- type: loadout
+  id: LPBraSwimmingAltGrey
+  equipment:
+    breast: LPPBraSwimmingAltGrey
+  groupBy: "alt_swimming"
+
+- type: loadout
+  id: LPBraSwimmingLightpurple
+  equipment:
+    breast: LPPBraSwimmingLightpurple
+  groupBy: "swimming"
+
+- type: loadout
+  id: LPBraSwimmingAltLightpurple
+  equipment:
+    breast: LPPBraSwimmingAltLightpurple
+  groupBy: "alt_swimming"
+
+- type: loadout
+  id: LPBraSwimmingMaroon
+  equipment:
+    breast: LPPBraSwimmingMaroon
+  groupBy: "swimming"
+
+- type: loadout
+  id: LPBraSwimmingAltMaroon
+  equipment:
+    breast: LPPBraSwimmingAltMaroon
+  groupBy: "alt_swimming"
+
+- type: loadout
+  id: LPBraSwimmingOrange
+  equipment:
+    breast: LPPBraSwimmingOrange
+  groupBy: "swimming"
+
+- type: loadout
+  id: LPBraSwimmingAltOrange
+  equipment:
+    breast: LPPBraSwimmingAltOrange
+  groupBy: "alt_swimming"
+
+- type: loadout
+  id: LPBraSwimmingRed
+  equipment:
+    breast: LPPBraSwimmingRed
+  groupBy: "swimming"
+
+- type: loadout
+  id: LPBraSwimmingAltRed
+  equipment:
+    breast: LPPBraSwimmingAltRed
+  groupBy: "alt_swimming"
+
+- type: loadout
+  id: LPBraSwimmingTeal
+  equipment:
+    breast: LPPBraSwimmingTeal
+  groupBy: "swimming"
+
+- type: loadout
+  id: LPBraSwimmingAltTeal
+  equipment:
+    breast: LPPBraSwimmingAltTeal
+  groupBy: "alt_swimming"
+
+- type: loadout
+  id: LPBraSwimmingWhite
+  equipment:
+    breast: LPPBraSwimmingWhite
+  groupBy: "swimming"
+
+- type: loadout
+  id: LPBraSwimmingAltWhite
+  equipment:
+    breast: LPPBraSwimmingAltWhite
+  groupBy: "alt_swimming"
+
+- type: loadout
+  id: LPBraSwimmingYellow
+  equipment:
+    breast: LPPBraSwimmingYellow
+  groupBy: "swimming"
+
+- type: loadout
+  id: LPBraSwimmingAltYellow
+  equipment:
+    breast: LPPBraSwimmingAltYellow
+  groupBy: "alt_swimming"

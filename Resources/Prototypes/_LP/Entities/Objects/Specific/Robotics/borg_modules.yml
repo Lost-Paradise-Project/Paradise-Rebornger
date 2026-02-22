@@ -1,6 +1,3 @@
-# To do:
-# Использовать спрайты не ксеноборгов (остались только кнопки)
-
 # Модуль с оружием (станбатон + дизейблер)
 - type: entity
   id: LPPBorgModuleSecurityWeapon
@@ -13,21 +10,39 @@
     layers:
       - state: lp-security
       - state: icon-arest
+  - type: BorgModule
+    borgFitTypes:
+    - borg-type-security
   - type: ItemBorgModule
     hands:
     - item: LPPStunbatonBorgSec
     - item: LPPWeaponDisablerBorgSec
-    - item: Handcuffs # одни наручники, может дать больше?
+    # Одни наручники и двое стяжек
+    - item: Handcuffs
       hand:
         emptyLabel: borg-slot-handcuffs-empty
         emptyRepresentative: Handcuffs
         whitelist:
           tags:
           - Handcuffs
+    - item: Zipties
+      hand:
+        emptyLabel: borg-slot-zipties-empty
+        emptyRepresentative: Handcuffs
+        whitelist:
+          tags:
+          - Handcuffs
+    - item: Zipties
+      hand:
+        emptyLabel: borg-slot-zipties-empty
+        emptyRepresentative: Handcuffs
+        whitelist:
+          tags:
+          - Handcuffs
   - type: BorgModuleIcon
     icon:
-      sprite: Interface/Actions/actions_borg.rsi
-      state: xenoborg-laser-module # ЗАМЕНИТЬ
+      sprite: _LP/Interface/Actions/actions_borg.rsi
+      state: sec-nonlethal-module
   - type: Item
     inhandVisuals:
       left:
@@ -60,13 +75,54 @@
     layers:
       - state: lp-security
       - state: icon-laser-r
+  - type: BorgModule
+    borgFitTypes:
+    - borg-type-security
   - type: ItemBorgModule
     hands:
     - item: LPPWeaponLaserCarbineBorgSec
   - type: BorgModuleIcon
     icon:
-      sprite: Interface/Actions/actions_borg.rsi
-      state: xenoborg-laser2-module # ЗАМЕНИТЬ
+      sprite: _LP/Interface/Actions/actions_borg.rsi
+      state: sec-laser-module
+  - type: StaticPrice
+    price: 1500
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: base-icon-inhand-left
+        color: "#DE3A3A"
+      - state: base-module-inhand-left
+        color: "#1F1F1F"
+      - state: base-part-inhand-left
+      - state: base-stripes-inhand-left
+        color: "#8B0000"
+
+
+  # Модуль с монитором криминальных записей, криминальным сканером и проектором голобарьера
+- type: entity
+  id: LPPBorgModuleSecurityCriminologist
+  parent: [BaseBorgModule, BaseProviderBorgModule, BaseSecurityContraband]
+  name: security criminologist cyborg module
+  description: A module containing a forensic kit for conducting rapid investigations.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Specific/Robotics/borgmodule.rsi
+    layers:
+      - state: lp-security
+      - state: icon-loupe
+  - type: BorgModule
+    borgFitTypes:
+    - borg-type-security
+  - type: ItemBorgModule
+    hands:
+    - item: LPPHoloprojectorSecurityBorgSec
+    - item: LPPMonitorCriminalRecordsBorgSec
+    - item: ForensicScanner
+  - type: BorgModuleIcon
+    icon:
+      sprite: _LP/Interface/Actions/actions_borg.rsi
+      state: sec-criminologist-module
   - type: StaticPrice
     price: 1500
   - type: Item

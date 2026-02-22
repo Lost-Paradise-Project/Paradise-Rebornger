@@ -1,0 +1,71 @@
+- type: loadout
+  id: LPTubetopBlack
+  equipment:
+    breast: LPPTubetopBlack
+  groupBy: "tubetop"
+
+- type: loadout
+  id: LPTubetopBlue
+  equipment:
+    breast: LPPTubetopBlue
+  groupBy: "tubetop"
+
+- type: loadout
+  id: LPTubetopBrown
+  equipment:
+    breast: LPPTubetopBrown
+  groupBy: "tubetop"
+
+- type: loadout
+  id: LPTubetopGreen
+  equipment:
+    breast: LPPTubetopGreen
+  groupBy: "tubetop"
+
+- type: loadout
+  id: LPTubetopGrey
+  equipment:
+    breast: LPPTubetopGrey
+  groupBy: "tubetop"
+
+- type: loadout
+  id: LPTubetopLightpurple
+  equipment:
+    breast: LPPTubetopLightpurple
+  groupBy: "tubetop"
+
+- type: loadout
+  id: LPTubetopMaroon
+  equipment:
+    breast: LPPTubetopMaroon
+  groupBy: "tubetop"
+
+- type: loadout
+  id: LPTubetopOrange
+  equipment:
+    breast: LPPTubetopOrange
+  groupBy: "tubetop"
+
+- type: loadout
+  id: LPTubetopRed
+  equipment:
+    breast: LPPTubetopRed
+  groupBy: "tubetop"
+
+- type: loadout
+  id: LPTubetopTeal
+  equipment:
+    breast: LPPTubetopTeal
+  groupBy: "tubetop"
+
+- type: loadout
+  id: LPTubetopWhite
+  equipment:
+    breast: LPPTubetopWhite
+  groupBy: "tubetop"
+
+- type: loadout
+  id: LPTubetopYellow
+  equipment:
+    breast: LPPTubetopYellow
+  groupBy: "tubetop"

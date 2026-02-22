@@ -1,0 +1,12 @@
+ent-GuidebookPlumbingDuctStraight = fluid duct
+    .suffix = Straight, Guidebook
+    .desc = { "" }
+ent-GuidebookPlumbingDuctBend = fluid duct
+    .suffix = Bend, Guidebook
+    .desc = { "" }
+ent-GuidebookPlumbingDuctTJunction = fluid duct
+    .suffix = T-Junction, Guidebook
+    .desc = { "" }
+ent-GuidebookPlumbingDuctFourway = fluid duct
+    .suffix = Fourway, Guidebook
+    .desc = { "" }

@@ -1,4 +1,4 @@
-namespace Content.Server.Goobstation.Singularity.ContainmentField;
+namespace Content.Server._GoobStation.Singularity.ContainmentField;
 
 /// <summary>
 /// Makes containment fields not bounce this entity, and to not vaporize it if it's trash.

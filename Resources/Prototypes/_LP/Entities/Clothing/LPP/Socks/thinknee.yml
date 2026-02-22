@@ -1,0 +1,204 @@
+#---------------------ThinKnee----------------------
+- type: entity
+  parent: LPPClothingUnderwearSocksBase
+  id: LPPClothingUnderThinKneeBlack
+  name: thin knee
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
+    layers:
+    - state: icon
+      color: "#0C0C0C"
+  - type: Clothing
+    sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
+    clothingVisuals:
+      socks:
+      - state: equipped-SOCKS
+        color: "#0C0C0C"
+
+- type: entity
+  parent: LPPClothingUnderwearSocksBase
+  id: LPPClothingUnderThinKneeBlue
+  name: thin knee
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
+    layers:
+    - state: icon
+      color: "#52AECC"
+  - type: Clothing
+    sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
+    clothingVisuals:
+      socks:
+      - state: equipped-SOCKS
+        color: "#52AECC"
+
+- type: entity
+  parent: LPPClothingUnderwearSocksBase
+  id: LPPClothingUnderThinKneeBrown
+  name: thin knee
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
+    layers:
+    - state: icon
+      color: "#A17229"
+  - type: Clothing
+    sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
+    clothingVisuals:
+      socks:
+      - state: equipped-SOCKS
+        color: "#A17229"
+
+- type: entity
+  parent: LPPClothingUnderwearSocksBase
+  id: LPPClothingUnderThinKneeGreen
+  name: thin knee
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
+    layers:
+    - state: icon
+      color: "#6FBC22"
+  - type: Clothing
+    sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
+    clothingVisuals:
+      socks:
+      - state: equipped-SOCKS
+        color: "#6FBC22"
+
+- type: entity
+  parent: LPPClothingUnderwearSocksBase
+  id: LPPClothingUnderThinKneeGrey
+  name: thin knee
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
+    layers:
+    - state: icon
+      color: "#B3B3B3"
+  - type: Clothing
+    sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
+    clothingVisuals:
+      socks:
+      - state: equipped-SOCKS
+        color: "#B3B3B3"
+
+- type: entity
+  parent: LPPClothingUnderwearSocksBase
+  id: LPPClothingUnderThinKneeLightpurple
+  name: thin knee
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
+    layers:
+    - state: icon
+      color: "#944DFE"
+  - type: Clothing
+    sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
+    clothingVisuals:
+      socks:
+      - state: equipped-SOCKS
+        color: "#944DFE"
+
+- type: entity
+  parent: LPPClothingUnderwearSocksBase
+  id: LPPClothingUnderThinKneeMaroon
+  name: thin knee
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
+    layers:
+    - state: icon
+      color: "#BE273E"
+  - type: Clothing
+    sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
+    clothingVisuals:
+      socks:
+      - state: equipped-SOCKS
+        color: "#BE273E"
+
+- type: entity
+  parent: LPPClothingUnderwearSocksBase
+  id: LPPClothingUnderThinKneeOrange
+  name: thin knee
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
+    layers:
+    - state: icon
+      color: "#FF8C19"
+  - type: Clothing
+    sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
+    clothingVisuals:
+      socks:
+      - state: equipped-SOCKS
+        color: "#FF8C19"
+
+- type: entity
+  parent: LPPClothingUnderwearSocksBase
+  id: LPPClothingUnderThinKnee
+  name: thin knee
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
+    layers:
+    - state: icon
+      color: "#FFFFFF"
+  - type: Clothing
+    sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
+    clothingVisuals:
+      socks:
+      - state: equipped-SOCKS
+        color: "#FFFFFF"
+
+- type: entity
+  parent: LPPClothingUnderwearSocksBase
+  id: LPPClothingUnderThinKneeRed
+  name: thin knee
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
+    layers:
+    - state: icon
+      color: "#EE1511"
+  - type: Clothing
+    sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
+    clothingVisuals:
+      socks:
+      - state: equipped-SOCKS
+        color: "#EE1511"
+
+- type: entity
+  parent: LPPClothingUnderwearSocksBase
+  id: LPPClothingUnderThinKneeTeal
+  name: thin knee
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
+    layers:
+    - state: icon
+      color: "#77F3B7"
+  - type: Clothing
+    sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
+    clothingVisuals:
+      socks:
+      - state: equipped-SOCKS
+        color: "#77F3B7"
+
+- type: entity
+  parent: LPPClothingUnderwearSocksBase
+  id: LPPClothingUnderThinKneeYellow
+  name: thin knee
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
+    layers:
+    - state: icon
+      color: "#FBC72D"
+  - type: Clothing
+    sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
+    clothingVisuals:
+      socks:
+      - state: equipped-SOCKS
+        color: "#FBC72D"

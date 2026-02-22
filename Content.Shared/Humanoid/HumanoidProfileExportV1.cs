@@ -1,4 +1,3 @@
-using Content.Shared._ERPModule.Data;
 using Content.Shared._FunkyStation.Records;
 using Content.Shared._GoobStation.Barks;
 using Content.Shared.Humanoid.Markings;
@@ -66,11 +65,6 @@ public sealed partial class HumanoidCharacterProfileV1
     [DataField] //Corvax-TTS
     public string Voice;
 
-    // LP edit start
-    [DataField]
-    public ErpStatus ErpStatus;
-    // LP edit end
-
     [DataField]
     public int Age;
 
@@ -115,7 +109,7 @@ public sealed partial class HumanoidCharacterProfileV1
 
     public HumanoidCharacterProfile ToV2()
     {
-        return new(Name, FlavorText, Species, Voice, Height, Width, Age, Sex, Gender, ErpStatus, Appearance.ToV2(Species), SpawnPriority, JobPriorities, PreferenceUnavailable, AntagPreferences, TraitPreferences, Loadouts, BarkVoice, CdCharacterRecords); // LP edit
+        return new(Name, FlavorText, Species, Voice, Height, Width, Age, Sex, Gender, Appearance.ToV2(Species), SpawnPriority, JobPriorities, PreferenceUnavailable, AntagPreferences, TraitPreferences, Loadouts, BarkVoice, CdCharacterRecords); // LP edit
     }
 }
 
