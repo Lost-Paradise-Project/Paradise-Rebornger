@@ -393,3 +393,12 @@ Entries:
   id: 5652
   time: '2026-02-22T16:15:20.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/79
+- author: SanitarDurkovic
+  changes:
+    - type: Add
+      message: Добавлены два новых лобби-арта.
+    - type: Add
+      message: Добавлены подписи в главном меню к имеющимся лобби-артам.
+  id: 5653
+  time: '2026-02-22T16:16:24.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/87
