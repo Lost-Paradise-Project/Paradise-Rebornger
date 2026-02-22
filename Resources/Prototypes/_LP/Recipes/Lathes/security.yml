@@ -16,9 +16,9 @@
     Plastic: 500
 
 - type: latheRecipe
-  id: LPPC4Low
-  result: LPPC4Low
-  completetime: 10
+  id: LPPBorgModuleSecurityCriminologist
+  result: LPPBorgModuleSecurityCriminologist
   materials:
-    Plastic: 375
-    Plasma: 375
+    Steel: 2000
+    Glass: 800
+    Plastic: 800
