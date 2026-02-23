@@ -1,0 +1,8 @@
+﻿AdminOnly: true
+Entries:
+- author: Evgencheg
+  changes:
+  - message: Создал админ чейнджлог.
+    type: Add
+  id: 1
+  time: '2026-02-23T17:26:00.0000000+00:00'
