@@ -1,4 +1,5 @@
-﻿AdminOnly: true
+﻿Order: 4
+AdminOnly: true
 Entries:
 - author: DrSmugleaf
   changes:

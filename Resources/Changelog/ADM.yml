@@ -1,4 +1,5 @@
-﻿AdminOnly: true
+﻿Order: 2
+AdminOnly: true
 Entries:
 - author: Evgencheg
   changes:

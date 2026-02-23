@@ -1,4 +1,6 @@
-﻿Entries:
+﻿Order: 6
+AdminOnly: true
+Entries:
 - author: Errant
   changes:
   - message: Tab created.
