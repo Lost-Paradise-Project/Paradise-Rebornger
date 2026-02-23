@@ -286,7 +286,7 @@
 - type: entity
   id: BedsheetBrigmedic
   parent: BedsheetBase
-  name: field medic's bedsheet # LP Edit
+  name: brigmedic's bedsheet
   description: Not worse than cotton.
   components:
   - type: Sprite

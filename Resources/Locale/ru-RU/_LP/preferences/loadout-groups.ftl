@@ -1,2 +1,2 @@
-loadout-group-brigtech-special = Униформа полевого инженера
-loadout-group-securityengineer-backpack = Багаж полевого инженера
+loadout-group-brigtech-special = Униформа, Полевой Инженер
+loadout-group-securityengineer-backpack = Рюкзак, Полевой Инженер

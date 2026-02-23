@@ -542,7 +542,7 @@
 - type: entity
   parent: IDCardStandard
   id: BrigmedicIDCard
-  name: field medic ID card # LP Edit
+  name: brigmedic ID card
   components:
   # LP Edit Start
   - type: PresetIdCard

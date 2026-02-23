@@ -1361,7 +1361,7 @@
 - type: entity
   parent: BaseMedicalPDA
   id: BrigmedicPDA
-  name: field medic PDA # LP Edit
+  name: brigmedic PDA
   description: I wonder whose pulse is on the screen? I hope it doesn't stop...
   components:
   - type: Pda

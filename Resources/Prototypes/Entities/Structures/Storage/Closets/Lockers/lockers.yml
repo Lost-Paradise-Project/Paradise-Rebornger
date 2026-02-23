@@ -363,7 +363,7 @@
 - type: entity
   id: LockerBrigmedic
   parent: LockerBaseSecure
-  name: field medic locker # LP Edit
+  name: brigmedic locker
   components:
   - type: Appearance
   - type: EntityStorageVisuals
