@@ -4,7 +4,6 @@ using Content.Client.Materials;
 using Content.Shared._DV.Salvage.Components; // DeltaV
 using Content.Shared._DV.Salvage.Systems; // DeltaV
 using Content.Client._Shitcode.Silo; // Goobstation
-using Content.Shared._GoobStation.Silo; // Goobstation
 using Content.Shared.Lathe;
 using Content.Shared.Lathe.Prototypes;
 using Content.Shared.Research.Prototypes;

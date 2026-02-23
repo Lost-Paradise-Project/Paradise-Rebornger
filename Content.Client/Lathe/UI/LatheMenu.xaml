@@ -1,7 +1,6 @@
 <DefaultWindow
     xmlns="https://spacestation14.io"
     xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
-    xmlns:system="clr-namespace:System;assembly=System.Runtime"
     xmlns:ui="clr-namespace:Content.Client.Materials.UI"
     Title="{Loc 'lathe-menu-title'}"
     MinSize="550 450"
@@ -83,7 +82,19 @@
                         Mode="Press">
                     </Button>
                 </BoxContainer>
-                <Label Text="{Loc 'lathe-menu-queue-title'}" Margin="5 5 5 5" HorizontalAlignment="Center"/>
+                <BoxContainer
+                    Orientation="Horizontal"
+                    Align="Begin"
+                    HorizontalExpand="True">
+                    <Label Text="{Loc 'lathe-menu-queue-title'}" Margin="5 5 5 5" HorizontalAlignment="Left"/>
+                    <Button
+                        Name="ResetQueueList"
+                        Margin="5 5 5 5"
+                        Text="{Loc 'lathe-menu-queue-reset-title'}"
+                        HorizontalAlignment="Right"
+                        Mode="Press">
+                    </Button>
+                </BoxContainer>
                 <BoxContainer
                     Name="FabricatingContainer"
                     Orientation="Horizontal"
@@ -111,18 +122,6 @@
                             HorizontalAlignment="Left"
                             Margin="130 0 0 0">
                         </Label>
-                        <Button
-                            Name="DeleteFabricating"
-                            Margin="0"
-                            Text="✖"
-                            SetSize="38 32"
-                            HorizontalAlignment="Right"
-                            ToolTip="{Loc 'lathe-menu-delete-fabricating-tooltip'}">
-                            <Button.StyleClasses>
-                                <system:String>Caution</system:String>
-                                <system:String>OpenLeft</system:String>
-                            </Button.StyleClasses>
-                        </Button>
                     </PanelContainer>
                 </BoxContainer>
                 <ScrollContainer VerticalExpand="True" HScrollEnabled="False">
@@ -140,17 +139,21 @@
             HorizontalExpand="True"
             Orientation="Vertical">
             <Label Text="{Loc 'lathe-menu-materials-title'}" Margin="5 5 5 5" HorizontalAlignment="Center"/>
-            <PanelContainer VerticalExpand="True">
-                <PanelContainer.PanelOverride>
-                    <gfx:StyleBoxFlat BackgroundColor="#1B1B1E" />
-                </PanelContainer.PanelOverride>
-                <BoxContainer
-                    Orientation="Vertical"
-                    VerticalExpand="True"
-                    HorizontalExpand="True">
-                    <ui:MaterialStorageControl Name="MaterialsList" SizeFlagsStretchRatio="8"/>
+            <BoxContainer
+                Orientation="Vertical"
+                VerticalExpand="True"
+                HorizontalExpand="True">
+                <ui:MaterialStorageControl Name="MaterialsList" SizeFlagsStretchRatio="8"/>
+            </BoxContainer>
+            <!-- Begin DeltaV Additions: Mining points -->
+            <BoxContainer Orientation="Vertical" Name="MiningPointsContainer" Visible="False">
+                <BoxContainer Orientation="Horizontal">
+                    <Label Name="MiningPointsLabel" HorizontalExpand="True"/>
+                    <Button Name="MiningPointsClaimButton" Text="{Loc 'lathe-menu-mining-points-claim-button'}"/>
                 </BoxContainer>
-            </PanelContainer>
+                <RichTextLabel Name="MiningPointsNoConnectionWarning"></RichTextLabel>
+            </BoxContainer>
+            <!-- End DeltaV Additions: Mining points -->
         </BoxContainer>
         </BoxContainer>
 

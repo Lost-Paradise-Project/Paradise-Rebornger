@@ -1,19 +1,18 @@
+﻿using Content.Server.Station.Systems;
+using Content.Shared._CorvaxGoob.Documents;
 using Content.Shared.Access.Components;
 using Content.Shared.Containers.ItemSlots;
-using Content.Shared.Corvax.Documents;
 using Content.Shared.GameTicking;
-using Content.Server.Lathe; // LP Edit
 using Content.Shared.Paper;
-using Content.Shared.Station;
 using Robust.Shared.Timing;
 
-namespace Content.Server.Corvax.Documents;
+namespace Content.Server._CorvaxGoob.Document;
 
-public sealed partial class DocumentPrinterSystem : EntitySystem
+public sealed class DocumentPrinterSystem : EntitySystem
 {
     [Dependency] private readonly ItemSlotsSystem _itemSlots = default!;
     [Dependency] private readonly PaperSystem _paper = default!;
-    [Dependency] private readonly SharedStationSystem _station = default!;
+    [Dependency] private readonly StationSystem _station = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly SharedGameTicker _gameTicker = default!;
 
@@ -41,7 +40,7 @@ public sealed partial class DocumentPrinterSystem : EntitySystem
         }
     }
 
-    public string FormatString(string content, string? station, IdCardComponent? idCard = null)
+    private string FormatString(string content, string? station, IdCardComponent? idCard = null)
     {
         var stationTime = GetTimeStation();
 
@@ -61,5 +60,14 @@ public sealed partial class DocumentPrinterSystem : EntitySystem
         var time = _gameTicker.RoundDuration().ToString("hh\\:mm\\:ss");
         return time + " " + DateTime.Now.AddYears(1000).ToShortDateString();
     }
+}
 
+[Serializable]
+public sealed partial class LatheGetResultEvent : EntityEventArgs
+{
+    public readonly EntityUid ResultItem;
+    public LatheGetResultEvent(EntityUid result)
+    {
+        ResultItem = result;
+    }
 }

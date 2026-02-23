@@ -181,12 +181,12 @@ public sealed class FaxSystem : EntitySystem
         if (considerQueue)
             amount *= faxComp.PrintingQueue.Count + 1;
 
-        return _materialStorage.CanChangeMaterialAmount(faxEnt, faxComp.PrintMaterial, -amount, materialStorageComp, localOnly);
+        return _materialStorage.CanChangeMaterialAmount(faxEnt, faxComp.PrintMaterial, -amount, materialStorageComp);
     }
 
     private bool TryConsumeMaterial(Entity<FaxMachineComponent, MaterialStorageComponent?> fax, bool dirty = true, bool localOnly = false)
     {
-        return _materialStorage.TryChangeMaterialAmount(fax, fax.Comp1.PrintMaterial, -fax.Comp1.PrintConsumeMaterialAmount, fax.Comp2, dirty, localOnly);
+        return _materialStorage.TryChangeMaterialAmount(fax, fax.Comp1.PrintMaterial, -fax.Comp1.PrintConsumeMaterialAmount, fax.Comp2, dirty);
     }
 
     private void ProcessNoPaperNotify(EntityUid fax, float frameTime, FaxMachineComponent comp)

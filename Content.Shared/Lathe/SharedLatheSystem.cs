@@ -22,7 +22,6 @@ public abstract class SharedLatheSystem : EntitySystem
     [Dependency] private readonly EmagSystem _emag = default!;
 
     public readonly Dictionary<string, List<LatheRecipePrototype>> InverseRecipes = new();
-    public const int MaxItemsPerRequest = 10_000;
 
     public override void Initialize()
     {
@@ -87,8 +86,6 @@ public abstract class SharedLatheSystem : EntitySystem
             return false;
         if (!HasRecipe(uid, recipe, component))
             return false;
-        if (amount <= 0)
-            return false;
 
         foreach (var (material, needed) in recipe.Materials)
         {
@@ -151,7 +148,7 @@ public abstract class SharedLatheSystem : EntitySystem
     public string GetRecipeName(LatheRecipePrototype proto)
     {
         if (!string.IsNullOrWhiteSpace(proto.Name))
-            return Loc.GetString(proto.Name);
+            return Loc.GetString(proto.Name) + (string.IsNullOrEmpty(proto.SubName) ? string.Empty : " (" + Loc.GetString(proto.SubName) + ")"); // Goobstation - Recipes subnames
 
         if (proto.Result is {} result)
         {
