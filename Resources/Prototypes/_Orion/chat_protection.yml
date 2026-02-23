@@ -1,4 +1,4 @@
-﻿- type: chatProtectionList
+- type: chatProtectionList
   id: IC_BannedWords
   words:
   - "http"
