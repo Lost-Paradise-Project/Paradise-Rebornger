@@ -68,7 +68,7 @@ public sealed class ChatProtectionSystem : EntitySystem
 
         _log = Logger.GetSawmill("serverprotection.chat_protection");
         _proto.PrototypesReloaded += OnPrototypesReloaded;
-        _cfg.OnValueChanged(CCVars.ChatProtectionEnabled, SetEnabled, true);
+        _cfg.OnValueChanged(OCCVars.ChatProtectionEnabled, SetEnabled, true);
     }
 
 
