@@ -1,4 +1,4 @@
-﻿using System.Numerics;
+using System.Numerics;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Damage.Components;
 using Content.Shared.Input;

@@ -1,4 +1,4 @@
-﻿ui-options-function-toggle-posing = Переключить режим позирования
+ui-options-function-toggle-posing = Переключить режим позирования
 ui-options-function-posing-offset-left = Переместиться влево (позирование)
 ui-options-function-posing-offset-right = Переместиться вправо (позирование)
 ui-options-function-posing-offset-up = Переместиться вверх (позирование)

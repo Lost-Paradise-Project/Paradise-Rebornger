@@ -1,4 +1,4 @@
-﻿using Content.Shared._Orion.Posing;
+using Content.Shared._Orion.Posing;
 using Content.Shared.Input;
 using Robust.Client.GameObjects;
 using Robust.Client.Input;
