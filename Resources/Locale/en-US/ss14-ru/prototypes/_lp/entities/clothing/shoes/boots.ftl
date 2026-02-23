@@ -1,0 +1,12 @@
+ent-LPPGlowShoes = glow shoes
+    .desc = { ent-ClothingShoesBaseButcherable.desc }
+ent-LPPIceboots = iceboots
+    .desc = { ent-ClothingShoesBaseButcherable.desc }
+ent-LPPSwagShoes = swag shoes
+    .desc = { ent-ClothingShoesBaseButcherable.desc }
+ent-LPPWhiteShoes = white laceup shoes
+    .desc = The height of fashion, and they're pre-polished!
+ent-LPPClothingShoesClownPomni = Clown Pomni
+    .desc = Clown?
+ent-LPPClothingShoesBootsJackSecEnginer = { ent-ClothingShoesBootsJack }
+    .desc = { ent-ClothingShoesBootsJack.desc }

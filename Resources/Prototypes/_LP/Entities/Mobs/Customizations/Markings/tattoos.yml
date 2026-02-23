@@ -1,0 +1,38 @@
+- type: marking
+  id: TattooBigEyes
+  bodyPart: Eyes
+  groupWhitelist: [Human, Slime, Reptilian]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+          negative: true
+  sprites:
+  - sprite: _LP/Mobs/Customization/tattoos.rsi
+    state: big_eyes
+
+- type: marking
+  id: TattooBigEyeLeft
+  bodyPart: Eyes
+  groupWhitelist: [Human, Slime, Reptilian]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+          negative: true
+  sprites:
+  - sprite: _LP/Mobs/Customization/tattoos.rsi
+    state: big_eye_left
+
+- type: marking
+  id: TattooBigEyeRight
+  bodyPart: Eyes
+  groupWhitelist: [Human, Slime, Reptilian]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+          negative: true
+  sprites:
+  - sprite: _LP/Mobs/Customization/tattoos.rsi
+    state: big_eye_right

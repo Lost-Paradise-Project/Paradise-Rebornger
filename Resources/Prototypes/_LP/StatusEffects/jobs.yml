@@ -1,0 +1,6 @@
+- type: jobIcon
+  parent: JobIcon
+  id: LPPJobIconSecurityEnginer
+  icon:
+    sprite: /Textures/_LP/Interface/Misc/job_icons.rsi
+    state: FieldEngineer

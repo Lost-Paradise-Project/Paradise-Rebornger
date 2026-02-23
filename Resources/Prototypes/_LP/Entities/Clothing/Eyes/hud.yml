@@ -1,0 +1,29 @@
+- type: entity
+  parent: [ClothingEyesBase, ShowSecurityIcons]
+  id: LPPClothingEyesHudSecEng
+  name: field engineer hud
+  description: The visor model is a combination of an optical meson scanner and a security hud. Protects the eyes.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Eyes/HUD/SecEngHUD.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Eyes/HUD/SecEngHUD.rsi
+  - type: EyeProtection
+  - type: Tag
+    tags:
+    - HudSecurity
+
+- type: entity
+  parent: [ClothingEyesBase, ShowSecurityIcons, ShowMedicalIcons]
+  id: LPPClothingEyesHudSecMed
+  name: field medic hud
+  description: The visor model is a combination of an medical hud and a security hud.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Eyes/HUD/medsec.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Eyes/HUD/medsec.rsi
+  - type: Tag
+    tags:
+    - HudSecurity
+    - HudMedical

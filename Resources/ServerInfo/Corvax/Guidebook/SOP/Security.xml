@@ -64,14 +64,14 @@
   ### Пилоту СБ запрещено
   <FTLTextpart Key="guidebook-SOP-SecurityPilot-prohibited"/>
 
-  ## СРП Бригмедика
-  ### Бригмедик обязан
+  ## СРП полевого врача
+  ### полевой врач обязан
   <FTLTextpart Key="guidebook-SOP-Brigmedic-must"/>
 
-  ### Бригмедик имеет право
+  ### полевой врач имеет право
   <FTLTextpart Key="guidebook-SOP-Brigmedic-right"/>
 
-  ### Бригмедику запрещено
+  ### полевому врачу запрещено
   <FTLTextpart Key="guidebook-SOP-Brigmedic-prohibited"/>
 
   ## СРП Кадета СБ

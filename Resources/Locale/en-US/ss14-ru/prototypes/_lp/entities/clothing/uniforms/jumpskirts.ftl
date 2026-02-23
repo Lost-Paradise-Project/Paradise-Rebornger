@@ -56,3 +56,5 @@ ent-LPPSkirtleneckQMSec = SkirtleneckQM
     .desc = { ent-ClothingUniformBase.desc }
 ent-LPPSupplyChiefSkirtSec = supply chief skirt
     .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpSkirtSecEngineer = security engineer jumpsuit
+    .desc = A jumpsuit made of strong material, providing robust protection.

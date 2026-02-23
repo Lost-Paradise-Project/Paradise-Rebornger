@@ -379,3 +379,73 @@ Entries:
   id: 5650
   time: '2026-02-22T08:14:45.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/75
+- author: SanitarDurkovic
+  changes:
+    - type: Add
+      message: Добавлен СБ-худ боргу-патрульному.
+  id: 5651
+  time: '2026-02-22T16:12:30.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/82
+- author: Evgencheg
+  changes:
+    - type: Add
+      message: Добавлены курки для пушек!
+  id: 5652
+  time: '2026-02-22T16:15:20.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/79
+- author: SanitarDurkovic
+  changes:
+    - type: Add
+      message: Добавлены два новых лобби-арта.
+    - type: Add
+      message: Добавлены подписи в главном меню к имеющимся лобби-артам.
+  id: 5653
+  time: '2026-02-22T16:16:24.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/87
+- author: MegaDaimond
+  changes:
+    - type: Add
+      message: Добавлены ограничения по возрасту для ролей
+    - type: Remove
+      message: Убраны сезонные задние фоны лобби
+    - type: Fix
+      message: Поправка ограничений по расам для инструктора СБ
+  id: 5654
+  time: '2026-02-22T16:12:50.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/84
+- author: Wordik156
+  changes:
+    - type: Tweak
+      message: >-
+        Локализованы баночки с таблетками и сами таблетки из аптечек + теперь
+        вещества измеряются в "ед." (было "u")
+  id: 5655
+  time: '2026-02-22T19:31:59.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/83
+- author: SanitarDurkovic
+  changes:
+    - type: Add
+      message: Добавлены большие глаза в черты внешности.
+  id: 5656
+  time: '2026-02-23T13:22:41.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/88
+- author: BL02DL
+  changes:
+    - type: Add
+      message: Добавлена профессия полевого инженера!
+    - type: Tweak
+      message: Изменено название профессии бригмедика в полевого врача!
+    - type: Tweak
+      message: Изменён кулдаун СЛР до 1 секунды!
+    - type: Add
+      message: Добавлены визоры полевому врачу и полевому инженеру!
+  id: 5657
+  time: '2026-02-23T13:59:58.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/69
+- author: Kasey
+  changes:
+    - type: Add
+      message: Добавлен Ментор Хелпер !
+  id: 5658
+  time: '2026-02-23T14:03:22.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/72

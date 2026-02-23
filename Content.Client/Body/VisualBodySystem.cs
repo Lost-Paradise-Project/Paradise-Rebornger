@@ -1,8 +1,10 @@
 using System.Linq;
+using System.Numerics;
 using Content.Shared.Body;
 using Content.Shared.CCVar;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid;
+using Content.Shared.Humanoid.Prototypes;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Shared.Configuration;
@@ -31,19 +33,11 @@ public sealed class VisualBodySystem : SharedVisualBodySystem
         SubscribeLocalEvent<VisualOrganMarkingsComponent, AfterAutoHandleStateEvent>(OnMarkingsState);
 
         SubscribeLocalEvent<VisualOrganMarkingsComponent, BodyRelayedEvent<HumanoidLayerVisibilityChangedEvent>>(OnMarkingsChangedVisibility);
-    }
 
-    private void OnCensorshipChanged(bool value)
-    {
-        var query = AllEntityQuery<OrganComponent, VisualOrganMarkingsComponent>();
-        while (query.MoveNext(out var ent, out var organComp, out var markingsComp))
-        {
-            if (organComp.Body is not { } body)
-                continue;
-
-            RemoveMarkings((ent, markingsComp), body);
-            ApplyMarkings((ent, markingsComp), body);
-        }
+        // begin Goobstation: port EE height/width sliders
+        SubscribeLocalEvent<HumanoidProfileComponent, AfterAutoHandleStateEvent>(OnHumanoidProfileState);
+        SubscribeLocalEvent<HumanoidProfileComponent, HumanoidProfileLoadedEvent>(OnHumanoidProfileLoaded);
+        // end Goobstation: port EE height/width sliders
     }
 
     private void OnOrganGotInserted(Entity<VisualOrganComponent> ent, ref OrganGotInsertedEvent args)
@@ -254,4 +248,29 @@ public sealed class VisualBodySystem : SharedVisualBodySystem
             }
         }
     }
+
+    // begin Goobstation: port EE height/width sliders
+    private void OnHumanoidProfileState(Entity<HumanoidProfileComponent> ent, ref AfterAutoHandleStateEvent args)
+    {
+        UpdateSpriteScale(ent);
+    }
+
+    private void OnHumanoidProfileLoaded(Entity<HumanoidProfileComponent> ent, ref HumanoidProfileLoadedEvent args)
+    {
+        UpdateSpriteScale(ent);
+    }
+
+    private void UpdateSpriteScale(Entity<HumanoidProfileComponent> ent)
+    {
+        if (!TryComp<SpriteComponent>(ent, out var sprite))
+            return;
+
+        var speciesPrototype = _prototype.Index<SpeciesPrototype>(ent.Comp.Species);
+
+        var height = Math.Clamp(ent.Comp.Height, speciesPrototype.MinHeight, speciesPrototype.MaxHeight);
+        var width = Math.Clamp(ent.Comp.Width, speciesPrototype.MinWidth, speciesPrototype.MaxWidth);
+
+        _sprite.SetScale((ent, sprite), new Vector2(width, height));
+    }
+    // end Goobstation: port EE height/width sliders
 }

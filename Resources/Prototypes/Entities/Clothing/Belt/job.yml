@@ -185,6 +185,7 @@
       - SurgeryTool
       - Dropper
       components:
+      - Defibrillator # LP Edit
       - Injector
       - Pill
       - HandLabeler

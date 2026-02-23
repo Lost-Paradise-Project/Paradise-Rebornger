@@ -1,0 +1,27 @@
+- type: entity
+  parent: ClothingBeltBase
+  id: LPPClothingBeltFlamingo
+  name: inflatable flamingo
+  description: Happy happy happy! HAPPY HAPPY HAPPY HAPPY HAPPY HAPPY HAPPY HAPPY HAPPY!!!
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Belt/flamingo.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Belt/flamingo.rsi
+
+- type: entity
+  id: LPPClothingMilitaryWebbingSecEng
+  parent: ClothingBeltMilitaryWebbing
+  name: field engineer chest rig
+  description: A set of tactical webbing worn by field engineer.
+  suffix: Security
+  components:
+  - type: StorageFill
+    contents:
+      - id: JawsOfLife
+      - id: Wrench
+      - id: Screwdriver
+      - id: WelderIndustrial
+      - id: Multitool
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
