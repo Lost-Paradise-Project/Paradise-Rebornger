@@ -14,6 +14,10 @@
       inverted: true
       traits:
       - Muted
+    #LP edit start
+    - !type:AgeRequirement
+      requiredAge: 26
+    #LP edit end
   weight: 10
   startingGear: ResearchDirectorGear
   icon: "JobIconResearchDirector"

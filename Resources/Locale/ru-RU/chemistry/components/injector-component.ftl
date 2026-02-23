@@ -10,7 +10,7 @@ injector-component-dynamic-mode-name = динамический
 injector-component-mode-changed-text = Режим: { $mode }
 injector-volume-label =
     Объём: [color=white]{ $currentVolume }/{ $totalVolume }[/color]
-    Режим: [color=white]{ $modeString }[/color] ([color=white]{ $transferVolume } ед.[/color])
+    Режим: [color=white]{ $modeString }[/color]
 
 ## Entity
 

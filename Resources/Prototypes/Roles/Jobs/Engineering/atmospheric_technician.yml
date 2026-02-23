@@ -7,6 +7,10 @@
     - !type:DepartmentTimeRequirement
       department: Engineering
       time: 5h # LP edit
+    #LP edit start
+    - !type:AgeRequirement
+      requiredAge: 24
+    #LP edit end
   startingGear: AtmosphericTechnicianGear
   icon: "JobIconAtmosphericTechnician"
   supervisors: job-supervisors-ce

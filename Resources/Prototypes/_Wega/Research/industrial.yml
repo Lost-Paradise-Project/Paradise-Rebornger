@@ -13,3 +13,5 @@
   - MiningServerCircuitboard
   - MiningMonitoringComputerCircuitboard
   position: 0, 0
+  radioChannels:
+  - Engineering

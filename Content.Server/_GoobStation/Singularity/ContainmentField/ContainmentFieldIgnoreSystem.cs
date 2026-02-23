@@ -1,6 +1,6 @@
-using Content.Shared.Goobstation.Singularity;
+using Content.Shared._GoobStation.Singularity;
 
-namespace Content.Server.Goobstation.Singularity.ContainmentField;
+namespace Content.Server._GoobStation.Singularity.ContainmentField;
 
 public sealed class ContainmentFieldIgnoreSystem : EntitySystem
 {

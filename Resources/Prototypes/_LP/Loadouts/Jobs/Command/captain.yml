@@ -1,0 +1,4 @@
+- type: loadout
+  id: LPCapPanties
+  equipment:
+    underwear: LPPCapPanties

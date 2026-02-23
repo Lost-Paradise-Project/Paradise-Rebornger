@@ -1,3 +1,3 @@
 ent-HandTeleporterAdmemeCNInvisible = { ent-HandTeleporter }
-    .suffix = Адмемы, Невидимый
+    .suffix = АДМЕМЫ, Невидимый
     .desc = { ent-HandTeleporter.desc }

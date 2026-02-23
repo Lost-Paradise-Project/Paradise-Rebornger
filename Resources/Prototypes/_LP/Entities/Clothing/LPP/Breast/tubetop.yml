@@ -1,0 +1,205 @@
+#--------------------Tubetop------------------------
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPTubetopBlack
+  name: tubetop
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    layers:
+    - state: icon
+      color: "#0C0C0C"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#0C0C0C"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPTubetopBlue
+  name: tubetop
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    layers:
+    - state: icon
+      color: "#52AECC"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#52AECC"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPTubetopBrown
+  name: tubetop
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    layers:
+    - state: icon
+      color: "#A17229"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#A17229"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPTubetopGreen
+  name: tubetop
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    layers:
+    - state: icon
+      color: "#6FBC22"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#6FBC22"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPTubetopGrey
+  name: tubetop
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    layers:
+    - state: icon
+      color: "#B3B3B3"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#B3B3B3"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPTubetopLightpurple
+  name: tubetop
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    layers:
+    - state: icon
+      color: "#944DFE"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#944DFE"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPTubetopMaroon
+  name: tubetop
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    layers:
+    - state: icon
+      color: "#BE273E"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#BE273E"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPTubetopOrange
+  name: tubetop
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    layers:
+    - state: icon
+      color: "#FF8C19"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FF8C19"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPTubetopRed
+  name: tubetop
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    layers:
+    - state: icon
+      color: "#EE1511"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#EE1511"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPTubetopTeal
+  name: tubetop
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    layers:
+    - state: icon
+      color: "#77F3B7"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#77F3B7"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPTubetopWhite
+  name: tubetop
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    layers:
+    - state: icon
+      color: "#FFFFFF"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FFFFFF"
+
+- type: entity
+  parent: LPPClothingBreastBase
+  id: LPPTubetopYellow
+  name: tubetop
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    layers:
+    - state: icon
+      color: "#FBC72D"
+  - type: Clothing
+    sprite: _LP/Clothing/Breast/Tubetop/white.rsi
+    clothingVisuals:
+      breast:
+      - state: equipped-BREAST
+        color: "#FBC72D"

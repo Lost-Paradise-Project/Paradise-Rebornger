@@ -29,6 +29,7 @@ namespace Content.Client.Chemistry.UI
         private readonly SpriteSystem _sprite;
 
         public event Action<BaseButton.ButtonEventArgs, ReagentButton>? OnReagentButtonPressed;
+        public event Action? OnToggleValveButtonPressed; // Starlight-edit: Plumbing valve
         public readonly Button[] PillTypeButtons;
 
         private const string PillsRsiPath = "/Textures/Objects/Specific/Chemistry/pills.rsi";
@@ -93,6 +94,10 @@ namespace Content.Client.Chemistry.UI
 
             Tabs.SetTabTitle(0, Loc.GetString("chem-master-window-input-tab"));
             Tabs.SetTabTitle(1, Loc.GetString("chem-master-window-output-tab"));
+
+            // Starlight-start: Plumbing valve
+            ValveButton.OnPressed += _ => OnToggleValveButtonPressed?.Invoke();
+            // Starlight-end
         }
 
         private ReagentButton MakeReagentButton(string text, ChemMasterReagentAmount amount, ReagentId id, bool isBuffer, string styleClass)
@@ -166,6 +171,11 @@ namespace Content.Client.Chemistry.UI
             OutputEjectButton.Disabled = castState.OutputContainerInfo is null;
             CreateBottleButton.Disabled = castState.OutputContainerInfo?.Reagents == null;
             CreatePillButton.Disabled = castState.OutputContainerInfo?.Entities == null;
+            // Starlight-start: Plumbing valve
+            ValveButton.Text = Loc.GetString(castState.ValveOpen
+                ? "chem-master-window-valve-open"
+                : "chem-master-window-valve-closed");
+            // Starlight-end
 
             UpdateDosageFields(castState);
         }
@@ -278,7 +288,7 @@ namespace Content.Client.Chemistry.UI
             bufferHBox.AddChild(bufferLabel);
             var bufferVol = new Label
             {
-                Text = $"{state.BufferCurrentVolume}u",
+                Text = $"{state.BufferCurrentVolume}ед.", // LP edit
                 StyleClasses = { StyleClass.LabelWeak }
             };
             bufferHBox.AddChild(bufferVol);
@@ -402,7 +412,7 @@ namespace Content.Client.Chemistry.UI
                     new Label { Text = $"{name}: " },
                     new Label
                     {
-                        Text = $"{quantity}u",
+                        Text = $"{quantity}ед.", // LP edit
                         StyleClasses = { StyleClass.LabelWeak }
                     },
 
@@ -444,7 +454,7 @@ namespace Content.Client.Chemistry.UI
 
         private void SetBufferText(FixedPoint2? volume, string text)
         {
-            BufferCurrentVolume.Text = $" {volume ?? FixedPoint2.Zero}u";
+            BufferCurrentVolume.Text = $" {volume ?? FixedPoint2.Zero}ед."; // LP edit
             DrawSource.Text = Loc.GetString(text);
         }
     }
