@@ -78,6 +78,10 @@ namespace Content.Shared.Administration
         ///     Lets you use the admin help system.
         /// </summary>
         Adminhelp = 1 << 12,
+        /// <summary>
+        ///     DeltaV - Lets you use the Curator Help
+        /// </summary>
+        CuratorHelp = 1 << 30,
 
         /// <summary>
         ///     Lets you view admin notes.
@@ -128,7 +132,7 @@ namespace Content.Shared.Administration
         /// <summary>
         ///     Allows you to edit players playtime.
         /// </summary>
-        Playtime = 1 << 30,
+        Playtime = 1 << 22,
 
         /// <summary>
         ///     Dangerous host permissions like scsi.

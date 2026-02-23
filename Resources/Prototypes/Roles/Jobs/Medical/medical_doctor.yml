@@ -7,6 +7,10 @@
     - !type:DepartmentTimeRequirement
       department: Medical
       time: 2h # Corvax-RoleTime
+    #LP edit start
+    - !type:AgeRequirement
+      requiredAge: 22
+    #LP edit end
   startingGear: DoctorGear
   icon: "JobIconMedicalDoctor"
   supervisors: job-supervisors-cmo

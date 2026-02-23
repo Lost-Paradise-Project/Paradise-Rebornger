@@ -1,0 +1,34 @@
+- type: entity
+  id: LPPHammer
+  parent: BaseItem
+  name: assault hammer
+  description: A hammer designed to quickly penetrate walls, floodgates, and also to crush someone's skulls.
+  components:
+  - type: Tag
+    tags:
+      - Hammer
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Melee/LPPHammer.rsi
+    state: icon
+  - type: Item
+    size: Huge
+  - type: MeleeWeapon
+    attackRate: 0.75
+    range: 1.70
+    damage:
+      types:
+        Blunt: 10
+        Structural: 30
+    bluntStaminaDamageFactor: 2.00
+  - type: Wieldable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Blunt: 10
+        Structural: 80
+  - type: ToolTileCompatible
+  - type: Clothing
+    sprite: _LP/Objects/Weapons/Melee/LPPHammer.rsi
+    quickEquip: false
+    slots:
+    - back

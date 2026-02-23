@@ -10,7 +10,7 @@ public sealed partial class CPRTrainingComponent : Component
     public SoundSpecifier CPRSound = new SoundPathSpecifier("/Audio/_EE/Effects/CPR.ogg");
 
     [DataField]
-    public TimeSpan DoAfterDuration = TimeSpan.FromSeconds(4);
+    public TimeSpan DoAfterDuration = TimeSpan.FromSeconds(1); // LP Edit
 
     [DataField] public DamageSpecifier CPRHealing = new()
     {

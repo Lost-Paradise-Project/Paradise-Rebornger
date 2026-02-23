@@ -6,6 +6,10 @@
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 2.5h
+    #LP edit start
+    - !type:AgeRequirement
+      requiredAge: 22
+    #LP edit end
   startingGear: LawyerGear
   setPreference: false # Corvax-IAA
   icon: "JobIconLawyer"

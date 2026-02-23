@@ -19,6 +19,7 @@
   recipeUnlocks:
   - WeaponProtoKineticAccelerator
   - ShuttleGunKineticCircuitboard
+  - FiringPinExpedition # Starlight
   position: 0, 10
   radioChannels:
   - Security

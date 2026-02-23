@@ -120,6 +120,16 @@ namespace Content.Server.Administration.Systems
                     verb.Impact = LogImpact.Low;
                     args.Verbs.Add(verb);
 
+                    // DeltaV - CuratorHelp
+                    Verb cHelpVerb = new();
+                    cHelpVerb.Text = Loc.GetString("chelp-verb-get-data-text");
+                    cHelpVerb.Category = VerbCategory.Admin;
+                    cHelpVerb.Icon = new SpriteSpecifier.Texture(new("/Textures/_DV/Interface/curator2.svg.192dpi.png"));
+                    cHelpVerb.Act = () =>
+                        _console.RemoteExecuteCommand(player, $"openchelp \"{targetActor.PlayerSession.UserId}\"");
+                    cHelpVerb.Impact = LogImpact.Low;
+                    args.Verbs.Add(cHelpVerb);
+
                     // Subtle Messages
                     Verb prayerVerb = new();
                     prayerVerb.Text = Loc.GetString("prayer-verbs-subtle-message");
@@ -402,7 +412,7 @@ namespace Content.Server.Administration.Systems
                     Priority = 10,
                     Text = Loc.GetString("admin-verbs-camera"),
                     Message = Loc.GetString("admin-verbs-camera-description"),
-                    Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/vv.svg.192dpi.png")),
+                    Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Interface/Actions/actions_borg.rsi"), "state-laws"),
                     Category = VerbCategory.Admin,
                     Act = () =>
                     {

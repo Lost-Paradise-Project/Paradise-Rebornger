@@ -1,4 +1,4 @@
-﻿version: 1 # Not used right now, whatever.
+version: 1 # Not used right now, whatever.
 binds:
 - function: UIClick
   type: State
@@ -244,6 +244,9 @@ binds:
 - function: OpenAHelp
   type: State
   key: F1
+- function: OpenAHelpCuratorChat
+  type: State
+  key: F2
 - function: OpenInventoryMenu
   type: State
   key: I

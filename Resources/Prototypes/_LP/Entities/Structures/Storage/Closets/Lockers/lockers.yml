@@ -1,0 +1,10 @@
+# Security Enginer
+
+- type: entity
+  id: LPPLockerSecEng
+  parent: LockerSecurity
+  name: field engineer locker
+  components:
+  - type: Appearance
+  - type: AccessReader
+    access: [["Engineering"]]
