@@ -1,4 +1,4 @@
-﻿admin-player-actions-window-command-executor = Исполнитель команд
+admin-player-actions-window-command-executor = Исполнитель команд
 admin-command-executor-description = Выполнение команд через текстовое поле
 admin-command-executor-instruction = Введите команды построчно.
 admin-command-executor-placeholder = Введите команды здесь...
