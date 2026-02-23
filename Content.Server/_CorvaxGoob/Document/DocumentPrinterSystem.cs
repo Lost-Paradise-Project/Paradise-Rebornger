@@ -1,4 +1,4 @@
-﻿using Content.Server.Station.Systems;
+using Content.Server.Station.Systems;
 using Content.Shared._CorvaxGoob.Documents;
 using Content.Shared.Access.Components;
 using Content.Shared.Containers.ItemSlots;
