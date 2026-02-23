@@ -1,26 +1,19 @@
 lobby-state-background-bigmoon-title = Большая луна
 lobby-state-background-borman-title = Борман
 lobby-state-background-bormann64-artist = bormann64
-
 lobby-state-background-breaddot_nukies-title = Ядерщики
 lobby-state-background-cum_inflation-artist = cum_inflation
-
 lobby-state-background-clara-title = Калара
 lobby-state-background-kirashet-title = Кирашет
 lobby-state-background-the_kira_san-artist = the_kira_san
-
 lobby-state-background-darkmoon-title = Тёмная луна
 lobby-state-background-darkmoonmilkyway-artist = darkmoonmilkyway
-
 lobby-state-background-girls-title = Девушки
 lobby-state-background-canceredpussy-artist = canceredpussy
-
 lobby-state-background-ohshit-title = Вот чёрт
 lobby-state-background-tongandroch-artist = tongandroch
-
 lobby-state-background-teftelka-title = Тефтелька
 lobby-state-background-push1nkaa-artist = @push1nkaa
-
 lobby-state-background-awareness-title = Осознание
 lobby-state-background-armaturow-title = Арматуров
 lobby-state-background-rewokin-artist = rewokin

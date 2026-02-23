@@ -40,6 +40,7 @@ ent-UraniumGlassReactorFuelRod = Uranium Glass Fuel Rod
     .desc = { ent-BaseReactorFuelRod.desc }
 ent-MeatReactorFuelRod = Meat Fuel Rod
     .desc = A fuel rod fo- wait, is it alive?
+    .suffix = Admeme
 ent-BohrumReactorControlRod = Bohrum Control Rod
     .desc = { ent-BaseReactorControlRod.desc }
 ent-SteelReactorControlRod = Steel Control Rod

@@ -1,2 +1,2 @@
 ent-LPPLockerSecEng = field engineer locker
-    .desc = { ent-LockerBaseSecure.desc }
+    .desc = { ent-LockerSecurity.desc }
