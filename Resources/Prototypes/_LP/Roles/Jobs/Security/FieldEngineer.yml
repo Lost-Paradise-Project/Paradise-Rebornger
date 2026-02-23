@@ -1,0 +1,62 @@
+- type: job
+  id: LPPSecurityEnginer
+  name: job-name-security-enginer
+  description: job-description-security-enginer
+  playTimeTracker: LPPJobSecurityEnginer
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 5h
+    - !type:DepartmentTimeRequirement
+      department: Engineering
+      time: 5h
+    - !type:AgeRequirement
+      requiredAge: 22
+    - !type:TraitsRequirement
+      inverted: true
+      traits:
+      - Muted
+  startingGear: LPPSecurityEngineerGear
+  icon: "LPPJobIconSecurityEnginer"
+  supervisors: job-supervisors-hos
+  canBeAntag: false
+  access:
+  - Security
+  - Brig
+  - Maintenance
+  - External
+  - Engineering
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+
+- type: startingGear
+  id: LPPSecurityEngineerGear
+  equipment:
+    shoes: LPPClothingShoesBootsJackSecEnginer
+    eyes: LPPClothingEyesHudSecEng
+    gloves: ClothingHandsGlovesColorYellow
+    head: ClothingHeadHatHardhatYellow
+    id: LPPSecurityEnginerPDA
+    outerClothing: ClothingOuterVestHazard
+    ears: LPPClothingHeadsetSecurityEngineer
+    belt: LPPClothingMilitaryWebbingSecEng
+  storage:
+    back:
+    - SheetSteel10
+    - SheetGlass10
+    - SheetPlasteel10
+    - LPPC4Low
+
+- type: chameleonOutfit
+  id: LPPSecurityEnginerChameleonOutfit
+  job: LPPSecurityEnginer
+  equipment:
+    shoes: LPPClothingShoesBootsJackSecEnginer
+    eyes: LPPClothingEyesHudSecEng
+    gloves: ClothingHandsGlovesColorYellow
+    head: ClothingHeadHatHardhatYellow
+    id: LPPSecurityEnginerPDA
+    outerClothing: ClothingOuterVestHazard
+    ears: LPPClothingHeadsetSecurityEngineer
+    belt: LPPClothingMilitaryWebbingSecEng

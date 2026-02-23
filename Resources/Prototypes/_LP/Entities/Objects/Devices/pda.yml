@@ -1,0 +1,30 @@
+- type: entity
+  parent: BasePDA
+  id: LPPSecurityEnginerPDA
+  name: field engineer PDA
+  description: Red to hide the stains of passenger blood, orange to reduce electric shock.
+  components:
+  - type: Pda
+    id: LPPSecurityEnginerIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-security-engineer
+  - type: Sprite
+    sprite: _LP/Objects/Devices/pda.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+      state: "pda"
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
+  - type: PdaBorderColor
+    borderColor: "#9b2b2a"
+  - type: Icon
+    state: pda-security

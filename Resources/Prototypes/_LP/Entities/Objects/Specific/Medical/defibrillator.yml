@@ -1,0 +1,62 @@
+- type: entity
+  id: LPPCombatDefibrillator
+  parent: [ BaseItem, PowerCellSlotMediumItem ]
+  name: combat defibrillator
+  description: Quickly. Reliable. Effectively. It has a label "BL CORP Security Technology"
+  components:
+    - type: Wieldable
+    - type: Sprite
+      sprite: _LP/Objects/Specific/Medical/defib.rsi
+      layers:
+        - state: icon
+        - state: screen
+          map: [ "enum.ToggleableVisuals.Layer" ]
+          visible: false
+          shader: unshaded
+    - type: Appearance
+    - type: GenericVisualizer
+      visuals:
+        enum.ToggleableVisuals.Enabled:
+          enum.ToggleableVisuals.Layer:
+            True: { visible: true }
+            False: { visible: false }
+    - type: Speech
+      speechVerb: Robotic
+    - type: ItemToggle
+      soundActivate:
+        path: /Audio/Items/Defib/defib_safety_on.ogg
+      soundDeactivate:
+        path: /Audio/Items/Defib/defib_safety_off.ogg
+    - type: Defibrillator
+      zapHeal:
+        types:
+          Asphyxiation: -80
+    - type: DoAfter
+    - type: UseDelay
+    - type: GuideHelp
+      guides:
+      - MedicalDoctor
+    - type: ToggleCellDraw
+    - type: PowerCellDraw
+      useCharge: 100
+    - type: Item
+      size: Small
+      storedRotation: -90
+    - type: StaticPrice
+      price: 50
+    - type: MeleeWeapon
+      wideAnimationRotation: -135
+      attackRate: 0.65
+      damage:
+        types:
+          Asphyxiation: 0
+          Shock: 0
+      angle: 0
+      animation: WeaponArcThrust
+      soundHit:
+        path: /Audio/_LP/Weapons/defib_hit.ogg
+    - type: IncreaseDamageOnWield
+      damage:
+        types:
+          Asphyxiation: 15
+          Shock: 10

@@ -167,7 +167,7 @@ public abstract partial class SharedSolutionContainerSystem
                 sb.Append(", ");
             }
 
-            sb.AppendFormat("{0}: {1}u", id, quantity);
+            sb.AppendFormat("{0}: {1}ед.", id, quantity); // LP edit
         }
 
         sb.Append(']');

@@ -1,0 +1,42 @@
+- type: entity
+  parent: BasePlasticExplosive
+  id: LPPC4Low
+  name: C4Low
+  description: The explosive package is designed to quickly break down airlocks or walls, but its explosion is rather weak in terms of radius. The label is visible (put it directly on the object).
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Bombs/C4Low.rsi
+    state: icon
+  - type: TriggerOnActivate
+  - type: TriggerOnStuck
+    keyOut: stuck
+  - type: ToggleTriggerCondition # for toggling the start on stuck ability
+    keys:
+    - stuck
+    toggleVerb: toggle-trigger-condition-stick-verb
+    toggleOn: toggle-trigger-condition-stick-on
+    toggleOff: toggle-trigger-condition-stick-off
+  - type: TimerTrigger
+    keysIn:
+      - trigger
+      - stuck
+    delay: 5
+    delayOptions: [5, 10, 15, 20]
+    initialBeepDelay: 0
+    beepSound:
+      path: /Audio/Effects/Cargo/buzz_two.ogg
+      params:
+        volume: -6
+  - type: TriggerOnSignal
+  - type: DeviceLinkSink
+    ports:
+    - Trigger
+  - type: Explosive
+    explosionType: DemolitionCharge
+    totalIntensity: 5
+    intensitySlope: 2
+    maxIntensity: 30
+    canCreateVacuum: false
+  - type: ExplodeOnTrigger
+    keysIn:
+      - timer

@@ -120,3 +120,5 @@ ent-LPPClothingUniformGreenTracksuit = green tracksuit
     .desc = greeb tracksuit for sports in any situation.
 ent-LPPClothingUniformExplorerAlternative = Explorer denim overalls
     .desc = Made out of denim overalls are a good clothing if you are working with pickaxes a lot.
+ent-LPPClothingUniformJumpsuitSecEngineer = security engineer jumpskirt
+    .desc = A jumpsuit made of strong material, providing robust protection.

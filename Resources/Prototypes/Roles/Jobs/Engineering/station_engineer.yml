@@ -7,6 +7,10 @@
     - !type:DepartmentTimeRequirement
       department: Engineering
       time: 2.5h # LP edit
+    #LP edit start
+    - !type:AgeRequirement
+      requiredAge: 22
+    #LP edit end
   startingGear: StationEngineerGear
   icon: "JobIconStationEngineer"
   supervisors: job-supervisors-ce

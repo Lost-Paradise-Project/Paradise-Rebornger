@@ -3,7 +3,7 @@ using Robust.Shared.Serialization;
 namespace Content.Shared._Wega.Medical;
 
 [Serializable, NetSerializable]
-public enum InjectorFabticatorVisuals : byte
+public enum InjectorFabricatorVisuals : byte
 {
     IsRunning
 }

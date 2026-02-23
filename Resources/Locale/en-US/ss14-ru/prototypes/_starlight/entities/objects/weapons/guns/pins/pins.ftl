@@ -1,0 +1,14 @@
+ent-FiringPin = firing pin
+    .desc = Somebody probably really needs this right now...
+ent-FiringPinPistol = pistol firing pin
+    .desc = { ent-FiringPin.desc }
+ent-FiringPinMakeshift = makeshift firing pin
+    .desc = It's a nail. Welded to a bottle cap.
+ent-FiringPinSmartLMG = smartgun bolt assembly
+    .desc = One of a kind, unreplaceable. Includes a round counter.
+ent-FiringPinLaser = laser crystal
+    .desc = Fragile, not unlike the assistants killed by it.
+ent-FiringPinAdvancedLaser = prototype laser crystal
+    .desc = DO NOT DROP is inscribed on the side. whatever.
+ent-FiringPinExpedition = expedition firing pin
+    .desc = This universal pin prevents the gun from firing when on station, useful for managing weaponry used on offstation exploration.
