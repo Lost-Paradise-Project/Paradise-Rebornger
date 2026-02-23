@@ -116,6 +116,7 @@
         - id: ChemistryBottleKelotane
         - id: ChemistryBottleEpinephrine # A power item for medical players that feels thematic and worth stealing
         - id: PillCanisterTricordrazine
+        - id: LPPCombatHypospray # LP edit
 
 - type: entity
   parent: ClothingBeltMedicalEMT

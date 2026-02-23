@@ -115,6 +115,10 @@
   - ClothingHeadHatWarden
   - ClothingUniformJumpsuitWarden
   - ClothingUniformJumpskirtWarden
+  # LP Edit Start
+  # - LPPClothingUniformJumpSkirtSecEngineer
+  # - LPPClothingUniformJumpsuitSecEngineer
+  # LP Edit End
 
 - type: latheRecipePack
   id: ClothingService

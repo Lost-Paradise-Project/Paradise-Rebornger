@@ -40,6 +40,7 @@ ent-UraniumGlassReactorFuelRod = топливный стержень из ура
     .desc = { ent-BaseReactorFuelRod.desc }
 ent-MeatReactorFuelRod = мясной топливный стержень
     .desc = Топливный стержень дл... погодите, он что, живой?
+    .suffix = АДМИНЫ
 ent-BohrumReactorControlRod = бориевый стержень управления
     .desc = { ent-BaseReactorControlRod.desc }
 ent-SteelReactorControlRod = стальной стержень управления

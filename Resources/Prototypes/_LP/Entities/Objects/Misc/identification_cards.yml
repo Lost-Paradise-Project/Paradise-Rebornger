@@ -1,0 +1,38 @@
+- type: entity
+  parent: IDCardStandard
+  id: LPPSecurityEnginerIDCard
+  name: field engineer ID card
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Misc/id_cards.rsi
+    layers:
+    - state: default
+    - state: stripe_top
+      color: &color-security-top "#cb0000"
+    - state: stripe_bottom
+      color: &color-security-bottom "#830000"
+    - sprite: &icon-rsi _LP/Interface/Misc/job_icons.rsi
+      offset: &icon-offset -0.09375, 0.0625  #3 pixels left, 2 pixels up
+      state: FieldEngineer
+  - type: PresetIdCard
+    job: LPPSecurityEnginer
+
+- type: entity
+  parent: IDCardStandard
+  id: LPPFieldMedicIDCard
+  name: field medic ID card # LP Edit
+  components:
+  # LP Edit Start
+  - type: PresetIdCard
+    job: Brigmedic
+  # LP Edit End
+  - type: Sprite
+    layers:
+    - state: default
+    - state: stripe_top
+      color: *color-security-top
+    - state: stripe_bottom
+      color: *color-security-bottom
+    - sprite: *icon-rsi
+      offset: *icon-offset
+      state: FieldMedic

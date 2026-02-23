@@ -56,3 +56,5 @@ ent-LPPSkirtleneckQMSec = водолазка с юбкой СБ
     .desc = { ent-ClothingUniformBase.desc }
 ent-LPPSupplyChiefSkirtSec = рубашка с юбкой СБ
     .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpSkirtSecEngineer = униформа полевого инженера
+    .desc = Комбинезон изготовлен из прочного материала, обеспечивающего надежную защиту.

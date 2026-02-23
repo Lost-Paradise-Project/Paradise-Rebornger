@@ -1,0 +1,43 @@
+- type: loadoutGroup
+  id: LPPBrigtechUniform
+  name: loadout-group-brigtech-special
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LPPClothingUniformJumpsuitSecEngineer
+  - LPPClothingUniformJumpSkirtSecEngineer
+
+- type: loadout
+  id: LPPClothingUniformJumpsuitSecEngineer
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitSecEngineer
+
+- type: loadout
+  id: LPPClothingUniformJumpSkirtSecEngineer
+  equipment:
+    jumpsuit: LPPClothingUniformJumpSkirtSecEngineer
+
+- type: loadoutGroup
+  id: LPPSecurityEngineerBackpack
+  name: loadout-group-securityengineer-backpack
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LPPClothingBackpackSecurityEngineer
+  - LPPClothingSatchelSecurityEngineer
+  - LPPClothingBackpackDuffelSecurityEngineer
+
+- type: loadout
+  id: LPPClothingBackpackSecurityEngineer
+  equipment:
+    back: LPPClothingBackpackSecurityEngineer
+
+- type: loadout
+  id: LPPClothingSatchelSecurityEngineer
+  equipment:
+    back: LPPClothingSatchelSecurityEngineer
+
+- type: loadout
+  id: LPPClothingBackpackDuffelSecurityEngineer
+  equipment:
+    back: LPPClothingBackpackDuffelSecurityEngineer

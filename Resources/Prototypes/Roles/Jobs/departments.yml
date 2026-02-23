@@ -116,6 +116,7 @@
   - Detective
   - Warden
   - Brigmedic # Corvax-Brigmedic
+  - LPPSecurityEnginer # LP Edit
 
 - type: department
   id: Science
