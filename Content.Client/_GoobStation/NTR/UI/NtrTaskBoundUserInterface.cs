@@ -1,0 +1,42 @@
+using Content.Shared._GoobStation.NTR;
+
+namespace Content.Client._GoobStation.NTR.UI;
+
+public sealed class NtrTaskBoundUserInterface(EntityUid owner, Enum uiKey) : BoundUserInterface(owner, uiKey)
+{
+    [ViewVariables]
+    private NtrTaskMenu? _menu;
+
+    protected override void Open()
+    {
+        base.Open();
+
+        _menu = new NtrTaskMenu();
+
+        _menu.OnClose += Close;
+        _menu.OpenCentered();
+
+        _menu.OnLabelButtonPressed += id =>
+            SendMessage(new TaskPrintLabelMessage(id));
+
+        _menu.OnSkipButtonPressed += id =>
+            SendMessage(new TaskSkipMessage(id));
+    }
+
+    protected override void Dispose(bool disposing)
+    {
+        base.Dispose(disposing);
+
+        _menu?.Close();
+    }
+
+    protected override void UpdateState(BoundUserInterfaceState message)
+    {
+        base.UpdateState(message);
+
+        if (message is not NtrTaskConsoleState state)
+            return;
+
+        _menu?.UpdateEntries(state.AvailableTasks, state.History, state.UntilNextSkip);
+    }
+}

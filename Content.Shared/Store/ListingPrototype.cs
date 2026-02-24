@@ -212,6 +212,22 @@ public partial class ListingData : IEquatable<ListingData>
     [DataField]
     public bool ApplyToMob = false;
 
+    /// <summary>
+    /// Goobstation.
+    /// When purchased, it will block refunds of these listings.
+    /// </summary>
+    [DataField]
+    public HashSet<ProtoId<ListingPrototype>> BlockRefundListings = new();
+
+    [DataField]
+    public bool ResetRestockOnPurchase = false; // goob edit
+
+    [DataField]
+    public TimeSpan RestockDuration = TimeSpan.FromMinutes(10); // goob edit
+
+    [DataField]
+    public TimeSpan? RestockAfterPurchase { get; private set; } // goob edit
+
     public bool Equals(ListingData? listing)
     {
         if (listing == null)
@@ -225,11 +241,17 @@ public partial class ListingData : IEquatable<ListingData>
             ProductAction != listing.ProductAction ||
             ProductEvent?.GetType() != listing.ProductEvent?.GetType() ||
             RestockTime != listing.RestockTime ||
-            DisableRefund != listing.DisableRefund ||
+            DisableRefund != listing.DisableRefund || // Goobstation
+            ResetRestockOnPurchase != listing.ResetRestockOnPurchase || // Goobstation
+            RestockAfterPurchase != listing.RestockAfterPurchase || // Goobstation
             ApplyToMob != listing.ApplyToMob)
             return false;
 
         if (Icon != null && !Icon.Equals(listing.Icon))
+            return false;
+
+        // Goobstation
+        if (!BlockRefundListings.OrderBy(x => x).SequenceEqual(listing.BlockRefundListings.OrderBy(x => x)))
             return false;
 
         // more complicated conditions that eat perf. these don't really matter

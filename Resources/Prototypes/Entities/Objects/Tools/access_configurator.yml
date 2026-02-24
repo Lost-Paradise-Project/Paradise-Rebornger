@@ -127,6 +127,8 @@
     - CentralCommand
     - NuclearOperative
     - SyndicateAgent
+    - NanotrasenRepresentative # goobstation
+    - BlueshieldOfficer # goobstation
     - Wizard
     - Xenoborg
     - GenpopEnter

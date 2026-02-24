@@ -1,0 +1,71 @@
+- type: entity
+  parent: ClothingUniformEnvirosuitCustomBase
+  id: ClothingUniformEnvirosuitNanotrasenRepresentative
+  name: nanotrasen representative envirosuit
+  description: A black envirosuit worn by officials.
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+      color: "#292929"
+    - state: accent3_chestonly-icon
+      color: "#266199"
+    - state: accent2-icon
+      color: "#ffce5b"
+    - state: buttons-icon
+      color: "#f3f5f4"
+    - state: belt-icon
+      color: "#87511b"
+    - state: beltbuckle-icon
+      color: "#969696"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#292929"
+      - state: accent3_chestonly-inhand-left
+        color: "#266199"
+      - state: accent2-inhand-left
+        color: "#ffce5b"
+      - state: buttons-inhand-left
+        color: "#f3f5f4"
+      - state: belt-inhand-left
+        color: "#87511b"
+      - state: beltbuckle-inhand-left
+        color: "#969696"
+      right:
+      - state: inhand-right
+        color: "#292929"
+      - state: accent3_chestonly-inhand-right
+        color: "#266199"
+      - state: accent2-inhand-right
+        color: "#ffce5b"
+      - state: buttons-inhand-right
+        color: "#f3f5f4"
+      - state: belt-inhand-right
+        color: "#87511b"
+      - state: beltbuckle-inhand-right
+        color: "#969696"
+  - type: Clothing
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+        color: "#292929"
+      - state: accent3_chestonly-equipped-INNERCLOTHING
+        color: "#266199"
+      - state: accent2-equipped-INNERCLOTHING
+        color: "#ffce5b"
+      - state: buttons-equipped-INNERCLOTHING
+        color: "#f3f5f4"
+      - state: cuffs-equipped-INNERCLOTHING
+        color: "#ffce5b"
+      - state: cuffs_upper-equipped-INNERCLOTHING
+        color: "#0057a8"
+      - state: belt-equipped-INNERCLOTHING
+        color: "#87511b"
+      - state: beltbuckle-equipped-INNERCLOTHING
+        color: "#969696"
+      - state: loweraccent-equipped-INNERCLOTHING
+        color: "#266199"
+      - state: soles-equipped-INNERCLOTHING
+        color: "#ffce5b"

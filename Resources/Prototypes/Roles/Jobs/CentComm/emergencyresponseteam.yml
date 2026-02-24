@@ -13,6 +13,10 @@
   - AllAccess
   access:
   - CentralCommand
+  # Goobstation Start
+  - NanotrasenRepresentative
+  - BlueshieldOfficer
+  # Goobstation End
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant, DeathRattleImplantCentcomm ]
@@ -112,6 +116,10 @@
   - AllAccess
   access:
   - CentralCommand
+  # Goobstation Start
+  - NanotrasenRepresentative
+  - BlueshieldOfficer
+  # Goobstation End
   special:
   - !type:AddComponentSpecial
     components:
@@ -189,6 +197,10 @@
   - AllAccess
   access:
   - CentralCommand
+  # Goobstation Start
+  - NanotrasenRepresentative
+  - BlueshieldOfficer
+  # Goobstation End
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant, DeathRattleImplantCentcomm ]
@@ -284,6 +296,10 @@
   - AllAccess
   access:
   - CentralCommand
+  # Goobstation Start
+  - NanotrasenRepresentative
+  - BlueshieldOfficer
+  # Goobstation End
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant, DeathRattleImplantCentcomm ]
@@ -471,6 +487,10 @@
   - AllAccess
   access:
   - CentralCommand
+  # Goobstation Start
+  - NanotrasenRepresentative
+  - BlueshieldOfficer
+  # Goobstation End
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant, DeathRattleImplantCentcomm ]
@@ -571,6 +591,10 @@
   - AllAccess
   access:
   - CentralCommand
+  # Goobstation Start
+  - NanotrasenRepresentative
+  - BlueshieldOfficer
+  # Goobstation End
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant, DeathRattleImplantCentcomm ]

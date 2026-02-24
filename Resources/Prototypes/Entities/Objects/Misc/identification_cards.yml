@@ -1415,6 +1415,9 @@
     - SyndicateAgent
     - Wizard
     - Xenoborg
+    # Goobstation
+    - NanotrasenRepresentative
+    - BlueshieldOfficer
   - type: Tag #  Ignore Chameleon tags
     tags:
     - DoorBumpOpener
