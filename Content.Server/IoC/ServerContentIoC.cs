@@ -34,6 +34,8 @@ using Content.Shared.Kitchen;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.Players.RateLimiting;
 using Content.Server._GoobStation.Antag;
+using Content.Server._Orion.ServerProtection.Chat;
+
 //LP edit start
 #if LP
 using Content.Server._LP.Sponsors;
@@ -93,13 +95,14 @@ internal static class ServerContentIoC
         deps.Register<DiscordChatLink>();
         deps.Register<ServerFeedbackManager>();
         deps.Register<ISharedFeedbackManager, ServerFeedbackManager>();
-        IoCManager.Register<TTSManager>(); // Corvax-TTS
-        IoCManager.Register<LastRolledAntagManager>(); // Goobstation - antag pity
+        deps.Register<TTSManager>(); // Corvax-TTS
+        deps.Register<LastRolledAntagManager>(); // Goobstation - antag pity
+        deps.Register<ChatProtectionSystem>(); // Orion
         // LP edit start
 #if LP
-        IoCManager.Register<SponsorsManager>();
-        IoCManager.Register<DiscordAuthManager>();
-        IoCManager.Register<JoinQueueManager>();
+        deps.Register<SponsorsManager>();
+        deps.Register<DiscordAuthManager>();
+        deps.Register<JoinQueueManager>();
 #endif
         // LP edit end
     }

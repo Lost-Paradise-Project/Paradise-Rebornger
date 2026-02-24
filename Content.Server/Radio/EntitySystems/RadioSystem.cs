@@ -1,5 +1,6 @@
 using Content.Server.Administration.Logs;
 using Content.Server.Chat.Systems;
+using Content.Server._Orion.ServerProtection.Chat;
 using Content.Server.Power.Components;
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
@@ -33,6 +34,7 @@ public sealed class RadioSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly ChatSystem _chat = default!;
+    [Dependency] private readonly ChatProtectionSystem _chatProtection = default!; // Orion
 
     // set used to prevent radio feedback loops.
     private readonly HashSet<string> _messages = new();
@@ -78,6 +80,11 @@ public sealed class RadioSystem : EntitySystem
     /// <param name="radioSource">Entity that picked up the message and will send it, e.g. headset</param>
     public void SendRadioMessage(EntityUid messageSource, string message, RadioChannelPrototype channel, EntityUid radioSource, bool escapeMarkup = true)
     {
+        // Orion-Start
+        if (_chatProtection.CheckICMessage(message, messageSource) == true)
+            return;
+        // Orion-End
+
         // TODO if radios ever garble / modify messages, feedback-prevention needs to be handled better than this.
         if (!_messages.Add(message))
             return;
