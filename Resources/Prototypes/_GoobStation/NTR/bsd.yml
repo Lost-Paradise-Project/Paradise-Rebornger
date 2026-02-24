@@ -8,7 +8,6 @@
   components:
   - type: RandomHumanoidAppearance
     randomizeName: false
-    hair: HairBald # todo: find a new hair for BSD
   - type: Loadout
     prototypes: [BlueshieldDeputyGear]
   - type: RandomMetadata # funny cowboy name
@@ -33,16 +32,16 @@
     id: BlueshieldPDA
     ears: ClothingHeadsetAltCommand
     pocket1: DrinkEnergyDrinkCan
-    pocket2: TelescopicBaton
+    pocket2: Stunbaton # LP Edit -> REPLACE WITH TELESCOPICBATON
     belt: ClothingBeltHolsterFilledBlueshield
     back: ClothingBackpackBlueshield
   storage:
     back:
     - ClothingMaskGasSecurity
     - Flash
-    - BluespaceLifelineImplanter
+    # - BluespaceLifelineImplanter
     - DefibrillatorCompact # wow personal doctor for NTR
-    - SecHypo
+    - LPPCombatHypospray # LP Edit
   inhand:
     - MedkitCombatFilled
 

@@ -13,9 +13,6 @@
     name: ghost-role-lead-intern-name
     description: ghost-role-intern-desc
     rules: ghost-role-lead-intern-rules
-    requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 36000 #10 hours
   - type: GhostRoleMobSpawner
     prototype: LeadIntern
 
@@ -46,9 +43,6 @@
     name: ghost-role-intern-name
     description: ghost-role-intern-desc
     rules: ghost-role-intern-rules
-    requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 36000 #10 hours
   - type: GhostRoleMobSpawner
     prototype: NTIntern
 
@@ -66,9 +60,6 @@
     name: ghost-role-nerd-intern-name
     description: ghost-role-intern-desc
     rules: ghost-role-intern-rules
-    requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 36000 #10 hours
   - type: GhostRoleMobSpawner
     prototype: NTNerdIntern
 
@@ -109,7 +100,7 @@
     back: ClothingBackpackCentcomm
     ears: ClothingHeadsetGrey
     id: PassengerIDCard # let NTR give them access on bridge lol, im too lazy to make a new ID just for interns
-    pocket1: WeaponLaserCellRevolver
+    pocket1: WeaponAdvancedLaser
     pocket2: PowerCellHigh
   inhand:
     - MedkitAdvancedFilled
@@ -117,7 +108,7 @@
   storage:
     back:
     - ClothingShoesSlippers
-    - BoxSurvivalSlotsMedical
+    - BoxSurvivalMedical
     - Stunbaton
 
 # Lead Intern Gear
@@ -134,7 +125,7 @@
     ears: ClothingHeadsetGrey
     id: PassengerIDCard
     pocket1: DrinkEnergyDrinkCan
-    pocket2: TelescopicBaton
+    pocket2: Stunbaton # LP Edit -> REPLACE WITH TELESCOPICBATON
   inhand:
     - WeaponLaserCarbine
   storage:
@@ -142,7 +133,7 @@
     - NerdInternCoin
     - InternCoin
     - InternCoin
-    - BoxSurvivalSlotsMedical
+    - BoxSurvivalMedical
 
 # NT Intern Gear
 - type: startingGear
@@ -162,5 +153,5 @@
   storage:
     back:
     - Vape # interns ammiright?
-    - BoxSurvivalSlotsMedical
+    - BoxSurvivalMedical
     - Stunbaton

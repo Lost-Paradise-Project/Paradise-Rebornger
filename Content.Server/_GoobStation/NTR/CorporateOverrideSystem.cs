@@ -25,8 +25,8 @@ public sealed class CorporateOverrideSystem : EntitySystem
             || !TryComp<StoreComponent>(uid, out var store))
             return;
 
-        if (store.Categories.Add(comp.UnlockedCategory))
-            Dirty(uid, store);
+        // if (store.Categories.Add(comp.UnlockedCategory))
+        Dirty(uid, store);
     }
 
     private void OnItemRemoved(EntityUid uid, CorporateOverrideComponent comp, EntRemovedFromContainerMessage args)
@@ -35,10 +35,10 @@ public sealed class CorporateOverrideSystem : EntitySystem
             || !TryComp<StoreComponent>(uid, out var store))
             return;
 
-        if (!store.Categories.Contains(comp.UnlockedCategory))
-            return;
+        // if (!store.Categories.Contains(comp.UnlockedCategory))
+        //     return;
             
-        store.Categories.Remove(comp.UnlockedCategory);
+        // store.Categories.Remove(comp.UnlockedCategory);
         Dirty(uid, store);
     }
 }

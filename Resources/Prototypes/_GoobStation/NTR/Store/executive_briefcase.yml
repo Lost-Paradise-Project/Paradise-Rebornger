@@ -24,8 +24,8 @@
   - type: Tag
     tags:
     - HighRiskItem
-  - type: StealTarget
-    stealGroup: ExecutiveBriefcase
+  # - type: StealTarget # LP Edit - NO STEAL THING
+  #   stealGroup: ExecutiveBriefcase
   - type: ContainerContainer # why this exists oh my god
     containers:
       storagebase: !type:Container
@@ -62,7 +62,7 @@
     - NTRstation
     - NTRpersonal
     - NTRBoards
-    - NTREvil
+    # - NTREvil
 
 # Executive briefcase store
 # i dont want to make a bunch of new files for 1 prototype so....
@@ -98,11 +98,11 @@
   name: ntr-executive-tier-5-name
   priority: 2
 
-- type: storeCategory
-  id: NTREvil
-  name: Evil
-  priority: 3
-  evil: true # lol
+# - type: storeCategory # LP Edit -> NO EVIL
+#   id: NTREvil
+#   name: Evil
+#   priority: 3
+#   evil: true # lol
 
 - type: currency
   id: NTLoyaltyPoint

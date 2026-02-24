@@ -578,20 +578,21 @@
 
 # evil (debug)
 # todo: add more debug stuff / and possibly make this open if emagged or something, but it was never intended for it tho.
-- type: listing
-  id: NTRExecutiveDebugCodes
-  name: Nuclear codes
-  description: Stand ready for my arrival, worm.
-  productEntity: BoxFolderNuclearCodes
-  cost:
-    NTLoyaltyPoint: 250
-  categories:
-  - NTREvil
-  restockTime: 2700 # 45 min
-  resetRestockOnPurchase: false
-  conditions:
-  - !type:ListingLimitedStockCondition
-    stock: 1
+# LP Edit -> DO NOT ADD MORE DEBUG
+# - type: listing
+#   id: NTRExecutiveDebugCodes
+#   name: Nuclear codes
+#   description: Stand ready for my arrival, worm.
+#   productEntity: BoxFolderNuclearCodes
+#   cost:
+#     NTLoyaltyPoint: 250
+#   categories:
+#   - NTREvil
+#   restockTime: 2700 # 45 min
+#   resetRestockOnPurchase: false
+#   conditions:
+#   - !type:ListingLimitedStockCondition
+#     stock: 1
 
 - type: listing
   id: NTRExecutiveCasettePlayer

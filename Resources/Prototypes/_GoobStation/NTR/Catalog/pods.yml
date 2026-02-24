@@ -113,7 +113,7 @@
   parent: SpawnSupplyEmpty
   components:
   - type: SpawnOnDespawn
-    prototype: DrinkPremiumWhiskeyBottleFull
+    prototype: DrinkWhiskeyBottleFull
 
 - type: entity
   id: SpawnPodCentCommGlasses
@@ -296,16 +296,6 @@
     prototype: SoapCentcomm
 
 - type: entity
-  id: SpawnPodCargoBingle
-  categories: [ HideSpawnMenu ]
-  name: SpawnPodCargoBingle
-  parent: SpawnSupplyEmpty
-  components:
-  - type: SpawnOnDespawn
-    prototype: CargoBingleSpawnCoin
-
-
-- type: entity
   id: SpawnPodWaterCoolerGold
   categories: [ HideSpawnMenu ]
   name: SpawnPodWaterCoolerGold
@@ -322,4 +312,3 @@
   components:
   - type: SpawnOnDespawn
     prototype: ExecutiveCassette
-    
