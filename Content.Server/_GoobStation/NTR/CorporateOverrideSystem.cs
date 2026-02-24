@@ -37,7 +37,7 @@ public sealed class CorporateOverrideSystem : EntitySystem
 
         if (!store.Categories.Contains(comp.UnlockedCategory))
             return;
-            
+
         store.Categories.Remove(comp.UnlockedCategory);
         Dirty(uid, store);
     }
