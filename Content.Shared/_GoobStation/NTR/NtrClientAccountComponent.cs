@@ -6,4 +6,3 @@ namespace Content.Shared._GoobStation.NTR;
 public sealed partial class NtrClientAccountComponent : Component
 {
 }
-

@@ -7,10 +7,10 @@
         "y": 64
     },
     "states": [
-		{
+        {
             "name": "landed"
         },
-		{
+        {
             "name": "landed-opened"
         }
     ]
