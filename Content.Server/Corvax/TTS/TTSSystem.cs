@@ -1,10 +1,13 @@
 using System.Threading.Tasks;
+using Content.Server.Radio; // LP edit
+using Content.Server.Radio.EntitySystems; // LP edit
 using Content.Shared.Chat;
 using Content.Server.Chat.Systems;
 using Content.Shared.Corvax.CCCVars;
 using Content.Shared.Corvax.TTS;
 using Content.Shared.GameTicking;
 using Content.Shared.Players.RateLimiting;
+using Content.Shared.Radio.Components; // LP edit
 using Robust.Shared.Configuration;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
@@ -46,7 +49,11 @@ public sealed partial class TTSSystem : EntitySystem
         _cfg.OnValueChanged(CCCVars.TTSEnabled, v => _isEnabled = v, true);
 
         SubscribeLocalEvent<TransformSpeechEvent>(OnTransformSpeech);
-        SubscribeLocalEvent<TTSComponent, EntitySpokeEvent>(OnEntitySpoke);
+        // LP edit start - ordering before HeadsetSystem/RadioSystem to see Channel before it's null'd
+        SubscribeLocalEvent<TTSComponent, EntitySpokeEvent>(OnEntitySpoke,
+            before: [typeof(HeadsetSystem), typeof(RadioSystem)]);
+        SubscribeLocalEvent<ActiveRadioComponent, RadioReceiveEvent>(OnRadioReceive);
+        // LP edit end
         SubscribeLocalEvent<RoundRestartCleanupEvent>(OnRoundRestartCleanup);
 
         SubscribeNetworkEvent<RequestPreviewTTSEvent>(OnRequestPreviewTTS);
@@ -84,6 +91,11 @@ public sealed partial class TTSSystem : EntitySystem
             voiceId == null)
             return;
 
+        // LP edit start - skip local TTS for radio messages, radio TTS handled in OnRadioReceive
+        if (args.Channel != null)
+            return;
+        // LP edit end
+
         var voiceEv = new TransformSpeakerVoiceEvent(uid, voiceId);
         RaiseLocalEvent(uid, voiceEv);
         voiceId = voiceEv.VoiceId;
@@ -107,16 +119,20 @@ public sealed partial class TTSSystem : EntitySystem
         RaiseNetworkEvent(new PlayTTSEvent(soundData, GetNetEntity(uid)), Filter.Pvs(uid));
     }
 
+    // LP edit start - fixed whisper: don't block full TTS if obfuscated text fails to generate
     private async void HandleWhisper(EntityUid uid, string message, string obfMessage, string speaker)
     {
-        var fullSoundData = await GenerateTTS(message, speaker, isWhisper: true, isMuffled: false);
+        var fullSoundData = await GenerateTTS(message, speaker);
         if (fullSoundData is null) return;
 
-        var obfSoundData = await GenerateTTS(obfMessage, speaker, isWhisper: true, isMuffled: true);
-        if (obfSoundData is null) return;
+        // Obfuscated text may sanitize to empty — don't let that block the full TTS
+        var obfSoundData = await GenerateTTS(obfMessage, speaker);
 
-        var fullTtsEvent = new PlayTTSEvent(fullSoundData, GetNetEntity(uid), true);
-        var obfTtsEvent = new PlayTTSEvent(obfSoundData, GetNetEntity(uid), true);
+        var netEntity = GetNetEntity(uid);
+        var fullTtsEvent = new PlayTTSEvent(fullSoundData, netEntity, isWhisper: true);
+        var obfTtsEvent = obfSoundData != null
+            ? new PlayTTSEvent(obfSoundData, netEntity, isWhisper: true)
+            : null;
 
         var xformQuery = GetEntityQuery<TransformComponent>();
         var sourcePos = _xforms.GetWorldPosition(xformQuery.GetComponent(uid), xformQuery);
@@ -129,11 +145,66 @@ public sealed partial class TTSSystem : EntitySystem
             if (distance > SharedChatSystem.WhisperMuffledRange)
                 continue;
 
-            RaiseNetworkEvent(distance > SharedChatSystem.WhisperClearRange ? obfTtsEvent : fullTtsEvent, session);
+            if (distance > SharedChatSystem.WhisperClearRange)
+            {
+                // Far players hear obfuscated version (if available)
+                if (obfTtsEvent != null)
+                    RaiseNetworkEvent(obfTtsEvent, session);
+            }
+            else
+            {
+                // Nearby players hear the full version
+                RaiseNetworkEvent(fullTtsEvent, session);
+            }
         }
     }
+    // LP edit end
 
-    private async Task<byte[]?> GenerateTTS(string text, string speaker, bool isWhisper = false, bool isMuffled = false)
+    // LP edit start - radio TTS handler via RadioReceiveEvent
+    // Note: RadioReceiveEvent is a ByRefEvent struct, so ref params can't be used in async methods.
+    // We extract needed data synchronously, then delegate to async HandleRadio.
+    private void OnRadioReceive(EntityUid uid, ActiveRadioComponent component, ref RadioReceiveEvent args)
+    {
+        if (!_isEnabled)
+            return;
+
+        // For headsets, the player is the parent; for intrinsic receivers, the entity itself
+        var playerUid = HasComp<HeadsetComponent>(uid) ? Transform(uid).ParentUid : uid;
+
+        if (!TryComp<ActorComponent>(playerUid, out var actor))
+            return;
+
+        // Get the sender's voice
+        if (!TryComp<TTSComponent>(args.MessageSource, out var ttsComp) || ttsComp.VoicePrototypeId == null)
+            return;
+
+        if (args.Message.Length > MaxMessageChars)
+            return;
+
+        // Voice mask check (TransformSpeakerVoiceEvent relays through InventoryRelay → MASK slot)
+        var voiceEv = new TransformSpeakerVoiceEvent(args.MessageSource, ttsComp.VoicePrototypeId);
+        RaiseLocalEvent(args.MessageSource, voiceEv);
+
+        if (!_prototypeManager.TryIndex<TTSVoicePrototype>(voiceEv.VoiceId, out var protoVoice))
+            return;
+
+        HandleRadio(args.MessageSource, args.Message, protoVoice.Speaker, actor.PlayerSession);
+    }
+
+    private async void HandleRadio(EntityUid source, string message, string speaker, ICommonSession session)
+    {
+        var soundData = await GenerateTTS(message, speaker, effect: "radio");
+        if (soundData is null)
+            return;
+
+        RaiseNetworkEvent(
+            new PlayTTSEvent(soundData, GetNetEntity(source), isRadio: true),
+            Filter.SinglePlayer(session));
+    }
+    // LP edit end
+
+    // LP edit start - simplified GenerateTTS, removed pitch/rate (not in API), added effect param
+    private async Task<byte[]?> GenerateTTS(string text, string speaker, string? effect = null)
     {
         var textSanitized = Sanitize(text);
         if (string.IsNullOrWhiteSpace(textSanitized))
@@ -142,29 +213,7 @@ public sealed partial class TTSSystem : EntitySystem
         if (char.IsLetter(textSanitized[^1]))
             textSanitized += ".";
 
-        string pitch;
-        string rate;
-        string? effect = null;
-
-        if (isWhisper)
-        {
-            if (isMuffled)
-            {
-                pitch = (-SharedChatSystem.WhisperMuffledRange).ToString();
-                rate = "-2";
-            }
-            else
-            {
-                pitch = (-SharedChatSystem.WhisperClearRange).ToString();
-                rate = "0";
-            }
-        }
-        else
-        {
-            pitch = "0";
-            rate = (SharedChatSystem.VoiceRange / 2).ToString();
-        }
-
-        return await _ttsManager.ConvertTextToSpeech(speaker, textSanitized, pitch, rate, effect);
+        return await _ttsManager.ConvertTextToSpeech(speaker, textSanitized, effect);
     }
+    // LP edit end
 }

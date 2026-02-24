@@ -43,6 +43,14 @@ public sealed class CCCVars
     public static readonly CVarDef<float> TTSVolume =
         CVarDef.Create("tts.volume", 2f, CVar.CLIENTONLY | CVar.ARCHIVE);
 
+    // LP edit start
+    /// <summary>
+    /// Default volume setting of TTS radio sound
+    /// </summary>
+    public static readonly CVarDef<float> TTSRadioVolume =
+        CVarDef.Create("tts.radio_volume", 2f, CVar.CLIENTONLY | CVar.ARCHIVE);
+    // LP edit end
+
     /// <summary>
     /// Count of in-memory cached tts voice lines.
     /// </summary>

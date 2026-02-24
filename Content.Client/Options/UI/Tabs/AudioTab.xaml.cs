@@ -37,6 +37,13 @@ public sealed partial class AudioTab : Control
             scale: ContentAudioSystem.TtsMultiplier);
         // Corvax-TTS-End
 
+        // LP edit start
+        Control.AddOptionPercentSlider(
+            CCCVars.TTSRadioVolume,
+            SliderVolumeTtsRadio,
+            scale: ContentAudioSystem.TtsMultiplier);
+        // LP edit end
+
         // Goob Station - Barks-start
         Control.AddOptionPercentSlider(
             GoobCVars.BarksVolume,
