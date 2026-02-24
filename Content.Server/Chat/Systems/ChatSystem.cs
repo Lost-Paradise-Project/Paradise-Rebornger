@@ -12,6 +12,7 @@ using Content.Shared.ActionBlocker;
 using Content.Shared.Administration;
 using Content.Shared.CCVar;
 using Content.Shared.Chat;
+using Content.Shared.Corvax.TTS; // LP edit
 using Content.Shared.Database;
 using Content.Shared.Examine;
 using Content.Shared.Ghost;
@@ -310,8 +311,9 @@ public sealed partial class ChatSystem : SharedChatSystem
         string? sender = null,
         bool playSound = true,
         SoundSpecifier? announcementSound = null,
-        Color? colorOverride = null
-        )
+        Color? colorOverride = null,
+        bool announceTts = false, // LP edit
+        string? ttsVoiceId = null) // LP edit
     {
         sender ??= Loc.GetString("chat-manager-sender-announcement");
 
@@ -323,6 +325,11 @@ public sealed partial class ChatSystem : SharedChatSystem
             _audio.PlayGlobal(announcementSound ?? DefaultAnnouncementSound, Filter.Broadcast(), true, AudioParams.Default.WithVolume(-2f));
         }
         _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Global station announcement from {sender}: {message}");
+
+        // LP edit start - TTS for announcements
+        if (announceTts)
+            RaiseLocalEvent(new AnnouncementTTSEvent(message, voiceId: ttsVoiceId));
+        // LP edit end
     }
 
     /// <inheritdoc />
@@ -333,7 +340,9 @@ public sealed partial class ChatSystem : SharedChatSystem
         string? sender = null,
         bool playSound = true,
         SoundSpecifier? announcementSound = null,
-        Color? colorOverride = null)
+        Color? colorOverride = null,
+        bool announceTts = false, // LP edit
+        string? ttsVoiceId = null) // LP edit
     {
         sender ??= Loc.GetString("chat-manager-sender-announcement");
 
@@ -344,6 +353,11 @@ public sealed partial class ChatSystem : SharedChatSystem
             _audio.PlayGlobal(announcementSound ?? DefaultAnnouncementSound, filter, true, AudioParams.Default.WithVolume(-2f));
         }
         _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Station Announcement from {sender}: {message}");
+
+        // LP edit start - TTS for announcements
+        if (announceTts)
+            RaiseLocalEvent(new AnnouncementTTSEvent(message, voiceId: ttsVoiceId));
+        // LP edit end
     }
 
     /// <inheritdoc />
@@ -353,7 +367,9 @@ public sealed partial class ChatSystem : SharedChatSystem
         string? sender = null,
         bool playDefaultSound = true,
         SoundSpecifier? announcementSound = null,
-        Color? colorOverride = null)
+        Color? colorOverride = null,
+        bool announceTts = false, // LP edit
+        string? ttsVoiceId = null) // LP edit
     {
         sender ??= Loc.GetString("chat-manager-sender-announcement");
 
@@ -378,6 +394,11 @@ public sealed partial class ChatSystem : SharedChatSystem
         }
 
         _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Station Announcement on {station} from {sender}: {message}");
+
+        // LP edit start - TTS for announcements
+        if (announceTts)
+            RaiseLocalEvent(new AnnouncementTTSEvent(message, station, ttsVoiceId));
+        // LP edit end
     }
 
     #endregion

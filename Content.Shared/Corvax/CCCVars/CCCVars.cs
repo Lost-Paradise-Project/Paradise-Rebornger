@@ -49,6 +49,12 @@ public sealed class CCCVars
     /// </summary>
     public static readonly CVarDef<float> TTSRadioVolume =
         CVarDef.Create("tts.radio_volume", 2f, CVar.CLIENTONLY | CVar.ARCHIVE);
+
+    /// <summary>
+    /// Default TTS voice ID for announcements. Empty = announcement TTS disabled.
+    /// </summary>
+    public static readonly CVarDef<string> TTSAnnounceVoiceId =
+        CVarDef.Create("tts.announce_voice", "", CVar.SERVERONLY | CVar.ARCHIVE);
     // LP edit end
 
     /// <summary>

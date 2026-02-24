@@ -8,6 +8,8 @@ using Content.Shared.Corvax.TTS;
 using Content.Shared.GameTicking;
 using Content.Shared.Players.RateLimiting;
 using Content.Shared.Radio.Components; // LP edit
+using Content.Server.Station.Systems; // LP edit
+using Content.Shared.Station.Components; // LP edit
 using Robust.Shared.Configuration;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
@@ -23,6 +25,7 @@ public sealed partial class TTSSystem : EntitySystem
     [Dependency] private readonly TTSManager _ttsManager = default!;
     [Dependency] private readonly SharedTransformSystem _xforms = default!;
     [Dependency] private readonly IRobustRandom _rng = default!;
+    [Dependency] private readonly StationSystem _stationSystem = default!; // LP edit
 
     private readonly List<string> _sampleText =
         new()
@@ -43,12 +46,15 @@ public sealed partial class TTSSystem : EntitySystem
 
     private const int MaxMessageChars = 100 * 2; // same as SingleBubbleCharLimit * 2
     private bool _isEnabled = false;
+    private string _announceVoiceId = string.Empty; // LP edit
 
     public override void Initialize()
     {
         _cfg.OnValueChanged(CCCVars.TTSEnabled, v => _isEnabled = v, true);
+        _cfg.OnValueChanged(CCCVars.TTSAnnounceVoiceId, v => _announceVoiceId = v, true); // LP edit
 
         SubscribeLocalEvent<TransformSpeechEvent>(OnTransformSpeech);
+        SubscribeLocalEvent<AnnouncementTTSEvent>(OnAnnouncementTTS); // LP edit
         // LP edit start - ordering before HeadsetSystem/RadioSystem to see Channel before it's null'd
         SubscribeLocalEvent<TTSComponent, EntitySpokeEvent>(OnEntitySpoke,
             before: [typeof(HeadsetSystem), typeof(RadioSystem)]);
@@ -200,6 +206,39 @@ public sealed partial class TTSSystem : EntitySystem
         RaiseNetworkEvent(
             new PlayTTSEvent(soundData, GetNetEntity(source), isRadio: true),
             Filter.SinglePlayer(session));
+    }
+    // LP edit end
+
+    // LP edit start - TTS for announcements
+    private void OnAnnouncementTTS(AnnouncementTTSEvent ev)
+    {
+        if (!_isEnabled)
+            return;
+
+        // Priority: voice from event (per-prototype) → global CVar
+        var voiceId = ev.VoiceId ?? _announceVoiceId;
+        if (string.IsNullOrEmpty(voiceId))
+            return;
+
+        if (!_prototypeManager.TryIndex<TTSVoicePrototype>(voiceId, out var protoVoice))
+            return;
+
+        HandleAnnouncement(ev.Message, protoVoice.Speaker, ev.Station);
+    }
+
+    private async void HandleAnnouncement(string message, string speaker, EntityUid? station)
+    {
+        var soundData = await GenerateTTS(message, speaker);
+        if (soundData is null)
+            return;
+
+        Filter filter;
+        if (station != null && TryComp<StationDataComponent>(station, out var stationData))
+            filter = _stationSystem.GetInStation(stationData);
+        else
+            filter = Filter.Broadcast();
+
+        RaiseNetworkEvent(new PlayTTSEvent(soundData), filter);
     }
     // LP edit end
 
