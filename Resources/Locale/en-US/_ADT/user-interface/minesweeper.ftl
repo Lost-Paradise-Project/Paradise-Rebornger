@@ -1,4 +1,4 @@
-﻿adt-minesweeper-difficulty-easy = Лёгкий
+adt-minesweeper-difficulty-easy = Лёгкий
 adt-minesweeper-difficulty-medium = Средний
 adt-minesweeper-difficulty-hard = Сложный
 

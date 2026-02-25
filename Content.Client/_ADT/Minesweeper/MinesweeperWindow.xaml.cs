@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using System.Numerics;
 using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Controls;
