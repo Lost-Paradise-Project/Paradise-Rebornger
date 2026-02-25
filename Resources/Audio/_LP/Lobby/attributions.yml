@@ -31,7 +31,7 @@
 - files: ["drozerix_-_leisurely_voice.xm.ogg"]
   license: "Public Domain"
   copyright: "Leisurely Voice by Drozerix. Converted to OGG."
-  source: "[https://modarchive.org/module.php?183837=](https://modarchive.org/module.php?183837=)"
+  source: "https://modarchive.org/module.php?183837="
 
 - files: ["aggravated.it.ogg"]
   license: "CC-BY-NC-SA-4.0"
