@@ -1,4 +1,4 @@
-﻿## Minesweeper
+## Minesweeper
 - type: entity
   parent: BaseComputerCircuitboard
   id: MinesweeperCircuitboard

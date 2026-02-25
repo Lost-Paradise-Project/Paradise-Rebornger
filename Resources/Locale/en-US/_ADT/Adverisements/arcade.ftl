@@ -1,4 +1,4 @@
-﻿advertisement-minesweeper-1 = Сможешь обойтись без взрыва?
+advertisement-minesweeper-1 = Сможешь обойтись без взрыва?
 advertisement-minesweeper-2 = Открой все клетки и останься жив!
 advertisement-minesweeper-3 = Бомба или пусто? Испытай судьбу!
 advertisement-minesweeper-4 = Только смелые играют в сапёра!

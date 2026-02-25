@@ -1,4 +1,4 @@
-﻿using Content.Server.Explosion.EntitySystems;
+using Content.Server.Explosion.EntitySystems;
 using Content.Shared._ADT.Minesweeper;
 using Content.Shared.Emag.Systems;
 using Robust.Shared.Audio.Systems;

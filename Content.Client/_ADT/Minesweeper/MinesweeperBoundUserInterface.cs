@@ -1,4 +1,4 @@
-﻿using Content.Shared._ADT.Minesweeper;
+using Content.Shared._ADT.Minesweeper;
 using JetBrains.Annotations;
 
 namespace Content.Client._ADT.Minesweeper;
