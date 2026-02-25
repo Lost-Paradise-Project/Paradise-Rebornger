@@ -90,7 +90,6 @@
     collection: LizardBark
   speciesWhitelist:
     - Reptilian
-    - Kobold
 
 # slime
 - type: soundCollection
@@ -125,21 +124,6 @@
     collection: VoxBark
   speciesWhitelist:
     - Vox
-
-# harpy
-- type: soundCollection
-  id: HarpyBark
-  files:
-  - /Audio/_DV/Voice/Harpy/chirp1.ogg
-
-- type: bark
-  id: Harpy
-  name: bark-harpy
-  volume: 1
-  soundCollection:
-    collection: HarpyBark
-  speciesWhitelist:
-    - Harpy
 
 # Vulpkanin
 - type: soundCollection
