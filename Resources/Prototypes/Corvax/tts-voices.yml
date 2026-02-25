@@ -734,7 +734,6 @@
   sex: Male
   speaker: dornan
   id: dornan
-  roundStart: false
   sponsorOnly: true
 
 - type: ttsVoice
@@ -1506,8 +1505,6 @@
   sex: Male
   speaker: chaos_marines_lord_dow
   id: chaos_marines_lord_dow
-  roundStart: false
-  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-chaos_marines_sorceror_dow
@@ -1521,7 +1518,7 @@
   sex: Male
   speaker: dark_eldar_archon_dow
   id: dark_eldar_archon_dow
-  sponsorOnly: true
+  roundStart: false
 
 - type: ttsVoice
   name: tts-voice-name-dark_eldar_mandrake_dow
@@ -1529,7 +1526,6 @@
   speaker: dark_eldar_mandrake_dow
   id: dark_eldar_mandrake_dow
   roundStart: false
-  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-dark_eldar_warrior_dow
@@ -1537,7 +1533,6 @@
   speaker: dark_eldar_warrior_dow
   id: dark_eldar_warrior_dow
   roundStart: false
-  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-dark_eldar_wych_dow
@@ -1559,7 +1554,6 @@
   speaker: eldar_farseer_dow
   id: eldar_farseer_dow
   roundStart: false
-  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-eldar_fire_dragon_dow
@@ -1593,12 +1587,14 @@
   sex: Male
   speaker: guard_commissar_dow
   id: guard_commissar_dow
+  roundStart: false
 
 - type: ttsVoice
   name: tts-voice-name-guard_enginseer_dow
   sex: Male
   speaker: guard_enginseer_dow
   id: guard_enginseer_dow
+  roundStart: false
 
 - type: ttsVoice
   name: tts-voice-name-guard_guardsman_sergeant_dow
@@ -1623,6 +1619,7 @@
   sex: Male
   speaker: guard_ogryn_dow
   id: guard_ogryn_dow
+  roundStart: false
 
 - type: ttsVoice
   name: tts-voice-name-guard_priest_dow
