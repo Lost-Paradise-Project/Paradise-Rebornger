@@ -142,3 +142,14 @@
     - WhitelistChameleon
   - type: StaticPrice
     price: 50
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: LPPDantesCoat
+  name: red coat
+  description: A defiant red coat, soaked in demonic blood and reeking of rebellion, gunpowder and pizza.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/OuterClothing/Coats/red_coat.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/OuterClothing/Coats/red_coat.rsi
