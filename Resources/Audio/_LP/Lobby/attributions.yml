@@ -29,7 +29,7 @@
   source: "https://www.youtube.com/watch?v=1UxJ6ZRSc7Y&list=PLez1iZ5ZrYRXMpgvpGyQSrYXzZq6y-kl-&index=22&ab_channel=iamlocknar"
 
 - files: ["drozerix_-_leisurely_voice.xm.ogg"]
-  license: "Public Domain"
+  license: "CC-BY-NC-SA-4.0"
   copyright: "Leisurely Voice by Drozerix. Converted to OGG."
   source: "https://modarchive.org/module.php?183837="
 
@@ -39,7 +39,7 @@
   source: "https://www.youtube.com/watch?v=vejtpnONyUY"
 
 - files: ["autumnal_equinox.xm.ogg"]
-  license: "CC-BY-NC-4.0"
+  license: "CC-BY-NC-SA-4.0"
   copyright: "Autumnal Equinox by lemonade. Converted to OGG."
   source: "https://modarchive.org/module.php?143993="
 
