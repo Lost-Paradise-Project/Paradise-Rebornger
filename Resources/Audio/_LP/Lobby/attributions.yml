@@ -43,11 +43,6 @@
   copyright: "Autumnal Equinox by lemonade. Converted to OGG."
   source: "https://modarchive.org/module.php?143993="
 
-- files: ["DOS=HIGH,_UMB.ogg"]
-  license: "All rights reserved"
-  copyright: "DOS=HIGH, UMB by MASTER BOOT RECORD. Converted to OGG."
-  source: "https://masterbootrecord.bandcamp.com/track/dos-high-umb"
-
 - files: ["hackers.ogg"]
   license: "CC-BY-4.0"
   copyright: "Hackers by Karl Casey @ White Bat Audio. Converted to OGG."
