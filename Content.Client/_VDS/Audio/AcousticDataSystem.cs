@@ -1,4 +1,4 @@
-﻿using Content.Client._Mono.Audio;
+using Content.Client._Mono.Audio;
 using Content.Client._VDS.Audio.Components;
 using Content.Shared.Coordinates;
 using Content.Shared.Light.Components;
