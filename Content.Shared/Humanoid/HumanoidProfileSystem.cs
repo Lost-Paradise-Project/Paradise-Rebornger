@@ -132,11 +132,6 @@ public sealed class HumanoidProfileSystem : EntitySystem
         var sexChanged = new SexChangedEvent(ent.Comp.Sex, profile.Sex);
         RaiseLocalEvent(ent, ref sexChanged);
 
-        // LP edit start
-        var profileLoaded = new HumanoidProfileLoadedEvent(ent);
-        RaiseLocalEvent(ent, ref profileLoaded);
-        // LP edit end
-
         if (TryComp<GrammarComponent>(ent, out var grammar))
         {
             _grammar.SetGender((ent, grammar), profile.Gender);
@@ -192,7 +187,4 @@ public sealed class HumanoidProfileSystem : EntitySystem
 // LP edit start
 [ByRefEvent]
 public record struct ApplyBarkVoiceEvent(string BarkVoice);
-
-[ByRefEvent]
-public record struct HumanoidProfileLoadedEvent(EntityUid Entity);
 // LP edit end
