@@ -34,7 +34,7 @@
   source: "https://modarchive.org/module.php?183837="
 
 - files: ["aggravated.it.ogg"]
-  license: "CC-BY-NC-SA-4.0"
+  license: "CC-BY-NC-4.0"
   copyright: "MEL -Aggravated Assault by melcom. Converted to OGG."
   source: "https://www.youtube.com/watch?v=vejtpnONyUY"
 
@@ -49,7 +49,7 @@
   source: "https://www.youtube.com/watch?v=NZ4Of3lID84"
 
 - files: ["melcom-cyberpunk.it.ogg"]
-  license: "CC-BY-NC-SA-4.0"
+  license: "CC-BY-NC-4.0"
   copyright: "MEL -Cyberpunk by melcom. Converted to OGG."
   source: "https://www.youtube.com/watch?v=K0tXhyB3vZ8"
 
