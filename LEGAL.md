@@ -62,6 +62,7 @@
 | `_RMC14`         | RMC-14               | https://github.com/RMC-14/RMC-14                         | MIT      |
 | `_L5`            | Lagrange Substations | https://github.com/lagrange14/substations                | AGPL 3.0 |
 | `_White`         | W White Dream Public | https://github.com/WWhiteDreamProject/wwdpublic          | AGPL 3.0 |
+| `_VDS`           | Vermist Dust Sector  | https://github.com/vermist-sector/vermist-dust           | AGPL 3.0 |
 
 
 ## Отказ от гарантий
