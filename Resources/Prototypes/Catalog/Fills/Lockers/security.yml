@@ -157,7 +157,7 @@
       # Corvax-Brigmedic-Start
     - id: ClothingMaskBreathMedicalSecurity
     - id: BoxBodyBag
-    - id: Defibrillator
+    - id: LPPCombatDefibrillator # LP Edit
     - id: MedkitAdvancedFilled
       # Corvax-Brigmedic-End
 

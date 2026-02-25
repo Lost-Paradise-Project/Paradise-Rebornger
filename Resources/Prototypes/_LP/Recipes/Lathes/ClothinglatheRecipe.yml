@@ -1,0 +1,13 @@
+- type: latheRecipe
+  id: LPPClothingUniformJumpSkirtSecEngineer
+  result: LPPClothingUniformJumpSkirtSecEngineer
+  completetime: 4
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: LPPClothingUniformJumpsuitSecEngineer
+  result: LPPClothingUniformJumpsuitSecEngineer
+  completetime: 4
+  materials:
+    Cloth: 300

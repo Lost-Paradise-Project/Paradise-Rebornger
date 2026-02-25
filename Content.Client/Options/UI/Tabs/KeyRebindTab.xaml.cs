@@ -194,6 +194,15 @@ namespace Content.Client.Options.UI.Tabs
             AddButton(ContentKeyFunctions.MoveStoredItem);
             AddButton(ContentKeyFunctions.RotateStoredItem);
             AddButton(ContentKeyFunctions.SaveItemLocation);
+            // Orion-Start
+            AddButton(ContentKeyFunctions.TogglePosing);
+            AddButton(ContentKeyFunctions.PosingOffsetLeft);
+            AddButton(ContentKeyFunctions.PosingOffsetRight);
+            AddButton(ContentKeyFunctions.PosingOffsetUp);
+            AddButton(ContentKeyFunctions.PosingOffsetDown);
+            AddButton(ContentKeyFunctions.PosingRotateNegative);
+            AddButton(ContentKeyFunctions.PosingRotatePositive);
+            // Orion-End
 
             AddHeader("ui-options-header-interaction-adv");
             AddButton(ContentKeyFunctions.SmartEquipBackpack);
@@ -230,6 +239,7 @@ namespace Content.Client.Options.UI.Tabs
             AddButton(ContentKeyFunctions.OpenGuidebook);
             AddButton(ContentKeyFunctions.OpenInventoryMenu);
             AddButton(ContentKeyFunctions.OpenAHelp);
+            AddButton(ContentKeyFunctions.OpenCHelp); // DeltaV edit
             AddButton(ContentKeyFunctions.OpenActionsMenu);
             AddButton(ContentKeyFunctions.OpenEmotesMenu);
             AddButton(ContentKeyFunctions.ToggleRoundEndSummaryWindow);

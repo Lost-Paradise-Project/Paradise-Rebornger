@@ -44,6 +44,11 @@ public sealed partial class GameMapPrototype : IPrototype
     [DataField(required: true)]
     public ResPath MapPath { get; private set; } = default!;
 
+    // LP edit start
+    [DataField]
+    public List<ResPath> MapPaths { get; private set; } = new();
+    // LP edit end
+
     [DataField("stations", required: true)]
     private Dictionary<string, StationConfig> _stations = new();
 

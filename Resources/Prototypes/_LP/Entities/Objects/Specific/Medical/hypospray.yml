@@ -1,0 +1,57 @@
+- type: entity
+  parent: BaseHypospray
+  id: LPPHyposprayZero
+  name: hypospray 0.5
+  description: A stripped-down version of a sterile injector for the rapid administration of drugs to patients. It's too stripped down, but it's clearly better than syringes. DON'T GIVE IT TO INTERNS. It has a label "BL CORP Security Technology".
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Specific/Medical/hyposprayzero.rsi
+    layers:
+    - state: hypo
+      map: ["enum.SolutionContainerLayers.Base"]
+    - state: hypo_fill1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+  - type: Item
+    sprite: _LP/Objects/Specific/Medical/hyposprayzero.rsi
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 5
+  - type: RefillableSolution
+    solution: hypospray
+  - type: UseDelay
+    delay: 2
+  - type: StaticPrice
+    price: 750
+  - type: ExaminableSolution
+    solution: hypospray
+
+- type: entity
+  parent: BaseHypospray
+  id: LPPCombatHypospray
+  name: combat hypospray
+  description: A slightly stripped-down version of a sterile injector for the rapid administration of drugs to patients. The version is fast enough because of its purpose. DO NOT GIVE IT INTO THE HANDS OF OFFICERS. It has a label "BL CORP Security Technology".
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Specific/Medical/CombatHypospray.rsi
+    layers:
+    - state: hypo
+      map: ["enum.SolutionContainerLayers.Base"]
+    - state: hypo_fill1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+  - type: Item
+    sprite: _LP/Objects/Specific/Medical/CombatHypospray.rsi
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 10
+  - type: RefillableSolution
+    solution: hypospray
+  - type: UseDelay
+    delay: 0.25
+  - type: StaticPrice
+    price: 1000
+  - type: ExaminableSolution
+    solution: hypospray

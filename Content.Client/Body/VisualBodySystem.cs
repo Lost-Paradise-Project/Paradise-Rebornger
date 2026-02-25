@@ -36,7 +36,6 @@ public sealed class VisualBodySystem : SharedVisualBodySystem
 
         // begin Goobstation: port EE height/width sliders
         SubscribeLocalEvent<HumanoidProfileComponent, AfterAutoHandleStateEvent>(OnHumanoidProfileState);
-        SubscribeLocalEvent<HumanoidProfileComponent, HumanoidProfileLoadedEvent>(OnHumanoidProfileLoaded);
         // end Goobstation: port EE height/width sliders
     }
 
@@ -251,11 +250,6 @@ public sealed class VisualBodySystem : SharedVisualBodySystem
 
     // begin Goobstation: port EE height/width sliders
     private void OnHumanoidProfileState(Entity<HumanoidProfileComponent> ent, ref AfterAutoHandleStateEvent args)
-    {
-        UpdateSpriteScale(ent);
-    }
-
-    private void OnHumanoidProfileLoaded(Entity<HumanoidProfileComponent> ent, ref HumanoidProfileLoadedEvent args)
     {
         UpdateSpriteScale(ent);
     }

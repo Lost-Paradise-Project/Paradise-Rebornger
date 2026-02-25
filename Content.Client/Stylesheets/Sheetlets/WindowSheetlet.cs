@@ -37,6 +37,15 @@ public sealed class WindowSheetlet<T> : Sheetlet<T>
             ExpandMarginBottom = 3,
             ContentMarginBottomOverride = 0,
         };
+        // DeltaV - Curator (purple) window header
+        // Use ResCache directly since the curator texture is in a different location (_DV folder)
+        var headerCuratorStylebox = new StyleBoxTexture
+        {
+            Texture = sheet.ResCache.GetTexture(windowCfg.WindowHeaderCuratorTexturePath),
+            PatchMarginBottom = 3,
+            ExpandMarginBottom = 3,
+            ContentMarginBottomOverride = 0,
+        };
         var backgroundBox = new StyleBoxTexture()
         {
             Texture = sheet.GetTextureOr(windowCfg.WindowBackgroundPath, NanotrasenStylesheet.TextureRoot),
@@ -75,6 +84,10 @@ public sealed class WindowSheetlet<T> : Sheetlet<T>
             E()
                 .Class(StyleClass.AlertWindowHeader)
                 .Panel(headerAlertStylebox),
+            // DeltaV - Curator (purple) window header
+            E()
+                .Class(StyleClass.CuratorWindowHeader)
+                .Panel(headerCuratorStylebox),
             E()
                 .Class(StyleClass.BorderedWindowPanel)
                 .Panel(borderedBackgroundBox),

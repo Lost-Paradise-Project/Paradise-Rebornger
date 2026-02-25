@@ -544,6 +544,10 @@
   id: BrigmedicIDCard
   name: brigmedic ID card
   components:
+  # LP Edit Start
+  - type: PresetIdCard
+    job: Brigmedic
+  # LP Edit End
   - type: Sprite
     layers:
     - state: default

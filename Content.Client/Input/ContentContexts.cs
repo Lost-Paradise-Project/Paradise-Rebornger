@@ -28,6 +28,7 @@ namespace Content.Client.Input
             common.AddFunction(ContentKeyFunctions.EscapeContext);
             common.AddFunction(ContentKeyFunctions.ExamineEntity);
             common.AddFunction(ContentKeyFunctions.OpenAHelp);
+            common.AddFunction(ContentKeyFunctions.OpenCHelp); // DeltaV edit
             common.AddFunction(ContentKeyFunctions.TakeScreenshot);
             common.AddFunction(ContentKeyFunctions.TakeScreenshotNoUI);
             common.AddFunction(ContentKeyFunctions.ToggleFullscreen);
@@ -92,6 +93,7 @@ namespace Content.Client.Input
             human.AddFunction(ContentKeyFunctions.Arcade1);
             human.AddFunction(ContentKeyFunctions.Arcade2);
             human.AddFunction(ContentKeyFunctions.Arcade3);
+            human.AddFunction(ContentKeyFunctions.TogglePosing); // Orion
 
             // actions should be common (for ghosts, mobs, etc)
             common.AddFunction(ContentKeyFunctions.OpenActionsMenu);

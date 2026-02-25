@@ -112,7 +112,7 @@ holopad-security-courtroom = СБ — Зал суда
 holopad-security-lawyer = СБ — АВД
 holopad-security-armory = СБ — Оружейная
 holopad-security-locker-room = СБ — Раздевалка
-holopad-security-brig-med = СБ — Бригмед
+holopad-security-brig-med = СБ — Полевой врач
 holopad-security-evac-checkpoint = СБ — КПП Эвакуация
 holopad-security-arrivals-checkpoint = СБ — КПП Прибытие
 # Service

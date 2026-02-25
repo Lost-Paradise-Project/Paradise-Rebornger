@@ -1,0 +1,65 @@
+- type: entity
+  parent: BaseItemCabinetGlass
+  id: LPPHammerCabinet
+  name: assault hammer cabinet
+  description: There is a small label on the container that says "Only for breaking structures!". Well, yes, well, yes.. That's how I believed it.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Glass
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 300
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 200 #20ish crowbar hits
+        behaviors:
+        - !type:EmptyAllContainersBehaviour
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalGlassBreak
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        collection: GlassSmash
+  - type: WallMount
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Sprite
+    sprite: _LP/Structures/Wallmounts/hammer_cabinet.rsi
+    layers:
+    - state: cabinet
+    - state: hammer
+      map: ["enum.ItemCabinetVisuals.Layer"]
+      visible: true
+    - state: glass
+      map: ["enum.OpenableVisuals.Layer"]
+  - type: ItemSlots
+    slots:
+      ItemCabinet:
+        ejectOnInteract: true
+        whitelist:
+          tags:
+          - Hammer
+  - type: Lock
+  - type: AccessReader
+    access: [["Engineering"], ["Salvage"], ["Security"]]
+
+- type: entity
+  id: LPPHammerCabinetFilled
+  parent: LPPHammerCabinet
+  suffix: Filled
+  components:
+  - type: ContainerFill
+    containers:
+      ItemCabinet:
+      - LPPHammer

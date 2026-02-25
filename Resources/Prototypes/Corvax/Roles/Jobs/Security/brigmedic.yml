@@ -34,7 +34,7 @@
 - type: startingGear
   id: BrigmedicGear
   equipment:
-    eyes: ClothingEyesHudMedical
+    eyes: LPPClothingEyesHudSecMed # LP edit
     id: BrigmedicPDA
     ears: ClothingHeadsetBrigmedic
     belt: ClothingBeltMedicalFilled

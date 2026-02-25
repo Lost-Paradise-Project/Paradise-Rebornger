@@ -45,7 +45,13 @@ limit = 25.0
 [admin]
 admins_count_in_playercount = true
 see_own_notes = true
-# discord_reply_prefix = "(ДС) "
+discord_reply_prefix = "(ДС) "
+bwoink_use_admin_ooc_color = true
+use_discord_role_color = true
+use_discord_role_name = true
+cwoink_use_discord_role_color = true
+cwoink_use_discord_role_name = true
+discord_cwoink_reply_prefix = "(ДС) "
 
 [ahelp]
 rate_limit_count = 2
