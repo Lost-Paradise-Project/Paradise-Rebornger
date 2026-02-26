@@ -11,4 +11,3 @@ public sealed partial class GoobCVars
     public static readonly CVarDef<string> StationReportDiscordWebHook =
         CVarDef.Create("stationreport.discord_webhook", "", CVar.SERVERONLY | CVar.CONFIDENTIAL);
 }
-
