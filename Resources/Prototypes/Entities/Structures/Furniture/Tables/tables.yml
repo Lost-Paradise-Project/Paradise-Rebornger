@@ -54,6 +54,8 @@
   - type: Construction
     graph: Table
     node: TableFrame
+  - type: AcousticData # VDS
+    absorption: 3
 
 - type: entity
   id: CounterWoodFrame
@@ -109,6 +111,8 @@
   - type: Construction
     graph: Table
     node: CounterWoodFrame
+  - type: AcousticData # VDS
+    absorption: 5
 
 - type: entity
   id: CounterMetalFrame
@@ -560,6 +564,8 @@
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepWood
+  - type: AcousticData # VDS
+    absorption: 25
 
 - type: entity
   id: TableCarpet
@@ -612,6 +618,8 @@
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepCarpet
+  - type: AcousticData # VDS
+    absorption: 35
 
 - type: entity
   id: TableStone
@@ -673,6 +681,8 @@
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepCarpet
+  - type: AcousticData # VDS
+    absorption: 30
 
 - type: entity
   parent: TableBase
@@ -746,6 +756,8 @@
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepCarpet
+  - type: AcousticData # VDS
+    absorption: 25
 
 - type: entity
   id: TableFancyBlue
@@ -966,6 +978,8 @@
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepWood
+  - type: AcousticData # VDS
+    absorption: 25
 
 - type: entity
   id: TableCounterMetal
