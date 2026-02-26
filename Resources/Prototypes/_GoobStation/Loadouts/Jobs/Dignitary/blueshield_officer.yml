@@ -116,13 +116,13 @@
     neck: ClothingNeckMantleBlueshield
 
 # Mask
-- type: loadout
-  id: BlueshieldOfficerMaskLollypop
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: SeniorBlueshieldOfficer
-  equipment:
-    mask: FoodSnackLollypopBlueshield
+# - type: loadout
+#   id: BlueshieldOfficerMaskLollypop
+#   effects:
+#   - !type:GroupLoadoutEffect
+#     proto: SeniorBlueshieldOfficer
+#   equipment:
+#     mask: FoodSnackLollypopBlueshield
 
 # Back
 - type: loadout
@@ -139,11 +139,6 @@
   id: BlueshieldOfficerDuffel
   equipment:
     back: ClothingBackpackDuffelBlueshield
-
-- type: loadout
-  id: BlueshieldOfficerMessenger
-  equipment:
-    back: ClothingBackpackMessengerBlueshield
 
 # Shoes
 - type: loadout

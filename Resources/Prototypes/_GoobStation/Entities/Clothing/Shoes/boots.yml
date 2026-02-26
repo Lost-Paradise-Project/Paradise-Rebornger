@@ -5,13 +5,11 @@
   description: For when you need to save a head from a changeling on a research station in Antarctica.
   components:
   - type: Sprite
-    sprite: _Goobstation/Clothing/Shoes/Boots/bso_snowjacks.rsi
+    sprite: _GoobStation/Clothing/Shoes/Boots/bso_snowjacks.rsi
   - type: Clothing
-    sprite: _Goobstation/Clothing/Shoes/Boots/bso_snowjacks.rsi
+    sprite: _GoobStation/Clothing/Shoes/Boots/bso_snowjacks.rsi
   - type: ClothingSlowOnDamageModifier
     modifier: 0.6
-  - type: ModifyStandingUpTime
-    multiplier: 0.6
   - type: Armor
     modifiers:
       coefficients:

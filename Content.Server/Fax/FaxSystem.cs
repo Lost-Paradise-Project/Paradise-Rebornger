@@ -258,7 +258,6 @@ public sealed class FaxSystem : EntitySystem
         else
             _itemSlotsSystem.AddItemSlot(uid, PaperSlotId, component.PaperSlot);
         // </Goobstation>
-        _itemSlotsSystem.AddItemSlot(uid, PaperSlotId, component.PaperSlot);
         UpdateAppearance(uid, component);
     }
 

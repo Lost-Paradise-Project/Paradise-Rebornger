@@ -1,0 +1,6 @@
+- type: entity # Goobstation - NTR
+  id: BaseStationNtrTasks
+  abstract: true
+  components:
+  - type: NtrTaskDatabase
+  - type: NtrBankAccount

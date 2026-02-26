@@ -25,7 +25,6 @@
   - NanotrasenRepresentativeBackpack
   - NanotrasenRepresentativeSatchel
   - NanotrasenRepresentativeDuffel
-  - NanotrasenRepresentativeMessenger
 
 - type: loadoutGroup
   id: NanotrasenRepresentativeJumpsuit
@@ -57,29 +56,29 @@
   loadouts:
   - NanotrasenRepresentativeGloves
 
-- type: loadoutGroup
-  id: NanotrasenRepresentativeEnvirohelm
-  name: loadout-group-ntr-envirohelm
-  minLimit: 1
-  maxLimit: 1
-  loadouts:
-  - NanotrasenRepresentativeEnvirohelm
+# - type: loadoutGroup
+#   id: NanotrasenRepresentativeEnvirohelm
+#   name: loadout-group-ntr-envirohelm
+#   minLimit: 1
+#   maxLimit: 1
+#   loadouts:
+#   - NanotrasenRepresentativeEnvirohelm
 
-- type: loadoutGroup
-  id: NanotrasenRepresentativeEnvirosuit
-  name: loadout-group-ntr-envirosuit
-  minLimit: 1
-  maxLimit: 1
-  loadouts:
-  - NanotrasenRepresentativeEnvirosuit
+# - type: loadoutGroup
+#   id: NanotrasenRepresentativeEnvirosuit
+#   name: loadout-group-ntr-envirosuit
+#   minLimit: 1
+#   maxLimit: 1
+#   loadouts:
+#   - NanotrasenRepresentativeEnvirosuit
 
-- type: loadoutGroup
-  id: NanotrasenRepresentativeEnvirogloves
-  name: loadout-group-ntr-envirogloves
-  minLimit: 1
-  maxLimit: 1
-  loadouts:
-  - BlackEnvirogloves
+# - type: loadoutGroup
+#   id: NanotrasenRepresentativeEnvirogloves
+#   name: loadout-group-ntr-envirogloves
+#   minLimit: 1
+#   maxLimit: 1
+#   loadouts:
+#   - BlackEnvirogloves
 
 # BSO
 - type: loadoutGroup
@@ -99,7 +98,6 @@
   - BlueshieldOfficerBackpack
   - BlueshieldOfficerSatchel
   - BlueshieldOfficerDuffel
-  - BlueshieldOfficerMessenger
 
 - type: loadoutGroup
   id: BlueshieldOfficerJumpsuit
@@ -126,13 +124,6 @@
   - BlueshieldOfficerOuterBlueshieldMantle
 
 - type: loadoutGroup
-  id: BlueshieldOfficerMask
-  name: loadout-group-bso-mask
-  minLimit: 0
-  loadouts:
-  - BlueshieldOfficerMaskLollypop
-
-- type: loadoutGroup
   id: BlueshieldOfficerShoes
   name: loadout-group-bso-shoes
   loadouts:
@@ -140,29 +131,29 @@
   - BlackCowboyBoots
   - SnowjacksBso
 
-- type: loadoutGroup
-  id: BlueshieldOfficerEnvirohelm
-  name: loadout-group-bso-envirohelm
-  minLimit: 1
-  maxLimit: 1
-  loadouts:
-  - BlueshieldOfficerEnvirohelm
+# - type: loadoutGroup
+#   id: BlueshieldOfficerEnvirohelm
+#   name: loadout-group-bso-envirohelm
+#   minLimit: 1
+#   maxLimit: 1
+#   loadouts:
+#   - BlueshieldOfficerEnvirohelm
 
-- type: loadoutGroup
-  id: BlueshieldOfficerEnvirosuit
-  name: loadout-group-bso-envirosuit
-  minLimit: 1
-  maxLimit: 1
-  loadouts:
-  - BlueshieldOfficerEnvirosuit
+# - type: loadoutGroup
+#   id: BlueshieldOfficerEnvirosuit
+#   name: loadout-group-bso-envirosuit
+#   minLimit: 1
+#   maxLimit: 1
+#   loadouts:
+#   - BlueshieldOfficerEnvirosuit
 
-- type: loadoutGroup
-  id: BlueshieldOfficerEnvirogloves
-  name: loadout-group-bso-envirogloves
-  minLimit: 1
-  maxLimit: 1
-  loadouts:
-  - CombatEnvirogloves
+# - type: loadoutGroup
+#   id: BlueshieldOfficerEnvirogloves
+#   name: loadout-group-bso-envirogloves
+#   minLimit: 1
+#   maxLimit: 1
+#   loadouts:
+#   - CombatEnvirogloves
 
 - type: loadoutGroup
   id: BlueshieldOfficerGloves

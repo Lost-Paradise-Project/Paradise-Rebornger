@@ -5,9 +5,9 @@
   description: A durable beret woven out of durathread. Provides protection, too.
   components:
   - type: Sprite
-    sprite: _Goobstation/Clothing/Head/Hats/blueshield_beret.rsi
+    sprite: _GoobStation/Clothing/Head/Hats/blueshield_beret.rsi
   - type: Clothing
-    sprite: _Goobstation/Clothing/Head/Hats/blueshield_beret.rsi
+    sprite: _GoobStation/Clothing/Head/Hats/blueshield_beret.rsi
   - type: Tag
     tags:
     - ClothMade
@@ -39,9 +39,9 @@
   description: Sheriff's back in town, kids.
   components:
   - type: Sprite
-    sprite: _Goobstation/Clothing/Head/Hats/cowboyhatbso.rsi
+    sprite: _GoobStation/Clothing/Head/Hats/cowboyhatbso.rsi
   - type: Clothing
-    sprite: _Goobstation/Clothing/Head/Hats/cowboyhatbso.rsi
+    sprite: _GoobStation/Clothing/Head/Hats/cowboyhatbso.rsi
   - type: Tag
     tags:
     - ClothMade
@@ -73,7 +73,7 @@
   description: Perfect for saving heads in Siberia, da?
   components:
   - type: Clothing
-    sprite: _Goobstation/Clothing/Head/Hats/blueshield_ushanka.rsi
+    sprite: _GoobStation/Clothing/Head/Hats/blueshield_ushanka.rsi
   - type: Appearance
   #- type: AddAccentClothing # 1984
   #  accent: RussianAccent
@@ -83,7 +83,7 @@
     foldedEquippedPrefix: up
     foldedHeldPrefix: up
   - type: Sprite
-    sprite: _Goobstation/Clothing/Head/Hats/blueshield_ushanka.rsi
+    sprite: _GoobStation/Clothing/Head/Hats/blueshield_ushanka.rsi
     layers:
     - state: icon
       map: [ "unfoldedLayer" ]

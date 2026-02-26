@@ -1,14 +1,33 @@
+- type: entityTable
+  id: BeltAssaultBSOEntityTable
+  table: !type:AllSelector
+    children:
+    - id: Stunbaton
+    - id: HoloprojectorSecurity
+    - id: GrenadeFlashBang
+    - id: GrenadeFlashBang
+    - id: WeaponDisabler
+    - id: Zipties
+    - id: Zipties
+    - id: Zipties
+
+- type: entity
+  id: ClothingBeltAssaultFilled
+  parent: ClothingBeltAssault
+  suffix: Filled, BSO
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: BeltAssaultBSOEntityTable
+
 - type: entity
   id: ClothingBeltHolsterFilledBlueshield
   parent: ClothingBeltHolster
   suffix: Filled, EG-4
   components:
-  - type: ContainerFill
+  - type: EntityTableContainerFill
     containers:
-      item:
-      - WeaponEnergyRevolver
-  - type: StorageFill
-    contents:
-    - id: EnergySpeedloaderLethal
-    - id: EnergySpeedloaderLethal
-    - id: EnergySpeedloaderDisabler
+      storagebase: !type:AllSelector
+        children:
+          - id: LPPBlueshieldRevolver

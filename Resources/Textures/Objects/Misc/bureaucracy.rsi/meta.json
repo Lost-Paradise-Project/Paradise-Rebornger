@@ -230,6 +230,12 @@
     },
     {
       "name": "paper_stamp-signature"
+    },
+    {
+      "name": "station-report-paper"
+    },
+    {
+      "name": "paper_stamp-nanorep"
     }
   ]
 }

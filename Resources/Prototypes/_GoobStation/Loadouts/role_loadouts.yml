@@ -13,10 +13,10 @@
   - GroupSpeciesBreathTool
   - Survival
   - NanotrasenRepresentativeGloves
-  # Goobstation - EE Plasmeme Change.
-  - NanotrasenRepresentativeEnvirohelm
-  - NanotrasenRepresentativeEnvirosuit
-  - NanotrasenRepresentativeEnvirogloves
+  # # Goobstation - EE Plasmeme Change.
+  # - NanotrasenRepresentativeEnvirohelm
+  # - NanotrasenRepresentativeEnvirosuit
+  # - NanotrasenRepresentativeEnvirogloves
   # LP edit start
   - LPunderwearloadout
   - LPsocksloadout
@@ -31,15 +31,15 @@
   - BlueshieldOfficerBackpack
   - BlueshieldOfficerOuter
   - BlueshieldOfficerNeck
-  - BlueshieldOfficerMask
+  # - BlueshieldOfficerMask
   - BlueshieldOfficerShoes
   - Trinkets
   - GroupSpeciesBreathTool
   - SurvivalSecurity
   # Goobstation - EE Plasmeme Change.
-  - BlueshieldOfficerEnvirohelm
-  - BlueshieldOfficerEnvirosuit
-  - BlueshieldOfficerEnvirogloves
+  # - BlueshieldOfficerEnvirohelm
+  # - BlueshieldOfficerEnvirosuit
+  # - BlueshieldOfficerEnvirogloves
   - BlueshieldOfficerGloves
   # LP edit start
   - LPunderwearloadout
