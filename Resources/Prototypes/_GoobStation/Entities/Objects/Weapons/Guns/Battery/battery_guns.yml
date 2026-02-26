@@ -20,5 +20,4 @@
     - Belt
   - type: PacifismAllowedGun
   - type: BatterySelfRecharger
-    autoRecharge: true
     autoRechargeRate: 40

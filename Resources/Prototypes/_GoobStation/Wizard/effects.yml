@@ -10,7 +10,7 @@
     noRot: true
     layers:
       - shader: unshaded
-        sprite: _Goobstation/Wizard/Effects/effects.rsi
+        sprite: _GoobStation/Wizard/Effects/effects.rsi
         state: sparks
   - type: AnimationPlayer
   - type: PointLight

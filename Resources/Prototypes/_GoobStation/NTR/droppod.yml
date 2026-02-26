@@ -114,7 +114,6 @@
   - type: EmitSoundOnTrigger
     sound:
       path: /Audio/_GoobStation/DropPod/closet_open.ogg
-      maxDistance: 5
   - type: TriggerOnSpawn
   - type: Tag
     tags:
@@ -127,7 +126,6 @@
   - type: EmitSoundOnTrigger
     sound:
       path: /Audio/_GoobStation/DropPod/podwoosh.ogg
-      maxDistance: 5
   - type: TriggerOnSpawn
   - type: TimedDespawn
     lifetime: 3

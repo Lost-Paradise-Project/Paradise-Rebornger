@@ -85,9 +85,13 @@
 - type: entity
   id: LPPLeadERTSec
   parent: MobHuman
-  name: Lead Intern
+  name: lead ERT security
   suffix: Human
   components:
+  - type: AutoImplant
+    implants:
+    - MindShieldImplant
+    - DeathRattleImplantCentcomm
   - type: RandomHumanoidAppearance
     randomizeName: true
   - type: Loadout
@@ -97,7 +101,7 @@
 - type: entity
   id: LPPLeadERTMed
   parent: LPPLeadERTSec
-  name: Lead Intern
+  name: lead ERT medics
   suffix: Human
   components:
   - type: Loadout
@@ -106,7 +110,7 @@
 - type: entity
   id: LPPLeadERTEngi
   parent: LPPLeadERTSec
-  name: Lead Intern
+  name: lead ERT engineers
   suffix: Human
   components:
   - type: Loadout
@@ -115,7 +119,7 @@
 - type: entity
   id: LPPLeadERTJani
   parent: LPPLeadERTSec
-  name: Lead Intern
+  name: lead ERT janitors
   suffix: Human
   components:
   - type: Loadout
@@ -124,7 +128,7 @@
 - type: entity
   id: LPPLeadERTStandart
   parent: LPPLeadERTSec
-  name: Lead Intern
+  name: lead ERT
   suffix: Human
   components:
   - type: Loadout
@@ -133,32 +137,118 @@
 - type: entity
   id: LPPLeadCBURN
   parent: LPPLeadERTSec
-  name: Lead Intern
+  name: lead CBURN
   suffix: Human
   components:
   - type: Loadout
     prototypes: [LPPLeadCBURNGear]
 
+# Units mobs Basic
+
+- type: entity
+  id: LPPSecurityUnit
+  parent: MobHuman
+  name: ERT security agent
+  suffix: Human
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AutoImplant
+    implants:
+    - MindShieldImplant
+    - DeathRattleImplantCentcomm
+  - type: RandomHumanoidAppearance
+    randomizeName: true
+  - type: Loadout
+    prototypes: [ERTSecurityGearArmedRifle]
+  - type: AntagImmune
+
+- type: entity
+  id: LPPMedicalUnit
+  parent: LPPSecurityUnit
+  name: ERT medical agent
+  suffix: Human
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Loadout
+    prototypes: [ERTMedicalGearArmed]
+
+- type: entity
+  id: LPPEngineerUnit
+  parent: LPPSecurityUnit
+  name: ERT engineer agent
+  suffix: Human
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Loadout
+    prototypes: [ERTEngineerGearArmed]
+
+- type: entity
+  id: LPPJanitorUnit
+  parent: LPPSecurityUnit
+  name: ERT janitor agent
+  suffix: Human
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Loadout
+    prototypes: [ERTJanitorGearEVA]
+
+- type: entity
+  id: LPPCBURNUnit
+  parent: LPPSecurityUnit
+  name: CBURN Agent
+  suffix: Human
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Loadout
+    prototypes: [CBURNGear]
+
+# Not Basic Units Mobs
+
+- type: entity
+  id: LPPSecurityGrenadeUnit
+  parent: LPPSecurityUnit
+  name: ERT security agent
+  suffix: Human
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Loadout
+    prototypes: [ERTSecurityGearArmedGrenade]
+
+- type: entity
+  id: LPPSecurityVanguardUnit
+  parent: LPPSecurityUnit
+  name: ERT security agent
+  suffix: Human
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Loadout
+    prototypes: [ERTSecurityGearArmedVanguard]
+
+- type: entity
+  id: LPPSecurityShotgunUnit
+  parent: LPPSecurityUnit
+  name: ERT security agent
+  suffix: Human
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Loadout
+    prototypes: [ERTSecurityGearArmedShotgun]
+
 # Basic ERT Coin
 
 - type: entity
   id: LPPERTSecurityRifleCoin
-  parent: BaseItem
+  parent: InternCoin
   name: ert rifle security summoning coin
   description: Toss to summon an ert security.
   components:
-  - type: Sprite
-    sprite: Objects/Misc/coins.rsi # Replace with (_LP/Objects/Misc/coins.rsi state: nanotrasen) when able to
-    state: coin_gold
   - type: GhostRole
     name: ghost-role-information-ert-security-name
     description: ghost-role-information-ert-security-description
     rules: ghost-role-information-nonantagonist-rules
-    raffle:
-      settings: short
     job: ERTSecurity
   - type: GhostRoleMobSpawner
-    prototype: RandomHumanoidSpawnerERTSecurityArmedRifle
+    prototype: LPPSecurityUnit
 
 - type: entity
   id: LPPERTMedicalCoin
@@ -170,11 +260,9 @@
     name: ghost-role-information-ert-medical-name
     description: ghost-role-information-ert-medical-description
     rules: ghost-role-information-nonantagonist-rules
-    raffle:
-      settings: short
     job: ERTMedical
   - type: GhostRoleMobSpawner
-    prototype: RandomHumanoidSpawnerERTMedicalArmed
+    prototype: LPPMedicalUnit
 
 - type: entity
   id: LPPERTEngineerCoin
@@ -183,14 +271,12 @@
   description: Toss to summon an ert engineer.
   components:
   - type: GhostRole
-    name: ghost-role-information-ert-medical-name
-    description: ghost-role-information-ert-medical-description
+    name: ghost-role-information-ert-engineer-name
+    description: ghost-role-information-ert-engineer-description
     rules: ghost-role-information-nonantagonist-rules
-    raffle:
-      settings: short
-    job: ERTMedical
+    job: ERTEngineer
   - type: GhostRoleMobSpawner
-    prototype: RandomHumanoidSpawnerERTEngineerArmed
+    prototype: LPPEngineerUnit
 
 - type: entity
   id: LPPERTJanitorCoin
@@ -202,11 +288,9 @@
     name: ghost-role-information-ert-medical-name
     description: ghost-role-information-ert-medical-description
     rules: ghost-role-information-nonantagonist-rules
-    raffle:
-      settings: short
-    job: ERTMedical
+    job: ERTJanitor
   - type: GhostRoleMobSpawner
-    prototype: RandomHumanoidSpawnerERTJanitorEVA
+    prototype: LPPJanitorUnit
 
 - type: entity
   id: LPPCBURNCoin
@@ -217,11 +301,9 @@
     name: ghost-role-information-cburn-agent-name
     description: ghost-role-information-cburn-agent-description
     rules: ghost-role-information-nonantagonist-rules
-    raffle:
-      settings: short
     job: CBURN
   - type: GhostRoleMobSpawner
-    prototype: RandomHumanoidSpawnerCBURNUnit
+    prototype: LPPCBURNUnit
 
 # Not Basic ERT Coins
 
@@ -231,7 +313,7 @@
   name: ert grenade security summoning coin
   components:
   - type: GhostRoleMobSpawner
-    prototype: RandomHumanoidSpawnerERTSecurityArmedGrenade
+    prototype: LPPSecurityGrenadeUnit
 
 - type: entity
   id: LPPERTSecurityVanguardCoin
@@ -239,7 +321,7 @@
   name: ert vanguard security summoning coin
   components:
   - type: GhostRoleMobSpawner
-    prototype: RandomHumanoidSpawnerERTSecurityArmedVanguard
+    prototype: LPPSecurityVanguardUnit
 
 - type: entity
   id: LPPERTSecurityShotgunCoin
@@ -247,9 +329,10 @@
   name: ert shotgun security summoning coin
   components:
   - type: GhostRoleMobSpawner
-    prototype: RandomHumanoidSpawnerERTSecurityArmedShotgun
+    prototype: LPPSecurityShotgunUnit
 
-# Lead Intern Gear
+# Lead ERT Gear
+
 - type: startingGear
   id: LPPLeadERTSecGear
   equipment:

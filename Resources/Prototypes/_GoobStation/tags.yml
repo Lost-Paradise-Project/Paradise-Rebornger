@@ -6,3 +6,6 @@
 
 - type: Tag
   id: MagazineShotgunLeverRifle
+
+- type: Tag
+  id: Stunbaton

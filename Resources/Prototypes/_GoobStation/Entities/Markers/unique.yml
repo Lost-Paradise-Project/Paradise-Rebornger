@@ -7,7 +7,7 @@
   - type: Sprite
     layers:
       - state: red
-      - sprite: _Goobstation/Structures/Storage/closet.rsi
+      - sprite: _GoobStation/Structures/Storage/closet.rsi
         state: bso
   - type: UniqueEntityMarker
     markerName: BlueshieldLocker
@@ -21,7 +21,7 @@
   - type: Sprite
     layers:
       - state: red
-      - sprite: _Goobstation/Structures/Storage/closet.rsi
+      - sprite: _GoobStation/Structures/Storage/closet.rsi
         state: ntr
   - type: UniqueEntityMarker
     markerName: NanorepLocker

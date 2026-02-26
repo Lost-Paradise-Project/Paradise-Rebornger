@@ -25,11 +25,6 @@
   joinNotifyCrew: true
   supervisors: job-supervisors-ntr-centcom
   canBeAntag: false
-  skills: # CorvaxGoob-Skills
-  - ShuttleControl
-  - Shooting
-  - MedicalEquipment
-  - Surgery
   access:
   - Security
   - Brig

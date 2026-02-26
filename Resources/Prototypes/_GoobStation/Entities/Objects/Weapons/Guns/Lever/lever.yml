@@ -30,7 +30,7 @@
         priority: 1
         whitelist:
           tags:
-          - ShellShotgunHeavy
+          - ShellShotgun
   - type: Gun
     fireRate: 0.65
     soundGunshot:
@@ -49,7 +49,7 @@
       params:
         volume: -3
     soundBoltOpened:
-      path: /Audio/Weapons/Guns/Bolt/lever_bolt_opened.ogg
+      path: /Audio/_GoobStation/Weapons/Guns/Bolt/lever_bolt_opened.ogg
       params:
         volume: -3
   - type: GunRequiresWield

@@ -85,6 +85,4 @@
     notificationPrefix: prayer-chat-notify-centcom
     verb: prayer-verbs-call
     verbImage: null
-    notificationSound:
-      path: /Audio/_GoobStation/Misc/phone_ring.ogg
   - type: MultiHandedItem

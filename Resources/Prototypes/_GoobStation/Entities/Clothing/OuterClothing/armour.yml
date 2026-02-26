@@ -45,8 +45,7 @@
   - type: Clothing
     sprite: _GoobStation/Clothing/OuterClothing/Wintercoats/bso_winter_coat.rsi
   - type: ToggleableClothing
-    clothingPrototypes:
-      head: ClothingHeadHatHoodWinterBso
+    clothingPrototype: ClothingHeadHatHoodWinterBso
 
 - type: entity
   parent: [ ClothingOuterArmorCaptainCarapace, ClothingOuterWinterCoatToggleable ]
@@ -69,5 +68,4 @@
         Heat: 0.4
         Caustic: 0.65
   - type: ToggleableClothing
-    clothingPrototypes:
-      head: ClothingHeadHatHoodWinterCapFancy
+    clothingPrototype: ClothingHeadHatHoodWinterCapFancy

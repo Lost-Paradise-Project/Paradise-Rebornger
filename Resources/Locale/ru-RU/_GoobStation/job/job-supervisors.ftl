@@ -1,1 +1,1 @@
-job-supervisors-ntr-centcom = Представитель NanoTrasen
+job-supervisors-ntr-centcom = Представитель ЦентКома

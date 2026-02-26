@@ -38,12 +38,12 @@ task-ntr-meth-desc = Отправить кувшин с 100u дезоксиэф�
 task-ntr-thc-name = Отправка ТГК на ЦК
 task-ntr-thc-desc = Отправить кувшин с 100u ТГК на ЦК для "особой вечеринки".
 # Drink descriptions
-task-ntr-kira-special-desc = Отправить 30u киры спешл на ЦК.
+task-ntr-kira-special-desc = Отправить 30u цитрусового трёпа на ЦК.
 task-ntr-nuclear-cola-desc = Отправить 30u ядерной колы на ЦК. Особо засекречено!
 task-ntr-gildlager-desc = Отправить 30u гильдлагера для проверки качества.
 task-ntr-grog-desc = Отправить 30u грога.
 task-ntr-hippies-delight-desc = Отправить 30u радости хиппи необходимого для "анализа".
-task-ntr-irish-car-bomb-desc = Отправить 30u коктейля Ирландская автомобильная бомба.
+task-ntr-irish-car-bomb-desc = Отправить 30u коктейля Пингвин-гренадёр.
 task-ntr-long-island-desc = Отправить 30u лонг-айленд айс ти.
 task-ntr-manhattan-desc = Отправить 30u коктейля манхэттенский проект, необходимого для VIP вечеринки.
 task-ntr-manly-dorf-desc = Получить 30u коктейля мужественный дворф.

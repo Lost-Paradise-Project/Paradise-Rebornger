@@ -89,23 +89,6 @@
         - Document
 
 # Reagent tasks
-- type: ntrTask
-  id: TaskLingBlood
-  proto: TaskVial
-  reward: 15
-  weight: 0.005
-  cooldown: 600
-  description: task-ntr-ling-blood-desc
-  reagentTask: true
-  solutionName: beaker
-  reagents:
-    BloodChangeling: 3000
-  entries:
-  - name: task-ntr-ling-blood-name
-    stamps: [ ] # idk how to make it not fuck up checkfails without it
-    whitelist:
-      tags: [ ]
-      components: [ ]
 
 - type: ntrTask
   id: TaskArtifexium
@@ -387,7 +370,7 @@
   description: task-ntr-kira-special-desc
   reagentTask: true
   reagents:
-    KiraSpecial: 3000
+    DrinkOrangeLimeSodaGlass: 3000
   entries:
   - name: task-ntr-drink-base-name
     stamps: [ ]
@@ -472,7 +455,7 @@
   description: task-ntr-irish-car-bomb-desc
   reagentTask: true
   reagents:
-    IrishCarBomb: 3000
+    IrishSlammer: 3000
   entries:
   - name: task-ntr-drink-base-name
     stamps: [ ]

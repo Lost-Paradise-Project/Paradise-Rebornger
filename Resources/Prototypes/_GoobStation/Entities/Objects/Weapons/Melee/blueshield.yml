@@ -38,15 +38,11 @@
       types:
         Blunt: 13 # Unlucky number
         Slash: 7 # Lucky number
-    bluntStaminaDamageFactor: 2 # 26 damage, 4 hit stamcrit
     animation: WeaponArcThrust
     soundHit:
       path: /Audio/_GoobStation/Weapons/Effects/metalcrush.ogg
   - type: StaminaDamageOnHit
-    damage: 15
-    overtime: 45
-    lightAttackDamageMultiplier: 5
-    lightAttackOvertimeDamageMultiplier: 0
+    damage: 35
     sound: /Audio/Weapons/egloves.ogg
   - type: LandAtCursor
   - type: Battery
