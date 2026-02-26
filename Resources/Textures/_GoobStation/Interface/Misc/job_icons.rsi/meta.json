@@ -8,10 +8,10 @@
     },
     "states": [
         {
-        "name": "nanotrasenrepresentative"
+            "name": "nanotrasenrepresentative"
         },
         {
-        "name": "blueshield"
+            "name": "blueshield"
         }
     ]
 }
