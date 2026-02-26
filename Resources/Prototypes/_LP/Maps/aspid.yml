@@ -2,9 +2,10 @@
   id: LPAspid
   mapName: 'Aspid Station'
   mapPath: /Maps/_LP/Station/Aspid/LP_aspid_var1.yml
-  mapPaths:
-  - /Maps/_LP/Station/Aspid/LP_aspid_var1.yml
-  - /Maps/_LP/Station/Aspid/LP_aspid_var2.yml
+#  mapPaths:
+#  - /Maps/_LP/Station/Aspid/LP_aspid_var1.yml
+#  - /Maps/_LP/Station/Aspid/LP_aspid_var2.yml
+  minPlayers: 0 # Lost Paradis AK PowerKAT
   maxPlayers: 40 # Lost Paradis AK PowerKAT
   stations:
     LPAspid:
