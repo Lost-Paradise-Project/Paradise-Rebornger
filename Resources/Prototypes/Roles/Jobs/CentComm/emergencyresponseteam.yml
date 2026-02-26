@@ -221,7 +221,7 @@
     back: ClothingBackpackERTEngineer
     shoes: ClothingShoesBootsMagERT
     mask: ClothingMaskGasERT
-    eyes: ClothingEyesHudDiagnostic
+    eyes: LPPClothingEyesHudSecEng # LP Edit
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTEngineer
     id: ERTEngineerPDA
@@ -511,7 +511,7 @@
     back: ClothingBackpackERTMedical
     shoes: ClothingShoesBootsMagERT
     mask: ClothingMaskGasERT
-    eyes: ClothingEyesHudMedical
+    eyes: LPPClothingEyesHudSecMed # LP Edit
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTMedical
     id: ERTMedicPDA

@@ -4,3 +4,5 @@ ent-ClothingHeadHatCowboyBlueshield = ковбойская шляпа Синег
     .desc = Шериф снова в городе, детки.
 ent-ClothingHeadHatUshankaBlueshield = блюшилд бронеушанка
     .desc = Идеальна для защиты головы в Сибири, дa?
+ent-ClothingHeadHatBeretEliteNavyOfficer = элитный берет офицера ЦентКом
+    .desc = Тёмно-синий берет с серебряным щитом сил безопасности NanoTrasen.

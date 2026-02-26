@@ -10,9 +10,9 @@
   - type: Item
     size: Huge
   - type: GhostRole
-    name: ghost-role-lead-ert-sec-name
-    description: ghost-role-ert-sec-desc
-    rules: ghost-role-lead-ert-sec-rules
+    name: ghost-role-information-ert-leader-name
+    description: ghost-role-information-ert-leader-description
+    rules: ghost-role-information-nonantagonist-rules
   - type: GhostRoleMobSpawner
     prototype: LPPLeadERTSec
 
@@ -22,10 +22,6 @@
   name: lead ert medics summoning radio
   description: A NT-approved radio that can summon a lead ert with special coins.
   components:
-  - type: GhostRole
-    name: ghost-role-lead-ert-med-name
-    description: ghost-role-ert-med-desc
-    rules: ghost-role-lead-ert-med-rules
   - type: GhostRoleMobSpawner
     prototype: LPPLeadERTMed
 
@@ -35,10 +31,6 @@
   name: lead ert engineers summoning radio
   description: A NT-approved radio that can summon a lead ert with special coins.
   components:
-  - type: GhostRole
-    name: ghost-role-lead-ert-engi-name
-    description: ghost-role-ert-engi-desc
-    rules: ghost-role-lead-ert-engi-rules
   - type: GhostRoleMobSpawner
     prototype: LPPLeadERTEngi
 
@@ -48,10 +40,6 @@
   name: lead ert janitors summoning radio
   description: A NT-approved radio that can summon a lead ert with special coins.
   components:
-  - type: GhostRole
-    name: ghost-role-lead-ert-jani-name
-    description: ghost-role-ert-jani-desc
-    rules: ghost-role-lead-ert-jani-rules
   - type: GhostRoleMobSpawner
     prototype: LPPLeadERTJani
 
@@ -61,10 +49,6 @@
   name: lead ert summoning radio
   description: A NT-approved radio that can summon a lead ert with special coins.
   components:
-  - type: GhostRole
-    name: ghost-role-lead-ert-standart-name
-    description: ghost-role-ert-standart-desc
-    rules: ghost-role-lead-ert-standart-rules
   - type: GhostRoleMobSpawner
     prototype: LPPLeadERTStandart
 
@@ -75,9 +59,9 @@
   description: A NT-approved radio that can summon a lead ert with special coins.
   components:
   - type: GhostRole
-    name: ghost-role-lead-ert-cburn-name
-    description: ghost-role-ert-cburn-desc
-    rules: ghost-role-lead-ert-cburn-rules
+    name: ghost-role-information-cburn-agent-name
+    description: ghost-role-information-cburn-agent-description
+    rules: ghost-role-information-nonantagonist-rules
   - type: GhostRoleMobSpawner
     prototype: LPPLeadCBURN
 
@@ -282,11 +266,11 @@
   id: LPPERTJanitorCoin
   parent: LPPERTSecurityRifleCoin
   name: ert medical summoning coin
-  description: Toss to summon an ert medical.
+  description: Toss to summon an ert janitor.
   components:
   - type: GhostRole
-    name: ghost-role-information-ert-medical-name
-    description: ghost-role-information-ert-medical-description
+    name: ghost-role-information-ert-janitor-name
+    description: ghost-role-information-ert-janitor-description
     rules: ghost-role-information-nonantagonist-rules
     job: ERTJanitor
   - type: GhostRoleMobSpawner
@@ -296,6 +280,7 @@
   id: LPPCBURNCoin
   parent: LPPERTSecurityRifleCoin
   name: cburn agent summoning coin
+  description: Toss to summon an CBURN agent.
   components:
   - type: GhostRole
     name: ghost-role-information-cburn-agent-name
@@ -334,6 +319,7 @@
 # Lead ERT Gear
 
 - type: startingGear
+  parent: ERTLeaderGearEVA
   id: LPPLeadERTSecGear
   equipment:
     pocket2: WeaponDisabler
@@ -364,6 +350,7 @@
     - EmergencyMedipen
 
 - type: startingGear
+  parent: ERTLeaderGearEVA
   id: LPPLeadERTMedGear
   equipment:
     pocket2: WeaponDisabler
@@ -394,6 +381,7 @@
     - EmergencyMedipen
 
 - type: startingGear
+  parent: ERTLeaderGearEVA
   id: LPPLeadERTEngiGear
   equipment:
     pocket2: WeaponDisabler
@@ -424,6 +412,7 @@
     - EmergencyMedipen
 
 - type: startingGear
+  parent: ERTLeaderGearEVA
   id: LPPLeadERTJaniGear
   equipment:
     pocket2: WeaponDisabler
@@ -454,6 +443,7 @@
     - EmergencyMedipen
 
 - type: startingGear
+  parent: ERTLeaderGearEVA
   id: LPPLeadERTStandartGear
   equipment:
     pocket2: WeaponDisabler
