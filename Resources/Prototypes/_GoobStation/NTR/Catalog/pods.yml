@@ -287,15 +287,6 @@
     prototype: VendingMachineCigsDeluxe
 
 - type: entity
-  id: SpawnPodNTRSoap
-  categories: [ HideSpawnMenu ]
-  name: SpawnPodNTRSoap
-  parent: SpawnSupplyEmpty
-  components:
-  - type: SpawnOnDespawn
-    prototype: SoapCentcomm
-
-- type: entity
   id: SpawnPodWaterCoolerGold
   categories: [ HideSpawnMenu ]
   name: SpawnPodWaterCoolerGold

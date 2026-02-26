@@ -60,9 +60,6 @@ ntr-executive-hardsuit-desc = A durable hardsuit for extreme environments. Are y
 ntr-executive-cigs-deluxe = Executive cig vendor
 ntr-executive-cigs-deluxe-desc = For those who know that lung cancer is non-existent, Nanotrasen made this, a vendor full of ciggaretes and expensive flippos for you to smoke.
 
-ntr-executive-soap = centcomm soap
-ntr-executive-soap-desc = An expensive soap made with our finest... who am i kidding its just a soap covered in lube with a print.
-
 ntr-experimental-hardsuit-name = Order a hardsuit
 ntr-experimental-hardsuit-desc = Nanotrasen is testing an experimental exosuit built from Bluespace-conductive plates reverse-engineered from Cybersun’s Redspace Dread Suit, with live trials conducted under your supervision.
 

@@ -69,10 +69,10 @@
     stock: 1
 
 - type: listing
-  id: LPPNTRExecutiveERTStandart
-  name: ntr-executive-ert-standart-name
-  description: ntr-executive-ert-standart-desc
-  productEntity: LPPSpawnPodERTStandart
+  id: LPPNTRExecutiveERTStandard
+  name: ntr-executive-ert-standard-name
+  description: ntr-executive-ert-standard-desc
+  productEntity: LPPSpawnPodERTStandard
   icon:
     sprite: _GoobStation/Objects/Tools/executive_briefcase.rsi
     state: icon_alt

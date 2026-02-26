@@ -42,6 +42,7 @@
     # - BluespaceLifelineImplanter
     - DefibrillatorCompact # wow personal doctor for NTR
     - LPPCombatHypospray # LP Edit
+    - LPPBlueshieldRevolver
   inhand:
     - MedkitCombatFilled
 

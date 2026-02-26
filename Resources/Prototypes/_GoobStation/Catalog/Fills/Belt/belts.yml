@@ -20,14 +20,3 @@
     containers:
       storagebase: !type:NestedSelector
         tableId: BeltAssaultBSOEntityTable
-
-- type: entity
-  id: ClothingBeltHolsterFilledBlueshield
-  parent: ClothingBeltHolster
-  suffix: Filled, EG-4
-  components:
-  - type: EntityTableContainerFill
-    containers:
-      storagebase: !type:AllSelector
-        children:
-          - id: LPPBlueshieldRevolver

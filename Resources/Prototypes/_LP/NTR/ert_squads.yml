@@ -44,13 +44,13 @@
     prototype: LPPLeadERTJani
 
 - type: entity
-  id: LPPRadioLeadERTStandart
+  id: LPPRadioLeadERTStandard
   parent: LPPRadioLeadERTSec
   name: lead ert summoning radio
   description: A NT-approved radio that can summon a lead ert with special coins.
   components:
   - type: GhostRoleMobSpawner
-    prototype: LPPLeadERTStandart
+    prototype: LPPLeadERTStandard
 
 - type: entity
   id: LPPRadioLeadCBURN
@@ -110,13 +110,13 @@
     prototypes: [LPPLeadERTJaniGear]
 
 - type: entity
-  id: LPPLeadERTStandart
+  id: LPPLeadERTStandard
   parent: LPPLeadERTSec
   name: lead ERT
   suffix: Human
   components:
   - type: Loadout
-    prototypes: [LPPLeadERTStandartGear]
+    prototypes: [LPPLeadERTStandardGear]
 
 - type: entity
   id: LPPLeadCBURN
@@ -444,7 +444,7 @@
 
 - type: startingGear
   parent: ERTLeaderGearEVA
-  id: LPPLeadERTStandartGear
+  id: LPPLeadERTStandardGear
   equipment:
     pocket2: WeaponDisabler
     suitstorage: WeaponRifleLecterXL8

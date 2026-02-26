@@ -37,13 +37,13 @@
     prototype: LPPRadioLeadERTJani
 
 - type: entity
-  id: LPPSpawnPodERTStandart
+  id: LPPSpawnPodERTStandard
   categories: [ HideSpawnMenu ]
   name: SpawnSupplyERTJani
   parent: SpawnSupplyEmpty
   components:
   - type: SpawnOnDespawn
-    prototype: LPPRadioLeadERTStandart
+    prototype: LPPRadioLeadERTStandard
 
 - type: entity
   id: LPPSpawnPodCBURN

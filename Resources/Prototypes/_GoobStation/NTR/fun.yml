@@ -29,36 +29,6 @@
   - type: DatasetVocalizer
     dataset: CigaretteMachineAdsDLC
 
-# nt soaps
-
-- type: entity
-  id: SoapGold
-  name: golden soap
-  description: Finally, you slipped 1000 people and unlocked a new golden soap. Smells like whiskey.
-  parent: BaseSoap
-  components:
-  - type: Sprite
-    sprite: _GoobStation/Objects/Fun/soap.rsi
-    state: soap_gld
-  - type: Tag
-    tags:
-    - Soap
-  - type: Slippery
-    slipData:
-      stunTime: 5.0 # omegaslop
-      launchForwardsMultiplier: 3.0
-  - type: CleansForensics
-
-- type: entity
-  parent: SoapGold
-  id: SoapCentcomm
-  description: They clearly should stop with the green theme on everything man. Smells like lube.
-  name: centcomm soap
-  components:
-  - type: Sprite
-    sprite: _GoobStation/Objects/Fun/soap.rsi
-    state: soap_cc
-
 - type: entity
   id: WaterCoolerGold
   name: executive water cooler
