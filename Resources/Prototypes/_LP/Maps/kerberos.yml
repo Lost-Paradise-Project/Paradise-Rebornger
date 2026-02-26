@@ -1,7 +1,7 @@
 - type: gameMap
   id: LPKerberos
   mapName: 'Kerberos Station'
-  mapPath: /Maps/_LP/LP_kerberos.yml
+  mapPath: /Maps/_LP/Station/Kerberos/LP_kerberos_var1.yml
   minPlayers: 30 # Lost Paradis AK PowerKAT
   stations:
     LPKerberos:
