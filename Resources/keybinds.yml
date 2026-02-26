@@ -498,13 +498,15 @@ binds:
 - function: OpenSandboxWindow
   type: State
   key: B
-- function: TakeScreenshot
-  type: State
-  key: F2
-- function: TakeScreenshotNoUI
-  type: State
-  key: F2
-  mod1: Shift
+# LP edit start - mentorhelp
+#- function: TakeScreenshot
+#  type: State
+#  key: F2
+#- function: TakeScreenshotNoUI
+#  type: State
+#  key: F2
+#  mod1: Shift
+# LP edit end
 - function: GuiTabNavigateNext
   type: State
   key: Tab

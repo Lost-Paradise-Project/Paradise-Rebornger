@@ -27,3 +27,43 @@
   license: "CC-BY-NC-SA-3.0"
   copyright: "Taking Inventory by Locknar. Converted from MP3 to OGG."
   source: "https://www.youtube.com/watch?v=1UxJ6ZRSc7Y&list=PLez1iZ5ZrYRXMpgvpGyQSrYXzZq6y-kl-&index=22&ab_channel=iamlocknar"
+
+- files: ["drozerix_-_leisurely_voice.xm.ogg"]
+  license: "CC-BY-NC-SA-4.0"
+  copyright: "Leisurely Voice by Drozerix. Converted to OGG."
+  source: "https://modarchive.org/module.php?183837="
+
+- files: ["aggravated.it.ogg"]
+  license: "CC-BY-NC-4.0"
+  copyright: "MEL -Aggravated Assault by melcom. Converted to OGG."
+  source: "https://www.youtube.com/watch?v=vejtpnONyUY"
+
+- files: ["autumnal_equinox.xm.ogg"]
+  license: "CC-BY-NC-SA-4.0"
+  copyright: "Autumnal Equinox by lemonade. Converted to OGG."
+  source: "https://modarchive.org/module.php?143993="
+
+- files: ["hackers.ogg"]
+  license: "CC-BY-4.0"
+  copyright: "Hackers by Karl Casey @ White Bat Audio. Converted to OGG."
+  source: "https://www.youtube.com/watch?v=NZ4Of3lID84"
+
+- files: ["melcom-cyberpunk.it.ogg"]
+  license: "CC-BY-NC-4.0"
+  copyright: "MEL -Cyberpunk by melcom. Converted to OGG."
+  source: "https://www.youtube.com/watch?v=K0tXhyB3vZ8"
+
+- files: ["midori_-_conundrum_final.it.ogg"]
+  license: "CC-BY-NC-SA-4.0"
+  copyright: "Conundrum by Midori Mizuno. Converted to OGG."
+  source: "https://modarchive.org/module.php?181705="
+
+- files: ["psirius_-_nights_of_orion.xm.ogg"]
+  license: "CC-BY-NC-SA-4.0"
+  copyright: "Nights of Orion by Psirius. Converted to OGG."
+  source: "https://modarchive.org/module.php?184962="
+
+- files: ["superposition.ogg"]
+  license: "CC-BY-NC-4.0"
+  copyright: "Superposition by Amie Waters. Converted to OGG."
+  source: "https://amiewaters.bandcamp.com/track/superposition-2"
