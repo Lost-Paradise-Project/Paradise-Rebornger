@@ -33,7 +33,6 @@
     ears: ClothingHeadsetAltCommand
     pocket1: DrinkEnergyDrinkCan
     pocket2: Stunbaton # LP Edit -> REPLACE WITH TELESCOPICBATON
-    belt: ClothingBeltHolsterFilledBlueshield
     back: ClothingBackpackBlueshield
   storage:
     back:
