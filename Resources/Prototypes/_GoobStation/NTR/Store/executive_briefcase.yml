@@ -62,6 +62,7 @@
     - NTRstation
     - NTRpersonal
     - NTRBoards
+    - LPPNTRERTSquads # LP Edit
     # - NTREvil
 
 # Executive briefcase store
@@ -76,6 +77,7 @@
     - NTRstation # for stuff like buying spesos, disablers, etc
     - NTRpersonal # for, well, personal stuff.
     - NTRBoards # for hard to get boards
+    - LPPNTRERTSquads # LP Edit, for GOD DAMN ERT SQUADS!!!
 #    - NTREvil # for evil stuff
     currencyWhitelist:
     - NTLoyaltyPoint

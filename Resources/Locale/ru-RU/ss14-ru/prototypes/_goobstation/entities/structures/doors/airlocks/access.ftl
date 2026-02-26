@@ -1,0 +1,12 @@
+ent-AirlockBlueshieldOfficerCommandLocked = { ent-AirlockBlueshieldOfficerCommand }
+    .suffix = Синий Щит, Закрыт
+    .desc = { ent-AirlockBlueshieldOfficerCommand.desc }
+ent-AirlockBlueshieldOfficerCommandGlassLocked = { ent-AirlockBlueshieldOfficerCommandGlass }
+    .suffix = Синий Щит, Закрыт
+    .desc = { ent-AirlockBlueshieldOfficerCommandGlass.desc }
+ent-AirlockNanotrasenRepresentativeCommandLocked = { ent-AirlockCentralCommand }
+    .suffix = Представитель ЦентКом, Закрыт
+    .desc = { ent-AirlockCentralCommand.desc }
+ent-AirlockNanotrasenRepresentativeCommandGlassLocked = { ent-AirlockCentralCommandGlass }
+    .suffix = Представитель ЦентКом, Закрыт
+    .desc = { ent-AirlockCentralCommandGlass.desc }

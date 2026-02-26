@@ -7,6 +7,10 @@ ntr-scan-success = Успешно зачислено { $amount } очков ло
 # listing
 # station
 
+ntr-executive-eva = Набор ВКД
+ntr-executive-eva-desc = Набор, состоящий из двух престижных ВКД скафандров и шлемов.
+ntr-executive-mindshield = Ящик имплантов Щит разума
+ntr-executive-mindshield-desc = Ящик, содержащий 3 импланта Щит разума.
 ntr-executive-spesos-small-name = Малый денежный грант
 ntr-executive-spesos-small-desc = Получите небольшой денежный бонус от NanoTrasen за вашу усердную работу. Как хороший сотрудник, вы ведь отдадите кредиты Квартирмейстеру, верно?
 ntr-executive-disk-small-name = Малый исследовательский грант
@@ -19,17 +23,29 @@ ntr-executive-mats-name = Заказать материалы
 ntr-executive-mats-desc = Закажите строительные материалы из глобального отдела снабжения NanoTrasen.
 ntr-executive-tools-small-name = Ящик с инструментами
 ntr-executive-tools-small-desc = Ящик, содержащий базовые инженерные инструменты.
+ntr-executive-water-cooler = премиальный водяной?? кулер
+ntr-executive-water-cooler-desc = Изготовлен из лучшего в секторе виски с 24-каратной выдержкой. Он блестящий и золотистый, как и его внутренности. Виски разливается в 500 унций. У каждого уважающего себя руководителя есть такой в своем номере.
 ntr-executive-pizza-small-name = Заказать малый набор для вечеринок
 ntr-executive-pizza-small-desc = Закажите набор для небольшой вечеринки от NanoTrasen. Как хороший сотрудник, вы ведь поделитесь пиццей с коллегами... или съедите всё сами?
 
 # personal
 
+ntr-executive-intern-call = Вызвать отряд интернов
+ntr-executive-intern-call-desc = Вызывает главу студентов со специальными монетами, которые вызывают интернов.
+ntr-executive-phoron-dagger = Фороновый кинжал
+ntr-executive-phoron-dagger-desc = Необычный и дорогой форонский кинжал, которым пользуются элитные бойцы ЦентКома и важные персоны.
+ntr-executive-single-intern = одна монета интерна
+ntr-executive-single-intern-desc = Вызывает базового интерна. Интерны полностью под вашим командованием, командуйте им выполнять задачи за вас или играйте с ними в карты.
 ntr-executive-bsd-name = Вызвать заместителя офицера Синего Щита
 ntr-executive-bsd-desc = Запросите заместителя офицера Синего Щита с Центрального Командования. Этот личный охранник для вас или руководства требует веского обоснования. Можно вызвать только одного.
 ntr-executive-softsuit-name = Заказать базовый ВКД
 ntr-executive-softsuit-desc = Базовый ВКД, предназначенный для кратковременного пребывания в космосе. Обеспечивает минимальную защиту.
 ntr-executive-hardsuit-name = Заказать ВКД
 ntr-executive-hardsuit-desc = Прочный ВКД для экстремальных условий. Вы уверены, что эта покупка оправдана?
+ntr-executive-cigs-deluxe = Исполнительный вендомат сигарет
+ntr-executive-cigs-deluxe-desc = Для тех, кто знает, что рака легких не существует, это сделал Nanotrasen, поставщик сигарет и дорогих чипсов, которые вы можете выкурить.
+ntr-executive-soap = мыло ЦентКом
+ntr-executive-soap-desc = Дорогое мыло, изготовленное из лучших наших материалов... кого я обманываю, это просто мыло, покрытое лубрикантом с принтом.
 ntr-experimental-hardsuit-name = Заказать скафандр
 ntr-experimental-hardsuit-desc = NanoTrasen тестирует экспериментальный экокостюм, собранный из блюспейс-проводящих пластин, созданный путём обратной инженерии скафандра Дредноут от Cybersun’s, с проведением реальных испытаний под вашим наблюдением.
 ntr-executive-cigar-name = Кейс с премиальными сигарами
@@ -62,6 +78,8 @@ ntr-executive-cburn-desc = Запросите РХБЗЗ. Специализир
 
 # machine boards
 
+ntr-executive-task-flatpack = Упакованная консоль заданий ПЦК
+ntr-executive-task-flatpack-desc = Упаковка, в ней упакована консоль заданий ПЦК.
 ntr-executive-telecom-name = Платы серверов телекоммуникаций
 ntr-executive-telecom-desc = Ящик, содержащий 2 платы серверов телекоммуникаций. Необходимы для систем связи ИИ.
 ntr-executive-silo-name = Плата сило
@@ -114,5 +132,5 @@ ntr-console-no-solution = Не удалось найти раствор { $solut
 ntr-console-missing-reagent = В мензурке отсутствует реагент { $reagent }.
 ntr-console-insufficient-reagent-debug = Недостаточно реагента. Требуется: { $requiredReagent }, найдено: { $actualReagent }. Требуемое количество: { $required }, фактическое: { $actual }.
 ntr-console-task-fail = Не удалось загрузить задачу.
-ntr-bounty-console-menu-title = Консоль заданий ПNT
+ntr-bounty-console-menu-title = Консоль заданий ПЦК
 ntr-bounty-console-print-button = Принять

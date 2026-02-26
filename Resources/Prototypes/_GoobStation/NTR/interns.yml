@@ -125,7 +125,7 @@
     ears: ClothingHeadsetGrey
     id: PassengerIDCard
     pocket1: DrinkEnergyDrinkCan
-    pocket2: Stunbaton # LP Edit -> REPLACE WITH TELESCOPICBATON
+    pocket2: Stunbaton # LP Edit -> REPLACE TELESCOPICBATON
   inhand:
     - WeaponLaserCarbine
   storage:

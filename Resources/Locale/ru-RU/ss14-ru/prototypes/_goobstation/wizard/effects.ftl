@@ -1,0 +1,2 @@
+ent-EffectSpark = sparks
+    .desc = { "" }

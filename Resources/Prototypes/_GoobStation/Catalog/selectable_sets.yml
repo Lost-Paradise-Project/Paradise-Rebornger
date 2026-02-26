@@ -32,6 +32,8 @@
   - WeaponLeverChester
   - MagazineShotgunLeverRifleEmpty
   - MagazineShotgunLeverRifleEmpty
+  - MagazineShotgunLeverRifle
+  - MagazineShotgunLeverRifle
 #  tables:
 #  - ChesterRandomAmmoTable
 

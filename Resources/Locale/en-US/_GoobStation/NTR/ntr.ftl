@@ -7,6 +7,12 @@ ntr-scan-success = Successfully credited {$amount} loyalty points.
 # listing
 # station
 
+ntr-executive-eva = EVA crate
+ntr-executive-eva-desc = A crate containing 3 pairs of EVA hardsuits, to keep you and your people alive in a catastrophic situation.
+
+ntr-executive-mindshield = Mindshield crate
+ntr-executive-mindshield-desc = A crate containing 3 mindshield implants. Corporate advises you to buy them in cargo anyway.
+
 ntr-executive-spesos-small-name = Small spesos grant
 ntr-executive-spesos-small-desc = Receive a small monetary bonus from NanoTrasen for your hard work. As a good employee, you should give this to the quartermaster, right?
 
@@ -25,10 +31,22 @@ ntr-executive-mats-desc = Order construction materials from NanoTrasen's global 
 ntr-executive-tools-small-name = Generic tools crate
 ntr-executive-tools-small-desc = A crate containing basic engineering tools.
 
+ntr-executive-water-cooler = premium water (?) cooler
+ntr-executive-water-cooler-desc = Made from the finest 24-karat hardened whiskey in the sector. Its shiny and golden, just like its insides. Comes with 500u of whiskey. Every fine executive has one of these in their room.
+
 ntr-executive-pizza-small-name = Order a small pizza party
 ntr-executive-pizza-small-desc = Order a small pizza party bundle from NanoTrasen. As a good employee, you should share this with your coworkers... or eat it all yourself.
 
 # personal
+
+ntr-executive-intern-call = Call intern squad
+ntr-executive-intern-call-desc = Calls in a lead intern with special summoning coins, that are calling more interns.
+
+ntr-executive-phoron-dagger = Phoron dagger
+ntr-executive-phoron-dagger-desc = A fancy and expensive phoron dagger, used by elite CentComm fighters and important people.
+
+ntr-executive-single-intern = single Intern Coin
+ntr-executive-single-intern-desc = Summons one basic intern. Interns are on your full command, order them to complete tasks instead of you doing it by yourself, or play cards with them.
 
 ntr-executive-bsd-name = Call Blueshield Deputy
 ntr-executive-bsd-desc = Request a Blueshield deputy from Central Command. This personal guard for you or command staff requires valid justification. Only one may be called.
@@ -38,6 +56,12 @@ ntr-executive-softsuit-desc = A basic softsuit designed for short-term space exp
 
 ntr-executive-hardsuit-name = Order a hardsuit
 ntr-executive-hardsuit-desc = A durable hardsuit for extreme environments. Are you sure this purchase is justified?
+
+ntr-executive-cigs-deluxe = Executive cig vendor
+ntr-executive-cigs-deluxe-desc = For those who know that lung cancer is non-existent, Nanotrasen made this, a vendor full of ciggaretes and expensive flippos for you to smoke.
+
+ntr-executive-soap = centcomm soap
+ntr-executive-soap-desc = An expensive soap made with our finest... who am i kidding its just a soap covered in lube with a print.
 
 ntr-experimental-hardsuit-name = Order a hardsuit
 ntr-experimental-hardsuit-desc = Nanotrasen is testing an experimental exosuit built from Bluespace-conductive plates reverse-engineered from Cybersun’s Redspace Dread Suit, with live trials conducted under your supervision.
@@ -81,6 +105,9 @@ ntr-executive-cburn-name = Call CBURN
 ntr-executive-cburn-desc = Request a Containment and Biohazard Urban Response Team. Specialized in biological threats and viral outbreaks. Do not interfere with their quarantine protocols.
 
 # machine boards
+
+ntr-executive-task-flatpack = task console flatpack
+ntr-executive-task-flatpack-desc = A normal flatpack containing a spare task console.
 
 ntr-executive-telecom-name = Telecom server machine boards
 ntr-executive-telecom-desc = A crate containing 2 telecom server machine boards. Essential for AI communication systems.

@@ -7,3 +7,5 @@ ent-LPPWeaponDisablerBorgSec = { ent-WeaponDisabler }
 ent-LPPWeaponLaserCarbineBorgSec = { ent-WeaponLaserCarbine }
     .suffix = Киборг, Безопасность
     .desc = { ent-WeaponLaserCarbine.desc }
+ent-LPPBlueshieldRevolver = револьвер синего щита
+    .desc = Стильно и со вкусом.

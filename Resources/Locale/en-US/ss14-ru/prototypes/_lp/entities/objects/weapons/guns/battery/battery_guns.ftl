@@ -7,3 +7,5 @@ ent-LPPWeaponDisablerBorgSec = { ent-WeaponDisabler }
 ent-LPPWeaponLaserCarbineBorgSec = { ent-WeaponLaserCarbine }
     .suffix = Cyborg, Security
     .desc = { ent-WeaponLaserCarbine.desc }
+ent-LPPBlueshieldRevolver = blueshield revolver
+    .desc = Stylish and tasteful.

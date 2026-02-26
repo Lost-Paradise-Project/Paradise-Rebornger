@@ -71,7 +71,7 @@
   suffix: Nanotrasen Representative
   components:
   - type: FaxMachine
-    name: "Nanotrasen Representative"
+    name: "Представитель ЦентКом"
   - type: Sprite
     sprite: _GoobStation/Objects/Tools/handheld_fax.rsi
     drawdepth: SmallObjects
