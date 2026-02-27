@@ -16280,26 +16280,6 @@ entities:
     - type: Transform
       pos: -21.669994,42.923763
       parent: 2
-- proto: ActionToggleInternals
-  entities:
-  - uid: 6
-    components:
-    - type: Transform
-      parent: 5
-- proto: ActionToggleLight
-  entities:
-  - uid: 9
-    components:
-    - type: Transform
-      parent: 8
-  - uid: 24
-    components:
-    - type: Transform
-      parent: 23
-  - uid: 26
-    components:
-    - type: Transform
-      parent: 25
 - proto: AirAlarm
   entities:
   - uid: 27
