@@ -4,8 +4,8 @@ meta:
   engineVersion: 272.0.0
   forkId: ""
   forkVersion: ""
-  time: 02/25/2026 19:44:31
-  entityCount: 37784
+  time: 02/27/2026 15:57:00
+  entityCount: 37775
 maps:
 - 1
 grids:
@@ -16343,14 +16343,6 @@ entities:
     components:
     - type: Transform
       parent: 28
-  - uid: 31
-    components:
-    - type: Transform
-      parent: 30
-  - uid: 34
-    components:
-    - type: Transform
-      parent: 33
   - uid: 37
     components:
     - type: Transform
@@ -16359,52 +16351,10 @@ entities:
     components:
     - type: Transform
       parent: 38
-  - uid: 42
-    components:
-    - type: Transform
-      parent: 41
-  - uid: 46
-    components:
-    - type: Transform
-      parent: 45
-  - uid: 50
-    components:
-    - type: Transform
-      parent: 49
-  - uid: 54
-    components:
-    - type: Transform
-      parent: 53
   - uid: 57
     components:
     - type: Transform
       parent: 56
-- proto: ActionToggleJetpack
-  entities:
-  - uid: 32
-    components:
-    - type: Transform
-      parent: 30
-  - uid: 35
-    components:
-    - type: Transform
-      parent: 33
-  - uid: 43
-    components:
-    - type: Transform
-      parent: 41
-  - uid: 47
-    components:
-    - type: Transform
-      parent: 45
-  - uid: 51
-    components:
-    - type: Transform
-      parent: 49
-  - uid: 55
-    components:
-    - type: Transform
-      parent: 53
 - proto: ActionToggleLight
   entities:
   - uid: 59
@@ -111638,7 +111588,7 @@ entities:
       pos: -4.5,11.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -278123.9
+      secondsUntilStateChange: -278339.66
       state: Closing
     - type: DeviceNetwork
       deviceLists:
@@ -113080,7 +113030,7 @@ entities:
       pos: 70.5,-9.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -382639.94
+      secondsUntilStateChange: -382855.7
       state: Closing
     - type: DeviceNetwork
       deviceLists:
@@ -172743,146 +172693,67 @@ entities:
       rot: 3.141592653589793 rad
       pos: 66.5,-3.5
       parent: 2
-- proto: JetpackBlackFilled
+- proto: JetpackBlueFilled
   entities:
-  - uid: 23432
+  - uid: 46
     components:
     - type: Transform
-      pos: -8.504205,18.577003
+      pos: -8.690355,19.756014
       parent: 2
-  - uid: 23433
+  - uid: 47
     components:
     - type: Transform
-      pos: -8.483372,19.629087
+      pos: -8.45598,19.521639
       parent: 2
-- proto: JetpackBlue
+  - uid: 49
+    components:
+    - type: Transform
+      pos: -8.721605,18.787264
+      parent: 2
+  - uid: 50
+    components:
+    - type: Transform
+      pos: -8.45598,18.490389
+      parent: 2
+- proto: JetpackMiniFilled
+  entities:
+  - uid: 42
+    components:
+    - type: Transform
+      pos: -23.705162,-21.18107
+      parent: 2
+  - uid: 43
+    components:
+    - type: Transform
+      pos: -23.455162,-21.43107
+      parent: 2
+  - uid: 45
+    components:
+    - type: Transform
+      pos: 81.24049,10.840781
+      parent: 2
+- proto: JetpackSecurity
   entities:
   - uid: 30
     components:
     - type: Transform
-      pos: 15.690129,-43.55176
+      pos: -1.5377965,67.76967
       parent: 2
-    - type: GasTank
-      toggleActionEntity: 31
-    - type: Jetpack
-      toggleActionEntity: 32
-    - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 32
-          - 31
-  - uid: 23434
+  - uid: 31
     components:
     - type: Transform
-      pos: -5.6521044,-48.30082
+      pos: -1.3971715,67.53529
       parent: 2
-- proto: JetpackMini
-  entities:
+  - uid: 32
+    components:
+    - type: Transform
+      pos: -1.5377965,66.72279
+      parent: 2
   - uid: 33
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 15.283879,-43.442387
+      pos: -1.3346715,66.34779
       parent: 2
-    - type: GasTank
-      toggleActionEntity: 34
-    - type: Jetpack
-      toggleActionEntity: 35
-    - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 35
-          - 34
-  - uid: 23435
-    components:
-    - type: Transform
-      pos: -5.6521044,-48.39457
-      parent: 2
-- proto: JetpackSecurityFilled
-  entities:
-  - uid: 41
-    components:
-    - type: Transform
-      parent: 40
-    - type: GasTank
-      toggleActionEntity: 42
-    - type: Jetpack
-      toggleActionEntity: 43
-    - type: Physics
-      canCollide: False
-    - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 43
-          - 42
-    - type: InsideEntityStorage
-  - uid: 45
-    components:
-    - type: Transform
-      parent: 44
-    - type: GasTank
-      toggleActionEntity: 46
-    - type: Jetpack
-      toggleActionEntity: 47
-    - type: Physics
-      canCollide: False
-    - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 47
-          - 46
-    - type: InsideEntityStorage
-  - uid: 49
-    components:
-    - type: Transform
-      parent: 48
-    - type: GasTank
-      toggleActionEntity: 50
-    - type: Jetpack
-      toggleActionEntity: 51
-    - type: Physics
-      canCollide: False
-    - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 51
-          - 50
-    - type: InsideEntityStorage
-  - uid: 53
-    components:
-    - type: Transform
-      parent: 52
-    - type: GasTank
-      toggleActionEntity: 54
-    - type: Jetpack
-      toggleActionEntity: 55
-    - type: Physics
-      canCollide: False
-    - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 55
-          - 54
-    - type: InsideEntityStorage
-  - uid: 12438
-    components:
-    - type: Transform
-      parent: 12430
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: Jukebox
   entities:
   - uid: 24635
@@ -175204,7 +175075,7 @@ entities:
           - 12439
           - 12435
           - 12443
-          - 12438
+          - invalid
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -190621,6 +190492,16 @@ entities:
       parent: 2
 - proto: Rack
   entities:
+  - uid: 34
+    components:
+    - type: Transform
+      pos: -1.5,66.5
+      parent: 2
+  - uid: 35
+    components:
+    - type: Transform
+      pos: -1.5,67.5
+      parent: 2
   - uid: 25519
     components:
     - type: Transform
@@ -212417,7 +212298,7 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 41
+          - invalid
   - uid: 44
     components:
     - type: Transform
@@ -212429,7 +212310,7 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 45
+          - invalid
   - uid: 48
     components:
     - type: Transform
@@ -212441,7 +212322,7 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 49
+          - invalid
   - uid: 52
     components:
     - type: Transform
@@ -212453,7 +212334,7 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 53
+          - invalid
   - uid: 37464
     components:
     - type: Transform
@@ -215084,6 +214965,11 @@ entities:
       parent: 2
 - proto: Table
   entities:
+  - uid: 41
+    components:
+    - type: Transform
+      pos: -23.5,-21.5
+      parent: 2
   - uid: 22329
     components:
     - type: Transform
