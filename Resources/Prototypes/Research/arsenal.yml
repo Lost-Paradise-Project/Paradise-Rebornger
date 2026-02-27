@@ -20,10 +20,11 @@
   - WeaponProtoKineticAccelerator
   - ShuttleGunKineticCircuitboard
   - FiringPinExpedition # Starlight
-  position: 0, 10
+  position: 6, 19
   radioChannels:
   - Security
 
+# Манипулирование лазерным оружием
 - type: technology
   id: WeaponizedLaserManipulation
   name: research-technology-weaponized-laser-manipulation
@@ -35,10 +36,11 @@
   cost: 7500
   recipeUnlocks:
   - WeaponLaserCarbine
-  position: 4, 10
+  position: 8, 20
   radioChannels:
   - Security
 
+# Нелетальные боеприпасы
 - type: technology
   id: NonlethalAmmunition
   name: research-technology-nonlethal-ammunition
@@ -53,12 +55,13 @@
   - BoxShellTranquilizer
   - BoxBeanbag
   - WeaponDisabler
-  position: 0, 11
+  position: 6, 18
   technologyPrerequisites:
   - SalvageWeapons
   radioChannels:
   - Security
 
+# Драконьи боеприпасы
 - type: technology
   id: DraconicMunitions
   name: research-technology-draconic-munitions
@@ -80,12 +83,13 @@
   - MagazineBoxMagnumIncendiary
   - MagazineBoxLightRifleIncendiary
   - MagazineBoxRifleIncendiary
-  position: 2, 11
+  position: 7, 18
   technologyPrerequisites:
   - SalvageWeapons
   radioChannels:
   - Security
 
+# Концентрированное лазерное оружие
 - type: technology
   id: ConcentratedLaserWeaponry
   name: research-technology-concentrated-laser-weaponry
@@ -97,12 +101,13 @@
   cost: 10000
   recipeUnlocks:
   - WeaponLaserCannon
-  position: 4, 11
+  position: 9, 21
   technologyPrerequisites:
   - WeaponizedLaserManipulation
   radioChannels:
   - Security
 
+# Применение волновых частиц
 - type: technology
   id: WaveParticleHarnessing
   name: research-technology-wave-particle-harnessing
@@ -114,12 +119,13 @@
   cost: 10000
   recipeUnlocks:
   - WeaponXrayCannon
-  position: 6, 11
+  position: 9, 19
   technologyPrerequisites:
   - WeaponizedLaserManipulation
   radioChannels:
   - Security
 
+# Продвинутое противодействие беспорядкам
 - type: technology
   id: AdvancedRiotControl
   name: research-technology-advanced-riot-control
@@ -134,12 +140,13 @@
   - TelescopicShield
   - HoloprojectorSecurity
   - WeaponDisablerSMG
-  position: 0, 12
+  position: 6, 17
   technologyPrerequisites:
   - NonlethalAmmunition
   radioChannels:
   - Security
 
+# Урановые боеприпасы
 - type: technology
   id: UraniumMunitions
   name: research-technology-uranium-munitions
@@ -160,12 +167,13 @@
   - MagazineBoxLightRifleUranium
   - MagazineBoxRifleUranium
   - BoxShotgunUranium
-  position: 2, 12
+  position: 9, 17
   technologyPrerequisites:
   - DraconicMunitions
   radioChannels:
   - Security
 
+# Специальные средства
 - type: technology
   id: SpecialMeans
   name: research-technology-special-means
@@ -177,12 +185,13 @@
   cost: 5000
   recipeUnlocks:
   - ClothingBackpackElectropack
-  position: 0, 13
+  position: 5, 15
   technologyPrerequisites:
   - AdvancedRiotControl
   radioChannels:
   - Security
 
+# Взрывчатые вещества
 - type: technology
   id: ExplosiveTechnology
   name: research-technology-explosive-technology
@@ -202,14 +211,14 @@
   - ChemicalPayload
   - CableDetStack1
   - EmptyDetonator
-  position: 2, 13
+  position: 7, 16
   technologyPrerequisites:
   - AdvancedRiotControl
   radioChannels:
   - Security
 
 # Tier 2
-
+# Технология двойного оперирования
 - type: technology
   id: DualWieldingTechnology
   name: research-technology-dual-wielding-technology
@@ -221,12 +230,13 @@
   cost: 10000
   recipeUnlocks:
   - ClothingBackpackHarmpack
-  position: 0, 14
+  position: 5, 14
   technologyPrerequisites:
   - SpecialMeans
   radioChannels:
   - Security
 
+# Базовое корабельное вооружение
 - type: technology
   id: BasicShuttleArmament
   name: research-technology-basic-shuttle-armament
@@ -246,12 +256,13 @@
   - ShuttleGunSvalinnMachineGunCircuitboard
   - ShuttleGunPerforatorCircuitboard
   - ShuttleGunFriendshipCircuitboard
-  position: 2, 14
+  position: 6, 13
   technologyPrerequisites:
   - Shuttlecraft
   radioChannels:
   - Security
 
+# Кинетические модификации
 - type: technology
   id: KineticModifications
   name: research-technology-kinetic-modifications
@@ -265,12 +276,13 @@
   - PKAUpgradeDamage
   - PKAUpgradeRange
   - PKAUpgradeFireRate
-  position: 6, 12
+  position: 11, 18
   technologyPrerequisites:
   - WaveParticleHarnessing
   radioChannels:
   - Security
 
+# Оруженый портативный микросинтез
 - type: technology
   id: PortableMicrofusionWeaponry
   name: research-technology-portable-microfusion-weaponry
@@ -283,7 +295,7 @@
   recipeUnlocks:
   - WeaponAdvancedLaser
   - PortableRecharger
-  position: 4, 12
+  position: 11, 21
   technologyPrerequisites:
   - ConcentratedLaserWeaponry
   radioChannels:
@@ -291,6 +303,7 @@
 
 # Tier 3
 
+# Продвинутое корабельное оружие
 - type: technology
   id: AdvancedShuttleWeapon
   name: research-technology-advanced-shuttle-weapon
@@ -304,13 +317,14 @@
   - GrenadeEMP
   - PowerCageHigh
   - ShuttleGunDusterCircuitboard
-  position: 2, 15
+  position: 8, 12
   technologyPrerequisites:
   - BasicShuttleArmament
   - Shuttlecraft
   radioChannels:
   - Security
 
+# Термальное вооружение
 - type: technology
   id: ThermalWeaponry
   name: research-technology-thermal-weaponry
@@ -322,7 +336,7 @@
   cost: 15000
   recipeUnlocks:
   - WeaponTemperatureGun
-  position: 4, 13
+  position: 12, 22
   technologyPrerequisites:
   - PortableMicrofusionWeaponry
   radioChannels:

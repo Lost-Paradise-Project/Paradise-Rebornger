@@ -12,6 +12,6 @@
   recipeUnlocks:
   - MiningServerCircuitboard
   - MiningMonitoringComputerCircuitboard
-  position: 0, 0
+  position: 5, 20
   radioChannels:
   - Engineering

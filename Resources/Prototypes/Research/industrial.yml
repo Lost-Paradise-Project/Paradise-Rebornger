@@ -21,7 +21,7 @@
   - SolarControlComputerCircuitboard
   - SolarTrackerElectronics
   - EmitterCircuitboard
-  position: 2, 0
+  position: 4, 19
   radioChannels:
   - Engineering
 
@@ -37,12 +37,13 @@
   recipeUnlocks:
   - RadarConsoleCircuitboard
   - HandHeldMassScanner
-  position: 2, 1
+  position: 3, 18
   technologyPrerequisites:
   - PowerGeneration
   radioChannels:
   - Engineering
 
+# снаряжение для утилизации
 - type: technology
   id: SalvageEquipment
   name: research-technology-salvage-equipment
@@ -59,12 +60,13 @@
   - OreProcessorIndustrialMachineCircuitboard
   - ClothingMaskWeldingGas
   - ClothingShoesBootsJump
-  position: 0, 2
+  position: 1, 18
   technologyPrerequisites:
   - SpaceScanning
   radioChannels:
   - Engineering
 
+# Механическое уплотнение
 - type: technology
   id: MechanicalCompression
   name: research-technology-mechanical-compression
@@ -76,12 +78,13 @@
   cost: 10000
   recipeUnlocks:
   - FlatpackerMachineCircuitboard
-  position: 2, 2
+  position: 3, 16
   technologyPrerequisites:
   - SpaceScanning
   radioChannels:
   - Engineering
 
+# Атмосферные технологии
 - type: technology
   id: AtmosphericTech
   name: research-technology-atmospheric-tech
@@ -95,12 +98,13 @@
   recipeUnlocks:
   - ThermomachineFreezerMachineCircuitBoard
   - GasRecyclerMachineCircuitboard
-  position: 4, 2
+  position: 2, 17
   technologyPrerequisites:
   - SpaceScanning
   radioChannels:
   - Engineering
 
+# Рипли АВП
 - type: technology
   id: RipleyAPLU
   name: research-technology-ripley-aplu
@@ -119,12 +123,13 @@
   - RipleyCentralElectronics
   - RipleyPeripheralsElectronics
   - MechEquipmentGrabber
-  position: 0, 3
+  position: 0, 17
   technologyPrerequisites:
   - SalvageEquipment
   radioChannels:
   - Engineering
 
+# Промышленная инженерия
 - type: technology
   id: IndustrialEngineering
   name: research-technology-industrial-engineering
@@ -139,12 +144,13 @@
   - ProtolatheHyperConvectionMachineCircuitboard
   - CircuitImprinterHyperConvectionMachineCircuitboard
   - SheetifierMachineCircuitboard
-  position: 2, 3
+  position: 2, 14
   technologyPrerequisites:
   - MechanicalCompression
   radioChannels:
   - Engineering
 
+# Продвинутые атмос-технологии
 - type: technology
   id: AdvancedAtmospherics
   name: research-technology-advanced-atmospherics
@@ -160,12 +166,12 @@
   - HolofanProjector
   technologyPrerequisites:
   - AtmosphericTech
-  position: 4, 3
+  position: 2, 15
   radioChannels:
   - Engineering
 
 # Tier 2
-
+# Массовые раскопки
 - type: technology
   id: MassExcavation
   name: research-technology-excavation
@@ -181,12 +187,13 @@
     - AdvancedMineralScannerEmpty
     - BorgModuleAdvancedMining
     - SalvageExpeditionsComputerCircuitboard
-  position: 0, 4
+  position: 0, 15
   technologyPrerequisites:
   - RipleyAPLU
   radioChannels:
   - Engineering
 
+# Шаттлостроение
 - type: technology
   id: Shuttlecraft
   name: research-technology-shuttlecraft
@@ -201,12 +208,13 @@
   - ThrusterMachineCircuitboard
   - GyroscopeMachineCircuitboard
   - MiniGravityGeneratorCircuitboard
-  position: 2, 4
+  position: 3, 13
   technologyPrerequisites:
   - MechanicalCompression
   radioChannels:
   - Engineering
 
+# Продвинутые батареи
 - type: technology
   id: AdvancedPowercells
   name: research-technology-advanced-powercells
@@ -220,7 +228,7 @@
   - PowerCellHigh
   - TurboItemRechargerCircuitboard
   - SMESAdvancedMachineCircuitboard
-  position: 4, 4
+  position: 1, 11
   technologyPrerequisites:
   - IndustrialEngineering
   radioChannels:
@@ -241,12 +249,13 @@
   - ClothingBackpackHolding
   - ClothingBackpackSatchelHolding
   - ClothingBackpackDuffelHolding
-  position: 0, 5
+  position: 0, 13
   technologyPrerequisites:
   - MassExcavation
   radioChannels:
   - Engineering
 
+# Продвинутые инструменты
 - type: technology
   id: AdvancedToolsTechnology
   name: research-technology-advanced-tools
@@ -263,12 +272,13 @@
     - BorgModuleAdvancedTool
     - Fulton
     - FultonBeacon
-  position: 2, 5
+  position: 3, 11
   technologyPrerequisites:
   - Shuttlecraft
   radioChannels:
   - Engineering
 
+# Оптимизированный микрогальванизм
 - type: technology
   id: OptimizedMicrogalvanism
   name: research-technology-optimized-microgalvanism
@@ -281,7 +291,7 @@
   recipeUnlocks:
   - PowerCellMicroreactor
   - PowerCellHyper
-  position: 4, 5
+  position: 0, 11
   technologyPrerequisites:
   - AdvancedPowercells
   radioChannels:

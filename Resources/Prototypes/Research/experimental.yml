@@ -1,3 +1,4 @@
+# Основы робототехники
 - type: technology
   id: BasicRobotics
   name: research-technology-basic-robotics
@@ -10,8 +11,9 @@
   recipeUnlocks:
   - ProximitySensor
   - AiRemoteBrain # GoobStation
-  position: 2, 20
+  position: 6, 22
 
+# Основы исследования аномалий
 - type: technology
   id: BasicAnomalousResearch
   name: research-technology-basic-anomalous-research
@@ -27,10 +29,11 @@
   - AnomalyLocatorWide
   - APECircuitboard
   - AnomalyVesselCircuitboard
-  position: 0, 21
+  position: 8, 22
   technologyPrerequisites:
   - BasicRobotics
 
+# Основы ксеноархеологии
 - type: technology
   id: BasicXenoArcheology
   name: research-technology-basic-xenoarcheology
@@ -44,10 +47,11 @@
   - NodeScanner
   - AnalysisComputerCircuitboard
   - ArtifactAnalyzerMachineCircuitboard
-  position: 2, 21
+  position: 10, 23
   technologyPrerequisites:
   - BasicRobotics
 
+# Альтернативные исследования
 - type: technology
   id: AlternativeResearch
   name: research-technology-alternative-research
@@ -59,10 +63,11 @@
   cost: 5000
   recipeUnlocks:
   - TechDiskComputerCircuitboard
-  position: 4, 21
+  position: 7, 23
   technologyPrerequisites:
   - BasicRobotics
 
+# Применение ядер аномалий
 - type: technology
   id: AnomalyCoreHarnessing
   name: research-technology-anomaly-harnessing
@@ -74,10 +79,11 @@
   cost: 10000
   recipeUnlocks:
   - WeaponGauntletGorilla
-  position: 0, 22
+  position: 9, 25
   technologyPrerequisites:
   - BasicAnomalousResearch
 
+# Локализованный магнетизм
 - type: technology
   id: MagnetsTech
   name: research-technology-magnets-tech
@@ -90,12 +96,12 @@
   recipeUnlocks:
   - ClothingShoesBootsMagSci
   - ClothingShoesBootsMoon
-  position: 4, 22
+  position: 7, 24
   technologyPrerequisites:
   - AlternativeResearch
 
 # Tier 2
-
+# Переработка артефактов
 - type: technology
   id: AbnormalArtifactManipulation
   name: research-technology-abnormal-artifact-manipulation
@@ -107,10 +113,11 @@
   cost: 5000
   recipeUnlocks:
   - ArtifactCrusherMachineCircuitboard
-  position: 2, 22
+  position: 11, 24
   technologyPrerequisites:
   - BasicXenoArcheology
 
+# Продвинутое изучение аномалий
 - type: technology
   id: AdvancedAnomalyResearch
   name: research-technology-advanced-anomaly-research
@@ -124,10 +131,11 @@
   - WeaponPistolCHIMP
   - AnomalySynchronizerCircuitboard
   - AnomalyVesselExperimentalCircuitboard
-  position: 0, 23
+  position: 9, 23
   technologyPrerequisites:
   - BasicAnomalousResearch
 
+# Технология сдерживания
 - type: technology
   id: DeterrenceTechnologies
   name: research-technology-deterrence
@@ -140,10 +148,11 @@
   recipeUnlocks:
   - WeaponParticleDecelerator
   - HoloprojectorField
-  position: 4, 23
+  position: 7, 25
   technologyPrerequisites:
   - AlternativeResearch
 
+# Манипулирование гравитацией
 - type: technology
   id: GravityManipulation
   name: research-technology-gravity-manipulation
@@ -156,13 +165,13 @@
   recipeUnlocks:
     - WeaponForceGun
     - WeaponTetherGun
-  position: 1, 23
+  position: 10, 26
   technologyPrerequisites:
   - AbnormalArtifactManipulation
   - AnomalyCoreHarnessing
 
 # Tier 3
-
+# Квантовые скачки
 - type: technology
   id: QuantumLeaping
   name: research-technology-quantum-leaping
@@ -174,10 +183,11 @@
   cost: 10000
   recipeUnlocks:
   - DeviceQuantumSpinInverter
-  position: 0, 24
+  position: 11, 27
   technologyPrerequisites:
   - GravityManipulation
 
+# Блюспейс манипулирование временем
 - type: technology
   id: BluespaceTimeManipulation
   name: research-technology-bluespace-time-manipulation
@@ -189,6 +199,6 @@
   cost: 10000
   recipeUnlocks:
   - DeviceDesynchronizer
-  position: 2, 24
+  position: 12, 25
   technologyPrerequisites:
   - GravityManipulation
