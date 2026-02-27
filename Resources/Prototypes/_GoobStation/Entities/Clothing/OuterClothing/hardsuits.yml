@@ -53,20 +53,20 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.6
-        Slash: 0.6
-        Piercing: 0.65
-        Heat: 0.65
-        Radiation: 0.6
-        Caustic: 0.6
+        Blunt: 0.55
+        Slash: 0.55
+        Piercing: 0.55
+        Heat: 0.55
+        Radiation: 0.55
+        Caustic: 0.55
   - type: ClothingSpeedModifier
-    sprintModifier: 0.9
+    sprintModifier: 0.85
     walkModifier: 0.9
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitBlueshield
   - type: StaminaResistance
-    damageCoefficient: 0.6
+    damageCoefficient: 0.55
     # ADT edit start
   - type: DNALocker
     enabled: false

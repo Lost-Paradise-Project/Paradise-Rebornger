@@ -12,7 +12,7 @@
     whitelist:
       tags:
         - ShellShotgun
-    proto: ShellShotgun
+    proto: ShellShotgunSlug
     capacity: 8
   - type: Item
     size: Small

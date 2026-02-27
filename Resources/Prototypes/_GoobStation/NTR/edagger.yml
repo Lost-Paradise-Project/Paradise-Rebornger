@@ -29,7 +29,7 @@
     - type: MeleeWeapon
       # heavyStaminaCost: 10
       swingLeft: true
-      wideAnimationRotation: 135
+      wideAnimationRotation: 145
       attackRate: 1
       damage:
         types:
