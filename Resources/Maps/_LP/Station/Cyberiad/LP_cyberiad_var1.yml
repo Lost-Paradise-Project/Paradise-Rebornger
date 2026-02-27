@@ -23324,7 +23324,6 @@ entities:
     - type: Transform
       pos: 61.467155,-19.532312
       parent: 2
-    - type: GasTank
       toggleActionEntity: 57
     - type: ActionsContainer
     - type: ContainerContainer
@@ -105792,7 +105791,6 @@ entities:
     - type: Transform
       pos: 23.435959,-73.30528
       parent: 2
-    - type: GasTank
       toggleActionEntity: 27
     - type: ActionsContainer
     - type: ContainerContainer
@@ -106013,7 +106011,6 @@ entities:
     - type: Transform
       pos: 46.07388,-35.11413
       parent: 2
-    - type: GasTank
       toggleActionEntity: 37
     - type: ActionsContainer
     - type: ContainerContainer
@@ -106026,7 +106023,6 @@ entities:
     - type: Transform
       pos: 46.277004,-35.20788
       parent: 2
-    - type: GasTank
       toggleActionEntity: 39
     - type: ActionsContainer
     - type: ContainerContainer
@@ -177878,7 +177874,6 @@ entities:
     - type: Transform
       pos: 56.756596,-46.565502
       parent: 2
-    - type: GasTank
       toggleActionEntity: 29
     - type: ActionsContainer
     - type: ContainerContainer
