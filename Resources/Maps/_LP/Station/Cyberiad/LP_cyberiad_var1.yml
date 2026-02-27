@@ -4,8 +4,8 @@ meta:
   engineVersion: 272.0.0
   forkId: ""
   forkVersion: ""
-  time: 02/27/2026 15:57:00
-  entityCount: 37775
+  time: 02/27/2026 20:18:52
+  entityCount: 37757
 maps:
 - 1
 grids:
@@ -23324,13 +23324,7 @@ entities:
     - type: Transform
       pos: 61.467155,-19.532312
       parent: 2
-      toggleActionEntity: 57
     - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 57
   - uid: 871
     components:
     - type: Transform
@@ -29322,17 +29316,6 @@ entities:
       parent: 2
     - type: Foldable
       folded: False
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 73
     - type: ActionsContainer
 - proto: BalloonJuggernaut
   entities:
@@ -29343,17 +29326,6 @@ entities:
       parent: 2
     - type: Foldable
       folded: False
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 71
     - type: ActionsContainer
 - proto: BalloonOperative
   entities:
@@ -29365,17 +29337,6 @@ entities:
       parent: 2
     - type: Foldable
       folded: False
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 75
     - type: ActionsContainer
 - proto: BalloonSyn
   entities:
@@ -105791,13 +105752,7 @@ entities:
     - type: Transform
       pos: 23.435959,-73.30528
       parent: 2
-      toggleActionEntity: 27
     - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 27
 - proto: EmergencyOxygenTankFilled
   entities:
   - uid: 15042
@@ -106011,25 +105966,13 @@ entities:
     - type: Transform
       pos: 46.07388,-35.11413
       parent: 2
-      toggleActionEntity: 37
     - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 37
   - uid: 38
     components:
     - type: Transform
       pos: 46.277004,-35.20788
       parent: 2
-      toggleActionEntity: 39
     - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 39
   - uid: 15083
     components:
     - type: Transform
@@ -111502,7 +111445,7 @@ entities:
       pos: -4.5,11.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -278339.66
+      secondsUntilStateChange: -278373.62
       state: Closing
     - type: DeviceNetwork
       deviceLists:
@@ -112944,7 +112887,7 @@ entities:
       pos: 70.5,-9.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -382855.7
+      secondsUntilStateChange: -382889.66
       state: Closing
     - type: DeviceNetwork
       deviceLists:
@@ -115060,34 +115003,12 @@ entities:
     - type: Transform
       pos: 15.266388,-42.621456
       parent: 2
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 59
     - type: ActionsContainer
   - uid: 60
     components:
     - type: Transform
       pos: 15.766388,-42.621456
       parent: 2
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 61
     - type: ActionsContainer
   - uid: 62
     components:
@@ -115095,17 +115016,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -6.784961,-48.47859
       parent: 2
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 63
     - type: ActionsContainer
   - uid: 15900
     components:
@@ -115212,34 +115122,12 @@ entities:
     - type: Transform
       pos: 0.23762703,-7.623802
       parent: 37809
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 37811
     - type: ActionsContainer
   - uid: 37812
     components:
     - type: Transform
       pos: 0.581377,-7.576927
       parent: 37809
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 37813
     - type: ActionsContainer
 - proto: FloodlightBroken
   entities:
@@ -173015,17 +172903,6 @@ entities:
     - type: Transform
       pos: 53.116062,22.62445
       parent: 2
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 77
     - type: Physics
       canCollide: True
     - type: ActionsContainer
@@ -173034,17 +172911,6 @@ entities:
     - type: Transform
       pos: 49.459812,22.4682
       parent: 2
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 79
     - type: Physics
       canCollide: True
     - type: ActionsContainer
@@ -173188,51 +173054,18 @@ entities:
     - type: Transform
       pos: 15.217614,-42.23083
       parent: 2
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 65
     - type: ActionsContainer
   - uid: 66
     components:
     - type: Transform
       pos: 15.733239,-42.23083
       parent: 2
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 67
     - type: ActionsContainer
   - uid: 68
     components:
     - type: Transform
       pos: 15.420739,-42.23083
       parent: 2
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 69
     - type: ActionsContainer
   - uid: 23506
     components:
@@ -177874,13 +177707,7 @@ entities:
     - type: Transform
       pos: 56.756596,-46.565502
       parent: 2
-      toggleActionEntity: 29
     - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 29
   - uid: 24134
     components:
     - type: Transform

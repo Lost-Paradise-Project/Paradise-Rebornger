@@ -4,8 +4,8 @@ meta:
   engineVersion: 272.0.0
   forkId: ""
   forkVersion: ""
-  time: 02/27/2026 15:59:36
-  entityCount: 46206
+  time: 02/27/2026 20:21:41
+  entityCount: 46202
 maps:
 - 1
 grids:
@@ -115932,13 +115932,7 @@ entities:
     - type: Transform
       pos: -43.36267,8.679248
       parent: 2
-      toggleActionEntity: 6
     - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 6
 - proto: EmergencyOxygenTankFilled
   entities:
   - uid: 18965
@@ -127797,17 +127791,6 @@ entities:
     components:
     - type: Transform
       parent: 7
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 9
     - type: Physics
       canCollide: False
     - type: ActionsContainer
@@ -213210,7 +213193,7 @@ entities:
       pos: -21.5,-84.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -38065.695
+      secondsUntilStateChange: -38085.008
       state: Opening
   - uid: 31919
     components:
@@ -216136,17 +216119,6 @@ entities:
       rot: -4.71238898038469 rad
       pos: 23.371477,-28.217302
       parent: 2
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 24
     - type: Physics
       canCollide: True
     - type: ActionsContainer
@@ -216245,17 +216217,6 @@ entities:
     - type: Transform
       pos: -54.499992,14.873699
       parent: 2
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 26
     - type: ActionsContainer
   - uid: 15592
     components:
