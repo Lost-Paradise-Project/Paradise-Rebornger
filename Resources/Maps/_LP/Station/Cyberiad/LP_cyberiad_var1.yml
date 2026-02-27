@@ -29410,8 +29410,6 @@ entities:
           occludes: True
           ents:
           - 73
-    - type: HandheldLight
-      toggleActionEntity: 73
     - type: ActionsContainer
 - proto: BalloonJuggernaut
   entities:
@@ -29433,8 +29431,6 @@ entities:
           occludes: True
           ents:
           - 71
-    - type: HandheldLight
-      toggleActionEntity: 71
     - type: ActionsContainer
 - proto: BalloonOperative
   entities:
@@ -29457,8 +29453,6 @@ entities:
           occludes: True
           ents:
           - 75
-    - type: HandheldLight
-      toggleActionEntity: 75
     - type: ActionsContainer
 - proto: BalloonSyn
   entities:
@@ -115146,8 +115140,6 @@ entities:
     - type: Transform
       pos: 15.266388,-42.621456
       parent: 2
-    - type: HandheldLight
-      toggleActionEntity: 59
     - type: ContainerContainer
       containers:
         cell_slot: !type:ContainerSlot
@@ -115165,8 +115157,6 @@ entities:
     - type: Transform
       pos: 15.766388,-42.621456
       parent: 2
-    - type: HandheldLight
-      toggleActionEntity: 61
     - type: ContainerContainer
       containers:
         cell_slot: !type:ContainerSlot
@@ -115185,8 +115175,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -6.784961,-48.47859
       parent: 2
-    - type: HandheldLight
-      toggleActionEntity: 63
     - type: ContainerContainer
       containers:
         cell_slot: !type:ContainerSlot
@@ -115304,8 +115292,6 @@ entities:
     - type: Transform
       pos: 0.23762703,-7.623802
       parent: 37809
-    - type: HandheldLight
-      toggleActionEntity: 37811
     - type: ContainerContainer
       containers:
         cell_slot: !type:ContainerSlot
@@ -115323,8 +115309,6 @@ entities:
     - type: Transform
       pos: 0.581377,-7.576927
       parent: 37809
-    - type: HandheldLight
-      toggleActionEntity: 37813
     - type: ContainerContainer
       containers:
         cell_slot: !type:ContainerSlot
@@ -173111,8 +173095,6 @@ entities:
     - type: Transform
       pos: 53.116062,22.62445
       parent: 2
-    - type: HandheldLight
-      toggleActionEntity: 77
     - type: ContainerContainer
       containers:
         cell_slot: !type:ContainerSlot
@@ -173132,8 +173114,6 @@ entities:
     - type: Transform
       pos: 49.459812,22.4682
       parent: 2
-    - type: HandheldLight
-      toggleActionEntity: 79
     - type: ContainerContainer
       containers:
         cell_slot: !type:ContainerSlot
@@ -173288,8 +173268,6 @@ entities:
     - type: Transform
       pos: 15.217614,-42.23083
       parent: 2
-    - type: HandheldLight
-      toggleActionEntity: 65
     - type: ContainerContainer
       containers:
         cell_slot: !type:ContainerSlot
@@ -173307,8 +173285,6 @@ entities:
     - type: Transform
       pos: 15.733239,-42.23083
       parent: 2
-    - type: HandheldLight
-      toggleActionEntity: 67
     - type: ContainerContainer
       containers:
         cell_slot: !type:ContainerSlot
@@ -173326,8 +173302,6 @@ entities:
     - type: Transform
       pos: 15.420739,-42.23083
       parent: 2
-    - type: HandheldLight
-      toggleActionEntity: 69
     - type: ContainerContainer
       containers:
         cell_slot: !type:ContainerSlot
