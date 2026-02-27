@@ -175075,7 +175075,6 @@ entities:
           - 12439
           - 12435
           - 12443
-          - invalid
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -212292,49 +212291,21 @@ entities:
     - type: Transform
       pos: -1.5,62.5
       parent: 2
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - invalid
   - uid: 44
     components:
     - type: Transform
       pos: -1.5,63.5
       parent: 2
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - invalid
   - uid: 48
     components:
     - type: Transform
       pos: -1.5,70.5
       parent: 2
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - invalid
   - uid: 52
     components:
     - type: Transform
       pos: -1.5,69.5
       parent: 2
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - invalid
   - uid: 37464
     components:
     - type: Transform
