@@ -138,6 +138,11 @@ public sealed class RadioSystem : EntitySystem
             jobIcon = "ComputerResearch";
             jobName = Loc.GetString("research-console-menu-title");
         }
+        else if (MetaData(messageSource).EntityPrototype?.ID == "MobPollyParrot")
+        {
+            jobIcon = "JobIconPollyParrot";
+            jobName = Loc.GetString("mob-name-mobpollyparrot");
+        }
         // LP edit end
 
         var name = evt.VoiceName;
