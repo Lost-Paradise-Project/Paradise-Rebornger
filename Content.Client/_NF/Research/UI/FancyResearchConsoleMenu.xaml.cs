@@ -15,6 +15,8 @@ using Robust.Client.UserInterface.XAML;
 using Robust.Shared.Input;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using System.Collections.Generic;
+using System.Linq;
 using System.Numerics;
 
 namespace Content.Client._NF.Research.UI;
@@ -79,6 +81,11 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
     private bool _draggin;
 
     /// <summary>
+    /// Current discipline filter. If null, all disciplines are shown.
+    /// </summary>
+    private string? _currentDisciplineFilter;
+
+    /// <summary>
     /// the distance between elements on the grid.
     /// </summary>
     private const int GridSize = 90;
@@ -137,11 +144,30 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
         DragContainer.OnKeyBindUp += OnKeybindUp;
         RecenterButton.OnPressed += _ => Recenter();
 
-        // Navigation buttons - direct Y scroll positions
-        NavIndustrialButton.OnPressed += _ => TechScrollContainer.VScrollTarget = 0;
-        NavArsenalButton.OnPressed += _ => TechScrollContainer.VScrollTarget = 900;
-        NavExperimentalButton.OnPressed += _ => TechScrollContainer.VScrollTarget = 1800;
-        NavCivilianButton.OnPressed += _ => TechScrollContainer.VScrollTarget = 2700;
+        // Search functionality
+        SearchBar.OnTextChanged += _ => UpdateSearchResults(SearchBar.Text);
+        SearchBar.OnFocusEnter += _ => _draggin = false;
+        SearchBar.OnKeyBindDown += OnSearchBarKeyDown;
+        // ItemList doesn't have OnFocusEnter, use MouseFilter or OnItemSelected instead
+        SearchResultsList.OnItemSelected += args => OnTechnologySelected(args);
+
+        // Discipline filter buttons
+        FilterAllButton.OnPressed += _ => SetDisciplineFilter(null);
+        FilterIndustrialButton.OnPressed += _ => SetDisciplineFilter("Industrial");
+        FilterArsenalButton.OnPressed += _ => SetDisciplineFilter("Arsenal");
+        FilterExperimentalButton.OnPressed += _ => SetDisciplineFilter("Experimental");
+        FilterCivilianButton.OnPressed += _ => SetDisciplineFilter("CivilianServices");
+
+        // Load discipline icons
+        var industrial = _prototype.Index<TechDisciplinePrototype>("Industrial");
+        var arsenal = _prototype.Index<TechDisciplinePrototype>("Arsenal");
+        var experimental = _prototype.Index<TechDisciplinePrototype>("Experimental");
+        var civilian = _prototype.Index<TechDisciplinePrototype>("CivilianServices");
+
+        FilterIndustrialIcon.Texture = _sprite.Frame0(industrial.Icon);
+        FilterArsenalIcon.Texture = _sprite.Frame0(arsenal.Icon);
+        FilterExperimentalIcon.Texture = _sprite.Frame0(experimental.Icon);
+        FilterCivilianIcon.Texture = _sprite.Frame0(civilian.Icon);
 
         // Empty initialization
         UpdatePanels(List);
@@ -223,6 +249,8 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
             control.SelectAction += SelectTech;
             control.IsSelected = tech.Key == CurrentTech;
         }
+
+        UpdateSearchResults(SearchBar.Text);
     }
 
     public void UpdateInformationPanel(int points)
@@ -243,28 +271,21 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
             var discipline = _prototype.Index<TechDisciplinePrototype>(disciplineId);
             var tier = _research.GetTierCompletionPercentage(database, discipline, _prototype);
 
-            var texture = new TextureRect
+            switch (disciplineId)
             {
-                TextureScale = new Vector2(2, 2),
-                VerticalAlignment = VAlignment.Center
-            };
-            var label = new RichTextLabel();
-            texture.Texture = _sprite.Frame0(discipline.Icon);
-            label.SetMessage(Loc.GetString("research-console-tier-percentage", ("perc", tier)));
-
-            var control = new BoxContainer
-            {
-                Children =
-                {
-                    texture,
-                    label,
-                    new Control
-                    {
-                        MinWidth = 10
-                    }
-                }
-            };
-            TierDisplayContainer.AddChild(control);
+                case "Industrial":
+                    FilterIndustrialPercent.SetMessage(Loc.GetString("research-console-tier-percentage", ("perc", tier)));
+                    break;
+                case "Arsenal":
+                    FilterArsenalPercent.SetMessage(Loc.GetString("research-console-tier-percentage", ("perc", tier)));
+                    break;
+                case "Experimental":
+                    FilterExperimentalPercent.SetMessage(Loc.GetString("research-console-tier-percentage", ("perc", tier)));
+                    break;
+                case "CivilianServices":
+                    FilterCivilianPercent.SetMessage(Loc.GetString("research-console-tier-percentage", ("perc", tier)));
+                    break;
+            }
         }
     }
 
@@ -330,6 +351,142 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
         var control = new FancyTechnologyInfoPanel(proto, _accessReader.IsAllowed(_player.LocalEntity.Value, Entity), availability, _sprite);
         control.BuyAction += args => OnTechnologyCardPressed?.Invoke(args.ID);
         InfoContainer.AddChild(control);
+    }
+
+    /// <summary>
+    /// Updates the search results dropdown based on the search query
+    /// </summary>
+    private void UpdateSearchResults(string filter)
+    {
+        SearchResultsList.Clear();
+
+        if (string.IsNullOrWhiteSpace(filter))
+        {
+            SearchResultsList.Visible = false;
+            foreach (var child in DragContainer.Children)
+            {
+                if (child is FancyResearchConsoleItem techItem)
+                {
+                    techItem.Visible = _currentDisciplineFilter == null || techItem.Prototype.Discipline == _currentDisciplineFilter;
+                }
+            }
+            return;
+        }
+
+        var lowerFilter = filter.Trim().ToLowerInvariant();
+        var matches = new List<TechnologyPrototype>();
+
+        foreach (var tech in List)
+        {
+            var proto = _prototype.Index<TechnologyPrototype>(tech.Key);
+            var techName = Loc.GetString(proto.Name).ToLowerInvariant();
+
+            // Apply both search filter and discipline filter
+            var matchesSearch = techName.Contains(lowerFilter);
+            var matchesDiscipline = _currentDisciplineFilter == null || proto.Discipline == _currentDisciplineFilter;
+
+            if (matchesSearch && matchesDiscipline)
+            {
+                matches.Add(proto);
+            }
+        }
+
+        foreach (var tech in matches)
+        {
+            SearchResultsList.Add(new ItemList.Item(SearchResultsList)
+            {
+                Metadata = tech,
+                Text = Loc.GetString(tech.Name),
+                Icon = _sprite.Frame0(tech.Icon)
+            });
+        }
+
+        SearchResultsList.Visible = SearchResultsList.Count > 0;
+
+        foreach (var child in DragContainer.Children)
+        {
+            if (child is FancyResearchConsoleItem techItem)
+            {
+                techItem.Visible = matches.Any(t => t.ID == techItem.Prototype.ID);
+            }
+        }
+    }
+
+    /// <summary>
+    /// Handles technology selection from the search results dropdown
+    /// </summary>
+    private void OnTechnologySelected(ItemList.ItemListSelectedEventArgs args)
+    {
+        _draggin = false;
+
+        var selectedTech = args.ItemList[args.ItemIndex].Metadata as TechnologyPrototype;
+        if (selectedTech != null)
+        {
+            foreach (var child in DragContainer.Children)
+            {
+                if (child is FancyResearchConsoleItem techItem && techItem.Prototype.ID == selectedTech.ID)
+                {
+                    SelectTech(selectedTech, List[selectedTech.ID]);
+
+                    var techPosition = GetTechnologyPosition(selectedTech);
+                    TechScrollContainer.VScrollTarget = techPosition.Y - 100; // Add some padding
+                    TechScrollContainer.HScrollTarget = techPosition.X - 100;
+
+                    break;
+                }
+            }
+
+        }
+    }
+
+    /// <summary>
+    /// Sets the discipline filter and updates the displayed technologies
+    /// </summary>
+    private void SetDisciplineFilter(string? discipline)
+    {
+        _currentDisciplineFilter = discipline;
+        UpdateSearchResults(SearchBar.Text);
+
+        // Update button visual states to indicate which filter is active
+        FilterAllButton.Pressed = discipline == null;
+        FilterIndustrialButton.Pressed = discipline == "Industrial";
+        FilterArsenalButton.Pressed = discipline == "Arsenal";
+        FilterExperimentalButton.Pressed = discipline == "Experimental";
+        FilterCivilianButton.Pressed = discipline == "CivilianServices";
+    }
+
+    /// <summary>
+    /// Handles key presses in the search bar
+    /// </summary>
+    private void OnSearchBarKeyDown(GUIBoundKeyEventArgs args)
+    {
+        if (args.Function == EngineKeyFunctions.TextSubmit)
+        {
+            // If Enter key is pressed and there's at least one search result, select the first one
+            if (SearchResultsList.Count > 0)
+            {
+                OnTechnologySelected(new ItemList.ItemListSelectedEventArgs(0, SearchResultsList));
+            }
+        }
+        else if (args.Function == EngineKeyFunctions.CloseModals || args.Function == EngineKeyFunctions.EscapeMenu)
+        {
+            SearchBar.Text = "";
+            SearchResultsList.Visible = false;
+        }
+    }
+
+    /// <summary>
+    /// Gets the screen position of a technology item in the scroll container
+    /// </summary>
+    private Vector2 GetTechnologyPosition(TechnologyPrototype proto)
+    {
+        var leftPadding = 20;
+        var topPadding = 20;
+        var uiPosition = new Vector2(
+            proto.Position.X * GridSize - _bounds.Left + leftPadding,
+            proto.Position.Y * GridSize - _bounds.Bottom + topPadding
+        );
+        return uiPosition;
     }
 
     public void Recenter()
