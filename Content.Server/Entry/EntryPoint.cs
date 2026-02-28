@@ -3,6 +3,7 @@ using Content.Server.Administration;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
 using Content.Server.Afk;
+using Content.Server._Orion.ServerProtection.Chat;
 using Content.Server.Chat.Managers;
 using Content.Server.Connection;
 using Content.Server.Corvax.GuideGenerator;
@@ -54,6 +55,7 @@ namespace Content.Server.Entry
         internal const string ConfigPresetsDir = "/ConfigPresets/";
         private const string ConfigPresetsDirBuild = $"{ConfigPresetsDir}Build/";
         private LastRolledAntagManager? _lastAntagManager; // Goobstation
+        private ChatProtectionSystem _chatProtection = default!; // Orion
 
         [Dependency] private readonly CVarControlManager _cvarCtrl = default!;
         [Dependency] private readonly ContentLocalizationManager _loc = default!;
@@ -152,12 +154,13 @@ namespace Content.Server.Entry
             IoCManager.Resolve<TTSManager>().Initialize(); // Corvax-TTS
             _lastAntagManager = IoCManager.Resolve<LastRolledAntagManager>(); // Goobstation
             _lastAntagManager.Initialize(); // Goobstation
-
 #if LP
             IoCManager.Resolve<SponsorsManager>().Initialize();
             IoCManager.Resolve<DiscordAuthManager>().Initialize();
             IoCManager.Resolve<JoinQueueManager>().Initialize();
 #endif
+            _chatProtection = IoCManager.Resolve<ChatProtectionSystem>(); // Orion
+            _chatProtection.Initialize(); // Orion
         }
 
         public override void PostInit()

@@ -166,6 +166,7 @@
   - type: ERPBounder
   - type: CPRTraining
   - type: Carriable
+  - type: Posing # Orion
   # LP edit end
 
 - type: entity
