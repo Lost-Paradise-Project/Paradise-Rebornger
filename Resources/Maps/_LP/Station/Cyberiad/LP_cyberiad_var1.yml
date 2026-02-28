@@ -4,8 +4,8 @@ meta:
   engineVersion: 272.0.0
   forkId: ""
   forkVersion: ""
-  time: 02/27/2026 20:18:52
-  entityCount: 37757
+  time: 02/28/2026 13:03:03
+  entityCount: 37771
 maps:
 - 1
 grids:
@@ -23325,6 +23325,10 @@ entities:
       pos: 61.467155,-19.532312
       parent: 2
     - type: ActionsContainer
+    - type: ContainerContainer
+      containers:
+        actions: !type:Container
+          ents: []
   - uid: 871
     components:
     - type: Transform
@@ -29314,6 +29318,16 @@ entities:
       rot: -1.5707965016404568 rad
       pos: 60.405724,-70.47508
       parent: 2
+    - type: ContainerContainer
+      containers:
+        cell_slot: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+        actions: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
     - type: Foldable
       folded: False
     - type: ActionsContainer
@@ -29324,6 +29338,16 @@ entities:
     - type: Transform
       pos: 14.542099,-20.664396
       parent: 2
+    - type: ContainerContainer
+      containers:
+        cell_slot: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+        actions: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
     - type: Foldable
       folded: False
     - type: ActionsContainer
@@ -29335,6 +29359,16 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 41.48883,51.47115
       parent: 2
+    - type: ContainerContainer
+      containers:
+        cell_slot: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+        actions: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
     - type: Foldable
       folded: False
     - type: ActionsContainer
@@ -95474,58 +95508,6 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-- proto: DeployableBarrier
-  entities:
-  - uid: 13282
-    components:
-    - type: Transform
-      pos: 3.5,67.5
-      parent: 2
-  - uid: 13283
-    components:
-    - type: Transform
-      pos: 4.5,67.5
-      parent: 2
-  - uid: 13284
-    components:
-    - type: Transform
-      pos: 4.5,69.5
-      parent: 2
-  - uid: 13285
-    components:
-    - type: Transform
-      pos: 3.5,68.5
-      parent: 2
-  - uid: 13286
-    components:
-    - type: Transform
-      pos: 4.5,68.5
-      parent: 2
-  - uid: 13287
-    components:
-    - type: Transform
-      pos: 90.5,11.5
-      parent: 2
-  - uid: 13288
-    components:
-    - type: Transform
-      pos: 89.5,11.5
-      parent: 2
-  - uid: 13289
-    components:
-    - type: Transform
-      pos: 88.5,11.5
-      parent: 2
-  - uid: 13290
-    components:
-    - type: Transform
-      pos: 87.5,11.5
-      parent: 2
-  - uid: 13291
-    components:
-    - type: Transform
-      pos: 2.5,67.5
-      parent: 2
 - proto: DeskBell
   entities:
   - uid: 13292
@@ -105753,6 +105735,10 @@ entities:
       pos: 23.435959,-73.30528
       parent: 2
     - type: ActionsContainer
+    - type: ContainerContainer
+      containers:
+        actions: !type:Container
+          ents: []
 - proto: EmergencyOxygenTankFilled
   entities:
   - uid: 15042
@@ -105967,12 +105953,20 @@ entities:
       pos: 46.07388,-35.11413
       parent: 2
     - type: ActionsContainer
+    - type: ContainerContainer
+      containers:
+        actions: !type:Container
+          ents: []
   - uid: 38
     components:
     - type: Transform
       pos: 46.277004,-35.20788
       parent: 2
     - type: ActionsContainer
+    - type: ContainerContainer
+      containers:
+        actions: !type:Container
+          ents: []
   - uid: 15083
     components:
     - type: Transform
@@ -111445,7 +111439,7 @@ entities:
       pos: -4.5,11.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -278373.62
+      secondsUntilStateChange: -278506.03
       state: Closing
     - type: DeviceNetwork
       deviceLists:
@@ -112887,7 +112881,7 @@ entities:
       pos: 70.5,-9.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -382889.66
+      secondsUntilStateChange: -383022.06
       state: Closing
     - type: DeviceNetwork
       deviceLists:
@@ -115003,12 +114997,32 @@ entities:
     - type: Transform
       pos: 15.266388,-42.621456
       parent: 2
+    - type: ContainerContainer
+      containers:
+        cell_slot: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+        actions: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
     - type: ActionsContainer
   - uid: 60
     components:
     - type: Transform
       pos: 15.766388,-42.621456
       parent: 2
+    - type: ContainerContainer
+      containers:
+        cell_slot: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+        actions: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
     - type: ActionsContainer
   - uid: 62
     components:
@@ -115016,6 +115030,16 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -6.784961,-48.47859
       parent: 2
+    - type: ContainerContainer
+      containers:
+        cell_slot: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+        actions: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
     - type: ActionsContainer
   - uid: 15900
     components:
@@ -115122,12 +115146,32 @@ entities:
     - type: Transform
       pos: 0.23762703,-7.623802
       parent: 37809
+    - type: ContainerContainer
+      containers:
+        cell_slot: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+        actions: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
     - type: ActionsContainer
   - uid: 37812
     components:
     - type: Transform
       pos: 0.581377,-7.576927
       parent: 37809
+    - type: ContainerContainer
+      containers:
+        cell_slot: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+        actions: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
     - type: ActionsContainer
 - proto: FloodlightBroken
   entities:
@@ -172903,6 +172947,16 @@ entities:
     - type: Transform
       pos: 53.116062,22.62445
       parent: 2
+    - type: ContainerContainer
+      containers:
+        cell_slot: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+        actions: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
     - type: Physics
       canCollide: True
     - type: ActionsContainer
@@ -172911,6 +172965,16 @@ entities:
     - type: Transform
       pos: 49.459812,22.4682
       parent: 2
+    - type: ContainerContainer
+      containers:
+        cell_slot: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+        actions: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
     - type: Physics
       canCollide: True
     - type: ActionsContainer
@@ -173054,18 +173118,48 @@ entities:
     - type: Transform
       pos: 15.217614,-42.23083
       parent: 2
+    - type: ContainerContainer
+      containers:
+        cell_slot: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+        actions: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
     - type: ActionsContainer
   - uid: 66
     components:
     - type: Transform
       pos: 15.733239,-42.23083
       parent: 2
+    - type: ContainerContainer
+      containers:
+        cell_slot: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+        actions: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
     - type: ActionsContainer
   - uid: 68
     components:
     - type: Transform
       pos: 15.420739,-42.23083
       parent: 2
+    - type: ContainerContainer
+      containers:
+        cell_slot: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+        actions: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
     - type: ActionsContainer
   - uid: 23506
     components:
@@ -177708,6 +177802,10 @@ entities:
       pos: 56.756596,-46.565502
       parent: 2
     - type: ActionsContainer
+    - type: ContainerContainer
+      containers:
+        actions: !type:Container
+          ents: []
   - uid: 24134
     components:
     - type: Transform
@@ -209287,6 +209385,130 @@ entities:
     components:
     - type: Transform
       pos: 58.5,12.5
+      parent: 2
+- proto: SpawnPointMedicalDoctor
+  entities:
+  - uid: 27
+    components:
+    - type: Transform
+      pos: 25.5,-17.5
+      parent: 2
+  - uid: 29
+    components:
+    - type: Transform
+      pos: 26.5,-17.5
+      parent: 2
+  - uid: 37
+    components:
+    - type: Transform
+      pos: 35.5,-17.5
+      parent: 2
+  - uid: 39
+    components:
+    - type: Transform
+      pos: 33.5,-17.5
+      parent: 2
+  - uid: 51
+    components:
+    - type: Transform
+      pos: 25.5,-12.5
+      parent: 2
+  - uid: 53
+    components:
+    - type: Transform
+      pos: 26.5,-12.5
+      parent: 2
+  - uid: 54
+    components:
+    - type: Transform
+      pos: 22.5,-12.5
+      parent: 2
+  - uid: 55
+    components:
+    - type: Transform
+      pos: 23.5,-8.5
+      parent: 2
+  - uid: 57
+    components:
+    - type: Transform
+      pos: 25.5,-9.5
+      parent: 2
+  - uid: 59
+    components:
+    - type: Transform
+      pos: 26.5,-4.5
+      parent: 2
+  - uid: 61
+    components:
+    - type: Transform
+      pos: 20.5,-13.5
+      parent: 2
+  - uid: 13283
+    components:
+    - type: Transform
+      pos: 39.5,-18.5
+      parent: 2
+  - uid: 13284
+    components:
+    - type: Transform
+      pos: 39.5,-16.5
+      parent: 2
+- proto: SpawnPointMedicalIntern
+  entities:
+  - uid: 63
+    components:
+    - type: Transform
+      pos: 35.5,-13.5
+      parent: 2
+  - uid: 65
+    components:
+    - type: Transform
+      pos: 36.5,-13.5
+      parent: 2
+  - uid: 67
+    components:
+    - type: Transform
+      pos: 33.5,-18.5
+      parent: 2
+  - uid: 69
+    components:
+    - type: Transform
+      pos: 34.5,-18.5
+      parent: 2
+  - uid: 71
+    components:
+    - type: Transform
+      pos: 35.5,-18.5
+      parent: 2
+  - uid: 73
+    components:
+    - type: Transform
+      pos: 25.5,-18.5
+      parent: 2
+  - uid: 75
+    components:
+    - type: Transform
+      pos: 26.5,-18.5
+      parent: 2
+  - uid: 77
+    components:
+    - type: Transform
+      pos: 27.5,-18.5
+      parent: 2
+  - uid: 79
+    components:
+    - type: Transform
+      pos: 40.5,-18.5
+      parent: 2
+  - uid: 12438
+    components:
+    - type: Transform
+      pos: 40.5,-17.5
+      parent: 2
+  - uid: 13282
+    components:
+    - type: Transform
+      pos: 40.5,-16.5
       parent: 2
 - proto: SpawnPointMime
   entities:
