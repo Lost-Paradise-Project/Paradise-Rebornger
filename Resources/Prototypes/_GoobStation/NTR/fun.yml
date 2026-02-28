@@ -7,16 +7,7 @@
   description: If you dont have one of these in your home, you cant call yourself a smoker.
   components:
   - type: Sprite
-    noRot: true
     sprite: _GoobStation/Structures/Machines/cigvend.rsi
-    layers:
-    - state: "off"
-      map: [ "enum.VendingMachineVisualLayers.Base" ]
-    - state: "off"
-      map: [ "enum.VendingMachineVisualLayers.BaseUnshaded" ]
-      shader: unshaded
-    - state: panel
-      map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
   - type: VendingMachine
     pack: CigaretteMachineInventoryDeluxe
     dispenseOnHitChance: 0.25

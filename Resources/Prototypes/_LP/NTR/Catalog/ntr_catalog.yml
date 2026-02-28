@@ -12,7 +12,7 @@
     NTLoyaltyPoint: 50
   categories:
   - LPPNTRERTSquads
-  restockTime: 0 # 15 mins 900
+  restockTime: 900 # 15 mins 900
   conditions:
   - !type:ListingLimitedStockCondition
     stock: 1
@@ -29,7 +29,7 @@
     NTLoyaltyPoint: 50
   categories:
   - LPPNTRERTSquads
-  restockTime: 0 # 15 mins
+  restockTime: 900 # 15 mins
   conditions:
   - !type:ListingLimitedStockCondition
     stock: 1
@@ -46,7 +46,7 @@
     NTLoyaltyPoint: 50
   categories:
   - LPPNTRERTSquads
-  restockTime: 0 # 15 mins
+  restockTime: 900 # 15 mins
   conditions:
   - !type:ListingLimitedStockCondition
     stock: 1
@@ -63,7 +63,7 @@
     NTLoyaltyPoint: 50
   categories:
   - LPPNTRERTSquads
-  restockTime: 0 # 15 mins
+  restockTime: 900 # 15 mins
   conditions:
   - !type:ListingLimitedStockCondition
     stock: 1
@@ -80,7 +80,7 @@
     NTLoyaltyPoint: 35
   categories:
   - LPPNTRERTSquads
-  restockTime: 0 # 15 mins
+  restockTime: 900 # 15 mins
   conditions:
   - !type:ListingLimitedStockCondition
     stock: 1
@@ -97,7 +97,7 @@
     NTLoyaltyPoint: 50
   categories:
   - LPPNTRERTSquads
-  restockTime: 0 # 15 mins
+  restockTime: 900 # 15 mins
   conditions:
   - !type:ListingLimitedStockCondition
     stock: 1

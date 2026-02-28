@@ -8,83 +8,38 @@
     },
     "states": [
         {
-            "name": "normal-unshaded",
-            "directions": 4
+            "name": "normal-unshaded"
         },
         {
-            "name": "icon"
-        },
-        {
-            "name": "eject-unshaded",
-            "directions": 4,
-            "delays": [
-                [
-                    0.1,
-                    0.1,
-                    0.8,
-                    0.1,
-                    0.1
-                ],
-                [
-                    0.1,
-                    0.1,
-                    0.8,
-                    0.1,
-                    0.1
-                ],
-                [
-                    0.1,
-                    0.1,
-                    0.8,
-                    0.1,
-                    0.1
-                ],
-                [
-                    0.1,
-                    0.1,
-                    0.8,
-                    0.1,
-                    0.1
-                ]
-            ]
+            "name": "broken"
         },
         {
             "name": "deny-unshaded",
-            "directions": 4,
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.1
-                ],
-                [
-                    0.1,
-                    0.1,
-                    0.1
-                ],
-                [
-                    0.1,
-                    0.1,
-                    0.1
-                ],
-                [
-                    0.1,
-                    0.1,
-                    0.1
+                0.1,
+                0.1,
+                0.1
                 ]
             ]
         },
         {
-            "name": "off",
-            "directions": 4
+            "name": "off"
         },
         {
-            "name": "broken",
-            "directions": 4
+            "name": "panel"
         },
         {
-            "name": "panel",
-            "directions": 4
+            "name": "eject-unshaded",
+            "delays": [
+                [
+                0.1,
+                0.1,
+                0.8,
+                0.1,
+                0.1
+                ]
+            ]
         }
     ]
 }
