@@ -389,6 +389,15 @@
   jobName: job-name-station-ai
   isCrewJob: false
 
+# Tech
+- type: jobIcon
+  parent: JobIcon
+  id: ComputerResearch
+  icon:
+    sprite: /Textures/_LP/Interface/Misc/icons_for_chat.rsi
+    state: ComputerResearch
+  jobName: research-console-menu-title
+
 # Bad guys
 
 - type: jobIcon
