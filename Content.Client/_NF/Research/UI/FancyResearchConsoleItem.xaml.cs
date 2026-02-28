@@ -50,6 +50,21 @@ public sealed partial class FancyResearchConsoleItem : LayoutContainer
         }
     }
 
+    private const string BaseSpritePath = "/Textures/_LP/Interface/Tech/";
+    private const string SelectedSpritePath = "/Textures/_LP/Interface/Tech/select_tech/";
+
+    private string GetSpriteNameForAvailability()
+    {
+        return Availability switch
+        {
+            ResearchAvailability.Researched => "tech_doctrine_available_item_bg.png",
+            ResearchAvailability.Available => "tech_doctrine_available_item_bg_blue.png",
+            ResearchAvailability.PrereqsMet => "tech_doctrine_available_item_bg_yellow.png",
+            ResearchAvailability.Unavailable => "tech_doctrine_available_item_bg_red.png",
+            _ => "tech_doctrine_available_item_bg.png" // Default
+        };
+    }
+
     public FancyResearchConsoleItem(TechnologyPrototype proto, SpriteSystem sprite, ResearchAvailability availability)
     {
         RobustXamlLoader.Load(this);
@@ -76,22 +91,10 @@ public sealed partial class FancyResearchConsoleItem : LayoutContainer
         Button.OnPressed += Selected;
         Button.OnDrawModeChanged += UpdateColor;
 
-        // Set colors - border & background color varies by availability state
         BorderColor = ResearchColorScheme.GetTechBorderColor(availability);
-
-        // For all availability states, use the appropriate sprite instead of colored backgrounds
-        string spritePath = availability switch
-        {
-            ResearchAvailability.Researched => "/Textures/_LP/Interface/Tech/tech_doctrine_available_item_bg.png",
-            ResearchAvailability.Available => "/Textures/_LP/Interface/Tech/tech_doctrine_available_item_bg_blue.png",
-            ResearchAvailability.PrereqsMet => "/Textures/_LP/Interface/Tech/tech_doctrine_available_item_bg_yellow.png",
-            ResearchAvailability.Unavailable => "/Textures/_LP/Interface/Tech/tech_doctrine_available_item_bg_red.png",
-            _ => "/Textures/_LP/Interface/Tech/tech_doctrine_available_item_bg.png" // Default
-        };
 
         var techBackgroundSprite = new StyleBoxTexture
         {
-            Texture = _resCache.GetTexture(spritePath),
             Mode = StyleBoxTexture.StretchMode.Stretch
         };
         techBackgroundSprite.SetPatchMargin(StyleBox.Margin.All, 10);
@@ -102,26 +105,18 @@ public sealed partial class FancyResearchConsoleItem : LayoutContainer
 
     private void UpdateColor()
     {
-        if (Panel.PanelOverride is StyleBoxTexture texturePanel)
-        {
-            string basePath = IsSelected ? "/Textures/_LP/Interface/Tech/select_tech/" : "/Textures/_LP/Interface/Tech/";
-            string spriteName = Availability switch
-            {
-                ResearchAvailability.Researched => "tech_doctrine_available_item_bg.png",
-                ResearchAvailability.Available => "tech_doctrine_available_item_bg_blue.png",
-                ResearchAvailability.PrereqsMet => "tech_doctrine_available_item_bg_yellow.png",
-                ResearchAvailability.Unavailable => "tech_doctrine_available_item_bg_red.png",
-                _ => "tech_doctrine_available_item_bg.png" // Default
-            };
+        if (Panel.PanelOverride is not StyleBoxTexture texturePanel)
+            return;
 
-            texturePanel.Texture = _resCache.GetTexture(basePath + spriteName);
+        var basePath = IsSelected ? SelectedSpritePath : BaseSpritePath;
+        var spriteName = GetSpriteNameForAvailability();
 
-            // Add hover effect by tinting
-            if (Button.IsHovered && !IsSelected)
-                texturePanel.Modulate = Color.LightBlue; // Slightly brighter blue tint for hover
-            else
-                texturePanel.Modulate = Color.White; // Normal (no tint)
-        }
+        texturePanel.Texture = _resCache.GetTexture(basePath + spriteName);
+
+        if (Button.IsHovered && !IsSelected)
+            texturePanel.Modulate = Color.LightBlue; // brighter blue - hover
+        else
+            texturePanel.Modulate = Color.White; // Normal
     }
 
     protected override void ExitedTree()
