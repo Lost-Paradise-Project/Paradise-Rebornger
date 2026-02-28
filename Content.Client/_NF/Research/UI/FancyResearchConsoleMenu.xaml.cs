@@ -15,9 +15,11 @@ using Robust.Client.UserInterface.XAML;
 using Robust.Shared.Input;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using System.Numerics;
+// LP edit start
 using System.Collections.Generic;
 using System.Linq;
-using System.Numerics;
+// LP edit end
 
 namespace Content.Client._NF.Research.UI;
 
@@ -83,7 +85,7 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
     /// <summary>
     /// Current discipline filter. If null, all disciplines are shown.
     /// </summary>
-    private string? _currentDisciplineFilter;
+    private string? _currentDisciplineFilter; // LP edit
 
     /// <summary>
     /// the distance between elements on the grid.
@@ -144,6 +146,7 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
         DragContainer.OnKeyBindUp += OnKeybindUp;
         RecenterButton.OnPressed += _ => Recenter();
 
+        // LP edit start
         // Search functionality
         SearchBar.OnTextChanged += _ => UpdateSearchResults(SearchBar.Text);
         SearchBar.OnFocusEnter += _ => _draggin = false;
@@ -168,6 +171,7 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
         FilterArsenalIcon.Texture = _sprite.Frame0(arsenal.Icon);
         FilterExperimentalIcon.Texture = _sprite.Frame0(experimental.Icon);
         FilterCivilianIcon.Texture = _sprite.Frame0(civilian.Icon);
+        // LP edit end
 
         // Empty initialization
         UpdatePanels(List);
@@ -250,7 +254,7 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
             control.IsSelected = tech.Key == CurrentTech;
         }
 
-        UpdateSearchResults(SearchBar.Text);
+        UpdateSearchResults(SearchBar.Text); // LP edit
     }
 
     public void UpdateInformationPanel(int points)
@@ -271,6 +275,7 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
             var discipline = _prototype.Index<TechDisciplinePrototype>(disciplineId);
             var tier = _research.GetTierCompletionPercentage(database, discipline, _prototype);
 
+            // LP edit start
             switch (disciplineId)
             {
                 case "Industrial":
@@ -286,6 +291,7 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
                     FilterCivilianPercent.SetMessage(Loc.GetString("research-console-tier-percentage", ("perc", tier)));
                     break;
             }
+            // LP edit end
         }
     }
 
@@ -353,6 +359,7 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
         InfoContainer.AddChild(control);
     }
 
+    // LP edit start
     /// <summary>
     /// Updates the search results dropdown based on the search query
     /// </summary>
@@ -488,6 +495,7 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
         );
         return uiPosition;
     }
+    // LP edit end
 
     public void Recenter()
     {

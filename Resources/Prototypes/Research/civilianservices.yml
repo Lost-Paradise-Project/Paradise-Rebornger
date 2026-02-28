@@ -1,14 +1,3 @@
-# Tier 1
-# Tree layout: Multiple roots with cross-discipline dependencies
-# Root 1: AdvancedEntertainment -> Hydroponics -> MeatManipulation -> BluespaceCargoTransport -> QuantumFiberWeaving
-#                            -> AudioVisualCommunication -> FauxAstroTiles -> (merges with MeatManipulation)
-#                            -> CritterMechs -> PushHorn
-#                            -> MechanizedTreatment (also needs BasicRobotics from Experimental)
-#                            -> AdvancedCleaning -> AdvancedSpray
-# Root 2: BiochemicalStasis -> BluespaceChemistry -> LauncherSyringe
-# Cross-discipline: HONKMech (needs RipleyAPLU from Industrial)
-
-# продвинутые развлечения
 - type: technology
   id: AdvancedEntertainment
   name: research-technology-advanced-entertainment
@@ -24,7 +13,7 @@
     - DawInstrumentMachineCircuitboard
     - MassMediaCircuitboard
     - JukeboxCircuitBoard
-  position: 4, 22
+  position: 4, 22 # LP edit
   radioChannels:
   - Service
 
@@ -41,13 +30,12 @@
   - SeedExtractorMachineCircuitboard
   - HydroponicsTrayMachineCircuitboard
   - ReagentGrinderIndustrialMachineCircuitboard
-  position: 2, 23
+  position: 2, 23 # LP edit
   technologyPrerequisites:
   - AdvancedEntertainment
   radioChannels:
   - Service
 
-# Мехи для животных
 - type: technology
   id: CritterMechs
   name: research-technology-critter-mechs
@@ -67,7 +55,7 @@
   - HamtrPeripheralsElectronics
   - MechEquipmentGrabberSmall
   - VimHarness
-  position: 1, 22
+  position: 1, 22 # LP edit
   technologyPrerequisites:
   - AdvancedEntertainment
   - RipleyAPLU
@@ -92,7 +80,7 @@
   - SurveillanceWirelessCameraMonitorCircuitboard
   - TelecomServerCircuitboard
   - HolopadMachineCircuitboard
-  position: 3, 24
+  position: 3, 24 # LP edit
   technologyPrerequisites:
   - AdvancedEntertainment
   radioChannels:
@@ -111,13 +99,12 @@
   - FatExtractorMachineCircuitboard
   - BiofabricatorMachineCircuitboard
   - BiomassReclaimerMachineCircuitboard
-  position: 0, 25
+  position: 0, 25 # LP edit
   technologyPrerequisites:
   - Hydroponics
   radioChannels:
   - Service
 
-# Мех Х.О.Н.К.
 - type: technology
   id: HONKMech
   name: research-technology-honk-mech
@@ -137,7 +124,7 @@
   - HonkerPeripheralsElectronics
   - HonkerTargetingElectronics
   - MechEquipmentHorn
-  position: 0, 23
+  position: 0, 23 # LP edit
   technologyPrerequisites:
   - RipleyAPLU
   radioChannels:
@@ -166,13 +153,12 @@
   - FauxTileDesertAstroSand
   - FauxTileAstroIronsand
   - FauxTileAstroIronsandBorderless
-  position: 3, 26
+  position: 3, 26 # LP edit
   technologyPrerequisites:
   - AudioVisualCommunication
   radioChannels:
   - Service
 
-# Биохимический стазис
 - type: technology
   id: BiochemicalStasis
   name: research-technology-biochemical-stasis
@@ -187,7 +173,7 @@
   - CryoPodMachineCircuitboard
   - CryostasisBeaker
   - SyringeCryostasis
-  position: 7, 27
+  position: 7, 27 # LP edit
   radioChannels:
   - Service
 
@@ -203,7 +189,7 @@
   recipeUnlocks:
   - BorgModuleAdvancedTopical
   - AdvancedJetInjector
-  position: 5, 25
+  position: 5, 25 # LP edit
   technologyPrerequisites:
   - AdvancedEntertainment
   - BasicRobotics
@@ -223,7 +209,7 @@
   - AdvMopItem
   - MegaSprayBottle
   - BorgModuleAdvancedCleaning
-  position: 5, 27
+  position: 5, 27 # LP edit
   technologyPrerequisites:
   - AdvancedEntertainment
   - BasicRobotics
@@ -242,7 +228,7 @@
   recipeUnlocks:
   - PushHorn
   - BorgModuleAdvancedClowning
-  position: 1, 24
+  position: 1, 24 # LP edit
   technologyPrerequisites:
   - CritterMechs
   radioChannels:
@@ -259,7 +245,7 @@
   cost: 15000
   recipeUnlocks:
   - CargoTelepadMachineCircuitboard
-  position: 1, 27
+  position: 1, 27 # LP edit
   technologyPrerequisites:
   - MeatManipulation
   - FauxAstroTiles
@@ -278,7 +264,7 @@
   recipeUnlocks:
   - WeaponSprayNozzle
   - ClothingBackpackWaterTank
-  position: 5, 28
+  position: 5, 28 # LP edit
   technologyPrerequisites:
   - AdvancedCleaning
   radioChannels:
@@ -297,7 +283,7 @@
   cost: 10000
   recipeUnlocks:
   - ClothingShoesBootsSpeed
-  position: 2, 28
+  position: 2, 28 # LP edit
   technologyPrerequisites:
   - BluespaceCargoTransport
   radioChannels:
@@ -315,7 +301,7 @@
   recipeUnlocks:
   - BluespaceBeaker
   - SyringeBluespace
-  position: 8, 28
+  position: 8, 28 # LP edit
   technologyPrerequisites:
   - BiochemicalStasis
   radioChannels:
@@ -333,7 +319,7 @@
   recipeUnlocks:
   - LauncherSyringe
   - MiniSyringe
-  position: 8, 29
+  position: 8, 29 # LP edit
   technologyPrerequisites:
   - BluespaceChemistry
   radioChannels:

@@ -13,6 +13,7 @@ public sealed partial class TechnologyCardControl : Control
 {
     public Action? OnPressed;
 
+    // LP edit (add bool isUnlocked)
     public TechnologyCardControl(TechnologyPrototype technology, IPrototypeManager prototypeManager, SpriteSystem spriteSys, FormattedMessage description, int points, bool hasAccess, bool isUnlocked = false)
     {
         RobustXamlLoader.Load(this);
@@ -33,11 +34,13 @@ public sealed partial class TechnologyCardControl : Control
         if (!hasAccess)
             ResearchButton.ToolTip = Loc.GetString("research-console-no-access-popup");
 
+        // LP edit start
         ResearchButton.Disabled = points < technology.Cost || !hasAccess || isUnlocked;
         ResearchButton.OnPressed += _ =>
         {
             ResearchButton.Disabled = true;
             OnPressed?.Invoke();
         };
+        // LP edit end
     }
 }

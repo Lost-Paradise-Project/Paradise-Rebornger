@@ -5,7 +5,7 @@
                       xmlns:nf="clr-namespace:Content.Client._NF.Research.UI"
                       Title="{Loc 'research-console-menu-title'}"
                       SetSize="1680 800"
-                      MinSize="800 400">
+                      MinSize="800 400"> <!--LP edit SetSize-->
     <BoxContainer Orientation="Vertical"
                   HorizontalExpand="True"
                   VerticalExpand="True">
@@ -24,13 +24,17 @@
                 <Button Name="ServerButton" Text="{Loc 'research-console-menu-server-selection-button'}" MinHeight="40"/>
             </BoxContainer>
         </BoxContainer>
+        <!--LP edit start-->
         <!-- Technology search bar -->
         <BoxContainer Orientation="Vertical" HorizontalExpand="True" Margin="10, 0, 10, 5">
             <LineEdit Name="SearchBar" PlaceHolder="{Loc 'research-console-menu-search-placeholder'}" HorizontalExpand="True" MinHeight="30"/>
             <ItemList Name="SearchResultsList" SelectMode="Button" MinHeight="80" MaxHeight="200" HorizontalExpand="True" Visible="False" />
         </BoxContainer>
+        <!--LP edit end-->
+
         <!-- Discipline filters -->
         <BoxContainer Orientation="Horizontal" HorizontalExpand="True" Margin="10, 0, 10, 5">
+            <!--LP edit start-->
             <Button Name="FilterAllButton" MinHeight="30" MinWidth="100">
                 <BoxContainer Orientation="Horizontal" HorizontalExpand="True" VerticalExpand="True" Margin="5">
                     <Control VerticalExpand="True"/>
@@ -66,6 +70,7 @@
                     <RichTextLabel Name="FilterCivilianPercent" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 </BoxContainer>
             </Button>
+            <!--LP edit end-->
         </BoxContainer>
         <BoxContainer Orientation="Horizontal"
                       HorizontalExpand="True"

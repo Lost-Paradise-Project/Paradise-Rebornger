@@ -1,4 +1,3 @@
-# РДЖТ
 - type: technology
   id: LPPTechRPLD
   name: research-technology-rpld
@@ -12,4 +11,4 @@
   - LPPRPLD
   technologyPrerequisites:
   - GravityManipulation
-  position: 13, 24
+  position: 13, 24 # LP edit

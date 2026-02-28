@@ -1,10 +1,3 @@
-# Tier 1
-# Tree layout: PowerGeneration (root) -> SpaceScanning -> branches to SalvageEquipment, MechanicalCompression, AtmosphericTech
-#                                                                                    -> IndustrialEngineering -> AdvancedPowercells -> OptimizedMicrogalvanism
-#                              -> RipleyAPLU -> MassExcavation -> BluespaceStorage
-#                              -> Shuttlecraft -> AdvancedToolsTechnology
-#                              -> AdvancedAtmospherics
-
 - type: technology
   id: PowerGeneration
   name: research-technology-power-generation
@@ -21,7 +14,7 @@
   - SolarControlComputerCircuitboard
   - SolarTrackerElectronics
   - EmitterCircuitboard
-  position: 4, 19
+  position: 4, 19 # LP edit
   radioChannels:
   - Engineering
 
@@ -37,13 +30,12 @@
   recipeUnlocks:
   - RadarConsoleCircuitboard
   - HandHeldMassScanner
-  position: 3, 18
+  position: 3, 18 # LP edit
   technologyPrerequisites:
   - PowerGeneration
   radioChannels:
   - Engineering
 
-# снаряжение для утилизации
 - type: technology
   id: SalvageEquipment
   name: research-technology-salvage-equipment
@@ -60,13 +52,12 @@
   - OreProcessorIndustrialMachineCircuitboard
   - ClothingMaskWeldingGas
   - ClothingShoesBootsJump
-  position: 1, 18
+  position: 1, 18 # LP edit
   technologyPrerequisites:
   - SpaceScanning
   radioChannels:
   - Engineering
 
-# Механическое уплотнение
 - type: technology
   id: MechanicalCompression
   name: research-technology-mechanical-compression
@@ -78,13 +69,12 @@
   cost: 10000
   recipeUnlocks:
   - FlatpackerMachineCircuitboard
-  position: 3, 16
+  position: 3, 16 # LP edit
   technologyPrerequisites:
   - SpaceScanning
   radioChannels:
   - Engineering
 
-# Атмосферные технологии
 - type: technology
   id: AtmosphericTech
   name: research-technology-atmospheric-tech
@@ -98,13 +88,12 @@
   recipeUnlocks:
   - ThermomachineFreezerMachineCircuitBoard
   - GasRecyclerMachineCircuitboard
-  position: 2, 17
+  position: 2, 17 # LP edit
   technologyPrerequisites:
   - SpaceScanning
   radioChannels:
   - Engineering
 
-# Рипли АВП
 - type: technology
   id: RipleyAPLU
   name: research-technology-ripley-aplu
@@ -123,13 +112,12 @@
   - RipleyCentralElectronics
   - RipleyPeripheralsElectronics
   - MechEquipmentGrabber
-  position: 0, 17
+  position: 0, 17 # LP edit
   technologyPrerequisites:
   - SalvageEquipment
   radioChannels:
   - Engineering
 
-# Промышленная инженерия
 - type: technology
   id: IndustrialEngineering
   name: research-technology-industrial-engineering
@@ -144,13 +132,12 @@
   - ProtolatheHyperConvectionMachineCircuitboard
   - CircuitImprinterHyperConvectionMachineCircuitboard
   - SheetifierMachineCircuitboard
-  position: 2, 14
+  position: 2, 14 # LP edit
   technologyPrerequisites:
   - MechanicalCompression
   radioChannels:
   - Engineering
 
-# Продвинутые атмос-технологии
 - type: technology
   id: AdvancedAtmospherics
   name: research-technology-advanced-atmospherics
@@ -166,12 +153,12 @@
   - HolofanProjector
   technologyPrerequisites:
   - AtmosphericTech
-  position: 2, 15
+  position: 2, 15 # LP edit
   radioChannels:
   - Engineering
 
 # Tier 2
-# Массовые раскопки
+
 - type: technology
   id: MassExcavation
   name: research-technology-excavation
@@ -187,13 +174,12 @@
     - AdvancedMineralScannerEmpty
     - BorgModuleAdvancedMining
     - SalvageExpeditionsComputerCircuitboard
-  position: 0, 15
+  position: 0, 15 # LP edit
   technologyPrerequisites:
   - RipleyAPLU
   radioChannels:
   - Engineering
 
-# Шаттлостроение
 - type: technology
   id: Shuttlecraft
   name: research-technology-shuttlecraft
@@ -208,13 +194,12 @@
   - ThrusterMachineCircuitboard
   - GyroscopeMachineCircuitboard
   - MiniGravityGeneratorCircuitboard
-  position: 3, 13
+  position: 3, 13 # LP edit
   technologyPrerequisites:
   - MechanicalCompression
   radioChannels:
   - Engineering
 
-# Продвинутые батареи
 - type: technology
   id: AdvancedPowercells
   name: research-technology-advanced-powercells
@@ -228,7 +213,7 @@
   - PowerCellHigh
   - TurboItemRechargerCircuitboard
   - SMESAdvancedMachineCircuitboard
-  position: 1, 11
+  position: 1, 11 # LP edit
   technologyPrerequisites:
   - IndustrialEngineering
   radioChannels:
@@ -249,13 +234,12 @@
   - ClothingBackpackHolding
   - ClothingBackpackSatchelHolding
   - ClothingBackpackDuffelHolding
-  position: 0, 13
+  position: 0, 13 # LP edit
   technologyPrerequisites:
   - MassExcavation
   radioChannels:
   - Engineering
 
-# Продвинутые инструменты
 - type: technology
   id: AdvancedToolsTechnology
   name: research-technology-advanced-tools
@@ -272,13 +256,12 @@
     - BorgModuleAdvancedTool
     - Fulton
     - FultonBeacon
-  position: 3, 11
+  position: 3, 11 # LP edit
   technologyPrerequisites:
   - Shuttlecraft
   radioChannels:
   - Engineering
 
-# Оптимизированный микрогальванизм
 - type: technology
   id: OptimizedMicrogalvanism
   name: research-technology-optimized-microgalvanism
@@ -291,7 +274,7 @@
   recipeUnlocks:
   - PowerCellMicroreactor
   - PowerCellHyper
-  position: 0, 11
+  position: 0, 11 # LP edit
   technologyPrerequisites:
   - AdvancedPowercells
   radioChannels:
