@@ -1,451 +1,703 @@
-Entries:
+﻿Entries:
 - author: Evgencheg
   changes:
-    - message: Начало начал!
-      type: Add
+  - message: "\u041D\u0430\u0447\u0430\u043B\u043E \u043D\u0430\u0447\u0430\u043B!"
+    type: Add
   id: 5605
   time: '2026-01-13T01:01:01.0000000+00:00'
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлены ссылки при заходе в игру и в ESC меню
-    - type: Fix
-      message: Исправил сортировку в панели выдачи времени
-    - type: Remove
-      message: Удалил маркинги нижнего белья
-    - type: Fix
-      message: Исправил переводы
-    - type: Tweak
-      message: Настроил конфиги, пресеты игры и режим секрета
-    - type: Tweak
-      message: Вернул вульпу в выбор рас
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u044B \u0441\u0441\u044B\
+      \u043B\u043A\u0438 \u043F\u0440\u0438 \u0437\u0430\u0445\u043E\u0434\u0435 \u0432\
+      \ \u0438\u0433\u0440\u0443 \u0438 \u0432 ESC \u043C\u0435\u043D\u044E"
+    type: Add
+  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u0438\u043B \u0441\u043E\u0440\u0442\
+      \u0438\u0440\u043E\u0432\u043A\u0443 \u0432 \u043F\u0430\u043D\u0435\u043B\u0438\
+      \ \u0432\u044B\u0434\u0430\u0447\u0438 \u0432\u0440\u0435\u043C\u0435\u043D\u0438"
+    type: Fix
+  - message: "\u0423\u0434\u0430\u043B\u0438\u043B \u043C\u0430\u0440\u043A\u0438\u043D\
+      \u0433\u0438 \u043D\u0438\u0436\u043D\u0435\u0433\u043E \u0431\u0435\u043B\u044C\
+      \u044F"
+    type: Remove
+  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u0438\u043B \u043F\u0435\u0440\u0435\
+      \u0432\u043E\u0434\u044B"
+    type: Fix
+  - message: "\u041D\u0430\u0441\u0442\u0440\u043E\u0438\u043B \u043A\u043E\u043D\u0444\
+      \u0438\u0433\u0438, \u043F\u0440\u0435\u0441\u0435\u0442\u044B \u0438\u0433\u0440\
+      \u044B \u0438 \u0440\u0435\u0436\u0438\u043C \u0441\u0435\u043A\u0440\u0435\u0442\
+      \u0430"
+    type: Tweak
+  - message: "\u0412\u0435\u0440\u043D\u0443\u043B \u0432\u0443\u043B\u044C\u043F\u0443\
+      \ \u0432 \u0432\u044B\u0431\u043E\u0440 \u0440\u0430\u0441"
+    type: Tweak
   id: 5606
   time: '2026-01-13T22:32:13.0000000+00:00'
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлен перевод всего!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u043F\u0435\u0440\u0435\
+      \u0432\u043E\u0434 \u0432\u0441\u0435\u0433\u043E!"
+    type: Add
   id: 5608
   time: '2026-01-12T23:03:57.0000000+00:00'
 - author: BL02DL
   changes:
-    - type: Add
-      message: Добавлена новая музыка в лобби и для ядерной боеголовки!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u043D\u043E\u0432\
+      \u0430\u044F \u043C\u0443\u0437\u044B\u043A\u0430 \u0432 \u043B\u043E\u0431\u0431\
+      \u0438 \u0438 \u0434\u043B\u044F \u044F\u0434\u0435\u0440\u043D\u043E\u0439\
+      \ \u0431\u043E\u0435\u0433\u043E\u043B\u043E\u0432\u043A\u0438!"
+    type: Add
   id: 5609
   time: '2026-01-14T08:53:59.0000000+00:00'
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлен биокодинг на скафандры ЭС, ЯО и ОБР
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u0431\u0438\u043E\u043A\
+      \u043E\u0434\u0438\u043D\u0433 \u043D\u0430 \u0441\u043A\u0430\u0444\u0430\u043D\
+      \u0434\u0440\u044B \u042D\u0421, \u042F\u041E \u0438 \u041E\u0411\u0420"
+    type: Add
   id: 5610
   time: '2026-01-14T19:37:06.0000000+00:00'
 - author: c2ebe0e4
   changes:
-    - type: Add
-      message: Добавлен бан-лог для дискорда через webhook.
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u0431\u0430\u043D\
+      -\u043B\u043E\u0433 \u0434\u043B\u044F \u0434\u0438\u0441\u043A\u043E\u0440\u0434\
+      \u0430 \u0447\u0435\u0440\u0435\u0437 webhook."
+    type: Add
   id: 5612
   time: '2026-01-15T12:16:38.0000000+00:00'
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлена система загрязнения одежды!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0441\u0438\u0441\
+      \u0442\u0435\u043C\u0430 \u0437\u0430\u0433\u0440\u044F\u0437\u043D\u0435\u043D\
+      \u0438\u044F \u043E\u0434\u0435\u0436\u0434\u044B!"
+    type: Add
   id: 5613
   time: '2026-01-22T14:48:26.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/9
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлена ерп панель!
-    - type: Add
-      message: Добавлен тет-а-тет чат в 1 тайл.
-    - type: Add
-      message: Добавлен ерп статус!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0435\u0440\u043F\
+      \ \u043F\u0430\u043D\u0435\u043B\u044C!"
+    type: Add
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u0442\u0435\u0442\
+      -\u0430-\u0442\u0435\u0442 \u0447\u0430\u0442 \u0432 1 \u0442\u0430\u0439\u043B\
+      ."
+    type: Add
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u0435\u0440\u043F\
+      \ \u0441\u0442\u0430\u0442\u0443\u0441!"
+    type: Add
   id: 5614
   time: '2026-01-22T20:24:14.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/18
 - author: Inari
   changes:
-    - type: Add
-      message: Добавлена система кастомных призраков
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0441\u0438\u0441\
+      \u0442\u0435\u043C\u0430 \u043A\u0430\u0441\u0442\u043E\u043C\u043D\u044B\u0445\
+      \ \u043F\u0440\u0438\u0437\u0440\u0430\u043A\u043E\u0432"
+    type: Add
   id: 5615
   time: '2026-01-23T15:45:05.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/20
 - author: Wordik156
   changes:
-    - type: Add
-      message: Добавлены новые (4) цели станции для увеличения вариативности смен
-    - type: Tweak
-      message: >-
-        Обновлён пул целей для карт Астра, Дельта, Гласир, Пакет, Пёрл,
-        Пилигрим, Силли.
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u044B \u043D\u043E\u0432\
+      \u044B\u0435 (4) \u0446\u0435\u043B\u0438 \u0441\u0442\u0430\u043D\u0446\u0438\
+      \u0438 \u0434\u043B\u044F \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u0438\
+      \u044F \u0432\u0430\u0440\u0438\u0430\u0442\u0438\u0432\u043D\u043E\u0441\u0442\
+      \u0438 \u0441\u043C\u0435\u043D"
+    type: Add
+  - message: "\u041E\u0431\u043D\u043E\u0432\u043B\u0451\u043D \u043F\u0443\u043B\
+      \ \u0446\u0435\u043B\u0435\u0439 \u0434\u043B\u044F \u043A\u0430\u0440\u0442\
+      \ \u0410\u0441\u0442\u0440\u0430, \u0414\u0435\u043B\u044C\u0442\u0430, \u0413\
+      \u043B\u0430\u0441\u0438\u0440, \u041F\u0430\u043A\u0435\u0442, \u041F\u0451\
+      \u0440\u043B, \u041F\u0438\u043B\u0438\u0433\u0440\u0438\u043C, \u0421\u0438\
+      \u043B\u043B\u0438."
+    type: Tweak
   id: 5616
   time: '2026-01-23T17:02:29.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/21
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлена система СЛР!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0441\u0438\u0441\
+      \u0442\u0435\u043C\u0430 \u0421\u041B\u0420!"
+    type: Add
   id: 5617
   time: '2026-01-27T16:55:13.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/8
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлен мессенджер на КПК!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u043C\u0435\u0441\u0441\
+      \u0435\u043D\u0434\u0436\u0435\u0440 \u043D\u0430 \u041A\u041F\u041A!"
+    type: Add
   id: 5618
   time: '2026-01-27T16:56:23.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/7
 - author: Inari
   changes:
-    - type: Add
-      message: Добавлена система спонсорских подписок
-    - type: Add
-      message: Добавлена авторизация через Discord
-    - type: Add
-      message: Добавлена система очередей
-    - type: Add
-      message: Добавлены кастомные призраки
-    - type: Add
-      message: Добавлена возможность писать в АХелп из Discord и не только
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0441\u0438\u0441\
+      \u0442\u0435\u043C\u0430 \u0441\u043F\u043E\u043D\u0441\u043E\u0440\u0441\u043A\
+      \u0438\u0445 \u043F\u043E\u0434\u043F\u0438\u0441\u043E\u043A"
+    type: Add
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0430\u0432\u0442\
+      \u043E\u0440\u0438\u0437\u0430\u0446\u0438\u044F \u0447\u0435\u0440\u0435\u0437\
+      \ Discord"
+    type: Add
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0441\u0438\u0441\
+      \u0442\u0435\u043C\u0430 \u043E\u0447\u0435\u0440\u0435\u0434\u0435\u0439"
+    type: Add
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u044B \u043A\u0430\u0441\
+      \u0442\u043E\u043C\u043D\u044B\u0435 \u043F\u0440\u0438\u0437\u0440\u0430\u043A\
+      \u0438"
+    type: Add
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0432\u043E\u0437\
+      \u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u043F\u0438\u0441\u0430\u0442\
+      \u044C \u0432 \u0410\u0425\u0435\u043B\u043F \u0438\u0437 Discord \u0438 \u043D\
+      \u0435 \u0442\u043E\u043B\u044C\u043A\u043E"
+    type: Add
   id: 5619
   time: '2026-01-27T16:59:34.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/12
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлены иконки ролей в радио!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u044B \u0438\u043A\u043E\
+      \u043D\u043A\u0438 \u0440\u043E\u043B\u0435\u0439 \u0432 \u0440\u0430\u0434\u0438\
+      \u043E!"
+    type: Add
   id: 5620
   time: '2026-01-27T18:29:12.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/14
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлена смена погоды!
-    - type: Add
-      message: Добавлена смена времени дня и ночи!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0441\u043C\u0435\
+      \u043D\u0430 \u043F\u043E\u0433\u043E\u0434\u044B!"
+    type: Add
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0441\u043C\u0435\
+      \u043D\u0430 \u0432\u0440\u0435\u043C\u0435\u043D\u0438 \u0434\u043D\u044F \u0438\
+      \ \u043D\u043E\u0447\u0438!"
+    type: Add
   id: 5621
   time: '2026-01-27T18:51:40.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/10
 - author: BitBoxxxer
   changes:
-    - type: Tweak
-      message: 'Изменен дизайн экрана консоли учета '
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D \u0434\u0438\u0437\u0430\u0439\
+      \u043D \u044D\u043A\u0440\u0430\u043D\u0430 \u043A\u043E\u043D\u0441\u043E\u043B\
+      \u0438 \u0443\u0447\u0435\u0442\u0430 "
+    type: Tweak
   id: 5622
   time: '2026-01-28T14:24:55.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/19
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлены подписи бумаги!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u044B \u043F\u043E\u0434\
+      \u043F\u0438\u0441\u0438 \u0431\u0443\u043C\u0430\u0433\u0438!"
+    type: Add
   id: 5623
   time: '2026-01-28T14:25:36.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/17
 - author: BL02DL
   changes:
-    - type: Add
-      message: Добавлена возможность нести существ!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0432\u043E\u0437\
+      \u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u043D\u0435\u0441\u0442\u0438\
+      \ \u0441\u0443\u0449\u0435\u0441\u0442\u0432!"
+    type: Add
   id: 5624
   time: '2026-01-28T16:28:06.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/22
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлены игральные карты!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u044B \u0438\u0433\u0440\
+      \u0430\u043B\u044C\u043D\u044B\u0435 \u043A\u0430\u0440\u0442\u044B!"
+    type: Add
   id: 5625
   time: '2026-01-28T16:28:24.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/20
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлен новый кастом для ии!
-    - type: Add
-      message: Добавлен новый шейдер в виде карты для ИИ!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u043D\u043E\u0432\u044B\
+      \u0439 \u043A\u0430\u0441\u0442\u043E\u043C \u0434\u043B\u044F \u0438\u0438!"
+    type: Add
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u043D\u043E\u0432\u044B\
+      \u0439 \u0448\u0435\u0439\u0434\u0435\u0440 \u0432 \u0432\u0438\u0434\u0435\
+      \ \u043A\u0430\u0440\u0442\u044B \u0434\u043B\u044F \u0418\u0418!"
+    type: Add
   id: 5626
   time: '2026-01-29T11:28:28.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/24
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлен рост и ширина в редактор персонажа!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u0440\u043E\u0441\u0442\
+      \ \u0438 \u0448\u0438\u0440\u0438\u043D\u0430 \u0432 \u0440\u0435\u0434\u0430\
+      \u043A\u0442\u043E\u0440 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u0436\u0430\
+      !"
+    type: Add
   id: 5627
   time: '2026-01-29T11:28:45.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/26
 - author: MegaDaimond
   changes:
-    - type: Tweak
-      message: Изменены спрайты для унатхов, людей, таяров, вульп и слаймолюдов
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u044B \u0441\u043F\u0440\u0430\
+      \u0439\u0442\u044B \u0434\u043B\u044F \u0443\u043D\u0430\u0442\u0445\u043E\u0432\
+      , \u043B\u044E\u0434\u0435\u0439, \u0442\u0430\u044F\u0440\u043E\u0432, \u0432\
+      \u0443\u043B\u044C\u043F \u0438 \u0441\u043B\u0430\u0439\u043C\u043E\u043B\u044E\
+      \u0434\u043E\u0432"
+    type: Tweak
   id: 5628
   time: '2026-01-29T11:33:00.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/33
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлены пинги при подсветке сообщений в чате!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u044B \u043F\u0438\u043D\
+      \u0433\u0438 \u043F\u0440\u0438 \u043F\u043E\u0434\u0441\u0432\u0435\u0442\u043A\
+      \u0435 \u0441\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0439 \u0432 \u0447\u0430\
+      \u0442\u0435!"
+    type: Add
   id: 5629
   time: '2026-01-29T15:42:27.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/38
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлено большое количество звуков к взаимодействиям с предметами!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u043E \u0431\u043E\u043B\
+      \u044C\u0448\u043E\u0435 \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\
+      \u043E \u0437\u0432\u0443\u043A\u043E\u0432 \u043A \u0432\u0437\u0430\u0438\u043C\
+      \u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F\u043C \u0441 \u043F\u0440\
+      \u0435\u0434\u043C\u0435\u0442\u0430\u043C\u0438!"
+    type: Add
   id: 5630
   time: '2026-01-29T15:42:56.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/37
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлена возможность включения джетпаков на гридах без гравитации!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0432\u043E\u0437\
+      \u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u0432\u043A\u043B\u044E\u0447\
+      \u0435\u043D\u0438\u044F \u0434\u0436\u0435\u0442\u043F\u0430\u043A\u043E\u0432\
+      \ \u043D\u0430 \u0433\u0440\u0438\u0434\u0430\u0445 \u0431\u0435\u0437 \u0433\
+      \u0440\u0430\u0432\u0438\u0442\u0430\u0446\u0438\u0438!"
+    type: Add
   id: 5631
   time: '2026-01-29T15:43:24.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/35
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлена возможность настройки мед записей и просмотра их в консоли!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0432\u043E\u0437\
+      \u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u043D\u0430\u0441\u0442\u0440\
+      \u043E\u0439\u043A\u0438 \u043C\u0435\u0434 \u0437\u0430\u043F\u0438\u0441\u0435\
+      \u0439 \u0438 \u043F\u0440\u043E\u0441\u043C\u043E\u0442\u0440\u0430 \u0438\u0445\
+      \ \u0432 \u043A\u043E\u043D\u0441\u043E\u043B\u0438!"
+    type: Add
   id: 5632
   time: '2026-01-30T14:13:05.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/39
 - author: MegaDaimond
   changes:
-    - type: Tweak
-      message: Изменены спрайты скафандров
-    - type: Tweak
-      message: Изменены спрайты цветных комбинезонов
-    - type: Fix
-      message: Фикс лишнего пикселя на ногах унатхов
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u044B \u0441\u043F\u0440\u0430\
+      \u0439\u0442\u044B \u0441\u043A\u0430\u0444\u0430\u043D\u0434\u0440\u043E\u0432"
+    type: Tweak
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u044B \u0441\u043F\u0440\u0430\
+      \u0439\u0442\u044B \u0446\u0432\u0435\u0442\u043D\u044B\u0445 \u043A\u043E\u043C\
+      \u0431\u0438\u043D\u0435\u0437\u043E\u043D\u043E\u0432"
+    type: Tweak
+  - message: "\u0424\u0438\u043A\u0441 \u043B\u0438\u0448\u043D\u0435\u0433\u043E\
+      \ \u043F\u0438\u043A\u0441\u0435\u043B\u044F \u043D\u0430 \u043D\u043E\u0433\
+      \u0430\u0445 \u0443\u043D\u0430\u0442\u0445\u043E\u0432"
+    type: Fix
   id: 5633
   time: '2026-01-31T16:33:31.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/43
 - author: MegaDaimond
   changes:
-    - type: Tweak
-      message: Изменён спрайт ДАМа
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0451\u043D \u0441\u043F\u0440\u0430\u0439\
+      \u0442 \u0414\u0410\u041C\u0430"
+    type: Tweak
   id: 5634
   time: '2026-01-31T19:47:36.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/47
 - author: BL02DL
   changes:
-    - type: Add
-      message: Добавлен призрачный бар!
-    - type: Add
-      message: Добавлена возможность вернутся в лобби для гостов спустя 15 минут!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u043F\u0440\u0438\u0437\
+      \u0440\u0430\u0447\u043D\u044B\u0439 \u0431\u0430\u0440!"
+    type: Add
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0432\u043E\u0437\
+      \u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u0432\u0435\u0440\u043D\u0443\
+      \u0442\u0441\u044F \u0432 \u043B\u043E\u0431\u0431\u0438 \u0434\u043B\u044F\
+      \ \u0433\u043E\u0441\u0442\u043E\u0432 \u0441\u043F\u0443\u0441\u0442\u044F\
+      \ 15 \u043C\u0438\u043D\u0443\u0442!"
+    type: Add
   id: 5635
   time: '2026-02-01T13:01:05.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/45
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлен ядерный реактор!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u044F\u0434\u0435\u0440\
+      \u043D\u044B\u0439 \u0440\u0435\u0430\u043A\u0442\u043E\u0440!"
+    type: Add
   id: 5636
   time: '2026-02-06T17:17:56.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/42
 - author: MegaDaimond
   changes:
-    - type: Tweak
-      message: >-
-        Изменён максимальный рост вульпканинов, людей, нианов, унатхов,
-        слаймолюдов и таяров
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0451\u043D \u043C\u0430\u043A\u0441\u0438\
+      \u043C\u0430\u043B\u044C\u043D\u044B\u0439 \u0440\u043E\u0441\u0442 \u0432\u0443\
+      \u043B\u044C\u043F\u043A\u0430\u043D\u0438\u043D\u043E\u0432, \u043B\u044E\u0434\
+      \u0435\u0439, \u043D\u0438\u0430\u043D\u043E\u0432, \u0443\u043D\u0430\u0442\
+      \u0445\u043E\u0432, \u0441\u043B\u0430\u0439\u043C\u043E\u043B\u044E\u0434\u043E\
+      \u0432 \u0438 \u0442\u0430\u044F\u0440\u043E\u0432"
+    type: Tweak
   id: 5637
   time: '2026-02-07T04:42:42.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/53
 - author: Wordik156
   changes:
-    - type: Add
-      message: >-
-        Добавлен борг СБ и два исследуемых модуля к нему, которые можно
-        произвести в охранном ТехФабе
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u0431\u043E\u0440\u0433\
+      \ \u0421\u0411 \u0438 \u0434\u0432\u0430 \u0438\u0441\u0441\u043B\u0435\u0434\
+      \u0443\u0435\u043C\u044B\u0445 \u043C\u043E\u0434\u0443\u043B\u044F \u043A \u043D\
+      \u0435\u043C\u0443, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043C\u043E\u0436\
+      \u043D\u043E \u043F\u0440\u043E\u0438\u0437\u0432\u0435\u0441\u0442\u0438 \u0432\
+      \ \u043E\u0445\u0440\u0430\u043D\u043D\u043E\u043C \u0422\u0435\u0445\u0424\u0430\
+      \u0431\u0435"
+    type: Add
   id: 5638
   time: '2026-02-07T04:46:26.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/44
 - author: BL02DL
   changes:
-    - type: Add
-      message: Добавлена суперматерия!
-    - type: Add
-      message: Добавлено 11 новых газов!
-    - type: Add
-      message: Добавлен отражатель для эмиттеров!
-    - type: Add
-      message: Добавлен РСУАП!
-    - type: Add
-      message: Добавлена защита от отталкивания для скафандра СИ!
-    - type: Add
-      message: Добавлена защита от теслы для скафандра СИ!
-    - type: Tweak
-      message: Изменен звук счётчика гейгера!
-    - type: Tweak
-      message: >-
-        Изменён сломанный ядерный реактор, теперь он излучает крайне много
-        радиации и генерирует тритий!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0441\u0443\u043F\
+      \u0435\u0440\u043C\u0430\u0442\u0435\u0440\u0438\u044F!"
+    type: Add
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u043E 11 \u043D\u043E\
+      \u0432\u044B\u0445 \u0433\u0430\u0437\u043E\u0432!"
+    type: Add
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u043E\u0442\u0440\u0430\
+      \u0436\u0430\u0442\u0435\u043B\u044C \u0434\u043B\u044F \u044D\u043C\u0438\u0442\
+      \u0442\u0435\u0440\u043E\u0432!"
+    type: Add
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u0420\u0421\u0423\u0410\
+      \u041F!"
+    type: Add
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0437\u0430\u0449\
+      \u0438\u0442\u0430 \u043E\u0442 \u043E\u0442\u0442\u0430\u043B\u043A\u0438\u0432\
+      \u0430\u043D\u0438\u044F \u0434\u043B\u044F \u0441\u043A\u0430\u0444\u0430\u043D\
+      \u0434\u0440\u0430 \u0421\u0418!"
+    type: Add
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0437\u0430\u0449\
+      \u0438\u0442\u0430 \u043E\u0442 \u0442\u0435\u0441\u043B\u044B \u0434\u043B\u044F\
+      \ \u0441\u043A\u0430\u0444\u0430\u043D\u0434\u0440\u0430 \u0421\u0418!"
+    type: Add
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D \u0437\u0432\u0443\u043A\
+      \ \u0441\u0447\u0451\u0442\u0447\u0438\u043A\u0430 \u0433\u0435\u0439\u0433\u0435\
+      \u0440\u0430!"
+    type: Tweak
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0451\u043D \u0441\u043B\u043E\u043C\u0430\
+      \u043D\u043D\u044B\u0439 \u044F\u0434\u0435\u0440\u043D\u044B\u0439 \u0440\u0435\
+      \u0430\u043A\u0442\u043E\u0440, \u0442\u0435\u043F\u0435\u0440\u044C \u043E\u043D\
+      \ \u0438\u0437\u043B\u0443\u0447\u0430\u0435\u0442 \u043A\u0440\u0430\u0439\u043D\
+      \u0435 \u043C\u043D\u043E\u0433\u043E \u0440\u0430\u0434\u0438\u0430\u0446\u0438\
+      \u0438 \u0438 \u0433\u0435\u043D\u0435\u0440\u0438\u0440\u0443\u0435\u0442 \u0442\
+      \u0440\u0438\u0442\u0438\u0439!"
+    type: Tweak
   id: 5639
   time: '2026-02-14T16:51:25.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/54
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлен магазин с функционалом для ИИ!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u043C\u0430\u0433\u0430\
+      \u0437\u0438\u043D \u0441 \u0444\u0443\u043D\u043A\u0446\u0438\u043E\u043D\u0430\
+      \u043B\u043E\u043C \u0434\u043B\u044F \u0418\u0418!"
+    type: Add
   id: 5640
   time: '2026-02-15T09:45:36.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/64
 - author: Evgencheg
   changes:
-    - type: Add
-      message: >-
-        Добавлена система повышения шанса выпадания антагов в зависимости от
-        последнего раза игры антаганистом!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0441\u0438\u0441\
+      \u0442\u0435\u043C\u0430 \u043F\u043E\u0432\u044B\u0448\u0435\u043D\u0438\u044F\
+      \ \u0448\u0430\u043D\u0441\u0430 \u0432\u044B\u043F\u0430\u0434\u0430\u043D\u0438\
+      \u044F \u0430\u043D\u0442\u0430\u0433\u043E\u0432 \u0432 \u0437\u0430\u0432\u0438\
+      \u0441\u0438\u043C\u043E\u0441\u0442\u0438 \u043E\u0442 \u043F\u043E\u0441\u043B\
+      \u0435\u0434\u043D\u0435\u0433\u043E \u0440\u0430\u0437\u0430 \u0438\u0433\u0440\
+      \u044B \u0430\u043D\u0442\u0430\u0433\u0430\u043D\u0438\u0441\u0442\u043E\u043C\
+      !"
+    type: Add
   id: 5641
   time: '2026-02-15T09:45:52.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/61
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлен кулдаун на грабы в 3 секунды!
-    - type: Fix
-      message: Исправлено одевание нижнего белья!
-    - type: Fix
-      message: Исправлены баги ядерного реактора!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u043A\u0443\u043B\u0434\
+      \u0430\u0443\u043D \u043D\u0430 \u0433\u0440\u0430\u0431\u044B \u0432 3 \u0441\
+      \u0435\u043A\u0443\u043D\u0434\u044B!"
+    type: Add
+  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043E \u043E\u0434\
+      \u0435\u0432\u0430\u043D\u0438\u0435 \u043D\u0438\u0436\u043D\u0435\u0433\u043E\
+      \ \u0431\u0435\u043B\u044C\u044F!"
+    type: Fix
+  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u044B \u0431\u0430\
+      \u0433\u0438 \u044F\u0434\u0435\u0440\u043D\u043E\u0433\u043E \u0440\u0435\u0430\
+      \u043A\u0442\u043E\u0440\u0430!"
+    type: Fix
   id: 5642
   time: '2026-02-15T11:50:34.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/63
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлены подносы для сервиса!
-    - type: Add
-      message: Добавлен планшет для сб!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u044B \u043F\u043E\u0434\
+      \u043D\u043E\u0441\u044B \u0434\u043B\u044F \u0441\u0435\u0440\u0432\u0438\u0441\
+      \u0430!"
+    type: Add
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u043F\u043B\u0430\u043D\
+      \u0448\u0435\u0442 \u0434\u043B\u044F \u0441\u0431!"
+    type: Add
   id: 5643
   time: '2026-02-15T13:36:19.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/68
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлены контракты для определенных работ!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u044B \u043A\u043E\u043D\
+      \u0442\u0440\u0430\u043A\u0442\u044B \u0434\u043B\u044F \u043E\u043F\u0440\u0435\
+      \u0434\u0435\u043B\u0435\u043D\u043D\u044B\u0445 \u0440\u0430\u0431\u043E\u0442\
+      !"
+    type: Add
   id: 5644
   time: '2026-02-15T13:36:32.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/65
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлен новый интерфейс консоли исследований!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u043D\u043E\u0432\u044B\
+      \u0439 \u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441 \u043A\u043E\u043D\
+      \u0441\u043E\u043B\u0438 \u0438\u0441\u0441\u043B\u0435\u0434\u043E\u0432\u0430\
+      \u043D\u0438\u0439!"
+    type: Add
   id: 5645
   time: '2026-02-15T17:42:07.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/66
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлено требование бумаги у факса!
-    - type: Fix
-      message: Исправлены микро ошибки!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u043E \u0442\u0440\u0435\
+      \u0431\u043E\u0432\u0430\u043D\u0438\u0435 \u0431\u0443\u043C\u0430\u0433\u0438\
+      \ \u0443 \u0444\u0430\u043A\u0441\u0430!"
+    type: Add
+  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u044B \u043C\u0438\
+      \u043A\u0440\u043E \u043E\u0448\u0438\u0431\u043A\u0438!"
+    type: Fix
   id: 5646
   time: '2026-02-16T16:06:02.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/70
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлен электронный замок!
-    - type: Add
-      message: Добавлена возможность открытии тех панели на шкафах!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u044D\u043B\u0435\u043A\
+      \u0442\u0440\u043E\u043D\u043D\u044B\u0439 \u0437\u0430\u043C\u043E\u043A!"
+    type: Add
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0432\u043E\u0437\
+      \u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u043E\u0442\u043A\u0440\u044B\
+      \u0442\u0438\u0438 \u0442\u0435\u0445 \u043F\u0430\u043D\u0435\u043B\u0438 \u043D\
+      \u0430 \u0448\u043A\u0430\u0444\u0430\u0445!"
+    type: Add
   id: 5647
   time: '2026-02-18T17:33:47.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/76
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлено оповещение при изучении в РНД в соответствующий отдел
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u043E \u043E\u043F\u043E\
+      \u0432\u0435\u0449\u0435\u043D\u0438\u0435 \u043F\u0440\u0438 \u0438\u0437\u0443\
+      \u0447\u0435\u043D\u0438\u0438 \u0432 \u0420\u041D\u0414 \u0432 \u0441\u043E\
+      \u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u044E\u0449\u0438\u0439\
+      \ \u043E\u0442\u0434\u0435\u043B"
+    type: Add
   id: 5648
   time: '2026-02-18T17:53:31.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/74
 - author: SanitarDurkovic Evgencheg
   changes:
-    - type: Add
-      message: Добавлена возможность выбора Патрульного борга.
-    - type: Add
-      message: Добавлен новый модуль "Криминалиста".
-    - type: Remove
-      message: Удален ненужный прототип борга.
-    - type: Remove
-      message: Удалены некоторые лишние спрайты.
-    - type: Tweak
-      message: Изменены спрайты кнопок активации модулей.
-    - type: Tweak
-      message: Изменен код выбора пути спрайтов борга.
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0432\u043E\u0437\
+      \u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u0432\u044B\u0431\u043E\u0440\
+      \u0430 \u041F\u0430\u0442\u0440\u0443\u043B\u044C\u043D\u043E\u0433\u043E \u0431\
+      \u043E\u0440\u0433\u0430."
+    type: Add
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u043D\u043E\u0432\u044B\
+      \u0439 \u043C\u043E\u0434\u0443\u043B\u044C \"\u041A\u0440\u0438\u043C\u0438\
+      \u043D\u0430\u043B\u0438\u0441\u0442\u0430\"."
+    type: Add
+  - message: "\u0423\u0434\u0430\u043B\u0435\u043D \u043D\u0435\u043D\u0443\u0436\u043D\
+      \u044B\u0439 \u043F\u0440\u043E\u0442\u043E\u0442\u0438\u043F \u0431\u043E\u0440\
+      \u0433\u0430."
+    type: Remove
+  - message: "\u0423\u0434\u0430\u043B\u0435\u043D\u044B \u043D\u0435\u043A\u043E\u0442\
+      \u043E\u0440\u044B\u0435 \u043B\u0438\u0448\u043D\u0438\u0435 \u0441\u043F\u0440\
+      \u0430\u0439\u0442\u044B."
+    type: Remove
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u044B \u0441\u043F\u0440\u0430\
+      \u0439\u0442\u044B \u043A\u043D\u043E\u043F\u043E\u043A \u0430\u043A\u0442\u0438\
+      \u0432\u0430\u0446\u0438\u0438 \u043C\u043E\u0434\u0443\u043B\u0435\u0439."
+    type: Tweak
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D \u043A\u043E\u0434 \u0432\
+      \u044B\u0431\u043E\u0440\u0430 \u043F\u0443\u0442\u0438 \u0441\u043F\u0440\u0430\
+      \u0439\u0442\u043E\u0432 \u0431\u043E\u0440\u0433\u0430."
+    type: Tweak
   id: 5649
   time: '2026-02-20T14:00:17.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/78
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлена система жидкостей в трубах!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0441\u0438\u0441\
+      \u0442\u0435\u043C\u0430 \u0436\u0438\u0434\u043A\u043E\u0441\u0442\u0435\u0439\
+      \ \u0432 \u0442\u0440\u0443\u0431\u0430\u0445!"
+    type: Add
   id: 5650
   time: '2026-02-22T08:14:45.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/75
 - author: SanitarDurkovic
   changes:
-    - type: Add
-      message: Добавлен СБ-худ боргу-патрульному.
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u0421\u0411-\u0445\
+      \u0443\u0434 \u0431\u043E\u0440\u0433\u0443-\u043F\u0430\u0442\u0440\u0443\u043B\
+      \u044C\u043D\u043E\u043C\u0443."
+    type: Add
   id: 5651
   time: '2026-02-22T16:12:30.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/82
 - author: Evgencheg
   changes:
-    - type: Add
-      message: Добавлены курки для пушек!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u044B \u043A\u0443\u0440\
+      \u043A\u0438 \u0434\u043B\u044F \u043F\u0443\u0448\u0435\u043A!"
+    type: Add
   id: 5652
   time: '2026-02-22T16:15:20.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/79
 - author: SanitarDurkovic
   changes:
-    - type: Add
-      message: Добавлены два новых лобби-арта.
-    - type: Add
-      message: Добавлены подписи в главном меню к имеющимся лобби-артам.
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u044B \u0434\u0432\u0430\
+      \ \u043D\u043E\u0432\u044B\u0445 \u043B\u043E\u0431\u0431\u0438-\u0430\u0440\
+      \u0442\u0430."
+    type: Add
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u044B \u043F\u043E\u0434\
+      \u043F\u0438\u0441\u0438 \u0432 \u0433\u043B\u0430\u0432\u043D\u043E\u043C \u043C\
+      \u0435\u043D\u044E \u043A \u0438\u043C\u0435\u044E\u0449\u0438\u043C\u0441\u044F\
+      \ \u043B\u043E\u0431\u0431\u0438-\u0430\u0440\u0442\u0430\u043C."
+    type: Add
   id: 5653
   time: '2026-02-22T16:16:24.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/87
 - author: MegaDaimond
   changes:
-    - type: Add
-      message: Добавлены ограничения по возрасту для ролей
-    - type: Remove
-      message: Убраны сезонные задние фоны лобби
-    - type: Fix
-      message: Поправка ограничений по расам для инструктора СБ
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u044B \u043E\u0433\u0440\
+      \u0430\u043D\u0438\u0447\u0435\u043D\u0438\u044F \u043F\u043E \u0432\u043E\u0437\
+      \u0440\u0430\u0441\u0442\u0443 \u0434\u043B\u044F \u0440\u043E\u043B\u0435\u0439"
+    type: Add
+  - message: "\u0423\u0431\u0440\u0430\u043D\u044B \u0441\u0435\u0437\u043E\u043D\u043D\
+      \u044B\u0435 \u0437\u0430\u0434\u043D\u0438\u0435 \u0444\u043E\u043D\u044B \u043B\
+      \u043E\u0431\u0431\u0438"
+    type: Remove
+  - message: "\u041F\u043E\u043F\u0440\u0430\u0432\u043A\u0430 \u043E\u0433\u0440\u0430\
+      \u043D\u0438\u0447\u0435\u043D\u0438\u0439 \u043F\u043E \u0440\u0430\u0441\u0430\
+      \u043C \u0434\u043B\u044F \u0438\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\
+      \u0440\u0430 \u0421\u0411"
+    type: Fix
   id: 5654
   time: '2026-02-22T16:12:50.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/84
 - author: Wordik156
   changes:
-    - type: Tweak
-      message: >-
-        Локализованы баночки с таблетками и сами таблетки из аптечек + теперь
-        вещества измеряются в "ед." (было "u")
+  - message: "\u041B\u043E\u043A\u0430\u043B\u0438\u0437\u043E\u0432\u0430\u043D\u044B\
+      \ \u0431\u0430\u043D\u043E\u0447\u043A\u0438 \u0441 \u0442\u0430\u0431\u043B\
+      \u0435\u0442\u043A\u0430\u043C\u0438 \u0438 \u0441\u0430\u043C\u0438 \u0442\u0430\
+      \u0431\u043B\u0435\u0442\u043A\u0438 \u0438\u0437 \u0430\u043F\u0442\u0435\u0447\
+      \u0435\u043A + \u0442\u0435\u043F\u0435\u0440\u044C \u0432\u0435\u0449\u0435\
+      \u0441\u0442\u0432\u0430 \u0438\u0437\u043C\u0435\u0440\u044F\u044E\u0442\u0441\
+      \u044F \u0432 \"\u0435\u0434.\" (\u0431\u044B\u043B\u043E \"u\")"
+    type: Tweak
   id: 5655
   time: '2026-02-22T19:31:59.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/83
 - author: SanitarDurkovic
   changes:
-    - type: Add
-      message: Добавлены большие глаза в черты внешности.
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u044B \u0431\u043E\u043B\
+      \u044C\u0448\u0438\u0435 \u0433\u043B\u0430\u0437\u0430 \u0432 \u0447\u0435\u0440\
+      \u0442\u044B \u0432\u043D\u0435\u0448\u043D\u043E\u0441\u0442\u0438."
+    type: Add
   id: 5656
   time: '2026-02-23T13:22:41.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/88
 - author: BL02DL
   changes:
-    - type: Add
-      message: Добавлена профессия полевого инженера!
-    - type: Tweak
-      message: Изменено название профессии бригмедика в полевого врача!
-    - type: Tweak
-      message: Изменён кулдаун СЛР до 1 секунды!
-    - type: Add
-      message: Добавлены визоры полевому врачу и полевому инженеру!
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u043F\u0440\u043E\
+      \u0444\u0435\u0441\u0441\u0438\u044F \u043F\u043E\u043B\u0435\u0432\u043E\u0433\
+      \u043E \u0438\u043D\u0436\u0435\u043D\u0435\u0440\u0430!"
+    type: Add
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u043E \u043D\u0430\u0437\u0432\
+      \u0430\u043D\u0438\u0435 \u043F\u0440\u043E\u0444\u0435\u0441\u0441\u0438\u0438\
+      \ \u0431\u0440\u0438\u0433\u043C\u0435\u0434\u0438\u043A\u0430 \u0432 \u043F\
+      \u043E\u043B\u0435\u0432\u043E\u0433\u043E \u0432\u0440\u0430\u0447\u0430!"
+    type: Tweak
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0451\u043D \u043A\u0443\u043B\u0434\u0430\
+      \u0443\u043D \u0421\u041B\u0420 \u0434\u043E 1 \u0441\u0435\u043A\u0443\u043D\
+      \u0434\u044B!"
+    type: Tweak
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u044B \u0432\u0438\u0437\
+      \u043E\u0440\u044B \u043F\u043E\u043B\u0435\u0432\u043E\u043C\u0443 \u0432\u0440\
+      \u0430\u0447\u0443 \u0438 \u043F\u043E\u043B\u0435\u0432\u043E\u043C\u0443 \u0438\
+      \u043D\u0436\u0435\u043D\u0435\u0440\u0443!"
+    type: Add
   id: 5657
   time: '2026-02-23T13:59:58.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/69
 - author: Kasey
   changes:
-    - type: Add
-      message: Добавлен Ментор Хелпер !
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u041C\u0435\u043D\u0442\
+      \u043E\u0440 \u0425\u0435\u043B\u043F\u0435\u0440 !"
+    type: Add
   id: 5658
   time: '2026-02-23T14:03:22.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/72
+- author: Evgencheg, PuroSlavKing, kote
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0441\u0438\u0441\
+      \u0442\u0435\u043C\u0430 \u043F\u043E\u0437\u0438\u0440\u043E\u0432\u0430\u043D\
+      \u0438\u044F! \u0410\u043A\u0442\u0438\u0432\u0430\u0446\u0438\u044F \u043D\u0430\
+      \ CTRL+R"
+    type: Add
+  id: 5659
+  time: '2026-02-24T11:02:45.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/93
+- author: Schrodinger, Evgencheg
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0430\u0440\u043A\
+      \u0430\u0434\u0430 \u0441\u0430\u043F\u0451\u0440!"
+    type: Add
+  id: 5660
+  time: '2026-02-25T17:08:32.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/99
+- author: Jellvisk, Ark, LaCumbiaDelCoronavirus, JohnJJohn, Evgencheg
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u044B \u043E\u0442\u0440\
+      \u0430\u0436\u0435\u043D\u0438\u044F \u0437\u0432\u0443\u043A\u0430 \u0438 \u0440\
+      \u0435\u0432\u0435\u0440\u0431\u0435\u0440\u0430\u0446\u0438\u044F \u0441 \u0430\
+      \u043A\u0443\u0441\u0442\u0438\u043A\u043E\u0439 \u0447\u0435\u0440\u0435\u0437\
+      \ \u0442\u0440\u044D\u0439\u0441\u0438\u043D\u0433 \u043D\u0430 \u043A\u043B\
+      \u0438\u0435\u043D\u0442\u0435!"
+    type: Add
+  id: 5661
+  time: '2026-02-25T17:08:41.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/98
+- author: Wordik156
+  changes:
+  - message: "\u041F\u0435\u0440\u0435\u043D\u043E\u0441 \u043C\u0443\u0437\u044B\u043A\
+      \u0438 \u043B\u043E\u0431\u0431\u0438 \u0441\u043E \u0441\u0442\u0430\u0440\u043E\
+      \u0433\u043E \u043F\u0430\u0440\u0430\u0434\u0430\u0439\u0437\u0430"
+    type: Add
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u044B \u043C\u0435\u0442\
+      \u0430\u0434\u0430\u043D\u043D\u044B\u0435 \u0430\u0432\u0442\u043E\u0440\u043E\
+      \u0432 \u0438 \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u0439 \u043C\u0443\u0437\
+      \u044B\u043A\u0438 \u043B\u043E\u0431\u0431\u0438"
+    type: Tweak
+  id: 5662
+  time: '2026-02-25T17:09:31.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/100
+- author: PowerKAT1
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u043E \u0432 \u0441\
+      \u0431\u043E\u0440\u043A\u0443 \u043A\u0430\u0440\u0442\u044B \u041A\u0435\u0440\
+      \u0431\u0435\u0440\u043E\u0441, \u041A\u0438\u0431\u0435\u0440\u0438\u0430\u0434\
+      \u0430 \u0438 \u0410\u0441\u043F\u0438\u0434"
+    type: Add
+  id: 5663
+  time: '2026-02-28T17:45:07.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/80
+Order: 1
