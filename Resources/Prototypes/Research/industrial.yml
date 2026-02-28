@@ -194,7 +194,7 @@
   - ThrusterMachineCircuitboard
   - GyroscopeMachineCircuitboard
   - MiniGravityGeneratorCircuitboard
-  position: 3, 13 # LP edit
+  position: 4, 13 # LP edit
   technologyPrerequisites:
   - MechanicalCompression
   radioChannels:
@@ -250,13 +250,16 @@
   tier: 2
   cost: 10000
   recipeUnlocks:
+    - RCD
+    - RPD
     - WelderExperimental
     - PowerDrill
     - JawsOfLife
     - BorgModuleAdvancedTool
     - Fulton
     - FultonBeacon
-  position: 3, 11 # LP edit
+    - RCDAmmo
+  position: 5, 12 # LP edit
   technologyPrerequisites:
   - Shuttlecraft
   radioChannels:

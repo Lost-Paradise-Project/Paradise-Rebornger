@@ -12,6 +12,8 @@
   recipeUnlocks:
   - MiningServerCircuitboard
   - MiningMonitoringComputerCircuitboard
-  position: 5, 20 # LP edit
+  position: 3, 12 # LP edit
+  technologyPrerequisites:
+  - IndustrialEngineering
   radioChannels:
   - Engineering
