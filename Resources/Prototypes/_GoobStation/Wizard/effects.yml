@@ -9,9 +9,10 @@
     drawdepth: Effects
     noRot: true
     layers:
-      - shader: unshaded
-        sprite: _GoobStation/Wizard/Effects/effects.rsi
-        state: sparks
+    - shader: unshaded
+      map: ["enum.EffectLayers.Unshaded"]
+      sprite: _GoobStation/Wizard/Effects/effects.rsi
+      state: sparks
   - type: AnimationPlayer
   - type: PointLight
     enabled: true

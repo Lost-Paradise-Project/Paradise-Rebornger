@@ -6,8 +6,14 @@
   components:
   - type: Sprite
     layers:
-    - state: centcom
-    - state: centcom
+    - state: gold
+    - state: stripe_top
+      color: &color-centcomm-top "#134975"
+    - state: stripe_bottom
+      color: &color-centcomm-bottom "#0d304d"
+    - sprite: &icon-rsi _GoobStation/Interface/Misc/job_icons.rsi
+      offset: &icon-offset -0.09375, 0.0625
+      state: blueshield
   - type: Item
     heldPrefix:
   - type: PresetIdCard
@@ -24,8 +30,14 @@
   components:
   - type: Sprite
     layers:
-    - state: centcom
-    - state: centcom
+    - state: gold
+    - state: stripe_top
+      color: *color-centcomm-top
+    - state: stripe_bottom
+      color: *color-centcomm-bottom
+    - sprite: *icon-rsi
+      offset: *icon-offset
+      state: nanotrasenrepresentative
   - type: Item
     heldPrefix:
   - type: PresetIdCard

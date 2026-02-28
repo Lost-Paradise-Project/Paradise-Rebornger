@@ -7,6 +7,7 @@
   components:
   - type: Sprite
     sprite: _GoobStation/Objects/Devices/unique_teleporters.rsi
+    state: standard
   - type: Item
     sprite: _GoobStation/Objects/Devices/unique_teleporters.rsi
   - type: UseOnStationOnly
