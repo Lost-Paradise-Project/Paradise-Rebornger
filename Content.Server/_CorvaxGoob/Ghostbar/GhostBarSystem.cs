@@ -50,7 +50,7 @@ public sealed class GhostBarSystem : EntitySystem
         SubscribeLocalEvent<GhostBarPlayerComponent, OpenGhostRolesListActionEvent>(OnActionOpenGhostRoles);
     }
 
-    const string MapPath = "Maps/_GoobStation/Nonstations/ghostbar.yml";
+    const string MapPath = "Maps/_LP/Nonstations/LP_ghostbar.yml"; // LP edit
     private void OnRoundStart(RoundStartingEvent ev)
     {
         var resPath = new ResPath(MapPath);

@@ -1,6 +1,6 @@
 - type: entity
   parent: BaseComputerAiAccess
-  id: NuclearReactorMonitor
+  id: ComputerNuclearReactorMonitor # LP edit
   name: Nuclear Reactor Monitor
   description: A device that monitors the state of a connected nuclear reactor.
   components:
@@ -17,6 +17,12 @@
       state: computer
     - map: ["computerLayerScreen"]
       state: power_monitor
+    ## LP edit start
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerKeys"]
+      state: generic_keys
+    ## LP edit end
   - type: NuclearReactorMonitor
   - type: ActivatableUI
     key: enum.NuclearReactorUiKey.Key
@@ -44,7 +50,7 @@
 
 - type: entity
   parent: BaseComputerAiAccess
-  id: GasTurbineMonitor
+  id: ComputerGasTurbineMonitor # LP edit
   name: Gas Turbine Monitor
   description: A device that monitors the state of a connected gas turbine.
   components:
@@ -61,6 +67,12 @@
       state: computer
     - map: ["computerLayerScreen"]
       state: turbinecomp
+    ## LP edit start
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerKeys"]
+      state: generic_keys
+    ## LP edit end
   - type: GasTurbineMonitor
   - type: ActivatableUI
     key: enum.GasTurbineUiKey.Key
