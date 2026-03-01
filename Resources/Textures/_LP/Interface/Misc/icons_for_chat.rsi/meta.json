@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Draw by Kasey (BitBoxxxer in github)",
+    "size": {
+        "x": 8,
+        "y": 8
+    },
+    "states": [
+        {
+            "name": "ComputerResearch"
+        },
+        {
+            "name": "PollyParrot"
+        }
+    ]
+}

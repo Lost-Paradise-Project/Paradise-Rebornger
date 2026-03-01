@@ -28,6 +28,20 @@ public sealed partial class ResearchSystem
         SubscribeLocalEvent<ResearchConsoleComponent, TechnologyDatabaseModifiedEvent>(OnConsoleDatabaseModified);
         SubscribeLocalEvent<ResearchConsoleComponent, TechnologyDatabaseSynchronizedEvent>(OnConsoleDatabaseSynchronized);
         SubscribeLocalEvent<ResearchConsoleComponent, GotEmaggedEvent>(OnEmagged);
+        SubscribeLocalEvent<PrototypesReloadedEventArgs>(OnPrototypesReloaded); // LP edit
+    }
+
+    // LP edit this func()
+    private void OnPrototypesReloaded(PrototypesReloadedEventArgs args)
+    {
+        if (!args.WasModified<TechnologyPrototype>())
+            return;
+
+        var query = EntityQueryEnumerator<ResearchConsoleComponent>();
+        while (query.MoveNext(out var uid, out var comp))
+        {
+            UpdateConsoleInterface(uid, comp);
+        }
     }
 
     private void OnConsoleUnlock(EntityUid uid, ResearchConsoleComponent component, ConsoleUnlockTechnologyMessage args)

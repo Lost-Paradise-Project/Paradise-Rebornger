@@ -84,14 +84,14 @@ public sealed partial class TechnologyPrototype : IPrototype
     /// Position of this tech in console menu
     /// </summary>
     [DataField(required: true)]
-    public Vector2i Position { get; private set; }
+    public Vector2i Position { get; set; } // LP edit
 
     /// <summary>
     /// Defines the visual style of prerequisite connection lines leading TO this technology.
     /// This controls how the lines from prerequisite techs to this tech are drawn.
     /// </summary>
     [DataField]
-    public PrerequisiteLineType PrerequisiteLineType { get; private set; } = PrerequisiteLineType.LShape;
+    public PrerequisiteLineType PrerequisiteLineType { get; set; } = PrerequisiteLineType.LShape; // LP edit
 
     /// <summary>
     /// Additional disciplines this technology belongs to.

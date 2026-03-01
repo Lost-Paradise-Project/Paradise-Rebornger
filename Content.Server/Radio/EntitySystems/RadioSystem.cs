@@ -12,6 +12,7 @@ using Content.Shared.Radio.Components;
 using Content.Shared.Silicons.Borgs.Components;
 using Content.Shared.Silicons.StationAi;
 using Content.Shared.Speech;
+using Content.Server.Research.Components; // LP edit
 using Robust.Shared.Map;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
@@ -131,6 +132,18 @@ public sealed class RadioSystem : EntitySystem
             jobName = Loc.GetString("job-name-station-ai");
         }
         // Starlight end
+        // LP edit start
+        else if (HasComp<ResearchConsoleComponent>(messageSource))
+        {
+            jobIcon = "ComputerResearch";
+            jobName = Loc.GetString("research-console-menu-title");
+        }
+        else if (MetaData(messageSource).EntityPrototype?.ID == "MobPollyParrot")
+        {
+            jobIcon = "JobIconPollyParrot";
+            jobName = Loc.GetString("mob-name-mobpollyparrot");
+        }
+        // LP edit end
 
         var name = evt.VoiceName;
         name = FormattedMessage.EscapeText(name);

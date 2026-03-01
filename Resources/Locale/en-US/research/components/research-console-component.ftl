@@ -6,6 +6,8 @@ research-console-menu-main-discipline = Main Discipline: [color={$color}]{$name}
 research-console-menu-server-selection-button = Server list
 research-console-menu-server-sync-button = Sync
 research-console-menu-server-research-button = Research
+research-console-menu-search-placeholder = Search technologies...
+research-console-menu-filter-all = All
 research-console-available-text = Researchable Technologies
 research-console-unlocked-text = Unlocked Technologies
 research-console-tier-discipline-info = Tier {$tier}, [color={$color}]{$discipline}[/color]
