@@ -1,7 +1,7 @@
-using Content.Shared._GoobStation.Common.StationReport;
+using Content.Shared._GoobStation.StationReport;
 using Robust.Shared.GameObjects;
 
-namespace Content.Shared._GoobStation.Common.StationReport;
+namespace Content.Shared._GoobStation.StationReport;
 
 public sealed class StationReportSystem : EntitySystem
 {

@@ -14,7 +14,7 @@
     key: enum.NtrTaskUiKey.Key
   - type: NtrTaskConsole
   - type: Sprite
-    sprite: Structures/Machines/computers.rsi
+    sprite: _GoobStation/Structures/Machines/computers.rsi
     layers:
     - map: [ "computerLayerBody" ]
       state: computer

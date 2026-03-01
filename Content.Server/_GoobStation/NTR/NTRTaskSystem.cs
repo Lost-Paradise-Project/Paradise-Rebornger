@@ -1,7 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Content.Shared._GoobStation.NTR;
-using Content.Shared._GoobStation.Common.NTR;
 using Content.Shared.FixedPoint;
 using Content.Shared._GoobStation.NTR.Documents;
 using Content.Shared._GoobStation.NTR.Events;

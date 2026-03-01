@@ -1,4 +1,4 @@
-namespace Content.Shared._GoobStation.Common.StationReport;
+namespace Content.Shared._GoobStation.StationReport;
 /// <summary>
 ///     This component is only used to locate the station report paper
 /// </summary>

@@ -1,6 +1,6 @@
 using Robust.Shared.GameObjects;
 
-namespace Content.Shared._GoobStation.Common.Interactions;
+namespace Content.Shared._GoobStation.Interactions;
 
 /// <summary>
 ///     UseAttempt, but for item.

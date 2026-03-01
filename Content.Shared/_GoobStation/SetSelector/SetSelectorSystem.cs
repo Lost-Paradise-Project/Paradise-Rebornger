@@ -1,5 +1,5 @@
 using System.Linq;
-using Content.Shared._GoobStation.Common.Effects;
+using Content.Shared._GoobStation.Effects;
 using Content.Shared.EntityTable;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Storage.EntitySystems;

@@ -6,7 +6,7 @@ using Robust.Shared.Physics.Systems;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 
-namespace Content.Shared._GoobStation.Common.Effects;
+namespace Content.Shared._GoobStation.Effects;
 
 public sealed class SparksSystem : EntitySystem
 {

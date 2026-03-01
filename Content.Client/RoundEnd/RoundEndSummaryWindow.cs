@@ -7,8 +7,6 @@ using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.CustomControls;
 using Robust.Shared.Utility;
-using System.Linq;
-using System.Numerics;
 using static Robust.Client.UserInterface.Controls.BoxContainer;
 
 namespace Content.Client.RoundEnd
@@ -182,7 +180,7 @@ namespace Content.Client.RoundEnd
         private BoxContainer MakeStationReportTab()
         {
             //gets the stationreport varibible and sets the station report tab text to it if the map doesn't have a tablet will say No station report submitted
-            var stationReportSystem = _entityManager.System<Content.Shared._GoobStation.Common.StationReport.StationReportSystem>();
+            var stationReportSystem = _entityManager.System<Content.Shared._GoobStation.StationReport.StationReportSystem>();
             string stationReportText = stationReportSystem.StationReportText ?? Loc.GetString("no-station-report-summited");
             var stationReportTab = new BoxContainer
             {

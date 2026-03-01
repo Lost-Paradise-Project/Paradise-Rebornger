@@ -1,4 +1,4 @@
-using Content.Shared._GoobStation.Common.Interactions;
+using Content.Shared._GoobStation.Interactions;
 using Content.Server._GoobStation.Interaction.Components;
 using Content.Server.Popups;
 using Content.Server.Station.Systems;

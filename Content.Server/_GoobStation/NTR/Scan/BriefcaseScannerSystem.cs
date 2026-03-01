@@ -1,6 +1,5 @@
-using Content.Shared._GoobStation.Common.NTR.Scan;
-using Content.Shared.FixedPoint;
 using Content.Shared._GoobStation.NTR.Scan;
+using Content.Shared.FixedPoint;
 using Content.Server.Chat.Systems;
 using Content.Server.Store.Systems;
 using Content.Shared.Chat;

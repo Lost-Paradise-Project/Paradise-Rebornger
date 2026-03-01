@@ -1,4 +1,4 @@
-namespace Content.Shared._GoobStation.Common.NTR.Scan
+namespace Content.Shared._GoobStation.NTR.Scan
 {
     [RegisterComponent]
     public sealed partial class ScannableForPointsComponent : Component
