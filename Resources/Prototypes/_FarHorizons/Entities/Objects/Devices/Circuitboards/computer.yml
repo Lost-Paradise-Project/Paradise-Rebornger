@@ -7,7 +7,7 @@
   - type: Sprite
     state: cpu_engineering
   - type: ComputerBoard
-    prototype: NuclearReactorMonitor
+    prototype: ComputerNuclearReactorMonitor # LP edit
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -18,4 +18,4 @@
   - type: Sprite
     state: cpu_engineering
   - type: ComputerBoard
-    prototype: GasTurbineMonitor
+    prototype: ComputerGasTurbineMonitor ## LP edit

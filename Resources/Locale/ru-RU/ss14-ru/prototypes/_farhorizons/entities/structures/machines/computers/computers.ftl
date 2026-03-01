@@ -1,4 +1,4 @@
-ent-NuclearReactorMonitor = монитор ядерного реактора
+ent-ComputerNuclearReactorMonitor = монитор ядерного реактора
     .desc = Устройство для отслеживания состояния подключённого ядерного реактора.
-ent-GasTurbineMonitor = монитор газовой турбины
+ent-ComputerGasTurbineMonitor = монитор газовой турбины
     .desc = Устройство для отслеживания состояния подключённой газовой турбины.
