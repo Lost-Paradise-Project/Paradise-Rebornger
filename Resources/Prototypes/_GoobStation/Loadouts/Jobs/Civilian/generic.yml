@@ -1,0 +1,8 @@
+# - type: loadout
+#   id: BlackEnvirogloves
+#   equipment:
+#     gloves: ClothingHandsGlovesEnviroglovesBlack
+#   effects:
+#   - !type:SpeciesLoadoutEffect # Goobstation - EE Plasmeme Change.
+#     species:
+#     - Plasmaman

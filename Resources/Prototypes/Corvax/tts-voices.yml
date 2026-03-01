@@ -3,84 +3,98 @@
   sex: Male
   speaker: papich
   id: papich
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-bebey
   sex: Male
   speaker: bebey
   id: bebey
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-puchkow
   sex: Male
   speaker: puchkow
   id: puchkow
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-moriarti
   sex: Male
   speaker: moriarti
   id: moriarti
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-charlotte
   sex: Female
   speaker: charlotte
   id: charlotte
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-planya
   sex: Female
   speaker: planya
   id: planya
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-mana
   sex: Female
   speaker: mana
   id: mana
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-amina
   sex: Female
   speaker: amina
   id: amina
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-biden
   sex: Male
   speaker: biden
   id: biden
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-obama
   sex: Male
   speaker: obama
   id: obama
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-trump
   sex: Male
   speaker: trump
   id: trump
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-dbkn2
   sex: Male
   speaker: dbkn2
   id: dbkn2
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-xrenoid
   sex: Male
   speaker: xrenoid
   id: xrenoid
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-playboyztv
   sex: Male
   speaker: playboyztv
   id: playboyztv
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-briman
@@ -135,18 +149,21 @@
   sex: Female
   speaker: neco
   id: neco
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-neco_arc_2
   sex: Female
   speaker: neco_arc_2
   id: neco_arc_2
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-angry_neco_arc
   sex: Female
   speaker: angry_neco_arc
   id: angry_neco_arc
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-villager
@@ -160,6 +177,7 @@
   sex: Male
   speaker: squidward
   id: squidward
+  roundStart: false
 
 - type: ttsVoice
   name: tts-voice-name-sentrybot
@@ -197,6 +215,7 @@
   sex: Male
   speaker: mister_handy_fl3
   id: mister_handy_fl3
+  roundStart: false
 
 - type: ttsVoice
   name: tts-voice-name-mister_gutsy_fl3
@@ -466,6 +485,7 @@
   sex: Male
   speaker: vesemir
   id: vesemir
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-guillaume_de_launfal
@@ -556,6 +576,7 @@
   sex: Male
   speaker: bandit
   id: bandit
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-forester
@@ -568,6 +589,7 @@
   sex: Male
   speaker: sidorovich
   id: sidorovich
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-strelok
@@ -586,6 +608,7 @@
   sex: Male
   speaker: soldier
   id: soldier
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-engineer
@@ -598,6 +621,7 @@
   sex: Male
   speaker: heavy
   id: heavy
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-medic
@@ -610,6 +634,7 @@
   sex: Male
   speaker: demoman
   id: demoman
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-sniper
@@ -634,6 +659,7 @@
   sex: Male
   speaker: johnny
   id: johnny
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-panam
@@ -683,6 +709,7 @@
   sex: Male
   speaker: brendan
   id: brendan
+  roundStart: false
 
 - type: ttsVoice
   name: tts-voice-name-nancy_hartley
@@ -707,6 +734,7 @@
   sex: Male
   speaker: dornan
   id: dornan
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-officer_enclave
@@ -804,6 +832,7 @@
   sex: Female
   speaker: adjutant
   id: adjutant
+  roundStart: false
 
 - type: ttsVoice
   name: tts-voice-name-hanson
@@ -920,6 +949,12 @@
   id: poppysweeting
 
 - type: ttsVoice
+  name: tts-voice-name-generic_goblin_c
+  sex: Male
+  speaker: generic_goblin_c
+  id: generic_goblin_c
+
+- type: ttsVoice
   name: tts-voice-name-dinah_hecat
   sex: Female
   speaker: dinah_hecat
@@ -990,6 +1025,7 @@
   sex: Male
   speaker: anti-mage_dota_2
   id: anti-mage_dota_2
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-arc_warden_dota_2
@@ -1014,6 +1050,7 @@
   sex: Male
   speaker: bounty_hunter_dota_2
   id: bounty_hunter_dota_2
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-bristleback_dota_2
@@ -1026,6 +1063,7 @@
   sex: Female
   speaker: broodmother_dota_2
   id: broodmother_dota_2
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-centaur_warrunner_dota_2
@@ -1044,12 +1082,14 @@
   sex: Male
   speaker: clockwerk_dota_2
   id: clockwerk_dota_2
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-crystal_maiden_dota_2
   sex: Female
   speaker: crystal_maiden_dota_2
   id: crystal_maiden_dota_2
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-dazzle_dota_2
@@ -1068,6 +1108,7 @@
   sex: Male
   speaker: doom_dota_2
   id: doom_dota_2
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-dragon_knight_dota_2
@@ -1110,6 +1151,7 @@
   sex: Male
   speaker: gyrocopter_dota_2
   id: gyrocopter_dota_2
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-huskar_dota_2
@@ -1122,18 +1164,21 @@
   sex: Male
   speaker: invoker_dota_2
   id: invoker_dota_2
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-juggernaut_dota_2
   sex: Male
   speaker: juggernaut_dota_2
   id: juggernaut_dota_2
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-keeper_of_the_light_dota_2
   sex: Male
   speaker: keeper_of_the_light_dota_2
   id: keeper_of_the_light_dota_2
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-kunkka_dota_2
@@ -1146,12 +1191,14 @@
   sex: Female
   speaker: legion_commander_demon_dota_2
   id: legion_commander_demon_dota_2
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-legion_commander_dota_2
   sex: Female
   speaker: legion_commander_dota_2
   id: legion_commander_dota_2
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-lich_dota_2
@@ -1188,6 +1235,7 @@
   sex: Male
   speaker: meepo_dota_2
   id: meepo_dota_2
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-mirana_dota_2
@@ -1200,12 +1248,14 @@
   sex: Male
   speaker: monkey_king_crown_dota_2
   id: monkey_king_crown_dota_2
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-monkey_king_dota_2
   sex: Male
   speaker: monkey_king_dota_2
   id: monkey_king_dota_2
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-necrophos_dota_2
@@ -1254,12 +1304,14 @@
   sex: Male
   speaker: pudge_dota_2
   id: pudge_dota_2
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-queen_of_pain_dota_2
   sex: Female
   speaker: queen_of_pain_dota_2
   id: queen_of_pain_dota_2
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-razor_dota_2
@@ -1278,6 +1330,7 @@
   sex: Male
   speaker: rubick_dota_2
   id: rubick_dota_2
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-sand_king_dota_2
@@ -1314,18 +1367,21 @@
   sex: Male
   speaker: slark_dota_2
   id: slark_dota_2
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-spirit_breaker_dota_2
   sex: Male
   speaker: spirit_breaker_dota_2
   id: spirit_breaker_dota_2
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-storm_spirit_dota_2
   sex: Male
   speaker: storm_spirit_dota_2
   id: storm_spirit_dota_2
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-sven_dota_2
@@ -1368,6 +1424,7 @@
   sex: Female
   speaker: windranger_dota_2
   id: windranger_dota_2
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-winter_wyvern_dota_2
@@ -1380,6 +1437,7 @@
   sex: Male
   speaker: witch_doctor_dota_2
   id: witch_doctor_dota_2
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-wraith_king_dota_2
@@ -1398,27 +1456,286 @@
   sex: Female
   speaker: mita
   id: mita
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-mitadream
   sex: Female
   speaker: mitadream
   id: mitadream
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-mitaghost
   sex: Female
   speaker: mitaghost
   id: mitaghost
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-mitakind
   sex: Female
   speaker: mitakind
   id: mitakind
+  sponsorOnly: true
 
 - type: ttsVoice
   name: tts-voice-name-mitashorthairs
   sex: Female
   speaker: mitashorthairs
   id: mitashorthairs
+  sponsorOnly: true
+
+- type: ttsVoice
+  name: tts-voice-name-chaos_marines_cultists_dow
+  sex: Male
+  speaker: chaos_marines_cultists_dow
+  id: chaos_marines_cultists_dow
+  sponsorOnly: true
+
+- type: ttsVoice
+  name: tts-voice-name-chaos_marines_dow
+  sex: Male
+  speaker: chaos_marines_dow
+  id: chaos_marines_dow
+  sponsorOnly: true
+
+- type: ttsVoice
+  name: tts-voice-name-chaos_marines_lord_dow
+  sex: Male
+  speaker: chaos_marines_lord_dow
+  id: chaos_marines_lord_dow
+
+- type: ttsVoice
+  name: tts-voice-name-chaos_marines_sorceror_dow
+  sex: Male
+  speaker: chaos_marines_sorceror_dow
+  id: chaos_marines_sorceror_dow
+  sponsorOnly: true
+
+- type: ttsVoice
+  name: tts-voice-name-dark_eldar_archon_dow
+  sex: Male
+  speaker: dark_eldar_archon_dow
+  id: dark_eldar_archon_dow
+  roundStart: false
+
+- type: ttsVoice
+  name: tts-voice-name-dark_eldar_mandrake_dow
+  sex: Male
+  speaker: dark_eldar_mandrake_dow
+  id: dark_eldar_mandrake_dow
+  roundStart: false
+
+- type: ttsVoice
+  name: tts-voice-name-dark_eldar_warrior_dow
+  sex: Male
+  speaker: dark_eldar_warrior_dow
+  id: dark_eldar_warrior_dow
+  roundStart: false
+
+- type: ttsVoice
+  name: tts-voice-name-dark_eldar_wych_dow
+  sex: Female
+  speaker: dark_eldar_wych_dow
+  id: dark_eldar_wych_dow
+  sponsorOnly: true
+
+- type: ttsVoice
+  name: tts-voice-name-eldar_dow
+  sex: Female
+  speaker: eldar_dow
+  id: eldar_dow
+  sponsorOnly: true
+
+- type: ttsVoice
+  name: tts-voice-name-eldar_farseer_dow
+  sex: Female
+  speaker: eldar_farseer_dow
+  id: eldar_farseer_dow
+  roundStart: false
+
+- type: ttsVoice
+  name: tts-voice-name-eldar_fire_dragon_dow
+  sex: Female
+  speaker: eldar_fire_dragon_dow
+  id: eldar_fire_dragon_dow
+  sponsorOnly: true
+
+- type: ttsVoice
+  name: tts-voice-name-eldar_warlock_dow
+  sex: Female
+  speaker: eldar_warlock_dow
+  id: eldar_warlock_dow
+  sponsorOnly: true
+
+- type: ttsVoice
+  name: tts-voice-name-guard_assassin_dow
+  sex: Male
+  speaker: guard_assassin_dow
+  id: guard_assassin_dow
+  roundStart: false
+
+- type: ttsVoice
+  name: tts-voice-name-guard_captain_dow
+  sex: Male
+  speaker: guard_captain_dow
+  id: guard_captain_dow
+
+- type: ttsVoice
+  name: tts-voice-name-guard_commissar_dow
+  sex: Male
+  speaker: guard_commissar_dow
+  id: guard_commissar_dow
+  roundStart: false
+
+- type: ttsVoice
+  name: tts-voice-name-guard_enginseer_dow
+  sex: Male
+  speaker: guard_enginseer_dow
+  id: guard_enginseer_dow
+  roundStart: false
+
+- type: ttsVoice
+  name: tts-voice-name-guard_guardsman_sergeant_dow
+  sex: Male
+  speaker: guard_guardsman_sergeant_dow
+  id: guard_guardsman_sergeant_dow
+
+- type: ttsVoice
+  name: tts-voice-name-guard_heavy_weapons_platoon_dow
+  sex: Male
+  speaker: guard_heavy_weapons_platoon_dow
+  id: guard_heavy_weapons_platoon_dow
+
+- type: ttsVoice
+  name: tts-voice-name-guard_karskin_dow
+  sex: Male
+  speaker: guard_karskin_dow
+  id: guard_karskin_dow
+
+- type: ttsVoice
+  name: tts-voice-name-guard_ogryn_dow
+  sex: Male
+  speaker: guard_ogryn_dow
+  id: guard_ogryn_dow
+  roundStart: false
+
+- type: ttsVoice
+  name: tts-voice-name-guard_priest_dow
+  sex: Male
+  speaker: guard_priest_dow
+  id: guard_priest_dow
+
+- type: ttsVoice
+  name: tts-voice-name-guard_psyker_dow
+  sex: Male
+  speaker: guard_psyker_dow
+  id: guard_psyker_dow
+  roundStart: false
+
+- type: ttsVoice
+  name: tts-voice-name-orks_dow
+  sex: Male
+  speaker: orks_dow
+  id: orks_dow
+  roundStart: false
+
+- type: ttsVoice
+  name: tts-voice-name-orks_flashgitznobs_dow
+  sex: Male
+  speaker: orks_flashgitznobs_dow
+  id: orks_flashgitznobs_dow
+  roundStart: false
+
+- type: ttsVoice
+  name: tts-voice-name-orks_grots_dow
+  sex: Male
+  speaker: orks_grots_dow
+  id: orks_grots_dow
+  roundStart: false
+
+- type: ttsVoice
+  name: tts-voice-name-orks_warboss_dow
+  sex: Male
+  speaker: orks_warboss_dow
+  id: orks_warboss_dow
+  sponsorOnly: true
+
+- type: ttsVoice
+  name: tts-voice-name-sisters_battle_sister_dow
+  sex: Female
+  speaker: sisters_battle_sister_dow
+  id: sisters_battle_sister_dow
+
+- type: ttsVoice
+  name: tts-voice-name-sisters_missionary_dow
+  sex: Male
+  speaker: sisters_missionary_dow
+  id: sisters_missionary_dow
+
+- type: ttsVoice
+  name: tts-voice-name-space_marines_2_dow
+  sex: Male
+  speaker: space_marines_2_dow
+  id: space_marines_2_dow
+
+- type: ttsVoice
+  name: tts-voice-name-space_marines_chaplain_dow
+  sex: Male
+  speaker: space_marines_chaplain_dow
+  id: space_marines_chaplain_dow
+  roundStart: false
+
+- type: ttsVoice
+  name: tts-voice-name-space_marines_dow
+  sex: Male
+  speaker: space_marines_dow
+  id: space_marines_dow
+
+- type: ttsVoice
+  name: tts-voice-name-space_marines_force_commander_dow
+  sex: Male
+  speaker: space_marines_force_commander_dow
+  id: space_marines_force_commander_dow
+
+- type: ttsVoice
+  name: tts-voice-name-space_marines_librarian_dow
+  sex: Male
+  speaker: space_marines_librarian_dow
+  id: space_marines_librarian_dow
+  sponsorOnly: true
+
+- type: ttsVoice
+  name: tts-voice-name-tau_ethereal_dow
+  sex: Male
+  speaker: tau_ethereal_dow
+  id: tau_ethereal_dow
+  roundStart: false
+
+- type: ttsVoice
+  name: tts-voice-name-tau_kroot_dow
+  sex: Male
+  speaker: tau_kroot_dow
+  id: tau_kroot_dow
+  roundStart: false
+
+- type: ttsVoice
+  name: tts-voice-name-tutorial_f_dow
+  sex: Female
+  speaker: tutorial_f_dow
+  id: tutorial_f_dow
+  roundStart: false
+
+- type: ttsVoice
+  name: tts-voice-name-tutorial_m_dow
+  sex: Male
+  speaker: tutorial_m_dow
+  id: tutorial_m_dow
+  roundStart: false
+
+- type: ttsVoice
+  name: tts-voice-name-kingpin
+  sex: Male
+  speaker: kingpin
+  id: kingpin

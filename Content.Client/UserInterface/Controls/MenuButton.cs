@@ -13,7 +13,7 @@ public sealed class MenuButton : ContainerButton
 {
     [Dependency] private readonly IInputManager _inputManager = default!;
     public const string StyleClassLabelTopButton = "topButtonLabel";
-    // public const string StyleClassRedTopButton = "topButtonLabel";
+    public const string StyleClassRedTopButton = "negative";
 
     // TODO: KIIIIIILLLLLLLLLLLLLLLLLLLLLLLLLLL --kaylie.
     private static readonly Color ColorNormal = Color.FromHex("#99a7b3"); // primary color[0] + 0.24 L

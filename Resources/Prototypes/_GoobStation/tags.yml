@@ -1,0 +1,11 @@
+- type: Tag
+  id: CorporateOverride
+
+- type: Tag
+  id: Vial
+
+- type: Tag
+  id: MagazineShotgunLeverRifle
+
+- type: Tag
+  id: Stunbaton

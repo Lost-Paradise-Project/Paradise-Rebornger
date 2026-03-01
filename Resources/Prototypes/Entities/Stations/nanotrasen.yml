@@ -29,6 +29,7 @@
     - BaseStationAllEventsEligible
     - BaseStationNanotrasen
     - BaseStationDeliveries
+    - BaseStationNtrTasks # LP Edit
   categories: [ HideSpawnMenu ]
   components:
     - type: Transform

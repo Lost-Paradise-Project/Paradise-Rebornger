@@ -4,11 +4,11 @@
   icon:
     sprite: _StarLight/Objects/Tools/rpld.rsi
     state: icon
-  discipline: Arsenal
+  discipline: Industrial
   tier: 2
   cost: 10000
   recipeUnlocks:
   - LPPRPLD
   technologyPrerequisites:
-  - GravityManipulation
-  position: 1, 24
+  - AdvancedToolsTechnology
+  position: 7, 11 # LP edit

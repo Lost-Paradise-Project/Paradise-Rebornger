@@ -1,0 +1,17 @@
+# CentComm
+
+- type: entity
+  parent: AirlockCentralCommand
+  id: AirlockBlueshieldOfficerCommand
+  suffix: Blueshield
+  components:
+  - type: Sprite
+    sprite: _CorvaxGoob/Structures/Doors/Airlocks/Standard/blueshield.rsi
+
+- type: entity
+  parent: AirlockCentralCommandGlass
+  id: AirlockBlueshieldOfficerCommandGlass
+  suffix: Blueshield
+  components:
+  - type: Sprite
+    sprite: _CorvaxGoob/Structures/Doors/Airlocks/Glass/blueshield.rsi

@@ -1,0 +1,79 @@
+- type: job
+  id: BlueshieldOfficer
+  name: job-name-bs
+  description: job-description-bs
+  playTimeTracker: JobBlueshieldOfficer
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Command
+      time: 25h
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 15h
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 25h
+    - !type:AgeRequirement
+      requiredAge: 30
+  guides:
+  # - BlueshieldOfficer SOP Hidden by CorvaxGoob
+  - Command
+  # - Succession Hidden by CorvaxGoob
+  weight: 20
+  startingGear: BlueshieldOfficerGear
+  icon: "JobIconBlueshield"
+  joinNotifyCrew: true
+  supervisors: job-supervisors-ntr-centcom
+  canBeAntag: false
+  access:
+  - Security
+  - Brig
+  - External
+  - Cryogenics
+  - Maintenance
+  - Engineering
+  - Medical
+  - Research
+  - Command
+  - CentralCommand
+  - BlueshieldOfficer
+  - Service
+  - Hydroponics
+  - Cargo
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ] # CorvaxGoob-Not-Roundstart-BluespaceLifeline-Implant
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: startingGear
+  id: BlueshieldOfficerGear
+  equipment:
+    eyes: ClothingEyesGlassesBSO
+    #gloves: ClothingHandsGlovesCombat - Goobstation, moved to loadouts
+    id: BlueshieldPDA
+    ears: ClothingHeadsetAltBlueshield
+    belt: ClothingBeltAssaultFilled
+    pocket1: UniqueBlueshieldOfficerLockerTeleporter
+  storage:
+    back:
+    - Flash
+    - ClothingMaskGasSecurity
+    - CombatKnife
+
+- type: chameleonOutfit
+  id: BlueshieldOfficerChameleonOutfit
+  job: BlueshieldOfficer
+  equipment:
+    head: ClothingHeadHatBeretEliteNavyOfficer
+    eyes: ClothingEyesGlassesBSO
+    mask: ClothingMaskGasSecurity
+    ears: ClothingHeadsetAltBlueshield
+    outerClothing: ClothingBlueshieldArmourVest
+    neck: ClothingNeckMantleBlueshield
+    gloves: ClothingHandsGlovesCombat
+    jumpsuit: ClothingUniformJumpsuitBlueshieldOfficer
+    id: BlueshieldPDA
+    back: ClothingBackpackBlueshield
+    shoes: ClothingShoesBootsJack

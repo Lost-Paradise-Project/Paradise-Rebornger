@@ -1,0 +1,17 @@
+- type: entity
+  parent: [ BaseCentcommContraband , ClothingBackpackSatchel ]
+  id: ClothingBackpackSatchelCentcomm
+  name: centcomm satchel
+  description: An expensive dark green satchel. Smells like fax machines.
+  components:
+  - type: Sprite
+    sprite: _GoobStation/Clothing/Back/Satchels/nanorep.rsi
+
+- type: entity
+  parent: [ClothingBackpackSatchel, BaseCentcommContraband]
+  id: ClothingBackpackSatchelBlueshield
+  name: blueshield satchel
+  description: A very protective satchel, smells like energy gun.
+  components:
+  - type: Sprite
+    sprite: _GoobStation/Clothing/Back/Satchels/blueshield.rsi

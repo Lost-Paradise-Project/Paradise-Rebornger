@@ -1,0 +1,32 @@
+# Blueshield
+
+- type: entity
+  id: BlueshieldUndeterminedWeapon
+  name: blueshield sets pack
+  description: A small box utilizing bluespace technology to drop in a loadout directly to you. Choose wisely.
+  parent: [ BaseItem, BaseSetSelector, BaseCentcommContraband ]
+  components:
+  - type: Sprite
+    sprite: _GoobStation/Objects/Specific/Security/blueshieldundetermined.rsi
+    state: icon
+  - type: SetSelector
+    possibleSets:
+    - BSOBlueshieldSet
+    - BSORevolverSet
+    - BSOChesterSet
+    - BSOSyringeSet
+    maxSelectedSets: 2
+
+- type: entity
+  id: BlueshieldUndeterminedHardsuit
+  name: blueshield hardsuit pack
+  description: A small box utilizing bluespace technology to drop in a loadout directly to you. Choose wisely.
+  parent: [ BaseItem, BaseSetSelector, BaseCentcommContraband ]
+  components:
+  - type: Sprite
+    sprite: _GoobStation/Objects/Specific/Security/blueshieldundetermined.rsi
+    state: icon-alt
+  - type: SetSelector
+    possibleSets:
+    - BSOHardsuitLightSet
+    maxSelectedSets: 1

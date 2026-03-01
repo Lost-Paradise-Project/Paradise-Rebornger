@@ -1,0 +1,48 @@
+# Blueshield
+- type: entity
+  parent: IDCardStandard
+  id: BlueshieldIDCard
+  name: blueshield officer ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: gold
+    - state: stripe_top
+      color: &color-centcomm-top "#134975"
+    - state: stripe_bottom
+      color: &color-centcomm-bottom "#0d304d"
+    - sprite: &icon-rsi _GoobStation/Interface/Misc/job_icons.rsi
+      offset: &icon-offset -0.09375, 0.0625
+      state: blueshield
+  - type: Item
+    heldPrefix:
+  - type: PresetIdCard
+    job: BlueshieldOfficer
+  - type: Access
+    tags:
+    - CentralCommand
+    - BlueshieldOfficer
+
+- type: entity
+  parent: IDCardStandard
+  id: NanotrasenRepresentativeIDCard
+  name: nanotrasen representative ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: gold
+    - state: stripe_top
+      color: *color-centcomm-top
+    - state: stripe_bottom
+      color: *color-centcomm-bottom
+    - sprite: *icon-rsi
+      offset: *icon-offset
+      state: nanotrasenrepresentative
+  - type: Item
+    heldPrefix:
+  - type: PresetIdCard
+    job: NanotrasenRepresentative
+  - type: Access
+    tags:
+    - CentralCommand
+    - NanotrasenRepresentative

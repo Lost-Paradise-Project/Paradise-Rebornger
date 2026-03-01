@@ -1,0 +1,73 @@
+# Nanorep catalog Hardsuit
+
+- type: entity
+  parent: [ClothingOuterHardsuitBase, BaseCentcommContraband]
+  id: ClothingOuterHardsuitExperimentalNanorep
+  name: "NTX5-Mirrorduss"
+  description: A crude dark exosuit of reinforced plating, etched with faintly glowing Bluespace circuits. You can tell someone attempted to scratch out part of the text — Prototype No. 2
+  components:
+  - type: Sprite
+    sprite: _GoobStation/Clothing/OuterClothing/Hardsuits/ntr_experimental.rsi
+  - type: Clothing
+    sprite: _GoobStation/Clothing/OuterClothing/Hardsuits/ntr_experimental.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.8
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.75
+        Heat: 0.8
+        Radiation: 0.7
+        Caustic: 0.7
+  - type: ClothingSpeedModifier
+    sprintModifier: 0.95
+    walkModifier: 0.95
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitExperimentalNanorep
+  - type: FireProtection
+    reduction: 0.4
+
+# Blueshield Hardsuit
+
+- type: entity
+  parent: [ClothingOuterHardsuitBase, BaseCentcommContraband]
+  id: ClothingOuterHardsuitBlueshieldLight
+  name: "'praetorian' escort hardsuit"
+  description: A hardsuit designed for an elite bodyguard. This particular one is made of a lighter metal, allowing for more maneuverability.
+  components:
+  - type: Sprite
+    sprite: _GoobStation/Clothing/OuterClothing/Hardsuits/bsolight.rsi
+  - type: Clothing
+    sprite: _GoobStation/Clothing/OuterClothing/Hardsuits/bsolight.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.65
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.55
+        Slash: 0.55
+        Piercing: 0.55
+        Heat: 0.55
+        Radiation: 0.55
+        Caustic: 0.55
+  - type: ClothingSpeedModifier
+    sprintModifier: 0.85
+    walkModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitBlueshield
+  - type: StaminaResistance
+    damageCoefficient: 0.55
+    # ADT edit start
+  - type: DNALocker
+    enabled: false
+    # ADT edit end

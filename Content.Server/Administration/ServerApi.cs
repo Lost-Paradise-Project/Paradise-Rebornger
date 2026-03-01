@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Security.Cryptography;
@@ -18,6 +18,9 @@ using Content.Shared.Administration.Managers;
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking.Components;
 using Content.Shared.Prototypes;
+using Content.Server._DV.Curation;
+using Content.Server._DV.Curation.Systems;
+using Content.Shared._DV.Curation;
 using Robust.Server.ServerStatus;
 using Robust.Shared.Asynchronous;
 using Robust.Shared.Configuration;
@@ -86,6 +89,7 @@ public sealed partial class ServerApi : IPostInjectInit
         RegisterActorHandler(HttpMethod.Post, "/admin/actions/set_motd", ActionForceMotd);
         RegisterActorHandler(HttpMethod.Patch, "/admin/actions/panic_bunker", ActionPanicPunker);
         RegisterHandler(HttpMethod.Post, "/admin/actions/send_bwoink", ActionSendBwoink);
+        RegisterHandler(HttpMethod.Post, "/admin/actions/send_cwoink", ActionSendCwoink);
     }
 
     public void Initialize()
@@ -387,6 +391,34 @@ public sealed partial class ServerApi : IPostInjectInit
             var serverBwoinkSystem = _entitySystemManager.GetEntitySystem<BwoinkSystem>();
             var message = new SharedBwoinkSystem.BwoinkTextMessage(player.UserId, SharedBwoinkSystem.SystemUserId, body.Text, adminOnly: body.AdminOnly);
             serverBwoinkSystem.OnWebhookBwoinkTextMessage(message, body);
+
+            // Respond with OK
+            await RespondOk(context);
+        });
+    }
+
+    private async Task ActionSendCwoink(IStatusHandlerContext context)
+    {
+        var body = await ReadJson<CwoinkActionBody>(context);
+        if (body == null)
+            return;
+
+        await RunOnMainThread(async () =>
+        {
+            // Player not online or wrong Guid
+            if (!_playerManager.TryGetSessionById(new NetUserId(body.Guid), out var player))
+            {
+                await RespondError(
+                    context,
+                    ErrorCode.PlayerNotFound,
+                    HttpStatusCode.UnprocessableContent,
+                    "Player not found");
+                return;
+            }
+
+            var serverCwoinkSystem = _entitySystemManager.GetEntitySystem<CwoinkSystem>();
+            var message = new CwoinkTextMessage(player.UserId, SharedCwoinkSystem.SystemUserId, body.Text, adminOnly: body.AdminOnly);
+            serverCwoinkSystem.OnWebhookCwoinkTextMessage(message, body);
 
             // Respond with OK
             await RespondOk(context);

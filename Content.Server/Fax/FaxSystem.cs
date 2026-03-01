@@ -39,6 +39,8 @@ using Content.Shared.Materials;
 using Content.Shared.Examine;
 using Content.Shared.Whitelist;
 using Content.Shared._WL.Fax.Messages;
+using Content.Server.Explosion.EntitySystems; // Goobstation
+using Content.Shared._GoobStation.Fax; // Goobstation
 
 namespace Content.Server.Fax;
 
@@ -60,6 +62,9 @@ public sealed class FaxSystem : EntitySystem
     [Dependency] private readonly MetaDataSystem _metaData = default!;
     [Dependency] private readonly FaxecuteSystem _faxecute = default!;
     [Dependency] private readonly EmagSystem _emag = default!;
+    [Dependency] private readonly SharedContainerSystem _container = default!; // Goobstation
+    [Dependency] private readonly TransformSystem _transform = default!; // Goobstation
+    [Dependency] private readonly ExplosionSystem _explosion = default!; // Goobstation
 
     // WL-Changes-start
     [Dependency] private readonly MaterialStorageSystem _materialStorage = default!;
@@ -247,7 +252,12 @@ public sealed class FaxSystem : EntitySystem
 
     private void OnComponentInit(EntityUid uid, FaxMachineComponent component, ComponentInit args)
     {
-        _itemSlotsSystem.AddItemSlot(uid, PaperSlotId, component.PaperSlot);
+        // <Goobstation> - define the slot in ItemSlots instead of adding it
+        if (_itemSlotsSystem.TryGetSlot(uid, PaperSlotId, out var slot))
+            component.PaperSlot = slot;
+        else
+            _itemSlotsSystem.AddItemSlot(uid, PaperSlotId, component.PaperSlot);
+        // </Goobstation>
         UpdateAppearance(uid, component);
     }
 
@@ -412,6 +422,21 @@ public sealed class FaxSystem : EntitySystem
                     Receive(uid, printout, args.SenderAddress);
 
                     break;
+                // Goobstation
+                case FaxConstants.FaxSendEntityCommand:
+                    if (!args.Data.TryGetValue(FaxConstants.FaxEntitySentData, out EntityUid? received))
+                        return;
+
+                    args.Data.TryGetValue(FaxConstants.FaxWorkCrossGridData, out bool? canCrossGrid);
+                    if (!(canCrossGrid ?? true) && _transform.GetGrid(uid) != _transform.GetGrid(received.Value))
+                        return;
+
+                    var faxXform = Transform(uid);
+                    _transform.SetCoordinates(received.Value, faxXform.Coordinates);
+                    _container.AttachParentToContainerOrGrid((received.Value, Transform(received.Value)));
+                    Receive(uid, null, args.SenderAddress);
+
+                    break;
             }
         }
     }
@@ -432,14 +457,28 @@ public sealed class FaxSystem : EntitySystem
     {
         if (HasComp<MobStateComponent>(component.PaperSlot.Item))
             _faxecute.Faxecute(uid, component); // when button pressed it will hurt the mob.
+        else if (component.PaperSlot.Item != null && TryComp<FaxableObjectComponent>(component.PaperSlot.Item, out var faxcomp) && !faxcomp.Copyable) // goobstation
+            _explosion.QueueExplosion(uid, "Default", 20, 65, 3.4f, 1f, 0, false, uid);
         else
             Copy(uid, component, args);
     }
 
     private void OnSendButtonPressed(EntityUid uid, FaxMachineComponent component, FaxSendMessage args)
     {
+        // Goobstation
+        if (component.PaperSlot.Item != null)
+        {
+            var sentEv = new GettingFaxedSentEvent((uid, component), args);
+            RaiseLocalEvent(component.PaperSlot.Item.Value, ref sentEv);
+
+            if (sentEv.Handled)
+                return;
+        }
+
         if (HasComp<MobStateComponent>(component.PaperSlot.Item))
             _faxecute.Faxecute(uid, component); // when button pressed it will hurt the mob.
+        else if (component.PaperSlot.Item != null && TryComp<FaxableObjectComponent>(component.PaperSlot.Item, out var faxcomp) && !faxcomp.Copyable) // goobstation
+            _explosion.QueueExplosion(uid, "Default", 20, 65, 3.4f, 1f, 0, false, uid);
         else
             Send(uid, component, args);
     }
@@ -718,7 +757,8 @@ public sealed class FaxSystem : EntitySystem
     ///     Accepts a new message and adds it to the queue to print
     ///     If has parameter "notifyAdmins" also output a special message to admin chat.
     /// </summary>
-    public void Receive(EntityUid uid, FaxPrintout printout, string? fromAddress = null, FaxMachineComponent? component = null)
+    // Goobstation - make printout nullable
+    public void Receive(EntityUid uid, FaxPrintout? printout, string? fromAddress = null, FaxMachineComponent? component = null)
     {
         if (!Resolve(uid, ref component))
             return;
@@ -728,22 +768,16 @@ public sealed class FaxSystem : EntitySystem
             faxName = fax;
 
         _popupSystem.PopupEntity(Loc.GetString("fax-machine-popup-received", ("from", faxName)), uid);
-        _appearanceSystem.SetData(uid, FaxMachineVisuals.VisualState, FaxMachineVisualState.Printing);
+        if (printout != null) // Goobstation
+            _appearanceSystem.SetData(uid, FaxMachineVisuals.VisualState, FaxMachineVisualState.Printing);
 
-        // DEN edit start
+        // Goobstation -> No DEN edit
         if (component.NotifyAdmins)
-        {
-            var stampedBy = printout.StampedBy
-                .Select(stamp => Loc.GetString(stamp.StampedName))
-                .ToList();
-
-            var faxSent = new FaxSentEvent(printout.Content, faxName, stampedBy);
-            RaiseLocalEvent(faxSent);
             NotifyAdmins(faxName);
-        }
-        // DEN edit end
+        // Goobstation -> No DEN edit
 
-        component.PrintingQueue.Enqueue(printout);
+        if (printout != null) // Goobstation
+            component.PrintingQueue.Enqueue(printout);
     }
 
     private void SpawnPaperFromQueue(EntityUid uid, FaxMachineComponent? component = null)
@@ -754,7 +788,8 @@ public sealed class FaxSystem : EntitySystem
         var printout = component.PrintingQueue.Dequeue();
 
         var entityToSpawn = printout.PrototypeId.Length == 0 ? component.PrintPaperId.ToString() : printout.PrototypeId;
-        var printed = Spawn(entityToSpawn, Transform(uid).Coordinates);
+        var coordinates = _transform.GetMapCoordinates(uid); // Goobstation
+        var printed = Spawn(entityToSpawn, coordinates);
 
         if (TryComp<PaperComponent>(printed, out var paper))
         {

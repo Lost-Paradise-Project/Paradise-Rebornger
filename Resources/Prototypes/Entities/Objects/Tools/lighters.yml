@@ -85,7 +85,7 @@
   - type: PointLight
     enabled: false
     netsync: false
-    radius: 1.1 #smallest possible
+    radius: 1.5 ## LP edit
     color: orange
   - type: ItemTogglePointLight
   - type: PhysicalComposition
@@ -205,7 +205,7 @@
   - type: PointLight
     enabled: false
     netsync: false
-    radius: 1.2 #slightly stronger than the other lighters
+    radius: 1.8 ## LP edit
     color: orange
   - type: ItemTogglePointLight
   - type: UseDelay

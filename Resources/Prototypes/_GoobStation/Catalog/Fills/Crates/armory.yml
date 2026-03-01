@@ -1,0 +1,10 @@
+- type: entity
+  id: CrateArmoryCombatHardsuit
+  parent: [ CrateWeaponSecure, BaseSecurityContraband ]
+  name: Combat hardsuit crate
+  description: Contains an advanced security hardsuit. Requires Armory access to open.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterHardsuitCombatOfficer
+        amount: 1

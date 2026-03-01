@@ -1,0 +1,37 @@
+# cigvend
+
+- type: entity
+  parent: VendingMachineCigs
+  id: VendingMachineCigsDeluxe
+  name: ShadyCigs Ultra Premium Pro DLC Deluxe
+  description: If you dont have one of these in your home, you cant call yourself a smoker.
+  components:
+  - type: Sprite
+    sprite: _GoobStation/Structures/Machines/cigvend.rsi
+  - type: VendingMachine
+    pack: CigaretteMachineInventoryDeluxe
+    dispenseOnHitChance: 0.25
+    dispenseOnHitThreshold: 2
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    ejectState: eject-unshaded
+    denyState: deny-unshaded
+  - type: DatasetVocalizer
+    dataset: CigaretteMachineAdsDLC
+
+- type: entity
+  id: WaterCoolerGold
+  name: executive water cooler
+  description: Your taxes were spent on this...
+  parent: WaterCooler
+  suffix: full
+  components:
+  - type: Sprite
+    sprite: _GoobStation/Structures/Storage/watercooler.rsi
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        reagents:
+        - ReagentId: Whiskey # lmao
+          Quantity: 500

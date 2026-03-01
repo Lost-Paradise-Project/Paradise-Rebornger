@@ -13,6 +13,10 @@
   - AllAccess
   access:
   - CentralCommand
+  # Goobstation Start
+  - NanotrasenRepresentative
+  - BlueshieldOfficer
+  # Goobstation End
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant, DeathRattleImplantCentcomm ]
@@ -112,6 +116,10 @@
   - AllAccess
   access:
   - CentralCommand
+  # Goobstation Start
+  - NanotrasenRepresentative
+  - BlueshieldOfficer
+  # Goobstation End
   special:
   - !type:AddComponentSpecial
     components:
@@ -189,6 +197,10 @@
   - AllAccess
   access:
   - CentralCommand
+  # Goobstation Start
+  - NanotrasenRepresentative
+  - BlueshieldOfficer
+  # Goobstation End
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant, DeathRattleImplantCentcomm ]
@@ -209,7 +221,7 @@
     back: ClothingBackpackERTEngineer
     shoes: ClothingShoesBootsMagERT
     mask: ClothingMaskGasERT
-    eyes: ClothingEyesHudDiagnostic
+    eyes: LPPClothingEyesHudSecEng # LP Edit
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTEngineer
     id: ERTEngineerPDA
@@ -284,6 +296,10 @@
   - AllAccess
   access:
   - CentralCommand
+  # Goobstation Start
+  - NanotrasenRepresentative
+  - BlueshieldOfficer
+  # Goobstation End
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant, DeathRattleImplantCentcomm ]
@@ -471,6 +487,10 @@
   - AllAccess
   access:
   - CentralCommand
+  # Goobstation Start
+  - NanotrasenRepresentative
+  - BlueshieldOfficer
+  # Goobstation End
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant, DeathRattleImplantCentcomm ]
@@ -491,7 +511,7 @@
     back: ClothingBackpackERTMedical
     shoes: ClothingShoesBootsMagERT
     mask: ClothingMaskGasERT
-    eyes: ClothingEyesHudMedical
+    eyes: LPPClothingEyesHudSecMed # LP Edit
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTMedical
     id: ERTMedicPDA
@@ -500,7 +520,7 @@
     pocket2: CombatKnife
   storage:
     back:
-    - Hypospray
+    - LPPCombatHypospray # LP Edit
     - BeakerSmallBruiz
     - BeakerSmallLace
     - JugPunctTranex
@@ -513,7 +533,7 @@
     - ClothingEyesGlassesChemical
     - ChemistryBottleOmnizine
     belt:
-    - DefibrillatorCompact
+    - LPPCombatDefibrillator # LP Edit
     - MedkitCombatFilled
     - CrowbarRed
     - WeaponPistolMk58
@@ -528,13 +548,13 @@
     pocket2: WeaponDisabler
   storage:
     back:
-    - Hypospray
+    - LPPCombatHypospray # LP Edit
     - JugPunctTranex
     - JugPyraDerma
     - JugDexPlusSaline
     - JugTrico # End of first line
     - BeakerSmallArith
-    - DefibrillatorCompact
+    - LPPCombatDefibrillator # LP Edit
     - MedkitCombatFilled
     - ClothingEyesGlassesChemical
     - ChemistryBottleOmnizine
@@ -571,6 +591,10 @@
   - AllAccess
   access:
   - CentralCommand
+  # Goobstation Start
+  - NanotrasenRepresentative
+  - BlueshieldOfficer
+  # Goobstation End
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant, DeathRattleImplantCentcomm ]
