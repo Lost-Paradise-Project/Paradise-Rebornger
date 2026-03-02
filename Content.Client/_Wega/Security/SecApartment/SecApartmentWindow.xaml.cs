@@ -134,9 +134,9 @@ public sealed partial class SecApartmentWindow : BaseWindow
         var optionBackgroundRule = SecApartmentStyles.CreateOptionButtonBackgroundRule();
 
         var rules = new[] { buttonStyleRule, lineEditRule, optionRule, optionBackgroundRule };
-        // LP edit end
         var stylesheet = CreateCombinedStylesheet(rules);
         Stylesheet = stylesheet;
+        // LP edit end
     }
 
     private void SetupTabContainer()

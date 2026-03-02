@@ -173,11 +173,11 @@ namespace Content.Client.Launcher
             LoginTipTitle.Text = Loc.GetString("connecting-window-tip", ("numberTip", randomIndex));
         }
 
+        // LP edit (create this func())
         protected override void Dispose(bool disposing)
         {
             if (disposing)
             {
-                // Unsubscribe from event to prevent memory leak
                 var clientNetConfig = IoCManager.Resolve<IClientNetConfigurationManager>();
                 clientNetConfig.ReceivedInitialNwVars -= OnInitialNwVarsReceived;
             }
