@@ -2,7 +2,7 @@
 
 - type: entity
   id: LPPServiceProtolathe
-  parent: BaseLatheLube
+  parent: [BaseLatheLube, BaseSiloUtilizer]
   name: protolathe
   description: Converts raw materials into advanced items.
   components:
@@ -27,7 +27,6 @@
         - Sheet
         - RawMaterial
         - Ingot
-  - type: OreSiloClient
   - type: Lathe
     idleState: icon
     runningState: building
@@ -59,7 +58,7 @@
 
 - type: entity
   id: LPPScienceProtolathe
-  parent: BaseLatheLube
+  parent: [BaseLatheLube, BaseSiloUtilizer]
   name: protolathe
   description: Converts raw materials into advanced items.
   components:
@@ -80,7 +79,6 @@
     board: ProtolatheMachineCircuitboard
   - type: MaterialStorage
     whitelist: *StandardMaterialWhitelist
-  - type: OreSiloClient
   - type: Lathe
     idleState: icon
     runningState: building
@@ -112,7 +110,7 @@
 
 - type: entity
   id: LPPEngineeringProtolathe
-  parent: BaseLatheLube
+  parent: [BaseLatheLube, BaseSiloUtilizer]
   name: protolathe
   description: Converts raw materials into advanced items.
   components:
@@ -133,7 +131,6 @@
     board: ProtolatheMachineCircuitboard
   - type: MaterialStorage
     whitelist: *StandardMaterialWhitelist
-  - type: OreSiloClient
   - type: Lathe
     idleState: icon
     runningState: building
@@ -165,7 +162,7 @@
 
 - type: entity
   id: LPPCargoProtolathe
-  parent: BaseLatheLube
+  parent: [BaseLatheLube, BaseSiloUtilizer]
   name: protolathe
   description: Converts raw materials into advanced items.
   components:
@@ -186,7 +183,6 @@
     board: ProtolatheMachineCircuitboard
   - type: MaterialStorage
     whitelist: *StandardMaterialWhitelist
-  - type: OreSiloClient
   - type: Lathe
     idleState: icon
     runningState: building
@@ -218,7 +214,7 @@
 
 - type: entity
   id: LPPSpaceForge
-  parent: BaseLatheLube
+  parent: [BaseLatheLube, BaseSiloUtilizer]
   name: protolathe
   description: Converts raw materials into advanced items.
   components:
@@ -239,7 +235,6 @@
     board: ProtolatheMachineCircuitboard
   - type: MaterialStorage
     whitelist: *StandardMaterialWhitelist
-  - type: OreSiloClient
   - type: Lathe
     idleState: icon
     runningState: building
@@ -271,7 +266,7 @@
 
 - type: entity
   id: LPPSpaceForgeCMD
-  parent: BaseLatheLube
+  parent: [BaseLatheLube, BaseSiloUtilizer]
   name: protolathe
   description: Converts raw materials into advanced items.
   components:
@@ -292,7 +287,6 @@
     board: ProtolatheMachineCircuitboard
   - type: MaterialStorage
     whitelist: *StandardMaterialWhitelist
-  - type: OreSiloClient
   - type: Lathe
     idleState: icon
     runningState: building

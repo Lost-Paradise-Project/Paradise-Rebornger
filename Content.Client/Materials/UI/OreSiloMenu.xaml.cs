@@ -61,4 +61,3 @@ public sealed partial class OreSiloMenu : FancyWindow
         }
     }
 }
-
