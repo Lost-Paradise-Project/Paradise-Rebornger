@@ -2,7 +2,7 @@
 hostname = "🚀 Lost Paradise - 3.0 🐧 [18+]"
 desc = "- Мы проект со средним требованием к отыгрышу с разрешенным ЕРП. \n- Наша цель это создание приятного времяпрепровождения для всех игроков не зависимо от их предпочитаемого геймлпея \n- Присоединяйтесь в наше Дискорд сообщество"
 lobbyduration = 240
-map_pool = "LP_maps"
+map_pool = "LPmaps"
 soft_max_players = 111
 hostname_in_titlebar = false
 admin_job_tracking = true
