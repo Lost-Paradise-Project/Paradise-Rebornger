@@ -31,8 +31,10 @@ public sealed partial class CrewMemberEntry : PanelContainer
 
         _sprite = sprite;
 
-        SetupUI(jobIcon);
+        // LP edit start
         SetupStyles();
+        SetupUI(jobIcon);
+        // LP edit end
     }
 
     private void SetupUI(SpriteSpecifier? jobIcon)
@@ -77,6 +79,14 @@ public sealed partial class CrewMemberEntry : PanelContainer
             ContentMarginRightOverride = 8,
             ContentMarginTopOverride = 4
         };
+
+        // LP edit start
+        SquadDropdown.AddStyleClass(SecApartmentStyles.StyleClassOptionButton);
+        SquadDropdown.OptionStyleClasses.Add(SecApartmentStyles.StyleClassButtonRed);
+
+        MemberNameLabel.FontColorOverride = SecApartmentStyles.HeadingColor;
+        JobTitleLabel.FontColorOverride = SecApartmentStyles.SubTextColor;
+        // LP edit end
     }
 
     private void UpdateSquadDropdown()
