@@ -55,8 +55,6 @@ namespace Content.Client.Launcher
             ExitButton.OnPressed += _ => _state.Exit();
 
             // LP edit start
-            // Subscribe to CVar
-            UpdateButtonVisibility();
             var clientNetConfig = IoCManager.Resolve<IClientNetConfigurationManager>();
             clientNetConfig.ReceivedInitialNwVars += OnInitialNwVarsReceived;
 
@@ -175,6 +173,17 @@ namespace Content.Client.Launcher
             LoginTipTitle.Text = Loc.GetString("connecting-window-tip", ("numberTip", randomIndex));
         }
 
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                // Unsubscribe from event to prevent memory leak
+                var clientNetConfig = IoCManager.Resolve<IClientNetConfigurationManager>();
+                clientNetConfig.ReceivedInitialNwVars -= OnInitialNwVarsReceived;
+            }
+            base.Dispose(disposing);
+        }
+
         protected override void FrameUpdate(FrameEventArgs args)
         {
             base.FrameUpdate(args);
@@ -223,13 +232,18 @@ namespace Content.Client.Launcher
             UpdateButtonVisibility();
         }
 
+        private void SetButtonVisibility(Control button, CVarDef<string> cvar)
+        {
+            button.Visible = !string.IsNullOrEmpty(_cfg.GetCVar(cvar));
+        }
+
         private void UpdateButtonVisibility()
         {
-            OpenDiscordButton.Visible = _cfg.GetCVar(CCVars.InfoLinksDiscord) != "";
-            OpenWikiButton.Visible = _cfg.GetCVar(CCVars.InfoLinksWiki) != "";
-            OpenWebsiteButton.Visible = _cfg.GetCVar(CCVars.InfoLinksWebsite) != "";
-            OpenGithubButton.Visible = _cfg.GetCVar(CCVars.InfoLinksGithub) != "";
-            OpenForumButton.Visible = _cfg.GetCVar(CCVars.InfoLinksForum) != "";
+            SetButtonVisibility(OpenDiscordButton, CCVars.InfoLinksDiscord);
+            SetButtonVisibility(OpenWikiButton, CCVars.InfoLinksWiki);
+            SetButtonVisibility(OpenWebsiteButton, CCVars.InfoLinksWebsite);
+            SetButtonVisibility(OpenGithubButton, CCVars.InfoLinksGithub);
+            SetButtonVisibility(OpenForumButton, CCVars.InfoLinksForum);
         }
         // LP edit end
     }
