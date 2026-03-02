@@ -1,0 +1,55 @@
+# responce teams
+
+- type: entity
+  id: LPPSpawnPodERTSec
+  categories: [ HideSpawnMenu ]
+  name: SpawnSupplyERTSec
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: LPPRadioLeadERTSec
+
+- type: entity
+  id: LPPSpawnPodERTMed
+  categories: [ HideSpawnMenu ]
+  name: SpawnSupplyERTMed
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: LPPRadioLeadERTMed
+
+- type: entity
+  id: LPPSpawnPodERTEngi
+  categories: [ HideSpawnMenu ]
+  name: SpawnSupplyERTEngi
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: LPPRadioLeadERTEngi
+
+- type: entity
+  id: LPPSpawnPodERTJani
+  categories: [ HideSpawnMenu ]
+  name: SpawnSupplyERTJani
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: LPPRadioLeadERTJani
+
+- type: entity
+  id: LPPSpawnPodERTStandard
+  categories: [ HideSpawnMenu ]
+  name: SpawnSupplyERTJani
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: LPPRadioLeadERTStandard
+
+- type: entity
+  id: LPPSpawnPodCBURN
+  categories: [ HideSpawnMenu ]
+  name: SpawnSupplyCBURN
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: LPPRadioLeadCBURN

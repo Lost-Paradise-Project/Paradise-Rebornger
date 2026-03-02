@@ -1,0 +1,164 @@
+# NTR
+
+- type: loadoutGroup
+  id: NanotrasenRepresentativeHead
+  name: loadout-group-ntr-head
+  minLimit: 0
+  loadouts:
+  - NanotrasenRepresentativeBeret
+  - NanotrasenRepresentativeTop
+  - NanotrasenRepresentativeBowler
+  - NanotrasenRepresentativeOutlaw
+  - NanotrasenRepresentativeMAA
+
+- type: loadoutGroup
+  id: NanotrasenRepresentativeNeck
+  name: loadout-group-ntr-neck
+  minLimit: 0
+  loadouts:
+  - ClothingNeckScarfStripedCentcom
+
+- type: loadoutGroup
+  id: NanotrasenRepresentativeBackpack
+  name: loadout-group-ntr-backpack
+  loadouts:
+  - NanotrasenRepresentativeBackpack
+  - NanotrasenRepresentativeSatchel
+  - NanotrasenRepresentativeDuffel
+
+- type: loadoutGroup
+  id: NanotrasenRepresentativeJumpsuit
+  name: loadout-group-ntr-jumpsuit
+  loadouts:
+  - NanotrasenRepresentativeJumpsuit
+  - NanotrasenRepresentativeJumpskirt
+  - NanotrasenRepresentativeFancyJumpsuit
+
+- type: loadoutGroup
+  id: NanotrasenRepresentativeBelt
+  name: loadout-group-ntr-belt
+  minLimit: 0
+  loadouts:
+  - NanotrasenRepresentativeClipboard
+  - NanotrasenRepresentativeWaistbag
+
+- type: loadoutGroup
+  id: NanotrasenRepresentativeShoes
+  name: loadout-group-ntr-shoes
+  loadouts:
+  - NanotrasenRepresentativeBoots
+  - NanotrasenRepresentativeShoes
+  - NanotrasenRepresentativeHeels
+
+- type: loadoutGroup
+  id: NanotrasenRepresentativeGloves
+  name: loadout-group-ntr-gloves
+  loadouts:
+  - NanotrasenRepresentativeGloves
+
+# - type: loadoutGroup
+#   id: NanotrasenRepresentativeEnvirohelm
+#   name: loadout-group-ntr-envirohelm
+#   minLimit: 1
+#   maxLimit: 1
+#   loadouts:
+#   - NanotrasenRepresentativeEnvirohelm
+
+# - type: loadoutGroup
+#   id: NanotrasenRepresentativeEnvirosuit
+#   name: loadout-group-ntr-envirosuit
+#   minLimit: 1
+#   maxLimit: 1
+#   loadouts:
+#   - NanotrasenRepresentativeEnvirosuit
+
+# - type: loadoutGroup
+#   id: NanotrasenRepresentativeEnvirogloves
+#   name: loadout-group-ntr-envirogloves
+#   minLimit: 1
+#   maxLimit: 1
+#   loadouts:
+#   - BlackEnvirogloves
+
+# BSO
+- type: loadoutGroup
+  id: BlueshieldOfficerHead
+  name: loadout-group-bso-head
+  minLimit: 0
+  loadouts:
+  - BlueshieldOfficerHeadSwatHelmet
+  - BlueshieldOfficerBeret
+  - BlueshieldOfficerHeadCowboy
+  - BlueshieldOfficerGoidaHelmet
+
+- type: loadoutGroup
+  id: BlueshieldOfficerBackpack
+  name: loadout-group-bso-backpack
+  loadouts:
+  - BlueshieldOfficerBackpack
+  - BlueshieldOfficerSatchel
+  - BlueshieldOfficerDuffel
+
+- type: loadoutGroup
+  id: BlueshieldOfficerJumpsuit
+  name: loadout-group-bso-jumpsuit
+  loadouts:
+  - BlueshieldOfficerInnerBlueshieldSuit
+  - BlueshieldOfficerInnerBlueshieldSkirt
+  - BlueshieldOfficerInnerBlueshieldShirt
+
+- type: loadoutGroup
+  id: BlueshieldOfficerOuter
+  name: loadout-group-bso-outer
+  loadouts:
+  - BlueshieldOfficerOuterBlueshieldArmorVest
+  - BlueshieldOfficerOuterBlueshieldArmoredJacket
+  - BlueshieldOfficerOuterBlueshieldCowboyVest
+  - BlueshieldOfficerOuterWinterBlueshield
+
+- type: loadoutGroup
+  id: BlueshieldOfficerNeck
+  name: loadout-group-bso-neck
+  minLimit: 0
+  loadouts:
+  - BlueshieldOfficerOuterBlueshieldMantle
+
+- type: loadoutGroup
+  id: BlueshieldOfficerShoes
+  name: loadout-group-bso-shoes
+  loadouts:
+  - JackBoots
+  - BlackCowboyBoots
+  - SnowjacksBso
+
+# - type: loadoutGroup
+#   id: BlueshieldOfficerEnvirohelm
+#   name: loadout-group-bso-envirohelm
+#   minLimit: 1
+#   maxLimit: 1
+#   loadouts:
+#   - BlueshieldOfficerEnvirohelm
+
+# - type: loadoutGroup
+#   id: BlueshieldOfficerEnvirosuit
+#   name: loadout-group-bso-envirosuit
+#   minLimit: 1
+#   maxLimit: 1
+#   loadouts:
+#   - BlueshieldOfficerEnvirosuit
+
+# - type: loadoutGroup
+#   id: BlueshieldOfficerEnvirogloves
+#   name: loadout-group-bso-envirogloves
+#   minLimit: 1
+#   maxLimit: 1
+#   loadouts:
+#   - CombatEnvirogloves
+
+- type: loadoutGroup
+  id: BlueshieldOfficerGloves
+  name: loadout-group-bso-gloves
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - CombatGloves

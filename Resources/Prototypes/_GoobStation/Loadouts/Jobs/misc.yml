@@ -1,0 +1,5 @@
+- type: loadout
+  id: CrewCassette
+  storage:
+    back:
+    - CrewCassette

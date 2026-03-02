@@ -22,6 +22,10 @@
   - HeadOfSecurity
   - Quartermaster
   - ResearchDirector
+  # LP Edit Start
+  - BlueshieldOfficer
+  - NanotrasenRepresentative
+  # LP Edit End
   
 - type: accessLevel
   id: EmergencyShuttleRepealAll
