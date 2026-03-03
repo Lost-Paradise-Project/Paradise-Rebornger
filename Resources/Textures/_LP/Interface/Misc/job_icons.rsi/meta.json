@@ -254,6 +254,12 @@
         },
         {
             "name": "ParadoxClone"
+        },
+        {
+            "name": "Adjutant"
+        },
+        {
+            "name": "Magistrate"
         }
     ]
 }
