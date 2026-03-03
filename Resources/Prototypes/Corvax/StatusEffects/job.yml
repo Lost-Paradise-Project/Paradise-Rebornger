@@ -2,7 +2,7 @@
   parent: JobIcon
   id: JobIconIAA
   icon:
-    sprite: /Textures/Interface/Misc/job_icons.rsi
+    sprite: /Textures/_LP/Interface/Misc/job_icons.rsi # LP Edit
     state: IAA
   jobName: job-name-iaa
 
@@ -10,6 +10,8 @@
   parent: JobIcon
   id: JobIconPilot
   icon:
-    sprite: /Textures/Interface/Misc/job_icons.rsi
-    state: Pilot
+    # LP Edit Start
+    sprite: /Textures/_LP/Interface/Misc/job_icons.rsi
+    state: SecPilot
+    # LP Edit End
   jobName: job-name-pilot
