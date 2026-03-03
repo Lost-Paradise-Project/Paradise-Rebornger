@@ -557,7 +557,7 @@
       color: *color-security-bottom
     - sprite: *icon-rsi
       offset: *icon-offset
-      state: Brigmedic
+      state: FieldMedic
 
 - type: entity
   parent: SecurityIDCard
