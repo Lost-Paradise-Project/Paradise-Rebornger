@@ -48,4 +48,11 @@ mining-circuitboard-repair-no-cable = Вам нужен НВ кабель в и�
 # Mining Research Disk
 mining-research-disk-name = Исследовательский диск ({ $points } очк.)
 mining-research-disk-desc = Содержит { $points } очков технологий для исследовательского сервера.
+
+# entity
+ent-LPAMiningServerCircuitboard = майнинг сервер (сломанная машинная плата)
+    .desc = Давно остыла, но никто ее так и не исправил. Стань героем !
+    .suffix = Сломанный
+
+
 # LP edit end

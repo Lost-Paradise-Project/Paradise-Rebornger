@@ -96,15 +96,15 @@ public sealed class MiningConsoleSystem : EntitySystem
 
         SetGlobalActivation(entity.Owner, true);
     }
-    // LP edit end
 
     private void OnDeactivateAll(Entity<MiningConsoleComponent> entity, ref MiningConsoleDeactivateAllMessage args)
     {
         if (entity.Comp.LinkedServer == null || !TryComp<MiningAccountComponent>(entity.Comp.LinkedServer.Value, out var account))
             return;
 
-        SetGlobalActivation(entity.Owner, false); // LP edit
+        SetGlobalActivation(entity.Owner, false);
     }
+    // LP edit end
 
     private void OnToggleServerActivation(Entity<MiningConsoleComponent> entity, ref MiningConsoleToggleServerActivationMessage args)
     {

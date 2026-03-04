@@ -70,14 +70,11 @@ public sealed class MiningServerCircuitboardSystem : EntitySystem
         if (args.Handled)
             return;
 
-        // Проверяем, если это мультитул, то сканируем плату
         if (TryComp<ToolComponent>(args.Used, out var toolComp) && _toolSystem.HasQuality(args.Used, "Pulsing"))
         {
             args.Handled = TryScanCircuitboard(ent.Owner, args.User);
             return;
         }
-
-        // Проверяем инструменты для починки
         args.Handled = TryRepairCircuitboard(ent.Owner, args.Used, args.User, ent.Comp);
     }
 
@@ -91,31 +88,25 @@ public sealed class MiningServerCircuitboardSystem : EntitySystem
             repair = EntityManager.AddComponent<MiningServerCircuitboardRepairComponent>(uid);
         }
 
-        // Generate repair steps if not already generated
         if (!repair.IsScanned)
         {
             repair.GenerateRepairSteps();
             repair.IsScanned = true;
         }
 
-        // Send popup message to user
         var message = Loc.GetString("mining-circuitboard-repair-scanned");
         for (var i = 0; i < repair.Steps.Count; i++)
         {
             var step = repair.Steps[i];
             message += $"\n{i + 1}. {Loc.GetString(step.Description)}";
         }
-
         _popup.PopupEntity(message, uid, user);
 
-        // Send state update to client and open UI
         if (TryComp<MiningServerCircuitboardComponent>(uid, out var board))
         {
             var state = new MiningCircuitboardRepairBoundInterfaceState(board.Condition, repair.CurrentStep, repair.Steps, repair.IsScanned);
             _uiSystem.SetUiState(uid, MiningCircuitboardRepairUiKey.Key, state);
         }
-
-        // Open the repair UI for the user
         _uiSystem.TryToggleUi(uid, MiningCircuitboardRepairUiKey.Key, user);
 
         return true;
@@ -129,32 +120,28 @@ public sealed class MiningServerCircuitboardSystem : EntitySystem
         if (board.Condition >= MiningServerCircuitboardComponent.MaxCondition)
             return false;
 
-        // Проверяем, если плата не сканирована, то не позволяем починять
         if (!TryComp<MiningServerCircuitboardRepairComponent>(uid, out var repair) || !repair.IsScanned)
         {
             _popup.PopupEntity(Loc.GetString("mining-circuitboard-repair-not-scanned"), uid, user);
             return false;
         }
 
-        // Проверяем, что инструмент соответствует текущему шагу
         if (!IsToolForCurrentStep(tool, repair))
         {
             _popup.PopupEntity(Loc.GetString("mining-circuitboard-repair-wrong-tool"), uid, user);
             return false;
         }
 
-        // Для шага с кабелем - просто потребляем кабель и завершаем шаг сразу
+        // код кабеля такой, потому что он на тайлы пола ставится
+        // и по другому это говно не сделать, я пыталась Т_Т
         if (repair.IsCurrentStep(RepairType.Cable))
         {
-            // Проверяем, что в руке есть кабель (стек)
             if (!TryComp<StackComponent>(tool, out var stack))
             {
                 _popup.PopupEntity(Loc.GetString("mining-circuitboard-repair-no-cable"), uid, user);
                 return false;
             }
 
-            // Проверяем, что это именно кабель (не другой стек)
-            // Используем прототип для проверки - кабели имеют ID: Cable, CableMV, CableHV
             if (!TryComp(tool, out MetaDataComponent? meta) || meta == null)
             {
                 _popup.PopupEntity(Loc.GetString("mining-circuitboard-repair-no-cable"), uid, user);
@@ -168,19 +155,16 @@ public sealed class MiningServerCircuitboardSystem : EntitySystem
                 return false;
             }
 
-            // Потребляем один кабель из стека
             if (!_stackSystem.TryUse((tool, stack), 1))
             {
                 _popup.PopupEntity(Loc.GetString("mining-circuitboard-repair-no-cable"), uid, user);
                 return false;
             }
 
-            // Сразу завершаем шаг починки (без анимации и задержки)
             HandleRepairStepComplete(uid, board);
             return true;
         }
 
-        // Для отвертки и сварочного аппарата используем стандартный ToolSystem с DoAfter
         if (repair.IsCurrentStep(RepairType.Screwdriver))
         {
             return _toolSystem.UseTool(tool, user, uid, ScrewdriverTime, "Screwing", new ScrewdriverFinishedEvent());
@@ -199,7 +183,7 @@ public sealed class MiningServerCircuitboardSystem : EntitySystem
     /// </summary>
     private bool IsToolForCurrentStep(EntityUid tool, MiningServerCircuitboardRepairComponent repair)
     {
-        // Для кабеля проверяем, что это стек с кабелем
+        // потому что кабель может быть в стеке
         if (repair.IsCurrentStep(RepairType.Cable))
         {
             if (!TryComp<StackComponent>(tool, out var stack))
@@ -212,7 +196,6 @@ public sealed class MiningServerCircuitboardSystem : EntitySystem
             return prototypeId.Contains("Cable");
         }
 
-        // Для остальных инструментов проверяем наличие ToolComponent и качества
         if (!TryComp<ToolComponent>(tool, out var toolComp))
             return false;
 
@@ -266,10 +249,8 @@ public sealed class MiningServerCircuitboardSystem : EntitySystem
         if (!TryComp<MiningServerCircuitboardRepairComponent>(uid, out var repair))
             return;
 
-        // Advance to next repair step
         var isComplete = repair.AdvanceStep();
 
-        // Send popup message
         if (isComplete)
         {
             _popup.PopupEntity(Loc.GetString("mining-circuitboard-repair-complete"), uid, uid);
@@ -282,13 +263,10 @@ public sealed class MiningServerCircuitboardSystem : EntitySystem
 
         if (isComplete)
         {
-            // Восстанавливаем состояние платы
             board.Condition = MiningServerCircuitboardComponent.MaxCondition;
 
-            // Обновляем визуальное состояние платы (убираем анимацию сломанной платы)
             UpdateAppearance(uid, board);
 
-            // Обновляем состояние всех майнинг серверов, которые используют эту плату
             var query = EntityQueryEnumerator<MiningServerComponent>();
             while (query.MoveNext(out var serverUid, out var server))
             {
@@ -299,7 +277,6 @@ public sealed class MiningServerCircuitboardSystem : EntitySystem
             }
         }
 
-        // Update UI state
         var state = new MiningCircuitboardRepairBoundInterfaceState(board.Condition, repair.CurrentStep, repair.Steps, repair.IsScanned);
         _uiSystem.SetUiState(uid, MiningCircuitboardRepairUiKey.Key, state);
     }

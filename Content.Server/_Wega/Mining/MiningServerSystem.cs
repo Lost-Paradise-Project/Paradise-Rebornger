@@ -6,8 +6,8 @@ using Content.Shared.Power;
 using Content.Server.Atmos.EntitySystems;
 using Content.Shared.Audio;
 using Content.Shared.Examine;
-using Robust.Shared.GameObjects;
 // LP edit start
+using Robust.Shared.GameObjects;
 using Content.Shared.Construction.Components;
 using Content.Server.Construction.Components;
 using Robust.Shared.Containers;
@@ -33,7 +33,10 @@ public sealed class MiningServerSystem : EntitySystem
         // LP edit start
         SubscribeLocalEvent<MiningServerComponent, EntGotInsertedIntoContainerMessage>(OnBoardInserted);
         SubscribeLocalEvent<MiningServerComponent, EntGotRemovedFromContainerMessage>(OnBoardRemoved);
+        // LP edit end
     }
+
+    // LP edit start
 
     /// <summary>
     /// Обработчик события при вставке платы в контейнер машины
@@ -55,7 +58,7 @@ public sealed class MiningServerSystem : EntitySystem
         if (TryComp<MachineComponent>(ent.Owner, out var machine) && args.Container.ID == MachineFrameComponent.BoardContainerName)
         {
             ent.Comp.CircuitboardUid = null;
-            ent.Comp.IsBroken = true; // Машина не работает без платы
+            ent.Comp.IsBroken = true; // Машина не работает без платы потому что так завещала я
             UpdateAppearance(ent.Owner, ent.Comp);
         }
     }

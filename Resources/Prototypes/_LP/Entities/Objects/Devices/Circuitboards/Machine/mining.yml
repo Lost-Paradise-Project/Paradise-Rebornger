@@ -5,7 +5,7 @@
   description: A machine printed circuit board for an mining server.
   components:
   - type: Sprite
-    sprite: _LP/Objects/Misc/module.rsi
+    sprite: Objects/Misc/module.rsi
     state: engineering
   - type: Appearance
   - type: MachineBoard
@@ -16,7 +16,7 @@
       Glass: 2
       Cable: 5
   - type: MiningServerCircuitboard
-    condition: 100
+    condition: 0        # Имею ввиду, вдруг кому нибудь нужна сломанная плата, не ?
   - type: MiningServerCircuitboardVisuals
   - type: UserInterface
     interfaces:

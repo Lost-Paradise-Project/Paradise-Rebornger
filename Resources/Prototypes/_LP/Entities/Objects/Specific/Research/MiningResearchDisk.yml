@@ -3,5 +3,3 @@
   parent: ResearchDisk
   components:
   - type: ResearchDisk
-    points: 1000
-

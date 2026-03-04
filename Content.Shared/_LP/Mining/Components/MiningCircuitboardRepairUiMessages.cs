@@ -4,7 +4,7 @@ using Robust.Shared.Serialization;
 namespace Content.Shared._Wega.Mining.Components
 {
     /// <summary>
-    /// Data class to hold repair state information
+    /// хранение информации о состоянии починки
     /// </summary>
     [Serializable, NetSerializable]
     public sealed class MiningCircuitboardRepairBoundInterfaceState : BoundUserInterfaceState
@@ -24,7 +24,7 @@ namespace Content.Shared._Wega.Mining.Components
     }
 
     /// <summary>
-    /// Message sent from client to server when scan button is pressed
+    /// Client - System прикол. Сообщение при нажатии кнопки сканирования
     /// </summary>
     [Serializable, NetSerializable]
     public sealed class MiningCircuitboardRepairScanMessage : BoundUserInterfaceMessage

@@ -7,28 +7,28 @@ using Robust.Shared.IoC;
 namespace Content.Shared._Wega.Mining.Components
 {
     /// <summary>
-    /// Component to track the repair state of a mining server circuit board
+    /// Компонент для отслеживания состояния ремонта печатной платы сервера для майнинга
     /// </summary>
     [RegisterComponent]
     public sealed partial class MiningServerCircuitboardRepairComponent : Component
     {
         /// <summary>
-        /// Current repair step index
+        /// индекс текущего шага ремонта
         /// </summary>
         public int CurrentStep = 0;
 
         /// <summary>
-        /// List of repair steps to complete
+        /// список необходимых шагов по ремонту, которые надо выполнить
         /// </summary>
         public List<RepairStep> Steps = new();
 
         /// <summary>
-        /// Whether the circuit board has been scanned with a multitool
+        /// проверка платы на сканирование мультитулом
         /// </summary>
         public bool IsScanned = false;
 
         /// <summary>
-        /// Generates random repair steps for the circuit board
+        /// Генерирует случайные этапы ремонта платы
         /// </summary>
         public void GenerateRepairSteps()
         {
@@ -36,7 +36,7 @@ namespace Content.Shared._Wega.Mining.Components
             CurrentStep = 0;
             IsScanned = false;
 
-            // Possible repair steps
+            // возможные шаги для ремонта платы
             var possibleSteps = new List<RepairStep>
             {
                 new RepairStep(RepairType.Screwdriver, "mining-circuitboard-repair-step-screwdriver"),
@@ -44,7 +44,7 @@ namespace Content.Shared._Wega.Mining.Components
                 new RepairStep(RepairType.Cable, "mining-circuitboard-repair-step-cable")
             };
 
-            // Shuffle and select 2-3 unique steps
+            // перемешивание и выбор этапов (2-3 этапов)
             var random = IoCManager.Resolve<IRobustRandom>();
             var stepCount = random.Next(2, 4);
 
@@ -57,9 +57,9 @@ namespace Content.Shared._Wega.Mining.Components
         }
 
         /// <summary>
-        /// Advances to the next repair step if the current step is completed
+        /// Переход на следующий этап, если текущий завершен
         /// </summary>
-        /// <returns>True if all steps are completed</returns>
+        /// <returns>True - если все завершено)</returns>
         public bool AdvanceStep()
         {
             CurrentStep++;
@@ -67,7 +67,7 @@ namespace Content.Shared._Wega.Mining.Components
         }
 
         /// <summary>
-        /// Checks if the current step matches the given type
+        /// проверка: правильность применения типа ремонта к инструкции
         /// </summary>
         public bool IsCurrentStep(RepairType type)
         {
@@ -79,7 +79,7 @@ namespace Content.Shared._Wega.Mining.Components
     }
 
     /// <summary>
-    /// Type of repair step
+    /// Тип этапа ремонта платы
     /// </summary>
     public enum RepairType
     {
@@ -89,7 +89,7 @@ namespace Content.Shared._Wega.Mining.Components
     }
 
     /// <summary>
-    /// Represents a single repair step
+    /// Дает этап ремонта платы
     /// </summary>
     [Serializable, NetSerializable]
     public sealed class RepairStep

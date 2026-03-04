@@ -9,6 +9,7 @@ public sealed partial class MiningServerCircuitboardComponent : Component
 {
     /// <summary>
     /// Состояние здоровья платы в процентах (0-100)
+    /// TODO: потом можно развить степени поломки в процентах ?
     /// </summary>
     [DataField("condition")]
     [ViewVariables(VVAccess.ReadWrite)]
@@ -21,12 +22,12 @@ public sealed partial class MiningServerCircuitboardComponent : Component
     public const float MaxCondition = 100f;
 
     /// <summary>
-    /// Минимальное здоровье платы, при котором она разорвется
+    /// Минимальное здоровье платы, при котором она сломается
     /// </summary>
     public const float MinCondition = 0f;
 
     /// <summary>
-    /// Является ли плата разорванной
+    /// Является ли плата сломанной
     /// </summary>
     public bool IsBroken => Condition <= MinCondition;
 

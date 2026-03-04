@@ -1,4 +1,5 @@
-# LP edit start
+# LP edit start (translated into English)
+
 mining-console-title = Mining Server Console
 mining-console-mode = Mode:
 mining-console-toggle-mode = Toggle
@@ -48,5 +49,11 @@ mining-circuitboard-repair-no-cable = You need an LV cable in your inventory for
 # Mining Research Disk
 mining-research-disk-name = Research Disk ({ $points } pts)
 mining-research-disk-desc = Contains { $points } research technology points for the research server.
+
+# entity
+ent-LPAMiningServerCircuitboard = mining server (broken motherboard)
+    .desc = It cooled down a long time ago, but no one ever fixed it. Be a hero!
+    .suffix = BROKEN
+
 
 # LP edit end
