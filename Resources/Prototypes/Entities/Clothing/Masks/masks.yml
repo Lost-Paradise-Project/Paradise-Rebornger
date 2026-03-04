@@ -143,7 +143,7 @@
     tags:
     - PetWearable
     - WhitelistChameleon
-    - CoatRack ## LP edit
+    - CoatRack # LP edit
   - type: PhysicalComposition
     materialComposition:
       Steel: 50
@@ -187,7 +187,7 @@
     tags:
     - PetWearable
     - WhitelistChameleon
-    - CoatRack ## LP edit
+    - CoatRack # LP edit
   - type: PhysicalComposition
     materialComposition:
       Steel: 50
@@ -479,7 +479,7 @@
   - type: Tag
     tags:
     - WhitelistChameleon
-    - CoatRack ## LP edit
+    - CoatRack # LP edit
   - type: HideLayerClothing
     slots:
     - Hair
