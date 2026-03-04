@@ -24,27 +24,33 @@ namespace Content.Client.Lobby.UI.ProfileEditorControls;
 public sealed partial class ProfilePreviewSpriteView
 {
     /// <summary>
+    /// Applies the humanoid profile to the PreviewDummy entity.
+    /// </summary>
+    private void ApplyHumanoidProfile(HumanoidCharacterProfile humanoid)
+    {
+        if (EntMan.TryGetComponent<HumanoidProfileComponent>(PreviewDummy, out _))
+        {
+            EntMan.System<HumanoidProfileSystem>().ApplyProfileTo(PreviewDummy, humanoid);
+
+            if (EntMan.TryGetComponent<Robust.Client.GameObjects.SpriteComponent>(PreviewDummy, out var sprite))
+                sprite.Scale = new Vector2(humanoid.Width, humanoid.Height);
+        }
+
+        if (EntMan.TryGetComponent<VisualBodyComponent>(PreviewDummy, out _))
+        {
+            EntMan.System<SharedVisualBodySystem>().ApplyProfileTo(PreviewDummy, humanoid);
+        }
+    }
+
+    /// <summary>
     /// A slim reload that only updates the entity itself and not any of the job entities, etc.
     /// </summary>
     private void ReloadHumanoidEntity(HumanoidCharacterProfile humanoid)
     {
-        // LP edit start
         if (!EntMan.EntityExists(PreviewDummy))
             return;
 
-        if (EntMan.HasComponent<HumanoidProfileComponent>(PreviewDummy))
-        {
-            EntMan.System<HumanoidProfileSystem>().ApplyProfileTo(PreviewDummy, humanoid);
-
-            var sprite = EntMan.GetComponent<Robust.Client.GameObjects.SpriteComponent>(PreviewDummy);
-            sprite.Scale = new Vector2(humanoid.Width, humanoid.Height);
-        }
-
-        if (EntMan.HasComponent<VisualBodyComponent>(PreviewDummy))
-        {
-            EntMan.System<SharedVisualBodySystem>().ApplyProfileTo(PreviewDummy, humanoid);
-        }
-        // LP edit end
+        ApplyHumanoidProfile(humanoid);
     }
 
     /// <summary>
@@ -69,20 +75,7 @@ public sealed partial class ProfilePreviewSpriteView
         {
             var dummy = _prototypeManager.Index(humanoid.Species).DollPrototype;
             PreviewDummy = EntMan.SpawnEntity(dummy, MapCoordinates.Nullspace);
-            // LP edit start
-            EntMan.System<HumanoidProfileSystem>().ApplyProfileTo(PreviewDummy, humanoid);
-
-            if (EntMan.HasComponent<Robust.Client.GameObjects.SpriteComponent>(PreviewDummy))
-            {
-                var sprite = EntMan.GetComponent<Robust.Client.GameObjects.SpriteComponent>(PreviewDummy);
-                sprite.Scale = new Vector2(humanoid.Width, humanoid.Height);
-            }
-
-            if (EntMan.HasComponent<VisualBodyComponent>(PreviewDummy))
-            {
-                EntMan.System<SharedVisualBodySystem>().ApplyProfileTo(PreviewDummy, humanoid);
-            }
-            // LP edit end
+            ApplyHumanoidProfile(humanoid);
         }
         else
         {
