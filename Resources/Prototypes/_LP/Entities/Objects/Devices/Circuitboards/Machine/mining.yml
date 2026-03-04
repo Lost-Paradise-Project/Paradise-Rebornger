@@ -1,0 +1,25 @@
+- type: entity
+  id: LPAMiningServerCircuitboard
+  parent: BaseMachineCircuitboard
+  name: mining server board
+  description: A machine printed circuit board for an mining server.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Misc/module.rsi
+    state: engineering
+  - type: Appearance
+  - type: MachineBoard
+    prototype: MiningServer
+    stackRequirements:
+      Manipulator: 4
+      Steel: 5
+      Glass: 2
+      Cable: 5
+  - type: MiningServerCircuitboard
+    condition: 100
+  - type: MiningServerCircuitboardVisuals
+  - type: UserInterface
+    interfaces:
+      enum.MiningCircuitboardRepairUiKey.Key:
+        type: MiningCircuitboardRepairBoundUserInterface
+

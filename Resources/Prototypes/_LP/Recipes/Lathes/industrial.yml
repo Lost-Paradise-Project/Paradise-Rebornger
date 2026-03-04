@@ -13,3 +13,7 @@
   materials:
     Plastic: 500
     Glass: 300
+
+- type: latheRecipe
+  id: LPAMiningServerCircuitboard
+  result: LPAMiningServerCircuitboard

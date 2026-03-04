@@ -1,10 +1,13 @@
 using Content.Shared._Wega.Mining.Components;
 using Robust.Client.GameObjects;
+using Robust.Shared.Utility;
 
 namespace Content.Client._Wega.Mining;
 
 public sealed class MiningServerCircuitboardVisualizerSystem : VisualizerSystem<MiningServerCircuitboardVisualsComponent>
 {
+    [Dependency] private readonly SpriteSystem _sprite = default!;
+
     protected override void OnAppearanceChange(EntityUid uid, MiningServerCircuitboardVisualsComponent component, ref AppearanceChangeEvent args)
     {
         if (args.Sprite == null)
@@ -14,8 +17,19 @@ public sealed class MiningServerCircuitboardVisualizerSystem : VisualizerSystem<
             return;
 
         // Set the appropriate sprite state based on broken status
-        var state = isBroken ? "engineering_crack" : "engineering";
-        args.Sprite.LayerSetState(0, state);
+        if (isBroken)
+        {
+            // Use LP folder for crack animation
+            _sprite.LayerSetSprite(uid, 0, new SpriteSpecifier.Rsi(
+                new ResPath("_LP/Objects/Misc/module.rsi"),
+                "engineering_crack"));
+        }
+        else
+        {
+            // Use standard folder for normal state
+            _sprite.LayerSetSprite(uid, 0, new SpriteSpecifier.Rsi(
+                new ResPath("Objects/Misc/module.rsi"),
+                "engineering"));
+        }
     }
 }
-
