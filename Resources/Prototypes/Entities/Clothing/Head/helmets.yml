@@ -17,7 +17,7 @@
   - type: Tag
     tags:
     - WhitelistChameleon
-    - CoatRack ## LP edit
+    - CoatRack # LP edit
   - type: HideLayerClothing
     layers:
       HeadTop : HEAD
