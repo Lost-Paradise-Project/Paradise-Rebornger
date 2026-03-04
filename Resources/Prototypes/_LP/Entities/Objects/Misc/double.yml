@@ -15,7 +15,7 @@
   - type: Item
     size: Normal
   - type: Tag
-    tags: 
+    tags:
     - Bedsheet
   - type: StaticPrice
     price: 100
