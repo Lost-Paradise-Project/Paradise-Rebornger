@@ -7,7 +7,7 @@
   components:
     - type: Tag
       tags:
-      - CoatRack ## LP edit
+      - CoatRack # LP edit
     - type: Sprite
       sprite: Clothing/Mask/gas.rsi
     - type: Clothing
@@ -72,7 +72,7 @@
           Anger: { state: icon-anger }
   - type: Tag
     tags:
-      - CoatRack ## LP edit
+      - CoatRack # LP edit
   - type: SelfEquipOnly
   - type: CursedMask
     despairDamageModifier:
