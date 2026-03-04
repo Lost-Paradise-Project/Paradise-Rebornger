@@ -222,7 +222,7 @@ public sealed partial class CriminalRecordsConsoleWindow : FancyWindow
 
     private void PopulateRecordContainer(GeneralStationRecord stationRecord, CriminalRecord criminalRecord)
     {
-        var specifier = new SpriteSpecifier.Rsi(new ResPath("Interface/Misc/job_icons.rsi"), "Unknown");
+        var specifier = new SpriteSpecifier.Rsi(new ResPath("_LP/Interface/Misc/job_icons.rsi"), "Unknown"); // LP Edit
         var na = Loc.GetString("generic-not-available-shorthand");
         PersonName.Text = stationRecord.Name;
         PersonJob.Text = stationRecord.JobTitle ?? na;
