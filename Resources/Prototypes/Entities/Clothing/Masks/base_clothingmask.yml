@@ -9,11 +9,6 @@
     size: Small
   - type: Clothing
     slots: [mask]
-  # LP edit start
-  - type: Tag
-    tags: 
-    - CoatRack
-  # LP edit end
   # Goobstation edit start
     equipSound:
       collection: GenericEquip
@@ -24,6 +19,11 @@
     sound:
       path: /Audio/_GoobStation/Items/handling/generic_small_drop.ogg
   # Goobstation edit end
+  # LP edit start
+  - type: Tag
+    tags: 
+    - CoatRack
+  # LP edit end
   - type: StaticPrice
     price: 25
 
