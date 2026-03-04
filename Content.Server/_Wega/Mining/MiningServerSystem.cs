@@ -9,6 +9,7 @@ using Content.Shared.Examine;
 // LP edit start
 using Robust.Shared.GameObjects;
 using Content.Shared.Construction.Components;
+using Content.Server.Construction;
 using Content.Server.Construction.Components;
 using Robust.Shared.Containers;
 using Robust.Shared.Timing;
@@ -27,7 +28,7 @@ public sealed class MiningServerSystem : EntitySystem
         base.Initialize();
 
         SubscribeLocalEvent<MiningServerComponent, ComponentInit>(OnInit);
-        SubscribeLocalEvent<MiningServerComponent, MapInitEvent>(OnMapInit);
+        SubscribeLocalEvent<MiningServerComponent, MapInitEvent>(OnMapInit, after: [typeof(ConstructionSystem)]); // LP edit
         SubscribeLocalEvent<MiningServerComponent, PowerChangedEvent>(OnPowerChanged);
         SubscribeLocalEvent<MiningServerComponent, ExaminedEvent>(OnExamined);
         // LP edit start
@@ -191,36 +192,27 @@ public sealed class MiningServerSystem : EntitySystem
         ent.Comp.MiningStage = 1;
 
         var uid = ent.Owner;
-        Timer.Spawn(TimeSpan.FromSeconds(0.1), () =>
+
+        // Синхронная инициализация - теперь выполняется сразу после ConstructionSystem
+        // благодаря параметру after: [typeof(ConstructionSystem)] в подписке
+        if (TryComp<MachineComponent>(uid, out var machine))
         {
-            if (TryComp<MachineComponent>(uid, out var machine))
+            if (machine.BoardContainer.ContainedEntities.Count > 0)
             {
-                if (machine.BoardContainer.ContainedEntities.Count > 0)
-                {
-                    if (TryComp<MiningServerComponent>(uid, out var server))
-                    {
-                        server.CircuitboardUid = machine.BoardContainer.ContainedEntities.First();
-                        UpdateBrokenState(uid, server);
-                    }
-                }
-                else
-                {
-                    if (TryComp<MiningServerComponent>(uid, out var server))
-                    {
-                        server.IsBroken = true;
-                        UpdateAppearance(uid, server);
-                    }
-                }
+                ent.Comp.CircuitboardUid = machine.BoardContainer.ContainedEntities.First();
+                UpdateBrokenState(uid, ent.Comp);
             }
             else
             {
-                if (TryComp<MiningServerComponent>(uid, out var server))
-                {
-                    server.IsBroken = true;
-                    UpdateAppearance(uid, server);
-                }
+                ent.Comp.IsBroken = true;
+                UpdateAppearance(uid, ent.Comp);
             }
-        });
+        }
+        else
+        {
+            ent.Comp.IsBroken = true;
+            UpdateAppearance(uid, ent.Comp);
+        }
         // LP edit end
     }
 

@@ -16,6 +16,7 @@ mining-console-refresh = Refresh
 mining-console-withdraw = Withdraw Balance
 mining-server-id = Server #{ $id }
 mining-server-stage = Stage:
+mining-server-temperature = Server Temperature
 mining-server-status-broken = BROKEN
 mining-server-status-active = ACTIVE
 mining-server-status-inactive = INACTIVE
@@ -51,7 +52,7 @@ mining-research-disk-name = Research Disk ({ $points } pts)
 mining-research-disk-desc = Contains { $points } research technology points for the research server.
 
 # entity
-ent-LPAMiningServerCircuitboard = mining server (broken motherboard)
+ent-LPAMiningServerCircuitboard = mining server (motherboard)
     .desc = It cooled down a long time ago, but no one ever fixed it. Be a hero!
     .suffix = BROKEN
 

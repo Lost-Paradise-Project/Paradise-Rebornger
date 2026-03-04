@@ -9,7 +9,6 @@ using Content.Shared.Stacks;
 using Content.Server.Stack;
 using Robust.Server.GameObjects;
 using Robust.Shared.GameObjects;
-using Robust.Shared.IoC;
 using Robust.Shared.Random;
 
 namespace Content.Server._Wega.Mining;
@@ -22,10 +21,7 @@ public sealed class MiningServerCircuitboardSystem : EntitySystem
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly StackSystem _stackSystem = default!;
     [Dependency] private readonly SharedAppearanceSystem _appearanceSystem = default!;
-
-    // Время для разных инструментов
-    private const float ScrewdriverTime = 2f;
-    private const float WelderTime = 5f;
+    [Dependency] private readonly IRobustRandom _random = default!;
 
     public override void Initialize()
     {
@@ -33,8 +29,35 @@ public sealed class MiningServerCircuitboardSystem : EntitySystem
         SubscribeLocalEvent<MiningServerCircuitboardComponent, InteractUsingEvent>(OnInteractUsing);
         SubscribeLocalEvent<MiningServerCircuitboardComponent, WeldFinishedEvent>(OnWeldFinished);
         SubscribeLocalEvent<MiningServerCircuitboardComponent, ScrewdriverFinishedEvent>(OnScrewdriverFinished);
-        SubscribeLocalEvent<MiningServerCircuitboardComponent, CableFinishedEvent>(OnCableFinished);
         SubscribeLocalEvent<MiningServerCircuitboardComponent, ExaminedEvent>(OnExamined);
+    }
+
+    /// <summary>
+    /// Генерирует случайные этапы ремонта платы
+    /// </summary>
+    public void GenerateRepairSteps(MiningServerCircuitboardRepairComponent repair)
+    {
+        repair.Steps.Clear();
+        repair.CurrentStep = 0;
+        repair.IsScanned = false;
+
+        // возможные шаги для ремонта платы
+        var possibleSteps = new List<RepairStep>
+        {
+            new RepairStep(RepairType.Screwdriver, "mining-circuitboard-repair-step-screwdriver"),
+            new RepairStep(RepairType.Welder, "mining-circuitboard-repair-step-welder"),
+            new RepairStep(RepairType.Cable, "mining-circuitboard-repair-step-cable")
+        };
+
+        // перемешивание и выбор этапов (2-3 этапов)
+        var stepCount = _random.Next(2, 4);
+
+        for (var i = 0; i < stepCount; i++)
+        {
+            var index = _random.Next(possibleSteps.Count);
+            repair.Steps.Add(possibleSteps[index]);
+            possibleSteps.RemoveAt(index);
+        }
     }
 
     /// <summary>
@@ -90,7 +113,7 @@ public sealed class MiningServerCircuitboardSystem : EntitySystem
 
         if (!repair.IsScanned)
         {
-            repair.GenerateRepairSteps();
+            GenerateRepairSteps(repair);
             repair.IsScanned = true;
         }
 
@@ -142,7 +165,7 @@ public sealed class MiningServerCircuitboardSystem : EntitySystem
                 return false;
             }
 
-            if (!TryComp(tool, out MetaDataComponent? meta) || meta == null)
+            if (!TryComp(tool, out MetaDataComponent? meta))
             {
                 _popup.PopupEntity(Loc.GetString("mining-circuitboard-repair-no-cable"), uid, user);
                 return false;
@@ -167,12 +190,12 @@ public sealed class MiningServerCircuitboardSystem : EntitySystem
 
         if (repair.IsCurrentStep(RepairType.Screwdriver))
         {
-            return _toolSystem.UseTool(tool, user, uid, ScrewdriverTime, "Screwing", new ScrewdriverFinishedEvent());
+            return _toolSystem.UseTool(tool, user, uid, board.ScrewdriverTime, "Screwing", new ScrewdriverFinishedEvent());
         }
 
         if (repair.IsCurrentStep(RepairType.Welder))
         {
-            return _toolSystem.UseTool(tool, user, uid, WelderTime, "Welding", new WeldFinishedEvent());
+            return _toolSystem.UseTool(tool, user, uid, board.WeldTime, "Welding", new WeldFinishedEvent());
         }
 
         return false;
@@ -189,7 +212,7 @@ public sealed class MiningServerCircuitboardSystem : EntitySystem
             if (!TryComp<StackComponent>(tool, out var stack))
                 return false;
 
-            if (!TryComp(tool, out MetaDataComponent? meta) || meta == null)
+            if (!TryComp(tool, out MetaDataComponent? meta))
                 return false;
 
             var prototypeId = meta.EntityPrototype?.ID ?? "";
@@ -216,7 +239,11 @@ public sealed class MiningServerCircuitboardSystem : EntitySystem
         if (args.Cancelled || args.Used == null)
             return;
 
-        HandleRepairStepComplete(ent.Owner, ent.Comp);
+        if (TryComp<MiningServerCircuitboardRepairComponent>(ent.Owner, out var repair) &&
+            repair.IsCurrentStep(RepairType.Welder))
+        {
+            HandleRepairStepComplete(ent.Owner, ent.Comp);
+        }
     }
 
     /// <summary>
@@ -227,18 +254,11 @@ public sealed class MiningServerCircuitboardSystem : EntitySystem
         if (args.Cancelled || args.Used == null)
             return;
 
-        HandleRepairStepComplete(ent.Owner, ent.Comp);
-    }
-
-    /// <summary>
-    /// Обработчик события завершения работы с кабелем (не используется, но нужен для подписки)
-    /// </summary>
-    private void OnCableFinished(Entity<MiningServerCircuitboardComponent> ent, ref CableFinishedEvent args)
-    {
-        if (args.Cancelled || args.Used == null)
-            return;
-
-        HandleRepairStepComplete(ent.Owner, ent.Comp);
+        if (TryComp<MiningServerCircuitboardRepairComponent>(ent.Owner, out var repair) &&
+            repair.IsCurrentStep(RepairType.Screwdriver))
+        {
+            HandleRepairStepComplete(ent.Owner, ent.Comp);
+        }
     }
 
     /// <summary>
@@ -264,6 +284,10 @@ public sealed class MiningServerCircuitboardSystem : EntitySystem
         if (isComplete)
         {
             board.Condition = MiningServerCircuitboardComponent.MaxCondition;
+
+            // Сброс состояния ремонта для возможности повторного ремонта
+            repair.CurrentStep = 0;
+            repair.IsScanned = false;
 
             UpdateAppearance(uid, board);
 

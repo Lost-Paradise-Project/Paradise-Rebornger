@@ -31,6 +31,15 @@ public sealed partial class MiningServerCircuitboardComponent : Component
     /// </summary>
     public bool IsBroken => Condition <= MinCondition;
 
+    /// <summary>
+    /// Время выполнения операции сварки в секундах
+    /// </summary>
     [DataField("weldTime")]
     public float WeldTime = 5f;
+
+    /// <summary>i
+    /// Время выполнения операции отверткой в секундах
+    /// </summary>
+    [DataField("screwdriverTime")]
+    public float ScrewdriverTime = 2f;
 }
