@@ -6,11 +6,11 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Objects/Misc/id_cards.rsi
+    sprite: _LP/Objects/Misc/id_cards.rsi # LP Edit
   - type: Clothing
     slots:
     - idcard
-    sprite: Objects/Misc/id_cards.rsi
+    sprite: _LP/Objects/Misc/id_cards.rsi # LP Edit
   - type: Item
     size: Small
     heldPrefix: default
@@ -1392,14 +1392,14 @@
   description: An ID card that gives you access beyond your wildest dreams.
   components:
   - type: Sprite
-    sprite: Objects/Misc/id_cards.rsi
+    sprite: _LP/Objects/Misc/id_cards.rsi # LP Edit
     layers:
     - state: admin
     - sprite: *icon-rsi
       offset: *icon-offset
       state: Admin
   - type: Clothing
-    sprite: Objects/Misc/id_cards.rsi
+    sprite: _LP/Objects/Misc/id_cards.rsi # LP Edit
   - type: Item
     heldPrefix: green
   - type: IdCard

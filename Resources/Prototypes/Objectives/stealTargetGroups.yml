@@ -60,7 +60,7 @@
   id: CaptainIDCard
   name: steal-target-groups-captain-id-card
   sprite:
-    sprite: Objects/Misc/id_cards.rsi
+    sprite: _LP/Objects/Misc/id_cards.rsi # LP Edit
     state: icon-captain
 
 - type: stealTargetGroup
@@ -153,7 +153,7 @@
   id: IDCard
   name: steal-target-groups-id-cards
   sprite:
-    sprite: Objects/Misc/id_cards.rsi
+    sprite: _LP/Objects/Misc/id_cards.rsi # LP Edit
     state: default
 
 - type: stealTargetGroup
