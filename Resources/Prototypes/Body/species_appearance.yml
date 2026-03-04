@@ -40,8 +40,8 @@
     - map: [ "shoes" ]
     - map: [ "ears" ]
     - map: [ "eyes" ]
-    - map: [ "outerClothing" ]
-    - map: [ "belt" ]
+    - map: [ "outerClothing" ] ## LP edit
+    - map: [ "belt" ] ## LP edit
     - map: [ "id" ]
     - map: [ "back" ]
     - map: [ "neck" ]
