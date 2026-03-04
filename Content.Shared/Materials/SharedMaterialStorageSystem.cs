@@ -1,5 +1,5 @@
 using System.Linq;
-using Content.Shared._GoobStation.Silo;
+using Content.Shared._GoobStation.Silo; // Goobstation edit
 using Content.Shared.Interaction;
 using Content.Shared.Interaction.Components;
 using Content.Shared.Stacks;
@@ -171,11 +171,11 @@ public abstract class SharedMaterialStorageSystem : EntitySystem
         if (!CanTakeVolume(uid, volume, component))
             return false;
 
-        if (!component.IgnoreMaterialWhiteList) // Goobstation Change - Shitcode.
+        if (!component.IgnoreMaterialWhiteList) // Goobstation edit
             if (component.MaterialWhiteList == null ? false : !component.MaterialWhiteList.Contains(materialId))
                 return false;
 
-        if (component.ConnectToSilo && _silo.TryGetMaterialAmount(uid, materialId, out var siloAmount)) // Goobstation
+        if (component.ConnectToSilo && _silo.TryGetMaterialAmount(uid, materialId, out var siloAmount)) // Goobstation edit
             return siloAmount + volume >= 0;
 
         var amount = GetMaterialAmount(uid, materialId, component, localOnly);
@@ -251,7 +251,7 @@ public abstract class SharedMaterialStorageSystem : EntitySystem
         var existing = storage.GetOrNew(materialId);
         // Goob end
 
-        existing += volume;
+        existing += volume;// Goob edit
 
         if (existing == 0)
             storage.Remove(materialId); // Goob edit

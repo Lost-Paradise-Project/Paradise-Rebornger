@@ -27,16 +27,18 @@ using Content.Shared.Power;
 using Content.Shared.ReagentSpeed;
 using Content.Shared.Research.Components;
 using Content.Shared.Research.Prototypes;
-using Content.Shared._GoobStation.Lathe; // Goobstation
 using JetBrains.Annotations;
 using Robust.Server.Containers;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
-using Content.Server.Chat.Systems; // Goobstation
-using Content.Shared.Chat; // Goobstation
-using Content.Shared._GoobStation.NTR.Scan; // Goobstation
+// Goobstation edit start
+using Content.Server.Chat.Systems;
+using Content.Shared.Chat;
+using Content.Shared._GoobStation.NTR.Scan;
+using Content.Shared._GoobStation.Lathe;
+// Goobstation edit end
 
 namespace Content.Server.Lathe
 {

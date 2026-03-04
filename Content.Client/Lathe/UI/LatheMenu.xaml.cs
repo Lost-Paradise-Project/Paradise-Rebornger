@@ -125,6 +125,7 @@ public sealed partial class LatheMenu : DefaultWindow
 
         return silo != null;
     }
+    // Goobstation edit end
 
     /// <summary>
     /// Populates the list of all the recipes
