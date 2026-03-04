@@ -13,6 +13,11 @@ using Content.Shared.Roles;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+// LP edit start
+using Content.Shared.Sprite;
+using System.Numerics;
+using HumanoidProfileSystem = Content.Shared.Humanoid.HumanoidProfileSystem;
+// LP edit end
 
 namespace Content.Client.Lobby.UI.ProfileEditorControls;
 
@@ -23,11 +28,23 @@ public sealed partial class ProfilePreviewSpriteView
     /// </summary>
     private void ReloadHumanoidEntity(HumanoidCharacterProfile humanoid)
     {
-        if (!EntMan.EntityExists(PreviewDummy) ||
-            !EntMan.HasComponent<VisualBodyComponent>(PreviewDummy))
+        // LP edit start
+        if (!EntMan.EntityExists(PreviewDummy))
             return;
 
-        EntMan.System<SharedVisualBodySystem>().ApplyProfileTo(PreviewDummy, humanoid);
+        if (EntMan.HasComponent<HumanoidProfileComponent>(PreviewDummy))
+        {
+            EntMan.System<HumanoidProfileSystem>().ApplyProfileTo(PreviewDummy, humanoid);
+
+            var sprite = EntMan.GetComponent<Robust.Client.GameObjects.SpriteComponent>(PreviewDummy);
+            sprite.Scale = new Vector2(humanoid.Width, humanoid.Height);
+        }
+
+        if (EntMan.HasComponent<VisualBodyComponent>(PreviewDummy))
+        {
+            EntMan.System<SharedVisualBodySystem>().ApplyProfileTo(PreviewDummy, humanoid);
+        }
+        // LP edit end
     }
 
     /// <summary>
@@ -52,7 +69,20 @@ public sealed partial class ProfilePreviewSpriteView
         {
             var dummy = _prototypeManager.Index(humanoid.Species).DollPrototype;
             PreviewDummy = EntMan.SpawnEntity(dummy, MapCoordinates.Nullspace);
-            EntMan.System<SharedVisualBodySystem>().ApplyProfileTo(PreviewDummy, humanoid);
+            // LP edit start
+            EntMan.System<HumanoidProfileSystem>().ApplyProfileTo(PreviewDummy, humanoid);
+
+            if (EntMan.HasComponent<Robust.Client.GameObjects.SpriteComponent>(PreviewDummy))
+            {
+                var sprite = EntMan.GetComponent<Robust.Client.GameObjects.SpriteComponent>(PreviewDummy);
+                sprite.Scale = new Vector2(humanoid.Width, humanoid.Height);
+            }
+
+            if (EntMan.HasComponent<VisualBodyComponent>(PreviewDummy))
+            {
+                EntMan.System<SharedVisualBodySystem>().ApplyProfileTo(PreviewDummy, humanoid);
+            }
+            // LP edit end
         }
         else
         {
