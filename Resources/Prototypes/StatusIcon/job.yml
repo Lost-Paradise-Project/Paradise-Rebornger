@@ -197,10 +197,8 @@
   parent: JobIcon
   id: JobIconBrigmedic
   icon:
-    # LP Edit Start
     sprite: *icon-rsi
-    state: FieldMedic
-    # LP Edit End
+    state: FieldMedic # LP Edit
   jobName: job-name-brigmedic
 
 - type: jobIcon

@@ -557,7 +557,7 @@
       color: *color-security-bottom
     - sprite: *icon-rsi
       offset: *icon-offset
-      state: FieldMedic
+      state: FieldMedic # LP Edit
 
 - type: entity
   parent: SecurityIDCard

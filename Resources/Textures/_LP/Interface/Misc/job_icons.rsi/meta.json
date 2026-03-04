@@ -104,9 +104,6 @@
             "name": "HeadOfSecurity"
         },
         {
-            "name": "Brigmedic"
-        },
-        {
             "name": "MedicalDoctor"
         },
         {
@@ -257,12 +254,6 @@
         },
         {
             "name": "ParadoxClone"
-        },
-        {
-            "name": "Adjutant"
-        },
-        {
-            "name": "Magistrate"
         }
     ]
 }
