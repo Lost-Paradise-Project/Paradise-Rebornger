@@ -9,6 +9,7 @@ mining-console-deactivate-all = Выключить все
 mining-console-credits = Кредиты:
 mining-console-research = Очки РнД:
 mining-console-efficiency = Эффективность:
+mining-console-efficiency-count = { $count } серв.
 mining-console-servers = Майнинг-серверы
 mining-console-refresh = Обновить
 mining-console-withdraw = Снять баланс

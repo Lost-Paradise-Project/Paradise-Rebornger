@@ -52,6 +52,7 @@ public sealed partial class MiningConsoleWindow : FancyWindow
             : Loc.GetString("mining-console-mode-research");
         CreditsLabel.Text = $"{state.Credits:F0}";
         ResearchLabel.Text = $"{state.ResearchPoints:F0}";
+        EfficiencyLabel.Text = Loc.GetString("mining-console-efficiency-count", ("count", state.EnabledServersCount)); // LP edit
 
         var currentServerUids = new HashSet<NetEntity>();
 

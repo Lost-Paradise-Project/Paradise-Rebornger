@@ -6,7 +6,7 @@
     x:Class="Content.Client._Wega.Mining.Components.MiningCircuitboardRepairControl"
     Title="{Loc 'mining-circuitboard-repair-title'}"
     HorizontalExpand="True"
-    MinSize="350 400">
+    MinSize="450 300">
 
     <BoxContainer Orientation="Vertical" Margin="8">
         <PanelContainer Margin="0 0 0 8">
@@ -14,7 +14,6 @@
                 <gfx:StyleBoxFlat BackgroundColor="#1B1B1E" />
             </PanelContainer.PanelOverride>
             <BoxContainer Orientation="Vertical" Margin="10 8">
-                <RichTextLabel Name="TitleLabel" StyleClasses="LabelHeading" Margin="0 0 0 4"/>
                 <RichTextLabel Name="StatusLabel" StyleClasses="LabelSubText"/>
             </BoxContainer>
         </PanelContainer>
@@ -27,7 +26,5 @@
                 <BoxContainer Name="StepsContainer" Orientation="Vertical" Margin="4"/>
             </ScrollContainer>
         </PanelContainer>
-
-        <Button Name="ScanButton" Text="{Loc 'mining-multi-scan'}" MinSize="0 32"/>
     </BoxContainer>
 </controls:FancyWindow>

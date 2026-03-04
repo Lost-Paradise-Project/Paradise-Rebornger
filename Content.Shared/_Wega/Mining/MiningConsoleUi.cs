@@ -23,19 +23,22 @@ public sealed class MiningConsoleBoundInterfaceState : BoundUserInterfaceState
     public MiningMode Mode;
     public bool GlobalActivation;
     public List<MiningServerData> Servers;
+    public int EnabledServersCount; // LP edit
 
     public MiningConsoleBoundInterfaceState(
         float credits,
         float researchPoints,
         MiningMode mode,
         bool globalActivation,
-        List<MiningServerData> servers)
+        List<MiningServerData> servers,
+        int enabledServersCount) // LP edit
     {
         Credits = credits;
         ResearchPoints = researchPoints;
         Mode = mode;
         GlobalActivation = globalActivation;
         Servers = servers;
+        EnabledServersCount = enabledServersCount; // LP edit
     }
 }
 

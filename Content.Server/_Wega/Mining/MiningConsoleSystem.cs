@@ -189,6 +189,7 @@ public sealed class MiningConsoleSystem : EntitySystem
             return;
 
         var servers = new List<MiningServerData>();
+        var enabledCount = 0; // LP edit
         var query = EntityQueryEnumerator<MiningServerComponent>();
         while (query.MoveNext(out var serverUid, out var server))
         {
@@ -198,7 +199,9 @@ public sealed class MiningConsoleSystem : EntitySystem
             {
                 condition = board.Condition;
             }
-            // LP edit end
+
+            if (server.IsActive) // LP edit
+                enabledCount++; // LP edit
 
             servers.Add(new MiningServerData(
                 GetNetEntity(serverUid),
@@ -215,7 +218,8 @@ public sealed class MiningConsoleSystem : EntitySystem
             account.ResearchPoints,
             account.GlobalMode,
             account.GlobalActivation,
-            servers
+            servers,
+            enabledCount // LP edit
         );
 
         _ui.SetUiState(entity.Owner, MiningConsoleUiKey.Key, state);

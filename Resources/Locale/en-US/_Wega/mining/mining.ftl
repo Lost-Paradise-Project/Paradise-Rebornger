@@ -11,6 +11,7 @@ mining-console-deactivate-all = Deactivate All
 mining-console-credits = Credits:
 mining-console-research = Research Points:
 mining-console-efficiency = Efficiency:
+mining-console-efficiency-count = { $count } srv.
 mining-console-servers = Mining Servers
 mining-console-refresh = Refresh
 mining-console-withdraw = Withdraw Balance

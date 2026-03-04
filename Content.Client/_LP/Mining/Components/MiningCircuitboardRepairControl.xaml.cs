@@ -19,8 +19,6 @@ namespace Content.Client._Wega.Mining.Components
         {
             RobustXamlLoader.Load(this);
             IoCManager.InjectDependencies(this);
-            ScanButton.OnPressed += _ => OnScan?.Invoke();
-            TitleLabel.SetMessage(FormattedMessage.FromMarkupPermissive(Loc.GetString("mining-circuitboard-repair-title")));
             StatusLabel.SetMessage(FormattedMessage.FromMarkupPermissive(Loc.GetString("mining-circuitboard-repair-status-not-scanned")));
         }
 
@@ -30,12 +28,10 @@ namespace Content.Client._Wega.Mining.Components
             {
                 StatusLabel.SetMessage(FormattedMessage.FromMarkupPermissive(Loc.GetString("mining-circuitboard-repair-status-not-scanned")));
                 StepsContainer.Children.Clear();
-                ScanButton.Disabled = false;
                 return;
             }
 
             StatusLabel.SetMessage(FormattedMessage.FromMarkupPermissive(Loc.GetString("mining-circuitboard-repair-status-scanned")));
-            ScanButton.Disabled = true;
 
             StepsContainer.Children.Clear();
 
