@@ -56,4 +56,10 @@ public sealed partial class GoobCVars
     /// </summary>
     public static readonly CVarDef<string> StationReportDiscordWebHook =
         CVarDef.Create("stationreport.discord_webhook", "", CVar.SERVERONLY | CVar.CONFIDENTIAL);
+
+    /// <summary>
+    ///     Is ore silo enabled.
+    /// </summary>
+    public static readonly CVarDef<bool> SiloEnabled =
+        CVarDef.Create("goob.silo_enabled", true, CVar.SERVER | CVar.REPLICATED);
 }

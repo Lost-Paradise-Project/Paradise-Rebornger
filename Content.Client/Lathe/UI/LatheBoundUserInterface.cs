@@ -1,5 +1,6 @@
 using Content.Shared.Lathe;
 using Content.Shared.Research.Components;
+using Content.Shared._GoobStation.Lathe; // Goobstation
 using JetBrains.Annotations;
 using Robust.Client.UserInterface;
 
@@ -25,6 +26,7 @@ namespace Content.Client.Lathe.UI
             {
                 SendMessage(new ConsoleServerSelectionMessage());
             };
+            _menu.OnResetQueueListButtonPressed += _ => SendMessage(new LatheQueueResetMessage()); // Goobstation
 
             _menu.RecipeQueueAction += (recipe, amount) =>
             {

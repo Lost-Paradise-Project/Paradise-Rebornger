@@ -220,7 +220,7 @@
 
 - type: entity
   id: MachineAnomalyGenerator
-  parent: BaseMachinePowered
+  parent: [BaseMachinePowered, BaseSiloUtilizer] # LP Edit
   name: anomaly generator
   description: The peak of pseudoscientific technology.
   placement:
@@ -270,7 +270,7 @@
         - Sheet
     materialWhiteList:
     - Plasma
-  - type: OreSiloClient
+  # - type: OreSiloClient # LP Edit
   - type: Fixtures
     fixtures:
       fix1:

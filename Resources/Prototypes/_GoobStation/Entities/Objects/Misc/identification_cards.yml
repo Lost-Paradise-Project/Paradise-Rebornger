@@ -11,9 +11,9 @@
       color: &color-centcomm-top "#134975"
     - state: stripe_bottom
       color: &color-centcomm-bottom "#0d304d"
-    - sprite: &icon-rsi _GoobStation/Interface/Misc/job_icons.rsi
+    - sprite: &icon-rsi _LP/Interface/Misc/job_icons.rsi # LP Edit
       offset: &icon-offset -0.09375, 0.0625
-      state: blueshield
+      state: Blueshield # LP Edit
   - type: Item
     heldPrefix:
   - type: PresetIdCard
@@ -37,7 +37,7 @@
       color: *color-centcomm-bottom
     - sprite: *icon-rsi
       offset: *icon-offset
-      state: nanotrasenrepresentative
+      state: Nanotrasen # LP Edit
   - type: Item
     heldPrefix:
   - type: PresetIdCard

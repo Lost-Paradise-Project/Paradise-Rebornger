@@ -11,7 +11,7 @@
 
 - type: entity
   id: LPPClothingMilitaryWebbingSecEng
-  parent: ClothingBeltMilitaryWebbing
+  parent: [ClothingBeltStorageBase, BaseSecurityContraband]
   name: field engineer chest rig
   description: A set of tactical webbing worn by field engineer.
   suffix: Security
@@ -25,3 +25,7 @@
       - id: Multitool
   - type: ExplosionResistance
     damageCoefficient: 0.5
+  - type: Sprite
+    sprite: _LP/Clothing/Belt/secengwebbing.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Belt/secengwebbing.rsi

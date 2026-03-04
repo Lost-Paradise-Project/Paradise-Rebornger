@@ -84,6 +84,15 @@
                     </Button>
                 </BoxContainer>
                 <Label Text="{Loc 'lathe-menu-queue-title'}" Margin="5 5 5 5" HorizontalAlignment="Center"/>
+                <!--Goobstation edit start-->
+                <Button
+                    Name="ResetQueueList"
+                    Margin="5 5 5 5"
+                    Text="{Loc 'lathe-menu-queue-reset-title'}"
+                    HorizontalAlignment="Right"
+                    Mode="Press">
+                </Button>
+                <!--Goobstation edit end-->
                 <BoxContainer
                     Name="FabricatingContainer"
                     Orientation="Horizontal"
