@@ -12,4 +12,3 @@ public enum MiningServerCircuitboardVisuals : byte
 {
     IsBroken
 }
-

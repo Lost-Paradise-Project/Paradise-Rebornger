@@ -281,4 +281,3 @@ public sealed class MiningServerCircuitboardSystem : EntitySystem
         _uiSystem.SetUiState(uid, MiningCircuitboardRepairUiKey.Key, state);
     }
 }
-

@@ -7,4 +7,3 @@ namespace Content.Shared._Wega.Mining.Components;
 public sealed partial class CableFinishedEvent : SimpleDoAfterEvent
 {
 }
-

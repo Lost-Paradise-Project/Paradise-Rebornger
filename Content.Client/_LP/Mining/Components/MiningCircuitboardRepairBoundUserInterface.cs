@@ -50,4 +50,3 @@ namespace Content.Client._Wega.Mining.Components
         }
     }
 }
-

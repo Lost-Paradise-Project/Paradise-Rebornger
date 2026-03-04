@@ -34,4 +34,3 @@ public sealed partial class MiningServerCircuitboardComponent : Component
     [DataField("weldTime")]
     public float WeldTime = 5f;
 }
-

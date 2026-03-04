@@ -31,4 +31,3 @@ namespace Content.Shared._Wega.Mining.Components
     {
     }
 }
-
