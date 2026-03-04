@@ -242,6 +242,21 @@
       "name": "engineering"
     },
     {
+      "name": "engineering_crack",
+      "delays": [
+        [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    {
       "name": "flopdrive"
     },
     {

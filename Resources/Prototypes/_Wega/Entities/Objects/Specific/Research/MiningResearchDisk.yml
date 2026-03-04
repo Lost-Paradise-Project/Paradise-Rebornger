@@ -1,0 +1,7 @@
+- type: entity
+  id: MiningResearchDisk
+  parent: ResearchDisk
+  components:
+  - type: ResearchDisk
+    points: 1000
+

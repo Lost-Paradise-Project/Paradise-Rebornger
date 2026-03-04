@@ -10,6 +10,12 @@ public enum MiningConsoleUiKey
 }
 
 [Serializable, NetSerializable]
+public enum MiningCircuitboardRepairUiKey // LP edit (add enum)
+{
+    Key,
+}
+
+[Serializable, NetSerializable]
 public sealed class MiningConsoleBoundInterfaceState : BoundUserInterfaceState
 {
     public float Credits;
@@ -38,10 +44,17 @@ public sealed class MiningConsoleToggleModeMessage : BoundUserInterfaceMessage
 {
 }
 
+// LP edit start
 [Serializable, NetSerializable]
-public sealed class MiningConsoleToggleActivationMessage : BoundUserInterfaceMessage
+public sealed class MiningConsoleActivateAllMessage : BoundUserInterfaceMessage
 {
 }
+
+[Serializable, NetSerializable]
+public sealed class MiningConsoleDeactivateAllMessage : BoundUserInterfaceMessage
+{
+}
+// LP edit end
 
 [Serializable, NetSerializable]
 public sealed class MiningConsoleToggleServerActivationMessage : BoundUserInterfaceMessage
@@ -83,8 +96,9 @@ public sealed record MiningServerData(
     int Stage,
     float Temperature,
     bool IsBroken,
-    bool IsActive
-);
+    bool IsActive,
+    float CircuitboardCondition
+); // LP edit (add a float CircuitboardCondition)
 
 [Serializable, NetSerializable]
 public sealed class MiningConsoleSetAllStagesMessage : BoundUserInterfaceMessage
