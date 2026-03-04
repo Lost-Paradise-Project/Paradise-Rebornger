@@ -31,7 +31,7 @@
        - BrimFlatcapGrey # Серая кепка-козырёк. Да, у неё есть свой тег
        - BrimFlatcapBrown # Коричневая кепка-козырёк. Да, у неё ТОЖЕ есть свой тег
        - WeldingMask # сварочные маски
-       - MaskClown # клоунские маски
+       - ClownMask # клоунские маски
     - type: ContainerContainer
       containers:
         storagebase: !type:Container
