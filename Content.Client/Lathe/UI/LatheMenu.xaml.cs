@@ -1,7 +1,7 @@
 using System.Linq;
 using System.Text;
 using Content.Client.Materials;
-using Content.Client._Shitcode.Silo; // Goobstation
+using Content.Client._GoobStation.Silo; // Goobstation edit
 using Content.Shared.Lathe;
 using Content.Shared.Lathe.Prototypes;
 using Content.Shared.Research.Prototypes;
@@ -25,11 +25,11 @@ public sealed partial class LatheMenu : DefaultWindow
     private readonly SpriteSystem _spriteSystem;
     private readonly LatheSystem _lathe;
     private readonly MaterialStorageSystem _materialStorage;
-    private readonly SiloSystem _silo; // Goobstation
+    private readonly SiloSystem _silo; // Goobstation edit
 
     public event Action<BaseButton.ButtonEventArgs>? OnServerListButtonPressed;
     public event Action<string, int>? RecipeQueueAction;
-    public event Action<BaseButton.ButtonEventArgs>? OnResetQueueListButtonPressed; // Goobstation
+    public event Action<BaseButton.ButtonEventArgs>? OnResetQueueListButtonPressed; // Goobstation edit
     public event Action<int>? QueueDeleteAction;
     public event Action<int>? QueueMoveUpAction;
     public event Action<int>? QueueMoveDownAction;
@@ -51,7 +51,7 @@ public sealed partial class LatheMenu : DefaultWindow
         _spriteSystem = _entityManager.System<SpriteSystem>();
         _lathe = _entityManager.System<LatheSystem>();
         _materialStorage = _entityManager.System<MaterialStorageSystem>();
-        _silo = _entityManager.System<SiloSystem>(); // Goobstation
+        _silo = _entityManager.System<SiloSystem>(); // Goobstation edit
 
         SearchBar.OnTextChanged += _ =>
         {
@@ -74,7 +74,7 @@ public sealed partial class LatheMenu : DefaultWindow
 
         ServerListButton.OnPressed += a => OnServerListButtonPressed?.Invoke(a);
         DeleteFabricating.OnPressed += _ => DeleteFabricatingAction?.Invoke();
-        ResetQueueList.OnPressed += a => OnResetQueueListButtonPressed?.Invoke(a); // Goobstation
+        ResetQueueList.OnPressed += a => OnResetQueueListButtonPressed?.Invoke(a); // Goobstation edit
     }
 
     public void SetEntity(EntityUid uid)
