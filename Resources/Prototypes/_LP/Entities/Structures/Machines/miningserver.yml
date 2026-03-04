@@ -14,4 +14,3 @@
     node: machine
   - type: MachineBoard
     defaultPrototype: LPAMiningServerCircuitboard
-
