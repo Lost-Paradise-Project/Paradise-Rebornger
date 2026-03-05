@@ -4,7 +4,7 @@
   name: field engineer ID card
   components:
   - type: Sprite
-    sprite: _LP/Objects/Misc/id_cards.rsi # LP Edit
+    sprite: _LP/Objects/Misc/id_cards.rsi
     layers:
     - state: default
     - state: stripe_top

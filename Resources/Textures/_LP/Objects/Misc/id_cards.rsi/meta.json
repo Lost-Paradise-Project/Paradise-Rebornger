@@ -300,6 +300,9 @@
         },
         {
             "name": "wizard"
+        },
+        {
+            "name": "icon-captain"
         }
     ]
 }
