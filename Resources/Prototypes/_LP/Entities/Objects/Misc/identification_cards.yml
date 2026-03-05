@@ -12,7 +12,7 @@
     - state: stripe_bottom
       color: "#830000"
     - sprite: _LP/Interface/Misc/job_icons.rsi
-      offset: -0.09375, 0.0625  #3 pixels left, 2 pixels up
+      offset: -0.15625, 0  #5 pixels left, 0 pixels up
       state: FieldEngineer
   - type: PresetIdCard
     job: LPPSecurityEnginer
