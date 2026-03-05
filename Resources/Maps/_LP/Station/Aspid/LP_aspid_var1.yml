@@ -4,8 +4,8 @@ meta:
   engineVersion: 272.0.0
   forkId: ""
   forkVersion: ""
-  time: 02/25/2026 19:38:01
-  entityCount: 18793
+  time: 03/05/2026 07:28:46
+  entityCount: 18819
 maps:
 - 1
 grids:
@@ -8417,7 +8417,8 @@ entities:
           -2,17:
             0: 3548
           -2,18:
-            0: 18295
+            0: 17783
+            5: 512
           -2,19:
             0: 65535
           -2,20:
@@ -8900,7 +8901,7 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: BecomesStation
-      id: LPAspid
+      id: Aspid
     - type: Joint
       joints:
         docking21483: !type:WeldJoint
@@ -10897,12 +10898,6 @@ entities:
     - type: Transform
       pos: -8.5,71.5
       parent: 2
-  - uid: 17279
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 8.5,67.5
-      parent: 2
 - proto: AirlockCargoGlassLocked
   entities:
   - uid: 115
@@ -12427,6 +12422,15 @@ entities:
     - type: Transform
       pos: -14.5,29.5
       parent: 2
+- proto: AirlockNanotrasenRepresentativeCommandLocked
+  entities:
+  - uid: 7295
+    components:
+    - type: Transform
+      pos: 8.5,67.5
+      parent: 2
+    - type: AccessReader
+      accessListsOriginal: []
 - proto: AirlockQuartermasterGlassLocked
   entities:
   - uid: 361
@@ -13998,6 +14002,8 @@ entities:
     - type: Transform
       pos: -34.5,1.5
       parent: 2
+    - type: SiloUtilizer
+      silo: 18819
   - uid: 619
     components:
     - type: Transform
@@ -42117,6 +42123,66 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 17.5,57.5
       parent: 2
+  - uid: 18794
+    components:
+    - type: Transform
+      pos: 12.5,67.5
+      parent: 2
+  - uid: 18795
+    components:
+    - type: Transform
+      pos: 12.5,68.5
+      parent: 2
+  - uid: 18796
+    components:
+    - type: Transform
+      pos: 12.5,69.5
+      parent: 2
+  - uid: 18797
+    components:
+    - type: Transform
+      pos: 12.5,70.5
+      parent: 2
+  - uid: 18798
+    components:
+    - type: Transform
+      pos: 11.5,68.5
+      parent: 2
+  - uid: 18799
+    components:
+    - type: Transform
+      pos: 11.5,69.5
+      parent: 2
+  - uid: 18800
+    components:
+    - type: Transform
+      pos: 11.5,70.5
+      parent: 2
+  - uid: 18801
+    components:
+    - type: Transform
+      pos: 10.5,68.5
+      parent: 2
+  - uid: 18802
+    components:
+    - type: Transform
+      pos: 10.5,69.5
+      parent: 2
+  - uid: 18803
+    components:
+    - type: Transform
+      pos: 10.5,70.5
+      parent: 2
+  - uid: 18804
+    components:
+    - type: Transform
+      pos: 10.5,67.5
+      parent: 2
+  - uid: 18805
+    components:
+    - type: Transform
+      pos: 11.5,67.5
+      parent: 2
 - proto: CarpetOrange
   entities:
   - uid: 6000
@@ -46476,12 +46542,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -22.5,57.5
       parent: 2
-  - uid: 18208
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 11.5,68.5
-      parent: 2
   - uid: 18243
     components:
     - type: Transform
@@ -47425,6 +47485,12 @@ entities:
     components:
     - type: Transform
       pos: -29.5,57.5
+      parent: 2
+  - uid: 12612
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 11.73956,68.663666
       parent: 2
 - proto: CheapLighter
   entities:
@@ -50297,6 +50363,14 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 13.5,20.5
       parent: 2
+- proto: ComputerNTRTasks
+  entities:
+  - uid: 17279
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 12.5,70.5
+      parent: 2
 - proto: ComputerPowerMonitoring
   entities:
   - uid: 7282
@@ -50376,12 +50450,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -3.5,21.5
-      parent: 2
-  - uid: 7295
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -23.5,21.5
       parent: 2
 - proto: ComputerSalvageExpedition
   entities:
@@ -56628,6 +56696,11 @@ entities:
     - type: Transform
       pos: 2.4034402,71.704254
       parent: 2
+  - uid: 18809
+    components:
+    - type: Transform
+      pos: 10.624254,66.62388
+      parent: 2
 - proto: DrinkMugRainbow
   entities:
   - uid: 8261
@@ -56699,6 +56772,13 @@ entities:
     components:
     - type: Transform
       pos: 5.67161,57.67581
+      parent: 2
+- proto: DrinkWhiskeyBottleFull
+  entities:
+  - uid: 18810
+    components:
+    - type: Transform
+      pos: 10.014879,66.93638
       parent: 2
 - proto: DrinkWineGlass
   entities:
@@ -59404,7 +59484,7 @@ entities:
       pos: 1.5,17.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -8807.37
+      secondsUntilStateChange: -9447.377
       state: Closing
   - uid: 8554
     components:
@@ -59682,7 +59762,7 @@ entities:
       pos: 28.5,20.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -10372.604
+      secondsUntilStateChange: -11012.61
       state: Closing
   - uid: 8609
     components:
@@ -87061,10 +87141,10 @@ entities:
       parent: 2
 - proto: HolopadCommandCaptain
   entities:
-  - uid: 18283
+  - uid: 18813
     components:
     - type: Transform
-      pos: -7.5,74.5
+      pos: -6.5,74.5
       parent: 2
 - proto: HolopadCommandCe
   entities:
@@ -88616,10 +88696,10 @@ entities:
           ent: null
 - proto: LockerCaptainFilledHardsuit
   entities:
-  - uid: 12612
+  - uid: 18206
     components:
     - type: Transform
-      pos: -6.5,74.5
+      pos: -7.5,74.5
       parent: 2
 - proto: LockerChemistryFilled
   entities:
@@ -89937,6 +90017,21 @@ entities:
     - type: Transform
       pos: 24.961397,4.401341
       parent: 2
+- proto: MaterialSilo
+  entities:
+  - uid: 18819
+    components:
+    - type: Transform
+      pos: -24.5,23.5
+      parent: 2
+    - type: DeviceLinkSource
+      linkedPorts:
+        12834:
+        - - MaterialSilo
+          - MaterialSiloUtilizer
+        618:
+        - - MaterialSilo
+          - MaterialSiloUtilizer
 - proto: MaterialWoodPlank
   entities:
   - uid: 12763
@@ -90490,6 +90585,8 @@ entities:
     - type: Transform
       pos: -36.5,23.5
       parent: 2
+    - type: SiloUtilizer
+      silo: 18819
 - proto: OxygenCanister
   entities:
   - uid: 12835
@@ -92098,15 +92195,15 @@ entities:
     - type: Transform
       pos: 5.5,52.5
       parent: 2
-  - uid: 18206
-    components:
-    - type: Transform
-      pos: 9.5,70.5
-      parent: 2
   - uid: 18244
     components:
     - type: Transform
       pos: 2.5,62.5
+      parent: 2
+  - uid: 18806
+    components:
+    - type: Transform
+      pos: 12.5,66.5
       parent: 2
 - proto: PowerCellHigh
   entities:
@@ -101091,9 +101188,6 @@ entities:
       parent: 2
     - type: DeviceLinkSource
       linkedPorts:
-        17279:
-        - - Pressed
-          - DoorBolt
         18211:
         - - Pressed
           - Toggle
@@ -104088,6 +104182,28 @@ entities:
     - type: Transform
       pos: -7.5,11.5
       parent: 2
+- proto: SpawnPointBlueshieldOfficer
+  entities:
+  - uid: 18815
+    components:
+    - type: Transform
+      pos: 9.5,69.5
+      parent: 2
+  - uid: 18816
+    components:
+    - type: Transform
+      pos: -0.5,78.5
+      parent: 2
+  - uid: 18817
+    components:
+    - type: Transform
+      pos: -4.5,76.5
+      parent: 2
+  - uid: 18818
+    components:
+    - type: Transform
+      pos: 4.5,76.5
+      parent: 2
 - proto: SpawnPointBorg
   entities:
   - uid: 6208
@@ -104331,6 +104447,18 @@ entities:
     components:
     - type: Transform
       pos: -17.5,-4.5
+      parent: 2
+- proto: SpawnPointNanotrasenRepresentative
+  entities:
+  - uid: 18208
+    components:
+    - type: Transform
+      pos: 11.5,70.5
+      parent: 2
+  - uid: 18814
+    components:
+    - type: Transform
+      pos: 11.5,68.5
       parent: 2
 - proto: SpawnPointObserver
   entities:
@@ -107805,6 +107933,16 @@ entities:
     - type: Transform
       pos: 15.5,32.5
       parent: 2
+  - uid: 18807
+    components:
+    - type: Transform
+      pos: 9.5,66.5
+      parent: 2
+  - uid: 18808
+    components:
+    - type: Transform
+      pos: 10.5,66.5
+      parent: 2
 - proto: TableStone
   entities:
   - uid: 15486
@@ -108237,6 +108375,18 @@ entities:
     components:
     - type: Transform
       pos: 19.39469,58.32594
+      parent: 2
+- proto: TaskBottle
+  entities:
+  - uid: 18811
+    components:
+    - type: Transform
+      pos: 9.561754,66.79575
+      parent: 2
+  - uid: 18812
+    components:
+    - type: Transform
+      pos: 9.405504,66.577
       parent: 2
 - proto: TegCenter
   entities:
@@ -121489,6 +121639,13 @@ entities:
     components:
     - type: Transform
       pos: 4.5,-32.5
+      parent: 2
+- proto: WaterCoolerGold
+  entities:
+  - uid: 18283
+    components:
+    - type: Transform
+      pos: 11.5,66.5
       parent: 2
 - proto: WaterTankFull
   entities:
