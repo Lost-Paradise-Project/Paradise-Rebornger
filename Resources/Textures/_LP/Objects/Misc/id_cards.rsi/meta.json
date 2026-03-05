@@ -83,13 +83,7 @@
             "name": "idcook"
         },
         {
-            "name": "idcurator"
-        },
-        {
             "name": "iddetective"
-        },
-        {
-            "name": "idgeneticist"
         },
         {
             "name": "idheadofpersonnel"
@@ -102,9 +96,6 @@
         },
         {
             "name": "idjanitor"
-        },
-        {
-            "name": "idlawyer"
         },
         {
             "name": "idiaa"
@@ -143,25 +134,13 @@
             "name": "idsecurityofficer"
         },
         {
-            "name": "idshaftminer"
-        },
-        {
             "name": "idstationengineer"
-        },
-        {
-            "name": "idunknown"
-        },
-        {
-            "name": "idvirologist"
         },
         {
             "name": "idwarden"
         },
         {
             "name": "idmusician"
-        },
-        {
-            "name": "idzookeeper"
         },
         {
             "name": "idintern-sci"
@@ -186,27 +165,6 @@
         },
         {
             "name": "idadmin"
-        },
-        {
-            "name": "prisoner_001"
-        },
-        {
-            "name": "prisoner_002"
-        },
-        {
-            "name": "prisoner_003"
-        },
-        {
-            "name": "prisoner_004"
-        },
-        {
-            "name": "prisoner_005"
-        },
-        {
-            "name": "prisoner_006"
-        },
-        {
-            "name": "prisoner_007"
         },
         {
             "name": "silver"

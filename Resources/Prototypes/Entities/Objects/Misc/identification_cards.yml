@@ -1049,7 +1049,7 @@
   components:
   - type: Sprite
     layers:
-    - state: black
+    - state: syndie # LP Edit
     - state: stripe_top
       color: &color-syndicate-top "#e80c0c"
     - state: stripe_bottom
@@ -1073,7 +1073,7 @@
   components:
   - type: Sprite
     layers:
-    - state: black
+    - state: syndie # LP Edit
     - state: stripe_top
       color: *color-syndicate-top
     - state: stripe_bottom
@@ -1094,7 +1094,7 @@
   components:
   - type: Sprite
     layers:
-    - state: black
+    - state: syndie # LP Edit
     - state: stripe_top
       color: *color-syndicate-top
     - state: stripe_bottom
@@ -1114,7 +1114,7 @@
   components:
   - type: Sprite
     layers:
-    - state: black
+    - state: syndie # LP Edit
     - state: stripe_top
       color: *color-syndicate-top
     - state: stripe_bottom
