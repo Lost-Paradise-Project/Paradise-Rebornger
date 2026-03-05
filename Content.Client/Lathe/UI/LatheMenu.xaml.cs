@@ -1,6 +1,7 @@
 using System.Linq;
 using System.Text;
 using Content.Client.Materials;
+using Content.Client._GoobStation.Silo; // Goobstation edit
 using Content.Shared.Lathe;
 using Content.Shared.Lathe.Prototypes;
 using Content.Shared.Research.Prototypes;
@@ -24,9 +25,11 @@ public sealed partial class LatheMenu : DefaultWindow
     private readonly SpriteSystem _spriteSystem;
     private readonly LatheSystem _lathe;
     private readonly MaterialStorageSystem _materialStorage;
+    private readonly SiloSystem _silo; // Goobstation edit
 
     public event Action<BaseButton.ButtonEventArgs>? OnServerListButtonPressed;
     public event Action<string, int>? RecipeQueueAction;
+    public event Action<BaseButton.ButtonEventArgs>? OnResetQueueListButtonPressed; // Goobstation edit
     public event Action<int>? QueueDeleteAction;
     public event Action<int>? QueueMoveUpAction;
     public event Action<int>? QueueMoveDownAction;
@@ -48,6 +51,7 @@ public sealed partial class LatheMenu : DefaultWindow
         _spriteSystem = _entityManager.System<SpriteSystem>();
         _lathe = _entityManager.System<LatheSystem>();
         _materialStorage = _entityManager.System<MaterialStorageSystem>();
+        _silo = _entityManager.System<SiloSystem>(); // Goobstation edit
 
         SearchBar.OnTextChanged += _ =>
         {
@@ -70,6 +74,7 @@ public sealed partial class LatheMenu : DefaultWindow
 
         ServerListButton.OnPressed += a => OnServerListButtonPressed?.Invoke(a);
         DeleteFabricating.OnPressed += _ => DeleteFabricatingAction?.Invoke();
+        ResetQueueList.OnPressed += a => OnResetQueueListButtonPressed?.Invoke(a); // Goobstation edit
     }
 
     public void SetEntity(EntityUid uid)
@@ -88,6 +93,39 @@ public sealed partial class LatheMenu : DefaultWindow
 
         MaterialsList.SetOwner(Entity);
     }
+
+    /// <summary>
+    /// Goobstation: Check if the lathe is connected to a silo.
+    /// </summary>
+    private bool IsSiloConnected(EntityUid uid, out string? warning, bool checkGrid = false)
+    {
+        warning = null;
+        var silo = _silo.GetSilo(uid);
+        if (silo != null
+            && checkGrid)
+        {
+            if (_entityManager.TryGetComponent<TransformComponent>(uid, out var uidTransform)
+                && _entityManager.TryGetComponent<TransformComponent>(silo.Value, out var siloTransform))
+            {
+                if (uidTransform.MapID != siloTransform.MapID)
+                {
+                    warning = Loc.GetString("lathe-menu-mining-points-silo-not-on-same-grid");
+                    return false;
+                }
+
+                return true;
+            }
+
+            warning = Loc.GetString("lathe-menu-mining-points-silo-not-on-same-grid");
+            return false;
+        }
+
+        if (silo == null)
+            warning = Loc.GetString("lathe-menu-mining-points-no-connection-warning");
+
+        return silo != null;
+    }
+    // Goobstation edit end
 
     /// <summary>
     /// Populates the list of all the recipes

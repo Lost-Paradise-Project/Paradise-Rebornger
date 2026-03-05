@@ -1365,7 +1365,7 @@
   description: I wonder whose pulse is on the screen? I hope it doesn't stop...
   components:
   - type: Pda
-    id: LPPFieldMedicIDCard # LP Edit
+    id: BrigmedicIDCard
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:

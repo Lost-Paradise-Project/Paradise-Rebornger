@@ -55,7 +55,7 @@
   - type: Sprite
     layers:
     - state: default
-    - sprite: &icon-rsi Interface/Misc/job_icons.rsi
+    - sprite: &icon-rsi _LP/Interface/Misc/job_icons.rsi # LP Edit
       offset: &icon-offset -0.09375, 0.0625 #3 pixels left, 2 pixels up
       state: Passenger
   - type: PresetIdCard
@@ -557,7 +557,7 @@
       color: *color-security-bottom
     - sprite: *icon-rsi
       offset: *icon-offset
-      state: Brigmedic
+      state: FieldMedic # LP Edit
 
 - type: entity
   parent: SecurityIDCard

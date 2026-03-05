@@ -935,3 +935,7 @@ HeadMoth: OrganMothHead
 RightArmVox: OrganVoxArmRight
 HeadVox: OrganVoxHead
 LeftFootMoth: OrganMothFootLeft
+
+# LP Edit 2026-02-03
+MachineMaterialSilo: null
+CrateMaterialSilo: null

@@ -62,7 +62,7 @@
   layer: Mod
   isShaded: true
   icon:
-    sprite: /Textures/Interface/Misc/job_icons.rsi
+    sprite: /Textures/_LP/Interface/Misc/job_icons.rsi # LP Edit
     state: MindShield
 
 - type: securityIcon
