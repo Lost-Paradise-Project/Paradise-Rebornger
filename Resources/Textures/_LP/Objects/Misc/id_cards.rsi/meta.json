@@ -288,6 +288,18 @@
         },
         {
             "name": "stripe_clown"
+        },
+        {
+            "name": "black"
+        },
+        {
+            "name": "idpilot"
+        },
+        {
+            "name": "ninja"
+        },
+        {
+            "name": "wizard"
         }
     ]
 }

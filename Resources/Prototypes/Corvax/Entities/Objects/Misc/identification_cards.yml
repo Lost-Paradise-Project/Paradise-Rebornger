@@ -5,8 +5,16 @@
   components:
     - type: Sprite
       layers:
-        - state: silver
-        - state: idiaa
+      # LP Edit Start
+      - state: gold
+      - state: stripe_top
+        color: "#1b67a5"
+      - state: stripe_bottom
+        color: "#0e4069"
+      - sprite: &icon-rsi _LP/Interface/Misc/job_icons.rsi
+        offset: &icon-offset -0.15625, 0
+        state: IAA
+      # LP Edit End
     - type: PresetIdCard
       job: IAA
 
@@ -17,7 +25,16 @@
   components:
     - type: Sprite
       layers:
-        - state: default
-        - state: idpilot
+      # LP Edit Start
+      - state: default
+      - state: stripe_top
+        color: "#cb0000"
+      - state: stripe_bottom
+        color: "#830000"
+      - sprite: *icon-rsi
+        offset: *icon-offset
+        state: SecPilot
+      # LP Edit End
     - type: PresetIdCard
       job: Pilot
+
