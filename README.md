@@ -15,11 +15,17 @@
 Если Вы желаете помочь в улучшении репозитория, решением проблем или создания нового контента, мы рады принять вклад от любого человека. Заходите в Discord, если хотите помочь. Не бойтесь просить о помощи!
 Только убедитесь, что ваши изменения и PRы соответствуют [руководству по контрибьюту](https://docs.spacestation14.com/en/general-development/codebase-info/pull-request-guidelines.html).
 
+## Программные требования
+
+1. Python: https://www.python.org/downloads/
+2. Git: https://git-scm.com/install/
+3. .NET 10: https://dotnet.microsoft.com/en-us/download/dotnet/10.0
+
 ## Сборка
 
 1. Склонируйте этот репозиторий локально
-2. Запустите `RUN_THIS.py` для инициализации подмодулей и скачивания движка.
-3. Скомпилируйте проект.
+2. Запустите buildAllRelease для инициализации подмодулей и скачивания движка, а также билда сборки.
+3. Запустите runQuickAll.bat.
 
 [Более подробная инструкция по запуску проекта.](https://docs.spacestation14.com/en/general-development/setup.html)
 
