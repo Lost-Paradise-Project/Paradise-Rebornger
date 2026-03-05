@@ -19,9 +19,19 @@
     - type: Storage
       grid:
       - 0,0,6,1
+      maxItemSize: Normal
       whitelist:
        tags:
-       - CoatRack
+       - CoatRack # Всё, что не имело нижеперечисленных тегов, но теоретически можно повесить на вешалку
+       - ClothMade # Всё, что сделано из ткани
+       - Bedsheet # Одеяла
+       - breast # лифчики
+       - underwear # трусы
+       - socks # носки
+       - BrimFlatcapGrey # Серая кепка-козырёк. Да, у неё есть свой тег
+       - BrimFlatcapBrown # Коричневая кепка-козырёк. Да, у неё ТОЖЕ есть свой тег
+       - WeldingMask # сварочные маски
+       - ClownMask # клоунские маски
     - type: ContainerContainer
       containers:
         storagebase: !type:Container
