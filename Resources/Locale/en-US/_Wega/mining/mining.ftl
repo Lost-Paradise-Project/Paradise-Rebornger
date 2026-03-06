@@ -52,10 +52,5 @@ mining-circuitboard-repair-no-cable = You need an LV cable in your inventory for
 mining-research-disk-name = Research Disk ({ $points } pts)
 mining-research-disk-desc = Contains { $points } research technology points for the research server.
 
-# entity
-ent-LPPMiningServerCircuitboardBroken = mining server (motherboard)
-    .desc = It cooled down a long time ago, but no one ever fixed it. Be a hero!
-    .suffix = BROKEN
-
 
 # LP edit end
