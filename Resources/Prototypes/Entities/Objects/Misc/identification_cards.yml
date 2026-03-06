@@ -6,11 +6,11 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Objects/Misc/id_cards.rsi
+    sprite: _LP/Objects/Misc/id_cards.rsi # LP Edit
   - type: Clothing
     slots:
     - idcard
-    sprite: Objects/Misc/id_cards.rsi
+    sprite: _LP/Objects/Misc/id_cards.rsi # LP Edit
   - type: Item
     size: Small
     heldPrefix: default
@@ -56,7 +56,7 @@
     layers:
     - state: default
     - sprite: &icon-rsi _LP/Interface/Misc/job_icons.rsi # LP Edit
-      offset: &icon-offset -0.09375, 0.0625 #3 pixels left, 2 pixels up
+      offset: &icon-offset -0.15625, 0 #LP Edit -> 5 pixels left, 0 pixels up IN OFFSET 1 PIXEL = 0.03125
       state: Passenger
   - type: PresetIdCard
     job: Passenger
@@ -1049,7 +1049,7 @@
   components:
   - type: Sprite
     layers:
-    - state: black
+    - state: syndie # LP Edit
     - state: stripe_top
       color: &color-syndicate-top "#e80c0c"
     - state: stripe_bottom
@@ -1073,7 +1073,7 @@
   components:
   - type: Sprite
     layers:
-    - state: black
+    - state: syndie # LP Edit
     - state: stripe_top
       color: *color-syndicate-top
     - state: stripe_bottom
@@ -1094,7 +1094,7 @@
   components:
   - type: Sprite
     layers:
-    - state: black
+    - state: syndie # LP Edit
     - state: stripe_top
       color: *color-syndicate-top
     - state: stripe_bottom
@@ -1114,7 +1114,7 @@
   components:
   - type: Sprite
     layers:
-    - state: black
+    - state: syndie # LP Edit
     - state: stripe_top
       color: *color-syndicate-top
     - state: stripe_bottom
@@ -1392,14 +1392,14 @@
   description: An ID card that gives you access beyond your wildest dreams.
   components:
   - type: Sprite
-    sprite: Objects/Misc/id_cards.rsi
+    sprite: _LP/Objects/Misc/id_cards.rsi # LP Edit
     layers:
     - state: admin
     - sprite: *icon-rsi
       offset: *icon-offset
       state: Admin
   - type: Clothing
-    sprite: Objects/Misc/id_cards.rsi
+    sprite: _LP/Objects/Misc/id_cards.rsi # LP Edit
   - type: Item
     heldPrefix: green
   - type: IdCard
