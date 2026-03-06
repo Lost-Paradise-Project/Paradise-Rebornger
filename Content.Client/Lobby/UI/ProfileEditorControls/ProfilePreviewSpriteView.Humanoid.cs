@@ -23,6 +23,8 @@ namespace Content.Client.Lobby.UI.ProfileEditorControls;
 
 public sealed partial class ProfilePreviewSpriteView
 {
+    // LP edit start
+
     /// <summary>
     /// Applies the humanoid profile to the PreviewDummy entity.
     /// </summary>
@@ -52,6 +54,7 @@ public sealed partial class ProfilePreviewSpriteView
 
         ApplyHumanoidProfile(humanoid);
     }
+    // LP edit end
 
     /// <summary>
     /// Loads the profile onto a dummy entity.
@@ -75,7 +78,7 @@ public sealed partial class ProfilePreviewSpriteView
         {
             var dummy = _prototypeManager.Index(humanoid.Species).DollPrototype;
             PreviewDummy = EntMan.SpawnEntity(dummy, MapCoordinates.Nullspace);
-            ApplyHumanoidProfile(humanoid);
+            ApplyHumanoidProfile(humanoid); // LP edit
         }
         else
         {
