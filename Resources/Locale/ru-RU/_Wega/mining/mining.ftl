@@ -25,7 +25,6 @@ mining-server-circuitboard-examined = Состояние платы: [color=gree
 mining-server-circuitboard-examined-broken = [color=red]Плата сломана и требует починки. Сканируйте плату с помощью Мультитула[/color]
 mining-console-all-stage-title = Стадия для всех серверов
 
-# LP edit start
 # Mining Circuitboard Repair UI
 mining-circuitboard-repair-title = Починка платы
 mining-circuitboard-repair-status-not-scanned = Не отсканировано
@@ -50,5 +49,3 @@ mining-circuitboard-repair-no-cable = Вам нужен НВ кабель в и�
 # Mining Research Disk
 mining-research-disk-name = Исследовательский диск ({ $points } очк.)
 mining-research-disk-desc = Содержит { $points } очков технологий для исследовательского сервера.
-
-# LP edit end
