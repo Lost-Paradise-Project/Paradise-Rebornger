@@ -9,7 +9,7 @@
     state: engineering
   - type: Appearance
   - type: MachineBoard
-    prototype: LPMiningServer
+    prototype: MiningServer
     stackRequirements:
       Manipulator: 4
       Steel: 5
