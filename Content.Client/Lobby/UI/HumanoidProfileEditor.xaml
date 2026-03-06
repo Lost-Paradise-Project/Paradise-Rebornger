@@ -160,10 +160,22 @@
         <!-- Right side -->
         <BoxContainer Orientation="Vertical" VerticalExpand="True" VerticalAlignment="Center">
             <profile:ProfilePreviewSpriteView Name="SpriteView" Scale="8 8" Margin="4" SizeFlagsStretchRatio="1" />
+            <!--LP edit start-->
+            <!-- Sprite List View (4 directions) -->
+            <BoxContainer Name="SpriteListContainer" Orientation="Vertical" Visible="False" HorizontalExpand="True" Margin="4">
+                <profile:ProfilePreviewSpriteView Name="SpriteViewNorth" Scale="4 4" Margin="2" OverrideDirection="North" />
+                <profile:ProfilePreviewSpriteView Name="SpriteViewSouth" Scale="4 4" Margin="2" OverrideDirection="South" />
+                <profile:ProfilePreviewSpriteView Name="SpriteViewEast" Scale="4 4" Margin="2" OverrideDirection="East" />
+                <profile:ProfilePreviewSpriteView Name="SpriteViewWest" Scale="4 4" Margin="2" OverrideDirection="West" />
+            </BoxContainer>
+            <!-- Mode switch button and rotation buttons -->
             <BoxContainer Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 5">
+                <TextureButton Name="SpriteModeSwitch" TexturePath="/Textures/_LP/Interface/UI_icons/user-switch-view.png" ToolTip="{Loc 'lp-profile-editor-sprite-mode-switch'}" />
+                <cc:VSeparator Name="VSeparator1" Margin="2 0 3 0" />
                 <Button Name="SpriteRotateLeft" Text="◀" StyleClasses="OpenRight" />
-                <cc:VSeparator Margin="2 0 3 0" />
+                <cc:VSeparator Name="VSeparator2" Margin="2 0 3 0" />
                 <Button Name="SpriteRotateRight" Text="▶" StyleClasses="OpenLeft" />
             </BoxContainer>
+            <!--LP edit end-->
         </BoxContainer>
 </BoxContainer>
