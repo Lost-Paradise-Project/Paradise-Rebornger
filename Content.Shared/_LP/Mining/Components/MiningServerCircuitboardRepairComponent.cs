@@ -2,7 +2,7 @@ using Robust.Shared.GameObjects;
 using Robust.Shared.Serialization;
 using System.Collections.Generic;
 
-namespace Content.Shared._Wega.Mining.Components
+namespace Content.Shared._LP.Mining.Components
 {
     /// <summary>
     /// Компонент для отслеживания состояния ремонта печатной платы сервера для майнинга

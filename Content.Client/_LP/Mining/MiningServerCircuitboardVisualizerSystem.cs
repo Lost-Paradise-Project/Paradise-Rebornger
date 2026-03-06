@@ -1,8 +1,8 @@
-using Content.Shared._Wega.Mining.Components;
+using Content.Shared._LP.Mining.Components;
 using Robust.Client.GameObjects;
 using Robust.Shared.Utility;
 
-namespace Content.Client._Wega.Mining;
+namespace Content.Client._LP.Mining;
 
 public sealed class MiningServerCircuitboardVisualizerSystem : VisualizerSystem<MiningServerCircuitboardVisualsComponent>
 {

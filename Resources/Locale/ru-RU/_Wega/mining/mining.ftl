@@ -52,7 +52,7 @@ mining-research-disk-name = Исследовательский диск ({ $poin
 mining-research-disk-desc = Содержит { $points } очков технологий для исследовательского сервера.
 
 # entity
-ent-LPAMiningServerCircuitboard = майнинг сервер (машинная плата)
+ent-LPPMiningServerCircuitboardBroken = майнинг сервер (машинная плата)
     .desc = Давно остыла, но никто ее так и не исправил. Стань героем !
     .suffix = Сломанный
 

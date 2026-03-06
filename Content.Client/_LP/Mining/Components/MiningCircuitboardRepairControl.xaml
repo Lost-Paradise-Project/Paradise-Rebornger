@@ -3,7 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
     xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
-    x:Class="Content.Client._Wega.Mining.Components.MiningCircuitboardRepairControl"
+    x:Class="Content.Client._LP.Mining.Components.MiningCircuitboardRepairControl"
     Title="{Loc 'mining-circuitboard-repair-title'}"
     HorizontalExpand="True"
     MinSize="450 300">

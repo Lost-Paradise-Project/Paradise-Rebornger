@@ -1,5 +1,8 @@
-using Content.Shared._Wega.Mining.Components;
+using Content.Shared._LP.Mining.Components;
+using Content.Shared._LP.Mining;
+using Content.Server._Wega.Mining;
 using Content.Shared._Wega.Mining;
+using Content.Shared._Wega.Mining.Components;
 using Content.Shared.Interaction;
 using Content.Shared.Tools.Components;
 using Content.Shared.Tools.Systems;
@@ -11,7 +14,7 @@ using Robust.Server.GameObjects;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Random;
 
-namespace Content.Server._Wega.Mining;
+namespace Content.Server._LP.Mining;
 
 public sealed class MiningServerCircuitboardSystem : EntitySystem
 {

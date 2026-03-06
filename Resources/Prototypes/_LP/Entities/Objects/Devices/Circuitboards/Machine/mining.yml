@@ -1,22 +1,22 @@
 - type: entity
-  id: LPAMiningServerCircuitboard
+  id: LPPMiningServerCircuitboardBroken
   parent: BaseMachineCircuitboard
-  name: mining server board
-  description: A machine printed circuit board for an mining server.
+  name: broken mining server board
+  description: A machine printed circuit board for an mining server. It looks damaged.
   components:
   - type: Sprite
     sprite: Objects/Misc/module.rsi
     state: engineering
   - type: Appearance
   - type: MachineBoard
-    prototype: LPAMiningServer
+    prototype: LPMiningServer
     stackRequirements:
       Manipulator: 4
       Steel: 5
       Glass: 2
       Cable: 5
   - type: MiningServerCircuitboard
-    condition: 0        # Имею ввиду, вдруг кому нибудь нужна сломанная плата, не ?
+    condition: 0        # Сломанная плата
   - type: MiningServerCircuitboardVisuals
   - type: UserInterface
     interfaces:

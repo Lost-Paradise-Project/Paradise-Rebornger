@@ -9,6 +9,7 @@ using Content.Shared.Stacks;
 using Robust.Server.GameObjects;
 using Robust.Shared.Prototypes;
 // LP edit start
+using Content.Shared._LP.Mining.Components;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Timing;
 // LP edit end
@@ -25,13 +26,14 @@ public sealed class MiningConsoleSystem : EntitySystem
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly MetaDataSystem _metaData = default!;
 
-    private static readonly EntProtoId MiningDisk = "MiningResearchDisk";
+    private static readonly EntProtoId MiningDisk = "LPPMiningResearchDisk";
 
     // Auto-update interval in seconds
     private const float AutoUpdateInterval = 2.0f;
     private float _updateTimer;
     // LP edit end
     private static readonly ProtoId<StackPrototype> Credit = "Credit";
+    /* private static readonly EntProtoId Disk = "ResearchDisk"; */ // LP edit (mining system)
 
     public override void Initialize()
     {

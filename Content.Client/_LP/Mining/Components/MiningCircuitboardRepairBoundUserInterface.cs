@@ -1,11 +1,12 @@
 using System;
 using Content.Shared._Wega.Mining.Components;
+using Content.Shared._LP.Mining.Components;
 using Content.Shared._Wega.Mining;
 using Robust.Shared.Serialization;
 using Robust.Shared.IoC;
 using Robust.Client.UserInterface;
 
-namespace Content.Client._Wega.Mining.Components
+namespace Content.Client._LP.Mining.Components
 {
     public sealed class MiningCircuitboardRepairBoundUserInterface : BoundUserInterface
     {

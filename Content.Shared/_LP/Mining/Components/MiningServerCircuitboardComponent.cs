@@ -2,7 +2,7 @@ using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Content.Shared._Wega.Mining;
 
-namespace Content.Shared._Wega.Mining.Components;
+namespace Content.Shared._LP.Mining.Components;
 
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 public sealed partial class MiningServerCircuitboardComponent : Component

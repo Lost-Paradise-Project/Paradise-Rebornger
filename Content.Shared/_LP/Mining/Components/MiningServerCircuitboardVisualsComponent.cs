@@ -1,6 +1,6 @@
 using Robust.Shared.Serialization;
 
-namespace Content.Shared._Wega.Mining.Components;
+namespace Content.Shared._LP.Mining.Components;
 
 [RegisterComponent]
 public sealed partial class MiningServerCircuitboardVisualsComponent : Component

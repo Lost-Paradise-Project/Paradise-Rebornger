@@ -7,6 +7,7 @@ using Content.Server.Atmos.EntitySystems;
 using Content.Shared.Audio;
 using Content.Shared.Examine;
 // LP edit start
+using Content.Shared._LP.Mining.Components;
 using Robust.Shared.GameObjects;
 using Content.Shared.Construction.Components;
 using Content.Server.Construction;
