@@ -1,11 +1,11 @@
 - type: entity
   id: LPPServiceProtolatheCircuitboard
   parent: BaseMachineCircuitboard
-  name: protolathe machine board
-  description: A machine printed circuit board for a protolathe.
+  name: service protolathe machine board
+  description: A machine printed circuit board for a service protolathe.
   components:
   - type: Sprite
-    state: science
+    state: service
   - type: MachineBoard
     prototype: LPPServiceProtolathe
     stackRequirements:
@@ -18,8 +18,8 @@
 - type: entity
   id: LPPScienceProtolatheCircuitboard
   parent: BaseMachineCircuitboard
-  name: protolathe machine board
-  description: A machine printed circuit board for a protolathe.
+  name: science protolathe machine board
+  description: A machine printed circuit board for a science protolathe.
   components:
   - type: Sprite
     state: science
@@ -35,11 +35,11 @@
 - type: entity
   id: LPPEngineeringProtolatheCircuitboard
   parent: BaseMachineCircuitboard
-  name: protolathe machine board
-  description: A machine printed circuit board for a protolathe.
+  name: engineering protolathe machine board
+  description: A machine printed circuit board for a engineering protolathe.
   components:
   - type: Sprite
-    state: science
+    state: engineering
   - type: MachineBoard
     prototype: LPPEngineeringProtolathe
     stackRequirements:
@@ -52,11 +52,11 @@
 - type: entity
   id: LPPCargoProtolatheCircuitboard
   parent: BaseMachineCircuitboard
-  name: protolathe machine board
-  description: A machine printed circuit board for a protolathe.
+  name: cargo protolathe machine board
+  description: A machine printed circuit board for a cargo protolathe.
   components:
   - type: Sprite
-    state: science
+    state: supply
   - type: MachineBoard
     prototype: LPPCargoProtolathe
     stackRequirements:
@@ -66,36 +66,36 @@
         amount: 2
         defaultPrototype: Beaker
 
-- type: entity
-  id: LPPSpaceForgeCircuitboard
-  parent: BaseMachineCircuitboard
-  name: protolathe machine board
-  description: A machine printed circuit board for a protolathe.
-  components:
-  - type: Sprite
-    state: science
-  - type: MachineBoard
-    prototype: LPPSpaceForge
-    stackRequirements:
-      Manipulator: 4
-    tagRequirements:
-      GlassBeaker:
-        amount: 2
-        defaultPrototype: Beaker
+# - type: entity
+#   id: LPPSpaceForgeCircuitboard
+#   parent: BaseMachineCircuitboard
+#   name: protolathe machine board
+#   description: A machine printed circuit board for a protolathe.
+#   components:
+#   - type: Sprite
+#     state: service
+#   - type: MachineBoard
+#     prototype: LPPSpaceForge
+#     stackRequirements:
+#       Manipulator: 4
+#     tagRequirements:
+#       GlassBeaker:
+#         amount: 2
+#         defaultPrototype: Beaker
 
-- type: entity
-  id: LPPSpaceForgeCMDCircuitboard
-  parent: BaseMachineCircuitboard
-  name: protolathe machine board
-  description: A machine printed circuit board for a protolathe.
-  components:
-  - type: Sprite
-    state: science
-  - type: MachineBoard
-    prototype: LPPSpaceForgeCMD
-    stackRequirements:
-      Manipulator: 4
-    tagRequirements:
-      GlassBeaker:
-        amount: 2
-        defaultPrototype: Beaker
+# - type: entity
+#   id: LPPSpaceForgeCMDCircuitboard
+#   parent: BaseMachineCircuitboard
+#   name: protolathe machine board
+#   description: A machine printed circuit board for a protolathe.
+#   components:
+#   - type: Sprite
+#     state: command
+#   - type: MachineBoard
+#     prototype: LPPSpaceForgeCMD
+#     stackRequirements:
+#       Manipulator: 4
+#     tagRequirements:
+#       GlassBeaker:
+#         amount: 2
+#         defaultPrototype: Beaker

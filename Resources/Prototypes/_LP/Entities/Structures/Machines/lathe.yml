@@ -25,14 +25,17 @@
     staticPacks:
     - ChemistryStatic
     - SurgeryStatic
+    - ServiceBoardsStatic
     dynamicPacks:
+    - CameraBoards
+    - ServiceBoards
     - PowerCells
     - AtmosTools
     - Janitor
     - Instruments
     - Equipment
   - type: MaterialStorage
-    whitelist:
+    whitelist: &StandardMaterialWhitelist
       tags:
         - Sheet
         - RawMaterial
@@ -74,11 +77,7 @@
     - Chemistry
     - Equipment
   - type: MaterialStorage
-    whitelist:
-      tags:
-        - Sheet
-        - RawMaterial
-        - Ingot
+    whitelist: *StandardMaterialWhitelist
 
 - type: entity
   id: LPPEngineeringProtolathe
@@ -104,18 +103,19 @@
   - type: Lathe
     idleState: icon
     runningState: building
+    staticPacks:
+    - EngineeringBoardsStatic
     dynamicPacks:
+    - ReactorCircuitboards
+    - ShuttleBoards
+    - EngineeringBoards
     - AdvancedTools
     - PowerCells
     - AtmosTools
     - EngineeringWeapons
     - Equipment
   - type: MaterialStorage
-    whitelist:
-      tags:
-        - Sheet
-        - RawMaterial
-        - Ingot
+    whitelist: *StandardMaterialWhitelist
 
 - type: entity
   id: LPPCargoProtolathe
@@ -143,10 +143,41 @@
     runningState: building
     staticPacks:
     - ChemistryStatic
+    - CargoBoardsStatic
     dynamicPacks:
+    - CargoBoards
     - PowerCells
     - Mining
     - Equipment
+  - type: MaterialStorage
+    whitelist: *StandardMaterialWhitelist
+
+- type: entity
+  id: LPPSpaceForge
+  parent: [BaseLatheLube, BaseSiloUtilizer]
+  name: service protolathe
+  description: Prints equipment and circuitboards for use by engineering department.
+  components:
+  - type: Sprite
+    sprite: _LP/Structures/Machines/SpaceForge.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: LPPSpaceForgeCircuitboard
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    staticPacks:
+
+    dynamicPacks:
+
   - type: MaterialStorage
     whitelist:
       tags:
@@ -154,72 +185,31 @@
         - RawMaterial
         - Ingot
 
-# - type: entity
-#   id: LPPSpaceForge
-#   parent: [BaseLatheLube, BaseSiloUtilizer]
-#   name: service protolathe
-#   description: Prints equipment and circuitboards for use by engineering department.
-#   components:
-#   - type: Sprite
-#     sprite: _LP/Structures/Machines/SpaceForge.rsi
-#     snapCardinals: true
-#     layers:
-#     - state: icon
-#       map: ["enum.LatheVisualLayers.IsRunning"]
-#     - state: unlit
-#       shader: unshaded
-#       map: ["enum.PowerDeviceVisualLayers.Powered"]
-#     - state: panel
-#       map: ["enum.WiresVisualLayers.MaintenancePanel"]
-#   - type: Machine
-#     board: LPPSpaceForgeCircuitboard
-#   - type: Lathe
-#     idleState: icon
-#     runningState: building
-#     staticPacks:
+- type: entity
+  id: LPPSpaceForgeCMD
+  parent: [BaseLatheLube, BaseSiloUtilizer]
+  name: service protolathe
+  description: Prints equipment and circuitboards for use by engineering department.
+  components:
+  - type: Sprite
+    sprite: _LP/Structures/Machines/SpaceForge.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: LPPSpaceForgeCMDCircuitboard
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    staticPacks:
 
-#     dynamicPacks:
+    dynamicPacks:
 
-#   - type: MaterialStorage
-#     whitelist:
-#       tags:
-#         - Sheet
-#         - RawMaterial
-#         - Ingot
-
-# - type: entity
-#   id: LPPSpaceForgeCMD
-#   parent: [BaseLatheLube, BaseSiloUtilizer]
-#   name: service protolathe
-#   description: Prints equipment and circuitboards for use by engineering department.
-#   components:
-#   - type: Sprite
-#     sprite: _LP/Structures/Machines/SpaceForge.rsi
-#     snapCardinals: true
-#     layers:
-#     - state: icon
-#       map: ["enum.LatheVisualLayers.IsRunning"]
-#     - state: unlit
-#       shader: unshaded
-#       map: ["enum.PowerDeviceVisualLayers.Powered"]
-#     - state: panel
-#       map: ["enum.WiresVisualLayers.MaintenancePanel"]
-#   - type: Machine
-#     board: LPPSpaceForgeCMDCircuitboard
-#   - type: Lathe
-#     idleState: icon
-#     runningState: building
-#     staticPacks:
-
-#     dynamicPacks:
-
-#   - type: MaterialStorage
-#     whitelist:
-#       tags:
-#         - Sheet
-#         - RawMaterial
-#         - Ingot
-# ent-LPPSpaceForge = космическая кузница
-#     .desc = Разработка придуманная BL CORP для печати скафандров. Используется любыми сотрудниками станции для печати скафандров. Имеет этикетку "BL CORP Free-For-All Technology".
-# ent-LPPSpaceForgeCMD = космическая кузница командования
-#     .desc = Разработка придуманная BL CORP для печати высокотехнологичных и лучших скафандров. Используется исключительно командованием для печати продвинутых скафандров. Имеет этикетку "BL CORP Command Technology".
+  - type: MaterialStorage
+    whitelist: *StandardMaterialWhitelist
