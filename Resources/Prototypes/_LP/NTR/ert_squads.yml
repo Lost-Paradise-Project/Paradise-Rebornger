@@ -1,0 +1,501 @@
+- type: entity
+  id: LPPRadioLeadERTSec
+  parent: BaseItem
+  name: lead ert security summoning radio
+  description: A NT-approved radio that can summon a lead ert with special coins.
+  components:
+  - type: Sprite
+    sprite: _GoobStation/Objects/Tools/executive_briefcase.rsi
+    state: icon_alt
+  - type: Item
+    size: Huge
+  - type: GhostRole
+    name: ghost-role-information-ert-leader-name
+    description: ghost-role-information-ert-leader-description
+    rules: ghost-role-information-nonantagonist-rules
+  - type: GhostRoleMobSpawner
+    prototype: LPPLeadERTSec
+
+- type: entity
+  id: LPPRadioLeadERTMed
+  parent: LPPRadioLeadERTSec
+  name: lead ert medics summoning radio
+  description: A NT-approved radio that can summon a lead ert with special coins.
+  components:
+  - type: GhostRoleMobSpawner
+    prototype: LPPLeadERTMed
+
+- type: entity
+  id: LPPRadioLeadERTEngi
+  parent: LPPRadioLeadERTSec
+  name: lead ert engineers summoning radio
+  description: A NT-approved radio that can summon a lead ert with special coins.
+  components:
+  - type: GhostRoleMobSpawner
+    prototype: LPPLeadERTEngi
+
+- type: entity
+  id: LPPRadioLeadERTJani
+  parent: LPPRadioLeadERTSec
+  name: lead ert janitors summoning radio
+  description: A NT-approved radio that can summon a lead ert with special coins.
+  components:
+  - type: GhostRoleMobSpawner
+    prototype: LPPLeadERTJani
+
+- type: entity
+  id: LPPRadioLeadERTStandard
+  parent: LPPRadioLeadERTSec
+  name: lead ert summoning radio
+  description: A NT-approved radio that can summon a lead ert with special coins.
+  components:
+  - type: GhostRoleMobSpawner
+    prototype: LPPLeadERTStandard
+
+- type: entity
+  id: LPPRadioLeadCBURN
+  parent: LPPRadioLeadERTSec
+  name: lead ert CBURN summoning radio
+  description: A NT-approved radio that can summon a lead ert with special coins.
+  components:
+  - type: GhostRole
+    name: ghost-role-information-cburn-agent-name
+    description: ghost-role-information-cburn-agent-description
+    rules: ghost-role-information-nonantagonist-rules
+  - type: GhostRoleMobSpawner
+    prototype: LPPLeadCBURN
+
+# ERT Leads and CBURN
+- type: entity
+  id: LPPLeadERTSec
+  parent: MobHuman
+  name: lead ERT security
+  suffix: Human
+  components:
+  - type: AutoImplant
+    implants:
+    - MindShieldImplant
+    - DeathRattleImplantCentcomm
+  - type: RandomHumanoidAppearance
+    randomizeName: true
+  - type: Loadout
+    prototypes: [LPPLeadERTSecGear]
+  - type: AntagImmune
+
+- type: entity
+  id: LPPLeadERTMed
+  parent: LPPLeadERTSec
+  name: lead ERT medics
+  suffix: Human
+  components:
+  - type: Loadout
+    prototypes: [LPPLeadERTMedGear]
+
+- type: entity
+  id: LPPLeadERTEngi
+  parent: LPPLeadERTSec
+  name: lead ERT engineers
+  suffix: Human
+  components:
+  - type: Loadout
+    prototypes: [LPPLeadERTEngiGear]
+
+- type: entity
+  id: LPPLeadERTJani
+  parent: LPPLeadERTSec
+  name: lead ERT janitors
+  suffix: Human
+  components:
+  - type: Loadout
+    prototypes: [LPPLeadERTJaniGear]
+
+- type: entity
+  id: LPPLeadERTStandard
+  parent: LPPLeadERTSec
+  name: lead ERT
+  suffix: Human
+  components:
+  - type: Loadout
+    prototypes: [LPPLeadERTStandardGear]
+
+- type: entity
+  id: LPPLeadCBURN
+  parent: LPPLeadERTSec
+  name: lead CBURN
+  suffix: Human
+  components:
+  - type: Loadout
+    prototypes: [LPPLeadCBURNGear]
+
+# Units mobs Basic
+
+- type: entity
+  id: LPPSecurityUnit
+  parent: MobHuman
+  name: ERT security agent
+  suffix: Human
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: AutoImplant
+    implants:
+    - MindShieldImplant
+    - DeathRattleImplantCentcomm
+  - type: RandomHumanoidAppearance
+    randomizeName: true
+  - type: Loadout
+    prototypes: [ERTSecurityGearArmedRifle]
+  - type: AntagImmune
+
+- type: entity
+  id: LPPMedicalUnit
+  parent: LPPSecurityUnit
+  name: ERT medical agent
+  suffix: Human
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Loadout
+    prototypes: [ERTMedicalGearArmed]
+
+- type: entity
+  id: LPPEngineerUnit
+  parent: LPPSecurityUnit
+  name: ERT engineer agent
+  suffix: Human
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Loadout
+    prototypes: [ERTEngineerGearArmed]
+
+- type: entity
+  id: LPPJanitorUnit
+  parent: LPPSecurityUnit
+  name: ERT janitor agent
+  suffix: Human
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Loadout
+    prototypes: [ERTJanitorGearEVA]
+
+- type: entity
+  id: LPPCBURNUnit
+  parent: LPPSecurityUnit
+  name: CBURN Agent
+  suffix: Human
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Loadout
+    prototypes: [CBURNGear]
+
+# Not Basic Units Mobs
+
+- type: entity
+  id: LPPSecurityGrenadeUnit
+  parent: LPPSecurityUnit
+  name: ERT security agent
+  suffix: Human
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Loadout
+    prototypes: [ERTSecurityGearArmedGrenade]
+
+- type: entity
+  id: LPPSecurityVanguardUnit
+  parent: LPPSecurityUnit
+  name: ERT security agent
+  suffix: Human
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Loadout
+    prototypes: [ERTSecurityGearArmedVanguard]
+
+- type: entity
+  id: LPPSecurityShotgunUnit
+  parent: LPPSecurityUnit
+  name: ERT security agent
+  suffix: Human
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Loadout
+    prototypes: [ERTSecurityGearArmedShotgun]
+
+# Basic ERT Coin
+
+- type: entity
+  id: LPPERTSecurityRifleCoin
+  parent: InternCoin
+  name: ert rifle security summoning coin
+  description: Toss to summon an ert security.
+  components:
+  - type: GhostRole
+    name: ghost-role-information-ert-security-name
+    description: ghost-role-information-ert-security-description
+    rules: ghost-role-information-nonantagonist-rules
+    job: ERTSecurity
+  - type: GhostRoleMobSpawner
+    prototype: LPPSecurityUnit
+
+- type: entity
+  id: LPPERTMedicalCoin
+  parent: LPPERTSecurityRifleCoin
+  name: ert medical summoning coin
+  description: Toss to summon an ert medical.
+  components:
+  - type: GhostRole
+    name: ghost-role-information-ert-medical-name
+    description: ghost-role-information-ert-medical-description
+    rules: ghost-role-information-nonantagonist-rules
+    job: ERTMedical
+  - type: GhostRoleMobSpawner
+    prototype: LPPMedicalUnit
+
+- type: entity
+  id: LPPERTEngineerCoin
+  parent: LPPERTSecurityRifleCoin
+  name: ert engineer summoning coin
+  description: Toss to summon an ert engineer.
+  components:
+  - type: GhostRole
+    name: ghost-role-information-ert-engineer-name
+    description: ghost-role-information-ert-engineer-description
+    rules: ghost-role-information-nonantagonist-rules
+    job: ERTEngineer
+  - type: GhostRoleMobSpawner
+    prototype: LPPEngineerUnit
+
+- type: entity
+  id: LPPERTJanitorCoin
+  parent: LPPERTSecurityRifleCoin
+  name: ert medical summoning coin
+  description: Toss to summon an ert janitor.
+  components:
+  - type: GhostRole
+    name: ghost-role-information-ert-janitor-name
+    description: ghost-role-information-ert-janitor-description
+    rules: ghost-role-information-nonantagonist-rules
+    job: ERTJanitor
+  - type: GhostRoleMobSpawner
+    prototype: LPPJanitorUnit
+
+- type: entity
+  id: LPPCBURNCoin
+  parent: LPPERTSecurityRifleCoin
+  name: cburn agent summoning coin
+  description: Toss to summon an CBURN agent.
+  components:
+  - type: GhostRole
+    name: ghost-role-information-cburn-agent-name
+    description: ghost-role-information-cburn-agent-description
+    rules: ghost-role-information-nonantagonist-rules
+    job: CBURN
+  - type: GhostRoleMobSpawner
+    prototype: LPPCBURNUnit
+
+# Not Basic ERT Coins
+
+- type: entity
+  id: LPPERTSecurityGrenadeCoin
+  parent: LPPERTSecurityRifleCoin
+  name: ert grenade security summoning coin
+  components:
+  - type: GhostRoleMobSpawner
+    prototype: LPPSecurityGrenadeUnit
+
+- type: entity
+  id: LPPERTSecurityVanguardCoin
+  parent: LPPERTSecurityRifleCoin
+  name: ert vanguard security summoning coin
+  components:
+  - type: GhostRoleMobSpawner
+    prototype: LPPSecurityVanguardUnit
+
+- type: entity
+  id: LPPERTSecurityShotgunCoin
+  parent: LPPERTSecurityRifleCoin
+  name: ert shotgun security summoning coin
+  components:
+  - type: GhostRoleMobSpawner
+    prototype: LPPSecurityShotgunUnit
+
+# Lead ERT Gear
+
+- type: startingGear
+  parent: ERTLeaderGearEVA
+  id: LPPLeadERTSecGear
+  equipment:
+    pocket2: WeaponDisabler
+    suitstorage: WeaponRifleLecterXL8
+  storage:
+    back:
+    - HoloprojectorField
+    - PhoneInstrument
+    - PinpointerNuclear
+    - MagazineRifle
+    - MagazineRifle
+    - MagazineRifleIncendiary
+    - MagazineRifleUranium
+    - MedkitCombatFilled # End of first line
+    - GrenadeShrapnel
+    - EmpGrenade
+    - LPPERTSecurityRifleCoin
+    - LPPERTSecurityGrenadeCoin
+    - LPPERTSecurityVanguardCoin
+    - LPPERTSecurityShotgunCoin
+    belt:
+    - Truncheon
+    - Handcuffs
+    - Handcuffs
+    - CrowbarRed
+    - WeaponPistolN1984
+    - MagazineMagnum
+    - EmergencyMedipen
+
+- type: startingGear
+  parent: ERTLeaderGearEVA
+  id: LPPLeadERTMedGear
+  equipment:
+    pocket2: WeaponDisabler
+    suitstorage: WeaponRifleLecterXL8
+  storage:
+    back:
+    - HoloprojectorField
+    - PhoneInstrument
+    - PinpointerNuclear
+    - MagazineRifle
+    - MagazineRifle
+    - MagazineRifleIncendiary
+    - MagazineRifleUranium
+    - MedkitCombatFilled
+    - GrenadeShrapnel
+    - EmpGrenade
+    - LPPERTMedicalCoin
+    - LPPERTMedicalCoin # Replace with (LPPERTMedicalParamedicCoin) when able to
+    - LPPERTSecurityRifleCoin # Replace with (LPPERTMedicalSecCoin) when able to
+    - LPPERTMedicalCoin # Replace with (LPPERTMedicalEngiCoin) when able to
+    belt:
+    - Truncheon
+    - Handcuffs
+    - Handcuffs
+    - CrowbarRed
+    - WeaponPistolN1984
+    - MagazineMagnum
+    - EmergencyMedipen
+
+- type: startingGear
+  parent: ERTLeaderGearEVA
+  id: LPPLeadERTEngiGear
+  equipment:
+    pocket2: WeaponDisabler
+    suitstorage: WeaponRifleLecterXL8
+  storage:
+    back:
+    - HoloprojectorField
+    - PhoneInstrument
+    - PinpointerNuclear
+    - MagazineRifle
+    - MagazineRifle
+    - MagazineRifleIncendiary
+    - MagazineRifleUranium
+    - MedkitCombatFilled # End of first line
+    - GrenadeShrapnel
+    - EmpGrenade
+    - LPPERTEngineerCoin
+    - LPPERTEngineerCoin # Replace with (LPPERTAtmosCoin) when able to
+    - LPPERTEngineerCoin # Replace with (LPPERTMedicalEngiCoin) when able to
+    - LPPERTSecurityRifleCoin # Replace with (LPPERTEngineerSecCoin) when able to
+    belt:
+    - Truncheon
+    - Handcuffs
+    - Handcuffs
+    - CrowbarRed
+    - WeaponPistolN1984
+    - MagazineMagnum
+    - EmergencyMedipen
+
+- type: startingGear
+  parent: ERTLeaderGearEVA
+  id: LPPLeadERTJaniGear
+  equipment:
+    pocket2: WeaponDisabler
+    suitstorage: WeaponRifleLecterXL8
+  storage:
+    back:
+    - HoloprojectorField
+    - PhoneInstrument
+    - PinpointerNuclear
+    - MagazineRifle
+    - MagazineRifle
+    - MagazineRifleIncendiary
+    - MagazineRifleUranium
+    - MedkitCombatFilled # End of first line
+    - GrenadeShrapnel
+    - EmpGrenade
+    - LPPERTJanitorCoin
+    - LPPERTJanitorCoin
+    - LPPERTEngineerCoin
+    - LPPERTSecurityRifleCoin
+    belt:
+    - Truncheon
+    - Handcuffs
+    - Handcuffs
+    - CrowbarRed
+    - WeaponPistolN1984
+    - MagazineMagnum
+    - EmergencyMedipen
+
+- type: startingGear
+  parent: ERTLeaderGearEVA
+  id: LPPLeadERTStandardGear
+  equipment:
+    pocket2: WeaponDisabler
+    suitstorage: WeaponRifleLecterXL8
+  storage:
+    back:
+    - HoloprojectorField
+    - PhoneInstrument
+    - PinpointerNuclear
+    - MagazineRifle
+    - MagazineRifle
+    - MagazineRifleIncendiary
+    - MagazineRifleUranium
+    - MedkitCombatFilled # End of first line
+    - GrenadeShrapnel
+    - EmpGrenade
+    - LPPERTJanitorCoin
+    - LPPERTMedicalCoin
+    - LPPERTEngineerCoin
+    - LPPERTSecurityRifleCoin
+    belt:
+    - Truncheon
+    - Handcuffs
+    - Handcuffs
+    - CrowbarRed
+    - WeaponPistolN1984
+    - MagazineMagnum
+    - EmergencyMedipen
+
+- type: startingGear
+  id: LPPLeadCBURNGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorBrown
+    back: ClothingBackpackDuffelCBURN
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesGlassesSecurity
+    ears: ClothingHeadsetAltCentCom
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitCBURN
+    shoes: ClothingShoesBootsCombatFilled
+    id: CBURNPDA
+    pocket1: RadioHandheld
+    pocket2: WeaponLaserGun
+    belt: ClothingBeltBandolier
+  storage:
+    back:
+    - WeaponShotgunDoubleBarreled
+    - BoxShotgunIncendiary
+    - GrenadeFlashBang
+    - PillAmbuzolPlus
+    - PillAmbuzol
+    - LPPCBURNCoin
+    - LPPCBURNCoin
+    - LPPCBURNCoin
+    - LPPCBURNCoin

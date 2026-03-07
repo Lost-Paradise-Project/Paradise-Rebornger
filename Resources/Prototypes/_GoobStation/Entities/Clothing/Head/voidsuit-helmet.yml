@@ -1,0 +1,74 @@
+# Nanorep catalog Hardsuit
+
+- type: entity
+  parent: [ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase]
+  id: ClothingHeadHelmetHardsuitExperimentalNanorep
+  name: "NTX5-Mirrorduss helmet"
+  description: A dark green helmet with glowing cyan nodes, a mirrored visor, and a mounted side light.
+  components:
+  - type: Sprite
+    sprite: _GoobStation/Clothing/Head/Helmets/ntr_experimental_helmet.rsi
+  - type: Clothing
+    sprite: _GoobStation/Clothing/Head/Helmets/ntr_experimental_helmet.rsi
+    clothingVisuals:
+      head:
+      - state: equipped-head
+      head-resomi:
+      - state: equipped-head-resomi
+  - type: PointLight
+    color: white
+    radius: 7
+    energy: 5
+  - type: ToggleableVisuals
+    clothingVisuals:
+      head:
+      - state: equipped-head-light
+        shader: unshaded
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.8
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.75
+        Heat: 0.8
+        Radiation: 0.7
+        Caustic: 0.7
+  - type: FireProtection
+    reduction: 0.4
+
+#bso voidsuit
+
+- type: entity
+  parent: [ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase]
+  id: ClothingHeadHelmetHardsuitBlueshield
+  name: blueshield hardsuit helmet
+  description: The helmet of the captain's bodyguard's hardsuit.
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: _GoobStation/Clothing/Head/Hardsuits/bso.rsi
+  - type: Clothing
+    sprite: _GoobStation/Clothing/Head/Hardsuits/bso.rsi
+  - type: PointLight
+    color: "#4d7ae3"
+    rotation: 30
+    energy: 10
+    radius: 5
+  - type: PressureProtection
+    highPressureMultiplier: 0.525
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.65
+        Slash: 0.65
+        Piercing: 0.7
+        Heat: 0.7
+        Radiation: 0.6
+        Caustic: 0.6
+  - type: FlashImmunity

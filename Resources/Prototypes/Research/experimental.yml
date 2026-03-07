@@ -10,7 +10,7 @@
   recipeUnlocks:
   - ProximitySensor
   - AiRemoteBrain # GoobStation
-  position: 2, 20
+  position: 6, 22 # LP edit
 
 - type: technology
   id: BasicAnomalousResearch
@@ -27,7 +27,7 @@
   - AnomalyLocatorWide
   - APECircuitboard
   - AnomalyVesselCircuitboard
-  position: 0, 21
+  position: 8, 22 # LP edit
   technologyPrerequisites:
   - BasicRobotics
 
@@ -44,7 +44,7 @@
   - NodeScanner
   - AnalysisComputerCircuitboard
   - ArtifactAnalyzerMachineCircuitboard
-  position: 2, 21
+  position: 10, 23 # LP edit
   technologyPrerequisites:
   - BasicRobotics
 
@@ -59,7 +59,7 @@
   cost: 5000
   recipeUnlocks:
   - TechDiskComputerCircuitboard
-  position: 4, 21
+  position: 7, 23 # LP edit
   technologyPrerequisites:
   - BasicRobotics
 
@@ -74,7 +74,7 @@
   cost: 10000
   recipeUnlocks:
   - WeaponGauntletGorilla
-  position: 0, 22
+  position: 9, 25 # LP edit
   technologyPrerequisites:
   - BasicAnomalousResearch
 
@@ -90,7 +90,7 @@
   recipeUnlocks:
   - ClothingShoesBootsMagSci
   - ClothingShoesBootsMoon
-  position: 4, 22
+  position: 7, 24 # LP edit
   technologyPrerequisites:
   - AlternativeResearch
 
@@ -107,7 +107,7 @@
   cost: 5000
   recipeUnlocks:
   - ArtifactCrusherMachineCircuitboard
-  position: 2, 22
+  position: 11, 24 # LP edit
   technologyPrerequisites:
   - BasicXenoArcheology
 
@@ -124,7 +124,7 @@
   - WeaponPistolCHIMP
   - AnomalySynchronizerCircuitboard
   - AnomalyVesselExperimentalCircuitboard
-  position: 0, 23
+  position: 9, 23 # LP edit
   technologyPrerequisites:
   - BasicAnomalousResearch
 
@@ -140,7 +140,7 @@
   recipeUnlocks:
   - WeaponParticleDecelerator
   - HoloprojectorField
-  position: 4, 23
+  position: 7, 25 # LP edit
   technologyPrerequisites:
   - AlternativeResearch
 
@@ -156,7 +156,7 @@
   recipeUnlocks:
     - WeaponForceGun
     - WeaponTetherGun
-  position: 1, 23
+  position: 10, 26 # LP edit
   technologyPrerequisites:
   - AbnormalArtifactManipulation
   - AnomalyCoreHarnessing
@@ -174,7 +174,7 @@
   cost: 10000
   recipeUnlocks:
   - DeviceQuantumSpinInverter
-  position: 0, 24
+  position: 11, 27 # LP edit
   technologyPrerequisites:
   - GravityManipulation
 
@@ -189,6 +189,6 @@
   cost: 10000
   recipeUnlocks:
   - DeviceDesynchronizer
-  position: 2, 24
+  position: 12, 25 # LP edit
   technologyPrerequisites:
   - GravityManipulation

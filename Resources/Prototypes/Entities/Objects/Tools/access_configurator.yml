@@ -50,6 +50,10 @@
       - Theatre
       - GenpopEnter
       - GenpopLeave
+      # LP Edit Start
+      - BlueshieldOfficer
+      - NanotrasenRepresentative
+      # LP Edit End
       privilegedIdSlot:
         name: id-card-console-privileged-id
         ejectSound: /Audio/Machines/id_swipe.ogg
@@ -127,6 +131,8 @@
     - CentralCommand
     - NuclearOperative
     - SyndicateAgent
+    - NanotrasenRepresentative # goobstation
+    - BlueshieldOfficer # goobstation
     - Wizard
     - Xenoborg
     - GenpopEnter

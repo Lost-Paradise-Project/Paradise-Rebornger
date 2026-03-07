@@ -6,7 +6,8 @@
   suffix: Chameleon
   components:
     - type: Tag
-      tags: [] # ignore "WhitelistChameleon" tag
+      tags:
+      - CoatRack # LP edit
     - type: Sprite
       sprite: Clothing/Mask/gas.rsi
     - type: Clothing
@@ -70,7 +71,8 @@
           Joy: { state: icon-joy }
           Anger: { state: icon-anger }
   - type: Tag
-    tags: [] # ignore "WhitelistChameleon" tag
+    tags:
+      - CoatRack # LP edit
   - type: SelfEquipOnly
   - type: CursedMask
     despairDamageModifier:

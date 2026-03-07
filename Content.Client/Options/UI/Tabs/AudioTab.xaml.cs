@@ -9,6 +9,7 @@ using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.XAML;
 using Robust.Shared;
 using Robust.Shared.Configuration;
+using Content.Shared._VDS.CCVars; // VDS
 
 namespace Content.Client.Options.UI.Tabs;
 
@@ -94,6 +95,17 @@ public sealed partial class AudioTab : Control
         Control.AddOptionCheckBox(CCVars.AdminSoundsEnabled, AdminSoundsCheckBox);
         Control.AddOptionCheckBox(CCVars.BwoinkSoundEnabled, BwoinkSoundCheckBox);
 
+        // VDS start
+        var acousticEnable = Control.AddOptionCheckBox(VCCVars.AcousticEnable, AcousticEnableCheckBox);
+        acousticEnable.ImmediateValueChanged += UpdateAcousticButtons;
+        Control.AddOptionCheckBox(VCCVars.AcousticHighResolution, AcousticHighResolutionCheckBox);
+        Control.AddOptionSlider(
+            VCCVars.AcousticReflectionCount,
+            SliderAcousticReflectionCount,
+            _cfg.GetCVar(VCCVars.AcousticReflectionCountMinimum),
+            _cfg.GetCVar(VCCVars.AcousticReflectionCountMaximum));
+        // VDS end
+
         Control.Initialize();
     }
 
@@ -102,6 +114,7 @@ public sealed partial class AudioTab : Control
         base.EnteredTree();
         _admin.AdminStatusUpdated += UpdateAdminButtonsVisibility;
         UpdateAdminButtonsVisibility();
+        UpdateAcousticButtons(_cfg.GetCVar(VCCVars.AcousticEnable)); // VDS
     }
 
     protected override void ExitedTree()
@@ -114,6 +127,12 @@ public sealed partial class AudioTab : Control
     private void UpdateAdminButtonsVisibility()
     {
         BwoinkSoundCheckBox.Visible = _admin.IsActive();
+    }
+
+    private void UpdateAcousticButtons(bool value) // VDS
+    {
+        AcousticHighResolutionCheckBox.Visible = value is true;
+        SliderAcousticReflectionCount.Visible = value is true;
     }
 
     private void OnMasterVolumeSliderChanged(float value)

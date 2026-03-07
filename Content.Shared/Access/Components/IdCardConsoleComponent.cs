@@ -74,6 +74,8 @@ public sealed partial class IdCardConsoleComponent : Component
         "Security",
         "Service",
         "Theatre",
+        "NanotrasenRepresentative", //Corvax-Goob
+        "BlueshieldOfficer", //Corvax-Goob
     };
 
     [Serializable, NetSerializable]

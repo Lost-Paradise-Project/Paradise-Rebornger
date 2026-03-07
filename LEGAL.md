@@ -63,6 +63,7 @@
 | `_L5`            | Lagrange Substations | https://github.com/lagrange14/substations                   | AGPL 3.0 |
 | `_White`         | W White Dream Public | https://github.com/WWhiteDreamProject/wwdpublic             | AGPL 3.0 |
 | `_Orion`         | Orion                | https://github.com/AtaraxiaSpaceFoundation/Orion-Station-14 | AGPL 3.0 |
+| `_VDS`           | Vermist Dust Sector  | https://github.com/vermist-sector/vermist-dust              | AGPL 3.0 |
 
 
 ## Отказ от гарантий

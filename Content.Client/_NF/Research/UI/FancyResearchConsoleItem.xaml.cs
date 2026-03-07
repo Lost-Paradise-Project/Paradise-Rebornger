@@ -5,6 +5,12 @@ using Robust.Client.GameObjects;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.XAML;
 using Robust.Shared.Prototypes;
+// LP edit start
+using Content.Client.Resources;
+using Robust.Client.Graphics;
+using Robust.Client.ResourceManagement;
+using Robust.Shared.Utility;
+// LP edit end
 
 namespace Content.Client._NF.Research.UI;
 
@@ -12,6 +18,7 @@ namespace Content.Client._NF.Research.UI;
 public sealed partial class FancyResearchConsoleItem : LayoutContainer
 {
     [Dependency] private readonly IPrototypeManager _prototype = default!;
+    [Dependency] private readonly IResourceCache _resCache = default!; // LP edit
 
     // Public fields
     public TechnologyPrototype Prototype;
@@ -45,6 +52,23 @@ public sealed partial class FancyResearchConsoleItem : LayoutContainer
         }
     }
 
+    // LP edit start
+    private const string BaseSpritePath = "/Textures/_LP/Interface/Tech/";
+    private const string SelectedSpritePath = "/Textures/_LP/Interface/Tech/select_tech/";
+
+    private string GetSpriteNameForAvailability()
+    {
+        return Availability switch
+        {
+            ResearchAvailability.Researched => "tech_doctrine_available_item_bg.png",
+            ResearchAvailability.Available => "tech_doctrine_available_item_bg_blue.png",
+            ResearchAvailability.PrereqsMet => "tech_doctrine_available_item_bg_yellow.png",
+            ResearchAvailability.Unavailable => "tech_doctrine_available_item_bg_red.png",
+            _ => "tech_doctrine_available_item_bg.png" // Default
+        };
+    }
+    // LP edit end
+
     public FancyResearchConsoleItem(TechnologyPrototype proto, SpriteSystem sprite, ResearchAvailability availability)
     {
         RobustXamlLoader.Load(this);
@@ -70,94 +94,37 @@ public sealed partial class FancyResearchConsoleItem : LayoutContainer
 
         Button.OnPressed += Selected;
         Button.OnDrawModeChanged += UpdateColor;
-
-        // Set colors - border & background color varies by availability state
+        // LP edit start
         BorderColor = ResearchColorScheme.GetTechBorderColor(availability);
 
-        // Calculate background colors based on availability using centralized factors
-        var darkenFactor = ResearchColorScheme.GetBackgroundInterpolationFactor(availability);
-
-        BackgroundColor = Color.InterpolateBetween(primaryColor, Color.Black, darkenFactor);
-        if (secondaryColor.HasValue)
-            SecondaryBackgroundColor = Color.InterpolateBetween(secondaryColor.Value, Color.Black, darkenFactor);
-
-        // Create brighter versions of the discipline colors for hover by interpolating with white
-        var hoverFactor = ResearchColorScheme.GetHoverMixingFactor();
-        HoveredColor = Color.InterpolateBetween(primaryColor, Color.White, hoverFactor);
-        if (secondaryColor.HasValue)
-            SecondaryHoveredColor = Color.InterpolateBetween(secondaryColor.Value, Color.White, hoverFactor);
-
-        // Create even brighter versions for selection (persistent bright highlight)
-        var selectionFactor = ResearchColorScheme.GetSelectionMixingFactor();
-        SelectedColor = Color.InterpolateBetween(primaryColor, Color.White, selectionFactor);
-        if (secondaryColor.HasValue)
-            SecondarySelectedColor = Color.InterpolateBetween(secondaryColor.Value, Color.White, selectionFactor);
-
-        // Create appropriate style box based on whether we have dual disciplines
-        if (secondaryDiscipline != null)
+        var techBackgroundSprite = new StyleBoxTexture
         {
-            // Create dual-color rounded style box with diagonal split
-            var dualColorStyle = new RoundedDualColorStyleBoxFlat
-            {
-                PrimaryColor = BackgroundColor,
-                SecondaryColor = SecondaryBackgroundColor,
-                BorderColor = BorderColor,
-                BorderThickness = new Thickness(2.5f),
-                CornerRadius = 8f
-            };
-            Panel.PanelOverride = dualColorStyle;
-        }
-        else
-        {
-            // Create regular single-color rounded style box
-            var roundedStyle = new RoundedStyleBoxFlat
-            {
-                BackgroundColor = BackgroundColor,
-                BorderColor = BorderColor,
-                BorderThickness = new Thickness(2.5f),
-                CornerRadius = 8f
-            };
-            Panel.PanelOverride = roundedStyle;
-        }
+            Mode = StyleBoxTexture.StretchMode.Stretch
+        };
+        techBackgroundSprite.SetPatchMargin(StyleBox.Margin.All, 10);
+        Panel.PanelOverride = techBackgroundSprite;
+        // LP edit end
 
         UpdateColor();
     }
 
+    // LP edit start
     private void UpdateColor()
     {
-        if (Panel.PanelOverride is RoundedDualColorStyleBoxFlat dualColorPanel)
-        {
-            // Priority: Selected > Hovered > Normal
-            if (IsSelected)
-            {
-                dualColorPanel.PrimaryColor = SelectedColor;
-                dualColorPanel.SecondaryColor = SecondarySelectedColor;
-            }
-            else if (Button.IsHovered)
-            {
-                dualColorPanel.PrimaryColor = HoveredColor;
-                dualColorPanel.SecondaryColor = SecondaryHoveredColor;
-            }
-            else
-            {
-                dualColorPanel.PrimaryColor = BackgroundColor;
-                dualColorPanel.SecondaryColor = SecondaryBackgroundColor;
-            }
-            dualColorPanel.BorderColor = BorderColor;
-        }
-        else if (Panel.PanelOverride is RoundedStyleBoxFlat singleColorPanel)
-        {
-            // Priority: Selected > Hovered > Normal
-            if (IsSelected)
-                singleColorPanel.BackgroundColor = SelectedColor;
-            else if (Button.IsHovered)
-                singleColorPanel.BackgroundColor = HoveredColor;
-            else
-                singleColorPanel.BackgroundColor = BackgroundColor;
+        if (Panel.PanelOverride is not StyleBoxTexture texturePanel)
+            return;
 
-            singleColorPanel.BorderColor = BorderColor;
-        }
+        var basePath = IsSelected ? SelectedSpritePath : BaseSpritePath;
+        var spriteName = GetSpriteNameForAvailability();
+
+        texturePanel.Texture = _resCache.GetTexture(basePath + spriteName);
+
+        if (Button.IsHovered && !IsSelected)
+            texturePanel.Modulate = Color.LightBlue; // brighter blue - hover
+        else
+            texturePanel.Modulate = Color.White; // Normal
     }
+    // LP edit end
 
     protected override void ExitedTree()
     {

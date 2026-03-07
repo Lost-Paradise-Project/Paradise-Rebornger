@@ -167,6 +167,24 @@ public sealed partial class StoreSystem
         return false;
     }
 
+    private void OnPurchase(ListingData listing) // goob start
+    {
+        if (!_proto.TryIndex<ListingPrototype>(listing.ID, out var prototype))
+            return;
+
+        // updating restocktime
+        if (prototype.ResetRestockOnPurchase)
+        {
+            var restockDuration = prototype.RestockDuration;
+            listing.RestockTime = _timing.CurTime + restockDuration;
+        }
+        if (listing.ResetRestockOnPurchase)
+        {
+            var restockDuration = listing.RestockAfterPurchase ?? listing.RestockDuration;
+            listing.RestockTime = _timing.CurTime + restockDuration;
+        }
+    }// goob end
+
     private bool TryGetListing(IReadOnlyCollection<ListingDataWithCostModifiers> collection, string listingId, [MaybeNullWhen(false)] out ListingDataWithCostModifiers found)
     {
         foreach(var current in collection)

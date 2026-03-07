@@ -1,0 +1,12 @@
+ent-LPPSpawnPodERTSec = SpawnSupplyERTSec
+    .desc = { ent-SpawnSupplyEmpty.desc }
+ent-LPPSpawnPodERTMed = SpawnSupplyERTMed
+    .desc = { ent-SpawnSupplyEmpty.desc }
+ent-LPPSpawnPodERTEngi = SpawnSupplyERTEngi
+    .desc = { ent-SpawnSupplyEmpty.desc }
+ent-LPPSpawnPodERTJani = SpawnSupplyERTJani
+    .desc = { ent-SpawnSupplyEmpty.desc }
+ent-LPPSpawnPodERTStandard = SpawnSupplyERTJani
+    .desc = { ent-SpawnSupplyEmpty.desc }
+ent-LPPSpawnPodCBURN = SpawnSupplyCBURN
+    .desc = { ent-SpawnSupplyEmpty.desc }

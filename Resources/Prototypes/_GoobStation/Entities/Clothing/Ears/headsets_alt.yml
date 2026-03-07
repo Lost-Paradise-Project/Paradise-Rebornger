@@ -1,0 +1,15 @@
+- type: entity
+  parent: [ClothingHeadsetAlt, BaseCentcommContraband]
+  id: ClothingHeadsetAltBlueshield
+  name: blueshield officers over-ear headset
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyCommand
+      - EncryptionKeyCentCom
+      - EncryptionKeyCommon
+  - type: Sprite
+    sprite: _GoobStation/Clothing/Ears/Headsets/blueshield.rsi
+  - type: Clothing
+    sprite: _GoobStation/Clothing/Ears/Headsets/blueshield.rsi

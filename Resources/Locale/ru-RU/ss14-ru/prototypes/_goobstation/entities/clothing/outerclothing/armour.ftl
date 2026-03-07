@@ -1,0 +1,10 @@
+ent-ClothingBlueshieldArmourVest = бронежилет Синего Щита
+    .desc = Бронированный жилет с символикой Синего Щита.
+ent-ClothingBlueshieldArmoredJacket = бронированная куртка Синего Щита
+    .desc = Куртка с вшитыми слоями усиления.
+ent-ClothingBlueshieldArmoredCowboyJacket = бронированная ковбойская куртка Синего Щита
+    .desc = Куртка для защиты важных людей в опасных районах.
+ent-ClothingOuterWinterBlueshield = бронированная куртка Синего Щита
+    .desc = Синяя зимняя куртка с кевларовым усилением в области груди.
+ent-ClothingOuterWinterCapArmored = парадная зимняя куртка капитана
+    .desc = Богато украшенная зимняя куртка с баллистической защитой, созданная для лучших на станции.

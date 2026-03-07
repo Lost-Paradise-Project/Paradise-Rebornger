@@ -1,0 +1,48 @@
+# Blueshield
+- type: entity
+  parent: IDCardStandard
+  id: BlueshieldIDCard
+  name: blueshield officer ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: gold
+    - state: stripe_top
+      color: &color-centcomm-top "#134975"
+    - state: stripe_bottom
+      color: &color-centcomm-bottom "#0d304d"
+    - sprite: &icon-rsi _LP/Interface/Misc/job_icons.rsi # LP Edit
+      offset: &icon-offset -0.15625, 0 #LP Edit -> 5 pixels left, 0 pixels up IN OFFSET 1 PIXEL = 0.03125
+      state: Blueshield # LP Edit
+  - type: Item
+    heldPrefix:
+  - type: PresetIdCard
+    job: BlueshieldOfficer
+  - type: Access
+    tags:
+    - CentralCommand
+    - BlueshieldOfficer
+
+- type: entity
+  parent: IDCardStandard
+  id: NanotrasenRepresentativeIDCard
+  name: nanotrasen representative ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: gold
+    - state: stripe_top
+      color: *color-centcomm-top
+    - state: stripe_bottom
+      color: *color-centcomm-bottom
+    - sprite: *icon-rsi
+      offset: *icon-offset
+      state: Nanotrasen # LP Edit
+  - type: Item
+    heldPrefix:
+  - type: PresetIdCard
+    job: NanotrasenRepresentative
+  - type: Access
+    tags:
+    - CentralCommand
+    - NanotrasenRepresentative

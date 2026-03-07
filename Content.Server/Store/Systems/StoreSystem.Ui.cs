@@ -259,10 +259,19 @@ public sealed partial class StoreSystem
                 RaiseLocalEvent(buyer, listing.ProductEvent);
         }
 
-        if (listing.DisableRefund)
+        // Goob edit start
+        /* if (listing.DisableRefund)
         {
             component.RefundAllowed = false;
+        } */
+        if (listing.BlockRefundListings.Count > 0)
+        {
+            foreach (var listingData in component.FullListingsCatalog.Where(x => listing.BlockRefundListings.Contains(x.ID)))
+            {
+                listingData.DisableRefund = true;
+            }
         }
+        // Goob edit end
 
         //log dat shit.
         var logImpact = LogImpact.Low;
@@ -294,6 +303,12 @@ public sealed partial class StoreSystem
         RaiseLocalEvent(ref buyFinished);
 
         UpdateUserInterface(buyer, uid, component);
+        if (listing.ResetRestockOnPurchase) // goobstation edit start
+        {
+            // making sure that you cant buy some stuff endlessly if they are not meant to
+            var restockDuration = listing.RestockAfterPurchase ?? listing.RestockDuration; // Просто используем значение напрямую
+            listing.RestockTime = _timing.CurTime + restockDuration;
+        } // goob edit end
     }
 
     /// <summary>

@@ -1,0 +1,120 @@
+- type: loadout
+  id: NanotrasenRepresentativeBowler
+  equipment:
+    head: ClothingHeadHatBowlerHat
+
+
+- type: loadout
+  id: NanotrasenRepresentativeTop
+  equipment:
+    head: ClothingHeadHatTophat
+
+
+- type: loadout
+  id: NanotrasenRepresentativeOutlaw
+  equipment:
+    head: ClothingHeadHatOutlawHat
+
+
+- type: loadout
+  id: NanotrasenRepresentativeBeret
+  equipment:
+    head: ClothingHeadHatBeretFrench
+
+
+- type: loadout
+  id: NanotrasenRepresentativeMAA
+  equipment:
+    head: ClothingHeadHatSyndieMAA
+
+
+# - type: loadout
+#   id: NanotrasenRepresentativeEnvirohelm
+#   equipment:
+#     head: ClothingHeadEnvirohelmNanotrasenRepresentative
+#   effects:
+#   - !type:SpeciesLoadoutEffect # Goobstation - EE Plasmeme Change.
+#     species:
+#     - Plasmaman
+
+# Gloves
+- type: loadout
+  id: NanotrasenRepresentativeGloves
+  equipment:
+    gloves: ClothingHandsGlovesHeavyGoldenTrim
+
+
+# Neck
+- type: loadout
+  id: ClothingNeckScarfStripedCentcom
+  equipment:
+    neck: ClothingNeckScarfStripedCentcom
+
+# Backpacks
+- type: loadout
+  id: NanotrasenRepresentativeBackpack
+  equipment:
+    back: ClothingBackpackCentcomm
+
+- type: loadout
+  id: NanotrasenRepresentativeDuffel
+  equipment:
+    back: ClothingBackpackDuffel
+
+- type: loadout
+  id: NanotrasenRepresentativeSatchel
+  equipment:
+    back: ClothingBackpackSatchelCentcomm
+
+# Jumpsuits
+- type: loadout
+  id: NanotrasenRepresentativeJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNanotrasenRepresentative
+
+- type: loadout
+  id: NanotrasenRepresentativeFancyJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNanotrasenRepresentativeFancy
+
+- type: loadout
+  id: NanotrasenRepresentativeJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtNanotrasenRepresentative
+
+
+# - type: loadout
+#   id: NanotrasenRepresentativeEnvirosuit
+#   equipment:
+#     jumpsuit: ClothingUniformEnvirosuitNanotrasenRepresentative
+#   effects:
+#   - !type:SpeciesLoadoutEffect # Goobstation - EE Plasmeme Change.
+#     species:
+#     - Plasmaman
+
+# Belt
+- type: loadout
+  id: NanotrasenRepresentativeClipboard
+  equipment:
+    belt: BoxFolderCentComClipboard
+
+- type: loadout
+  id: NanotrasenRepresentativeWaistbag
+  equipment:
+    belt: ClothingBeltStorageWaistbag
+
+# Shoes
+- type: loadout
+  id: NanotrasenRepresentativeBoots
+  equipment:
+    shoes: ClothingShoesBootsLaceup
+
+- type: loadout
+  id: NanotrasenRepresentativeShoes
+  equipment:
+    shoes: ClothingShoesLeather
+
+- type: loadout
+  id: NanotrasenRepresentativeHeels
+  equipment:
+    shoes: ClothingShoesHighheelBoots

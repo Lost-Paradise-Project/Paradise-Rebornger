@@ -1,0 +1,48 @@
+- type: roleLoadout
+  id: JobNanotrasenRepresentative
+  groups:
+  - GroupTankHarness
+  - NanotrasenRepresentativeHead
+  - NanotrasenRepresentativeJumpsuit
+  - NanotrasenRepresentativeBackpack
+  - NanotrasenRepresentativeNeck
+  - NanotrasenRepresentativeShoes
+  - NanotrasenRepresentativeBelt
+  - Glasses
+  - Trinkets
+  - GroupSpeciesBreathTool
+  - Survival
+  - NanotrasenRepresentativeGloves
+  # # Goobstation - EE Plasmeme Change.
+  # - NanotrasenRepresentativeEnvirohelm
+  # - NanotrasenRepresentativeEnvirosuit
+  # - NanotrasenRepresentativeEnvirogloves
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
+
+- type: roleLoadout
+  id: JobBlueshieldOfficer
+  groups:
+  - BlueshieldOfficerHead
+  - BlueshieldOfficerJumpsuit
+  - BlueshieldOfficerBackpack
+  - BlueshieldOfficerOuter
+  - BlueshieldOfficerNeck
+  # - BlueshieldOfficerMask
+  - BlueshieldOfficerShoes
+  - Trinkets
+  - GroupSpeciesBreathTool
+  - SurvivalSecurity
+  # Goobstation - EE Plasmeme Change.
+  # - BlueshieldOfficerEnvirohelm
+  # - BlueshieldOfficerEnvirosuit
+  # - BlueshieldOfficerEnvirogloves
+  - BlueshieldOfficerGloves
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end

@@ -39,7 +39,7 @@ namespace Content.Shared.Input
         public static readonly BoundKeyFunction OpenBackpack = "OpenBackpack";
         public static readonly BoundKeyFunction OpenBelt = "OpenBelt";
         public static readonly BoundKeyFunction OpenAHelp = "OpenAHelp";
-        public static readonly BoundKeyFunction OpenCHelp = "OpenAHelpCuratorChat"; // DeltaV edit
+        public static readonly BoundKeyFunction OpenCHelp = "OpenCHelp"; // DeltaV edit
         public static readonly BoundKeyFunction SwapHands = "SwapHands";
         public static readonly BoundKeyFunction SwapHandsReverse = "SwapHandsReverse";
         public static readonly BoundKeyFunction MoveStoredItem = "MoveStoredItem";

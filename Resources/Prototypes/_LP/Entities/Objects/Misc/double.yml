@@ -14,6 +14,9 @@
     noRot: true
   - type: Item
     size: Normal
+  - type: Tag
+    tags:
+    - Bedsheet
   - type: StaticPrice
     price: 100
 

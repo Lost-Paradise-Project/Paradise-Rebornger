@@ -1,0 +1,10 @@
+ent-ClothingBlueshieldArmourVest = blueshield's security armour
+    .desc = An armoured vest with the badge of the blueshield. Utilizes bluespace technology to be more compact.
+ent-ClothingBlueshieldArmoredJacket = blueshield's armored jacket
+    .desc = A jacket with sewn-in reinforcement layers.
+ent-ClothingBlueshieldArmoredCowboyJacket = blueshield's armored cowboy jacket
+    .desc = A jacket to protect important people in wild areas.
+ent-ClothingOuterWinterBlueshield = blueshield's armored winter coat
+    .desc = A blue winter coat reinforced with kevlar in the chest area.
+ent-ClothingOuterWinterCapArmored = captain's fancy winter coat
+    .desc = An ornate winter coat with a ballistic plate made for the station's finest.

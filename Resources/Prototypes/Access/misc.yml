@@ -36,6 +36,10 @@
   - Atmospherics
   - GenpopEnter
   - GenpopLeave
+  # LP Edit Start
+  - BlueshieldOfficer
+  - NanotrasenRepresentative
+  # LP Edit End
 
 - type: accessGroup
   id: General

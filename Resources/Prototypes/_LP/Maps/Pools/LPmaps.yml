@@ -1,0 +1,6 @@
+- type: gameMapPool
+  id: LPmaps
+  maps:
+  - LPKerberos
+  - LPAspid
+  - LPCyberiad
