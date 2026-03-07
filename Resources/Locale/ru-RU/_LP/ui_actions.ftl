@@ -1,1 +1,1 @@
-lp-profile-editor-sprite-mode-switch = переключить режим просмотра ?
+lp-profile-editor-sprite-mode-switch = переключить режим просмотра?
