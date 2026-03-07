@@ -33,6 +33,12 @@ using Robust.Server.GameObjects;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
+// Goobstation edit start
+using Content.Server.Chat.Systems;
+using Content.Shared.Chat;
+using Content.Shared._GoobStation.NTR.Scan;
+using Content.Shared._GoobStation.Lathe;
+// Goobstation edit end
 
 namespace Content.Server.Lathe
 {
@@ -56,6 +62,8 @@ namespace Content.Server.Lathe
         [Dependency] private readonly StackSystem _stack = default!;
         [Dependency] private readonly TransformSystem _transform = default!;
         [Dependency] private readonly RadioSystem _radio = default!;
+        [Dependency] private readonly ChatSystem _chatSystem = default!; // Goobstation - New recipes message
+        [Dependency] private readonly IComponentFactory _factory = default!; // Goobstation - Output to material storages
 
         /// <summary>
         /// Per-tick cache
@@ -69,11 +77,12 @@ namespace Content.Server.Lathe
             SubscribeLocalEvent<LatheComponent, MapInitEvent>(OnMapInit);
             SubscribeLocalEvent<LatheComponent, PowerChangedEvent>(OnPowerChanged);
             SubscribeLocalEvent<LatheComponent, TechnologyDatabaseModifiedEvent>(OnDatabaseModified);
-            SubscribeLocalEvent<LatheAnnouncingComponent, TechnologyDatabaseModifiedEvent>(OnTechnologyDatabaseModified);
+            // SubscribeLocalEvent<LatheAnnouncingComponent, TechnologyDatabaseModifiedEvent>(OnTechnologyDatabaseModified); // Goobstation edit
             SubscribeLocalEvent<LatheComponent, ResearchRegistrationChangedEvent>(OnResearchRegistrationChanged);
 
             SubscribeLocalEvent<LatheComponent, LatheQueueRecipeMessage>(OnLatheQueueRecipeMessage);
             SubscribeLocalEvent<LatheComponent, LatheSyncRequestMessage>(OnLatheSyncRequestMessage);
+            SubscribeLocalEvent<LatheComponent, LatheQueueResetMessage>(OnLatheQueueResetMessage); // Goobstation
             SubscribeLocalEvent<LatheComponent, LatheDeleteRequestMessage>(OnLatheDeleteRequestMessage);
             SubscribeLocalEvent<LatheComponent, LatheMoveRequestMessage>(OnLatheMoveRequestMessage);
             SubscribeLocalEvent<LatheComponent, LatheAbortFabricationMessage>(OnLatheAbortFabricationMessage);
@@ -237,11 +246,20 @@ namespace Content.Server.Lathe
                 var currentRecipe = _proto.Index(comp.CurrentRecipe.Value);
                 if (currentRecipe.Result is { } resultProto)
                 {
-                    var result = Spawn(resultProto, Transform(uid).Coordinates);
-                    //Corvax
-                    RaiseLocalEvent(uid, new LatheGetResultEvent(result));
-                    //Corvax
-                    _stack.TryMergeToContacts(result);
+                    // Goobstation, output to material storage instead of spawning
+                    var prototype = _proto.Index(resultProto);
+                    if (comp.OutputToStorage && prototype.TryGetComponent<PhysicalCompositionComponent>(out var composition, _factory))
+                    {
+                        _materialStorage.TryChangeMaterialAmount(uid, composition.MaterialComposition);
+                    }
+                    else
+                    {
+                        var result = Spawn(resultProto, Transform(uid).Coordinates);
+                        RaiseLocalEvent(uid, new LatheGetResultEvent(result)); // CorvaxGoob-Prefilled-Printers
+                        _stack.TryMergeToContacts(result);
+                        if (TryComp<ScannableForPointsComponent>(result, out var scannable)) // Goobstation
+                            scannable.Points = 0; // Goobstation, this thing is to prevent ntr duping points via an emagged lathe
+                    }
                 }
 
                 if (currentRecipe.ResultReagents is { } resultReagents &&
@@ -371,49 +389,98 @@ namespace Content.Server.Lathe
         private void OnDatabaseModified(EntityUid uid, LatheComponent component, ref TechnologyDatabaseModifiedEvent args)
         {
             UpdateUserInterfaceState(uid, component);
+            // Goobstation - Lathe message on recipes update - Start
+            if (args.UnlockedRecipes == null || args.UnlockedRecipes.Count == 0)
+                return;
+
+            var recipesCount = 0;
+
+            foreach (var pack in component.DynamicPacks)
+            {
+                _proto.TryIndex(pack, out var proto);
+                if (proto is null)
+                    continue;
+                recipesCount += proto.Recipes.Intersect(args.UnlockedRecipes).Count(); // which recipes we can use are the ones just unlocked?
+            }
+
+            if (recipesCount > 0)
+                _chatSystem.TrySendInGameICMessage(uid, Loc.GetString("lathe-technology-recipes-update-message", ("count", recipesCount)), InGameICChatType.Speak, hideChat: true);
+            // Goobstation - Lathe message on recipes update - End
         }
 
-        private void OnTechnologyDatabaseModified(Entity<LatheAnnouncingComponent> ent, ref TechnologyDatabaseModifiedEvent args)
+        // Goobstation - Lathe Queue Reset
+        private void OnLatheQueueResetMessage(EntityUid uid, LatheComponent component, LatheQueueResetMessage args)
         {
-            if (args.NewlyUnlockedRecipes is null)
-                return;
-
-            if (!TryGetAvailableRecipes(ent.Owner, out var potentialRecipes))
-                return;
-
-            var recipeNames = new List<string>();
-            foreach (var recipeId in args.NewlyUnlockedRecipes)
+            if (component.Queue.Count > 0)
             {
-                if (!potentialRecipes.Contains(new(recipeId)))
-                    continue;
+                var allMaterials = component.Queue.SelectMany(q => _proto.Index(q.Recipe).Materials);
+                var totalMaterials = new Dictionary<string, int>();
 
-                if (!_proto.TryIndex(recipeId, out LatheRecipePrototype? recipe))
-                    continue;
+                foreach (var (mat, amount) in allMaterials)
+                {
+                    if (!totalMaterials.ContainsKey(mat))
+                        totalMaterials[mat] = 0;
+                    totalMaterials[mat] += amount;
+                }
 
-                var itemName = GetRecipeName(recipe!);
-                recipeNames.Add(Loc.GetString("lathe-unlock-recipe-radio-broadcast-item", ("item", itemName)));
+                if (_materialStorage.CanChangeMaterialAmount(uid, totalMaterials))
+                {
+                    foreach (var (mat, amount) in totalMaterials)
+                    {
+                        _materialStorage.TryChangeMaterialAmount(uid, mat, amount);
+                    }
+                    component.Queue.Clear();
+                }
+                else
+                {
+                    _popup.PopupEntity(Loc.GetString("lathe-queue-reset-material-overflow"), uid);
+                }
             }
-
-            if (recipeNames.Count == 0)
-                return;
-
-            var message =
-                recipeNames.Count > ent.Comp.MaximumItems ?
-                    Loc.GetString(
-                        "lathe-unlock-recipe-radio-broadcast-overflow",
-                        ("items", ContentLocalizationManager.FormatList(recipeNames.GetRange(0, ent.Comp.MaximumItems))),
-                        ("count", recipeNames.Count)
-                    ) :
-                    Loc.GetString(
-                        "lathe-unlock-recipe-radio-broadcast",
-                        ("items", ContentLocalizationManager.FormatList(recipeNames))
-                    );
-
-            foreach (var channel in ent.Comp.Channels)
-            {
-                _radio.SendRadioMessage(ent.Owner, message, channel, ent.Owner, escapeMarkup: false);
-            }
+            UpdateUserInterfaceState(uid, component);
         }
+
+        // private void OnTechnologyDatabaseModified(Entity<LatheAnnouncingComponent> ent, ref TechnologyDatabaseModifiedEvent args)
+        // {
+        //     if (args.NewlyUnlockedRecipes is null)
+        //         return;
+
+        //     if (!TryGetAvailableRecipes(ent.Owner, out var potentialRecipes))
+        //         return;
+
+        //     var recipeNames = new List<string>();
+        //     foreach (var recipeId in args.NewlyUnlockedRecipes)
+        //     {
+        //         if (!potentialRecipes.Contains(new(recipeId)))
+        //             continue;
+
+        //         if (!_proto.TryIndex(recipeId, out LatheRecipePrototype? recipe))
+        //             continue;
+
+        //         var itemName = GetRecipeName(recipe!);
+        //         recipeNames.Add(Loc.GetString("lathe-unlock-recipe-radio-broadcast-item", ("item", itemName)));
+        //     }
+
+        //     if (recipeNames.Count == 0)
+        //         return;
+
+        //     var message =
+        //         recipeNames.Count > ent.Comp.MaximumItems ?
+        //             Loc.GetString(
+        //                 "lathe-unlock-recipe-radio-broadcast-overflow",
+        //                 ("items", ContentLocalizationManager.FormatList(recipeNames.GetRange(0, ent.Comp.MaximumItems))),
+        //                 ("count", recipeNames.Count)
+        //             ) :
+        //             Loc.GetString(
+        //                 "lathe-unlock-recipe-radio-broadcast",
+        //                 ("items", ContentLocalizationManager.FormatList(recipeNames))
+        //             );
+
+        //     foreach (var channel in ent.Comp.Channels)
+        //     {
+        //         _radio.SendRadioMessage(ent.Owner, message, channel, ent.Owner, escapeMarkup: false);
+        //     }
+        // }
+        // Goobstation - Lathe Queue Reset
 
         private void OnResearchRegistrationChanged(EntityUid uid, LatheComponent component, ref ResearchRegistrationChangedEvent args)
         {

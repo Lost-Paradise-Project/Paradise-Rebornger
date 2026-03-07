@@ -12,6 +12,8 @@ using JetBrains.Annotations;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
+using Content.Shared.Tag; // Goobstation edit
+using Content.Shared._NF.Storage.Components; // Frontier edit
 
 namespace Content.Server.Materials;
 
@@ -26,7 +28,9 @@ public sealed class MaterialStorageSystem : SharedMaterialStorageSystem
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly StackSystem _stackSystem = default!;
+    [Dependency] private readonly TagSystem _tag = default!; // Goobstation edit
 
+    private static readonly ProtoId<TagPrototype> OreTag = "Ore"; // Goobstation edit
     public override void Initialize()
     {
         base.Initialize();
@@ -69,8 +73,16 @@ public sealed class MaterialStorageSystem : SharedMaterialStorageSystem
 
         if (material.StackEntity != null)
         {
-            if (!_prototypeManager.Index<EntityPrototype>(material.StackEntity).TryGetComponent<PhysicalCompositionComponent>(out var composition, EntityManager.ComponentFactory))
+            // Goobstation edit Start
+            var proto = _prototypeManager.Index<EntityPrototype>(material.StackEntity);
+            if (!proto.TryGetComponent<PhysicalCompositionComponent>(out var composition, EntityManager.ComponentFactory))
                 return;
+
+            if (proto.TryGetComponent<TagComponent>(out var tag, EntityManager.ComponentFactory)
+                && component.DisallowOreEjection
+                && _tag.HasTag(tag, OreTag))
+                return;
+            // Goobstation edit End
 
             var volumePerSheet = composition.MaterialComposition.FirstOrDefault(kvp => kvp.Key == msg.Material).Value;
             var sheetsToExtract = Math.Min(msg.SheetsToExtract, _stackSystem.GetMaxCount(material.StackEntity.Value));
@@ -80,6 +92,14 @@ public sealed class MaterialStorageSystem : SharedMaterialStorageSystem
 
         if (volume <= 0 || !TryChangeMaterialAmount(uid, msg.Material, -volume))
             return;
+
+        // Frontier edit start
+        // If we made it this far, turn off the magnet before spawning materials
+        if (TryComp<MaterialStorageMagnetPickupComponent>(uid, out var magnet))
+        {
+            magnet.MagnetEnabled = false;
+        }
+        // Frontier edit end
 
         var mats = SpawnMultipleFromMaterial(volume, material, Transform(uid).Coordinates, out _);
         foreach (var mat in mats.Where(mat => !TerminatingOrDeleted(mat)))

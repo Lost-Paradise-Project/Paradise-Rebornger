@@ -8,7 +8,6 @@ using Content.Shared.IdentityManagement;
 using Content.Shared.Research.Components;
 using Content.Shared.Research.Prototypes;
 using Content.Shared._NF.Research; // Frontier
-using System.Linq; // Frontier
 using Robust.Shared.Prototypes; // Frontier
 using System.Linq;
 using Content.Shared.Radio;
