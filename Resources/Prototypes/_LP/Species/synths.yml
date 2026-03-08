@@ -13,14 +13,15 @@
       required: false
       onlyGroupWhitelisted: true # Не показывать общую растительность на лице.
 
-    enum.HumanoidVisualLayers.Chest: # _sint-торс пока ещё не подключаем.
-      limit: 0
-      required: false
+    enum.HumanoidVisualLayers.Chest: # Дополнительный _sint overlay для торса.
+      limit: 1
+      required: true # Один из вариантов torso overlay должен быть всегда.
+      onlyGroupWhitelisted: true # Не показывать чужие chest-marking'и.
+      default: [ SynthTorsoSintMale ] # по умолчанию мужик. (или трап)
 
     enum.HumanoidVisualLayers.Snout: # Оставляем морду/экран доступной игроку.
       limit: 1
-      required: false # Важно: теперь игрок может снять эту маркировку.
-      # default специально НЕ задаём, чтобы не навязывать её принудительно.
+      required: false
 
     enum.HumanoidVisualLayers.Head:
       limit: 0
@@ -61,6 +62,11 @@
     enum.HumanoidVisualLayers.Tail:
       limit: 0
       required: false
+    # enum.HumanoidVisualLayers.Tail: # Базовый хвост обязателен.
+    #   limit: 1
+    #   required: true # Один из базовых хвостов должен быть всегда.
+    #   onlyGroupWhitelisted: true # Не показывать чужие хвосты.
+    #   default: [ SynthTail ] # По умолчанию обычный хвост.
 
     enum.HumanoidVisualLayers.Special:
       limit: 0
@@ -178,16 +184,6 @@
   id: OrganSynthoidFootRight
 
 # - type: marking
-#   id: SynthTail
-#   bodyPart: Tail
-#   groupWhitelist: [ Synthoid ]
-#   sprites:
-#   - sprite: _LP/Mobs/Customization/Sint_parts.rsi
-#     state: tail_sint
-#   - sprite: _LP/Mobs/Customization/Sint_parts.rsi
-#     state: tail_down_sint
-
-# - type: marking
 #   id: SynthFrillsDivinity
 #   bodyPart: HeadSide
 #   groupWhitelist: [ Synthoid ]
@@ -204,3 +200,57 @@
   sprites:
   - sprite: _LP/Mobs/Sint_parts.rsi
     state: head_win
+
+- type: marking
+  id: SynthTorsoSintMale
+  bodyPart: Chest
+  groupWhitelist: [ Synthoid ] # Только синтойдам.
+  sprites:
+  - sprite: _LP/Mobs/Sint_parts.rsi
+    state: torso_m_sint
+
+- type: marking
+  id: SynthTorsoSintFemale
+  bodyPart: Chest
+  groupWhitelist: [ Synthoid ] # Только синтойдам.
+  sprites:
+  - sprite: _LP/Mobs/Sint_parts.rsi
+    state: torso_f_sint
+
+
+# ХВОСТЫ ПОЛОМАНЫ СПРАЙТЕРОМ!
+# - type: marking
+#   id: SynthTail
+#   bodyPart: Tail
+#   groupWhitelist: [ Synthoid ] # Базовый хвост по умолчанию.
+#   sprites:
+#   - sprite: _LP/Mobs/Customization/Sint_parts.rsi
+#     state: tail
+
+# - type: marking
+#   id: SynthTailSint
+#   bodyPart: Tail
+#   groupWhitelist: [ Synthoid ] # Базовый хвост + _sint-накладка.
+#   sprites:
+#   - sprite: _LP/Mobs/Customization/Sint_parts.rsi
+#     state: tail
+#   - sprite: _LP/Mobs/Customization/Sint_parts.rsi
+#     state: tail_sint
+
+# - type: marking
+#   id: SynthTailDown
+#   bodyPart: Tail
+#   groupWhitelist: [ Synthoid ] # Опущенный хвост.
+#   sprites:
+#   - sprite: _LP/Mobs/Customization/Sint_parts.rsi
+#     state: tail_down
+
+# - type: marking
+#   id: SynthTailDownSint
+#   bodyPart: Tail
+#   groupWhitelist: [ Synthoid ] # Опущенный хвост + _sint-накладка.
+#   sprites:
+#   - sprite: _LP/Mobs/Customization/Sint_parts.rsi
+#     state: tail_down
+#   - sprite: _LP/Mobs/Customization/Sint_parts.rsi
+#     state: tail_down_sint
