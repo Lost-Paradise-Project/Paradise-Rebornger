@@ -249,15 +249,15 @@
 # - type: marking
 #   id: SynthTail
 #   bodyPart: Tail
-#   groupWhitelist: [ Synthoid ] # Базовый хвост по умолчанию.
+#   groupWhitelist: [ Synthoid ]
 #   sprites:
 #   - sprite: _LP/Mobs/Customization/Sint_parts.rsi
 #     state: tail
-
+#
 # - type: marking
 #   id: SynthTailSint
 #   bodyPart: Tail
-#   groupWhitelist: [ Synthoid ] # Базовый хвост + _sint-накладка.
+#   groupWhitelist: [ Synthoid ]
 #   sprites:
 #   - sprite: _LP/Mobs/Customization/Sint_parts.rsi
 #     state: tail
