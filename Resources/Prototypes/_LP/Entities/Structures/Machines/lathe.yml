@@ -18,7 +18,7 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: Machine
-    board: LPPServiceProtolatheCircuitboard
+    board: LPPServiceProtolatheMachineCircuitboard
   - type: Lathe
     idleState: icon
     runningState: building
@@ -61,7 +61,7 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: Machine
-    board: LPPScienceProtolatheCircuitboard
+    board: LPPScienceProtolatheMachineCircuitboard
   - type: Lathe
     idleState: icon
     runningState: building
@@ -99,7 +99,7 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: Machine
-    board: LPPEngineeringProtolatheCircuitboard
+    board: LPPEngineeringProtolatheMachineCircuitboard
   - type: Lathe
     idleState: icon
     runningState: building
@@ -137,7 +137,7 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: Machine
-    board: LPPCargoProtolatheCircuitboard
+    board: LPPCargoProtolatheMachineCircuitboard
   - type: Lathe
     idleState: icon
     runningState: building
@@ -155,8 +155,8 @@
 - type: entity
   id: LPPSpaceForge
   parent: [BaseLatheLube, BaseSiloUtilizer]
-  name: service protolathe
-  description: Prints equipment and circuitboards for use by engineering department.
+  name: space forge
+  description: Prints hardsuits for everyone.
   components:
   - type: Sprite
     sprite: _LP/Structures/Machines/SpaceForge.rsi
@@ -170,14 +170,12 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: Machine
-    board: LPPSpaceForgeCircuitboard
+    board: LPPSpaceForgeMachineCircuitboard
   - type: Lathe
     idleState: icon
     runningState: building
-    staticPacks:
-
     dynamicPacks:
-
+    - LPPSpaceForgeHardsuits
   - type: MaterialStorage
     whitelist:
       tags:
@@ -188,8 +186,8 @@
 - type: entity
   id: LPPSpaceForgeCMD
   parent: [BaseLatheLube, BaseSiloUtilizer]
-  name: service protolathe
-  description: Prints equipment and circuitboards for use by engineering department.
+  name: command space forge
+  description: Prints hardsuits for command, security and other.
   components:
   - type: Sprite
     sprite: _LP/Structures/Machines/SpaceForge.rsi
@@ -203,13 +201,11 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: Machine
-    board: LPPSpaceForgeCMDCircuitboard
+    board: LPPSpaceForgeCMDMachineCircuitboard
   - type: Lathe
     idleState: icon
     runningState: building
-    staticPacks:
-
     dynamicPacks:
-
+    - LPPSpaceForgeCMDHardsuits
   - type: MaterialStorage
     whitelist: *StandardMaterialWhitelist

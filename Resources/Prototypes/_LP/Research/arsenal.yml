@@ -35,7 +35,7 @@
   - ClothingOuterHardsuitCombatOfficer
   technologyPrerequisites:
   - LPPEVAHardsuits
-  position:
+  position: 13, 25
   radioChannels:
   - Security
 
@@ -52,7 +52,7 @@
   - ClothingOuterHardsuitSecurity
   technologyPrerequisites:
   - LPPBaseAdvancedHardsuits
-  position:
+  position: 13, 26
   radioChannels:
   - Security
 
@@ -70,7 +70,7 @@
   - ClothingOuterHardsuitCombatRiot
   technologyPrerequisites:
   - LPPStandardAdvancedHardsuits
-  position:
+  position: 13, 27
   radioChannels:
   - Security
 
@@ -90,7 +90,7 @@
   - ClothingOuterHardsuitWarden
   technologyPrerequisites:
   - LPPSpecializedStandardHardsuits
-  position:
+  position: 13, 28
   radioChannels:
   - Security
 
@@ -98,7 +98,7 @@
   id: LPPAdvancedMiningHardsuits
   name: research-technology-adv-mining-hardsuits
   icon:
-    sprite: Clothing/OuterClothing/Hardsuits/maxim.rsi
+    sprite: Clothing/OuterClothing/Hardsuits/luxury.rsi
     state: icon
   discipline: Arsenal
   tier: 2
@@ -107,7 +107,7 @@
   - ClothingOuterHardsuitLuxury
   technologyPrerequisites:
   - LPPMiningHardsuits
-  position:
+  position: 13, 29
   radioChannels:
   - Supply
 
@@ -130,6 +130,6 @@
   technologyPrerequisites:
   - LPPAdvancedMiningHardsuits
   - LPPEngineeringHardsuits
-  position:
+  position: 13, 30
   radioChannels:
   - Command

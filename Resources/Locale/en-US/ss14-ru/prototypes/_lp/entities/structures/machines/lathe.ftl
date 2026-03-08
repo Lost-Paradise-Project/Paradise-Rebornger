@@ -6,3 +6,7 @@ ent-LPPEngineeringProtolathe = engineering protolathe
     .desc = Prints equipment and circuitboards for use by engineering department.
 ent-LPPCargoProtolathe = cargo protolathe
     .desc = Prints equipment and circuitboards for use by cargo department.
+ent-LPPSpaceForge = service protolathe
+    .desc = Prints equipment and circuitboards for use by engineering department.
+ent-LPPSpaceForgeCMD = service protolathe
+    .desc = Prints equipment and circuitboards for use by engineering department.

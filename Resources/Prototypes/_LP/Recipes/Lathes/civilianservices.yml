@@ -1,0 +1,61 @@
+# Lathes
+- type: latheRecipe
+  parent: [ BaseCircuitboardRecipe, BaseResearchMachineRecipeCategory ]
+  id: LPPSpaceForgeMachineCircuitboard
+  result: LPPSpaceForgeMachineCircuitboard
+
+- type: latheRecipe
+  id: ClothingHeadHelmetEVA
+  result: ClothingHeadHelmetEVA
+  completetime: 10
+  materials:
+    Plastic: 375
+    Plasma: 375
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitEVA
+  result: ClothingOuterHardsuitEVA
+  completetime: 10
+  materials:
+    Plastic: 375
+    Plasma: 375
+
+- type: latheRecipe
+  id: ClothingOuterSuitEmergency
+  result: ClothingOuterSuitEmergency
+  completetime: 10
+  materials:
+    Plastic: 375
+    Plasma: 375
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitAtmos
+  result: ClothingOuterHardsuitAtmos
+  completetime: 10
+  materials:
+    Plastic: 375
+    Plasma: 375
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitEngineering
+  result: ClothingOuterHardsuitEngineering
+  completetime: 10
+  materials:
+    Plastic: 375
+    Plasma: 375
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitSpatio
+  result: ClothingOuterHardsuitSpatio
+  completetime: 10
+  materials:
+    Plastic: 375
+    Plasma: 375
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitSalvage
+  result: ClothingOuterHardsuitSalvage
+  completetime: 10
+  materials:
+    Plastic: 375
+    Plasma: 375

@@ -30,3 +30,139 @@
   materials:
     Plastic: 375
     Plasma: 375
+
+- type: latheRecipe
+  id: ClothingHeadHelmetEVALarge
+  result: ClothingHeadHelmetEVALarge
+  completetime: 10
+  materials:
+    Plastic: 375
+    Plasma: 375
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitEVAPrisoner
+  result: ClothingOuterHardsuitEVAPrisoner
+  completetime: 10
+  materials:
+    Plastic: 375
+    Plasma: 375
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitCombatOfficer
+  result: ClothingOuterHardsuitCombatOfficer
+  completetime: 10
+  materials:
+    Plastic: 375
+    Plasma: 375
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitSecurity
+  result: ClothingOuterHardsuitSecurity
+  completetime: 10
+  materials:
+    Plastic: 375
+    Plasma: 375
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitCombatMedical
+  result: ClothingOuterHardsuitCombatMedical
+  completetime: 10
+  materials:
+    Plastic: 375
+    Plasma: 375
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitCombatRiot
+  result: ClothingOuterHardsuitCombatRiot
+  completetime: 10
+  materials:
+    Plastic: 375
+    Plasma: 375
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitSecurityPilot
+  result: ClothingOuterHardsuitSecurityPilot
+  completetime: 10
+  materials:
+    Plastic: 375
+    Plasma: 375
+
+- type: latheRecipe
+  id: LPPClothingOuterHardsuitSecurityEng
+  result: LPPClothingOuterHardsuitSecurityEng
+  completetime: 10
+  materials:
+    Plastic: 375
+    Plasma: 375
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitBrigmedic
+  result: ClothingOuterHardsuitBrigmedic
+  completetime: 10
+  materials:
+    Plastic: 375
+    Plasma: 375
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitWarden
+  result: ClothingOuterHardsuitWarden
+  completetime: 10
+  materials:
+    Plastic: 375
+    Plasma: 375
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitLuxury
+  result: ClothingOuterHardsuitLuxury
+  completetime: 10
+  materials:
+    Plastic: 375
+    Plasma: 375
+
+- type: latheRecipe
+  id: LPPClothingOuterHardsuitRd
+  result: LPPClothingOuterHardsuitRd
+  completetime: 10
+  materials:
+    Plastic: 375
+    Plasma: 375
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitMedical
+  result: ClothingOuterHardsuitMedical
+  completetime: 10
+  materials:
+    Plastic: 375
+    Plasma: 375
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitEngineeringWhite
+  result: ClothingOuterHardsuitEngineeringWhite
+  completetime: 10
+  materials:
+    Plastic: 375
+    Plasma: 375
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitSecurityRed
+  result: ClothingOuterHardsuitSecurityRed
+  completetime: 10
+  materials:
+    Plastic: 375
+    Plasma: 375
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitMaxim
+  result: ClothingOuterHardsuitMaxim
+  completetime: 10
+  materials:
+    Plastic: 375
+    Plasma: 375
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitCap
+  result: ClothingOuterHardsuitCap
+  completetime: 10
+  materials:
+    Plastic: 375
+    Plasma: 375

@@ -1,4 +1,17 @@
 - type: technology
+  id: LPPSpaceForge
+  name: research-technology-space-forge
+  icon:
+    sprite: _LP/Structures/Machines/SpaceForge.rsi
+    state: icon
+  discipline: CivilianServices
+  tier: 1
+  cost: 5000
+  recipeUnlocks:
+  - LPPSpaceForgeMachineCircuitboard
+  position: 13, 20
+
+- type: technology
   id: LPPEVAHardsuits
   name: research-technology-eva-hardsuits
   icon:
@@ -11,7 +24,9 @@
   - ClothingOuterHardsuitEVA
   - ClothingHeadHelmetEVA
   - ClothingOuterSuitEmergency
-  position:
+  technologyPrerequisites:
+  - LPPSpaceForge
+  position: 13, 21
 
 - type: technology
   id: LPPEngineeringHardsuits
@@ -19,7 +34,7 @@
   icon:
     sprite: Clothing/OuterClothing/Hardsuits/engineering.rsi
     state: icon
-  discipline: Arsenal
+  discipline: CivilianServices
   tier: 2
   cost: 10000
   recipeUnlocks:
@@ -27,7 +42,7 @@
   - ClothingOuterHardsuitEngineering
   technologyPrerequisites:
   - LPPEVAHardsuits
-  position:
+  position: 13, 22
   radioChannels:
   - Engineering
 
@@ -37,14 +52,14 @@
   icon:
     sprite: Clothing/OuterClothing/Hardsuits/spatio.rsi
     state: icon
-  discipline: Arsenal
+  discipline: CivilianServices
   tier: 2
   cost: 10000
   recipeUnlocks:
   - ClothingOuterHardsuitSpatio
   technologyPrerequisites:
   - LPPEVAHardsuits
-  position:
+  position: 13, 23
   radioChannels:
   - Supply
 
@@ -54,13 +69,13 @@
   icon:
     sprite: Clothing/OuterClothing/Hardsuits/salvage.rsi
     state: icon
-  discipline: Arsenal
+  discipline: CivilianServices
   tier: 2
   cost: 10000
   recipeUnlocks:
   - ClothingOuterHardsuitSalvage
   technologyPrerequisites:
   - LPPBaseMiningHardsuits
-  position:
+  position: 13, 24
   radioChannels:
   - Supply

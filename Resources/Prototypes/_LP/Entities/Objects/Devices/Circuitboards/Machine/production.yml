@@ -1,5 +1,5 @@
 - type: entity
-  id: LPPServiceProtolatheCircuitboard
+  id: LPPServiceProtolatheMachineCircuitboard
   parent: BaseMachineCircuitboard
   name: service protolathe machine board
   description: A machine printed circuit board for a service protolathe.
@@ -16,7 +16,7 @@
         defaultPrototype: Beaker
 
 - type: entity
-  id: LPPScienceProtolatheCircuitboard
+  id: LPPScienceProtolatheMachineCircuitboard
   parent: BaseMachineCircuitboard
   name: science protolathe machine board
   description: A machine printed circuit board for a science protolathe.
@@ -33,7 +33,7 @@
         defaultPrototype: Beaker
 
 - type: entity
-  id: LPPEngineeringProtolatheCircuitboard
+  id: LPPEngineeringProtolatheMachineCircuitboard
   parent: BaseMachineCircuitboard
   name: engineering protolathe machine board
   description: A machine printed circuit board for a engineering protolathe.
@@ -50,7 +50,7 @@
         defaultPrototype: Beaker
 
 - type: entity
-  id: LPPCargoProtolatheCircuitboard
+  id: LPPCargoProtolatheMachineCircuitboard
   parent: BaseMachineCircuitboard
   name: cargo protolathe machine board
   description: A machine printed circuit board for a cargo protolathe.
@@ -67,7 +67,7 @@
         defaultPrototype: Beaker
 
 - type: entity
-  id: LPPSpaceForgeCircuitboard
+  id: LPPSpaceForgeMachineCircuitboard
   parent: BaseMachineCircuitboard
   name: space forge machine board
   description: A machine printed circuit board for a space forge.
@@ -84,7 +84,7 @@
         defaultPrototype: Beaker
 
 - type: entity
-  id: LPPSpaceForgeCMDCircuitboard
+  id: LPPSpaceForgeCMDMachineCircuitboard
   parent: BaseMachineCircuitboard
   name: command space forge machine board
   description: A machine printed circuit board for a command space forge.
