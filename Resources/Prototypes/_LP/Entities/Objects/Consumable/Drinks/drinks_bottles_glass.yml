@@ -1,0 +1,16 @@
+- type: entity
+  parent: [DrinkVisualsAllFilled, DrinkBottleGlassBaseFull]
+  id: LPDrinkXenomeisterBottleFull
+  name: Xenomeister bottle
+  description: One sip of this and you just know you're gonna have a good time.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: LPXenomeister
+          Quantity: 100
+  - type: Label
+    currentLabel: reagent-name-xenomeister
+  - type: Sprite
+    sprite: _LP/Objects/Consumable/Drinks/xenomeister.rsi
