@@ -13,22 +13,48 @@ using Content.Shared.Roles;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+// LP edit start
+using Content.Shared.Sprite;
+using System.Numerics;
+using HumanoidProfileSystem = Content.Shared.Humanoid.HumanoidProfileSystem;
+// LP edit end
 
 namespace Content.Client.Lobby.UI.ProfileEditorControls;
 
 public sealed partial class ProfilePreviewSpriteView
 {
+    // LP edit start
+
+    /// <summary>
+    /// Applies the humanoid profile to the PreviewDummy entity.
+    /// </summary>
+    private void ApplyHumanoidProfile(HumanoidCharacterProfile humanoid)
+    {
+        if (EntMan.TryGetComponent<HumanoidProfileComponent>(PreviewDummy, out _))
+        {
+            EntMan.System<HumanoidProfileSystem>().ApplyProfileTo(PreviewDummy, humanoid);
+
+            if (EntMan.TryGetComponent<Robust.Client.GameObjects.SpriteComponent>(PreviewDummy, out var sprite))
+                sprite.Scale = new Vector2(humanoid.Width, humanoid.Height);
+        }
+
+        if (EntMan.TryGetComponent<VisualBodyComponent>(PreviewDummy, out _))
+        {
+            EntMan.System<SharedVisualBodySystem>().ApplyProfileTo(PreviewDummy, humanoid);
+        }
+    }
+
     /// <summary>
     /// A slim reload that only updates the entity itself and not any of the job entities, etc.
     /// </summary>
     private void ReloadHumanoidEntity(HumanoidCharacterProfile humanoid)
     {
-        if (!EntMan.EntityExists(PreviewDummy) ||
-            !EntMan.HasComponent<VisualBodyComponent>(PreviewDummy))
+        if (!EntMan.EntityExists(PreviewDummy))
             return;
 
-        EntMan.System<SharedVisualBodySystem>().ApplyProfileTo(PreviewDummy, humanoid);
+        ApplyHumanoidProfile(humanoid);
     }
+    // LP edit end
 
     /// <summary>
     /// Loads the profile onto a dummy entity.
@@ -52,7 +78,7 @@ public sealed partial class ProfilePreviewSpriteView
         {
             var dummy = _prototypeManager.Index(humanoid.Species).DollPrototype;
             PreviewDummy = EntMan.SpawnEntity(dummy, MapCoordinates.Nullspace);
-            EntMan.System<SharedVisualBodySystem>().ApplyProfileTo(PreviewDummy, humanoid);
+            ApplyHumanoidProfile(humanoid); // LP edit
         }
         else
         {

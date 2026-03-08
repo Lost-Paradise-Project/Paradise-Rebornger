@@ -8,7 +8,6 @@ using Content.Shared.IdentityManagement;
 using Content.Shared.Research.Components;
 using Content.Shared.Research.Prototypes;
 using Content.Shared._NF.Research; // Frontier
-using System.Linq; // Frontier
 using Robust.Shared.Prototypes; // Frontier
 using System.Linq;
 using Content.Shared.Radio;
@@ -28,6 +27,20 @@ public sealed partial class ResearchSystem
         SubscribeLocalEvent<ResearchConsoleComponent, TechnologyDatabaseModifiedEvent>(OnConsoleDatabaseModified);
         SubscribeLocalEvent<ResearchConsoleComponent, TechnologyDatabaseSynchronizedEvent>(OnConsoleDatabaseSynchronized);
         SubscribeLocalEvent<ResearchConsoleComponent, GotEmaggedEvent>(OnEmagged);
+        SubscribeLocalEvent<PrototypesReloadedEventArgs>(OnPrototypesReloaded); // LP edit
+    }
+
+    // LP edit this func()
+    private void OnPrototypesReloaded(PrototypesReloadedEventArgs args)
+    {
+        if (!args.WasModified<TechnologyPrototype>())
+            return;
+
+        var query = EntityQueryEnumerator<ResearchConsoleComponent>();
+        while (query.MoveNext(out var uid, out var comp))
+        {
+            UpdateConsoleInterface(uid, comp);
+        }
     }
 
     private void OnConsoleUnlock(EntityUid uid, ResearchConsoleComponent component, ConsoleUnlockTechnologyMessage args)

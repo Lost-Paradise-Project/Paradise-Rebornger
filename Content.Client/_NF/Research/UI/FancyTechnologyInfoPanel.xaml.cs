@@ -63,10 +63,19 @@ public sealed partial class FancyTechnologyInfoPanel : Control
         ResearchButton.OnPressed += args =>
         {
             _sawmill.Debug($"Research button pressed for {proto.ID}");
+            ResearchButton.Disabled = true; // LP edit
+
             if (BuyAction != null)
             {
                 _sawmill.Debug($"Triggering BuyAction for {proto.ID}");
                 BuyAction.Invoke(proto);
+                // LP edit start
+                ResearchButton.Text = Loc.GetString("research-console-menu-server-researched-button");
+                TechnologyCostLabel.SetMessage(
+                    Loc.GetString("research-console-tech-cost-label", ("cost", proto.Cost)),
+                    defaultColor: ResearchColorScheme.GetInfoPanelColor(ResearchAvailability.Researched)
+                );
+                // LP edit end
             }
             else
             {

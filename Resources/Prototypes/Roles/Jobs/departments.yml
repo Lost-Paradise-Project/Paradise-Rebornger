@@ -46,6 +46,8 @@
   - ERTSecurity
   - ERTEngineer
   - DeathSquad
+  - BlueshieldOfficer # Goobstation - Start
+  - NanotrasenRepresentative # Goobstation - End
   editorHidden: true
   weight: 120
 
@@ -63,6 +65,8 @@
   - HeadOfSecurity
   - ResearchDirector
   - Quartermaster
+  - BlueshieldOfficer # Goobstation
+  - NanotrasenRepresentative # Goobstation
   - CentralCommandOfficial
   - CBURN
   - ERTLeader

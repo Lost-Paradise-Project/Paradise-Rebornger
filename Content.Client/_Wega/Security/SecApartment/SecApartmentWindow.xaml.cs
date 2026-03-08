@@ -130,9 +130,13 @@ public sealed partial class SecApartmentWindow : BaseWindow
             SecApartmentStyles.TabInactiveColor
         );
 
-        var rules = new[] { buttonStyleRule, lineEditRule, optionRule };
+        // LP edit start
+        var optionBackgroundRule = SecApartmentStyles.CreateOptionButtonBackgroundRule();
+
+        var rules = new[] { buttonStyleRule, lineEditRule, optionRule, optionBackgroundRule };
         var stylesheet = CreateCombinedStylesheet(rules);
-        UserInterfaceManager.Stylesheet = stylesheet;
+        Stylesheet = stylesheet;
+        // LP edit end
     }
 
     private void SetupTabContainer()

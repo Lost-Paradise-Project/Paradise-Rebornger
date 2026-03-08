@@ -7,6 +7,12 @@ using Robust.Shared.Log;
 using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
+// LP edit start
+using Robust.Shared.ContentPack;
+using System.IO;
+using Content.Shared.CCVar;
+using Nett;
+// LP edit end
 
 namespace Content.Client.Launcher
 {
@@ -21,6 +27,7 @@ namespace Content.Client.Launcher
         [Dependency] private readonly IConfigurationManager _cfg = default!;
         [Dependency] private readonly IClipboardManager _clipboard = default!;
         [Dependency] private readonly ILogManager _logManager = default!;
+        [Dependency] private readonly IResourceManager _resourceManager = default!; // LP edit
 
         private LauncherConnectingGui? _control;
         private ISawmill _sawmill = default!;
@@ -61,10 +68,33 @@ namespace Content.Client.Launcher
 
         protected override void Startup()
         {
-            _control = new LauncherConnectingGui(this, _random, _prototypeManager, _cfg, _clipboard);
-
             _sawmill = _logManager.GetSawmill("launcher-ui");
+            // LP edit start
 
+            // Load LP config
+            const string configPath = "/ConfigPresets/LP/lp.toml";
+            if (_resourceManager.TryContentFileRead(configPath, out var file))
+            {
+                // Read the entire config file as text
+                using var reader = new StreamReader(file);
+                var configText = reader.ReadToEnd();
+
+                // Extract only the [infolinks] section
+                var infolinksSection = ExtractInfolinksSection(configText);
+
+                // Convert the extracted section to a stream and load it
+                using var infolinksStream = new MemoryStream(System.Text.Encoding.UTF8.GetBytes(infolinksSection));
+                _cfg.LoadDefaultsFromTomlStream(infolinksStream);
+
+                _sawmill.Info($"Loaded config preset: {configPath}");
+            }
+            else
+            {
+                _sawmill.Error($"Unable to load config preset: {configPath}");
+            }
+
+            _control = new LauncherConnectingGui(this, _random, _prototypeManager, _cfg, _clipboard);
+            // LP edit end
             _userInterfaceManager.StateRoot.AddChild(_control);
 
             _clientNetManager.ConnectFailed += OnConnectFailed;
@@ -138,6 +168,21 @@ namespace Content.Client.Launcher
         {
             CurrentPage = Page.Disconnected;
         }
+
+        // LP edit start
+        private string ExtractInfolinksSection(string configText)
+        {
+            var infolinksStart = configText.IndexOf("[infolinks]", StringComparison.Ordinal);
+            if (infolinksStart == -1)
+                return "";
+
+            var infolinksEnd = configText.IndexOf("\n[", infolinksStart, StringComparison.Ordinal);
+            if (infolinksEnd == -1)
+                infolinksEnd = configText.Length;
+
+            return configText.Substring(infolinksStart, infolinksEnd - infolinksStart);
+        }
+        // LP edit end
 
         public enum Page : byte
         {

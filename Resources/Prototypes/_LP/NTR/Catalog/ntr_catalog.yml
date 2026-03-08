@@ -1,0 +1,103 @@
+# responce teams
+
+- type: listing
+  id: LPPNTRExecutiveERTSec
+  name: ntr-executive-ert-sec-name
+  description: ntr-executive-ert-sec-desc
+  productEntity: LPPSpawnPodERTSec
+  icon:
+    sprite: _GoobStation/Objects/Tools/executive_briefcase.rsi
+    state: icon_alt
+  cost:
+    NTLoyaltyPoint: 50
+  categories:
+  - LPPNTRERTSquads
+  restockTime: 900 # 15 mins 900
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: LPPNTRExecutiveERTMed
+  name: ntr-executive-ert-med-name
+  description: ntr-executive-ert-med-desc
+  productEntity: LPPSpawnPodERTMed
+  icon:
+    sprite: _GoobStation/Objects/Tools/executive_briefcase.rsi
+    state: icon_alt
+  cost:
+    NTLoyaltyPoint: 50
+  categories:
+  - LPPNTRERTSquads
+  restockTime: 900 # 15 mins
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: LPPNTRExecutiveERTEngi
+  name: ntr-executive-ert-engi-name
+  description: ntr-executive-ert-engi-desc
+  productEntity: LPPSpawnPodERTEngi
+  icon:
+    sprite: _GoobStation/Objects/Tools/executive_briefcase.rsi
+    state: icon_alt
+  cost:
+    NTLoyaltyPoint: 50
+  categories:
+  - LPPNTRERTSquads
+  restockTime: 900 # 15 mins
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: LPPNTRExecutiveERTJani
+  name: ntr-executive-ert-jani-name
+  description: ntr-executive-ert-jani-desc
+  productEntity: LPPSpawnPodERTJani
+  icon:
+    sprite: _GoobStation/Objects/Tools/executive_briefcase.rsi
+    state: icon_alt
+  cost:
+    NTLoyaltyPoint: 50
+  categories:
+  - LPPNTRERTSquads
+  restockTime: 900 # 15 mins
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: LPPNTRExecutiveERTStandard
+  name: ntr-executive-ert-standard-name
+  description: ntr-executive-ert-standard-desc
+  productEntity: LPPSpawnPodERTStandard
+  icon:
+    sprite: _GoobStation/Objects/Tools/executive_briefcase.rsi
+    state: icon_alt
+  cost:
+    NTLoyaltyPoint: 35
+  categories:
+  - LPPNTRERTSquads
+  restockTime: 900 # 15 mins
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: LPPNTRExecutiveCBURNCall
+  name: ntr-executive-cburn-name
+  description: ntr-executive-cburn-desc
+  productEntity: LPPSpawnPodCBURN
+  icon:
+    sprite: _GoobStation/Objects/Tools/executive_briefcase.rsi
+    state: icon_alt
+  cost:
+    NTLoyaltyPoint: 50
+  categories:
+  - LPPNTRERTSquads
+  restockTime: 900 # 15 mins
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1

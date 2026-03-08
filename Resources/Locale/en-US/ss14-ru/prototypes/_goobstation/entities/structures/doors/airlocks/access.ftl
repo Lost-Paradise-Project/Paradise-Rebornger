@@ -1,0 +1,12 @@
+ent-AirlockBlueshieldOfficerCommandLocked = { ent-AirlockBlueshieldOfficerCommand }
+    .suffix = Blueshield, Locked
+    .desc = { ent-AirlockBlueshieldOfficerCommand.desc }
+ent-AirlockBlueshieldOfficerCommandGlassLocked = { ent-AirlockBlueshieldOfficerCommandGlass }
+    .suffix = Blueshield, Locked
+    .desc = { ent-AirlockBlueshieldOfficerCommandGlass.desc }
+ent-AirlockNanotrasenRepresentativeCommandLocked = { ent-AirlockCentralCommand }
+    .suffix = NTRep, Locked
+    .desc = { ent-AirlockCentralCommand.desc }
+ent-AirlockNanotrasenRepresentativeCommandGlassLocked = { ent-AirlockCentralCommandGlass }
+    .suffix = NTRep, Locked
+    .desc = { ent-AirlockCentralCommandGlass.desc }

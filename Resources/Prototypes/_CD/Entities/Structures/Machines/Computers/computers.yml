@@ -33,6 +33,10 @@
     - ERTSecurity
     - ERTEngineer
     - DeathSquad
+    # LP Edit Start
+    - NanotrasenRepresentative
+    - BlueshieldOfficer
+    # LP Edit End
   - type: ActivatableUI
     key: enum.JobSlotsConsoleUiKey.Key
   - type: ActivatableUIRequiresVision

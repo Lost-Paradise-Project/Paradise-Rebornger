@@ -1,0 +1,39 @@
+# BSO locked
+
+- type: entity
+  parent: AirlockBlueshieldOfficerCommand # Corvax-Goob-RespriteAirlocks
+  id: AirlockBlueshieldOfficerCommandLocked
+  suffix: Blueshield, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsBSO ]
+
+- type: entity
+  parent: AirlockBlueshieldOfficerCommandGlass # Corvax-Goob-RespriteAirlocks
+  id: AirlockBlueshieldOfficerCommandGlassLocked
+  suffix: Blueshield, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsBSO ]
+
+# NTR locked
+
+- type: entity
+  parent: AirlockCentralCommand
+  id: AirlockNanotrasenRepresentativeCommandLocked
+  suffix: NTRep, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNTR ]
+
+- type: entity
+  parent: AirlockCentralCommandGlass
+  id: AirlockNanotrasenRepresentativeCommandGlassLocked
+  suffix: NTRep, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNTR ]

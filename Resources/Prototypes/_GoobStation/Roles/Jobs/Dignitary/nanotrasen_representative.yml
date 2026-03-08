@@ -1,0 +1,75 @@
+- type: job
+  id: NanotrasenRepresentative
+  name: job-name-ntr
+  description: job-description-ntr
+  playTimeTracker: JobNanotrasenRepresentative
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Command
+      time: 50h
+    - !type:AgeRequirement
+      requiredAge: 30
+  weight: 20
+  startingGear: NanotrasenRepresentativeGear
+  icon: "JobIconNanotrasenRepresentative"
+  requireAdminNotify: true
+  joinNotifyCrew: true
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  guides:
+  # - NanotrasenRep SOP Hidden by CorvaxGoob
+  # - SOP Hidden by CorvaxGoob
+  # - SpaceLaw Hidden by CorvaxGoob
+  - Writing
+  access:
+  - Security
+  - Brig
+  - External
+  - Cryogenics
+  - Maintenance
+  - Engineering
+  - Medical
+  - Research
+  - Command
+  - CentralCommand
+  - Service
+  - Hydroponics
+  - Kitchen
+  - Cargo
+  - Theatre
+  - NanotrasenRepresentative
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: startingGear
+  id: NanotrasenRepresentativeGear
+  equipment:
+    id: NanotrasenRepresentativePDA
+    eyes: ClothingEyesGlassesCommand
+    ears: ClothingHeadsetAltCentCom
+    pocket1: UniqueNanorepLockerTeleporter
+  storage:
+    back:
+    - Flash
+    - Stunbaton # LP Edit -> REPLACE WITH TELESCOPICBATON
+  # inhand:
+  #   - ExecutiveBriefcaseEmpty # TODO: Maybe change this to not-empty, so that ntr wouldn't be poor at the start of every shift but whatever
+
+- type: chameleonOutfit
+  id: NanotrasenRepresentativeChameleonOutfit
+  job: NanotrasenRepresentative
+  equipment:
+    eyes: ClothingEyesGlassesCommand
+    mask: ClothingMaskBreath
+    ears: ClothingHeadsetAltCentCom
+    gloves: ClothingHandsGlovesHeavyGoldenTrim
+    jumpsuit: ClothingUniformJumpsuitNanotrasenRepresentative
+    id: NanotrasenRepresentativePDA
+    back: ClothingBackpackCentcomm
+    shoes: ClothingShoesBootsLaceup
+    head: ClothingHeadHatTophat
+    neck: ClothingNeckScarfStripedCentcom

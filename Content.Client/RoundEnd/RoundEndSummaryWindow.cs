@@ -7,8 +7,6 @@ using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.CustomControls;
 using Robust.Shared.Utility;
-using System.Linq;
-using System.Numerics;
 using static Robust.Client.UserInterface.Controls.BoxContainer;
 
 namespace Content.Client.RoundEnd
@@ -39,6 +37,7 @@ namespace Content.Client.RoundEnd
             var roundEndTabs = new TabContainer();
             roundEndTabs.AddChild(MakeRoundEndSummaryTab(gm, roundEnd, roundTimeSpan, roundId));
             roundEndTabs.AddChild(MakePlayerManifestTab(info));
+            roundEndTabs.AddChild(MakeStationReportTab()); //goob
 
             // CorvaxGoob-PhotoCamera
             var photoTab = MakePhotoReportTab();
@@ -177,5 +176,38 @@ namespace Content.Client.RoundEnd
 
             return playerManifestTab;
         }
+
+        private BoxContainer MakeStationReportTab()
+        {
+            //gets the stationreport varibible and sets the station report tab text to it if the map doesn't have a tablet will say No station report submitted
+            var stationReportSystem = _entityManager.System<Content.Shared._GoobStation.StationReport.StationReportSystem>();
+            string stationReportText = stationReportSystem.StationReportText ?? Loc.GetString("no-station-report-summited");
+            var stationReportTab = new BoxContainer
+            {
+                Orientation = LayoutOrientation.Vertical,
+                Name = Loc.GetString("round-end-summary-window-station-report-tab-title")
+            };
+            var StationReportContainerScrollbox = new ScrollContainer
+            {
+                VerticalExpand = true,
+                Margin = new Thickness(10),
+                HScrollEnabled = false,
+            };
+            var StationReportContainer = new BoxContainer
+            {
+                Orientation = LayoutOrientation.Vertical
+            };
+            var StationReportLabel = new RichTextLabel();
+            var StationReportmessage = new FormattedMessage();
+            StationReportmessage.AddMarkupOrThrow(stationReportText);
+            StationReportLabel.SetMessage(StationReportmessage);
+            StationReportContainer.AddChild(StationReportLabel);
+
+
+            StationReportContainerScrollbox.AddChild(StationReportContainer);
+            stationReportTab.AddChild(StationReportContainerScrollbox);
+            return stationReportTab;
+        }
+
     }
 }

@@ -230,6 +230,9 @@
     },
     {
       "name": "paper_stamp-signature"
+    },
+    {
+      "name": "paper_stamp-nanorep"
     }
   ]
 }

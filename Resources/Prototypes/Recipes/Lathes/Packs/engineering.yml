@@ -63,6 +63,9 @@
   - JawsOfLife
   - Fulton
   - FultonBeacon
+  - RCD
+  - RPD
+  - RCDAmmo
 
 - type: latheRecipePack
   id: AtmosTools

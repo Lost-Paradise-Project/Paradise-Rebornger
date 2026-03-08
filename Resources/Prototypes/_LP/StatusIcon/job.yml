@@ -1,0 +1,17 @@
+# Tech
+- type: jobIcon
+  parent: JobIcon
+  id: ComputerResearch
+  icon:
+    sprite: /Textures/_LP/Interface/Misc/icons_for_chat.rsi
+    state: ComputerResearch
+  jobName: research-console-menu-title
+
+# animal
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconPollyParrot
+  icon:
+    sprite: /Textures/_LP/Interface/Misc/icons_for_chat.rsi
+    state: PollyParrot
+  jobName: mob-name-mobpollyparrot

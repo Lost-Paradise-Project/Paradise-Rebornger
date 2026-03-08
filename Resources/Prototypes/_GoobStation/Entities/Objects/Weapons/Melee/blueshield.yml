@@ -1,0 +1,65 @@
+- type: entity
+  name: DT-3 "Atrocity"
+  parent: [BaseItem, BaseCentcommContraband]
+  id: BlueshieldMace
+  description: Crush all those who oppose your leaders. Functions as a stun baton in its powered state.
+  components:
+  - type: Tag
+    tags:
+    - Stunbaton
+  - type: Sprite
+    sprite: _GoobStation/Objects/Weapons/Melee/blueshield_mace.rsi
+    layers:
+    - state: icon-off
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: ItemToggle
+    soundActivate:
+      collection: sparks
+      params:
+        variation: 0.250
+    soundDeactivate:
+      collection: sparks
+      params:
+        variation: 0.250
+    soundFailToActivate:
+      path: /Audio/Machines/button.ogg
+      params:
+        variation: 0.250
+  - type: ItemToggleMeleeWeapon
+    activatedDamage:
+      types:
+        Heat: 1
+  - type: Stunbaton
+    energyPerUse: 40
+  - type: MeleeWeapon
+    angle: 0
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 13 # Unlucky number
+        Slash: 7 # Lucky number
+    animation: WeaponArcThrust
+    soundHit:
+      path: /Audio/_GoobStation/Weapons/Effects/metalcrush.ogg
+  - type: StaminaDamageOnHit
+    damage: 35
+    sound: /Audio/Weapons/egloves.ogg
+  - type: LandAtCursor
+  - type: Battery
+    maxCharge: 600
+    startingCharge: 600
+  - type: UseDelay
+  - type: Item
+    heldPrefix: off
+    size: Normal
+  - type: DisarmMalus
+    malus: 0.225
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
+          True: {state: icon}
+          False: {state: icon-off}
+  - type: StaticPrice
+    price: 1000

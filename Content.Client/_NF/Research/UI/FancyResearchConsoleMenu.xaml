@@ -4,8 +4,8 @@
                       xmlns:customControls="clr-namespace:Content.Client.Administration.UI.CustomControls;assembly=Content.Client"
                       xmlns:nf="clr-namespace:Content.Client._NF.Research.UI"
                       Title="{Loc 'research-console-menu-title'}"
-                      SetSize="1200 800"
-                      MinSize="800 400">
+                      SetSize="1680 800"
+                      MinSize="800 400"> <!--LP edit SetSize-->
     <BoxContainer Orientation="Vertical"
                   HorizontalExpand="True"
                   VerticalExpand="True">
@@ -24,12 +24,53 @@
                 <Button Name="ServerButton" Text="{Loc 'research-console-menu-server-selection-button'}" MinHeight="40"/>
             </BoxContainer>
         </BoxContainer>
-        <!-- Discipline navigation buttons -->
+        <!--LP edit start-->
+        <!-- Technology search bar -->
+        <BoxContainer Orientation="Vertical" HorizontalExpand="True" Margin="10, 0, 10, 5">
+            <LineEdit Name="SearchBar" PlaceHolder="{Loc 'research-console-menu-search-placeholder'}" HorizontalExpand="True" MinHeight="30"/>
+            <ItemList Name="SearchResultsList" SelectMode="Button" MinHeight="80" MaxHeight="200" HorizontalExpand="True" Visible="False" />
+        </BoxContainer>
+        <!--LP edit end-->
+
+        <!-- Discipline filters -->
         <BoxContainer Orientation="Horizontal" HorizontalExpand="True" Margin="10, 0, 10, 5">
-            <Button Name="NavIndustrialButton" Text="{Loc 'research-discipline-industrial'}" MinHeight="30" MinWidth="100"/>
-            <Button Name="NavArsenalButton" Text="{Loc 'research-discipline-arsenal'}" MinHeight="30" MinWidth="100"/>
-            <Button Name="NavExperimentalButton" Text="{Loc 'research-discipline-experimental'}" MinHeight="30" MinWidth="100"/>
-            <Button Name="NavCivilianButton" Text="{Loc 'research-discipline-civilian-services'}" MinHeight="30" MinWidth="100"/>
+            <!--LP edit start-->
+            <Button Name="FilterAllButton" MinHeight="30" MinWidth="100">
+                <BoxContainer Orientation="Horizontal" HorizontalExpand="True" VerticalExpand="True" Margin="5">
+                    <Control VerticalExpand="True"/>
+                    <RichTextLabel Name="FilterAllLabel" VerticalAlignment="Center" HorizontalAlignment="Center" Text="{Loc 'research-console-menu-filter-all'}"/>
+                    <Control VerticalExpand="True"/>
+                </BoxContainer>
+            </Button>
+            <Button Name="FilterIndustrialButton" MinHeight="30" MinWidth="100">
+                <BoxContainer Orientation="Horizontal" HorizontalExpand="True" VerticalExpand="True" Margin="5">
+                    <TextureRect Name="FilterIndustrialIcon" VerticalAlignment="Center" />
+                    <RichTextLabel Name="FilterIndustrialLabel" VerticalAlignment="Center" HorizontalAlignment="Center" Text="{Loc 'research-discipline-industrial'}" Margin="5, 0, 5, 0"/>
+                    <RichTextLabel Name="FilterIndustrialPercent" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </BoxContainer>
+            </Button>
+            <Button Name="FilterArsenalButton" MinHeight="30" MinWidth="100">
+                <BoxContainer Orientation="Horizontal" HorizontalExpand="True" VerticalExpand="True" Margin="5">
+                    <TextureRect Name="FilterArsenalIcon" VerticalAlignment="Center" />
+                    <RichTextLabel Name="FilterArsenalLabel" VerticalAlignment="Center" HorizontalAlignment="Center" Text="{Loc 'research-discipline-arsenal'}" Margin="5, 0, 5, 0"/>
+                    <RichTextLabel Name="FilterArsenalPercent" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </BoxContainer>
+            </Button>
+            <Button Name="FilterExperimentalButton" MinHeight="30" MinWidth="100">
+                <BoxContainer Orientation="Horizontal" HorizontalExpand="True" VerticalExpand="True" Margin="5">
+                    <TextureRect Name="FilterExperimentalIcon" VerticalAlignment="Center" />
+                    <RichTextLabel Name="FilterExperimentalLabel" VerticalAlignment="Center" HorizontalAlignment="Center" Text="{Loc 'research-discipline-experimental'}" Margin="5, 0, 5, 0"/>
+                    <RichTextLabel Name="FilterExperimentalPercent" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </BoxContainer>
+            </Button>
+            <Button Name="FilterCivilianButton" MinHeight="30" MinWidth="100">
+                <BoxContainer Orientation="Horizontal" HorizontalExpand="True" VerticalExpand="True" Margin="5">
+                    <TextureRect Name="FilterCivilianIcon" VerticalAlignment="Center" />
+                    <RichTextLabel Name="FilterCivilianLabel" VerticalAlignment="Center" HorizontalAlignment="Center" Text="{Loc 'research-discipline-civilian-services'}" Margin="5, 0, 5, 0"/>
+                    <RichTextLabel Name="FilterCivilianPercent" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </BoxContainer>
+            </Button>
+            <!--LP edit end-->
         </BoxContainer>
         <BoxContainer Orientation="Horizontal"
                       HorizontalExpand="True"

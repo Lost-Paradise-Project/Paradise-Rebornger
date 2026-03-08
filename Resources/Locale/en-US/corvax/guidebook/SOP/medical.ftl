@@ -227,7 +227,7 @@ guidebook-SOP-medical-confidentiality =
     - Прямого запроса капитана или центрального командования.
 # Tooltip
 guidebook-SOP-medical-tooltip-long-recovery = Если тело имеет высокий уровень повреждений и требует длительного восстановления, то такое тело лучше доставить в медицинский отдел и реанимировать совместно с коллегами.
-guidebook-SOP-medical-tooltip-extended-access = Доступ во все отделы станции, кроме кабинетов глав, капитана, АВД, ПNT,ОСЩ и оружейной.
+guidebook-SOP-medical-tooltip-extended-access = Доступ во все отделы станции, кроме кабинетов глав, капитана, АВД, ПЦК, ОСЩ и оружейной.
 guidebook-SOP-medical-tooltip-small-volumes = До 100 единиц отдельного вещества на лабораторию.
 guidebook-SOP-medical-tooltip-allowed-implants = Законными имплантами считаются: трекер, хонк-имплант, свет, грустный тромбон, а также имплант защиты разума.
 guidebook-SOP-medical-tooltip-sensitive-positions = Капитан; Главы отделов; Сотрудники СБ; Сотрудники юридического департамента; Члены ЦК и ДСО.

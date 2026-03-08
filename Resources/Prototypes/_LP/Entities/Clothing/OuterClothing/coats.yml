@@ -76,7 +76,7 @@
     sprite: _LP/Clothing/OuterClothing/Coats/misc_bomber/bomber5.rsi
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: [ClothingOuterStorageBase, BaseSecurityContraband]
   id: LPPClothingOuterCoatLabSec
   name: lab coat (sec)
   description: A suit that protects against minor chemical spills. Has an red stripe on the shoulder.

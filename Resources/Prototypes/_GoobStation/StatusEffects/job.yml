@@ -1,0 +1,19 @@
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNanotrasenRepresentative
+  icon:
+    # LP Edit Start
+    sprite: /Textures/_LP/Interface/Misc/job_icons.rsi
+    state: Nanotrasen
+    # LP Edit End
+  jobName: job-name-ntr
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconBlueshield
+  icon:
+    # LP Edit Start
+    sprite: /Textures/_LP/Interface/Misc/job_icons.rsi
+    state: Blueshield
+    # LP Edit End
+  jobName: job-name-bs
