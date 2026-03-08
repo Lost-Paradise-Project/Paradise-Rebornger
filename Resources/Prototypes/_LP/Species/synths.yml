@@ -1,0 +1,214 @@
+- type: markingsGroup
+  id: Synthoid
+  onlyGroupWhitelisted: true
+  limits:
+    enum.HumanoidVisualLayers.Hair:
+      limit: 0
+      required: false
+    enum.HumanoidVisualLayers.FacialHair:
+      limit: 0
+      required: false
+    enum.HumanoidVisualLayers.Tail:
+      limit: 1
+      required: true
+      default: [ SynthTail ]
+    enum.HumanoidVisualLayers.Chest:
+      limit: 0
+      required: false
+    enum.HumanoidVisualLayers.Snout:
+      limit: 0
+      required: false
+    enum.HumanoidVisualLayers.HeadTop:
+      limit: 0
+      required: false
+    enum.HumanoidVisualLayers.HeadSide:
+      limit: 1
+      required: false
+
+- type: entity
+  parent: OrganReptilianExternal
+  id: OrganSynthoidExternal
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _LP/Mobs/Sint_parts.rsi
+  - type: VisualOrgan
+    data:
+      sprite: _LP/Mobs/Sint_parts.rsi
+  - type: VisualOrganMarkings
+    markingData:
+      group: Synthoid
+
+- type: entity
+  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganSynthoidExternal ]
+  id: OrganSynthoidTorso
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.Tail
+
+- type: entity
+  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganSynthoidExternal ]
+  id: OrganSynthoidHead
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.HeadSide
+
+- type: entity
+  parent: [ OrganBaseArmLeft, OrganSynthoidExternal ]
+  id: OrganSynthoidArmLeft
+
+- type: entity
+  parent: [ OrganBaseArmRight, OrganSynthoidExternal ]
+  id: OrganSynthoidArmRight
+
+- type: entity
+  parent: [ OrganBaseHandLeft, OrganSynthoidExternal ]
+  id: OrganSynthoidHandLeft
+
+- type: entity
+  parent: [ OrganBaseHandRight, OrganSynthoidExternal ]
+  id: OrganSynthoidHandRight
+
+- type: entity
+  parent: [ OrganBaseLegLeft, OrganSynthoidExternal ]
+  id: OrganSynthoidLegLeft
+
+- type: entity
+  parent: [ OrganBaseLegRight, OrganSynthoidExternal ]
+  id: OrganSynthoidLegRight
+
+- type: entity
+  parent: [ OrganBaseFootLeft, OrganSynthoidExternal ]
+  id: OrganSynthoidFootLeft
+
+- type: entity
+  parent: [ OrganBaseFootRight, OrganSynthoidExternal ]
+  id: OrganSynthoidFootRight
+
+- type: entity
+  parent: AppearanceReptilian
+  id: AppearanceSynthoid
+  name: synthoid appearance
+  components:
+  - type: InitialBody
+    organs:
+      Torso: OrganSynthoidTorso
+      Head: OrganSynthoidHead
+      ArmLeft: OrganSynthoidArmLeft
+      ArmRight: OrganSynthoidArmRight
+      HandRight: OrganSynthoidHandRight
+      HandLeft: OrganSynthoidHandLeft
+      LegLeft: OrganSynthoidLegLeft
+      LegRight: OrganSynthoidLegRight
+      FootLeft: OrganSynthoidFootLeft
+      FootRight: OrganSynthoidFootRight
+      Brain: OrganReptilianBrain
+      Eyes: OrganReptilianEyes
+      Tongue: OrganReptilianTongue
+      Appendix: OrganReptilianAppendix
+      Ears: OrganReptilianEars
+      Lungs: OrganReptilianLungs
+      Heart: OrganReptilianHeart
+      Stomach: OrganReptilianStomach
+      Liver: OrganReptilianLiver
+      Kidneys: OrganReptilianKidneys
+  - type: HumanoidProfile
+    species: Synthoid
+
+- type: entity
+  parent:
+  - AppearanceSynthoid
+  - BaseSpeciesMobOrganic
+  id: MobSynthoid
+  name: Urissst Mz'Hand
+  components:
+  - type: Puller
+    needsHands: false
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatLizard
+      amount: 5
+  - type: LizardAccent
+  - type: Speech
+    speechSounds: Lizard
+    speechVerb: Reptilian
+    allowedEmotes: [ 'Thump' ]
+  - type: TypingIndicator
+    proto: lizard
+  - type: Vocal
+    sounds:
+      Male: MaleReptilian
+      Female: FemaleReptilian
+      Unsexed: MaleReptilian
+  - type: BodyEmotes
+    soundsId: ReptilianBodyEmotes
+  - type: Damageable
+    damageModifierSet: Scale
+  - type: MeleeWeapon
+    soundHit:
+      collection: AlienClaw
+    angle: 30
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 5
+  - type: Temperature
+    currentTemperature: 310.15
+    specificHeat: 42
+  - type: TemperatureDamage
+    heatDamageThreshold: 400
+    coldDamageThreshold: 285
+    coldDamage:
+      types:
+        Cold: 0.1
+    heatDamage:
+      types:
+        Heat: 1.5
+  - type: TemperatureSpeed
+    thresholds:
+      301: 0.9
+      295: 0.8
+      285: 0.7
+  - type: Wagging
+
+- type: species
+  id: Synthoid
+  name: species-name-synthoid
+  roundStart: true
+  sponsorOnly: true
+  prototype: MobSynthoid
+  defaultSkinTone: "#34a223"
+  dollPrototype: AppearanceSynthoid
+  skinColoration: Hues
+  maleFirstNames: NamesReptilianMale
+  femaleFirstNames: NamesReptilianFemale
+  naming: FirstDashFirst
+  minHeight: 0.9
+  defaultHeight: 1.05
+  maxHeight: 1.22
+  minWidth: 0.9
+  defaultWidth: 1.05
+  maxWidth: 1.22
+
+# - type: marking
+#   id: SynthTail
+#   bodyPart: Tail
+#   groupWhitelist: [ Synthoid ]
+#   sprites:
+#   - sprite: _LP/Mobs/Customization/Sint_parts.rsi
+#     state: tail_sint
+#   - sprite: _LP/Mobs/Customization/Sint_parts.rsi
+#     state: tail_down_sint
+
+# - type: marking
+#   id: SynthFrillsDivinity
+#   bodyPart: HeadSide
+#   groupWhitelist: [ Synthoid ]
+#   sprites:
+#   - sprite: _LP/Mobs/Customization/Sint_parts.rsi
+#     state: frills_divinity
+#   - sprite: _LP/Mobs/Customization/Sint_parts.rsi
+#     state: frills_divinity_light
