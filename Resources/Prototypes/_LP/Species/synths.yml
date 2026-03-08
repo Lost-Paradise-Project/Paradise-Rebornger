@@ -263,7 +263,7 @@
 #     state: tail
 #   - sprite: _LP/Mobs/Customization/Sint_parts.rsi
 #     state: tail_sint
-
+#
 # - type: marking
 #   id: SynthTailDown
 #   bodyPart: Tail
