@@ -1,94 +1,57 @@
+# TODO добавить хвосты
 - type: markingsGroup
   id: Synthoid
-  onlyGroupWhitelisted: true
+  onlyGroupWhitelisted: true # За что это отвечает? 
   limits:
-    enum.HumanoidVisualLayers.Hair:
+    enum.HumanoidVisualLayers.Hair: # Волосы
       limit: 0
       required: false
-    enum.HumanoidVisualLayers.FacialHair:
+    enum.HumanoidVisualLayers.FacialHair: # Усы
       limit: 0
       required: false
-    enum.HumanoidVisualLayers.Tail:
-      limit: 1
-      required: true
-      default: [ SynthTail ]
-    enum.HumanoidVisualLayers.Chest:
+    enum.HumanoidVisualLayers.Chest: # Торс
       limit: 0
       required: false
-    enum.HumanoidVisualLayers.Snout:
+    enum.HumanoidVisualLayers.Snout: # Лицо (у КПБ это экран)
+      limit: 0 # нельзя менять
+      required: true # Но что-то же должно быть? - принудительно стоит
+    #  default: [ IpcOrangeS ] - вот этот тип. По итогу игрок меняет только цвет IpcOrangeS 
+    enum.HumanoidVisualLayers.Head:
       limit: 0
       required: false
-    enum.HumanoidVisualLayers.HeadTop:
+    enum.HumanoidVisualLayers.LArm:
       limit: 0
       required: false
-    enum.HumanoidVisualLayers.HeadSide:
-      limit: 1
+    enum.HumanoidVisualLayers.RArm:
+      limit: 0
+      required: false
+    enum.HumanoidVisualLayers.LHand:
+      limit: 0
+      required: false
+    enum.HumanoidVisualLayers.RHand:
+      limit: 0
+      required: false
+    enum.HumanoidVisualLayers.LLeg:
+      limit: 0
+      required: false
+    enum.HumanoidVisualLayers.RLeg:
+      limit: 0
+      required: false
+    enum.HumanoidVisualLayers.LFoot:
+      limit: 0
+      required: false
+    enum.HumanoidVisualLayers.RFoot:
+      limit: 0
+      required: false
+    enum.HumanoidVisualLayers.Tail: # TODO добавить хвосты
+      limit: 0
+      required: false
+    enum.HumanoidVisualLayers.Special:
+      limit: 0
       required: false
 
 - type: entity
-  parent: OrganReptilianExternal
-  id: OrganSynthoidExternal
-  abstract: true
-  components:
-  - type: Sprite
-    sprite: _LP/Mobs/Sint_parts.rsi
-  - type: VisualOrgan
-    data:
-      sprite: _LP/Mobs/Sint_parts.rsi
-  - type: VisualOrganMarkings
-    markingData:
-      group: Synthoid
-
-- type: entity
-  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganSynthoidExternal ]
-  id: OrganSynthoidTorso
-  components:
-  - type: VisualOrganMarkings
-    hideableLayers:
-    - enum.HumanoidVisualLayers.Tail
-
-- type: entity
-  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganSynthoidExternal ]
-  id: OrganSynthoidHead
-  components:
-  - type: VisualOrganMarkings
-    hideableLayers:
-    - enum.HumanoidVisualLayers.HeadSide
-
-- type: entity
-  parent: [ OrganBaseArmLeft, OrganSynthoidExternal ]
-  id: OrganSynthoidArmLeft
-
-- type: entity
-  parent: [ OrganBaseArmRight, OrganSynthoidExternal ]
-  id: OrganSynthoidArmRight
-
-- type: entity
-  parent: [ OrganBaseHandLeft, OrganSynthoidExternal ]
-  id: OrganSynthoidHandLeft
-
-- type: entity
-  parent: [ OrganBaseHandRight, OrganSynthoidExternal ]
-  id: OrganSynthoidHandRight
-
-- type: entity
-  parent: [ OrganBaseLegLeft, OrganSynthoidExternal ]
-  id: OrganSynthoidLegLeft
-
-- type: entity
-  parent: [ OrganBaseLegRight, OrganSynthoidExternal ]
-  id: OrganSynthoidLegRight
-
-- type: entity
-  parent: [ OrganBaseFootLeft, OrganSynthoidExternal ]
-  id: OrganSynthoidFootLeft
-
-- type: entity
-  parent: [ OrganBaseFootRight, OrganSynthoidExternal ]
-  id: OrganSynthoidFootRight
-
-- type: entity
-  parent: AppearanceReptilian
+  parent: BaseSpeciesAppearance
   id: AppearanceSynthoid
   name: synthoid appearance
   components:
@@ -104,18 +67,36 @@
       LegRight: OrganSynthoidLegRight
       FootLeft: OrganSynthoidFootLeft
       FootRight: OrganSynthoidFootRight
-      Brain: OrganReptilianBrain
-      Eyes: OrganReptilianEyes
-      Tongue: OrganReptilianTongue
-      Appendix: OrganReptilianAppendix
-      Ears: OrganReptilianEars
-      Lungs: OrganReptilianLungs
-      Heart: OrganReptilianHeart
-      Stomach: OrganReptilianStomach
-      Liver: OrganReptilianLiver
-      Kidneys: OrganReptilianKidneys
   - type: HumanoidProfile
     species: Synthoid
+
+- type: entity
+  parent: OrganBase
+  id: OrganSynthoid
+  abstract: true
+  suffix: Synthoid
+
+- type: entity
+  parent: OrganSynthoid
+  id: OrganSynthoidExternal
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _LP/Mobs/Sint_parts.rsi
+  - type: VisualOrgan
+    data:
+      sprite: _LP/Mobs/Sint_parts.rsi
+  - type: VisualOrganMarkings
+    markingData:
+      group: Synthoid
+
+# - type: entity
+#   parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganSynthoidExternal ]
+#   id: OrganSynthoidTorso
+#   components:
+#   - type: VisualOrganMarkings
+#     hideableLayers:
+#     - enum.HumanoidVisualLayers.Tail
 
 - type: entity
   parent:
@@ -192,6 +173,38 @@
   minWidth: 0.9
   defaultWidth: 1.05
   maxWidth: 1.22
+
+- type: entity
+  parent: [ OrganBaseArmLeft, OrganSynthoidExternal ]
+  id: OrganSynthoidArmLeft
+
+- type: entity
+  parent: [ OrganBaseArmRight, OrganSynthoidExternal ]
+  id: OrganSynthoidArmRight
+
+- type: entity
+  parent: [ OrganBaseHandLeft, OrganSynthoidExternal ]
+  id: OrganSynthoidHandLeft
+
+- type: entity
+  parent: [ OrganBaseHandRight, OrganSynthoidExternal ]
+  id: OrganSynthoidHandRight
+
+- type: entity
+  parent: [ OrganBaseLegLeft, OrganSynthoidExternal ]
+  id: OrganSynthoidLegLeft
+
+- type: entity
+  parent: [ OrganBaseLegRight, OrganSynthoidExternal ]
+  id: OrganSynthoidLegRight
+
+- type: entity
+  parent: [ OrganBaseFootLeft, OrganSynthoidExternal ]
+  id: OrganSynthoidFootLeft
+
+- type: entity
+  parent: [ OrganBaseFootRight, OrganSynthoidExternal ]
+  id: OrganSynthoidFootRight
 
 # - type: marking
 #   id: SynthTail
