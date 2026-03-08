@@ -23,11 +23,6 @@
         - !type:ReagentCondition
           reagent: Absinthe
           min: 10
-      - !type:HealthChange
-        conditions:
-        damage:
-          types:
-            Caustic: -0.5
         type: Add
         time: 5
       - !type:PopupMessage
