@@ -14,6 +14,122 @@
   - LPPBorgModuleSecurityCriminologist
   technologyPrerequisites:
   - ConcentratedLaserWeaponry
-  position: 10, 20 # LP edit
+  position: 10, 20
   radioChannels:
   - Security
+
+# Space Forge Technology
+
+- type: technology
+  id: LPPBaseAdvancedHardsuits
+  name: research-technology-base-adv-hardsuits
+  icon:
+    sprite: _DV/Clothing/OuterClothing/Hardsuits/Combat/officer.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 1
+  cost: 5000
+  recipeUnlocks:
+  - ClothingHeadHelmetEVALarge
+  - ClothingOuterHardsuitEVAPrisoner
+  - ClothingOuterHardsuitCombatOfficer
+  technologyPrerequisites:
+  - LPPEVAHardsuits
+  position:
+  radioChannels:
+  - Security
+
+- type: technology
+  id: LPPStandardAdvancedHardsuits
+  name: research-technology-standard-adv-hardsuits
+  icon:
+    sprite: Clothing/OuterClothing/Hardsuits/security.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 2
+  cost: 5000
+  recipeUnlocks:
+  - ClothingOuterHardsuitSecurity
+  technologyPrerequisites:
+  - LPPBaseAdvancedHardsuits
+  position:
+  radioChannels:
+  - Security
+
+- type: technology
+  id: LPPSpecializedStandardHardsuits
+  name: research-technology-specialized-standard-hardsuits
+  icon:
+    sprite: _DV/Clothing/OuterClothing/Hardsuits/Combat/medical.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 2
+  cost: 7500
+  recipeUnlocks:
+  - ClothingOuterHardsuitCombatMedical
+  - ClothingOuterHardsuitCombatRiot
+  technologyPrerequisites:
+  - LPPStandardAdvancedHardsuits
+  position:
+  radioChannels:
+  - Security
+
+- type: technology
+  id: LPPSpecializedAdvSecurityHardsuits
+  name: research-technology-specialized-adv-security-hardsuits
+  icon:
+    sprite: Clothing/OuterClothing/Hardsuits/brigmedic.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 2
+  cost: 12000
+  recipeUnlocks:
+  - ClothingOuterHardsuitSecurityPilot
+  - LPPClothingOuterHardsuitSecurityEng
+  - ClothingOuterHardsuitBrigmedic
+  - ClothingOuterHardsuitWarden
+  technologyPrerequisites:
+  - LPPSpecializedStandardHardsuits
+  position:
+  radioChannels:
+  - Security
+
+- type: technology
+  id: LPPAdvancedMiningHardsuits
+  name: research-technology-adv-mining-hardsuits
+  icon:
+    sprite: Clothing/OuterClothing/Hardsuits/maxim.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - ClothingOuterHardsuitLuxury
+  technologyPrerequisites:
+  - LPPMiningHardsuits
+  position:
+  radioChannels:
+  - Supply
+
+- type: technology
+  id: LPPExperimentalHardsuits
+  name: research-technology-experimental-hardsuits
+  icon:
+    sprite: Clothing/OuterClothing/Hardsuits/rd.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 3
+  cost: 20000
+  recipeUnlocks:
+  - LPPClothingOuterHardsuitRd
+  - ClothingOuterHardsuitMedical
+  - ClothingOuterHardsuitEngineeringWhite
+  - ClothingOuterHardsuitSecurityRed
+  - ClothingOuterHardsuitMaxim
+  - ClothingOuterHardsuitCap
+  technologyPrerequisites:
+  - LPPAdvancedMiningHardsuits
+  - LPPEngineeringHardsuits
+  position:
+  radioChannels:
+  - Command

@@ -1,0 +1,66 @@
+- type: technology
+  id: LPPEVAHardsuits
+  name: research-technology-eva-hardsuits
+  icon:
+    sprite: Clothing/OuterClothing/Suits/eva.rsi
+    state: icon
+  discipline: CivilianServices
+  tier: 1
+  cost: 5000
+  recipeUnlocks:
+  - ClothingOuterHardsuitEVA
+  - ClothingHeadHelmetEVA
+  - ClothingOuterSuitEmergency
+  position:
+
+- type: technology
+  id: LPPEngineeringHardsuits
+  name: research-technology-engineering-hardsuits
+  icon:
+    sprite: Clothing/OuterClothing/Hardsuits/engineering.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - ClothingOuterHardsuitAtmos
+  - ClothingOuterHardsuitEngineering
+  technologyPrerequisites:
+  - LPPEVAHardsuits
+  position:
+  radioChannels:
+  - Engineering
+
+- type: technology
+  id: LPPBaseMiningHardsuits
+  name: research-technology-base-mining-hardsuits
+  icon:
+    sprite: Clothing/OuterClothing/Hardsuits/spatio.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - ClothingOuterHardsuitSpatio
+  technologyPrerequisites:
+  - LPPEVAHardsuits
+  position:
+  radioChannels:
+  - Supply
+
+- type: technology
+  id: LPPMiningHardsuits
+  name: research-technology-mining-hardsuits
+  icon:
+    sprite: Clothing/OuterClothing/Hardsuits/salvage.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - ClothingOuterHardsuitSalvage
+  technologyPrerequisites:
+  - LPPBaseMiningHardsuits
+  position:
+  radioChannels:
+  - Supply
