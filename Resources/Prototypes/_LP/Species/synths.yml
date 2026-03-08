@@ -113,6 +113,7 @@
   id: MobSynthoid
   name: Urissst Mz'Hand
 
+# Это все надо переработать. Все прям не очень. 
 - type: species
   id: Synthoid
   name: species-name-synthoid
@@ -142,8 +143,6 @@
   components:
   - type: VisualOrganMarkings
     hideableLayers:
-    - enum.HumanoidVisualLayers.Hair
-    - enum.HumanoidVisualLayers.FacialHair
     - enum.HumanoidVisualLayers.Snout
 
 - type: entity
