@@ -1,6 +1,6 @@
 - type: entity
   parent: [DrinkVisualsAllFilled, DrinkBottleGlassBaseFull]
-  id: LPDrinkXenomeisterBottleFull
+  id: LPPDrinkXenomeisterBottleFull
   name: reagent-name-xenomeister
   description: reagent-desc-xenomeister
   components:
