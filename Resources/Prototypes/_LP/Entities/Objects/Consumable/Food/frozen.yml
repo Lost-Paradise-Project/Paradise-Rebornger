@@ -1,4 +1,4 @@
-- type: entity
+﻿- type: entity
   parent: FoodInjectableBase
   id: LPPFoodFrozenBase
   abstract: true
@@ -97,5 +97,5 @@
           Quantity: 5
         - ReagentId: Ice
           Quantity: 5
-        - ReagentId: beer
+        - ReagentId: IcedBeer
           Quantity: 20
