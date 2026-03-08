@@ -1,8 +1,8 @@
 - type: entity
   parent: [DrinkVisualsAllFilled, DrinkBottleGlassBaseFull]
   id: LPDrinkXenomeisterBottleFull
-  name: Xenomeister bottle
-  description: One sip of this and you just know you're gonna have a good time.
+  name: reagent-name-xenomeister
+  description: reagent-desc-xenomeister
   components:
   - type: SolutionContainerManager
     solutions:

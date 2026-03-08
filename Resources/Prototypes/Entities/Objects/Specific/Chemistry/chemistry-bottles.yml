@@ -22,7 +22,7 @@
       visible: false
   - type: Appearance
   - type: SolutionContainerVisuals
-    maxFillLevels: 6
+    maxFillLevels: 5 #LP edit
     fillBaseName: bottle-1-
   - type: Edible
     edible: Drink

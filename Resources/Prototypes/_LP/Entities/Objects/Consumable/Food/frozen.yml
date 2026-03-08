@@ -1,6 +1,6 @@
 ﻿- type: entity
   parent: FoodInjectableBase
-  id: LPFoodFrozenBase
+  id: LPPFoodFrozenBase
   abstract: true
   components:
   - type: Sprite
@@ -15,8 +15,8 @@
 
 - type: entity
   name: Jagermeister popsicle
-  parent: LPFoodFrozenBase
-  id: LPFoodFrozenPopsicleJagermeister
+  parent: LPPFoodFrozenBase
+  id: LPPFoodFrozenPopsicleJagermeister
   description: Good way to start your shift.
   components:
   - type: Sprite
@@ -39,20 +39,20 @@
           Quantity: 5
         - ReagentId: Ice
           Quantity: 5
-        - ReagentId: LPXenomeister
+        - ReagentId: LPPXenomeister
           Quantity: 20
 
 - type: entity
   name: Vodka popsicle
-  parent: LPFoodFrozenBase
-  id: LPFoodFrozenPopsicleVodka
+  parent: LPPFoodFrozenBase
+  id: LPPFoodFrozenPopsicleVodka
   description: Tastes like chill burnout.
   components:
   - type: Sprite
     layers:
     - state: stick
     - state: brick
-      color: white
+      color: '#c7c7c7'
   - type: Edible
     trash:
     - FoodFrozenPopsicleTrash
@@ -73,15 +73,15 @@
 
 - type: entity
   name: Beer popsicle
-  parent: LPFoodFrozenBase
-  id: LPFoodFrozenPopsicleBeer
+  parent: LPPFoodFrozenBase
+  id: LPPFoodFrozenPopsicleBeer
   description: Tastes like chill burnout.
   components:
   - type: Sprite
     layers:
     - state: stick
     - state: brick
-      color: yellow
+      color: '#F5DEB3'
   - type: Edible
     trash:
     - FoodFrozenPopsicleTrash
