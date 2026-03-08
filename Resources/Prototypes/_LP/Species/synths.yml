@@ -1,36 +1,45 @@
-# TODO добавить хвосты
-# Изменить спонсорку на true
+# TODO:
+# - Починить хвосты, когда будут исправлены спрайты.
+# - Пересмотреть sponsorOnly.
+# - Позже добавить _sint-слои для рук/ног/кистей/ступней.
+
 - type: markingsGroup
   id: Synthoid
   limits:
     enum.HumanoidVisualLayers.Hair: # Полностью скрываем обычные волосы.
       limit: 0
       required: false
-      onlyGroupWhitelisted: true # Не показывать общие человеческие волосы.
+      onlyGroupWhitelisted: true
 
     enum.HumanoidVisualLayers.FacialHair: # Полностью скрываем усы/бороду.
       limit: 0
       required: false
-      onlyGroupWhitelisted: true # Не показывать общую растительность на лице.
+      onlyGroupWhitelisted: true
 
     enum.HumanoidVisualLayers.Chest: # Дополнительный _sint overlay для торса.
       limit: 1
       required: true # Один из вариантов torso overlay должен быть всегда.
-      onlyGroupWhitelisted: true # Не показывать чужие chest-marking'и.
-      default: [ SynthTorsoSintMale ] # по умолчанию мужик. (или трап)
+      onlyGroupWhitelisted: true
+      default: [ SynthTorsoSintMale ] # По умолчанию мужской вариант.
 
-    enum.HumanoidVisualLayers.Snout: # Оставляем морду/экран доступной игроку.
+    enum.HumanoidVisualLayers.Snout: # Морда / экран.
       limit: 1
       required: false
 
-    enum.HumanoidVisualLayers.Head:
+    enum.HumanoidVisualLayers.Head: # Отдельные head-marking'и пока не используем.
       limit: 0
       required: false
 
-    enum.HumanoidVisualLayers.HeadTop:
+    enum.HumanoidVisualLayers.HeadTop: # Верх головы: антенны.
       limit: 1
       required: false
-      onlyGroupWhitelisted: true # тут будут антены и может ушки? 
+      onlyGroupWhitelisted: true
+
+    enum.HumanoidVisualLayers.HeadSide: # Боковые элементы головы: frills + их light overlay.
+      limit: 2
+      required: true # Базовые frills должны быть всегда.
+      onlyGroupWhitelisted: true
+      default: [ SynthFrillsDivinity ] # По умолчанию обычные frills.
 
     enum.HumanoidVisualLayers.LArm:
       limit: 0
@@ -64,16 +73,10 @@
       limit: 0
       required: false
 
+    # Хвосты временно отключены:
+    # спрайты сейчас поломаны, а marking'и закомментированы.
+    # Поэтому слой НЕ должен быть required/default, иначе будет конфликт логики.
     enum.HumanoidVisualLayers.Tail:
-      limit: 0
-      required: false
-    # enum.HumanoidVisualLayers.Tail: # Базовый хвост обязателен.
-    #   limit: 1
-    #   required: true # Один из базовых хвостов должен быть всегда.
-    #   onlyGroupWhitelisted: true # Не показывать чужие хвосты.
-    #   default: [ SynthTail ] # По умолчанию обычный хвост.
-
-    enum.HumanoidVisualLayers.Special:
       limit: 0
       required: false
 
@@ -124,7 +127,8 @@
   id: MobSynthoid
   name: Urissst Mz'Hand
 
-# Это все надо переработать. Все прям не очень. 
+# Временная species-конфигурация.
+# Позже можно будет отдельно переработать sponsorOnly, имена и прочее.
 - type: species
   id: Synthoid
   name: species-name-synthoid
@@ -156,6 +160,7 @@
     hideableLayers:
     - enum.HumanoidVisualLayers.Snout
     - enum.HumanoidVisualLayers.HeadTop
+    - enum.HumanoidVisualLayers.HeadSide
 
 - type: entity
   parent: [ OrganBaseArmLeft, OrganSynthoidExternal ]
@@ -189,16 +194,6 @@
   parent: [ OrganBaseFootRight, OrganSynthoidExternal ]
   id: OrganSynthoidFootRight
 
-# - type: marking
-#   id: SynthFrillsDivinity
-#   bodyPart: HeadSide
-#   groupWhitelist: [ Synthoid ]
-#   sprites:
-#   - sprite: _LP/Mobs/Customization/Sint_parts.rsi
-#     state: frills_divinity
-#   - sprite: _LP/Mobs/Customization/Sint_parts.rsi
-#     state: frills_divinity_light
-
 - type: marking
   id: SynthHeadWin
   bodyPart: Snout
@@ -224,14 +219,33 @@
     state: torso_f_sint
 
 - type: marking
-  id: SynthAntennas # Антены (которые не святятся)
+  id: SynthAntennas # Антенны.
   bodyPart: HeadTop
   groupWhitelist: [ Synthoid ] # Только синтойду.
   sprites:
   - sprite: _LP/Mobs/Customization/Sint_parts.rsi
     state: antennas
 
-# ХВОСТЫ ПОЛОМАНЫ СПРАЙТЕРОМ!
+- type: marking
+  id: SynthFrillsDivinity
+  bodyPart: HeadSide
+  groupWhitelist: [ Synthoid ]
+  sprites:
+  - sprite: _LP/Mobs/Customization/Sint_parts.rsi
+    state: frills_divinity
+
+- type: marking
+  id: SynthFrillsDivinityLight
+  bodyPart: HeadSide
+  groupWhitelist: [ Synthoid ]
+  sprites:
+  - sprite: _LP/Mobs/Customization/Sint_parts.rsi
+    state: frills_divinity_light
+
+# ХВОСТЫ ВРЕМЕННО ОТКЛЮЧЕНЫ:
+# Спрайты сейчас поломаны, поэтому marking'и не подключаем,
+# а сам Tail-слой в markingsGroup выключен.
+#
 # - type: marking
 #   id: SynthTail
 #   bodyPart: Tail
@@ -253,15 +267,15 @@
 # - type: marking
 #   id: SynthTailDown
 #   bodyPart: Tail
-#   groupWhitelist: [ Synthoid ] # Опущенный хвост.
+#   groupWhitelist: [ Synthoid ]
 #   sprites:
 #   - sprite: _LP/Mobs/Customization/Sint_parts.rsi
 #     state: tail_down
-
+#
 # - type: marking
 #   id: SynthTailDownSint
 #   bodyPart: Tail
-#   groupWhitelist: [ Synthoid ] # Опущенный хвост + _sint-накладка.
+#   groupWhitelist: [ Synthoid ]
 #   sprites:
 #   - sprite: _LP/Mobs/Customization/Sint_parts.rsi
 #     state: tail_down
