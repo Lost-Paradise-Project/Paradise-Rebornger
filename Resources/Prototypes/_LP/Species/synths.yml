@@ -2,51 +2,66 @@
 # Изменить спонсорку на true
 - type: markingsGroup
   id: Synthoid
-  onlyGroupWhitelisted: true # За что это отвечает? 
   limits:
-    enum.HumanoidVisualLayers.Hair: # Волосы
+    enum.HumanoidVisualLayers.Hair: # Полностью скрываем обычные волосы.
       limit: 0
       required: false
-    enum.HumanoidVisualLayers.FacialHair: # Усы
+      onlyGroupWhitelisted: true # Не показывать общие человеческие волосы.
+
+    enum.HumanoidVisualLayers.FacialHair: # Полностью скрываем усы/бороду.
       limit: 0
       required: false
-    enum.HumanoidVisualLayers.Chest: # Торс
+      onlyGroupWhitelisted: true # Не показывать общую растительность на лице.
+
+    enum.HumanoidVisualLayers.Chest: # _sint-торс пока ещё не подключаем.
       limit: 0
       required: false
-    enum.HumanoidVisualLayers.Snout: # Лицо (у КПБ это экран)
-      limit: 0 # нельзя менять
-      required: true # Но что-то же должно быть? - принудительно стоит
-    #  default: [ IpcOrangeS ] - вот этот тип. По итогу игрок меняет только цвет IpcOrangeS 
+
+    enum.HumanoidVisualLayers.Snout: # Оставляем морду/экран доступной игроку.
+      limit: 1
+      required: false # Важно: теперь игрок может снять эту маркировку.
+      # default специально НЕ задаём, чтобы не навязывать её принудительно.
+
     enum.HumanoidVisualLayers.Head:
       limit: 0
       required: false
+
     enum.HumanoidVisualLayers.LArm:
       limit: 0
       required: false
+
     enum.HumanoidVisualLayers.RArm:
       limit: 0
       required: false
+
     enum.HumanoidVisualLayers.LHand:
       limit: 0
       required: false
+
     enum.HumanoidVisualLayers.RHand:
       limit: 0
       required: false
+
     enum.HumanoidVisualLayers.LLeg:
       limit: 0
       required: false
+
     enum.HumanoidVisualLayers.RLeg:
       limit: 0
       required: false
+
     enum.HumanoidVisualLayers.LFoot:
       limit: 0
       required: false
+
     enum.HumanoidVisualLayers.RFoot:
       limit: 0
       required: false
-    enum.HumanoidVisualLayers.Tail: # TODO добавить хвосты
+
+    enum.HumanoidVisualLayers.Tail:
       limit: 0
       required: false
+
     enum.HumanoidVisualLayers.Special:
       limit: 0
       required: false
@@ -122,14 +137,15 @@
   id: OrganSynthoidTorso
 
 - type: entity
-  parent: [ OrganBaseHead, OrganSynthoidExternal ]
+  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganSynthoidExternal ]
   id: OrganSynthoidHead
-  # components:
-  # - type: VisualcHead
-  # components:
-  # - type: VisualOrganMarkings
-  #   hideableLayers:
-  #   - enum.HumanoidVisualLayers.Hair
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.Hair
+    - enum.HumanoidVisualLayers.FacialHair
+    - enum.HumanoidVisualLayers.Snout
+
 - type: entity
   parent: [ OrganBaseArmLeft, OrganSynthoidExternal ]
   id: OrganSynthoidArmLeft
@@ -181,3 +197,11 @@
 #     state: frills_divinity
 #   - sprite: _LP/Mobs/Customization/Sint_parts.rsi
 #     state: frills_divinity_light
+
+- type: marking
+  id: SynthHeadWin
+  bodyPart: Snout
+  groupWhitelist: [ Synthoid ] # Маркировка доступна только синтойду.
+  sprites:
+  - sprite: _LP/Mobs/Sint_parts.rsi
+    state: head_win
