@@ -43,7 +43,7 @@ using Content.Client.Corvax.TTS; // Corvax-TTS
 // LP edit start
 using Content.Client._LP.Sponsors;
 using Content.Shared._GoobStation.CCVar;
-
+using Content.Shared._LP;
 // LP edit end
 // Begin CD - Character Records
 using Content.Client._FunkyStation.Medical.Records.UI;
@@ -402,6 +402,20 @@ namespace Content.Client.Lobby.UI
                 SetPreviewRotation(_previewRotation);
             };
 
+            // LP edit start
+            //mode switch
+            SpriteModeSwitch.OnPressed += _ =>
+            {
+                var currentMode = _cfgManager.GetCVar(LPCvars.CharacterPreviewMode);
+                var newMode = currentMode == "Rotate" ? "List" : "Rotate";
+                _cfgManager.SetCVar(LPCvars.CharacterPreviewMode, newMode);
+                UpdateSpriteViewMode(newMode);
+            };
+
+            var initialMode = _cfgManager.GetCVar(LPCvars.CharacterPreviewMode);
+            UpdateSpriteViewMode(initialMode);
+            // LP edit end
+
             #endregion Dummy
 
             #endregion Left
@@ -751,7 +765,22 @@ namespace Content.Client.Lobby.UI
             if (Profile == null)
                 return;
 
-            SpriteView.LoadPreview(Profile, JobOverride, ShowClothes.Pressed);
+            // LP edit start
+
+            var currentMode = _cfgManager.GetCVar(LPCvars.CharacterPreviewMode);
+
+            if (currentMode == "List")
+            {
+                SpriteViewNorth.LoadPreview(Profile, JobOverride, ShowClothes.Pressed);
+                SpriteViewSouth.LoadPreview(Profile, JobOverride, ShowClothes.Pressed);
+                SpriteViewEast.LoadPreview(Profile, JobOverride, ShowClothes.Pressed);
+                SpriteViewWest.LoadPreview(Profile, JobOverride, ShowClothes.Pressed);
+            }
+            else
+            {
+                SpriteView.LoadPreview(Profile, JobOverride, ShowClothes.Pressed);
+            }
+            // LP edit end
 
             // Check and set the dirty flag to enable the save/reset buttons as appropriate.
             SetDirty();
@@ -818,7 +847,22 @@ namespace Content.Client.Lobby.UI
             if (Profile == null)
                 return;
 
-            SpriteView.ReloadProfilePreview(Profile);
+            // LP edit start
+
+            var currentMode = _cfgManager.GetCVar(LPCvars.CharacterPreviewMode);
+
+            if (currentMode == "List")
+            {
+                SpriteViewNorth.ReloadProfilePreview(Profile);
+                SpriteViewSouth.ReloadProfilePreview(Profile);
+                SpriteViewEast.ReloadProfilePreview(Profile);
+                SpriteViewWest.ReloadProfilePreview(Profile);
+            }
+            else
+            {
+                SpriteView.ReloadProfilePreview(Profile);
+            }
+            // LP edit end
 
             // Check and set the dirty flag to enable the save/reset buttons as appropriate.
             SetDirty();
@@ -1257,7 +1301,29 @@ namespace Content.Client.Lobby.UI
             if (!IsDirty)
                 return;
 
-            SpriteView.SetName(newName);
+            // LP edit start
+            var currentMode = _cfgManager.GetCVar(LPCvars.CharacterPreviewMode);
+
+            if (currentMode == "List")
+            {
+                SpriteViewNorth.SetName(newName);
+                SpriteViewSouth.SetName(newName);
+                SpriteViewEast.SetName(newName);
+                SpriteViewWest.SetName(newName);
+            }
+            else
+            {
+                SpriteView.SetName(newName);
+            }
+
+            ReloadProfilePreview();
+
+            SpriteView.InvalidateMeasure();
+            SpriteViewNorth.InvalidateMeasure();
+            SpriteViewSouth.InvalidateMeasure();
+            SpriteViewEast.InvalidateMeasure();
+            SpriteViewWest.InvalidateMeasure();
+            // LP edit end
         }
 
         private void SetSpawnPriority(SpawnPriorityPreference newSpawnPriority)
@@ -1542,11 +1608,14 @@ namespace Content.Client.Lobby.UI
             else // Whelp, the fixture doesn't exist, guesstimate it instead
                 WeightLabel.Text = Loc.GetString("humanoid-profile-editor-weight-label", ("weight", (int) 71));
 
-            // SpriteViewS.InvalidateMeasure();
-            // SpriteViewN.InvalidateMeasure();
-            // SpriteViewE.InvalidateMeasure();
-            // SpriteViewW.InvalidateMeasure();
             SpriteView.InvalidateMeasure();
+
+            //LP edit start
+            SpriteViewNorth.InvalidateMeasure();
+            SpriteViewSouth.InvalidateMeasure();
+            SpriteViewEast.InvalidateMeasure();
+            SpriteViewWest.InvalidateMeasure();
+            //LP edit end
         }
         // end Goobstation: port EE height/width sliders
 
@@ -1571,6 +1640,46 @@ namespace Content.Client.Lobby.UI
         {
             SpriteView.OverrideDirection = (Direction)((int)direction % 4 * 2);
         }
+
+        // LP edit start
+        private void UpdateSpriteViewMode(string mode)
+        {
+            if (mode == "List")
+            {
+                SpriteView.Visible = false;
+                SpriteListContainer.Visible = true;
+
+                SpriteRotateLeft.Visible = false;
+                SpriteRotateRight.Visible = false;
+                VSeparator1.Visible = false;
+                VSeparator2.Visible = false;
+
+
+                if (Profile != null)
+                {
+                    SpriteViewNorth.LoadPreview(Profile, JobOverride, ShowClothes.Pressed);
+                    SpriteViewSouth.LoadPreview(Profile, JobOverride, ShowClothes.Pressed);
+                    SpriteViewEast.LoadPreview(Profile, JobOverride, ShowClothes.Pressed);
+                    SpriteViewWest.LoadPreview(Profile, JobOverride, ShowClothes.Pressed);
+                }
+            }
+            else
+            {
+                SpriteView.Visible = true;
+                SpriteListContainer.Visible = false;
+
+                SpriteRotateLeft.Visible = true;
+                SpriteRotateRight.Visible = true;
+                VSeparator1.Visible = true;
+                VSeparator2.Visible = true;
+
+                if (Profile != null)
+                {
+                    SpriteView.LoadPreview(Profile, JobOverride, ShowClothes.Pressed);
+                }
+            }
+        }
+        // LP edit end
 
         private void RandomizeEverything()
         {
