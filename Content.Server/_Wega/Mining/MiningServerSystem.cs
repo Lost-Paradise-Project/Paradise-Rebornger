@@ -6,6 +6,15 @@ using Content.Shared.Power;
 using Content.Server.Atmos.EntitySystems;
 using Content.Shared.Audio;
 using Content.Shared.Examine;
+// LP edit start
+using Content.Shared._LP.Mining.Components;
+using Robust.Shared.GameObjects;
+using Content.Shared.Construction.Components;
+using Content.Server.Construction;
+using Content.Server.Construction.Components;
+using Robust.Shared.Containers;
+using Robust.Shared.Timing;
+// LP edit end
 
 namespace Content.Server._Wega.Mining;
 
@@ -20,10 +29,63 @@ public sealed class MiningServerSystem : EntitySystem
         base.Initialize();
 
         SubscribeLocalEvent<MiningServerComponent, ComponentInit>(OnInit);
-        SubscribeLocalEvent<MiningServerComponent, MapInitEvent>(OnMapInit);
+        SubscribeLocalEvent<MiningServerComponent, MapInitEvent>(OnMapInit, after: [typeof(ConstructionSystem)]); // LP edit
         SubscribeLocalEvent<MiningServerComponent, PowerChangedEvent>(OnPowerChanged);
         SubscribeLocalEvent<MiningServerComponent, ExaminedEvent>(OnExamined);
+        // LP edit start
+        SubscribeLocalEvent<MiningServerComponent, EntGotInsertedIntoContainerMessage>(OnBoardInserted);
+        SubscribeLocalEvent<MiningServerComponent, EntGotRemovedFromContainerMessage>(OnBoardRemoved);
+        // LP edit end
     }
+
+    // LP edit start
+
+    /// <summary>
+    /// Обработчик события при вставке платы в контейнер машины
+    /// </summary>
+    private void OnBoardInserted(Entity<MiningServerComponent> ent, ref EntGotInsertedIntoContainerMessage args)
+    {
+        if (TryComp<MachineComponent>(ent.Owner, out var machine) && args.Container.ID == MachineFrameComponent.BoardContainerName)
+        {
+            ent.Comp.CircuitboardUid = args.Entity;
+            UpdateBrokenState(ent.Owner, ent.Comp);
+        }
+    }
+
+    /// <summary>
+    /// Обработчик события при извлечении платы из контейнера машины
+    /// </summary>
+    private void OnBoardRemoved(Entity<MiningServerComponent> ent, ref EntGotRemovedFromContainerMessage args)
+    {
+        if (TryComp<MachineComponent>(ent.Owner, out var machine) && args.Container.ID == MachineFrameComponent.BoardContainerName)
+        {
+            ent.Comp.CircuitboardUid = null;
+            ent.Comp.IsBroken = true; // Машина не работает без платы потому что так завещала я
+            UpdateAppearance(ent.Owner, ent.Comp);
+        }
+    }
+
+    /// <summary>
+    /// Обновляет состояние IsBroken в зависимости от состояния платы
+    /// </summary>
+    public void UpdateBrokenState(EntityUid uid, MiningServerComponent? server = null)
+    {
+        if (!Resolve(uid, ref server))
+            return;
+
+        if (server.CircuitboardUid.HasValue && TryComp<MiningServerCircuitboardComponent>(server.CircuitboardUid.Value, out var board))
+        {
+            server.IsBroken = board.IsBroken;
+        }
+        else
+        {
+            server.IsBroken = true;
+        }
+
+        UpdateAppearance(uid, server);
+    }
+    // LP edit end
+
 
     public override void Update(float frameTime)
     {
@@ -94,12 +156,23 @@ public sealed class MiningServerSystem : EntitySystem
 
             if (server.CurrentTemperature >= server.BreakdownTemperature && !server.IsBroken)
             {
-                server.IsBroken = true;
+                // LP edit start
+                if (server.CircuitboardUid.HasValue && TryComp<MiningServerCircuitboardComponent>(server.CircuitboardUid.Value, out var board))
+                {
+                    board.Condition = MiningServerCircuitboardComponent.MinCondition;
+
+                    // Обновляем визуальное состояние платы (показываем анимацию сломанной платы)
+                    if (TryComp<Robust.Shared.GameObjects.AppearanceComponent>(server.CircuitboardUid.Value, out var boardAppearance))
+                    {
+                        _appearance.SetData(server.CircuitboardUid.Value, MiningServerCircuitboardVisuals.IsBroken, true, boardAppearance);
+                    }
+                }
+                // LP edit end
                 server.IsActive = false;
 
                 if (consumer.DrawRate != 0f)
                     consumer.DrawRate = 0f;
-                UpdateAppearance(uid, server);
+                UpdateBrokenState(uid, server); // LP edit
                 _ambient.SetAmbience(uid, false);
             }
         }
@@ -115,7 +188,34 @@ public sealed class MiningServerSystem : EntitySystem
     }
 
     private void OnMapInit(Entity<MiningServerComponent> ent, ref MapInitEvent args)
-        => ent.Comp.MiningStage = 1;
+    {
+        // LP edit start
+        ent.Comp.MiningStage = 1;
+
+        var uid = ent.Owner;
+
+        // Синхронная инициализация - теперь выполняется сразу после ConstructionSystem
+        // благодаря параметру after: [typeof(ConstructionSystem)] в подписке
+        if (TryComp<MachineComponent>(uid, out var machine))
+        {
+            if (machine.BoardContainer.ContainedEntities.Count > 0)
+            {
+                ent.Comp.CircuitboardUid = machine.BoardContainer.ContainedEntities.First();
+                UpdateBrokenState(uid, ent.Comp);
+            }
+            else
+            {
+                ent.Comp.IsBroken = true;
+                UpdateAppearance(uid, ent.Comp);
+            }
+        }
+        else
+        {
+            ent.Comp.IsBroken = true;
+            UpdateAppearance(uid, ent.Comp);
+        }
+        // LP edit end
+    }
 
     private void OnPowerChanged(Entity<MiningServerComponent> ent, ref PowerChangedEvent args)
     {

@@ -28,3 +28,25 @@
     borderColor: "#9b2b2a"
   - type: Icon
     state: pda-security
+
+- type: entity
+  parent: BasePDA
+  id: LPPBartenderBeerPDA
+  name: beer PDA
+  description: Now it's not just smelling like beer, but literally being beer.
+  components:
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda-beer
+  - type: Pda
+    id: BartenderIDCard
+  - type: Icon
+    sprite: _LP/Objects/Devices/pda.rsi
+    state: pda-beer
+  - type: Sprite
+    sprite: _LP/Objects/Devices/pda.rsi
+    state: pda-beer
+  - type: PdaBorderColor
+    borderColor: "#333333"
