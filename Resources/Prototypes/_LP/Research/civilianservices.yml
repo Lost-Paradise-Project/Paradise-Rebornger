@@ -9,7 +9,7 @@
   cost: 5000
   recipeUnlocks:
   - LPPSpaceForgeMachineCircuitboard
-  position: 13, 20
+  position: 3, 28 # печать скафоф
 
 - type: technology
   id: LPPEVAHardsuits
@@ -26,7 +26,7 @@
   - ClothingOuterSuitEmergency
   technologyPrerequisites:
   - LPPSpaceForge
-  position: 13, 21
+  position: 2, 29 # ВКД
 
 - type: technology
   id: LPPEngineeringHardsuits
@@ -42,7 +42,7 @@
   - ClothingOuterHardsuitEngineering
   technologyPrerequisites:
   - LPPEVAHardsuits
-  position: 13, 22
+  position: 4, 30 # скафы инженеров
   radioChannels:
   - Engineering
 
@@ -59,7 +59,7 @@
   - ClothingOuterHardsuitSpatio
   technologyPrerequisites:
   - LPPEVAHardsuits
-  position: 13, 23
+  position: 1, 30 # базовые шатхтерские скафы
   radioChannels:
   - Supply
 
@@ -76,6 +76,6 @@
   - ClothingOuterHardsuitSalvage
   technologyPrerequisites:
   - LPPBaseMiningHardsuits
-  position: 13, 24
+  position: 2, 31 # Шахтерские скафы
   radioChannels:
   - Supply

@@ -35,7 +35,7 @@
   - ClothingOuterHardsuitCombatOfficer
   technologyPrerequisites:
   - LPPEVAHardsuits
-  position: 13, 25
+  position: 8, 15 # базовые продвиннутые скафы
   radioChannels:
   - Security
 
@@ -52,7 +52,7 @@
   - ClothingOuterHardsuitSecurity
   technologyPrerequisites:
   - LPPBaseAdvancedHardsuits
-  position: 13, 26
+  position: 9, 14 # базовые продвинутые скафы
   radioChannels:
   - Security
 
@@ -70,7 +70,7 @@
   - ClothingOuterHardsuitCombatRiot
   technologyPrerequisites:
   - LPPStandardAdvancedHardsuits
-  position: 13, 27
+  position: 10, 14 # Специализированные стандарт скафы
   radioChannels:
   - Security
 
@@ -90,7 +90,7 @@
   - ClothingOuterHardsuitWarden
   technologyPrerequisites:
   - LPPSpecializedStandardHardsuits
-  position: 13, 28
+  position: 11, 13 # Специализированные продвинутые скафы СБ
   radioChannels:
   - Security
 
@@ -107,7 +107,7 @@
   - ClothingOuterHardsuitLuxury
   technologyPrerequisites:
   - LPPMiningHardsuits
-  position: 13, 29
+  position: 4, 32 # Продвинутые шатх. скафы
   radioChannels:
   - Supply
 
@@ -130,6 +130,6 @@
   technologyPrerequisites:
   - LPPAdvancedMiningHardsuits
   - LPPEngineeringHardsuits
-  position: 13, 30
+  position: 3, 32 # Экспериментальные скафы
   radioChannels:
   - Command
