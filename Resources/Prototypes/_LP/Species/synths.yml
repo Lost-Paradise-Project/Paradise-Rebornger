@@ -36,7 +36,7 @@
       onlyGroupWhitelisted: true
 
     enum.HumanoidVisualLayers.HeadSide: # Боковые элементы головы: frills + их light overlay.
-      limit: 2
+      limit: 3
       required: true # Базовые frills должны быть всегда.
       onlyGroupWhitelisted: true
       default: [ SynthFrillsDivinity ] # По умолчанию обычные frills.
