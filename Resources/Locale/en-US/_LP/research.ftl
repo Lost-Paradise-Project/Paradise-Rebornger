@@ -11,3 +11,4 @@ research-technology-experimental-hardsuits = Experimental hardsuits
 research-technology-engineering-hardsuits = Engineering hardsuits
 research-technology-base-mining-hardsuits = Base mining hardsuits
 research-technology-mining-hardsuits = Mining hardsuits
+research-technology-bluespace-miner = Bluespace mining

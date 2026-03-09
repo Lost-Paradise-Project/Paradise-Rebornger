@@ -9,7 +9,7 @@
   cost: 5000
   recipeUnlocks:
   - LPPSpaceForgeMachineCircuitboard
-  position: 3, 28 # печать скафоф
+  position: 2, 28 # печать скафоф
 
 - type: technology
   id: LPPEVAHardsuits

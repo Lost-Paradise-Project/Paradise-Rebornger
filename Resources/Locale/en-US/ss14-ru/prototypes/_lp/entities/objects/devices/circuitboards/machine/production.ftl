@@ -10,3 +10,5 @@ ent-LPPSpaceForgeMachineCircuitboard = space forge machine board
     .desc = A machine printed circuit board for a space forge.
 ent-LPPSpaceForgeCMDMachineCircuitboard = command space forge machine board
     .desc = A machine printed circuit board for a command space forge.
+ent-LPPBluespaceMinerMachineCircuitboard = bluespace miner machine board
+    .desc = A machine printed circuit board for a bluespace miner.

@@ -130,6 +130,7 @@
   technologyPrerequisites:
   - LPPAdvancedMiningHardsuits
   - LPPEngineeringHardsuits
+  - LPPSpecializedAdvSecurityHardsuits
   position: 3, 32 # Экспериментальные скафы
   radioChannels:
   - Command

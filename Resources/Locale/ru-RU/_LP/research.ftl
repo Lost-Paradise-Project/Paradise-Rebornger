@@ -11,3 +11,4 @@ research-technology-experimental-hardsuits = Экспериментальные 
 research-technology-engineering-hardsuits = Скафандры инженерии
 research-technology-base-mining-hardsuits = Базовые шахтёрские скафандры
 research-technology-mining-hardsuits = Шахтёрские скафандры
+research-technology-bluespace-miner = Блюспейс добыча

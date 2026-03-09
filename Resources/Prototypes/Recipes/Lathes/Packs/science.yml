@@ -84,6 +84,7 @@
   - APECircuitboard
   - ArtifactAnalyzerMachineCircuitboard
   - ArtifactCrusherMachineCircuitboard
+  - LPPBluespaceMinerMachineCircuitboard # LP Edit
 
 - type: latheRecipePack
   id: CameraBoards

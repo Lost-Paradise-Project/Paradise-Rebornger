@@ -10,3 +10,5 @@ ent-LPPSpaceForgeMachineCircuitboard = космическая кузница (м
     .desc = Печатная плата космической кузницы.
 ent-LPPSpaceForgeCMDMachineCircuitboard = космическая кузница командования (машинная плата)
     .desc = Печатная плата космической кузницы командования.
+ent-LPPBluespaceMinerMachineCircuitboard = блюспейс майнер (машинная плата)
+    .desc = Печатная плата блюспейс майнера.

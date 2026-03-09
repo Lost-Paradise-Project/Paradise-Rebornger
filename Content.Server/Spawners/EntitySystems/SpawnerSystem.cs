@@ -1,6 +1,7 @@
 using Content.Server.Spawners.Components;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
+using Content.Server.Power.Components; // LP Edit
 
 namespace Content.Server.Spawners.EntitySystems;
 
@@ -26,6 +27,13 @@ public sealed class SpawnerSystem : EntitySystem
         {
             if (timedSpawner.NextFire > curTime)
                 continue;
+
+            // Need power?
+            if (timedSpawner.RequiresPower)
+            {
+                if (!TryComp<ApcPowerReceiverComponent>(uid, out var power) || !power.Powered)
+                    continue;
+            }
 
             OnTimerFired(uid, timedSpawner);
 

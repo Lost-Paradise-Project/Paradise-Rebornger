@@ -5,3 +5,8 @@
     Steel: 3000
     Glass: 1000
     Plastic: 500
+
+- type: latheRecipe
+  parent: [ BaseCircuitboardRecipe, BaseResearchMachineRecipeCategory ]
+  id: LPPBluespaceMinerMachineCircuitboard
+  result: LPPBluespaceMinerMachineCircuitboard
