@@ -81,7 +81,7 @@
                     <ScrollContainer
                         HScrollEnabled="True"
                         HorizontalExpand="True"
-                        VerticalExpand="True">
+                        VerticalExpand="True"> <!-- LP edit 'HScrollEnabled'-->
                         <BoxContainer
                             Name="UnlocksContainer"
                             Orientation="Vertical"

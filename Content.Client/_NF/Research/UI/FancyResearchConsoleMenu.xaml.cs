@@ -115,7 +115,7 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
         // Set up scroll container properties
         TechScrollContainer.ScrollSpeedX = 100;
         TechScrollContainer.ScrollSpeedY = 100;
-        TechScrollContainer.HScrollEnabled = true;
+        TechScrollContainer.HScrollEnabled = true; // LP edit
         TechScrollContainer.VScrollEnabled = true;
 
         // Frontier: Initialize parallax background
@@ -303,10 +303,10 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
         if (!_draggin)
             return;
 
-        // Adjust scroll position with drag (both vertical and horizontal)
+        // Adjust scroll position with drag (both vertical and horizontal) // LP edit
         var scrollSpeed = 2.0f;
         TechScrollContainer.VScrollTarget -= args.Relative.Y * scrollSpeed;
-        TechScrollContainer.HScrollTarget -= args.Relative.X * scrollSpeed;
+        TechScrollContainer.HScrollTarget -= args.Relative.X * scrollSpeed; // LP edit
     }
 
     /// <summary>
@@ -502,7 +502,7 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
     {
         // Reset scroll position
         TechScrollContainer.VScrollTarget = 0;
-        TechScrollContainer.HScrollTarget = 0;
+        TechScrollContainer.HScrollTarget = 0; // LP edit
     }
 
     public override void Close()
