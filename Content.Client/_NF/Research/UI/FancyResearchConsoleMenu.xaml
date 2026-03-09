@@ -90,10 +90,10 @@
                         Access="Public"
                         HorizontalExpand="True"
                         VerticalExpand="True"
-                        HScrollEnabled="False"
+                        HScrollEnabled="True"
                         VScrollEnabled="True"
                         ReserveScrollbarSpace="True"
-                        StyleClasses="PdaScrollContainer">
+                        StyleClasses="PdaScrollContainer"> <!-- LP edit 'HScrollEnabled'-->
                         <nf:ResearchesContainerPanel
                             HorizontalExpand="True"
                             VerticalExpand="True"
