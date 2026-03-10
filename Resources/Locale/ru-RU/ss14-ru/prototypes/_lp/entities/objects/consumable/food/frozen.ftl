@@ -1,3 +1,5 @@
+ent-LPPFoodFrozenBase = { ent-FoodInjectableBase }
+    .desc = { ent-FoodInjectableBase.desc }
 ent-LPPFoodFrozenPopsicleJagermeister = фруктовый лёд из ксеномейстера
     .desc = Единственное мороженое, способное поднять вам настроение
 ent-LPPFoodFrozenPopsicleVodka = фруктовый лёд из водки
