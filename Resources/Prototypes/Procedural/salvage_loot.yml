@@ -55,6 +55,10 @@
           cost: 5
           prob: 0.5
         - proto: ProtolatheMachineCircuitboard
+          # LP Edit Start
+          prob: 0.5
+          cost: 5
+          # LP Edit End
         - proto: RandomArtifactSpawner
           cost: 2
         - proto: RandomCargoCorpseSpawner

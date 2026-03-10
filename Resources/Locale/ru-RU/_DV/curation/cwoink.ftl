@@ -3,9 +3,9 @@ cwoink-system-starmute-message-no-other-users = *Система: Никто не
 cwoink-system-messages-being-relayed-to-discord = Все сообщения пересылаются игровым Ментором через Discord.
 cwoink-system-introductory-message =
     Пожалуйста, сообщите нам здесь о любых вопросах, связанных с ивентами.
-
+    
     Административные вопросы, такие как нарушения правил и вопросы по ним - следует направлять в Помощь Админов.
-
+    
     О любых багах и связанных проблемах следует сообщать через Discord или Github.
 curator-chelp-curator-only = Только Ментор
 curator-chelp-curator-only-tooltip =

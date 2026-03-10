@@ -1,0 +1,217 @@
+- type: entity
+  id: LPPServiceProtolathe
+  parent: [BaseLatheLube, BaseSiloUtilizer]
+  name: service protolathe
+  description: Prints equipment and circuitboards for use by service department.
+  components:
+  - type: Sprite
+    sprite: _LP/Structures/Machines/serv_protolathe.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: LPPServiceProtolatheMachineCircuitboard
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    staticPacks:
+    - ChemistryStatic
+    - SurgeryStatic
+    - ServiceBoardsStatic
+    dynamicPacks:
+    - CameraBoards
+    - ServiceBoards
+    - PowerCells
+    - AtmosTools
+    - Janitor
+    - Instruments
+    - Equipment
+  - type: MaterialStorage
+    whitelist: &StandardMaterialWhitelist
+      tags:
+        - Sheet
+        - RawMaterial
+        - Ingot
+
+- type: entity
+  id: LPPScienceProtolathe
+  parent: [BaseLatheLube, BaseSiloUtilizer]
+  name: science protolathe
+  description: Prints equipment and circuitboards for use by RnD department.
+  components:
+  - type: Sprite
+    sprite: _LP/Structures/Machines/rnd_protolathe.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: LPPScienceProtolatheMachineCircuitboard
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    staticPacks:
+    - ChemistryStatic
+    - SurgeryStatic
+    dynamicPacks:
+    - ScienceEquipment
+    - ScienceExplosives
+    - ScienceClothing
+    - PowerCells
+    - ScienceWeapons
+    - Chemistry
+    - Equipment
+  - type: MaterialStorage
+    whitelist: *StandardMaterialWhitelist
+
+- type: entity
+  id: LPPEngineeringProtolathe
+  parent: [BaseLatheLube, BaseSiloUtilizer]
+  name: engineering protolathe
+  description: Prints equipment and circuitboards for use by engineering department.
+  components:
+  - type: Sprite
+    sprite: _LP/Structures/Machines/engi_protolathe.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: LPPEngineeringProtolatheMachineCircuitboard
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    staticPacks:
+    - EngineeringBoardsStatic
+    dynamicPacks:
+    - ReactorCircuitboards
+    - ShuttleBoards
+    - EngineeringBoards
+    - AdvancedTools
+    - PowerCells
+    - AtmosTools
+    - EngineeringWeapons
+    - Equipment
+  - type: MaterialStorage
+    whitelist: *StandardMaterialWhitelist
+
+- type: entity
+  id: LPPCargoProtolathe
+  parent: [BaseLatheLube, BaseSiloUtilizer]
+  name: cargo protolathe
+  description: Prints equipment and circuitboards for use by cargo department.
+  components:
+  - type: Sprite
+    sprite: _LP/Structures/Machines/cargo_protolathe.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: LPPCargoProtolatheMachineCircuitboard
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    staticPacks:
+    - ChemistryStatic
+    - CargoBoardsStatic
+    dynamicPacks:
+    - CargoBoards
+    - PowerCells
+    - Mining
+    - Equipment
+  - type: MaterialStorage
+    whitelist: *StandardMaterialWhitelist
+
+- type: entity
+  id: LPPSpaceForge
+  parent: [BaseLatheLube, BaseSiloUtilizer]
+  name: space forge
+  description: Prints hardsuits for everyone.
+  components:
+  - type: Sprite
+    sprite: _LP/Structures/Machines/SpaceForge.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: LPPSpaceForgeMachineCircuitboard
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    producingSound: /Audio/_LP/Structures/Machines/spaceforge_produce.ogg
+    dynamicPacks:
+    - LPPSpaceForgeHardsuits
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - Sheet
+        - RawMaterial
+        - Ingot
+
+- type: entity
+  id: LPPSpaceForgeCMD
+  parent: [BaseLatheLube, BaseSiloUtilizer]
+  name: command space forge
+  description: Prints hardsuits for command, security and other.
+  components:
+  - type: Sprite
+    sprite: _LP/Structures/Machines/SpaceForge_CMD.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: LPPSpaceForgeCMDMachineCircuitboard
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    producingSound: /Audio/_LP/Structures/Machines/spaceforge_produce.ogg
+    dynamicPacks:
+    - LPPSpaceForgeCMDHardsuits
+  - type: MaterialStorage
+    whitelist: *StandardMaterialWhitelist

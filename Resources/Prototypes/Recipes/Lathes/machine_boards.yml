@@ -356,10 +356,15 @@
   result: FlatpackerMachineCircuitboard
 
 # Lathes
-- type: latheRecipe
-  parent: [ BaseCircuitboardRecipe, BaseResearchMachineRecipeCategory ]
-  id: ProtolatheMachineCircuitboard
-  result: ProtolatheMachineCircuitboard
+
+# LP Edit Start
+
+# - type: latheRecipe
+#   parent: [ BaseCircuitboardRecipe, BaseResearchMachineRecipeCategory ]
+#   id: ProtolatheMachineCircuitboard
+#   result: ProtolatheMachineCircuitboard
+
+# LP Edit End
 
 - type: latheRecipe
   parent: [ BaseGoldCircuitboardRecipe, BaseResearchMachineRecipeCategory ]

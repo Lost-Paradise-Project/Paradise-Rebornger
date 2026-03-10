@@ -273,6 +273,7 @@
     - MedicalBoardsStatic
     - EngineeringBoardsStatic
     dynamicPacks:
+    - LPPCivilianCircuits # LP Edit
     - EngineeringBoards
     - CargoBoards
     - MedicalBoards
