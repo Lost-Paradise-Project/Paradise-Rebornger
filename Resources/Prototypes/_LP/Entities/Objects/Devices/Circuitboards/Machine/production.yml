@@ -99,6 +99,8 @@
       GlassBeaker:
         amount: 2
         defaultPrototype: Beaker
+  - type: StealTarget
+    stealGroup: LPPSpaceForgeCMD
 
 - type: entity
   id: LPPBluespaceMinerMachineCircuitboard
