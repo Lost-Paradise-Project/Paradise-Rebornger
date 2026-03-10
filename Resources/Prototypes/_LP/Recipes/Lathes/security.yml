@@ -70,7 +70,7 @@
 - type: latheRecipe
   id: ClothingHeadHelmetEVALarge
   result: ClothingHeadHelmetEVALarge
-  completetime: 15
+  parent: LPPLatheRecipe15Sec
   materials:
     Glass: 200
     Plastic: 1000
@@ -78,7 +78,7 @@
 - type: latheRecipe
   id: ClothingOuterHardsuitEVAPrisoner
   result: ClothingOuterHardsuitEVAPrisoner
-  completetime: 10
+  parent: LPPLatheRecipe15Sec
   materials:
     Plasteel: 300
     Plastic: 1000
@@ -86,7 +86,7 @@
 - type: latheRecipe
   id: ClothingOuterHardsuitCombatOfficer
   result: ClothingOuterHardsuitCombatOfficer
-  completetime: 10
+  parent: LPPLatheRecipe15Sec
   materials:
     Steel: 1950
     Plasma: 1350
@@ -98,7 +98,7 @@
 - type: latheRecipe
   id: ClothingOuterHardsuitSecurity
   result: ClothingOuterHardsuitSecurity
-  completetime: 10
+  parent: LPPLatheRecipe15Sec
   materials:
     Plasteel: 250
     Steel: 2000
@@ -109,7 +109,7 @@
 - type: latheRecipe
   id: ClothingOuterHardsuitCombatMedical
   result: ClothingOuterHardsuitCombatMedical
-  completetime: 10
+  parent: LPPLatheRecipe15Sec
   materials:
     Steel: 2000
     Plasma: 200
@@ -121,7 +121,7 @@
 - type: latheRecipe
   id: ClothingOuterHardsuitCombatRiot
   result: ClothingOuterHardsuitCombatRiot
-  completetime: 10
+  parent: LPPLatheRecipe15Sec
   materials:
     Steel: 2750
     Plasteel: 2200
@@ -133,7 +133,7 @@
 - type: latheRecipe
   id: ClothingOuterHardsuitSecurityPilot
   result: ClothingOuterHardsuitSecurityPilot
-  completetime: 10
+  parent: LPPLatheRecipe15Sec
   materials:
     Plasteel: 250
     Steel: 2000
@@ -144,7 +144,7 @@
 - type: latheRecipe
   id: LPPClothingOuterHardsuitSecurityEng
   result: LPPClothingOuterHardsuitSecurityEng
-  completetime: 10
+  parent: LPPLatheRecipe15Sec
   materials:
     Plasteel: 350
     Steel: 1800
@@ -156,7 +156,7 @@
 - type: latheRecipe
   id: ClothingOuterHardsuitBrigmedic
   result: ClothingOuterHardsuitBrigmedic
-  completetime: 10
+  parent: LPPLatheRecipe15Sec
   materials:
     Plasteel: 150
     Steel: 1650
@@ -168,7 +168,7 @@
 - type: latheRecipe
   id: ClothingOuterHardsuitWarden
   result: ClothingOuterHardsuitWarden
-  completetime: 10
+  parent: LPPLatheRecipe15Sec
   materials:
     Steel: 2000
     Plasteel: 800
@@ -179,7 +179,7 @@
 - type: latheRecipe
   id: ClothingOuterHardsuitLuxury
   result: ClothingOuterHardsuitLuxury
-  completetime: 10
+  parent: LPPLatheRecipe15Sec
   materials:
     Plasteel: 100
     Steel: 1050
@@ -191,7 +191,7 @@
 - type: latheRecipe
   id: LPPClothingOuterHardsuitRd
   result: LPPClothingOuterHardsuitRd
-  completetime: 10
+  parent: LPPLatheRecipe15Sec
   materials:
     Plasteel: 250
     Steel: 1450
@@ -203,7 +203,7 @@
 - type: latheRecipe
   id: ClothingOuterHardsuitMedical
   result: ClothingOuterHardsuitMedical
-  completetime: 10
+  parent: LPPLatheRecipe15Sec
   materials:
     Plasteel: 50
     Steel: 750
@@ -215,7 +215,7 @@
 - type: latheRecipe
   id: ClothingOuterHardsuitEngineeringWhite
   result: ClothingOuterHardsuitEngineeringWhite
-  completetime: 10
+  parent: LPPLatheRecipe15Sec
   materials:
     Plasteel: 200
     Steel: 1350
@@ -227,7 +227,7 @@
 - type: latheRecipe
   id: ClothingOuterHardsuitSecurityRed
   result: ClothingOuterHardsuitSecurityRed
-  completetime: 10
+  parent: LPPLatheRecipe15Sec
   materials:
     Steel: 2000
     Plasteel: 600
@@ -239,7 +239,7 @@
 - type: latheRecipe
   id: ClothingOuterHardsuitMaxim
   result: ClothingOuterHardsuitMaxim
-  completetime: 10
+  parent: LPPLatheRecipe15Sec
   materials:
     Plastic: 1000
     Steel: 2000
@@ -252,7 +252,7 @@
 - type: latheRecipe
   id: ClothingOuterHardsuitCap
   result: ClothingOuterHardsuitCap
-  completetime: 10
+  parent: LPPLatheRecipe15Sec
   materials:
     Plasteel: 200
     Steel: 1550
