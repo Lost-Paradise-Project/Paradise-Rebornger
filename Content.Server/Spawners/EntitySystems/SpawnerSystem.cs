@@ -28,12 +28,16 @@ public sealed class SpawnerSystem : EntitySystem
             if (timedSpawner.NextFire > curTime)
                 continue;
 
+            // LP Edit Start
+
             // Need power?
             if (timedSpawner.RequiresPower)
             {
                 if (!TryComp<ApcPowerReceiverComponent>(uid, out var power) || !power.Powered)
                     continue;
             }
+
+            // LP Edit End
 
             OnTimerFired(uid, timedSpawner);
 

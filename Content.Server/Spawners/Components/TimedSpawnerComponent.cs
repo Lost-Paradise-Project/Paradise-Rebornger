@@ -59,6 +59,8 @@ public sealed partial class TimedSpawnerComponent : Component, ISerializationHoo
     [DataField("power")]
     public bool RequiresPower = false;
 
+    // LP Edit End
+
     void ISerializationHooks.AfterDeserialization()
     {
         if (MinimumEntitiesSpawned > MaximumEntitiesSpawned)

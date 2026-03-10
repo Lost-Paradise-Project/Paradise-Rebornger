@@ -167,6 +167,8 @@
     - state: unlit
       shader: unshaded
       map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting  
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: Machine
@@ -199,6 +201,8 @@
     - state: unlit
       shader: unshaded
       map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting  
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: Machine
