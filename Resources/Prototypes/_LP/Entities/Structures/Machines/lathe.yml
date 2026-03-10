@@ -191,7 +191,7 @@
   description: Prints hardsuits for command, security and other.
   components:
   - type: Sprite
-    sprite: _LP/Structures/Machines/SpaceForge.rsi
+    sprite: _LP/Structures/Machines/SpaceForge_CMD.rsi
     snapCardinals: true
     layers:
     - state: icon

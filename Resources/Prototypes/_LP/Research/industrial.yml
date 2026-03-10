@@ -11,7 +11,7 @@
   - LPPRPLD
   technologyPrerequisites:
   - AdvancedToolsTechnology
-  position: 7, 11 # LP edit
+  position: 7, 11
 
 - type: technology
   id: LPPBluespaceMiner
@@ -26,4 +26,4 @@
   - LPPBluespaceMinerMachineCircuitboard
   technologyPrerequisites:
   - IndustrialEngineering
-  position: 2, 13 # LP edit
+  position: 2, 13
