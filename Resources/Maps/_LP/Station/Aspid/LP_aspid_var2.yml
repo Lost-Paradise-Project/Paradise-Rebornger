@@ -4,7 +4,7 @@ meta:
   engineVersion: 272.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/05/2026 07:35:06
+  time: 03/13/2026 11:08:46
   entityCount: 18890
 maps:
 - 1
@@ -14953,13 +14953,6 @@ entities:
     components:
     - type: Transform
       pos: 6.038775,-21.429781
-      parent: 2
-- proto: BookAtmosDistro
-  entities:
-  - uid: 755
-    components:
-    - type: Transform
-      pos: 7.4437623,-15.369677
       parent: 2
 - proto: BookAtmosVentsMore
   entities:
@@ -47780,10 +47773,10 @@ entities:
       parent: 2
 - proto: CigarGoldCase
   entities:
-  - uid: 6990
+  - uid: 15414
     components:
     - type: Transform
-      pos: 4.630952,48.731987
+      pos: 5.6955357,45.565712
       parent: 2
 - proto: CigCartonBlack
   entities:
@@ -60021,7 +60014,7 @@ entities:
       pos: 1.5,17.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -15100.542
+      secondsUntilStateChange: -15549.105
       state: Closing
   - uid: 8554
     components:
@@ -60299,7 +60292,7 @@ entities:
       pos: 28.5,20.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -16665.775
+      secondsUntilStateChange: -17114.34
       state: Closing
   - uid: 8609
     components:
@@ -89943,6 +89936,19 @@ entities:
       containers:
         VendingMachine: !type:Container
           ents: []
+- proto: LPPCargoProtolathe
+  entities:
+  - uid: 6990
+    components:
+    - type: Transform
+      pos: -38.5,9.5
+      parent: 2
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
 - proto: LPPClothingOuterCoatPajamsSharkPink
   entities:
   - uid: 7352
@@ -89950,6 +89956,19 @@ entities:
     - type: Transform
       pos: -18.763214,-22.178762
       parent: 2
+- proto: LPPEngineeringProtolathe
+  entities:
+  - uid: 13431
+    components:
+    - type: Transform
+      pos: 7.5,-15.5
+      parent: 2
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
 - proto: LPPErpMachine
   entities:
   - uid: 17776
@@ -90004,6 +90023,39 @@ entities:
       containers:
         VendingMachine: !type:Container
           ents: []
+- proto: LPPScienceProtolathe
+  entities:
+  - uid: 13416
+    components:
+    - type: Transform
+      pos: -3.5,24.5
+      parent: 2
+- proto: LPPServiceProtolathe
+  entities:
+  - uid: 755
+    components:
+    - type: Transform
+      pos: 3.5,-5.5
+      parent: 2
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
+- proto: LPPSpaceForgeCMD
+  entities:
+  - uid: 12924
+    components:
+    - type: Transform
+      pos: 4.5,48.5
+      parent: 2
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
 - proto: LPPUnderpantsMat
   entities:
   - uid: 17785
@@ -91695,10 +91747,10 @@ entities:
       parent: 2
 - proto: PinpointerNuclear
   entities:
-  - uid: 12924
+  - uid: 18881
     components:
     - type: Transform
-      pos: 4.3469753,48.675224
+      pos: 4.8830357,45.468487
       parent: 2
 - proto: PlantBag
   entities:
@@ -92669,11 +92721,6 @@ entities:
     components:
     - type: Transform
       pos: -40.5,15.5
-      parent: 2
-  - uid: 13056
-    components:
-    - type: Transform
-      pos: -38.5,9.5
       parent: 2
   - uid: 13057
     components:
@@ -95440,13 +95487,6 @@ entities:
       canCollide: False
     - type: InsideEntityStorage
       storage: 15705
-- proto: Protolathe
-  entities:
-  - uid: 13416
-    components:
-    - type: Transform
-      pos: -3.5,24.5
-      parent: 2
 - proto: Rack
   entities:
   - uid: 13420
@@ -95498,11 +95538,6 @@ entities:
     components:
     - type: Transform
       pos: 13.5,-41.5
-      parent: 2
-  - uid: 13431
-    components:
-    - type: Transform
-      pos: 4.5,48.5
       parent: 2
   - uid: 13432
     components:
@@ -105851,6 +105886,16 @@ entities:
       parent: 2
 - proto: SurveillanceCameraCommand
   entities:
+  - uid: 13056
+    components:
+    - type: Transform
+      pos: 9.5,66.5
+      parent: 2
+    - type: SurveillanceCamera
+      setupAvailableNetworks:
+      - SurveillanceCameraCommand
+      nameSet: True
+      id: Представитель ЦК
   - uid: 15107
     components:
     - type: Transform
@@ -106339,16 +106384,6 @@ entities:
       - SurveillanceCameraGeneral
       nameSet: True
       id: Fore Hallway
-  - uid: 15152
-    components:
-    - type: Transform
-      pos: 9.5,66.5
-      parent: 2
-    - type: SurveillanceCamera
-      setupAvailableNetworks:
-      - SurveillanceCameraGeneral
-      nameSet: True
-      id: Bridge Observatory
   - uid: 15153
     components:
     - type: Transform
@@ -108074,11 +108109,6 @@ entities:
     components:
     - type: Transform
       pos: 9.5,-15.5
-      parent: 2
-  - uid: 15414
-    components:
-    - type: Transform
-      pos: 7.5,-15.5
       parent: 2
   - uid: 15415
     components:
@@ -122110,6 +122140,11 @@ entities:
       location: Личный шаттл капитана
 - proto: WaterCooler
   entities:
+  - uid: 15152
+    components:
+    - type: Transform
+      pos: 11.5,66.5
+      parent: 2
   - uid: 17775
     components:
     - type: Transform
@@ -122139,13 +122174,6 @@ entities:
     components:
     - type: Transform
       pos: 4.5,-32.5
-      parent: 2
-- proto: WaterCoolerGold
-  entities:
-  - uid: 18881
-    components:
-    - type: Transform
-      pos: 11.5,66.5
       parent: 2
 - proto: WaterTankFull
   entities:
