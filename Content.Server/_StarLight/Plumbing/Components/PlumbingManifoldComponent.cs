@@ -1,4 +1,4 @@
-﻿namespace Content.Server._StarLight.Plumbing.Components;
+namespace Content.Server._StarLight.Plumbing.Components;
 
 [RegisterComponent]
 public sealed partial class PlumbingManifoldComponent : Component
