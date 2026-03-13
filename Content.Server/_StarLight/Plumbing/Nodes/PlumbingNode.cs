@@ -1,9 +1,9 @@
 using Content.Server._StarLight.Plumbing.NodeGroups;
-using Content.Server._Starlight.Plumbing.EntitySystems;
-using Content.Server._Starlight.Plumbing.Components;
+using Content.Server._StarLight.Plumbing.EntitySystems;
+using Content.Server._StarLight.Plumbing.Components;
 using Content.Server.NodeContainer;
 using Content.Server.NodeContainer.Nodes;
-using Content.Shared._Starlight.Plumbing.Components;
+using Content.Shared._StarLight.Plumbing.Components;
 using Content.Shared.Atmos;
 using Content.Shared.Atmos.Components;
 using Content.Shared.NodeContainer;

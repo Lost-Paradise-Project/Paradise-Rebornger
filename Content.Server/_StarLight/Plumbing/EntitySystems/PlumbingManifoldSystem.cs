@@ -1,10 +1,10 @@
-﻿using Content.Server._Starlight.Plumbing.Components;
-using Content.Server._Starlight.Plumbing.Nodes;
+﻿using Content.Server._StarLight.Plumbing.Components;
+using Content.Server._StarLight.Plumbing.Nodes;
 using Content.Shared.NodeContainer;
 using System;
 using System.Collections.Generic;
 
-namespace Content.Server._Starlight.Plumbing.EntitySystems;
+namespace Content.Server._StarLight.Plumbing.EntitySystems;
 
 /// <summary>
 /// Passive manifold bridge behavior.

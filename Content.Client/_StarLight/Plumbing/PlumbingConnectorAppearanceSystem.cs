@@ -268,7 +268,7 @@ public sealed class PlumbingConnectorAppearanceSystem : EntitySystem
         if (encoded == 0)
             return AtmosPipeLayer.Primary;
 
-        return (AtmosPipeLayer) Math.Clamp(encoded - 1, 0, (int) AtmosPipeLayer.Quinary);
+        return (AtmosPipeLayer) Math.Clamp(encoded - 1, 0, (int) AtmosPipeLayer.Tertiary);
     }
 
     private static Vector2 GetConnectedLayerOffset(PipeDirection worldDirection, Angle localRotation, AtmosPipeLayer layer, float offset)
@@ -279,8 +279,6 @@ public sealed class PlumbingConnectorAppearanceSystem : EntitySystem
         {
             AtmosPipeLayer.Secondary => GetPerpendicularOffset(worldDirection, sidewaysOffset),
             AtmosPipeLayer.Tertiary => GetPerpendicularOffset(worldDirection, -sidewaysOffset),
-            AtmosPipeLayer.Quaternary => GetPerpendicularOffset(worldDirection, sidewaysOffset),
-            AtmosPipeLayer.Quinary => GetPerpendicularOffset(worldDirection, -sidewaysOffset),
             _ => Vector2.Zero,
         };
 

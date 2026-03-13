@@ -189,7 +189,7 @@ public sealed class RCDSystem : EntitySystem
         if (!TryComp<RCDComponent>(uid, out var rcd))
             return;
 
-        var layerInt = Math.Clamp(ev.Layer, (byte) AtmosPipeLayer.Primary, (byte) AtmosPipeLayer.Quinary);
+        var layerInt = Math.Clamp(ev.Layer, (byte) AtmosPipeLayer.Primary, (byte) AtmosPipeLayer.Tertiary);
         var selectedLayer = (AtmosPipeLayer) layerInt;
 
         if (rcd.IsRPLD && selectedLayer > AtmosPipeLayer.Tertiary)

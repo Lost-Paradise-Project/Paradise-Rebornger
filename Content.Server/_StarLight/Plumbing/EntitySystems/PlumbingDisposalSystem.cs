@@ -1,11 +1,11 @@
-﻿using Content.Server._Starlight.Plumbing.Components;
-using Content.Shared._Starlight.Plumbing;
+﻿using Content.Server._StarLight.Plumbing.Components;
+using Content.Shared._StarLight.Plumbing;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Fluids.Components;
 using JetBrains.Annotations;
 using SharedAppearanceSystem = Robust.Shared.GameObjects.SharedAppearanceSystem;
 
-namespace Content.Server._Starlight.Plumbing.EntitySystems;
+namespace Content.Server._StarLight.Plumbing.EntitySystems;
 
 /// <summary>
 /// Keeps plumbing disposal running visuals in sync with whether there are reagents in its drain buffer.

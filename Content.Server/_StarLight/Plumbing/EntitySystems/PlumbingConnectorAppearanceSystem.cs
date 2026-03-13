@@ -1,5 +1,5 @@
 using Content.Server._StarLight.Plumbing.Nodes;
-using Content.Server._Starlight.Plumbing.Components;
+using Content.Server._StarLight.Plumbing.Components;
 using Content.Server.NodeContainer.EntitySystems;
 using Content.Server.NodeContainer.Nodes;
 using Content.Shared._StarLight.Plumbing;
