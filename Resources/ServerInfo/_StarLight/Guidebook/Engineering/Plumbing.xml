@@ -20,10 +20,10 @@
 
   <Box>
     <GuideEntityEmbed Entity="GuidebookPlumbingDuctStraight" Caption="Прямая"/>
-    <GuideEntityEmbed Entity="GuidebookPlumbingDuctBend" Caption="Угол"/>
+    <GuideEntityEmbed Entity="GuidebookPlumbingDuctBend" Caption="Угловая"/>
     <GuideEntityEmbed Entity="GuidebookPlumbingDuctTJunction" Caption="Тройник"/>
-    <GuideEntityEmbed Entity="GuidebookPlumbingDuctFourway" Caption="Четверник"/>
-    <GuideEntityEmbed Entity="GuidebookPlumbingDuctManifold" Caption="Манифольд"/>
+    <GuideEntityEmbed Entity="GuidebookPlumbingDuctFourway" Caption="Крестовина"/>
+    <GuideEntityEmbed Entity="GuidebookPlumbingDuctManifold" Caption="Коллектор"/>
   </Box>
 
   [color=#a4885c]Манифольд[/color] соединяет трубы, подключенные к каждой из его сторон. Он может соединять отдельные трубы на всех трех слоях.

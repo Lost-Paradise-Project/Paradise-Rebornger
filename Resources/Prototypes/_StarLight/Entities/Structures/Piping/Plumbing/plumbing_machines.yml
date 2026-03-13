@@ -120,7 +120,7 @@
   - type: Fixtures
     fixtures: {}
   - type: Sprite
-    sprite: _Starlight/Structures/Piping/Plumbing/plumbers.rsi
+    sprite: _StarLight/Structures/Piping/Plumbing/plumbers.rsi
     layers:
     - state: buffer_tank
   - type: PlumbingOutlet
@@ -810,7 +810,7 @@
   components:
   - type: Sprite
     drawdepth: FloorObjects
-    sprite: _Starlight/Structures/Piping/Plumbing/plumbers.rsi
+    sprite: _StarLight/Structures/Piping/Plumbing/plumbers.rsi
     layers:
     - state: disposal
       map: [ "enum.PlumbingVisualLayers.Base" ]

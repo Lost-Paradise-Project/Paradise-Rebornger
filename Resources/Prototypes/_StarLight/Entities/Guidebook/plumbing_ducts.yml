@@ -61,7 +61,7 @@
   suffix: Guidebook
   components:
   - type: Sprite
-    sprite: _Starlight/Structures/Piping/Plumbing/plumbing_manifold.rsi
+    sprite: _StarLight/Structures/Piping/Plumbing/plumbing_manifold.rsi
     drawdepth: ThinPipe
     layers:
     - state: duct_manifold

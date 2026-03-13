@@ -57,7 +57,7 @@
 - type: rcd
   id: PlumbingRpldDuctManifold
   category: PlumbingDucts
-  sprite: /Textures/_Starlight/Interface/Radial/RPLD/duct_manifold.png
+  sprite: /Textures/_StarLight/Interface/Radial/RPLD/duct_manifold.png
   mode: ConstructObject
   prototype: PlumbingDuctManifold
   cost: 1
@@ -73,7 +73,7 @@
 - type: rcd
   id: PlumbingRpldInput
   category: PlumbingSupply
-  sprite: /Textures/_Starlight/Interface/Radial/RPLD/pipe_input.png
+  sprite: /Textures/_StarLight/Interface/Radial/RPLD/pipe_input.png
   mode: ConstructObject
   prototype: PlumbingInput
   cost: 1
@@ -210,7 +210,7 @@
 - type: rcd
   id: PlumbingRpldSmartDispenser
   category: PlumbingProduction
-  sprite: /Textures/_Starlight/Interface/Radial/RPLD/smart_fridge.png
+  sprite: /Textures/_StarLight/Interface/Radial/RPLD/smart_fridge.png
   mode: ConstructObject
   prototype: PlumbingSmartDispenser
   cost: 3

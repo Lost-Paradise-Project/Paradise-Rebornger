@@ -22,9 +22,9 @@
     numberOfPipeLayers: 3
     spriteLayersRsiPaths:
       enum.PipeVisualLayers.Pipe:
-        Primary: _Starlight/Structures/Piping/Plumbing/fluid_ducts.rsi
-        Secondary: _Starlight/Structures/Piping/Plumbing/fluid_ducts_alt1.rsi
-        Tertiary: _Starlight/Structures/Piping/Plumbing/fluid_ducts_alt2.rsi
+        Primary: _StarLight/Structures/Piping/Plumbing/fluid_ducts.rsi
+        Secondary: _StarLight/Structures/Piping/Plumbing/fluid_ducts_alt1.rsi
+        Tertiary: _StarLight/Structures/Piping/Plumbing/fluid_ducts_alt2.rsi
   - type: Visibility
     layer: 1
   - type: Item
@@ -110,11 +110,11 @@
       map: [ "enum.PipeVisualLayers.Pipe" ]
   - type: PipeAppearance
     sprite:
-    - sprite: _Starlight/Structures/Piping/Plumbing/fluid_ducts.rsi
+    - sprite: _StarLight/Structures/Piping/Plumbing/fluid_ducts.rsi
       state: ductConnector
-    - sprite: _Starlight/Structures/Piping/Plumbing/fluid_ducts_alt1.rsi
+    - sprite: _StarLight/Structures/Piping/Plumbing/fluid_ducts_alt1.rsi
       state: ductConnector
-    - sprite: _Starlight/Structures/Piping/Plumbing/fluid_ducts_alt2.rsi
+    - sprite: _StarLight/Structures/Piping/Plumbing/fluid_ducts_alt2.rsi
       state: ductConnector
   - type: AtmosPipeLayers
     alternativePrototypes:
@@ -151,11 +151,11 @@
       map: [ "enum.PipeVisualLayers.Pipe" ]
   - type: PipeAppearance
     sprite:
-    - sprite: _Starlight/Structures/Piping/Plumbing/fluid_ducts.rsi
+    - sprite: _StarLight/Structures/Piping/Plumbing/fluid_ducts.rsi
       state: ductConnector
-    - sprite: _Starlight/Structures/Piping/Plumbing/fluid_ducts_alt1.rsi
+    - sprite: _StarLight/Structures/Piping/Plumbing/fluid_ducts_alt1.rsi
       state: ductConnector
-    - sprite: _Starlight/Structures/Piping/Plumbing/fluid_ducts_alt2.rsi
+    - sprite: _StarLight/Structures/Piping/Plumbing/fluid_ducts_alt2.rsi
       state: ductConnector
   - type: AtmosPipeLayers
     alternativePrototypes:
@@ -191,11 +191,11 @@
       map: [ "enum.PipeVisualLayers.Pipe" ]
   - type: PipeAppearance
     sprite:
-    - sprite: _Starlight/Structures/Piping/Plumbing/fluid_ducts.rsi
+    - sprite: _StarLight/Structures/Piping/Plumbing/fluid_ducts.rsi
       state: ductConnector
-    - sprite: _Starlight/Structures/Piping/Plumbing/fluid_ducts_alt1.rsi
+    - sprite: _StarLight/Structures/Piping/Plumbing/fluid_ducts_alt1.rsi
       state: ductConnector
-    - sprite: _Starlight/Structures/Piping/Plumbing/fluid_ducts_alt2.rsi
+    - sprite: _StarLight/Structures/Piping/Plumbing/fluid_ducts_alt2.rsi
       state: ductConnector
   - type: AtmosPipeLayers
     alternativePrototypes:
@@ -230,11 +230,11 @@
       map: [ "enum.PipeVisualLayers.Pipe" ]
   - type: PipeAppearance
     sprite:
-    - sprite: _Starlight/Structures/Piping/Plumbing/fluid_ducts.rsi
+    - sprite: _StarLight/Structures/Piping/Plumbing/fluid_ducts.rsi
       state: ductConnector
-    - sprite: _Starlight/Structures/Piping/Plumbing/fluid_ducts_alt1.rsi
+    - sprite: _StarLight/Structures/Piping/Plumbing/fluid_ducts_alt1.rsi
       state: ductConnector
-    - sprite: _Starlight/Structures/Piping/Plumbing/fluid_ducts_alt2.rsi
+    - sprite: _StarLight/Structures/Piping/Plumbing/fluid_ducts_alt2.rsi
       state: ductConnector
   - type: AtmosPipeLayers
     alternativePrototypes:
@@ -259,7 +259,7 @@
     mode: AlignAtmosPipeLayers
   components:
   - type: Sprite
-    sprite: _Starlight/Structures/Piping/Plumbing/plumbing_manifold.rsi
+    sprite: _StarLight/Structures/Piping/Plumbing/plumbing_manifold.rsi
     layers:
     - state: duct_manifold
       map: [ "enum.PipeVisualLayers.Pipe" ]
@@ -304,16 +304,16 @@
     pipeLayersLocked: true
     spriteLayersRsiPaths:
       enum.PipeVisualLayers.Pipe:
-        Primary: _Starlight/Structures/Piping/Plumbing/plumbing_manifold.rsi
-        Secondary: _Starlight/Structures/Piping/Plumbing/plumbing_manifold.rsi
-        Tertiary: _Starlight/Structures/Piping/Plumbing/plumbing_manifold.rsi
+        Primary: _StarLight/Structures/Piping/Plumbing/plumbing_manifold.rsi
+        Secondary: _StarLight/Structures/Piping/Plumbing/plumbing_manifold.rsi
+        Tertiary: _StarLight/Structures/Piping/Plumbing/plumbing_manifold.rsi
     alternativePrototypes:
       Primary: PlumbingDuctManifold
       Secondary: PlumbingDuctManifoldAlt1
       Tertiary: PlumbingDuctManifoldAlt2
   - type: Item
     storedSprite:
-      sprite: _Starlight/Structures/Piping/Plumbing/fluid_ducts.rsi
+      sprite: _StarLight/Structures/Piping/Plumbing/fluid_ducts.rsi
       state: storageStraight
 
 # ============================================================================
@@ -341,7 +341,7 @@
   components:
   - type: Sprite
     drawdepth: ThinPipeAlt1
-    sprite: _Starlight/Structures/Piping/Plumbing/fluid_ducts_alt1.rsi
+    sprite: _StarLight/Structures/Piping/Plumbing/fluid_ducts_alt1.rsi
 
 - type: entity
   parent: [PlumbingDuctLayerAlt2, PlumbingDuctStraight]
@@ -350,7 +350,7 @@
   components:
   - type: Sprite
     drawdepth: ThinPipeAlt2
-    sprite: _Starlight/Structures/Piping/Plumbing/fluid_ducts_alt2.rsi
+    sprite: _StarLight/Structures/Piping/Plumbing/fluid_ducts_alt2.rsi
 
 - type: entity
   parent: [PlumbingDuctLayerAlt1, PlumbingDuctBend]
@@ -359,7 +359,7 @@
   components:
   - type: Sprite
     drawdepth: ThinPipeAlt1
-    sprite: _Starlight/Structures/Piping/Plumbing/fluid_ducts_alt1.rsi
+    sprite: _StarLight/Structures/Piping/Plumbing/fluid_ducts_alt1.rsi
 
 - type: entity
   parent: [PlumbingDuctLayerAlt2, PlumbingDuctBend]
@@ -368,7 +368,7 @@
   components:
   - type: Sprite
     drawdepth: ThinPipeAlt2
-    sprite: _Starlight/Structures/Piping/Plumbing/fluid_ducts_alt2.rsi
+    sprite: _StarLight/Structures/Piping/Plumbing/fluid_ducts_alt2.rsi
 
 - type: entity
   parent: [PlumbingDuctLayerAlt1, PlumbingDuctTJunction]
@@ -377,7 +377,7 @@
   components:
   - type: Sprite
     drawdepth: ThinPipeAlt1
-    sprite: _Starlight/Structures/Piping/Plumbing/fluid_ducts_alt1.rsi
+    sprite: _StarLight/Structures/Piping/Plumbing/fluid_ducts_alt1.rsi
 
 - type: entity
   parent: [PlumbingDuctLayerAlt2, PlumbingDuctTJunction]
@@ -386,7 +386,7 @@
   components:
   - type: Sprite
     drawdepth: ThinPipeAlt2
-    sprite: _Starlight/Structures/Piping/Plumbing/fluid_ducts_alt2.rsi
+    sprite: _StarLight/Structures/Piping/Plumbing/fluid_ducts_alt2.rsi
 
 - type: entity
   parent: [PlumbingDuctLayerAlt1, PlumbingDuctFourway]
@@ -395,7 +395,7 @@
   components:
   - type: Sprite
     drawdepth: ThinPipeAlt1
-    sprite: _Starlight/Structures/Piping/Plumbing/fluid_ducts_alt1.rsi
+    sprite: _StarLight/Structures/Piping/Plumbing/fluid_ducts_alt1.rsi
 
 - type: entity
   parent: [PlumbingDuctLayerAlt2, PlumbingDuctFourway]
@@ -404,7 +404,7 @@
   components:
   - type: Sprite
     drawdepth: ThinPipeAlt2
-    sprite: _Starlight/Structures/Piping/Plumbing/fluid_ducts_alt2.rsi
+    sprite: _StarLight/Structures/Piping/Plumbing/fluid_ducts_alt2.rsi
 
 - type: entity
   parent: [PlumbingDuctLayerAlt1, PlumbingDuctManifold]
@@ -413,7 +413,7 @@
   components:
   - type: Sprite
     drawdepth: ThinPipeAlt1
-    sprite: _Starlight/Structures/Piping/Plumbing/plumbing_manifold.rsi
+    sprite: _StarLight/Structures/Piping/Plumbing/plumbing_manifold.rsi
 
 - type: entity
   parent: [PlumbingDuctLayerAlt2, PlumbingDuctManifold]
@@ -422,5 +422,5 @@
   components:
   - type: Sprite
     drawdepth: ThinPipeAlt2
-    sprite: _Starlight/Structures/Piping/Plumbing/plumbing_manifold.rsi
+    sprite: _StarLight/Structures/Piping/Plumbing/plumbing_manifold.rsi
 
