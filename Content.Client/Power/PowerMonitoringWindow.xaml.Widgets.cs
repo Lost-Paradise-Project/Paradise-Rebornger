@@ -17,6 +17,19 @@ public sealed partial class PowerMonitoringWindow
     private bool _autoScrollActive = false;
     private bool _autoScrollAwaitsUpdate = false;
 
+    // LP edit start (create new func())
+    private string FormatPower(double watts)
+    {
+        if (watts < 1000)
+            return $"{Math.Round(watts)} Вт";
+        if (watts < 1_000_000)
+            return $"{watts / 1000:0.0} кВт";
+        if (watts < 1_000_000_000)
+            return $"{watts / 1_000_000:0.00} МВт";
+        return $"{watts / 1_000_000_000:0.0} ГВт";
+    }
+    // LP edit end
+
     private void UpdateWindowConsoleEntry
         (BoxContainer masterContainer,
         int index,
@@ -103,7 +116,7 @@ public sealed partial class PowerMonitoringWindow
 
         // Update power value
         // Don't use SI prefixes, just give the number in W, so that it is readily apparent which consumer is using a lot of power.
-        button.PowerValue.Text = Loc.GetString("power-monitoring-window-button-value", ("value", Math.Round(entry.PowerValue).ToString("N0")));
+        button.PowerValue.Text = FormatPower(entry.PowerValue); // LP edit
 
         // Update battery level if applicable
         if (entry.BatteryLevel != null)
