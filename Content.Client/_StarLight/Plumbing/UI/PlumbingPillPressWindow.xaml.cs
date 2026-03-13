@@ -52,6 +52,9 @@ public sealed partial class PlumbingPillPressWindow : DefaultWindow
             OnSetDosage?.Invoke(val);
         };
 
+        LabelInput.IsValid = s => s.Length <= SharedChemMaster.LabelMaxLength;
+        SetLabelButton.OnPressed += _ => OnSetLabel?.Invoke(LabelInput.Text);
+
         MixingToggle.OnToggled += args =>
         {
             _mixingEnabled = args.Pressed;
