@@ -1,2 +1,4 @@
 ent-LPPClothingOuterHardsuitSecurityEng = скафандр полевого инженера
     .desc = Специальный костюм, защищающий от воздействия опасных сред с низким давлением. Имеет дополнительный слой брони.
+ent-LPPClothingOuterHardsuitRd = { ent-ClothingOuterHardsuitRd }
+    .desc = { ent-ClothingOuterHardsuitRd.desc }

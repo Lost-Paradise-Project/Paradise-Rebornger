@@ -1,0 +1,6 @@
+- type: entity
+  parent: BaseCaptainObjective
+  id: LPPSpaceForgeCMDStealObjective
+  components:
+  - type: StealCondition
+    stealGroup: LPPSpaceForgeCMD

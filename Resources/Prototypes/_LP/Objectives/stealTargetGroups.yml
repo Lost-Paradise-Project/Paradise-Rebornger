@@ -1,0 +1,6 @@
+- type: stealTargetGroup
+  id: LPPSpaceForgeCMD
+  name: steal-target-groups-captain-space-forge
+  sprite:
+    sprite: _LP/Structures/Machines/SpaceForge_CMD.rsi
+    state: icon

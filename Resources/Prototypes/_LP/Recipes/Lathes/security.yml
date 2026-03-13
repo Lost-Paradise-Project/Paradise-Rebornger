@@ -30,3 +30,233 @@
   materials:
     Plastic: 375
     Plasma: 375
+
+# Hardsuits
+
+# Base cost: Plastic: 1000
+
+# Every hardsuit what has helmet with window must have += Glass: 200
+
+# If hardsuit has no resist or buffs => Plastic: 1000
+
+# If hardsuit has speed buffs += Plastic: 1000
+
+# If hardsuit dosnt have buffs but has resist -= Plastic: 1000 and += Steel: 500
+
+# If hardsuit dosnt have resist but has speed debuff += 1 Plastic for every 10%
+
+# If hardsuit dosnt have speed buff/debuff but has resists += Plastic: 1000
+
+# Every Blunt/Pierce/Slash damage 10% += 1 Steel until resist is higher than 40%
+# Every 10% Blunt/Pierce/Slash damage higher than 40% += 2 Plasteel
+
+# Every Radiation damage 10% += 1 Plasma until resist is higher than 40%
+# Every 10% Radiation damage higher than 40% += 2 Plasma
+
+# Every 10% speed debuff += 1 Plasteel
+
+# Every Fire damage 10% += 1 Gold
+
+# Every Explosive damage 10% += 1 Silver
+
+# Every High Temp damage 10% += 1 Gold
+
+# Every Acid damage 10% += 1 Silver
+
+# Every Electical damage 10% += 1 Steel
+
+# Every Stamina damage 10% += 2 Plasteel
+
+- type: latheRecipe
+  id: ClothingHeadHelmetEVALarge
+  result: ClothingHeadHelmetEVALarge
+  parent: LPPLatheRecipe15Sec
+  materials:
+    Glass: 200
+    Plastic: 1000
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitEVAPrisoner
+  result: ClothingOuterHardsuitEVAPrisoner
+  parent: LPPLatheRecipe15Sec
+  materials:
+    Plasteel: 300
+    Plastic: 1000
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitCombatOfficer
+  result: ClothingOuterHardsuitCombatOfficer
+  parent: LPPLatheRecipe15Sec
+  materials:
+    Steel: 1950
+    Plasma: 1350
+    Silver: 750
+    Gold: 350
+    Plasteel: 1050
+    Glass: 200
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitSecurity
+  result: ClothingOuterHardsuitSecurity
+  parent: LPPLatheRecipe15Sec
+  materials:
+    Plasteel: 250
+    Steel: 2000
+    Gold: 300
+    Silver: 900
+    Glass: 200
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitCombatMedical
+  result: ClothingOuterHardsuitCombatMedical
+  parent: LPPLatheRecipe15Sec
+  materials:
+    Steel: 2000
+    Plasma: 200
+    Silver: 600
+    Gold: 350
+    Plasteel: 950
+    Glass: 200
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitCombatRiot
+  result: ClothingOuterHardsuitCombatRiot
+  parent: LPPLatheRecipe15Sec
+  materials:
+    Steel: 2750
+    Plasteel: 2200
+    Plasma: 300
+    Silver: 900
+    Gold: 950
+    Glass: 200
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitSecurityPilot
+  result: ClothingOuterHardsuitSecurityPilot
+  parent: LPPLatheRecipe15Sec
+  materials:
+    Plasteel: 250
+    Steel: 2000
+    Gold: 300
+    Silver: 900
+    Glass: 200
+
+- type: latheRecipe
+  id: LPPClothingOuterHardsuitSecurityEng
+  result: LPPClothingOuterHardsuitSecurityEng
+  parent: LPPLatheRecipe15Sec
+  materials:
+    Plasteel: 350
+    Steel: 1800
+    Silver: 200
+    Gold: 1350
+    Plasma: 1200
+    Glass: 200
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitBrigmedic
+  result: ClothingOuterHardsuitBrigmedic
+  parent: LPPLatheRecipe15Sec
+  materials:
+    Plasteel: 150
+    Steel: 1650
+    Glass: 200
+    Gold: 50
+    Plasma: 100
+    Silver: 100
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitWarden
+  result: ClothingOuterHardsuitWarden
+  parent: LPPLatheRecipe15Sec
+  materials:
+    Steel: 2000
+    Plasteel: 800
+    Gold: 300
+    Silver: 900
+    Glass: 200
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitLuxury
+  result: ClothingOuterHardsuitLuxury
+  parent: LPPLatheRecipe15Sec
+  materials:
+    Plasteel: 100
+    Steel: 1050
+    Gold: 200
+    Plasma: 1700
+    Silver: 300
+    Glass: 200
+
+- type: latheRecipe
+  id: LPPClothingOuterHardsuitRd
+  result: LPPClothingOuterHardsuitRd
+  parent: LPPLatheRecipe15Sec
+  materials:
+    Plasteel: 250
+    Steel: 1450
+    Gold: 800
+    Plasma: 2500
+    Silver: 1700
+    Glass: 200
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitMedical
+  result: ClothingOuterHardsuitMedical
+  parent: LPPLatheRecipe15Sec
+  materials:
+    Plasteel: 50
+    Steel: 750
+    Gold: 100
+    Silver: 900
+    Glass: 200
+    Plasma: 1100
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitEngineeringWhite
+  result: ClothingOuterHardsuitEngineeringWhite
+  parent: LPPLatheRecipe15Sec
+  materials:
+    Plasteel: 200
+    Steel: 1350
+    Gold: 1500
+    Plasma: 2700
+    Silver: 1300
+    Glass: 200
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitSecurityRed
+  result: ClothingOuterHardsuitSecurityRed
+  parent: LPPLatheRecipe15Sec
+  materials:
+    Steel: 2000
+    Plasteel: 600
+    Plasma: 600
+    Silver: 900
+    Glass: 200
+    Gold: 100
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitMaxim
+  result: ClothingOuterHardsuitMaxim
+  parent: LPPLatheRecipe15Sec
+  materials:
+    Plastic: 1000
+    Steel: 2000
+    Plasteel: 200
+    Gold: 800
+    Plasma: 1400
+    Silver: 800
+    Glass: 200
+
+- type: latheRecipe
+  id: ClothingOuterHardsuitCap
+  result: ClothingOuterHardsuitCap
+  parent: LPPLatheRecipe15Sec
+  materials:
+    Plasteel: 200
+    Steel: 1550
+    Gold: 600
+    Plasma: 1700
+    Silver: 900
+    Glass: 200

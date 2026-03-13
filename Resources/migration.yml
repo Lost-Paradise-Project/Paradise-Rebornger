@@ -939,3 +939,7 @@ LeftFootMoth: OrganMothFootLeft
 # LP Edit 2026-02-03
 MachineMaterialSilo: null
 CrateMaterialSilo: null
+
+# LP Edit 2026-03-10
+ProtolatheMachineCircuitboard: LPPScienceProtolatheMachineCircuitboard
+Protolathe: LPPScienceProtolathe

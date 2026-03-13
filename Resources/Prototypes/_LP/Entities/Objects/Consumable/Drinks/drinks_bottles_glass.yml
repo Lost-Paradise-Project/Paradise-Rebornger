@@ -1,0 +1,16 @@
+- type: entity
+  parent: [DrinkVisualsAllFilled, DrinkBottleGlassBaseFull]
+  id: LPPDrinkXenomeisterBottleFull
+  name: xenomeister bottle
+  description: Green bottle that contains the most fantasy brewing that you can find in space.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: LPPXenomeister
+          Quantity: 100
+  - type: Label
+    currentLabel: reagent-name-xenomeister
+  - type: Sprite
+    sprite: _LP/Objects/Consumable/Drinks/xenomeister.rsi

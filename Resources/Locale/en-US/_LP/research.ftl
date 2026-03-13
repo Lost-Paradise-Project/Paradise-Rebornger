@@ -1,2 +1,14 @@
-research-technology-borg-module-security = Модули СБ боргов
-research-technology-rpld = РДЖТ
+research-technology-borg-module-security = Security borgs module
+research-technology-rpld = RPLD
+research-technology-space-forge = Hardsuits printing
+research-technology-eva-hardsuits = EVA
+research-technology-base-adv-hardsuits = Base advanced hardsuits
+research-technology-standard-adv-hardsuits = Standard advanced hardsuits
+research-technology-specialized-standard-hardsuits = Specialized standard hardsuits
+research-technology-specialized-adv-security-hardsuits = Specialized advanced security hardsuits
+research-technology-adv-mining-hardsuits = Advanced mining hardsuits
+research-technology-experimental-hardsuits = Experimental hardsuits
+research-technology-engineering-hardsuits = Engineering hardsuits
+research-technology-base-mining-hardsuits = Base mining hardsuits
+research-technology-mining-hardsuits = Mining hardsuits
+research-technology-bluespace-miner = Bluespace mining

@@ -1,2 +1,14 @@
 research-technology-borg-module-security = Модули СБ боргов
 research-technology-rpld = РДЖТ
+research-technology-space-forge = Печать скафандров
+research-technology-eva-hardsuits = ВКД
+research-technology-base-adv-hardsuits = Базовые продвинутые скафандры
+research-technology-standard-adv-hardsuits = Стандартные продвинутые скафандры
+research-technology-specialized-standard-hardsuits = Специализированные стандартные скафандры
+research-technology-specialized-adv-security-hardsuits = Специализированные продвинутые скафандры СБ
+research-technology-adv-mining-hardsuits = Продвинутые шахтёрские скафандры
+research-technology-experimental-hardsuits = Экспериментальные скафандры
+research-technology-engineering-hardsuits = Скафандры инженерии
+research-technology-base-mining-hardsuits = Базовые шахтёрские скафандры
+research-technology-mining-hardsuits = Шахтёрские скафандры
+research-technology-bluespace-miner = Блюспейс добыча
