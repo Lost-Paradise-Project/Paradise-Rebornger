@@ -1,4 +1,5 @@
 using Content.Shared.Humanoid;
+using Content.Shared.Humanoid.Prototypes;
 using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Corvax.TTS;
@@ -31,4 +32,12 @@ public sealed partial class TTSVoicePrototype : IPrototype
 
     [DataField("sponsorOnly")]
     public bool SponsorOnly { get; private set; } = false;
+
+    // LP edit start
+    [DataField]
+    public HashSet<ProtoId<SpeciesPrototype>> SpeciesBlacklist { get; private set; } = new();
+
+    [DataField]
+    public HashSet<ProtoId<SpeciesPrototype>> SpeciesWhitelist { get; private set; } = new();
+    // LP edit end
 }
