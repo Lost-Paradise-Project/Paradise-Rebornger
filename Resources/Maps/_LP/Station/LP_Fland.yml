@@ -192520,6 +192520,7 @@ entities:
     components:
     - type: Transform
       pos: -2.5,27.5
+      rot: 1.5707963267948966 rad
       parent: 13329
     - type: Fixtures
       fixtures: {}
@@ -192548,6 +192549,7 @@ entities:
     components:
     - type: Transform
       pos: 51.5,-12.5
+      rot: 3.141592653589793 rad
       parent: 13329
     - type: Fixtures
       fixtures: {}
@@ -193684,7 +193686,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core First Room
+      id: Ядро ИИ, первая комната
   - uid: 30182
     components:
     - type: Transform
@@ -193695,7 +193697,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Upload
+      id: Ядро ИИ, загрузка
   - uid: 30183
     components:
     - type: Transform
@@ -193706,7 +193708,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core Core Entrance
+      id: Ядро ИИ, вход в ядро
   - uid: 30184
     components:
     - type: Transform
@@ -193717,7 +193719,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core Power
+      id: Ядро ИИ, питание
   - uid: 30185
     components:
     - type: Transform
@@ -193727,7 +193729,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core Construction Room
+      id: Ядро ИИ, конструкционная комната
   - uid: 30212
     components:
     - type: Transform
@@ -193738,7 +193740,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core Closet
+      id: Ядро ИИ, склад
   - uid: 30756
     components:
     - type: Transform
@@ -193749,7 +193751,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: Captain's Office
+      id: Офис Капитана
   - uid: 30758
     components:
     - type: Transform
@@ -193760,17 +193762,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: Vault
-  - uid: 30761
-    components:
-    - type: Transform
-      pos: 79.5,49.5
-      parent: 13329
-    - type: SurveillanceCamera
-      setupAvailableNetworks:
-      - SurveillanceCameraCommand
-      nameSet: True
-      id: Captain's Bedroom
+      id: Хранилище
   - uid: 31461
     components:
     - type: Transform
@@ -193781,7 +193773,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: Bridge South
+      id: Мостик, юг
   - uid: 31462
     components:
     - type: Transform
@@ -193792,7 +193784,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: Bridge North
+      id: Мостик, север
   - uid: 31569
     components:
     - type: Transform
@@ -193803,7 +193795,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: EVA Storage
+      id: Хранилище ВКД
   - uid: 31570
     components:
     - type: Transform
@@ -193814,7 +193806,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: HoP Office
+      id: Офис ГП
   - uid: 31571
     components:
     - type: Transform
@@ -193825,7 +193817,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: Conference Room
+      id: Конференц-зал
   - uid: 31572
     components:
     - type: Transform
@@ -193836,7 +193828,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: Command Dock
+      id: Док командования
   - uid: 34257
     components:
     - type: Transform
@@ -193847,7 +193839,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: Show Room
+      id: Выставочный зал
   - uid: 35357
     components:
     - type: Transform
@@ -193858,7 +193850,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: Panic Bunker
+      id: Пустая  комната
   - uid: 35372
     components:
     - type: Transform
@@ -193868,7 +193860,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: Bridge East
+      id: Мостик, восток
   - uid: 35373
     components:
     - type: Transform
@@ -193879,7 +193871,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: Vault Exterior South
+      id: Хранилище, южный вход
   - uid: 35374
     components:
     - type: Transform
@@ -193889,18 +193881,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: Vault Exterior North
-  - uid: 35471
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 63.5,51.5
-      parent: 13329
-    - type: SurveillanceCamera
-      setupAvailableNetworks:
-      - SurveillanceCameraCommand
-      nameSet: True
-      id: HoP Bedroom
+      id: Хранилище, северный вход
   - uid: 35475
     components:
     - type: Transform
@@ -193911,7 +193892,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: Command Dock Airlock
+      id: Шлюз доков командования
   - uid: 35476
     components:
     - type: Transform
@@ -193922,7 +193903,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core Entrance
+      id: Ядро ИИ, вход
   - uid: 35477
     components:
     - type: Transform
@@ -193933,7 +193914,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core Core
+      id: Ядро ИИ
   - uid: 35478
     components:
     - type: Transform
@@ -193944,7 +193925,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: 'Solars NE '
+      id: Солнечные панели, СВ
   - uid: 35480
     components:
     - type: Transform
@@ -193955,7 +193936,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core Core
+      id: Ядро ИИ
   - uid: 35552
     components:
     - type: Transform
@@ -193965,7 +193946,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core Ext N
+      id: Ядро ИИ, наружняя, север
   - uid: 35553
     components:
     - type: Transform
@@ -193976,7 +193957,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core Ext E
+      id: Ядро ИИ, наружняя, восток
   - uid: 35554
     components:
     - type: Transform
@@ -193987,7 +193968,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core Ext S
+      id: Ядро ИИ, наружняя, юг
   - uid: 35587
     components:
     - type: Transform
@@ -193998,7 +193979,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core Ext NE
+      id: Ядро ИИ, наружняя, северо-восток
   - uid: 35588
     components:
     - type: Transform
@@ -194009,7 +193990,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core Ext SE
+      id: Ядро ИИ, наружняя, юго-восток
   - uid: 35589
     components:
     - type: Transform
@@ -194020,7 +194001,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core Core Core
+      id: Ядро ИИ, центральное Ядро
   - uid: 35602
     components:
     - type: Transform
@@ -194031,7 +194012,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core Powerline
+      id: Ядро ИИ, шина питания
 - proto: SurveillanceCameraEngineering
   entities:
   - uid: 13142
@@ -194044,7 +194025,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Rock Dock
+      id: Верфь, доки
   - uid: 13143
     components:
     - type: Transform
@@ -194055,7 +194036,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Rock Dock Supply Room
+      id: Верфь, склад
   - uid: 23954
     components:
     - type: Transform
@@ -194066,7 +194047,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Singulo Cage
+      id: Клетка сдерживания
   - uid: 24649
     components:
     - type: Transform
@@ -194077,7 +194058,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: TEG
+      id: ТЭГ
   - uid: 26354
     components:
     - type: Transform
@@ -194088,7 +194069,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Atmos Airlock Ext
+      id: Атмос, шлюз, наружняя
   - uid: 26618
     components:
     - type: Transform
@@ -194098,7 +194079,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Engineering Lobby
+      id: Приёмная инженерии
   - uid: 26619
     components:
     - type: Transform
@@ -194109,7 +194090,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Technical Storage
+      id: Техническое хранилище
   - uid: 26620
     components:
     - type: Transform
@@ -194119,7 +194100,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Atmospherics
+      id: Атмосферный отсек
   - uid: 26621
     components:
     - type: Transform
@@ -194130,7 +194111,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: CE Office
+      id: Офис СИ
   - uid: 26622
     components:
     - type: Transform
@@ -194141,7 +194122,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Engineering Breakroom
+      id: Комнатка отдыха инженеров
   - uid: 26623
     components:
     - type: Transform
@@ -194152,7 +194133,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Locker Room
+      id: Раздевалка
   - uid: 26624
     components:
     - type: Transform
@@ -194163,7 +194144,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Tool Room
+      id: Хранилище инструментов
   - uid: 26625
     components:
     - type: Transform
@@ -194174,7 +194155,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Clean Room
+      id: Комната очистки
   - uid: 26626
     components:
     - type: Transform
@@ -194185,7 +194166,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Particle Accelerator
+      id: Ускоритель частиц
   - uid: 26627
     components:
     - type: Transform
@@ -194195,7 +194176,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: AME Room
+      id: Двигатель антиматерии
   - uid: 26628
     components:
     - type: Transform
@@ -194206,7 +194187,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: SMES Bank
+      id: СМЭСы
   - uid: 26861
     components:
     - type: Transform
@@ -194217,7 +194198,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: South Hall
+      id: Южный коридор
   - uid: 26862
     components:
     - type: Transform
@@ -194228,7 +194209,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Grav Gen
+      id: Генератор Гравитации
   - uid: 27892
     components:
     - type: Transform
@@ -194239,7 +194220,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Telecomms
+      id: Телекоммуникации
   - uid: 30213
     components:
     - type: Transform
@@ -194250,7 +194231,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Singulo Cage
+      id: Клетка сдерживания
   - uid: 34705
     components:
     - type: Transform
@@ -194261,7 +194242,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Project Room
+      id: Северный коридор
   - uid: 34778
     components:
     - type: Transform
@@ -194272,7 +194253,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Engi Construction Room
+      id: Недостроенная комната
   - uid: 34779
     components:
     - type: Transform
@@ -194283,7 +194264,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Engi Arrivals Supply Closet
+      id: Гардеробная прибытия
   - uid: 34918
     components:
     - type: Transform
@@ -194294,7 +194275,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Tech Vault Secure Storage
+      id: Защищённое хранилище плат
   - uid: 34920
     components:
     - type: Transform
@@ -194305,7 +194286,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Engineering Closet
+      id: Инженерная гардеробная
   - uid: 34948
     components:
     - type: Transform
@@ -194316,7 +194297,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Atmos Desk
+      id: Атмос, приёмная
   - uid: 35099
     components:
     - type: Transform
@@ -194327,17 +194308,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: 'Solars SW '
-  - uid: 35279
-    components:
-    - type: Transform
-      pos: 75.5,-26.5
-      parent: 13329
-    - type: SurveillanceCamera
-      setupAvailableNetworks:
-      - SurveillanceCameraEngineering
-      nameSet: True
-      id: Atmos Gear Room
+      id: Солнечные панели, СЗ
   - uid: 35280
     components:
     - type: Transform
@@ -194348,7 +194319,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Drone Room
+      id: Комната дронов
   - uid: 35344
     components:
     - type: Transform
@@ -194359,7 +194330,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Atmos
+      id: Атмос
   - uid: 35449
     components:
     - type: Transform
@@ -194369,7 +194340,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Teg Entrance
+      id: ТЭГ, вход
   - uid: 35450
     components:
     - type: Transform
@@ -194380,7 +194351,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Atmos
+      id: Атмос
   - uid: 35452
     components:
     - type: Transform
@@ -194391,7 +194362,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Atmos Tank Room
+      id: Атмос, хранилище канист
   - uid: 35453
     components:
     - type: Transform
@@ -194402,18 +194373,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Engi Maint Tunnel
-  - uid: 35454
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 84.5,-15.5
-      parent: 13329
-    - type: SurveillanceCamera
-      setupAvailableNetworks:
-      - SurveillanceCameraEngineering
-      nameSet: True
-      id: CE Bedroom
+      id: Тех. туннели, инженерия
   - uid: 35455
     components:
     - type: Transform
@@ -194435,7 +194395,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: PA Hall
+      id: Коридор УЧ
   - uid: 35458
     components:
     - type: Transform
@@ -194446,18 +194406,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Singulo Cage Airlock
-  - uid: 35459
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 99.5,6.5
-      parent: 13329
-    - type: SurveillanceCamera
-      setupAvailableNetworks:
-      - SurveillanceCameraEngineering
-      nameSet: True
-      id: Engi Construction Room
+      id: Сбор энергии клетки сдерживания
   - uid: 35472
     components:
     - type: Transform
@@ -194468,7 +194417,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Telecomms Entrance
+      id: Телекоммуникации, вход
   - uid: 35473
     components:
     - type: Transform
@@ -194478,7 +194427,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Telecomms Storage
+      id: Телекоммуникации, склад
   - uid: 35479
     components:
     - type: Transform
@@ -194488,7 +194437,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraEngineering
       nameSet: True
-      id: Solars NE
+      id: Солнечные панели, СВ
 - proto: SurveillanceCameraGeneral
   entities:
   - uid: 10903
@@ -194501,7 +194450,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Shop 2
+      id: Магазин №2
   - uid: 10904
     components:
     - type: Transform
@@ -194512,7 +194461,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Shop 1
+      id: Магазин №1
   - uid: 10981
     components:
     - type: Transform
@@ -194523,7 +194472,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Dining Room
+      id: Столовая
   - uid: 10982
     components:
     - type: Transform
@@ -194533,7 +194482,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Dining Lobby
+      id: Столовая, коридор
   - uid: 10983
     components:
     - type: Transform
@@ -194544,7 +194493,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Central Lobby
+      id: Центральный коридор
   - uid: 10990
     components:
     - type: Transform
@@ -194555,7 +194504,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Evac
+      id: Эвакуация
   - uid: 10992
     components:
     - type: Transform
@@ -194566,7 +194515,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Chapel
+      id: Священник
   - uid: 10993
     components:
     - type: Transform
@@ -194577,7 +194526,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Crematorium
+      id: Крематорий
   - uid: 10994
     components:
     - type: Transform
@@ -194588,7 +194537,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Library
+      id: Библиотека
   - uid: 10995
     components:
     - type: Transform
@@ -194599,7 +194548,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Game Room
+      id: Игровая
   - uid: 10996
     components:
     - type: Transform
@@ -194610,7 +194559,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Funeral Parlor
+      id: Траурный зал
   - uid: 10998
     components:
     - type: Transform
@@ -194621,7 +194570,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Tool Room
+      id: Хранилище инструментов
   - uid: 30214
     components:
     - type: Transform
@@ -194631,7 +194580,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Librarian Room
+      id: Коморка библиотекаря
   - uid: 30592
     components:
     - type: Transform
@@ -194642,7 +194591,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Chapel
+      id: Часовня
   - uid: 30597
     components:
     - type: Transform
@@ -194653,7 +194602,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Chaplain Office
+      id: Офис священника
   - uid: 31694
     components:
     - type: Transform
@@ -194664,7 +194613,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Main Hall North Airlock
+      id: Коридор, северный шлюз
   - uid: 34645
     components:
     - type: Transform
@@ -194675,7 +194624,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Evac Breakroom
+      id: Эвакуация, комната отдыха
   - uid: 34646
     components:
     - type: Transform
@@ -194685,7 +194634,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Library
+      id: Библиотека
   - uid: 34767
     components:
     - type: Transform
@@ -194696,7 +194645,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Library
+      id: Библиотека
   - uid: 34768
     components:
     - type: Transform
@@ -194707,7 +194656,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Main Hall Botany
+      id: Коридор, ботаника
   - uid: 34769
     components:
     - type: Transform
@@ -194718,7 +194667,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Main Hall Morgue
+      id: Коридор, морг
   - uid: 34772
     components:
     - type: Transform
@@ -194729,7 +194678,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Evac
+      id: Эвакуация
   - uid: 34773
     components:
     - type: Transform
@@ -194740,7 +194689,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Main Hall Bar
+      id: Коридрп, бар
   - uid: 34774
     components:
     - type: Transform
@@ -194750,7 +194699,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Arrivals Smoke Room
+      id: Прибытие, место для курения
   - uid: 34775
     components:
     - type: Transform
@@ -194761,7 +194710,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Arrivals
+      id: Прибытие
   - uid: 34776
     components:
     - type: Transform
@@ -194771,7 +194720,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Arrivals
+      id: Прибытие
   - uid: 34777
     components:
     - type: Transform
@@ -194782,7 +194731,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Main Hall Arrivals
+      id: Коридор, прибытие
   - uid: 34781
     components:
     - type: Transform
@@ -194792,7 +194741,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Main Hall Cargo
+      id: Коридор, снабжение
   - uid: 34787
     components:
     - type: Transform
@@ -194803,29 +194752,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Main Hall Cargo/Sci
-  - uid: 34911
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 13.5,-1.5
-      parent: 13329
-    - type: SurveillanceCamera
-      setupAvailableNetworks:
-      - SurveillanceCameraGeneral
-      nameSet: True
-      id: Shop Backroom 2
-  - uid: 34912
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 13.5,4.5
-      parent: 13329
-    - type: SurveillanceCamera
-      setupAvailableNetworks:
-      - SurveillanceCameraGeneral
-      nameSet: True
-      id: Shop Backroom 1
+      id: Коридор, СНБ/НИО
   - uid: 34917
     components:
     - type: Transform
@@ -194836,7 +194763,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Main Hall Sec/Dorms
+      id: Коридор, СБ/Дормы
   - uid: 34919
     components:
     - type: Transform
@@ -194847,7 +194774,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Swimming Pool
+      id: Бассейн
   - uid: 34949
     components:
     - type: Transform
@@ -194858,7 +194785,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Showroom Exterior
+      id: Выставочный зал, наружняя
   - uid: 34951
     components:
     - type: Transform
@@ -194869,7 +194796,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Arrivals Airlock Ext
+      id: Прибытие, шлюз, наружняя
   - uid: 35000
     components:
     - type: Transform
@@ -194879,7 +194806,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Arrivals
+      id: Прибытие
   - uid: 35098
     components:
     - type: Transform
@@ -194890,7 +194817,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Arrivals
+      id: Прибытие
   - uid: 35100
     components:
     - type: Transform
@@ -194901,7 +194828,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Evac Bathroom
+      id: Эвакуация, санузел
   - uid: 35101
     components:
     - type: Transform
@@ -194912,7 +194839,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Evac Kitchen Storeroom
+      id: Эвакуация, коморка миникухни
   - uid: 35345
     components:
     - type: Transform
@@ -194923,7 +194850,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Arrivals North
+      id: Прибытие, север
   - uid: 35346
     components:
     - type: Transform
@@ -194933,7 +194860,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Arrivals South
+      id: Прибытие, юг
   - uid: 35347
     components:
     - type: Transform
@@ -194944,7 +194871,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Rock Dock Hall
+      id: Верфь, коридор
   - uid: 35348
     components:
     - type: Transform
@@ -194954,7 +194881,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Arrivals South East
+      id: Прибытие, юго-восток
   - uid: 35349
     components:
     - type: Transform
@@ -194965,7 +194892,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Arrivals North East
+      id: Прибытие, северо-восток
   - uid: 35350
     components:
     - type: Transform
@@ -194976,7 +194903,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Main Hall Cargo
+      id: Коридор, снабжение
   - uid: 35352
     components:
     - type: Transform
@@ -194987,7 +194914,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Main Hall Engineering
+      id: Коридор, инженерия
   - uid: 35353
     components:
     - type: Transform
@@ -194998,7 +194925,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Showroom West
+      id: Выставочный зал, запад
   - uid: 35354
     components:
     - type: Transform
@@ -195009,7 +194936,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Showroom East
+      id: Выставочный зал, восток
   - uid: 35355
     components:
     - type: Transform
@@ -195019,7 +194946,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Main Hall Science
+      id: Коридор, НИО
   - uid: 35356
     components:
     - type: Transform
@@ -195030,7 +194957,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Main Hall Mailroom
+      id: Коридор, почта
   - uid: 35358
     components:
     - type: Transform
@@ -195041,7 +194968,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Dorm Entrance
+      id: Общежития, вход
   - uid: 35359
     components:
     - type: Transform
@@ -195052,7 +194979,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Dorm Game Room
+      id: Общежития, игровая
   - uid: 35360
     components:
     - type: Transform
@@ -195063,7 +194990,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Dorm Hall
+      id: Общежития, зал
   - uid: 35361
     components:
     - type: Transform
@@ -195074,7 +195001,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Dorm East
+      id: Общежития, восток
   - uid: 35362
     components:
     - type: Transform
@@ -195085,7 +195012,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Dorm Arcade
+      id: Общежития, аркады
   - uid: 35363
     components:
     - type: Transform
@@ -195096,7 +195023,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Main Hall Bridge
+      id: Коридор, мостик
   - uid: 35364
     components:
     - type: Transform
@@ -195106,7 +195033,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Main Hall HoP
+      id: Коридор, стойка ГП
   - uid: 35365
     components:
     - type: Transform
@@ -195117,7 +195044,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Court Room Public Seating
+      id: Суд, трибуны
   - uid: 35366
     components:
     - type: Transform
@@ -195128,7 +195055,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Main Hall Medical
+      id: Коридор, медицинский
   - uid: 35367
     components:
     - type: Transform
@@ -195139,7 +195066,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Main Hall Chapel
+      id: Коридор, храм
   - uid: 35368
     components:
     - type: Transform
@@ -195150,7 +195077,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Main Hall Library
+      id: Коридор, библиотека
   - uid: 35369
     components:
     - type: Transform
@@ -195160,7 +195087,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Arboretum
+      id: Сад
   - uid: 35456
     components:
     - type: Transform
@@ -195171,7 +195098,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Disposals
+      id: Мусорка
   - uid: 35460
     components:
     - type: Transform
@@ -195182,7 +195109,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Cryosleep
+      id: Криосон
   - uid: 35463
     components:
     - type: Transform
@@ -195192,7 +195119,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Dorm Bathroom
+      id: Общежития, санузел
   - uid: 35464
     components:
     - type: Transform
@@ -195202,7 +195129,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Dorm Washroom
+      id: Общежития, душевая
   - uid: 35465
     components:
     - type: Transform
@@ -195213,7 +195140,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Dorm Laundry
+      id: Общежития, одеждоматы
   - uid: 35467
     components:
     - type: Transform
@@ -195224,7 +195151,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Main Hall Eva
+      id: Коридор, ВКД
   - uid: 35468
     components:
     - type: Transform
@@ -195234,7 +195161,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Main Hall Sec/Med
+      id: Коридор, СБ/МЕД
   - uid: 35469
     components:
     - type: Transform
@@ -195245,7 +195172,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Main Hall Court
+      id: Коридор, суд
   - uid: 35470
     components:
     - type: Transform
@@ -195256,7 +195183,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Main Hall Bridge
+      id: Коридор, мостик
   - uid: 35474
     components:
     - type: Transform
@@ -195267,7 +195194,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Bridge Offices
+      id: Офисы мостика
   - uid: 35601
     components:
     - type: Transform
@@ -195278,7 +195205,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: 'Main Hall AI '
+      id: Коридор, ИИ
 - proto: SurveillanceCameraMedical
   entities:
   - uid: 18347
@@ -195291,7 +195218,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
-      id: Chemistry
+      id: Хим. лаборатория
   - uid: 18696
     components:
     - type: Transform
@@ -195302,7 +195229,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
-      id: Cloning
+      id: Клонирование
   - uid: 18697
     components:
     - type: Transform
@@ -195313,7 +195240,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
-      id: Cryonics
+      id: Криогеника
   - uid: 18698
     components:
     - type: Transform
@@ -195324,7 +195251,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
-      id: Medbay Lobby
+      id: Зал медотсека
   - uid: 18699
     components:
     - type: Transform
@@ -195335,7 +195262,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
-      id: Medical Entrance
+      id: Вход в медотсек
   - uid: 18700
     components:
     - type: Transform
@@ -195346,7 +195273,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
-      id: Morgue
+      id: Морг
   - uid: 19022
     components:
     - type: Transform
@@ -195357,7 +195284,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
-      id: Surgery
+      id: Хирургия
   - uid: 19024
     components:
     - type: Transform
@@ -195368,7 +195295,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
-      id: North Med Hall
+      id: Мед, еверный коридор
   - uid: 19025
     components:
     - type: Transform
@@ -195379,7 +195306,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
-      id: North Med Lobby
+      id: Мед, северный зал
   - uid: 19026
     components:
     - type: Transform
@@ -195390,7 +195317,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
-      id: Post Op
+      id: Послеоперационная
   - uid: 19049
     components:
     - type: Transform
@@ -195401,7 +195328,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
-      id: Viro Entrance
+      id: Вход в вирусологию
   - uid: 32127
     components:
     - type: Transform
@@ -195412,7 +195339,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
-      id: Medical Storage
+      id: Мед. склад
   - uid: 32378
     components:
     - type: Transform
@@ -195423,7 +195350,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
-      id: Breakroom
+      id: Комната отдыха
   - uid: 34203
     components:
     - type: Transform
@@ -195433,7 +195360,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
-      id: Medical Storage Backroom
+      id: Мед. склад
   - uid: 34205
     components:
     - type: Transform
@@ -195444,7 +195371,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
-      id: Med Hall
+      id: Мед. зал
   - uid: 34561
     components:
     - type: Transform
@@ -195455,7 +195382,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
-      id: Exam Room 2
+      id: Экзаменационная №2
   - uid: 34594
     components:
     - type: Transform
@@ -195466,7 +195393,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
-      id: Exam Room 1
+      id: Экзаменационная №1
   - uid: 34595
     components:
     - type: Transform
@@ -195477,7 +195404,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
-      id: Surgery Viewing
+      id: Смотровая операционной
   - uid: 34598
     components:
     - type: Transform
@@ -195488,7 +195415,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
-      id: Virology
+      id: Вирусология
   - uid: 34626
     components:
     - type: Transform
@@ -195499,7 +195426,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
-      id: CMO Office
+      id: Офис ГВ
   - uid: 34636
     components:
     - type: Transform
@@ -195510,7 +195437,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
-      id: CMO Private Practice
+      id: Офис ГВ, приватная комната
   - uid: 34637
     components:
     - type: Transform
@@ -195521,7 +195448,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
-      id: Paramedic Storage
+      id: Парамедик
   - uid: 35370
     components:
     - type: Transform
@@ -195531,7 +195458,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraMedical
       nameSet: True
-      id: Medical West Room
+      id: Медотдел, западная комната
 - proto: SurveillanceCameraRouterCommand
   entities:
   - uid: 27823
@@ -195607,7 +195534,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: RND
+      id: Исследовани и разработка
   - uid: 26602
     components:
     - type: Transform
@@ -195629,7 +195556,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Robotics
+      id: Робототехника
   - uid: 26604
     components:
     - type: Transform
@@ -195640,7 +195567,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Anomaly Lab
+      id: Аномалистика
   - uid: 26605
     components:
     - type: Transform
@@ -195651,7 +195578,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: RD Office
+      id: Офис Научрука
   - uid: 26606
     components:
     - type: Transform
@@ -195662,7 +195589,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Artifact Lab
+      id: Ксеноархеология
   - uid: 26607
     components:
     - type: Transform
@@ -195673,7 +195600,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Sci Breakroom
+      id: Комната отдыха
   - uid: 26608
     components:
     - type: Transform
@@ -195683,7 +195610,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Sci Dock
+      id: Научный док
   - uid: 26609
     components:
     - type: Transform
@@ -195694,7 +195621,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Spare Room
+      id: Пустая комната
   - uid: 26610
     components:
     - type: Transform
@@ -195705,7 +195632,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Sci Backhall
+      id: Тех. туннели
   - uid: 26611
     components:
     - type: Transform
@@ -195716,7 +195643,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Toxins Storage
+      id: Склад токсикологии
   - uid: 34786
     components:
     - type: Transform
@@ -195727,7 +195654,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Robotics Bay
+      id: Робототехника, приёмная
   - uid: 34789
     components:
     - type: Transform
@@ -195738,18 +195665,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Science Hall Entrance
-  - uid: 34790
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 52.5,-39.5
-      parent: 13329
-    - type: SurveillanceCamera
-      setupAvailableNetworks:
-      - SurveillanceCameraScience
-      nameSet: True
-      id: RD Bedroom
+      id: Коридор, вход в НИО
   - uid: 34791
     components:
     - type: Transform
@@ -195760,7 +195676,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Toxins Storage
+      id: Склад токсикологии
   - uid: 34793
     components:
     - type: Transform
@@ -195771,7 +195687,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Artifact Chamber
+      id: Камера артефактов
   - uid: 35103
     components:
     - type: Transform
@@ -195782,7 +195698,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Science Hall
+      id: Коридор
   - uid: 35104
     components:
     - type: Transform
@@ -195793,7 +195709,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Science Server Room
+      id: Серверная
   - uid: 35105
     components:
     - type: Transform
@@ -195803,7 +195719,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Science Breakroom
+      id: Комната отдыха
   - uid: 35107
     components:
     - type: Transform
@@ -195814,7 +195730,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraScience
       nameSet: True
-      id: Science Shooting Range
+      id: Тир
 - proto: SurveillanceCameraSecurity
   entities:
   - uid: 8418
@@ -195824,13 +195740,18 @@ entities:
       pos: 49.5,6.5
       parent: 13329
     - type: SurveillanceCamera
-      id: Security East Entrance
+      id: Восточный вход
   - uid: 8997
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 41.5,3.5
       parent: 13329
+    - type: SurveillanceCamera
+      setupAvailableNetworks:
+      - SurveillanceCameraSecurity
+      nameSet: True
+      id: Общая зона, шкафы
   - uid: 10160
     components:
     - type: Transform
@@ -195841,7 +195762,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Interrogation
+      id: Допросная
   - uid: 10298
     components:
     - type: Transform
@@ -195852,7 +195773,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Genpop Entrance
+      id: Общая зона, вход
   - uid: 10307
     components:
     - type: Transform
@@ -195860,14 +195781,14 @@ entities:
       pos: 41.5,13.5
       parent: 13329
     - type: SurveillanceCamera
-      id: Genpop Front
+      id: Общая зона, фасад
   - uid: 10308
     components:
     - type: Transform
       pos: 46.5,5.5
       parent: 13329
     - type: SurveillanceCamera
-      id: Solitary
+      id: Карцер
   - uid: 10472
     components:
     - type: Transform
@@ -195878,7 +195799,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Genpop
+      id: Общая зона
   - uid: 10559
     components:
     - type: Transform
@@ -195889,7 +195810,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Warden's Office
+      id: Офис смотрителя
   - uid: 10572
     components:
     - type: Transform
@@ -195900,7 +195821,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Security Locker Room
+      id: Гардеробная
   - uid: 10609
     components:
     - type: Transform
@@ -195921,7 +195842,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Exterior Armory North
+      id: Арсенал, снаружи, северная
   - uid: 10611
     components:
     - type: Transform
@@ -195932,7 +195853,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Exterior Armory South
+      id: Арсенал, снаружи, южная
   - uid: 10612
     components:
     - type: Transform
@@ -195943,7 +195864,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Armory
+      id: Арсенал
   - uid: 10913
     components:
     - type: Transform
@@ -195954,7 +195875,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Security Breakroom
+      id: Комната отдыха
   - uid: 10916
     components:
     - type: Transform
@@ -195965,7 +195886,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Shooting Range
+      id: Тир
   - uid: 10917
     components:
     - type: Transform
@@ -195975,7 +195896,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: North Entrance
+      id: Северный вход
   - uid: 10919
     components:
     - type: Transform
@@ -195986,7 +195907,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: North Hall
+      id: Северный коридор
   - uid: 10920
     components:
     - type: Transform
@@ -195997,7 +195918,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: South Hall
+      id: Южный коридор
   - uid: 10984
     components:
     - type: Transform
@@ -196008,7 +195929,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Arrivals Security
+      id: КПП СБ-ПРИБ
   - uid: 10989
     components:
     - type: Transform
@@ -196019,7 +195940,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Detective Room
+      id: Офис детектива
   - uid: 10991
     components:
     - type: Transform
@@ -196030,7 +195951,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Evac Security Post
+      id: КПП СБ-ЭВАК
   - uid: 18695
     components:
     - type: Transform
@@ -196040,7 +195961,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Medical Security Post
+      id: КПП СБ-МЕД
   - uid: 19023
     components:
     - type: Transform
@@ -196051,7 +195972,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: CMO Office
+      id: Офис ГВ
   - uid: 21273
     components:
     - type: Transform
@@ -196062,7 +195983,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Court Backroom
+      id: Суд, коморка
   - uid: 26613
     components:
     - type: Transform
@@ -196073,7 +195994,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Sec Engineering Post
+      id: КПП СБ-ИНЖ
   - uid: 29569
     components:
     - type: Transform
@@ -196084,7 +196005,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Courtroom
+      id: Зал суда
   - uid: 29570
     components:
     - type: Transform
@@ -196095,7 +196016,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Lawyer Office
+      id: Офис АВД
   - uid: 34780
     components:
     - type: Transform
@@ -196106,7 +196027,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Arrivals Sec Checkpoint
+      id: КПП-СБ-ПРИБ, камера
   - uid: 34788
     components:
     - type: Transform
@@ -196117,7 +196038,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Science Security Checkpoint
+      id: КПП СБ-НИО
   - uid: 34913
     components:
     - type: Transform
@@ -196128,7 +196049,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Evidence Room
+      id: Комната для хранения улик
   - uid: 34914
     components:
     - type: Transform
@@ -196138,7 +196059,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: HOS Bedroom
+      id: Спальня ГСБ
   - uid: 35102
     components:
     - type: Transform
@@ -196149,13 +196070,18 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Security Cargo Checkpoint
+      id: КПП СБ-СНБ
   - uid: 35980
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 45.5,26.5
       parent: 13329
+    - type: SurveillanceCamera
+      setupAvailableNetworks:
+      - SurveillanceCameraSecurity
+      nameSet: True
+      id: Общая зона, санузел
 - proto: SurveillanceCameraService
   entities:
   - uid: 1627
@@ -196164,6 +196090,11 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -11.5,-0.5
       parent: 13329
+    - type: SurveillanceCamera
+      setupAvailableNetworks:
+      - SurveillanceCameraService
+      nameSet: True
+      id: Репортёр
   - uid: 10975
     components:
     - type: Transform
@@ -196173,7 +196104,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraService
       nameSet: True
-      id: Kitchen
+      id: Кухня
   - uid: 10976
     components:
     - type: Transform
@@ -196184,7 +196115,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraService
       nameSet: True
-      id: Freezer
+      id: Морозильник
   - uid: 10977
     components:
     - type: Transform
@@ -196195,7 +196126,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraService
       nameSet: True
-      id: Hydroponics
+      id: Гидропоника
   - uid: 10978
     components:
     - type: Transform
@@ -196206,7 +196137,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraService
       nameSet: True
-      id: Bar
+      id: Бар
   - uid: 10979
     components:
     - type: Transform
@@ -196217,7 +196148,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraService
       nameSet: True
-      id: Theatre
+      id: Театр
   - uid: 10980
     components:
     - type: Transform
@@ -196228,7 +196159,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraService
       nameSet: True
-      id: Theatre Room
+      id: Кулисы
   - uid: 10997
     components:
     - type: Transform
@@ -196239,7 +196170,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraService
       nameSet: True
-      id: Jani Closet
+      id: Уборщик, гардеробная
   - uid: 34642
     components:
     - type: Transform
@@ -196250,7 +196181,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraService
       nameSet: True
-      id: Kitchen
+      id: Кухня
   - uid: 34643
     components:
     - type: Transform
@@ -196261,7 +196192,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraService
       nameSet: True
-      id: Service Hall
+      id: Сервисный коридор
   - uid: 34770
     components:
     - type: Transform
@@ -196271,7 +196202,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraService
       nameSet: True
-      id: Botany Backroom
+      id: Коморка ботаников
   - uid: 34771
     components:
     - type: Transform
@@ -196282,7 +196213,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraService
       nameSet: True
-      id: Bartender Backroom
+      id: Коморка бармена
 - proto: SurveillanceCameraSupply
   entities:
   - uid: 11801
@@ -196294,7 +196225,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSupply
       nameSet: True
-      id: Quartermaster's Office
+      id: Офис Квартирмейстера
   - uid: 11802
     components:
     - type: Transform
@@ -196305,7 +196236,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSupply
       nameSet: True
-      id: Shuttle Bay
+      id: Отсек для шаттла
   - uid: 11803
     components:
     - type: Transform
@@ -196316,7 +196247,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSupply
       nameSet: True
-      id: Cargobay
+      id: Грузовой отсек
   - uid: 11804
     components:
     - type: Transform
@@ -196327,7 +196258,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSupply
       nameSet: True
-      id: Salvage Bay
+      id: Утилизационный отсек
   - uid: 11805
     components:
     - type: Transform
@@ -196338,7 +196269,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSupply
       nameSet: True
-      id: Mail
+      id: Почта
   - uid: 11806
     components:
     - type: Transform
@@ -196349,7 +196280,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSupply
       nameSet: True
-      id: Cargo Lobby
+      id: Приёмная
   - uid: 34641
     components:
     - type: Transform
@@ -196360,18 +196291,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSupply
       nameSet: True
-      id: Supply Storage
-  - uid: 34782
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -5.5,-25.5
-      parent: 13329
-    - type: SurveillanceCamera
-      setupAvailableNetworks:
-      - SurveillanceCameraSupply
-      nameSet: True
-      id: QM Bedroom
+      id: Утилизационный склад
   - uid: 34783
     components:
     - type: Transform
@@ -196381,7 +196301,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSupply
       nameSet: True
-      id: Cargo Dock 1
+      id: Док снабжения №1
   - uid: 34784
     components:
     - type: Transform
@@ -196392,7 +196312,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSupply
       nameSet: True
-      id: Cargo Dock 2
+      id: Док снабжения №2
   - uid: 34785
     components:
     - type: Transform
@@ -196403,7 +196323,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSupply
       nameSet: True
-      id: Salvage Airlock
+      id: Утилизационный шлюз
   - uid: 34950
     components:
     - type: Transform
@@ -196414,7 +196334,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSupply
       nameSet: True
-      id: Cargo Closet Entrance
+      id: Гардеробная
 - proto: SurveillanceCameraWirelessRouterConstructed
   entities:
   - uid: 35428
