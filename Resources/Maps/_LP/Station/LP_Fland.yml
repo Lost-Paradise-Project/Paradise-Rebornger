@@ -17956,8 +17956,6 @@ entities:
   entities:
   - uid: 4705
     components:
-    - type: MetaData
-      name: Bathroom
     - type: Transform
       pos: -34.5,28.5
       parent: 13329
@@ -18063,43 +18061,31 @@ entities:
       parent: 13329
   - uid: 29005
     components:
-    - type: MetaData
-      name: Dorm 5
     - type: Transform
       pos: 80.5,18.5
       parent: 13329
   - uid: 29006
     components:
-    - type: MetaData
-      name: Dorm 6
     - type: Transform
       pos: 84.5,18.5
       parent: 13329
   - uid: 29007
     components:
-    - type: MetaData
-      name: Dorm 4
     - type: Transform
       pos: 84.5,21.5
       parent: 13329
   - uid: 29008
     components:
-    - type: MetaData
-      name: Dorm 3
     - type: Transform
       pos: 80.5,21.5
       parent: 13329
   - uid: 29009
     components:
-    - type: MetaData
-      name: Dorm 1
     - type: Transform
       pos: 80.5,24.5
       parent: 13329
   - uid: 29010
     components:
-    - type: MetaData
-      name: Dorm 2
     - type: Transform
       pos: 84.5,24.5
       parent: 13329
@@ -18332,8 +18318,6 @@ entities:
           - Close
   - uid: 29402
     components:
-    - type: MetaData
-      name: Court Room
     - type: Transform
       pos: 61.5,30.5
       parent: 13329
@@ -18341,8 +18325,6 @@ entities:
   entities:
   - uid: 9417
     components:
-    - type: MetaData
-      name: Interrogation
     - type: Transform
       pos: 18.5,24.5
       parent: 13329
@@ -18353,8 +18335,6 @@ entities:
       parent: 13329
   - uid: 29398
     components:
-    - type: MetaData
-      name: Court Backroom
     - type: Transform
       pos: 67.5,28.5
       parent: 13329
@@ -18423,8 +18403,6 @@ entities:
   entities:
   - uid: 6587
     components:
-    - type: MetaData
-      name: Funeral Procession Room
     - type: Transform
       pos: -9.5,67.5
       parent: 13329
@@ -18437,8 +18415,6 @@ entities:
       parent: 13329
   - uid: 6584
     components:
-    - type: MetaData
-      name: Crematorium
     - type: Transform
       pos: -20.5,66.5
       parent: 13329
@@ -18483,8 +18459,6 @@ entities:
   entities:
   - uid: 18815
     components:
-    - type: MetaData
-      name: Private Exam
     - type: Transform
       pos: 20.5,62.5
       parent: 13329
@@ -18651,16 +18625,12 @@ entities:
       parent: 13329
   - uid: 12666
     components:
-    - type: MetaData
-      name: Rock Dock
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -40.5,-44.5
       parent: 13329
   - uid: 12667
     components:
-    - type: MetaData
-      name: Rock Dock
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -38.5,-44.5
@@ -18672,8 +18642,6 @@ entities:
       parent: 13329
   - uid: 15760
     components:
-    - type: MetaData
-      name: Thermo Electric Generator
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 97.5,-32.5
@@ -18814,8 +18782,6 @@ entities:
       parent: 13329
   - uid: 4872
     components:
-    - type: MetaData
-      name: TEG Maint
     - type: Transform
       pos: 97.5,-40.5
       parent: 13329
@@ -20313,8 +20279,6 @@ entities:
   entities:
   - uid: 1480
     components:
-    - type: MetaData
-      name: Janitor Closet
     - type: Transform
       pos: 1.5,12.5
       parent: 13329
@@ -20379,8 +20343,6 @@ entities:
   entities:
   - uid: 1350
     components:
-    - type: MetaData
-      name: Detective's Office
     - type: Transform
       pos: -20.5,38.5
       parent: 13329
@@ -20530,15 +20492,11 @@ entities:
   entities:
   - uid: 1478
     components:
-    - type: MetaData
-      name: Janitor Closet
     - type: Transform
       pos: 6.5,10.5
       parent: 13329
   - uid: 1479
     components:
-    - type: MetaData
-      name: Janitor Closet
     - type: Transform
       pos: 3.5,14.5
       parent: 13329
@@ -20571,8 +20529,6 @@ entities:
       parent: 13329
   - uid: 4691
     components:
-    - type: MetaData
-      name: Bathroom
     - type: Transform
       pos: -31.5,25.5
       parent: 13329
@@ -20608,15 +20564,11 @@ entities:
       parent: 13329
   - uid: 6927
     components:
-    - type: MetaData
-      name: Tool Storage
     - type: Transform
       pos: 7.5,22.5
       parent: 13329
   - uid: 6928
     components:
-    - type: MetaData
-      name: Tool Storage
     - type: Transform
       pos: 7.5,29.5
       parent: 13329
@@ -21010,8 +20962,6 @@ entities:
       parent: 13329
   - uid: 18851
     components:
-    - type: MetaData
-      name: Break Room
     - type: Transform
       pos: 14.5,64.5
       parent: 13329
@@ -21138,8 +21088,6 @@ entities:
       parent: 13329
   - uid: 19547
     components:
-    - type: MetaData
-      name: Spare Room
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 38.5,-44.5
@@ -21256,8 +21204,6 @@ entities:
       parent: 13329
   - uid: 9413
     components:
-    - type: MetaData
-      name: Evidence Room
     - type: Transform
       pos: 22.5,18.5
       parent: 13329
@@ -21363,22 +21309,16 @@ entities:
       parent: 13329
   - uid: 9416
     components:
-    - type: MetaData
-      name: Observation
     - type: Transform
       pos: 22.5,22.5
       parent: 13329
   - uid: 10246
     components:
-    - type: MetaData
-      name: Shooting Range
     - type: Transform
       pos: 30.5,27.5
       parent: 13329
   - uid: 10279
     components:
-    - type: MetaData
-      name: Maintenance Closet
     - type: Transform
       pos: 33.5,25.5
       parent: 13329
@@ -21443,15 +21383,11 @@ entities:
       parent: 13329
   - uid: 3893
     components:
-    - type: MetaData
-      name: Evac Service
     - type: Transform
       pos: -22.5,28.5
       parent: 13329
   - uid: 4761
     components:
-    - type: MetaData
-      name: Evac Service
     - type: Transform
       pos: -28.5,29.5
       parent: 13329
@@ -22146,8 +22082,6 @@ entities:
   entities:
   - uid: 667
     components:
-    - type: MetaData
-      name: Theatre APC
     - type: Transform
       pos: -11.5,11.5
       parent: 13329
@@ -22155,8 +22089,6 @@ entities:
       fixtures: {}
   - uid: 668
     components:
-    - type: MetaData
-      name: Bar APC
     - type: Transform
       pos: -20.5,23.5
       parent: 13329
@@ -22164,8 +22096,6 @@ entities:
       fixtures: {}
   - uid: 669
     components:
-    - type: MetaData
-      name: Kitchen APC
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -10.5,23.5
@@ -22174,8 +22104,6 @@ entities:
       fixtures: {}
   - uid: 671
     components:
-    - type: MetaData
-      name: Service Hall APC
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -6.5,30.5
@@ -22184,8 +22112,6 @@ entities:
       fixtures: {}
   - uid: 672
     components:
-    - type: MetaData
-      name: Freezer APC
     - type: Transform
       pos: -4.5,30.5
       parent: 13329
@@ -22193,8 +22119,6 @@ entities:
       fixtures: {}
   - uid: 673
     components:
-    - type: MetaData
-      name: Hydroponics APC
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -4.5,33.5
@@ -22203,8 +22127,6 @@ entities:
       fixtures: {}
   - uid: 1507
     components:
-    - type: MetaData
-      name: Janitors Closet APC
     - type: Transform
       pos: 4.5,14.5
       parent: 13329
@@ -22212,8 +22134,6 @@ entities:
       fixtures: {}
   - uid: 1665
     components:
-    - type: MetaData
-      name: Main Foyer APC
     - type: Transform
       pos: -2.5,7.5
       parent: 13329
@@ -22221,8 +22141,6 @@ entities:
       fixtures: {}
   - uid: 1990
     components:
-    - type: MetaData
-      name: Arrivals Command Hub APC
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -12.5,1.5
@@ -22231,8 +22149,6 @@ entities:
       fixtures: {}
   - uid: 1991
     components:
-    - type: MetaData
-      name: Arrivals Smoke Lounge APC
     - type: Transform
       pos: -15.5,1.5
       parent: 13329
@@ -22248,8 +22164,6 @@ entities:
       fixtures: {}
   - uid: 2276
     components:
-    - type: MetaData
-      name: Arrivals Engi Storage APC
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -16.5,-9.5
@@ -22258,8 +22172,6 @@ entities:
       fixtures: {}
   - uid: 4153
     components:
-    - type: MetaData
-      name: Bathroom APC
     - type: Transform
       pos: -32.5,28.5
       parent: 13329
@@ -22267,8 +22179,6 @@ entities:
       fixtures: {}
   - uid: 4154
     components:
-    - type: MetaData
-      name: Departures APC
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -26.5,36.5
@@ -22277,8 +22187,6 @@ entities:
       fixtures: {}
   - uid: 4470
     components:
-    - type: MetaData
-      name: Detective Office APC
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -26.5,41.5
@@ -22287,8 +22195,6 @@ entities:
       fixtures: {}
   - uid: 4618
     components:
-    - type: MetaData
-      name: Departures Security Station APC
     - type: Transform
       pos: -36.5,51.5
       parent: 13329
@@ -22296,8 +22202,6 @@ entities:
       fixtures: {}
   - uid: 5754
     components:
-    - type: MetaData
-      name: Game Room APC
     - type: Transform
       pos: -26.5,59.5
       parent: 13329
@@ -22305,8 +22209,6 @@ entities:
       fixtures: {}
   - uid: 5755
     components:
-    - type: MetaData
-      name: Library APC
     - type: Transform
       pos: -18.5,56.5
       parent: 13329
@@ -22314,8 +22216,6 @@ entities:
       fixtures: {}
   - uid: 5756
     components:
-    - type: MetaData
-      name: Library Hall APC
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -11.5,53.5
@@ -22324,8 +22224,6 @@ entities:
       fixtures: {}
   - uid: 5757
     components:
-    - type: MetaData
-      name: Librarians Quarters APC
     - type: Transform
       pos: -22.5,63.5
       parent: 13329
@@ -22333,8 +22231,6 @@ entities:
       fixtures: {}
   - uid: 5758
     components:
-    - type: MetaData
-      name: Chaplains Office APC
     - type: Transform
       pos: -20.5,74.5
       parent: 13329
@@ -22342,8 +22238,6 @@ entities:
       fixtures: {}
   - uid: 5759
     components:
-    - type: MetaData
-      name: Funeral Viewing Room APC
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -12.5,71.5
@@ -22352,8 +22246,6 @@ entities:
       fixtures: {}
   - uid: 5760
     components:
-    - type: MetaData
-      name: Chapel APC
     - type: Transform
       pos: -14.5,67.5
       parent: 13329
@@ -22361,8 +22253,6 @@ entities:
       fixtures: {}
   - uid: 5901
     components:
-    - type: MetaData
-      name: Departures GardenAPC
     - type: Transform
       pos: -34.5,59.5
       parent: 13329
@@ -22370,8 +22260,6 @@ entities:
       fixtures: {}
   - uid: 6824
     components:
-    - type: MetaData
-      name: Tool Room APC
     - type: Transform
       pos: 6.5,31.5
       parent: 13329
@@ -22379,8 +22267,6 @@ entities:
       fixtures: {}
   - uid: 8479
     components:
-    - type: MetaData
-      name: Genpop APC
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 44.5,7.5
@@ -22389,8 +22275,6 @@ entities:
       fixtures: {}
   - uid: 8678
     components:
-    - type: MetaData
-      name: Armory APC
     - type: Transform
       pos: 21.5,16.5
       parent: 13329
@@ -22405,8 +22289,6 @@ entities:
       fixtures: {}
   - uid: 8682
     components:
-    - type: MetaData
-      name: Security East Entrance APC
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 48.5,6.5
@@ -22422,8 +22304,6 @@ entities:
       fixtures: {}
   - uid: 8684
     components:
-    - type: MetaData
-      name: Security Offices APC
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 26.5,20.5
@@ -22432,8 +22312,6 @@ entities:
       fixtures: {}
   - uid: 8685
     components:
-    - type: MetaData
-      name: HOS Room APC
     - type: Transform
       pos: 36.5,23.5
       parent: 13329
@@ -22441,8 +22319,6 @@ entities:
       fixtures: {}
   - uid: 8686
     components:
-    - type: MetaData
-      name: Security North APC
     - type: Transform
       pos: 19.5,27.5
       parent: 13329
@@ -22450,8 +22326,6 @@ entities:
       fixtures: {}
   - uid: 9991
     components:
-    - type: MetaData
-      name: QMs Bedroom APC
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -6.5,-24.5
@@ -22460,8 +22334,6 @@ entities:
       fixtures: {}
   - uid: 9992
     components:
-    - type: MetaData
-      name: QMs Office APC
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -2.5,-23.5
@@ -22478,8 +22350,6 @@ entities:
       fixtures: {}
   - uid: 9994
     components:
-    - type: MetaData
-      name: Cargo Storage APC
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -4.5,-15.5
@@ -22488,8 +22358,6 @@ entities:
       fixtures: {}
   - uid: 10644
     components:
-    - type: MetaData
-      name: Security Lockers APC
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 32.5,10.5
@@ -22498,8 +22366,6 @@ entities:
       fixtures: {}
   - uid: 10792
     components:
-    - type: MetaData
-      name: Shop 2 APC
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 12.5,2.5
@@ -22508,8 +22374,6 @@ entities:
       fixtures: {}
   - uid: 10793
     components:
-    - type: MetaData
-      name: Shop 1 APC
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 12.5,0.5
@@ -22518,8 +22382,6 @@ entities:
       fixtures: {}
   - uid: 10915
     components:
-    - type: MetaData
-      name: Salvage Bay APC
     - type: Transform
       pos: 16.5,-28.5
       parent: 13329
@@ -22527,8 +22389,6 @@ entities:
       fixtures: {}
   - uid: 11226
     components:
-    - type: MetaData
-      name: Cargo Bay APC
     - type: Transform
       pos: 9.5,-19.5
       parent: 13329
@@ -22536,8 +22396,6 @@ entities:
       fixtures: {}
   - uid: 11227
     components:
-    - type: MetaData
-      name: Cargo Desk APC
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 10.5,-13.5
@@ -22546,8 +22404,6 @@ entities:
       fixtures: {}
   - uid: 11228
     components:
-    - type: MetaData
-      name: Mail Room APC
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 14.5,-13.5
@@ -22563,8 +22419,6 @@ entities:
       fixtures: {}
   - uid: 12901
     components:
-    - type: MetaData
-      name: Shipyard APC
     - type: Transform
       pos: -41.5,-48.5
       parent: 13329
@@ -22572,8 +22426,6 @@ entities:
       fixtures: {}
   - uid: 12902
     components:
-    - type: MetaData
-      name: Shipyard North APC
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -37.5,-38.5
@@ -22582,8 +22434,6 @@ entities:
       fixtures: {}
   - uid: 13399
     components:
-    - type: MetaData
-      name: Maint West South APC
     - type: Transform
       pos: -36.5,-3.5
       parent: 13329
@@ -22591,8 +22441,6 @@ entities:
       fixtures: {}
   - uid: 13421
     components:
-    - type: MetaData
-      name: Arrivals South APC
     - type: Transform
       pos: -29.5,-23.5
       parent: 13329
@@ -22600,8 +22448,6 @@ entities:
       fixtures: {}
   - uid: 14609
     components:
-    - type: MetaData
-      name: Robotics APC
     - type: Transform
       pos: 34.5,-18.5
       parent: 13329
@@ -22609,8 +22455,6 @@ entities:
       fixtures: {}
   - uid: 14610
     components:
-    - type: MetaData
-      name: Science APC
     - type: Transform
       pos: 49.5,-24.5
       parent: 13329
@@ -22618,8 +22462,6 @@ entities:
       fixtures: {}
   - uid: 14611
     components:
-    - type: MetaData
-      name: RND APC
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 49.5,-20.5
@@ -22628,8 +22470,6 @@ entities:
       fixtures: {}
   - uid: 14612
     components:
-    - type: MetaData
-      name: Xenoarch APC
     - type: Transform
       pos: 53.5,-28.5
       parent: 13329
@@ -22637,8 +22477,6 @@ entities:
       fixtures: {}
   - uid: 14613
     components:
-    - type: MetaData
-      name: Anomaly Lab APC
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 40.5,-34.5
@@ -22647,8 +22485,6 @@ entities:
       fixtures: {}
   - uid: 14614
     components:
-    - type: MetaData
-      name: Server Room APC
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 33.5,-31.5
@@ -22657,8 +22493,6 @@ entities:
       fixtures: {}
   - uid: 14615
     components:
-    - type: MetaData
-      name: Science Lobby APC
     - type: Transform
       pos: 39.5,-14.5
       parent: 13329
@@ -22666,8 +22500,6 @@ entities:
       fixtures: {}
   - uid: 14616
     components:
-    - type: MetaData
-      name: RD Office APC
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 46.5,-40.5
@@ -22676,8 +22508,6 @@ entities:
       fixtures: {}
   - uid: 14617
     components:
-    - type: MetaData
-      name: Firing Range APC
     - type: Transform
       pos: 35.5,-32.5
       parent: 13329
@@ -22685,8 +22515,6 @@ entities:
       fixtures: {}
   - uid: 14921
     components:
-    - type: MetaData
-      name: Robotics Bay APC
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 26.5,-26.5
@@ -22695,8 +22523,6 @@ entities:
       fixtures: {}
   - uid: 17512
     components:
-    - type: MetaData
-      name: Cryonics APC
     - type: Transform
       pos: 21.5,52.5
       parent: 13329
@@ -22704,8 +22530,6 @@ entities:
       fixtures: {}
   - uid: 17788
     components:
-    - type: MetaData
-      name: Paramedic Room APC
     - type: Transform
       pos: 3.5,51.5
       parent: 13329
@@ -22713,8 +22537,6 @@ entities:
       fixtures: {}
   - uid: 17789
     components:
-    - type: MetaData
-      name: Medical Lobby APC
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 9.5,39.5
@@ -22723,8 +22545,6 @@ entities:
       fixtures: {}
   - uid: 17790
     components:
-    - type: MetaData
-      name: Morgue APC
     - type: Transform
       pos: 4.5,42.5
       parent: 13329
@@ -22732,8 +22552,6 @@ entities:
       fixtures: {}
   - uid: 17793
     components:
-    - type: MetaData
-      name: Genetics APC
     - type: Transform
       pos: 13.5,52.5
       parent: 13329
@@ -22741,8 +22559,6 @@ entities:
       fixtures: {}
   - uid: 17794
     components:
-    - type: MetaData
-      name: Surgery APC
     - type: Transform
       pos: 6.5,57.5
       parent: 13329
@@ -22750,8 +22566,6 @@ entities:
       fixtures: {}
   - uid: 17795
     components:
-    - type: MetaData
-      name: Medical North APC
     - type: Transform
       pos: 3.5,64.5
       parent: 13329
@@ -22759,8 +22573,6 @@ entities:
       fixtures: {}
   - uid: 17796
     components:
-    - type: MetaData
-      name: CMO Office APC
     - type: Transform
       pos: 24.5,61.5
       parent: 13329
@@ -22768,8 +22580,6 @@ entities:
       fixtures: {}
   - uid: 17797
     components:
-    - type: MetaData
-      name: Virology APC
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 31.5,44.5
@@ -22778,8 +22588,6 @@ entities:
       fixtures: {}
   - uid: 17816
     components:
-    - type: MetaData
-      name: Химическая лаборатория ЛКП
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 26.5,39.5
@@ -22788,8 +22596,6 @@ entities:
       fixtures: {}
   - uid: 17935
     components:
-    - type: MetaData
-      name: Medical South APC
     - type: Transform
       pos: 21.5,46.5
       parent: 13329
@@ -22797,8 +22603,6 @@ entities:
       fixtures: {}
   - uid: 19258
     components:
-    - type: MetaData
-      name: Science Storage APC
     - type: Transform
       pos: 28.5,-45.5
       parent: 13329
@@ -22806,8 +22610,6 @@ entities:
       fixtures: {}
   - uid: 19259
     components:
-    - type: MetaData
-      name: Science Dock APC
     - type: Transform
       pos: 26.5,-54.5
       parent: 13329
@@ -22815,8 +22617,6 @@ entities:
       fixtures: {}
   - uid: 19316
     components:
-    - type: MetaData
-      name: Science Maintenance Hallway APC
     - type: Transform
       pos: 26.5,-40.5
       parent: 13329
@@ -22824,8 +22624,6 @@ entities:
       fixtures: {}
   - uid: 19856
     components:
-    - type: MetaData
-      name: Science Maint Hallway 2 APC
     - type: Transform
       pos: 51.5,-44.5
       parent: 13329
@@ -22833,8 +22631,6 @@ entities:
       fixtures: {}
   - uid: 23958
     components:
-    - type: MetaData
-      name: Grav Gen APC
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 112.5,-24.5
@@ -22843,8 +22639,6 @@ entities:
       fixtures: {}
   - uid: 24147
     components:
-    - type: MetaData
-      name: Showroom APC
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 53.5,-5.5
@@ -22853,8 +22647,6 @@ entities:
       fixtures: {}
   - uid: 24148
     components:
-    - type: MetaData
-      name: Technical Storage APC
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 62.5,-6.5
@@ -22863,8 +22655,6 @@ entities:
       fixtures: {}
   - uid: 24149
     components:
-    - type: MetaData
-      name: Security Engineering Office APC
     - type: Transform
       pos: 72.5,-7.5
       parent: 13329
@@ -22872,8 +22662,6 @@ entities:
       fixtures: {}
   - uid: 24150
     components:
-    - type: MetaData
-      name: Engineering Lobby APC
     - type: Transform
       pos: 69.5,-7.5
       parent: 13329
@@ -22881,8 +22669,6 @@ entities:
       fixtures: {}
   - uid: 24206
     components:
-    - type: MetaData
-      name: Atmos Desk APC
     - type: Transform
       pos: 66.5,-17.5
       parent: 13329
@@ -22890,8 +22676,6 @@ entities:
       fixtures: {}
   - uid: 24207
     components:
-    - type: MetaData
-      name: Engineering Supply APC
     - type: Transform
       pos: 78.5,-17.5
       parent: 13329
@@ -22899,8 +22683,6 @@ entities:
       fixtures: {}
   - uid: 24208
     components:
-    - type: MetaData
-      name: Atmos Lockerroom APC
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 78.5,-25.5
@@ -22909,8 +22691,6 @@ entities:
       fixtures: {}
   - uid: 24408
     components:
-    - type: MetaData
-      name: Atmospherics Left APC
     - type: Transform
       pos: 78.5,-32.5
       parent: 13329
@@ -22918,8 +22698,6 @@ entities:
       fixtures: {}
   - uid: 24409
     components:
-    - type: MetaData
-      name: TEG APC
     - type: Transform
       pos: 99.5,-32.5
       parent: 13329
@@ -22927,8 +22705,6 @@ entities:
       fixtures: {}
   - uid: 24410
     components:
-    - type: MetaData
-      name: Engineering South Hallway APC
     - type: Transform
       pos: 96.5,-18.5
       parent: 13329
@@ -22936,8 +22712,6 @@ entities:
       fixtures: {}
   - uid: 24992
     components:
-    - type: MetaData
-      name: Vacant Room APC
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 31.5,-10.5
@@ -22946,8 +22720,6 @@ entities:
       fixtures: {}
   - uid: 25131
     components:
-    - type: MetaData
-      name: Maint South East APC
     - type: Transform
       pos: 100.5,-44.5
       parent: 13329
@@ -22962,8 +22734,6 @@ entities:
       fixtures: {}
   - uid: 25553
     components:
-    - type: MetaData
-      name: Engineering Power Hall APC
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 88.5,-2.5
@@ -22972,8 +22742,6 @@ entities:
       fixtures: {}
   - uid: 25554
     components:
-    - type: MetaData
-      name: Singulo APC
     - type: Transform
       pos: 96.5,-1.5
       parent: 13329
@@ -22981,8 +22749,6 @@ entities:
       fixtures: {}
   - uid: 25555
     components:
-    - type: MetaData
-      name: Engineering Storage APC
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 75.5,-1.5
@@ -22991,8 +22757,6 @@ entities:
       fixtures: {}
   - uid: 25556
     components:
-    - type: MetaData
-      name: CE Office APC
     - type: Transform
       pos: 83.5,-9.5
       parent: 13329
@@ -23000,8 +22764,6 @@ entities:
       fixtures: {}
   - uid: 25557
     components:
-    - type: MetaData
-      name: Secure Storage APC
     - type: Transform
       pos: 92.5,-9.5
       parent: 13329
@@ -23009,8 +22771,6 @@ entities:
       fixtures: {}
   - uid: 25558
     components:
-    - type: MetaData
-      name: AME APC
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 88.5,4.5
@@ -23019,8 +22779,6 @@ entities:
       fixtures: {}
   - uid: 25559
     components:
-    - type: MetaData
-      name: Engineering Lockerroom APC
     - type: Transform
       pos: 80.5,2.5
       parent: 13329
@@ -23028,8 +22786,6 @@ entities:
       fixtures: {}
   - uid: 27375
     components:
-    - type: MetaData
-      name: Disposals APC
     - type: Transform
       pos: 121.5,-4.5
       parent: 13329
@@ -23037,8 +22793,6 @@ entities:
       fixtures: {}
   - uid: 27376
     components:
-    - type: MetaData
-      name: Disposals Office APC
     - type: Transform
       pos: 123.5,4.5
       parent: 13329
@@ -23053,8 +22807,6 @@ entities:
       fixtures: {}
   - uid: 27540
     components:
-    - type: MetaData
-      name: Atmospherics Right APC
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 90.5,-28.5
@@ -23063,8 +22815,6 @@ entities:
       fixtures: {}
   - uid: 27601
     components:
-    - type: MetaData
-      name: Telecoms Cooling APC
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 85.5,34.5
@@ -23076,8 +22826,6 @@ entities:
       fixtures: {}
   - uid: 27870
     components:
-    - type: MetaData
-      name: Telecoms APC 2
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 100.5,28.5
@@ -23086,8 +22834,6 @@ entities:
       fixtures: {}
   - uid: 28343
     components:
-    - type: MetaData
-      name: Court Room APC
     - type: Transform
       pos: 60.5,35.5
       parent: 13329
@@ -23095,8 +22841,6 @@ entities:
       fixtures: {}
   - uid: 28344
     components:
-    - type: MetaData
-      name: Court House APC
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 67.5,30.5
@@ -23105,8 +22849,6 @@ entities:
       fixtures: {}
   - uid: 28345
     components:
-    - type: MetaData
-      name: Vacant Office APC
     - type: Transform
       pos: 76.5,36.5
       parent: 13329
@@ -23114,8 +22856,6 @@ entities:
       fixtures: {}
   - uid: 28346
     components:
-    - type: MetaData
-      name: Swimming Pool APC
     - type: Transform
       pos: 69.5,17.5
       parent: 13329
@@ -23123,8 +22863,6 @@ entities:
       fixtures: {}
   - uid: 28347
     components:
-    - type: MetaData
-      name: Dorm Bathroom APC
     - type: Transform
       pos: 60.5,19.5
       parent: 13329
@@ -23132,8 +22870,6 @@ entities:
       fixtures: {}
   - uid: 28348
     components:
-    - type: MetaData
-      name: Dorm APC
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 80.5,23.5
@@ -23142,8 +22878,6 @@ entities:
       fixtures: {}
   - uid: 28655
     components:
-    - type: MetaData
-      name: Dorm Meeting Room APC
     - type: Transform
       pos: 86.5,17.5
       parent: 13329
@@ -23151,8 +22885,6 @@ entities:
       fixtures: {}
   - uid: 28663
     components:
-    - type: MetaData
-      name: Dorm Arcade APC
     - type: Transform
       pos: 92.5,24.5
       parent: 13329
@@ -23160,8 +22892,6 @@ entities:
       fixtures: {}
   - uid: 29956
     components:
-    - type: MetaData
-      name: Bridge East APC
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 94.5,49.5
@@ -23170,8 +22900,6 @@ entities:
       fixtures: {}
   - uid: 29957
     components:
-    - type: MetaData
-      name: AI Backup APC
     - type: Transform
       pos: 104.5,57.5
       parent: 13329
@@ -23179,8 +22907,6 @@ entities:
       fixtures: {}
   - uid: 29958
     components:
-    - type: MetaData
-      name: AI Upload APC
     - type: Transform
       pos: 104.5,45.5
       parent: 13329
@@ -23188,8 +22914,6 @@ entities:
       fixtures: {}
   - uid: 29959
     components:
-    - type: MetaData
-      name: AI Core APC
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 125.5,49.5
@@ -23198,8 +22922,6 @@ entities:
       fixtures: {}
   - uid: 30393
     components:
-    - type: MetaData
-      name: Vault APC
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 92.5,48.5
@@ -23208,8 +22930,6 @@ entities:
       fixtures: {}
   - uid: 30394
     components:
-    - type: MetaData
-      name: Bridge North APC
     - type: Transform
       pos: 85.5,57.5
       parent: 13329
@@ -23217,8 +22937,6 @@ entities:
       fixtures: {}
   - uid: 30395
     components:
-    - type: MetaData
-      name: Captain's Office APC
     - type: Transform
       pos: 82.5,48.5
       parent: 13329
@@ -23226,8 +22944,6 @@ entities:
       fixtures: {}
   - uid: 30396
     components:
-    - type: MetaData
-      name: Captain's Bedroom APC
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 79.5,48.5
@@ -23236,8 +22952,6 @@ entities:
       fixtures: {}
   - uid: 30786
     components:
-    - type: MetaData
-      name: HoP Office APC
     - type: Transform
       pos: 57.5,49.5
       parent: 13329
@@ -23245,8 +22959,6 @@ entities:
       fixtures: {}
   - uid: 30787
     components:
-    - type: MetaData
-      name: Conference Room APC
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 66.5,55.5
@@ -23255,8 +22967,6 @@ entities:
       fixtures: {}
   - uid: 30788
     components:
-    - type: MetaData
-      name: Bridge APC
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 74.5,58.5
@@ -23265,8 +22975,6 @@ entities:
       fixtures: {}
   - uid: 30789
     components:
-    - type: MetaData
-      name: Bridge South APC
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 75.5,48.5
@@ -23275,8 +22983,6 @@ entities:
       fixtures: {}
   - uid: 30935
     components:
-    - type: MetaData
-      name: Eva Storage APC
     - type: Transform
       pos: 51.5,41.5
       parent: 13329
@@ -23284,8 +22990,6 @@ entities:
       fixtures: {}
   - uid: 31969
     components:
-    - type: MetaData
-      name: Maint West APC
     - type: Transform
       pos: -35.5,11.5
       parent: 13329
@@ -23293,8 +22997,6 @@ entities:
       fixtures: {}
   - uid: 32798
     components:
-    - type: MetaData
-      name: Engineering Vacant Room APC
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 96.5,4.5
@@ -23311,8 +23013,6 @@ entities:
       fixtures: {}
   - uid: 34017
     components:
-    - type: MetaData
-      name: Solars North APC
     - type: Transform
       pos: 54.5,65.5
       parent: 13329
@@ -23320,8 +23020,6 @@ entities:
       fixtures: {}
   - uid: 35451
     components:
-    - type: MetaData
-      name: Telecoms APC 1
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 100.5,33.5
@@ -23335,8 +23033,6 @@ entities:
   entities:
   - uid: 920
     components:
-    - type: MetaData
-      name: Bartender APC
     - type: Transform
       pos: -14.5,27.5
       parent: 13329
@@ -109981,8 +109677,6 @@ entities:
       parent: 13329
   - uid: 20460
     components:
-    - type: MetaData
-      name: chute to kitchen
     - type: Transform
       pos: -12.5,35.5
       parent: 13329
@@ -117379,8 +117073,6 @@ entities:
   entities:
   - uid: 23677
     components:
-    - type: MetaData
-      name: Air resevoir Gate
     - type: Transform
       pos: 78.5,-38.5
       parent: 13329
@@ -151248,8 +150940,6 @@ entities:
       color: '#0055CCFF'
   - uid: 13465
     components:
-    - type: MetaData
-      name: Distro Pump
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 26.5,50.5
@@ -151332,8 +151022,6 @@ entities:
       color: '#B3A234FF'
   - uid: 23700
     components:
-    - type: MetaData
-      name: CO2 Pump
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 89.5,-41.5
@@ -151354,16 +151042,12 @@ entities:
       color: '#990000FF'
   - uid: 23709
     components:
-    - type: MetaData
-      name: H2O Pump
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 89.5,-37.5
       parent: 13329
   - uid: 23710
     components:
-    - type: MetaData
-      name: Plasma Pump
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 89.5,-33.5
@@ -151400,16 +151084,12 @@ entities:
       color: '#990000FF'
   - uid: 23861
     components:
-    - type: MetaData
-      name: Mixer Out Pump
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 89.5,-25.5
       parent: 13329
   - uid: 23877
     components:
-    - type: MetaData
-      name: Mixer In Pump
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 89.5,-26.5
@@ -151595,8 +151275,6 @@ entities:
       color: '#B3A234FF'
   - uid: 23644
     components:
-    - type: MetaData
-      name: Wastenet Spacing Valve
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 67.5,-33.5
@@ -151607,8 +151285,6 @@ entities:
       color: '#990000FF'
   - uid: 23834
     components:
-    - type: MetaData
-      name: Waste to Space
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 100.5,-29.5
@@ -153517,8 +153193,6 @@ entities:
       color: '#990000FF'
   - uid: 388
     components:
-    - type: MetaData
-      name: air scrubber
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -12.5,13.5
@@ -155542,8 +155216,6 @@ entities:
   entities:
   - uid: 31954
     components:
-    - type: MetaData
-      name: The Porcelain Throne
     - type: Transform
       pos: -24.5,6.5
       parent: 13329
@@ -162730,36 +162402,36 @@ entities:
   - uid: 35887
     components:
     - type: MetaData
-      name: holopad (Service - Chaplain)
+      name: голопад (Сервис - Священник)
     - type: Transform
       pos: -16.5,72.5
       parent: 13329
     - type: Label
-      currentLabel: Service - Chaplain
+      currentLabel: Сервис - Священник
     - type: NameModifier
-      baseName: holopad
+      baseName: голопад
   - uid: 35888
     components:
     - type: MetaData
-      name: holopad (Service - Chaplain Meeting)
+      name: голопад (Сервис - Выступление Священника)
     - type: Transform
       pos: -9.5,71.5
       parent: 13329
     - type: Label
-      currentLabel: Service - Chaplain Meeting
+      currentLabel: Сервис - Выступление Священника
     - type: NameModifier
-      baseName: holopad
+      baseName: голопад
   - uid: 35931
     components:
     - type: MetaData
-      name: holopad (General - Central Lounge)
+      name: голопад (Общий)
     - type: Transform
       pos: -0.5,-2.5
       parent: 13329
     - type: Label
-      currentLabel: General - Central Lounge
+      currentLabel: Общий
     - type: NameModifier
-      baseName: holopad
+      baseName: голопад
 - proto: HolopadAiBackupPower
   entities:
   - uid: 35840
@@ -162770,14 +162442,14 @@ entities:
   - uid: 35845
     components:
     - type: MetaData
-      name: holopad (AI - Storage)
+      name: голопад (ИИ - склад)
     - type: Transform
       pos: 104.5,55.5
       parent: 13329
     - type: Label
-      currentLabel: AI - Storage
+      currentLabel: ИИ - склад
     - type: NameModifier
-      baseName: holopad
+      baseName: голопад
 - proto: HolopadAiChute
   entities:
   - uid: 35841
@@ -162816,14 +162488,14 @@ entities:
   - uid: 35926
     components:
     - type: MetaData
-      name: holopad (Cargo - Mailroom)
+      name: голопад (Карго - Почта)
     - type: Transform
       pos: 18.5,-12.5
       parent: 13329
     - type: Label
-      currentLabel: Cargo - Mailroom
+      currentLabel: Карго - Почта
     - type: NameModifier
-      baseName: holopad
+      baseName: голопад
 - proto: HolopadCargoBayLongRange
   entities:
   - uid: 9648
@@ -162899,17 +162571,6 @@ entities:
     - type: Transform
       pos: 26.5,63.5
       parent: 13329
-  - uid: 35932
-    components:
-    - type: MetaData
-      name: holopad (Command - CMO's Office)
-    - type: Transform
-      pos: 24.5,59.5
-      parent: 13329
-    - type: Label
-      currentLabel: Command - CMO's Office
-    - type: NameModifier
-      baseName: holopad
 - proto: HolopadCommandHop
   entities:
   - uid: 35852
@@ -162955,56 +162616,28 @@ entities:
   - uid: 35912
     components:
     - type: MetaData
-      name: holopad (Engineering - Gravity)
+      name: голопад (Инженерный - ГенГрав)
     - type: Transform
       pos: 114.5,-24.5
       parent: 13329
     - type: Label
-      currentLabel: Engineering - Gravity
+      currentLabel: Инженерный - ГенГрав
     - type: NameModifier
-      baseName: holopad
+      baseName: голопад
 - proto: HolopadEngineeringAtmosFront
   entities:
   - uid: 35907
     components:
     - type: Transform
       pos: 64.5,-15.5
-      parent: 13329
-  - uid: 35917
-    components:
-    - type: MetaData
-      name: holopad (Atmos - Gearroom)
-    - type: Transform
-      pos: 75.5,-24.5
-      parent: 13329
-    - type: Label
-      currentLabel: Atmos - Gearroom
-    - type: NameModifier
-      baseName: holopad
+      pa
 - proto: HolopadEngineeringAtmosMain
   entities:
   - uid: 35908
     components:
-    - type: MetaData
-      name: holopad (Atmos - Main West)
     - type: Transform
       pos: 70.5,-33.5
       parent: 13329
-    - type: Label
-      currentLabel: Atmos - Main West
-    - type: NameModifier
-      baseName: holopad
-  - uid: 35916
-    components:
-    - type: MetaData
-      name: holopad (Atmos - Main East)
-    - type: Transform
-      pos: 84.5,-32.5
-      parent: 13329
-    - type: Label
-      currentLabel: Atmos - Main East
-    - type: NameModifier
-      baseName: holopad
 - proto: HolopadEngineeringAtmosTeg
   entities:
   - uid: 35909
@@ -163024,17 +162657,6 @@ entities:
     - type: Transform
       pos: 75.5,-13.5
       parent: 13329
-  - uid: 35915
-    components:
-    - type: MetaData
-      name: holopad (Engineering - Breakroom Upper)
-    - type: Transform
-      pos: 80.5,-4.5
-      parent: 13329
-    - type: Label
-      currentLabel: Engineering - Breakroom Upper
-    - type: NameModifier
-      baseName: holopad
 - proto: HolopadEngineeringFront
   entities:
   - uid: 35906
@@ -163049,17 +162671,6 @@ entities:
     - type: Transform
       pos: 90.5,-1.5
       parent: 13329
-  - uid: 35914
-    components:
-    - type: MetaData
-      name: holopad (Engineering - Engine Storage)
-    - type: Transform
-      pos: 107.5,-16.5
-      parent: 13329
-    - type: Label
-      currentLabel: Engineering - Engine Storage
-    - type: NameModifier
-      baseName: holopad
 - proto: HolopadEngineeringStorage
   entities:
   - uid: 35904
@@ -163086,17 +162697,6 @@ entities:
     - type: Transform
       pos: 92.5,30.5
       parent: 13329
-  - uid: 35903
-    components:
-    - type: MetaData
-      name: holopad (Engineering - Telecoms Entry)
-    - type: Transform
-      pos: 87.5,33.5
-      parent: 13329
-    - type: Label
-      currentLabel: Engineering - Telecoms Entry
-    - type: NameModifier
-      baseName: holopad
 - proto: HolopadGeneralArrivals
   entities:
   - uid: 35930
@@ -163160,17 +162760,6 @@ entities:
     - type: Transform
       pos: 14.5,66.5
       parent: 13329
-  - uid: 35883
-    components:
-    - type: MetaData
-      name: holopad (Medical - Locker Room)
-    - type: Transform
-      pos: 6.5,67.5
-      parent: 13329
-    - type: Label
-      currentLabel: Medical - Locker Room
-    - type: NameModifier
-      baseName: holopad
 - proto: HolopadMedicalChemistry
   entities:
   - uid: 35875
@@ -163234,17 +162823,6 @@ entities:
     - type: Transform
       pos: 43.5,-33.5
       parent: 13329
-  - uid: 35924
-    components:
-    - type: MetaData
-      name: holopad (Science - Anomaly Hallway)
-    - type: Transform
-      pos: 38.5,-34.5
-      parent: 13329
-    - type: Label
-      currentLabel: Science - Anomaly Hallway
-    - type: NameModifier
-      baseName: holopad
 - proto: HolopadScienceArtifact
   entities:
   - uid: 35922
@@ -163273,17 +162851,6 @@ entities:
     - type: Transform
       pos: 35.5,-21.5
       parent: 13329
-  - uid: 35920
-    components:
-    - type: MetaData
-      name: holopad (Science - Robotics Storage)
-    - type: Transform
-      pos: 28.5,-22.5
-      parent: 13329
-    - type: Label
-      currentLabel: Science - Robotics Storage
-    - type: NameModifier
-      baseName: holopad
 - proto: HolopadSecurityArmory
   entities:
   - uid: 35857
@@ -163335,15 +162902,6 @@ entities:
       parent: 13329
   - uid: 35862
     components:
-    - type: MetaData
-      name: holopad (Security - Front North)
-    - type: Transform
-      pos: 24.5,26.5
-      parent: 13329
-    - type: Label
-      currentLabel: Security - Front North
-    - type: NameModifier
-      baseName: holopad
   - uid: 35996
     components:
     - type: Transform
@@ -163387,14 +162945,14 @@ entities:
   - uid: 35933
     components:
     - type: MetaData
-      name: holopad (Service - Bar Center)
+      name: голопад (Сервис - Центр бара)
     - type: Transform
       pos: -15.5,18.5
       parent: 13329
     - type: Label
-      currentLabel: Service - Bar Center
+      currentLabel: Сервис - Центр бара
     - type: NameModifier
-      baseName: holopad
+      baseName: голопад
 - proto: HolopadServiceBotany
   entities:
   - uid: 35890
@@ -163430,17 +162988,6 @@ entities:
     - type: Transform
       pos: -19.5,54.5
       parent: 13329
-  - uid: 35886
-    components:
-    - type: MetaData
-      name: holopad (Service - Library Meeting)
-    - type: Transform
-      pos: -26.5,57.5
-      parent: 13329
-    - type: Label
-      currentLabel: Service - Library Meeting
-    - type: NameModifier
-      baseName: holopad
 - proto: HolopadServiceNewsroom
   entities:
   - uid: 35936
@@ -184025,8 +183572,6 @@ entities:
       parent: 13329
   - uid: 11854
     components:
-    - type: MetaData
-      name: Mailroom Garage Door Opener
     - type: Transform
       pos: 21.52355,-14.18487
       parent: 13329
@@ -185538,7 +185083,7 @@ entities:
   - uid: 938
     components:
     - type: MetaData
-      name: Bar Windows
+      name: Окна бара
     - type: Transform
       pos: -7.5,25.5
       parent: 13329
@@ -185561,7 +185106,7 @@ entities:
   - uid: 939
     components:
     - type: MetaData
-      name: Hallway Windows
+      name: окна
     - type: Transform
       pos: -5.5,25.5
       parent: 13329
@@ -185587,7 +185132,7 @@ entities:
   - uid: 940
     components:
     - type: MetaData
-      name: Shutters
+      name: ставни
     - type: Transform
       pos: -18.5,27.5
       parent: 13329
@@ -185616,7 +185161,7 @@ entities:
   - uid: 1073
     components:
     - type: MetaData
-      name: Window shutters
+      name: ставни на окнах
     - type: Transform
       pos: -11.5,27.5
       parent: 13329
@@ -185636,7 +185181,7 @@ entities:
   - uid: 1317
     components:
     - type: MetaData
-      name: Window Shutters
+      name: ставни на окнах
     - type: Transform
       pos: -7.5,37.5
       parent: 13329
@@ -185665,7 +185210,7 @@ entities:
   - uid: 1431
     components:
     - type: MetaData
-      name: Bar-Kitchen Button
+      name: бар-кухня
     - type: Transform
       pos: -12.5,26.5
       parent: 13329
@@ -185917,7 +185462,7 @@ entities:
   - uid: 35312
     components:
     - type: MetaData
-      name: Airlock Shutters
+      name: шлюз ставни
     - type: Transform
       pos: 96.5,2.5
       parent: 13329
@@ -186430,8 +185975,6 @@ entities:
   entities:
   - uid: 6941
     components:
-    - type: MetaData
-      name: Switch (Front Shutters) (Front Shutters)
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 6.5,11.5
@@ -186462,12 +186005,6 @@ entities:
           - AutoClose
         - - Off
           - Close
-    - type: Label
-      currentLabel: Front Shutters
-    - type: NameModifier
-      baseName: Switch (Front Shutters)
-    - type: Fixtures
-      fixtures: {}
   - uid: 10662
     components:
     - type: MetaData
@@ -189200,29 +188737,21 @@ entities:
   entities:
   - uid: 3711
     components:
-    - type: MetaData
-      name: West Solars SMES
     - type: Transform
       pos: -45.5,2.5
       parent: 13329
   - uid: 22190
     components:
-    - type: MetaData
-      name: South Solars SMES
     - type: Transform
       pos: 104.5,-54.5
       parent: 13329
   - uid: 22206
     components:
-    - type: MetaData
-      name: East Solars SMES
     - type: Transform
       pos: 114.5,32.5
       parent: 13329
   - uid: 23129
     components:
-    - type: MetaData
-      name: Grav Gen SMES
     - type: Transform
       pos: 113.5,-26.5
       parent: 13329
@@ -189243,36 +188772,26 @@ entities:
       parent: 13329
   - uid: 25985
     components:
-    - type: MetaData
-      name: Singulo SMES
     - type: Transform
       pos: 97.5,1.5
       parent: 13329
   - uid: 27538
     components:
-    - type: MetaData
-      name: Telecomms SMES
     - type: Transform
       pos: 90.5,29.5
       parent: 13329
   - uid: 29878
     components:
-    - type: MetaData
-      name: AI SMES
     - type: Transform
       pos: 112.5,42.5
       parent: 13329
   - uid: 30209
     components:
-    - type: MetaData
-      name: SMES
     - type: Transform
       pos: 128.5,49.5
       parent: 13329
   - uid: 33227
     components:
-    - type: MetaData
-      name: North Solars SMES
     - type: Transform
       pos: 51.5,68.5
       parent: 13329
@@ -193803,183 +193322,131 @@ entities:
   entities:
   - uid: 2337
     components:
-    - type: MetaData
-      name: South Service Sub
     - type: Transform
       pos: -21.5,1.5
       parent: 13329
   - uid: 2375
     components:
-    - type: MetaData
-      name: Evac Substation
     - type: Transform
       pos: -23.5,35.5
       parent: 13329
   - uid: 2472
     components:
-    - type: MetaData
-      name: West Cargo Substation
     - type: Transform
       pos: -12.5,-16.5
       parent: 13329
   - uid: 4156
     components:
-    - type: MetaData
-      name: West Bar Substation
     - type: Transform
       pos: -27.5,22.5
       parent: 13329
   - uid: 5483
     components:
-    - type: MetaData
-      name: Library Substation
     - type: Transform
       pos: -30.5,60.5
       parent: 13329
   - uid: 6678
     components:
-    - type: MetaData
-      name: North Arrivals Substation
     - type: Transform
       pos: -39.5,-1.5
       parent: 13329
   - uid: 7609
     components:
-    - type: MetaData
-      name: East Service Substation
     - type: Transform
       pos: 4.5,19.5
       parent: 13329
   - uid: 7636
     components:
-    - type: MetaData
-      name: Security Substation
     - type: Transform
       pos: 35.5,25.5
       parent: 13329
   - uid: 9674
     components:
-    - type: MetaData
-      name: East Cargo Substation
     - type: Transform
       pos: 19.5,-19.5
       parent: 13329
   - uid: 9784
     components:
-    - type: MetaData
-      name: West Sci Sub
     - type: Transform
       pos: 27.5,-38.5
       parent: 13329
   - uid: 12900
     components:
-    - type: MetaData
-      name: Rock Dock Substation
     - type: Transform
       pos: -43.5,-46.5
       parent: 13329
   - uid: 14758
     components:
-    - type: MetaData
-      name: South Sci Sub
     - type: Transform
       pos: 51.5,-51.5
       parent: 13329
   - uid: 15020
     components:
-    - type: MetaData
-      name: North Sci Substation
     - type: Transform
       pos: 37.5,-11.5
       parent: 13329
   - uid: 17162
     components:
-    - type: MetaData
-      name: West Med Sub
     - type: Transform
       pos: 4.5,52.5
       parent: 13329
   - uid: 17163
     components:
-    - type: MetaData
-      name: East Med Sub
     - type: Transform
       pos: 29.5,54.5
       parent: 13329
   - uid: 22687
     components:
-    - type: MetaData
-      name: West Engi Sub
     - type: Transform
       pos: 68.5,-0.5
       parent: 13329
   - uid: 23130
     components:
-    - type: MetaData
-      name: Grav Gen Sub
     - type: Transform
       pos: 114.5,-26.5
       parent: 13329
   - uid: 24246
     components:
-    - type: MetaData
-      name: South East Atmos Sub
     - type: Transform
       pos: 101.5,-43.5
       parent: 13329
   - uid: 25551
     components:
-    - type: MetaData
-      name: Engineering Sub
     - type: Transform
       pos: 87.5,3.5
       parent: 13329
   - uid: 27077
     components:
-    - type: MetaData
-      name: North Engi Sub
     - type: Transform
       pos: 107.5,12.5
       parent: 13329
   - uid: 27539
     components:
-    - type: MetaData
-      name: Telecomms Sub
     - type: Transform
       pos: 100.5,31.5
       parent: 13329
   - uid: 28275
     components:
-    - type: MetaData
-      name: Dorm Subs
     - type: Transform
       pos: 71.5,22.5
       parent: 13329
   - uid: 29894
     components:
-    - type: MetaData
-      name: AI Substation
     - type: Transform
       pos: 113.5,42.5
       parent: 13329
   - uid: 30253
     components:
-    - type: MetaData
-      name: West Bridge Sub
     - type: Transform
       pos: 57.5,51.5
       parent: 13329
   - uid: 30320
     components:
-    - type: MetaData
-      name: Vault Sub
     - type: Transform
       pos: 91.5,49.5
       parent: 13329
   - uid: 35303
     components:
-    - type: MetaData
-      name: Singulo Sub
     - type: Transform
       pos: 98.5,1.5
       parent: 13329
@@ -194160,7 +193627,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core First Room
+      id: Ядро ИИ, первая комната
   - uid: 30182
     components:
     - type: Transform
@@ -194171,7 +193638,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Upload
+      id: Ядро ИИ, загрузка
   - uid: 30183
     components:
     - type: Transform
@@ -194182,7 +193649,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core Core Entrance
+      id: Ядро ИИ, вход в ядро
   - uid: 30184
     components:
     - type: Transform
@@ -194193,7 +193660,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core Power
+      id: Ядро ИИ, питание
   - uid: 30185
     components:
     - type: Transform
@@ -194203,7 +193670,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core Construction Room
+      id: Ядро ИИ, конструкционная комната
   - uid: 30212
     components:
     - type: Transform
@@ -194214,7 +193681,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: AI Core Closet
+      id: Ядро ИИ, шкаф
   - uid: 30756
     components:
     - type: Transform
@@ -194225,7 +193692,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: Captain's Office
+      id: Офис Капитана
   - uid: 30758
     components:
     - type: Transform
@@ -194237,16 +193704,6 @@ entities:
       - SurveillanceCameraCommand
       nameSet: True
       id: Vault
-  - uid: 30761
-    components:
-    - type: Transform
-      pos: 79.5,49.5
-      parent: 13329
-    - type: SurveillanceCamera
-      setupAvailableNetworks:
-      - SurveillanceCameraCommand
-      nameSet: True
-      id: Captain's Bedroom
   - uid: 31461
     components:
     - type: Transform
@@ -194257,7 +193714,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: Bridge South
+      id: Мостик, юг
   - uid: 31462
     components:
     - type: Transform
@@ -194268,7 +193725,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: Bridge North
+      id: Мостик, север
   - uid: 31569
     components:
     - type: Transform
@@ -194279,7 +193736,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: EVA Storage
+      id: Хранилище ВКД
   - uid: 31570
     components:
     - type: Transform
@@ -194290,7 +193747,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: HoP Office
+      id: Офис ГП
   - uid: 31571
     components:
     - type: Transform
@@ -194301,7 +193758,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: Conference Room
+      id: Конференц-зал
   - uid: 31572
     components:
     - type: Transform
@@ -194312,7 +193769,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: Command Dock
+      id: Стыковка командования
   - uid: 34257
     components:
     - type: Transform
@@ -227825,8 +227282,6 @@ entities:
   entities:
   - uid: 9455
     components:
-    - type: MetaData
-      name: Misc
     - type: Transform
       pos: 38.5,8.5
       parent: 13329
