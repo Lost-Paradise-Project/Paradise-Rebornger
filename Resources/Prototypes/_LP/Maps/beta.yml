@@ -1,6 +1,6 @@
 - type: gameMap
   id: LP_Beta
-  mapName: 'Marathon Station'
+  mapName: 'Beta Station'
   mapPath: /Maps/_LP/Station/LP_Beta.yml
   randomRotation: false 
   maxPlayers: 95
@@ -14,7 +14,7 @@
             !type:NanotrasenNameGenerator
             prefixCreator: 'SD'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Shuttles/emergency_Beta.yml
+          emergencyShuttlePath: /Maps/_LP/Shuttles/emergency_Beta.yml
         - type: StationJobs
           availableJobs:
             # Командование
