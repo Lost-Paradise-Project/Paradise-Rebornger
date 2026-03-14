@@ -162630,7 +162630,6 @@ entities:
     components:
     - type: Transform
       pos: 64.5,-15.5
-      pa
 - proto: HolopadEngineeringAtmosMain
   entities:
   - uid: 35908
