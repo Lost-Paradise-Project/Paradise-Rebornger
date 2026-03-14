@@ -4,7 +4,7 @@ meta:
   engineVersion: 272.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/08/2026 11:35:04
+  time: 03/14/2026 16:21:43
   entityCount: 36393
 maps:
 - 1
@@ -192309,11 +192309,6 @@ entities:
       parent: 13329
 - proto: SpawnPointMedicalDoctor
   entities:
-  - uid: 18957
-    components:
-    - type: Transform
-      pos: 7.5,67.5
-      parent: 13329
   - uid: 18958
     components:
     - type: Transform
@@ -192530,11 +192525,6 @@ entities:
     - type: Transform
       pos: 29.5,-47.5
       parent: 13329
-  - uid: 19943
-    components:
-    - type: Transform
-      pos: 28.5,-48.5
-      parent: 13329
   - uid: 19944
     components:
     - type: Transform
@@ -192629,10 +192619,33 @@ entities:
     - type: Transform
       pos: 36.5,13.5
       parent: 13329
-  - uid: 35978
+- proto: SpawnPointSeniorEngineer
+  entities:
+  - uid: 27099
+    components:
+    - type: Transform
+      pos: 80.5,0.5
+      parent: 13329
+- proto: SpawnPointSeniorOfficer
+  entities:
+  - uid: 19943
     components:
     - type: Transform
       pos: 35.5,10.5
+      parent: 13329
+- proto: SpawnPointSeniorPhysician
+  entities:
+  - uid: 35978
+    components:
+    - type: Transform
+      pos: 7.5,68.5
+      parent: 13329
+- proto: SpawnPointSeniorResearcher
+  entities:
+  - uid: 18957
+    components:
+    - type: Transform
+      pos: 28.5,-48.5
       parent: 13329
 - proto: SpawnPointServiceWorker
   entities:
@@ -192657,11 +192670,6 @@ entities:
     components:
     - type: Transform
       pos: 79.5,0.5
-      parent: 13329
-  - uid: 27099
-    components:
-    - type: Transform
-      pos: 80.5,0.5
       parent: 13329
   - uid: 27100
     components:

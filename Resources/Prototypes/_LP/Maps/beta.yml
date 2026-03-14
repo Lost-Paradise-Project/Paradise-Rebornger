@@ -35,7 +35,7 @@
             # Служба Безопасности
             Warden: [ 1, 1 ]
             SeniorOfficer: [ 1, 1 ] # Инструктор СБ, corvax
-            SecurityOfficer: [ 6, 6 ]
+            SecurityOfficer: [ 5, 6 ]
             SecurityCadet: [ 5, 5 ]
             Detective: [ 1, 1 ]
             Pilot: [ 1, 1 ]

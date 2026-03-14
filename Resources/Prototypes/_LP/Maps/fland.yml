@@ -39,7 +39,6 @@
             SecurityOfficer: [ 10, 10 ]
             SecurityCadet: [ 6, 6 ]
             Detective: [ 1, 1 ]
-            Pilot: [ 1, 1 ]
             Brigmedic: [ 1, 1 ]
             LPPSecurityEnginer: [ 1, 1 ] # Полевой инженер, LP
 
