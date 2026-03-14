@@ -2,7 +2,7 @@
   id: LP_Fland
   mapName: 'Fland Installation'
   mapPath: /Maps/_LP/Station/LP_Fland.yml
-  randomRotation: false 
+  randomRotation: false
   minPlayers: 55 # Corvax
   stations:
     LP_Fland:
