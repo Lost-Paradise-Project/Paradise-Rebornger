@@ -102,6 +102,10 @@ namespace Content.IntegrationTests.Tests
             "LPAspid",
             "LPCyberiad",
             "LPKerberos",
+            "LP_Beta",
+            "LP_Fland",
+            "LP_Marathon",
+            "LP_Maus",
             // LP-end
             "Dev",
             "TestTeg",
