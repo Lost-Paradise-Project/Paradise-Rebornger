@@ -21,7 +21,7 @@
           availableJobs:
             # Командование
             Captain: [ 1, 1 ] # Капитан
-            IAA: [1, 1] # АВД
+            IAA: [ 1, 1 ] # АВД
             HeadOfPersonnel: [ 1, 1 ] # Глава Персонала
             HeadOfSecurity: [ 1, 1 ] # ГСБ
             ChiefEngineer: [ 1, 1 ] # Старший Инженер
