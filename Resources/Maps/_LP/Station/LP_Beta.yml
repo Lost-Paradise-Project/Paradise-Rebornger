@@ -13083,7 +13083,7 @@ entities:
         chunkSize: 4
     - type: NavMap
     - type: BecomesStation
-      id: LP_Beta
+      id: BetaStation
     - type: ImplicitRoof
     - type: TileHistory
       chunkHistory: {}

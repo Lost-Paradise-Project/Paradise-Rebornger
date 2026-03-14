@@ -3,9 +3,10 @@
   mapName: 'Beta Station'
   mapPath: /Maps/_LP/Station/LP_Beta.yml
   randomRotation: false 
+  minPlayers: 0
   maxPlayers: 95
   stations:
-    LP_Beta:
+    BetaStation:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

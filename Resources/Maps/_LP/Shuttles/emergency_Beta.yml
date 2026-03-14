@@ -1,16 +1,16 @@
 meta:
   format: 7
-  category: Map
+  category: Grid
   engineVersion: 272.0.0
   forkId: ""
   forkVersion: ""
-  time: 02/21/2026 19:03:47
-  entityCount: 666
-maps:
-- 251
+  time: 03/14/2026 13:44:05
+  entityCount: 665
+maps: []
 grids:
 - 1
-orphans: []
+orphans:
+- 1
 nullspace: []
 tilemap:
   4: Space
@@ -34,7 +34,7 @@ entities:
       name: NT-EVAС "Beta-S"
     - type: Transform
       pos: -0.546875,1.699986
-      parent: 251
+      parent: invalid
     - type: MapGrid
       chunks:
         0,0:
@@ -178,16 +178,6 @@ entities:
     - type: TileHistory
       chunkHistory: {}
     - type: ExplosionAirtightGrid
-  - uid: 251
-    components:
-    - type: MetaData
-      name: Map Entity
-    - type: Transform
-    - type: Map
-      mapPaused: True
-    - type: GridTree
-    - type: Broadphase
-    - type: OccluderTree
 - proto: AirAlarm
   entities:
   - uid: 472
