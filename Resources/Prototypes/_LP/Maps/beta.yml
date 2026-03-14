@@ -1,7 +1,7 @@
 - type: gameMap
   id: LP_Beta
   mapName: 'Marathon Station'
-  mapPath: /Maps/_LP/Station/LP_Marathon.yml
+  mapPath: /Maps/_LP/Station/LP_Beta.yml
   randomRotation: false 
   maxPlayers: 95
   stations:
