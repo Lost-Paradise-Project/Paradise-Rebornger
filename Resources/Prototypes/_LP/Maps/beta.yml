@@ -2,7 +2,7 @@
   id: LP_Beta
   mapName: 'Beta Station'
   mapPath: /Maps/_LP/Station/LP_Beta.yml
-  randomRotation: false 
+  randomRotation: false
   minPlayers: 0
   maxPlayers: 95
   stations:
