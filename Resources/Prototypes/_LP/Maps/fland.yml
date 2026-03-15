@@ -1,5 +1,5 @@
 - type: gameMap
-  id: LP_Fland
+  id: LPFland
   mapName: 'Fland Installation'
   mapPath: /Maps/_LP/Station/LP_Fland.yml
   randomRotation: false
