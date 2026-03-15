@@ -1,5 +1,5 @@
 - type: gameMap
-  id: LP_Maus
+  id: LPMaus
   mapName: 'Maus Station'
   mapPath: /Maps/_LP/Station/LP_Maus.yml
   maxRandomOffset: 0
