@@ -99,14 +99,12 @@
   metabolisms:
     Respiration:
       effects:
-      # LP Edit Start
-      - !type:MovespeedModifier
+      - !type:MovementSpeedModifier
         conditions:
-          - !type:ReagentThreshold
-            reagent: Nitrium
-            min: 3
-        statusLifetime: 64 # от 32
-        # LP Edit End
+        - !type:ReagentCondition
+          reagent: Nitrium
+          min: 3
+        statusLifetime: 64 # LP Edit
         walkSpeedModifier: 1.5
         sprintSpeedModifier: 1.5
       - !type:ModifyStatusEffect
