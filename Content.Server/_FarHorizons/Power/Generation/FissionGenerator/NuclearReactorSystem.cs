@@ -1,5 +1,4 @@
  // LP Edit Start
-using Content.Server._LP.Power.Generation.FissionGenerator;
 using Content.Shared.Tag;
 using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
