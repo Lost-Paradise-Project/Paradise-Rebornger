@@ -1,5 +1,5 @@
 - type: gameMap
-  id: LP_Marathon
+  id: LPMarathon
   mapName: 'Marathon Station'
   mapPath: /Maps/_LP/Station/LP_Marathon.yml
   randomRotation: false
