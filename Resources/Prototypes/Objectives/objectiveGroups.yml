@@ -14,7 +14,7 @@
     LPPSpaceForgeCMDStealObjective: 1 # LP Edit
     CaptainIDStealObjective: 1
     CMOHyposprayStealObjective: 1
-    CMOCrewMonitorStealObjective: 1
+    # CMOCrewMonitorStealObjective: 1 # LP Edit
     #NukeDiskStealObjective: 1 #Corvax
     RDHardsuitStealObjective: 1
     MagbootsStealObjective: 1
