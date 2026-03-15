@@ -8023,8 +8023,6 @@ entities:
       fixtures: {}
   - uid: 10905
     components:
-    - type: MetaData
-      name: Atmos Burn Chamber Air Alarm
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 8.5,-35.5
@@ -10470,8 +10468,6 @@ entities:
       parent: 30
   - uid: 6028
     components:
-    - type: MetaData
-      name: AI Core tube
     - type: Transform
       pos: -19.5,41.5
       parent: 30
@@ -10516,8 +10512,6 @@ entities:
       parent: 30
   - uid: 9463
     components:
-    - type: MetaData
-      name: AME room
     - type: Transform
       pos: -12.5,-36.5
       parent: 30
@@ -10547,8 +10541,6 @@ entities:
       parent: 30
   - uid: 20984
     components:
-    - type: MetaData
-      name: Technical Storage
     - type: Transform
       pos: 4.5,24.5
       parent: 30
@@ -10556,8 +10548,6 @@ entities:
   entities:
   - uid: 204
     components:
-    - type: MetaData
-      name: EVA Storage
     - type: Transform
       pos: 1.5,22.5
       parent: 30
@@ -11702,8 +11692,6 @@ entities:
   entities:
   - uid: 532
     components:
-    - type: MetaData
-      name: Janitor's Closet
     - type: Transform
       pos: -32.5,5.5
       parent: 30
@@ -11857,8 +11845,6 @@ entities:
   entities:
   - uid: 8303
     components:
-    - type: MetaData
-      name: Spacebucks
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 1.5,-12.5
@@ -12117,15 +12103,11 @@ entities:
   entities:
   - uid: 12741
     components:
-    - type: MetaData
-      name: Science Maint
     - type: Transform
       pos: 32.5,6.5
       parent: 30
   - uid: 12843
     components:
-    - type: MetaData
-      name: Science
     - type: Transform
       pos: 31.5,24.5
       parent: 30
@@ -12229,15 +12211,11 @@ entities:
       parent: 30
   - uid: 6890
     components:
-    - type: MetaData
-      name: Psychology
     - type: Transform
       pos: -28.5,-4.5
       parent: 30
   - uid: 6895
     components:
-    - type: MetaData
-      name: Psychology
     - type: Transform
       pos: -32.5,-1.5
       parent: 30
@@ -12318,15 +12296,11 @@ entities:
   entities:
   - uid: 12760
     components:
-    - type: MetaData
-      name: Sci Server Room
     - type: Transform
       pos: 32.5,10.5
       parent: 30
   - uid: 12787
     components:
-    - type: MetaData
-      name: RD Office
     - type: Transform
       pos: 28.5,17.5
       parent: 30
@@ -12396,8 +12370,6 @@ entities:
   entities:
   - uid: 12908
     components:
-    - type: MetaData
-      name: Toxins
     - type: Transform
       pos: 34.5,8.5
       parent: 30
@@ -12478,8 +12450,6 @@ entities:
       parent: 30
   - uid: 21686
     components:
-    - type: MetaData
-      name: Firing "Range" lmao
     - type: Transform
       pos: -36.5,59.5
       parent: 30
@@ -12531,8 +12501,6 @@ entities:
   entities:
   - uid: 652
     components:
-    - type: MetaData
-      name: Clown Room
     - type: Transform
       pos: 2.5,12.5
       parent: 30
@@ -13351,8 +13319,6 @@ entities:
   entities:
   - uid: 406
     components:
-    - type: MetaData
-      name: Гидропоника ЛКП
     - type: Transform
       pos: -26.5,14.5
       parent: 30
@@ -13360,8 +13326,6 @@ entities:
       fixtures: {}
   - uid: 407
     components:
-    - type: MetaData
-      name: Кладовая сервиса ЛПК
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -6.5,13.5
@@ -13370,8 +13334,6 @@ entities:
       fixtures: {}
   - uid: 409
     components:
-    - type: MetaData
-      name: Хранилище скафандров ВКД ЛКП
     - type: Transform
       pos: -2.5,18.5
       parent: 30
@@ -13381,8 +13343,6 @@ entities:
       fixtures: {}
   - uid: 411
     components:
-    - type: MetaData
-      name: Тех. обслуживание, север-центр, ЛКП
     - type: Transform
       pos: -26.5,21.5
       parent: 30
@@ -13390,8 +13350,6 @@ entities:
       fixtures: {}
   - uid: 412
     components:
-    - type: MetaData
-      name: Коморка уборщика ЛКП
     - type: Transform
       pos: -30.5,11.5
       parent: 30
@@ -13399,8 +13357,6 @@ entities:
       fixtures: {}
   - uid: 1462
     components:
-    - type: MetaData
-      name: Офис Детектива ЛКП
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -45.5,32.5
@@ -13409,8 +13365,6 @@ entities:
       fixtures: {}
   - uid: 1537
     components:
-    - type: MetaData
-      name: Эвакуация ЛКП
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -48.5,20.5
@@ -13419,8 +13373,6 @@ entities:
       fixtures: {}
   - uid: 1539
     components:
-    - type: MetaData
-      name: Коридор, запад-центр, ЛКП
     - type: Transform
       pos: -37.5,16.5
       parent: 30
@@ -13428,8 +13380,6 @@ entities:
       fixtures: {}
   - uid: 1653
     components:
-    - type: MetaData
-      name: Хранилище инструментов ЛКП
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -33.5,32.5
@@ -13438,8 +13388,6 @@ entities:
       fixtures: {}
   - uid: 1830
     components:
-    - type: MetaData
-      name: Глава Службы Безопасности ЛКП
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -27.5,51.5
@@ -13451,8 +13399,6 @@ entities:
       fixtures: {}
   - uid: 1894
     components:
-    - type: MetaData
-      name: Арсенал ЛКП
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -37.5,50.5
@@ -13461,8 +13407,6 @@ entities:
       fixtures: {}
   - uid: 2286
     components:
-    - type: MetaData
-      name: Общий блок ЛКП
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -45.5,41.5
@@ -13471,8 +13415,6 @@ entities:
       fixtures: {}
   - uid: 3119
     components:
-    - type: MetaData
-      name: Прибытие, юг, ЛКП
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -43.5,-0.5
@@ -13481,8 +13423,6 @@ entities:
       fixtures: {}
   - uid: 3522
     components:
-    - type: MetaData
-      name: Брифрум ЛКП
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -36.5,53.5
@@ -13491,8 +13431,6 @@ entities:
       fixtures: {}
   - uid: 3617
     components:
-    - type: MetaData
-      name: Прибытие, север, ЛКП
     - type: Transform
       pos: -50.5,11.5
       parent: 30
@@ -13500,8 +13438,6 @@ entities:
       fixtures: {}
   - uid: 5051
     components:
-    - type: MetaData
-      name: Капитан ЛКП
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -23.5,40.5
@@ -13513,8 +13449,6 @@ entities:
       fixtures: {}
   - uid: 5482
     components:
-    - type: MetaData
-      name: Тех. обслуживание, северо-восток, ЛКП
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 32.5,44.5
@@ -13523,8 +13457,6 @@ entities:
       fixtures: {}
   - uid: 5561
     components:
-    - type: MetaData
-      name: Гравген/Хранилище ЛКП
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 8.5,42.5
@@ -13536,8 +13468,6 @@ entities:
       fixtures: {}
   - uid: 5788
     components:
-    - type: MetaData
-      name: Мед. техобслуживание ЛКП
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -35.5,-10.5
@@ -13546,8 +13476,6 @@ entities:
       fixtures: {}
   - uid: 5861
     components:
-    - type: MetaData
-      name: Мостик ЛКП
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -13.5,45.5
@@ -13556,8 +13484,6 @@ entities:
       fixtures: {}
   - uid: 5862
     components:
-    - type: MetaData
-      name: Глава Персонала ЛКП
     - type: Transform
       pos: 4.5,35.5
       parent: 30
@@ -13570,8 +13496,6 @@ entities:
       fixtures: {}
   - uid: 6605
     components:
-    - type: MetaData
-      name: Коридор робототехники ЛКП
     - type: Transform
       pos: 19.5,28.5
       parent: 30
@@ -13579,8 +13503,6 @@ entities:
       fixtures: {}
   - uid: 6993
     components:
-    - type: MetaData
-      name: Морг ЛКП
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -24.5,-6.5
@@ -13589,8 +13511,6 @@ entities:
       fixtures: {}
   - uid: 7122
     components:
-    - type: MetaData
-      name: Мед. отдел, запад, ЛКП
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -36.5,-4.5
@@ -13599,8 +13519,6 @@ entities:
       fixtures: {}
   - uid: 7278
     components:
-    - type: MetaData
-      name: Медбей ЛКП
     - type: Transform
       pos: -21.5,-6.5
       parent: 30
@@ -13608,8 +13526,6 @@ entities:
       fixtures: {}
   - uid: 7433
     components:
-    - type: MetaData
-      name: Операционная №1 ЛКП
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -27.5,-15.5
@@ -13618,8 +13534,6 @@ entities:
       fixtures: {}
   - uid: 7600
     components:
-    - type: MetaData
-      name: Криокапсулы ЛКП
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -31.5,-14.5
@@ -13628,8 +13542,6 @@ entities:
       fixtures: {}
   - uid: 7610
     components:
-    - type: MetaData
-      name: Мед. отдел, приёмная, ЛКП
     - type: Transform
       pos: -15.5,-3.5
       parent: 30
@@ -13637,8 +13549,6 @@ entities:
       fixtures: {}
   - uid: 7614
     components:
-    - type: MetaData
-      name: Коридор под столовой ЛКП
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -0.5,-0.5
@@ -13647,8 +13557,6 @@ entities:
       fixtures: {}
   - uid: 7824
     components:
-    - type: MetaData
-      name: Медицинское Фойе
     - type: Transform
       pos: -13.5,-7.5
       parent: 30
@@ -13656,8 +13564,6 @@ entities:
       fixtures: {}
   - uid: 7873
     components:
-    - type: MetaData
-      name: Склад медикаментов ЛКП
     - type: Transform
       pos: -15.5,-17.5
       parent: 30
@@ -13665,8 +13571,6 @@ entities:
       fixtures: {}
   - uid: 8011
     components:
-    - type: MetaData
-      name: Коридор склада медикаментов ЛКП
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -23.5,-19.5
@@ -13675,8 +13579,6 @@ entities:
       fixtures: {}
   - uid: 8056
     components:
-    - type: MetaData
-      name: Коридор операционной ЛКП
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -27.5,-19.5
@@ -13685,8 +13587,6 @@ entities:
       fixtures: {}
   - uid: 8087
     components:
-    - type: MetaData
-      name: Операционная №2 ЛКП
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -27.5,-23.5
@@ -13698,8 +13598,6 @@ entities:
       fixtures: {}
   - uid: 8363
     components:
-    - type: MetaData
-      name: Коридор, юго-восток, ЛКП
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 10.5,-16.5
@@ -13708,8 +13606,6 @@ entities:
       fixtures: {}
   - uid: 9130
     components:
-    - type: MetaData
-      name: Атмосферный отсек ЛКП
     - type: Transform
       pos: 9.5,-30.5
       parent: 30
@@ -13722,8 +13618,6 @@ entities:
       fixtures: {}
   - uid: 9131
     components:
-    - type: MetaData
-      name: Утилизаторы ЛКП
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 21.5,-12.5
@@ -13735,8 +13629,6 @@ entities:
       fixtures: {}
   - uid: 9272
     components:
-    - type: MetaData
-      name: Инженерный тамбур ЛКП
     - type: Transform
       pos: 0.5,-31.5
       parent: 30
@@ -13744,8 +13636,6 @@ entities:
       fixtures: {}
   - uid: 9628
     components:
-    - type: MetaData
-      name: Психолог ЛКП
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -26.5,-2.5
@@ -13754,8 +13644,6 @@ entities:
       fixtures: {}
   - uid: 9911
     components:
-    - type: MetaData
-      name: Служба Безопасности, приёмная ЛКП
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -30.5,41.5
@@ -13764,8 +13652,6 @@ entities:
       fixtures: {}
   - uid: 9934
     components:
-    - type: MetaData
-      name: Телекоммуникации ЛКП
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -18.5,-30.5
@@ -13774,8 +13660,6 @@ entities:
       fixtures: {}
   - uid: 10538
     components:
-    - type: MetaData
-      name: Инженерная мастерская ЛКП
     - type: Transform
       pos: -24.5,-38.5
       parent: 30
@@ -13783,8 +13667,6 @@ entities:
       fixtures: {}
   - uid: 10590
     components:
-    - type: MetaData
-      name: Усилитель частиц ЛКП
     - type: Transform
       pos: -20.5,-53.5
       parent: 30
@@ -13792,8 +13674,6 @@ entities:
       fixtures: {}
   - uid: 10791
     components:
-    - type: MetaData
-      name: Химическая лаборатория ЛКП
     - type: Transform
       pos: -4.5,-7.5
       parent: 30
@@ -13801,8 +13681,6 @@ entities:
       fixtures: {}
   - uid: 11014
     components:
-    - type: MetaData
-      name: Инжененый коридор ЛКП
     - type: Transform
       pos: -10.5,-37.5
       parent: 30
@@ -13810,8 +13688,6 @@ entities:
       fixtures: {}
   - uid: 11808
     components:
-    - type: MetaData
-      name: Грузовой отсек ЛКП
     - type: Transform
       pos: 33.5,-0.5
       parent: 30
@@ -13822,8 +13698,6 @@ entities:
       fixtures: {}
   - uid: 12381
     components:
-    - type: MetaData
-      name: Общежития ЛКП
     - type: Transform
       pos: 24.5,41.5
       parent: 30
@@ -13831,8 +13705,6 @@ entities:
       fixtures: {}
   - uid: 12911
     components:
-    - type: MetaData
-      name: Ксеноархеология ЛКП
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 41.5,10.5
@@ -13841,8 +13713,6 @@ entities:
       fixtures: {}
   - uid: 13096
     components:
-    - type: MetaData
-      name: Исследовательский сервер ЛКП
     - type: Transform
       pos: 32.5,16.5
       parent: 30
@@ -13850,8 +13720,6 @@ entities:
       fixtures: {}
   - uid: 13098
     components:
-    - type: MetaData
-      name: Робототехника ЛКП
     - type: Transform
       pos: 20.5,24.5
       parent: 30
@@ -13859,8 +13727,6 @@ entities:
       fixtures: {}
   - uid: 13444
     components:
-    - type: MetaData
-      name: Старый бар ЛКП
     - type: Transform
       pos: 15.5,55.5
       parent: 30
@@ -13868,8 +13734,6 @@ entities:
       fixtures: {}
   - uid: 14364
     components:
-    - type: MetaData
-      name: Исследования и разработка ЛКП
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 16.5,13.5
@@ -13878,8 +13742,6 @@ entities:
       fixtures: {}
   - uid: 14541
     components:
-    - type: MetaData
-      name: Мусорка ЛКП
     - type: Transform
       pos: 48.5,20.5
       parent: 30
@@ -13887,8 +13749,6 @@ entities:
       fixtures: {}
   - uid: 17938
     components:
-    - type: MetaData
-      name: Храм, двор, ЛКП
     - type: Transform
       pos: -59.5,-25.5
       parent: 30
@@ -13899,8 +13759,6 @@ entities:
       fixtures: {}
   - uid: 17939
     components:
-    - type: MetaData
-      name: Храм, мостик, ЛКП
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -43.5,-22.5
@@ -13912,8 +13770,6 @@ entities:
       fixtures: {}
   - uid: 17940
     components:
-    - type: MetaData
-      name: Храм, сад, КЛП
     - type: Transform
       pos: -65.5,-47.5
       parent: 30
@@ -13921,8 +13777,6 @@ entities:
       fixtures: {}
   - uid: 17941
     components:
-    - type: MetaData
-      name: Храм, офис, ЛКП
     - type: Transform
       pos: -76.5,-42.5
       parent: 30
@@ -13930,8 +13784,6 @@ entities:
       fixtures: {}
   - uid: 20045
     components:
-    - type: MetaData
-      name: Ядро ИИ
     - type: Transform
       pos: 0.5,85.5
       parent: 30
@@ -13939,8 +13791,6 @@ entities:
       fixtures: {}
   - uid: 20226
     components:
-    - type: MetaData
-      name: Спутник ИИ
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 7.5,66.5
@@ -13949,8 +13799,6 @@ entities:
       fixtures: {}
   - uid: 20227
     components:
-    - type: MetaData
-      name: Спутник ИИ, техобслуживание №2
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -3.5,75.5
@@ -13959,8 +13807,6 @@ entities:
       fixtures: {}
   - uid: 20367
     components:
-    - type: MetaData
-      name: ТЭГ
     - type: Transform
       pos: 1.5,-42.5
       parent: 30
@@ -13971,8 +13817,6 @@ entities:
       fixtures: {}
   - uid: 20828
     components:
-    - type: MetaData
-      name: Спутник ИИ, техобслуживание №1
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -8.5,66.5
@@ -13981,8 +13825,6 @@ entities:
       fixtures: {}
   - uid: 21015
     components:
-    - type: MetaData
-      name: Храм, инженерия, ЛКП
     - type: Transform
       pos: -55.5,-61.5
       parent: 30
@@ -13990,8 +13832,6 @@ entities:
       fixtures: {}
   - uid: 22213
     components:
-    - type: MetaData
-      name: Храм, стыковочный порт, ЛКП
     - type: Transform
       pos: -79.5,-57.5
       parent: 30
@@ -13999,8 +13839,6 @@ entities:
       fixtures: {}
   - uid: 22259
     components:
-    - type: MetaData
-      name: Бар ЛКП
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 3.5,10.5
@@ -14009,8 +13847,6 @@ entities:
       fixtures: {}
   - uid: 23866
     components:
-    - type: MetaData
-      name: Техобслуживание, Служба Безопасности, ЛКП
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -52.5,47.5
@@ -14028,8 +13864,6 @@ entities:
   entities:
   - uid: 9259
     components:
-    - type: MetaData
-      name: Снабжение, приёмная, ЛКП
     - type: Transform
       pos: 23.5,-0.5
       parent: 30
@@ -17256,9 +17090,6 @@ entities:
   entities:
   - uid: 576
     components:
-    - type: MetaData
-      desc: Don't drink and swim.
-      name: The Drunk Carp
     - type: Transform
       pos: -7.5,5.5
       parent: 30
@@ -17268,9 +17099,6 @@ entities:
       fixtures: {}
   - uid: 14984
     components:
-    - type: MetaData
-      desc: Caw caw!
-      name: The Birdcage
     - type: Transform
       pos: 16.5,63.5
       parent: 30
@@ -18499,8 +18327,6 @@ entities:
       parent: 30
   - uid: 23820
     components:
-    - type: MetaData
-      name: Radiation Shields
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -20.5,-52.5
@@ -55705,8 +55531,6 @@ entities:
   entities:
   - uid: 21359
     components:
-    - type: MetaData
-      name: SpaceBucks Barista Hat
     - type: Transform
       pos: -0.618871,-7.128199
       parent: 30
@@ -56050,8 +55874,6 @@ entities:
       parent: 30
   - uid: 21358
     components:
-    - type: MetaData
-      name: SpaceBucks Apron
     - type: Transform
       pos: -0.49387097,-7.362574
       parent: 30
@@ -69975,8 +69797,6 @@ entities:
   entities:
   - uid: 7602
     components:
-    - type: MetaData
-      name: Filter to Waste
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -32.5,-11.5
@@ -94132,8 +93952,6 @@ entities:
       color: '#0055CCFF'
   - uid: 7140
     components:
-    - type: MetaData
-      name: Canisters to Cryo
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -36.5,-11.5
@@ -94156,8 +93974,6 @@ entities:
       color: '#FF7F27FF'
   - uid: 7962
     components:
-    - type: MetaData
-      name: Distro to Cryo
     - type: Transform
       pos: -30.5,-10.5
       parent: 30
@@ -94209,8 +94025,6 @@ entities:
       parent: 30
   - uid: 9294
     components:
-    - type: MetaData
-      name: TEG Supply
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 15.5,-31.5
@@ -94379,8 +94193,6 @@ entities:
       color: '#947507FF'
   - uid: 21274
     components:
-    - type: MetaData
-      name: emergency wastenet valve
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 24.5,-20.5
@@ -105992,8 +105804,6 @@ entities:
   entities:
   - uid: 21165
     components:
-    - type: MetaData
-      desc: A standard-issue Nanotrasen storage unit, containing 3 Lecter submachine guns.
     - type: Transform
       anchored: True
       pos: -42.5,53.5
@@ -106017,8 +105827,6 @@ entities:
   entities:
   - uid: 16251
     components:
-    - type: MetaData
-      desc: A standard-issue Nanotrasen storage unit, containing 3 Kammerer shotguns.
     - type: Transform
       anchored: True
       pos: -42.5,55.5
@@ -106041,8 +105849,6 @@ entities:
   entities:
   - uid: 18838
     components:
-    - type: MetaData
-      desc: A standard-issue Nanotrasen storage unit, containing 3 Drozd submachine guns.
     - type: Transform
       anchored: True
       pos: -42.5,54.5
@@ -106192,26 +105998,22 @@ entities:
   entities:
   - uid: 22958
     components:
-    - type: MetaData
-      name: holopad (Medical - Psychology)
     - type: Transform
       pos: -29.5,-1.5
       parent: 30
     - type: Label
-      currentLabel: Medical - Psychology
+      currentLabel: Медицинский - Психолог
     - type: NameModifier
-      baseName: holopad
+      baseName: голопад
   - uid: 22970
     components:
-    - type: MetaData
-      name: holopad (General - Arrivals Lounge)
     - type: Transform
       pos: -40.5,1.5
       parent: 30
     - type: Label
-      currentLabel: General - Arrivals Lounge
+      currentLabel: Общий, прибытие
     - type: NameModifier
-      baseName: holopad
+      baseName: голопад
 - proto: HolopadAiChute
   entities:
   - uid: 22945
@@ -106291,15 +106093,13 @@ entities:
       parent: 30
   - uid: 22933
     components:
-    - type: MetaData
-      name: holopad (Command - Captain Meeting)
     - type: Transform
       pos: -20.5,36.5
       parent: 30
     - type: Label
-      currentLabel: Command - Captain Meeting
+      currentLabel: Командование - Переговорная капитана
     - type: NameModifier
-      baseName: holopad
+      baseName: голопад
 - proto: HolopadCommandCe
   entities:
   - uid: 22974
@@ -106388,28 +106188,20 @@ entities:
   entities:
   - uid: 22909
     components:
-    - type: MetaData
-      name: holopad (Engineering - Main)
     - type: Transform
       pos: -4.5,-40.5
       parent: 30
     - type: Label
-      currentLabel: Engineering - Main
+      currentLabel: Инженерный - Главный
     - type: NameModifier
-      baseName: holopad
+      baseName: голопад
 - proto: HolopadEngineeringStorage
   entities:
   - uid: 22908
     components:
-    - type: MetaData
-      name: holopad (Engineering - Gearroom)
     - type: Transform
       pos: -23.5,-48.5
       parent: 30
-    - type: Label
-      currentLabel: Engineering - Gearroom
-    - type: NameModifier
-      baseName: holopad
 - proto: HolopadEngineeringTechVault
   entities:
   - uid: 22952
@@ -106522,30 +106314,6 @@ entities:
     - type: Transform
       pos: -13.5,-15.5
       parent: 30
-- proto: HolopadMedicalSurgery
-  entities:
-  - uid: 22917
-    components:
-    - type: MetaData
-      name: holopad (Medical - Surgery 1)
-    - type: Transform
-      pos: -25.5,-16.5
-      parent: 30
-    - type: Label
-      currentLabel: Medical - Surgery 1
-    - type: NameModifier
-      baseName: holopad
-  - uid: 22918
-    components:
-    - type: MetaData
-      name: holopad (Medical - Surgery 2)
-    - type: Transform
-      pos: -25.5,-22.5
-      parent: 30
-    - type: Label
-      currentLabel: Medical - Surgery 2
-    - type: NameModifier
-      baseName: holopad
 - proto: HolopadScienceAnomaly
   entities:
   - uid: 22957
@@ -106588,17 +106356,6 @@ entities:
     - type: Transform
       pos: -39.5,52.5
       parent: 30
-  - uid: 22944
-    components:
-    - type: MetaData
-      name: holopad (Security - Gearroom)
-    - type: Transform
-      pos: -34.5,58.5
-      parent: 30
-    - type: Label
-      currentLabel: Security - Gearroom
-    - type: NameModifier
-      baseName: holopad
 - proto: HolopadSecurityBreakroom
   entities:
   - uid: 22943
@@ -106652,15 +106409,13 @@ entities:
   entities:
   - uid: 2396
     components:
-    - type: MetaData
-      name: holopad (Genpop)
     - type: Transform
       pos: -47.5,54.5
       parent: 30
     - type: Label
-      currentLabel: Genpop
+      currentLabel: Общая зона
     - type: NameModifier
-      baseName: holopad
+      baseName: голопад
 - proto: HolopadSecurityWarden
   entities:
   - uid: 2541
@@ -106691,15 +106446,13 @@ entities:
       parent: 30
   - uid: 22962
     components:
-    - type: MetaData
-      name: holopad (Service - Chaplain)
     - type: Transform
       pos: -79.5,-45.5
       parent: 30
     - type: Label
-      currentLabel: Service - Chaplain
+      currentLabel: Сервисный - Храм
     - type: NameModifier
-      baseName: holopad
+      baseName: голопад
 - proto: HolopadServiceClownMime
   entities:
   - uid: 22925
@@ -106730,15 +106483,13 @@ entities:
       parent: 30
   - uid: 22961
     components:
-    - type: MetaData
-      name: holopad (Service - Library Games)
     - type: Transform
       pos: -75.5,-62.5
       parent: 30
     - type: Label
-      currentLabel: Service - Library Games
+      currentLabel: Сервисный - Игровая библиотеки
     - type: NameModifier
-      baseName: holopad
+      baseName: голопад
 - proto: HolopadServiceMusician
   entities:
   - uid: 22928
@@ -109256,8 +109007,6 @@ entities:
   entities:
   - uid: 9007
     components:
-    - type: MetaData
-      name: Blast Door
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 14.5,-39.5
@@ -109271,8 +109020,6 @@ entities:
       fixtures: {}
   - uid: 9690
     components:
-    - type: MetaData
-      name: Blast Door
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 16.5,-35.5
@@ -124533,8 +124280,6 @@ entities:
       fixtures: {}
   - uid: 3189
     components:
-    - type: MetaData
-      name: Janitorial Service Light
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 22.5,-5.5
@@ -124678,8 +124423,6 @@ entities:
       baseName: кнопка
   - uid: 7440
     components:
-    - type: MetaData
-      name: Janitorial Service Light
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -16.5,-4.5
@@ -124835,8 +124578,6 @@ entities:
       baseName: кнопка сигнала
   - uid: 12859
     components:
-    - type: MetaData
-      name: Custodial Service
     - type: Transform
       pos: -36.5,45.5
       parent: 30
@@ -127194,29 +126935,21 @@ entities:
   entities:
   - uid: 3115
     components:
-    - type: MetaData
-      name: Храм СМЭС
     - type: Transform
       pos: -56.5,-63.5
       parent: 30
   - uid: 5472
     components:
-    - type: MetaData
-      name: Генератор гравитации СМЭС
     - type: Transform
       pos: 12.5,41.5
       parent: 30
   - uid: 8237
     components:
-    - type: MetaData
-      name: Телекоммуникации СМЭС
     - type: Transform
       pos: -15.5,-28.5
       parent: 30
   - uid: 8819
     components:
-    - type: MetaData
-      name: Ускоритель частиц СМЭС
     - type: Transform
       pos: -19.5,-46.5
       parent: 30
@@ -127227,29 +126960,21 @@ entities:
       parent: 30
   - uid: 15299
     components:
-    - type: MetaData
-      name: Солн. панели, восток, СМЭС
     - type: Transform
       pos: 51.5,31.5
       parent: 30
   - uid: 15991
     components:
-    - type: MetaData
-      name: Храм СМЭС
     - type: Transform
       pos: -56.5,-62.5
       parent: 30
   - uid: 16277
     components:
-    - type: MetaData
-      name: West Solars SMES
     - type: Transform
       pos: -65.5,44.5
       parent: 30
   - uid: 20046
     components:
-    - type: MetaData
-      name: AI SMES
     - type: Transform
       pos: -0.5,84.5
       parent: 30
@@ -130124,99 +129849,71 @@ entities:
   entities:
   - uid: 1414
     components:
-    - type: MetaData
-      name: Прибытие, юг, подстанция
     - type: Transform
       pos: -44.5,10.5
       parent: 30
   - uid: 3517
     components:
-    - type: MetaData
-      name: Прибытие №1, подстанция
     - type: Transform
       pos: -42.5,19.5
       parent: 30
   - uid: 3518
     components:
-    - type: MetaData
-      name: Прибытие №2, подстанция
     - type: Transform
       pos: -40.5,19.5
       parent: 30
   - uid: 4539
     components:
-    - type: MetaData
-      name: Служба Безопасности подстанция
     - type: Transform
       pos: -53.5,48.5
       parent: 30
   - uid: 5471
     components:
-    - type: MetaData
-      name: Генератор гравитации подстанция
     - type: Transform
       pos: 12.5,42.5
       parent: 30
   - uid: 6386
     components:
-    - type: MetaData
-      name: Южные общежития подстанция
     - type: Transform
       pos: 19.5,31.5
       parent: 30
   - uid: 7613
     components:
-    - type: MetaData
-      name: Медицинский отдел, запад, подстанция
     - type: Transform
       pos: -37.5,-1.5
       parent: 30
   - uid: 7773
     components:
-    - type: MetaData
-      name: Медицинский отдел, восток, подстанция
     - type: Transform
       pos: -0.5,-11.5
       parent: 30
   - uid: 8239
     components:
-    - type: MetaData
-      name: Телекоммуникации подстанция
     - type: Transform
       pos: -16.5,-28.5
       parent: 30
   - uid: 9403
     components:
-    - type: MetaData
-      name: Ускоритель частиц подстанция
     - type: Transform
       pos: -19.5,-48.5
       parent: 30
   - uid: 11175
     components:
-    - type: MetaData
-      name: Инженерный отдел подстанция
     - type: Transform
       pos: -15.5,-39.5
       parent: 30
   - uid: 11374
     components:
-    - type: MetaData
-      name: Отдел снабжения подстанция
     - type: Transform
       pos: 15.5,4.5
       parent: 30
   - uid: 13091
     components:
-    - type: MetaData
-      name: НИО подстанция
     - type: Transform
       pos: 35.5,17.5
       parent: 30
   - uid: 13725
     components:
-    - type: MetaData
-      name: Северная техническая подстанция
     - type: Transform
       pos: 12.5,51.5
       parent: 30
@@ -130227,22 +129924,16 @@ entities:
       parent: 30
   - uid: 18922
     components:
-    - type: MetaData
-      name: Подстанция мостика храма
     - type: Transform
       pos: -42.5,-24.5
       parent: 30
   - uid: 20154
     components:
-    - type: MetaData
-      name: Спутник ИИ подстанция
     - type: Transform
       pos: -1.5,84.5
       parent: 30
   - uid: 21033
     components:
-    - type: MetaData
-      name: Мостик подстанция
     - type: Transform
       pos: -24.5,41.5
       parent: 30
@@ -130257,8 +129948,6 @@ entities:
   entities:
   - uid: 20336
     components:
-    - type: MetaData
-      name: Мостик настенная подстанция
     - type: Transform
       pos: -2.5,36.5
       parent: 30
@@ -135972,43 +135661,31 @@ entities:
   entities:
   - uid: 77
     components:
-    - type: MetaData
-      name: cigarette machine
     - type: Transform
       pos: -42.5,0.5
       parent: 30
   - uid: 131
     components:
-    - type: MetaData
-      name: cigarette machine
     - type: Transform
       pos: -25.5,33.5
       parent: 30
   - uid: 1110
     components:
-    - type: MetaData
-      name: cigarette machine
     - type: Transform
       pos: -33.5,17.5
       parent: 30
   - uid: 1279
     components:
-    - type: MetaData
-      name: cigarette machine
     - type: Transform
       pos: -48.5,23.5
       parent: 30
   - uid: 2133
     components:
-    - type: MetaData
-      name: cigarette machine
     - type: Transform
       pos: -25.5,53.5
       parent: 30
   - uid: 4441
     components:
-    - type: MetaData
-      name: cigarette machine
     - type: Transform
       pos: 6.5,10.5
       parent: 30
@@ -136019,22 +135696,16 @@ entities:
       parent: 30
   - uid: 4954
     components:
-    - type: MetaData
-      name: cigarette machine
     - type: Transform
       pos: -23.5,39.5
       parent: 30
   - uid: 6528
     components:
-    - type: MetaData
-      name: cigarette machine
     - type: Transform
       pos: 24.5,27.5
       parent: 30
   - uid: 9195
     components:
-    - type: MetaData
-      name: cigarette machine
     - type: Transform
       pos: -0.5,-15.5
       parent: 30
@@ -136045,22 +135716,16 @@ entities:
       parent: 30
   - uid: 20491
     components:
-    - type: MetaData
-      name: cigarette machine
     - type: Transform
       pos: -34.5,-36.5
       parent: 30
   - uid: 21045
     components:
-    - type: MetaData
-      name: cigarette machine
     - type: Transform
       pos: 17.5,54.5
       parent: 30
   - uid: 21556
     components:
-    - type: MetaData
-      name: cigarette machine
     - type: Transform
       pos: 43.5,32.5
       parent: 30
@@ -136080,15 +135745,11 @@ entities:
   entities:
   - uid: 1524
     components:
-    - type: MetaData
-      name: Hot drinks machine
     - type: Transform
       pos: -53.5,33.5
       parent: 30
   - uid: 2165
     components:
-    - type: MetaData
-      name: Hot drinks machine
     - type: Transform
       pos: -31.5,54.5
       parent: 30
@@ -136099,8 +135760,6 @@ entities:
       parent: 30
   - uid: 5333
     components:
-    - type: MetaData
-      name: Hot drinks machine
     - type: Transform
       pos: -6.5,31.5
       parent: 30
@@ -136111,8 +135770,6 @@ entities:
       parent: 30
   - uid: 21318
     components:
-    - type: MetaData
-      name: Hot drinks machine
     - type: Transform
       pos: -0.5,-6.5
       parent: 30
@@ -136160,8 +135817,6 @@ entities:
       parent: 30
   - uid: 19533
     components:
-    - type: MetaData
-      name: Dinnerware
     - type: Transform
       pos: -77.5,-54.5
       parent: 30
@@ -136304,8 +135959,6 @@ entities:
   entities:
   - uid: 4772
     components:
-    - type: MetaData
-      name: Salvage Equipment
     - type: Transform
       pos: 23.5,-9.5
       parent: 30
@@ -136375,8 +136028,6 @@ entities:
   entities:
   - uid: 16634
     components:
-    - type: MetaData
-      name: tank dispenser
     - type: Transform
       pos: 18.5,-19.5
       parent: 30
@@ -136389,8 +136040,6 @@ entities:
   entities:
   - uid: 798
     components:
-    - type: MetaData
-      name: tank dispenser
     - type: Transform
       pos: -1.5,21.5
       parent: 30
