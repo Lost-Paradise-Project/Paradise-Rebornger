@@ -973,4 +973,14 @@
   id: 5675
   time: '2026-03-10T15:54:37.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/123
+- author: KashRas2
+  changes:
+  - message: "\u0422\u0435\u043F\u0435\u0440\u044C \u0440\u043E\u0431\u043E\u0442\u0438\
+      \u0447\u0435\u0441\u043A\u0438\u0435 \u0433\u043E\u043B\u043E\u0441\u0430 \u0422\
+      \u0422\u0421 \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u044B \u0442\u043E\u043B\
+      \u044C\u043A\u043E \u0434\u043B\u044F \u041A\u041F\u0411."
+    type: Tweak
+  id: 5676
+  time: '2026-03-13T18:28:22.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/120
 Order: 1
