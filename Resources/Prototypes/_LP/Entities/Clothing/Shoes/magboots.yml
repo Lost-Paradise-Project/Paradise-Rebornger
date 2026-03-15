@@ -10,11 +10,10 @@
   - type: Clothing
     sprite: _LP/Clothing/Shoes/Boots/para_magboots.rsi
   - type: Magboots
-    toggleAction: ActionToggleMagbootsAdvanced
+    disabledAutoOff: true
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
-    enabled: false
   - type: NoSlip
   - type: Tag
     tags:

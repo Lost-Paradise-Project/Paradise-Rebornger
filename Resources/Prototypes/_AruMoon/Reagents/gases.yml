@@ -104,7 +104,6 @@
         - !type:ReagentCondition
           reagent: Nitrium
           min: 3
-        statusLifetime: 64 # LP Edit
         walkSpeedModifier: 1.5
         sprintSpeedModifier: 1.5
       - !type:ModifyStatusEffect
