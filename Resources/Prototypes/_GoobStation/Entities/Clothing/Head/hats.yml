@@ -11,16 +11,15 @@
   - type: Tag
     tags:
     - ClothMade
-    - WhitelistChameleon # We do a little bit of trolling.
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.3
-        Slash: 0.3
-        Piercing: 0.3
-        Heat: 0.3
-        Radiation: 0.75
-        Caustic: 0.75
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+        Radiation: 0.85
+        Caustic: 0.85
   - type: ExplosionResistance
     damageCoefficient: 0.75
 
@@ -37,16 +36,15 @@
   - type: Tag
     tags:
     - ClothMade
-    - WhitelistChameleon
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.3
-        Slash: 0.3
-        Piercing: 0.3
-        Heat: 0.3
-        Radiation: 0.75
-        Caustic: 0.75
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+        Radiation: 0.85
+        Caustic: 0.85
   - type: ExplosionResistance
     damageCoefficient: 0.75
 
@@ -59,8 +57,6 @@
   - type: Clothing
     sprite: _GoobStation/Clothing/Head/Hats/blueshield_ushanka.rsi
   - type: Appearance
-  #- type: AddAccentClothing # 1984
-  #  accent: RussianAccent
   - type: Foldable
     canFoldInsideContainer: true
   - type: FoldableClothing
@@ -77,12 +73,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.3
-        Slash: 0.3
-        Piercing: 0.3
-        Heat: 0.3
-        Radiation: 0.75
-        Caustic: 0.75
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+        Radiation: 0.85
+        Caustic: 0.85
   - type: ExplosionResistance
     damageCoefficient: 0.75
 
@@ -99,15 +95,14 @@
   - type: Tag
     tags:
     - ClothMade
-    - WhitelistChameleon # We do a little bit of trolling.
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.3
-        Slash: 0.3
-        Piercing: 0.3
-        Heat: 0.3
-        Radiation: 0.75
-        Caustic: 0.75
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+        Radiation: 0.85
+        Caustic: 0.85
   - type: ExplosionResistance
     damageCoefficient: 0.75

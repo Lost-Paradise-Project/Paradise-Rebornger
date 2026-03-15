@@ -12,3 +12,4 @@ research-technology-engineering-hardsuits = Скафандры инженери�
 research-technology-base-mining-hardsuits = Базовые шахтёрские скафандры
 research-technology-mining-hardsuits = Шахтёрские скафандры
 research-technology-bluespace-miner = Блюспейс добыча
+research-technology-grenade-launcher-security = Гранатамёты службы безопасности

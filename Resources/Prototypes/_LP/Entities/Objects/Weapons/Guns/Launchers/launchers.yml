@@ -1,0 +1,7 @@
+- type: entity
+  parent: [WeaponLauncherHydra]
+  id: LPPWeaponLauncherHydra
+  suffix: empty
+  components:
+  - type: RevolverAmmoProvider
+    proto: null

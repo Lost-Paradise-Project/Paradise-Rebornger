@@ -21,7 +21,7 @@
         ignoreResistances: true
         damage:
           types:
-            Cellular: 0.005
+            Cellular: 0.5 # LP Edit 0.005 -> 0.5
       - !type:PopupMessage
         conditions:
         - !type:ReagentCondition
@@ -99,11 +99,14 @@
   metabolisms:
     Respiration:
       effects:
-      - !type:MovementSpeedModifier
+      # LP Edit Start
+      - !type:MovespeedModifier
         conditions:
-        - !type:ReagentCondition
-          reagent: Nitrium
-          min: 3
+          - !type:ReagentThreshold
+            reagent: Nitrium
+            min: 3
+        statusLifetime: 64 # от 32
+        # LP Edit End
         walkSpeedModifier: 1.5
         sprintSpeedModifier: 1.5
       - !type:ModifyStatusEffect
@@ -131,7 +134,7 @@
         ignoreResistances: true
         damage:
           types:
-            Poison: 0.05
+            Poison: 1.5 # LP Edit 0.05 -> 1.5
 
 - type: reagent
   id: Healium

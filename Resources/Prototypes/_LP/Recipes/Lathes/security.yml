@@ -260,3 +260,30 @@
     Plasma: 1700
     Silver: 900
     Glass: 200
+
+# Weapons
+
+- type: latheRecipe
+  parent: BaseWeaponRecipeLong
+  id: LPPWeaponLauncherHydra
+  result: LPPWeaponLauncherHydra
+  materials:
+    Steel: 1250
+    Plastic: 750
+    Gold: 350
+
+- type: latheRecipe
+  parent: BaseAmmoBoxRecipe
+  id: LPPGrenadeEMP
+  result: GrenadeEMP
+  materials:
+    Plastic: 500
+    Steel: 500
+
+- type: latheRecipe
+  parent: BaseAmmoBoxRecipe
+  id: LPPGrenadeBaton
+  result: GrenadeBaton
+  materials:
+    Plastic: 500
+    Steel: 500

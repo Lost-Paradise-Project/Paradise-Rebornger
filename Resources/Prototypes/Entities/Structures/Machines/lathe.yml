@@ -407,6 +407,7 @@
     - SecurityAmmoStatic
     - SecurityWeaponsStatic
     dynamicPacks:
+    - LPPGrenadeLauncherSec # LP Edit
     - SalvageSecurityBoards
     - SalvageSecurityWeapons
     - SecurityEquipment
