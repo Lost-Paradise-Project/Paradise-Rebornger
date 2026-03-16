@@ -8,6 +8,7 @@ using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.FixedPoint;
+using Content.Shared.Labels.EntitySystems;
 using Content.Shared.NodeContainer;
 using Content.Shared.UserInterface;
 using JetBrains.Annotations;
@@ -34,6 +35,7 @@ public sealed class PlumbingPillPressSystem : EntitySystem
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
     [Dependency] private readonly PlumbingPullSystem _pullSystem = default!;
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
+    [Dependency] private readonly LabelSystem _labelSystem = default!;
 
     private static readonly EntProtoId PillPrototypeId = "Pill";
     private const int MaxOutputEntitiesOnTile = 30;
@@ -98,7 +100,7 @@ public sealed class PlumbingPillPressSystem : EntitySystem
             produced = true;
 
             var item = Spawn(PillPrototypeId, spawnCoords);
-            _solutionSystem.EnsureSolutionEntity(item,
+            _labelSystem.Label(item, ent.Comp.Label);_solutionSystem.EnsureSolutionEntity(item,
                 SharedChemMaster.PillSolutionName,
                 out var itemSolution,
                 dosage);
@@ -277,6 +279,7 @@ public sealed class PlumbingPillPressSystem : EntitySystem
             bufferVolume,
             ent.Comp.Dosage,
             ent.Comp.PillType,
+            ent.Comp.Label,
             ent.Comp.Enabled,
             ent.Comp.MixingEnabled,
             ent.Comp.InletRatioEast,
