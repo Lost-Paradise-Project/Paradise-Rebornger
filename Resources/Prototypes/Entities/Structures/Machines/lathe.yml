@@ -225,6 +225,10 @@
     - Janitor
     - Instruments
     - Equipment
+    # LP edit start
+    - InducerBoth
+    - ADTMegaCellPack
+    # LP edit end
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityAmmo
@@ -273,6 +277,7 @@
     - MedicalBoardsStatic
     - EngineeringBoardsStatic
     dynamicPacks:
+    - ADTMegaCharger # ADT-Tweak
     - LPPCivilianCircuits # LP Edit
     - EngineeringBoards
     - CargoBoards
