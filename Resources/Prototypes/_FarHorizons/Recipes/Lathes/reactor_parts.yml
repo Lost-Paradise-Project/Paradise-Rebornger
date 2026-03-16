@@ -223,8 +223,8 @@
   result: DiamondReactorGasChannel
   materials:
     # LP Edit Start 500 -> 250
-    Steel: 500
-    Diamond: 500
+    Steel: 250
+    Diamond: 250
     # LP Edit End 500 -> 250
 
 # Heat Exchanger Rods
