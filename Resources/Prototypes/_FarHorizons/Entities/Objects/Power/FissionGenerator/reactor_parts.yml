@@ -272,7 +272,7 @@
   components:
   - type: PhysicalComposition
     materialComposition:
-      Steel: 1500
+      Steel: 1000 # LP Edit 1500 -> 1000
 
 - type: entity
   id: GoldReactorControlRod
@@ -282,7 +282,7 @@
   - type: PhysicalComposition
     materialComposition:
       Steel: 250
-      Gold: 500
+      Gold: 250 # LP Edit 500 -> 250
 
 - type: entity
   id: SilverReactorControlRod
@@ -292,7 +292,7 @@
   - type: PhysicalComposition
     materialComposition:
       Steel: 250
-      Silver: 500
+      Silver: 250 # LP Edit 500 -> 250
 
 - type: entity
   id: BrassReactorControlRod
@@ -302,7 +302,7 @@
   - type: PhysicalComposition
     materialComposition:
       Steel: 250
-      Brass: 500
+      Brass: 250 # LP Edit 500 -> 250
 
 - type: entity
   id: PlasteelReactorControlRod
@@ -312,7 +312,7 @@
   - type: PhysicalComposition
     materialComposition:
       Steel: 250
-      Plasteel: 500
+      Plasteel: 250 # LP Edit 500 -> 250
 
 - type: entity
   id: GlassReactorControlRod
@@ -322,7 +322,7 @@
   - type: PhysicalComposition
     materialComposition:
       Steel: 250
-      Glass: 500
+      Glass: 250 # LP Edit 500 -> 250
 
 - type: entity
   id: PlasmaGlassReactorControlRod
@@ -332,7 +332,7 @@
   - type: PhysicalComposition
     materialComposition:
       Steel: 250
-      PlasmaGlass: 500
+      PlasmaGlass: 250 # LP Edit 500 -> 250
 
 - type: entity
   id: DiamondReactorControlRod
@@ -342,7 +342,7 @@
   - type: PhysicalComposition
     materialComposition:
       Steel: 250
-      Diamond: 500
+      Diamond: 250 # LP Edit 500 -> 250
 #endregion
 
 #region Gas Channel Rods
@@ -444,7 +444,7 @@
   - type: PhysicalComposition
     materialComposition:
       Steel: 250
-      Gold: 275
+      Gold: 250 # LP Edit 275 -> 250
 
 - type: entity
   id: SilverReactorHeatExchanger
@@ -454,7 +454,7 @@
   - type: PhysicalComposition
     materialComposition:
       Steel: 250
-      Silver: 275
+      Silver: 250 # LP Edit 275 -> 250
 
 - type: entity
   id: BrassReactorHeatExchanger
@@ -464,7 +464,7 @@
   - type: PhysicalComposition
     materialComposition:
       Steel: 250
-      Brass: 275
+      Brass: 250 # LP Edit 275 -> 250
 
 - type: entity
   id: PlasteelReactorHeatExchanger
@@ -474,7 +474,7 @@
   - type: PhysicalComposition
     materialComposition:
       Steel: 250
-      Plasteel: 275
+      Plasteel: 250 # LP Edit 275 -> 250
 
 - type: entity
   id: GlassReactorHeatExchanger
@@ -484,7 +484,7 @@
   - type: PhysicalComposition
     materialComposition:
       Steel: 250
-      Glass: 275
+      Glass: 250 # LP Edit 275 -> 250
 
 - type: entity
   id: PlasmaGlassReactorHeatExchanger
@@ -494,7 +494,7 @@
   - type: PhysicalComposition
     materialComposition:
       Steel: 250
-      PlasmaGlass: 275
+      PlasmaGlass: 250 # LP Edit 275 -> 250
 
 - type: entity
   id: DiamondReactorHeatExchanger
@@ -504,7 +504,7 @@
   - type: PhysicalComposition
     materialComposition:
       Steel: 250
-      Diamond: 275
+      Diamond: 250 # LP Edit 275 -> 250
 #endregion
 
 # Parts to chose from for a random prefab
