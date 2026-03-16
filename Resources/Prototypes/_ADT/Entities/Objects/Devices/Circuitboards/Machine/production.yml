@@ -1,0 +1,21 @@
+- type: entity
+  id: ADTMegaCellRechargerCircuitboard
+  parent: BaseMachineCircuitboard
+  name: megacell recharger machine board
+  description: A machine printed circuit board for a megacell recharger.
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/module.rsi
+      state: engineering
+    - type: MachineBoard
+      prototype: ADTMegaCellRecharger
+      stackRequirements:
+        Manipulator: 5
+        Gold: 20
+        Cable: 5
+    - type: PhysicalComposition
+      materialComposition:
+        Steel: 30
+        Plastic: 30
+    - type: StaticPrice
+      price: 15

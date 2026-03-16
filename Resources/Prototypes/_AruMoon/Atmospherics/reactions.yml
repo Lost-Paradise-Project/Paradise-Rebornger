@@ -201,8 +201,10 @@
 - type: gasReaction
   id: ZaukerProduction
   priority: 9
-  minimumTemperature: 50000
-  maximumTemperature: 75000
+  # LP Edit Start
+  minimumTemperature: 10000
+  maximumTemperature: 20000
+  # LP Edit End
   minimumRequirements:
   - 0     # oxygen
   - 0     # nitrogen

@@ -84,7 +84,7 @@
         - HighImpassable
   - type: Damageable
     damageContainer: StructuralInorganic
-    damageModifierSet: StructuralReactorCasing
+    # damageModifierSet: StructuralReactorCasing # LP Edit
   - type: Destructible
     thresholds:
     - trigger:
@@ -308,7 +308,7 @@
 #region Melted Reactors
 - type: entity
   id: NuclearReactorMelted # This is more of a decoration than anything else
-  parent: BaseStructure
+  parent: [BaseStructure, GasMinerBase] # LP Edit
   suffix: "Melted"
   name: Nuclear Reactor
   description: A broken nuclear reactor vessel. It glows with heat and radiation.
@@ -331,13 +331,19 @@
         - MachineLayer
         - HighImpassable
   - type: RadiationSource
-    intensity: 7
+    intensity: 15 # LP Edit 7 -> 15
   - type: InteractionOutline
   - type: PointLight
     energy: 0.1
     falloff: 2
     radius: 3.5
     color: "#FFAAAAFF"
+  # LP Edit Start
+  - type: GasMiner
+    spawnGas: Tritium
+    maxExternalPressure: 4000
+    spawnAmount: 1000
+  # LP Edit End
 
 - type: entity
   id: NuclearReactorSmallMelted
@@ -418,7 +424,7 @@
         graphite_damaged_4: ""
         graphite_damaged_4_mirrored: ""
   - type: RadiationSource
-    intensity: 1.6
+    intensity: 0.2 # LP Edit
 
 # Arrows to indicate flow
 - type: entity

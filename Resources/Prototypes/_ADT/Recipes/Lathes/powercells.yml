@@ -1,0 +1,39 @@
+- type: latheRecipe
+  id: ADTMegaCellSmallRecipe
+  result: ADTMegaCellSmallPrinted
+  completetime: 15
+  materials:
+    Steel: 8000
+    Glass: 5600
+    Gold: 600
+    Silver: 600
+
+- type: latheRecipe
+  id: ADTMegaCellMediumRecipe
+  result: ADTMegaCellMediumPrinted
+  completetime: 15
+  materials:
+    Steel: 10000
+    Glass: 7000
+    Gold: 600
+    Silver: 600
+
+- type: latheRecipe
+  id: ADTMegaCellHighRecipe
+  result: ADTMegaCellHighPrinted
+  completetime: 15
+  materials:
+    Steel: 12000
+    Glass: 8400
+    Gold: 600
+    Silver: 600
+
+- type: latheRecipe
+  id: ADTMegaCellHyperRecipe
+  result: ADTMegaCellHyperPrinted
+  completetime: 20
+  materials:
+    Steel: 14000
+    Glass: 9800
+    Gold: 600
+    Silver: 600

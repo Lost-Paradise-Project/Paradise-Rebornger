@@ -1,0 +1,12 @@
+ent-LPPEngiInducer = inducer
+    .desc = A device for wirelessly transferring energy from a battery to other devices.
+    .suffix = Empty, Engineering
+ent-LPPEngiInducerBattery = inducer
+    .desc = A device for wirelessly transferring energy from a battery to other devices.
+    .suffix = Battery, Engineering
+ent-LPPRNDInducer = inducer
+    .desc = A device for wirelessly transferring energy from a battery to other devices.
+    .suffix = Empty, RND
+ent-LPPRNDInducerBattery = inducer
+    .desc = A device for wirelessly transferring energy from a battery to other devices.
+    .suffix = Battery, RND

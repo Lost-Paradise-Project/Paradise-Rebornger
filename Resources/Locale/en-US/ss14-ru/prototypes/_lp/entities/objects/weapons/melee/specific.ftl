@@ -1,0 +1,2 @@
+ent-LPPCEGorillaGlove = power glove
+    .desc = Heavy engineering gauntlet with built-in kinetic amplifiers. Designed as a last-resort tool for emergency reactor shutdown, a single strike can instantly eject all fuel rods. Anyone caught in the path of the strike will be thrown back by a powerful impulse. When the emergency rod ejection button fails, there’s only one proven method left — hit it harder. Has a label "BL CORP Engineering Technology".
