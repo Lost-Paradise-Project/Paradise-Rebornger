@@ -4,8 +4,8 @@ meta:
   engineVersion: 272.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/13/2026 11:13:57
-  entityCount: 37777
+  time: 03/16/2026 20:43:18
+  entityCount: 37780
 maps:
 - 1
 grids:
@@ -20190,6 +20190,13 @@ entities:
       rot: 3.141592653589793 rad
       pos: 33.5,14.5
       parent: 2
+- proto: AirlockBlueshieldOfficerCommandLocked
+  entities:
+  - uid: 399
+    components:
+    - type: Transform
+      pos: -10.5,-19.5
+      parent: 2
 - proto: AirlockBrigGlassLocked
   entities:
   - uid: 378
@@ -20318,11 +20325,6 @@ entities:
     components:
     - type: Transform
       pos: 8.5,-6.5
-      parent: 2
-  - uid: 399
-    components:
-    - type: Transform
-      pos: -10.5,-19.5
       parent: 2
   - uid: 846
     components:
@@ -111472,7 +111474,7 @@ entities:
       pos: -4.5,11.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -279299.28
+      secondsUntilStateChange: -279388.88
       state: Closing
     - type: DeviceNetwork
       deviceLists:
@@ -112914,7 +112916,7 @@ entities:
       pos: 70.5,-9.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -383815.3
+      secondsUntilStateChange: -383904.9
       state: Closing
     - type: DeviceNetwork
       deviceLists:
@@ -175778,6 +175780,25 @@ entities:
       - Arsenal
       - Experimental
       - CivilianServices
+- proto: LPPTeaspoon
+  entities:
+  - uid: 27809
+    components:
+    - type: Transform
+      pos: 28.47253,15.621802
+      parent: 2
+  - uid: 27810
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 32.529156,5.963556
+      parent: 2
+  - uid: 27841
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 33.429996,-11.432105
+      parent: 2
 - proto: LPPUnderpantsMat
   entities:
   - uid: 23817
