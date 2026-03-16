@@ -69,6 +69,17 @@
 										<Button Name="StatorLoadIncrease" Text="+100"/>
 										<Button Name="StatorLoadIncreaseLarge" Text="+1000"/>
 									</BoxContainer>
+                                    <!--LP edit start-->
+                                    <BoxContainer>
+                                        <Button Name="StatorLoadDecrease100" Text="-100k"/>
+                                        <Button Name="StatorLoadDecrease50" Text="-50k"/>
+                                        <Button Name="StatorLoadDecrease10" Text="-10k"/>
+                                        <BoxContainer HorizontalExpand="True" />
+                                        <Button Name="StatorLoadIncrease10" Text="+10k"/>
+                                        <Button Name="StatorLoadIncrease50" Text="+50k"/>
+                                        <Button Name="StatorLoadIncrease100" Text="+100k"/>
+                                    </BoxContainer>
+                                    <!--LP edit end-->
 								</BoxContainer>
 							</PanelContainer>
 						</BoxContainer>
