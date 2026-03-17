@@ -1,3 +1,9 @@
+ // LP Edit Start
+using Content.Shared.Tag;
+using Content.Shared.Hands.Components;
+using Content.Shared.Hands.EntitySystems;
+using Content.Shared.Inventory;
+// LP Edit End
 using Content.Server.Administration.Logs;
 using Content.Server.AlertLevel;
 using Content.Server.Atmos.EntitySystems;
@@ -76,6 +82,10 @@ public sealed class NuclearReactorSystem : EntitySystem
     [Dependency] private readonly ThrowingSystem _throwingSystem = default!;
     [Dependency] private readonly TransformSystem _transformSystem = default!;
     [Dependency] private readonly UserInterfaceSystem _uiSystem = null!;
+    // LP Edit Start
+    [Dependency] private readonly TagSystem _tagSystem = default!;
+    [Dependency] private readonly SharedHandsSystem _handsSystem = default!;
+     // LP Edit End
 
     private sealed class LogData
     {
@@ -1082,6 +1092,33 @@ public sealed class NuclearReactorSystem : EntitySystem
         var destruction = 100;
 
         var throwProb = Math.Clamp(damage / destruction, 0, 1);
+
+        // LP Edit Start
+
+        var isTool = false;
+
+        if (args.Origin != null)
+        {
+            var origin = args.Origin.Value;
+
+            // если сам источник имеет тег
+            if (_tagSystem.HasTag(origin, "NuclearClearing"))
+            {
+                isTool = true;
+            }
+            // если это моб — проверяем предмет в руке
+            else if (_handsSystem.TryGetActiveItem(origin, out var heldItem))
+            {
+                if (_tagSystem.HasTag(heldItem.Value, "NuclearClearing"))
+                    isTool = true;
+            }
+        }
+
+        if (isTool)
+            throwProb = Math.Clamp(10000 / destruction, 0, 1);
+
+        // LP Edit End
+
         var coords = _transformSystem.GetMapCoordinates(uid);
         for (var x = 0; x < comp.ReactorGridWidth; x++)
             for (var y = 0; y < comp.ReactorGridHeight; y++)
@@ -1095,7 +1132,7 @@ public sealed class NuclearReactorSystem : EntitySystem
                     _containerSystem.Remove(item, comp.PartStorage);
                     comp.GridEntities.Remove(new(x, y));
 
-                    if (_random.Prob(0.5f) || reactorPart.Melted)
+                    if (_random.Prob(0.2f) || reactorPart.Melted) // LP Edit
                     {
                         QueueDel(item);
                         item = Spawn("NuclearDebrisChunk", coords);

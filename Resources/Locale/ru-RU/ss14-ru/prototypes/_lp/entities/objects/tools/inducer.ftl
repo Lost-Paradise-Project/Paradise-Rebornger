@@ -1,0 +1,12 @@
+ent-LPPEngiInducer = индуктор
+    .desc = Устройство для беспроводной передачи энергии от собственной батареи к батареям других устройств.
+    .suffix = Пустой, Инженерный
+ent-LPPEngiInducerBattery = { ent-LPPEngiInducer }
+    .desc = { ent-LPPEngiInducer.desc }
+    .suffix = Батарея, Инженерный
+ent-LPPRNDInducer = { ent-LPPEngiInducer }
+    .desc = { ent-LPPEngiInducer.desc }
+    .suffix = Пустой, РНД
+ent-LPPRNDInducerBattery = { ent-LPPEngiInducer }
+    .desc = { ent-LPPEngiInducer.desc }
+    .suffix = Батарея, РНД

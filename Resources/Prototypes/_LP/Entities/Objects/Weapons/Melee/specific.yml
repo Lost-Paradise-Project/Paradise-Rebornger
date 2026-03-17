@@ -1,0 +1,40 @@
+- type: entity
+  parent: [BaseItem, BaseEngineeringContraband]
+  id: LPPCEGorillaGlove
+  name: power glove
+  description: Heavy engineering gauntlet with built-in kinetic amplifiers. Designed as a last-resort tool for emergency reactor shutdown, a single strike can instantly eject all fuel rods. Anyone caught in the path of the удар will be thrown back by a powerful impulse. When the emergency rod ejection button fails, there’s only one proven method left — hit it harder. Has a label "BL CORP Engineering Technology".
+  components:
+  - type: Tag
+    tags:
+    - NuclearClearing
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Melee/EngiGorilla.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: -135 # LP Edit 135 -> -135
+    animation: WeaponArcThrust
+    attackRate: 0.5
+    angle: 0
+    damage:
+      types:
+        # axes are kinda like sharp hammers, you know?
+        Blunt: 1
+        # Slash: 10
+        # Structural: 10
+    soundHit:
+      collection: MetalThud
+  - type: Wieldable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Blunt: 20
+        Structural: 110
+  - type: Item
+    size: Ginormous
+  - type: UseDelay
+    delay: 3
+  - type: StealTarget
+    stealGroup: LPPCEGlove
+  - type: MeleeThrowOnHit
+    speed: 10
+    distance: 10

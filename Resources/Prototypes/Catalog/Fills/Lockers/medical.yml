@@ -117,6 +117,10 @@
   id: LockerFillParamedic
   table: !type:AllSelector
     children:
+    # LP Edit Start
+    - id: LPPClothingShoesBootsMagParamed
+    - id: HandheldCrewMonitor
+    # LP Edit End
     - id: ClothingEyesHudMedical
     - id: ClothingOuterHardsuitVoidParamed
     - id: ClothingBeltMedicalEMTFilled
