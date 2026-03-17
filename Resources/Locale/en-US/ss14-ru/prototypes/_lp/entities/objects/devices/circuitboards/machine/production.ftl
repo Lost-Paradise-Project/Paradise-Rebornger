@@ -1,0 +1,14 @@
+ent-LPPServiceProtolatheMachineCircuitboard = service protolathe machine board
+    .desc = A machine printed circuit board for a service protolathe.
+ent-LPPScienceProtolatheMachineCircuitboard = science protolathe machine board
+    .desc = A machine printed circuit board for a science protolathe.
+ent-LPPEngineeringProtolatheMachineCircuitboard = engineering protolathe machine board
+    .desc = A machine printed circuit board for a engineering protolathe.
+ent-LPPCargoProtolatheMachineCircuitboard = cargo protolathe machine board
+    .desc = A machine printed circuit board for a cargo protolathe.
+ent-LPPSpaceForgeMachineCircuitboard = space forge machine board
+    .desc = A machine printed circuit board for a space forge.
+ent-LPPSpaceForgeCMDMachineCircuitboard = command space forge machine board
+    .desc = A machine printed circuit board for a command space forge.
+ent-LPPBluespaceMinerMachineCircuitboard = bluespace miner machine board
+    .desc = A machine printed circuit board for a bluespace miner.

@@ -1,0 +1,15 @@
+- type: latheRecipePack
+  id: RNDInducer
+  recipes:
+  - LPPRNDInducerRecipe
+
+- type: latheRecipePack
+  id: EngiInducer
+  recipes:
+  - LPPEngiInducerRecipe
+
+- type: latheRecipePack
+  id: InducerBoth
+  recipes:
+  - LPPEngiInducerRecipe
+  - LPPRNDInducerRecipe

@@ -11,12 +11,14 @@
     - type: Item
       storedRotation: -90
     - type: StaticPrice
-      price: 100
-    - type: PhysicalComposition
-      materialComposition:
-        Glass: 230
-      chemicalComposition:
-        Silicon: 20
+    # LP Edit Start 100 -> 10 and no PhysicalComposition
+      price: 10
+    # - type: PhysicalComposition
+    #   materialComposition:
+    #     Glass: 230
+    #   chemicalComposition:
+    #     Silicon: 20
+    # LP Edit End 100 -> 10 and no PhysicalComposition
     - type: Circuitboard
 
 - type: entity
@@ -96,7 +98,7 @@
     - type: ComputerBoard
       prototype: ComputerCargoOrders
     - type: StaticPrice
-      price: 750
+      price: 20 # LP Edit 750 -> 20
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -109,7 +111,7 @@
   - type: ComputerBoard
     prototype: ComputerCargoOrdersEngineering
   - type: StaticPrice
-    price: 750
+    price: 20 # LP Edit 750 -> 20
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -122,7 +124,7 @@
   - type: ComputerBoard
     prototype: ComputerCargoOrdersMedical
   - type: StaticPrice
-    price: 750
+    price: 20 # LP Edit 750 -> 20
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -135,7 +137,7 @@
   - type: ComputerBoard
     prototype: ComputerCargoOrdersScience
   - type: StaticPrice
-    price: 750
+    price: 20 # LP Edit 750 -> 20
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -148,7 +150,7 @@
   - type: ComputerBoard
     prototype: ComputerCargoOrdersSecurity
   - type: StaticPrice
-    price: 750
+    price: 20 # LP Edit 750 -> 20
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -161,7 +163,7 @@
   - type: ComputerBoard
     prototype: ComputerCargoOrdersService
   - type: StaticPrice
-    price: 750
+    price: 20 # LP Edit 750 -> 20
 
 - type: entity
   parent: BaseComputerCircuitboard
@@ -174,7 +176,7 @@
   - type: ComputerBoard
     prototype: ComputerFundingAllocation
   - type: StaticPrice
-    price: 750
+    price: 20 # LP Edit 750 -> 20
 
 - type: entity
   parent: BaseComputerCircuitboard

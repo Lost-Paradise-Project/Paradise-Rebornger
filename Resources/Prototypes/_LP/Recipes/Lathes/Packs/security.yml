@@ -5,3 +5,31 @@
   - LPPBorgModuleSecurityWeapon
   - LPPBorgModuleSecurityLaserCarbine
   - LPPBorgModuleSecurityCriminologist
+
+- type: latheRecipePack
+  id: LPPSpaceForgeCMDHardsuits
+  recipes:
+  - ClothingHeadHelmetEVALarge
+  - ClothingOuterHardsuitEVAPrisoner
+  - ClothingOuterHardsuitCombatOfficer
+  - ClothingOuterHardsuitSecurity
+  - ClothingOuterHardsuitCombatMedical
+  - ClothingOuterHardsuitCombatRiot
+  - ClothingOuterHardsuitSecurityPilot
+  - LPPClothingOuterHardsuitSecurityEng
+  - ClothingOuterHardsuitBrigmedic
+  - ClothingOuterHardsuitWarden
+  - ClothingOuterHardsuitLuxury
+  - LPPClothingOuterHardsuitRd
+  - ClothingOuterHardsuitMedical
+  - ClothingOuterHardsuitEngineeringWhite
+  - ClothingOuterHardsuitSecurityRed
+  - ClothingOuterHardsuitMaxim
+  - ClothingOuterHardsuitCap
+
+- type: latheRecipePack
+  id: LPPGrenadeLauncherSec
+  recipes:
+  - LPPWeaponLauncherHydra
+  - LPPGrenadeBaton
+  - LPPGrenadeEMP

@@ -117,10 +117,12 @@ public sealed partial class PowerMonitoringWindow : FancyWindow
         if (!_entManager.TryGetComponent<PowerMonitoringConsoleComponent>(Entity, out var console))
             return;
 
+        // LP edit start
         // Update power status text
-        TotalSources.Text = Loc.GetString("power-monitoring-window-value", ("value", totalSources));
-        TotalBatteryUsage.Text = Loc.GetString("power-monitoring-window-value", ("value", totalBatteryUsage));
-        TotalLoads.Text = Loc.GetString("power-monitoring-window-value", ("value", totalLoads));
+        TotalSources.Text = FormatPower(totalSources);
+        TotalBatteryUsage.Text = FormatPower(totalBatteryUsage);
+        TotalLoads.Text = FormatPower(totalLoads);
+        // LP edit end
 
         // 10+% of station power is being drawn from batteries
         TotalBatteryUsage.FontColorOverride = (totalSources * 0.1111f) < totalBatteryUsage ? new Color(180, 0, 0) : Color.White;

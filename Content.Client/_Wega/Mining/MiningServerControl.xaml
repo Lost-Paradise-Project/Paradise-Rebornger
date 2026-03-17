@@ -2,47 +2,59 @@
          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
          xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
          xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
-         HorizontalExpand="True">
-    <BoxContainer Orientation="Vertical" Margin="0 2">
-        <controls:StripeBack>
-            <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
+         x:Class="Content.Client._Wega.Mining.MiningServerControl"
+         HorizontalExpand="True"> <!-- LP edit start & add a x: new class-->
+    <BoxContainer Orientation="Vertical" Margin="2">
+        <PanelContainer>
+            <PanelContainer.PanelOverride>
+                <gfx:StyleBoxFlat BackgroundColor="#1B2838" />
+            </PanelContainer.PanelOverride>
+            <BoxContainer Orientation="Horizontal" HorizontalExpand="True" Margin="6">
                 <PanelContainer Name="StatusIndicator"
-                                MinWidth="10"
-                                Margin="2">
+                                MinWidth="8"
+                                MaxWidth="8"
+                                Margin="0 0 8 0">
                     <PanelContainer.PanelOverride>
                         <gfx:StyleBoxFlat/>
                     </PanelContainer.PanelOverride>
                 </PanelContainer>
 
-                <BoxContainer Orientation="Vertical" HorizontalExpand="True" Margin="4">
+                <BoxContainer Orientation="Vertical" HorizontalExpand="True" Margin="0 0 8 0">
                     <BoxContainer Orientation="Horizontal">
-                        <Label Name="ServerIdLabel" StyleClasses="LabelSmall"/>
+                        <Label Name="ServerIdLabel" StyleClasses="LabelSubText" FontColorOverride="#8899AA"/>
                         <Control HorizontalExpand="True"/>
-                        <Label Name="StatusLabel"/>
+                        <Label Name="StatusLabel" StyleClasses="LabelHeading"/>
                     </BoxContainer>
 
-                    <BoxContainer Orientation="Horizontal" Margin="2 0">
-                        <Label Text="{Loc 'mining-server-stage'}" StyleClasses="LabelSmall" MinWidth="60"/>
-                        <Button Name="StageDown" Text="-" MinWidth="30" StyleClasses="ButtonSquare"/>
-                        <Label Name="StageLabel" MinWidth="30" HorizontalAlignment="Center"/>
-                        <Button Name="StageUp" Text="+" MinWidth="30" StyleClasses="ButtonSquare"/>
+                    <BoxContainer Orientation="Horizontal" Margin="0 4 0 0">
+                        <Label Text="{Loc 'mining-server-stage'}" StyleClasses="LabelSmall" FontColorOverride="#8899AA" MinWidth="60"/>
+                        <Button Name="StageDown" Text="-" MinWidth="28" MinHeight="22" StyleClasses="ButtonSquare"/>
+                        <Label Name="StageLabel" MinWidth="24" HorizontalAlignment="Center" StyleClasses="LabelHeading"/>
+                        <Button Name="StageUp" Text="+" MinWidth="28" MinHeight="22" StyleClasses="ButtonSquare"/>
                     </BoxContainer>
 
-                    <ProgressBar Name="TemperatureBar"
-                                 MinValue="293"
-                                 MaxValue="350"
-                                 Value="300"
-                                 Margin="2 0">
-                        <ProgressBar.ForegroundStyleBoxOverride>
-                            <gfx:StyleBoxFlat/>
-                        </ProgressBar.ForegroundStyleBoxOverride>
-                    </ProgressBar>
+                    <BoxContainer Orientation="Vertical" Margin="0 4 0 0">
+                        <Label Text="{Loc 'mining-server-temperature'}" StyleClasses="LabelSmall" FontColorOverride="#8899AA"/>
+                        <ProgressBar Name="TemperatureBar"
+                                     MinValue="293"
+                                     MaxValue="350"
+                                     Value="300"
+                                     MinHeight="8">
+                            <ProgressBar.ForegroundStyleBoxOverride>
+                                <gfx:StyleBoxFlat/>
+                            </ProgressBar.ForegroundStyleBoxOverride>
+                        </ProgressBar>
+                    </BoxContainer>
+
+                    <RichTextLabel Name="CircuitboardStatusLabel" StyleClasses="LabelSmall" Margin="0 4 0 0"/>
+
                 </BoxContainer>
 
-                <BoxContainer Orientation="Vertical" MinWidth="100">
-                    <Button Name="TogglePower" Margin="2" StyleClasses="ButtonSquare"/>
+                <BoxContainer Orientation="Vertical" VerticalAlignment="Center" MinWidth="70">
+                    <Button Name="TogglePower" MinHeight="28" StyleClasses="ButtonSquare"/>
                 </BoxContainer>
             </BoxContainer>
-        </controls:StripeBack>
+        </PanelContainer>
+        <!-- LP edit end-->
     </BoxContainer>
 </Control>

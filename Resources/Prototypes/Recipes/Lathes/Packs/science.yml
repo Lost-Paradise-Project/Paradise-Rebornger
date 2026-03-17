@@ -3,7 +3,7 @@
 - type: latheRecipePack
   id: ScienceBoardsStatic
   recipes:
-  - ProtolatheMachineCircuitboard
+  # - ProtolatheMachineCircuitboard # LP Edit
   - AutolatheMachineCircuitboard
   - CircuitImprinterMachineCircuitboard
   - ExosuitFabricatorMachineCircuitboard
@@ -84,6 +84,7 @@
   - APECircuitboard
   - ArtifactAnalyzerMachineCircuitboard
   - ArtifactCrusherMachineCircuitboard
+  - LPPBluespaceMinerMachineCircuitboard # LP Edit
 
 - type: latheRecipePack
   id: CameraBoards

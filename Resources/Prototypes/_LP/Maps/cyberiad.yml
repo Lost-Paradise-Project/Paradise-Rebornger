@@ -63,3 +63,6 @@
             #Silicon (3)
             StationAi: [ 1, 1 ]
             Borg: [ 2, 3 ]
+            # LP job
+            BlueshieldOfficer: [ 1, 1 ]
+            NanotrasenRepresentative: [ 1, 1 ]
