@@ -9,3 +9,6 @@
 
 - type: Tag
   id: Stunbaton
+
+- type: Tag
+  id: FitsInCharger

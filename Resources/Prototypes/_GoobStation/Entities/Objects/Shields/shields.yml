@@ -68,12 +68,6 @@
           Heat: 0.9
       activeBlockModifier:
         coefficients:
-          Blunt: 0.8
-          Slash: 0.8
-          Piercing: 0.8
-          Heat: 0.8
-        flatReductions:
-          Heat: 2
           Blunt: 2
           Slash: 2
           Piercing: 2
@@ -85,9 +79,9 @@
     - type: Battery
       maxCharge: 600
       startingCharge: 600
-    # - type: RechargeableBlocking
-    #   dischargedRechargeRate: 0
-    #   chargedRechargeRate: 0
+    - type: RechargeableBlocking
+      dischargedRechargeRate: 0
+      chargedRechargeRate: 0
     - type: ItemSlots
       slots:
         item:
@@ -99,3 +93,6 @@
           whitelist:
             tags:
             - Stunbaton
+    - type: Tag
+      tags:
+      - FitsInCharger
