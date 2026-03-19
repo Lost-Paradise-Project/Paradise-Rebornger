@@ -33,4 +33,18 @@ public sealed partial class AnnounceOnSpawnComponent : Component
     /// </summary>
     [DataField]
     public Color? Color;
+
+    // LP edit start
+    /// <summary>
+    /// Whether this announcement is voiced by TTS.
+    /// </summary>
+    [DataField]
+    public bool Tts;
+
+    /// <summary>
+    /// Override TTS voice. Null = use CVar default.
+    /// </summary>
+    [DataField]
+    public string? TtsVoice;
+    // LP edit end
 }
