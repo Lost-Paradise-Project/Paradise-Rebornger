@@ -546,7 +546,7 @@
     - type: BatterySelfRecharger
       autoRechargeRate: 3
     - type: RechargeableBlocking
-      dischargedRechargeRate: 2
+      dischargedRechargeRate: 3
       chargedRechargeRate: 3
     - type: Tag
       tags:
