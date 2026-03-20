@@ -1,4 +1,4 @@
-ghost-target-window-ghostbar = Ghost Bar
-ghost-window-spawn-ghostbar-button = Spawn at Ghost Bar
-ghost-window-spawn-ghostbar-button-timer = Spawn at Ghost Bar ({$time}s)
-ghost-bar-rules = Treat this role, and station, as you would just being a regular Ghost. You may talk about all current round events without the need for LOOC, and you remember everything from your previous life. DO NOT attack others, start fights, or attempt to break the station. If you see anyone doing this, please Ahelp and they will be promptly thrown into space. Also, if you decide to leave the bar, you DO NOT remember anything from being here, or your life before it.
+ghost-target-window-ghostbar = Призрачный бар
+ghost-window-spawn-ghostbar-button = Появиться в баре призраков
+ghost-window-spawn-ghostbar-button-timer = Появиться в баре призраков ({ $time }с)
+ghost-bar-rules = Относитесь к этой роли и станции так, как если бы вы были обычным призраком. Вы можете обсуждать все события текущего раунда без необходимости использовать LOOC и помните всё из своей прошлой жизни. НЕ нападайте на других, не начинайте сражения и не пытайтесь разрушить станцию. Если увидите, что кто-то это делает — сообщите в Ahelp, и нарушителя быстро выбросят в космос. Также, если вы решите покинуть бар, вы НЕ будете помнить ничего ни из пребывания здесь, ни из вашей прежней жизни.
