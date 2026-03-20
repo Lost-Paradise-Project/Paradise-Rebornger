@@ -6,11 +6,12 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Client._LP.Reklama;
 
-public sealed class ReklamaControlManager
+public static class ReklamaControlManager
 {
     public static List<Control> GetAdIcons()
     {
         var protos = IoCManager.Resolve<IPrototypeManager>().EnumeratePrototypes<ReklamaPrototype>();
+        var urlMan = IoCManager.Resolve<IUriOpener>();
         List<Control> reklama = [];
 
         foreach (var proto in protos)
@@ -34,7 +35,7 @@ public sealed class ReklamaControlManager
 
             btn.OnPressed += _ =>
             {
-                IoCManager.Resolve<IUriOpener>().OpenUri(proto.Url);
+                urlMan.OpenUri(proto.Url);
             };
 
             reklama.Add(btn);

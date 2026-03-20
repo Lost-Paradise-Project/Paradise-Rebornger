@@ -13,15 +13,15 @@ public sealed partial class ReklamaPrototype : IPrototype
     public string Icon { get; private set; } = string.Empty;
 
     [DataField]
-    public string Name = string.Empty;
+    public string Name { get; private set; } = string.Empty;
 
     [DataField]
-    public string Description = string.Empty;
+    public string Description { get; private set; } = string.Empty;
 
     [DataField]
-    public string Url = string.Empty;
+    public string Url { get; private set; } = string.Empty;
 
 
     [DataField]
-    public Vector2 scale = new(1, 1);
+    public Vector2 scale { get; private set; } = new(1, 1);
 }
