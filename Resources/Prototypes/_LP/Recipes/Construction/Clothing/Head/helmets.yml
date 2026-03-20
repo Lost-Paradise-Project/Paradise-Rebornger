@@ -6,5 +6,4 @@
   targetNode: LPPHelmetSecLight
   category: construction-category-clothing
   description: construction-recipe-helmet-sec-light-desc
-  icon: { sprite: _LP/Clothing/Head/Helmets/security.rsi, state: icon }
   objectType: Item
