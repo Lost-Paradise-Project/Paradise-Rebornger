@@ -1,3 +1,4 @@
+using System.Numerics;
 using Robust.Shared.Prototypes;
 
 namespace Content.Shared._LP.Reklama;
@@ -19,4 +20,8 @@ public sealed partial class ReklamaPrototype : IPrototype
 
     [DataField]
     public string Url = string.Empty;
+
+
+    [DataField]
+    public Vector2 scale = new(1, 1);
 }

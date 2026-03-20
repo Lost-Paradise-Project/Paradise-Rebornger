@@ -16,6 +16,7 @@ public sealed class ReklamaControlManager
         foreach (var proto in protos)
         {
             string tooltip = proto.Name + "\n" + proto.Description;
+
             var btn = new Button
             {
                 ToolTip = tooltip,
@@ -24,10 +25,11 @@ public sealed class ReklamaControlManager
 
             btn.AddChild(new TextureRect()
             {
-                TextureScale = new Vector2(2, 2),
+                ToolTip = tooltip,
                 TexturePath = proto.Icon,
                 VerticalAlignment = Control.VAlignment.Center,
-                HorizontalAlignment = Control.HAlignment.Center
+                HorizontalAlignment = Control.HAlignment.Center,
+                TextureScale = proto.scale
             });
 
             btn.OnPressed += _ =>
