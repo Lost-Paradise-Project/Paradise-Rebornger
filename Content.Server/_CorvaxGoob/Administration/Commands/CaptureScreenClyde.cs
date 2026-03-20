@@ -1,4 +1,4 @@
-﻿using Content.Server._CorvaxGoob.Photo;
+using Content.Server._CorvaxGoob.Photo;
 using Content.Server.Administration;
 using Content.Shared._CorvaxGoob.Photo;
 using Content.Shared.Administration;

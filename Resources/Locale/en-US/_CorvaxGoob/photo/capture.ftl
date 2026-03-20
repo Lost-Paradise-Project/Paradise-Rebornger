@@ -1,4 +1,4 @@
-﻿image-window-title = Изображение
+image-window-title = Изображение
 
 screen-capture-error-timeout = Время отправки запроса изображения экрана привысило время ожидания.
 screen-capture-error-repeat-request = Запрос изображения экрана уже сделан. Ожидайте обработки.
