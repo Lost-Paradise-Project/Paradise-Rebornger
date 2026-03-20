@@ -1,4 +1,4 @@
-﻿using Content.Server.Chat.Managers;
+using Content.Server.Chat.Managers;
 using Content.Server.EUI;
 using Content.Shared._CorvaxGoob.Photo;
 using Robust.Shared.Player;

@@ -1,4 +1,4 @@
-﻿using Content.Server.EUI;
+using Content.Server.EUI;
 using Content.Shared._CorvaxGoob.Photo;
 
 namespace Content.Server._CorvaxGoob.Photo;

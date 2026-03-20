@@ -1,4 +1,4 @@
-﻿using Content.Shared._CorvaxGoob.Photo;
+using Content.Shared._CorvaxGoob.Photo;
 using Robust.Client.Graphics;
 using SixLabors.ImageSharp;
 using System.IO;
