@@ -21,7 +21,7 @@
         ignoreResistances: true
         damage:
           types:
-            Cellular: 0.005
+            Cellular: 0.5 # LP Edit 0.005 -> 0.5
       - !type:PopupMessage
         conditions:
         - !type:ReagentCondition
@@ -131,7 +131,7 @@
         ignoreResistances: true
         damage:
           types:
-            Poison: 0.05
+            Poison: 1.5 # LP Edit 0.05 -> 1.5
 
 - type: reagent
   id: Healium

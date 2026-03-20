@@ -1,0 +1,45 @@
+- type: technology
+  id: LPPTechRPLD
+  name: research-technology-rpld
+  icon:
+    sprite: _StarLight/Objects/Tools/rpld.rsi
+    state: icon
+  discipline: Industrial
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - LPPRPLD
+  technologyPrerequisites:
+  - AdvancedToolsTechnology
+  position: 7, 11
+
+- type: technology
+  id: LPPBluespaceMiner
+  name: research-technology-bluespace-miner
+  icon:
+    sprite: _LP/Structures/Machines/bluespace_miner.rsi
+    state: miner
+  discipline: Industrial
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - LPPBluespaceMinerMachineCircuitboard
+  technologyPrerequisites:
+  - IndustrialEngineering
+  position: 2, 13
+
+- type: technology
+  id: LPPInducer
+  name: research-technology-inducer
+  icon:
+    sprite: _LP/Objects/Tools/inducer-rnd.rsi
+    state: icon
+  discipline: Industrial
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+    - LPPRNDInducerRecipe
+    - LPPEngiInducerRecipe
+  position: 3,10
+  technologyPrerequisites:
+  - ADTMegaCells

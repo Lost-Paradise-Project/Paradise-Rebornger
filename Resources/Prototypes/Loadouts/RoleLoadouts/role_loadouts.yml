@@ -89,6 +89,7 @@
   - Trinkets
   - BartenderJobTrinkets
   - GroupSpeciesBreathTool
+  - LPPBartenderPDA # LP edit
 
 - type: roleLoadout
   id: JobServiceWorker

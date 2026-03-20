@@ -125,7 +125,7 @@
   - TelescopicShield
   - HoloprojectorSecurity
   - WeaponDisablerSMG
-  position: 6, 17 # LP edit
+  position: 6, 16 # LP edit
   technologyPrerequisites:
   - NonlethalAmmunition
   radioChannels:

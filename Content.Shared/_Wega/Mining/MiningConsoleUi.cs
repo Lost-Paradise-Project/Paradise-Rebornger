@@ -10,6 +10,12 @@ public enum MiningConsoleUiKey
 }
 
 [Serializable, NetSerializable]
+public enum MiningCircuitboardRepairUiKey // LP edit (add enum)
+{
+    Key,
+}
+
+[Serializable, NetSerializable]
 public sealed class MiningConsoleBoundInterfaceState : BoundUserInterfaceState
 {
     public float Credits;
@@ -17,19 +23,22 @@ public sealed class MiningConsoleBoundInterfaceState : BoundUserInterfaceState
     public MiningMode Mode;
     public bool GlobalActivation;
     public List<MiningServerData> Servers;
+    public int EnabledServersCount; // LP edit
 
     public MiningConsoleBoundInterfaceState(
         float credits,
         float researchPoints,
         MiningMode mode,
         bool globalActivation,
-        List<MiningServerData> servers)
+        List<MiningServerData> servers,
+        int enabledServersCount) // LP edit
     {
         Credits = credits;
         ResearchPoints = researchPoints;
         Mode = mode;
         GlobalActivation = globalActivation;
         Servers = servers;
+        EnabledServersCount = enabledServersCount; // LP edit
     }
 }
 
@@ -38,10 +47,17 @@ public sealed class MiningConsoleToggleModeMessage : BoundUserInterfaceMessage
 {
 }
 
+// LP edit start
 [Serializable, NetSerializable]
-public sealed class MiningConsoleToggleActivationMessage : BoundUserInterfaceMessage
+public sealed class MiningConsoleActivateAllMessage : BoundUserInterfaceMessage
 {
 }
+
+[Serializable, NetSerializable]
+public sealed class MiningConsoleDeactivateAllMessage : BoundUserInterfaceMessage
+{
+}
+// LP edit end
 
 [Serializable, NetSerializable]
 public sealed class MiningConsoleToggleServerActivationMessage : BoundUserInterfaceMessage
@@ -83,8 +99,9 @@ public sealed record MiningServerData(
     int Stage,
     float Temperature,
     bool IsBroken,
-    bool IsActive
-);
+    bool IsActive,
+    float CircuitboardCondition
+); // LP edit (add a float CircuitboardCondition)
 
 [Serializable, NetSerializable]
 public sealed class MiningConsoleSetAllStagesMessage : BoundUserInterfaceMessage
