@@ -13,3 +13,4 @@ research-technology-base-mining-hardsuits = Base mining hardsuits
 research-technology-mining-hardsuits = Mining hardsuits
 research-technology-bluespace-miner = Bluespace mining
 research-technology-grenade-launcher-security = Grenade launchers
+research-technology-inducer = Wireless power transmission

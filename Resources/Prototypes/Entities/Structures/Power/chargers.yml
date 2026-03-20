@@ -173,6 +173,10 @@
           - BatteryAmmoProvider
           - Stunbaton
           - PowerCell
+          # Goobstation edit start
+          tags:
+          - FitsInCharger
+          # Goobstation edit end
         blacklist:
           tags:
           - PotatoBattery
@@ -198,6 +202,10 @@
           - BatteryAmmoProvider
           - Stunbaton
           - PowerCell
+          # Goobstation edit start
+          tags:
+          - FitsInCharger
+          # Goobstation edit end
         blacklist:
           tags:
           - PotatoBattery

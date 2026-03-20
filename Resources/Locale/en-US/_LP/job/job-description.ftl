@@ -1,1 +1,1 @@
-job-description-security-enginer = Do not let the brig disappear into the darkness. Make defensive structures. Bring destruction and destruction during the assault!
+job-description-security-enginer = Не дайте бригу исчезнуть в темноте. Возводите оборонительные сооружения. Несите разрушение во время штурма!
