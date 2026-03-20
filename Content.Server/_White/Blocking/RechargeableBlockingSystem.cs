@@ -49,7 +49,8 @@ public sealed class RechargeableBlockingSystem : EntitySystem
     private int GetRemainingTime(EntityUid uid)
     {
         if (!TryComp<BatteryComponent>(uid, out var battery)
-            || !TryComp<BatterySelfRechargerComponent>(uid, out var selfcomp))
+            || !TryComp<BatterySelfRechargerComponent>(uid, out var selfcomp)
+            || selfcomp.AutoRechargeRate <= 0)
             return 0;
 
         return (int) MathF.Round((battery.MaxCharge - battery.LastCharge) /
@@ -94,10 +95,10 @@ public sealed class RechargeableBlockingSystem : EntitySystem
         if (!_batterySystem.TryGetBatteryComponent(uid, out var battery, out _))
             return;
 
-        BatterySelfRechargerComponent? selfcomp;
+        TryComp<BatterySelfRechargerComponent>(uid, out var selfcomp);
         if (battery.LastCharge < 1)
         {
-            if (TryComp(uid, out selfcomp))
+            if (selfcomp != null)
                 selfcomp.AutoRechargeRate = component.DischargedRechargeRate;
 
             component.Discharged = true;
@@ -105,11 +106,11 @@ public sealed class RechargeableBlockingSystem : EntitySystem
             return;
         }
 
-        if (MathF.Round(battery.LastCharge / battery.MaxCharge, 2) < component.RechargePercentage)
+        if (battery.MaxCharge <= 0 || MathF.Round(battery.LastCharge / battery.MaxCharge, 2) < component.RechargePercentage)
             return;
 
         component.Discharged = false;
-        if (TryComp(uid, out selfcomp))
+        if (selfcomp != null)
             selfcomp.AutoRechargeRate = component.ChargedRechargeRate;
     }
 }
