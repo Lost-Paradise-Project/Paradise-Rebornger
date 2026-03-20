@@ -126,6 +126,97 @@
   - BaseSpeciesMob
   id: MobSynthoid
   name: Urissst Mz'Hand
+  components:
+  - type: Damageable
+    damageContainer: SiliconIpc # Контейнер урона, определяет типы урона и их количество.
+    damageModifierSet: Ipc # Набор модификаторов урона (сопротивления/уязвимости).
+  - type: DamageVisuals # Отображение визуальных эффектов повреждений.
+    damageOverlayGroups:
+      Brute:
+        sprite: Mobs/Effects/brute_damage.rsi
+        color: "#cd7314" # Цвет оверлея для тупого урона.
+      Burn:
+        sprite: Mobs/Effects/burn_damage.rsi
+  - type: SlowOnDamage # Замедление при получении урона.
+    speedModifierThresholds:
+      60: 0.7
+      80: 0.5
+  - type: ZombieImmune # Иммунитет к превращению в зомби.
+  - type: Reactive # Реакции на взаимодействие с окружением.
+    groups:
+      Flammable: [ Touch ]
+      Extinguish: [ Touch ]
+      Acidic: [Touch, Ingestion]
+    reactions:
+    - reagents: [Water, SpaceCleaner]
+      methods: [Touch] # Реакция при контакте с водой или космическим очистителем.
+      effects:
+      - !type:WashCreamPie
+  - type: FireVisuals # Визуальные эффекты горения.
+    alternateState: Standing
+  - type: TypingIndicator # Индикатор печати (иконка робота).
+    proto: robot
+  - type: PowerCellSlot # Слот для батареи.
+    cellSlotId: cell_slot
+    fitsInCharger: true # Возможность зарядки в зарядных станциях.
+  - type: PowerCellDraw # Потребление энергии из батареи.
+    drawRate: 0.8 # Потребление энергии. Можно настроить.
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMedium
+  - type: Lock
+    unlockOnClick: false # Слот нельзя открыть кликом.
+  - type: ItemSlotsLock # Блокировка слота батареи.
+    slots:
+    - cell_slot
+  - type: ContainerContainer # Контейнер для хранения батареи.
+    containers:
+      cell_slot: !type:ContainerSlot { }
+  - type: Repairable # Возможность ремонта сварочным аппаратом.
+    fuelCost: 30
+    doAfterDelay: 20
+    selfRepairPenalty: 2
+  - type: DamagedSiliconAccent # Искажение речи при повреждениях.
+  - type: SleepEmitSound # Звук во сне (механический храп).
+    snore: /Audio/Machines/buzz-two.ogg
+    interval: 30
+    popUp: sleep-ipc # Всплывающая подсказка во сне.
+  - type: Butcherable # Возможность расчленения.
+    butcheringType: Spike
+    spawned:
+      - id: OrganSynthoidHead
+        amount: 1
+  - type: MobThresholds # Изменение состояния при достижении порогов здоровья.
+    thresholds:
+      0: Alive
+      100: Critical
+      200: Dead
+    # Состояния здоровья, как у боргов.
+    stateAlertDict:
+      Alive: BorgHealth
+      Critical: BorgCrit
+      Dead: BorgDead
+  - type: Tag
+    tags:
+    - CanPilot
+    - FootstepSound
+    - DoorBumpOpener
+    - AnomalyHost # Для работы с аномалиями.
+    - Synthoid # Добавляем тег расы
+  - type: Temperature # Температура тела.
+    currentTemperature: 310.15
+    specificHeat: 42
+  - type: TemperatureDamage # Урон от экстремальных температур.
+    heatDamageThreshold: 325
+    coldDamageThreshold: 260
+  - type: TemperatureSpeed # Замедление при переохлаждении.
+    thresholds:
+      293: 0.8
+  - type: ThermalRegulator # Регулировка температуры тела.
+    normalBodyTemperature: 310.15
+    thermalRegulationTemperatureThreshold: 2
 
 # Временная species-конфигурация.
 # Позже можно будет отдельно переработать sponsorOnly, имена и прочее.
