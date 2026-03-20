@@ -7,6 +7,7 @@
       color: Green
       emergencyLightColor: LawnGreen
       shuttleTime: 600
+      tts: true # LP edit
     blue:
       announcement: alert-level-blue-announcement
       sound: /Audio/Misc/bluealert.ogg
@@ -14,6 +15,7 @@
       forceEnableEmergencyLights: true
       emergencyLightColor: DodgerBlue
       shuttleTime: 600
+      tts: true # LP edit
     violet:
       announcement: alert-level-violet-announcement
       sound: /Audio/Misc/notice1.ogg
@@ -21,6 +23,7 @@
       emergencyLightColor: Violet
       forceEnableEmergencyLights: true
       shuttleTime: 600
+      tts: true # LP edit
     yellow:
       announcement: alert-level-yellow-announcement
       sound: /Audio/Misc/notice1.ogg
@@ -28,6 +31,7 @@
       emergencyLightColor: Goldenrod
       forceEnableEmergencyLights: true
       shuttleTime: 600
+      tts: true # LP edit
     red:
       announcement: alert-level-red-announcement
       sound: /Audio/Misc/redalert.ogg
@@ -35,6 +39,7 @@
       emergencyLightColor: Red
       forceEnableEmergencyLights: true
       shuttleTime: 600 #No reduction in time as we don't have swiping for red alert like in /tg/. Shuttle times are intended to create friction, so having a way to brainlessly bypass that would be dumb.
+      tts: true # LP edit
     gamma:
       announcement: alert-level-gamma-announcement
       selectable: false
@@ -46,6 +51,7 @@
       color: PaleVioletRed
       emergencyLightColor: PaleVioletRed
       forceEnableEmergencyLights: true
+      tts: true # LP edit
     delta:
       announcement: alert-level-delta-announcement
       selectable: false
@@ -58,6 +64,7 @@
       emergencyLightColor: Orange
       forceEnableEmergencyLights: true
       shuttleTime: 1200
+      tts: true # LP edit
     epsilon:
       announcement: alert-level-epsilon-announcement
       selectable: false
@@ -70,3 +77,4 @@
       emergencyLightColor: DarkViolet
       forceEnableEmergencyLights: true
       shuttleTime: 1200
+      tts: true # LP edit
