@@ -42,7 +42,6 @@ medical-info-familyhistory-depression = Депрессия
 medical-info-familyhistory-diabetes = Диабет
 medical-info-familyhistory-heartdisease = Болезни сердца
 medical-info-familyhistory-bloodpressure = Высокое кровяное давление
-medical-info-familyhistory-hiv = ВИЧ
 medical-info-familyhistory-kidneydisease = Заболевания почек
 medical-info-familyhistory-kidneystones = Камни в почках
 medical-info-familyhistory-liverdisease = Заболевания печени

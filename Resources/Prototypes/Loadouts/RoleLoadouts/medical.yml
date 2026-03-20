@@ -3,7 +3,11 @@
 - type: roleLoadout
   id: JobChiefMedicalOfficer
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - ChiefMedicalOfficerHead
   - MedicalMask
@@ -21,7 +25,11 @@
 - type: roleLoadout
   id: JobMedicalDoctor
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - MedicalDoctorHead
   - MedicalMask
@@ -39,7 +47,11 @@
 - type: roleLoadout
   id: JobMedicalIntern
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - MedicalInternJumpsuit
   - MedicalBackpack
@@ -52,7 +64,11 @@
 - type: roleLoadout
   id: JobChemist
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - MedicalMask
   - ChemistJumpsuit
@@ -68,7 +84,11 @@
 - type: roleLoadout
   id: JobParamedic
   groups:
-  - Inventory # Corvax-Loadouts
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
   - GroupTankHarness
   - ParamedicHead
   - MedicalMask

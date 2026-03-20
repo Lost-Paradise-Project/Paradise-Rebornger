@@ -33,6 +33,7 @@
 - type: latheRecipePack
   id: SecurityAmmoStatic
   recipes:
+  - LPPMagazineShotgunLeverRifle # LP Edit
   - BoxLethalshot
   - BoxShotgunSlug
   - MagazineBoxLightRifle

@@ -9,6 +9,7 @@ using Content.Client._White.UI.Buttons;
 using Robust.Shared.Configuration;
 using Content.Shared._White.CCVar;
 using Robust.Client.UserInterface.Controls;
+using Content.Client._LP.Reklama;
 
 namespace Content.Client.Lobby.UI
 {
@@ -33,7 +34,14 @@ namespace Content.Client.Lobby.UI
             CollapseButton.OnPressed += _ => TogglePanel(false);
             ExpandButton.OnPressed += _ => TogglePanel(true);
 
-            //LP edit start: wwdp custom ghost
+            //LP edit start
+            var reklamaBtns = ReklamaControlManager.GetAdIcons();
+            foreach (var proto in reklamaBtns)
+            {
+                ReklamaLineBox.AddChild(proto);
+            }
+
+            // wwdp custom ghost
             _cfg.OnValueChanged(WhiteCVars.CustomGhosts, OnFunSettingChanged, true);
             var CGMButton = new CustomGhostsMenuOpenButton() { SetSize = new Vector2(77, 66) };
             CGMButton.AddChild(new TextureRect()

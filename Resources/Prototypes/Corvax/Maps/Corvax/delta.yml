@@ -86,7 +86,7 @@
           - ShuttleRnd
           - ShuttleSrv
           - ShuttleEmergency
-          - Theatre
+          # - Theatre # LP Edit
           - CellAI
           - Botany
           - Bunker
