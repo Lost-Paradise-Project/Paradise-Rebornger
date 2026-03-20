@@ -56,7 +56,6 @@ public sealed partial class PlayerPanel : FancyWindow
         LogsButton.OnPressed += _ => OnLogs?.Invoke();
         DeleteButton.OnPressed += _ => OnDelete?.Invoke();
         RejuvenateButton.OnPressed += _ => OnRejuvenate?.Invoke();
-        TimeButton.OnPressed += _ => OnPlayerPanel?.Invoke(); // LP edit
     }
 
     public void SetUsername(string player)
