@@ -1,0 +1,10 @@
+- type: construction
+  name: construction-recipe-helmet-sec-light-name
+  id: LPPClothingHeadHelmetBasicLight
+  graph: LPPHelmetSecLight
+  startNode: start
+  targetNode: LPPHelmetSecLight
+  category: construction-category-clothing
+  description: construction-recipe-helmet-sec-light-desc
+  icon: { sprite: _LP/Clothing/Head/Helmets/security.rsi, state: icon }
+  objectType: Item

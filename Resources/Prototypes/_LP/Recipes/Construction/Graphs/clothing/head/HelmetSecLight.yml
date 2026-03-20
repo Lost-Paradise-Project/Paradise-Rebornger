@@ -1,0 +1,25 @@
+- type: constructionGraph
+  id: LPPHelmetSecLight
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: LPPHelmetSecLight
+          steps:
+            - tag: LPPHelmet
+              name: lpp-helmet
+              icon:
+                sprite: Clothing/Head/Helmets/security.rsi
+                state: icon
+              doAfter: 5
+            - tag: LPPFlashlightSeclite
+              name: lpp-seclight
+              icon:
+                sprite: Objects/Tools/seclite.rsi
+                state: seclite
+              doAfter: 5
+            - material: Cable
+              amount: 5
+              doAfter: 5
+    - node: LPPHelmetSecLight
+      entity: LPPClothingHeadHelmetBasic
