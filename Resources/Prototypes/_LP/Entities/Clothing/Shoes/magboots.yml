@@ -1,0 +1,22 @@
+- type: entity
+  parent: ClothingShoesBootsMag
+  id: LPPClothingShoesBootsMagParamed
+  name: advanced magboots
+  description: Magnetic boots paramed, often used during extravehicular activity to ensure the user remains safely attached to the vehicle.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Shoes/Boots/para_magboots.rsi
+    state: icon
+  - type: Clothing
+    sprite: _LP/Clothing/Shoes/Boots/para_magboots.rsi
+  - type: Magboots
+    disabledAutoOff: true
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: NoSlip
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: StaticPrice
+    price: 350

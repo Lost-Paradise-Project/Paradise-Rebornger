@@ -183,6 +183,7 @@
   id: FillChiefEngineerHardsuit
   table: !type:AllSelector
     children:
+    - id: LPPCEGorillaGlove  # LP Edit
     - id: ClothingMaskGasAtmos
     - id: ClothingOuterHardsuitEngineeringWhite
     - id: ClothingShoesBootsMagAdv

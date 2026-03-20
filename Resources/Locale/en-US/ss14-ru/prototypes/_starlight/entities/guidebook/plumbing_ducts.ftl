@@ -10,3 +10,6 @@ ent-GuidebookPlumbingDuctTJunction = fluid duct
 ent-GuidebookPlumbingDuctFourway = fluid duct
     .suffix = Fourway, Guidebook
     .desc = { "" }
+ent-GuidebookPlumbingDuctManifold = fluid manifold
+    .suffix = Guidebook
+    .desc = { "" }

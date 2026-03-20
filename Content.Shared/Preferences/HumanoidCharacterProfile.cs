@@ -292,7 +292,7 @@ namespace Content.Shared.Preferences
             // Corvax-TTS-Start
             var voiceId = random.Pick(prototypeManager
                 .EnumeratePrototypes<TTSVoicePrototype>()
-                .Where(o => CanHaveVoice(o, sex)).ToArray()
+                .Where(o => CanHaveVoice(o, sex, species)).ToArray() // LP edit
             ).ID;
             // Corvax-TTS-End
 
@@ -746,7 +746,7 @@ namespace Content.Shared.Preferences
 
             // Corvax-TTS-Start
             prototypeManager.TryIndex<TTSVoicePrototype>(Voice, out var voice);
-            if (voice is null || !CanHaveVoice(voice, Sex, sponsorTier))
+            if (voice is null || !CanHaveVoice(voice, Sex, Species, sponsorTier)) // LP edit
                 Voice = HumanoidProfileSystem.DefaultSexVoice[sex];
             // Corvax-TTS-End
 
@@ -825,8 +825,16 @@ namespace Content.Shared.Preferences
 
         // Corvax-TTS-Start
         // SHOULD BE NOT PUBLIC, BUT....
-        public static bool CanHaveVoice(TTSVoicePrototype voice, Sex sex, int sponsorTier = 0)
+        public static bool CanHaveVoice(TTSVoicePrototype voice, Sex sex, ProtoId<SpeciesPrototype> species, int sponsorTier = 0) // LP edit
         {
+            // LP edit start
+            if (voice.SpeciesBlacklist.Contains(species))
+                return false;
+
+            if (voice.SpeciesWhitelist.Count > 0 && !voice.SpeciesWhitelist.Contains(species))
+                return false;
+            // LP edit end
+
             return voice.RoundStart && sex == Sex.Unsexed || (voice.Sex == sex || voice.Sex == Sex.Unsexed);
         }
         // Corvax-TTS-End

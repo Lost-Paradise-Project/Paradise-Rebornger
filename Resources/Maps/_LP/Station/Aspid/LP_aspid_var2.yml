@@ -4,8 +4,8 @@ meta:
   engineVersion: 272.0.0
   forkId: ""
   forkVersion: ""
-  time: 02/25/2026 19:39:59
-  entityCount: 18865
+  time: 03/13/2026 11:08:46
+  entityCount: 18890
 maps:
 - 1
 grids:
@@ -10992,12 +10992,6 @@ entities:
     - type: Transform
       pos: -8.5,71.5
       parent: 2
-  - uid: 17279
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 8.5,67.5
-      parent: 2
 - proto: AirlockCargoGlassLocked
   entities:
   - uid: 115
@@ -12520,6 +12514,14 @@ entities:
     components:
     - type: Transform
       pos: -14.5,29.5
+      parent: 2
+- proto: AirlockNanotrasenRepresentativeCommandLocked
+  entities:
+  - uid: 12612
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 8.5,67.5
       parent: 2
 - proto: AirlockQuartermasterGlassLocked
   entities:
@@ -14951,13 +14953,6 @@ entities:
     components:
     - type: Transform
       pos: 6.038775,-21.429781
-      parent: 2
-- proto: BookAtmosDistro
-  entities:
-  - uid: 755
-    components:
-    - type: Transform
-      pos: 7.4437623,-15.369677
       parent: 2
 - proto: BookAtmosVentsMore
   entities:
@@ -42179,6 +42174,68 @@ entities:
       rot: 3.141592653589793 rad
       pos: 33.5,49.5
       parent: 2
+- proto: CarpetCyan
+  entities:
+  - uid: 18208
+    components:
+    - type: Transform
+      pos: 12.5,70.5
+      parent: 2
+  - uid: 18867
+    components:
+    - type: Transform
+      pos: 12.5,69.5
+      parent: 2
+  - uid: 18868
+    components:
+    - type: Transform
+      pos: 12.5,68.5
+      parent: 2
+  - uid: 18869
+    components:
+    - type: Transform
+      pos: 12.5,67.5
+      parent: 2
+  - uid: 18870
+    components:
+    - type: Transform
+      pos: 11.5,70.5
+      parent: 2
+  - uid: 18871
+    components:
+    - type: Transform
+      pos: 11.5,69.5
+      parent: 2
+  - uid: 18872
+    components:
+    - type: Transform
+      pos: 11.5,68.5
+      parent: 2
+  - uid: 18873
+    components:
+    - type: Transform
+      pos: 11.5,67.5
+      parent: 2
+  - uid: 18874
+    components:
+    - type: Transform
+      pos: 10.5,70.5
+      parent: 2
+  - uid: 18875
+    components:
+    - type: Transform
+      pos: 10.5,69.5
+      parent: 2
+  - uid: 18876
+    components:
+    - type: Transform
+      pos: 10.5,68.5
+      parent: 2
+  - uid: 18877
+    components:
+    - type: Transform
+      pos: 10.5,67.5
+      parent: 2
 - proto: CarpetGreen
   entities:
   - uid: 5996
@@ -46617,12 +46674,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -22.5,57.5
       parent: 2
-  - uid: 18208
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 11.5,68.5
-      parent: 2
   - uid: 18243
     components:
     - type: Transform
@@ -47722,10 +47773,10 @@ entities:
       parent: 2
 - proto: CigarGoldCase
   entities:
-  - uid: 6990
+  - uid: 15414
     components:
     - type: Transform
-      pos: 4.630952,48.731987
+      pos: 5.6955357,45.565712
       parent: 2
 - proto: CigCartonBlack
   entities:
@@ -50428,6 +50479,14 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 13.5,20.5
       parent: 2
+- proto: ComputerNTRTasks
+  entities:
+  - uid: 18878
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 12.5,70.5
+      parent: 2
 - proto: ComputerPowerMonitoring
   entities:
   - uid: 6078
@@ -51317,9 +51376,9 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 12945
           - 12949
           - 12951
+          - 12945
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -57154,6 +57213,11 @@ entities:
     - type: Transform
       pos: 2.4034402,71.704254
       parent: 2
+  - uid: 18882
+    components:
+    - type: Transform
+      pos: 10.577875,66.55751
+      parent: 2
 - proto: DrinkMugRainbow
   entities:
   - uid: 8261
@@ -57232,6 +57296,13 @@ entities:
     components:
     - type: Transform
       pos: 5.67161,57.67581
+      parent: 2
+- proto: DrinkWhiskeyBottleFull
+  entities:
+  - uid: 18883
+    components:
+    - type: Transform
+      pos: 10.06225,66.80751
       parent: 2
 - proto: DrinkWineGlass
   entities:
@@ -59943,7 +60014,7 @@ entities:
       pos: 1.5,17.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -14740.592
+      secondsUntilStateChange: -15549.105
       state: Closing
   - uid: 8554
     components:
@@ -60221,7 +60292,7 @@ entities:
       pos: 28.5,20.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -16305.825
+      secondsUntilStateChange: -17114.34
       state: Closing
   - uid: 8609
     components:
@@ -87694,10 +87765,10 @@ entities:
       parent: 2
 - proto: HolopadCommandCaptain
   entities:
-  - uid: 18283
+  - uid: 18890
     components:
     - type: Transform
-      pos: -7.5,74.5
+      pos: -6.5,74.5
       parent: 2
 - proto: HolopadCommandCe
   entities:
@@ -89233,10 +89304,10 @@ entities:
           ent: null
 - proto: LockerCaptainFilledHardsuit
   entities:
-  - uid: 12612
+  - uid: 18206
     components:
     - type: Transform
-      pos: -6.5,74.5
+      pos: -7.5,74.5
       parent: 2
 - proto: LockerChemistryFilled
   entities:
@@ -89865,6 +89936,19 @@ entities:
       containers:
         VendingMachine: !type:Container
           ents: []
+- proto: LPPCargoProtolathe
+  entities:
+  - uid: 6990
+    components:
+    - type: Transform
+      pos: -38.5,9.5
+      parent: 2
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
 - proto: LPPClothingOuterCoatPajamsSharkPink
   entities:
   - uid: 7352
@@ -89872,6 +89956,19 @@ entities:
     - type: Transform
       pos: -18.763214,-22.178762
       parent: 2
+- proto: LPPEngineeringProtolathe
+  entities:
+  - uid: 13431
+    components:
+    - type: Transform
+      pos: 7.5,-15.5
+      parent: 2
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
 - proto: LPPErpMachine
   entities:
   - uid: 17776
@@ -89926,6 +90023,39 @@ entities:
       containers:
         VendingMachine: !type:Container
           ents: []
+- proto: LPPScienceProtolathe
+  entities:
+  - uid: 13416
+    components:
+    - type: Transform
+      pos: -3.5,24.5
+      parent: 2
+- proto: LPPServiceProtolathe
+  entities:
+  - uid: 755
+    components:
+    - type: Transform
+      pos: 3.5,-5.5
+      parent: 2
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
+- proto: LPPSpaceForgeCMD
+  entities:
+  - uid: 12924
+    components:
+    - type: Transform
+      pos: 4.5,48.5
+      parent: 2
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
 - proto: LPPUnderpantsMat
   entities:
   - uid: 17785
@@ -91617,10 +91747,10 @@ entities:
       parent: 2
 - proto: PinpointerNuclear
   entities:
-  - uid: 12924
+  - uid: 18881
     components:
     - type: Transform
-      pos: 4.3469753,48.675224
+      pos: 4.8830357,45.468487
       parent: 2
 - proto: PlantBag
   entities:
@@ -92592,11 +92722,6 @@ entities:
     - type: Transform
       pos: -40.5,15.5
       parent: 2
-  - uid: 13056
-    components:
-    - type: Transform
-      pos: -38.5,9.5
-      parent: 2
   - uid: 13057
     components:
     - type: Transform
@@ -92699,10 +92824,10 @@ entities:
     - type: Transform
       pos: 5.5,52.5
       parent: 2
-  - uid: 18206
+  - uid: 17279
     components:
     - type: Transform
-      pos: 9.5,70.5
+      pos: 12.5,66.5
       parent: 2
   - uid: 18244
     components:
@@ -95362,13 +95487,6 @@ entities:
       canCollide: False
     - type: InsideEntityStorage
       storage: 15705
-- proto: Protolathe
-  entities:
-  - uid: 13416
-    components:
-    - type: Transform
-      pos: -3.5,24.5
-      parent: 2
 - proto: Rack
   entities:
   - uid: 13420
@@ -95420,11 +95538,6 @@ entities:
     components:
     - type: Transform
       pos: 13.5,-41.5
-      parent: 2
-  - uid: 13431
-    components:
-    - type: Transform
-      pos: 4.5,48.5
       parent: 2
   - uid: 13432
     components:
@@ -101615,9 +101728,6 @@ entities:
       parent: 2
     - type: DeviceLinkSource
       linkedPorts:
-        17279:
-        - - Pressed
-          - DoorBolt
         18211:
         - - Pressed
           - Toggle
@@ -104666,6 +104776,28 @@ entities:
     - type: Transform
       pos: -7.5,11.5
       parent: 2
+- proto: SpawnPointBlueshieldOfficer
+  entities:
+  - uid: 18886
+    components:
+    - type: Transform
+      pos: 9.5,69.5
+      parent: 2
+  - uid: 18887
+    components:
+    - type: Transform
+      pos: 4.5,76.5
+      parent: 2
+  - uid: 18888
+    components:
+    - type: Transform
+      pos: -0.5,78.5
+      parent: 2
+  - uid: 18889
+    components:
+    - type: Transform
+      pos: -4.5,76.5
+      parent: 2
 - proto: SpawnPointBorg
   entities:
   - uid: 6208
@@ -104909,6 +105041,18 @@ entities:
     components:
     - type: Transform
       pos: -17.5,-4.5
+      parent: 2
+- proto: SpawnPointNanotrasenRepresentative
+  entities:
+  - uid: 18283
+    components:
+    - type: Transform
+      pos: 11.5,68.5
+      parent: 2
+  - uid: 18866
+    components:
+    - type: Transform
+      pos: 11.5,70.5
       parent: 2
 - proto: SpawnPointObserver
   entities:
@@ -105742,6 +105886,16 @@ entities:
       parent: 2
 - proto: SurveillanceCameraCommand
   entities:
+  - uid: 13056
+    components:
+    - type: Transform
+      pos: 9.5,66.5
+      parent: 2
+    - type: SurveillanceCamera
+      setupAvailableNetworks:
+      - SurveillanceCameraCommand
+      nameSet: True
+      id: Представитель ЦК
   - uid: 15107
     components:
     - type: Transform
@@ -106230,16 +106384,6 @@ entities:
       - SurveillanceCameraGeneral
       nameSet: True
       id: Fore Hallway
-  - uid: 15152
-    components:
-    - type: Transform
-      pos: 9.5,66.5
-      parent: 2
-    - type: SurveillanceCamera
-      setupAvailableNetworks:
-      - SurveillanceCameraGeneral
-      nameSet: True
-      id: Bridge Observatory
   - uid: 15153
     components:
     - type: Transform
@@ -107966,11 +108110,6 @@ entities:
     - type: Transform
       pos: 9.5,-15.5
       parent: 2
-  - uid: 15414
-    components:
-    - type: Transform
-      pos: 7.5,-15.5
-      parent: 2
   - uid: 15415
     components:
     - type: Transform
@@ -108370,6 +108509,18 @@ entities:
     components:
     - type: Transform
       pos: 15.5,32.5
+      parent: 2
+  - uid: 18879
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 10.5,66.5
+      parent: 2
+  - uid: 18880
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 9.5,66.5
       parent: 2
 - proto: TableStone
   entities:
@@ -108803,6 +108954,18 @@ entities:
     components:
     - type: Transform
       pos: 19.39469,58.32594
+      parent: 2
+- proto: TaskBottle
+  entities:
+  - uid: 18884
+    components:
+    - type: Transform
+      pos: 9.37475,66.823135
+      parent: 2
+  - uid: 18885
+    components:
+    - type: Transform
+      pos: 9.640375,66.65126
       parent: 2
 - proto: TelecomServer
   entities:
@@ -121977,6 +122140,11 @@ entities:
       location: Личный шаттл капитана
 - proto: WaterCooler
   entities:
+  - uid: 15152
+    components:
+    - type: Transform
+      pos: 11.5,66.5
+      parent: 2
   - uid: 17775
     components:
     - type: Transform

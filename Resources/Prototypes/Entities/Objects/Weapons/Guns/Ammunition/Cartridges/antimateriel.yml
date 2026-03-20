@@ -16,5 +16,7 @@
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals
-  - type: StaticPrice
-    price: 20
+  # LP Edit Start
+  # - type: StaticPrice
+  #   price: 20
+  # LP Edit End

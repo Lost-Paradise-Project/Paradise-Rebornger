@@ -184,7 +184,8 @@
   sex: Male
   speaker: sentrybot
   id: sentrybot
-  roundStart: false
+  speciesWhitelist:
+  - Ipc
 
 - type: ttsVoice
   name: tts-voice-name-moira_brown
@@ -215,7 +216,8 @@
   sex: Male
   speaker: mister_handy_fl3
   id: mister_handy_fl3
-  roundStart: false
+  speciesWhitelist:
+  - Ipc
 
 - type: ttsVoice
   name: tts-voice-name-mister_gutsy_fl3
@@ -408,35 +410,40 @@
   sex: Female
   speaker: glados
   id: glados
-  roundStart: false
+  speciesWhitelist:
+  - Ipc
 
 - type: ttsVoice
   name: tts-voice-name-adventure_core
   sex: Male
   speaker: adventure_core
   id: adventure_core
-  roundStart: false
+  speciesWhitelist:
+  - Ipc
 
 - type: ttsVoice
   name: tts-voice-name-fact_core
   sex: Male
   speaker: fact_core
   id: fact_core
-  roundStart: false
+  speciesWhitelist:
+  - Ipc
 
 - type: ttsVoice
   name: tts-voice-name-space_core
   sex: Male
   speaker: space_core
   id: space_core
-  roundStart: false
+  speciesWhitelist:
+  - Ipc
 
 - type: ttsVoice
   name: tts-voice-name-turret_floor
   sex: Female
   speaker: turret_floor
   id: turret_floor
-  roundStart: false
+  speciesWhitelist:
+  - Ipc
 
 - type: ttsVoice
   name: tts-voice-name-geralt
@@ -690,7 +697,8 @@
   sex: Male
   speaker: skippy
   id: skippy
-  roundStart: false
+  speciesWhitelist:
+  - Ipc
 
 - type: ttsVoice
   name: tts-voice-name-jackie
@@ -709,7 +717,8 @@
   sex: Male
   speaker: brendan
   id: brendan
-  roundStart: false
+  speciesWhitelist:
+  - Ipc
 
 - type: ttsVoice
   name: tts-voice-name-nancy_hartley
@@ -832,7 +841,8 @@
   sex: Female
   speaker: adjutant
   id: adjutant
-  roundStart: false
+  speciesWhitelist:
+  - Ipc
 
 - type: ttsVoice
   name: tts-voice-name-hanson
@@ -1574,7 +1584,8 @@
   sex: Male
   speaker: guard_assassin_dow
   id: guard_assassin_dow
-  roundStart: false
+  speciesWhitelist:
+  - Ipc
 
 - type: ttsVoice
   name: tts-voice-name-guard_captain_dow
@@ -1632,7 +1643,8 @@
   sex: Male
   speaker: guard_psyker_dow
   id: guard_psyker_dow
-  roundStart: false
+  speciesWhitelist:
+  - Ipc
 
 - type: ttsVoice
   name: tts-voice-name-orks_dow

@@ -1,0 +1,81 @@
+- type: technology
+  id: LPPSpaceForge
+  name: research-technology-space-forge
+  icon:
+    sprite: _LP/Structures/Machines/SpaceForge.rsi
+    state: icon
+  discipline: CivilianServices
+  tier: 1
+  cost: 5000
+  recipeUnlocks:
+  - LPPSpaceForgeMachineCircuitboard
+  position: 2, 28 # печать скафоф
+
+- type: technology
+  id: LPPEVAHardsuits
+  name: research-technology-eva-hardsuits
+  icon:
+    sprite: Clothing/OuterClothing/Suits/eva.rsi
+    state: icon
+  discipline: CivilianServices
+  tier: 1
+  cost: 5000
+  recipeUnlocks:
+  - ClothingOuterHardsuitEVA
+  - ClothingHeadHelmetEVA
+  - ClothingOuterSuitEmergency
+  technologyPrerequisites:
+  - LPPSpaceForge
+  position: 2, 29 # ВКД
+
+- type: technology
+  id: LPPEngineeringHardsuits
+  name: research-technology-engineering-hardsuits
+  icon:
+    sprite: Clothing/OuterClothing/Hardsuits/engineering.rsi
+    state: icon
+  discipline: CivilianServices
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - ClothingOuterHardsuitAtmos
+  - ClothingOuterHardsuitEngineering
+  technologyPrerequisites:
+  - LPPEVAHardsuits
+  position: 4, 30 # скафы инженеров
+  radioChannels:
+  - Engineering
+
+- type: technology
+  id: LPPBaseMiningHardsuits
+  name: research-technology-base-mining-hardsuits
+  icon:
+    sprite: Clothing/OuterClothing/Hardsuits/spatio.rsi
+    state: icon
+  discipline: CivilianServices
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - ClothingOuterHardsuitSpatio
+  technologyPrerequisites:
+  - LPPEVAHardsuits
+  position: 1, 30 # базовые шатхтерские скафы
+  radioChannels:
+  - Supply
+
+- type: technology
+  id: LPPMiningHardsuits
+  name: research-technology-mining-hardsuits
+  icon:
+    sprite: Clothing/OuterClothing/Hardsuits/salvage.rsi
+    state: icon
+  discipline: CivilianServices
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - ClothingOuterHardsuitSalvage
+  technologyPrerequisites:
+  - LPPBaseMiningHardsuits
+  position: 2, 31 # Шахтерские скафы
+  radioChannels:
+  - Supply

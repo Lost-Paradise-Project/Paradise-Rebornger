@@ -22,7 +22,8 @@ public sealed partial class GasTurbineWindow : FancyWindow
     [Dependency] private readonly IEntityManager _entityManager = null!;
     private readonly LockSystem _lock;
 
-    #region Variables
+#region Variables
+    private readonly Dictionary<Button, (float Delta, bool IsFlow)> _button_adjusters = new(); // LP edit
     //Colors for the RPM meter. (lit)
     private static readonly Color[] _speedColors = [
         Color.FromHex("#BB3232"),
@@ -100,34 +101,29 @@ public sealed partial class GasTurbineWindow : FancyWindow
             if (!_suppressSliderEvents)
                 TurbineFlowRateChanged?.Invoke(TurbineFlowRateSlider.Value);
         };
-        FlowRateDecrease.OnPressed += _ => TurbineFlowRateChanged?.Invoke(_flowRate - 100);
-        FlowRateDecrease.OnButtonDown += _ => _repeatQueue.Add(FlowRateDecrease, _repeatDelay);
-        FlowRateDecrease.OnButtonUp += _ => _repeatQueue.Remove(FlowRateDecrease);
-
-        FlowRateIncrease.OnPressed += _ => TurbineFlowRateChanged?.Invoke(_flowRate + 100);
-        FlowRateIncrease.OnButtonDown += _ => _repeatQueue.Add(FlowRateIncrease, _repeatDelay);
-        FlowRateIncrease.OnButtonUp += _ => _repeatQueue.Remove(FlowRateIncrease);
+        // LP edit start
+        SetupAdjustButton(FlowRateDecrease, -100f, true);
+        SetupAdjustButton(FlowRateIncrease, 100f, true);
+        // LP edit end
 
         // Handle stator load
         TurbineStatorLoadLabel.OnFocusEnter += _ => _suppressStatorUpdate = true;
         TurbineStatorLoadLabel.OnFocusExit += _ => StatorTextChanged();
         TurbineStatorLoadLabel.OnTextEntered += _ => StatorTextChanged(true);
 
-        StatorLoadDecreaseLarge.OnPressed += _ => TurbineStatorLoadChanged?.Invoke(_statorLevel - 1000);
-        StatorLoadDecreaseLarge.OnButtonDown += _ => _repeatQueue.Add(StatorLoadDecreaseLarge, _repeatDelay);
-        StatorLoadDecreaseLarge.OnButtonUp += _ => _repeatQueue.Remove(StatorLoadDecreaseLarge);
+        // LP edit start
+        SetupAdjustButton(StatorLoadDecreaseLarge, -1000f, false);
+        SetupAdjustButton(StatorLoadDecrease, -100f, false);
+        SetupAdjustButton(StatorLoadIncrease, 100f, false);
+        SetupAdjustButton(StatorLoadIncreaseLarge, 1000f, false);
 
-        StatorLoadDecrease.OnPressed += _ => TurbineStatorLoadChanged?.Invoke(_statorLevel - 100);
-        StatorLoadDecrease.OnButtonDown += _ => _repeatQueue.Add(StatorLoadDecrease, _repeatDelay);
-        StatorLoadDecrease.OnButtonUp += _ => _repeatQueue.Remove(StatorLoadDecrease);
-
-        StatorLoadIncrease.OnPressed += _ => TurbineStatorLoadChanged?.Invoke(_statorLevel + 100);
-        StatorLoadIncrease.OnButtonDown += _ => _repeatQueue.Add(StatorLoadIncrease, _repeatDelay);
-        StatorLoadIncrease.OnButtonUp += _ => _repeatQueue.Remove(StatorLoadIncrease);
-
-        StatorLoadIncreaseLarge.OnPressed += _ => TurbineStatorLoadChanged?.Invoke(_statorLevel + 1000);
-        StatorLoadIncreaseLarge.OnButtonDown += _ => _repeatQueue.Add(StatorLoadIncreaseLarge, _repeatDelay);
-        StatorLoadIncreaseLarge.OnButtonUp += _ => _repeatQueue.Remove(StatorLoadIncreaseLarge);
+        SetupAdjustButton(StatorLoadDecrease100, -100000f, false);
+        SetupAdjustButton(StatorLoadDecrease50, -50000f, false);
+        SetupAdjustButton(StatorLoadDecrease10, -10000f, false);
+        SetupAdjustButton(StatorLoadIncrease10, 10000f, false);
+        SetupAdjustButton(StatorLoadIncrease50, 50000f, false);
+        SetupAdjustButton(StatorLoadIncrease100, 100000f, false);
+        // LP edit end
 
         CTabContainer.SetTabTitle(0, Loc.GetString("gas-turbine-ui-tab-main"));
         CTabContainer.SetTabTitle(1, Loc.GetString("gas-turbine-ui-tab-parts"));
@@ -148,6 +144,21 @@ public sealed partial class GasTurbineWindow : FancyWindow
             _suppressStatorUpdate = suppress;
         }
     }
+
+    // LP edit start
+    private void SetupAdjustButton(Button button, float delta, bool isFlow = false)
+    {
+        button.OnPressed += _ =>
+        {
+            float val = isFlow ? _flowRate : _statorLevel;
+            (isFlow ? TurbineFlowRateChanged : TurbineStatorLoadChanged)?.Invoke(val + delta);
+        };
+        button.OnButtonDown += _ => _repeatQueue.Add(button, _repeatDelay);
+        button.OnButtonUp += _ => _repeatQueue.Remove(button);
+
+        _button_adjusters[button] = (delta, isFlow);
+    }
+    // LP edit end
 
     #region Graphics
     public void SetEntity(EntityUid turbine, EntityUid? monitor = null)
@@ -271,27 +282,14 @@ public sealed partial class GasTurbineWindow : FancyWindow
                 continue;
             }
 
-            switch (kvp.Key)
+            // LP edit start
+            if (_button_adjusters.TryGetValue(kvp.Key, out var adj))
             {
-                case var _ when kvp.Key == FlowRateDecrease:
-                    TurbineFlowRateChanged?.Invoke(_flowRate - 100);
-                    break;
-                case var _ when kvp.Key == FlowRateIncrease:
-                    TurbineFlowRateChanged?.Invoke(_flowRate + 100);
-                    break;
-                case var _ when kvp.Key == StatorLoadDecreaseLarge:
-                    TurbineStatorLoadChanged?.Invoke(_statorLevel - 1000);
-                    break;
-                case var _ when kvp.Key == StatorLoadDecrease:
-                    TurbineStatorLoadChanged?.Invoke(_statorLevel - 100);
-                    break;
-                case var _ when kvp.Key == StatorLoadIncrease:
-                    TurbineStatorLoadChanged?.Invoke(_statorLevel + 100);
-                    break;
-                case var _ when kvp.Key == StatorLoadIncreaseLarge:
-                    TurbineStatorLoadChanged?.Invoke(_statorLevel + 1000);
-                    break;
+                float val = adj.IsFlow ? _flowRate : _statorLevel;
+                (adj.IsFlow ? TurbineFlowRateChanged : TurbineStatorLoadChanged)?.Invoke(val + adj.Delta);
+                _repeatQueue[kvp.Key] = _repeatDelay;
             }
+            // LP edit end
         }
     }
     #endregion

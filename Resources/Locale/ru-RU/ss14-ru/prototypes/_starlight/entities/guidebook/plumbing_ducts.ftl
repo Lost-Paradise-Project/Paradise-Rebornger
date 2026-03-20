@@ -10,3 +10,6 @@ ent-GuidebookPlumbingDuctTJunction = жидкостная труба
 ent-GuidebookPlumbingDuctFourway = жидкостная труба
     .suffix = Крестовина, Руководство
     .desc = { "" }
+ent-GuidebookPlumbingDuctManifold = жидкостный коллектор
+    .suffix = Гайдбук
+    .desc = { "" }

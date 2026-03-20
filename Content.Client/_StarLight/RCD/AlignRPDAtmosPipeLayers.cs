@@ -54,7 +54,8 @@ public sealed class AlignRPDAtmosPipeLayers : PlacementMode
 
     private EntityCoordinates _mouseCoordsRaw = default;
     private static AtmosPipeLayer _currentLayer = AtmosPipeLayer.Primary;
-    private static float? _currentEyeRotation = null;
+    private static EntityUid? _lastLayerSyncEntity = null;
+    private static AtmosPipeLayer? _lastLayerSynced = null;
     private Color _guideColor = new(0, 0, 0.5785f);
 
     public AlignRPDAtmosPipeLayers(PlacementManager pMan) : base(pMan)
@@ -137,7 +138,7 @@ public sealed class AlignRPDAtmosPipeLayers : PlacementMode
         if (!_handsSystem.TryGetActiveItem(player.Value, out var heldEntity))
             return;
 
-        if (!_entityManager.TryGetComponent<RCDComponent>(heldEntity, out var rcd) || !rcd.IsRpd)
+        if (!_entityManager.TryGetComponent<RCDComponent>(heldEntity, out var rcd) || (!rcd.IsRpd && !rcd.IsRPLD))
             return;
 
         if (!_entityManager.TryGetComponent<TransformComponent>(player.Value, out var playerXform))
@@ -184,20 +185,29 @@ public sealed class AlignRPDAtmosPipeLayers : PlacementMode
             _currentLayer = newLayer;
 
         if (rcd.CurrentMode == RpdMode.Free)
-            UpdateEyeRotation(heldEntity.Value, _eyeManager.CurrentEye.Rotation);
+        {
+            UpdateSelectedLayer(heldEntity.Value, _currentLayer);
+        }
 
         UpdatePlacer(_currentLayer);
     }
 
-    // Since player eye rotation isn't networked and there is a comment warning against doing so,
-    // we need a way of sending current eye rotation to the rpd for correct layer placement.
-    // I'm sure there's a better solution for this but I haven't found it
-    private void UpdateEyeRotation(EntityUid heldEntity, Angle eyeRotation)
+    // Why this replaced UpdateEyeRotation:
+    // - Free-mode preview computes an explicit layer choice on the client from cursor position.
+    // - The old approach only synced camera/eye rotation and asked the server to recompute the layer.
+    //
+    // What this does instead:
+    // - Whenever the locally selected free-mode layer changes (or held RPD/RPLD changes),
+    //   sends that exact layer as RPDSelectedLayerEvent.
+    // - Server stores it on the held RCDComponent (LastSelectedLayer)
+    //   and uses it directly during placement in Free mode.
+    private void UpdateSelectedLayer(EntityUid heldEntity, AtmosPipeLayer layer)
     {
-        if (_currentEyeRotation != eyeRotation.Theta)
+        if (_lastLayerSyncEntity != heldEntity || _lastLayerSynced != layer)
         {
-            _currentEyeRotation = (float) eyeRotation.Theta;
-            _entityNetwork.SendSystemNetworkMessage(new RPDEyeRotationEvent(_entityManager.GetNetEntity(heldEntity), _currentEyeRotation));
+            _lastLayerSyncEntity = heldEntity;
+            _lastLayerSynced = layer;
+            _entityNetwork.SendSystemNetworkMessage(new RPDSelectedLayerEvent(_entityManager.GetNetEntity(heldEntity), (byte) layer));
         }
     }
 

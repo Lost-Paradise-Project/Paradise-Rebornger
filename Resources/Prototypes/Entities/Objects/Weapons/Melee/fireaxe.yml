@@ -14,7 +14,7 @@
     sprite: Objects/Weapons/Melee/fireaxe.rsi
     state: icon
   - type: MeleeWeapon
-    wideAnimationRotation: 135
+    wideAnimationRotation: -135 # LP Edit 135 -> -135
     swingLeft: true
     attackRate: 0.75
     damage:
@@ -57,7 +57,7 @@
   description: Why fight fire with an axe when you can fight with fire and axe? Now featuring rugged rubberized handle!
   components:
   - type: MeleeWeapon
-    wideAnimationRotation: 90
+    wideAnimationRotation: -90 # LP Edit 90 -> -90
   - type: IgniteOnMeleeHit
     fireStacks: 1
   - type: Sprite
