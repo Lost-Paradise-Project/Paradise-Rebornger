@@ -17,8 +17,8 @@ website = "https://boosty.to/lost-paradise"
 [game.panic_bunker]
 enabled = true
 show_reason = true
-min_account_age = 10
-min_overall_minutes = 0
+min_account_age = 300
+min_overall_minutes = 300
 enable_without_admins = true
 disable_with_admins = true
 
