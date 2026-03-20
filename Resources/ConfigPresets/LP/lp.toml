@@ -73,7 +73,7 @@ map_autovote_enabled = true
 preset_autovote_enabled = true
 
 [rules]
-time = 180.0
+time = 30.0
 
 [discord]
 rich_main_icon_id = "https://iili.io/f85IYyQ.png"
@@ -93,3 +93,6 @@ easy_mode = false
 [wega]
 night_light_enabled = true
 party_enabled = false
+
+[tips]
+out_of_game_frequency = 360
