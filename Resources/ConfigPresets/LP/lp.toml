@@ -1,6 +1,6 @@
 ﻿[game]
 hostname = "[18+] 🔥 LOST PARADISE ❤️"
-desc = "- Мы проект со средним требованием к отыгрышу с разрешенным ЕРП. \n- Наша цель это создание приятного времяпрепровождения для всех игроков не зависимо от их предпочитаемого геймлпея \n- Присоединяйтесь в наше Дискорд сообщество"
+desc = "- Мы проект со средним требованием к отыгрышу с разрешенным ЕРП. \n- Наша цель это создание приятного времяпрепровождения для всех игроков не зависимо от их предпочитаемого геймплея \n- Присоединяйтесь в наше Дискорд сообщество"
 lobbyduration = 240
 map_pool = "LPmaps"
 soft_max_players = 111
@@ -17,8 +17,8 @@ website = "https://boosty.to/lost-paradise"
 [game.panic_bunker]
 enabled = true
 show_reason = true
-min_account_age = 10
-min_overall_minutes = 0
+min_account_age = 300
+min_overall_minutes = 300
 enable_without_admins = true
 disable_with_admins = true
 
@@ -73,7 +73,7 @@ map_autovote_enabled = true
 preset_autovote_enabled = true
 
 [rules]
-time = 180.0
+time = 30.0
 
 [discord]
 rich_main_icon_id = "https://iili.io/f85IYyQ.png"
@@ -86,6 +86,7 @@ space_wind = true
 
 [ic]
 flavor_text = true
+flavor_text_length = 1024
 
 [biomass]
 easy_mode = false
@@ -93,3 +94,6 @@ easy_mode = false
 [wega]
 night_light_enabled = true
 party_enabled = false
+
+[tips]
+out_of_game_frequency = 360

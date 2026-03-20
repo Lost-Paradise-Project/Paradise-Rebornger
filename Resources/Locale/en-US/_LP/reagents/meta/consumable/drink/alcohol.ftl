@@ -1,2 +1,2 @@
-reagent-name-xenomeister = xenomeister
-reagent-desc-xenomeister = A drink made from 56 different ingredients from the xeno worlds, including cosmic anise, herbs, roots, bark and spices, in an alcoholic solution based on xeno blood.
+reagent-name-xenomeister = ксеномейстер
+reagent-desc-xenomeister = Напиток из 56 различных компонентов с ксено миров, включая космический анис, травы, коренья, кору и специи, в спиртовом растворе на основе крови ксено.

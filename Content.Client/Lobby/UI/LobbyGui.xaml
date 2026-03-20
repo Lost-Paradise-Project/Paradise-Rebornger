@@ -51,13 +51,16 @@
                     <!-- Vertical Padding-->
                     <Control VerticalExpand="True" />
                     <!-- Left Bot Panel -->
-                    <!-- LP edit start: wwdp customghost-->
+                    <!-- LP edit -->
                     <BoxContainer>
                         <PanelContainer HorizontalAlignment="Left" VerticalAlignment="Bottom">
-                            <BoxContainer Orientation="Vertical" SeparationOverride="4" Margin="2">  <!-- wwdp edit start -->
+                            <BoxContainer Orientation="Vertical" SeparationOverride="4" Margin="2">
+                                <BoxContainer Name="ReklamaLineBox" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>    <!-- LP edit: рекламные блоки-->
+                                <!-- wwdp edit start -->
                                 <BoxContainer Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom" SeparationOverride="4" Margin="6,8,6,8">
                                     <BoxContainer Name="CustomGhostsMenu"/>
                                 </BoxContainer>
+                                <!-- wwdp edit end -->
                                 <BoxContainer Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom" SeparationOverride="4"> <!-- Goobstation - Lobby Background Credits -->
                                     <info:DevInfoBanner Name="DevInfoBanner" VerticalExpand="false" Margin="3 3 3 3" />
                                     <PanelContainer StyleClasses="AngleRect">
@@ -69,7 +72,7 @@
                                     </PanelContainer>
                                     <!-- Goobstation end -->
                                 </BoxContainer>
-                            </BoxContainer>   <!-- wwdp edit end -->
+                            </BoxContainer>
                         </PanelContainer>
                     </BoxContainer>
                     <!--LP edit end-->
