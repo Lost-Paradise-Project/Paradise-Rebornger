@@ -1,4 +1,4 @@
-﻿ghost-respawn-minutes-left = Please wait {$time} {$time ->
+ghost-respawn-minutes-left = Please wait {$time} {$time ->
     [one] minute
    *[other] minutes
 } before trying to respawn.

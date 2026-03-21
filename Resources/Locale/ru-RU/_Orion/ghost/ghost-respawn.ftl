@@ -1,4 +1,4 @@
-﻿ghost-respawn-minutes-left = До возможности вернуться в раунд { $time }
+ghost-respawn-minutes-left = До возможности вернуться в раунд { $time }
     { $time ->
         [one] минута
         [few] минуты

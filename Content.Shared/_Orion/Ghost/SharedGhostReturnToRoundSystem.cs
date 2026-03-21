@@ -1,4 +1,4 @@
-﻿using Content.Shared.CCVar;
+using Content.Shared.CCVar;
 using Robust.Shared.Configuration;
 using Robust.Shared.Timing;
 
