@@ -3,7 +3,7 @@
 
   bodyPart: Chest
   groupWhitelist: [Tajaran]
-  sponsorOnly: true # Corvax-Sponsors
+  sponsorOnly: false # LP-edit
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_overlay.rsi
       state: patch
@@ -73,7 +73,7 @@
 
   bodyPart: LHand
   groupWhitelist: [Tajaran]
-  sponsorOnly: true # Corvax-Sponsors
+  sponsorOnly: false # LP-edit
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_parts.rsi
       state: gradient_LHand
@@ -83,7 +83,7 @@
 
   bodyPart: LArm
   groupWhitelist: [Tajaran]
-  sponsorOnly: true # Corvax-Sponsors
+  sponsorOnly: false # LP-edit
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_parts.rsi
       state: gradient_LArm
@@ -93,7 +93,7 @@
 
   bodyPart: RHand
   groupWhitelist: [Tajaran]
-  sponsorOnly: true # Corvax-Sponsors
+  sponsorOnly: false # LP-edit
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_parts.rsi
       state: gradient_RHand
@@ -103,7 +103,7 @@
 
   bodyPart: RArm
   groupWhitelist: [Tajaran]
-  sponsorOnly: true # Corvax-Sponsors
+  sponsorOnly: false # LP-edit
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_parts.rsi
       state: gradient_RArm
@@ -119,7 +119,7 @@
       state: spikey
 
 - type: marking
-  id: TajaranTajaranHairLadiesretro
+  id: TajaranHairLadiesretro # LP-edit 
 
   bodyPart: Hair
   groupWhitelist: [Tajaran]
@@ -567,7 +567,7 @@
 
   bodyPart: Tail
   groupWhitelist: [Tajaran]
-  sponsorOnly: true # Corvax-Sponsors
+  sponsorOnly: false # LP-edit
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_tail.rsi
       state: tail_m

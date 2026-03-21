@@ -1,0 +1,9 @@
+- type: construction
+  name: construction-recipe-helmet-sec-light-name
+  id: LPPClothingHeadHelmetBasicLight
+  graph: LPPHelmetSecLight
+  startNode: start
+  targetNode: LPPHelmetSecLight
+  category: construction-category-clothing
+  description: construction-recipe-helmet-sec-light-desc
+  objectType: Item

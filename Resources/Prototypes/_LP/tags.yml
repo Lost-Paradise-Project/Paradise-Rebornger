@@ -36,3 +36,9 @@
 
 - type: Tag
   id: NuclearClearing
+
+- type: Tag
+  id: LPPHelmet
+
+- type: Tag
+  id: LPPFlashlightSeclite

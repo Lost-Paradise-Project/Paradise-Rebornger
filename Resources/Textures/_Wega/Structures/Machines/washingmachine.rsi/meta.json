@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Sprite taken from https://github.com/ss220-space/Paradise",
+    "copyright": "Sprite taken from Skilets",
     "size": {
         "x": 32,
         "y": 32
@@ -23,12 +23,6 @@
             "name": "washing",
             "delays": [
                 [
-                    0.125,
-                    0.125,
-                    0.125,
-                    0.125,
-                    0.125,
-                    0.125,
                     0.125,
                     0.125,
                     0.125

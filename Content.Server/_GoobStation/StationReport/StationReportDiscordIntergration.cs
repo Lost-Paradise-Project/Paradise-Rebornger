@@ -70,7 +70,17 @@ public sealed class StationReportDiscordIntergration : EntitySystem
         if (string.IsNullOrWhiteSpace(message) || string.IsNullOrWhiteSpace(_webhookUrl))
             return;
 
-        var payload = new { content = message };
+        var payload = new
+        {
+            embeds = new[]
+            {
+                new
+                {
+                    description = message
+                }
+            }
+        };
+
         var json = System.Text.Json.JsonSerializer.Serialize(payload);
         var content = new StringContent(json, Encoding.UTF8, "application/json");
 

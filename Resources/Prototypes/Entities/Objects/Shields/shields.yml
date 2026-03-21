@@ -456,7 +456,7 @@
     - type: ComponentToggler
       components:
       - type: DisarmMalus
-        malus: 0.6
+        malus: 1 # Goob edit
     - type: Sprite
       sprite: Objects/Weapons/Melee/e_shield.rsi
       layers:
@@ -485,8 +485,8 @@
       netsync: false
       enabled: false
       radius: 1.5
-      energy: 2
-      color: blue
+      energy: 0.7 # WD EDIT
+      color: "#678AD9" # WD EDIT
     - type: ItemTogglePointLight
     - type: Reflect
       reflectProb: 0.95
@@ -513,30 +513,45 @@
       damageContainer: Shield
     - type: ExaminableDamage
       messages: EnergyShieldMessages
-    - type: Destructible
-      thresholds:
-        - trigger:
-            !type:DamageTrigger
-            damage: 180
-          behaviors:
-            - !type:DoActsBehavior
-              acts: [ "Destruction" ]
-        - trigger:
-            !type:DamageTrigger
-            damage: 100
-          behaviors:
-            - !type:DoActsBehavior
-              acts: [ "Destruction" ]
-            - !type:PlaySoundBehavior
-              sound:
-                collection: GlassBreak
-            - !type:SpawnEntitiesBehavior
-              spawn:
-                BrokenEnergyShield:
-                  min: 1
-                  max: 1
+    # LP Edit Start
+    # - type: Destructible
+    #   thresholds:
+    #     - trigger:
+    #         !type:DamageTrigger
+    #         damage: 180
+    #       behaviors:
+    #         - !type:DoActsBehavior
+    #           acts: [ "Destruction" ]
+    #     - trigger:
+    #         !type:DamageTrigger
+    #         damage: 100
+    #       behaviors:
+    #         - !type:DoActsBehavior
+    #           acts: [ "Destruction" ]
+    #         - !type:PlaySoundBehavior
+    #           sound:
+    #             collection: GlassBreak
+    #         - !type:SpawnEntitiesBehavior
+    #           spawn:
+    #             BrokenEnergyShield:
+    #               min: 1
+    #               max: 1
+    # LP Edit End
     - type: StaticPrice
       price: 350
+    # WD EDIT START
+    - type: Battery
+      maxCharge: 300
+      startingCharge: 300
+    - type: BatterySelfRecharger
+      autoRechargeRate: 3
+    - type: RechargeableBlocking
+      dischargedRechargeRate: 3
+      chargedRechargeRate: 3
+    - type: Tag
+      tags:
+      - FitsInCharger
+    # WD EDIT END
 
 - type: entity
   name: broken energy shield

@@ -1,0 +1,6 @@
+- type: reklama
+  id: NTTS
+  name: NTTS
+  icon: "/Textures/_LP/ReklamaIcons/NTTS.png"
+  url: "http://ntts.fdev.team/"
+  scale: 0.1,0.1

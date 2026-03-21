@@ -1,2 +1,2 @@
-LPPJobSecurityEnginer = field engineer
-job-name-security-enginer = field engineer
+LPPJobSecurityEnginer = полевой инженер
+job-name-security-enginer = полевой инженер

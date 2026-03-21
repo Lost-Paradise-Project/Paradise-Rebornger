@@ -1,3 +1,3 @@
-loadout-group-brigtech-special = field engineer uniform
-loadout-group-securityengineer-backpack = The baggage of a field engineer
-loadout-group-bartender-pda = The PDA of bartender
+loadout-group-brigtech-special = Униформа, Полевой Инженер
+loadout-group-securityengineer-backpack = Рюкзак, Полевой Инженер
+loadout-group-bartender-pda = КПК, Бармен

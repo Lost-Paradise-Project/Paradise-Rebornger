@@ -47,13 +47,9 @@
                             <controls:ConfirmButton Name="RejuvenateButton" Text="{Loc player-panel-rejuvenate}" Disabled="True"/>
                             <Button Name="CameraButton" Text="{Loc player-panel-camera}" Disabled="True"/>
                         </GridContainer>
-                        <GridContainer Rows="2" Margin="0,15,0,0">
-                            <Button Name="TimeButton" Text="{Loc player-panel-time}" Disabled="True"/>
-                        </GridContainer>
                     </GridContainer>
                 </BoxContainer>
             </PanelContainer>
         </BoxContainer>
-        <!-- LP edit end -->
     </BoxContainer>
 </ui:FancyWindow>
