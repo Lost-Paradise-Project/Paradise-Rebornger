@@ -62,7 +62,6 @@ public sealed class FaxSystem : EntitySystem
     [Dependency] private readonly MetaDataSystem _metaData = default!;
     [Dependency] private readonly FaxecuteSystem _faxecute = default!;
     [Dependency] private readonly EmagSystem _emag = default!;
-    [Dependency] private readonly SharedContainerSystem _container = default!; // Goobstation
     [Dependency] private readonly TransformSystem _transform = default!; // Goobstation
     [Dependency] private readonly ExplosionSystem _explosion = default!; // Goobstation
 
@@ -422,21 +421,6 @@ public sealed class FaxSystem : EntitySystem
                     Receive(uid, printout, args.SenderAddress);
 
                     break;
-                // Goobstation
-                case FaxConstants.FaxSendEntityCommand:
-                    if (!args.Data.TryGetValue(FaxConstants.FaxEntitySentData, out EntityUid? received))
-                        return;
-
-                    args.Data.TryGetValue(FaxConstants.FaxWorkCrossGridData, out bool? canCrossGrid);
-                    if (!(canCrossGrid ?? true) && _transform.GetGrid(uid) != _transform.GetGrid(received.Value))
-                        return;
-
-                    var faxXform = Transform(uid);
-                    _transform.SetCoordinates(received.Value, faxXform.Coordinates);
-                    _container.AttachParentToContainerOrGrid((received.Value, Transform(received.Value)));
-                    Receive(uid, null, args.SenderAddress);
-
-                    break;
             }
         }
     }
@@ -465,16 +449,6 @@ public sealed class FaxSystem : EntitySystem
 
     private void OnSendButtonPressed(EntityUid uid, FaxMachineComponent component, FaxSendMessage args)
     {
-        // Goobstation
-        if (component.PaperSlot.Item != null)
-        {
-            var sentEv = new GettingFaxedSentEvent((uid, component), args);
-            RaiseLocalEvent(component.PaperSlot.Item.Value, ref sentEv);
-
-            if (sentEv.Handled)
-                return;
-        }
-
         if (HasComp<MobStateComponent>(component.PaperSlot.Item))
             _faxecute.Faxecute(uid, component); // when button pressed it will hurt the mob.
         else if (component.PaperSlot.Item != null && TryComp<FaxableObjectComponent>(component.PaperSlot.Item, out var faxcomp) && !faxcomp.Copyable) // goobstation
@@ -757,8 +731,7 @@ public sealed class FaxSystem : EntitySystem
     ///     Accepts a new message and adds it to the queue to print
     ///     If has parameter "notifyAdmins" also output a special message to admin chat.
     /// </summary>
-    // Goobstation - make printout nullable
-    public void Receive(EntityUid uid, FaxPrintout? printout, string? fromAddress = null, FaxMachineComponent? component = null)
+    public void Receive(EntityUid uid, FaxPrintout printout, string? fromAddress = null, FaxMachineComponent? component = null)
     {
         if (!Resolve(uid, ref component))
             return;
@@ -768,16 +741,22 @@ public sealed class FaxSystem : EntitySystem
             faxName = fax;
 
         _popupSystem.PopupEntity(Loc.GetString("fax-machine-popup-received", ("from", faxName)), uid);
-        if (printout != null) // Goobstation
-            _appearanceSystem.SetData(uid, FaxMachineVisuals.VisualState, FaxMachineVisualState.Printing);
+        _appearanceSystem.SetData(uid, FaxMachineVisuals.VisualState, FaxMachineVisualState.Printing);
 
-        // Goobstation -> No DEN edit
+        // DEN edit start
         if (component.NotifyAdmins)
-            NotifyAdmins(faxName);
-        // Goobstation -> No DEN edit
+        {
+            var stampedBy = printout.StampedBy
+                .Select(stamp => Loc.GetString(stamp.StampedName))
+                .ToList();
 
-        if (printout != null) // Goobstation
-            component.PrintingQueue.Enqueue(printout);
+            var faxSent = new FaxSentEvent(printout.Content, faxName, stampedBy);
+            RaiseLocalEvent(faxSent);
+            NotifyAdmins(faxName);
+        }
+        // DEN edit end
+
+        component.PrintingQueue.Enqueue(printout);
     }
 
     private void SpawnPaperFromQueue(EntityUid uid, FaxMachineComponent? component = null)
