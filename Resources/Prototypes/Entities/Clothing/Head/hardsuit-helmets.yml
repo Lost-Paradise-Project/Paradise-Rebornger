@@ -381,6 +381,7 @@
   # LP edit end
   - type: PointLight # Corvax-Resprite
     color: "#e6aa5c"
+    energy: 3 # LP edit
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000
