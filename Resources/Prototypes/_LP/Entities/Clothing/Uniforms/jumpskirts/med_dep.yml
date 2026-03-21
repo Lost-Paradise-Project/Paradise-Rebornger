@@ -6,9 +6,9 @@
   description:
   components:
   - type: Sprite
-    sprite: _LP/Clothing/Uniforms/medic/virology/medic_black_skirt.rsi
+    sprite: _LP/Clothing/Uniforms/medic/medic_black_skirt.rsi
   - type: Clothing
-    sprite: _LP/Clothing/Uniforms/medic/virology/medic_black_skirt.rsi
+    sprite: _LP/Clothing/Uniforms/medic/medic_black_skirt.rsi
 
 - type: entity
   parent: ClothingUniformBase
