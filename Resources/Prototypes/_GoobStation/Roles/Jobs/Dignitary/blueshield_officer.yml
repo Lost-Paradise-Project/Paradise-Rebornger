@@ -15,10 +15,6 @@
       time: 25h
     - !type:AgeRequirement
       requiredAge: 30
-  guides:
-  # - BlueshieldOfficer SOP Hidden by CorvaxGoob
-  - Command
-  # - Succession Hidden by CorvaxGoob
   weight: 20
   startingGear: BlueshieldOfficerGear
   icon: "JobIconBlueshield"

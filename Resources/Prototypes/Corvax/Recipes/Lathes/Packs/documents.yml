@@ -75,12 +75,12 @@
   - RecipeDocExpeditionPermission
   - RecipeDocPOInquiriesAndAppeals
   - RecipeDocEvacOrder
-  - RecipeDocSGOrder
+  # - RecipeDocSGOrder # LP Edit
   - RecipeDocSSROrder
   - RecipeDocAOHInquiriesAndAppeals
-  - RecipeDocExecutiveOrder
+  # - RecipeDocExecutiveOrder # LP Edit
   - RecipeDocDeliveryOrder
   - RecipeDocCCReport
-  - RecipeDocCCFMReport
+  # - RecipeDocCCFMReport # LP Edit
   - RecipeDocOperationOrder
   - RecipeDocOperationReport

@@ -85,9 +85,9 @@
     - type: Battery
       maxCharge: 600
       startingCharge: 600
-    # - type: RechargeableBlocking
-    #   dischargedRechargeRate: 0
-    #   chargedRechargeRate: 0
+    - type: RechargeableBlocking
+      dischargedRechargeRate: 0
+      chargedRechargeRate: 0
     - type: ItemSlots
       slots:
         item:
@@ -99,3 +99,6 @@
           whitelist:
             tags:
             - Stunbaton
+    - type: Tag
+      tags:
+      - FitsInCharger

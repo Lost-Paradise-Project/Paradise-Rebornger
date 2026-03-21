@@ -84,6 +84,7 @@
   - type: Tag
     tags:
       - SecBeltEquip
+      - LPPFlashlightSeclite # LP Edit
   - type: ItemSlots
     slots:
       cell_slot:

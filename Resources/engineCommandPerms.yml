@@ -91,6 +91,7 @@
   Commands:
   - tp
   - tpto
+  - command-executor # ADT-Tweak
 
 - Flags: PII
   Commands:

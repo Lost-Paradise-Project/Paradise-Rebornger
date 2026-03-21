@@ -287,3 +287,9 @@
   materials:
     Plastic: 500
     Steel: 500
+
+- type: latheRecipe
+  id: LPPMagazineShotgunLeverRifle
+  result: MagazineShotgunLeverRifle
+  materials:
+    Steel: 475
