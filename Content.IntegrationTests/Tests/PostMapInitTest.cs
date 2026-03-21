@@ -84,20 +84,6 @@ namespace Content.IntegrationTests.Tests
 
         private static readonly string[] GameMaps =
         {
-            // Corvax-Start
-            "CorvaxAvrite",
-            "CorvaxDelta",
-            "CorvaxSilly",
-            "CorvaxOutpost",
-			"CorvaxMaus",
-            "CorvaxPilgrim",
-            "CorvaxTerra",
-            "CorvaxPearl",
-            "CorvaxTushkan",
-            "CorvaxGlacier",
-            "CorvaxAwesome",
-			"CorvaxChloris",
-            // Corvax-End
             // LP-start
             "LPAspid",
             "LPCyberiad",
