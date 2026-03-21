@@ -516,6 +516,13 @@
   name: loadout-group-clown-jumpsuit
   loadouts:
   - ClownSuit
+  # LP edit start
+  - LPPClownSuitBlue
+  - LPPClownSuitGreen
+  - LPPClownSuitOrange
+  - LPPClownSuitPurple
+  - LPPClownSuitYellow
+  # LP edit end
   - ClownSkirt
   - JesterSuit
   - JesterAltSuit
