@@ -220522,13 +220522,6 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: LPPClothingMaskBandageGrey
-  entities:
-  - uid: 32679
-    components:
-    - type: Transform
-      pos: 49.430626,-84.49494
-      parent: 2
 - proto: LPPClothingNeutralMaskMime
   entities:
   - uid: 15814
