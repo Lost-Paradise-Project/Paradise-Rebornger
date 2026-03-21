@@ -7,6 +7,7 @@ soft_max_players = 111
 hostname_in_titlebar = false
 admin_job_tracking = true
 peaceful_end = true
+maxcharacterslots = 5
 
 [infolinks]
 discord = "https://wiki.lost-paradise.space/discord"
@@ -101,3 +102,7 @@ party_enabled = false
 
 [tips]
 out_of_game_frequency = 360
+
+[tts]
+announce_voice = "glados"
+
