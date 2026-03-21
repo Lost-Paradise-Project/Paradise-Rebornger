@@ -509,8 +509,8 @@
   components:
   - type: RampingStationEventScheduler
     # LP edit start
-    AverageEndTime: 30
-    AverageChaos: 4
+    averageEndTime: 30
+    averageChaos: 4
     # LP edit end
     scheduledGameRules: !type:NestedSelector
       tableId: BasicGameRulesTable
