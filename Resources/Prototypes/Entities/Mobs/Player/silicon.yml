@@ -75,7 +75,7 @@
     canShuttle: false
     title: comms-console-announcement-title-station-ai
     color: "#5ed7aa"
-    sound: /Audio/Corvax/Announcements/aiannounce.ogg # Corvax-Announcements
+    sound: /Audio/Announcements/announce.ogg # Corvax-Announcements
   - type: ShowJobIcons
   - type: ShowCrewIcons
   - type: DamagedSiliconAccent
@@ -509,6 +509,8 @@
     pvsScale: 1.5
   - type: Visibility
     layer: 2
+  - type: TTS
+    voice: glados
   - type: Sprite
     sprite: Mobs/Silicon/station_ai.rsi
     layers:

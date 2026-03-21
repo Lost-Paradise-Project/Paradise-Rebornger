@@ -199,7 +199,7 @@
   - type: Lock
     unlockOnClick: false
   - type: WarpPoint
-    location: Nuclear Reactor
+    location: "Ядерный Реактор" # LP edit
     blacklist:
       tags:
       - GhostOnlyWarp

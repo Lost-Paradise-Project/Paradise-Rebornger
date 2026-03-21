@@ -112,7 +112,7 @@
     - GhostOnlyWarp
   - type: WarpPoint
     follow: true
-    location: nuclear bomb
+    location: "ядерная бомба" # LP edit
     blacklist:
       tags:
       - GhostOnlyWarp
