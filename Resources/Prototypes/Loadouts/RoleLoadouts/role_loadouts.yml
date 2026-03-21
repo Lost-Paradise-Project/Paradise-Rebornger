@@ -338,6 +338,7 @@
   # LP edit end
   - GroupTankHarness
   - SalvageSpecialistBackpack
+  - LPPSalvageSpecialistJumpsuit # LP edit
   - SalvageSpecialistOuterClothing
   - SalvageSpecialistShoes
   - Glasses
