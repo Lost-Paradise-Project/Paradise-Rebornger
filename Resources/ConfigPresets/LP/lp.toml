@@ -91,6 +91,9 @@ flavor_text_length = 1024
 [biomass]
 easy_mode = false
 
+[ghost]
+respawn_max_players = 60
+
 [wega]
 night_light_enabled = true
 party_enabled = false
