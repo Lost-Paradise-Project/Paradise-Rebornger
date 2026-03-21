@@ -4,8 +4,8 @@ meta:
   engineVersion: 272.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/21/2026 18:49:32
-  entityCount: 37962
+  time: 03/21/2026 19:12:21
+  entityCount: 37958
 maps:
 - 1
 grids:
@@ -14972,6 +14972,24 @@ entities:
       chunkHistory: {}
     - type: ImplicitRoof
     - type: ExplosionAirtightGrid
+    - type: Joint
+      joints:
+        docking8826: !type:WeldJoint
+          bodyB: 35450
+          bodyA: 2
+          id: docking8826
+          localAnchorB: 0.49999997,0
+          localAnchorA: -14.5,74
+          damping: 1331.3274
+          stiffness: 11949.968
+        docking8763: !type:WeldJoint
+          bodyB: 37809
+          bodyA: 2
+          id: docking8763
+          localAnchorB: 3,-0.5
+          localAnchorA: -4,-72.5
+          damping: 424.73245
+          stiffness: 3812.39
   - uid: 4
     components:
     - type: MetaData
@@ -15179,6 +15197,16 @@ entities:
       chunkHistory: {}
     - type: ImplicitRoof
     - type: ExplosionAirtightGrid
+    - type: Joint
+      joints:
+        docking8826: !type:WeldJoint
+          bodyB: 35450
+          bodyA: 2
+          id: docking8826
+          localAnchorB: 0.49999997,0
+          localAnchorA: -14.5,74
+          damping: 1331.3274
+          stiffness: 11949.968
   - uid: 35791
     components:
     - type: MetaData
@@ -16283,6 +16311,16 @@ entities:
       chunkHistory: {}
     - type: ImplicitRoof
     - type: ExplosionAirtightGrid
+    - type: Joint
+      joints:
+        docking8763: !type:WeldJoint
+          bodyB: 37809
+          bodyA: 2
+          id: docking8763
+          localAnchorB: 3,-0.5
+          localAnchorA: -4,-72.5
+          damping: 424.73245
+          stiffness: 3812.39
 - proto: AccessConfigurator
   entities:
   - uid: 7
@@ -21443,6 +21481,15 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -3.5,-72.5
       parent: 2
+    - type: Docking
+      dockJointId: docking8763
+      dockedWith: 37867
+    - type: DeviceLinkSource
+      lastSignals:
+        DoorStatus: False
+        DockStatus: True
+    - type: Door
+      changeAirtight: False
   - uid: 37814
     components:
     - type: Transform
@@ -21455,6 +21502,15 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 2.5,-0.5
       parent: 37809
+    - type: Docking
+      dockJointId: docking8763
+      dockedWith: 545
+    - type: DeviceLinkSource
+      lastSignals:
+        DoorStatus: False
+        DockStatus: True
+    - type: Door
+      changeAirtight: False
 - proto: AirlockFreezerKitchenHydroLocked
   entities:
   - uid: 546
@@ -21777,6 +21833,15 @@ entities:
       rot: 3.141592653589793 rad
       pos: -14.5,73.5
       parent: 2
+    - type: Door
+      changeAirtight: False
+    - type: Docking
+      dockJointId: docking8826
+      dockedWith: 37866
+    - type: DeviceLinkSource
+      lastSignals:
+        DoorStatus: False
+        DockStatus: True
   - uid: 597
     components:
     - type: Transform
@@ -21800,6 +21865,15 @@ entities:
     - type: Transform
       pos: 0.5,0.5
       parent: 35450
+    - type: Door
+      changeAirtight: False
+    - type: Docking
+      dockJointId: docking8826
+      dockedWith: 543
+    - type: DeviceLinkSource
+      lastSignals:
+        DoorStatus: False
+        DockStatus: True
 - proto: AirlockHeadOfPersonnelLocked
   entities:
   - uid: 600
@@ -32048,13 +32122,6 @@ entities:
     - type: Transform
       pos: 43.462605,9.391702
       parent: 2
-  - uid: 1685
-    components:
-    - type: Transform
-      parent: 1684
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
   - uid: 1687
     components:
     - type: Transform
@@ -88585,26 +88652,6 @@ entities:
           showEnts: False
           occludes: True
           ent: null
-  - uid: 1684
-    components:
-    - type: Transform
-      anchored: True
-      pos: -14.5,63.5
-      parent: 2
-    - type: Physics
-      bodyType: Static
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 1685
-          - 1686
-        paper_label: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
   - uid: 12332
     components:
     - type: Transform
@@ -89340,15 +89387,6 @@ entities:
     - type: Transform
       pos: 49.372574,14.53989
       parent: 2
-- proto: ClothingBeltSecurityFilled
-  entities:
-  - uid: 12431
-    components:
-    - type: Transform
-      parent: 12430
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: ClothingBeltUtility
   entities:
   - uid: 12444
@@ -89531,13 +89569,6 @@ entities:
       parent: 2
 - proto: ClothingEyesHudBeer
   entities:
-  - uid: 12439
-    components:
-    - type: Transform
-      parent: 12430
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
   - uid: 12510
     components:
     - type: Transform
@@ -89747,13 +89778,6 @@ entities:
       parent: 2
 - proto: ClothingHandsGlovesCombat
   entities:
-  - uid: 12432
-    components:
-    - type: Transform
-      parent: 12430
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
   - uid: 12507
     components:
     - type: Transform
@@ -90321,15 +90345,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -26.521156,-45.005596
       parent: 2
-- proto: ClothingMaskGasSecurity
-  entities:
-  - uid: 12433
-    components:
-    - type: Transform
-      parent: 12430
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: ClothingMaskMime
   entities:
   - uid: 12536
@@ -90851,13 +90866,6 @@ entities:
       parent: 2
 - proto: ClothingShoesBootsMag
   entities:
-  - uid: 12434
-    components:
-    - type: Transform
-      parent: 12430
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
   - uid: 12652
     components:
     - type: Transform
@@ -103975,13 +103983,6 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-  - uid: 12435
-    components:
-    - type: Transform
-      parent: 12430
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
   - uid: 14573
     components:
     - type: Transform
@@ -104012,13 +104013,6 @@ entities:
     components:
     - type: Transform
       parent: 12400
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 12436
-    components:
-    - type: Transform
-      parent: 12430
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
@@ -112590,7 +112584,7 @@ entities:
       pos: -4.5,11.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -280644.34
+      secondsUntilStateChange: -280928.5
       state: Closing
     - type: DeviceNetwork
       deviceLists:
@@ -114040,7 +114034,7 @@ entities:
       pos: 70.5,-9.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -385160.38
+      secondsUntilStateChange: -385444.53
       state: Closing
     - type: DeviceNetwork
       deviceLists:
@@ -116270,13 +116264,6 @@ entities:
       parent: 2
 - proto: FlashlightSeclite
   entities:
-  - uid: 12437
-    components:
-    - type: Transform
-      parent: 12430
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
   - uid: 15906
     components:
     - type: Transform
@@ -176184,32 +176171,6 @@ entities:
       parent: 2
 - proto: LockerSecurity
   entities:
-  - uid: 12430
-    components:
-    - type: Transform
-      pos: -18.5,55.5
-      parent: 2
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 12431
-          - 12433
-          - 12441
-          - 12442
-          - 12434
-          - 12432
-          - 12436
-          - 12437
-          - 12439
-          - 12435
-          - 12443
-        paper_label: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
   - uid: 23625
     components:
     - type: Transform
@@ -176959,6 +176920,16 @@ entities:
       containers:
         VendingMachine: !type:Container
           ents: []
+- proto: LPPLockerSecEngFilled
+  entities:
+  - uid: 12436
+    components:
+    - type: Transform
+      pos: -19.5,54.5
+      parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Engineering
 - proto: LPPNascaMat
   entities:
   - uid: 23776
@@ -177055,6 +177026,28 @@ entities:
       - Arsenal
       - Experimental
       - CivilianServices
+- proto: LPPSpawnPointSecurityEngineer
+  entities:
+  - uid: 1685
+    components:
+    - type: Transform
+      pos: -18.5,57.5
+      parent: 2
+  - uid: 12433
+    components:
+    - type: Transform
+      pos: -15.5,54.5
+      parent: 2
+  - uid: 12434
+    components:
+    - type: Transform
+      pos: -15.5,60.5
+      parent: 2
+  - uid: 12435
+    components:
+    - type: Transform
+      pos: -20.5,58.5
+      parent: 2
 - proto: LPPTeaspoon
   entities:
   - uid: 27809
@@ -178718,13 +178711,6 @@ entities:
       parent: 2
 - proto: MopItem
   entities:
-  - uid: 1686
-    components:
-    - type: Transform
-      parent: 1684
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
   - uid: 24083
     components:
     - type: Transform
@@ -179114,13 +179100,6 @@ entities:
     components:
     - type: Transform
       parent: 12277
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 12441
-    components:
-    - type: Transform
-      parent: 12430
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
@@ -179625,13 +179604,6 @@ entities:
     components:
     - type: Transform
       parent: 12277
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 12442
-    components:
-    - type: Transform
-      parent: 12430
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
@@ -210344,6 +210316,11 @@ entities:
       parent: 2
 - proto: SpawnPointBrigmedic
   entities:
+  - uid: 12437
+    components:
+    - type: Transform
+      pos: -8.5,58.5
+      parent: 2
   - uid: 28292
     components:
     - type: Transform
@@ -211159,6 +211136,28 @@ entities:
     components:
     - type: Transform
       pos: 75.5,6.5
+      parent: 2
+- proto: SpawnPointPilot
+  entities:
+  - uid: 1686
+    components:
+    - type: Transform
+      pos: -18.5,56.5
+      parent: 2
+  - uid: 12430
+    components:
+    - type: Transform
+      pos: -15.5,62.5
+      parent: 2
+  - uid: 12431
+    components:
+    - type: Transform
+      pos: -15.5,65.5
+      parent: 2
+  - uid: 12432
+    components:
+    - type: Transform
+      pos: -15.5,50.5
       parent: 2
 - proto: SpawnPointPsychologist
   entities:
@@ -213693,6 +213692,13 @@ entities:
     - type: Transform
       pos: -12.5,6.5
       parent: 36093
+- proto: SuitStorageSecPilot
+  entities:
+  - uid: 1684
+    components:
+    - type: Transform
+      pos: -14.5,63.5
+      parent: 2
 - proto: SuitStorageWarden
   entities:
   - uid: 28820
@@ -250888,13 +250894,6 @@ entities:
       parent: 2
 - proto: WeaponDisabler
   entities:
-  - uid: 12443
-    components:
-    - type: Transform
-      parent: 12430
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
   - uid: 34844
     components:
     - type: Transform

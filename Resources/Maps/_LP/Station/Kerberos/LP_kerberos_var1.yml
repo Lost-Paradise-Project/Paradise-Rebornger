@@ -4,8 +4,8 @@ meta:
   engineVersion: 272.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/21/2026 18:55:41
-  entityCount: 46372
+  time: 03/21/2026 19:14:45
+  entityCount: 46378
 maps:
 - 1
 grids:
@@ -214026,7 +214026,7 @@ entities:
       pos: -21.5,-84.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -43077.453
+      secondsUntilStateChange: -43186.04
       state: Opening
   - uid: 31919
     components:
@@ -219974,37 +219974,6 @@ entities:
       angularDamping: 0
       linearDamping: 0
       bodyType: Static
-  - uid: 13139
-    components:
-    - type: MetaData
-      name: шкаф пилота службы безопасности
-    - type: Transform
-      anchored: True
-      pos: 88.5,4.5
-      parent: 2
-    - type: Physics
-      angularDamping: 0
-      linearDamping: 0
-      bodyType: Static
-    - type: EntityStorage
-      air:
-        volume: 200
-        immutable: False
-        temperature: 293.14673
-        moles:
-          Oxygen: 1.7459903
-          Nitrogen: 6.568249
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 13140
-        paper_label: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
   - uid: 32528
     components:
     - type: Transform
@@ -220707,6 +220676,13 @@ entities:
     - type: Transform
       pos: -0.5,-16.5
       parent: 2
+- proto: LPPLockerSecEngFilled
+  entities:
+  - uid: 13139
+    components:
+    - type: Transform
+      pos: 88.5,4.5
+      parent: 2
 - proto: LPPMedDrake
   entities:
   - uid: 32715
@@ -220872,6 +220848,33 @@ entities:
       - Arsenal
       - Experimental
       - CivilianServices
+- proto: LPPSpawnPointSecurityEngineer
+  entities:
+  - uid: 13140
+    components:
+    - type: Transform
+      pos: 87.5,3.5
+      parent: 2
+  - uid: 39567
+    components:
+    - type: Transform
+      pos: 87.5,-1.5
+      parent: 2
+  - uid: 39568
+    components:
+    - type: Transform
+      pos: 82.5,-2.5
+      parent: 2
+  - uid: 39569
+    components:
+    - type: Transform
+      pos: 82.5,3.5
+      parent: 2
+  - uid: 39572
+    components:
+    - type: Transform
+      pos: 87.5,0.5
+      parent: 2
 - proto: LPPSwagShoes
   entities:
   - uid: 32766
@@ -260635,6 +260638,9 @@ entities:
     - type: Transform
       pos: 87.5,4.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Security
     - type: EntityStorage
       air:
         volume: 200
@@ -260662,6 +260668,13 @@ entities:
     components:
     - type: Transform
       pos: 46.5,30.5
+      parent: 2
+- proto: SuitStorageSecPilot
+  entities:
+  - uid: 39570
+    components:
+    - type: Transform
+      pos: 82.5,18.5
       parent: 2
 - proto: SuitStorageWarden
   entities:
@@ -266133,6 +266146,11 @@ entities:
     components:
     - type: Transform
       pos: 47.5,-9.5
+      parent: 2
+  - uid: 39571
+    components:
+    - type: Transform
+      pos: 82.5,15.5
       parent: 2
   - uid: 39844
     components:
@@ -301113,17 +301131,6 @@ entities:
     - type: Transform
       pos: 62.48161,0.5968934
       parent: 2
-- proto: WeaponLaserGun
-  entities:
-  - uid: 13140
-    components:
-    - type: Transform
-      parent: 13139
-    - type: Physics
-      angularDamping: 0
-      linearDamping: 0
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: WeaponLaserSvalinn
   entities:
   - uid: 13239

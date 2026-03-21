@@ -33,7 +33,7 @@ tags = "lang:ru,region:eu_e,rp:med,18+"
 [shuttle]
 arrivals_planet = false
 emergency_early_launch_allowed = true
-# arrivals_map = "/Maps/_LP/Misc/paradise_terminal.yml"
+arrivals_map = "/Maps/_LP/Misc/paradise_terminal.yml"
 
 [viewport]
 maximum_width = 26
