@@ -122,7 +122,7 @@ public sealed partial class BanPanel : DefaultWindow
         IpCheckbox.Pressed = _cfg.GetCVar(CCVars.ServerBanIpBanDefault);
         HwidCheckbox.Pressed = _cfg.GetCVar(CCVars.ServerBanHwidBanDefault);
         LastConnCheckbox.Pressed = _cfg.GetCVar(CCVars.ServerBanUseLastDetails);
-        EraseCheckbox.Pressed = _cfg.GetCVar(CCVars.ServerBanErasePlayer);
+        // EraseCheckbox.Pressed = _cfg.GetCVar(CCVars.ServerBanErasePlayer); LP edit
 
         SeverityOption.AddItem(Loc.GetString("admin-note-editor-severity-none"), (int) NoteSeverity.None);
         SeverityOption.AddItem(Loc.GetString("admin-note-editor-severity-low"), (int) NoteSeverity.Minor);
@@ -632,7 +632,7 @@ public sealed partial class BanPanel : DefaultWindow
         var useLastIp = IpCheckbox.Pressed && LastConnCheckbox.Pressed && IpAddress is null;
         var useLastHwid = HwidCheckbox.Pressed && LastConnCheckbox.Pressed && Hwid is null;
         var severity = (NoteSeverity) SeverityOption.SelectedId;
-        var erase = EraseCheckbox.Pressed;
+        var erase = false; // EraseCheckbox.Pressed; LP edit
 
         var ban = new Ban(
             player,
