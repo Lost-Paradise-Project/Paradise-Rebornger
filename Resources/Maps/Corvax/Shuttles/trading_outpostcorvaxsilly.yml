@@ -30,7 +30,7 @@ entities:
   - uid: 2
     components:
     - type: MetaData
-      name: Automated Trade Station
+      name: Торговый аванпост
     - type: Transform
       pos: -2.9375,-1.625
       parent: 1
@@ -4290,7 +4290,7 @@ entities:
       pos: 5.5,-4.5
       parent: 2
     - type: WarpPoint
-      location: Automated Trade Station
+      location: Торговый аванпост
 - proto: WindoorSecureEngineeringLocked
   entities:
   - uid: 371
