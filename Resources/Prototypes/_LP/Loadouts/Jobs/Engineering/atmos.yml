@@ -9,9 +9,9 @@
     underwear: LPPClothingUniformJumpsuitAtmosGorka
 
 - type: loadout
-  id: LPPAtmosGorgaRefl
+  id: LPPAtmosGorkaRefl
   equipment:
-    underwear: LPPClothingUniformJumpsuitAtmosGorgaRefl
+    underwear: LPPClothingUniformJumpsuitAtmosGorkaRefl
 
 - type: loadout
   id: LPPAtmosHoodieVest

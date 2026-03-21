@@ -7,9 +7,9 @@
   equipment:
     underwear: LPPClothingUniformJumpsuitCargoGorka
 - type: loadout
-  id: LPPCargoGorgaRefl
+  id: LPPCargoGorkaRefl
   equipment:
-    underwear: LPPClothingUniformJumpsuitCargoGorgaRefl
+    underwear: LPPClothingUniformJumpsuitCargoGorkaRefl
 - type: loadout
   id: LPPCargoHoodieVest
   equipment:

@@ -33,8 +33,8 @@
 
 - type: latheRecipe
   parent: BaseJumpsuitRecipe
-  id: LPPClothingUniformJumpsuitCargoGorgaRefl
-  result: LPPClothingUniformJumpsuitCargoGorgaRefl
+  id: LPPClothingUniformJumpsuitCargoGorkaRefl
+  result: LPPClothingUniformJumpsuitCargoGorkaRefl
 
 - type: latheRecipe
   parent: BaseJumpsuitRecipe
@@ -89,8 +89,8 @@
 
 - type: latheRecipe
   parent: BaseJumpsuitRecipe
-  id: LPPClothingUniformJumpsuitAtmosGorgaRefl
-  result: LPPClothingUniformJumpsuitAtmosGorgaRefl
+  id: LPPClothingUniformJumpsuitAtmosGorkaRefl
+  result: LPPClothingUniformJumpsuitAtmosGorkaRefl
 
 - type: latheRecipe
   parent: BaseJumpsuitRecipe
@@ -140,8 +140,8 @@
 
 - type: latheRecipe
   parent: BaseJumpsuitRecipe
-  id: LPPClothingUniformJumpsuitEngineerGorgaRefl
-  result: LPPClothingUniformJumpsuitEngineerGorgaRefl
+  id: LPPClothingUniformJumpsuitEngineerGorkaRefl
+  result: LPPClothingUniformJumpsuitEngineerGorkaRefl
 
 - type: latheRecipe
   parent: BaseJumpsuitRecipe
@@ -191,8 +191,8 @@
 
 - type: latheRecipe
   parent: BaseJumpsuitRecipe
-  id: LPPClothingUniformJumpsuitMedicGorgaRefl
-  result: LPPClothingUniformJumpsuitMedicGorgaRefl
+  id: LPPClothingUniformJumpsuitMedicGorkaRefl
+  result: LPPClothingUniformJumpsuitMedicGorkaRefl
 
 - type: latheRecipe
   parent: BaseJumpsuitRecipe
@@ -226,8 +226,8 @@
 
 - type: latheRecipe
   parent: BaseJumpsuitRecipe
-  id: LPPClothingUniformJumpsuitVirologyGorgaRefl
-  result: LPPClothingUniformJumpsuitVirologyGorgaRefl
+  id: LPPClothingUniformJumpsuitVirologyGorkaRefl
+  result: LPPClothingUniformJumpsuitVirologyGorkaRefl
 
 - type: latheRecipe
   parent: BaseJumpsuitRecipe
@@ -292,8 +292,8 @@
 
 - type: latheRecipe
   parent: BaseJumpsuitRecipe
-  id: LPPClothingUniformJumpsuitScienceGorgaRefl
-  result: LPPClothingUniformJumpsuitScienceGorgaRefl
+  id: LPPClothingUniformJumpsuitScienceGorkaRefl
+  result: LPPClothingUniformJumpsuitScienceGorkaRefl
 
 - type: latheRecipe
   parent: BaseJumpsuitRecipe
@@ -343,8 +343,8 @@
 
 - type: latheRecipe
   parent: BaseJumpsuitRecipe
-  id: LPPClothingUniformJumpsuitSecGorgaRefl
-  result: LPPClothingUniformJumpsuitSecGorgaRefl
+  id: LPPClothingUniformJumpsuitSecGorkaRefl
+  result: LPPClothingUniformJumpsuitSecGorkaRefl
 
 - type: latheRecipe
   parent: BaseJumpsuitRecipe

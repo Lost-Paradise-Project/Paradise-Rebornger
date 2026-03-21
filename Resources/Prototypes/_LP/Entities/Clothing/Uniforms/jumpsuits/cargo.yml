@@ -22,8 +22,8 @@
 
 - type: entity
   parent: ClothingUniformBase
-  id: LPPClothingUniformJumpsuitCargoGorgaRefl
-  name: Cargo Gorga with Reflectors # Горка с отражателями
+  id: LPPClothingUniformJumpsuitCargoGorkaRefl
+  name: Cargo Gorka with Reflectors # Горка с отражателями
   description:
   components:
   - type: Sprite

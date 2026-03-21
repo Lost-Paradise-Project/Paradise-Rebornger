@@ -9,9 +9,9 @@
     jumpsuit: LPPClothingUniformJumpsuitSecGorka
 
 - type: loadout
-  id: LPPSecurityGorgaRefl
+  id: LPPSecurityGorkaRefl
   equipment:
-    jumpsuit: LPPClothingUniformJumpsuitSecGorgaRefl
+    jumpsuit: LPPClothingUniformJumpsuitSecGorkaRefl
 
 - type: loadout
   id: LPPSecurityHoodieVest

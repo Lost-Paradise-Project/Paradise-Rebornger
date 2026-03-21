@@ -10,9 +10,9 @@
     underwear: LPPClothingUniformJumpsuitVirologyGorka
 
 - type: loadout
-  id: LPPVirologyGorgaRefl
+  id: LPPVirologyGorkaRefl
   equipment:
-    underwear: LPPClothingUniformJumpsuitVirologyGorgaRefl
+    underwear: LPPClothingUniformJumpsuitVirologyGorkaRefl
 
 - type: loadout
   id: LPPVirologyHoodieVest

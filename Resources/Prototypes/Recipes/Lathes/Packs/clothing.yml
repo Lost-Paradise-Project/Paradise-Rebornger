@@ -29,7 +29,7 @@
   # LP edit start
   - LPPClothingUniformJumpsuitCargoJeansJacket
   - LPPClothingUniformJumpsuitCargoGorka
-  - LPPClothingUniformJumpsuitCargoGorgaRefl
+  - LPPClothingUniformJumpsuitCargoGorkaRefl
   - LPPClothingUniformJumpsuitCargoHoodieVest
   - LPPClothingUniformJumpsuitCargoShirt
   - LPPClothingUniformJumpsuitCargoTurtleneck
@@ -75,14 +75,14 @@
   # LP edit start
   - LPPClothingUniformJumpsuitAtmosJeansJacket
   - LPPClothingUniformJumpsuitAtmosGorka
-  - LPPClothingUniformJumpsuitAtmosGorgaRefl
+  - LPPClothingUniformJumpsuitAtmosGorkaRefl
   - LPPClothingUniformJumpsuitAtmosHoodieVest
   - LPPClothingUniformJumpsuitAtmosShirt
   - LPPClothingUniformJumpsuitAtmosTurtleneck
   - LPPClothingUniformJumpsuitAtmosBlackShirt
   - LPPClothingUniformJumpsuitEngineerJeansJacket
   - LPPClothingUniformJumpsuitEngineerGorka
-  - LPPClothingUniformJumpsuitEngineerGorgaRefl
+  - LPPClothingUniformJumpsuitEngineerGorkaRefl
   - LPPClothingUniformJumpsuitEngineerHoodieVest
   - LPPClothingUniformJumpsuitEngineerShirt
   - LPPClothingUniformJumpsuitEngineerTurtleneck
@@ -116,14 +116,14 @@
   # LP edit start
   - LPPClothingUniformJumpsuitMedicJeansJacket
   - LPPClothingUniformJumpsuitMedicGorka
-  - LPPClothingUniformJumpsuitMedicGorgaRefl
+  - LPPClothingUniformJumpsuitMedicGorkaRefl
   - LPPClothingUniformJumpsuitMedicHoodieVest
   - LPPClothingUniformJumpsuitMedicShirt
   - LPPClothingUniformJumpsuitMedicTurtleneck
   - LPPClothingUniformJumpsuitMedicBlackShirt
   - LPPClothingUniformJumpsuitVirologyJeansJacket
   - LPPClothingUniformJumpsuitVirologyGorka
-  - LPPClothingUniformJumpsuitVirologyGorgaRefl
+  - LPPClothingUniformJumpsuitVirologyGorkaRefl
   - LPPClothingUniformJumpsuitVirologyHoodieVest
   - LPPClothingUniformJumpsuitVirologyShirt
   - LPPClothingUniformJumpsuitVirologyTurtleneck
@@ -149,7 +149,7 @@
   # LP edit start
   - LPPClothingUniformJumpsuitScienceJeansJacket
   - LPPClothingUniformJumpsuitScienceGorka
-  - LPPClothingUniformJumpsuitScienceGorgaRefl
+  - LPPClothingUniformJumpsuitScienceGorkaRefl
   - LPPClothingUniformJumpsuitScienceHoodieVest
   - LPPClothingUniformJumpsuitScienceShirt
   - LPPClothingUniformJumpsuitScienceTurtleneck
@@ -195,7 +195,7 @@
   # - LPPClothingUniformJumpsuitSecEngineer
   - LPPClothingUniformJumpsuitSecJeansJacket
   - LPPClothingUniformJumpsuitSecGorka
-  - LPPClothingUniformJumpsuitSecGorgaRefl
+  - LPPClothingUniformJumpsuitSecGorkaRefl
   - LPPClothingUniformJumpsuitSecHoodieVest
   - LPPClothingUniformJumpsuitSecShirt
   - LPPClothingUniformJumpsuitSecTurtleneck

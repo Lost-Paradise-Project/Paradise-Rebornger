@@ -9,9 +9,9 @@
     underwear: LPPClothingUniformJumpsuitEngineerGorka
 
 - type: loadout
-  id: LPPEngineerGorgaRefl
+  id: LPPEngineerGorkaRefl
   equipment:
-    underwear: LPPClothingUniformJumpsuitEngineerGorgaRefl
+    underwear: LPPClothingUniformJumpsuitEngineerGorkaRefl
 
 - type: loadout
   id: LPPEngineerHoodieVest

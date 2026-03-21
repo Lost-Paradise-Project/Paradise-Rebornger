@@ -9,9 +9,9 @@
     underwear: LPPClothingUniformJumpsuitMedicGorka
 
 - type: loadout
-  id: LPPMedicGorgaRefl
+  id: LPPMedicGorkaRefl
   equipment:
-    underwear: LPPClothingUniformJumpsuitMedicGorgaRefl
+    underwear: LPPClothingUniformJumpsuitMedicGorkaRefl
 
 - type: loadout
   id: LPPMedicHoodieVest

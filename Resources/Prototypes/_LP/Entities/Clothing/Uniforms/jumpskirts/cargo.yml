@@ -23,7 +23,7 @@
 - type: entity
   parent: ClothingUniformBase
   id: LPPClothingUniformJumpskirtCargoShirt
-  name: Сargo shirt with skirt # Рубашка с юбкой
+  name: Cargo shirt with skirt # Рубашка с юбкой
   description:
   components:
   - type: Sprite

@@ -23,7 +23,7 @@
 
 - type: entity
   parent: ClothingUniformBase
-  id: LPPClothingUniformJumpsuitAtmosGorgaRefl
+  id: LPPClothingUniformJumpsuitAtmosGorkaRefl
   name: Gorka with reflectors atmos # Горка с отражателями
   description:
   components:
@@ -114,7 +114,7 @@
 
 - type: entity
   parent: ClothingUniformBase
-  id: LPPClothingUniformJumpsuitEngineerGorgaRefl
+  id: LPPClothingUniformJumpsuitEngineerGorkaRefl
   name: Gorka with reflectors Engineer # Горка с отражателями
   description:
   components:

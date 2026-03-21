@@ -2,7 +2,7 @@
 - type: entity
   parent: ClothingUniformBase
   id: LPPClothingUniformJumpsuitMedicJeansJacket
-  name: Jeans Jacket atmos # Джинсовка
+  name: Jeans Jacket medic # Джинсовка
   description:
   components:
   - type: Sprite
@@ -23,7 +23,7 @@
 
 - type: entity
   parent: ClothingUniformBase
-  id: LPPClothingUniformJumpsuitMedicGorgaRefl
+  id: LPPClothingUniformJumpsuitMedicGorkaRefl
   name: Gorka with reflectors medic # Горка с отражателями
   description:
   components:
@@ -65,7 +65,7 @@
   - type: Sprite
     sprite: _LP/Clothing/Uniforms/medic/supply_chief.rsi
   - type: Clothing
-    sprite: _LP/Clothing/Uniforms/medic/supply_chief.rs
+    sprite: _LP/Clothing/Uniforms/medic/supply_chief.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -114,7 +114,7 @@
 
 - type: entity
   parent: ClothingUniformBase
-  id: LPPClothingUniformJumpsuitVirologyGorgaRefl
+  id: LPPClothingUniformJumpsuitVirologyGorkaRefl
   name: Gorka with reflectors Virology # Горка с отражателями
   description:
   components:

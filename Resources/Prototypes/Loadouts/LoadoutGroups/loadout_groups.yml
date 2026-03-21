@@ -748,7 +748,7 @@
   # LP edit start
   - LPPCargoJeansJacket
   - LPPCargoGorka
-  - LPPCargoGorgaRefl
+  - LPPCargoGorkaRefl
   - LPPCargoHoodieVest
   - LPPCargoShirt
   - LPPCargoShirtSkirt
@@ -902,7 +902,7 @@
   # LP edit start
   - LPPEngineerJeansJacket
   - LPPJumpsuitEngineerGorka
-  - LPPEngineerGorgaRefl
+  - LPPEngineerGorkaRefl
   - LPPEngineerHoodieVest
   - LPPEngineerShirt
   - LPPEngineerShirtSkirt
@@ -958,7 +958,7 @@
   # LP edit start
   - LPPAtmosJeansJacket
   - LPPAtmosGorka
-  - LPPAtmosGorgaRefl
+  - LPPAtmosGorkaRefl
   - LPPAtmosHoodieVest
   - LPPAtmosShirt
   - LPPAtmosShirtSkirt
@@ -1084,7 +1084,7 @@
   # LP edit start
   - LPPScienceJeansJacket
   - LPPScienceGorka
-  - LPPScienceGorgaRefl
+  - LPPScienceGorkaRefl
   - LPPScienceHoodieVest
   - LPPScienceShirt
   - LPPScienceShirtSkirt
@@ -1257,7 +1257,7 @@
   # LP edit start
   - LPPSecurityJeansJacket
   - LPPSecurityGorka
-  - LPPSecurityGorgaRefl
+  - LPPSecurityGorkaRefl
   - LPPSecurityHoodieVest
   - LPPSecurityShirt
   - LPPSecuritySkirtShirt
