@@ -101,7 +101,7 @@ public sealed class AGhostCommand : LocalizedCommands
         //LP edit start
         CustomGhostPrototype? customGhost = null;
         if (player!.UserId is NetUserId userId && _prefs.TryGetCachedPreferences(userId, out var CustomGhost)) //LP edit вынужденый хардкод
-            customGhost = _prototypeManager.Index(new ProtoId<CustomGhostPrototype>(CustomGhost.CustomGhost != "default" ? "Admin" + CustomGhost.CustomGhost : CustomGhost.CustomGhost));
+            customGhost = _prototypeManager.Index(new ProtoId<CustomGhostPrototype>(CustomGhost.CustomGhost));
         //LP edit end
 
         var canReturn = mind.CurrentEntity != null
