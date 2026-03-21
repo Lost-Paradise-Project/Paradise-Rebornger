@@ -68,7 +68,7 @@
   description: a machine that decorates the appearance of customers and makes them beautiful!
   components:
   - type: VendingMachine
-    pack: NascaVendingMachineServitorInventory
+    pack: SocksVendingMachineServitorInventory
     offState: off
     brokenState: broken
     normalState: normal-unshaded
