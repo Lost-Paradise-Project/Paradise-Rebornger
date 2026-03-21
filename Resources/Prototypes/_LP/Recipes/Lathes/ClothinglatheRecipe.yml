@@ -14,7 +14,7 @@
   parent: BaseJumpsuitRecipe
   id: LPPClothingUniformRedTracksuit
   result: LPPClothingUniformRedTracksuit
-  
+
 - type: latheRecipe
   parent: BaseJumpsuitRecipe
   id: LPPClothingUniformGreenTracksuit
@@ -406,7 +406,7 @@
   parent: BaseNeckClothingRecipe
   id: LPPClothingNeckShemagRed
   result: LPPClothingNeckShemagRed
-  
+
 - type: latheRecipe
   parent: BaseNeckClothingRecipe
   id: LPPClothingNeckShemagGreen
