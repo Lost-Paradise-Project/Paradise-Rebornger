@@ -702,7 +702,7 @@ public sealed partial class ChatSystem : SharedChatSystem
 #if LP
         if (IoCManager.Resolve<SponsorsManager>().TryGetInfo(player.UserId, out var sponsorData) && sponsorData.Tier > 0)
         {
-            wrappedMessage = Loc.GetString("chat-manager-entity-looc-patron-wrap-message", ("patronColor", sponsorData.OOCColor), ("playerName", player.Name), ("message", FormattedMessage.EscapeText(message)));
+            wrappedMessage = Loc.GetString("chat-manager-entity-looc-patron-wrap-message", ("patronColor", sponsorData.OOCColor), ("entityName", name), ("message", FormattedMessage.EscapeText(message)));
         }
 #endif
 
