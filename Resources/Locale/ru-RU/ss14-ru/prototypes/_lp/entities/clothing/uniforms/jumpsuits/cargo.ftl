@@ -1,0 +1,16 @@
+ent-LPPClothingUniformJumpsuitCargoJeansJacket = джинсовка грузчика
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpsuitCargoGorka = горка грузчика
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpsuitCargoGorkaRefl = горка с отражателями грузчика
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpsuitCargoHoodieVest = худи-жилет грузчика
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpsuitCargoShirt = рубашка грузчика
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpsuitCargoTurtleneck = водолазка грузчика
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpsuitCargoBlackShirt = чёрная рубашка грузчика
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformExplorerAlternative = джинсовка исследователя
+    .desc = Сделанный из джинсовки комбинезон, который отлично подоходит для работы с киркой.

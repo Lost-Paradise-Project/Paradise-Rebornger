@@ -63,7 +63,7 @@ public sealed partial class HumanoidCharacterProfileV1
     public ProtoId<SpeciesPrototype> Species;
 
     [DataField] //Corvax-TTS
-    public string Voice;
+    public string Voice = HumanoidProfileSystem.DefaultVoice;
 
     [DataField]
     public int Age;

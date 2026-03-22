@@ -165,6 +165,7 @@
 
 - type: roleLoadout
   id: JobChaplain
+  canCustomizeName: true
   groups:
   # LP edit start
   - LPunderwearloadout
@@ -590,6 +591,8 @@
   # LP edit end
   - GroupTankHarness
   - ReporterJumpsuit
+  - ReporterHead
+  - ReporterOuterClothing
   - CommonBackpack
   - Glasses
   - Survival

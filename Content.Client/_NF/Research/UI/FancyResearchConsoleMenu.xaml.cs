@@ -104,6 +104,11 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
 
     private Box2i _bounds = new(DefaultPosition, DefaultPosition);
 
+    private const string DisciplineIndustrial = "Industrial";
+    private const string DisciplineArsenal = "Arsenal";
+    private const string DisciplineExperimental = "Experimental";
+    private const string DisciplineCivilianServices = "CivilianServices";
+
     public FancyResearchConsoleMenu()
     {
         RobustXamlLoader.Load(this);
@@ -156,16 +161,16 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
 
         // Discipline filter buttons
         FilterAllButton.OnPressed += _ => SetDisciplineFilter(null);
-        FilterIndustrialButton.OnPressed += _ => SetDisciplineFilter("Industrial");
-        FilterArsenalButton.OnPressed += _ => SetDisciplineFilter("Arsenal");
-        FilterExperimentalButton.OnPressed += _ => SetDisciplineFilter("Experimental");
-        FilterCivilianButton.OnPressed += _ => SetDisciplineFilter("CivilianServices");
+        FilterIndustrialButton.OnPressed += _ => SetDisciplineFilter(DisciplineIndustrial);
+        FilterArsenalButton.OnPressed += _ => SetDisciplineFilter(DisciplineArsenal);
+        FilterExperimentalButton.OnPressed += _ => SetDisciplineFilter(DisciplineExperimental);
+        FilterCivilianButton.OnPressed += _ => SetDisciplineFilter(DisciplineCivilianServices);
 
         // Load discipline icons
-        var industrial = _prototype.Index<TechDisciplinePrototype>("Industrial");
-        var arsenal = _prototype.Index<TechDisciplinePrototype>("Arsenal");
-        var experimental = _prototype.Index<TechDisciplinePrototype>("Experimental");
-        var civilian = _prototype.Index<TechDisciplinePrototype>("CivilianServices");
+        var industrial = _prototype.Index<TechDisciplinePrototype>(DisciplineIndustrial);
+        var arsenal = _prototype.Index<TechDisciplinePrototype>(DisciplineArsenal);
+        var experimental = _prototype.Index<TechDisciplinePrototype>(DisciplineExperimental);
+        var civilian = _prototype.Index<TechDisciplinePrototype>(DisciplineCivilianServices);
 
         FilterIndustrialIcon.Texture = _sprite.Frame0(industrial.Icon);
         FilterArsenalIcon.Texture = _sprite.Frame0(arsenal.Icon);
@@ -278,16 +283,16 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
             // LP edit start
             switch (disciplineId)
             {
-                case "Industrial":
+                case DisciplineIndustrial:
                     FilterIndustrialPercent.SetMessage(Loc.GetString("research-console-tier-percentage", ("perc", tier)));
                     break;
-                case "Arsenal":
+                case DisciplineArsenal:
                     FilterArsenalPercent.SetMessage(Loc.GetString("research-console-tier-percentage", ("perc", tier)));
                     break;
-                case "Experimental":
+                case DisciplineExperimental:
                     FilterExperimentalPercent.SetMessage(Loc.GetString("research-console-tier-percentage", ("perc", tier)));
                     break;
-                case "CivilianServices":
+                case DisciplineCivilianServices:
                     FilterCivilianPercent.SetMessage(Loc.GetString("research-console-tier-percentage", ("perc", tier)));
                     break;
             }
@@ -457,10 +462,10 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
 
         // Update button visual states to indicate which filter is active
         FilterAllButton.Pressed = discipline == null;
-        FilterIndustrialButton.Pressed = discipline == "Industrial";
-        FilterArsenalButton.Pressed = discipline == "Arsenal";
-        FilterExperimentalButton.Pressed = discipline == "Experimental";
-        FilterCivilianButton.Pressed = discipline == "CivilianServices";
+        FilterIndustrialButton.Pressed = discipline == DisciplineIndustrial;
+        FilterArsenalButton.Pressed = discipline == DisciplineArsenal;
+        FilterExperimentalButton.Pressed = discipline == DisciplineExperimental;
+        FilterCivilianButton.Pressed = discipline == DisciplineCivilianServices;
     }
 
     /// <summary>

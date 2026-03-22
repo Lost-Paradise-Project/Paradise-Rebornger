@@ -1,0 +1,10 @@
+ent-LPPClothingUniformJumpsuitBlueClown = blue clown suit
+    .desc = HONK! but blue
+ent-LPPClothingUniformJumpsuitGreenClown = green clown suit
+    .desc = HONK! but green
+ent-LPPClothingUniformJumpsuitOrangeClown = orange clown suit
+    .desc = HONK! but orange
+ent-LPPClothingUniformJumpsuitPurpleClown = purple clown suit
+    .desc = HONK! but purple
+ent-LPPClothingUniformJumpsuitYellowClown = yellow clown suit
+    .desc = HONK! but yellow

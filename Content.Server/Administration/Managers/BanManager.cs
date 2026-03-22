@@ -578,8 +578,8 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
         {
             foreach (var (userId, userName) in banDef.Users)
             {
-                var discordId = _discordAuthManager.GetDiscordIdForPlayer(userId);
-                targetLink = string.Concat(discordId != null ? $"<@{discordId}>" : Loc.GetString("server-ban-no-name-dc"));
+                var discordId = await _discordAuthManager.GetDiscordIdForPlayer(userId);
+                targetLink = string.Concat(discordId, discordId != null ? $"<@{discordId}>" : Loc.GetString("server-ban-no-name-dc"));
                 if (discordId != null)
                     mentions.Add(new User { Id = discordId });
             }
@@ -589,7 +589,7 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
 
         if (banDef.BanningAdmin.HasValue)
         {
-            adminDiscordId = _discordAuthManager.GetDiscordIdForPlayer(banDef.BanningAdmin.Value);
+            adminDiscordId = await _discordAuthManager.GetDiscordIdForPlayer(banDef.BanningAdmin.Value);
         }
         adminLink = adminDiscordId != null ? $"<@{adminDiscordId}>" : Loc.GetString("system-user");
 
@@ -719,8 +719,8 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
         {
             foreach (var (userId, userName) in banDef.Users)
             {
-                var discordId = _discordAuthManager.GetDiscordIdForPlayer(userId);
-                targetLink = string.Concat(discordId != null ? $"<@{discordId}>" : Loc.GetString("server-ban-no-name-dc"));
+                var discordId = await _discordAuthManager.GetDiscordIdForPlayer(userId);
+                targetLink = string.Concat(discordId, discordId != null ? $"<@{discordId}>" : Loc.GetString("server-ban-no-name-dc"));
                 if (discordId != null)
                     mentions.Add(new User { Id = discordId });
             }
@@ -730,7 +730,7 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
 
         if (banDef.BanningAdmin.HasValue)
         {
-            adminDiscordId = _discordAuthManager.GetDiscordIdForPlayer(banDef.BanningAdmin.Value);
+            adminDiscordId = await _discordAuthManager.GetDiscordIdForPlayer(banDef.BanningAdmin.Value);
         }
         adminLink = adminDiscordId != null ? $"<@{adminDiscordId}>" : Loc.GetString("system-user");
 

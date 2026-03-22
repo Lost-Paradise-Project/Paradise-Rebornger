@@ -8973,6 +8973,7 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
+    - type: NightLightning
     - type: BecomesStation
       id: LPAspid
     - type: Joint
