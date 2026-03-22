@@ -1,4 +1,4 @@
-﻿using System.Numerics;
+using System.Numerics;
 using Content.Shared._ST.Interaction;
 using Robust.Client.Animations;
 using Robust.Client.GameObjects;
