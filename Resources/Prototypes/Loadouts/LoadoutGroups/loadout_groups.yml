@@ -1189,6 +1189,7 @@
   - HeadofSecurityCloak
   - HeadofSecurityMantle
   - HeadofSecurityShoulderMantle # Corvax-Loadouts
+  - HeadOfSecurityRobe # DeltaV
 
 - type: loadoutGroup
   id: HeadofSecurityOuterClothing
