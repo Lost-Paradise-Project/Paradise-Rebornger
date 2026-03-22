@@ -60,7 +60,7 @@ public sealed class AHelpUIController: UIController, IOnSystemChanged<BwoinkSyst
         SubscribeNetworkEvent<BwoinkPlayerTypingUpdated>(PeopleTypingUpdated);
 
         _adminManager.AdminStatusUpdated += OnAdminStatusUpdated;
-        _config.OnValueChanged(LPCvars.AHelpSound, v => _aHelpSound = v, true);
+        _config.OnValueChanged(LPCvars.AHelpSound, v => _aHelpSound = v, true); // LP edit
         _config.OnValueChanged(CCVars.BwoinkSoundEnabled, v => _bwoinkSoundEnabled = v, true);
     }
 
