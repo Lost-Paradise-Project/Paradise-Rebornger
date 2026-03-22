@@ -56,6 +56,7 @@
     tags:
     - WhitelistChameleon
     - SecurityHelmet
+    - LPPHelmet # LP Edit
   - type: HideLayerClothing
     layers:
       Hair: HEAD

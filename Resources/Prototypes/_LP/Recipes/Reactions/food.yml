@@ -1,0 +1,38 @@
+- type: reaction
+  id: LPPFPopsicleBeer
+  quantized: true
+  conserveEnergy: false
+  reactants:
+    Ice:
+      amount: 20
+    IcedBeer:
+      amount: 20
+  effects:
+    - !type:SpawnEntity
+      entity: LPPFoodFrozenPopsicleBeer
+
+- type: reaction
+  id: LPPFPopsicleVodka
+  quantized: true
+  conserveEnergy: false
+  reactants:
+    Ice:
+      amount: 20
+    Vodka:
+      amount: 20
+  effects:
+    - !type:SpawnEntity
+      entity: LPPFoodFrozenPopsicleVodka
+
+- type: reaction
+  id: LPPFPopsicleJagermeister
+  quantized: true
+  conserveEnergy: false
+  reactants:
+    Ice:
+      amount: 20
+    LPPXenomeister:
+      amount: 20
+  effects:
+    - !type:SpawnEntity
+      entity: LPPFoodFrozenPopsicleJagermeister

@@ -1,0 +1,101 @@
+- type: entity
+  parent: FoodInjectableBase
+  id: LPPFoodFrozenBase
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Consumable/Food/frozen.rsi
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20 # For sprinkles or something? Idk.
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+
+- type: entity
+  name: Jagermeister popsicle
+  parent: LPPFoodFrozenBase
+  id: LPPFoodFrozenPopsicleJagermeister
+  description: Good way to start your shift.
+  components:
+  - type: Sprite
+    layers:
+    - state: stick
+    - state: brick
+      color: '#0e4734'
+  - type: Edible
+    trash:
+    - FoodFrozenPopsicleTrash
+  - type: Tag
+    tags:
+    - Creamsicle
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Ice
+          Quantity: 5
+        - ReagentId: LPPXenomeister
+          Quantity: 20
+
+- type: entity
+  name: Vodka popsicle
+  parent: LPPFoodFrozenBase
+  id: LPPFoodFrozenPopsicleVodka
+  description: Tastes like chill burnout.
+  components:
+  - type: Sprite
+    layers:
+    - state: stick
+    - state: brick
+      color: '#c7c7c7'
+  - type: Edible
+    trash:
+    - FoodFrozenPopsicleTrash
+  - type: Tag
+    tags:
+    - Creamsicle
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Ice
+          Quantity: 5
+        - ReagentId: Vodka
+          Quantity: 20
+
+- type: entity
+  name: Beer popsicle
+  parent: LPPFoodFrozenBase
+  id: LPPFoodFrozenPopsicleBeer
+  description: Tastes like chill burnout.
+  components:
+  - type: Sprite
+    layers:
+    - state: stick
+    - state: brick
+      color: '#F5DEB3'
+  - type: Edible
+    trash:
+    - FoodFrozenPopsicleTrash
+  - type: Tag
+    tags:
+    - Creamsicle
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Ice
+          Quantity: 5
+        - ReagentId: IcedBeer
+          Quantity: 20

@@ -1,0 +1,12 @@
+- type: latheRecipePack
+  id: ADTMegaCellPack
+  recipes:
+  - ADTMegaCellSmallRecipe
+  - ADTMegaCellMediumRecipe
+  - ADTMegaCellHighRecipe
+  - ADTMegaCellHyperRecipe
+
+- type: latheRecipePack
+  id: ADTMegaCharger
+  recipes:
+  - ADTMegaCellRechargerCircuitboardRecipe

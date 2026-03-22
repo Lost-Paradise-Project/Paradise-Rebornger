@@ -215,7 +215,7 @@ namespace Content.Server.Administration.Systems
                             new("/Textures/Interface/VerbIcons/delete_transparent.svg.192dpi.png")),
                         Act = () =>
                         {
-                            _adminSystem.Erase(mindComp.UserId.Value);
+                            //_adminSystem.Erase(mindComp.UserId.Value); // LP edit
                         },
                         Impact = LogImpact.Extreme,
                         ConfirmationPopup = true

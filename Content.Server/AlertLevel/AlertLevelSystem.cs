@@ -203,7 +203,8 @@ public sealed class AlertLevelSystem : EntitySystem
         if (announce)
         {
             _chatSystem.DispatchStationAnnouncement(station, announcementFull, playDefaultSound: playDefault,
-                colorOverride: detail.Color, sender: stationName);
+                colorOverride: detail.Color, sender: stationName,
+                announceTts: detail.Tts, ttsVoiceId: detail.TtsVoice); // LP edit
         }
 
         RaiseLocalEvent(new AlertLevelChangedEvent(station, level));

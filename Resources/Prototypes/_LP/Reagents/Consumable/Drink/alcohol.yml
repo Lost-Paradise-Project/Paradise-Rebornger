@@ -1,0 +1,37 @@
+- type: reagent
+  id: LPPXenomeister
+  name: reagent-name-xenomeister
+  parent: BaseAlcohol
+  desc: reagent-desc-xenomeister
+  physicalDesc: reagent-physical-desc-strong-smelling
+  flavor: absinthe
+  color: "#0e4734"
+  metamorphicSprite:
+    sprite: _LP/Objects/Consumable/Drinks/xenomeisterglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Digestion:
+      metabolites:
+        Ethanol: 0.6
+      effects:
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectSeeingRainbow
+        conditions:
+        - !type:ReagentCondition
+          reagent: Absinthe
+          min: 10
+        type: Add
+        time: 5
+      - !type:PopupMessage
+        type: Local
+        messages:
+        - absinthe-effect-hear-voice
+        - absinthe-effect-feel-tulips
+        probability: 0.02
+        conditions:
+        - !type:ReagentCondition
+          reagent: Absinthe
+          min: 10

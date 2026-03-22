@@ -1,0 +1,67 @@
+  # Атмос
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpskirtAtmosBlackSkirt
+  name: Black Skirt atmos # Стильная юбка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Engineering_department/atmos/atmos_black_skirt.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Engineering_department/atmos/atmos_black_skirt.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpskirtAtmosTurtleneck
+  name: Atmos turtleneck with skirt # Водолазка с юбкой
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Engineering_department/atmos/skirtleneck.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Engineering_department/atmos/skirtleneck.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpskirtAtmosShirt
+  name: Atmos shirt with skirt # Рубашка с юбкой
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Engineering_department/atmos/supply_chief_skirt.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Engineering_department/atmos/supply_chief_skirt.rsi
+
+  # Инженер
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpskirtEngineerBlackSkirt
+  name: Black Skirt Engineer # Стильная юбка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Engineering_department/engineers/engineers_black_skirt.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Engineering_department/engineers/engineers_black_skirt.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpskirtEngineerTurtleneck
+  name: Engineer turtleneck with skirt # Водолазка с юбкой
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Engineering_department/engineers/skirtleneck.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Engineering_department/engineers/skirtleneck.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpskirtEngineerShirt
+  name: Engineer shirt with skirt # Рубашка с юбкой
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Engineering_department/engineers/supply_chief_skirt.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Engineering_department/engineers/supply_chief_skirt.rsi

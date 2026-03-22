@@ -1,0 +1,18 @@
+- type: entity
+  parent: BaseCaptainObjective
+  id: LPPSpaceForgeCMDStealObjective
+  components:
+  - type: NotJobRequirement
+    jobs: [ Captain ]
+  - type: StealCondition
+    stealGroup: LPPSpaceForgeCMD
+
+- type: entity
+  parent: BaseCaptainObjective
+  id: LPPCEGloveStealObjective
+  components:
+  - type: NotJobRequirement
+    jobs: [ ChiefEngineer ]
+  - type: StealCondition
+    stealGroup: LPPCEGlove
+    owner: job-name-ce

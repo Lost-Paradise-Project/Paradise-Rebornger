@@ -22,11 +22,13 @@ public sealed class MiningConsoleBoundInterface : BoundUserInterface
         _window.ToggleModePressed += () =>
             SendMessage(new MiningConsoleToggleModeMessage());
 
-        _window.ToggleActivationPressed += () =>
-            SendMessage(new MiningConsoleToggleActivationMessage());
+        // LP edit start
+        _window.ActivateAllPressed += () =>
+            SendMessage(new MiningConsoleActivateAllMessage());
 
-        _window.ToggleUpdateRequested += () =>
-            SendMessage(new MiningConsoleToggleUpdateMessage());
+        _window.DeactivateAllPressed += () =>
+            SendMessage(new MiningConsoleDeactivateAllMessage());
+        // LP edit end
 
         _window.ToggleWithdrawPressed += () =>
             SendMessage(new MiningConsoleWithdrawMessage());

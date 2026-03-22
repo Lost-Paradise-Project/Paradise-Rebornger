@@ -34,7 +34,7 @@
     sprite: _FarHorizons/Objects/Power/FissionGenerator/reactor_parts.rsi
     state: default_rod
   product: CrateBohrumControlRod
-  cost: 2000
+  cost: 1000 # LP Edit 2000 -> 1000
   category: cargoproduct-category-name-engineering
   group: market
 
@@ -44,7 +44,7 @@
     sprite: _FarHorizons/Objects/Power/FissionGenerator/reactor_parts.rsi
     state: default_rod
   product: CrateSteelGasChannel
-  cost: 1000
+  cost: 600 # LP Edit 1000 -> 600
   category: cargoproduct-category-name-engineering
   group: market
 
@@ -54,6 +54,6 @@
     sprite: _FarHorizons/Objects/Power/FissionGenerator/reactor_parts.rsi
     state: default_rod
   product: CrateSteelHeatExhanger
-  cost: 1000
+  cost: 750 # LP Edit 1000 -> 750
   category: cargoproduct-category-name-engineering
   group: market

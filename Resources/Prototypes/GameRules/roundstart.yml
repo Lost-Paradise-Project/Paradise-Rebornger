@@ -491,7 +491,7 @@
       tableId: BasicGameRulesTable
     # Corvax-MRP-start
     minMaxEventTiming:
-      min: 300 # 5 mins # C# const- 3
+      min: 420 # 5 mins # C# const- 3
       max: 900 # 15 mins # C# const- 10
     # Corvax-MRP-end
 
@@ -508,6 +508,10 @@
   parent: BaseGameRule
   components:
   - type: RampingStationEventScheduler
+    # LP edit start
+    averageEndTime: 30
+    averageChaos: 4
+    # LP edit end
     scheduledGameRules: !type:NestedSelector
       tableId: BasicGameRulesTable
 

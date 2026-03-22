@@ -283,7 +283,7 @@
   cost: 10000
   recipeUnlocks:
   - ClothingShoesBootsSpeed
-  position: 2, 28 # LP edit
+  position: 1, 28 # LP edit
   technologyPrerequisites:
   - BluespaceCargoTransport
   radioChannels:

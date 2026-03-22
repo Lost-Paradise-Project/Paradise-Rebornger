@@ -1,0 +1,22 @@
+# PDA
+- type: loadout
+  id: LPPBartenderBeerPDA
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorBar
+  equipment:
+    id: LPPBartenderBeerPDA
+
+- type: loadout
+  id: BartenderPDA
+  equipment:
+    id: BartenderPDA
+
+- type: loadoutGroup
+  id: LPPBartenderPDA
+  name: loadout-group-bartender-pda
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - BartenderPDA
+  - LPPBartenderBeerPDA

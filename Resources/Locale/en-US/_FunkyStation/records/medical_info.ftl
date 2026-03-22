@@ -46,7 +46,6 @@ medical-info-familyhistory-depression = Depression
 medical-info-familyhistory-diabetes = Diabetes
 medical-info-familyhistory-heartdisease = Heart Disease
 medical-info-familyhistory-bloodpressure = High Blood Pressure
-medical-info-familyhistory-hiv = HIV
 medical-info-familyhistory-kidneydisease = Kidney Disease
 medical-info-familyhistory-kidneystones = Kidney Stones
 medical-info-familyhistory-liverdisease = Liver Disease

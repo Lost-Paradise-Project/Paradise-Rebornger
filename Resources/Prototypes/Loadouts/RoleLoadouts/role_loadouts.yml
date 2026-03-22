@@ -89,6 +89,7 @@
   - Trinkets
   - BartenderJobTrinkets
   - GroupSpeciesBreathTool
+  - LPPBartenderPDA # LP edit
 
 - type: roleLoadout
   id: JobServiceWorker
@@ -337,6 +338,7 @@
   # LP edit end
   - GroupTankHarness
   - SalvageSpecialistBackpack
+  - LPPSalvageSpecialistJumpsuit # LP edit
   - SalvageSpecialistOuterClothing
   - SalvageSpecialistShoes
   - Glasses

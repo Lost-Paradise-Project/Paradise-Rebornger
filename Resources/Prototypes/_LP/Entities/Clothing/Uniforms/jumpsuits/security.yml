@@ -1,0 +1,111 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitSecJeansJacket
+  name: Jeans Jacket Security # Джинсовка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Sec/sectechjean.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Sec/sectechjean.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitSecGorka
+  name: Gorka Security # Горка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Sec/gorka_sec.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Sec/gorka_sec.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitSecGorkaRefl
+  name: Gorka with reflectors Security # Горка с отражателями
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Sec/gorka_sec_varg.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: shaded
+    - state: icon-unshaded
+      shader: unshaded
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Sec/gorka_sec_varg.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: shaded
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitSecHoodieVest
+  name: Security Hoodie Vest # Худи-жилет
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Sec/qmc.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Sec/qmc.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitSecShirt
+  name: Security Shirt # Рубашка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Sec/supply_chief.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Sec/supply_chief.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitSecTurtleneck
+  name: turtleneck Security # Водолазка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Sec/turtleneck_qm.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Sec/turtleneck_qm.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitSecBlackShirt
+  name: Security Black Shirt # Чёрная рубашка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Sec/util_sec.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Sec/util_sec.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitSportswear
+  name: Security sportswear # Спортивна форма
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Sec/tacticool_sec.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Sec/tacticool_sec.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitSecEngineer
+  name: security engineer jumpskirt # Униформа Полевого Инженера
+  description: A jumpsuit made of strong material, providing robust protection.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Sec/Engineer/securityEngineerJumpSuit.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Sec/Engineer/securityEngineerJumpSuit.rsi

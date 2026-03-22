@@ -30,3 +30,15 @@
 
 - type: Tag
   id: Hammer
+
+- type: Tag
+  id: BluespaceAnomaly
+
+- type: Tag
+  id: NuclearClearing
+
+- type: Tag
+  id: LPPHelmet
+
+- type: Tag
+  id: LPPFlashlightSeclite

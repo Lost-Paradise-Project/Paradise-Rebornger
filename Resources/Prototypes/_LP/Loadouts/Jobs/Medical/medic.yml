@@ -1,0 +1,49 @@
+- type: loadout
+  id: LPPMedicJeansJacket
+  equipment:
+    underwear: LPPClothingUniformJumpsuitMedicJeansJacket
+
+- type: loadout
+  id: LPPMedicGorka
+  equipment:
+    underwear: LPPClothingUniformJumpsuitMedicGorka
+
+- type: loadout
+  id: LPPMedicGorkaRefl
+  equipment:
+    underwear: LPPClothingUniformJumpsuitMedicGorkaRefl
+
+- type: loadout
+  id: LPPMedicHoodieVest
+  equipment:
+    underwear: LPPClothingUniformJumpsuitMedicHoodieVest
+
+- type: loadout
+  id: LPPMedicShirt
+  equipment:
+    underwear: LPPClothingUniformJumpsuitMedicShirt
+
+- type: loadout
+  id: LPPMedicTurtleneck
+  equipment:
+    underwear: LPPClothingUniformJumpsuitMedicTurtleneck
+
+- type: loadout
+  id: LPPMedicBlackShirt
+  equipment:
+    underwear: LPPClothingUniformJumpsuitMedicBlackShirt
+
+- type: loadout
+  id: LPPMedicBlackSkirt
+  equipment:
+    underwear: LPPClothingUniformJumpskirtMedicBlackSkirt
+
+- type: loadout
+  id: LPPMedicTurtleneckSkirt
+  equipment:
+    underwear: LPPClothingUniformJumpskirtMedicTurtleneck
+
+- type: loadout
+  id: LPPMedicShirtSkirt
+  equipment:
+    underwear: LPPClothingUniformJumpskirtMedicShirt

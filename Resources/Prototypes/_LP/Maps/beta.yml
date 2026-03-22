@@ -1,0 +1,84 @@
+- type: gameMap
+  id: LPBeta
+  mapName: 'Beta Station'
+  mapPath: /Maps/_LP/Station/LP_Beta.yml
+  randomRotation: false
+  minPlayers: 0
+  maxPlayers: 95
+  stations:
+    BetaStation:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} Бета {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: 'SD'
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/_LP/Shuttles/emergency_Beta.yml
+        - type: StationJobs
+          availableJobs:
+            # Командование
+            Captain: [ 1, 1 ] # Капитан
+            IAA: [ 1, 1 ] # АВД
+            HeadOfPersonnel: [ 1, 1 ] # Глава Персонала
+            HeadOfSecurity: [ 1, 1 ] # ГСБ
+            ChiefEngineer: [ 1, 1 ] # Старший Инженер
+            ResearchDirector: [ 1, 1 ] # Научрук
+            ChiefMedicalOfficer: [ 1, 1 ] # Главный врач
+            Quartermaster: [ 1, 1 ] # Квартирмейстер
+
+            # Центком
+            BlueshieldOfficer: [ 1, 1 ] # ОСЩ
+            NanotrasenRepresentative: [ 1, 1 ] # ПЦК
+
+            # Служба Безопасности
+            Warden: [ 1, 1 ]
+            SeniorOfficer: [ 1, 1 ] # Инструктор СБ, corvax
+            SecurityOfficer: [ 5, 6 ]
+            SecurityCadet: [ 5, 5 ]
+            Detective: [ 1, 1 ]
+            Pilot: [ 1, 1 ]
+            Brigmedic: [ 1, 1 ]
+            LPPSecurityEnginer: [ 1, 1 ] # Полевой инженер, LP
+
+            # Снабжение
+            SalvageSpecialist: [ 2, 2 ]
+            CargoTechnician: [ 3, 3 ]
+
+            # Инженерия
+            SeniorEngineer: [ 1, 1 ] # Ведущий инженер, corvax
+            AtmosphericTechnician: [ 3, 3 ]
+            StationEngineer: [ 3, 5 ]
+            TechnicalAssistant: [ 4, 4 ]
+
+            # Мед. отдел
+            SeniorPhysician: [ 1, 1 ] # Ведущий врач, corvax
+            MedicalDoctor: [ 3, 3 ]
+            MedicalIntern: [ 4, 4 ]
+            Psychologist: [ 1, 1 ]
+            Paramedic: [ 1, 1 ]
+            Chemist: [ 2, 2 ]
+
+            # НИО
+            SeniorResearcher: [ 1, 1 ] # Ведущий учёный, corvax
+            Scientist: [ 3, 3 ]
+            ResearchAssistant: [ 3, 3 ]
+
+            # Сервис
+            Bartender: [ 2, 2 ]
+            Botanist: [ 2, 3 ]
+            Chaplain: [ 1, 1 ]
+            Chef: [ 2, 2 ]
+            Clown: [ 1, 1 ]
+            Janitor: [ 1, 2 ]
+            Librarian: [ 1, 1 ]
+            Mime: [ 1, 1 ]
+            Musician: [ 1, 1 ]
+            Reporter: [ 1, 1 ]
+            ServiceWorker: [ 4, 4 ]
+            Passenger: [ -1, -1 ]
+
+            # Силиконы
+            StationAi: [ 1, 1 ]
+            Borg: [ 4, 4 ]

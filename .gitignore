@@ -14,12 +14,13 @@
 *.userprefs
 
 # Secret
-NewSecrets
-PShared*
-PServer*
-PClient*
-Resources/Prototypes/PPrototypes
-Resources/Textures/PTextures
+**/NewSecrets/
+**/PShared*/
+**/PServer*/
+**/PClient*/
+**/PScripts*/
+**/PPrototypes*/
+**/PTextures*/
 
 # Build results
 [Dd]ebug/

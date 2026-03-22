@@ -579,7 +579,7 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
             foreach (var (userId, userName) in banDef.Users)
             {
                 var discordId = _discordAuthManager.GetDiscordIdForPlayer(userId);
-                targetLink = string.Concat(discordId, discordId != null ? $"<@{discordId}>" : Loc.GetString("server-ban-no-name-dc"));
+                targetLink = string.Concat(discordId != null ? $"<@{discordId}>" : Loc.GetString("server-ban-no-name-dc"));
                 if (discordId != null)
                     mentions.Add(new User { Id = discordId });
             }
@@ -608,7 +608,7 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
         {
             foreach (var (userId, userName) in banDef.Users)
             {
-                targetName = string.Concat(targetName, "  " + (await _db.GetPlayerRecordByUserId(userId))?.LastSeenUserName ?? Loc.GetString("server-ban-no-name", ("hwid", userName)));
+                targetName = string.Concat(targetName, "" + (await _db.GetPlayerRecordByUserId(userId))?.LastSeenUserName ?? Loc.GetString("server-ban-no-name", ("hwid", userName)));
             }
         }
 
@@ -720,7 +720,7 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
             foreach (var (userId, userName) in banDef.Users)
             {
                 var discordId = _discordAuthManager.GetDiscordIdForPlayer(userId);
-                targetLink = string.Concat(discordId, discordId != null ? $"<@{discordId}>" : Loc.GetString("server-ban-no-name-dc"));
+                targetLink = string.Concat(discordId != null ? $"<@{discordId}>" : Loc.GetString("server-ban-no-name-dc"));
                 if (discordId != null)
                     mentions.Add(new User { Id = discordId });
             }
@@ -749,7 +749,7 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
         {
             foreach (var (userId, userName) in banDef.Users)
             {
-                targetName = string.Concat(targetName, "  " + (await _db.GetPlayerRecordByUserId(userId))?.LastSeenUserName ?? Loc.GetString("server-ban-no-name", ("hwid", userName)));
+                targetName = string.Concat(targetName, "" + (await _db.GetPlayerRecordByUserId(userId))?.LastSeenUserName ?? Loc.GetString("server-ban-no-name", ("hwid", userName)));
             }
         }
 

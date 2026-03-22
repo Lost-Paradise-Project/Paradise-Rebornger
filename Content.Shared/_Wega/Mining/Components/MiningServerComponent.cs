@@ -32,6 +32,12 @@ public sealed partial class MiningServerComponent : Component
 
     [DataField("breakdownTemperature")]
     public float BreakdownTemperature = 350f; // K
+
+    /// <summary>
+    /// Ссылка на плату майнинг сервера
+    /// </summary>
+    [ViewVariables]
+    public EntityUid? CircuitboardUid; // LP edit
 }
 
 public enum MiningMode : byte

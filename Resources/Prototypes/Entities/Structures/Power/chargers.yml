@@ -111,6 +111,7 @@
         blacklist:
           tags:
           - PotatoBattery
+          - ADTMegaCell # ADT-Tweak
 
 - type: entity
   parent: [ BaseItemRecharger, ConstructibleMachine ]
@@ -172,6 +173,10 @@
           - BatteryAmmoProvider
           - Stunbaton
           - PowerCell
+          # Goobstation edit start
+          tags:
+          - FitsInCharger
+          # Goobstation edit end
         blacklist:
           tags:
           - PotatoBattery
@@ -197,9 +202,14 @@
           - BatteryAmmoProvider
           - Stunbaton
           - PowerCell
+          # Goobstation edit start
+          tags:
+          - FitsInCharger
+          # Goobstation edit end
         blacklist:
           tags:
           - PotatoBattery
+          - ADTMegaCell # ADT-Tweak
 
 - type: entity
   parent: [ BaseItemRecharger, BaseWallmount ]

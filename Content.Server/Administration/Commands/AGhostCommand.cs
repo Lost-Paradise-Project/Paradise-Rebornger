@@ -2,13 +2,17 @@ using System.Linq;
 using Content.Server.GameTicking;
 using Content.Server.Ghost;
 using Content.Server.Mind;
+using Content.Server.Preferences.Managers;
+using Content.Shared._White.CustomGhostSystem;
 using Content.Shared.Administration;
 using Content.Shared.Ghost;
 using Content.Shared.Mind;
 using Robust.Server.GameObjects;
 using Robust.Server.Player;
 using Robust.Shared.Console;
+using Robust.Shared.Network;
 using Robust.Shared.Player;
+using Robust.Shared.Prototypes;
 
 namespace Content.Server.Administration.Commands;
 
@@ -17,6 +21,8 @@ public sealed class AGhostCommand : LocalizedCommands
 {
     [Dependency] private readonly IEntityManager _entities = default!;
     [Dependency] private readonly ISharedPlayerManager _playerManager = default!;
+    [Dependency] private readonly IServerPreferencesManager _prefs = default!; // LP edit
+    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;   //LP edit
 
     public override string Command => "aghost";
     public override string Help => "aghost";
@@ -92,12 +98,18 @@ public sealed class AGhostCommand : LocalizedCommands
                 return;
         }
 
+        //LP edit start
+        CustomGhostPrototype? customGhost = null;
+        if (player!.UserId is NetUserId userId && _prefs.TryGetCachedPreferences(userId, out var CustomGhost)) //LP edit вынужденый хардкод
+            customGhost = _prototypeManager.Index(new ProtoId<CustomGhostPrototype>("Admin" + CustomGhost.CustomGhost));
+        //LP edit end
+
         var canReturn = mind.CurrentEntity != null
                         && !_entities.HasComponent<GhostComponent>(mind.CurrentEntity);
         var coordinates = player!.AttachedEntity != null
             ? _entities.GetComponent<TransformComponent>(player.AttachedEntity.Value).Coordinates
             : gameTicker.GetObserverSpawnPoint();
-        var ghost = _entities.SpawnEntity(GameTicker.AdminObserverPrototypeName, coordinates);
+        var ghost = _entities.SpawnEntity(customGhost?.GhostEntityPrototype ?? GameTicker.AdminObserverPrototypeName, coordinates); //LP edit
         transformSystem.AttachToGridOrMap(ghost, _entities.GetComponent<TransformComponent>(ghost));
 
         if (canReturn)

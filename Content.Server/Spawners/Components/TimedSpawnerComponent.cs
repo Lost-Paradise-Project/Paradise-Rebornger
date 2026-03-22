@@ -51,6 +51,16 @@ public sealed partial class TimedSpawnerComponent : Component, ISerializationHoo
     [DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), AutoPausedField]
     public TimeSpan NextFire = TimeSpan.Zero;
 
+    // LP Edit Start
+
+    /// <summary>
+    /// If true, spawner will only work when entity has power
+    /// </summary>
+    [DataField("power")]
+    public bool RequiresPower = false;
+
+    // LP Edit End
+
     void ISerializationHooks.AfterDeserialization()
     {
         if (MinimumEntitiesSpawned > MaximumEntitiesSpawned)

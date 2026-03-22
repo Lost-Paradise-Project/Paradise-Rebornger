@@ -1,0 +1,23 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "One side sprited by max_gab2, completed by MegaDaimond",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "unwired",
+            "directions": 4
+        },
+        {
+            "name": "completed",
+            "directions": 4
+        },
+        {
+            "name": "wired",
+            "directions": 4
+        }
+    ]
+}
