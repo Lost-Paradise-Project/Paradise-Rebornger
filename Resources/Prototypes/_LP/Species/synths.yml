@@ -37,41 +37,57 @@
 
     enum.HumanoidVisualLayers.HeadSide: # Боковые элементы головы: frills + их light overlay.
       limit: 3
-      required: true # Базовые frills должны быть всегда.
+      required: false # Должен ли быть всегда. 
       onlyGroupWhitelisted: true
       default: [ SynthFrillsDivinity ] # По умолчанию обычные frills.
 
     enum.HumanoidVisualLayers.LArm:
-      limit: 0
-      required: false
+      limit: 1
+      required: true
+      onlyGroupWhitelisted: true
+      default: [ SynthLArmSint ]
 
     enum.HumanoidVisualLayers.RArm:
-      limit: 0
-      required: false
+      limit: 1
+      required: true
+      onlyGroupWhitelisted: true
+      default: [ SynthRArmSint ]
 
     enum.HumanoidVisualLayers.LHand:
-      limit: 0
-      required: false
+      limit: 1
+      required: true
+      onlyGroupWhitelisted: true
+      default: [ SynthLHandSint ]
 
     enum.HumanoidVisualLayers.RHand:
-      limit: 0
-      required: false
+      limit: 1
+      required: true
+      onlyGroupWhitelisted: true
+      default: [ SynthRHandSint ]
 
     enum.HumanoidVisualLayers.LLeg:
-      limit: 0
-      required: false
+      limit: 1
+      required: true
+      onlyGroupWhitelisted: true
+      default: [ SynthLLegSint ]
 
     enum.HumanoidVisualLayers.RLeg:
-      limit: 0
-      required: false
+      limit: 1
+      required: true
+      onlyGroupWhitelisted: true
+      default: [ SynthRLegSint ]
 
     enum.HumanoidVisualLayers.LFoot:
-      limit: 0
-      required: false
+      limit: 1
+      required: true
+      onlyGroupWhitelisted: true
+      default: [ SynthLFootSint ]
 
     enum.HumanoidVisualLayers.RFoot:
-      limit: 0
-      required: false
+      limit: 1
+      required: true
+      onlyGroupWhitelisted: true
+      default: [ SynthRFootSint ]
 
     # Хвосты временно отключены:
     # спрайты сейчас поломаны, а marking'и закомментированы.
@@ -332,6 +348,78 @@
   sprites:
   - sprite: _LP/Mobs/Customization/Sint_parts.rsi
     state: frills_divinity_light
+
+- type: marking
+  id: SynthLArmSint
+  bodyPart: LArm
+  forcedColoring: true
+  groupWhitelist: [ Synthoid ]
+  sprites:
+  - sprite: _LP/Mobs/Sint_parts.rsi
+    state: l_arm_sint
+
+- type: marking
+  id: SynthRArmSint
+  bodyPart: RArm
+  forcedColoring: true
+  groupWhitelist: [ Synthoid ]
+  sprites:
+  - sprite: _LP/Mobs/Sint_parts.rsi
+    state: r_arm_sint
+
+- type: marking
+  id: SynthLHandSint
+  bodyPart: LHand
+  forcedColoring: true
+  groupWhitelist: [ Synthoid ]
+  sprites:
+  - sprite: _LP/Mobs/Sint_parts.rsi
+    state: l_hand_sint
+
+- type: marking
+  id: SynthRHandSint
+  bodyPart: RHand
+  forcedColoring: true
+  groupWhitelist: [ Synthoid ]
+  sprites:
+  - sprite: _LP/Mobs/Sint_parts.rsi
+    state: r_hand_sint
+
+- type: marking
+  id: SynthLLegSint
+  bodyPart: LLeg
+  forcedColoring: true
+  groupWhitelist: [ Synthoid ]
+  sprites:
+  - sprite: _LP/Mobs/Sint_parts.rsi
+    state: l_leg_sint
+
+- type: marking
+  id: SynthRLegSint
+  bodyPart: RLeg
+  forcedColoring: true
+  groupWhitelist: [ Synthoid ]
+  sprites:
+  - sprite: _LP/Mobs/Sint_parts.rsi
+    state: r_leg_sint
+
+- type: marking
+  id: SynthLFootSint
+  bodyPart: LFoot
+  forcedColoring: true
+  groupWhitelist: [ Synthoid ]
+  sprites:
+  - sprite: _LP/Mobs/Sint_parts.rsi
+    state: l_foot_sint
+
+- type: marking
+  id: SynthRFootSint
+  bodyPart: RFoot
+  forcedColoring: true
+  groupWhitelist: [ Synthoid ]
+  sprites:
+  - sprite: _LP/Mobs/Sint_parts.rsi
+    state: r_foot_sint
 
 # ХВОСТЫ ВРЕМЕННО ОТКЛЮЧЕНЫ:
 # Спрайты сейчас поломаны, поэтому marking'и не подключаем,
