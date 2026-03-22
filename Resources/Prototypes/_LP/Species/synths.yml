@@ -114,25 +114,6 @@
   - type: HumanoidProfile
     species: Synthoid
 
-  - type: Inventory
-    speciesId: synthoid
-    displacements:
-      socks:
-        sizeMaps:
-          32:
-            sprite: _LP/Mobs/Sintoid/displacement.rsi
-            state: shoes
-      jumpsuit:
-        sizeMaps:
-          32:
-            sprite: _LP/Mobs/Sintoid/displacement.rsi
-            state: jumpsuit
-      shoes:
-        sizeMaps:
-          32:
-            sprite: _LP/Mobs/Sintoid/displacement.rsi
-            state: shoes
-
 - type: entity
   parent: OrganBase
   id: OrganSynthoid
@@ -161,9 +142,9 @@
   name: Urissst Mz'Hand
   components:
   - type: Damageable
-    damageContainer: SiliconIpc 
-    damageModifierSet: Ipc 
-  - type: DamageVisuals 
+    damageContainer: SiliconIpc # Контейнер урона, определяет типы урона и их количество.
+    damageModifierSet: Ipc # Набор модификаторов урона (сопротивления/уязвимости).
+  - type: DamageVisuals # Отображение визуальных эффектов повреждений.
     damageOverlayGroups:
       Brute:
         sprite: Mobs/Effects/brute_damage.rsi
@@ -175,7 +156,7 @@
       60: 0.7
       80: 0.5
   - type: ZombieImmune # Иммунитет к превращению в зомби.
-  - type: Reactive
+  - type: Reactive # Реакции на взаимодействие с окружением.
     groups:
       Flammable: [ Touch ]
       Extinguish: [ Touch ]
@@ -200,8 +181,8 @@
         name: power-cell-slot-component-slot-name-default
         startingItem: PowerCellMedium
   - type: Lock
-    unlockOnClick: false
-  - type: ItemSlotsLock
+    unlockOnClick: false # Слот нельзя открыть кликом.
+  - type: ItemSlotsLock # Блокировка слота батареи.
     slots:
     - cell_slot
   - type: ContainerContainer # Контейнер для хранения батареи.
@@ -215,7 +196,7 @@
   - type: SleepEmitSound # Звук во сне (механический храп).
     snore: /Audio/Machines/buzz-two.ogg
     interval: 30
-    popUp: sleep-ipc 
+    popUp: sleep-ipc # Всплывающая подсказка во сне.
   - type: Butcherable # Возможность расчленения.
     butcheringType: Spike
     spawned:
@@ -226,6 +207,7 @@
       0: Alive
       100: Critical
       200: Dead
+    # Состояния здоровья, как у боргов.
     stateAlertDict:
       Alive: BorgHealth
       Critical: BorgCrit
@@ -235,8 +217,8 @@
     - CanPilot
     - FootstepSound
     - DoorBumpOpener
-    - AnomalyHost
-    - Synthoid
+    - AnomalyHost # Для работы с аномалиями.
+    - Synthoid # Добавляем тег расы
   - type: Temperature # Температура тела.
     currentTemperature: 310.15
     specificHeat: 42
@@ -256,7 +238,7 @@
   id: Synthoid
   name: species-name-synthoid
   roundStart: true
-  sponsorOnly: true
+  sponsorOnly: false
   prototype: MobSynthoid
   defaultSkinTone: "#34a223"
   dollPrototype: AppearanceSynthoid
