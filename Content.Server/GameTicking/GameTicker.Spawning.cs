@@ -10,9 +10,8 @@ using Content.Server.Spawners.Components;
 using Content.Server.Speech.Components;
 using Content.Server.Station.Components;
 using Content.Shared.CCVar;
-using Content.Shared.Chat; // Port Respawn EE
+using Content.Shared.Chat;
 using Content.Shared.Database;
-using Content.Shared.Mind; // Port Respawn EE
 using Content.Shared.GameTicking;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Prototypes;
@@ -220,9 +219,8 @@ namespace Content.Server.GameTicking
                 // Corvax-Sponsors-End
             }
 
-            // Port Respawn EE Start
-
-            //Ghost system return to round, check for whether the character isn't the same.
+            // Orion-Start
+            // Ghost system return to round, check for whether the character isn't the same.
             if (lateJoin && !_adminManager.IsAdmin(player) && !CheckGhostReturnToRound(player, character, out var checkAvoid))
             {
                 var message = checkAvoid
@@ -230,13 +228,17 @@ namespace Content.Server.GameTicking
                     : Loc.GetString("ghost-respawn-same-character");
                 var wrappedMessage = Loc.GetString("chat-manager-server-wrap-message", ("message", message));
 
-                _chatManager.ChatMessageToOne(ChatChannel.Server, message, wrappedMessage,
-                    default, false, player.Channel, Color.Red);
+                _chatManager.ChatMessageToOne(ChatChannel.Server,
+                    message,
+                    wrappedMessage,
+                    default,
+                    false,
+                    player.Channel,
+                    Color.Red);
 
                 return;
             }
-
-            // Port Respawn EE End
+            // Orion-End
 
             // We raise this event to allow other systems to handle spawning this player themselves. (e.g. late-join wizard, etc)
             var bev = new PlayerBeforeSpawnEvent(player, character, jobId, lateJoin, station);
@@ -433,6 +435,84 @@ namespace Content.Server.GameTicking
             SpawnObserver(player);
         }
 
+        // Orion-Start
+        private bool CheckGhostReturnToRound(ICommonSession player, HumanoidCharacterProfile character, out bool checkAvoid)
+        {
+            checkAvoid = false;
+
+            // Check if the character was in round and also was not observer.
+            var allPlayerMinds = EntityQuery<MindComponent>()
+                .Where(mind => mind.OriginalOwnerUserId == player.UserId
+                               && mind.CharacterName is not null
+                               && mind.OwnedEntity is not null);
+
+            foreach (var mind in allPlayerMinds)
+            {
+                if (mind.CharacterName == character.Name)
+                    return false;
+
+                if (mind.CharacterName == null)
+                    continue;
+
+                var similarity = CalculateStringSimilarity(mind.CharacterName, character.Name);
+                switch (similarity)
+                {
+                    case >= 85f:
+                        _chatManager.SendAdminAlert(Loc.GetString("ghost-respawn-log-character-almost-same",
+                            ("player", player.Name),
+                            ("try", false),
+                            ("oldName", mind.CharacterName),
+                            ("newName", character.Name)));
+                        checkAvoid = true;
+
+                        return false;
+                    case >= 50f:
+                        _chatManager.SendAdminAlert(Loc.GetString("ghost-respawn-log-character-almost-same",
+                            ("player", player.Name),
+                            ("try", true),
+                            ("oldName", mind.CharacterName),
+                            ("newName", character.Name)));
+
+                        break;
+                }
+            }
+
+            return true;
+        }
+
+        private float CalculateStringSimilarity(string str1, string str2)
+        {
+            // Using Levenshtein distance, sooo read by yourself how this works, ugh uh 💅
+            var (n, m) = (str1.Length, str2.Length);
+            if (n == 0 || m == 0)
+                return 0;
+
+            var d = new int[n + 1, m + 1];
+            for (var i = 0; i <= n; i++)
+            {
+                d[i, 0] = i;
+            }
+
+            for (var j = 0; j <= m; j++)
+            {
+                d[0, j] = j;
+            }
+
+            for (var i = 1; i <= n; i++)
+            {
+                for (var j = 1; j <= m; j++)
+                {
+                    var cost = str1[i - 1] == str2[j - 1] ? 0 : 1;
+                    d[i, j] = Math.Min(Math.Min(d[i - 1, j] + 1, d[i, j - 1] + 1), d[i - 1, j - 1] + cost);
+                }
+            }
+
+            var distance = d[n, m];
+            var maxLength = Math.Max(n, m);
+            return ((maxLength - distance) / (float)maxLength) * 100;
+        }
+        // Orion-End
+
         /// <summary>
         /// Spawns an observer ghost and attaches the given player to it. If the player does not yet have a mind, the
         /// player is given a new mind with the observer role. Otherwise, the current mind is transferred to the ghost.
@@ -461,64 +541,6 @@ namespace Content.Server.GameTicking
                 LogImpact.Low,
                 $"{player.Name} late joined the round as an Observer with {ToPrettyString(ghost):entity}.");
         }
-
-        // Port Respawn EE Start
-
-        private bool CheckGhostReturnToRound(ICommonSession player, HumanoidCharacterProfile character, out bool checkAvoid)
-        {
-            checkAvoid = false;
-
-            var allPlayerMinds = EntityQuery<MindComponent>()
-                .Where(mind => mind.OriginalOwnerUserId == player.UserId);
-
-            foreach (var mind in allPlayerMinds)
-            {
-                if (mind.CharacterName == character.Name)
-                    return false;
-
-                if (mind.CharacterName == null)
-                    continue;
-
-                var similarity = CalculateStringSimilarity(mind.CharacterName, character.Name);
-                switch (similarity)
-                {
-                    case >= 85f:
-                        _chatManager.SendAdminAlert(Loc.GetString("ghost-respawn-log-character-almost-same",
-                            ("player", player.Name), ("try", false), ("oldName", mind.CharacterName),
-                            ("newName", character.Name)));
-                        checkAvoid = true;
-
-                        return false;
-                    case >= 50f:
-                        _chatManager.SendAdminAlert(Loc.GetString("ghost-respawn-log-character-almost-same",
-                            ("player", player.Name), ("try", true), ("oldName", mind.CharacterName),
-                            ("newName", character.Name)));
-
-                        break;
-                }
-            }
-
-            return true;
-        }
-
-        private float CalculateStringSimilarity(string str1, string str2)
-        {
-            var minLength = Math.Min(str1.Length, str2.Length);
-            var matchingCharacters = 0;
-
-            for (var i = 0; i < minLength; i++)
-            {
-                if (str1[i] == str2[i])
-                    matchingCharacters++;
-            }
-
-            float maxLength = Math.Max(str1.Length, str2.Length);
-            var similarityPercentage = (matchingCharacters / maxLength) * 100;
-
-            return similarityPercentage;
-        }
-
-        // Port Respawn EE End
 
         #region Spawn Points
 

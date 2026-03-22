@@ -1,0 +1,10 @@
+- type: latheRecipe
+  parent: BaseGoldCircuitboardRecipe
+  id: ADTMegaCellRechargerCircuitboardRecipe
+  result: ADTMegaCellRechargerCircuitboard
+  completetime: 10
+  materials:
+    Steel: 1500
+    Glass: 1000
+    Gold: 600
+    Silver: 600

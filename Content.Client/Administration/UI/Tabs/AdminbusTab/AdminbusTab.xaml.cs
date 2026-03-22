@@ -36,6 +36,7 @@ namespace Content.Client.Administration.UI.Tabs.AdminbusTab
             SpawnDecalsButton.OnPressed += SpawnDecalsButtonOnPressed;
             LoadGamePrototypeButton.OnPressed += LoadGamePrototypeButtonOnPressed;
             LoadGamePrototypeButton.Disabled = !adminManager.CanCommand("loadprototype");
+            TimeTransferPanel.Disabled = !adminManager.CanCommand("timetransferpanel"); // LP edit
             LoadBlueprintsButton.Disabled = !adminManager.CanCommand("loadgrid");
         }
 
@@ -43,6 +44,7 @@ namespace Content.Client.Administration.UI.Tabs.AdminbusTab
         {
             var adminManager = IoCManager.Resolve<IClientAdminManager>();
             LoadGamePrototypeButton.Disabled = !adminManager.CanCommand("loadprototype");
+            TimeTransferPanel.Disabled = !adminManager.CanCommand("timetransferpanel"); // LP edit
             LoadBlueprintsButton.Disabled = !adminManager.CanCommand("loadgrid");
         }
 

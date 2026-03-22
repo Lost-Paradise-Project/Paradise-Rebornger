@@ -1,0 +1,54 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitBlueClown
+  name: blue clown suit
+  description: HONK! but blue
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/blue-clown.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/blue-clown.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitGreenClown
+  name: green clown suit
+  description: HONK! but green
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/green-clown.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/green-clown.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitOrangeClown
+  name: orange clown suit
+  description: HONK! but orange
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/orange-clown.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/orange-clown.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitPurpleClown
+  name: purple clown suit
+  description: HONK! but purple
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/purple-clown.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/purple-clown.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitYellowClown
+  name: yellow clown suit
+  description: HONK! but yellow
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/yellow-clown.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/yellow-clown.rsi

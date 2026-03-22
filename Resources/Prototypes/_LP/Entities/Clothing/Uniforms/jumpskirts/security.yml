@@ -1,0 +1,43 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpskirtSecBlackSkirt
+  name: Black Skirt Security # Стильная юбка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Sec/sec_black_skirt.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Sec/sec_black_skirt.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpskirtSecTurtleneck
+  name: Security turtleneck with skirt # Водолазка с юбкой
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Sec/skirtleneck.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Sec/skirtleneck.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpskirtSecShirt
+  name: Security shirt with skirt # Рубашка с юбкой
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Sec/supply_chief_skirt.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Sec/supply_chief_skirt.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpSkirtSecEngineer
+  name: security engineer jumpsuit
+  description: A jumpsuit made of strong material, providing robust protection.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Sec/Engineer/securityEngineerJumpSkirt.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Sec/Engineer/securityEngineerJumpSkirt.rsi

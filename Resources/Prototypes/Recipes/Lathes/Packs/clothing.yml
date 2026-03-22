@@ -6,6 +6,12 @@
   - ClothingUniformJumpsuitColorGrey
   - ClothingUniformJumpskirtColorGrey
   - ClothingUniformJumpsuitLoungewear
+  # LP edit start
+  - LPPClothingUniformBlackTracksuit
+  - LPPClothingUniformBlueTracksuit
+  - LPPClothingUniformRedTracksuit
+  - LPPClothingUniformGreenTracksuit
+  # LP edit end
 
 - type: latheRecipePack
   id: ClothingCargo
@@ -20,6 +26,19 @@
   - ClothingUniformJumpsuitQMTurtleneck
   - ClothingUniformJumpskirtQMTurtleneck
   - ClothingUniformJumpsuitQMFormal
+  # LP edit start
+  - LPPClothingUniformJumpsuitCargoJeansJacket
+  - LPPClothingUniformJumpsuitCargoGorka
+  - LPPClothingUniformJumpsuitCargoGorkaRefl
+  - LPPClothingUniformJumpsuitCargoHoodieVest
+  - LPPClothingUniformJumpsuitCargoShirt
+  - LPPClothingUniformJumpsuitCargoTurtleneck
+  - LPPClothingUniformJumpsuitCargoBlackShirt
+  - LPPClothingUniformExplorerAlternative
+  - LPPClothingUniformJumpskirtCargoBlackSkirt
+  - LPPClothingUniformJumpskirtCargoTurtleneck
+  - LPPClothingUniformJumpskirtCargoShirt
+  # LP edit end
 
 - type: latheRecipePack
   id: ClothingCommand
@@ -53,6 +72,28 @@
   - ClothingUniformJumpskirtEngineering
   - ClothingUniformJumpsuitSeniorEngineer
   - ClothingUniformJumpskirtSeniorEngineer
+  # LP edit start
+  - LPPClothingUniformJumpsuitAtmosJeansJacket
+  - LPPClothingUniformJumpsuitAtmosGorka
+  - LPPClothingUniformJumpsuitAtmosGorkaRefl
+  - LPPClothingUniformJumpsuitAtmosHoodieVest
+  - LPPClothingUniformJumpsuitAtmosShirt
+  - LPPClothingUniformJumpsuitAtmosTurtleneck
+  - LPPClothingUniformJumpsuitAtmosBlackShirt
+  - LPPClothingUniformJumpsuitEngineerJeansJacket
+  - LPPClothingUniformJumpsuitEngineerGorka
+  - LPPClothingUniformJumpsuitEngineerGorkaRefl
+  - LPPClothingUniformJumpsuitEngineerHoodieVest
+  - LPPClothingUniformJumpsuitEngineerShirt
+  - LPPClothingUniformJumpsuitEngineerTurtleneck
+  - LPPClothingUniformJumpsuitEngineerBlackShirt
+  - LPPClothingUniformJumpskirtAtmosBlackSkirt
+  - LPPClothingUniformJumpskirtAtmosTurtleneck
+  - LPPClothingUniformJumpskirtAtmosShirt
+  - LPPClothingUniformJumpskirtEngineerBlackSkirt
+  - LPPClothingUniformJumpskirtEngineerTurtleneck
+  - LPPClothingUniformJumpskirtEngineerShirt
+  # LP edit end
 
 - type: latheRecipePack
   id: ClothingMedical
@@ -72,6 +113,28 @@
   - ClothingUniformJumpsuitParamedic
   - ClothingUniformJumpskirtParamedic
   - ClothingHeadHatParamedicsoft
+  # LP edit start
+  - LPPClothingUniformJumpsuitMedicJeansJacket
+  - LPPClothingUniformJumpsuitMedicGorka
+  - LPPClothingUniformJumpsuitMedicGorkaRefl
+  - LPPClothingUniformJumpsuitMedicHoodieVest
+  - LPPClothingUniformJumpsuitMedicShirt
+  - LPPClothingUniformJumpsuitMedicTurtleneck
+  - LPPClothingUniformJumpsuitMedicBlackShirt
+  - LPPClothingUniformJumpsuitVirologyJeansJacket
+  - LPPClothingUniformJumpsuitVirologyGorka
+  - LPPClothingUniformJumpsuitVirologyGorkaRefl
+  - LPPClothingUniformJumpsuitVirologyHoodieVest
+  - LPPClothingUniformJumpsuitVirologyShirt
+  - LPPClothingUniformJumpsuitVirologyTurtleneck
+  - LPPClothingUniformJumpsuitVirologyBlackShirt
+  - LPPClothingUniformJumpskirtMedicBlackSkirt
+  - LPPClothingUniformJumpskirtMedicTurtleneck
+  - LPPClothingUniformJumpskirtMedicShirt
+  - LPPClothingUniformJumpskirtVirologyBlackSkirt
+  - LPPClothingUniformJumpskirtVirologyTurtleneck
+  - LPPClothingUniformJumpskirtVirologyShirt
+  # LP edit end
 
 - type: latheRecipePack
   id: ClothingScience
@@ -83,6 +146,18 @@
   - ClothingUniformJumpskirtScientist
   - ClothingUniformJumpsuitSeniorResearcher
   - ClothingUniformJumpskirtSeniorResearcher
+  # LP edit start
+  - LPPClothingUniformJumpsuitScienceJeansJacket
+  - LPPClothingUniformJumpsuitScienceGorka
+  - LPPClothingUniformJumpsuitScienceGorkaRefl
+  - LPPClothingUniformJumpsuitScienceHoodieVest
+  - LPPClothingUniformJumpsuitScienceShirt
+  - LPPClothingUniformJumpsuitScienceTurtleneck
+  - LPPClothingUniformJumpsuitScienceBlackShirt
+  - LPPClothingUniformJumpskirtScienceBlackSkirt
+  - LPPClothingUniformJumpskirtScienceTurtleneck
+  - LPPClothingUniformJumpskirtScienceShirt
+  # LP edit end
 
 - type: latheRecipePack
   id: ClothingSecurity
@@ -118,6 +193,17 @@
   # LP Edit Start
   # - LPPClothingUniformJumpSkirtSecEngineer
   # - LPPClothingUniformJumpsuitSecEngineer
+  - LPPClothingUniformJumpsuitSecJeansJacket
+  - LPPClothingUniformJumpsuitSecGorka
+  - LPPClothingUniformJumpsuitSecGorkaRefl
+  - LPPClothingUniformJumpsuitSecHoodieVest
+  - LPPClothingUniformJumpsuitSecShirt
+  - LPPClothingUniformJumpsuitSecTurtleneck
+  - LPPClothingUniformJumpsuitSecBlackShirt
+  - LPPClothingUniformJumpsuitSportswear
+  - LPPClothingUniformJumpskirtSecBlackSkirt
+  - LPPClothingUniformJumpskirtSecTurtleneck
+  - LPPClothingUniformJumpskirtSecShirt
   # LP Edit End
 
 - type: latheRecipePack
@@ -193,6 +279,14 @@
   - ClothingNeckScarfStripedOrange
   - ClothingNeckScarfStripedBlack
   - ClothingNeckScarfStripedPurple
+  # LP edit start
+  - LPPClothingNeckShemagWhite
+  - LPPClothingNeckShemagRed
+  - LPPClothingNeckShemagGreen
+  - LPPClothingNeckShemagBrown
+  - LPPClothingNeckShemagBlue
+  - LPPClothingNeckShemagPurple
+  # LP edit end
 
 - type: latheRecipePack
   id: Carpets

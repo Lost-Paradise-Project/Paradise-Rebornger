@@ -134,3 +134,24 @@
   position: 3, 32 # Экспериментальные скафы
   radioChannels:
   - Command
+
+# arsenal
+
+- type: technology
+  id: LPPSecurityGrenadeLauncher
+  name: research-technology-grenade-launcher-security
+  icon:
+    sprite: Objects/Weapons/Guns/Launchers/hydra_launcher.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 2
+  cost: 7500
+  recipeUnlocks:
+  - LPPWeaponLauncherHydra
+  - LPPGrenadeBaton
+  - LPPGrenadeEMP
+  technologyPrerequisites:
+  - NonlethalAmmunition
+  position: 6, 17
+  radioChannels:
+  - Security

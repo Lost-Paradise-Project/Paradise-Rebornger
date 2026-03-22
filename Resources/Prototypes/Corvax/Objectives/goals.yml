@@ -62,9 +62,11 @@
   text: station-goal-shuttle-emergency
   minPlayers: 10
 
-- type: stationGoal
-  id: Theatre
-  text: station-goal-theatre
+# LP Edit Start
+# - type: stationGoal
+#   id: Theatre
+#   text: station-goal-theatre
+# LP Edit End
 
 - type: stationGoal
   id: CellAI

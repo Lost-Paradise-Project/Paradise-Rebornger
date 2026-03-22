@@ -76,6 +76,9 @@
     - ScienceWeapons
     - Chemistry
     - Equipment
+    - RNDInducer
+    - ADTMegaCharger
+    - ADTMegaCellPack
   - type: MaterialStorage
     whitelist: *StandardMaterialWhitelist
 
@@ -114,6 +117,9 @@
     - AtmosTools
     - EngineeringWeapons
     - Equipment
+    - EngiInducer
+    - ADTMegaCharger
+    - ADTMegaCellPack
   - type: MaterialStorage
     whitelist: *StandardMaterialWhitelist
 

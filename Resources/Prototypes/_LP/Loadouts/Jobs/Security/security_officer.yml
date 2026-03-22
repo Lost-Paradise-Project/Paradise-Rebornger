@@ -1,0 +1,54 @@
+- type: loadout
+  id: LPPSecurityJeansJacket
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitSecJeansJacket
+
+- type: loadout
+  id: LPPSecurityGorka
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitSecGorka
+
+- type: loadout
+  id: LPPSecurityGorkaRefl
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitSecGorkaRefl
+
+- type: loadout
+  id: LPPSecurityHoodieVest
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitSecHoodieVest
+
+- type: loadout
+  id: LPPSecurityShirt
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitSecShirt
+
+- type: loadout
+  id: LPPSecuritySkirtShirt
+  equipment:
+    jumpsuit: LPPClothingUniformJumpskirtSecShirt
+
+- type: loadout
+  id: LPPSecurityTurtleneck
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitSecTurtleneck
+
+- type: loadout
+  id: LPPSecuritySkirtTurtleneck
+  equipment:
+    jumpsuit: LPPClothingUniformJumpskirtSecTurtleneck
+
+- type: loadout
+  id: LPPSecurityBlackShirt
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitSecBlackShirt
+
+- type: loadout
+  id: LPPSecurityJeansSportswear
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitSportswear
+
+- type: loadout
+  id: LPPSecuritySkirtBlackSkirt
+  equipment:
+    jumpsuit: LPPClothingUniformJumpskirtSecBlackSkirt

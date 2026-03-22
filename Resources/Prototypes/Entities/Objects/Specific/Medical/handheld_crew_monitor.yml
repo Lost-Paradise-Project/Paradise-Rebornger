@@ -2,7 +2,7 @@
   name: handheld crew monitor
   categories: [ DoNotMap ]
   parent: [ BaseHandheldComputer, BaseGrandTheftContraband ]
-  # CMO-only bud, don't add more.
+  # CMO-only bud, don't add more. # LP Edit -> No StealTarget
   id: HandheldCrewMonitor
   description: A hand-held crew monitor displaying the status of suit sensors.
   components:
@@ -29,8 +29,10 @@
   - type: Tag
     tags:
     - HighRiskItem
-  - type: StealTarget
-    stealGroup: HandheldCrewMonitor
+  # LP Edit Start
+  # - type: StealTarget
+  #   stealGroup: HandheldCrewMonitor
+  # LP Edit End
 
 - type: entity
   id: HandheldCrewMonitorEmpty

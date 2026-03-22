@@ -33,6 +33,7 @@ plumbing-filter-filtered = Отфильтрованные реагенты
 plumbing-filter-clear = Очистить всё
 plumbing-filter-remove-selected = Удалить выбранное
 plumbing-filter-invalid-reagent = Неизвестный реагент: { $reagent }
+plumbing-filter-max-reagents = Вы можете филтровать до { $count } реагентов.
 # Synthesizer UI
 plumbing-synthesizer-window-title = Водопроводный синтезатор
 plumbing-synthesizer-status = Статус:

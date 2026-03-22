@@ -26,6 +26,7 @@
     price: 750
   - type: ExaminableSolution
     solution: hypospray
+    exactVolume: true
 
 - type: entity
   parent: BaseHypospray
@@ -55,3 +56,16 @@
     price: 1000
   - type: ExaminableSolution
     solution: hypospray
+    exactVolume: true
+  - type: SolutionInjectOnEmbed
+    transferAmount: 2
+    solution: hypospray
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Piercing: 0
+    angle: 0
+    animation: WeaponArcThrust
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg

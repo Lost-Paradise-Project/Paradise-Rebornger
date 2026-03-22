@@ -5,6 +5,8 @@
     ClothingBackpackSatchelSecurity: 3
     ClothingBackpackDuffelSecurity: 3
     ClothingUniformJumpsuitSec: 3
+    LPPClothingUniformJumpsuitSportswear: 2 # LP edit
+    LPPClothingUniformJumpsuitSecGorkaRefl: 2 # LP edit
     ClothingShoesBootsJack: 3
     ClothingHeadHatBeretSecurity: 3
     ClothingHeadHatSecsoft: 3

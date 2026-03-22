@@ -122,6 +122,11 @@ public sealed partial class CustomGhostsWindow : DefaultWindow
 
     private CustomGhostButton? AddButton(CustomGhostPrototype ghostProto) // is not guaranteed to actually add a button, lol
     {
+        //LP edit start
+        if (ghostProto.ID.Contains("Admin"))
+            return null;
+        //LP edit end
+
         bool available = ghostProto.CanUse(_player.LocalSession!, out string fullFailReason, out bool canSee, SponsorSimpleManager.GetTier());  //LP edit
         /*if (!canSee) // skip button creation altogether
             return null;*/

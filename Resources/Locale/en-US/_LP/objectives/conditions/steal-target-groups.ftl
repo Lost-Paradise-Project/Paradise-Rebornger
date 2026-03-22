@@ -1,1 +1,2 @@
-steal-target-groups-captain-space-forge = command space forge machine board
+steal-target-groups-captain-space-forge = космическая кузница командования (машинная плата)
+steal-target-groups-ce-glove = силовая перчатка

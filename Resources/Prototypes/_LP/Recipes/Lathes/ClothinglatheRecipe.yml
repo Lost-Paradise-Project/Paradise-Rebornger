@@ -1,13 +1,428 @@
-- type: latheRecipe
-  id: LPPClothingUniformJumpSkirtSecEngineer
-  result: LPPClothingUniformJumpSkirtSecEngineer
-  completetime: 4
-  materials:
-    Cloth: 300
+# Jumpsuits/skirts
 
 - type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformBlackTracksuit
+  result: LPPClothingUniformBlackTracksuit
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformBlueTracksuit
+  result: LPPClothingUniformBlueTracksuit
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformRedTracksuit
+  result: LPPClothingUniformRedTracksuit
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformGreenTracksuit
+  result: LPPClothingUniformGreenTracksuit
+
+## Cargo / Грузчик
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitCargoJeansJacket
+  result: LPPClothingUniformJumpsuitCargoJeansJacket
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitCargoGorka
+  result: LPPClothingUniformJumpsuitCargoGorka
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitCargoGorkaRefl
+  result: LPPClothingUniformJumpsuitCargoGorkaRefl
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitCargoHoodieVest
+  result: LPPClothingUniformJumpsuitCargoHoodieVest
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitCargoShirt
+  result: LPPClothingUniformJumpsuitCargoShirt
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitCargoTurtleneck
+  result: LPPClothingUniformJumpsuitCargoTurtleneck
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitCargoBlackShirt
+  result: LPPClothingUniformJumpsuitCargoBlackShirt
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformExplorerAlternative
+  result: LPPClothingUniformExplorerAlternative
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpskirtCargoBlackSkirt
+  result: LPPClothingUniformJumpskirtCargoBlackSkirt
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpskirtCargoTurtleneck
+  result: LPPClothingUniformJumpskirtCargoTurtleneck
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpskirtCargoShirt
+  result: LPPClothingUniformJumpskirtCargoShirt
+
+## Atmos / Атмосферный техник
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitAtmosJeansJacket
+  result: LPPClothingUniformJumpsuitAtmosJeansJacket
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitAtmosGorka
+  result: LPPClothingUniformJumpsuitAtmosGorka
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitAtmosGorkaRefl
+  result: LPPClothingUniformJumpsuitAtmosGorkaRefl
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitAtmosHoodieVest
+  result: LPPClothingUniformJumpsuitAtmosHoodieVest
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitAtmosShirt
+  result: LPPClothingUniformJumpsuitAtmosShirt
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitAtmosTurtleneck
+  result: LPPClothingUniformJumpsuitAtmosTurtleneck
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitAtmosBlackShirt
+  result: LPPClothingUniformJumpsuitAtmosBlackShirt
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpskirtAtmosBlackSkirt
+  result: LPPClothingUniformJumpskirtAtmosBlackSkirt
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpskirtAtmosTurtleneck
+  result: LPPClothingUniformJumpskirtAtmosTurtleneck
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpskirtAtmosShirt
+  result: LPPClothingUniformJumpskirtAtmosShirt
+
+## Engineer / Инженер
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitEngineerJeansJacket
+  result: LPPClothingUniformJumpsuitEngineerJeansJacket
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitEngineerGorka
+  result: LPPClothingUniformJumpsuitEngineerGorka
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitEngineerGorkaRefl
+  result: LPPClothingUniformJumpsuitEngineerGorkaRefl
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitEngineerHoodieVest
+  result: LPPClothingUniformJumpsuitEngineerHoodieVest
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitEngineerShirt
+  result: LPPClothingUniformJumpsuitEngineerShirt
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitEngineerTurtleneck
+  result: LPPClothingUniformJumpsuitEngineerTurtleneck
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitEngineerBlackShirt
+  result: LPPClothingUniformJumpsuitEngineerBlackShirt
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpskirtEngineerBlackSkirt
+  result: LPPClothingUniformJumpskirtEngineerBlackSkirt
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpskirtEngineerTurtleneck
+  result: LPPClothingUniformJumpskirtEngineerTurtleneck
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpskirtEngineerShirt
+  result: LPPClothingUniformJumpskirtEngineerShirt
+
+## Medic / Врач
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitMedicJeansJacket
+  result: LPPClothingUniformJumpsuitMedicJeansJacket
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitMedicGorka
+  result: LPPClothingUniformJumpsuitMedicGorka
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitMedicGorkaRefl
+  result: LPPClothingUniformJumpsuitMedicGorkaRefl
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitMedicHoodieVest
+  result: LPPClothingUniformJumpsuitMedicHoodieVest
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitMedicShirt
+  result: LPPClothingUniformJumpsuitMedicShirt
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitMedicTurtleneck
+  result: LPPClothingUniformJumpsuitMedicTurtleneck
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitMedicBlackShirt
+  result: LPPClothingUniformJumpsuitMedicBlackShirt
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitVirologyJeansJacket
+  result: LPPClothingUniformJumpsuitVirologyJeansJacket
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitVirologyGorka
+  result: LPPClothingUniformJumpsuitVirologyGorka
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitVirologyGorkaRefl
+  result: LPPClothingUniformJumpsuitVirologyGorkaRefl
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitVirologyHoodieVest
+  result: LPPClothingUniformJumpsuitVirologyHoodieVest
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitVirologyShirt
+  result: LPPClothingUniformJumpsuitVirologyShirt
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitVirologyTurtleneck
+  result: LPPClothingUniformJumpsuitVirologyTurtleneck
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitVirologyBlackShirt
+  result: LPPClothingUniformJumpsuitVirologyBlackShirt
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpskirtMedicBlackSkirt
+  result: LPPClothingUniformJumpskirtMedicBlackSkirt
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpskirtMedicTurtleneck
+  result: LPPClothingUniformJumpskirtMedicTurtleneck
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpskirtMedicShirt
+  result: LPPClothingUniformJumpskirtMedicShirt
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpskirtVirologyBlackSkirt
+  result: LPPClothingUniformJumpskirtVirologyBlackSkirt
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpskirtVirologyTurtleneck
+  result: LPPClothingUniformJumpskirtVirologyTurtleneck
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpskirtVirologyShirt
+  result: LPPClothingUniformJumpskirtVirologyShirt
+
+## Scientist / Учёный
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitScienceJeansJacket
+  result: LPPClothingUniformJumpsuitScienceJeansJacket
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitScienceGorka
+  result: LPPClothingUniformJumpsuitScienceGorka
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitScienceGorkaRefl
+  result: LPPClothingUniformJumpsuitScienceGorkaRefl
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitScienceHoodieVest
+  result: LPPClothingUniformJumpsuitScienceHoodieVest
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitScienceShirt
+  result: LPPClothingUniformJumpsuitScienceShirt
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitScienceTurtleneck
+  result: LPPClothingUniformJumpsuitScienceTurtleneck
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitScienceBlackShirt
+  result: LPPClothingUniformJumpsuitScienceBlackShirt
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpskirtScienceBlackSkirt
+  result: LPPClothingUniformJumpskirtScienceBlackSkirt
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpskirtScienceTurtleneck
+  result: LPPClothingUniformJumpskirtScienceTurtleneck
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpskirtScienceShirt
+  result: LPPClothingUniformJumpskirtScienceShirt
+
+## Security Officer / Офицер Службы Безопасности
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitSecJeansJacket
+  result: LPPClothingUniformJumpsuitSecJeansJacket
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitSecGorka
+  result: LPPClothingUniformJumpsuitSecGorka
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitSecGorkaRefl
+  result: LPPClothingUniformJumpsuitSecGorkaRefl
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitSecHoodieVest
+  result: LPPClothingUniformJumpsuitSecHoodieVest
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitSecShirt
+  result: LPPClothingUniformJumpsuitSecShirt
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitSecTurtleneck
+  result: LPPClothingUniformJumpsuitSecTurtleneck
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitSecBlackShirt
+  result: LPPClothingUniformJumpsuitSecBlackShirt
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpsuitSportswear
+  result: LPPClothingUniformJumpsuitSportswear
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpskirtSecBlackSkirt
+  result: LPPClothingUniformJumpskirtSecBlackSkirt
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpskirtSecTurtleneck
+  result: LPPClothingUniformJumpskirtSecTurtleneck
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpskirtSecShirt
+  result: LPPClothingUniformJumpskirtSecShirt
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
+  id: LPPClothingUniformJumpSkirtSecEngineer
+  result: LPPClothingUniformJumpSkirtSecEngineer
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: LPPClothingUniformJumpsuitSecEngineer
   result: LPPClothingUniformJumpsuitSecEngineer
-  completetime: 4
-  materials:
-    Cloth: 300
+
+# Neck
+- type: latheRecipe
+  parent: BaseNeckClothingRecipe
+  id: LPPClothingNeckShemagWhite
+  result: LPPClothingNeckShemagWhite
+
+- type: latheRecipe
+  parent: BaseNeckClothingRecipe
+  id: LPPClothingNeckShemagRed
+  result: LPPClothingNeckShemagRed
+
+- type: latheRecipe
+  parent: BaseNeckClothingRecipe
+  id: LPPClothingNeckShemagGreen
+  result: LPPClothingNeckShemagGreen
+
+- type: latheRecipe
+  parent: BaseNeckClothingRecipe
+  id: LPPClothingNeckShemagBrown
+  result: LPPClothingNeckShemagBrown
+
+- type: latheRecipe
+  parent: BaseNeckClothingRecipe
+  id: LPPClothingNeckShemagBlue
+  result: LPPClothingNeckShemagBlue
+
+- type: latheRecipe
+  parent: BaseNeckClothingRecipe
+  id: LPPClothingNeckShemagPurple
+  result: LPPClothingNeckShemagPurple

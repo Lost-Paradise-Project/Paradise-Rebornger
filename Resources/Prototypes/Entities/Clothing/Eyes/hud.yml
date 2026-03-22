@@ -38,6 +38,7 @@
     sprite: Clothing/Eyes/Hud/diag.rsi
   - type: ShowHealthBars
     damageContainers:
+    - SiliconIpc # LP Edit
     - Inorganic
     - Silicon
   - type: ShowAccessReaderSettings

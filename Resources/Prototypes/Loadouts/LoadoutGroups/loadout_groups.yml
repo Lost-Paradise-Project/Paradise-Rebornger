@@ -193,6 +193,12 @@
   - AncientJumpsuit
   - RainbowJumpsuit
   - RainbowJumpskirt
+  # LP edit start
+  - LPPPassangerBlackTracksuit
+  - LPPPassangerBlueTracksuit
+  - LPPPassangerRedTracksuit
+  - LPPPassangerGreenTracksuit
+  # LP edit end
 
 - type: loadoutGroup
   id: PassengerFace
@@ -510,6 +516,13 @@
   name: loadout-group-clown-jumpsuit
   loadouts:
   - ClownSuit
+  # LP edit start
+  - LPPClownSuitBlue
+  - LPPClownSuitGreen
+  - LPPClownSuitOrange
+  - LPPClownSuitPurple
+  - LPPClownSuitYellow
+  # LP edit end
   - ClownSkirt
   - JesterSuit
   - JesterAltSuit
@@ -732,6 +745,18 @@
   loadouts:
   - CargoTechnicianJumpsuit
   - CargoTechnicianJumpskirt
+  # LP edit start
+  - LPPCargoJeansJacket
+  - LPPCargoGorka
+  - LPPCargoGorkaRefl
+  - LPPCargoHoodieVest
+  - LPPCargoShirt
+  - LPPCargoShirtSkirt
+  - LPPCargoTurtleneck
+  - LPPCargoTurtleneckSkirt
+  - LPPCargoBlackShirt
+  - LPPCargoBlackSkirt
+  # LP edit end
 
 - type: loadoutGroup
   id: CargoTechnicianBackpack
@@ -874,6 +899,18 @@
   - StationEngineerHazardsuit
   - SeniorEngineerJumpsuit
   - SeniorEngineerJumpskirt
+  # LP edit start
+  - LPPEngineerJeansJacket
+  - LPPJumpsuitEngineerGorka
+  - LPPEngineerGorkaRefl
+  - LPPEngineerHoodieVest
+  - LPPEngineerShirt
+  - LPPEngineerShirtSkirt
+  - LPPEngineerTurtleneck
+  - LPPEngineerTurtleneckSkirt
+  - LPPEngineerBlackShirt
+  - LPPEngineerBlackSkirt
+  # LP edit end
 
 - type: loadoutGroup
   id: StationEngineerBackpack
@@ -918,6 +955,18 @@
   - AtmosphericTechnicianJumpsuit
   - AtmosphericTechnicianJumpskirt
   - AtmosphericTechnicianJumpsuitCasual
+  # LP edit start
+  - LPPAtmosJeansJacket
+  - LPPAtmosGorka
+  - LPPAtmosGorkaRefl
+  - LPPAtmosHoodieVest
+  - LPPAtmosShirt
+  - LPPAtmosShirtSkirt
+  - LPPAtmosTurtleneck
+  - LPPAtmosTurtleneckSkirt
+  - LPPAtmosBlackShirt
+  - LPPAtmosBlackSkirt
+  # LP edit end
 
 - type: loadoutGroup
   id: AtmosphericTechnicianOuterClothing
@@ -1032,6 +1081,18 @@
   - RoboticistJumpskirt
   - SeniorResearcherJumpsuit
   - SeniorResearcherJumpskirt
+  # LP edit start
+  - LPPScienceJeansJacket
+  - LPPScienceGorka
+  - LPPScienceGorkaRefl
+  - LPPScienceHoodieVest
+  - LPPScienceShirt
+  - LPPScienceShirtSkirt
+  - LPPScienceTurtleneck
+  - LPPScienceTurtleneckSkirt
+  - LPPScienceBlackShirt
+  - LPPScienceBlackSkirt
+  # LP edit end
 
 - type: loadoutGroup
   id: ScientistBackpack
@@ -1193,6 +1254,19 @@
   - SeniorOfficerJumpsuit
   - SeniorOfficerJumpskirt
   - TrooperUniform
+  # LP edit start
+  - LPPSecurityJeansJacket
+  - LPPSecurityGorka
+  - LPPSecurityGorkaRefl
+  - LPPSecurityHoodieVest
+  - LPPSecurityShirt
+  - LPPSecuritySkirtShirt
+  - LPPSecurityTurtleneck
+  - LPPSecuritySkirtTurtleneck
+  - LPPSecurityBlackShirt
+  - LPPSecuritySkirtBlackSkirt
+  - LPPSecurityJeansSportswear
+  # LP edit end
 
 - type: loadoutGroup
   id: SecurityBackpack

@@ -1,0 +1,32 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpskirtCargoBlackSkirt
+  name: Black Skirt cargo # Стильная юбка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Cargo/cargo_black_skirt.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Cargo/cargo_black_skirt.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpskirtCargoTurtleneck
+  name: Cargo turtleneck with skirt # Водолазка с юбкой
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Cargo/skirtleneck.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Cargo/skirtleneck.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpskirtCargoShirt
+  name: Cargo shirt with skirt # Рубашка с юбкой
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Cargo/supply_chief_skirt.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Cargo/supply_chief_skirt.rsi

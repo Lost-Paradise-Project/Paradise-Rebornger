@@ -49,7 +49,7 @@ public sealed partial class RoleLoadoutPrototype : IPrototype
             {
                 _initialized = true;
 #if LP
-                if (!_groups.Contains("SponsorsClothing"))
+                if (_groups.Count > 0 && !_groups.Contains("SponsorsClothing"))
                 {
                     _groups.Add("SponsorsClothing");
                 }

@@ -1,0 +1,24 @@
+- type: loadout
+  id: LPPClownSuitBlue
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitBlueClown
+
+- type: loadout
+  id: LPPClownSuitGreen
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitGreenClown
+
+- type: loadout
+  id: LPPClownSuitOrange
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitOrangeClown
+
+- type: loadout
+  id: LPPClownSuitPurple
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitPurpleClown
+
+- type: loadout
+  id: LPPClownSuitYellow
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitYellowClown
