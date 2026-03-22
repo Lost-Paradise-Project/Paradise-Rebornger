@@ -194,14 +194,12 @@ public sealed partial class TimeTransferPanel : DefaultWindow
     public void OnGroupCheckboxPressed(BaseButton.ButtonEventArgs obj)
     {
         AllTimeCheckbox.Pressed = false;
-        UpdateAllTimeMode();
         UpdateGroup();
     }
 
     public void OnAllTimeCheckboxPressed(BaseButton.ButtonEventArgs obj)
     {
         GroupCheckbox.Pressed = false;
-        UpdateAllTimeMode();
         UpdateGroup();
     }
     // LP edit end
