@@ -1,49 +1,49 @@
 - type: loadout
   id: LPPScienceJeansJacket
   equipment:
-    underwear: LPPClothingUniformJumpsuitScienceJeansJacket
+    jumpsuit: LPPClothingUniformJumpsuitScienceJeansJacket
 
 - type: loadout
   id: LPPScienceGorka
   equipment:
-    underwear: LPPClothingUniformJumpsuitScienceGorka
+    jumpsuit: LPPClothingUniformJumpsuitScienceGorka
 
 - type: loadout
   id: LPPScienceGorkaRefl
   equipment:
-    underwear: LPPClothingUniformJumpsuitScienceGorkaRefl
+    jumpsuit: LPPClothingUniformJumpsuitScienceGorkaRefl
 
 - type: loadout
   id: LPPScienceHoodieVest
   equipment:
-    underwear: LPPClothingUniformJumpsuitScienceHoodieVest
+    jumpsuit: LPPClothingUniformJumpsuitScienceHoodieVest
 
 - type: loadout
   id: LPPScienceShirt
   equipment:
-    underwear: LPPClothingUniformJumpsuitScienceShirt
+    jumpsuit: LPPClothingUniformJumpsuitScienceShirt
 
 - type: loadout
   id: LPPScienceTurtleneck
   equipment:
-    underwear: LPPClothingUniformJumpsuitScienceTurtleneck
+    jumpsuit: LPPClothingUniformJumpsuitScienceTurtleneck
 
 - type: loadout
   id: LPPScienceBlackShirt
   equipment:
-    underwear: LPPClothingUniformJumpsuitScienceBlackShirt
+    jumpsuit: LPPClothingUniformJumpsuitScienceBlackShirt
 
 - type: loadout
   id: LPPScienceBlackSkirt
   equipment:
-    underwear: LPPClothingUniformJumpskirtScienceBlackSkirt
+    jumpsuit: LPPClothingUniformJumpskirtScienceBlackSkirt
 
 - type: loadout
   id: LPPScienceTurtleneckSkirt
   equipment:
-    underwear: LPPClothingUniformJumpskirtScienceTurtleneck
+    jumpsuit: LPPClothingUniformJumpskirtScienceTurtleneck
 
 - type: loadout
   id: LPPScienceShirtSkirt
   equipment:
-    underwear: LPPClothingUniformJumpskirtScienceShirt
+    jumpsuit: LPPClothingUniformJumpskirtScienceShirt

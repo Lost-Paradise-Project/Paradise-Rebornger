@@ -67,7 +67,7 @@ construction-graph-tag-utility-belt = пояс для инструментов
 soil-construction-graph-any-mushroom = любой гриб
 construction-graph-tag-mop-basic = швабра
 construction-graph-tag-paper = офисная бумага
-construction-graph-tag-core-pinpointer-piece = фрагмент основного пинпоинтера
+construction-graph-tag-core-pinpointer-piece = кусочек ядра пинпоинтера
 # toys
 construction-graph-tag-rubber-ducky = резиновая уточка
 construction-graph-tag-ghost = плюшевый призрак
@@ -137,4 +137,4 @@ construction-graph-tag-spationaut-hardsuit = лёгкий скафандр ут�
 # clothing
 construction-graph-tag-backpack = рюкзак
 # chemistry
-construction-graph-tag-centrifuge-compatible = контейнер, подходящий для центрифугирования
+construction-graph-tag-centrifuge-compatible = пробирка

@@ -23,7 +23,6 @@ public sealed class MiningConsoleSystem : EntitySystem
     [Dependency] private readonly StackSystem _stack = default!;
     [Dependency] private readonly UserInterfaceSystem _ui = default!;
     // LP edit start
-    [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly MetaDataSystem _metaData = default!;
 
     private static readonly EntProtoId MiningDisk = "LPPMiningResearchDisk";

@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using Content.Server.Acz;
 using Content.Server.Administration;
 using Content.Server.Administration.Logs;
@@ -183,23 +184,26 @@ namespace Content.Server.Entry
                 file = _res.UserData.OpenWriteText(resPath.WithName("entity_" + dest));
                 EntityJsonGenerator.PublishJson(file);
                 file.Flush();
-                file = _res.UserData.OpenWriteText(resPath.WithName("mealrecipes_" + dest));
-                MealsRecipesJsonGenerator.PublishJson(file);
-                file.Flush();
-                file = _res.UserData.OpenWriteText(resPath.WithName("healthchangereagents_" + dest));
-                HealthChangeReagentsJsonGenerator.PublishJson(file);
-                file.Flush();
                 file = _res.UserData.OpenWriteText(resPath.WithName("loc.json"));
                 LocJsonGenerator.PublishJson(file);
-                file.Flush();
-                file = _res.UserData.OpenWriteText(resPath.WithName("meta_license.json"));
-                MetaLicenseGenerator.PublishJson(file);
                 file.Flush();
                 file = _res.UserData.OpenWriteText(resPath.WithName("prototype.json"));
                 PrototypeListGenerator.PublishJson(file);
                 file.Flush();
                 file = _res.UserData.OpenWriteText(resPath.WithName("component.json"));
                 ComponentListGenerator.PublishJson(file);
+                file.Flush();
+                file = _res.UserData.OpenWriteText(resPath.WithName("prototype_store.json"));
+                PrototypeStoreGenerator.PublishJson(file);
+                file.Flush();
+                file = _res.UserData.OpenWriteText(resPath.WithName("component_store.json"));
+                ComponentStoreGenerator.PublishJson(file);
+                file.Flush();
+                file = _res.UserData.OpenWriteText(resPath.WithName("entity_name.json"));
+                EntityNameDuplicatesJsonGenerator.PublishNameJson(file);
+                file.Flush();
+                file = _res.UserData.OpenWriteText(resPath.WithName("entity_name_duplicates.json"));
+                EntityNameDuplicatesJsonGenerator.PublishDuplicatesJson(file);
                 file.Flush();
                 PrototypeJsonGenerator.PublishAll(_res, new ResPath("prototype").ToRootedPath());
                 file.Flush();
@@ -259,8 +263,8 @@ namespace Content.Server.Entry
 
             _serverApi.Shutdown();
 
-            // TODO Should this be awaited?
-            _discordLink.Shutdown();
+            // We don't care when or how this finishes, just spin the task off into the void.
+            _ = _discordLink.Shutdown();
             _discordChatLink.Shutdown();
         }
 
