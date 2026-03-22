@@ -47,3 +47,8 @@
   id: LPPMedicShirtSkirt
   equipment:
     underwear: LPPClothingUniformJumpskirtMedicShirt
+
+- type: loadout
+  id: LPPSeniorMedicPDA
+  equipment:
+    id: LPPSeniorMedicPDA

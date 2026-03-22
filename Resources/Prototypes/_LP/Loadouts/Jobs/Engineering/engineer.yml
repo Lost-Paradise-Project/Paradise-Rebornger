@@ -47,3 +47,11 @@
   id: LPPEngineerShirtSkirt
   equipment:
     underwear: LPPClothingUniformJumpskirtEngineerShirt
+
+- type: loadout
+  id: LPPEngineerFirstGradePDA
+  # effects: Corvax-MentorRoles
+  # - !type:GroupLoadoutEffect
+  #   proto: SeniorEngineering
+  equipment:
+    id: LPPEngineerFirstGradePDA
