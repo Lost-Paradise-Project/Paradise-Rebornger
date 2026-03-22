@@ -175,7 +175,7 @@ public sealed class StationAiOverlay : Overlay
     }
 
     // Carpmosia-start - AI Navmap
-    protected void DrawNavMap(DrawingHandleWorld handle, MapGridComponent grid)
+    private void DrawNavMap(DrawingHandleWorld handle, MapGridComponent grid)
     {
         if (!_sRGBLookUp.TryGetValue(_navMap.WallColor, out var wallsRGB))
         {

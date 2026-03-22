@@ -97,5 +97,5 @@ reagent-physical-desc-slimy = склизкое
 reagent-physical-desc-neural = нейронное
 reagent-physical-desc-unidentifiable = неидентифицируемое
 reagent-physical-desc-non-newtonian = неньютоновское
-reagent-physical-desc-thin = водянистый
-reagent-physical-desc-arcryox = ледяной синий
+reagent-physical-desc-thin = разжижающее
+reagent-physical-desc-arcryox = льдисто-голубое

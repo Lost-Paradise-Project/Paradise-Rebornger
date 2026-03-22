@@ -26,6 +26,10 @@ public sealed class MiningServerCircuitboardSystem : EntitySystem
     [Dependency] private readonly SharedAppearanceSystem _appearanceSystem = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
 
+    private const string QualityPulsing = "Pulsing";
+    private const string QualityScrewing = "Screwing";
+    private const string QualityWelding = "Welding";
+
     public override void Initialize()
     {
         base.Initialize();
@@ -96,7 +100,7 @@ public sealed class MiningServerCircuitboardSystem : EntitySystem
         if (args.Handled)
             return;
 
-        if (TryComp<ToolComponent>(args.Used, out var toolComp) && _toolSystem.HasQuality(args.Used, "Pulsing"))
+        if (TryComp<ToolComponent>(args.Used, out var toolComp) && _toolSystem.HasQuality(args.Used, QualityPulsing))
         {
             args.Handled = TryScanCircuitboard(ent.Owner, args.User);
             return;
@@ -193,12 +197,12 @@ public sealed class MiningServerCircuitboardSystem : EntitySystem
 
         if (repair.IsCurrentStep(RepairType.Screwdriver))
         {
-            return _toolSystem.UseTool(tool, user, uid, board.ScrewdriverTime, "Screwing", new ScrewdriverFinishedEvent());
+            return _toolSystem.UseTool(tool, user, uid, board.ScrewdriverTime, QualityScrewing, new ScrewdriverFinishedEvent());
         }
 
         if (repair.IsCurrentStep(RepairType.Welder))
         {
-            return _toolSystem.UseTool(tool, user, uid, board.WeldTime, "Welding", new WeldFinishedEvent());
+            return _toolSystem.UseTool(tool, user, uid, board.WeldTime, QualityWelding, new WeldFinishedEvent());
         }
 
         return false;
@@ -225,10 +229,10 @@ public sealed class MiningServerCircuitboardSystem : EntitySystem
         if (!TryComp<ToolComponent>(tool, out var toolComp))
             return false;
 
-        if (repair.IsCurrentStep(RepairType.Screwdriver) && !_toolSystem.HasQuality(tool, "Screwing"))
+        if (repair.IsCurrentStep(RepairType.Screwdriver) && !_toolSystem.HasQuality(tool, QualityScrewing))
             return false;
 
-        if (repair.IsCurrentStep(RepairType.Welder) && !_toolSystem.HasQuality(tool, "Welding"))
+        if (repair.IsCurrentStep(RepairType.Welder) && !_toolSystem.HasQuality(tool, QualityWelding))
             return false;
 
         return true;
