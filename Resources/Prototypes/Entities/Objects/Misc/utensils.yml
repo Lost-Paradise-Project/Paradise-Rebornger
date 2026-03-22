@@ -87,11 +87,13 @@
         Blunt: 1
   - type: Shovel
     speedModifier: 0.1 # you can try
-  - type: ReactionMixer
-    mixMessage: "spoon-mixing-success"
-    timeToMix: 0.5
-    reactionTypes:
-    - Stir
+  # LP Edit Start
+  # - type: ReactionMixer
+  #   mixMessage: "spoon-mixing-success"
+  #   timeToMix: 0.5
+  #   reactionTypes:
+  #   - Stir
+  # LP Edit End
 
 - type: entity
   parent: UtensilBasePlastic
@@ -108,11 +110,13 @@
     - Spoon
   - type: Shovel
     speedModifier: 0.1 # you can try
-  - type: ReactionMixer
-    mixMessage: "spoon-mixing-success"
-    timeToMix: 0.5
-    reactionTypes:
-    - Stir
+  # LP Edit Start
+  # - type: ReactionMixer
+  #   mixMessage: "spoon-mixing-success"
+  #   timeToMix: 0.5
+  #   reactionTypes:
+  #   - Stir
+  # LP Edit End
 
 - type: entity
   parent: UtensilBasePlastic

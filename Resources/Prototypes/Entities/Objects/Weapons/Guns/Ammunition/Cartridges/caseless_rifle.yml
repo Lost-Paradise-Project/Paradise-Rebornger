@@ -17,8 +17,10 @@
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals
-  - type: StaticPrice
-    price: 10
+  # LP Edit Start
+  # - type: StaticPrice
+  #   price: 10
+  # LP Edit End
 
 - type: entity
   parent: BaseCartridgeCaselessRifle

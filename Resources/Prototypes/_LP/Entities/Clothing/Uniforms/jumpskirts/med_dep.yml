@@ -1,0 +1,67 @@
+  # Медик
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpskirtMedicBlackSkirt
+  name: Black Skirt Medic # Стильная юбка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/medic/medic_black_skirt.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/medic/medic_black_skirt.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpskirtMedicTurtleneck
+  name: Medic turtleneck with skirt # Водолазка с юбкой
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/medic/skirtleneck.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/medic/skirtleneck.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpskirtMedicShirt
+  name: Medic shirt with skirt # Рубашка с юбкой
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/medic/supply_chief_skirt.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/medic/supply_chief_skirt.rsi
+
+  # Вирусолог
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpskirtVirologyBlackSkirt
+  name: Black Skirt Virology # Стильная юбка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/medic/virology/virology_black_skirt.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/medic/virology/virology_black_skirt.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpskirtVirologyTurtleneck
+  name: Virology turtleneck with skirt # Водолазка с юбкой
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/medic/virology/skirtleneck.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/medic/virology/skirtleneck.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpskirtVirologyShirt
+  name: Virology shirt with skirt # Рубашка с юбкой
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/medic/virology/supply_chief_skirt.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/medic/virology/supply_chief_skirt.rsi

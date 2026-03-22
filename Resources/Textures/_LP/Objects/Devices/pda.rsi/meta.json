@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/59f2a4e10e5ba36033c9734ddebfbbdc6157472d, pda-security-engineer by BL02DL",
+    "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/59f2a4e10e5ba36033c9734ddebfbbdc6157472d, pda-security-engineer by BL02DL, pda-beer was invented by @ColomaFRFR (youtube), copied by SanitarDurkovic (github)",
     "size": {
         "x": 32,
         "y": 32
@@ -39,6 +39,9 @@
         },
         {
             "name": "pda-security-engineer"
+        },
+        {
+            "name": "pda-beer"
         },
         {
             "name": "equipped-IDCARD",

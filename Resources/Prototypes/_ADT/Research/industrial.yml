@@ -1,0 +1,32 @@
+- type: technology
+  id: ADTMegaCells
+  name: research-technology-basemegacells
+  icon:
+    sprite: _ADT/Objects/Devices/megacells.rsi
+    state: megacell
+  discipline: Industrial
+  tier: 2
+  cost: 15000
+  recipeUnlocks:
+    - ADTMegaCellRechargerCircuitboardRecipe
+    - ADTMegaCellSmallRecipe
+    - ADTMegaCellMediumRecipe
+  position: 1,10 # LP Edit
+  technologyPrerequisites:
+  - AdvancedPowercells
+
+- type: technology
+  id: ADTMegaCellsAdvanced
+  name: research-technology-advancedmegacells
+  icon:
+    sprite: _ADT/Objects/Devices/megacells.rsi
+    state: hyp_megacell
+  discipline: Industrial
+  tier: 3
+  cost: 35000
+  recipeUnlocks:
+    - ADTMegaCellHighRecipe
+    - ADTMegaCellHyperRecipe
+  position: 5,11 # LP Edit
+  technologyPrerequisites:
+  - LPPInducer # LP Edit

@@ -205,12 +205,14 @@
   - type: StealCondition
     stealGroup: Hypospray
 
-- type: entity
-  parent: BaseCMOStealObjective
-  id: CMOCrewMonitorStealObjective
-  components:
-  - type: StealCondition
-    stealGroup: HandheldCrewMonitor
+# LP Edit Start
+# - type: entity
+#   parent: BaseCMOStealObjective
+#   id: CMOCrewMonitorStealObjective
+#   components:
+#   - type: StealCondition
+#     stealGroup: HandheldCrewMonitor
+# LP Edit End
 
 ## rd
 

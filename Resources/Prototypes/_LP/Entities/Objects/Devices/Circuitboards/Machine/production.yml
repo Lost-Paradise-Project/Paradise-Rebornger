@@ -1,0 +1,123 @@
+- type: entity
+  id: LPPServiceProtolatheMachineCircuitboard
+  parent: BaseMachineCircuitboard
+  name: service protolathe machine board
+  description: A machine printed circuit board for a service protolathe.
+  components:
+  - type: Sprite
+    state: service
+  - type: MachineBoard
+    prototype: LPPServiceProtolathe
+    stackRequirements:
+      Manipulator: 4
+    tagRequirements:
+      GlassBeaker:
+        amount: 2
+        defaultPrototype: Beaker
+
+- type: entity
+  id: LPPScienceProtolatheMachineCircuitboard
+  parent: BaseMachineCircuitboard
+  name: science protolathe machine board
+  description: A machine printed circuit board for a science protolathe.
+  components:
+  - type: Sprite
+    state: science
+  - type: MachineBoard
+    prototype: LPPScienceProtolathe
+    stackRequirements:
+      Manipulator: 4
+    tagRequirements:
+      GlassBeaker:
+        amount: 2
+        defaultPrototype: Beaker
+
+- type: entity
+  id: LPPEngineeringProtolatheMachineCircuitboard
+  parent: BaseMachineCircuitboard
+  name: engineering protolathe machine board
+  description: A machine printed circuit board for a engineering protolathe.
+  components:
+  - type: Sprite
+    state: engineering
+  - type: MachineBoard
+    prototype: LPPEngineeringProtolathe
+    stackRequirements:
+      Manipulator: 4
+    tagRequirements:
+      GlassBeaker:
+        amount: 2
+        defaultPrototype: Beaker
+
+- type: entity
+  id: LPPCargoProtolatheMachineCircuitboard
+  parent: BaseMachineCircuitboard
+  name: cargo protolathe machine board
+  description: A machine printed circuit board for a cargo protolathe.
+  components:
+  - type: Sprite
+    state: supply
+  - type: MachineBoard
+    prototype: LPPCargoProtolathe
+    stackRequirements:
+      Manipulator: 4
+    tagRequirements:
+      GlassBeaker:
+        amount: 2
+        defaultPrototype: Beaker
+
+- type: entity
+  id: LPPSpaceForgeMachineCircuitboard
+  parent: BaseMachineCircuitboard
+  name: space forge machine board
+  description: A machine printed circuit board for a space forge.
+  components:
+  - type: Sprite
+    state: service
+  - type: MachineBoard
+    prototype: LPPSpaceForge
+    stackRequirements:
+      Manipulator: 4
+    tagRequirements:
+      GlassBeaker:
+        amount: 2
+        defaultPrototype: Beaker
+
+- type: entity
+  id: LPPSpaceForgeCMDMachineCircuitboard
+  parent: BaseMachineCircuitboard
+  name: command space forge machine board
+  description: A machine printed circuit board for a command space forge.
+  components:
+  - type: Sprite
+    state: command
+  - type: MachineBoard
+    prototype: LPPSpaceForgeCMD
+    stackRequirements:
+      Manipulator: 4
+    tagRequirements:
+      GlassBeaker:
+        amount: 2
+        defaultPrototype: Beaker
+  - type: StealTarget
+    stealGroup: LPPSpaceForgeCMD
+
+- type: entity
+  id: LPPBluespaceMinerMachineCircuitboard
+  parent: BaseMachineCircuitboard
+  name: bluespace miner machine board
+  description: A machine printed circuit board for a bluespace miner.
+  components:
+  - type: Sprite
+    state: command
+  - type: MachineBoard
+    prototype: LPPMachineBluespaceMiner
+    stackRequirements:
+      Manipulator: 10
+    tagRequirements:
+      GlassBeaker:
+        amount: 5
+        defaultPrototype: Beaker
+      BluespaceAnomaly:
+        amount: 1
+        defaultPrototype: AnomalyCoreBluespace

@@ -81,6 +81,18 @@ public sealed partial class MaterialStorageComponent : Component
     [DataField, AutoNetworkedField]
     public bool IgnoreMaterialWhiteList;
     // Goobstation edit End
+
+    // LP Edit Start
+
+    /// <summary>
+    /// Is need to announce what item is inserted to something
+    /// </summary>
+
+    [DataField("announce")]
+    public bool NeedAnnounce = true;
+
+    // LP Edit End
+
 }
 
 [Serializable, NetSerializable]

@@ -40,4 +40,13 @@ Entries:
   id: 4
   time: '2026-02-28T18:36:33.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/103
+- author: Inari
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u044B \u043A\u0430\u0441\
+      \u0442\u043E\u043C\u043D\u044B\u0435 \u0433\u043E\u0441\u0442\u044B \u0434\u043B\
+      \u044F \u0430\u0434\u043C\u0438\u043D\u043E\u0432"
+    type: Add
+  id: 5
+  time: '2026-03-21T21:30:00.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/147
 Order: 2

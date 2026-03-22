@@ -1,5 +1,5 @@
 - type: vendingMachineInventory
-  id: NascaVendingMachineServitorInventory
+  id: SocksVendingMachineServitorInventory
   startingInventory:
     LPPClothingUnderBeeKnee: 3
     LPPClothingUnderBeeNorm: 3

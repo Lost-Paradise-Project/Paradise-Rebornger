@@ -56,7 +56,6 @@ public sealed partial class PlayerPanel : FancyWindow
         LogsButton.OnPressed += _ => OnLogs?.Invoke();
         DeleteButton.OnPressed += _ => OnDelete?.Invoke();
         RejuvenateButton.OnPressed += _ => OnRejuvenate?.Invoke();
-        TimeButton.OnPressed += _ => OnPlayerPanel?.Invoke(); // LP edit
     }
 
     public void SetUsername(string player)
@@ -134,6 +133,5 @@ public sealed partial class PlayerPanel : FancyWindow
         LogsButton.Disabled = !_adminManager.CanCommand("adminlogs");
         RejuvenateButton.Disabled = !_adminManager.HasFlag(AdminFlags.Debug);
         DeleteButton.Disabled = !_adminManager.HasFlag(AdminFlags.Debug);
-        TimeButton.Disabled = !_adminManager.CanCommand("timetransferpanel"); // LP edit
     }
 }

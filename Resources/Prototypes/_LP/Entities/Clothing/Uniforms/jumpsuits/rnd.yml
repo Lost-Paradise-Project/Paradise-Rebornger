@@ -1,0 +1,89 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitScienceJeansJacket
+  name: Jeans Jacket Science # Джинсовка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/rnd/rndtechjean.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/rnd/rndtechjean.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitScienceGorka
+  name: Gorka Science # Горка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/rnd/gorka_rnd.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/rnd/gorka_rnd.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitScienceGorkaRefl
+  name: Gorka with reflectors Science # Горка с отражателями
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/rnd/gorka_rnd_varg.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: shaded
+    - state: icon-unshaded
+      shader: unshaded
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/rnd/gorka_rnd_varg.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: shaded
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitScienceHoodieVest
+  name: Science Hoodie Vest # Худи-жилет
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/rnd/qmc.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/rnd/qmc.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitScienceShirt
+  name: Science Shirt # Рубашка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/rnd/supply_chief.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/rnd/supply_chief.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitScienceTurtleneck
+  name: turtleneck Science # Водолазка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/rnd/turtleneck_qm.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/rnd/turtleneck_qm.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitScienceBlackShirt
+  name: Science Black Shirt # Чёрная рубашка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/rnd/util_rnd.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/rnd/util_rnd.rsi

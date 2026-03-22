@@ -1,0 +1,14 @@
+ent-LPPServiceProtolatheMachineCircuitboard = сервесный протолат (машинная плата)
+    .desc = Печатная плата сервесного протолата.
+ent-LPPScienceProtolatheMachineCircuitboard = научный протолат (машинная плата)
+    .desc = Печатная плата научного протолата.
+ent-LPPEngineeringProtolatheMachineCircuitboard = инженерный протолат (машинная плата)
+    .desc = Печатная плата инженерного протолата.
+ent-LPPCargoProtolatheMachineCircuitboard = протолат карго (машинная плата)
+    .desc = Печатная плата протолата карго.
+ent-LPPSpaceForgeMachineCircuitboard = космическая кузница (машинная плата)
+    .desc = Печатная плата космической кузницы.
+ent-LPPSpaceForgeCMDMachineCircuitboard = космическая кузница командования (машинная плата)
+    .desc = Печатная плата космической кузницы командования.
+ent-LPPBluespaceMinerMachineCircuitboard = блюспейс майнер (машинная плата)
+    .desc = Печатная плата блюспейс майнера.

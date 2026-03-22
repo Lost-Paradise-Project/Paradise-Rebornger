@@ -1,0 +1,15 @@
+- type: latheRecipePack
+  id: LPPCivilianCircuits
+  recipes:
+  - LPPSpaceForgeMachineCircuitboard
+
+- type: latheRecipePack
+  id: LPPSpaceForgeHardsuits
+  recipes:
+  - ClothingHeadHelmetEVA
+  - ClothingOuterHardsuitEVA
+  - ClothingOuterSuitEmergency
+  - ClothingOuterHardsuitAtmos
+  - ClothingOuterHardsuitEngineering
+  - ClothingOuterHardsuitSpatio
+  - ClothingOuterHardsuitSalvage

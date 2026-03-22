@@ -36,6 +36,7 @@
   components:
   - type: Sprite
     state: engineering
+  - type: Appearance
   - type: MachineBoard
     prototype: MiningServer
     stackRequirements:
@@ -43,3 +44,11 @@
       Steel: 5
       Glass: 2
       Cable: 5
+  - type: MiningServerCircuitboard # LP edit start
+    condition: 100
+  - type: MiningServerCircuitboardVisuals
+  - type: UserInterface
+    interfaces:
+      enum.MiningCircuitboardRepairUiKey.Key:
+        type: MiningCircuitboardRepairBoundUserInterface
+  # LP edit end
