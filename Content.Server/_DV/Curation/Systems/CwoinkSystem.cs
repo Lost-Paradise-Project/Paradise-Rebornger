@@ -50,7 +50,6 @@ public sealed partial class CwoinkSystem : SharedCwoinkSystem
     [Dependency] private readonly GameTicker _gameTicker = default!;
     [Dependency] private readonly SharedMindSystem _minds = default!;
     [Dependency] private readonly IAfkManager _afkManager = default!;
-    [Dependency] private readonly IServerDbManager _dbManager = default!;
     [Dependency] private readonly PlayerRateLimitManager _rateLimit = default!;
     [Dependency] private readonly IServerPreferencesManager _preferencesManager = default!; // Frontier
 
@@ -430,7 +429,7 @@ public sealed partial class CwoinkSystem : SharedCwoinkSystem
         {
             // TODO: Ideally, CVar validation during setting should be better integrated
             Log.Warning("Webhook URL does not appear to be valid. Using anyways...");
-            await GetWebhookData(url); // Frontier - Support for Custom URLS, we still want to see if theres Webhook data available
+            _webhookData = await GetWebhookData(url); // Frontier - Support for Custom URLS, we still want to see if theres Webhook data available
             return;
         }
 
@@ -441,7 +440,7 @@ public sealed partial class CwoinkSystem : SharedCwoinkSystem
         }
 
         // Fire and forget
-        await GetWebhookData(url); // Frontier - Support for Custom URLS
+        _webhookData = await GetWebhookData(url); // Frontier - Support for Custom URLS
     }
 
     private async Task<WebhookData?> GetWebhookData(string url) // Frontier - Support for Custom URLS

@@ -1,18 +1,20 @@
 ﻿[game]
 hostname = "[18+] 🔥 LOST PARADISE ❤️"
 desc = "- Мы проект со средним требованием к отыгрышу с разрешенным ЕРП. \n- Наша цель это создание приятного времяпрепровождения для всех игроков не зависимо от их предпочитаемого геймплея \n- Присоединяйтесь в наше Дискорд сообщество"
-lobbyduration = 240
+lobbyduration = 120
 map_pool = "LPmaps"
 soft_max_players = 111
 hostname_in_titlebar = false
 admin_job_tracking = true
 peaceful_end = true
+maxcharacterslots = 5
 
 [infolinks]
 discord = "https://wiki.lost-paradise.space/discord"
 github = "https://github.com/Lost-Paradise-Project/Goob-Station"
 wiki = "http://wiki.lost-paradise.space/"
 website = "https://boosty.to/lost-paradise"
+appeal = "https://discord.gg/lost-paradise-14"
 
 [game.panic_bunker]
 enabled = true
@@ -33,7 +35,8 @@ tags = "lang:ru,region:eu_e,rp:med,18+"
 [shuttle]
 arrivals_planet = false
 emergency_early_launch_allowed = true
-# arrivals_map = "/Maps/_LP/Misc/paradise_terminal.yml"
+arrivals_map = "/Maps/_LP/Misc/paradise_terminal.yml"
+auto_call_time = 120
 
 [viewport]
 maximum_width = 26
@@ -91,9 +94,18 @@ flavor_text_length = 1024
 [biomass]
 easy_mode = false
 
+[ghost]
+respawn_max_players = 60
+
 [wega]
 night_light_enabled = true
 party_enabled = false
 
 [tips]
 out_of_game_frequency = 360
+
+[tts]
+announce_voice = "glados"
+
+[adminlogs]
+high_log_playtime = -1

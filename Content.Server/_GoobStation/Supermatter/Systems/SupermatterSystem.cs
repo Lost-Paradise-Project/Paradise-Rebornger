@@ -435,16 +435,6 @@ public sealed class SupermatterSystem : SharedSupermatterSystem
 
             SupermatterAnnouncement(uid, message, global);
             return;
-
-            // We're safe
-            if (sm.Damage < sm.DamageArchived && sm.Status >= SupermatterStatusType.Warning)
-            {
-                message = Loc.GetString("supermatter-healing", ("integrity", integrity));
-
-                if (sm.Status >= SupermatterStatusType.Emergency)
-                    global = true;
-                return;
-            }
         }
 
         // We are not taking consistent damage. Engis not needed.

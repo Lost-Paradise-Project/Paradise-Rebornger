@@ -207,15 +207,12 @@ namespace Content.Client.Ghost
             GhostVisibility = visibility ?? !GhostVisibility;
         }
 
-        // Port Respawn EE Start
-
+        // Orion-Start
         public void ReturnToRound()
         {
             var msg = new GhostReturnToRoundRequest();
             RaiseNetworkEvent(msg);
         }
-
-        // Port Respawn EE End
-
+        // Orion-End
     }
 }

@@ -46,7 +46,7 @@ entities:
   - uid: 2
     components:
     - type: MetaData
-      name: NT-EM Terminal
+      name: NT-EM Терминал
     - type: Transform
       parent: invalid
     - type: MapGrid

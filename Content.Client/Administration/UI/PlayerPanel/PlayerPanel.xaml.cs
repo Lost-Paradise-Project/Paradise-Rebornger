@@ -27,7 +27,6 @@ public sealed partial class PlayerPanel : FancyWindow
     public event Action? OnLogs;
     public event Action? OnDelete;
     public event Action? OnRejuvenate;
-    public event Action? OnPlayerPanel; // LP edit
 
     public NetUserId? TargetPlayer;
     public string? TargetUsername;

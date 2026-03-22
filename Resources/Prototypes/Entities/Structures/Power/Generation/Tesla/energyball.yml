@@ -96,7 +96,7 @@
     - Tesla # LP Edit
   - type: WarpPoint
     follow: true
-    location: tesla ball
+    location: "шар теслы" # LP edit
     blacklist:
       tags:
       - GhostOnlyWarp

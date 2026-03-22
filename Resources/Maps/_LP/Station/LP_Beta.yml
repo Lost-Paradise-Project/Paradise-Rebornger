@@ -96834,7 +96834,7 @@ entities:
     - type: Transform
       pos: 38.5,36.5
       parent: 2
-- proto: LPPBrasMat
+- proto: LPPVendingMachineBras
   entities:
   - uid: 13718
     components:
@@ -96938,7 +96938,7 @@ entities:
       - Arsenal
       - Experimental
       - CivilianServices
-- proto: LPPErpMachine
+- proto: LPPVendingMachineErp
   entities:
   - uid: 15355
     components:
@@ -96955,14 +96955,14 @@ entities:
     - type: AccessReader
       accessListsOriginal:
       - - Engineering
-- proto: LPPNascaMat
+- proto: LPPVendingMachineSocks
   entities:
   - uid: 13648
     components:
     - type: Transform
       pos: 16.5,-27.5
       parent: 2
-- proto: LPPPillowVendingMachine
+- proto: LPPVendingMachinePillow
   entities:
   - uid: 12094
     components:
@@ -97017,14 +97017,14 @@ entities:
     - type: Transform
       pos: 50.5,25.5
       parent: 2
-- proto: LPPUnderpantsMat
+- proto: LPPVendingMachineUnderpants
   entities:
   - uid: 13719
     components:
     - type: Transform
       pos: 15.5,-27.5
       parent: 2
-- proto: LPPWithSoftAnimals
+- proto: LPPVendingMachineWithSoftAnimals
   entities:
   - uid: 12078
     components:

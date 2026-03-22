@@ -1,0 +1,14 @@
+ent-LPPClothingUniformJumpsuitScienceJeansJacket = джинсовка учёного
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpsuitScienceGorka = горка учёного
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpsuitScienceGorkaRefl = горка с отражателями учёного
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpsuitScienceHoodieVest = худи-жилет учёного
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpsuitScienceShirt = рубашка учёного
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpsuitScienceTurtleneck = водолазка учёного
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpsuitScienceBlackShirt = чёрная рубашка учёного
+    .desc = { ent-ClothingUniformBase.desc }

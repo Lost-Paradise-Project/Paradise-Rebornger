@@ -1,0 +1,181 @@
+  # Медик / Врач
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitMedicJeansJacket
+  name: Jeans Jacket medic # Джинсовка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/medic/medictechjean.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/medic/medictechjean.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitMedicGorka
+  name: Gorka medic # Горка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/medic/gorka_medic.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/medic/gorka_medic.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitMedicGorkaRefl
+  name: Gorka with reflectors medic # Горка с отражателями
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/medic/gorka_medic_varg.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: shaded
+    - state: icon-unshaded
+      shader: unshaded
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/medic/gorka_medic_varg.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: shaded
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitMedicHoodieVest
+  name: Medic Hoodie Vest # Худи-жилет
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/medic/qmc.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/medic/qmc.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitMedicShirt
+  name: Medic Shirt # Рубашка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/medic/supply_chief.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/medic/supply_chief.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitMedicTurtleneck
+  name: turtleneck Medic # Водолазка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/medic/turtleneck_qm.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/medic/turtleneck_qm.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitMedicBlackShirt
+  name: Medic Black Shirt # Чёрная рубашка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/medic/util_medic.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/medic/util_medic.rsi
+
+  # Вирусолог
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitVirologyJeansJacket
+  name: Jeans Jacket Virology # Джинсовка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/medic/virology/virologytechjean.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/medic/virology/virologytechjean.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitVirologyGorka
+  name: Gorka Virology # Горка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/medic/virology/gorka_virology.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/medic/virology/gorka_virology.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitVirologyGorkaRefl
+  name: Gorka with reflectors Virology # Горка с отражателями
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/medic/virology/gorka_virology_varg.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: shaded
+    - state: icon-unshaded
+      shader: unshaded
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/medic/virology/gorka_virology_varg.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: shaded
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitVirologyHoodieVest
+  name: Virology Hoodie Vest # Худи-жилет
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/medic/virology/qmc_virology.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/medic/virology/qmc_virology.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitVirologyShirt
+  name: Virology Shirt # Рубашка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/medic/virology/supply_chief.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/medic/virology/supply_chief.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitVirologyTurtleneck
+  name: turtleneck Virology # Водолазка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/medic/virology/turtleneck_qm.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/medic/virology/turtleneck_qm.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitVirologyBlackShirt
+  name: Virology Black Shirt # Чёрная рубашка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/medic/virology/util_virology.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/medic/virology/util_virology.rsi

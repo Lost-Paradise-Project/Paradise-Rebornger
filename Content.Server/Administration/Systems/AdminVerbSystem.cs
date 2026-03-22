@@ -51,7 +51,6 @@ namespace Content.Server.Administration.Systems
         [Dependency] private readonly IGameTiming _gameTiming = default!;
         [Dependency] private readonly SharedMapSystem _map = default!;
         [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
-        [Dependency] private readonly AdminSystem _adminSystem = default!;
         [Dependency] private readonly DisposalTubeSystem _disposalTubes = default!;
         [Dependency] private readonly EuiManager _euiManager = default!;
         [Dependency] private readonly GhostRoleSystem _ghostRoleSystem = default!;
@@ -215,7 +214,7 @@ namespace Content.Server.Administration.Systems
                             new("/Textures/Interface/VerbIcons/delete_transparent.svg.192dpi.png")),
                         Act = () =>
                         {
-                            _adminSystem.Erase(mindComp.UserId.Value);
+                            //_adminSystem.Erase(mindComp.UserId.Value); // LP edit
                         },
                         Impact = LogImpact.Extreme,
                         ConfirmationPopup = true
@@ -461,7 +460,7 @@ namespace Content.Server.Administration.Systems
             }
 
             // Control mob verb
-            if (_toolshed.ActivePermissionController?.CheckInvokable(new CommandSpec(_toolshed.DefaultEnvironment.GetCommand("mind"), "control"), player, out _) ?? false &&
+            if ((_toolshed.ActivePermissionController?.CheckInvokable(new CommandSpec(_toolshed.DefaultEnvironment.GetCommand("mind"), "control"), player, out _) ?? false) &&
                 args.User != args.Target)
             {
                 Verb verb = new()

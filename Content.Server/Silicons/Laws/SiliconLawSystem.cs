@@ -44,6 +44,7 @@ public sealed class SiliconLawSystem : SharedSiliconLawSystem
     [Dependency] private readonly TagSystem _tagSystem = default!; // Corvax-Next-AiRemoteControl
 
     private static readonly ProtoId<SiliconLawsetPrototype> DefaultCrewLawset = "Crewsimov";
+    private static readonly ProtoId<TagPrototype> StationAiTag = "StationAi";
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -75,7 +76,7 @@ public sealed class SiliconLawSystem : SharedSiliconLawSystem
 
         // Corvax-Next-AiRemoteControl-Start
         if (HasComp<AiRemoteControllerComponent>(uid)
-            || _tagSystem.HasTag(uid, "StationAi")) // skip a law's notification for remotable and AI
+            || _tagSystem.HasTag(uid, StationAiTag)) // skip a law's notification for remotable and AI
             return;
         // Corvax-Next-AiRemoteControl-End
 

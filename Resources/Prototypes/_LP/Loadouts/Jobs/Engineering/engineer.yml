@@ -1,0 +1,49 @@
+- type: loadout
+  id: LPPEngineerJeansJacket
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitEngineerJeansJacket
+
+- type: loadout
+  id: LPPJumpsuitEngineerGorka
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitEngineerGorka
+
+- type: loadout
+  id: LPPEngineerGorkaRefl
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitEngineerGorkaRefl
+
+- type: loadout
+  id: LPPEngineerHoodieVest
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitEngineerHoodieVest
+
+- type: loadout
+  id: LPPEngineerShirt
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitEngineerShirt
+
+- type: loadout
+  id: LPPEngineerTurtleneck
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitEngineerTurtleneck
+
+- type: loadout
+  id: LPPEngineerBlackShirt
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitEngineerBlackShirt
+
+- type: loadout
+  id: LPPEngineerBlackSkirt
+  equipment:
+    jumpsuit: LPPClothingUniformJumpskirtEngineerBlackSkirt
+
+- type: loadout
+  id: LPPEngineerTurtleneckSkirt
+  equipment:
+    jumpsuit: LPPClothingUniformJumpskirtEngineerTurtleneck
+
+- type: loadout
+  id: LPPEngineerShirtSkirt
+  equipment:
+    jumpsuit: LPPClothingUniformJumpskirtEngineerShirt

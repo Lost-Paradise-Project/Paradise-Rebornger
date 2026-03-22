@@ -321,3 +321,47 @@
     sprite: _LP/Clothing/Uniforms/Jumpsuit/BOOBAsuit.rsi
   - type: Clothing
     sprite: _LP/Clothing/Uniforms/Jumpsuit/BOOBAsuit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformBlackTracksuit
+  name: black tracksuit
+  description: black tracksuit for sports in any situation.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/blacksportsuit.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/blacksportsuit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformBlueTracksuit
+  name: blue tracksuit
+  description: blue tracksuit for sports in any situation.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/bluesportsuit.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/bluesportsuit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformRedTracksuit
+  name: red tracksuit
+  description: red tracksuit for sports in any situation.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/redsportsuit.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/redsportsuit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformGreenTracksuit
+  name: green tracksuit
+  description: greeb tracksuit for sports in any situation.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/greensportsuit.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/greensportsuit.rsi

@@ -2,3 +2,8 @@
   id: default
   category: color
   proto: MobObserver
+
+- type: customGhost
+  id: Admindefault
+  category: color
+  proto: AdminObserver
