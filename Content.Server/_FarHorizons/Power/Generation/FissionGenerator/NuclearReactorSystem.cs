@@ -87,6 +87,8 @@ public sealed class NuclearReactorSystem : EntitySystem
     [Dependency] private readonly SharedHandsSystem _handsSystem = default!;
      // LP Edit End
 
+    private const string TagNuclearClearing = "NuclearClearing";
+
     private sealed class LogData
     {
         public TimeSpan CreationTime;
@@ -1102,14 +1104,14 @@ public sealed class NuclearReactorSystem : EntitySystem
             var origin = args.Origin.Value;
 
             // если сам источник имеет тег
-            if (_tagSystem.HasTag(origin, "NuclearClearing"))
+            if (_tagSystem.HasTag(origin, TagNuclearClearing))
             {
                 isTool = true;
             }
             // если это моб — проверяем предмет в руке
             else if (_handsSystem.TryGetActiveItem(origin, out var heldItem))
             {
-                if (_tagSystem.HasTag(heldItem.Value, "NuclearClearing"))
+                if (_tagSystem.HasTag(heldItem.Value, TagNuclearClearing))
                     isTool = true;
             }
         }

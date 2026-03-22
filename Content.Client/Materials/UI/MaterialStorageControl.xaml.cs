@@ -26,6 +26,8 @@ public sealed partial class MaterialStorageControl : ScrollContainer
     private readonly SiloSystem _silo; // Goobstation
     private readonly TagSystem _tagSystem; // Goobstation
 
+    private static readonly ProtoId<TagPrototype> OreTag = "Ore";
+
     private EntityUid? _owner;
 
     private Dictionary<string, int> _currentMaterials = new(); // Goobstation edit
@@ -136,7 +138,7 @@ public sealed partial class MaterialStorageControl : ScrollContainer
             proto.StackEntity != null &&
             _prototypeManager.TryIndex<EntityPrototype>(proto.StackEntity, out var entityProto) &&
             entityProto.TryGetComponent<TagComponent>(out var tag) &&
-            _tagSystem.HasTag(tag, "Ore")))
+            _tagSystem.HasTag(tag, OreTag)))
             .ToDictionary(pair => pair.Key, pair => pair.Value);
     }
     // Goobstation edit end

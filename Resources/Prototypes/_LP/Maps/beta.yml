@@ -43,7 +43,7 @@
             LPPSecurityEnginer: [ 1, 1 ] # Полевой инженер, LP
 
             # Снабжение
-            SalvageSpecialist: [ 2, 2 ]
+            SalvageSpecialist: [ 3, 3 ]
             CargoTechnician: [ 3, 3 ]
 
             # Инженерия

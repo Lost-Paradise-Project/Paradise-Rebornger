@@ -157,7 +157,7 @@
   - AppearanceReptilian
   - BaseSpeciesMobOrganic
   id: MobReptilian
-  name: Urissst Mz'Hand
+  name: Urist McScales
   components:
   - type: Puller
     needsHands: false

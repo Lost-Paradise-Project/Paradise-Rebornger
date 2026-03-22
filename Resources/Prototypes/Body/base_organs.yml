@@ -30,6 +30,7 @@
       - Chest
       - Tail
       - Overlay
+      - TailOverlay
       - Special
 
 - type: entity

@@ -1,4 +1,4 @@
-﻿ui-options-barks-volume = Громкость барков:
+ui-options-barks-volume = Громкость барков:
 humanoid-profile-editor-voice-label = Барки:
 bark-alto = Альто
 bark-baritone = Баритон

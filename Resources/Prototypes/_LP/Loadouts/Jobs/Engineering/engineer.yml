@@ -1,49 +1,49 @@
 - type: loadout
   id: LPPEngineerJeansJacket
   equipment:
-    underwear: LPPClothingUniformJumpsuitEngineerJeansJacket
+    jumpsuit: LPPClothingUniformJumpsuitEngineerJeansJacket
 
 - type: loadout
   id: LPPJumpsuitEngineerGorka
   equipment:
-    underwear: LPPClothingUniformJumpsuitEngineerGorka
+    jumpsuit: LPPClothingUniformJumpsuitEngineerGorka
 
 - type: loadout
   id: LPPEngineerGorkaRefl
   equipment:
-    underwear: LPPClothingUniformJumpsuitEngineerGorkaRefl
+    jumpsuit: LPPClothingUniformJumpsuitEngineerGorkaRefl
 
 - type: loadout
   id: LPPEngineerHoodieVest
   equipment:
-    underwear: LPPClothingUniformJumpsuitEngineerHoodieVest
+    jumpsuit: LPPClothingUniformJumpsuitEngineerHoodieVest
 
 - type: loadout
   id: LPPEngineerShirt
   equipment:
-    underwear: LPPClothingUniformJumpsuitEngineerShirt
+    jumpsuit: LPPClothingUniformJumpsuitEngineerShirt
 
 - type: loadout
   id: LPPEngineerTurtleneck
   equipment:
-    underwear: LPPClothingUniformJumpsuitEngineerTurtleneck
+    jumpsuit: LPPClothingUniformJumpsuitEngineerTurtleneck
 
 - type: loadout
   id: LPPEngineerBlackShirt
   equipment:
-    underwear: LPPClothingUniformJumpsuitEngineerBlackShirt
+    jumpsuit: LPPClothingUniformJumpsuitEngineerBlackShirt
 
 - type: loadout
   id: LPPEngineerBlackSkirt
   equipment:
-    underwear: LPPClothingUniformJumpskirtEngineerBlackSkirt
+    jumpsuit: LPPClothingUniformJumpskirtEngineerBlackSkirt
 
 - type: loadout
   id: LPPEngineerTurtleneckSkirt
   equipment:
-    underwear: LPPClothingUniformJumpskirtEngineerTurtleneck
+    jumpsuit: LPPClothingUniformJumpskirtEngineerTurtleneck
 
 - type: loadout
   id: LPPEngineerShirtSkirt
   equipment:
-    underwear: LPPClothingUniformJumpskirtEngineerShirt
+    jumpsuit: LPPClothingUniformJumpskirtEngineerShirt
