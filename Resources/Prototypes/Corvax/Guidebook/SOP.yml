@@ -15,7 +15,7 @@
 
 - type: guideEntry
   id: SOPService
-  name: Сервистный отдел
+  name: Сервисный отдел
   text: "/ServerInfo/Corvax/Guidebook/SOP/Service.xml"
 
 - type: guideEntry
