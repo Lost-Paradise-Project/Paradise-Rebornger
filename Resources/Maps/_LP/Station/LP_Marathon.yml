@@ -7708,6 +7708,7 @@ entities:
             Oxygen: 6666.982
         chunkSize: 4
     - type: BecomesStation
+    - type: NightLightning
       id: LP_Marathon
     - type: OccluderTree
     - type: Shuttle

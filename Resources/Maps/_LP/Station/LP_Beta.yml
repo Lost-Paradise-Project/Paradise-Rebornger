@@ -13083,6 +13083,7 @@ entities:
         chunkSize: 4
     - type: NavMap
     - type: BecomesStation
+    - type: NightLightning
       id: BetaStation
     - type: ImplicitRoof
     - type: TileHistory

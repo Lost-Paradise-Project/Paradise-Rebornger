@@ -13018,6 +13018,7 @@ entities:
     - type: RadiationGridResistance
     - type: NavMap
     - type: BecomesStation
+    - type: NightLightning
       id: LP_Maus
     - type: ImplicitRoof
     - type: TileHistory

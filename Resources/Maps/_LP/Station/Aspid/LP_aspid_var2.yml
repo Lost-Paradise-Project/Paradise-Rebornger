@@ -8994,6 +8994,7 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: BecomesStation
+    - type: NightLightning
       id: LPAspid
     - type: Joint
       joints:
