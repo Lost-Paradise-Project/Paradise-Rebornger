@@ -1,49 +1,49 @@
 - type: loadout
   id: LPPAtmosJeansJacket
   equipment:
-    underwear: LPPClothingUniformJumpsuitAtmosJeansJacket
+    jumpsuit: LPPClothingUniformJumpsuitAtmosJeansJacket
 
 - type: loadout
   id: LPPAtmosGorka
   equipment:
-    underwear: LPPClothingUniformJumpsuitAtmosGorka
+    jumpsuit: LPPClothingUniformJumpsuitAtmosGorka
 
 - type: loadout
   id: LPPAtmosGorkaRefl
   equipment:
-    underwear: LPPClothingUniformJumpsuitAtmosGorkaRefl
+    jumpsuit: LPPClothingUniformJumpsuitAtmosGorkaRefl
 
 - type: loadout
   id: LPPAtmosHoodieVest
   equipment:
-    underwear: LPPClothingUniformJumpsuitAtmosHoodieVest
+    jumpsuit: LPPClothingUniformJumpsuitAtmosHoodieVest
 
 - type: loadout
   id: LPPAtmosShirt
   equipment:
-    underwear: LPPClothingUniformJumpsuitAtmosShirt
+    jumpsuit: LPPClothingUniformJumpsuitAtmosShirt
 
 - type: loadout
   id: LPPAtmosTurtleneck
   equipment:
-    underwear: LPPClothingUniformJumpsuitAtmosTurtleneck
+    jumpsuit: LPPClothingUniformJumpsuitAtmosTurtleneck
 
 - type: loadout
   id: LPPAtmosBlackShirt
   equipment:
-    underwear: LPPClothingUniformJumpsuitAtmosBlackShirt
+    jumpsuit: LPPClothingUniformJumpsuitAtmosBlackShirt
 
 - type: loadout
   id: LPPAtmosBlackSkirt
   equipment:
-    underwear: LPPClothingUniformJumpskirtAtmosBlackSkirt
+    jumpsuit: LPPClothingUniformJumpskirtAtmosBlackSkirt
 
 - type: loadout
   id: LPPAtmosTurtleneckSkirt
   equipment:
-    underwear: LPPClothingUniformJumpskirtAtmosTurtleneck
+    jumpsuit: LPPClothingUniformJumpskirtAtmosTurtleneck
 
 - type: loadout
   id: LPPAtmosShirtSkirt
   equipment:
-    underwear: LPPClothingUniformJumpskirtAtmosShirt
+    jumpsuit: LPPClothingUniformJumpskirtAtmosShirt

@@ -1,40 +1,49 @@
 - type: loadout
   id: LPPCargoJeansJacket
   equipment:
-    underwear: LPPClothingUniformJumpsuitCargoJeansJacket
+    jumpsuit: LPPClothingUniformJumpsuitCargoJeansJacket
+
 - type: loadout
   id: LPPCargoGorka
   equipment:
-    underwear: LPPClothingUniformJumpsuitCargoGorka
+    jumpsuit: LPPClothingUniformJumpsuitCargoGorka
+
 - type: loadout
   id: LPPCargoGorkaRefl
   equipment:
-    underwear: LPPClothingUniformJumpsuitCargoGorkaRefl
+    jumpsuit: LPPClothingUniformJumpsuitCargoGorkaRefl
+
 - type: loadout
   id: LPPCargoHoodieVest
   equipment:
-    underwear: LPPClothingUniformJumpsuitCargoHoodieVest
+    jumpsuit: LPPClothingUniformJumpsuitCargoHoodieVest
+
 - type: loadout
   id: LPPCargoShirt
   equipment:
-    underwear: LPPClothingUniformJumpsuitCargoShirt
+    jumpsuit: LPPClothingUniformJumpsuitCargoShirt
+
 - type: loadout
   id: LPPCargoTurtleneck
   equipment:
-    underwear: LPPClothingUniformJumpsuitCargoTurtleneck
+    jumpsuit: LPPClothingUniformJumpsuitCargoTurtleneck
+
 - type: loadout
   id: LPPCargoBlackShirt
   equipment:
-    underwear: LPPClothingUniformJumpsuitCargoBlackShirt
+    jumpsuit: LPPClothingUniformJumpsuitCargoBlackShirt
+
 - type: loadout
   id: LPPCargoBlackSkirt
   equipment:
-    underwear: LPPClothingUniformJumpskirtCargoBlackSkirt
+    jumpsuit: LPPClothingUniformJumpskirtCargoBlackSkirt
+
 - type: loadout
   id: LPPCargoTurtleneckSkirt
   equipment:
-    underwear: LPPClothingUniformJumpskirtCargoTurtleneck
+    jumpsuit: LPPClothingUniformJumpskirtCargoTurtleneck
+
 - type: loadout
   id: LPPCargoShirtSkirt
   equipment:
-    underwear: LPPClothingUniformJumpskirtCargoShirt
+    jumpsuit: LPPClothingUniformJumpskirtCargoShirt
