@@ -13082,8 +13082,8 @@ entities:
             Plasma: 6666.982
         chunkSize: 4
     - type: NavMap
-    - type: BecomesStation
     - type: NightLightning
+    - type: BecomesStation
       id: BetaStation
     - type: ImplicitRoof
     - type: TileHistory

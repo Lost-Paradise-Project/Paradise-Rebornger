@@ -8993,8 +8993,8 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
-    - type: BecomesStation
     - type: NightLightning
+    - type: BecomesStation
       id: LPAspid
     - type: Joint
       joints:
