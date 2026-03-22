@@ -66,6 +66,7 @@ namespace Content.Server.Administration.Systems
         [Dependency] private readonly AdminFrozenSystem _freeze = default!;
         [Dependency] private readonly IPlayerManager _playerManager = default!;
         [Dependency] private readonly SiliconLawSystem _siliconLawSystem = default!;
+        [Dependency] private readonly AdminSystem _adminSystem = default!;
 
         private readonly Dictionary<ICommonSession, List<EditSolutionsEui>> _openSolutionUis = new();
 
@@ -214,7 +215,7 @@ namespace Content.Server.Administration.Systems
                             new("/Textures/Interface/VerbIcons/delete_transparent.svg.192dpi.png")),
                         Act = () =>
                         {
-                            //_adminSystem.Erase(mindComp.UserId.Value); // LP edit
+                            _adminSystem.Erase(mindComp.UserId.Value);
                         },
                         Impact = LogImpact.Extreme,
                         ConfirmationPopup = true

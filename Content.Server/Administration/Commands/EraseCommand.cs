@@ -6,7 +6,7 @@ using Robust.Shared.Console;
 
 namespace Content.Server.Administration.Commands;
 
-[AdminCommand(AdminFlags.Host)] // LP edit
+[AdminCommand(AdminFlags.Admin)]
 public sealed class EraseCommand : LocalizedEntityCommands
 {
     [Dependency] private readonly IPlayerLocator _locator = default!;
