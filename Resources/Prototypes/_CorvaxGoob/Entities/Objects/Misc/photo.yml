@@ -32,7 +32,7 @@
   components:
   - type: MaterialStorage
     storage:
-      Paper: 1000
+      LPPPaper: 1000
 
 - type: entity
   name: "photo"

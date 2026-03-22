@@ -124,6 +124,7 @@
   - type: PhysicalComposition
     materialComposition:
       PrinterPaper: 100
+      LPPPaper: 100
 # Corvax-Printer-End
 
 - type: entity

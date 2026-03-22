@@ -21,7 +21,7 @@ public sealed partial class PhotoCameraComponent : Component
     [DataField]
     public string CardPrototype = "PhotoCard";
     [DataField]
-    public string CardMaterial = "Paper";
+    public string CardMaterial = "LPPPaper"; // LP Edit
     [DataField]
     public int CardCost = 100;
 
