@@ -89,7 +89,7 @@
       default: [ SynthRFootSint ]
 
     enum.HumanoidVisualLayers.Tail:
-      limit: 2
+      limit: 1
       required: true
       onlyGroupWhitelisted: true
       default: [ SynthTail ]
