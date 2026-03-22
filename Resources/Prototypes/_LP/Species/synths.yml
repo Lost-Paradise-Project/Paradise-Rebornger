@@ -1,7 +1,6 @@
 # TODO:
 # - Починить хвосты, когда будут исправлены спрайты.
 # - Пересмотреть sponsorOnly.
-# - Позже добавить _sint-слои для рук/ног/кистей/ступней.
 
 - type: markingsGroup
   id: Synthoid
@@ -89,12 +88,11 @@
       onlyGroupWhitelisted: true
       default: [ SynthRFootSint ]
 
-    # Хвосты временно отключены:
-    # спрайты сейчас поломаны, а marking'и закомментированы.
-    # Поэтому слой НЕ должен быть required/default, иначе будет конфликт логики.
     enum.HumanoidVisualLayers.Tail:
-      limit: 0
-      required: false
+      limit: 2
+      required: true
+      onlyGroupWhitelisted: true
+      default: [ SynthTail ]
 
 - type: entity
   parent: BaseSpeciesAppearance
@@ -258,6 +256,10 @@
 - type: entity
   parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganSynthoidExternal ]
   id: OrganSynthoidTorso
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.Tail
 
 - type: entity
   parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganSynthoidExternal ]
@@ -352,7 +354,6 @@
 - type: marking
   id: SynthLArmSint
   bodyPart: LArm
-  forcedColoring: true
   groupWhitelist: [ Synthoid ]
   sprites:
   - sprite: _LP/Mobs/Sint_parts.rsi
@@ -361,7 +362,6 @@
 - type: marking
   id: SynthRArmSint
   bodyPart: RArm
-  forcedColoring: true
   groupWhitelist: [ Synthoid ]
   sprites:
   - sprite: _LP/Mobs/Sint_parts.rsi
@@ -370,7 +370,6 @@
 - type: marking
   id: SynthLHandSint
   bodyPart: LHand
-  forcedColoring: true
   groupWhitelist: [ Synthoid ]
   sprites:
   - sprite: _LP/Mobs/Sint_parts.rsi
@@ -379,7 +378,6 @@
 - type: marking
   id: SynthRHandSint
   bodyPart: RHand
-  forcedColoring: true
   groupWhitelist: [ Synthoid ]
   sprites:
   - sprite: _LP/Mobs/Sint_parts.rsi
@@ -388,7 +386,6 @@
 - type: marking
   id: SynthLLegSint
   bodyPart: LLeg
-  forcedColoring: true
   groupWhitelist: [ Synthoid ]
   sprites:
   - sprite: _LP/Mobs/Sint_parts.rsi
@@ -397,7 +394,6 @@
 - type: marking
   id: SynthRLegSint
   bodyPart: RLeg
-  forcedColoring: true
   groupWhitelist: [ Synthoid ]
   sprites:
   - sprite: _LP/Mobs/Sint_parts.rsi
@@ -406,7 +402,6 @@
 - type: marking
   id: SynthLFootSint
   bodyPart: LFoot
-  forcedColoring: true
   groupWhitelist: [ Synthoid ]
   sprites:
   - sprite: _LP/Mobs/Sint_parts.rsi
@@ -415,48 +410,25 @@
 - type: marking
   id: SynthRFootSint
   bodyPart: RFoot
-  forcedColoring: true
   groupWhitelist: [ Synthoid ]
   sprites:
   - sprite: _LP/Mobs/Sint_parts.rsi
     state: r_foot_sint
 
-# ХВОСТЫ ВРЕМЕННО ОТКЛЮЧЕНЫ:
-# Спрайты сейчас поломаны, поэтому marking'и не подключаем,
-# а сам Tail-слой в markingsGroup выключен.
-#
-# - type: marking
-#   id: SynthTail
-#   bodyPart: Tail
-#   groupWhitelist: [ Synthoid ]
-#   sprites:
-#   - sprite: _LP/Mobs/Customization/Sint_parts.rsi
-#     state: tail
-#
-# - type: marking
-#   id: SynthTailSint
-#   bodyPart: Tail
-#   groupWhitelist: [ Synthoid ]
-#   sprites:
-#   - sprite: _LP/Mobs/Customization/Sint_parts.rsi
-#     state: tail
-#   - sprite: _LP/Mobs/Customization/Sint_parts.rsi
-#     state: tail_sint
-#
-# - type: marking
-#   id: SynthTailDown
-#   bodyPart: Tail
-#   groupWhitelist: [ Synthoid ]
-#   sprites:
-#   - sprite: _LP/Mobs/Customization/Sint_parts.rsi
-#     state: tail_down
-#
-# - type: marking
-#   id: SynthTailDownSint
-#   bodyPart: Tail
-#   groupWhitelist: [ Synthoid ]
-#   sprites:
-#   - sprite: _LP/Mobs/Customization/Sint_parts.rsi
-#     state: tail_down
-#   - sprite: _LP/Mobs/Customization/Sint_parts.rsi
-#     state: tail_down_sint
+- type: marking
+  id: SynthTail
+  bodyPart: Tail
+  groupWhitelist: [ Synthoid ]
+  sprites:
+  - sprite: _LP/Mobs/Customization/Sint_parts.rsi
+    state: tail
+
+- type: marking
+  id: SynthTailSint
+  bodyPart: Tail
+  groupWhitelist: [ Synthoid ]
+  sprites:
+  - sprite: _LP/Mobs/Customization/Sint_parts.rsi
+    state: tail
+  - sprite: _LP/Mobs/Customization/Sint_parts.rsi
+    state: tail_sint
