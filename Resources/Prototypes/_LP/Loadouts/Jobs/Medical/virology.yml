@@ -2,49 +2,49 @@
 - type: loadout
   id: LPPVirologyJeansJacket
   equipment:
-    underwear: LPPClothingUniformJumpsuitVirologyJeansJacket
+    jumpsuit: LPPClothingUniformJumpsuitVirologyJeansJacket
 
 - type: loadout
   id: LPPVirologyGorka
   equipment:
-    underwear: LPPClothingUniformJumpsuitVirologyGorka
+    jumpsuit: LPPClothingUniformJumpsuitVirologyGorka
 
 - type: loadout
   id: LPPVirologyGorkaRefl
   equipment:
-    underwear: LPPClothingUniformJumpsuitVirologyGorkaRefl
+    jumpsuit: LPPClothingUniformJumpsuitVirologyGorkaRefl
 
 - type: loadout
   id: LPPVirologyHoodieVest
   equipment:
-    underwear: LPPClothingUniformJumpsuitVirologyHoodieVest
+    jumpsuit: LPPClothingUniformJumpsuitVirologyHoodieVest
 
 - type: loadout
   id: LPPVirologyShirt
   equipment:
-    underwear: LPPClothingUniformJumpsuitVirologyShirt
+    jumpsuit: LPPClothingUniformJumpsuitVirologyShirt
 
 - type: loadout
   id: LPPVirologyTurtleneck
   equipment:
-    underwear: LPPClothingUniformJumpsuitVirologyTurtleneck
+    jumpsuit: LPPClothingUniformJumpsuitVirologyTurtleneck
 
 - type: loadout
   id: LPPVirologyBlackShirt
   equipment:
-    underwear: LPPClothingUniformJumpsuitVirologyBlackShirt
+    jumpsuit: LPPClothingUniformJumpsuitVirologyBlackShirt
 
 - type: loadout
   id: LPPVirologyBlackSkirt
   equipment:
-    underwear: LPPClothingUniformJumpskirtVirologyBlackSkirt
+    jumpsuit: LPPClothingUniformJumpskirtVirologyBlackSkirt
 
 - type: loadout
   id: LPPVirologyTurtleneckSkirt
   equipment:
-    underwear: LPPClothingUniformJumpskirtVirologyTurtleneck
+    jumpsuit: LPPClothingUniformJumpskirtVirologyTurtleneck
 
 - type: loadout
   id: LPPVirologyShirtSkirt
   equipment:
-    underwear: LPPClothingUniformJumpskirtVirologyShirt
+    jumpsuit: LPPClothingUniformJumpskirtVirologyShirt

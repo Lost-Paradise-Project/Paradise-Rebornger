@@ -1,0 +1,12 @@
+ent-LPPClothingUniformJumpskirtMedicBlackSkirt = стильная юбка врача
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpskirtMedicTurtleneck = водолазка с юбкой врача
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpskirtMedicShirt = рубашка с юбкой врача
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpskirtVirologyBlackSkirt = стильная юбка вирусолога
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpskirtVirologyTurtleneck = водолазка с юбкой вирусолога
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpskirtVirologyShirt = рубашка с юбкой вирусолога
+    .desc = { ent-ClothingUniformBase.desc }

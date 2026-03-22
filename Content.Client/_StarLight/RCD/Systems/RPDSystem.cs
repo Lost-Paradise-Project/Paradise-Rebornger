@@ -49,8 +49,9 @@ public sealed class RPDSystem : EntitySystem
             base.FrameUpdate(args);
 
             var currentMode = _rcdSystem.GetCurrentRpdMode(_uid);
-
-            var modeKey = $"rcd-mode-{currentMode.ToString().ToLowerInvariant()}";
+            // LP edit start
+            var modeKey = $"rpd-mode-{currentMode.ToString().ToLowerInvariant()}";
+            // LP edit end
             var modeName = Robust.Shared.Localization.Loc.GetString(modeKey);
 
             _label.SetMarkup(Robust.Shared.Localization.Loc.GetString("rpd-item-status-mode",

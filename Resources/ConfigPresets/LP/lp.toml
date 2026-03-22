@@ -14,6 +14,7 @@ discord = "https://wiki.lost-paradise.space/discord"
 github = "https://github.com/Lost-Paradise-Project/Goob-Station"
 wiki = "http://wiki.lost-paradise.space/"
 website = "https://boosty.to/lost-paradise"
+appeal = "https://discord.gg/lost-paradise-14"
 
 [game.panic_bunker]
 enabled = true
@@ -106,3 +107,5 @@ out_of_game_frequency = 360
 [tts]
 announce_voice = "glados"
 
+[adminlogs]
+high_log_playtime = -1
