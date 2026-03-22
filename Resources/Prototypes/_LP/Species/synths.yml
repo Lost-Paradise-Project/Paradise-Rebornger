@@ -36,7 +36,7 @@
 
     enum.HumanoidVisualLayers.HeadSide: # Боковые элементы головы: frills + их light overlay.
       limit: 3
-      required: false # Должен ли быть всегда. 
+      required: false
       onlyGroupWhitelisted: true
       default: [ SynthFrillsDivinity ] # По умолчанию обычные frills.
 
@@ -126,10 +126,10 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: _LP/Mobs/Sint_parts.rsi
+    sprite: _LP/Mobs/Sintoid/Sint_parts.rsi
   - type: VisualOrgan
     data:
-      sprite: _LP/Mobs/Sint_parts.rsi
+      sprite: _LP/Mobs/Sintoid/Sint_parts.rsi
   - type: VisualOrganMarkings
     markingData:
       group: Synthoid
@@ -308,7 +308,7 @@
   bodyPart: Snout
   groupWhitelist: [ Synthoid ] # Маркировка доступна только синтойду.
   sprites:
-  - sprite: _LP/Mobs/Sint_parts.rsi
+  - sprite: _LP/Mobs/Sintoid/Sint_parts.rsi
     state: head_win
 
 - type: marking
@@ -316,7 +316,7 @@
   bodyPart: Chest
   groupWhitelist: [ Synthoid ] # Только синтойдам.
   sprites:
-  - sprite: _LP/Mobs/Sint_parts.rsi
+  - sprite: _LP/Mobs/Sintoid/Sint_parts.rsi
     state: torso_m_sint
 
 - type: marking
@@ -324,7 +324,7 @@
   bodyPart: Chest
   groupWhitelist: [ Synthoid ] # Только синтойдам.
   sprites:
-  - sprite: _LP/Mobs/Sint_parts.rsi
+  - sprite: _LP/Mobs/Sintoid/Sint_parts.rsi
     state: torso_f_sint
 
 - type: marking
@@ -356,7 +356,7 @@
   bodyPart: LArm
   groupWhitelist: [ Synthoid ]
   sprites:
-  - sprite: _LP/Mobs/Sint_parts.rsi
+  - sprite: _LP/Mobs/Sintoid/Sint_parts.rsi
     state: l_arm_sint
 
 - type: marking
@@ -364,7 +364,7 @@
   bodyPart: RArm
   groupWhitelist: [ Synthoid ]
   sprites:
-  - sprite: _LP/Mobs/Sint_parts.rsi
+  - sprite: _LP/Mobs/Sintoid/Sint_parts.rsi
     state: r_arm_sint
 
 - type: marking
@@ -372,7 +372,7 @@
   bodyPart: LHand
   groupWhitelist: [ Synthoid ]
   sprites:
-  - sprite: _LP/Mobs/Sint_parts.rsi
+  - sprite: _LP/Mobs/Sintoid/Sint_parts.rsi
     state: l_hand_sint
 
 - type: marking
@@ -380,7 +380,7 @@
   bodyPart: RHand
   groupWhitelist: [ Synthoid ]
   sprites:
-  - sprite: _LP/Mobs/Sint_parts.rsi
+  - sprite: _LP/Mobs/Sintoid/Sint_parts.rsi
     state: r_hand_sint
 
 - type: marking
@@ -388,7 +388,7 @@
   bodyPart: LLeg
   groupWhitelist: [ Synthoid ]
   sprites:
-  - sprite: _LP/Mobs/Sint_parts.rsi
+  - sprite: _LP/Mobs/Sintoid/Sint_parts.rsi
     state: l_leg_sint
 
 - type: marking
@@ -396,7 +396,7 @@
   bodyPart: RLeg
   groupWhitelist: [ Synthoid ]
   sprites:
-  - sprite: _LP/Mobs/Sint_parts.rsi
+  - sprite: _LP/Mobs/Sintoid/Sint_parts.rsi
     state: r_leg_sint
 
 - type: marking
@@ -404,7 +404,7 @@
   bodyPart: LFoot
   groupWhitelist: [ Synthoid ]
   sprites:
-  - sprite: _LP/Mobs/Sint_parts.rsi
+  - sprite: _LP/Mobs/Sintoid/Sint_parts.rsi
     state: l_foot_sint
 
 - type: marking
@@ -412,7 +412,7 @@
   bodyPart: RFoot
   groupWhitelist: [ Synthoid ]
   sprites:
-  - sprite: _LP/Mobs/Sint_parts.rsi
+  - sprite: _LP/Mobs/Sintoid/Sint_parts.rsi
     state: r_foot_sint
 
 - type: marking
