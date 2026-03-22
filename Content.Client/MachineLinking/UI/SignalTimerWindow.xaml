@@ -11,7 +11,7 @@
             <Label Name="Colon" Text=":" />
             <LineEdit Name="CurrentDelayEditSeconds" MinWidth="32" />
             <!-- LP edit start -->
-            <Label Name="DelayInfo" Text="мм:сс" />
+            <Label Name="DelayInfo" Text="(мм:сс)" />
             <!-- LP edit end -->
         </BoxContainer>
         <Button Name="StartTimer" Text="{Loc signal-timer-menu-start}" />
