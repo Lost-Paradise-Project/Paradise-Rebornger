@@ -98,11 +98,15 @@ public sealed class AGhostCommand : LocalizedCommands
                 return;
         }
 
-        //LP edit start
+//LP edit start
         CustomGhostPrototype? customGhost = null;
-        if (player!.UserId is NetUserId userId && _prefs.TryGetCachedPreferences(userId, out var CustomGhost)) //LP edit вынужденый хардкод
-            customGhost = _prototypeManager.Index(new ProtoId<CustomGhostPrototype>("Admin" + CustomGhost.CustomGhost));
-        //LP edit end
+        if (player!.UserId is NetUserId userId && _prefs.TryGetCachedPreferences(userId, out var p))
+        {
+            var id = p.CustomGhost.ToString() ?? "";
+            var finalId = id.StartsWith("Admin") ? id : "Admin" + id;
+            customGhost = _prototypeManager.Index(new ProtoId<CustomGhostPrototype>(finalId));
+        }
+//LP edit end
 
         var canReturn = mind.CurrentEntity != null
                         && !_entities.HasComponent<GhostComponent>(mind.CurrentEntity);

@@ -64,7 +64,6 @@ public sealed partial class ServerApi : IPostInjectInit
     [Dependency] private readonly IEntitySystemManager _entitySystemManager = default!;
     [Dependency] private readonly ILocalizationManager _loc = default!;
     [Dependency] private readonly IAfkManager _afkManager = default!;
-    [Dependency] private readonly IAdminManager _iadminManager = default!;
 
     private string _token = string.Empty;
     private ISawmill _sawmill = default!;

@@ -43,7 +43,7 @@ public sealed partial class OrganMarkingPicker : Control
     {
         base.EnteredTree();
 
-        _markingsModel.OrganProfileDataChanged += UpdateMarkings;
+        _markingsModel.OrganProfileDataChanged += OnOrganProfileDataChanged;
         _markingsModel.EnforcementsChanged += UpdateMarkings;
     }
 
@@ -51,11 +51,17 @@ public sealed partial class OrganMarkingPicker : Control
     {
         base.ExitedTree();
 
-        _markingsModel.OrganProfileDataChanged -= UpdateMarkings;
+        _markingsModel.OrganProfileDataChanged -= OnOrganProfileDataChanged;
         _markingsModel.EnforcementsChanged -= UpdateMarkings;
     }
 
     public bool Empty => LayerTabs.ChildCount == 0;
+
+    private void OnOrganProfileDataChanged(bool refresh)
+    {
+        if (refresh)
+            UpdateMarkings();
+    }
 
     private void UpdateMarkings()
     {
@@ -68,6 +74,16 @@ public sealed partial class OrganMarkingPicker : Control
         {
             var allMarkings =
                 _markingsModel.EnforceGroupAndSexRestrictions ? _marking.MarkingsByLayerAndGroupAndSex(layer, _group, organProfileData.Sex) : _marking.MarkingsByLayer(layer);
+
+            // Corvax-Sponsors-Start
+            /*if (_sponsorsManager != null)
+            {
+                var sponsorPrototypes = _sponsorsManager.GetClientPrototypes();
+                allMarkings = allMarkings
+                    .Where(m => !m.Value.SponsorOnly || sponsorPrototypes.Contains(m.Key))
+                    .ToDictionary(m => m.Key, m => m.Value);
+            }*/
+            // Corvax-Sponsors-End
 
             if (allMarkings.Count == 0)
                 continue;

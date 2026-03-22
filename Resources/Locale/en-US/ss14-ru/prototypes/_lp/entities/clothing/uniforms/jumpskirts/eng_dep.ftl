@@ -1,0 +1,12 @@
+ent-LPPClothingUniformJumpskirtAtmosBlackSkirt = Black Skirt atmos
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpskirtAtmosTurtleneck = Atmos turtleneck with skirt
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpskirtAtmosShirt = Atmos shirt with skirt
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpskirtEngineerBlackSkirt = Black Skirt Engineer
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpskirtEngineerTurtleneck = Engineer turtleneck with skirt
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpskirtEngineerShirt = Engineer shirt with skirt
+    .desc = { ent-ClothingUniformBase.desc }
