@@ -41,7 +41,6 @@ public sealed partial class TimeTransferPanel : DefaultWindow
 
         PopulateJobs();
         UpdateGroup();
-        UpdateAllTimeMode(); // LP edit
         UpdateWarning(" ", Color.LightGreen);
     }
 
