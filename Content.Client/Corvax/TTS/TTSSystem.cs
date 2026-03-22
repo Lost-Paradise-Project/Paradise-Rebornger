@@ -38,6 +38,7 @@ public sealed class TTSSystem : EntitySystem
     private const float MinimalVolume = -10f;
 
     private float _volume = 0.0f;
+    private float _radioVolume = 0.0f; // LP edit
     private int _fileIdx = 0;
 
     public override void Initialize()
@@ -50,6 +51,7 @@ public sealed class TTSSystem : EntitySystem
 
         _sawmill = Logger.GetSawmill("tts");
         _cfg.OnValueChanged(CCCVars.TTSVolume, OnTtsVolumeChanged, true);
+        _cfg.OnValueChanged(CCCVars.TTSRadioVolume, OnTtsRadioVolumeChanged, true); // LP edit
         SubscribeNetworkEvent<PlayTTSEvent>(OnPlayTTS);
     }
 
@@ -57,6 +59,7 @@ public sealed class TTSSystem : EntitySystem
     {
         base.Shutdown();
         _cfg.UnsubValueChanged(CCCVars.TTSVolume, OnTtsVolumeChanged);
+        _cfg.UnsubValueChanged(CCCVars.TTSRadioVolume, OnTtsRadioVolumeChanged); // LP edit
     }
 
     public void RequestPreviewTTS(string voiceId)
@@ -69,6 +72,13 @@ public sealed class TTSSystem : EntitySystem
         _volume = volume;
     }
 
+    // LP edit start
+    private void OnTtsRadioVolumeChanged(float volume)
+    {
+        _radioVolume = volume;
+    }
+    // LP edit end
+
     private void OnPlayTTS(PlayTTSEvent ev)
     {
         _sawmill.Verbose($"Play TTS audio {ev.Data.Length} bytes from {ev.SourceUid} entity");
@@ -79,11 +89,21 @@ public sealed class TTSSystem : EntitySystem
         var audioResource = new AudioResource();
         audioResource.Load(IoCManager.Instance!, Prefix / filePath);
 
+        var soundSpecifier = new ResolvedPathSpecifier(Prefix / filePath);
+
+        // LP edit start - radio TTS plays as global (non-positional) audio with separate volume
+        if (ev.IsRadio)
+        {
+            var radioParams = AudioParams.Default.WithVolume(AdjustRadioVolume());
+            _audio.PlayGlobal(audioResource.AudioStream, soundSpecifier, radioParams);
+            _contentRoot.RemoveFile(filePath);
+            return;
+        }
+        // LP edit end
+
         var audioParams = AudioParams.Default
             .WithVolume(AdjustVolume(ev.IsWhisper))
             .WithMaxDistance(AdjustDistance(ev.IsWhisper));
-
-        var soundSpecifier = new ResolvedPathSpecifier(Prefix / filePath);
 
         if (ev.SourceUid != null)
         {
@@ -116,6 +136,13 @@ public sealed class TTSSystem : EntitySystem
 
         return volume;
     }
+
+    // LP edit start
+    private float AdjustRadioVolume()
+    {
+        return MinimalVolume + SharedAudioSystem.GainToVolume(_radioVolume);
+    }
+    // LP edit end
 
     private float AdjustDistance(bool isWhisper)
     {

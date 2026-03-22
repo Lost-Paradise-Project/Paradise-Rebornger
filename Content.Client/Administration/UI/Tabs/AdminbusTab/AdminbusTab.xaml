@@ -16,5 +16,8 @@
         <!-- ADT-Tweak-Start -->
         <cc:UICommandButton Command="command-executor" Text="{Loc admin-player-actions-window-command-executor}" WindowType="{x:Type adminTab:CommandExecutorWindow}" />
         <!-- ADT-Tweak-End -->
+        <!-- LP edit Start -->
+        <cc:CommandButton Name="TimeTransferPanel" Text="{Loc player-panel-time}" Command="timetransferpanel" />
+        <!-- LP edit End -->
     </GridContainer>
 </Control>

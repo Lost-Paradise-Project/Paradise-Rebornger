@@ -210,11 +210,8 @@ namespace Content.Shared.Ghost
         }
     }
 
-    // Port Respawn EE Start
-
+    // Orion-Start
     [Serializable, NetSerializable]
     public sealed class GhostReturnToRoundRequest : EntityEventArgs;
-
-    // Port Respawn EE End
-
+    // Orion-End
 }

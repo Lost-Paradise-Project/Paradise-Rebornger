@@ -74,5 +74,19 @@ namespace Content.Server.Communications
         /// </summary>
         [DataField]
         public bool AnnounceSentBy = true;
+
+        // LP edit start
+        /// <summary>
+        /// Whether announcements from this console are voiced by TTS.
+        /// </summary>
+        [DataField]
+        public bool Tts = true;
+
+        /// <summary>
+        /// Override TTS voice for this console. Null = use CVar default.
+        /// </summary>
+        [DataField]
+        public string? TtsVoice;
+        // LP edit end
     }
 }

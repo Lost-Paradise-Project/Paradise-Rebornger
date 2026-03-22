@@ -1,0 +1,181 @@
+  # Атмос
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitAtmosJeansJacket
+  name: Jeans Jacket atmos # Джинсовка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Engineering_department/atmos/atmos_techjean.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Engineering_department/atmos/atmos_techjean.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitAtmosGorka
+  name: Gorka atmos # Горка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Engineering_department/atmos/gorka_atmos.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Engineering_department/atmos/gorka_atmos.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitAtmosGorkaRefl
+  name: Gorka with reflectors atmos # Горка с отражателями
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Engineering_department/atmos/gorka_atmos_varg.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: shaded
+    - state: icon-unshaded
+      shader: unshaded
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Engineering_department/atmos/gorka_atmos_varg.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: shaded
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitAtmosHoodieVest
+  name: Atmos Hoodie Vest # Худи-жилет
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Engineering_department/atmos/qmc.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Engineering_department/atmos/qmc.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitAtmosShirt
+  name: Atmos Shirt # Рубашка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Engineering_department/atmos/supply_chief.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Engineering_department/atmos/supply_chief.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitAtmosTurtleneck
+  name: turtleneck atmos # Водолазка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Engineering_department/atmos/turtleneck_qm.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Engineering_department/atmos/turtleneck_qm.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitAtmosBlackShirt
+  name: Atmos Black Shirt # Чёрная рубашка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Engineering_department/atmos/util_atmos.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Engineering_department/atmos/util_atmos.rsi
+
+  # Инженер
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitEngineerJeansJacket
+  name: Jeans Jacket Engineer # Джинсовка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Engineering_department/engineers/engineers_techjean.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Engineering_department/engineers/engineers_techjean.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitEngineerGorka
+  name: Gorka Engineer # Горка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Engineering_department/engineers/gorka_engineers.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Engineering_department/engineers/gorka_engineers.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitEngineerGorkaRefl
+  name: Gorka with reflectors Engineer # Горка с отражателями
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Engineering_department/engineers/gorka_engineers_varg.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: shaded
+    - state: icon-unshaded
+      shader: unshaded
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Engineering_department/engineers/gorka_engineers_varg.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: shaded
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitEngineerHoodieVest
+  name: Engineer Hoodie Vest # Худи-жилет
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Engineering_department/engineers/qmc.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Engineering_department/engineers/qmc.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitEngineerShirt
+  name: Engineer Shirt # Рубашка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Engineering_department/engineers/supply_chief.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Engineering_department/engineers/supply_chief.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitEngineerTurtleneck
+  name: turtleneck Engineer # Водолазка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Engineering_department/engineers/turtleneck_qm.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Engineering_department/engineers/turtleneck_qm.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitEngineerBlackShirt
+  name: Engineer Black Shirt # Чёрная рубашка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Engineering_department/engineers/util_engineers.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Engineering_department/engineers/util_engineers.rsi

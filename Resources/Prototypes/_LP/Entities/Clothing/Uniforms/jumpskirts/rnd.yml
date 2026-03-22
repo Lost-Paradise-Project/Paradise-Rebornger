@@ -1,0 +1,32 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpskirtScienceBlackSkirt
+  name: Black Skirt Science # Стильная юбка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/rnd/rnd_black_skirt.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/rnd/rnd_black_skirt.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpskirtScienceTurtleneck
+  name: Science turtleneck with skirt # Водолазка с юбкой
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/rnd/skirtleneck.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/rnd/skirtleneck.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpskirtScienceShirt
+  name: Science shirt with skirt # Рубашка с юбкой
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/rnd/supply_chief_skirt.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/rnd/supply_chief_skirt.rsi

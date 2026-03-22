@@ -1,6 +1,6 @@
 - type: entity
   parent: VendingMachine
-  id: LPPErpMachine
+  id: LPPVendingMachineErp
   name: Erp machine
   description: Fashionable suits for Varden!
   components:
@@ -32,7 +32,7 @@
 
 - type: entity
   parent: VendingMachine
-  id: LPPBrasMat
+  id: LPPVendingMachineBras
   name: Bras machine
   description: a machine that decorates the appearance of customers and makes them beautiful!
   components:
@@ -63,12 +63,12 @@
 
 - type: entity
   parent: VendingMachine
-  id: LPPNascaMat
-  name: Nasca machine
+  id: LPPVendingMachineSocks
+  name: Socks machine
   description: a machine that decorates the appearance of customers and makes them beautiful!
   components:
   - type: VendingMachine
-    pack: NascaVendingMachineServitorInventory
+    pack: SocksVendingMachineServitorInventory
     offState: off
     brokenState: broken
     normalState: normal-unshaded
@@ -94,7 +94,7 @@
 
 - type: entity
   parent: VendingMachine
-  id: LPPPillowVendingMachine
+  id: LPPVendingMachinePillow
   name: Pillow vending machine
   description: For when you need seeds fast. Hands down the best seed selection on the station!
   components:
@@ -124,7 +124,7 @@
 
 - type: entity
   parent: VendingMachine
-  id: LPPUnderpantsMat
+  id: LPPVendingMachineUnderpants
   name: Underpants machine
   description: a machine that decorates the appearance of customers and makes them beautiful!
   components:
@@ -155,7 +155,7 @@
 
 - type: entity
   parent: VendingMachine
-  id: LPPWithSoftAnimals
+  id: LPPVendingMachineWithSoftAnimals
   name: With soft animals machine
   description: For when you need seeds fast. Hands down the best seed selection on the station!
   components:

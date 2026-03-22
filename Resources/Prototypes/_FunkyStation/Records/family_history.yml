@@ -54,10 +54,12 @@
   name: medical-info-familyhistory-bloodpressure
   category: FamilyHistory
 
-- type: medicalInfo
-  id: hivFamilyHistory
-  name: medical-info-familyhistory-hiv
-  category: FamilyHistory
+# LP Edit Start
+# - type: medicalInfo
+#   id: hivFamilyHistory
+#   name: medical-info-familyhistory-hiv
+#   category: FamilyHistory
+# LP Edit End
 
 - type: medicalInfo
   id: kidneydiseaseFamilyHistory

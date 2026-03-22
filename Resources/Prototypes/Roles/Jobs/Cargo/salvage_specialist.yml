@@ -19,7 +19,7 @@
 - type: startingGear
   id: SalvageSpecialistGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
+    # jumpsuit: ClothingUniformJumpsuitSalvageSpecialist # LP edit
     id: SalvagePDA
     ears: ClothingHeadsetCargo
   #storage:

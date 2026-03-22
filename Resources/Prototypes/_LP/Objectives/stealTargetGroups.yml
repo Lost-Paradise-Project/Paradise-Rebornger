@@ -4,3 +4,10 @@
   sprite:
     sprite: _LP/Structures/Machines/SpaceForge_CMD.rsi
     state: icon
+
+- type: stealTargetGroup
+  id: LPPCEGlove
+  name: steal-target-groups-ce-glove
+  sprite:
+    sprite: _LP/Objects/Weapons/Melee/EngiGorilla.rsi
+    state: icon

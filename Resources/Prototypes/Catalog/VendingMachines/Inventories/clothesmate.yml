@@ -56,6 +56,12 @@
     ClothingUniformJumpskirtCasualRed: 2
     ClothingUniformJumpsuitCasualGreen: 2
     ClothingUniformJumpskirtCasualGreen: 2
+    # LP edit start
+    LPPClothingUniformBlackTracksuit: 2
+    LPPClothingUniformBlueTracksuit: 2
+    LPPClothingUniformRedTracksuit: 2
+    LPPClothingUniformGreenTracksuit: 2
+    # LP edit end
     # DO NOT ADD MORE, USE UNIFORM DYING
     ClothingShoesColorBlack: 8
     ClothingShoesColorBrown: 4

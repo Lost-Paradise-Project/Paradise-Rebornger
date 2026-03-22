@@ -45,6 +45,7 @@ public sealed class TTSManager
     private ISawmill _sawmill = default!;
     private readonly Dictionary<string, byte[]> _cache = new();
     private readonly List<string> _cacheKeysSeq = new();
+    private readonly Dictionary<string, Task<byte[]?>> _pendingRequests = new(); // LP edit - dedup in-flight requests
     private int _maxCachedCount = 200;
     private string _apiUrl = string.Empty;
     private string _apiToken = string.Empty;
@@ -66,15 +67,12 @@ public sealed class TTSManager
     /// </summary>
     /// <param name="speaker">Identifier of speaker</param>
     /// <param name="text">SSML formatted text</param>
-    /// <param name="pitch">The pitch of the voice</param>
-    /// <param name="rate">The rate of the voice</param>
     /// <param name="effect">An effect to apply to the voice</param>
     /// <returns>OGG audio bytes</returns>
+    // LP edit start - removed pitch, rate params (not in API); added in-flight request dedup
     public async Task<byte[]?> ConvertTextToSpeech(
         string speaker,
         string text,
-        string pitch,
-        string rate,
         string? effect = null)
     {
         if (string.IsNullOrWhiteSpace(_apiUrl))
@@ -91,7 +89,7 @@ public sealed class TTSManager
 
         WantedCount.Inc();
 
-        var cacheKey = GenerateCacheKey(speaker, text, pitch, rate, effect);
+        var cacheKey = GenerateCacheKey(speaker, text, effect);
         if (_cache.TryGetValue(cacheKey, out var data))
         {
             ReusedCount.Inc();
@@ -99,12 +97,34 @@ public sealed class TTSManager
             return data;
         }
 
+        // If a request for the same key is already in-flight, await it instead of making a duplicate API call.
+        // This prevents rate-limiting (429) when radio TTS fires HandleRadio for each receiver concurrently.
+        if (_pendingRequests.TryGetValue(cacheKey, out var pendingTask))
+        {
+            ReusedCount.Inc();
+            _sawmill.Debug($"Awaiting pending request for '{text}' speech by '{speaker}' speaker");
+            return await pendingTask;
+        }
+
+        var task = FetchFromApi(speaker, text, effect, cacheKey);
+        _pendingRequests[cacheKey] = task;
+
+        try
+        {
+            return await task;
+        }
+        finally
+        {
+            _pendingRequests.Remove(cacheKey);
+        }
+    }
+
+    private async Task<byte[]?> FetchFromApi(string speaker, string text, string? effect, string cacheKey)
+    {
         var request = CreateHttpRequest(_apiUrl, _apiToken, new GenerateVoiceRequest
         {
             Text = text,
             Speaker = speaker,
-            Pitch = pitch,
-            Rate = rate,
             Effect = effect
         });
 
@@ -127,15 +147,17 @@ public sealed class TTSManager
 
             var soundData = await response.Content.ReadAsByteArrayAsync(cts.Token);
 
-            _cache.Add(cacheKey, soundData);
-            _cacheKeysSeq.Add(cacheKey);
-            if (_cache.Count > _maxCachedCount)
+            if (_cache.TryAdd(cacheKey, soundData))
             {
-                var firstKey = _cacheKeysSeq.First();
-                _cache.Remove(firstKey);
-                _cacheKeysSeq.Remove(firstKey);
+                _cacheKeysSeq.Add(cacheKey);
+                if (_cache.Count > _maxCachedCount)
+                {
+                    var firstKey = _cacheKeysSeq.First();
+                    _cache.Remove(firstKey);
+                    _cacheKeysSeq.Remove(firstKey);
+                }
+                CachedCount.Set(_cache.Count);
             }
-            CachedCount.Set(_cache.Count);
 
             _sawmill.Debug(
                 $"Generated new sound for '{text}' speech by '{speaker}' speaker ({soundData.Length} bytes)");
@@ -157,6 +179,7 @@ public sealed class TTSManager
             return null;
         }
     }
+    // LP edit end
 
     private static HttpRequestMessage CreateHttpRequest(string url, string apiKey, GenerateVoiceRequest body)
     {
@@ -164,10 +187,7 @@ public sealed class TTSManager
         var query = HttpUtility.ParseQueryString(uriBuilder.Query);
         query["speaker"] = body.Speaker;
         query["text"] = body.Text;
-        query["pitch"] = body.Pitch;
-        query["rate"] = body.Rate;
-        query["file"] = "1";
-        query["ext"] = "ogg";
+        query["ext"] = "ogg"; // LP edit - removed pitch, rate, file params
         if (body.Effect != null)
             query["effect"] = body.Effect;
 
@@ -189,24 +209,27 @@ public sealed class TTSManager
     {
         _cache.Clear();
         _cacheKeysSeq.Clear();
+        _pendingRequests.Clear(); // LP edit
         CachedCount.Set(0);
     }
 
-    private string GenerateCacheKey(string speaker, string text, string pitch, string rate, string? effect)
+    // LP edit start - removed pitch, rate from cache key
+    private string GenerateCacheKey(string speaker, string text, string? effect)
     {
-        var key = $"{speaker}/{text}/{pitch}/{rate}/{effect ?? ""}";
+        var key = $"{speaker}/{text}/{effect ?? ""}";
+    // LP edit end
         var keyData = Encoding.UTF8.GetBytes(key);
         var sha256 = System.Security.Cryptography.SHA256.Create();
         var bytes = sha256.ComputeHash(keyData);
         return Convert.ToHexString(bytes);
     }
 
+    // LP edit start - removed Pitch, Rate
     private record GenerateVoiceRequest
     {
         public string Text { get; set; } = default!;
         public string Speaker { get; set; } = default!;
-        public string Pitch { get; set; } = default!;
-        public string Rate { get; set; } = default!;
         public string? Effect { get; set; }
     }
+    // LP edit end
 }

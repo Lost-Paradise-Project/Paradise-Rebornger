@@ -1,0 +1,24 @@
+- type: entity
+  parent: ClothingHeadHatHardhatBase
+  id: LPPClothingHeadHelmetBasic
+  name: helmet with flashlight
+  description: Standard protective gear. Protects against impacts and shines in technical tunnels.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Helmets/security.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Helmets/security.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+  - type: HideLayerClothing
+    slots:
+    - HeadTop
+    - HeadSide
+  - type: Construction
+    graph: LPPHelmetSecLight
+    node: LPPHelmetSecLight

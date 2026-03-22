@@ -42,7 +42,6 @@ public sealed class PlayerPanelEui : BaseEui
         PlayerPanel.OnFollow += () => SendMessage(new PlayerPanelFollowMessage());
 
         PlayerPanel.OnClose += () => SendMessage(new CloseEuiMessage());
-        PlayerPanel.OnPlayerPanel += () => _console.ExecuteCommand($"timetransferpanel"); // LP edit
     }
 
     public override void Opened()
