@@ -8,7 +8,6 @@
 - type: marking
   id: DionaFirefly
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [ Diona ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Diona/chest.rsi
@@ -19,7 +18,6 @@
 - type: marking
   id: DionaLivingNymph
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [ Diona ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Diona/chest.rsi
@@ -28,7 +26,6 @@
 - type: marking
   id: DionaMossChest
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [ Diona ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Diona/chest.rsi
@@ -37,7 +34,6 @@
 - type: marking
   id: MycenaChest
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [ Diona ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Diona/chest.rsi
@@ -46,7 +42,6 @@
 - type: marking
   id: MycenaChestGlow
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [ Diona ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Diona/chest.rsi
@@ -57,7 +52,6 @@
 - type: marking
   id: ShelfChest
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [ Diona ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Diona/chest.rsi
@@ -68,7 +62,6 @@
 - type: marking
   id: Amanita
   bodyPart: Head
-  markingCategory: HeadTop
   groupWhitelist: [ Diona ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Diona/head.rsi
@@ -79,7 +72,6 @@
 - type: marking
   id: DionaBigFirefly
   bodyPart: Head
-  markingCategory: Head
   groupWhitelist: [ Diona ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Diona/head.rsi
@@ -89,7 +81,6 @@
 - type: marking
   id: JackHead
   bodyPart: Head
-  markingCategory: HeadSide
   groupWhitelist: [ Diona ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Diona/head.rsi
@@ -99,7 +90,6 @@
 - type: marking
   id: MycenaHead
   bodyPart: Head
-  markingCategory: HeadSide
   groupWhitelist: [ Diona ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Diona/head.rsi
@@ -108,7 +98,6 @@
 - type: marking
   id: MycenaHeadGlow
   bodyPart: Head
-  markingCategory: HeadSide
   groupWhitelist: [ Diona ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Diona/head.rsi
@@ -119,7 +108,6 @@
 - type: marking
   id: ShelfHead
   bodyPart: Head
-  markingCategory: HeadSide
   groupWhitelist: [ Diona ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Diona/head.rsi
@@ -128,7 +116,6 @@
 - type: marking
   id: MycenaArm
   bodyPart: LArm
-  markingCategory: LeftArm
   groupWhitelist: [ Diona ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Diona/larm.rsi
@@ -137,7 +124,6 @@
 - type: marking
   id: MycenaArmGlow
   bodyPart: LArm
-  markingCategory: LeftArm
   groupWhitelist: [ Diona ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Diona/larm.rsi
@@ -148,7 +134,6 @@
 - type: marking
   id: DionaMoonBloom
   bodyPart: HeadSide
-  markingCategory: HeadSide
   groupWhitelist: [ Diona ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Diona/headtop.rsi

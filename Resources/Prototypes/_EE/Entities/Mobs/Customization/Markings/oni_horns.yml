@@ -6,7 +6,6 @@
 - type: marking
   id: OniHornTallCurved
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -16,7 +15,6 @@
 - type: marking
   id: OniHornTallCurved3Tone
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -30,7 +28,6 @@
 - type: marking
   id: OniHornTallBull
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sponsorOnly: true
@@ -41,7 +38,6 @@
 - type: marking
   id: OniHornTallBull3Tone
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sponsorOnly: true
@@ -56,7 +52,6 @@
 - type: marking
   id: OniHornCrowned
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -66,7 +61,6 @@
 - type: marking
   id: OniHornSerket
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -76,7 +70,6 @@
 - type: marking
   id: OniHornSerket3Tone
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -90,7 +83,6 @@
 - type: marking
   id: OniHornPisces
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -100,7 +92,6 @@
 - type: marking
   id: OniHornPisces2Tone
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -112,7 +103,6 @@
 - type: marking
   id: OniHornPisces3Tone
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -126,7 +116,6 @@
 - type: marking
   id: OniHornVirgo
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -136,7 +125,6 @@
 - type: marking
   id: OniHornVirgo3Tone
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -150,7 +138,6 @@
 - type: marking
   id: OniHornSagittarius
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -160,7 +147,6 @@
 - type: marking
   id: OniHornSagittarius3Tone
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -174,7 +160,6 @@
 - type: marking
   id: OniHornVantas
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -184,7 +169,6 @@
 - type: marking
   id: OniHornVantas3Tone
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -198,7 +182,6 @@
 - type: marking
   id: OniHornMakara
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -208,7 +191,6 @@
 - type: marking
   id: OniHornMakara2Tone
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -220,7 +202,6 @@
 - type: marking
   id: OniHornMakara3Tone
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -234,7 +215,6 @@
 - type: marking
   id: OniHornNepeta
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -244,7 +224,6 @@
 - type: marking
   id: OniHornNepeta3Tone
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -258,7 +237,6 @@
 - type: marking
   id: OniHornTaurus
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -268,7 +246,6 @@
 - type: marking
   id: OniHornTaurus2Tone
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -280,7 +257,6 @@
 - type: marking
   id: OniHornTaurus3Tone
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -294,7 +270,6 @@
 - type: marking
   id: OniHornAries
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -304,7 +279,6 @@
 - type: marking
   id: OniHornAries3Tone
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -318,7 +292,6 @@
 - type: marking
   id: OniHornTavris
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -328,7 +301,6 @@
 - type: marking
   id: OniHornTavris3Tone
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -342,7 +314,6 @@
 - type: marking
   id: OniHornInclined
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -352,7 +323,6 @@
 - type: marking
   id: OniHornInclined3Tone
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -366,7 +336,6 @@
 - type: marking
   id: OniHornWavy
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -376,7 +345,6 @@
 - type: marking
   id: OniHornWavy2Tone
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -388,7 +356,6 @@
 - type: marking
   id: OniHornWavy3Tone
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -402,7 +369,6 @@
 - type: marking
   id: OniHornAntlers
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -414,7 +380,6 @@
 - type: marking
   id: OniHornAntlers3Tone
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -428,7 +393,6 @@
 - type: marking
   id: OniHornUnicorn
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -438,7 +402,6 @@
 - type: marking
   id: OniHornErebia
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -448,7 +411,6 @@
 - type: marking
   id: OniHornErebia3Tone
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -462,7 +424,6 @@
 - type: marking
   id: OniHornErebiaRings
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sponsorOnly: true
@@ -475,7 +436,6 @@
 - type: marking
   id: OniHornDoubleThick
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -485,7 +445,6 @@
 - type: marking
   id: OniHornDoubleThick2Tone
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -497,7 +456,6 @@
 - type: marking
   id: OniHornDoubleThick3Tone
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -511,7 +469,6 @@
 - type: marking
   id: OniHornDoubleCurved3Tone
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:
@@ -525,7 +482,6 @@
 - type: marking
   id: OniHornDoubleCurvedOutwards3Tone
   bodyPart: HeadTop
-  markingCategory: HeadTop
   forcedColoring: false
   groupWhitelist: [Human, Dwarf, Slime]
   sprites:

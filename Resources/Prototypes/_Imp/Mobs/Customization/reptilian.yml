@@ -8,7 +8,6 @@
 - type: marking
   id: BadMoltChest
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Reptilian/chest.rsi
@@ -19,7 +18,6 @@
 - type: marking
   id: BadMoltHead
   bodyPart: Head
-  markingCategory: Head
   groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Reptilian/head.rsi
@@ -28,7 +26,6 @@
 - type: marking
   id: ScarSlash
   bodyPart: Head
-  markingCategory: Head
   groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Reptilian/head.rsi
@@ -37,7 +34,6 @@
 - type: marking
   id: ScarTalons
   bodyPart: Head
-  markingCategory: Head
   groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Reptilian/head.rsi
@@ -48,7 +44,6 @@
 - type: marking
   id: Fangs
   bodyPart: Snout
-  markingCategory: Overlay
   groupWhitelist: [ Reptilian ]
   coloring:
     default:
@@ -62,7 +57,6 @@
 - type: marking
   id: LizardBeard
   bodyPart: Snout
-  markingCategory: Overlay
   groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Reptilian/snout.rsi
@@ -71,7 +65,6 @@
 - type: marking
   id: LizardDroopySnout
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Reptilian/snout.rsi
@@ -80,7 +73,6 @@
 - type: marking
   id: LizardSnoutpiercings
   bodyPart: Snout
-  markingCategory: Overlay
   forcedColoring: true
   groupWhitelist: [ Reptilian ]
   coloring:
@@ -96,7 +88,6 @@
   id: LizardSnoutTall
   bodyPart: Snout
   forcedColoring: true
-  markingCategory: Snout
   groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Reptilian/snout.rsi
@@ -105,7 +96,6 @@
 - type: marking
   id: LizardUpperSnout
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Reptilian/snout.rsi
@@ -118,7 +108,6 @@
 - type: marking
   id: BadMoltRArm
   bodyPart: RArm
-  markingCategory: RightArm
   groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Reptilian/rarm.rsi
@@ -129,7 +118,6 @@
 - type: marking
   id: BadMoltLArm
   bodyPart: LArm
-  markingCategory: LeftArm
   groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Reptilian/larm.rsi
@@ -156,7 +144,6 @@
 - type: marking
   id: BurqaSolidLizard
   bodyPart: HeadSide
-  markingCategory: HeadSide
   groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Reptilian/headside.rsi
@@ -165,7 +152,6 @@
 - type: marking
   id: HijabFashionableLizard
   bodyPart: HeadSide
-  markingCategory: HeadSide
   groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Reptilian/headside.rsi
@@ -174,7 +160,6 @@
 - type: marking
   id: HijabSimpleLizard
   bodyPart: HeadSide
-  markingCategory: HeadSide
   groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Reptilian/headside.rsi
@@ -183,7 +168,6 @@
 - type: marking
   id: LizardKoboldEarsMid
   bodyPart: HeadSide
-  markingCategory: HeadSide
   groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Reptilian/headside.rsi
@@ -192,7 +176,6 @@
 - type: marking
   id: LizardKoboldEarsTall
   bodyPart: HeadSide
-  markingCategory: HeadSide
   groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Reptilian/headside.rsi
@@ -201,7 +184,6 @@
 - type: marking
   id: NiqabLizard
   bodyPart: HeadSide
-  markingCategory: HeadSide
   groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Reptilian/headside.rsi
@@ -210,7 +192,6 @@
 - type: marking
   id: TichelSimpleLizard
   bodyPart: HeadSide
-  markingCategory: HeadSide
   groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Reptilian/headside.rsi
@@ -219,7 +200,6 @@
 - type: marking
   id: TichelFashionableLizard
   bodyPart: HeadSide
-  markingCategory: HeadSide
   groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Reptilian/headside.rsi
@@ -230,7 +210,6 @@
 - type: marking
   id: LizardHeadFlat
   bodyPart: HeadTop
-  markingCategory: HeadTop
   groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Reptilian/headtop.rsi
@@ -239,7 +218,6 @@
 - type: marking
   id: LizardHornsKoboldEarspiercings
   bodyPart: HeadTop
-  markingCategory: HeadTop
   groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Reptilian/headtop.rsi
@@ -250,7 +228,6 @@
 - type: marking
   id: LizardHornsNubby
   bodyPart: HeadTop
-  markingCategory: HeadTop
   groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Reptilian/headtop.rsi
@@ -259,7 +236,6 @@
 - type: marking
   id: LizardLittleHorns
   bodyPart: HeadTop
-  markingCategory: HeadTop
   groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Reptilian/headtop.rsi
@@ -268,7 +244,6 @@
 - type: marking
   id: LizardFrill
   bodyPart: HeadTop
-  markingCategory: HeadTop
   groupWhitelist: [ Reptilian ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Reptilian/headtop.rsi

@@ -13,7 +13,6 @@
 - type: marking
   id: FelinidFluffyTailRings
   bodyPart: Tail
-  markingCategory: Tail
   groupWhitelist: [Human, Tajaran]
   sponsorOnly: true
   sprites:
@@ -25,7 +24,6 @@
 - type: marking
   id: FelinidFluffyTail
   bodyPart: Tail
-  markingCategory: Tail
   groupWhitelist: [Human, Tajaran]
   sponsorOnly: true
   sprites:
@@ -35,7 +33,6 @@
 - type: marking
   id: FelinidAlternativeTail
   bodyPart: Tail
-  markingCategory: Tail
   groupWhitelist: [Tajaran]
   sponsorOnly: true
   sprites:
