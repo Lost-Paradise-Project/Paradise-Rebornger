@@ -415,8 +415,6 @@
   id: TattooCode4
   bodyPart: RArm
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
-  matchSkin: false
-  forcedColoring: false
   coloring:
     default:
       type:
@@ -430,8 +428,6 @@
   id: TattooCode5
   bodyPart: RArm
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
-  matchSkin: false
-  forcedColoring: false
   coloring:
     default:
       type:
@@ -445,8 +441,6 @@
   id: TattooHeartR
   bodyPart: RArm
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
-  matchSkin: false
-  forcedColoring: false
   coloring:
     default:
       type:

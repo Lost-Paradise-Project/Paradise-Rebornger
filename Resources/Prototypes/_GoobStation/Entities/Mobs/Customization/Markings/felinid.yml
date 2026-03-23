@@ -12,7 +12,6 @@
 - type: marking
   id: FelinidTailFoxtail
   bodyPart: Tail
-  markingCategory: Tail
   groupWhitelist: [Human, Tajaran, Vulpkanin]
   sprites:
   - sprite: _Goobstation/Mobs/Customization/Felinid/foxtail.rsi

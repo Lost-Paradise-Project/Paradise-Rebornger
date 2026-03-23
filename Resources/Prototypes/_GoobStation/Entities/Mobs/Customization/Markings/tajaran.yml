@@ -228,7 +228,6 @@
 - type: marking
   id: TajaranTorsoFullBelly
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [Tajaran]
   sprites:
   - sprite: _Goobstation/Mobs/Customization/Tajaran/torso.rsi

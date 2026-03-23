@@ -43,10 +43,7 @@
   bodyPart: Chest
   groupWhitelist: [ Slime ]
   matchSkin: false
-  coloring:
-    default:
-      type:
-        !type:EyeColoring
+  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/Slime/chest.rsi
     state: core
@@ -55,11 +52,7 @@
   id: SlimeCoreGlowing
   bodyPart: Chest
   groupWhitelist: [ Slime ]
-  matchSkin: false
-  coloring:
-    default:
-      type:
-        !type:EyeColoring
+  forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/Slime/chest.rsi
     state: core
