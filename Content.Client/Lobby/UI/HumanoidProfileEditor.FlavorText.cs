@@ -24,7 +24,6 @@ public sealed partial class HumanoidProfileEditor
             _flavorText = new FlavorText.FlavorText();
             // begin funky - flavor text is in the Records tab now
             _recordsTab.PersonalInfoContainer.Visible = true;
-            _recordsTab.PersonalInfoContainer.AddChild(_flavorText);
             // end funky
             TabContainer.AddChild(_flavorText);
             TabContainer.SetTabTitle(TabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-flavortext-tab"));
@@ -39,7 +38,6 @@ public sealed partial class HumanoidProfileEditor
 
             // begin funky - flavor text is in the Records tab now
             _recordsTab.PersonalInfoContainer.Visible = false;
-            _recordsTab.PersonalInfoContainer.RemoveChild(_flavorText);
             // end funky
             TabContainer.RemoveChild(_flavorText);
             _flavorText.OnFlavorTextChanged -= OnFlavorTextChange;
