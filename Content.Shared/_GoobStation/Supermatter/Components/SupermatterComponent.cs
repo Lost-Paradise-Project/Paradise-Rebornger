@@ -440,9 +440,16 @@ public sealed partial class SupermatterComponent : Component
         {Gas.Plasma, 0f},
         {Gas.Tritium, 0f},
         {Gas.WaterVapor, 0f},
-        {Gas.BZ, 0f}, // Assmos - /tg/ gases
-        {Gas.Healium, 0f}, // Assmos - /tg/ gases
-        {Gas.Pluoxium, 0f} // Assmos - /tg/ gases
+        // LP Edit Start
+        {Gas.Ammonia, 0f},
+        {Gas.Pluoxium, 0f},
+        {Gas.Hydrogen, 0f},
+        {Gas.BZ, 0f},
+        {Gas.Healium, 0f},
+        {Gas.Nitrium, 0f},
+        {Gas.HyperNoblium, 0f},
+        {Gas.Zauker, 0f}
+        // LP Edit End
     };
 
     /// <summary>
@@ -457,11 +464,16 @@ public sealed partial class SupermatterComponent : Component
         [Gas.Tritium] = (TransmitModifier: 30f, HeatPenalty: 10f, PowerMixRatio: 1f),
         [Gas.WaterVapor] = (TransmitModifier: 2f, HeatPenalty: 12f, PowerMixRatio: 1f),
         [Gas.Frezon] = (TransmitModifier: 3f, HeatPenalty: -10f, PowerMixRatio: -1f),
-        [Gas.Ammonia] = (TransmitModifier: 0f, HeatPenalty: .5f, PowerMixRatio: 1f),
-        [Gas.NitrousOxide] = (TransmitModifier: 0f, HeatPenalty: -5f, PowerMixRatio: -1f),
-        [Gas.BZ] = (TransmitModifier: 0f, HeatPenalty: 5f, PowerMixRatio: 1f), // Assmos - /tg/ gases
-        [Gas.Healium] = (TransmitModifier: 2.4f, HeatPenalty: 4f, PowerMixRatio: 1f), // Assmos - /tg/ gases
-        [Gas.Pluoxium] = (TransmitModifier: 0f, HeatPenalty: -2.5f, PowerMixRatio: -1f), // Assmos - /tg/ gases
+        // LP Edit Start
+        [Gas.Ammonia] = (TransmitModifier: 1.5f, HeatPenalty: 1.5f, PowerMixRatio: 1.5f),
+        [Gas.Pluoxium] = (TransmitModifier: -0.5f, HeatPenalty: -1.5f, PowerMixRatio: -1f),
+        [Gas.Hydrogen] = (TransmitModifier: 25f, HeatPenalty: 10f, PowerMixRatio: 1f),
+        [Gas.BZ] = (TransmitModifier: -0.2f, HeatPenalty: 1f, PowerMixRatio: 1f),
+        [Gas.Healium] = (TransmitModifier: 0.2f, HeatPenalty: 3f, PowerMixRatio: 1f),
+        [Gas.Nitrium] = (TransmitModifier: 25f, HeatPenalty: 10f, PowerMixRatio: 1f),
+        [Gas.HyperNoblium] = (TransmitModifier: 0.3f, HeatPenalty: -10f, PowerMixRatio: -1f),
+        [Gas.Zauker] = (TransmitModifier: 2f, HeatPenalty: 4f, PowerMixRatio: -1f)
+        // LP Edit End
     };
 
     #endregion SM Gas
