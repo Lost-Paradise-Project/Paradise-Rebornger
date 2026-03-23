@@ -30,7 +30,4 @@ public sealed class LPCvars
     public static readonly CVarDef<int> SponsorLevelHack =
         CVarDef.Create("cheats.sponsorlevel_hack", 0, CVar.REPLICATED | CVar.CHEAT | CVar.NOTIFY);
     #endregion
-
-    public static readonly CVarDef<string> AHelpSound =
-        CVarDef.Create("audio.ahelp_sound", "/Audio/_LP/Effects/Admin/Effect_AHelp.ogg", CVar.ARCHIVE | CVar.CLIENTONLY);
 }

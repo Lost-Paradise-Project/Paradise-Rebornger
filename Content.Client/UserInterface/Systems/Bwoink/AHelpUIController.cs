@@ -27,7 +27,6 @@ using Robust.Shared.Input.Binding;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Utility;
-using Content.Shared._LP; // LP edit
 
 namespace Content.Client.UserInterface.Systems.Bwoink;
 
@@ -60,7 +59,7 @@ public sealed class AHelpUIController: UIController, IOnSystemChanged<BwoinkSyst
         SubscribeNetworkEvent<BwoinkPlayerTypingUpdated>(PeopleTypingUpdated);
 
         _adminManager.AdminStatusUpdated += OnAdminStatusUpdated;
-        _config.OnValueChanged(LPCvars.AHelpSound, v => _aHelpSound = v, true); // LP edit
+        _config.OnValueChanged(CCVars.AHelpSound, v => _aHelpSound = v, true);
         _config.OnValueChanged(CCVars.BwoinkSoundEnabled, v => _bwoinkSoundEnabled = v, true);
     }
 
@@ -141,8 +140,8 @@ public sealed class AHelpUIController: UIController, IOnSystemChanged<BwoinkSyst
         }
         if (message.PlaySound && localPlayer.UserId != message.TrueSender)
         {
-            if (_aHelpSound != null && (_bwoinkSoundEnabled || !_adminManager.IsActive()))
-                _audio.PlayGlobal(_aHelpSound, Filter.Local(), false);
+            if ((_bwoinkSoundEnabled || !_adminManager.IsActive()))
+                _audio.PlayGlobal(_config.GetCVar(CCVars.AHelpSound), Filter.Local(), false);
             _clyde.RequestWindowAttention();
         }
 
