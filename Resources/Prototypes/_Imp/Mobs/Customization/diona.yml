@@ -12,8 +12,6 @@
   sprites:
   - sprite: _Impstation/Mobs/Customization/Diona/chest.rsi
     state: firefly
-  shader: unshaded
-
 
 - type: marking
   id: DionaLivingNymph
@@ -46,8 +44,6 @@
   sprites:
   - sprite: _Impstation/Mobs/Customization/Diona/chest.rsi
     state: mycena
-  shader: unshaded
-
 
 - type: marking
   id: ShelfChest
@@ -76,7 +72,6 @@
   sprites:
   - sprite: _Impstation/Mobs/Customization/Diona/head.rsi
     state: bigfirefly
-  shader: unshaded
 
 - type: marking
   id: JackHead
@@ -85,7 +80,6 @@
   sprites:
   - sprite: _Impstation/Mobs/Customization/Diona/head.rsi
     state: jack
-  shader: unshaded
 
 - type: marking
   id: MycenaHead
@@ -102,8 +96,6 @@
   sprites:
   - sprite: _Impstation/Mobs/Customization/Diona/head.rsi
     state: mycena
-  shader: unshaded
-
 
 - type: marking
   id: ShelfHead
@@ -128,8 +120,6 @@
   sprites:
   - sprite: _Impstation/Mobs/Customization/Diona/larm.rsi
     state: mycena
-  shader: unshaded
-
 
 - type: marking
   id: DionaMoonBloom

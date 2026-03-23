@@ -10,7 +10,6 @@
 - type: marking
   id: ChestBackstabbed
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/chest.rsi
@@ -19,7 +18,6 @@
 - type: marking
   id: ChestCutHere
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -33,7 +31,6 @@
 - type: marking
   id: ChestHeavyTattoos
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -51,7 +48,6 @@
 - type: marking
   id: ChestNecklace
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -65,7 +61,6 @@
 - type: marking
   id: ChestStar
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/chest.rsi
@@ -74,7 +69,6 @@
 - type: marking
   id: ChestTwistingLeft
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/chest.rsi
@@ -83,7 +77,6 @@
 - type: marking
   id: ChestTwistingRight
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/chest.rsi
@@ -92,7 +85,6 @@
 - type: marking
   id: HumanoidAbs
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   forcedColoring: true
   sprites:
@@ -102,7 +94,6 @@
 - type: marking
   id: ProstheticShoulderL
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -116,7 +107,6 @@
 - type: marking
   id: ProstheticShoulderR
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -130,7 +120,6 @@
 - type: marking
   id: TattooAnchor
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -144,7 +133,6 @@
 - type: marking
   id: TattooCode1
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -158,7 +146,6 @@
 - type: marking
   id: TattooCode2
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -172,7 +159,6 @@
 - type: marking
   id: TattooCode3
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -186,7 +172,6 @@
 - type: marking
   id: TattooDragon
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/chest.rsi
@@ -197,7 +182,6 @@
 - type: marking
   id: TorsoIncision
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/chest.rsi
@@ -206,7 +190,6 @@
 - type: marking
   id: TattooVinesHumanoid
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -220,7 +203,6 @@
 - type: marking
   id: VitiligoChestF
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [ Human ]
   forcedColoring: true
   coloring:
@@ -235,7 +217,6 @@
 - type: marking
   id: VitiligoChestSpots
   bodyPart: Chest
-  markingCategory: Chest
   groupWhitelist: [ Human ]
   forcedColoring: true
   coloring:
@@ -252,7 +233,6 @@
 - type: marking
   id: EyebrowsBig
   bodyPart: Head
-  markingCategory: Head
   groupWhitelist: [ Human ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/head.rsi
@@ -261,7 +241,6 @@
 - type: marking
   id: EyebrowsBigger
   bodyPart: Head
-  markingCategory: Head
   groupWhitelist: [ Human ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/head.rsi
@@ -270,7 +249,6 @@
 - type: marking
   id: EyebrowsUnibrow
   bodyPart: Head
-  markingCategory: Head
   groupWhitelist: [ Human ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/head.rsi
@@ -279,8 +257,7 @@
 - type: marking
   id: HeadHeavyTattoos
   bodyPart: Head
-  markingCategory: Head
-  groupWhitelist: [Human, Slime, Arachnid, Tajaran, Rodentia]
+  groupWhitelist: [Human, Slime, Arachnid, Tajaran]
   coloring:
     default:
       type:
@@ -295,7 +272,6 @@
 - type: marking
   id: HeadTwisting
   bodyPart: Head
-  markingCategory: Head
   groupWhitelist: [Human, Slime, Arachnid, Tajaran]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/head.rsi
@@ -304,7 +280,6 @@
 - type: marking
   id: HeadTwistingFlipped
   bodyPart: Head
-  markingCategory: Head
   groupWhitelist: [Human, Slime, Arachnid, Tajaran]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/head.rsi
@@ -313,7 +288,6 @@
 - type: marking
   id: HumanoidEyebags
   bodyPart: Head
-  markingCategory: Head
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin] # CorvaxGoob - Remove
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/head.rsi
@@ -322,7 +296,6 @@
 - type: marking
   id: SmileScars
   bodyPart: Head
-  markingCategory: Head
   groupWhitelist: [Human, Slime, Arachnid, Tajaran]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/head.rsi
@@ -331,7 +304,6 @@
 - type: marking
   id: VitiligoHeadJaw
   bodyPart: Head
-  markingCategory: Head
   groupWhitelist: [ Human ]
   forcedColoring: true
   coloring:
@@ -346,7 +318,6 @@
 - type: marking
   id: VitiligoHeadL
   bodyPart: Head
-  markingCategory: Head
   groupWhitelist: [ Human ]
   forcedColoring: true
   coloring:
@@ -361,7 +332,6 @@
 - type: marking
   id: VitiligoHeadR
   bodyPart: Head
-  markingCategory: Head
   groupWhitelist: [ Human ]
   forcedColoring: true
   coloring:
@@ -378,7 +348,6 @@
 - type: marking
   id: HeadSeptum
   bodyPart: Snout
-  markingCategory: Snout
   groupWhitelist: [ Human ]
   coloring:
     default:
@@ -396,7 +365,6 @@
 - type: marking
   id: ArmDollJointsTattooRight
   bodyPart: RArm
-  markingCategory: RightArm
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -410,7 +378,6 @@
 - type: marking
   id: ArmHeavyTattoosRight
   bodyPart: RArm
-  markingCategory: RightArm
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -426,7 +393,6 @@
 - type: marking
   id: ArmProstheticRight
   bodyPart: RArm
-  markingCategory: RightArm
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -440,7 +406,6 @@
 - type: marking
   id: ArmTwistingRight
   bodyPart: RArm
-  markingCategory: RightArm
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/rarm.rsi
@@ -449,7 +414,6 @@
 - type: marking
   id: TattooCode4
   bodyPart: RArm
-  markingCategory: RightArm
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   followSkinColor: false
   forcedColoring: false
@@ -465,7 +429,6 @@
 - type: marking
   id: TattooCode5
   bodyPart: RArm
-  markingCategory: RightArm
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   followSkinColor: false
   forcedColoring: false
@@ -481,7 +444,6 @@
 - type: marking
   id: TattooHeartR
   bodyPart: RArm
-  markingCategory: RightArm
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   followSkinColor: false
   forcedColoring: false
@@ -497,7 +459,6 @@
 - type: marking
   id: VitiligoArmR
   bodyPart: RArm
-  markingCategory: RightArm
   groupWhitelist: [ Human ]
   forcedColoring: true
   coloring:
@@ -514,7 +475,6 @@
 - type: marking
   id: ArmDollJointsTattooLeft
   bodyPart: LArm
-  markingCategory: LeftArm
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -528,7 +488,6 @@
 - type: marking
   id: ArmHeavyTattoosLeft
   bodyPart: LArm
-  markingCategory: LeftArm
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -544,7 +503,6 @@
 - type: marking
   id: ArmProstheticLeft
   bodyPart: LArm
-  markingCategory: LeftArm
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -558,7 +516,6 @@
 - type: marking
   id: ArmTwistingLeft
   bodyPart: LArm
-  markingCategory: LeftArm
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/larm.rsi
@@ -567,7 +524,6 @@
 - type: marking
   id: TattooHeartL
   bodyPart: LArm
-  markingCategory: LeftArm
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   followSkinColor: false
   forcedColoring: false
@@ -583,7 +539,6 @@
 - type: marking
   id: VitiligoArmL
   bodyPart: LArm
-  markingCategory: LeftArm
   groupWhitelist: [ Human ]
   forcedColoring: true
   coloring:
@@ -600,7 +555,6 @@
 - type: marking
   id: LegDollJointsTattooRight
   bodyPart: RLeg
-  markingCategory: RightLeg
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -614,8 +568,7 @@
 - type: marking
   id: LegHeavyTattoosRight
   bodyPart: RLeg
-  markingCategory: RightLeg
-  groupWhitelist: [Human, Reptilian Slime, Arachnid, Tajaran, Vulpkanin]
+  groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
       type:
@@ -630,7 +583,6 @@
 - type: marking
   id: LegTwistingRight
   bodyPart: RLeg
-  markingCategory: RightLeg
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/rleg.rsi
@@ -639,7 +591,6 @@
 - type: marking
   id: VitiligoLegR
   bodyPart: RLeg
-  markingCategory: RightLeg
   groupWhitelist: [ Human ]
   forcedColoring: true
   coloring:
@@ -656,7 +607,6 @@
 - type: marking
   id: LegDollJointsTattooLeft
   bodyPart: LLeg
-  markingCategory: LeftLeg
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -670,7 +620,6 @@
 - type: marking
   id: LegHeavyTattoosLeft
   bodyPart: LLeg
-  markingCategory: LeftLeg
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -686,7 +635,6 @@
 - type: marking
   id: LegTwistingLeft
   bodyPart: LLeg
-  markingCategory: LeftLeg
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/lleg.rsi
@@ -695,7 +643,6 @@
 - type: marking
   id: VitiligoLegL
   bodyPart: LLeg
-  markingCategory: LeftLeg
   groupWhitelist: [ Human ]
   forcedColoring: true
   coloring:
@@ -712,7 +659,6 @@
 - type: marking
   id: FootDollJointsTattooLeft
   bodyPart: LFoot
-  markingCategory: LeftFoot
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -726,7 +672,6 @@
 - type: marking
   id: FootHeavyTattoosLeft
   bodyPart: LFoot
-  markingCategory: LeftFoot
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -744,7 +689,6 @@
 - type: marking
   id: FootDollJointsTattooRight
   bodyPart: RFoot
-  markingCategory: RightFoot
   groupWhitelist: [Human, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -758,7 +702,6 @@
 - type: marking
   id: FootHeavyTattoosRight
   bodyPart: RFoot
-  markingCategory: RightFoot
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -776,7 +719,6 @@
 - type: marking
   id: HandBraceletLeft
   bodyPart: LHand
-  markingCategory: LeftHand
   groupWhitelist: [Human, Reptilian, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -790,7 +732,6 @@
 - type: marking
   id: HandDollJointsTattooLeft
   bodyPart: LHand
-  markingCategory: LeftHand
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -804,7 +745,6 @@
 - type: marking
   id: HandHeavyTattoosLeft
   bodyPart: LHand
-  markingCategory: LeftHand
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -820,7 +760,6 @@
 - type: marking
   id: HandProstheticLeft
   bodyPart: LHand
-  markingCategory: LeftHand
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -834,7 +773,6 @@
 - type: marking
   id: HandRingsLeft
   bodyPart: LHand
-  markingCategory: LeftHand
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -850,7 +788,6 @@
 - type: marking
   id: HandTwistingLeft
   bodyPart: LHand
-  markingCategory: LeftHand
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/lhand.rsi
@@ -859,7 +796,6 @@
 - type: marking
   id: VitiligoHandL
   bodyPart: LHand
-  markingCategory: LeftHand
   groupWhitelist: [ Human ]
   forcedColoring: true
   coloring:
@@ -876,7 +812,6 @@
 - type: marking
   id: HandBraceletRight
   bodyPart: RHand
-  markingCategory: RightHand
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -890,7 +825,6 @@
 - type: marking
   id: HandDollJointsTattooRight
   bodyPart: RHand
-  markingCategory: RightHand
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -904,7 +838,6 @@
 - type: marking
   id: HandHeavyTattoosRight
   bodyPart: RHand
-  markingCategory: RightHand
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -920,7 +853,6 @@
 - type: marking
   id: HandProstheticRight
   bodyPart: RHand
-  markingCategory: RightHand
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -934,7 +866,6 @@
 - type: marking
   id: HandRingsRight
   bodyPart: RHand
-  markingCategory: RightHand
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   coloring:
     default:
@@ -950,7 +881,6 @@
 - type: marking
   id: HandTwistingRight
   bodyPart: RHand
-  markingCategory: RightHand
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/rhand.rsi
@@ -959,7 +889,6 @@
 - type: marking
   id: VitiligoHandR
   bodyPart: RHand
-  markingCategory: RightHand
   groupWhitelist: [ Human ]
   forcedColoring: true
   coloring:
@@ -976,7 +905,6 @@
 - type: marking
   id: FloralBeard
   bodyPart: FacialHair
-  markingCategory: FacialHair
   groupWhitelist: [ Human ]
   sponsorOnly: True
   sprites:
@@ -990,7 +918,6 @@
 - type: marking
   id: BurqaSolid
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
     state: burqasolid
@@ -998,7 +925,6 @@
 - type: marking
   id: HairFloralLong
   bodyPart: Hair
-  markingCategory: Hair
   sponsorOnly: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
@@ -1009,7 +935,6 @@
 - type: marking
   id: HairFloralMid
   bodyPart: Hair
-  markingCategory: Hair
   sponsorOnly: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
@@ -1020,7 +945,6 @@
 - type: marking
   id: HijabFashionable
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
     state: hijabchic
@@ -1028,7 +952,6 @@
 - type: marking
   id: HijabSimple
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
     state: hijabsimple
@@ -1036,7 +959,6 @@
 - type: marking
   id: HumanHairFrenchBraid
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
     state: frenchbraid
@@ -1044,7 +966,6 @@
 - type: marking
   id: HumanHairGatheredlow
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
     state: gatheredlow
@@ -1052,7 +973,6 @@
 - type: marking
   id: HumanHairHalfUpShort
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
     state: halfupshort
@@ -1060,7 +980,6 @@
 - type: marking
   id: HumanHairHalfUpLong
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
     state: halfuplong
@@ -1068,7 +987,6 @@
 - type: marking
   id: HumanHairHalfUpUndercut
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
     state: halfupundercut
@@ -1076,7 +994,6 @@
 - type: marking
   id: HumanHairLowpigtails
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
     state: lowpigtails
@@ -1084,7 +1001,6 @@
 - type: marking
   id: HumanHairMidPartLong
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
     state: midpartlong
@@ -1092,7 +1008,6 @@
 - type: marking
   id: HumanHairMidPartLonger
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
     state: midpartlonger
@@ -1100,7 +1015,6 @@
 - type: marking
   id: HumanHairMulletSideshave
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
     state: mulletsideshave
@@ -1108,7 +1022,6 @@
 - type: marking
   id: HumanHairSideshaveCurly
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
     state: sideshavecurly
@@ -1116,7 +1029,6 @@
 - type: marking
   id: HumanHairSpikyPonytailLong
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
     state: spikyponytaillong
@@ -1124,7 +1036,6 @@
 - type: marking
   id: HumanHairUndercutCurly
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
     state: undercutcurly
@@ -1132,7 +1043,6 @@
 - type: marking
   id: MessyPonytail
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
     state: messyponytail
@@ -1140,7 +1050,6 @@
 - type: marking
   id: Niqab
   bodyPart: Hair
-  markingCategory: Hair
   groupWhitelist: [ Human ]
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
@@ -1149,7 +1058,6 @@
 - type: marking
   id: TichelFashionable
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
     state: tichelfashionable
@@ -1157,7 +1065,6 @@
 - type: marking
   id: TichelSimple
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
     state: tichelsimple
@@ -1165,7 +1072,6 @@
 - type: marking
   id: HumanHairShaggy
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
     state: shaggy
@@ -1173,7 +1079,6 @@
 - type: marking
   id: HumanHairShaggyLonger
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
     state: shaggylonger
@@ -1181,7 +1086,6 @@
 - type: marking
   id: HumanHairShaggyMessy
   bodyPart: Hair
-  markingCategory: Hair
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
     state: shaggymessy
@@ -1189,7 +1093,6 @@
 - type: marking
   id: HumanHairSusie
   bodyPart: Hair
-  markingCategory: Hair
   sponsorOnly: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
@@ -1198,7 +1101,6 @@
 - type: marking
   id: HumanHairSusieNoBangs
   bodyPart: Hair
-  markingCategory: Hair
   sponsorOnly: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/Humanoid/hair.rsi
@@ -1211,7 +1113,6 @@
 - type: marking
   id: HeadEarrings
   bodyPart: HeadSide
-  markingCategory: HeadSide
   groupWhitelist: [Human, Slime]
   coloring:
     default:
@@ -1227,7 +1128,6 @@
 - type: marking
   id: HeadEarringsDrop
   bodyPart: HeadSide
-  markingCategory: HeadSide
   groupWhitelist: [Human, Slime]
   coloring:
     default:
@@ -1243,7 +1143,6 @@
 - type: marking
   id: HeadEarringsWeights
   bodyPart: HeadSide
-  markingCategory: HeadSide
   groupWhitelist: [Human, Slime]
   coloring:
     default:
