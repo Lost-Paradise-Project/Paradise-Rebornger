@@ -14,7 +14,6 @@ namespace Content.Server.Administration;
 public sealed class BanPanelEui : BaseEui
 {
     [Dependency] private readonly IBanManager _banManager = default!;
-    [Dependency] private readonly IEntityManager _entities = default!;
     [Dependency] private readonly ILogManager _log = default!;
     [Dependency] private readonly IPlayerLocator _playerLocator = default!;
     [Dependency] private readonly IChatManager _chat = default!;

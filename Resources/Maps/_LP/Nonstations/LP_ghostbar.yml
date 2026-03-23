@@ -13248,7 +13248,7 @@ entities:
       pos: 19.5,9.5
       parent: 4
     - type: WarpPoint
-      location: Ghost Bar
+      location: Призрачный бар
 - proto: WaterTankHighCapacity
   entities:
   - uid: 1535

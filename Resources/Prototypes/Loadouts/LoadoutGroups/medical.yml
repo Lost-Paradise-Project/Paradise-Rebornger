@@ -106,6 +106,18 @@
   - MedicalBlueScrubs
   - MedicalGreenScrubs
   - MedicalPurpleScrubs
+  # LP edit start
+  - LPPMedicJeansJacket
+  - LPPMedicGorka
+  - LPPMedicGorkaRefl
+  - LPPMedicHoodieVest
+  - LPPMedicShirt
+  - LPPMedicShirtSkirt
+  - LPPMedicTurtleneck
+  - LPPMedicTurtleneckSkirt
+  - LPPMedicBlackShirt
+  - LPPMedicBlackSkirt
+  # LP edit end
 
 - type: loadoutGroup
   id: MedicalDoctorOuterClothing

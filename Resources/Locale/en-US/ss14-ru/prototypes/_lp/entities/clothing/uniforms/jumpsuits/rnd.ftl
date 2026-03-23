@@ -1,0 +1,14 @@
+ent-LPPClothingUniformJumpsuitScienceJeansJacket = Jeans Jacket Science
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpsuitScienceGorka = Gorka Science
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpsuitScienceGorkaRefl = Gorka with reflectors Science
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpsuitScienceHoodieVest = Science Hoodie Vest
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpsuitScienceShirt = Science Shirt
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpsuitScienceTurtleneck = turtleneck Science
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpsuitScienceBlackShirt = Science Black Shirt
+    .desc = { ent-ClothingUniformBase.desc }

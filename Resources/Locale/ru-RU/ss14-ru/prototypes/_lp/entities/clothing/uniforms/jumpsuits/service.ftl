@@ -1,0 +1,10 @@
+ent-LPPClothingUniformJumpsuitBlueClown = синий костюм клоуна
+    .desc = ХОНК! Теперь синий.
+ent-LPPClothingUniformJumpsuitGreenClown = зелёный костюм клоуна
+    .desc = ХОНК! Теперь зелёный.
+ent-LPPClothingUniformJumpsuitOrangeClown = оранжевый костюм клоуна
+    .desc = ХОНК! Теперь оранжевый.
+ent-LPPClothingUniformJumpsuitPurpleClown = фиолетовый костюм клоуна
+    .desc = ХОНК! Теперь фиолетовый.
+ent-LPPClothingUniformJumpsuitYellowClown = жёлтый костюм клоуна
+    .desc = ХОНК! Теперь жёлтый.

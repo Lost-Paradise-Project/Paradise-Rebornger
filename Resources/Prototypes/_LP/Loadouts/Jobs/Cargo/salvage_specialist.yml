@@ -1,0 +1,16 @@
+- type: loadout
+  id: LPPSalvageSpecialistUniform
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
+
+- type: loadout
+  id: LPPSalvageExplorerAlternative
+  equipment:
+    jumpsuit: LPPClothingUniformExplorerAlternative
+
+- type: loadoutGroup
+  id: LPPSalvageSpecialistJumpsuit
+  name: loadout-group-salvage-specialist-jumpsuit
+  loadouts:
+  - LPPSalvageSpecialistUniform
+  - LPPSalvageExplorerAlternative

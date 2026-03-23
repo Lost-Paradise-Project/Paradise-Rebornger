@@ -58,7 +58,9 @@
             - type: ProtectedGrid
             - type: TradeStation
           paths:
-            - /Maps/Shuttles/trading_outpost.yml
+          # LP-Edit-Start
+            - /Maps/_LP/Misc/LP_trading_outpost.yml
+          # LP-Edit-End
         # Spawn last
         ruins: !type:GridSpawnGroup
           hide: true

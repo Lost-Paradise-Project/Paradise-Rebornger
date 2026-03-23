@@ -19,6 +19,7 @@ public sealed partial class TimeTransferPanel : DefaultWindow
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
 
     private readonly SpriteSystem _spriteSystem;
+    private const string OverallTracker = "Overall"; // LP edit (Идентификатор общего времени)
 
     public Action<(string playerId, List<TimeTransferData> transferList, bool overwrite)>? OnTransferMessageSend;
     private TimeSpan? SetButtonResetOn { get; set; }
@@ -32,6 +33,9 @@ public sealed partial class TimeTransferPanel : DefaultWindow
         AddTimeButton.OnButtonUp += OnAddTimeButtonPressed;
         SetTimeButton.OnButtonUp += OnSetTimeButtonPressed;
         GroupCheckbox.OnPressed += OnGroupCheckboxPressed;
+        // LP edit start
+        AllTimeCheckbox.OnPressed += OnAllTimeCheckboxPressed;
+        // LP edit end
 
         JobSearch.OnTextChanged += OnJobSearchTextChanged;
 
@@ -77,7 +81,18 @@ public sealed partial class TimeTransferPanel : DefaultWindow
 
         var dataList = new List<TimeTransferData>();
 
-        if (GroupCheckbox.Pressed)
+        // LP edit start
+        if (AllTimeCheckbox.Pressed)
+        {
+            if (string.IsNullOrEmpty(AllTimeTimeLine.Text))
+            {
+                UpdateWarning(Loc.GetString("time-transfer-panel-warning-overall-no-time"), Color.DarkRed);
+                return;
+            }
+
+            dataList.Add(new TimeTransferData(OverallTracker, AllTimeTimeLine.Text));
+        }
+        else if (GroupCheckbox.Pressed) // LP edit end
         {
             if (string.IsNullOrEmpty(GroupTimeLine.Text))
             {
@@ -133,6 +148,11 @@ public sealed partial class TimeTransferPanel : DefaultWindow
     public void UpdateGroup()
     {
         GroupTimeLine.Visible = GroupCheckbox.Pressed;
+        // LP edit start
+        AllTimeTimeLine.Visible = AllTimeCheckbox.Pressed;
+        JobSearch.Editable = AllTimeCheckbox.Pressed;
+        JobContainer.Visible = !AllTimeCheckbox.Pressed;
+        // LP edit end
 
         foreach (var entry in JobContainer.Children)
         {
@@ -170,10 +190,19 @@ public sealed partial class TimeTransferPanel : DefaultWindow
         return jobEntry.JobName != null && JobSearch.Text != null && jobEntry.JobName.Contains(JobSearch.Text, StringComparison.OrdinalIgnoreCase);
     }
 
+    // LP edit start
     public void OnGroupCheckboxPressed(BaseButton.ButtonEventArgs obj)
     {
+        AllTimeCheckbox.Pressed = false;
         UpdateGroup();
     }
+
+    public void OnAllTimeCheckboxPressed(BaseButton.ButtonEventArgs obj)
+    {
+        GroupCheckbox.Pressed = false;
+        UpdateGroup();
+    }
+    // LP edit end
 
     public void OnAddTimeButtonPressed(BaseButton.ButtonEventArgs obj)
     {

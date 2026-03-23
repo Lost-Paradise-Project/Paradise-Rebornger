@@ -63,5 +63,10 @@ namespace Content.Client._LP.Mining.Components
                 StatusLabel.SetMessage(FormattedMessage.FromMarkupPermissive(Loc.GetString("mining-circuitboard-repair-status-complete")));
             }
         }
+
+        public void Scan()
+        {
+            OnScan?.Invoke();
+        }
     }
 }

@@ -1,0 +1,50 @@
+# На будущее, когда появится вирусология
+- type: loadout
+  id: LPPVirologyJeansJacket
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitVirologyJeansJacket
+
+- type: loadout
+  id: LPPVirologyGorka
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitVirologyGorka
+
+- type: loadout
+  id: LPPVirologyGorkaRefl
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitVirologyGorkaRefl
+
+- type: loadout
+  id: LPPVirologyHoodieVest
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitVirologyHoodieVest
+
+- type: loadout
+  id: LPPVirologyShirt
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitVirologyShirt
+
+- type: loadout
+  id: LPPVirologyTurtleneck
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitVirologyTurtleneck
+
+- type: loadout
+  id: LPPVirologyBlackShirt
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitVirologyBlackShirt
+
+- type: loadout
+  id: LPPVirologyBlackSkirt
+  equipment:
+    jumpsuit: LPPClothingUniformJumpskirtVirologyBlackSkirt
+
+- type: loadout
+  id: LPPVirologyTurtleneckSkirt
+  equipment:
+    jumpsuit: LPPClothingUniformJumpskirtVirologyTurtleneck
+
+- type: loadout
+  id: LPPVirologyShirtSkirt
+  equipment:
+    jumpsuit: LPPClothingUniformJumpskirtVirologyShirt

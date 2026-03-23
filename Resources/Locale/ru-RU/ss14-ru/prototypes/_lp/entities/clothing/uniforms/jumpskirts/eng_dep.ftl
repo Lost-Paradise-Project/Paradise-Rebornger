@@ -1,0 +1,12 @@
+ent-LPPClothingUniformJumpskirtAtmosBlackSkirt = стильная юбка атмосферного техника
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpskirtAtmosTurtleneck = водолазка с юбкой атмосферного техника
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpskirtAtmosShirt = рубашка с юбкой атмосферного техника
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpskirtEngineerBlackSkirt = стильная юбка инженера
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpskirtEngineerTurtleneck = водолазка с юбкой инженера
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpskirtEngineerShirt = рубашка с юбкой инженера
+    .desc = { ent-ClothingUniformBase.desc }

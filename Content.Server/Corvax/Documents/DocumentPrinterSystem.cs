@@ -14,7 +14,6 @@ public sealed partial class DocumentPrinterSystem : EntitySystem
     [Dependency] private readonly ItemSlotsSystem _itemSlots = default!;
     [Dependency] private readonly PaperSystem _paper = default!;
     [Dependency] private readonly SharedStationSystem _station = default!;
-    [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly SharedGameTicker _gameTicker = default!;
 
     public override void Initialize()
@@ -59,7 +58,7 @@ public sealed partial class DocumentPrinterSystem : EntitySystem
     private string GetTimeStation()
     {
         var time = _gameTicker.RoundDuration().ToString("hh\\:mm\\:ss");
-        return time + " " + DateTime.Now.AddYears(1000).ToShortDateString();
+        return time + " " + DateTime.Now.AddYears(600).ToShortDateString(); // LP edit
     }
 
 }

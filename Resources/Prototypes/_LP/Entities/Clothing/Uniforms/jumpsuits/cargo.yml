@@ -1,0 +1,100 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitCargoJeansJacket
+  name: Cargo Jeans Jacket # Джинсовка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Cargo/cargotechjean.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Cargo/cargotechjean.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitCargoGorka
+  name: Cargo Gorka # Горка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Cargo/gorka_cargo.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Cargo/gorka_cargo.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitCargoGorkaRefl
+  name: Cargo Gorka with Reflectors # Горка с отражателями
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Cargo/gorka_cargo_varg.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: shaded
+    - state: icon-unshaded
+      shader: unshaded
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Cargo/gorka_cargo_varg.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: shaded
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitCargoHoodieVest
+  name: Cargo Hoodie Vest # Худи-жилет
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Cargo/qmc.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Cargo/qmc.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitCargoShirt
+  name: Cargo Shirt # Рубашка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Cargo/supply_chief.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Cargo/supply_chief.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitCargoTurtleneck
+  name: Cargo turtleneck # Водолазка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Cargo/turtleneck_qm.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Cargo/turtleneck_qm.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitCargoBlackShirt
+  name: Cargo Black Shirt # Чёрная рубашка
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Cargo/util_cargo.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Cargo/util_cargo.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformExplorerAlternative
+  name: Explorer denim overalls # Джинсовка исследователя
+  description: Made out of denim overalls are a good clothing if you are working with pickaxes a lot.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Cargo/exploreralt.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Cargo/exploreralt.rsi

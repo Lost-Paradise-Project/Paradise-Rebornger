@@ -17,6 +17,13 @@
             <Control MinWidth ="10"/>
             <LineEdit Name="GroupTimeLine" PlaceHolder="0h0m" HorizontalExpand="True" />
         </BoxContainer>
+        <!-- LP edit start-->
+        <BoxContainer Orientation="Horizontal" Margin="2">
+            <CheckBox Name="AllTimeCheckbox" Text="{Loc time-transfer-overall-checkbox}" MinWidth = "120"/>
+            <Control MinWidth ="10"/>
+            <LineEdit Name="AllTimeTimeLine" PlaceHolder="0h0m" HorizontalExpand="True" />
+        </BoxContainer>
+        <!-- LP edit end-->
         <Control MinHeight="5"/>
         <LineEdit Name="JobSearch" Access="Public" StyleClasses="actionSearchBox" HorizontalExpand="True" PlaceHolder="{Loc time-transfer-panel-search-placeholder}"/>
         <Control MinHeight="10"/>

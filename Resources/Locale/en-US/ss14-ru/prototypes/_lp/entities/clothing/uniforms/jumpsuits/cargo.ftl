@@ -1,0 +1,16 @@
+ent-LPPClothingUniformJumpsuitCargoJeansJacket = Cargo Jeans Jacket
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpsuitCargoGorka = Cargo Gorka
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpsuitCargoGorkaRefl = Cargo Gorka with Reflectors
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpsuitCargoHoodieVest = Cargo Hoodie Vest
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpsuitCargoShirt = Cargo Shirt
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpsuitCargoTurtleneck = Cargo turtleneck
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformJumpsuitCargoBlackShirt = Cargo Black Shirt
+    .desc = { ent-ClothingUniformBase.desc }
+ent-LPPClothingUniformExplorerAlternative = Explorer denim overalls
+    .desc = Made out of denim overalls are a good clothing if you are working with pickaxes a lot.

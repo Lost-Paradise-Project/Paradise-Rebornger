@@ -604,6 +604,7 @@ entities:
       bodyType: Dynamic
     - type: Fixtures
       fixtures: {}
+    - type: NightLightning
     - type: BecomesStation
       id: LP_Fland
     - type: OccluderTree
@@ -165801,7 +165802,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: 65.5,50.5
       parent: 13329
-- proto: LPPBrasMat
+- proto: LPPVendingMachineBras
   entities:
   - uid: 29237
     components:
@@ -165894,7 +165895,7 @@ entities:
       - Arsenal
       - Experimental
       - CivilianServices
-- proto: LPPErpMachine
+- proto: LPPVendingMachineErp
   entities:
   - uid: 30516
     components:
@@ -165908,14 +165909,14 @@ entities:
     - type: Transform
       pos: 35.5,26.5
       parent: 13329
-- proto: LPPNascaMat
+- proto: LPPVendingMachineSocks
   entities:
   - uid: 36135
     components:
     - type: Transform
       pos: 89.5,21.5
       parent: 13329
-- proto: LPPPillowVendingMachine
+- proto: LPPVendingMachinePillow
   entities:
   - uid: 30519
     components:
@@ -165968,14 +165969,14 @@ entities:
     - type: Transform
       pos: 34.5,25.5
       parent: 13329
-- proto: LPPUnderpantsMat
+- proto: LPPVendingMachineUnderpants
   entities:
   - uid: 31589
     components:
     - type: Transform
       pos: 89.5,22.5
       parent: 13329
-- proto: LPPWithSoftAnimals
+- proto: LPPVendingMachineWithSoftAnimals
   entities:
   - uid: 31620
     components:
