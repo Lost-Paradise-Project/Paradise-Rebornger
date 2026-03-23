@@ -47,3 +47,8 @@
   id: LPPScienceShirtSkirt
   equipment:
     jumpsuit: LPPClothingUniformJumpskirtScienceShirt
+
+- type: loadout
+  id: LPPSeniorScientistPDA
+  equipment:
+    id: LPPSeniorScientistPDA
