@@ -14,7 +14,7 @@
   bodyPart: Tail
   groupWhitelist: [Human, Tajaran, Vulpkanin]
   sprites:
-  - sprite: _Goobstation/Mobs/Customization/Felinid/foxtail.rsi
+  - sprite: _GoobStation/Mobs/Customization/Felinid/foxtail.rsi
     state: base_fox_tail
-  - sprite: _Goobstation/Mobs/Customization/Felinid/foxtail.rsi
+  - sprite: _GoobStation/Mobs/Customization/Felinid/foxtail.rsi
     state: base_fox_tail_tip
