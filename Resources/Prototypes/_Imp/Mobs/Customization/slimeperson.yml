@@ -42,7 +42,6 @@
   id: SlimeCore
   bodyPart: Chest
   groupWhitelist: [ Slime ]
-  matchSkin: false
   forcedColoring: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/Slime/chest.rsi
@@ -61,7 +60,6 @@
   id: SlimeLungs
   bodyPart: Chest
   groupWhitelist: [ Slime ]
-  matchSkin: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/Slime/chest.rsi
     state: lungs
@@ -107,7 +105,6 @@
   id: SlimeMouth
   bodyPart: Head
   groupWhitelist: [ Slime ]
-  matchSkin: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/Slime/head.rsi
     state: mouth
@@ -116,7 +113,6 @@
   id: SlimeBrain
   bodyPart: Head
   groupWhitelist: [ Slime ]
-  matchSkin: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/Slime/head.rsi
     state: brain

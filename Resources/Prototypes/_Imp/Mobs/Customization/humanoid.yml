@@ -519,7 +519,6 @@
   id: TattooHeartL
   bodyPart: LArm
   groupWhitelist: [Human, Reptilian, Slime, Arachnid, Tajaran, Vulpkanin]
-  matchSkin: false
   forcedColoring: false
   coloring:
     default:
