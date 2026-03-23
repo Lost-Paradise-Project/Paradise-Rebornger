@@ -4,8 +4,8 @@ meta:
   engineVersion: 272.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/23/2026 19:36:32
-  entityCount: 19739
+  time: 03/23/2026 20:15:10
+  entityCount: 19742
 maps:
 - 1
 grids:
@@ -13202,6 +13202,7 @@ entities:
             Plasma: 6666.982
         chunkSize: 4
     - type: NavMap
+    - type: NightLightning
     - type: BecomesStation
       id: BetaStation
     - type: ImplicitRoof
@@ -16065,7 +16066,7 @@ entities:
       pos: -8.5,38.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -249041.1
+      secondsUntilStateChange: -249315.53
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -16077,7 +16078,7 @@ entities:
       pos: 9.5,38.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -249039.62
+      secondsUntilStateChange: -249314.06
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -16089,7 +16090,7 @@ entities:
       pos: -36.5,-19.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -249045.3
+      secondsUntilStateChange: -249319.73
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -16144,7 +16145,7 @@ entities:
       pos: -29.5,-42.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -88203.81
+      secondsUntilStateChange: -88478.26
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -115667,6 +115668,24 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 2.5,11.5
+      parent: 2
+  - uid: 19740
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 37.5,21.5
+      parent: 2
+  - uid: 19741
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 37.5,19.5
+      parent: 2
+  - uid: 19742
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 37.5,20.5
       parent: 2
 - proto: Stool
   entities:
