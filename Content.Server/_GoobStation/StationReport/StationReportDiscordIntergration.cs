@@ -34,21 +34,21 @@ public sealed class StationReportDiscordIntergration : EntitySystem
 
     private static readonly TagReplacement[] _replacements =
     {
-        new(@"\[/?bold\]", @"**"),
-        new(@"\[/?italic\]", @"_"),
-        new(@"\[/?mono\]", @"__"),
-        new(@">", @""),
-        new(@"\[h1\]", @"# "),
-        new(@"\[h2\]", @"## "),
-        new(@"\[h3\]", @"### "),
-        new(@"\[h4\]", @"-# "),
-        new(@"\[/h[0-9]\]", @""),
-        new(@"\[head=1\]", @"# "),
-        new(@"\[head=2\]", @"## "),
-        new(@"\[head=3\]", @"### "),
-        new(@"\[head=4\]", @"-# "),
-        new(@"\[/head\]", @""),
-        new(@"\[/?color(=[#0-9a-zA-Z]+)?\]", @"")
+        new(new Regex(@"\[/?bold\]"), @"**"),
+        new(new Regex(@"\[/?italic\]"), @"_"),
+        new(new Regex(@"\[/?mono\]"), @"__"),
+        new(new Regex(@">"), @""),
+        new(new Regex(@"\[h1\]"), @"# "),
+        new(new Regex(@"\[h2\]"), @"## "),
+        new(new Regex(@"\[h3\]"), @"### "),
+        new(new Regex(@"\[h4\]"), @"-# "),
+        new(new Regex(@"\[/h[0-9]\]"), @""),
+        new(new Regex(@"\[head=1\]"), @"# "),
+        new(new Regex(@"\[head=2\]"), @"## "),
+        new(new Regex(@"\[head=3\]"), @"### "),
+        new(new Regex(@"\[head=4\]"), @"-# "),
+        new(new Regex(@"\[/head\]"), @""),
+        new(new Regex(@"\[/?color(=[#0-9a-zA-Z]+)?\]"), @"")
     };
 
     private void OnStationReportReceived(StationReportEvent ev)
@@ -59,7 +59,7 @@ public sealed class StationReportDiscordIntergration : EntitySystem
             return;
 
         foreach (var replacement in _replacements)
-            report = Regex.Replace(report, replacement.Tag, replacement.Replacement);
+            report = replacement.Regex.Replace(report, replacement.Replacement);
 
         // Run async without blocking
         _ = SendMessageAsync(report);
@@ -97,10 +97,11 @@ public sealed class StationReportDiscordIntergration : EntitySystem
 
     public struct TagReplacement
     {
-        public string Tag, Replacement;
-        public TagReplacement(string tag, string replacement)
+        public Regex Regex;
+        public string Replacement;
+        public TagReplacement(Regex regex, string replacement)
         {
-            Tag = tag;
+            Regex = regex;
             Replacement = replacement;
         }
     }

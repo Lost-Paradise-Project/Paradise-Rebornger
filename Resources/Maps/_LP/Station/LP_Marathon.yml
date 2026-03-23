@@ -7707,6 +7707,7 @@ entities:
           moles:
             Oxygen: 6666.982
         chunkSize: 4
+    - type: NightLightning
     - type: BecomesStation
       id: LP_Marathon
     - type: OccluderTree

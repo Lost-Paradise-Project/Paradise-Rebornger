@@ -6,6 +6,7 @@ using Content.Client._DV.Curation.UI.Cwoink;
 using Content.Client.Administration.Managers;
 using Content.Client.Gameplay;
 using Content.Client.Lobby;
+using Content.Client.Lobby.UI; // LP edit
 using Content.Client.UserInterface.Controls;
 using Content.Client.UserInterface.Systems.MenuBar.Widgets;
 using Content.Shared._DV.CCVars;
@@ -42,11 +43,13 @@ public sealed class CHelpUIController : UIController, IOnSystemChanged<CwoinkSys
 
     private CwoinkSystem? _cwoinkSystem;
     private MenuButton? GameCHelpButton => UIManager.GetActiveUIWidgetOrNull<GameTopMenuBar>()?.CHelpButton;
+    private Button? LobbyCHelpButton => (UIManager.ActiveScreen as LobbyGui)?.CHelpButton; // LP edit
     public ICHelpUIHandler? UIHelper;
     private bool _discordRelayActive;
     private bool _hasUnreadCHelp;
     private bool _cwoinkSoundEnabled;
     private SoundPathSpecifier? _cHelpSound;
+    protected override string SawmillName => "c.s.go.es.cwoink"; // LP edit
 
     public override void Initialize()
     {
@@ -64,12 +67,18 @@ public sealed class CHelpUIController : UIController, IOnSystemChanged<CwoinkSys
     {
         if (GameCHelpButton != null)
             GameCHelpButton.OnPressed -= CHelpButtonPressed;
+
+        if (LobbyCHelpButton != null)
+            LobbyCHelpButton.OnPressed -= CHelpButtonPressed; // LP edit
     }
 
     public void LoadButton()
     {
         if (GameCHelpButton != null)
             GameCHelpButton.OnPressed += CHelpButtonPressed;
+
+        if (LobbyCHelpButton != null)
+            LobbyCHelpButton.OnPressed += CHelpButtonPressed; // LP edit
     }
 
     private void OnAdminStatusUpdated()
@@ -112,18 +121,31 @@ public sealed class CHelpUIController : UIController, IOnSystemChanged<CwoinkSys
             GameCHelpButton.Pressed = pressed;
         }
 
+        // LP edit start
+        if (LobbyCHelpButton != null)
+        {
+            LobbyCHelpButton.Pressed = pressed;
+        }
+        // LP edit end
+
         UIManager.ClickSound();
         UnreadCHelpRead();
     }
 
     private void ReceivedCwoink(object? sender, CwoinkTextMessage message)
     {
-        Logger.GetSawmill("c.s.go.es.cwoink").Info($"@{message.UserId}: {message.Text}");
+        // LP edit start
         var localPlayer = _playerManager.LocalSession;
-        if (localPlayer == null)
-        {
+        if (localPlayer == null) return;
+
+        bool isCurator = _adminManager.HasFlag(AdminFlags.CuratorHelp);
+
+        if (!isCurator && message.UserId != localPlayer.UserId && message.TrueSender != localPlayer.UserId)
             return;
-        }
+
+        Logger.GetSawmill(SawmillName).Info($"@{message.UserId}: {message.Text}");
+        // LP edit end
+
         if (message.PlaySound && localPlayer.UserId != message.TrueSender)
         {
             if (_cHelpSound != null && (_cwoinkSoundEnabled || !_adminManager.IsActive()))
@@ -138,7 +160,7 @@ public sealed class CHelpUIController : UIController, IOnSystemChanged<CwoinkSys
             UnreadCHelpReceived();
         }
 
-        UIHelper!.Receive(message);
+        UIHelper!.Receive(message); // LP edit
     }
 
     private void DiscordRelayUpdated(CwoinkDiscordRelayUpdated args, EntitySessionEventArgs session)
@@ -164,7 +186,7 @@ public sealed class CHelpUIController : UIController, IOnSystemChanged<CwoinkSys
         UIHelper = isCurator ? new CuratorCHelpUIHandler(ownerUserId) : new UserCHelpUIHandler(ownerUserId);
         UIHelper.DiscordRelayChanged(_discordRelayActive);
 
-        UIHelper.SendMessageAction = (userId, textMessage, playSound, adminOnly) => _cwoinkSystem?.Send(userId, textMessage, playSound, adminOnly);
+        UIHelper.SendMessageAction = (userId, textMessage, playSound, curatorOnly) => _cwoinkSystem?.Send(userId, textMessage, playSound, curatorOnly); // LP edit
         UIHelper.InputTextChanged += (channel, text) => _cwoinkSystem?.SendInputTextUpdated(channel, text.Length > 0);
         UIHelper.OnClose += () => SetCHelpPressed(false);
         UIHelper.OnOpen += () => SetCHelpPressed(true);
@@ -272,16 +294,36 @@ public sealed class CHelpUIController : UIController, IOnSystemChanged<CwoinkSys
 
     public void OnStateEntered(LobbyState state)
     {
+        // LP edit start
+        if (LobbyCHelpButton != null)
+        {
+            LobbyCHelpButton.OnPressed -= CHelpButtonPressed;
+            LobbyCHelpButton.OnPressed += CHelpButtonPressed;
+            LobbyCHelpButton.Pressed = UIHelper?.IsOpen ?? false;
+
+            if (_hasUnreadCHelp)
+            {
+                UnreadCHelpReceived();
+            }
+            else
+            {
+                UnreadCHelpRead();
+            }
+        }
+        // LP edit end
     }
 
     public void OnStateExited(LobbyState state)
     {
+        if (LobbyCHelpButton != null)
+            LobbyCHelpButton.OnPressed -= CHelpButtonPressed; // LP edit
     }
 }
 
 // please kill all this indirection
 public interface ICHelpUIHandler : IDisposable
 {
+    // LP edit start
     bool IsCurator { get; }
     bool IsOpen { get; }
     void Receive(CwoinkTextMessage message);
@@ -294,11 +336,17 @@ public interface ICHelpUIHandler : IDisposable
     event Action OnOpen;
     Action<NetUserId, string, bool, bool>? SendMessageAction { get; set; }
     event Action<NetUserId, string>? InputTextChanged;
+    // LP edit end
 }
 
-public sealed class CuratorCHelpUIHandler(NetUserId owner) : ICHelpUIHandler
+public sealed class CuratorCHelpUIHandler : ICHelpUIHandler // LP edit
 {
-    private readonly NetUserId _ownerId = owner;
+    // LP edit start
+    private readonly NetUserId _ownerId;
+    public CuratorCHelpUIHandler(NetUserId owner){
+        _ownerId = owner;
+    }
+    // LP edit end
     private readonly Dictionary<NetUserId, CwoinkPanel> _activePanelMap = new();
     public bool IsCurator => true;
     public bool IsOpen => Window is { Disposed: false, IsOpen: true } || ClydeWindow is { IsDisposed: false };
@@ -313,7 +361,7 @@ public sealed class CuratorCHelpUIHandler(NetUserId owner) : ICHelpUIHandler
     {
         var panel = EnsurePanel(message.UserId);
         panel.ReceiveLine(message);
-        Control?.OnCwoink();
+        Control?.OnCwoink(message.UserId); // LP edit
     }
 
     private void OpenWindow()
@@ -454,8 +502,15 @@ public sealed class CuratorCHelpUIHandler(NetUserId owner) : ICHelpUIHandler
     }
 }
 
-public sealed class UserCHelpUIHandler(NetUserId owner) : ICHelpUIHandler
+public sealed class UserCHelpUIHandler : ICHelpUIHandler // LP edit
 {
+    // LP edit start
+    private readonly NetUserId _ownerId;
+    public UserCHelpUIHandler(NetUserId owner)
+    {
+        _ownerId = owner;
+    }
+    // LP edit end
     public bool IsCurator => false;
     public bool IsOpen => _window is { Disposed: false, IsOpen: true };
     private DefaultWindow? _window;
@@ -464,7 +519,9 @@ public sealed class UserCHelpUIHandler(NetUserId owner) : ICHelpUIHandler
 
     public void Receive(CwoinkTextMessage message)
     {
-        DebugTools.Assert(message.UserId == owner);
+        if (message.UserId != _ownerId && message.TrueSender != _ownerId) // LP edit
+            return;
+
         EnsureInit(_discordRelayActive);
         _chatPanel!.ReceiveLine(message);
         _window!.OpenCentered();
@@ -487,6 +544,11 @@ public sealed class UserCHelpUIHandler(NetUserId owner) : ICHelpUIHandler
             _window.OpenCentered();
         }
     }
+
+    // LP edit start
+    // user can't pop out their window.
+    public void PopOut() {}
+    // LP edit end
 
     public void DiscordRelayChanged(bool active)
     {
@@ -517,8 +579,10 @@ public sealed class UserCHelpUIHandler(NetUserId owner) : ICHelpUIHandler
     {
         if (_window is { Disposed: false })
             return;
-        _chatPanel = new CwoinkPanel(text => SendMessageAction?.Invoke(owner, text, true, false));
-        _chatPanel.InputTextChanged += text => InputTextChanged?.Invoke(owner, text);
+        // LP edit start
+        _chatPanel = new CwoinkPanel(text => SendMessageAction?.Invoke(_ownerId, text, true, false));
+        _chatPanel.InputTextChanged += text => InputTextChanged?.Invoke(_ownerId, text);
+        // LP edit end
         _chatPanel.RelayedToDiscordLabel.Visible = relayActive;
         _window = new DefaultWindow()
         {
@@ -532,7 +596,7 @@ public sealed class UserCHelpUIHandler(NetUserId owner) : ICHelpUIHandler
         _window.Contents.AddChild(_chatPanel);
 
         var introText = Loc.GetString("cwoink-system-introductory-message");
-        var introMessage = new CwoinkTextMessage(owner, SharedCwoinkSystem.SystemUserId, introText);
+        var introMessage = new CwoinkTextMessage(_ownerId, SharedCwoinkSystem.SystemUserId, introText); // LP edit
         Receive(introMessage);
     }
 

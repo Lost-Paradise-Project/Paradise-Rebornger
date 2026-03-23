@@ -174,7 +174,7 @@ public sealed partial class CwoinkControl : Control
         };
     }
 
-    public void OnCwoink()
+    public void OnCwoink(NetUserId channel) // LP edit
     {
         ChannelSelector.PopulateList();
     }

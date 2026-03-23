@@ -10,7 +10,7 @@ namespace Content.Shared._GoobStation.NTR;
 /// that must be sold together in a labeled container in order
 /// to receive a monetary reward.
 /// </summary>
-[Prototype, Serializable, NetSerializable]
+[Prototype]
 public sealed partial class NtrTaskPrototype : IPrototype
 {
     [DataField]
