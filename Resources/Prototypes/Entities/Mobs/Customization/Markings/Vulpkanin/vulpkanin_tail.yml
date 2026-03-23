@@ -12,7 +12,7 @@
 - type: marking
   id: VulpTailFluffy
   bodyPart: Tail
-  groupWhitelist: [ Vulpkanin ]
+  groupWhitelist: [ Human, Slime, Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: fluffy
@@ -44,7 +44,7 @@
 - type: marking
   id: VulpTailVulp
   bodyPart: Tail
-  groupWhitelist: [ Vulpkanin ]
+  groupWhitelist: [ Human, Slime, Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: vulp
@@ -54,7 +54,7 @@
 - type: marking
   id: VulpTailVulpFade
   bodyPart: Tail
-  groupWhitelist: [ Vulpkanin ]
+  groupWhitelist: [ Human, Slime, Vulpkanin ]
   sprites:
     - sprite: Mobs/Customization/Vulpkanin/tail_markings.rsi
       state: vulp
