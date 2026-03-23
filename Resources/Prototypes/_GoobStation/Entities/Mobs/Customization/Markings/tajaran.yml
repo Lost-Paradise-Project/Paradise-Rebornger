@@ -86,7 +86,7 @@
 - type: marking
   id: TajaranEarsBasic
   bodyPart: HeadTop
-  speciesRestriction: [Human, Slime, Tajaran]
+  groupWhitelist: [Human, Slime, Tajaran]
   sprites:
   - sprite: _Goobstation/Mobs/Customization/Tajaran/felinid_ears.rsi
     state: basic_outer
@@ -96,7 +96,7 @@
 - type: marking
   id: TajaranEarsCurled
   bodyPart: HeadTop
-  speciesRestriction: [Human, Slime, Tajaran]
+  groupWhitelist: [Human, Slime, Tajaran]
   sprites:
   - sprite: _Goobstation/Mobs/Customization/Tajaran/felinid_ears.rsi
     state: curled_outer
@@ -106,7 +106,7 @@
 - type: marking
   id: TajaranEarsDroopy
   bodyPart: HeadTop
-  speciesRestriction: [Human, Slime, Tajaran]
+  groupWhitelist: [Human, Slime, Tajaran]
   sprites:
   - sprite: _Goobstation/Mobs/Customization/Tajaran/felinid_ears.rsi
     state: droopy_outer
@@ -116,7 +116,7 @@
 - type: marking
   id: TajaranEarsFuzzy
   bodyPart: HeadTop
-  speciesRestriction: [Human, Slime, Tajaran]
+  groupWhitelist: [Human, Slime, Tajaran]
   sprites:
   - sprite: _Goobstation/Mobs/Customization/Tajaran/felinid_ears.rsi
     state: basic_outer
@@ -126,7 +126,7 @@
 - type: marking
   id: TajaranEarsStubby
   bodyPart: HeadTop
-  speciesRestriction: [Human, Slime, Tajaran]
+  groupWhitelist: [Human, Slime, Tajaran]
   sprites:
   - sprite: _Goobstation/Mobs/Customization/Tajaran/felinid_ears.rsi
     state: stubby_outer
@@ -136,7 +136,7 @@
 - type: marking
   id: TajaranEarsTall
   bodyPart: HeadTop
-  speciesRestriction: [Human, Slime, Tajaran]
+  groupWhitelist: [Human, Slime, Tajaran]
   sprites:
   - sprite: _Goobstation/Mobs/Customization/Tajaran/felinid_ears.rsi
     state: tall_outer
@@ -148,7 +148,7 @@
 - type: marking
   id: TajaranEarsTorn
   bodyPart: HeadTop
-  speciesRestriction: [Human, Slime, Tajaran]
+  groupWhitelist: [Human, Slime, Tajaran]
   sprites:
   - sprite: _Goobstation/Mobs/Customization/Tajaran/felinid_ears.rsi
     state: torn_outer
@@ -158,7 +158,7 @@
 - type: marking
   id: TajaranEarsWide
   bodyPart: HeadTop
-  speciesRestriction: [Human, Slime, Tajaran]
+  groupWhitelist: [Human, Slime, Tajaran]
   sprites:
   - sprite: _Goobstation/Mobs/Customization/Tajaran/felinid_ears.rsi
     state: wide_outer
