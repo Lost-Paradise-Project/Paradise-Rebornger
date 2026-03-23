@@ -109,6 +109,3 @@ announce_voice = "glados"
 
 [adminlogs]
 high_log_playtime = -1
-
-[audio]
-ahelp_sound = "/Audio/_LP/Effects/Admin/Effect_AHelp.ogg"
