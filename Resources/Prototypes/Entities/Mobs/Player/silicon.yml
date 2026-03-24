@@ -341,8 +341,6 @@
     price: 5000
   - type: TTS
     voice: glados
-  - type: SpeechSynthesis # Corvax-Frontier-Barks
-    voice: Borg
 
 # The job-ready version of an AI spawn.
 - type: entity

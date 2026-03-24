@@ -106,7 +106,7 @@ public sealed class HumanoidProfileSystem : EntitySystem
         ent.Comp.Sex = profile.Sex;
         // Corvax-TTS-start
         ent.Comp.Voice = profile.Voice;
-        if (TryComp<TTSComponent>(ent, out var _TTSComponent) && _TTSComponent.VoicePrototypeId == null)
+        if (TryComp<TTSComponent>(ent, out var _TTSComponent) && _TTSComponent.VoicePrototypeId == "nord")
         {
             _TTSComponent.VoicePrototypeId = profile.Voice;
         }
