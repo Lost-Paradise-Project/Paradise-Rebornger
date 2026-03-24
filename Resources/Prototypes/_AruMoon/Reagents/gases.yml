@@ -136,7 +136,7 @@
           types:
             Poison: 0.1
       - !type:ModifyStatusEffect
-        effectProto: StatusEffectStimulantsStamin
+        effectProto: StatusEffectStimulantsStamina
         time: 0.07
       - !type:ModifyStatusEffect
         effectProto: StatusEffectForcedSleeping
