@@ -52,7 +52,7 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
   - type: BatteryAmmoProvider
-    proto: Pulse
+    proto: LPPPulse
     fireCost: 250
   - type: MagazineVisuals
     magState: mag
@@ -60,8 +60,8 @@
     zeroVisible: true
   - type: Appearance
   - type: Battery
-    maxCharge: 3500
-    startingCharge: 3500
+    maxCharge: 5000
+    startingCharge: 5000
   - type: ContainerContainer
     containers:
       firing_pin: !type:Container

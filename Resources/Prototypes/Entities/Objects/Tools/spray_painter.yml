@@ -33,8 +33,10 @@
   - type: StaticPrice
     price: 40
   - type: LimitedCharges
-    maxCharges: 15
-    lastCharges: 15
+    # LP Edit Start
+    maxCharges: 100
+    lastCharges: 100
+    # LP Edit End
   - type: PhysicalComposition
     materialComposition:
       Steel: 100
