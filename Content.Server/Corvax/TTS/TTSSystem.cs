@@ -86,7 +86,7 @@ public sealed partial class TTSSystem : EntitySystem
         if (soundData is null)
             return;
 
-        RaiseNetworkEvent(new PlayTTSEvent(soundData), Filter.SinglePlayer(args.SenderSession));
+        RaiseNetworkEvent(new PlayTTSEvent(soundData), Filter.SinglePlayer(args.SenderSession), recordReplay: false);
     }
 
     private async void OnEntitySpoke(EntityUid uid, TTSComponent component, EntitySpokeEvent args)
@@ -122,7 +122,7 @@ public sealed partial class TTSSystem : EntitySystem
     {
         var soundData = await GenerateTTS(message, speaker);
         if (soundData is null) return;
-        RaiseNetworkEvent(new PlayTTSEvent(soundData, GetNetEntity(uid)), Filter.Pvs(uid));
+        RaiseNetworkEvent(new PlayTTSEvent(soundData, GetNetEntity(uid)), Filter.Pvs(uid), recordReplay: false);
     }
 
     // LP edit start - fixed whisper: don't block full TTS if obfuscated text fails to generate
@@ -205,7 +205,7 @@ public sealed partial class TTSSystem : EntitySystem
 
         RaiseNetworkEvent(
             new PlayTTSEvent(soundData, GetNetEntity(source), isRadio: true),
-            Filter.SinglePlayer(session));
+            Filter.SinglePlayer(session), recordReplay: false);
     }
     // LP edit end
 
@@ -238,7 +238,7 @@ public sealed partial class TTSSystem : EntitySystem
         else
             filter = Filter.Broadcast();
 
-        RaiseNetworkEvent(new PlayTTSEvent(soundData), filter);
+        RaiseNetworkEvent(new PlayTTSEvent(soundData), filter, recordReplay: false);
     }
     // LP edit end
 
