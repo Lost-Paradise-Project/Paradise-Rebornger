@@ -166913,14 +166913,6 @@ entities:
     - type: Transform
       pos: -27.469536,6.4936976
       parent: 13329
-- proto: MinesweeperArcadeFilled
-  entities:
-  - uid: 31580
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 89.5,18.5
-      parent: 13329
 - proto: MinimoogInstrument
   entities:
   - uid: 1129
