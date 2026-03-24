@@ -13017,7 +13017,6 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: NavMap
-    - type: NightLightning
     - type: BecomesStation
       id: LP_Maus
     - type: ImplicitRoof

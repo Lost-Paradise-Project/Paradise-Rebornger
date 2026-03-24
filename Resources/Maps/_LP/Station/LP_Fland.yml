@@ -604,7 +604,6 @@ entities:
       bodyType: Dynamic
     - type: Fixtures
       fixtures: {}
-    - type: NightLightning
     - type: BecomesStation
       id: LP_Fland
     - type: OccluderTree
