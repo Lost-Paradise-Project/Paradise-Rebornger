@@ -203106,14 +203106,6 @@ entities:
     - type: Transform
       pos: 69.081955,118.643074
       parent: 1
-- proto: ShuttleGunDusterCircuitboard
-  entities:
-  - uid: 30454
-    components:
-    - type: Transform
-      parent: 30453
-    - type: Physics
-      canCollide: False
 - proto: ShuttleWindow
   entities:
   - uid: 30502
