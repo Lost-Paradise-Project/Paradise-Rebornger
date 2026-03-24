@@ -378,9 +378,11 @@
       color: "#87011c"
     - state: icon_law
       color: "#f7d61a"
-  - type: GuideHelp
-    guides:
-    - CorporateLaw # Corvax-MRP
+# LP edit start
+#  - type: GuideHelp
+#    guides:
+#    - CorporateLaw # Corvax-MRP
+# LP edit end
 
 - type: entity
   parent: BookBase
