@@ -33,6 +33,7 @@
     preferredSlots: SOCKS
   - type: Tag
     tags:
+    - ClothMade
     - socks
 
 - type: entity

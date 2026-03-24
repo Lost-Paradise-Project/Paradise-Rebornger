@@ -33,6 +33,7 @@
     preferredSlots: BREAST
   - type: Tag
     tags:
+    - ClothMade
     - breast
 
 #---------------------------------------------------

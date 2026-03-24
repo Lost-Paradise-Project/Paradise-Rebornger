@@ -74,6 +74,7 @@
   description: A cartridge of highly compressed paint, commonly used in spray painters.
   components:
   - type: SprayPainterAmmo
+    charges: 50 # LP Edit
   - type: Sprite
     sprite: Objects/Tools/spray_painter.rsi
     state: ammo

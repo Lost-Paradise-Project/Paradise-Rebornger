@@ -59,7 +59,7 @@
   description: Red to hide the stains of passenger blood.
   components:
   - type: Pda
-    id: LPPSergeantIDCard
+    id: SecurityIDCard
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -77,7 +77,7 @@
   description: Rugged and well-worn.
   components:
   - type: Pda
-    id: LPPEngineerFirstGradeIDCard
+    id: EngineeringIDCard
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -96,7 +96,7 @@
   description: Shiny and sterile.
   components:
   - type: Pda
-    id: LPPSeniorMedicIDCard
+    id: MedicalIDCard
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -118,7 +118,7 @@
   description: It's covered with an unknown gooey substance.
   components:
   - type: Pda
-    id: LPPSeniorScientistIDCard
+    id: ResearchIDCard
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
