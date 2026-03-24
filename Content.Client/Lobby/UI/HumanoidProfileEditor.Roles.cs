@@ -138,6 +138,11 @@ public sealed partial class HumanoidProfileEditor
                 ("humanoid-profile-editor-job-priority-high-button", (int) JobPriority.High),
             };
 
+        //LP edit start
+        var uuid = SponsorSimpleManager.GetUUID();
+        var sponsorTier = SponsorSimpleManager.GetTier();
+        //LP edit end
+
         foreach (var department in departments)
         {
             var departmentName = Loc.GetString(department.Name);
@@ -210,7 +215,7 @@ public sealed partial class HumanoidProfileEditor
                 icon.Texture = _sprite.Frame0(jobIcon.Icon);
                 selector.Setup(items, job.LocalizedName, 200, job.LocalizedDescription, icon, job.Guides);
 
-                if (!_requirements.IsAllowed(job, (HumanoidCharacterProfile?)_preferencesManager.Preferences?.SelectedCharacter, out var reason))
+                if (!_requirements.IsAllowed(job, (HumanoidCharacterProfile?)_preferencesManager.Preferences?.SelectedCharacter, out var reason, SponsorSimpleManager.GetTier(), SponsorSimpleManager.GetUUID()))    //LP edit
                 {
                     selector.LockRequirements(reason);
                 }
@@ -328,7 +333,7 @@ public sealed partial class HumanoidProfileEditor
             if (!_requirements.IsAllowed(
                     antag,
                     (HumanoidCharacterProfile?)_preferencesManager.Preferences?.SelectedCharacter,
-                    out var reason))
+                    out var reason, SponsorSimpleManager.GetTier(), SponsorSimpleManager.GetUUID()))    //LP edit
             {
                 selector.LockRequirements(reason);
                 Profile = Profile?.WithAntagPreference(antag.ID, false);

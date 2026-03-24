@@ -120,7 +120,7 @@ food-sequence-burger-content-anomaly-berry = аномо
 food-sequence-burger-content-extradimensional-orange = три-дэ
 food-sequence-burger-content-world-pea = миро
 
-# TACO
+# COTTON BURGERS
 
 food-sequence-cotton-burger-gen = { $content }бургер
 food-sequence-cotton-burger-content-cotton-bol = хлопко
@@ -157,6 +157,9 @@ food-sequence-cotton-burger-content-plushie-moth = пуши
 food-sequence-cotton-burger-content-plushie-vulp = вульп
 food-sequence-cotton-burger-content-plushie-ian = корги
 food-sequence-cotton-burger-content-among-pequeno = сас
+
+# TACO
+
 food-sequence-taco-gen = тако с { $content }
 
 # SKEWER

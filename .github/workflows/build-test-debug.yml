@@ -41,6 +41,11 @@ jobs:
     - name: Install dependencies
       run: dotnet restore
 
+    - name: Set up swap space
+      uses: pierotofy/set-swap-space@v1.0
+      with:
+        swap-size-gb: 10
+
     - name: Build Project
       run: dotnet build --configuration DebugOpt --no-restore /m
 
@@ -55,8 +60,8 @@ jobs:
   ci-success:
     name: Build & Test Debug
     needs:
-      - build
+    - build
     runs-on: ubuntu-latest
     steps:
-      - name: CI succeeded
-        run: exit 0
+    - name: CI succeeded
+      run: exit 0

@@ -1,0 +1,250 @@
+# SPDX-FileCopyrightText: 2025 BloodfiendishOperator <141253729+Diggy0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Chest
+
+- type: marking
+  id: BadMoltChest
+  bodyPart: Chest
+  groupWhitelist: [ Reptilian ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Reptilian/chest.rsi
+    state: badmolt
+
+# Head
+
+- type: marking
+  id: BadMoltHead
+  bodyPart: Head
+  groupWhitelist: [ Reptilian ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Reptilian/head.rsi
+    state: badmolt
+
+- type: marking
+  id: ScarSlash
+  bodyPart: Head
+  groupWhitelist: [ Reptilian ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Reptilian/head.rsi
+    state: snoutscar
+
+- type: marking
+  id: ScarTalons
+  bodyPart: Head
+  groupWhitelist: [ Reptilian ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Reptilian/head.rsi
+    state: talonscar
+
+# Snout
+
+- type: marking
+  id: Fangs
+  bodyPart: Snout
+  groupWhitelist: [ Reptilian ]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#FFFFFF"
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Reptilian/snout.rsi
+    state: fangs
+
+- type: marking
+  id: LizardBeard
+  bodyPart: Snout
+  groupWhitelist: [ Reptilian ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Reptilian/snout.rsi
+    state: beard
+
+- type: marking
+  id: LizardDroopySnout
+  bodyPart: Snout
+  groupWhitelist: [ Reptilian ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Reptilian/snout.rsi
+    state: droopy
+
+- type: marking
+  id: LizardSnoutpiercings
+  bodyPart: Snout
+  forcedColoring: true
+  groupWhitelist: [ Reptilian ]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#FFFFFF"
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Reptilian/snout.rsi
+    state: piercings1
+
+- type: marking
+  id: LizardSnoutTall
+  bodyPart: Snout
+  forcedColoring: true
+  groupWhitelist: [ Reptilian ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Reptilian/snout.rsi
+    state: tall
+
+- type: marking
+  id: LizardUpperSnout
+  bodyPart: Snout
+  groupWhitelist: [ Reptilian ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Reptilian/snout.rsi
+    state: upper
+
+# Eyes
+
+# RArm
+
+- type: marking
+  id: BadMoltRArm
+  bodyPart: RArm
+  groupWhitelist: [ Reptilian ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Reptilian/rarm.rsi
+    state: badmolt
+
+# LArm
+
+- type: marking
+  id: BadMoltLArm
+  bodyPart: LArm
+  groupWhitelist: [ Reptilian ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Reptilian/larm.rsi
+    state: badmolt
+
+# RLeg
+
+# LLeg
+
+# LFoot
+
+# RFoot
+
+# LHand
+
+# RHand
+
+# FacialHair
+
+# Hair
+
+# HeadSide
+
+- type: marking
+  id: BurqaSolidLizard
+  bodyPart: HeadSide
+  groupWhitelist: [ Reptilian ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Reptilian/headside.rsi
+    state: burqa
+
+- type: marking
+  id: HijabFashionableLizard
+  bodyPart: HeadSide
+  groupWhitelist: [ Reptilian ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Reptilian/headside.rsi
+    state: hijabchic
+
+- type: marking
+  id: HijabSimpleLizard
+  bodyPart: HeadSide
+  groupWhitelist: [ Reptilian ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Reptilian/headside.rsi
+    state: hijabsimple
+
+- type: marking
+  id: LizardKoboldEarsMid
+  bodyPart: HeadSide
+  groupWhitelist: [ Reptilian ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Reptilian/headside.rsi
+    state: koboldearsmid
+
+- type: marking
+  id: LizardKoboldEarsTall
+  bodyPart: HeadSide
+  groupWhitelist: [ Reptilian ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Reptilian/headside.rsi
+    state: koboldearstall
+
+- type: marking
+  id: NiqabLizard
+  bodyPart: HeadSide
+  groupWhitelist: [ Reptilian ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Reptilian/headside.rsi
+    state: niqab
+
+- type: marking
+  id: TichelSimpleLizard
+  bodyPart: HeadSide
+  groupWhitelist: [ Reptilian ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Reptilian/headside.rsi
+    state: tichelsimple
+
+- type: marking
+  id: TichelFashionableLizard
+  bodyPart: HeadSide
+  groupWhitelist: [ Reptilian ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Reptilian/headside.rsi
+    state: tichelfashionable
+
+# HeadTop
+
+- type: marking
+  id: LizardHeadFlat
+  bodyPart: HeadTop
+  groupWhitelist: [ Reptilian ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Reptilian/headtop.rsi
+    state: flat
+
+- type: marking
+  id: LizardHornsKoboldEarspiercings
+  bodyPart: HeadTop
+  groupWhitelist: [ Reptilian ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Reptilian/headtop.rsi
+    state: koboldears
+  - sprite: _Impstation/Mobs/Customization/Reptilian/headtop.rsi
+    state: koboldearspiercings
+
+- type: marking
+  id: LizardHornsNubby
+  bodyPart: HeadTop
+  groupWhitelist: [ Reptilian ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Reptilian/headtop.rsi
+    state: nubby
+
+- type: marking
+  id: LizardLittleHorns
+  bodyPart: HeadTop
+  groupWhitelist: [ Reptilian ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Reptilian/headtop.rsi
+    state: little
+
+- type: marking
+  id: LizardFrill
+  bodyPart: HeadTop
+  groupWhitelist: [ Reptilian ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Reptilian/headtop.rsi
+    state: frill

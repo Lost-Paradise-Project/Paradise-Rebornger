@@ -20,11 +20,11 @@ comp-pda-ui-station-alert-level-instructions = Инструкции: [color=whit
 comp-pda-ui-station-time = Продолжительность смены: [color=white]{ $time }[/color]
 comp-pda-ui-eject-id-button = Извлечь ID
 comp-pda-ui-eject-pen-button = Извлечь ручку
-comp-pda-ui-ringtone-button-description = Измените рингтон вашего КПК
 comp-pda-ui-ringtone-button = Рингтон
+comp-pda-ui-ringtone-button-description = Измените рингтон вашего КПК
 comp-pda-ui-toggle-flashlight-button = Переключить фонарик
-pda-bound-user-interface-music-button-description = Слушайте музыку на своём КПК
 pda-bound-user-interface-music-button = Музыкальный инструмент
+pda-bound-user-interface-music-button-description = Слушайте музыку на своём КПК
 comp-pda-ui-unknown = Неизвестно
 comp-pda-ui-unassigned = Не назначено
 pda-notification-message = [font size=12][bold]КПК[/bold] { $header }: [/font]

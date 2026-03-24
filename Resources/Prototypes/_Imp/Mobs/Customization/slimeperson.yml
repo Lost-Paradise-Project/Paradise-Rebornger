@@ -1,0 +1,250 @@
+# SPDX-FileCopyrightText: 2025 BloodfiendishOperator <141253729+Diggy0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Chest
+
+- type: marking
+  id: bubble
+  bodyPart: Chest
+  groupWhitelist: [ Slime ]
+  sponsorOnly: true
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Slime/chest.rsi
+    state: bubble
+
+- type: marking
+  id: fishbowl
+  bodyPart: Chest
+  groupWhitelist: [ Slime ]
+  sponsorOnly: true
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Slime/chest.rsi
+    state: fishbowl1
+  - sprite: _Impstation/Mobs/Customization/Slime/chest.rsi
+    state: fishbowl2
+
+- type: marking
+  id: SlimeBonechest
+  bodyPart: Chest
+  groupWhitelist: [ Slime ]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#F8F8F8"
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Slime/chest.rsi
+    state: bone
+
+- type: marking
+  id: SlimeCore
+  bodyPart: Chest
+  groupWhitelist: [ Slime ]
+  forcedColoring: false
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Slime/chest.rsi
+    state: core
+
+- type: marking
+  id: SlimeCoreGlowing
+  bodyPart: Chest
+  groupWhitelist: [ Slime ]
+  forcedColoring: false
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Slime/chest.rsi
+    state: core
+
+- type: marking
+  id: SlimeLungs
+  bodyPart: Chest
+  groupWhitelist: [ Slime ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Slime/chest.rsi
+    state: lungs
+
+# Head
+
+- type: marking
+  id: FadingStars
+  bodyPart: LLeg
+  groupWhitelist: [ Slime ]
+  sponsorOnly: true
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Slime/head.rsi
+    state: fadingstars1
+  - sprite: _Impstation/Mobs/Customization/Slime/head.rsi
+    state: fadingstars2
+  - sprite: _Impstation/Mobs/Customization/Slime/head.rsi
+    state: fadingstars3
+
+- type: marking
+  id: fizz
+  bodyPart: LLeg
+  groupWhitelist: [ Slime ]
+  sponsorOnly: true
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Slime/head.rsi
+    state: fizz
+
+- type: marking
+  id: SlimeBonehead
+  bodyPart: Head
+  groupWhitelist: [ Slime ]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#F8F8F8"
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Slime/head.rsi
+    state: bone
+
+- type: marking
+  id: SlimeMouth
+  bodyPart: Head
+  groupWhitelist: [ Slime ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Slime/head.rsi
+    state: mouth
+
+- type: marking
+  id: SlimeBrain
+  bodyPart: Head
+  groupWhitelist: [ Slime ]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Slime/head.rsi
+    state: brain
+
+# RArm
+
+- type: marking
+  id: SlimeBonearmright
+  bodyPart: RArm
+  groupWhitelist: [ Slime ]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#F8F8F8"
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Slime/rarm.rsi
+    state: bone
+
+# LArm
+
+- type: marking
+  id: SlimeBonearmleft
+  bodyPart: LArm
+  groupWhitelist: [ Slime ]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#F8F8F8"
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Slime/larm.rsi
+    state: bone
+
+# RLeg
+
+- type: marking
+  id: SlimeBonelegright
+  bodyPart: RLeg
+  groupWhitelist: [ Slime ]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#F8F8F8"
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Slime/rleg.rsi
+    state: bone
+
+# LLeg
+
+- type: marking
+  id: SlimeBonelegleft
+  bodyPart: LLeg
+  groupWhitelist: [ Slime ]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#F8F8F8"
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Slime/lleg.rsi
+    state: bone
+
+# LFoot
+
+- type: marking
+  id: SlimeBonefootleft
+  bodyPart: LFoot
+  groupWhitelist: [ Slime ]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#F8F8F8"
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Slime/lfoot.rsi
+    state: bone
+
+# RFoot
+
+- type: marking
+  id: SlimeBonefootright
+  bodyPart: RFoot
+  groupWhitelist: [ Slime ]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#F8F8F8"
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Slime/rfoot.rsi
+    state: bone
+
+# LHand
+
+- type: marking
+  id: SlimeBonehandleft
+  bodyPart: LHand
+  groupWhitelist: [ Slime ]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#F8F8F8"
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Slime/lhand.rsi
+    state: bone
+
+# RHand
+
+- type: marking
+  id: SlimeBonehandright
+  bodyPart: RHand
+  groupWhitelist: [ Slime ]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#F8F8F8"
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Slime/rhand.rsi
+    state: bone
+
+# FacialHair
+
+# Hair
+
+# HeadSide
+
+# HeadTop
+
+# Tail
+
+# RArmExtension

@@ -21,7 +21,6 @@ network-configurator-link = Соединить
 # ui
 network-configurator-title-saved-devices = Сохранённые устройства
 network-configurator-title-device-configuration = Конфигурация устройств
-# ui
 network-configurator-ui-clear-button = Очистить
 network-configurator-ui-count-label =
     { $count } { $count ->

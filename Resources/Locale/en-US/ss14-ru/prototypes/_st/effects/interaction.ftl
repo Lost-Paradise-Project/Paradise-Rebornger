@@ -1,0 +1,2 @@
+ent-StellarInteractionParticle = { "" }
+    .desc = { "" }

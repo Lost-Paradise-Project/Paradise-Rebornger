@@ -48,6 +48,7 @@ using Content.Server._NC.DiscordAuth;
 using Content.Server._NC.JoinQueue;
 #endif
 // LP edit end
+using System.IO;
 
 namespace Content.Server.Entry
 {
@@ -174,41 +175,25 @@ namespace Content.Server.Entry
             if (!string.IsNullOrEmpty(dest))
             {
                 var resPath = new ResPath(dest).ToRootedPath();
-                var file = _res.UserData.OpenWriteText(resPath.WithName("chem_" + dest));
-                ChemistryJsonGenerator.PublishJson(file);
-                file.Flush();
-                file = _res.UserData.OpenWriteText(resPath.WithName("react_" + dest));
-                ReactionJsonGenerator.PublishJson(file);
-                file.Flush();
                 // Corvax-Wiki-Start
-                file = _res.UserData.OpenWriteText(resPath.WithName("entity_" + dest));
-                EntityJsonGenerator.PublishJson(file);
-                file.Flush();
-                file = _res.UserData.OpenWriteText(resPath.WithName("loc.json"));
-                LocJsonGenerator.PublishJson(file);
-                file.Flush();
-                file = _res.UserData.OpenWriteText(resPath.WithName("prototype.json"));
-                PrototypeListGenerator.PublishJson(file);
-                file.Flush();
-                file = _res.UserData.OpenWriteText(resPath.WithName("component.json"));
-                ComponentListGenerator.PublishJson(file);
-                file.Flush();
-                file = _res.UserData.OpenWriteText(resPath.WithName("prototype_store.json"));
-                PrototypeStoreGenerator.PublishJson(file);
-                file.Flush();
-                file = _res.UserData.OpenWriteText(resPath.WithName("component_store.json"));
-                ComponentStoreGenerator.PublishJson(file);
-                file.Flush();
-                file = _res.UserData.OpenWriteText(resPath.WithName("entity_name.json"));
-                EntityNameDuplicatesJsonGenerator.PublishNameJson(file);
-                file.Flush();
-                file = _res.UserData.OpenWriteText(resPath.WithName("entity_name_duplicates.json"));
-                EntityNameDuplicatesJsonGenerator.PublishDuplicatesJson(file);
-                file.Flush();
+                void WriteFile(string name, Action<StreamWriter> write)
+                {
+                    using var file = _res.UserData.OpenWriteText(resPath.WithName(name));
+                    write(file);
+                    file.Flush();
+                }
+                WriteFile("entity_" + dest, EntityJsonGenerator.PublishJson);
+                WriteFile("loc.json", LocJsonGenerator.PublishJson);
+                WriteFile("meta_license.json", MetaLicenseGenerator.PublishJson);
+                WriteFile("prototype.json", PrototypeListGenerator.PublishJson);
+                WriteFile("component.json", ComponentListGenerator.PublishJson);
+                WriteFile("prototype_store.json", PrototypeStoreGenerator.PublishJson);
+                WriteFile("component_store.json", ComponentStoreGenerator.PublishJson);
+                WriteFile("entity_name.json", EntityNameDuplicatesJsonGenerator.PublishNameJson);
+                WriteFile("entity_name_wiki.json", file => WikiEntityNameGenerator.PublishJson(file, _res, resPath));
+                WriteFile("entity_name_duplicates.json", EntityNameDuplicatesJsonGenerator.PublishDuplicatesJson);
                 PrototypeJsonGenerator.PublishAll(_res, new ResPath("prototype").ToRootedPath());
-                file.Flush();
                 ComponentJsonGenerator.PublishAll(_res, new ResPath("component").ToRootedPath());
-                file.Flush();
                 // Corvax-Wiki-End
                 Dependencies.Resolve<IBaseServer>().Shutdown("Data generation done");
                 return;

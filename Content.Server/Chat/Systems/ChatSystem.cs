@@ -652,18 +652,19 @@ public sealed partial class ChatSystem : SharedChatSystem
             ("entityName", coloredName),
             ("entity", ent),
             ("message", coloredAction));
-
+        const float hiddenEmoteRange = 1;
 
         if (checkEmote)
             TryEmoteChatInput(source, action);
 
-        foreach (var (session, data) in GetRecipients(source, VoiceRange))
+        foreach (var (session, data) in GetRecipients(source, hiddenEmoteRange))
         {
             var entRange = MessageRangeCheck(session, data, range);
             if (entRange == MessageRangeCheckResult.Disallowed)
                 continue;
             var entHideChat = entRange == MessageRangeCheckResult.HideChat;
-            _chatManager.ChatMessageToOne(ChatChannel.HiddenEmotes, action, wrappedMessage, source, false, session.Channel);
+            if (data.Range < hiddenEmoteRange)
+                _chatManager.ChatMessageToOne(ChatChannel.HiddenEmotes, action, wrappedMessage, source, false, session.Channel);
         }
         if (!hideLog)
             if (name != Name(source))
