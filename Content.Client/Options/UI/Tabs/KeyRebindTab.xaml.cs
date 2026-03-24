@@ -194,6 +194,7 @@ namespace Content.Client.Options.UI.Tabs
             AddButton(ContentKeyFunctions.MoveStoredItem);
             AddButton(ContentKeyFunctions.RotateStoredItem);
             AddButton(ContentKeyFunctions.SaveItemLocation);
+            AddButton(ContentKeyFunctions.OfferItem); /// Corvax-Wega-Offer
             // Orion-Start
             AddButton(ContentKeyFunctions.TogglePosing);
             AddButton(ContentKeyFunctions.PosingOffsetLeft);
