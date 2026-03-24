@@ -1730,4 +1730,16 @@
   id: 5700
   time: '2026-03-24T11:35:57.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/172
+- author: PowerKAT1
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u043D\u043E\u0432\
+      \u0430\u044F \u0441\u0442\u0430\u043D\u0446\u0438\u044F - \u0421\u0442\u0430\
+      \u043D\u0414\u0430\u0440\u0442!"
+    type: Add
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0451\u043D \u0448\u0430\u0442\u0442\u043B\
+      \ \u0443\u0442\u0438\u043B\u0438\u0437\u0430\u0442\u043E\u0440\u043E\u0432!"
+    type: Tweak
+  id: 5701
+  time: '2026-03-24T16:16:22.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/174
 Order: 1
