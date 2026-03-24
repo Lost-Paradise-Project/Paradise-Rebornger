@@ -10,6 +10,7 @@
     - state: camera
   - type: Eye
   - type: PhotoCamera
+    cardMaterial: PrinterPaper # LP Edit
   - type: UseDelay
   - type: ActivatableUI
     key: enum.PhotoCameraUiKey.Key
@@ -32,7 +33,7 @@
   components:
   - type: MaterialStorage
     storage:
-      Paper: 1000
+      PrinterPaper: 1000 # LP Edit
 
 - type: entity
   name: "photo"

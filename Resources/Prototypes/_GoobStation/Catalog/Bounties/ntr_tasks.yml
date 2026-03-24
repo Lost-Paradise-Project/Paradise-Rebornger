@@ -98,7 +98,7 @@
   cooldown: 600
   description: task-ntr-artifexium-desc
   reagentTask: true
-  solutionName: beaker
+  # solutionName: beaker
   reagents:
     Artifexium: 3000
   entries:
@@ -111,7 +111,7 @@
 - type: ntrTask
   id: TaskDexalin
   proto: TaskVial
-  solutionName: beaker
+  # solutionName: beaker
   reward: 3
   weight: 0.05
   cooldown: 600
@@ -129,7 +129,7 @@
 - type: ntrTask
   id: TaskWeh
   proto: TaskVial
-  solutionName: beaker
+  # solutionName: beaker
   reward: 5
   weight: 0.1
   cooldown: 600
@@ -147,7 +147,7 @@
 - type: ntrTask
   id: TaskHew
   proto: TaskVial
-  solutionName: beaker
+  # solutionName: beaker
   reward: 10
   weight: 0.001
   cooldown: 3600
@@ -165,7 +165,7 @@
 - type: ntrTask
   id: TaskEthyl
   proto: TaskVial
-  solutionName: beaker
+  # solutionName: beaker
   reward: 7
   weight: 0.01
   cooldown: 3600
@@ -188,7 +188,7 @@
   cooldown: 3600
   description: task-ntr-ipecac-desc
   reagentTask: true
-  solutionName: beaker
+  # solutionName: beaker
   reagents:
     Ipecac: 3000
   entries:
@@ -201,7 +201,7 @@
 - type: ntrTask
   id: TaskTRAcid
   proto: TaskVial
-  solutionName: beaker
+  # solutionName: beaker
   reward: 5
   weight: 0.02
   cooldown: 3600
@@ -218,7 +218,7 @@
 
 - type: ntrTask
   id: TaskSigynate
-  solutionName: beaker
+  # solutionName: beaker
   proto: TaskVial
   reward: 5
   weight: 0.02
@@ -237,7 +237,7 @@
 - type: ntrTask
   id: TaskCogni
   proto: TaskVial
-  solutionName: beaker
+  # solutionName: beaker
   reward: 10
   weight: 0.0005
   cooldown: 3600
@@ -255,7 +255,7 @@
 - type: ntrTask
   id: TaskHoly
   proto: TaskVial
-  solutionName: beaker
+  # solutionName: beaker
   reward: 6
   weight: 0.005
   cooldown: 3600
@@ -272,7 +272,7 @@
 
 - type: ntrTask
   id: TaskRazorium
-  solutionName: beaker
+  # solutionName: beaker
   proto: TaskJug
   reward: 7
   weight: 0.005
@@ -291,7 +291,7 @@
 - type: ntrTask
   id: TaskPunct
   proto: TaskJug
-  solutionName: beaker
+  # solutionName: beaker
   reward: 8
   weight: 0.005
   cooldown: 1800
@@ -309,7 +309,7 @@
 - type: ntrTask
   id: TaskTrico
   proto: TaskJug
-  solutionName: beaker
+  # solutionName: beaker
   reward: 5
   weight: 0.02
   cooldown: 1800
@@ -327,7 +327,7 @@
 - type: ntrTask
   id: TaskMeth
   proto: TaskJug
-  solutionName: beaker
+  # solutionName: beaker
   reward: 10
   weight: 0.001
   cooldown: 1800
@@ -345,7 +345,7 @@
 - type: ntrTask
   id: TaskTHC
   proto: TaskJug
-  solutionName: beaker
+  # solutionName: beaker
   reward: 7
   weight: 0.005
   cooldown: 1800

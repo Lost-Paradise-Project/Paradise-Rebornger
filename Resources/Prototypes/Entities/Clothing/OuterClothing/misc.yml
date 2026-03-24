@@ -14,7 +14,7 @@
     - WhitelistChameleon
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: [ClothingOuterStorageBase, AllowSuitStorageClothing] # LP Edit
   id: ClothingOuterApronBar
   suffix: Bartender
   name: apron

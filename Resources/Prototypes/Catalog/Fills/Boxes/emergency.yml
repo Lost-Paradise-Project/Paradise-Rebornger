@@ -5,10 +5,17 @@
   description: It's a box with basic internals inside.
   suffix: Standard
   components:
+  # LP Edit Start
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,3,3
+  # LP Edit End
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
         children:
+        - id: MaterialCloth10 # LP Edit
         - id: ClothingMaskBreath
         - id: EmergencyOxygenTankFilled
         - id: EmergencyMedipen
@@ -25,10 +32,17 @@
   id: BoxSurvivalNitrogen
   suffix: Standard N2
   components:
+  # LP Edit Start
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,3,3
+  # LP Edit End
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
         children:
+        - id: MaterialCloth10 # LP Edit
         - id: ClothingMaskBreath
         - id: EmergencyNitrogenTankFilled
         - id: EmergencyMedipen
@@ -49,10 +63,17 @@
   description: It's a box with basic internals inside. This one is labelled to contain an extended-capacity tank.
   suffix: Extended
   components:
+  # LP Edit Start
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,3,3
+  # LP Edit End
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
         children:
+        - id: MaterialCloth10 # LP Edit
         - id: ClothingMaskBreath
         - id: ExtendedEmergencyOxygenTankFilled
         - id: EmergencyMedipen
@@ -69,10 +90,17 @@
   id: BoxSurvivalEngineeringNitrogen
   suffix: Extended N2
   components:
+  # LP Edit Start
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,3,3
+  # LP Edit End
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
         children:
+        - id: MaterialCloth10 # LP Edit
         - id: ClothingMaskBreath
         - id: ExtendedEmergencyNitrogenTankFilled
         - id: EmergencyMedipen
@@ -94,10 +122,17 @@
   description: It's a box with basic internals inside.
   suffix: Security
   components:
+  # LP Edit Start
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,3,3
+  # LP Edit End
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
         children:
+        - id: MaterialCloth10 # LP Edit
         - id: ClothingMaskGasSecurity
         - id: EmergencyOxygenTankFilled
         - id: EmergencyMedipen
@@ -114,10 +149,17 @@
   id: BoxSurvivalSecurityNitrogen
   suffix: Security N2
   components:
+  # LP Edit Start
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,3,3
+  # LP Edit End
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
         children:
+        - id: MaterialCloth10 # LP Edit
         - id: ClothingMaskGasSecurity
         - id: EmergencyNitrogenTankFilled
         - id: EmergencyMedipen
@@ -139,10 +181,17 @@
   description: It's a box with basic internals inside.
   suffix: Medical
   components:
+  # LP Edit Start
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,3,3
+  # LP Edit End
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
         children:
+        - id: MaterialCloth10 # LP Edit
         - id: ClothingMaskBreathMedical
         - id: EmergencyOxygenTankFilled
         - id: EmergencyMedipen
@@ -159,10 +208,17 @@
   id: BoxSurvivalMedicalNitrogen
   suffix: Medical N2
   components:
+  # LP Edit Start
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,3,3
+  # LP Edit End
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
         children:
+        - id: MaterialCloth10 # LP Edit
         - id: ClothingMaskBreathMedical
         - id: EmergencyNitrogenTankFilled
         - id: EmergencyMedipen
@@ -183,6 +239,12 @@
   description: A special box for sensitive people.
   suffix: Emergency
   components:
+  # LP Edit Start
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,3,3
+  # LP Edit End
   - type: Sprite
     layers:
     - state: box_hug
@@ -193,6 +255,7 @@
     containers:
       storagebase: !type:AllSelector
         children:
+        - id: MaterialCloth10 # LP Edit
         - id: ClothingMaskBreath
         - id: EmergencyFunnyOxygenTankFilled
         - id: EmergencyMedipen
@@ -209,10 +272,17 @@
   id: BoxHugNitrogen
   suffix: Emergency N2
   components:
+  # LP Edit Start
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,3,3
+  # LP Edit End
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
         children:
+        - id: MaterialCloth10 # LP Edit
         - id: ClothingMaskBreath
         - id: EmergencyNitrogenTankFilled
         - id: EmergencyMedipen
@@ -227,10 +297,17 @@
   id: BoxMime
   suffix: Mime, Emergency
   components:
+  # LP Edit Start
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,3,3
+  # LP Edit End
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
         children:
+        - id: MaterialCloth10 # LP Edit
         - id: ClothingMaskBreath
         - id: EmergencyOxygenTankFilled
         - id: EmergencyMedipen
@@ -243,10 +320,17 @@
   id: BoxMimeNitrogen
   suffix: Mime, Emergency N2
   components:
+  # LP Edit Start
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,3,3
+  # LP Edit End
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
         children:
+        - id: MaterialCloth10 # LP Edit
         - id: ClothingMaskBreath
         - id: EmergencyNitrogenTankFilled
         - id: EmergencyMedipen
@@ -265,10 +349,17 @@
   id: BoxMimeMoth
   suffix: Mime, Emergency moth
   components:
+  # LP Edit Start
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,3,3
+  # LP Edit End
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
         children:
+        - id: MaterialCloth10 # LP Edit
         - id: ClothingMaskBreath
         - id: EmergencyOxygenTankFilled
         - id: EmergencyMedipen
@@ -283,10 +374,17 @@
   description: It's a box with basic internals inside. This one is labelled to contain an extended-capacity tank.
   suffix: Syndicate
   components:
+  # LP Edit Start
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,3,3
+  # LP Edit End
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
         children:
+        - id: MaterialCloth10 # LP Edit
         - id: ClothingMaskGasSyndicate
         - id: ExtendedEmergencyOxygenTankFilled
         - id: EmergencyMedipen
@@ -302,10 +400,17 @@
   id: BoxSurvivalSyndicateNitrogen
   suffix: Syndicate N2
   components:
+  # LP Edit Start
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,3,3
+  # LP Edit End
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
         children:
+        - id: MaterialCloth10 # LP Edit
         - id: ClothingMaskGasSyndicate
         - id: ExtendedEmergencyNitrogenTankFilled
         - id: EmergencyMedipen
@@ -320,15 +425,22 @@
 
 
 - type: entity
-  parent: BoxCardboardSmall # Cannot fit 3x3 boxes into already-filled ERT backpacks.
+  parent: BoxCardboard # LP Edit
   id: BoxSurvivalMilitaryDouble
   suffix: Military O2
   description: It's a box with basic internals inside. This one is labelled to contain an double extended-capacity tank.
   components:
+  # LP Edit Start
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,3,3
+  # LP Edit End
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
         children:
+        - id: MaterialCloth10 # LP Edit
         - id: DoubleEmergencyOxygenTankFilled
         - id: EmergencyMedipen
         - id: Flare
@@ -342,10 +454,17 @@
   id: BoxSurvivalMilitaryDoubleNitrogen
   suffix: Military N2
   components:
+  # LP Edit Start
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,3,3
+  # LP Edit End
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
         children:
+        - id: MaterialCloth10 # LP Edit
         - id: DoubleEmergencyNitrogenTankFilled
         - id: EmergencyMedipen
         - id: Flare

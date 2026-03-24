@@ -47,3 +47,8 @@
   id: LPPEngineerShirtSkirt
   equipment:
     jumpsuit: LPPClothingUniformJumpskirtEngineerShirt
+
+- type: loadout
+  id: LPPEngineerFirstGradePDA
+  equipment:
+    id: LPPEngineerFirstGradePDA

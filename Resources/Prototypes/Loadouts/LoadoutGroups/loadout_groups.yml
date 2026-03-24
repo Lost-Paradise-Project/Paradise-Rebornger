@@ -940,7 +940,7 @@
   name: loadout-group-station-engineer-id
   loadouts:
   - StationEngineerPDA
-  - SeniorEngineerPDA
+  - LPPEngineerFirstGradePDA # LP Edit
 
 #- type: loadoutGroup
 #  id: StationEngineerJobTrinkets
@@ -1136,7 +1136,7 @@
   name: loadout-group-scientist-id
   loadouts:
   - ScientistPDA
-  - SeniorResearcherPDA
+  - LPPSeniorScientistPDA # LP Edit
 
 #- type: loadoutGroup
 #  id: ScientistJobTrinkets
@@ -1306,7 +1306,7 @@
   name: loadout-group-security-id
   loadouts:
   - SecurityPDA
-  - SeniorOfficerPDA
+  - LPPSergeantPDA # LP Edit
 
 - type: loadoutGroup
   id: SecurityJobTrinkets

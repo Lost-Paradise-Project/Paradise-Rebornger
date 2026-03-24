@@ -12,6 +12,7 @@
   id: FillLockerBooze
   table: !type:AllSelector
     children:
+    - id: BarSpoon # LP Edit
     - id: ClothingOuterArmorBasicSlim
     - id: WeaponShotgunDoubleBarreledRubber
     - id: DrinkShaker

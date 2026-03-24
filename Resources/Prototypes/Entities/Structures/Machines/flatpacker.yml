@@ -1,6 +1,6 @@
 ﻿- type: entity
   id: MachineFlatpacker
-  parent: [ BaseMachinePowered, ConstructibleMachine, BaseSiloUtilizer] # LP Edit
+  parent: [ BaseMachinePowered, ConstructibleMachine]
   name: Flatpacker 1001
   description: An industrial machine used for expediting machine construction across the station.
   components:

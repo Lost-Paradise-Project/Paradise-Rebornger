@@ -33,8 +33,10 @@
   - type: StaticPrice
     price: 40
   - type: LimitedCharges
-    maxCharges: 15
-    lastCharges: 15
+    # LP Edit Start
+    maxCharges: 100
+    lastCharges: 100
+    # LP Edit End
   - type: PhysicalComposition
     materialComposition:
       Steel: 100
@@ -72,6 +74,7 @@
   description: A cartridge of highly compressed paint, commonly used in spray painters.
   components:
   - type: SprayPainterAmmo
+    charges: 50 # LP Edit
   - type: Sprite
     sprite: Objects/Tools/spray_painter.rsi
     state: ammo

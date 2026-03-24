@@ -36,7 +36,7 @@
   abstract: true
   parent:
   - BaseSimpleMob
-  - MobAtmosExposed
+  # - MobAtmosExposed # LP Edit
   - MobCombat
   - MobBloodstream
   - MobFlammable
