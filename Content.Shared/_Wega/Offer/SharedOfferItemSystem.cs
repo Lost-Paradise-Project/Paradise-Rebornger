@@ -61,7 +61,7 @@ public abstract partial class SharedOfferItemSystem : EntitySystem
         }
 
         // You will not be able to transfer such items.
-        if (HasComp<UnremoveableComponent>(item) || HasComp<DeleteOnDropComponent>(item))
+        if (HasComp<UnremoveableComponent>(item))
             return false;
 
         component.IsOffering = true;
