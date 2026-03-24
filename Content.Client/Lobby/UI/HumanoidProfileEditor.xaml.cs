@@ -21,7 +21,6 @@ using Robust.Shared.Enums;
 using Robust.Shared.Physics;
 using Robust.Shared.Prototypes;
 using Direction = Robust.Shared.Maths.Direction;
-using Content.Shared._GoobStation.Barks; // Goob Station - Barks
 using static Content.Client.Corvax.SponsorOnlyHelpers; // Corvax-Sponsors
 using Content.Client.Corvax.TTS; // Corvax-TTS
 // LP edit start
@@ -206,17 +205,6 @@ namespace Content.Client.Lobby.UI
             };
 
             #endregion Gender
-
-            // Goob Station
-            #region Barks
-
-            if (configurationManager.GetCVar(GoobCVars.BarksEnabled))
-            {
-                BarksContainer.Visible = true;
-                InitializeBarkVoice();
-            }
-
-            #endregion
 
             RefreshSpecies();
 
@@ -474,7 +462,6 @@ namespace Content.Client.Lobby.UI
             UpdateSaveButton();
             UpdateMarkings();
             UpdateTTSVoicesControls(); // Corvax-TTS
-            UpdateBarkVoice(); // Goob Station - Barks
             UpdateHeightWidthSliders(); // Goobstation: port EE height/width sliders
             UpdateWeight(); // Goobstation: port EE height/width sliders
 

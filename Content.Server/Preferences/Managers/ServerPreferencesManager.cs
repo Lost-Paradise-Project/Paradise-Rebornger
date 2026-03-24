@@ -209,7 +209,6 @@ namespace Content.Server.Preferences.Managers
                 antags.ToHashSet(),
                 traits.ToHashSet(),
                 loadouts,
-                profile.BarkVoice, // GoobStation edit
                 (profile.CDProfile != null && profile.CDProfile.CharacterRecords != null) ? RecordsSerialization.Deserialize(profile.CDProfile.CharacterRecords) : null
             );
         }

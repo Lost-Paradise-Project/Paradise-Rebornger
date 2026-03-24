@@ -1,4 +1,3 @@
-using Content.Shared._GoobStation.Barks;
 using Content.Shared.Corvax.TTS;
 using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Preferences;
@@ -23,9 +22,6 @@ public sealed partial class HumanoidProfileComponent : Component
 
     [DataField, AutoNetworkedField]
     public int Age = 18;
-
-    [DataField] // Goob Station - Barks
-    public ProtoId<BarkPrototype> BarkVoice { get; set; } = HumanoidProfileSystem.DefaultBarkVoice; // Goob Station - Barks
 
     [DataField, AutoNetworkedField]
     public ProtoId<SpeciesPrototype> Species = HumanoidCharacterProfile.DefaultSpecies;

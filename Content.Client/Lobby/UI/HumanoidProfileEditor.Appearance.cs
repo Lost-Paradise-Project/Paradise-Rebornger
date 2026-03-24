@@ -1,6 +1,5 @@
 using System.Linq;
 using Content.Client.UserInterface.Systems.Guidebook;
-using Content.Shared._GoobStation.Barks;
 using Content.Shared.Guidebook;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Prototypes;
