@@ -1,4 +1,4 @@
-﻿offer-item-empty-hand = Чтобы предложить предмет, нужно держать его в руке!
+offer-item-empty-hand = Чтобы предложить предмет, нужно держать его в руке!
 offer-cancel-offer = Вы отменили передачу предмета.
 offer-item-try-give = Вы предложили {$item} {$target}.
 offer-item-try-give-target = {$user} предлагает вам {$item}.

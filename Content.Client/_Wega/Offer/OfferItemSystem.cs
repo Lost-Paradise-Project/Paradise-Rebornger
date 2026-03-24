@@ -1,4 +1,4 @@
-﻿using Content.Shared._Wega.Offer;
+using Content.Shared._Wega.Offer;
 using Robust.Client.Graphics;
 using Robust.Client.Player;
 using Robust.Shared.Player;
