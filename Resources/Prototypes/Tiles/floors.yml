@@ -1278,7 +1278,7 @@
   footstepSounds:
     collection: FootstepTile
   heatCapacity: 10000
-  weather: false # Vulp
+  weather: true
 
 - type: tile
   id: FloorGrass
@@ -1296,7 +1296,7 @@
     collection: FootstepGrass
   itemDrop: FloorTileItemGrass
   heatCapacity: 10000
-  weather: false # Vulp
+  weather: true
 
 - type: tile
   id: FloorGrassJungle
@@ -1314,7 +1314,7 @@
     collection: FootstepGrass
   itemDrop: FloorTileItemGrassJungle
   heatCapacity: 10000
-  weather: false # Vulp
+  weather: true
 
 - type: tile
   id: FloorGrassDark
@@ -1331,7 +1331,7 @@
   footstepSounds:
     collection: FootstepGrass
   heatCapacity: 10000
-  weather: false # Vulp
+  weather: true
 
 - type: tile
   id: FloorGrassLight
@@ -1348,7 +1348,7 @@
   footstepSounds:
     collection: FootstepGrass
   heatCapacity: 10000
-  weather: false # Vulp
+  weather: true
 
 - type: tile
   id: FloorDirt
@@ -1365,7 +1365,7 @@
   footstepSounds:
     collection: FootstepAsteroid
   heatCapacity: 10000
-  weather: false # Vulp
+  weather: true
 
 # Asteroid
 
@@ -1393,7 +1393,7 @@
   footstepSounds:
     collection: FootstepAsteroid
   heatCapacity: 10000
-  weather: false # Vulp
+  weather: true
 
 - type: tile
   id: FloorAsteroidSand
@@ -1419,7 +1419,7 @@
   footstepSounds:
     collection: FootstepAsteroid
   heatCapacity: 10000
-  weather: false # Vulp
+  weather: true
 
 - type: tile
   id: FloorAsteroidSandDug
@@ -1460,7 +1460,7 @@
   footstepSounds:
     collection: FootstepAsteroid
   heatCapacity: 10000
-  weather: false # Vulp
+  weather: true
 
 - type: tile
   id: FloorAsteroidSandRed

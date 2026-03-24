@@ -379,16 +379,6 @@
       state: eye_stripes_head
 
 - type: marking
-  id: TajaranOutears
-
-  bodyPart: HeadTop
-  groupWhitelist: [Tajaran]
-  sponsorOnly: true # Corvax-Sponsors
-  sprites:
-    - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_head.rsi
-      state: outears
-
-- type: marking
   id: TajaranTigerHead
 
   bodyPart: Head
@@ -433,10 +423,11 @@
 
   bodyPart: HeadTop
   groupWhitelist: [Tajaran]
-  sponsorOnly: true # Corvax-Sponsors
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_head.rsi
       state: inears
+    - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_head.rsi
+      state: outears
 
 - type: marking
   id: TajaranNose

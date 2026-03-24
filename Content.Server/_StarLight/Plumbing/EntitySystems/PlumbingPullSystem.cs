@@ -256,7 +256,11 @@ public sealed class PlumbingPullSystem : EntitySystem
                 if (GetOutletSolution(plumbingNode.Owner, plumbingNode.Name, outlet) is not { } sourceSoln)
                     continue;
 
-                var available = sourceSoln.Comp.Solution.GetReagentQuantity(new ReagentId(reagentId, null));
+                var (uid, comp) = sourceSoln;
+                var solution = comp.Solution;
+
+                if (!solution.TryGetReagentQuantity(new ReagentId(reagentId, null), out var available))
+                    continue;
                 if (available <= 0)
                     continue;
 

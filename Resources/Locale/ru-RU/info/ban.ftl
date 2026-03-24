@@ -41,6 +41,7 @@ cmd-ban_exemption_get-help = Использование: ban_exemption_get <play
 cmd-ban_exemption_get-nargs = Ожидается ровно 1 аргумент
 cmd-ban_exemption_get-none = Пользователь не имеет исключений от банов.
 cmd-ban_exemption_get-show = Пользователь исключён из банов со следующими флагами: { $flags }.
+cmd-ban_exemption_get-arg-player = <player>
 # Ban panel
 ban-panel-title = Панель банов
 ban-panel-player = Игрок
@@ -68,12 +69,11 @@ ban-panel-years = Лет
 ban-panel-permanent = Навсегда
 ban-panel-ip-hwid-tooltip = Оставьте пустым и установите флажок ниже, чтобы использовать данные последнего подключения
 ban-panel-severity = Тяжесть:
-# Ban string
-server-ban-string = { $admin } created a { $severity } severity server ban that expires { $expires } for [{ $name }, { $ip }, { $hwid }], with reason: { $reason }
 ban-panel-erase = Стереть сообщения в чате и игрока из раунда
 ban-panel-expiry-error = ошибка
-server-ban-string-never = никогда
+# Ban string
+server-ban-string = { $admin } created a { $severity } severity server ban that expires { $expires } for [{ $name }, { $ip }, { $hwid }], with reason: { $reason }
 server-ban-string-no-pii = { $admin } установил серверный бан { $severity } тяжести, который истечёт { $expires } у { $name } с причиной: { $reason }
-cmd-ban_exemption_get-arg-player = <player>
+server-ban-string-never = никогда
 # Kick on ban
 ban-kick-reason = Вы были забанены

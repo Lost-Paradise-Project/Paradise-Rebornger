@@ -221,7 +221,7 @@ namespace Content.Server.GameTicking
 
             // Orion-Start
             // Ghost system return to round, check for whether the character isn't the same.
-            if (lateJoin && !_adminManager.IsAdmin(player) && !CheckGhostReturnToRound(player, character, out var checkAvoid))
+            if (lateJoin && !CheckGhostReturnToRound(player, character, out var checkAvoid))
             {
                 var message = checkAvoid
                     ? Loc.GetString("ghost-respawn-same-character-slightly-changed-name")
@@ -440,11 +440,10 @@ namespace Content.Server.GameTicking
         {
             checkAvoid = false;
 
-            // Check if the character was in round and also was not observer.
+            // Check if the character name was already used by the player in this round.
             var allPlayerMinds = EntityQuery<MindComponent>()
                 .Where(mind => mind.OriginalOwnerUserId == player.UserId
-                               && mind.CharacterName is not null
-                               && mind.OwnedEntity is not null);
+                               && mind.CharacterName is not null);
 
             foreach (var mind in allPlayerMinds)
             {

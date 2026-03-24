@@ -54,6 +54,9 @@ rev-headrev-name = [color=#5e9cff]{ $name }[/color] конвертировал {
         [few] члена
        *[other] членов
     } экипажа
+
+## Deconverted window
+
 rev-deconverted-title = Разконвертированы!
 rev-deconverted-text =
     Со смертью последнего главы революции, революция оканчивается.

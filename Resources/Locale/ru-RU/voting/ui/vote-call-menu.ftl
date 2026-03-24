@@ -12,6 +12,7 @@ ui-vote-create-title = Голосование
 ui-vote-create-button = Запустить
 # Follow button in the vote create menu
 ui-vote-follow-button = Следовать за пользователем
+# Timeout text if a standard vote type is currently on timeout.
 ui-vote-type-timeout = Это голосование было недавно запущено ({ $remaining })
 # Unavailable text if a vote type has been disabled manually.
 ui-vote-type-not-available = Этот тип голосования был отключён
@@ -23,6 +24,7 @@ ui-vote-trusted-users-notice =
 ui-vote-abuse-warning =
     Внимание!
     Злоупотребление голосованием за кик может привести к бессрочному бану!
+# Hue hue hue
 ui-vote-fluff = На основе Robust™ СЗИ-НСД
 
 ## Vote menu command

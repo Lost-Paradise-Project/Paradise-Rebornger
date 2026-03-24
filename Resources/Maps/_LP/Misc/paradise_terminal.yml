@@ -1,16 +1,16 @@
 meta:
   format: 7
-  category: Map
+  category: Grid
   engineVersion: 272.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/21/2026 18:18:38
-  entityCount: 936
-maps:
-- 936
+  time: 03/23/2026 20:24:53
+  entityCount: 935
+maps: []
 grids:
 - 818
-orphans: []
+orphans:
+- 818
 nullspace: []
 tilemap:
   0: Space
@@ -34,7 +34,7 @@ entities:
     - type: MetaData
       name: NT-EM Terminal
     - type: Transform
-      parent: 936
+      parent: invalid
     - type: MapGrid
       chunks:
         -1,-1:
@@ -927,16 +927,6 @@ entities:
     - type: TileHistory
       chunkHistory: {}
     - type: ExplosionAirtightGrid
-  - uid: 936
-    components:
-    - type: MetaData
-      name: Map Entity
-    - type: Transform
-    - type: Map
-      mapPaused: True
-    - type: GridTree
-    - type: Broadphase
-    - type: OccluderTree
 - proto: AirlockExternalGlass
   entities:
   - uid: 2

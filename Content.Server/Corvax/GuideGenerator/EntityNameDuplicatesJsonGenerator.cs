@@ -16,6 +16,7 @@ public static class EntityNameDuplicatesJsonGenerator
         "DO NOT MAP",
         "не маппить",
     };
+
     private static string GetLabel(EntityPrototype proto)
     {
         return proto.Components.Values
@@ -31,13 +32,14 @@ public static class EntityNameDuplicatesJsonGenerator
         IPrototypeManager prototypeManager,
         bool duplicatesOnly)
     {
+        var loc = IoCManager.Resolve<ILocalizationManager>();
         return prototypeManager
             .EnumeratePrototypes<EntityPrototype>()
             .Where(p => !p.Abstract &&
                         p.Components.Values.Any(c => c.Component is FixturesComponent))
             .GroupBy(p =>
             {
-                var name = TextTools.CapitalizeString(p.Name);
+                var name = TextTools.CapitalizeString(TextTools.GetDisplayName(p, prototypeManager, loc));
 
                 var label = GetLabel(p);
 
@@ -79,7 +81,7 @@ public static class EntityNameDuplicatesJsonGenerator
                     if (string.IsNullOrEmpty(suffix))
                         return $"{name} ({label})";
 
-                    return $"{name} ({label}, {suffix})";
+                    return $"{name} ({label}) ({suffix})";
                 },
                 g => duplicatesOnly
                     ? g.Select(p => p.ID).OrderBy(id => id).ToList()

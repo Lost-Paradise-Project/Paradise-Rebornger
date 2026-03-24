@@ -86999,13 +86999,6 @@ entities:
     - type: Transform
       pos: 26.351677,-13.233653
       parent: 2
-- proto: HandheldCrewMonitor
-  entities:
-  - uid: 12423
-    components:
-    - type: Transform
-      pos: 16.562784,32.85037
-      parent: 2
 - proto: HandheldGPSBasic
   entities:
   - uid: 12424

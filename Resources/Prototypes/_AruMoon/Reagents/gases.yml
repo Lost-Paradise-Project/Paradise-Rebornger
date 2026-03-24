@@ -179,10 +179,13 @@
           min: 0.5
         ignoreResistances: true
         damage:
-          groups:
-            Brute: -0.7
-            Burn: -0.7
-            Toxin: -1.25
+          types:
+            Blunt: -0.5
+            Heat: -0.5
+            Cold: -0.5
+            Poison: -1.25
+            Piercing: -0.5
+            Slash: -0.5
 
 - type: reagent
   id: Hyper-Noblium

@@ -9,13 +9,12 @@ salvage-expedition-window-modifiers = Модификаторы:
 offering-window-claimed = Принято
 offering-window-claim = Принять
 salvage-expedition-window-next = Следующее предложение
-salvage-expedition-difficulty-players = Рекомендовано утилизаторов:
 salvage-expedition-difficulty-Moderate = Умеренная
 salvage-expedition-difficulty-Hazardous = Высокая
 salvage-expedition-difficulty-Extreme = Экстремальная
+salvage-expedition-difficulty-players = Рекомендовано утилизаторов:
 # Runner
 salvage-expedition-not-all-present = Не все утилизаторы вернулись на борт шаттла!
-# Runner
 salvage-expedition-announcement-countdown-minutes =
     До окончания экспедиции осталась { $duration } { $duration ->
         [one] минута
@@ -28,9 +27,9 @@ salvage-expedition-announcement-countdown-seconds =
         [few] секунды
        *[other] секунд
     }.
-salvage-expedition-reward-description = Награда за завершение миссии
 salvage-expedition-announcement-dungeon = Подземелье расположено от вас на { $direction }.
 salvage-expedition-completed = Экспедиция окончена.
+salvage-expedition-reward-description = Награда за завершение миссии
 # Salvage biome mod
 salvage-biome-mod-caves = Пещеры
 salvage-biome-mod-grasslands = Луга

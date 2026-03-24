@@ -73,7 +73,7 @@ guide-entry-chemist = Химик
 guide-entry-brute =
     Продвинутое лечение
     механических повреждений
-guide-entry-botanical = Ботанические
+guide-entry-botanicals = Ботаника
 guide-entry-cloning = Клонирование
 guide-entry-cryogenics = Криогеника
 guide-entry-science = Научный отдел
@@ -112,7 +112,7 @@ guide-entry-pyrotechnics = Пиротехника
 guide-entry-toxins = Токсины
 guide-entry-foods = Пищевые
 guide-entry-biological = Биологические
-guide-entry-botanicals = Ботаника
+guide-entry-botanical = Ботанические
 guide-entry-special = Специальное
 guide-entry-others = Другие
 guide-entry-pizza-recipes = Пиццы

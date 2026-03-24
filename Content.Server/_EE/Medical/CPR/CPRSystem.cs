@@ -120,7 +120,7 @@ public sealed class CPRSystem : EntitySystem
             && _mobThreshold.TryGetThresholdForState((EntityUid)args.Target, MobState.Dead, out var threshold)
             && TryComp<DamageableComponent>(args.Target, out var damageableComponent)
             && TryComp<MobStateComponent>(args.Target, out var state)
-            && damageableComponent.TotalDamage < threshold)
+            && _damageable.GetTotalDamage(((EntityUid)args.Target, damageableComponent)) < threshold)
             _mobStateSystem.ChangeMobState(args.Target.Value, MobState.Critical, state, performer);
 
         var isAlive = _mobStateSystem.IsAlive(args.Target.Value);

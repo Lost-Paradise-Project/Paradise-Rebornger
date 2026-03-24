@@ -20,5 +20,8 @@ gas-tank-window-tank-pressure-text = Давление: { $tankPressure } кПа
 gas-tank-window-internal-text = Маска: { $status }
 gas-tank-window-internal-connected = [color=green]Подключена[/color]
 gas-tank-window-internal-disconnected = [color=red]Не подключена[/color]
+
+## Valve
+
 comp-gas-tank-open-valve = Открыть клапан
 comp-gas-tank-close-valve = Закрыть клапан

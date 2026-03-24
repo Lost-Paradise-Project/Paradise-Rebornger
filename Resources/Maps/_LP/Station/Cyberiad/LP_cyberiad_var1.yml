@@ -88601,8 +88601,6 @@ entities:
         entity_storage: !type:Container
           showEnts: False
           occludes: True
-          ents:
-          - 12331
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -175481,7 +175479,6 @@ entities:
           - 1218
           - 1217
           - 1234
-          - 1239
           - 1213
         paper_label: !type:ContainerSlot
           showEnts: False
@@ -175960,7 +175957,6 @@ entities:
           - 12559
           - 12543
           - 12555
-          - 12563
           - 12549
           - 12551
           - 12561
@@ -200512,20 +200508,6 @@ entities:
     - type: Transform
       pos: -40.5334,24.588907
       parent: 2
-- proto: RubberStampClown
-  entities:
-  - uid: 1239
-    components:
-    - type: Transform
-      parent: 1212
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 27110
-    components:
-    - type: Transform
-      pos: 37.65611,21.587753
-      parent: 2
 - proto: RubberStampDenied
   entities:
   - uid: 27111
@@ -200537,29 +200519,6 @@ entities:
     components:
     - type: Transform
       pos: -24.09048,-8.22932
-      parent: 2
-- proto: RubberStampLawyer
-  entities:
-  - uid: 12331
-    components:
-    - type: Transform
-      parent: 12330
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-- proto: RubberStampMime
-  entities:
-  - uid: 12563
-    components:
-    - type: Transform
-      parent: 12533
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 27113
-    components:
-    - type: Transform
-      pos: 42.78111,21.775253
       parent: 2
 - proto: SadTromboneImplanter
   entities:
@@ -202798,54 +202757,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 19.479458,20.422058
       parent: 36093
-- proto: ShuttleGunKinetic
-  entities:
-  - uid: 36067
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 2.5,4.5
-      parent: 36047
-- proto: ShuttleGunPerforator
-  entities:
-  - uid: 35689
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -7.5,12.5
-      parent: 35450
-  - uid: 35690
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 8.5,12.5
-      parent: 35450
-- proto: ShuttleGunSvalinnMachineGun
-  entities:
-  - uid: 35691
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -4.5,12.5
-      parent: 35450
-  - uid: 35692
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 5.5,12.5
-      parent: 35450
-  - uid: 35693
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -0.5,9.5
-      parent: 35450
-  - uid: 35694
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 1.5,9.5
-      parent: 35450
 - proto: ShuttleWindow
   entities:
   - uid: 35695
@@ -203480,51 +203391,6 @@ entities:
         15049:
         - - Pressed
           - Toggle
-    - type: Fixtures
-      fixtures: {}
-  - uid: 35716
-    components:
-    - type: Transform
-      pos: -5.5,10.5
-      parent: 35450
-    - type: DeviceLinkSource
-      linkedPorts:
-        35691:
-        - - Pressed
-          - Trigger
-        35689:
-        - - Pressed
-          - Trigger
-    - type: Fixtures
-      fixtures: {}
-  - uid: 35717
-    components:
-    - type: Transform
-      pos: 0.5,7.5
-      parent: 35450
-    - type: DeviceLinkSource
-      linkedPorts:
-        35694:
-        - - Pressed
-          - Trigger
-        35693:
-        - - Pressed
-          - Trigger
-    - type: Fixtures
-      fixtures: {}
-  - uid: 35718
-    components:
-    - type: Transform
-      pos: 6.5,10.5
-      parent: 35450
-    - type: DeviceLinkSource
-      linkedPorts:
-        35692:
-        - - Pressed
-          - Trigger
-        35690:
-        - - Pressed
-          - Trigger
     - type: Fixtures
       fixtures: {}
 - proto: SignalButtonDirectional
