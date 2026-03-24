@@ -339,6 +339,10 @@
       - StationAiCoreElectronics
   - type: StaticPrice
     price: 5000
+  - type: TTS
+    voice: glados
+  - type: SpeechSynthesis # Corvax-Frontier-Barks
+    voice: Borg
 
 # The job-ready version of an AI spawn.
 - type: entity
@@ -509,8 +513,6 @@
     pvsScale: 1.5
   - type: Visibility
     layer: 2
-  - type: TTS
-    voice: glados
   - type: Sprite
     sprite: Mobs/Silicon/station_ai.rsi
     layers:
