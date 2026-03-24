@@ -100,7 +100,7 @@ holopad-engineering-tech-vault = Инженерный — Техническое
 holopad-engineering-ame = Инженерный — ДАМ
 holopad-engineering-power = Инженерный — Питание
 holopad-engineering-main = Инженерный — Главный
-# S ecurity
+# Security
 holopad-security-front = СБ — Приёмная
 holopad-security-brig = СБ — Бриг
 holopad-security-warden = СБ — Смотритель

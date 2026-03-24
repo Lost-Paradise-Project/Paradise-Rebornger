@@ -14,6 +14,7 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
+using Robust.Shared.Utility;
 
 namespace Content.Server._Wega.CartridgeLoader.Cartridges;
 
@@ -267,6 +268,7 @@ public sealed class NanoChatCartridgeSystem : SharedNanoChatCartridgeSystem
         if (_timing.CurTime < sender.Comp.NextMessageAllowedAfter)
             return;
 
+        message = FormattedMessage.EscapeText(message);
         message = message.Length <= 256 ? message : message[..256];
         sender.Comp.NextMessageAllowedAfter = _timing.CurTime + sender.Comp.MessageDelay;
 

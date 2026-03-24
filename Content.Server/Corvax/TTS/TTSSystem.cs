@@ -94,7 +94,7 @@ public sealed partial class TTSSystem : EntitySystem
         var voiceId = component.VoicePrototypeId;
         if (!_isEnabled ||
             args.Message.Length > MaxMessageChars ||
-            voiceId == null)
+            string.IsNullOrEmpty(voiceId))
             return;
 
         // LP edit start - skip local TTS for radio messages, radio TTS handled in OnRadioReceive

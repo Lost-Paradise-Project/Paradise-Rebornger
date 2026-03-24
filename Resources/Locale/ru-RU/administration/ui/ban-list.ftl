@@ -1,7 +1,6 @@
 # UI
 ban-list-bans = Баны
 ban-list-role-bans = Баны ролей
-# UI
 ban-list-header-ids = ID
 ban-list-header-reason = Причина
 ban-list-header-role = Роль

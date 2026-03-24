@@ -539,11 +539,11 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         var weapon = GetEntity(ev.Weapon);
 
         // We skip weapon -> target interaction, as forensics system applies DNA on hit
-        Interaction.DoContactInteraction(user, weapon, null, true); // Stellar - Interaction particles
+        Interaction.DoContactInteraction(user, weapon);
 
         // If the user is using a long-range weapon, this probably shouldn't be happening? But I'll interpret melee as a
         // somewhat messy scuffle. See also, heavy attacks.
-        Interaction.DoContactInteraction(user, target, weapon, true); // Stellar - Interaction particles
+        Interaction.DoContactInteraction(user, target);
 
         // For stuff that cares about it being attacked.
         var attackedEvent = new AttackedEvent(meleeUid, user, targetXform.Coordinates);
@@ -675,7 +675,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
 
         var weapon = GetEntity(ev.Weapon);
 
-        Interaction.DoContactInteraction(user, weapon, null, true); // Stellar - Interaction particles
+        Interaction.DoContactInteraction(user, weapon);
 
         // For stuff that cares about it being attacked.
         foreach (var target in targets)
@@ -684,7 +684,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
 
             // If the user is using a long-range weapon, this probably shouldn't be happening? But I'll interpret melee as a
             // somewhat messy scuffle. See also, light attacks.
-            Interaction.DoContactInteraction(user, target, weapon, true); // Stellar - Interaction particles
+            Interaction.DoContactInteraction(user, target);
         }
 
         var appliedDamage = new DamageSpecifier();
@@ -924,7 +924,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
             return false;
         }
 
-        Interaction.DoContactInteraction(user, target, null, true); // Stellar - Interaction particles
+        Interaction.DoContactInteraction(user, target);
         AdminLogger.Add(LogType.DisarmedAction, $"{ToPrettyString(user):user} used disarm on {ToPrettyString(target):target}");
 
         AdminLogger.Add(LogType.DisarmedAction, $"{ToPrettyString(user):user} used disarm on {ToPrettyString(target):target}");

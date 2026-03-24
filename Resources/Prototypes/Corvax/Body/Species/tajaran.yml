@@ -14,7 +14,7 @@
     enum.HumanoidVisualLayers.HeadTop:
       limit: 1
       required: true
-      default: [ TajaranOutears ]
+      default: [ TajaranInears ] #LP edit
     enum.HumanoidVisualLayers.Snout:
       limit: 1
       required: true

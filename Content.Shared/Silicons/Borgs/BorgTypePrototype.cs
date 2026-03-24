@@ -166,6 +166,6 @@ public sealed partial class BorgTypePrototype : IPrototype
     /// TTS voice.
     /// </summary>
     [DataField]
-    public string? VoicePrototypeId { get; set; } = "TrainingRobot";
+    public string? VoicePrototypeId { get; set; } = "turret_floor";
     // Corvax-TTS-end
 }

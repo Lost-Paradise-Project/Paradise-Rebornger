@@ -77,7 +77,7 @@ flavor-complex-vitamin = как витамины
 flavor-complex-protein = как протеины
 
 ## Generic food taste. This should be replaced with an actual flavor profile,
-## if you have food that looks как this.
+## if you have food that looks like this.
 
 flavor-complex-food = как еда
 
@@ -154,8 +154,8 @@ flavor-complex-boritos = как гейминг
 flavor-complex-nachos = как начос
 flavor-complex-donk = как дешёвая пицца
 flavor-complex-copypasta = как повторяющаяся шутка
-flavor-complex-memory-leek = как форк-бомба
 flavor-complex-bad-joke = как плохая шутка
+flavor-complex-memory-leek = как форк-бомба
 flavor-complex-gunpowder = как порох
 flavor-complex-validhunting = как валидхантинг
 flavor-complex-people = как люди
@@ -340,7 +340,7 @@ flavor-complex-vodka-tonic = освежающе горько
 flavor-complex-coconut-rum = как орехово-ферментированный сахар
 flavor-complex-bacchus-blessing = как кирпичная стена
 
-### This is exactly what pilk tastes как. I'm not even joking. I might've been a little drunk though
+### This is exactly what pilk tastes like. I'm not even joking. I might've been a little drunk though
 
 flavor-complex-pilk = как сладкое молоко
 

@@ -1,7 +1,9 @@
 using Content.Server.Atmos.EntitySystems;
 using Content.Shared._FarHorizons.Power.Generation.FissionGenerator;
 using Content.Shared.Atmos;
+using Content.Shared.Damage;
 using Content.Shared.Damage.Components;
+using Content.Shared.Damage.Systems;
 using Content.Shared.Examine;
 using Content.Shared.Nutrition;
 using Content.Shared.Radiation.Components;
@@ -11,6 +13,7 @@ namespace Content.Server._FarHorizons.Power.Generation.FissionGenerator;
 public sealed partial class ReactorPartSystem
 {
     [Dependency] private readonly EntityManager _entityManager = default!;
+    [Dependency] private readonly DamageableSystem _damageableSystem = default!;
     [Dependency] private readonly SharedPointLightSystem _lightSystem = default!;
 
     private float _burnDiv => (ReactorPartBurnTemp - ReactorPartHotTemp) / 5; // The 5 is how much heat damage insulated gloves protect from
@@ -111,10 +114,15 @@ public sealed partial class ReactorPartSystem
 
         var properties = comp.Properties;
 
-        if (!_entityManager.TryGetComponent<DamageableComponent>(args.Target, out var damageable) || damageable.Damage.DamageDict == null)
+        if (!_entityManager.TryGetComponent<DamageableComponent>(args.Target, out var damageable))
             return;
 
-        var dict = damageable.Damage.DamageDict;
+        var damageSpecifier = _damageableSystem.GetAllDamage((args.Target, damageable));
+
+        if (damageSpecifier.DamageDict.Count == 0)
+            return;
+
+        var dict = damageSpecifier.DamageDict;
 
         var dmgKey = "Radiation";
         var dmg = (properties.NeutronRadioactivity * 20) + (properties.Radioactivity * 10) + (properties.FissileIsotopes * 5);
@@ -149,22 +157,19 @@ public sealed partial class ReactorPartSystem
             gasMix.Temperature += 0.1f * DeltaT * component.ThermalMass / _atmosphereSystem.GetHeatCapacity(gasMix, false);
 
         var burncomp = EnsureComp<DamageOnInteractComponent>(uid);
+        if (burncomp.Damage == null)
+            burncomp.Damage = new DamageSpecifier();
 
         burncomp.IsDamageActive = component.Temperature > Atmospherics.T0C + ReactorPartHotTemp;
 
         if (burncomp.IsDamageActive)
         {
             var damage = Math.Max((component.Temperature - Atmospherics.T0C - ReactorPartHotTemp) / _burnDiv, 0);
-
-            // Giant string of if/else that makes sure it will interfere only as much as it needs to
-            if (burncomp.Damage == null)
-                burncomp.Damage = new() { DamageDict = new() { { "Heat", damage } } };
-            else if (burncomp.Damage.DamageDict == null)
-                burncomp.Damage.DamageDict = new() { { "Heat", damage } };
-            else if (!burncomp.Damage.DamageDict.ContainsKey("Heat"))
-                burncomp.Damage.DamageDict.Add("Heat", damage);
-            else
-                burncomp.Damage.DamageDict["Heat"] = damage;
+            burncomp.Damage.DamageDict["Heat"] = damage;
+        }
+        else
+        {
+            burncomp.Damage.DamageDict.Remove("Heat");
         }
 
         Dirty(uid, burncomp);

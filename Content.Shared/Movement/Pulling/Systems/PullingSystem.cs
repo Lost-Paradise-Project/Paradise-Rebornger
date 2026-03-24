@@ -557,7 +557,7 @@ public sealed class PullingSystem : EntitySystem
         pullableComp.NextPullAttempt = _timing.CurTime + pullableComp.PullAttemptCooldown; // no locking with spam pulls
         // WWDP edit end
 
-        _interaction.DoContactInteraction(pullableUid, pullerUid, null, true); // Stellar - Interaction particles
+        _interaction.DoContactInteraction(pullableUid, pullerUid);
 
         // Use net entity so it's consistent across client and server.
         pullableComp.PullJointId = $"pull-joint-{GetNetEntity(pullableUid)}";
