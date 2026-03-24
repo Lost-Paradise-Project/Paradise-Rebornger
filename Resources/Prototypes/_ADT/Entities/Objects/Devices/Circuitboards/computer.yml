@@ -1,7 +1,0 @@
-## Minesweeper
-- type: entity
-  parent: BaseComputerCircuitboard
-  id: MinesweeperCircuitboard
-  components:
-  - type: ComputerBoard
-    prototype: MinesweeperArcade
