@@ -9,6 +9,11 @@
     jumpsuit: LPPClothingUniformJumpsuitSecGorka
 
 - type: loadout
+  id: JumpsuitDSS
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDSS
+
+- type: loadout
   id: LPPSecurityGorkaRefl
   equipment:
     jumpsuit: LPPClothingUniformJumpsuitSecGorkaRefl

@@ -648,7 +648,7 @@
   id: Instruments
   name: loadout-group-instruments
   minLimit: 0
-  maxLimit: 2
+  maxLimit: 6 # LP edit
   loadouts:
   - Glockenspiel
   - MusicBox
@@ -1256,6 +1256,7 @@
   - SeniorOfficerJumpskirt
   - TrooperUniform
   # LP edit start
+  - JumpsuitDSS
   - LPPSecurityJeansJacket
   - LPPSecurityGorka
   - LPPSecurityGorkaRefl

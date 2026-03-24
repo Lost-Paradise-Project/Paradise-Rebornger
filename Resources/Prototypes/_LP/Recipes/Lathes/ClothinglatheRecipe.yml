@@ -348,6 +348,11 @@
 
 - type: latheRecipe
   parent: BaseJumpsuitRecipe
+  id: ClothingUniformJumpsuitDSS
+  result: ClothingUniformJumpsuitDSS
+
+- type: latheRecipe
+  parent: BaseJumpsuitRecipe
   id: LPPClothingUniformJumpsuitSecHoodieVest
   result: LPPClothingUniformJumpsuitSecHoodieVest
 
