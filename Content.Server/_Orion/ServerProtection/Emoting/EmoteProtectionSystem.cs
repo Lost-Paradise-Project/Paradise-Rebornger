@@ -1,4 +1,4 @@
-﻿using Content.Shared._Orion.CCVar;
+using Content.Shared._Orion.CCVar;
 using Content.Shared.Administration.Managers;
 using Content.Shared.Speech;
 using Robust.Server.Player;
