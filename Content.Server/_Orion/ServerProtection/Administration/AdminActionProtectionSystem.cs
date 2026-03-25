@@ -1,4 +1,4 @@
-﻿using Content.Shared._Orion.CCVar;
+using Content.Shared._Orion.CCVar;
 using Robust.Server.Player;
 using Robust.Shared.Configuration;
 using Robust.Shared.Network;
