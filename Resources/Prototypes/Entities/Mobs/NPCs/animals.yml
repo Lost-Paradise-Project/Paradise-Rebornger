@@ -2329,6 +2329,10 @@
       reagents:
       - ReagentId: Blood
         Quantity: 50
+  # LP edit start
+  - type: TTS
+    voice: meepo_dota_2
+  # LP edit end
 
 - type: entity
   parent: MobParrotBase
