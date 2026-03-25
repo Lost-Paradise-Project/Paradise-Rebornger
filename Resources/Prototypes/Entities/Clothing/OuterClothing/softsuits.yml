@@ -175,3 +175,7 @@
   - type: Tag
     tags:
     - WhitelistChameleon
+  # LP edit start
+  - type: Insulated
+    coefficient: 2
+  # LP edit end
