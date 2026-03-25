@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: [BaseWeaponRevolver, BaseSecurityContraband]
   id: ESWeaponRevolver357
   name: .357 Revolver

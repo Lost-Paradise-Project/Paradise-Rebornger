@@ -1,4 +1,4 @@
-﻿using Content.Shared._ES.Weapons.Ranged.Attachments;
+using Content.Shared._ES.Weapons.Ranged.Attachments;
 using Content.Shared._ES.Weapons.Ranged.Attachments.Components;
 using Robust.Client.GameObjects;
 using Robust.Shared.Containers;

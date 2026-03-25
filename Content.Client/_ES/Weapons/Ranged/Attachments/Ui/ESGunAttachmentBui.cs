@@ -1,4 +1,4 @@
-﻿using JetBrains.Annotations;
+using JetBrains.Annotations;
 using Robust.Client.UserInterface;
 
 namespace Content.Client._ES.Weapons.Ranged.Attachments.Ui;

@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: BaseBullet
   id: ESBullet9mm
   name: 9mm bullet

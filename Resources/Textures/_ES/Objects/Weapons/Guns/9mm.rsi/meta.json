@@ -1,4 +1,4 @@
-﻿{
+{
     "version": 1,
     "license": "CC-BY-SA-3.0",
     "copyright": "Taken from vgstation at https://github.com/vgstation-coders/vgstation13/commit/0078972e7649780398034281b766fb9bf7c7c092, modified by Emisse and EmoGarbage404",
@@ -34,7 +34,7 @@
             "name": "equipped-BELT",
             "directions": 4
         },
-		{
+        {
             "name": "equipped-SUITSTORAGE",
             "directions": 4
         }
