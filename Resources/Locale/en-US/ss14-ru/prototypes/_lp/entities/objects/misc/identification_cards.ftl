@@ -1,10 +1,2 @@
 ent-LPPSecurityEnginerIDCard = field engineer ID card
     .desc = { ent-IDCardStandard.desc }
-ent-LPPSergeantIDCard = security ID card
-    .desc = { ent-IDCardStandard.desc }
-ent-LPPEngineerFirstGradeIDCard = engineer ID card
-    .desc = { ent-IDCardStandard.desc }
-ent-LPPSeniorMedicIDCard = medical ID card
-    .desc = { ent-IDCardStandard.desc }
-ent-LPPSeniorScientistIDCard = research ID card
-    .desc = { ent-IDCardStandard.desc }

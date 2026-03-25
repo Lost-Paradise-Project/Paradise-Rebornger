@@ -1,4 +1,4 @@
-﻿ent-WeatherBase = { ent-StatusEffectBase }
+ent-WeatherBase = { ent-StatusEffectBase }
     .desc = { ent-StatusEffectBase.desc }
 ent-WeatherRain = { ent-WeatherBase }
     .desc = { ent-WeatherBase.desc }
