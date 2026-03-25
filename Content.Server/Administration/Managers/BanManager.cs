@@ -586,7 +586,7 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
             foreach (var (userId, userName) in banDef.Users)
             {
                 var discordId = await _discordAuthManager.GetDiscordIdForPlayer(userId);
-                targetLink = string.Concat(discordId, discordId != null ? $"<@{discordId}>" : Loc.GetString("server-ban-no-name-dc"));
+                targetLink = discordId != null ? $"<@{discordId}>" : Loc.GetString("server-ban-no-name-dc");
                 if (discordId != null)
                     mentions.Add(new User { Id = discordId });
             }
@@ -727,7 +727,7 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
             foreach (var (userId, userName) in banDef.Users)
             {
                 var discordId = await _discordAuthManager.GetDiscordIdForPlayer(userId);
-                targetLink = string.Concat(discordId, discordId != null ? $"<@{discordId}>" : Loc.GetString("server-ban-no-name-dc"));
+                targetLink = discordId != null ? $"<@{discordId}>" : Loc.GetString("server-ban-no-name-dc");
                 if (discordId != null)
                     mentions.Add(new User { Id = discordId });
             }
