@@ -150,7 +150,6 @@ public sealed partial class TimeTransferPanel : DefaultWindow
         GroupTimeLine.Visible = GroupCheckbox.Pressed;
         // LP edit start
         AllTimeTimeLine.Visible = AllTimeCheckbox.Pressed;
-        JobSearch.Editable = AllTimeCheckbox.Pressed;
         JobContainer.Visible = !AllTimeCheckbox.Pressed;
         // LP edit end
 

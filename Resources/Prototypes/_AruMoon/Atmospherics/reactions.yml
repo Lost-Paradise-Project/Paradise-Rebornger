@@ -6,11 +6,11 @@
   - 0     # oxygen
   - 0     # nitrogen
   - 0     # carbon dioxide
-  - 10    # plasma
+  - 0.01    # plasma
   - 0     # tritium
   - 0     # vapor
   - 0     # miasma
-  - 10    # n2o
+  - 0.01    # n2o
   - 0     # frezon
   - 0     # bz
   effects:
@@ -115,8 +115,10 @@
 - type: gasReaction
   id: HyperNobliumProduction
   priority: 7
-  minimumTemperature: 2.7
-  maximumTemperature: 15
+  # LP Edit Start
+  minimumTemperature: 73
+  maximumTemperature: 80
+  # LP Edit End
   minimumRequirements:
   - 0     # oxygen
   - 10    # nitrogen
@@ -183,7 +185,7 @@
   - 0     # vapor
   - 0     # miasma
   - 0     # n2o
-  - 0.01  # frezon
+  - 0.1  # frezon
   - 0.01  # bz
   - 0     # pluoxium
   - 0     # hydrogen

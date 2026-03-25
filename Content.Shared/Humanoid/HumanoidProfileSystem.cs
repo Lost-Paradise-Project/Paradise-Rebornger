@@ -1,6 +1,5 @@
 using System.Numerics;
 using Content.Shared._EE.HeightAdjust;
-using Content.Shared._GoobStation.Barks;
 using Content.Shared.Corvax.TTS;
 using Content.Shared.Examine;
 using Content.Shared.Humanoid.Prototypes;
@@ -26,7 +25,6 @@ public sealed class HumanoidProfileSystem : EntitySystem
         {Sex.Unsexed, "alyx"},
     };
     // Corvax-TTS-End
-    public static readonly ProtoId<BarkPrototype> DefaultBarkVoice = "Alto"; // Goob Station - Barks
 
     public override void Initialize()
     {
@@ -108,15 +106,11 @@ public sealed class HumanoidProfileSystem : EntitySystem
         ent.Comp.Sex = profile.Sex;
         // Corvax-TTS-start
         ent.Comp.Voice = profile.Voice;
-        if (TryComp<TTSComponent>(ent, out var _TTSComponent) && _TTSComponent.VoicePrototypeId == null)
+        if (TryComp<TTSComponent>(ent, out var _TTSComponent) && _TTSComponent.VoicePrototypeId == "nord")
         {
             _TTSComponent.VoicePrototypeId = profile.Voice;
         }
         // Corvax-TTS-end
-        // Goob Station - Barks start
-        var ev = new ApplyBarkVoiceEvent(profile.BarkVoice);
-        RaiseLocalEvent(ent, ref ev);
-        // Goob Station - Barks end
         // begin Goobstation: port EE height/width sliders
         var species = _prototype.Index(profile.Species);
 
@@ -183,8 +177,3 @@ public sealed class HumanoidProfileSystem : EntitySystem
         return Loc.GetString("identity-age-old");
     }
 }
-
-// LP edit start
-[ByRefEvent]
-public record struct ApplyBarkVoiceEvent(string BarkVoice);
-// LP edit end

@@ -4,6 +4,26 @@
   id: LPPClothingUnderwearSocksBase
   name: based socks
   components:
+  - type: PhysicalComposition
+    materialComposition:
+      Cloth: 100
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fiber
+        Quantity: 3
+  - type: Edible
+    requiresSpecialDigestion: true
+  - type: FlavorProfile
+    flavors:
+    - fiber
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 5
   - type: Sprite
     state: icon
   - type: Item
@@ -13,6 +33,7 @@
     preferredSlots: SOCKS
   - type: Tag
     tags:
+    - ClothMade
     - socks
 
 - type: entity

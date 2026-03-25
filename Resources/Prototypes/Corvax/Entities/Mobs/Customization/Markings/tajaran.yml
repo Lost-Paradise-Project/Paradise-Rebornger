@@ -119,7 +119,7 @@
       state: spikey
 
 - type: marking
-  id: TajaranHairLadiesretro # LP-edit 
+  id: TajaranHairLadiesretro # LP-edit
 
   bodyPart: Hair
   groupWhitelist: [Tajaran]
@@ -293,7 +293,6 @@
 
   bodyPart: Hair
   groupWhitelist: [Tajaran]
-  sponsorOnly: true # Corvax-Sponsors
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_hairs.rsi
       state: straight
@@ -303,7 +302,6 @@
 
   bodyPart: Hair
   groupWhitelist: [Tajaran]
-  sponsorOnly: true # Corvax-Sponsors
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_hairs.rsi
       state: long
@@ -313,7 +311,6 @@
 
   bodyPart: FacialHair
   groupWhitelist: [Tajaran]
-  sponsorOnly: true # Corvax-Sponsors
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_facial_hairs.rsi
       state: mustache_2
@@ -323,7 +320,6 @@
 
   bodyPart: FacialHair
   groupWhitelist: [Tajaran]
-  sponsorOnly: true # Corvax-Sponsors
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_facial_hairs.rsi
       state: beard
@@ -333,7 +329,6 @@
 
   bodyPart: FacialHair
   groupWhitelist: [Tajaran]
-  sponsorOnly: true # Corvax-Sponsors
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_facial_hairs.rsi
       state: mustache_3
@@ -373,7 +368,6 @@
 
   bodyPart: Head
   groupWhitelist: [Tajaran]
-  sponsorOnly: true # Corvax-Sponsors
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_head.rsi
       state: eye_stripes_head
@@ -393,7 +387,6 @@
 
   bodyPart: Snout
   groupWhitelist: [Tajaran]
-  sponsorOnly: true # Corvax-Sponsors
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_head.rsi
       state: muzzle
@@ -444,7 +437,6 @@
 
   bodyPart: Head
   groupWhitelist: [Tajaran]
-  sponsorOnly: true # Corvax-Sponsors
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_head.rsi
       state: raccoon-head
@@ -454,7 +446,6 @@
 
   bodyPart: Head
   groupWhitelist: [Tajaran]
-  sponsorOnly: true # Corvax-Sponsors
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_head.rsi
       state: mane_head
@@ -464,7 +455,6 @@
 
   bodyPart: Snout
   groupWhitelist: [Tajaran]
-  sponsorOnly: true # Corvax-Sponsors
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_head.rsi
       state: muzzleinears
@@ -485,7 +475,6 @@
 
   bodyPart: Chest
   groupWhitelist: [Tajaran]
-  sponsorOnly: true # Corvax-Sponsors
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_chest.rsi
       state: belly2
@@ -505,7 +494,6 @@
 
   bodyPart: Chest
   groupWhitelist: [Tajaran]
-  sponsorOnly: true # Corvax-Sponsors
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_chest.rsi
       state: belly1
@@ -515,7 +503,6 @@
 
   bodyPart: Chest
   groupWhitelist: [Tajaran]
-  sponsorOnly: true # Corvax-Sponsors
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_chest.rsi
       state: belly3
@@ -534,7 +521,7 @@
   bodyPart: Tail
 
   groupWhitelist: [Tajaran]
-  sponsorOnly: true # Corvax-Sponsors
+  sponsorOnly: false # Corvax-Sponsors
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_tail.rsi
       state: tail_m
@@ -583,7 +570,6 @@
 
   bodyPart: Tail
   groupWhitelist: [Tajaran]
-  sponsorOnly: true # Corvax-Sponsors
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_tail.rsi
       state: tail_fluffy
@@ -595,7 +581,6 @@
 
   bodyPart: Tail
   groupWhitelist: [Tajaran]
-  sponsorOnly: true # Corvax-Sponsors
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_tail.rsi
       state: tail_fluffy
@@ -607,7 +592,6 @@
 
   bodyPart: Tail
   groupWhitelist: [Tajaran]
-  sponsorOnly: true # Corvax-Sponsors
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_tail.rsi
       state: tail_fluffy

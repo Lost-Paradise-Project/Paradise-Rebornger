@@ -1,5 +1,3 @@
-
-using Content.Shared._GoobStation.Barks;
 using Content.Shared.Preferences;
 
 namespace Content.Client.Lobby.UI;
@@ -29,11 +27,6 @@ public sealed partial class HumanoidProfileEditor
     {
         Profile = Profile?.WithWidth(width);
         ReloadProfilePreview();
-        IsDirty = true;
-    }
-    private void SetBarkVoice(BarkPrototype newVoice)
-    {
-        Profile = Profile?.WithBarkVoice(newVoice);
         IsDirty = true;
     }
     // Goob Station - End

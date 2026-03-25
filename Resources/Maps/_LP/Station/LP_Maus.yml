@@ -13017,7 +13017,6 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: NavMap
-    - type: NightLightning
     - type: BecomesStation
       id: LP_Maus
     - type: ImplicitRoof
@@ -93090,13 +93089,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 6.564453,-4.62027
       parent: 18674
-- proto: MinesweeperArcadeFilled
-  entities:
-  - uid: 6697
-    components:
-    - type: Transform
-      pos: -2.5,-17.5
-      parent: 2
 - proto: MinimoogInstrument
   entities:
   - uid: 12032

@@ -1,5 +1,4 @@
 using Content.Shared._FunkyStation.Records;
-using Content.Shared._GoobStation.Barks;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Preferences;
@@ -68,9 +67,6 @@ public sealed partial class HumanoidCharacterProfileV1
     [DataField]
     public int Age;
 
-    [DataField] // Goob Station - Barks
-    public ProtoId<BarkPrototype> BarkVoice { get; set; } = HumanoidProfileSystem.DefaultBarkVoice; // Goob Station - Barks
-
     // begin Goobstation: port EE height/width sliders
 
     /// <summary>
@@ -109,7 +105,7 @@ public sealed partial class HumanoidCharacterProfileV1
 
     public HumanoidCharacterProfile ToV2()
     {
-        return new(Name, FlavorText, Species, Voice, Height, Width, Age, Sex, Gender, Appearance.ToV2(Species), SpawnPriority, JobPriorities, PreferenceUnavailable, AntagPreferences, TraitPreferences, Loadouts, BarkVoice, CdCharacterRecords); // LP edit
+        return new(Name, FlavorText, Species, Voice, Height, Width, Age, Sex, Gender, Appearance.ToV2(Species), SpawnPriority, JobPriorities, PreferenceUnavailable, AntagPreferences, TraitPreferences, Loadouts, CdCharacterRecords); // LP edit
     }
 }
 

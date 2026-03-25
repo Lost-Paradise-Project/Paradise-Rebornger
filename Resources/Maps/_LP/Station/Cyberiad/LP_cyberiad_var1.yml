@@ -11835,7 +11835,6 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: NavMap
-    - type: NightLightning
     - type: BecomesStation
       id: LPCyberiad
     - type: GridAtmosphere

@@ -50,3 +50,82 @@
     state: pda-beer
   - type: PdaBorderColor
     borderColor: "#333333"
+
+# Same PDA but custom name
+- type: entity
+  parent: BaseSecurityPDA
+  id: LPPSergeantPDA
+  name: sergeant PDA
+  description: Red to hide the stains of passenger blood.
+  components:
+  - type: Pda
+    id: SecurityIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-security
+  - type: PdaBorderColor
+    borderColor: "#A32D26"
+  - type: Icon
+    state: pda-security
+
+- type: entity
+  parent: BasePDA
+  id: LPPEngineerFirstGradePDA
+  name: engineer PDA
+  description: Rugged and well-worn.
+  components:
+  - type: Pda
+    id: EngineeringIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-engineer
+  - type: PdaBorderColor
+    borderColor: "#949137"
+    accentVColor: "#A32D26"
+  - type: Icon
+    state: pda-engineer
+
+- type: entity
+  parent: BaseMedicalPDA
+  id: LPPSeniorMedicPDA
+  name: senior medic PDA
+  description: Shiny and sterile.
+  components:
+  - type: Pda
+    id: MedicalIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-medical
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentVColor: "#447987"
+  - type: Icon
+    state: pda-medical
+  - type: GuideHelp
+    guides:
+    - MedicalDoctor
+
+- type: entity
+  parent: BasePDA
+  id: LPPSeniorScientistPDA
+  name: science PDA
+  description: It's covered with an unknown gooey substance.
+  components:
+  - type: Pda
+    id: ResearchIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-science
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentVColor: "#8900c9"
+  - type: Icon
+    state: pda-science

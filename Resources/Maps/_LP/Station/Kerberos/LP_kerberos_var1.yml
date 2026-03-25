@@ -16426,7 +16426,6 @@ entities:
     - type: RadiationGridResistance
     - type: GravityShake
       shakeTimes: 10
-    - type: NightLightning
     - type: BecomesStation
       id: LPKerberos
     - type: NavMap

@@ -97,10 +97,6 @@ easy_mode = false
 [ghost]
 respawn_max_players = 60
 
-[wega]
-night_light_enabled = true
-party_enabled = false
-
 [tips]
 out_of_game_frequency = 360
 

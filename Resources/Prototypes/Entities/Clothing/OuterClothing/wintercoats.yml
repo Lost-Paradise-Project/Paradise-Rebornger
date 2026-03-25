@@ -77,7 +77,7 @@
     clothingPrototype: ClothingHeadHatHoodWinterEngineer
 
 - type: entity
-  parent: ClothingOuterWinterCoatToggleable
+  parent: [ClothingOuterWinterCoatToggleable, AllowSuitStorageClothing] # LP Edit
   id: ClothingOuterWinterBar
   name: bartender winter coat
   components:

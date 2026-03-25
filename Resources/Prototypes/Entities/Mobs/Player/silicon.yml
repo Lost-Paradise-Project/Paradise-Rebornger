@@ -339,6 +339,8 @@
       - StationAiCoreElectronics
   - type: StaticPrice
     price: 5000
+  - type: TTS
+    voice: glados
 
 # The job-ready version of an AI spawn.
 - type: entity
@@ -483,8 +485,6 @@
     mindRoles:
     - MindRoleGhostRoleSilicon
     job: StationAi
-  - type: SpeechSynthesis # Corvax-Frontier-Barks
-    voice: Borg
 
 # Hologram projection that the AI's eye tracks.
 - type: entity
@@ -509,8 +509,6 @@
     pvsScale: 1.5
   - type: Visibility
     layer: 2
-  - type: TTS
-    voice: glados
   - type: Sprite
     sprite: Mobs/Silicon/station_ai.rsi
     layers:

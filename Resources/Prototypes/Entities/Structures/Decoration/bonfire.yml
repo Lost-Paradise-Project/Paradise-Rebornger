@@ -44,7 +44,6 @@
   - type: IgnitionSource
     temperature: 700
     ignited: true
-  - type: NightLightBlocked # Corvax-Wega-NightLight
   - type: RequireProjectileTarget
 
 - type: entity

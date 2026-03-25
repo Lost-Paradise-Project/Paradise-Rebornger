@@ -194,6 +194,11 @@ binds:
 - function: OpenEmotesMenu
   type: State
   key: Y
+# Corvax-Wega-start
+- function: OfferItem
+  type: State
+  key: F
+# Corvax-Wega-end
 - function: TextCursorSelect
   # TextCursorSelect HAS to be above ExamineEntity
   # So that LineEdit receives it correctly.
@@ -305,7 +310,7 @@ binds:
   mod1: Shift
 - function: FlipObject
   type: State
-  key: F
+  key: J
 - function: TextCursorLeft
   type: State
   key: Left

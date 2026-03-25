@@ -133,7 +133,7 @@
   name: loadout-group-medical-doctor-id
   loadouts:
   - MedicalDoctorPDA
-  - SeniorPhysicianPDA
+  - LPPSeniorMedicPDA # LP Edit
 
 #- type: loadoutGroup
 #  id: MedicalDoctorJobTrinkets

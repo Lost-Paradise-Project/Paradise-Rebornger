@@ -2,7 +2,7 @@
   parent: ClothingHeadHatHardhatBase
   id: LPPClothingHeadHelmetBasic
   name: helmet with flashlight
-  description: Standard protective gear. Protects against impacts and shines in technical tunnels.
+  description: Standard protective gear. Protects against impacts and shines in technical tunnels, but now with a flashlight!
   components:
   - type: Sprite
     sprite: _LP/Clothing/Head/Helmets/security.rsi

@@ -284,8 +284,6 @@ namespace Content.Server.Database
                         .Select(t => new Trait { TraitName = t })
             );
 
-            profile.BarkVoice = humanoid.BarkVoice; // Goob Station - Barks
-
             // Begin CD - Character Records
             profile.CDProfile ??= new CDModel.CDProfile();
             // There are JsonIgnore annotations to ensure that entries are not stored as JSON.

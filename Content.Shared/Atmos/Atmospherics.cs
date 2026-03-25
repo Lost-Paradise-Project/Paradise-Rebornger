@@ -314,7 +314,7 @@ namespace Content.Shared.Atmos
         /// <summary>
         ///     Defines energy released in BZ formation.
         /// </summary>
-        public const float BZFormationEnergy = 80000f;
+        public const float BZFormationEnergy = 10000f; // LP Edit
 
         /// <summary>
         ///     Defines energy released in N2O decomposition reaction.
