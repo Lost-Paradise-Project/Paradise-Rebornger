@@ -1,4 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Content.Shared._ES.Weapons.Ranged.Attachments.Components;
 using Content.Shared.ActionBlocker;
