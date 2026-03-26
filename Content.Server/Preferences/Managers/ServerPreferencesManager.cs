@@ -209,7 +209,11 @@ namespace Content.Server.Preferences.Managers
                 antags.ToHashSet(),
                 traits.ToHashSet(),
                 loadouts,
-                (profile.CDProfile != null && profile.CDProfile.CharacterRecords != null) ? RecordsSerialization.Deserialize(profile.CDProfile.CharacterRecords) : null
+                (profile.CDProfile != null && profile.CDProfile.CharacterRecords != null) ? RecordsSerialization.Deserialize(profile.CDProfile.CharacterRecords) : null, // CD edit
+                // ADT edit start
+                profile.OOCNotes,
+                profile.HeadshotUrl
+                // ADT edit end
             );
         }
 

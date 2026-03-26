@@ -6,6 +6,7 @@ using Content.Server.Station.Components;
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
 using Content.Shared.Body;
+using Content.Shared._ADT.CharecterFlavor;
 using Content.Shared.CCVar;
 using Content.Shared.Clothing;
 using Content.Shared.DetailExaminable;
@@ -144,7 +145,14 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
 
             if (profile.FlavorText != "" && _configurationManager.GetCVar(CCVars.FlavorText))
             {
-                AddComp<DetailExaminableComponent>(entity.Value).Content = profile.FlavorText;
+                //ADT-tweak-start: Реворк флаворов
+                // AddComp<DetailExaminableComponent>(entity.Value).Content = profile.FlavorText;
+                var flavor = EnsureComp<CharacterFlavorComponent>(entity.Value);
+                flavor.FlavorText = profile.FlavorText;
+                flavor.OOCNotes = profile.OOCNotes;
+                flavor.HeadshotUrl = profile.HeadshotUrl;
+                //возможное TODO: добавить кастомное описание рас
+                //ADT-tweak-end
             }
         }
 
