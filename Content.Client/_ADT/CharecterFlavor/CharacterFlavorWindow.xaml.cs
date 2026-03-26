@@ -1,4 +1,4 @@
-﻿using System.Numerics;
+using System.Numerics;
 using Content.Client.Humanoid;
 using Content.Client.Message;
 using Content.Client.UserInterface.Controls;
