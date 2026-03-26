@@ -103,11 +103,13 @@ public sealed partial class HumanoidCharacterProfileV1
     public PlayerProvidedCharacterRecords? CdCharacterRecords;
     // CD edit end - character records
 
+    // ADT edit start
     [DataField]
     public string oocNotes;
 
     [DataField]
     public string headshotUrl;
+    // ADT edit end
 
     public HumanoidCharacterProfile ToV2()
     {
