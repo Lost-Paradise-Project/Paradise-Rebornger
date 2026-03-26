@@ -60,9 +60,6 @@ public sealed partial class HumanoidProfileEditor
             return;
 
         Profile = Profile.WithFlavorText(content);
-        //ADT-tweak-start
-        Profile = Profile.WithOOCNotes(content);
-        //ADT-tweak-end
         SetDirty();
     }
 

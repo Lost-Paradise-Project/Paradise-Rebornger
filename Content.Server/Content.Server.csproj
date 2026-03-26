@@ -26,20 +26,6 @@
   <ItemGroup>
     <Folder Include="ADT\" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="_FunkyStation\Medical\MedicalRecords\MedicalRecordsConsoleComponent.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="_FunkyStation\Medical\MedicalRecords\MedicalRecordsConsoleComponent.cs" />
-    <Compile Remove="_FunkyStation\Records\CharacterRecordKeyStorageComponent.cs" />
-    <Compile Remove="_FunkyStation\Records\CharacterRecordsComponent.cs" />
-    <Compile Remove="_FunkyStation\Records\CharacterRecordsSystem.cs" />
-    <Compile Remove="_FunkyStation\Records\RecordsSerialization.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="_FunkyStation\Medical\MedicalRecords\" />
-    <Folder Include="_FunkyStation\Records\" />
-  </ItemGroup>
   <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
 
   <Import Project="..\RobustToolbox\Imports\Lidgren.props" />
