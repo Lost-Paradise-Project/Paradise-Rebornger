@@ -122,6 +122,7 @@
   id: LockerFillHeadOfPersonnel
   table: !type:AllSelector
     children:
+    - id: LPPComputerJobSlotsFlatpack # LP Edit
     - id: AccessConfigurator
     - id: BoxEncryptionKeyPassenger
     - id: BoxEncryptionKeyService
