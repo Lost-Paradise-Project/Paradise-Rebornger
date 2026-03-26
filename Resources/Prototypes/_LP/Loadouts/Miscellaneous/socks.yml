@@ -64,12 +64,6 @@
   groupBy: "stripped"
 
 - type: loadout
-  id: LPClothingUnderThinThigh
-  equipment:
-    socks: LPPClothingUnderThinThigh
-  groupBy: "socks_dark"
-
-- type: loadout
   id: LPClothingUnderSocksDark
   equipment:
     socks: LPPClothingUnderSocksDark
