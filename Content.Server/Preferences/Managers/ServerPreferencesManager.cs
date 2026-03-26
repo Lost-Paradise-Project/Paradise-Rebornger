@@ -4,7 +4,6 @@ using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 using Content.Corvax.Interfaces.Shared;
-using Content.Server._FunkyStation.Records;
 using Content.Server.Database;
 using Content.Shared.Body;
 using Content.Shared.CCVar;
@@ -209,7 +208,6 @@ namespace Content.Server.Preferences.Managers
                 antags.ToHashSet(),
                 traits.ToHashSet(),
                 loadouts,
-                (profile.CDProfile != null && profile.CDProfile.CharacterRecords != null) ? RecordsSerialization.Deserialize(profile.CDProfile.CharacterRecords) : null, // CD edit
                 // ADT edit start
                 profile.OOCNotes,
                 profile.HeadshotUrl

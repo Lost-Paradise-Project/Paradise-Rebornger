@@ -21,7 +21,6 @@ using Robust.Shared.Serialization.Manager;
 using Robust.Shared.Serialization.Markdown;
 using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
-using Content.Shared._FunkyStation.Records; // CD - Character Records
 using Robust.Shared;
 using YamlDotNet.RepresentationModel;
 
@@ -150,11 +149,6 @@ namespace Content.Shared.Preferences
         public PreferenceUnavailableMode PreferenceUnavailable { get; private set; } =
             PreferenceUnavailableMode.SpawnAsOverflow;
 
-        // Begin CD - Character records
-        [DataField("cosmaticDriftCharacterRecords")]
-        public PlayerProvidedCharacterRecords? CDCharacterRecords;
-        // End CD - Character records
-
         public HumanoidCharacterProfile(
             string name,
             string flavortext,
@@ -172,9 +166,6 @@ namespace Content.Shared.Preferences
             HashSet<ProtoId<AntagPrototype>> antagPreferences,
             HashSet<ProtoId<TraitPrototype>> traitPreferences,
             Dictionary<string, RoleLoadout> loadouts,
-            // Begin CD - Character Records
-            PlayerProvidedCharacterRecords? cdCharacterRecords,
-            // End CD - Character Records
             //ADT-tweak-start
             string oocNotes,
             string headshotUrl
@@ -197,9 +188,6 @@ namespace Content.Shared.Preferences
             _antagPreferences = antagPreferences;
             _traitPreferences = traitPreferences;
             _loadouts = loadouts;
-            // Begin CD - Character Records
-            CDCharacterRecords = cdCharacterRecords;
-            // End CD - Character Records
             // ADT start
             OOCNotes = oocNotes;
             HeadshotUrl = headshotUrl;
@@ -238,7 +226,6 @@ namespace Content.Shared.Preferences
                 new HashSet<ProtoId<AntagPrototype>>(other.AntagPreferences),
                 new HashSet<ProtoId<TraitPrototype>>(other.TraitPreferences),
                 new Dictionary<string, RoleLoadout>(other.Loadouts),
-                other.CDCharacterRecords, // CD - Character Records
                 // ADT start
                 other.OOCNotes,
                 other.HeadshotUrl
@@ -410,13 +397,6 @@ namespace Content.Shared.Preferences
             return new(this) { SpawnPriority = spawnPriority };
         }
 
-        // Begin CD - Character Records
-        public HumanoidCharacterProfile WithCDCharacterRecords(PlayerProvidedCharacterRecords records)
-        {
-            return new HumanoidCharacterProfile(this) { CDCharacterRecords = records };
-        }
-        // End CD - Character Records
-
         public HumanoidCharacterProfile WithJobPriorities(IEnumerable<KeyValuePair<ProtoId<JobPrototype>, JobPriority>> jobPriorities)
         {
             var dictionary = new Dictionary<ProtoId<JobPrototype>, JobPriority>(jobPriorities);
@@ -584,8 +564,6 @@ namespace Content.Shared.Preferences
             if (!_traitPreferences.SequenceEqual(other._traitPreferences)) return false;
             if (!Loadouts.SequenceEqual(other.Loadouts)) return false;
             if (FlavorText != other.FlavorText) return false;
-            if (CDCharacterRecords != null && other.CDCharacterRecords != null && // CD
-               !CDCharacterRecords.MemberwiseEquals(other.CDCharacterRecords)) return false; // CD
             // ADT-tweak-start
             if (OOCNotes != other.OOCNotes) return false;
             if (HeadshotUrl != other.HeadshotUrl) return false;
@@ -795,17 +773,6 @@ namespace Content.Shared.Preferences
             if (voice is null || !CanHaveVoice(voice, Sex, Species, sponsorTier)) // LP edit
                 Voice = HumanoidProfileSystem.DefaultSexVoice[sex];
             // Corvax-TTS-End
-
-            // Begin CD - Character Records
-            if (CDCharacterRecords == null)
-            {
-                CDCharacterRecords = PlayerProvidedCharacterRecords.DefaultRecords();
-            }
-            else
-            {
-                CDCharacterRecords!.EnsureValid();
-            }
-            // End CD - Character Records
 
             // Checks prototypes exist for all loadouts and dump / set to default if not.
             var toRemove = new ValueList<string>();

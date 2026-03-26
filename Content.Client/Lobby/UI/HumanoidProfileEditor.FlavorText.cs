@@ -1,5 +1,4 @@
 using Content.Client._ADT.CharecterFlavor;
-using Content.Shared._FunkyStation.Records;
 using Content.Shared._ADT.CharecterFlavor;
 using Robust.Client.UserInterface.Controls;
 using Robust.Shared.Utility;
@@ -24,9 +23,6 @@ public sealed partial class HumanoidProfileEditor
                 return;
 
             _flavorText = new FlavorText.FlavorText();
-            // begin funky - flavor text is in the Records tab now
-            _recordsTab.PersonalInfoContainer.Visible = true;
-            // end funky
             TabContainer.AddChild(_flavorText);
             TabContainer.SetTabTitle(TabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-flavortext-tab"));
             _flavorTextEdit = _flavorText.CFlavorTextInput;
@@ -44,9 +40,6 @@ public sealed partial class HumanoidProfileEditor
             if (_flavorText == null)
                 return;
 
-            // begin funky - flavor text is in the Records tab now
-            _recordsTab.PersonalInfoContainer.Visible = false;
-            // end funky
             TabContainer.RemoveChild(_flavorText);
             _flavorText.OnFlavorTextChanged -= OnFlavorTextChange;
             //ADT-tweak-start
@@ -60,16 +53,6 @@ public sealed partial class HumanoidProfileEditor
             _flavorText = null;
         }
     }
-
-    // Start CD - Character Records
-    private void UpdateProfileRecords(PlayerProvidedCharacterRecords records)
-    {
-        if (Profile is null)
-            return;
-        Profile = Profile.WithCDCharacterRecords(records);
-        IsDirty = true;
-    }
-    // End CD - Character Records
 
     private void OnFlavorTextChange(string content)
     {

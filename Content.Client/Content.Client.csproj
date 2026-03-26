@@ -25,6 +25,18 @@
     <ProjectReference Include="..\Corvax\Content.Corvax.Interfaces.Client\Content.Corvax.Interfaces.Client.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="_FunkyStation\Medical\MedicalRecordsConsole\UI\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="_FunkyStation\Medical\MedicalRecordsConsole\UI\MedicalRecordsMenu.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="_FunkyStation\Medical\MedicalRecordsConsole\MedicalRecordsBoundUserInterface.cs" />
+  </ItemGroup>
+
   <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
   <Import Project="..\RobustToolbox\MSBuild\XamlIL.targets" />
 </Project>

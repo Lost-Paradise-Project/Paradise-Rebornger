@@ -20,8 +20,6 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.Manager;
 using Robust.Shared.Utility;
 using Content.Shared._White.CustomGhostSystem;  //WWDP edit
-using Content.Server._FunkyStation.Records; // CD - Character Records
-using Content.Shared._FunkyStation.Records; // CD - Character Records
 
 namespace Content.Server.Database
 {
@@ -50,10 +48,6 @@ namespace Content.Server.Database
                 .Include(p => p.Profiles).ThenInclude(h => h.Jobs)
                 .Include(p => p.Profiles).ThenInclude(h => h.Antags)
                 .Include(p => p.Profiles).ThenInclude(h => h.Traits)
-                // Begin CD - Character Records
-                .Include(p => p.Profiles)
-                    .ThenInclude(h => h.CDProfile)
-                // End CD - Character Records
                 .Include(p => p.Profiles)
                     .ThenInclude(h => h.Loadouts)
                     .ThenInclude(l => l.Groups)
@@ -107,7 +101,6 @@ namespace Content.Server.Database
             }
 
             var oldProfile = db.DbContext.Profile
-                .Include(p => p.CDProfile) // CD - Character Records
                 .Include(p => p.Preference)
                 .Where(p => p.Preference.UserId == userId.UserId)
                 .Include(p => p.Jobs)
@@ -283,12 +276,6 @@ namespace Content.Server.Database
                 humanoid.TraitPreferences
                         .Select(t => new Trait { TraitName = t })
             );
-
-            // Begin CD - Character Records
-            profile.CDProfile ??= new CDModel.CDProfile();
-            // There are JsonIgnore annotations to ensure that entries are not stored as JSON.
-            profile.CDProfile.CharacterRecords = JsonSerializer.SerializeToDocument(humanoid.CDCharacterRecords ?? PlayerProvidedCharacterRecords.DefaultRecords());
-            // End CD - Character Records
 
             profile.Loadouts.Clear();
 
