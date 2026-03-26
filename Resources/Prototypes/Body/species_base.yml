@@ -10,6 +10,7 @@
   id: BaseSpeciesMob
   save: false
   components:
+  - type: TTS # Corvax-TTS
   - type: DamageVisuals
     thresholds: [ 10, 20, 30, 50, 70, 100 ]
     targetLayers:

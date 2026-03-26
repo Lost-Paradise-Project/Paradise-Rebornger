@@ -6,6 +6,7 @@
   save: false
   abstract: true
   components:
+  - type: TTS # Corvax-TTS
   - type: Reactive
     groups:
       Acidic: [Touch]

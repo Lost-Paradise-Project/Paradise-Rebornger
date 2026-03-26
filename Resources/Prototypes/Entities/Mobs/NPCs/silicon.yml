@@ -5,6 +5,7 @@
   parent: BaseMob
   id: MobRobotic
   components:
+  - type: TTS # Corvax-TTS
   - type: Reactive
     groups:
       Acidic: [Touch]
