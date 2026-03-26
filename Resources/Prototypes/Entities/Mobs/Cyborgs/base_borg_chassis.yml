@@ -1,12 +1,11 @@
 - type: entity
-  parent: [BaseMob, StripableInventoryBase]
+  parent: [BaseMob, StripableInventoryBase, TTS_speaker] # Corvax-TTS
   id: BaseBorgChassisNotIonStormable
   name: cyborg
   description: A man-machine hybrid that assists in station activity. They love being asked to state their laws over and over.
   save: false
   abstract: true
   components:
-  - type: TTS # Corvax-TTS
   - type: Reactive
     groups:
       Acidic: [Touch]

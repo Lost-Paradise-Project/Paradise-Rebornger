@@ -2,10 +2,9 @@
 - type: entity
   save: false
   abstract: true
-  parent: BaseMob
+  parent: [BaseMob, TTS_speaker] # Corvax-TTS
   id: MobRobotic
   components:
-  - type: TTS # Corvax-TTS
   - type: Reactive
     groups:
       Acidic: [Touch]

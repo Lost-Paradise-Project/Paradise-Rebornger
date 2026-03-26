@@ -7,10 +7,10 @@
   - MobPolymorphable
   - StripableInventoryBase
   - BaseSpeciesAppearance
+  - TTS_speaker # Corvax-TTS
   id: BaseSpeciesMob
   save: false
   components:
-  - type: TTS # Corvax-TTS
   - type: DamageVisuals
     thresholds: [ 10, 20, 30, 50, 70, 100 ]
     targetLayers:
