@@ -1,4 +1,4 @@
-﻿// Inspired by Nyanotrasen
+// Inspired by Nyanotrasen
 using Content.Shared.Examine;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Verbs;

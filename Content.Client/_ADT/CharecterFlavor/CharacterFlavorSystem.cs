@@ -1,4 +1,4 @@
-﻿// Inspired by Nyanotrasen
+// Inspired by Nyanotrasen
 using Content.Shared._ADT.CharecterFlavor;
 using Robust.Client.UserInterface;
 using Robust.Shared.Timing;
