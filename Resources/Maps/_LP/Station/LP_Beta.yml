@@ -67039,23 +67039,6 @@ entities:
       canCollide: False
     - type: InsideEntityStorage
       storage: 1043
-- proto: FoodTray
-  entities:
-  - uid: 19869
-    components:
-    - type: Transform
-      pos: 15.5,-0.35
-      parent: 2
-  - uid: 19886
-    components:
-    - type: Transform
-      pos: 15.5,-0.2
-      parent: 2
-  - uid: 19889
-    components:
-    - type: Transform
-      pos: 15.5,-0.5
-      parent: 2
 - proto: ForkPlastic
   entities:
   - uid: 18124
