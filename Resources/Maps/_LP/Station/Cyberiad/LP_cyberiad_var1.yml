@@ -116143,18 +116143,6 @@ entities:
       deviceLists:
       - 28368
       - 28553
-- proto: FishingRod
-  entities:
-  - uid: 23788
-    components:
-    - type: Transform
-      pos: -39.251625,48.71505
-      parent: 2
-  - uid: 23796
-    components:
-    - type: Transform
-      pos: -46.190033,30.97588
-      parent: 2
 - proto: Flash
   entities:
   - uid: 15896

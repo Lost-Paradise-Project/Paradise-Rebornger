@@ -65064,20 +65064,6 @@ entities:
     - type: Transform
       pos: -69.5,-40.5
       parent: 2
-- proto: FishingRod
-  entities:
-  - uid: 17131
-    components:
-    - type: Transform
-      pos: -33.091854,-44.541306
-      parent: 2
-- proto: FishingRodMakeshift
-  entities:
-  - uid: 17129
-    components:
-    - type: Transform
-      pos: -39.39654,-44.658493
-      parent: 2
 - proto: FlashlightSeclite
   entities:
   - uid: 18947
