@@ -53,6 +53,12 @@
   groupBy: "socksknee"
 
 - type: loadout
+  id: LPClothingUnderSocksKnee
+  equipment:
+    socks: LPPClothingUnderSocksKnee
+  groupBy: "socksknee"
+
+- type: loadout
   id: LPClothingUnderSocksKneeTeal
   equipment:
     socks: LPPClothingUnderSocksKneeTeal
