@@ -162,9 +162,9 @@
     - FootstepSound
     - DoorBumpOpener
     - AnomalyHost
+  - type: CanDoCPR # DeltaV
   # LP edit start
   - type: ERPBounder
-  - type: CPRTraining
   - type: Carriable
   # LP edit end
   - type: Posing # Orion

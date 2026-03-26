@@ -1,0 +1,9 @@
+cpr-verb-start = Сделать СЛР
+cpr-verb-description = Помочь критически раненой цели дышать.
+cpr-verb-disabled-description = Кто-то уже делает СЛР этому пациенту.
+cpr-popup-start-user = Вы начинаете делать СЛР { THE($patient) }.
+cpr-popup-start-others = { CAPITALIZE(THE($provider)) } начинает делать СЛР { THE($patient) }.
+cpr-popup-continue-user = Вы продолжаете делать СЛР { THE($patient) }.
+cpr-popup-continue-others = { CAPITALIZE(THE($provider)) } продолжает делать СЛР { THE($patient) }.
+cpr-popup-stop-user = Вы прекращаете делать СЛР { THE($patient) }.
+cpr-popup-stop-others = { CAPITALIZE(THE($provider)) } прекращает делать СЛР { THE($patient) }.

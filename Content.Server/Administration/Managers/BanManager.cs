@@ -3,6 +3,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Content.Server._Orion.ServerProtection.Administration;
 using Content.Server.Chat.Managers;
 using Content.Server.Database;
 using Content.Server.GameTicking;
@@ -50,6 +51,7 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
     [Dependency] private readonly IEntitySystemManager _systems = default!;
     [Dependency] private readonly ITaskManager _taskManager = default!;
     [Dependency] private readonly UserDbDataManager _userDbData = default!;
+    [Dependency] private readonly AdminActionProtectionSystem _adminActionProtection = default!; // Orion
 #if LP
     [Dependency] private readonly DiscordAuthManager _discordAuthManager = default!;
 #endif
@@ -200,6 +202,11 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
 
         _sawmill.Info(logMessage);
         _chat.SendAdminAlert(logMessage);
+
+        // Orion-Start
+        if (banDef.BanningAdmin != null)
+            _adminActionProtection.ReportBanAction(banDef.BanningAdmin.Value, adminName, targetName);
+        // Orion-End
 
         KickMatchingConnectedPlayers(banDef, "newly placed ban");
 
@@ -579,7 +586,7 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
             foreach (var (userId, userName) in banDef.Users)
             {
                 var discordId = await _discordAuthManager.GetDiscordIdForPlayer(userId);
-                targetLink = string.Concat(discordId, discordId != null ? $"<@{discordId}>" : Loc.GetString("server-ban-no-name-dc"));
+                targetLink = discordId != null ? $"<@{discordId}>" : Loc.GetString("server-ban-no-name-dc");
                 if (discordId != null)
                     mentions.Add(new User { Id = discordId });
             }
@@ -720,7 +727,7 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
             foreach (var (userId, userName) in banDef.Users)
             {
                 var discordId = await _discordAuthManager.GetDiscordIdForPlayer(userId);
-                targetLink = string.Concat(discordId, discordId != null ? $"<@{discordId}>" : Loc.GetString("server-ban-no-name-dc"));
+                targetLink = discordId != null ? $"<@{discordId}>" : Loc.GetString("server-ban-no-name-dc");
                 if (discordId != null)
                     mentions.Add(new User { Id = discordId });
             }

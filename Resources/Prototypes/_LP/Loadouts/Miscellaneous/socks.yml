@@ -40,11 +40,6 @@
   groupBy: "commie"
 
 - type: loadout
-  id: LPClothingUnderPantyhose
-  equipment:
-    socks: LPPClothingUnderPantyhose
-
-- type: loadout
   id: LPClothingUnderRainbowKnee
   equipment:
     socks: LPPClothingUnderRainbowKnee
@@ -57,65 +52,58 @@
   groupBy: "rainbow"
 
 - type: loadout
-  id: LPClothingUnderSocksKnee
-  equipment:
-    socks: LPPClothingUnderSocksKnee
-  groupBy: "rainbow"
-
-- type: loadout
   id: LPClothingUnderStripedKnee
   equipment:
     socks: LPPClothingUnderStripedKnee
+  groupBy: "stripped"
 
 - type: loadout
   id: LPClothingUnderStripedThigh
   equipment:
     socks: LPPClothingUnderStripedThigh
-
-- type: loadout
-  id: LPClothingUnderThinKnee
-  equipment:
-    socks: LPPClothingUnderThinKnee
-
-- type: loadout
-  id: LPClothingUnderThinThigh
-  equipment:
-    socks: LPPClothingUnderThinThigh
+  groupBy: "stripped"
 
 - type: loadout
   id: LPClothingUnderSocksDark
   equipment:
     socks: LPPClothingUnderSocksDark
+  groupBy: "socks_dark"
 
 - type: loadout
   id: LPClothingUnderSocksDarkBlue
   equipment:
     socks: LPPClothingUnderSocksDarkBlue
+  groupBy: "socks_others"
 
 - type: loadout
   id: LPClothingUnderSocksDarkGrid
   equipment:
     socks: LPPClothingUnderSocksDarkGrid
+  groupBy: "socks_dark"
 
 - type: loadout
   id: LPClothingUnderSocksDarkLace
   equipment:
     socks: LPPClothingUnderSocksDarkLace
+  groupBy: "socks_dark"
 
 - type: loadout
   id: LPClothingUnderSocksDarkRedLace
   equipment:
     socks: LPPClothingUnderSocksDarkRedLace
+  groupBy: "socks_others"
 
 - type: loadout
   id: LPClothingUnderSocksDarkRedLine
   equipment:
     socks: LPPClothingUnderSocksDarkRedLine
+  groupBy: "socks_others"
 
 - type: loadout
   id: LPClothingUnderSocksDarkWhiteLace
   equipment:
     socks: LPPClothingUnderSocksDarkWhiteLace
+  groupBy: "socks_others"
 
 - type: loadout
   id: LPClothingUnderSocksBlue
@@ -126,3 +114,21 @@
   id: LPClothingUnderSocksMime
   equipment:
     socks: LPPClothingUnderSocksMime
+
+- type: loadout
+  id: LPClothingUnderPantyhoseBlack
+  equipment:
+    socks: LPPClothingUnderPantyhoseBlack
+  groupBy: "socks_thin"
+
+- type: loadout
+  id: LPClothingUnderThinKneeBlack
+  equipment:
+    socks: LPPClothingUnderThinKneeBlack
+  groupBy: "socks_thin"
+
+- type: loadout
+  id: LPClothingUnderThinThighBlack
+  equipment:
+    socks: LPPClothingUnderThinThighBlack
+  groupBy: "socks_thin"

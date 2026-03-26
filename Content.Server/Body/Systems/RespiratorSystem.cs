@@ -3,6 +3,7 @@ using Content.Server.Atmos.EntitySystems;
 using Content.Server.Body.Components;
 using Content.Server.Chat.Systems;
 using Content.Shared.Body.Systems;
+using Content.Shared._DV.Body.Components; // DeltaV - Addition of CPR
 using Content.Shared.Alert;
 using Content.Shared.Atmos;
 using Content.Shared.Body;
@@ -90,7 +91,8 @@ public sealed class RespiratorSystem : EntitySystem
 
             UpdateSaturation(uid, -(float)respirator.UpdateInterval.TotalSeconds, respirator);
 
-            if (!_mobState.IsIncapacitated(uid)) // cannot breathe in crit.
+            if (!_mobState.IsIncapacitated(uid)
+                || TryComp<AffectedByCPRComponent>(uid, out var cprComp) && cprComp.IsActive) // DeltaV - Addition of CPR
             {
                 switch (respirator.Status)
                 {

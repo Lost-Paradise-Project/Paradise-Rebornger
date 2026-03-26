@@ -57,7 +57,6 @@ namespace Content.Server.Entry
         internal const string ConfigPresetsDir = "/ConfigPresets/";
         private const string ConfigPresetsDirBuild = $"{ConfigPresetsDir}Build/";
         private LastRolledAntagManager? _lastAntagManager; // Goobstation
-        private ChatProtectionSystem _chatProtection = default!; // Orion
 
         [Dependency] private readonly CVarControlManager _cvarCtrl = default!;
         [Dependency] private readonly ContentLocalizationManager _loc = default!;
@@ -161,8 +160,6 @@ namespace Content.Server.Entry
             IoCManager.Resolve<DiscordAuthManager>().Initialize();
             IoCManager.Resolve<JoinQueueManager>().Initialize();
 #endif
-            _chatProtection = IoCManager.Resolve<ChatProtectionSystem>(); // Orion
-            _chatProtection.Initialize(); // Orion
         }
 
         public override void PostInit()
