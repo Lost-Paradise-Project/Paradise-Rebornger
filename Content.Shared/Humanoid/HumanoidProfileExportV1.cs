@@ -103,9 +103,17 @@ public sealed partial class HumanoidCharacterProfileV1
     public PlayerProvidedCharacterRecords? CdCharacterRecords;
     // CD edit end - character records
 
+    // ADT edit start
+    [DataField]
+    public string oocNotes;
+
+    [DataField]
+    public string headshotUrl;
+    // ADT edit end
+
     public HumanoidCharacterProfile ToV2()
     {
-        return new(Name, FlavorText, Species, Voice, Height, Width, Age, Sex, Gender, Appearance.ToV2(Species), SpawnPriority, JobPriorities, PreferenceUnavailable, AntagPreferences, TraitPreferences, Loadouts, CdCharacterRecords); // LP edit
+        return new(Name, FlavorText, Species, Voice, Height, Width, Age, Sex, Gender, Appearance.ToV2(Species), SpawnPriority, JobPriorities, PreferenceUnavailable, AntagPreferences, TraitPreferences, Loadouts, CdCharacterRecords, oocNotes, headshotUrl); // LP edit
     }
 }
 

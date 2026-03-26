@@ -320,6 +320,10 @@ namespace Content.Server.Database
 
                 profile.Loadouts.Add(dz);
             }
+            // ADT start
+            profile.OOCNotes = humanoid.OOCNotes;
+            profile.HeadshotUrl = humanoid.HeadshotUrl;
+            // ADT end
 
             return profile;
         }
