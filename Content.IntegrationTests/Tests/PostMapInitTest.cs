@@ -88,12 +88,7 @@ namespace Content.IntegrationTests.Tests
 
         private static readonly string[] GameMaps = GameDataScrounger.PrototypesOfKind<GameMapPrototype>().Where(x => x != PoolManager.TestMap).ToArray();
         private static readonly ResPath[] AllMapFiles = GameDataScrounger.FilesInDirectoryInVfs("/Maps", "*.yml");
-        private static readonly ResPath[] ShuttleMapFiles = GameDataScrounger.FilesInDirectoryInVfs("/Maps/Shuttles", "*.yml")
-            // LP edit start
-            .Concat(GameDataScrounger.FilesInDirectoryInVfs("/Maps/_LP/Shuttles", "*.yml"))
-            .Concat(GameDataScrounger.FilesInDirectoryInVfs("/Maps/Corvax/Shuttles", "*.yml"))
-            .ToArray();
-            // LP edit end
+        private static readonly ResPath[] ShuttleMapFiles = GameDataScrounger.FilesInDirectoryInVfs("/Maps/Shuttles", "*.yml").ToArray();
 
         private static readonly ProtoId<EntityCategoryPrototype> DoNotMapCategory = "DoNotMap";
 
