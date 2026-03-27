@@ -88,16 +88,19 @@
   id: LPCutOutBodyBra2
   equipment:
     breast: LPPCutOutBodyBra2
+  groupBy: "body_cut"
 
 - type: loadout
   id: LPSwimsuitBodyBra2
   equipment:
     breast: LPPSwimsuitBodyBra2
+  groupBy: "swimsuit_bra"
 
 - type: loadout
   id: LPSwimsuitplusTightsBodyBra2
   equipment:
     breast: LPPSwimsuitplusTightsBodyBra2
+  groupBy: "swimsuit_bra"
 
 - type: loadout
   id: LPTranslucentBodyBra

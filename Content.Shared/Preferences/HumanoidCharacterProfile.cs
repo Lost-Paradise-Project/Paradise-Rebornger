@@ -1,6 +1,7 @@
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
+using Content.Shared._ADT.CCVar;
 using Content.Corvax.Interfaces.Shared;
 using Content.Shared.CCVar;
 using Content.Shared.Corvax.TTS;
@@ -20,7 +21,6 @@ using Robust.Shared.Serialization.Manager;
 using Robust.Shared.Serialization.Markdown;
 using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
-using Content.Shared._FunkyStation.Records; // CD - Character Records
 using Robust.Shared;
 using YamlDotNet.RepresentationModel;
 
@@ -76,6 +76,18 @@ namespace Content.Shared.Preferences
         /// </summary>
         [DataField]
         public string FlavorText { get; set; } = string.Empty;
+        //ADT-tweak-start
+        /// <summary>
+        /// ООС заметки у персонажа
+        /// </summary>
+        [DataField]
+        public string OOCNotes { get; set; } = string.Empty;
+        /// <summary>
+        /// ссылка на хэдшот персонажа
+        /// </summary>
+        [DataField]
+        public string HeadshotUrl { get; set; } = string.Empty;
+        //ADT-tweak-end
 
         /// <summary>
         /// Associated <see cref="SpeciesPrototype"/> for this profile.
@@ -137,11 +149,6 @@ namespace Content.Shared.Preferences
         public PreferenceUnavailableMode PreferenceUnavailable { get; private set; } =
             PreferenceUnavailableMode.SpawnAsOverflow;
 
-        // Begin CD - Character records
-        [DataField("cosmaticDriftCharacterRecords")]
-        public PlayerProvidedCharacterRecords? CDCharacterRecords;
-        // End CD - Character records
-
         public HumanoidCharacterProfile(
             string name,
             string flavortext,
@@ -159,9 +166,11 @@ namespace Content.Shared.Preferences
             HashSet<ProtoId<AntagPrototype>> antagPreferences,
             HashSet<ProtoId<TraitPrototype>> traitPreferences,
             Dictionary<string, RoleLoadout> loadouts,
-            // Begin CD - Character Records
-            PlayerProvidedCharacterRecords? cdCharacterRecords)
-            // End CD - Character Records)
+            //ADT-tweak-start
+            string oocNotes,
+            string headshotUrl
+            )
+            //ADT-tweak-end
         {
             Name = name;
             FlavorText = flavortext;
@@ -179,9 +188,10 @@ namespace Content.Shared.Preferences
             _antagPreferences = antagPreferences;
             _traitPreferences = traitPreferences;
             _loadouts = loadouts;
-            // Begin CD - Character Records
-            CDCharacterRecords = cdCharacterRecords;
-            // End CD - Character Records
+            // ADT start
+            OOCNotes = oocNotes;
+            HeadshotUrl = headshotUrl;
+            // ADT end
 
             var hasHighPrority = false;
             foreach (var (key, value) in _jobPriorities)
@@ -216,7 +226,11 @@ namespace Content.Shared.Preferences
                 new HashSet<ProtoId<AntagPrototype>>(other.AntagPreferences),
                 new HashSet<ProtoId<TraitPrototype>>(other.TraitPreferences),
                 new Dictionary<string, RoleLoadout>(other.Loadouts),
-                other.CDCharacterRecords) // CD - Character Records
+                // ADT start
+                other.OOCNotes,
+                other.HeadshotUrl
+                // ADT end
+            )
         {
         }
 
@@ -326,7 +340,16 @@ namespace Content.Shared.Preferences
         {
             return new(this) { FlavorText = flavorText };
         }
-
+        //ADT-tweak-start: ООС заметки и ЮРЛ
+        public HumanoidCharacterProfile WithOOCNotes(string oocNotes)
+        {
+            return new(this) { OOCNotes = oocNotes };
+        }
+        public HumanoidCharacterProfile WithHeadshotUrl(string headshotUrl)
+        {
+            return new(this) { HeadshotUrl = headshotUrl };
+        }
+        //ADT-tweak-end
         public HumanoidCharacterProfile WithAge(int age)
         {
             return new(this) { Age = age };
@@ -373,13 +396,6 @@ namespace Content.Shared.Preferences
         {
             return new(this) { SpawnPriority = spawnPriority };
         }
-
-        // Begin CD - Character Records
-        public HumanoidCharacterProfile WithCDCharacterRecords(PlayerProvidedCharacterRecords records)
-        {
-            return new HumanoidCharacterProfile(this) { CDCharacterRecords = records };
-        }
-        // End CD - Character Records
 
         public HumanoidCharacterProfile WithJobPriorities(IEnumerable<KeyValuePair<ProtoId<JobPrototype>, JobPriority>> jobPriorities)
         {
@@ -548,8 +564,10 @@ namespace Content.Shared.Preferences
             if (!_traitPreferences.SequenceEqual(other._traitPreferences)) return false;
             if (!Loadouts.SequenceEqual(other.Loadouts)) return false;
             if (FlavorText != other.FlavorText) return false;
-            if (CDCharacterRecords != null && other.CDCharacterRecords != null && // CD
-               !CDCharacterRecords.MemberwiseEquals(other.CDCharacterRecords)) return false; // CD
+            // ADT-tweak-start
+            if (OOCNotes != other.OOCNotes) return false;
+            if (HeadshotUrl != other.HeadshotUrl) return false;
+            // ADT-tweak-end
             return Appearance.Equals(other.Appearance);
         }
 
@@ -649,6 +667,33 @@ namespace Content.Shared.Preferences
                 width = Math.Clamp(Width, speciesPrototype.MinWidth, speciesPrototype.MaxWidth);
             // end Goobstation: port EE height/width sliders
 
+            //ADT-tweak-start
+            string oocNotes = OOCNotes; // Initialize with the property value
+            if (oocNotes.Length > maxFlavorTextLength)
+            {
+                oocNotes = FormattedMessage.RemoveMarkupOrThrow(oocNotes)[..maxFlavorTextLength];
+            }
+            else
+            {
+                oocNotes = FormattedMessage.RemoveMarkupOrThrow(oocNotes);
+            }
+
+            string headshoturl = HeadshotUrl;
+            var allowedDomain = configManager.GetCVar(ADTCCVars.HeadshotDomain);
+
+            // Простая проверка URL
+            if (string.IsNullOrWhiteSpace(headshoturl) ||
+                headshoturl.Length > 500 ||
+                !headshoturl.EndsWith(".jpg", StringComparison.OrdinalIgnoreCase) ||
+                !(headshoturl.StartsWith("http://", StringComparison.OrdinalIgnoreCase) ||
+                headshoturl.StartsWith("https://", StringComparison.OrdinalIgnoreCase)) ||
+                !headshoturl.Contains(allowedDomain, StringComparison.OrdinalIgnoreCase))
+            {
+                headshoturl = string.Empty;
+            }
+            //максимальная длина ООЦ заметок не больше чем длина флавора
+            //ADT-tweak-end
+
             var appearance = HumanoidCharacterAppearance.EnsureValid(Appearance, Species, Sex, sponsorPrototypes);
 
             var prefsUnavailableMode = PreferenceUnavailable switch
@@ -697,6 +742,10 @@ namespace Content.Shared.Preferences
 
             Name = name;
             FlavorText = flavortext;
+            //ADT-tweak-start
+            OOCNotes = oocNotes;
+            HeadshotUrl = headshoturl;
+            //ADT-tweak-end
             Age = age;
             Height = height; // Goobstation: port EE height/width sliders
             Width = width; // Goobstation: port EE height/width sliders
@@ -725,17 +774,6 @@ namespace Content.Shared.Preferences
             if (voice is null || !CanHaveVoice(voice, Sex, Species, sponsorTier)) // LP edit
                 Voice = HumanoidProfileSystem.DefaultSexVoice[sex];
             // Corvax-TTS-End
-
-            // Begin CD - Character Records
-            if (CDCharacterRecords == null)
-            {
-                CDCharacterRecords = PlayerProvidedCharacterRecords.DefaultRecords();
-            }
-            else
-            {
-                CDCharacterRecords!.EnsureValid();
-            }
-            // End CD - Character Records
 
             // Checks prototypes exist for all loadouts and dump / set to default if not.
             var toRemove = new ValueList<string>();
@@ -850,6 +888,10 @@ namespace Content.Shared.Preferences
             hashCode.Add(_traitPreferences);
             hashCode.Add(_loadouts);
             hashCode.Add(Name);
+            //ADT-tweak-start
+            hashCode.Add(OOCNotes);
+            hashCode.Add(HeadshotUrl);
+            //ADT-tweak-end
             hashCode.Add(FlavorText);
             hashCode.Add(Species);
             hashCode.Add(Height); // Goobstation: port EE height/width sliders

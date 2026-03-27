@@ -67,8 +67,10 @@
       - SheetPlasteel1
       - SheetGlass1
       - SheetPlasma1
+      - SheetPlastic1
     intervalSeconds: 2
     minimumEntitiesSpawned: 8
     maximumEntitiesSpawned: 16
   - type: MaterialStorageMagnetPickup
+    range: 0.01
     magnetEnabled: true

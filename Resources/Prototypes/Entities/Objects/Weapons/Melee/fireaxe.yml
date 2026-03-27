@@ -24,7 +24,7 @@
         Slash: 10
         Structural: 10
     soundHit:
-      collection: MetalThud
+      path: /Audio/_LP/Weapons/Effects/axe_hit.ogg # LP Edit
   - type: Wieldable
   - type: IncreaseDamageOnWield
     damage:

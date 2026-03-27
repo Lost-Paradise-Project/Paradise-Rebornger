@@ -289,6 +289,7 @@
     Steel: 500
 
 - type: latheRecipe
+  parent: BaseAmmoRecipe
   id: LPPMagazineShotgunLeverRifle
   result: MagazineShotgunLeverRifle
   materials:

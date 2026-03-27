@@ -3,12 +3,10 @@ using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
 using Content.Server.EUI;
 using Content.Server.GameTicking.Events;
-using Content.Server.GameTicking; // Ghostbar Port CorvaxGoob
 using Content.Server.Ghost.Roles.Components;
 using Content.Server.Ghost.Roles.Events;
 using Content.Shared.Ghost.Roles.Raffles;
 using Content.Server.Ghost.Roles.UI;
-using Content.Shared._CorvaxGoob.GhostBar; // Ghostbar Port CorvaxGoob
 using Content.Shared.Administration;
 using Content.Shared.CCVar;
 using Content.Shared.Database;
@@ -57,7 +55,6 @@ public sealed class GhostRoleSystem : EntitySystem
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly PopupSystem _popupSystem = default!;
     [Dependency] private readonly IPrototypeManager _prototype = default!;
-    [Dependency] private readonly GhostSystem _ghost = default!; // CorvaxGoob-GhostBarMoreFeatures
 
     private uint _nextRoleIdentifier;
     private bool _needsUpdateGhostRoleCount = true;
@@ -136,16 +133,12 @@ public sealed class GhostRoleSystem : EntitySystem
             !HasComp<GhostComponent>(attached))
             return;
 
-        if ((TryComp<GhostComponent>(attached, out var ghost) && ghost.CanTakeGhostRoles)
-            || TryComp<GhostBarPlayerComponent>(attached, out var ghostBarPlayer)) // CorvaxGoob-GhostBar
-        {
-            if (_openUis.ContainsKey(session))
-                CloseEui(session);
+        if (_openUis.ContainsKey(session))
+            CloseEui(session);
 
-            var eui = _openUis[session] = new GhostRolesEui();
-            _euiManager.OpenEui(eui, session);
-            eui.StateDirty();
-        }
+        var eui = _openUis[session] = new GhostRolesEui();
+        _euiManager.OpenEui(eui, session);
+        eui.StateDirty();
     }
 
     public void OpenMakeGhostRoleEui(ICommonSession session, EntityUid uid)
@@ -286,7 +279,7 @@ public sealed class GhostRoleSystem : EntitySystem
             return false;
 
         // can't win if you are no longer a ghost (e.g. if you returned to your body)
-        if (player.AttachedEntity == null || !HasComp<GhostComponent>(player.AttachedEntity) && !HasComp<GhostBarPlayerComponent>(player.AttachedEntity)) // Ghostbar Port CorvaxGoob
+        if (player.AttachedEntity == null || !HasComp<GhostComponent>(player.AttachedEntity))
             return false;
 
         if (Takeover(player, identifier))
@@ -468,9 +461,6 @@ public sealed class GhostRoleSystem : EntitySystem
     /// <param name="identifier">ID of the ghost role.</param>
     public void Request(ICommonSession player, uint identifier)
     {
-        if (player.AttachedEntity is not { Valid: true } attached) // Goobstation
-            return;
-
         if (!_ghostRoles.TryGetValue(identifier, out var roleEnt))
             return;
 
@@ -491,23 +481,13 @@ public sealed class GhostRoleSystem : EntitySystem
         }
 
         // Decide to do a raffle or not
-
-        // Ghostbar Port CorvaxGoob Start
-
-        if (HasComp<GhostBarPlayerComponent>(player.AttachedEntity) // CorvaxGoob-GhostBar
-            || EntityManager.TryGetComponent<GhostComponent>(attached, out var ghost) && ghost.CanTakeGhostRoles)
+        if (roleEnt.Comp.RaffleConfig is not null)
         {
-            if (roleEnt.Comp.RaffleConfig is not null)
-            {
-                JoinRaffle(player, identifier);
-            }
-            else
-            {
-                Takeover(player, identifier);
-            }
-
-            // Ghostbar Port CorvaxGoob End
-
+            JoinRaffle(player, identifier);
+        }
+        else
+        {
+            Takeover(player, identifier);
         }
     }
 
@@ -602,16 +582,6 @@ public sealed class GhostRoleSystem : EntitySystem
             _adminLogger.Add(LogType.GhostRoleTaken, LogImpact.Low, $"{player:player} took the {role.Comp.RoleName:roleName} ghost role {ToPrettyString(player.AttachedEntity.Value):entity}");
 
         CloseEui(player);
-
-        // CorvaxGoob-GhostBar-Start : auto clearing all player's characters
-        var ghostBarEntitiesQuery = EntityQueryEnumerator<GhostBarPlayerComponent>();
-        while (ghostBarEntitiesQuery.MoveNext(out var ent, out var ghostBar))
-        {
-            if (ghostBar.PlayerSession == player)
-                QueueDel(ent);
-        }
-        // CorvaxGoob-GhostBar-End
-
         return true;
     }
 
@@ -622,26 +592,6 @@ public sealed class GhostRoleSystem : EntitySystem
 
         if (player.AttachedEntity == null)
             return;
-
-        // CorvaxGoob-GhostBar-Start
-        if (HasComp<GhostBarPlayerComponent>(player.AttachedEntity) && _mindSystem.TryGetMind(player, out var mindId, out var mindComp))
-        {
-            var ghostEnt = Spawn(GameTicker.ObserverPrototypeName, _transform.GetMapCoordinates(player.AttachedEntity.Value));
-            _mindSystem.Visit(mindId, ghostEnt, mindComp);
-
-            _followerSystem.StartFollowingEntity(ghostEnt, role);
-
-            if (!TryComp<GhostComponent>(ghostEnt, out var visitingGhostComp))
-                return;
-
-            _ghost.SetCanReturnToBody((ghostEnt, visitingGhostComp), true);
-
-            return;
-        }
-
-        if (!TryComp<GhostComponent>(player.AttachedEntity, out var ghost) || !ghost.CanTakeGhostRoles) // Goob edit
-            return;
-        // CorvaxGoob-GhostBar-End
 
         _followerSystem.StartFollowingEntity(player.AttachedEntity.Value, role);
     }

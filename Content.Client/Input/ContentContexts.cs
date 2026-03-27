@@ -67,7 +67,6 @@ namespace Content.Client.Input
             human.AddFunction(ContentKeyFunctions.AltUseItemInHand);
             human.AddFunction(ContentKeyFunctions.OpenCharacterMenu);
             human.AddFunction(ContentKeyFunctions.OpenEmotesMenu);
-            human.AddFunction(ContentKeyFunctions.OfferItem); /// Corvax-Wega-Offer
             human.AddFunction(ContentKeyFunctions.ActivateItemInWorld);
             human.AddFunction(ContentKeyFunctions.ThrowItemInHand);
             human.AddFunction(ContentKeyFunctions.AltActivateItemInWorld);
@@ -95,6 +94,7 @@ namespace Content.Client.Input
             human.AddFunction(ContentKeyFunctions.Arcade2);
             human.AddFunction(ContentKeyFunctions.Arcade3);
             human.AddFunction(ContentKeyFunctions.TogglePosing); // Orion
+            human.AddFunction(ContentKeyFunctions.OfferItem); // EE edit
 
             // actions should be common (for ghosts, mobs, etc)
             common.AddFunction(ContentKeyFunctions.OpenActionsMenu);
