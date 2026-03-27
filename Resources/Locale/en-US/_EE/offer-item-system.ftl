@@ -1,4 +1,4 @@
-﻿offer-item-empty-hand = У вас в руках ничего нет!
+offer-item-empty-hand = У вас в руках ничего нет!
 
 offer-item-full-hand = Ваши руки заняты!
 

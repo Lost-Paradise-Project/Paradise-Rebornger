@@ -1,4 +1,4 @@
-﻿using Content.Server.Hands.Systems;
+using Content.Server.Hands.Systems;
 using Content.Shared.Hands.Components;
 using Content.Shared.Alert;
 using Content.Shared._EE.OfferItem;
