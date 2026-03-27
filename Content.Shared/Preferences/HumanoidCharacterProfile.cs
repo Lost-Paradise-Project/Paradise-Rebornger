@@ -684,6 +684,7 @@ namespace Content.Shared.Preferences
             // Простая проверка URL
             if (string.IsNullOrWhiteSpace(headshoturl) ||
                 headshoturl.Length > 500 ||
+                !headshoturl.EndsWith(".jpg", StringComparison.OrdinalIgnoreCase) ||
                 !(headshoturl.StartsWith("http://", StringComparison.OrdinalIgnoreCase) ||
                 headshoturl.StartsWith("https://", StringComparison.OrdinalIgnoreCase)) ||
                 !headshoturl.Contains(allowedDomain, StringComparison.OrdinalIgnoreCase))

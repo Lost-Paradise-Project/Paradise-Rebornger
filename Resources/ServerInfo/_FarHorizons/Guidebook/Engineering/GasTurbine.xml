@@ -17,7 +17,7 @@
 
   Скорость потока обычно устанавливается так, чтобы обеспечить максимальный поток через активную зону реактора, который можно найти по следующей формуле:
   <Box>
-    [italic][protodata="SteelReactorGasChannel" comp="ReactorPart" member="GasVolume"/] * количество газовых каналов + [protodata="NuclearReactorNormal" comp="NuclearReactor" member="ReactorVesselGasVolume"/] L/s[/italic]
+    [italic][protodata="SteelReactorGasChannel" comp="ReactorPart" member="GasVolume"/] * количество газовых каналов + [protodata="NuclearReactorNormal" comp="NuclearReactor" member="ReactorVesselGasVolume"/] Л/с[/italic]
   </Box>
 
   ### Нагрузка статора

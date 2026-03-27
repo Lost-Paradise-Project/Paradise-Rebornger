@@ -27,6 +27,7 @@
     - alertType: Rooted
     - alertType: Pacified
     - alertType: Stealthy
+    - alertType: Offer # EE edit
 
 - type: entity
   id: AlertSpriteView

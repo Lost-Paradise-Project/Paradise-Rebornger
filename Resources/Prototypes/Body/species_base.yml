@@ -169,7 +169,7 @@
   - type: Carriable
   # LP edit end
   - type: Posing # Orion
-  - type: OfferGiver # Corvax-Wega-Offer
+  - type: OfferItem # EE edit
 
 - type: entity
   abstract: true
