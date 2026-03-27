@@ -169,6 +169,7 @@
   - type: Carriable
   # LP edit end
   - type: Posing # Orion
+  - type: OfferItem # EE edit
 
 - type: entity
   abstract: true

@@ -680,3 +680,8 @@ binds:
   type: State
   key: E
 # Orion-End
+# EE edit start
+- function: OfferItem
+  type: State
+  key: F
+# EE edit end
