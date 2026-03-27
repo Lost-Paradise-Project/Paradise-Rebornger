@@ -25,10 +25,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ADT\" />
-    <Folder Include="_Wega\Dirt\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="_Wega\Dirt\ShowerSystem.cs" />
   </ItemGroup>
   <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
 
