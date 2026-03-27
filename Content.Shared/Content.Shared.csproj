@@ -18,6 +18,19 @@
     <ProjectReference Include="..\Corvax\Content.Corvax.Interfaces.Shared\Content.Corvax.Interfaces.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="_Wega\Dirt\Components\DirtableComponent.cs" />
+    <Compile Remove="_Wega\Dirt\Components\DirtSourceComponent.cs" />
+    <Compile Remove="_Wega\Dirt\Components\ShowerComponent.cs" />
+    <Compile Remove="_Wega\Dirt\PuddleContactSystem.cs" />
+    <Compile Remove="_Wega\Dirt\SharedDirtSystem.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="_Wega\Dirt\Components\" />
+    <Folder Include="_Wega\EntityEffects\Effects\" />
+  </ItemGroup>
+
   <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
   <Import Project="..\RobustToolbox\MSBuild\Robust.CompNetworkGenerator.targets" />
 </Project>
