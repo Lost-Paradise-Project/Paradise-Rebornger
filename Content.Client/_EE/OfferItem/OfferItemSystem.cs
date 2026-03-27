@@ -1,4 +1,4 @@
-﻿using Content.Shared._EE.CCVar;
+using Content.Shared._EE.CCVar;
 using Content.Shared._EE.OfferItem;
 using Robust.Client.Graphics;
 using Robust.Client.Input;
