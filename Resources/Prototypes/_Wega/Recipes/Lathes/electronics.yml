@@ -1,0 +1,9 @@
+﻿- type: latheRecipe
+  parent: BaseGoldCircuitboardRecipe
+  id: MiningServerCircuitboard
+  result: MiningServerCircuitboard
+
+- type: latheRecipe
+  parent: BaseGoldCircuitboardRecipe
+  id: MiningMonitoringComputerCircuitboard
+  result: MiningMonitoringComputerCircuitboard
