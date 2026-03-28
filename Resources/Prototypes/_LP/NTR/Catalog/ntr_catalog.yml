@@ -17,7 +17,7 @@
   restockAfterPurchase: 300
 
 - type: listing
-  id: LPPNTRExecutiveToolsexperimental
+  id: LPPNTRExecutiveToolsExperimental
   name: ntr-executive-tools-experimental-name
   description: ntr-executive-tools-experimental-desc
   productEntity: LPPSpawnPodToolsExperimental
@@ -309,7 +309,7 @@
   restockAfterPurchase: 600
 
 - type: listing
-  id: LPPNTRExecutiveBoxMagazineRifleAP
+  id: LPPNTRExecutiveBoxSpeedLoaderMagnumAP
   name: ntr-executive-box-speed-loader-magnum-ap-name
   description: ntr-executive-box-speed-loader-magnum-ap-desc
   productEntity: LPPSpawnPodBoxSpeedLoaderMagnumAP
@@ -320,7 +320,7 @@
     NTLoyaltyPoint: 25
   categories:
   - LPPNTRAmmoSupplies
-  restockTime: 900 # 10 mins
+  restockTime: 900 # 15 mins
   resetRestockOnPurchase: true
   restockAfterPurchase: 600
 

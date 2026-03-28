@@ -42,9 +42,6 @@ ntr-executive-single-intern-desc = Summons one basic intern. Interns are on your
 ntr-executive-bsd-name = Call Blueshield Deputy
 ntr-executive-bsd-desc = Request a Blueshield deputy from Central Command. This personal guard for you or command staff requires valid justification. Only one may be called.
 
-ntr-executive-hardsuit-name = Order a hardsuit
-ntr-executive-hardsuit-desc = A durable hardsuit for extreme environments. Are you sure this purchase is justified?
-
 ntr-executive-cigs-deluxe = Executive cig vendor
 ntr-executive-cigs-deluxe-desc = For those who know that lung cancer is non-existent, Nanotrasen made this, a vendor full of ciggaretes and expensive flippos for you to smoke.
 

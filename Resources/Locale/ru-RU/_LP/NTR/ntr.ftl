@@ -4,7 +4,7 @@ ntr-executive-tools-tracking-implants-name = Ящик имплантов Тре�
 ntr-executive-tools-tracking-implants-desc = Ящик, содержащий 3 импланта Трекера.
 
 ntr-executive-tools-experimental-name = Ящик экспериментальных инструментов
-ntr-executive-tools-experimental-desc = Ящик содержащий полный набор экспериментальных инструментов часть из которых имеется у СИ или ,после изучения технологии, в протолате инженерии.
+ntr-executive-tools-experimental-desc = Ящик, содержащий полный набор экспериментальных инструментов, часть из которых имеется у СИ или, после изучения технологии, в протолате инженерии.
 
 ntr-executive-printer-doc-flatpack-name = Упакованный принтер документов
 ntr-executive-printer-doc-flatpack-desc = Упаковка при помощи которой можно создать принтер документов.
@@ -21,7 +21,7 @@ ntr-executive-crate-material-basic-resource-desc = Ящик который со�
 # Personal
 
 ntr-executive-weapon-advanced-laser-name = Продвинутый лазерный пистолет
-ntr-executive-weapon-advanced-laser-desc = Экспериментальный высокоэнергетический лазерный пистолет с самозаряжающейся ядерной.
+ntr-executive-weapon-advanced-laser-desc = Экспериментальный высокоэнергетический лазерный пистолет с самозаряжающейся ядерной батареей.
 
 ntr-executive-double-emergency-tank-name = Ящик двойных аварийных баллонов
 ntr-executive-double-emergency-tank-desc = Содержит 2 двойных аварийных кислородных и 2 двойных аварийных азотных баллона.

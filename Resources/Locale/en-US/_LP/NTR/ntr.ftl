@@ -16,7 +16,7 @@ ntr-executive-crate-fun-instruments-random-name = Random instruments crate
 ntr-executive-crate-fun-instruments-random-desc = A crate containing random fun instruments.
 
 ntr-executive-crate-material-basic-resource-name = Basic material crate
-ntr-executive-crate-material-basic-resource-desc = A crate containing 30 sheet of steel, glass and plastic.
+ntr-executive-crate-material-basic-resource-desc = A crate containing 30 sheets of steel, glass and plastic.
 
 # Personal
 
@@ -36,7 +36,7 @@ ntr-executive-box-encryption-key-centcomm-name = Centcomm encryption key box
 ntr-executive-box-encryption-key-centcomm-desc = A box of spare encryption keys.
 
 ntr-executive-clothing-outer-armor-basic-name = Outer armor basic supply
-ntr-executive-clothing-outer-armor-basic-desc = Conventional body armor, most often issued to Nanotrain trainees.
+ntr-executive-clothing-outer-armor-basic-desc = Conventional body armor, most often issued to NanoTrasen trainees.
 
 ntr-executive-clothing-outer-armor-centcomm-name = Centcomm carapace
 ntr-executive-clothing-outer-armor-centcomm-desc = An armored chestpiece that provides protection whilst still offering maximum mobility and flexibility. Issued only to centcomm officials and agents.
@@ -89,7 +89,7 @@ ntr-executive-box-shotgun-uranium-desc = A cardboard box of .50 shotgun shells. 
 
 # WT550
 
-ntr-executive-box-magazine-pistol-sub-machine-gun-top-mounted-name = box of WT550 .35 auto magazines
+ntr-executive-box-magazine-pistol-sub-machine-gun-top-mounted-name = Box of WT550 .35 auto magazines
 ntr-executive-box-magazine-pistol-sub-machine-gun-top-mounted-desc = A box full of WT550 .35 auto magazines.
 
 # Pistol MK 58
