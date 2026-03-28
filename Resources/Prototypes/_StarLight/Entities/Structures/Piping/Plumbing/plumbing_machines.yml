@@ -741,6 +741,7 @@
       Sugar: 4
       Silicon: 10
       Phosphorus: 10
+      Plasma: 15
   - type: Plungeable
   - type: PlumbingOutlet
     solutionName: buffer
