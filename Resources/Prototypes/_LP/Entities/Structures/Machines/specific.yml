@@ -59,18 +59,19 @@
   - type: TimedSpawner
     power: true
     prototypes:
-      - IngotSilver1
-      - IngotGold1
-      - SheetUranium1
-      - SheetSteel1
+      - IngotSilver
+      - IngotGold
+      - SheetUranium
+      - SheetSteel10
       - MaterialBananium1
-      - SheetPlasteel1
-      - SheetGlass1
-      - SheetPlasma1
-      - SheetPlastic1
-    intervalSeconds: 2
+      - SheetPlasteel10
+      - SheetGlass10
+      - SheetPlasma10
+      - SheetPlastic10
+    intervalSeconds: 20
     minimumEntitiesSpawned: 8
     maximumEntitiesSpawned: 16
   - type: MaterialStorageMagnetPickup
     range: 0.01
     magnetEnabled: true
+    magnetToggle: false

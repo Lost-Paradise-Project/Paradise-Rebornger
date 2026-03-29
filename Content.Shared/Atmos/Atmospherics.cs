@@ -339,7 +339,7 @@ namespace Content.Shared.Atmos
         public const float NitriumDecompositionTempDivisor = (T0C + 100f) * 8f;
         public const float NitriumDecompositionEnergy = 30000f;
         public const float NitriumDecompositionMaxTemp = T0C + 70f;
-        public const float NobliumFormationEnergy = 20000000f;
+        public const float NobliumFormationEnergy = 200000f; // LP Edit
         public const float ReactionOpperssionThreshold = 5f;
         public const float HalonFormationEnergy = 300f;
         public const float HalonCombustionEnergy = 2500f;

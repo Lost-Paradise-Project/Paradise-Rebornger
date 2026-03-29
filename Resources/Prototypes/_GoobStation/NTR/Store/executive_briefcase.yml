@@ -62,6 +62,7 @@
     - NTRstation
     - NTRpersonal
     - NTRBoards
+    - LPPNTRAmmoSupplies
     - LPPNTRERTSquads # LP Edit
     # - NTREvil
 
@@ -77,6 +78,7 @@
     - NTRstation # for stuff like buying spesos, disablers, etc
     - NTRpersonal # for, well, personal stuff.
     - NTRBoards # for hard to get boards
+    - LPPNTRAmmoSupplies # LP Edit, for ammo supply
     - LPPNTRERTSquads # LP Edit, for GOD DAMN ERT SQUADS!!!
 #    - NTREvil # for evil stuff
     currencyWhitelist:

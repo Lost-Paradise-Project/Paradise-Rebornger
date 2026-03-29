@@ -2,7 +2,7 @@
   id: LPStandDart
   mapName: 'StandDart Station'
   mapPath: /Maps/_LP/Station/LP_StandDart.yml
-  minPlayers: 40 # Lost Paradis AK PowerKAT
+  minPlayers: 30 # Lost Paradis AK PowerKAT
   stations:
     LPStandDart:
       stationProto: StandardNanotrasenStation
