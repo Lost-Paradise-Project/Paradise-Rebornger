@@ -4,8 +4,8 @@ meta:
   engineVersion: 272.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/29/2026 09:24:42
-  entityCount: 18896
+  time: 03/29/2026 09:53:01
+  entityCount: 18908
 maps:
 - 1
 grids:
@@ -52596,12 +52596,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -45.5,42.5
       parent: 2
-  - uid: 7458
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -11.5,23.5
-      parent: 2
   - uid: 7459
     components:
     - type: Transform
@@ -52805,6 +52799,17 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 26.5,0.5
       parent: 2
+  - uid: 18897
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -21.5,24.5
+      parent: 2
+  - uid: 18898
+    components:
+    - type: Transform
+      pos: -11.5,24.5
+      parent: 2
 - proto: DisposalJunction
   entities:
   - uid: 7493
@@ -52908,6 +52913,11 @@ entities:
       parent: 2
 - proto: DisposalJunctionFlipped
   entities:
+  - uid: 7458
+    components:
+    - type: Transform
+      pos: -11.5,23.5
+      parent: 2
   - uid: 7510
     components:
     - type: Transform
@@ -56503,6 +56513,60 @@ entities:
       rot: 3.141592653589793 rad
       pos: 26.5,-0.5
       parent: 2
+  - uid: 18900
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -20.5,24.5
+      parent: 2
+  - uid: 18901
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -19.5,24.5
+      parent: 2
+  - uid: 18902
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -18.5,24.5
+      parent: 2
+  - uid: 18903
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -17.5,24.5
+      parent: 2
+  - uid: 18904
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -16.5,24.5
+      parent: 2
+  - uid: 18905
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -15.5,24.5
+      parent: 2
+  - uid: 18906
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -14.5,24.5
+      parent: 2
+  - uid: 18907
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -13.5,24.5
+      parent: 2
+  - uid: 18908
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -12.5,24.5
+      parent: 2
 - proto: DisposalTrunk
   entities:
   - uid: 8127
@@ -56736,6 +56800,11 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 27.5,0.5
+      parent: 2
+  - uid: 18899
+    components:
+    - type: Transform
+      pos: -21.5,25.5
       parent: 2
 - proto: DisposalUnit
   entities:
@@ -60025,7 +60094,7 @@ entities:
       pos: 1.5,17.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -15889.03
+      secondsUntilStateChange: -17815.42
       state: Closing
   - uid: 8554
     components:
@@ -60303,7 +60372,7 @@ entities:
       pos: 28.5,20.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -17454.266
+      secondsUntilStateChange: -19380.656
       state: Closing
   - uid: 8609
     components:
