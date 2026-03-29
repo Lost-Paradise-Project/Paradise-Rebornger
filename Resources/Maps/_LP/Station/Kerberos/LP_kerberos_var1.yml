@@ -4,8 +4,8 @@ meta:
   engineVersion: 272.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/24/2026 06:25:36
-  entityCount: 46498
+  time: 03/29/2026 09:17:07
+  entityCount: 46496
 maps:
 - 1
 grids:
@@ -16428,7 +16428,6 @@ entities:
       shakeTimes: 10
     - type: BecomesStation
       id: LPKerberos
-    - type: NavMap
     - type: TileHistory
       chunkHistory: {}
     - type: ImplicitRoof
@@ -214870,7 +214869,7 @@ entities:
       pos: -21.5,-84.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -45813.348
+      secondsUntilStateChange: -46076.77
       state: Opening
   - uid: 31919
     components:
