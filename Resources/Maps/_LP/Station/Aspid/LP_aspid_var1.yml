@@ -4,8 +4,8 @@ meta:
   engineVersion: 272.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/26/2026 18:19:43
-  entityCount: 18896
+  time: 03/29/2026 10:24:19
+  entityCount: 18893
 maps:
 - 1
 grids:
@@ -14157,16 +14157,22 @@ entities:
     - type: Transform
       pos: -4.5,24.5
       parent: 2
+    - type: SiloUtilizer
+      silo: 7395
   - uid: 618
     components:
     - type: Transform
       pos: -34.5,1.5
       parent: 2
+    - type: SiloUtilizer
+      silo: 7395
   - uid: 619
     components:
     - type: Transform
       pos: 13.5,-15.5
       parent: 2
+    - type: SiloUtilizer
+      silo: 7395
 - proto: BagpipeInstrument
   entities:
   - uid: 620
@@ -14307,13 +14313,6 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-- proto: BaseBarrelChemRadioactiveEmpty
-  entities:
-  - uid: 6833
-    components:
-    - type: Transform
-      pos: -15.5,-37.5
-      parent: 2
 - proto: Basketball
   entities:
   - uid: 647
@@ -47817,6 +47816,8 @@ entities:
     - type: Transform
       pos: -5.5,24.5
       parent: 2
+    - type: SiloUtilizer
+      silo: 7395
 - proto: CircuitImprinterMachineCircuitboard
   entities:
   - uid: 6996
@@ -50597,6 +50598,17 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -42.5,25.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Salvage
+- proto: ComputerSalvageJobBoard
+  entities:
+  - uid: 18749
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -40.5,25.5
+      parent: 2
 - proto: ComputerShuttle
   entities:
   - uid: 18107
@@ -51063,6 +51075,16 @@ entities:
         moles:
           Oxygen: 3.4430928
           Nitrogen: 12.952587
+- proto: CrateCerenkiteFuelRod
+  entities:
+  - uid: 8820
+    components:
+    - type: Transform
+      pos: -17.5,-35.5
+      parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Engineering
 - proto: CrateEmptySpawner
   entities:
   - uid: 7353
@@ -57899,6 +57921,8 @@ entities:
     - type: Transform
       pos: -16.5,30.5
       parent: 2
+    - type: SiloUtilizer
+      silo: 7395
 - proto: ExtinguisherCabinetFilled
   entities:
   - uid: 8347
@@ -60025,7 +60049,7 @@ entities:
       pos: 1.5,17.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -15889.03
+      secondsUntilStateChange: -16632.34
       state: Closing
   - uid: 8554
     components:
@@ -60303,7 +60327,7 @@ entities:
       pos: 28.5,20.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -17454.266
+      secondsUntilStateChange: -18197.574
       state: Closing
   - uid: 8609
     components:
@@ -61418,6 +61442,13 @@ entities:
       parent: 2
 - proto: FloorDrain
   entities:
+  - uid: 7394
+    components:
+    - type: Transform
+      pos: 6.5,23.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
   - uid: 8812
     components:
     - type: Transform
@@ -61472,6 +61503,13 @@ entities:
     components:
     - type: Transform
       pos: -23.5,-12.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
+  - uid: 15274
+    components:
+    - type: Transform
+      pos: -6.5,32.5
       parent: 2
     - type: Fixtures
       fixtures: {}
@@ -88090,6 +88128,9 @@ entities:
     - type: Transform
       pos: -13.5,49.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Command
 - proto: HolopadServiceBar
   entities:
   - uid: 18205
@@ -89951,6 +89992,8 @@ entities:
     - type: Transform
       pos: -38.5,9.5
       parent: 2
+    - type: SiloUtilizer
+      silo: 7395
     - type: TechnologyDatabase
       supportedDisciplines:
       - Industrial
@@ -89971,6 +90014,8 @@ entities:
     - type: Transform
       pos: 7.5,-15.5
       parent: 2
+    - type: SiloUtilizer
+      silo: 7395
     - type: TechnologyDatabase
       supportedDisciplines:
       - Industrial
@@ -90005,6 +90050,8 @@ entities:
     - type: Transform
       pos: -3.5,24.5
       parent: 2
+    - type: SiloUtilizer
+      silo: 7395
 - proto: LPPServiceProtolathe
   entities:
   - uid: 755
@@ -90012,6 +90059,8 @@ entities:
     - type: Transform
       pos: 3.5,-5.5
       parent: 2
+    - type: SiloUtilizer
+      silo: 7395
     - type: TechnologyDatabase
       supportedDisciplines:
       - Industrial
@@ -90652,6 +90701,54 @@ entities:
     - type: Transform
       pos: 24.961397,4.401341
       parent: 2
+- proto: MaterialSilo
+  entities:
+  - uid: 7395
+    components:
+    - type: Transform
+      pos: -24.5,-11.5
+      parent: 2
+    - type: DeviceLinkSource
+      linkedPorts:
+        618:
+        - - MaterialSilo
+          - MaterialSiloUtilizer
+        6990:
+        - - MaterialSilo
+          - MaterialSiloUtilizer
+        779:
+        - - MaterialSilo
+          - MaterialSiloUtilizer
+        13431:
+        - - MaterialSilo
+          - MaterialSiloUtilizer
+        755:
+        - - MaterialSilo
+          - MaterialSiloUtilizer
+        13416:
+        - - MaterialSilo
+          - MaterialSiloUtilizer
+        6995:
+        - - MaterialSilo
+          - MaterialSiloUtilizer
+        617:
+        - - MaterialSilo
+          - MaterialSiloUtilizer
+        14409:
+        - - MaterialSilo
+          - MaterialSiloUtilizer
+        12767:
+        - - MaterialSilo
+          - MaterialSiloUtilizer
+        619:
+        - - MaterialSilo
+          - MaterialSiloUtilizer
+        12834:
+        - - MaterialSilo
+          - MaterialSiloUtilizer
+        8346:
+        - - MaterialSilo
+          - MaterialSiloUtilizer
 - proto: MaterialWoodPlank
   entities:
   - uid: 12763
@@ -90700,6 +90797,8 @@ entities:
     - type: Transform
       pos: 8.5,26.5
       parent: 2
+    - type: SiloUtilizer
+      silo: 7395
 - proto: MedicatedSuture
   entities:
   - uid: 12130
@@ -91149,6 +91248,21 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 5.5,48.5
       parent: 2
+- proto: NuclearFabricator
+  entities:
+  - uid: 779
+    components:
+    - type: Transform
+      pos: -15.5,-37.5
+      parent: 2
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
+    - type: SiloUtilizer
+      silo: 7395
 - proto: NuclearReactorSmall
   entities:
   - uid: 1052
@@ -91190,6 +91304,8 @@ entities:
     - type: Transform
       pos: -36.5,23.5
       parent: 2
+    - type: SiloUtilizer
+      silo: 7395
 - proto: OrganSkeletonPersonHandLeft
   entities:
   - uid: 606
@@ -91877,60 +91993,6 @@ entities:
     components:
     - type: Transform
       pos: -0.5,97.5
-      parent: 2
-- proto: PlumbingDrain
-  entities:
-  - uid: 18864
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -6.5,32.5
-      parent: 2
-  - uid: 18865
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 6.5,23.5
-      parent: 2
-- proto: PlumbingDuctBend
-  entities:
-  - uid: 8820
-    components:
-    - type: Transform
-      pos: 6.5,25.5
-      parent: 2
-- proto: PlumbingDuctStraight
-  entities:
-  - uid: 779
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -8.5,32.5
-      parent: 2
-  - uid: 7394
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -7.5,32.5
-      parent: 2
-  - uid: 15274
-    components:
-    - type: Transform
-      pos: 6.5,24.5
-      parent: 2
-- proto: PlumbingTank
-  entities:
-  - uid: 7395
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 5.5,25.5
-      parent: 2
-  - uid: 18863
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -9.5,32.5
       parent: 2
 - proto: PlushieAtmosian
   entities:
@@ -100805,6 +100867,8 @@ entities:
     - type: Transform
       pos: -6.5,64.5
       parent: 2
+    - type: SiloUtilizer
+      silo: 7395
     - type: TechnologyDatabase
       supportedDisciplines:
       - Industrial
@@ -102890,6 +102954,15 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 5.5,44.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
+- proto: SignLawyer
+  entities:
+  - uid: 6833
+    components:
+    - type: Transform
+      pos: 15.5,56.5
       parent: 2
     - type: Fixtures
       fixtures: {}
