@@ -4,7 +4,7 @@ meta:
   engineVersion: 272.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/26/2026 18:19:43
+  time: 03/29/2026 09:24:42
   entityCount: 18896
 maps:
 - 1
@@ -91149,6 +91149,19 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 5.5,48.5
       parent: 2
+- proto: NuclearFabricator
+  entities:
+  - uid: 18749
+    components:
+    - type: Transform
+      pos: -20.5,-35.5
+      parent: 2
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
 - proto: NuclearReactorSmall
   entities:
   - uid: 1052

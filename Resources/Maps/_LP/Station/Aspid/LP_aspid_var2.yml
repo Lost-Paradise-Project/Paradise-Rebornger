@@ -4,8 +4,8 @@ meta:
   engineVersion: 272.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/13/2026 11:08:46
-  entityCount: 18890
+  time: 03/29/2026 09:25:28
+  entityCount: 18889
 maps:
 - 1
 grids:
@@ -89910,17 +89910,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 18.5,47.5
       parent: 2
-- proto: LPPVendingMachineBras
-  entities:
-  - uid: 17821
-    components:
-    - type: Transform
-      pos: 17.5,43.5
-      parent: 2
-    - type: ContainerContainer
-      containers:
-        VendingMachine: !type:Container
-          ents: []
 - proto: LPPCargoProtolathe
   entities:
   - uid: 6990
@@ -89954,17 +89943,6 @@ entities:
       - Arsenal
       - Experimental
       - CivilianServices
-- proto: LPPVendingMachineErp
-  entities:
-  - uid: 17776
-    components:
-    - type: Transform
-      pos: 14.5,46.5
-      parent: 2
-    - type: ContainerContainer
-      containers:
-        VendingMachine: !type:Container
-          ents: []
 - proto: LPPIanPillow
   entities:
   - uid: 12714
@@ -89972,17 +89950,6 @@ entities:
     - type: Transform
       pos: 21.199818,11.573919
       parent: 2
-- proto: LPPVendingMachineSocks
-  entities:
-  - uid: 16141
-    components:
-    - type: Transform
-      pos: 18.5,43.5
-      parent: 2
-    - type: ContainerContainer
-      containers:
-        VendingMachine: !type:Container
-          ents: []
 - proto: LPPpalm01
   entities:
   - uid: 14979
@@ -89997,17 +89964,6 @@ entities:
     - type: Transform
       pos: 27.172043,17.958042
       parent: 2
-- proto: LPPVendingMachinePillow
-  entities:
-  - uid: 17752
-    components:
-    - type: Transform
-      pos: 27.5,39.5
-      parent: 2
-    - type: ContainerContainer
-      containers:
-        VendingMachine: !type:Container
-          ents: []
 - proto: LPPScienceProtolathe
   entities:
   - uid: 13416
@@ -90041,12 +89997,67 @@ entities:
       - Arsenal
       - Experimental
       - CivilianServices
+- proto: LPPVendingMachineBras
+  entities:
+  - uid: 17821
+    components:
+    - type: Transform
+      pos: 17.5,43.5
+      parent: 2
+    - type: ContainerContainer
+      containers:
+        VendingMachine: !type:Container
+          ents: []
+- proto: LPPVendingMachineErp
+  entities:
+  - uid: 17776
+    components:
+    - type: Transform
+      pos: 14.5,46.5
+      parent: 2
+    - type: ContainerContainer
+      containers:
+        VendingMachine: !type:Container
+          ents: []
+- proto: LPPVendingMachinePillow
+  entities:
+  - uid: 17752
+    components:
+    - type: Transform
+      pos: 27.5,39.5
+      parent: 2
+    - type: ContainerContainer
+      containers:
+        VendingMachine: !type:Container
+          ents: []
+- proto: LPPVendingMachineSocks
+  entities:
+  - uid: 16141
+    components:
+    - type: Transform
+      pos: 18.5,43.5
+      parent: 2
+    - type: ContainerContainer
+      containers:
+        VendingMachine: !type:Container
+          ents: []
 - proto: LPPVendingMachineUnderpants
   entities:
   - uid: 17785
     components:
     - type: Transform
       pos: 19.5,43.5
+      parent: 2
+    - type: ContainerContainer
+      containers:
+        VendingMachine: !type:Container
+          ents: []
+- proto: LPPVendingMachineWithSoftAnimals
+  entities:
+  - uid: 14684
+    components:
+    - type: Transform
+      pos: 23.5,43.5
       parent: 2
     - type: ContainerContainer
       containers:
@@ -90059,17 +90070,6 @@ entities:
     - type: Transform
       pos: -20.343977,56.010822
       parent: 2
-- proto: LPPVendingMachineWithSoftAnimals
-  entities:
-  - uid: 14684
-    components:
-    - type: Transform
-      pos: 23.5,43.5
-      parent: 2
-    - type: ContainerContainer
-      containers:
-        VendingMachine: !type:Container
-          ents: []
 - proto: MachineAnomalyGenerator
   entities:
   - uid: 12658
@@ -91115,6 +91115,19 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 5.5,48.5
       parent: 2
+- proto: NuclearFabricator
+  entities:
+  - uid: 12423
+    components:
+    - type: Transform
+      pos: -20.5,-35.5
+      parent: 2
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
 - proto: NuclearReactorSmall
   entities:
   - uid: 1052
