@@ -13,7 +13,7 @@
             !type:NanotrasenNameGenerator
             prefixCreator: 'TG'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Shuttles/emergency_box.yml
+          emergencyShuttlePath: /Maps/_LP/Shuttles/LP_Kerberos_evac.yml
         - type: StationJobs
           availableJobs: #
             Captain: [ 1, 1 ]
