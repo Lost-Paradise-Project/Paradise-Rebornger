@@ -98,3 +98,37 @@
   components:
   - type: Sprite
     sprite: _LP/Clothing/Socks/New/pinklace.rsi
+
+- type: entity
+  parent: LPPClothingUnderwearSocksBase
+  id: LPPClothingUnderThinThighBlack
+  name: thin thigh
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Socks/ThinThigh/white.rsi
+    layers:
+    - state: icon
+      color: "#0C0C0C"
+  - type: Clothing
+    sprite: _LP/Clothing/Socks/ThinThigh/white.rsi
+    clothingVisuals:
+      socks:
+      - state: equipped-SOCKS
+        color: "#0C0C0C"
+
+- type: entity
+  parent: LPPClothingUnderwearSocksBase
+  id: LPPClothingUnderThinKneeBlack
+  name: thin knee
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
+    layers:
+    - state: icon
+      color: "#0C0C0C"
+  - type: Clothing
+    sprite: _LP/Clothing/Socks/ThinKnee/white.rsi
+    clothingVisuals:
+      socks:
+      - state: equipped-SOCKS
+        color: "#0C0C0C"

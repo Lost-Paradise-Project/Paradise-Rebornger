@@ -116351,20 +116351,6 @@ entities:
     - type: Transform
       pos: 160.5,117.5
       parent: 1
-- proto: FishingRod
-  entities:
-  - uid: 38773
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 54.941673,29.4366
-      parent: 1
-  - uid: 38774
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 64.22292,29.506912
-      parent: 1
 - proto: Flash
   entities:
   - uid: 26367

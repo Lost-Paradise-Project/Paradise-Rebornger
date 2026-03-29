@@ -28,10 +28,6 @@ using Content.Client._LP.Sponsors;
 using Content.Shared._GoobStation.CCVar;
 using Content.Shared._LP;
 // LP edit end
-// Begin CD - Character Records
-using Content.Client._FunkyStation.Medical.Records.UI;
-using Content.Shared._FunkyStation.Records;
-// End CD - Character Records
 
 namespace Content.Client.Lobby.UI
 {
@@ -72,9 +68,6 @@ namespace Content.Client.Lobby.UI
         private Direction _previewRotation = Direction.North;
 
         private bool _isDirty;
-        // Begin CD - Station Records
-        private readonly RecordEditorGui _recordsTab;
-        // End CD - Station Records
         public bool IsDirty
         {
             get => _isDirty;
@@ -330,16 +323,6 @@ namespace Content.Client.Lobby.UI
 
             #endregion Markings
 
-            // Begin CD - Character Records
-            #region CosmaticRecords
-
-            _recordsTab = new RecordEditorGui(UpdateProfileRecords, prototypeManager);
-            TabContainer.AddChild(_recordsTab);
-            TabContainer.SetTabTitle(TabContainer.ChildCount - 1, Loc.GetString("humanoid-profile-editor-cd-records-tab"));
-
-            #endregion CosmaticRecords
-            // End CD - Character Records
-
             RefreshFlavorText();
 
             RefreshVoiceTab(); // Corvax-TTS
@@ -464,10 +447,6 @@ namespace Content.Client.Lobby.UI
             UpdateTTSVoicesControls(); // Corvax-TTS
             UpdateHeightWidthSliders(); // Goobstation: port EE height/width sliders
             UpdateWeight(); // Goobstation: port EE height/width sliders
-
-            // Begin CD - Character Records
-            _recordsTab.Update(profile);
-            // End CD - Character Records
 
             RefreshAntags();
             RefreshJobs();

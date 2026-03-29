@@ -52,6 +52,7 @@ public sealed class PlumbingPillPressSystem : EntitySystem
         SubscribeLocalEvent<PlumbingPillPressComponent, PlumbingDeviceUpdateEvent>(OnDeviceUpdate);
         SubscribeLocalEvent<PlumbingPillPressComponent, PlumbingPillPressToggleMessage>(OnToggle);
         SubscribeLocalEvent<PlumbingPillPressComponent, PlumbingPillPressSetDosageMessage>(OnSetDosage);
+        SubscribeLocalEvent<PlumbingPillPressComponent, PlumbingPillPressSetLabelMessage>(OnSetLabel);
         SubscribeLocalEvent<PlumbingPillPressComponent, PlumbingPillPressSetPillTypeMessage>(OnSetPillType);
         SubscribeLocalEvent<PlumbingPillPressComponent, PlumbingPillPressSetMixingMessage>(OnSetMixing);
         SubscribeLocalEvent<PlumbingPillPressComponent, PlumbingPillPressSetInletRatioMessage>(OnSetInletRatio);
@@ -203,6 +204,17 @@ public sealed class PlumbingPillPressSystem : EntitySystem
         var dosage = Math.Clamp(args.Dosage, MinDosage, MaxDosage);
         ent.Comp.Dosage = dosage;
         DirtyField(ent, ent.Comp, nameof(PlumbingPillPressComponent.Dosage));
+        ClickSound(ent);
+        UpdateUiState(ent);
+    }
+
+    private void OnSetLabel(Entity<PlumbingPillPressComponent> ent, ref PlumbingPillPressSetLabelMessage args)
+    {
+        if (args.Label.Length > SharedChemMaster.LabelMaxLength)
+            return;
+
+        ent.Comp.Label = args.Label;
+        DirtyField(ent, ent.Comp, nameof(PlumbingPillPressComponent.Label));
         ClickSound(ent);
         UpdateUiState(ent);
     }

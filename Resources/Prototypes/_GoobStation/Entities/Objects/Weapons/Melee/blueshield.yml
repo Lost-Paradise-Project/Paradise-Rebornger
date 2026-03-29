@@ -40,7 +40,7 @@
         Slash: 7 # Lucky number
     animation: WeaponArcThrust
     soundHit:
-      path: /Audio/_GoobStation/Weapons/Effects/metalcrush.ogg
+      path: /Audio/_LP/Weapons/Effects/mace_hit.ogg # LP Edit
   - type: StaminaDamageOnHit
     damage: 35
     sound: /Audio/Weapons/egloves.ogg

@@ -2,10 +2,6 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Shared._Orion.ServerProtection.Chat;
 
-//
-// License-Identifier: AGPL-3.0-or-later
-//
-
 [Prototype]
 public sealed partial class ChatProtectionListPrototype : IPrototype
 {

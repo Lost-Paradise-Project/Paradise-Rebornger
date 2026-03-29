@@ -30,7 +30,7 @@
     gloves: ClothingHandsGlovesCombat
     shoes: ClothingShoesBootsJack
     id: BlueshieldPDA
-    ears: ClothingHeadsetAltCommand
+    ears: ClothingHeadsetAltCentCom # LP Edit
     pocket1: DrinkEnergyDrinkCan
     pocket2: Stunbaton # LP Edit -> REPLACE WITH TELESCOPICBATON
     back: ClothingBackpackBlueshield

@@ -61,14 +61,6 @@ namespace Content.Server.Database
                 .HasIndex(p => new {p.Slot, PrefsId = p.PreferenceId})
                 .IsUnique();
 
-            // Begin CD - CD Character Data
-            modelBuilder.Entity<CDModel.CDProfile>()
-                .HasOne(p => p.Profile)
-                .WithOne(p => p.CDProfile)
-                .HasForeignKey<CDModel.CDProfile>(p => p.ProfileId)
-                .IsRequired();
-            // End CD - CD Character Data
-
             modelBuilder.Entity<Antag>()
                 .HasIndex(p => new {HumanoidProfileId = p.ProfileId, p.AntagName})
                 .IsUnique();
@@ -337,6 +329,10 @@ namespace Content.Server.Database
         public int Slot { get; set; }
         [Column("char_name")] public string CharacterName { get; set; } = null!;
         public string FlavorText { get; set; } = null!;
+        //ADT-tweak-start
+        public string OOCNotes { get; set; } = null!;
+        public string HeadshotUrl { get; set; } = null!;
+        //ADT-tweak-end
         public int Age { get; set; }
         public string Sex { get; set; } = null!;
         public string Gender { get; set; } = null!;
@@ -363,8 +359,6 @@ namespace Content.Server.Database
 
         public int PreferenceId { get; set; }
         public Preference Preference { get; set; } = null!;
-
-        public CDModel.CDProfile? CDProfile { get; set; } // CD - Character Records
     }
 
     public class Job

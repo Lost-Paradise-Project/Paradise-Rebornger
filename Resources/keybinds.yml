@@ -194,11 +194,6 @@ binds:
 - function: OpenEmotesMenu
   type: State
   key: Y
-# Corvax-Wega-start
-- function: OfferItem
-  type: State
-  key: F
-# Corvax-Wega-end
 - function: TextCursorSelect
   # TextCursorSelect HAS to be above ExamineEntity
   # So that LineEdit receives it correctly.
@@ -685,3 +680,8 @@ binds:
   type: State
   key: E
 # Orion-End
+# EE edit start
+- function: OfferItem
+  type: State
+  key: F
+# EE edit end
