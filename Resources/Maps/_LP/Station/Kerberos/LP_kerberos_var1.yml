@@ -129238,18 +129238,6 @@ entities:
     - type: Transform
       pos: -36.5,36.5
       parent: 2
-- proto: FishingRod
-  entities:
-  - uid: 2210
-    components:
-    - type: Transform
-      pos: 81.61661,-25.999308
-      parent: 2
-  - uid: 2211
-    components:
-    - type: Transform
-      pos: 81.71036,-26.389933
-      parent: 2
 - proto: Flash
   entities:
   - uid: 13465

@@ -20,3 +20,7 @@ ent-LPPClothingUnderSocksMime = mime socks
     .desc = With these stockings, you will conquer the entire station without saying a word.
 ent-LPPClothingUnderSocksPink = pink socks
     .desc = An ideal choice if you are in a movie about dolls.
+ent-LPPClothingUnderThinThighBlack = thin thigh
+    .desc = { ent-LPPClothingUnderwearSocksBase.desc }
+ent-LPPClothingUnderThinKneeBlack = thin knee
+    .desc = { ent-LPPClothingUnderwearSocksBase.desc }

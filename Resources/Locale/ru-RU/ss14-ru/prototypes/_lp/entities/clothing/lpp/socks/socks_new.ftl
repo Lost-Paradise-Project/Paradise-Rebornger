@@ -20,3 +20,7 @@ ent-LPPClothingUnderSocksMime = носки мима
     .desc = "С этими чулками вы покорите всю станцию, не сказав ни слова."
 ent-LPPClothingUnderSocksPink = розовые носки
     .desc = "Идеальный выбор, если вы снимаетесь в фильме о куклах."
+ent-LPPClothingUnderThinThighBlack = тонкие длинные носочки
+    .desc = { ent-LPPClothingUnderwearSocksBase.desc }
+ent-LPPClothingUnderThinKneeBlack = тонкие носочки
+    .desc = { ent-LPPClothingUnderwearSocksBase.desc }

@@ -1,4 +1,0 @@
-- type: damageContainer
-  id: Clothing
-  supportedTypes:
-  - Slash # Only sharp objects
