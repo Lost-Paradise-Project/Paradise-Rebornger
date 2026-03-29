@@ -45,6 +45,14 @@ public sealed class MaterialStorageMagnetPickupSystem : EntitySystem
     // Used to add the magnet toggle to the context menu
     private void AddToggleMagnetVerb(EntityUid uid, MaterialStorageMagnetPickupComponent component, GetVerbsEvent<AlternativeVerb> args)
     {
+
+        // LP Edit Start
+
+        if (!component.MagnetToggle == true)
+            return;
+
+        // LP Edit End
+
         if (!args.CanAccess || !args.CanInteract)
             return;
 

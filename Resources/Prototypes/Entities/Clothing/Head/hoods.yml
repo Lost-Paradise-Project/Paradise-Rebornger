@@ -25,11 +25,6 @@
       Snout: HEAD
       HeadTop: HEAD
       HeadSide: HEAD
-  # Corvax-Wega-Dirtable-start
-  - type: Dirtable
-    dirtState: biohead
-    equippedDirtState: equipped-biohead
-  # Corvax-Wega-Dirtable-end
 
 - type: entity
   parent: ClothingHeadHatHoodBioGeneral
@@ -118,11 +113,6 @@
   - type: HideLayerClothing
     slots:
     - Hair
-  # Corvax-Wega-Dirtable-start
-  - type: Dirtable
-    dirtState: hood
-    equippedDirtState: equipped-hood
-  # Corvax-Wega-Dirtable-end
 
 - type: entity
   parent: ClothingHeadBase
@@ -140,11 +130,6 @@
   - type: HideLayerClothing
     slots:
     - Hair
-  # Corvax-Wega-Dirtable-start
-  - type: Dirtable
-    dirtState: hood
-    equippedDirtState: equipped-hood
-  # Corvax-Wega-Dirtable-end
 
 - type: entity
   parent: ClothingHeadBase
@@ -163,11 +148,6 @@
   - type: HideLayerClothing
     slots:
     - Hair
-  # Corvax-Wega-Dirtable-start
-  - type: Dirtable
-    dirtState: hood
-    equippedDirtState: equipped-hood
-  # Corvax-Wega-Dirtable-end
 
 - type: entity
   parent: ClothingHeadBase
@@ -192,11 +172,6 @@
     - Snout
     - HeadTop
     - HeadSide
-  # Corvax-Wega-Dirtable-start
-  - type: Dirtable
-    dirtState: hood
-    equippedDirtState: equipped-hood
-  # Corvax-Wega-Dirtable-end
 
 - type: entity
   parent: ClothingHeadBase
@@ -214,11 +189,6 @@
   - type: HideLayerClothing
     slots:
     - Hair
-  # Corvax-Wega-Dirtable-start
-  - type: Dirtable
-    dirtState: hood
-    equippedDirtState: equipped-hood
-  # Corvax-Wega-Dirtable-end
 
 - type: entity
   parent: ClothingHeadBase

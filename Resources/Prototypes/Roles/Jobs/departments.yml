@@ -48,7 +48,7 @@
   - DeathSquad
   - BlueshieldOfficer # Goobstation - Start
   - NanotrasenRepresentative # Goobstation - End
-  editorHidden: true
+  editorHidden: false
   weight: 120
 
 - type: department

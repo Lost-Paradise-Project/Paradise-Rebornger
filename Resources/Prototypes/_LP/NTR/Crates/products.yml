@@ -1,0 +1,178 @@
+- type: entity
+  id: LPPNTRCrateToolsExperimental
+  parent: CrateEngineeringSecure
+  name: experimental tools supply
+  description: Experimental tools are extremely practical, aren't they?
+  components:
+  - type: StorageFill
+    contents:
+      - id: JawsOfLife
+      - id: PowerDrill
+      - id: WelderExperimental
+      - id: RCDExperimental
+      - id: RPDExperimental
+
+- type: entity
+  parent: BoxEncryptionKeyPassenger
+  id: LPPBoxEncryptionKeyCentcomm
+  name: centcomm encryption key box
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: EncryptionKeyCentCom
+        amount: 4
+
+- type: entity
+  id: LPPNTRCrateClothingOuterArmorBasic
+  parent: CrateLockBoxSecurity
+  name: outer armor basic supply
+  description: Conventional body armor, most often issued to Nanotrain trainees.
+  components:
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterArmorBasic
+        amount: 3
+
+- type: entity
+  id: LPPBlueshieldUndeterminedWeapon
+  name: blueshield sets pack
+  description: A small box utilizing bluespace technology to drop in a loadout directly to you. Choose wisely.
+  parent: [ BaseItem, BaseSetSelector, BaseCentcommContraband ]
+  components:
+  - type: Sprite
+    sprite: _GoobStation/Objects/Specific/Security/blueshieldundetermined.rsi
+    state: icon
+  - type: SetSelector
+    possibleSets:
+    - BSOBlueshieldSet
+    - BSORevolverSet
+    - BSOChesterSet
+    - BSOSyringeSet
+    maxSelectedSets: 1
+
+# Rifle
+
+- type: entity
+  parent: BoxMagazine
+  id: LPPBoxMagazineRifleIncendiary
+  name: box of .20 (incendiary) rifle magazines
+  description: A box full of .20 (incendiary) rifle magazines.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: MagazineRifleIncendiary
+        amount: 4
+
+- type: entity
+  parent: BoxMagazine
+  id: LPPBoxMagazineRifleUranium
+  name: box of .20 (uranium) rifle magazines
+  description: A box full of .20 (uranium) rifle magazines.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: MagazineRifleUranium
+        amount: 4
+
+# Revolver
+
+- type: entity
+  parent: BoxMagazine
+  id: LPPBoxSpeedLoaderMagnum
+  name: box of .45 revolver speedloaders
+  description: A box full of .45 revolver speedloaders.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: SpeedLoaderMagnum
+        amount: 4
+
+- type: entity
+  parent: BoxMagazine
+  id: LPPBoxSpeedLoaderMagnumAP
+  name: box of .45 (AP) revolver speedloaders
+  description: A box full of .45 (AP) revolver speedloaders.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: SpeedLoaderMagnumAP
+        amount: 4
+
+- type: entity
+  parent: BoxMagazine
+  id: LPPBoxSpeedLoaderMagnumIncendiary
+  name: box of .45 (incendiary) revolver speedloaders
+  description: A box full of .45 (incendiary) revolver speedloaders.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: SpeedLoaderMagnumIncendiary
+        amount: 4
+
+- type: entity
+  parent: BoxMagazine
+  id: LPPBoxSpeedLoaderMagnumUranium
+  name: box of .45 (uranium) revolver speedloaders
+  description: A box full of .45 (uranium) revolver speedloaders.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: SpeedLoaderMagnumUranium
+        amount: 4
+
+# Pistol MK 58
+- type: entity
+  name: box of pistol .35 (incendiary) auto magazines
+  parent: BoxMagazine
+  id: LPPBoxMagazinePistolIncendiary
+  description: A box full of pistol .35 (incendiary) auto magazines.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: MagazinePistolIncendiary
+        amount: 4
+
+- type: entity
+  name: box of pistol .35 (uranium) auto magazines
+  parent: BoxMagazine
+  id: LPPBoxMagazinePistolUranium
+  description: A box full of pistol .35 (uranium) auto magazines.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: MagazinePistolUranium
+        amount: 4
+
+# Drozd
+- type: entity
+  name: box of SMG .35 (incendiary) auto magazines
+  parent: BoxMagazine
+  id: LPPBoxMagazinePistolSubMachineGunIncendiary
+  description: A box full of SMG .35 (incendiary) auto magazines.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: MagazinePistolSubMachineGunIncendiary
+        amount: 3
+
+- type: entity
+  name: box of SMG .35 (uranium) auto magazines
+  parent: BoxMagazine
+  id: LPPBoxMagazinePistolSubMachineGunUranium
+  description: A box full of SMG .35 (uranium) auto magazines.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase:
+        id: MagazinePistolSubMachineGunUranium
+        amount: 3

@@ -17,4 +17,15 @@ public sealed partial class MaterialStorageMagnetPickupComponent : Component
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("magnetEnabled")]
     public bool MagnetEnabled = false;
+
+    // LP Edit Start
+
+    /// <summary>
+    /// LP - Do we need the magnet to be switched?
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite), DataField("magnetToggle")]
+    public bool MagnetToggle = true;
+
+    // LP Edit End
+
 }
