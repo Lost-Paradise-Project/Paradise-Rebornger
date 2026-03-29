@@ -7,8 +7,6 @@ ntr-scan-success = Успешно зачислено { $amount } очков ло
 # listing
 # station
 
-ntr-executive-eva = Набор ВКД
-ntr-executive-eva-desc = Набор, состоящий из двух престижных ВКД скафандров и шлемов.
 ntr-executive-mindshield = Ящик имплантов Щит разума
 ntr-executive-mindshield-desc = Ящик, содержащий 3 импланта Щит разума.
 ntr-executive-spesos-small-name = Малый денежный грант
@@ -19,14 +17,10 @@ ntr-executive-emergency-meds-name = Аварийные медицинские з
 ntr-executive-emergency-meds-desc = Малый ящик с наборами для лечения травм. Будьте готовы объясниться после покупки.
 ntr-executive-disablers-name = Ящик со станнерами
 ntr-executive-disablers-desc = Ящик, содержащий 3 станнера и 1 ПП станнер. NanoTrasen не несёт ответственности за ущерб, нанесённый этим оружием.
-ntr-executive-mats-name = Заказать материалы
-ntr-executive-mats-desc = Закажите строительные материалы из глобального отдела снабжения NanoTrasen.
 ntr-executive-tools-small-name = Ящик с инструментами
 ntr-executive-tools-small-desc = Ящик, содержащий базовые инженерные инструменты.
 ntr-executive-water-cooler = премиальный водяной?? кулер
 ntr-executive-water-cooler-desc = Изготовлен из лучшего в секторе виски с 24-каратной выдержкой. Он блестящий и золотистый, как и его внутренности. Виски разливается в 500 ед. У каждого уважающего себя руководителя есть такой в своем номере.
-ntr-executive-pizza-small-name = Заказать малый набор для вечеринок
-ntr-executive-pizza-small-desc = Закажите набор для небольшой вечеринки от NanoTrasen. Как хороший сотрудник, вы ведь поделитесь пиццей с коллегами... или съедите всё сами?
 
 # personal
 
@@ -38,10 +32,6 @@ ntr-executive-single-intern = одна монета интерна
 ntr-executive-single-intern-desc = Вызывает базового интерна. Интерны полностью под вашим командованием, командуйте им выполнять задачи за вас или играйте с ними в карты.
 ntr-executive-bsd-name = Вызвать заместителя офицера Синего Щита
 ntr-executive-bsd-desc = Запросите заместителя офицера Синего Щита с Центрального Командования. Этот личный охранник для вас или руководства требует веского обоснования. Можно вызвать только одного.
-ntr-executive-softsuit-name = Заказать базовый ВКД
-ntr-executive-softsuit-desc = Базовый ВКД, предназначенный для кратковременного пребывания в космосе. Обеспечивает минимальную защиту.
-ntr-executive-hardsuit-name = Заказать ВКД
-ntr-executive-hardsuit-desc = Прочный ВКД для экстремальных условий. Вы уверены, что эта покупка оправдана?
 ntr-executive-cigs-deluxe = Исполнительный вендомат сигарет
 ntr-executive-cigs-deluxe-desc = Для тех, кто знает, что рака легких не существует, это сделал Nanotrasen, поставщик сигарет и дорогих чипсов, которые вы можете выкурить.
 ntr-experimental-hardsuit-name = Заказать скафандр
@@ -52,8 +42,6 @@ ntr-executive-whiskey-name = Премиальный виски
 ntr-executive-whiskey-desc = Полная бутылка премиального виски, дистиллированного в 2879 году с ОПЗ из последних не синтетических виноградин.
 ntr-executive-glasses-name = Очки ЦентКом
 ntr-executive-glasses-desc = На случай, если вам нужно выглядеть важнее, чем вы есть на самом деле.
-ntr-executive-savaliniaharunianisimious-name = Лазерный пистолет Свалинн
-ntr-executive-savaliniaharunianisimious-desc = Стандартный лазерный пистолет Свалинн, часто используемый в программах самообороны NanoTrasen.
 ntr-executive-1984-name = Револьвер Декард
 ntr-executive-1984-desc = Стандартный револьвер Декард для личной защиты.
 ntr-executive-combatmed-name = Боевой медкомплект
@@ -80,10 +68,6 @@ ntr-executive-task-flatpack = Упакованная консоль задани
 ntr-executive-task-flatpack-desc = Упаковка, в ней упакована консоль заданий ПЦК.
 ntr-executive-telecom-name = Платы серверов телекоммуникаций
 ntr-executive-telecom-desc = Ящик, содержащий 2 платы серверов телекоммуникаций. Необходимы для систем связи ИИ.
-ntr-executive-silo-name = Плата сило
-ntr-executive-silo-desc = Содержит одну плату сило. На случай, если кто-то "потерял" оригинальное.
-ntr-executive-fat-name = Экстрактор жира
-ntr-executive-fat-desc = Плата машины для извлечения жира. Корпоративная политика здоровья запрещает ожирение среди сотрудников.
 ntr-executive-grav-name = Мини-гравитационный генератор
 ntr-executive-grav-desc = Плата для компактного гравитационного генератора.
 ntr-executive-teleporter-name = Плата грузового телепада
@@ -96,8 +80,6 @@ ntr-executive-rnd-name = Плата сервера НИО
 ntr-executive-rnd-desc = Позволяет построить сервер НИО после установки.
 ntr-executive-comms-name = Плата консоли связи
 ntr-executive-comms-desc = Высококачественная плата для консоли экстренной связи.
-ntr-executive-cargosell-name = Плата консоли продаж карго
-ntr-executive-cargosell-desc = Позволяет проводить продажу ресурсов. Финансовые операции не подлежат проверке сотрудниками.
 ntr-executive-cargoshuttle-name = Плата консоли шаттла снабжения
 ntr-executive-cargoshuttle-desc = Плата консоли управления шаттла снабжения. Несанкционированное использование нарушает транспортные протоколы.
 ntr-executive-shuttle-name = Набор для постройки шаттла

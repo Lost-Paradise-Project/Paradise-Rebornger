@@ -28,7 +28,6 @@ namespace Content.Shared.Input
         public static readonly BoundKeyFunction EscapeContext = "EscapeContext";
         public static readonly BoundKeyFunction OpenCharacterMenu = "OpenCharacterMenu";
         public static readonly BoundKeyFunction OpenEmotesMenu = "OpenEmotesMenu";
-        public static readonly BoundKeyFunction OfferItem = "OfferItem"; /// Corvax-Wega-Offer
         public static readonly BoundKeyFunction OpenCraftingMenu = "OpenCraftingMenu";
         public static readonly BoundKeyFunction OpenGuidebook = "OpenGuidebook";
         public static readonly BoundKeyFunction OpenInventoryMenu = "OpenInventoryMenu";
@@ -67,6 +66,7 @@ namespace Content.Shared.Input
         public static readonly BoundKeyFunction ZoomOut = "ZoomOut";
         public static readonly BoundKeyFunction ZoomIn = "ZoomIn";
         public static readonly BoundKeyFunction ResetZoom = "ResetZoom";
+        public static readonly BoundKeyFunction OfferItem = "OfferItem"; // EE edit
         // Orion-Start
         public static readonly BoundKeyFunction TogglePosing = "TogglePosing";
         public static readonly BoundKeyFunction PosingOffsetLeft = "PosingOffsetLeft";

@@ -110035,48 +110035,6 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-- proto: Shower
-  entities:
-  - uid: 11491
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -38.5,-11.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
-  - uid: 12425
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -2.5,-16.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
-  - uid: 15447
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 14.5,-41.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
-  - uid: 15684
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 14.5,-42.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
-  - uid: 16407
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -43.5,2.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
 - proto: ShuttersNormal
   entities:
   - uid: 1394
@@ -134860,18 +134818,6 @@ entities:
       gameRules: []
     missingComponents:
     - WarpPoint
-- proto: WashingMachine
-  entities:
-  - uid: 7896
-    components:
-    - type: Transform
-      pos: 20.5,-28.5
-      parent: 2
-  - uid: 19491
-    components:
-    - type: Transform
-      pos: 21.5,-28.5
-      parent: 2
 - proto: WaterCooler
   entities:
   - uid: 3848

@@ -1,3 +1,308 @@
+# Station
+
+- type: entity
+  id: LPPSpawnPodTrackingImplants
+  categories: [ HideSpawnMenu ]
+  name: SpawnTrackingImplants
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: CrateTrackingImplants
+
+- type: entity
+  id: LPPSpawnPodToolsExperimental
+  categories: [ HideSpawnMenu ]
+  name: SpawnToolsExperimental
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: LPPNTRCrateToolsExperimental
+
+- type: entity
+  id: LPPSpawnPodPrinterDocFlatpack
+  categories: [ HideSpawnMenu ]
+  name: SpawnPrinterDocFlatpack
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: PrinterDocFlatpack
+
+- type: entity
+  id: LPPSpawnPodComputerIdFlatpack
+  categories: [ HideSpawnMenu ]
+  name: SpawnComputerId
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: LPPComputerIdFlatpack
+
+- type: entity
+  id: LPPSpawnPodCrateFunInstrumentsRandom
+  categories: [ HideSpawnMenu ]
+  name: SpawnCrateFunInstrumentsRandom
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: CrateFunInstrumentsRandom
+
+- type: entity
+  id: LPPSpawnPodCrateMaterialBasicResource
+  categories: [ HideSpawnMenu ]
+  name: SpawnCrateMaterialBasicResource
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: CrateMaterialBasicResource
+
+# Personal
+
+- type: entity
+  id: LPPSpawnPodWeaponAdvancedLaser
+  categories: [ HideSpawnMenu ]
+  name: SpawnWeaponAdvancedLaser
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: WeaponAdvancedLaser
+
+- type: entity
+  id: LPPSpawnPodDoubleEmergencyTank
+  categories: [ HideSpawnMenu ]
+  name: SpawnCrateDoubleEmergencyTank
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: CrateDoubleEmergencyTank
+
+- type: entity
+  id: LPPSpawnPodBoxTapeRecorder
+  categories: [ HideSpawnMenu ]
+  name: SpawnBoxTapeRecorder
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: BoxTapeRecorder
+
+- type: entity
+  id: LPPSpawnPodClothingMaskGasCentcom
+  categories: [ HideSpawnMenu ]
+  name: SpawnClothingMaskGasCentcom
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: ClothingMaskGasCentcom
+
+- type: entity
+  id: LPPSpawnPodBoxEncryptionKeyCentcomm
+  categories: [ HideSpawnMenu ]
+  name: SpawnBoxEncryptionKeyCentcomm
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: LPPBoxEncryptionKeyCentcomm
+
+- type: entity
+  id: LPPSpawnPodClothingOuterArmorBasic
+  categories: [ HideSpawnMenu ]
+  name: SpawnClothingOuterArmorBasic
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: LPPNTRCrateClothingOuterArmorBasic
+
+- type: entity
+  id: LPPSpawnPodClothingOuterArmorCentcommCarapace
+  categories: [ HideSpawnMenu ]
+  name: SpawnClothingOuterArmorCentcommCarapace
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: ClothingOuterArmorCentcommCarapace
+
+- type: entity
+  id: LPPSpawnPodBlueshieldUndeterminedWeapon
+  categories: [ HideSpawnMenu ]
+  name: SpawnBlueshieldUndeterminedWeapon
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: LPPBlueshieldUndeterminedWeapon
+
+# Ammo supplies
+
+# Rifle
+
+- type: entity
+  id: LPPSpawnPodBoxMagazineRifle
+  categories: [ HideSpawnMenu ]
+  name: SpawnBoxMagazineRifle
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: BoxMagazineRifle
+
+- type: entity
+  id: LPPSpawnPodBoxMagazineRifleIncendiary
+  categories: [ HideSpawnMenu ]
+  name: SpawnBoxMagazineRifleIncendiary
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: LPPBoxMagazineRifleIncendiary
+
+- type: entity
+  id: LPPSpawnPodBoxMagazineRifleUranium
+  categories: [ HideSpawnMenu ]
+  name: SpawnBoxMagazineRifleUranium
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: LPPBoxMagazineRifleUranium
+
+# Revolver
+
+- type: entity
+  id: LPPSpawnPodBoxSpeedLoaderMagnum
+  categories: [ HideSpawnMenu ]
+  name: SpawnBoxSpeedLoaderMagnum
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: LPPBoxSpeedLoaderMagnum
+
+- type: entity
+  id: LPPSpawnPodBoxSpeedLoaderMagnumAP
+  categories: [ HideSpawnMenu ]
+  name: SpawnBoxSpeedLoaderMagnumAP
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: LPPBoxSpeedLoaderMagnumAP
+
+- type: entity
+  id: LPPSpawnPodBoxSpeedLoaderMagnumIncendiary
+  categories: [ HideSpawnMenu ]
+  name: SpawnBoxSpeedLoaderMagnumIncendiary
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: LPPBoxSpeedLoaderMagnumIncendiary
+
+- type: entity
+  id: LPPSpawnPodBoxSpeedLoaderMagnumUranium
+  categories: [ HideSpawnMenu ]
+  name: SpawnBoxSpeedLoaderMagnumUranium
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: LPPBoxSpeedLoaderMagnumUranium
+
+# Shotgun
+
+- type: entity
+  id: LPPSpawnPodBoxLethalshot
+  categories: [ HideSpawnMenu ]
+  name: SpawnBoxLethalshot
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: BoxLethalshot
+
+- type: entity
+  id: LPPSpawnPodBoxShotgunSlug
+  categories: [ HideSpawnMenu ]
+  name: SpawnBoxShotgunSlug
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: BoxShotgunSlug
+
+- type: entity
+  id: LPPSpawnPodBoxShotgunIncendiary
+  categories: [ HideSpawnMenu ]
+  name: SpawnBoxShotgunIncendiary
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: BoxShotgunIncendiary
+
+- type: entity
+  id: LPPSpawnPodBoxShotgunUranium
+  categories: [ HideSpawnMenu ]
+  name: SpawnBoxShotgunUranium
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: BoxShotgunUranium
+
+# Pistols and Submachine-Gun
+
+# WT550
+- type: entity
+  id: LPPSpawnPodBoxMagazinePistolSubMachineGunTopMounted
+  categories: [ HideSpawnMenu ]
+  name: SpawnBoxMagazinePistolSubMachineGunTopMounted
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: BoxMagazinePistolSubMachineGunTopMounted
+
+# Pistol MK 58
+- type: entity
+  id: LPPSpawnPodBoxMagazinePistol
+  categories: [ HideSpawnMenu ]
+  name: SpawnBoxMagazinePistol
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: BoxMagazinePistol
+
+- type: entity
+  id: LPPSpawnPodBoxMagazinePistolIncendiary
+  categories: [ HideSpawnMenu ]
+  name: SpawnBoxMagazinePistolIncendiary
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: LPPBoxMagazinePistolIncendiary
+
+- type: entity
+  id: LPPSpawnPodBoxMagazinePistolUranium
+  categories: [ HideSpawnMenu ]
+  name: SpawnBoxMagazinePistolUranium
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: LPPBoxMagazinePistolUranium
+
+# Drozd
+- type: entity
+  id: LPPSpawnPodBoxMagazinePistolSubMachineGun
+  categories: [ HideSpawnMenu ]
+  name: SpawnBoxMagazinePistolSubMachineGun
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: BoxMagazinePistolSubMachineGun
+
+- type: entity
+  id: LPPSpawnPodBoxMagazinePistolSubMachineGunIncendiary
+  categories: [ HideSpawnMenu ]
+  name: SpawnBoxMagazinePistolSubMachineGunIncendiary
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: LPPBoxMagazinePistolSubMachineGunIncendiary
+
+- type: entity
+  id: LPPSpawnPodBoxMagazinePistolSubMachineGunUranium
+  categories: [ HideSpawnMenu ]
+  name: SpawnBoxMagazinePistolSubMachineGunUranium
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: LPPBoxMagazinePistolSubMachineGunUranium
+
 # responce teams
 
 - type: entity

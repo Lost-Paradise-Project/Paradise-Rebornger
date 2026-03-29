@@ -6,6 +6,11 @@ namespace Content.Shared._EE.CCVar;
 [CVarDefs]
 public sealed partial class EECCVars : CVars
 {
+    /*
+     * Offer Items
+     */
+    public static readonly CVarDef<bool> OfferModeIndicatorsPointShow =
+        CVarDef.Create("hud.offer_mode_indicators_point_show", true, CVar.ARCHIVE | CVar.CLIENTONLY);
 
     #region Contests System
 

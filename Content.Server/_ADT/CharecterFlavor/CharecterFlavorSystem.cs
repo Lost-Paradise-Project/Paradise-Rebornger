@@ -109,6 +109,9 @@ public sealed class CharecterFlavorSystem : SharedCharecterFlavorSystem
         if (!Uri.TryCreate(url, UriKind.Absolute, out var uri))
             return false;
 
+        if (!uri.AbsolutePath.EndsWith(".jpg", StringComparison.OrdinalIgnoreCase))
+            return false;
+
         // только http/https
         if (uri.Scheme != Uri.UriSchemeHttp &&
             uri.Scheme != Uri.UriSchemeHttps)

@@ -1,3 +1,3 @@
 ent-SuitStorageSecPilot = { ent-SuitStorageBase }
-    .suffix = Пилот
+    .suffix = Пилот СБ
     .desc = { ent-SuitStorageBase.desc }

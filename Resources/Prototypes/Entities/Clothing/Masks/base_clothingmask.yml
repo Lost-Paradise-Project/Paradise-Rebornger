@@ -21,7 +21,7 @@
   # Goobstation edit end
   # LP edit start
   - type: Tag
-    tags: 
+    tags:
     - CoatRack
   # LP edit end
   - type: StaticPrice
@@ -33,11 +33,6 @@
   id: ClothingMaskPullableBase
   components:
   - type: Mask
-  # Corvax-Wega-Dirtable-start
-  - type: Dirtable
-    dirtState: mask
-    equippedDirtState: equipped-mask
-  # Corvax-Wega-Dirtable-end
 
 - type: entity
   parent: BaseAction

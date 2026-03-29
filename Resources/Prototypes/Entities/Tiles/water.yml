@@ -63,4 +63,3 @@
   - type: TileEntityEffect
     effects:
     - !type:Extinguish
-    - !type:WashDirt # Corvax-Wega-Dirtable

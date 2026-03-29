@@ -6,3 +6,12 @@
   components:
   - type: Flatpack
     entity: ComputerJobSlots
+
+- type: entity
+  parent: BaseFlatpack
+  id: LPPComputerIdFlatpack
+  name: ID card computer flatpack
+  description: A flatpack used for constructing a ID card computer.
+  components:
+  - type: Flatpack
+    entity: ComputerId
