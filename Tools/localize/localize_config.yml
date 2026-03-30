@@ -1,0 +1,14 @@
+ignored_paths: # Игнорирует указанные пути до папок/файлов
+- "Resources/Locale/ru-RU/corvax"
+- "Resources/Locale/ru-RU/datasets"
+- "Resources/Locale/ru-RU/_ADT"
+- "Resources/Locale/ru-RU/_AruMoon"
+- "Resources/Locale/ru-RU/_CorvaxGoob"
+- "Resources/Locale/ru-RU/_CorvaxNext"
+- "Resources/Locale/ru-RU/_LP"
+- "Resources/Locale/ru-RU/_Orion"
+- "Resources/Locale/ru-RU/_Wega"
+- "Resources/Locale/ru-RU/_White"
+- "Resources/Locale/ru-RU/_WL"
+ignored_untranslated_paths: # Игнорирует предупреждения в указанных путях до папок/файлов
+- "Resources/Locale/ru-RU/robust-toolbox/input.ftl"

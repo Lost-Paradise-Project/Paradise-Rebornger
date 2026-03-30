@@ -1,4 +1,0 @@
-ent-InjectorFabricatorMachineCircuitboard = injector fabricator board
-    .desc = A machine printed circuit board for an injector fabricator.
-ent-MiningServerCircuitboard = mining server board
-    .desc = A machine printed circuit board for an mining server.
