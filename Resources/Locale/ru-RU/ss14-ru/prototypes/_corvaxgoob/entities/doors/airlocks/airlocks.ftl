@@ -1,6 +1,6 @@
 ent-AirlockBlueshieldOfficerCommand = { ent-AirlockCentralCommand }
-    .suffix = Синий Щит
     .desc = { ent-AirlockCentralCommand.desc }
-ent-AirlockBlueshieldOfficerCommandGlass = { ent-AirlockCentralCommandGlass }
     .suffix = Синий Щит
+ent-AirlockBlueshieldOfficerCommandGlass = { ent-AirlockCentralCommandGlass }
     .desc = { ent-AirlockCentralCommandGlass.desc }
+    .suffix = Синий Щит

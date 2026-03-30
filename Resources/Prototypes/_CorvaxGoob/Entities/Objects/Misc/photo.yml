@@ -27,8 +27,6 @@
 - type: entity
   parent: PhotoCamera
   id: PhotoCameraFilled
-  name: "camera"
-  description: 'Say "Cheeese!", uses paper for printing.'
   suffix: Filled
   components:
   - type: MaterialStorage

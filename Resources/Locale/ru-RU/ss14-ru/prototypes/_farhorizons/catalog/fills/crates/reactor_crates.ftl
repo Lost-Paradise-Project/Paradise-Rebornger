@@ -1,8 +1,12 @@
 ent-CrateCerenkiteFuelRod = ящик с топливными стержнями
     .desc = 3 черенкитовых топливных стержня для заправки ядерного реактора.
+    .suffix = { ent-CrateEngineeringSecure.suffix }
 ent-CrateBohrumControlRod = ящик со стержнями управления
     .desc = 2 бориевых стержня управления для ядерного реактора.
+    .suffix = { ent-CrateEngineeringSecure.suffix }
 ent-CrateSteelGasChannel = ящик с газовыми каналами
     .desc = 4 стальных стержня газовых каналов для ядерного реактора.
+    .suffix = { ent-CrateEngineeringSecure.suffix }
 ent-CrateSteelHeatExhanger = ящик с теплообменниками
     .desc = 4 стальных стержня-теплообменника для ядерного реактора.
+    .suffix = { ent-CrateEngineeringSecure.suffix }

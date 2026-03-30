@@ -1,9 +1,11 @@
 ent-LPPNTRCrateToolsExperimental = ящик экспериментальных инструментов
     .desc = Экспериментальные инструменты слишком практичны, не так ли?
+    .suffix = { ent-CrateEngineeringSecure.suffix }
 ent-LPPBoxEncryptionKeyCentcomm = коробка ключей шифрования ЦентКомм
     .desc = { ent-BoxEncryptionKeyPassenger.desc }
 ent-LPPNTRCrateClothingOuterArmorBasic = ящик бронежилетов
     .desc = Содержит три бронежилета, зачастую их выдают стажёрам НаноТрейзен.
+    .suffix = { ent-CrateLockBoxSecurity.suffix }
 ent-LPPBlueshieldUndeterminedWeapon = набор вооружения Синего Щита
     .desc = Небольшая коробка, в которой используется технология блюспейс для доставки товаров непосредственно вам. Выбирайте с умом.
 ent-LPPBoxMagazineRifleIncendiary = Коробка магазинов с .20 винтовочными (зажигательные)

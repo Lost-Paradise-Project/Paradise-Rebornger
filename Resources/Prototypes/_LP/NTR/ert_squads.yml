@@ -20,7 +20,6 @@
   id: LPPRadioLeadERTMed
   parent: LPPRadioLeadERTSec
   name: lead ert medics summoning radio
-  description: A NT-approved radio that can summon a lead ert with special coins.
   components:
   - type: GhostRoleMobSpawner
     prototype: LPPLeadERTMed
@@ -29,7 +28,6 @@
   id: LPPRadioLeadERTEngi
   parent: LPPRadioLeadERTSec
   name: lead ert engineers summoning radio
-  description: A NT-approved radio that can summon a lead ert with special coins.
   components:
   - type: GhostRoleMobSpawner
     prototype: LPPLeadERTEngi
@@ -38,7 +36,6 @@
   id: LPPRadioLeadERTJani
   parent: LPPRadioLeadERTSec
   name: lead ert janitors summoning radio
-  description: A NT-approved radio that can summon a lead ert with special coins.
   components:
   - type: GhostRoleMobSpawner
     prototype: LPPLeadERTJani
@@ -47,7 +44,6 @@
   id: LPPRadioLeadERTStandard
   parent: LPPRadioLeadERTSec
   name: lead ert summoning radio
-  description: A NT-approved radio that can summon a lead ert with special coins.
   components:
   - type: GhostRoleMobSpawner
     prototype: LPPLeadERTStandard
@@ -56,7 +52,6 @@
   id: LPPRadioLeadCBURN
   parent: LPPRadioLeadERTSec
   name: lead ert CBURN summoning radio
-  description: A NT-approved radio that can summon a lead ert with special coins.
   components:
   - type: GhostRole
     name: ghost-role-information-cburn-agent-name
