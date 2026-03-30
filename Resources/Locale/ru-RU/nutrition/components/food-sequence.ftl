@@ -81,6 +81,7 @@ food-sequence-content-anomaly-berry = аномальной ягодой
 # BURGERS
 
 food-sequence-burger-gen = { $content }бургер
+
 food-sequence-burger-content-raw-meat = сыро
 food-sequence-burger-content-meat = мясо
 food-sequence-burger-content-carp = карпо
@@ -123,6 +124,7 @@ food-sequence-burger-content-world-pea = миро
 # COTTON BURGERS
 
 food-sequence-cotton-burger-gen = { $content }бургер
+
 food-sequence-cotton-burger-content-cotton-bol = хлопко
 food-sequence-cotton-burger-content-pyrotton-bol = пиро
 food-sequence-cotton-burger-content-plushie-throngler = нагибатор

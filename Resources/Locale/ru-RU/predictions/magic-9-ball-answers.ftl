@@ -6,6 +6,7 @@ magic-9-ball-4 = Безусловно
 magic-9-ball-5 = Перспективы хорошие
 magic-9-ball-6 = Положительно
 magic-9-ball-7 = Абсолютно
+
 # Negative
 magic-9-ball-8 = Нет
 magic-9-ball-9 = НЕЕЕТ!!!!!!
@@ -14,6 +15,7 @@ magic-9-ball-11 = Не-а
 magic-9-ball-12 = Та не
 magic-9-ball-13 = Отрицательно
 magic-9-ball-14 = Абсолютно нет
+
 # Neutral
 magic-9-ball-15 = Возможно
 magic-9-ball-16 = Я не знаю
