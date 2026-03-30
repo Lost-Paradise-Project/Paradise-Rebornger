@@ -1,6 +1,5 @@
 - type: marking
   id: IpcShellguardShellguardMonitorHead2
-
   bodyPart: Head
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -10,7 +9,6 @@
 
 - type: marking
   id: IpcShellguardShellguardMonitorHead1
-
   bodyPart: Head
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -20,7 +18,6 @@
 
 - type: marking
   id: IpcShellguardShellguardMainLLeg1
-
   bodyPart: LLeg
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -30,7 +27,6 @@
 
 - type: marking
   id: IpcShellguardShellguardMainRHand2
-
   bodyPart: RArm
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -40,7 +36,6 @@
 
 - type: marking
   id: IpcShellguardShellguardMainLFoot1
-
   bodyPart: LLeg
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -50,7 +45,6 @@
 
 - type: marking
   id: IpcShellguardShellguardMainLHand1
-
   bodyPart: LArm
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -60,7 +54,6 @@
 
 - type: marking
   id: IpcShellguardShellguardMainRArm2
-
   bodyPart: RArm
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -70,7 +63,6 @@
 
 - type: marking
   id: IpcShellguardShellguardMainTorso2
-
   bodyPart: Chest
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -80,7 +72,6 @@
 
 - type: marking
   id: IpcShellguardShellguardMainTorso1
-
   bodyPart: Chest
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -90,7 +81,6 @@
 
 - type: marking
   id: IpcShellguardShellguardMainLArm2
-
   bodyPart: LArm
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -100,7 +90,6 @@
 
 - type: marking
   id: IpcShellguardShellguardMainRHand1
-
   bodyPart: RArm
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -110,7 +99,6 @@
 
 - type: marking
   id: IpcShellguardShellguardMainRLeg2
-
   bodyPart: RLeg
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -120,7 +108,6 @@
 
 - type: marking
   id: IpcShellguardShellguardMainRLeg1
-
   bodyPart: RLeg
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -130,7 +117,6 @@
 
 - type: marking
   id: IpcShellguardShellguardMainLArm1
-
   bodyPart: LArm
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -140,7 +126,6 @@
 
 - type: marking
   id: IpcShellguardShellguardMainLHand2
-
   bodyPart: LArm
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -150,7 +135,6 @@
 
 - type: marking
   id: IpcShellguardShellguardMainRArm1
-
   bodyPart: RArm
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -160,7 +144,6 @@
 
 - type: marking
   id: IpcShellguardShellguardMainRFoot2
-
   bodyPart: RLeg
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -170,7 +153,6 @@
 
 - type: marking
   id: IpcShellguardShellguardMainRFoot1
-
   bodyPart: RLeg
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -180,7 +162,6 @@
 
 - type: marking
   id: IpcShellguardShellguardMainLFoot2
-
   bodyPart: LLeg
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -190,7 +171,6 @@
 
 - type: marking
   id: IpcShellguardShellguardMainLLeg2
-
   bodyPart: LLeg
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -200,7 +180,6 @@
 
 - type: marking
   id: IpcShellguardShellguardAlt1Head2
-
   bodyPart: Head
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -210,7 +189,6 @@
 
 - type: marking
   id: IpcShellguardShellguardAlt1Head1
-
   bodyPart: Head
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -220,7 +198,6 @@
 
 - type: marking
   id: IpcZenghuZenghuMainLLeg1
-
   bodyPart: LLeg
   groupWhitelist: [Ipc]
   sprites:
@@ -229,7 +206,6 @@
 
 - type: marking
   id: IpcZenghuZenghuMainRHand2
-
   bodyPart: RArm
   groupWhitelist: [Ipc]
   sprites:
@@ -238,7 +214,6 @@
 
 - type: marking
   id: IpcZenghuZenghuMainLFoot1
-
   bodyPart: LLeg
   groupWhitelist: [Ipc]
   sprites:
@@ -247,7 +222,6 @@
 
 - type: marking
   id: IpcZenghuZenghuMainLHand1
-
   bodyPart: LArm
   groupWhitelist: [Ipc]
   sprites:
@@ -256,7 +230,6 @@
 
 - type: marking
   id: IpcZenghuZenghuMainRArm2
-
   bodyPart: RArm
   groupWhitelist: [Ipc]
   sprites:
@@ -265,7 +238,6 @@
 
 - type: marking
   id: IpcZenghuZenghuMainTorso2
-
   bodyPart: Chest
   groupWhitelist: [Ipc]
   sprites:
@@ -274,7 +246,6 @@
 
 - type: marking
   id: IpcZenghuZenghuMainTorso1
-
   bodyPart: Chest
   groupWhitelist: [Ipc]
   sprites:
@@ -283,7 +254,6 @@
 
 - type: marking
   id: IpcZenghuZenghuMainLArm2
-
   bodyPart: LArm
   groupWhitelist: [Ipc]
   sprites:
@@ -292,7 +262,6 @@
 
 - type: marking
   id: IpcZenghuZenghuMainRHand1
-
   bodyPart: RArm
   groupWhitelist: [Ipc]
   sprites:
@@ -301,7 +270,6 @@
 
 - type: marking
   id: IpcZenghuZenghuMainRLeg2
-
   bodyPart: RLeg
   groupWhitelist: [Ipc]
   sprites:
@@ -310,7 +278,6 @@
 
 - type: marking
   id: IpcZenghuZenghuMainGroin
-
   bodyPart: Chest
   groupWhitelist: [Ipc]
   sprites:
@@ -319,7 +286,6 @@
 
 - type: marking
   id: IpcZenghuZenghuMainRLeg1
-
   bodyPart: RLeg
   groupWhitelist: [Ipc]
   sprites:
@@ -328,7 +294,6 @@
 
 - type: marking
   id: IpcZenghuZenghuMainHead2
-
   bodyPart: Head
   groupWhitelist: [Ipc]
   sprites:
@@ -337,7 +302,6 @@
 
 - type: marking
   id: IpcZenghuZenghuMainLArm1
-
   bodyPart: LArm
   groupWhitelist: [Ipc]
   sprites:
@@ -346,7 +310,6 @@
 
 - type: marking
   id: IpcZenghuZenghuMainLHand2
-
   bodyPart: LArm
   groupWhitelist: [Ipc]
   sprites:
@@ -355,7 +318,6 @@
 
 - type: marking
   id: IpcZenghuZenghuMainRArm1
-
   bodyPart: RArm
   groupWhitelist: [Ipc]
   sprites:
@@ -364,7 +326,6 @@
 
 - type: marking
   id: IpcZenghuZenghuMainRFoot2
-
   bodyPart: RLeg
   groupWhitelist: [Ipc]
   sprites:
@@ -373,7 +334,6 @@
 
 - type: marking
   id: IpcZenghuZenghuMainRFoot1
-
   bodyPart: RLeg
   groupWhitelist: [Ipc]
   sprites:
@@ -382,7 +342,6 @@
 
 - type: marking
   id: IpcZenghuZenghuMainLFoot2
-
   bodyPart: LLeg
   groupWhitelist: [Ipc]
   sprites:
@@ -391,7 +350,6 @@
 
 - type: marking
   id: IpcZenghuZenghuMainHead1
-
   bodyPart: Head
   groupWhitelist: [Ipc]
   sprites:
@@ -400,7 +358,6 @@
 
 - type: marking
   id: IpcZenghuZenghuMainLLeg2
-
   bodyPart: LLeg
   groupWhitelist: [Ipc]
   sprites:
@@ -409,7 +366,6 @@
 
 - type: marking
   id: IpcHesphiastosHesphiastosMainLLeg1
-
   bodyPart: LLeg
   groupWhitelist: [Ipc]
   sprites:
@@ -418,7 +374,6 @@
 
 - type: marking
   id: IpcHesphiastosHesphiastosMainRHand2
-
   bodyPart: RArm
   groupWhitelist: [Ipc]
   sprites:
@@ -427,7 +382,6 @@
 
 - type: marking
   id: IpcHesphiastosHesphiastosMainLFoot1
-
   bodyPart: LLeg
   groupWhitelist: [Ipc]
   sprites:
@@ -436,7 +390,6 @@
 
 - type: marking
   id: IpcHesphiastosHesphiastosMainLHand1
-
   bodyPart: LArm
   groupWhitelist: [Ipc]
   sprites:
@@ -445,7 +398,6 @@
 
 - type: marking
   id: IpcHesphiastosHesphiastosMainRArm2
-
   bodyPart: RArm
   groupWhitelist: [Ipc]
   sprites:
@@ -454,7 +406,6 @@
 
 - type: marking
   id: IpcHesphiastosHesphiastosMainTorso2
-
   bodyPart: Chest
   groupWhitelist: [Ipc]
   sprites:
@@ -463,7 +414,6 @@
 
 - type: marking
   id: IpcHesphiastosHesphiastosMainTorso1
-
   bodyPart: Chest
   groupWhitelist: [Ipc]
   sprites:
@@ -472,7 +422,6 @@
 
 - type: marking
   id: IpcHesphiastosHesphiastosMainLArm2
-
   bodyPart: LArm
   groupWhitelist: [Ipc]
   sprites:
@@ -481,7 +430,6 @@
 
 - type: marking
   id: IpcHesphiastosHesphiastosMainRHand1
-
   bodyPart: RArm
   groupWhitelist: [Ipc]
   sprites:
@@ -490,7 +438,6 @@
 
 - type: marking
   id: IpcHesphiastosHesphiastosMainRLeg2
-
   bodyPart: RLeg
   groupWhitelist: [Ipc]
   sprites:
@@ -499,7 +446,6 @@
 
 - type: marking
   id: IpcHesphiastosHesphiastosMainRLeg1
-
   bodyPart: RLeg
   groupWhitelist: [Ipc]
   sprites:
@@ -508,7 +454,6 @@
 
 - type: marking
   id: IpcHesphiastosHesphiastosMainLArm1
-
   bodyPart: LArm
   groupWhitelist: [Ipc]
   sprites:
@@ -517,7 +462,6 @@
 
 - type: marking
   id: IpcHesphiastosHesphiastosMainLHand2
-
   bodyPart: LArm
   groupWhitelist: [Ipc]
   sprites:
@@ -526,7 +470,6 @@
 
 - type: marking
   id: IpcHesphiastosHesphiastosMainRArm1
-
   bodyPart: RArm
   groupWhitelist: [Ipc]
   sprites:
@@ -535,7 +478,6 @@
 
 - type: marking
   id: IpcHesphiastosHesphiastosMainRFoot2
-
   bodyPart: RLeg
   groupWhitelist: [Ipc]
   sprites:
@@ -544,7 +486,6 @@
 
 - type: marking
   id: IpcHesphiastosHesphiastosMainRFoot1
-
   bodyPart: RLeg
   groupWhitelist: [Ipc]
   sprites:
@@ -553,7 +494,6 @@
 
 - type: marking
   id: IpcHesphiastosHesphiastosMainLFoot2
-
   bodyPart: LLeg
   groupWhitelist: [Ipc]
   sprites:
@@ -562,7 +502,6 @@
 
 - type: marking
   id: IpcHesphiastosHesphiastosMainLLeg2
-
   bodyPart: LLeg
   groupWhitelist: [Ipc]
   sprites:
@@ -571,7 +510,6 @@
 
 - type: marking
   id: IpcHesphiastosHesphiastosMonitorHead2
-
   bodyPart: Head
   groupWhitelist: [Ipc]
   sprites:
@@ -580,7 +518,6 @@
 
 - type: marking
   id: IpcHesphiastosHesphiastosMonitorHead1
-
   bodyPart: Head
   groupWhitelist: [Ipc]
   sprites:
@@ -589,7 +526,6 @@
 
 - type: marking
   id: IpcHesphiastosHesphiastosAlt1Head2
-
   bodyPart: Head
   groupWhitelist: [Ipc]
   sprites:
@@ -598,7 +534,6 @@
 
 - type: marking
   id: IpcHesphiastosHesphiastosAlt1Head3
-
   bodyPart: Head
   groupWhitelist: [Ipc]
   sprites:
@@ -607,7 +542,6 @@
 
 - type: marking
   id: IpcHesphiastosHesphiastosAlt1Head1
-
   bodyPart: Head
   groupWhitelist: [Ipc]
   sprites:
@@ -616,7 +550,6 @@
 
 - type: marking
   id: IpcBishopBishopMonitorHead2
-
   bodyPart: Head
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -626,7 +559,6 @@
 
 - type: marking
   id: IpcBishopBishopMonitorHead
-
   bodyPart: Head
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -636,7 +568,6 @@
 
 - type: marking
   id: IpcBishopBishopAlt1Head
-
   bodyPart: Head
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -646,7 +577,6 @@
 
 - type: marking
   id: IpcBishopBishopMainLArmCombined
-
   bodyPart: LArm
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -656,7 +586,6 @@
 
 - type: marking
   id: IpcBishopBishopMainTorsoPrimary
-
   bodyPart: Chest
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -666,7 +595,6 @@
 
 - type: marking
   id: IpcBishopBishopMainLLegSecondary
-
   bodyPart: LLeg
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -676,7 +604,6 @@
 
 - type: marking
   id: IpcBishopBishopMainRArmPrimary
-
   bodyPart: RArm
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -686,7 +613,6 @@
 
 - type: marking
   id: IpcBishopBishopMainLArmTertiary
-
   bodyPart: LArm
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -696,7 +622,6 @@
 
 - type: marking
   id: IpcBishopBishopMainRHand
-
   bodyPart: RArm
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -706,7 +631,6 @@
 
 - type: marking
   id: IpcBishopBishopMainLArmPrimary
-
   bodyPart: LArm
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -716,7 +640,6 @@
 
 - type: marking
   id: IpcBishopBishopMainRLegPrimary
-
   bodyPart: RLeg
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -726,7 +649,6 @@
 
 - type: marking
   id: IpcBishopBishopMainTorsoSecondary
-
   bodyPart: Chest
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -736,7 +658,6 @@
 
 - type: marking
   id: IpcBishopBishopMainRLegCombined
-
   bodyPart: RLeg
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -746,7 +667,6 @@
 
 - type: marking
   id: IpcBishopBishopMainRArmSecondary
-
   bodyPart: RArm
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -756,7 +676,6 @@
 
 - type: marking
   id: IpcBishopBishopMainHead
-
   bodyPart: Head
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -766,7 +685,6 @@
 
 - type: marking
   id: IpcBishopBishopMainLFoot
-
   bodyPart: LLeg
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -776,7 +694,6 @@
 
 - type: marking
   id: IpcBishopBishopMainLArmSecondary
-
   bodyPart: LArm
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -786,7 +703,6 @@
 
 - type: marking
   id: IpcBishopBishopMainLLegPrimary
-
   bodyPart: LLeg
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -796,7 +712,6 @@
 
 - type: marking
   id: IpcBishopBishopMainRArmTertiary
-
   bodyPart: RArm
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -806,7 +721,6 @@
 
 - type: marking
   id: IpcBishopBishopMainLHand
-
   bodyPart: LArm
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -816,7 +730,6 @@
 
 - type: marking
   id: IpcBishopBishopMainLLegCombined
-
   bodyPart: LLeg
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -826,7 +739,6 @@
 
 - type: marking
   id: IpcBishopBishopMainRFoot
-
   bodyPart: RLeg
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -836,7 +748,6 @@
 
 - type: marking
   id: IpcBishopBishopMainRLegSecondary
-
   bodyPart: RLeg
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -846,7 +757,6 @@
 
 - type: marking
   id: IpcBishopBishopMainRArmCombined
-
   bodyPart: RArm
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -856,7 +766,6 @@
 
 - type: marking
   id: IpcMorpheusMorpheusAlt1Head
-
   bodyPart: Head
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -866,7 +775,6 @@
 
 - type: marking
   id: IpcMorpheusMorpheusMainRHand
-
   bodyPart: RArm
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -876,7 +784,6 @@
 
 - type: marking
   id: IpcMorpheusMorpheusMainLArm
-
   bodyPart: LArm
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -886,7 +793,6 @@
 
 - type: marking
   id: IpcMorpheusMorpheusMainTorso
-
   bodyPart: Chest
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -896,7 +802,6 @@
 
 - type: marking
   id: IpcMorpheusMorpheusMainHead
-
   bodyPart: Head
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -906,7 +811,6 @@
 
 - type: marking
   id: IpcMorpheusMorpheusMainRLeg
-
   bodyPart: RLeg
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -916,7 +820,6 @@
 
 - type: marking
   id: IpcMorpheusMorpheusMainLFoot
-
   bodyPart: LLeg
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -926,7 +829,6 @@
 
 - type: marking
   id: IpcMorpheusMorpheusMainLHand
-
   bodyPart: LArm
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -936,7 +838,6 @@
 
 - type: marking
   id: IpcMorpheusMorpheusMainRArm
-
   bodyPart: RArm
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -946,7 +847,6 @@
 
 - type: marking
   id: IpcMorpheusMorpheusMainRFoot
-
   bodyPart: RLeg
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -956,7 +856,6 @@
 
 - type: marking
   id: IpcMorpheusMorpheusMainLLeg
-
   bodyPart: LLeg
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -966,7 +865,6 @@
 
 - type: marking
   id: IpcWardtakahashiWardtakahashiMainRHand
-
   bodyPart: RArm
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -976,7 +874,6 @@
 
 - type: marking
   id: IpcWardtakahashiWardtakahashiMainLArm
-
   bodyPart: LArm
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -986,7 +883,6 @@
 
 - type: marking
   id: IpcWardtakahashiWardtakahashiMainTorso
-
   bodyPart: Chest
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -996,7 +892,6 @@
 
 - type: marking
   id: IpcWardtakahashiWardtakahashiMainHead
-
   bodyPart: Head
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -1006,7 +901,6 @@
 
 - type: marking
   id: IpcWardtakahashiWardtakahashiMainRLeg
-
   bodyPart: RLeg
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -1016,7 +910,6 @@
 
 - type: marking
   id: IpcWardtakahashiWardtakahashiMainLFoot
-
   bodyPart: LLeg
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -1026,7 +919,6 @@
 
 - type: marking
   id: IpcWardtakahashiWardtakahashiMainLHand
-
   bodyPart: LArm
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -1036,7 +928,6 @@
 
 - type: marking
   id: IpcWardtakahashiWardtakahashiMainRArm
-
   bodyPart: RArm
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -1046,7 +937,6 @@
 
 - type: marking
   id: IpcWardtakahashiWardtakahashiMainRFoot
-
   bodyPart: RLeg
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -1056,7 +946,6 @@
 
 - type: marking
   id: IpcWardtakahashiWardtakahashiMainLLeg
-
   bodyPart: LLeg
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -1066,7 +955,6 @@
 
 - type: marking
   id: IpcWardtakahashiWardtakahashiMonitorHead
-
   bodyPart: Head
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -1076,7 +964,6 @@
 
 - type: marking
   id: IpcWardtakahashiWardtakahashiAlt1Head
-
   bodyPart: Head
   groupWhitelist: [Ipc]
   sponsorOnly: true # Corvax-Sponsors
@@ -1086,7 +973,6 @@
 
 - type: marking
   id: IpcXionXionMonitorHead2
-
   bodyPart: Head
   groupWhitelist: [Ipc]
   sprites:
@@ -1095,7 +981,6 @@
 
 - type: marking
   id: IpcXionXionMonitorHead1
-
   bodyPart: Head
   groupWhitelist: [Ipc]
   sprites:
@@ -1104,7 +989,6 @@
 
 - type: marking
   id: IpcXionXionMainLLeg1
-
   bodyPart: LLeg
   groupWhitelist: [Ipc]
   sprites:
@@ -1113,7 +997,6 @@
 
 - type: marking
   id: IpcXionXionMainRHand2
-
   bodyPart: RArm
   groupWhitelist: [Ipc]
   sprites:
@@ -1122,7 +1005,6 @@
 
 - type: marking
   id: IpcXionXionMainLFoot1
-
   bodyPart: LLeg
   groupWhitelist: [Ipc]
   sprites:
@@ -1131,7 +1013,6 @@
 
 - type: marking
   id: IpcXionXionMainLHand1
-
   bodyPart: LArm
   groupWhitelist: [Ipc]
   sprites:
@@ -1140,7 +1021,6 @@
 
 - type: marking
   id: IpcXionXionMainRArm2
-
   bodyPart: RArm
   groupWhitelist: [Ipc]
   sprites:
@@ -1149,7 +1029,6 @@
 
 - type: marking
   id: IpcXionXionMainTorso2
-
   bodyPart: Chest
   groupWhitelist: [Ipc]
   sprites:
@@ -1158,7 +1037,6 @@
 
 - type: marking
   id: IpcXionXionMainTorso1
-
   bodyPart: Chest
   groupWhitelist: [Ipc]
   sprites:
@@ -1167,7 +1045,6 @@
 
 - type: marking
   id: IpcXionXionMainLArm2
-
   bodyPart: LArm
   groupWhitelist: [Ipc]
   sprites:
@@ -1176,7 +1053,6 @@
 
 - type: marking
   id: IpcXionXionMainRHand1
-
   bodyPart: RArm
   groupWhitelist: [Ipc]
   sprites:
@@ -1185,7 +1061,6 @@
 
 - type: marking
   id: IpcXionXionMainRLeg2
-
   bodyPart: RLeg
   groupWhitelist: [Ipc]
   sprites:
@@ -1194,7 +1069,6 @@
 
 - type: marking
   id: IpcXionXionMainRLeg1
-
   bodyPart: RLeg
   groupWhitelist: [Ipc]
   sprites:
@@ -1203,7 +1077,6 @@
 
 - type: marking
   id: IpcXionXionMainLArm1
-
   bodyPart: LArm
   groupWhitelist: [Ipc]
   sprites:
@@ -1212,7 +1085,6 @@
 
 - type: marking
   id: IpcXionXionMainLHand2
-
   bodyPart: LArm
   groupWhitelist: [Ipc]
   sprites:
@@ -1221,7 +1093,6 @@
 
 - type: marking
   id: IpcXionXionMainRArm1
-
   bodyPart: RArm
   groupWhitelist: [Ipc]
   sprites:
@@ -1230,7 +1101,6 @@
 
 - type: marking
   id: IpcXionXionMainRFoot2
-
   bodyPart: RLeg
   groupWhitelist: [Ipc]
   sprites:
@@ -1239,7 +1109,6 @@
 
 - type: marking
   id: IpcXionXionMainRFoot1
-
   bodyPart: RLeg
   groupWhitelist: [Ipc]
   sprites:
@@ -1248,7 +1117,6 @@
 
 - type: marking
   id: IpcXionXionMainLFoot2
-
   bodyPart: LLeg
   groupWhitelist: [Ipc]
   sprites:
@@ -1257,7 +1125,6 @@
 
 - type: marking
   id: IpcXionXionMainLLeg2
-
   bodyPart: LLeg
   groupWhitelist: [Ipc]
   sprites:
@@ -1266,7 +1133,6 @@
 
 - type: marking
   id: IpcXionXionAlt1Head2
-
   bodyPart: Head
   groupWhitelist: [Ipc]
   sprites:
@@ -1275,7 +1141,6 @@
 
 - type: marking
   id: IpcXionXionAlt1Head1
-
   bodyPart: Head
   groupWhitelist: [Ipc]
   sprites:

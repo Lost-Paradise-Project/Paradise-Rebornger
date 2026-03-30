@@ -339,8 +339,6 @@
       - StationAiCoreElectronics
   - type: StaticPrice
     price: 5000
-  - type: TTS
-    voice: glados
 
 # The job-ready version of an AI spawn.
 - type: entity
@@ -429,6 +427,8 @@
   parent: PositronicBrain
   categories: [ HideSpawnMenu, DoNotMap ]
   components:
+  - type: TTS
+    voice: glados # Corvax-TTS
   - type: Sprite
     # Once it's in a core it's pretty much an abstract entity at that point.
     visible: false

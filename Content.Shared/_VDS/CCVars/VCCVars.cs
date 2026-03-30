@@ -14,7 +14,7 @@ public sealed class VCCVars
     /// </summary>
     /// <seealso cref="AcousticDataSystem"/>
     public static readonly CVarDef<bool> AcousticEnable =
-        CVarDef.Create("vds.acoustics.enable", true, CVar.ARCHIVE | CVar.CLIENTONLY);
+        CVarDef.Create("vds.acoustics.enable", false, CVar.ARCHIVE | CVar.CLIENTONLY);
 
     /// <summary>
     /// Whether to cast acoustic rays in four cardinal directions, or eight.

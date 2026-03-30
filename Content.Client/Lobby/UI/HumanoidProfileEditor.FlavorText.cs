@@ -1,7 +1,10 @@
+using System.Threading;
 using Content.Client._ADT.CharecterFlavor;
 using Content.Shared._ADT.CharecterFlavor;
 using Robust.Client.UserInterface.Controls;
 using Robust.Shared.Utility;
+using Robust.Shared.Timing;
+using Timer = Robust.Shared.Timing.Timer;
 
 namespace Content.Client.Lobby.UI;
 
@@ -72,15 +75,66 @@ public sealed partial class HumanoidProfileEditor
         Profile = Profile.WithOOCNotes(content);
         SetDirty();
     }
-    private void OnHeadshotUrlChange(string content)
+    private CancellationTokenSource? _headshotRequestCts;
+    private string? _lastHeadshotUrl;
+
+    private async void OnHeadshotUrlChange(string content)
     {
         if (Profile is null)
             return;
 
-        Profile = Profile.WithHeadshotUrl(content);
+        var url = content.Trim();
+
+        if (url == _lastHeadshotUrl)
+            return;
+
+        _lastHeadshotUrl = url;
+
+        Profile = Profile.WithHeadshotUrl(url);
         SetDirty();
+
+        // Отменяем предыдущий запрос
+        _headshotRequestCts?.Cancel();
+        _headshotRequestCts?.Dispose();
+        _headshotRequestCts = null;
+
+        _headshotRequestCts = new CancellationTokenSource();
+
+        var cts = _headshotRequestCts.Token;
+
+        try
+        {
+            // Debounce: ждём 500мс перед запросом
+            await Timer.Delay(500, cts);
+            OnHeadshotPreviewRequestedDelayed(url);
+        }
+        catch (OperationCanceledException)
+        {
+            // Запрос отменён — это нормально
+        }
     }
 
+    private void OnHeadshotPreviewRequestedDelayed(string url)
+    {
+        if (Profile is null)
+            return;
+
+        if (!_entManager.EntityExists(SpriteView.PreviewDummy))
+            return;
+
+        var flavor = _entManager.EnsureComponent<CharacterFlavorComponent>(SpriteView.PreviewDummy);
+        flavor.FlavorText = Profile.FlavorText ?? string.Empty;
+        flavor.HeadshotUrl = url;
+
+        // var controller = UserInterfaceManager.GetUIController<CharacterFlavorUiController>();
+        // controller.OpenPreviewMenu(SpriteView.PreviewDummy);
+
+        // Попросить сервер скачать и прислать картинку для предпросмотра хэдшота.
+        if (!string.IsNullOrWhiteSpace(url))
+        {
+            _entManager.System<CharecterFlavorSystem>().RequestHeadshotPreview(url);
+        }
+    }
 
     private void OnFlavorPreviewRequested()
     {
@@ -92,7 +146,6 @@ public sealed partial class HumanoidProfileEditor
 
         var flavor = _entManager.EnsureComponent<CharacterFlavorComponent>(SpriteView.PreviewDummy);
         flavor.FlavorText = Profile.FlavorText ?? string.Empty;
-        flavor.OOCNotes = Profile.OOCNotes ?? string.Empty;
         flavor.HeadshotUrl = Profile.HeadshotUrl ?? string.Empty;
 
         var controller = UserInterfaceManager.GetUIController<CharacterFlavorUiController>();

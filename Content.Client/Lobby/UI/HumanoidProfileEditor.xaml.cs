@@ -499,6 +499,8 @@ namespace Content.Client.Lobby.UI
 
             _loadoutWindow?.Dispose();
             _loadoutWindow = null;
+            _headshotRequestCts?.Cancel();
+            _headshotRequestCts = null;
         }
 
         protected override void EnteredTree()

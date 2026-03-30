@@ -55,7 +55,6 @@
         acts: ["Destruction"]
   - type: StaticPrice
     price: 1500
-  - type: Timer
   - type: TimedSpawner
     power: true
     prototypes:
