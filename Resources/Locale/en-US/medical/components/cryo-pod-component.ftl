@@ -1,4 +1,4 @@
-﻿# Ejection verb label.
+# Ejection verb label.
 cryo-pod-verb-noun-occupant = Patient
 # Examine text showing whether there's a beaker in the pod and if it is empty.
 cryo-pod-examine = There's {INDEFINITE($beaker)} {$beaker} in here.
@@ -42,5 +42,3 @@ cryo-pod-window-eject-beaker = Eject
 cryo-pod-window-eject-patient = Eject patient
 
 cryo-pod-window-health-no-damage = No damage detected
-
-

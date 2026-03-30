@@ -10,5 +10,6 @@ ignored_paths: # Игнорирует указанные пути до папо�
 - "Resources/Locale/ru-RU/_Wega"
 - "Resources/Locale/ru-RU/_White"
 - "Resources/Locale/ru-RU/_WL"
+- "Resources/Locale/ru-RU/_GoobStation/NTR/document.ftl"
 ignored_untranslated_paths: # Игнорирует предупреждения в указанных путях до папок/файлов
 - "Resources/Locale/ru-RU/robust-toolbox/input.ftl"

@@ -26,5 +26,4 @@ selectable-set-blueshield-syringe-description =
 # Blueshield hardsuits
 
 selectable-set-blueshield-hardsuit-light-name = blueshield hardsuit
-selectable-set-blueshield-hardsuit-light-description =
-    An armoured hardsuit, allowing for more speed at the cost of protection.
+selectable-set-blueshield-hardsuit-light-description = An armoured hardsuit, allowing for more speed at the cost of protection.

@@ -6,7 +6,7 @@ rpd-component-sensors-monitors = Сенсоры и мониторы
 rpd-mode-primary = Первый
 rpd-mode-secondary = Второй
 rpd-mode-tertiary = Третий
-rpd-component-examine-mode = Текущий режим: [color=cyan]{ $mode }[/color]
 rpd-mode-free = Свободный
+rpd-component-examine-mode = Текущий режим: [color=cyan]{ $mode }[/color]
 rpd-verb-switch-mode = Переключить режим
 rpd-item-status-mode = Режим: { $mode }

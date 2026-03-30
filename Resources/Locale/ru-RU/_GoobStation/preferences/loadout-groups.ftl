@@ -4,6 +4,7 @@ loadout-group-ntr-neck = ПЦК, шея
 loadout-group-ntr-jumpsuit = ПЦК, комбинезон
 loadout-group-ntr-belt = ПЦК, пояс
 loadout-group-ntr-shoes = ПЦК, обувь
+
 loadout-group-bso-head = ОСЩ, голова
 loadout-group-bso-backpack = ОСЩ, рюкзак
 loadout-group-bso-jumpsuit = ОСЩ, комбинезон
