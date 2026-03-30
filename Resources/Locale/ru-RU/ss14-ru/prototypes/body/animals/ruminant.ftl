@@ -1,5 +1,5 @@
 ent-OrganRuminantStomach = { ent-OrganBaseStomach }
-    .suffix = Жвачный
     .desc = { ent-OrganBaseStomach.desc }
+    .suffix = Жвачный
 ent-BaseMobRuminant = { "" }
     .desc = { "" }

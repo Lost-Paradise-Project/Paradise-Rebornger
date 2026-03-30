@@ -3,5 +3,5 @@ ent-BaseMagazineShotgunLeverRifle = магазин (.50)
 ent-MagazineShotgunLeverRifle = магазин для рычажной винтовки (.50)
     .desc = { ent-BaseMagazineShotgunLeverRifle.desc }
 ent-MagazineShotgunLeverRifleEmpty = { ent-MagazineShotgunLeverRifle }
-    .suffix = Пустой
     .desc = { ent-MagazineShotgunLeverRifle.desc }
+    .suffix = Пустой

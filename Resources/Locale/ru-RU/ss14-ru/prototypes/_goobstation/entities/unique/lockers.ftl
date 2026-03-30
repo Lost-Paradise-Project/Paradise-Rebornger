@@ -1,6 +1,6 @@
 ent-UniqueLockerNanorepFilled = { ent-LockerNanorepFilled }
-    .suffix = НЕ МАППИТЬ, Уникальный, Заполненный
     .desc = { ent-LockerNanorepFilled.desc }
-ent-UniqueLockerBlueshieldOfficerFilled = { ent-LockerBlueshieldOfficerFilled }
     .suffix = НЕ МАППИТЬ, Уникальный, Заполненный
+ent-UniqueLockerBlueshieldOfficerFilled = { ent-LockerBlueshieldOfficerFilled }
     .desc = { ent-LockerBlueshieldOfficerFilled.desc }
+    .suffix = НЕ МАППИТЬ, Уникальный, Заполненный
