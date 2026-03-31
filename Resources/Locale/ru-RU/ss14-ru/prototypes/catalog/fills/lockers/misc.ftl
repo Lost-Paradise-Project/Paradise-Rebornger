@@ -1,5 +1,5 @@
 ent-LockerSyndicatePersonalFilled = { ent-LockerSyndicatePersonal }
-    .desc = It's a personal storage unit for operative gear.
+    .desc = Это персональный шкафчик для снаряжения оперативника.
     .suffix = Заполненный
 ent-LockerSyndicateWallFilled = { ent-LockerWallSyndicate }
     .desc = Персональный шкафчик для хранения снаряжения оперативников.

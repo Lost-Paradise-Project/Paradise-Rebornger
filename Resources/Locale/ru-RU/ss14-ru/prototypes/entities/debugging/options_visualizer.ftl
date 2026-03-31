@@ -1,3 +1,3 @@
 ent-OptionsVisualizerTest = { "" }
     .desc = { "" }
-    .suffix = DEBUG
+    .suffix = ОТЛАДКА

@@ -80,7 +80,7 @@ anomaly-command-supercritical = Целевая аномалия переходи
 
 # Flavor text on the footer
 anomaly-generator-flavor-left = Аномалия может возникнуть внутри оператора.
-anomaly-generator-flavor-right = версия 1.1
+anomaly-generator-flavor-right = v1.1
 
 anomaly-behavior-unknown = [color=red]ОШИБКА. Невозможно считать.[/color]
 

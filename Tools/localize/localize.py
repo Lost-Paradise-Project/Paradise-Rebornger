@@ -89,6 +89,7 @@ class RunContext:
         ignore_paths: Optional[List[Path]] = None,
         ignore_untranslated_paths: Optional[List[Path]] = None,
         ignore_variable_mismatch_paths: Optional[List[Path]] = None,
+        no_translate_tokens: Optional[List[str]] = None,
     ):
         self._processed_files: Set[str] = set()
         self.parsed_ftl_cache: Dict[
@@ -106,6 +107,7 @@ class RunContext:
             os.path.normcase(os.path.abspath(p))
             for p in (ignore_variable_mismatch_paths or [])
         ]
+        self.no_translate_tokens: Set[str] = set(no_translate_tokens or [])
 
     def mark_processed(self, filepath: Path) -> bool:
         path_str = str(filepath.resolve())
@@ -390,13 +392,14 @@ class LocalizationManager:
         self.prototypes_ru_dir = self.ru_ru_dir / "ss14-ru" / "prototypes"
         self.prototypes_src_dir = self.resources_dir / "Prototypes"
 
-        ignore_paths, ignore_untranslated, ignore_variable_mismatch = self._load_config(config_file)
-        self.context = RunContext(ignore_paths, ignore_untranslated, ignore_variable_mismatch)
+        ignore_paths, ignore_untranslated, ignore_variable_mismatch, no_translate_tokens = self._load_config(config_file)
+        self.context = RunContext(ignore_paths, ignore_untranslated, ignore_variable_mismatch, no_translate_tokens)
 
-    def _load_config(self, config_file: str) -> Tuple[List[Path], List[Path], List[Path]]:
+    def _load_config(self, config_file: str) -> Tuple[List[Path], List[Path], List[Path], List[str]]:
         ignore_paths: List[Path] = []
         ignore_untranslated_paths: List[Path] = []
         ignore_variable_mismatch_paths: List[Path] = []
+        no_translate_tokens: List[str] = []
 
         config_path = Path(config_file).resolve()
         if not config_path.exists():
@@ -417,6 +420,8 @@ class LocalizationManager:
                             ignore_variable_mismatch_paths.append(
                                 (self.root_dir / p).resolve()
                             )
+                        for t in config_data.get("no_translate_tokens", []):
+                            no_translate_tokens.append(str(t))
                 logging.info(f"Конфигурация загружена из {config_path.name}")
             except Exception as e:
                 logging.error(f"Ошибка чтения конфигурации {config_path}: {e}")
@@ -426,7 +431,7 @@ class LocalizationManager:
                 "Игнорирование путей отключено."
             )
 
-        return ignore_paths, ignore_untranslated_paths, ignore_variable_mismatch_paths
+        return ignore_paths, ignore_untranslated_paths, ignore_variable_mismatch_paths, no_translate_tokens
 
     def _get_parsed_ftl(
         self, filepath: Path
@@ -1189,13 +1194,17 @@ class LocalizationManager:
                     if entry.ignore_untranslated:
                         continue
 
-                    def is_untranslated(text: str) -> bool:
+                    def is_untranslated(text: str, _key: str = key) -> bool:
                         if not text:
                             return False
                         clean_text = FtlParser.TAG_REGEX.sub(
                             "", FtlParser.REF_REGEX.sub("", text)
                         )
                         if not clean_text.strip():
+                            return False
+                        if clean_text.strip() in self.context.no_translate_tokens:
+                            return False
+                        if re.match(r"^v\d[\w.\-]*$", clean_text.strip()):
                             return False
                         return bool(
                             self.LATIN_PATTERN.search(clean_text)

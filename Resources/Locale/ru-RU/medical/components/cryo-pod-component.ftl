@@ -7,7 +7,7 @@ cryo-pod-empty-beaker = Тут пусто!
 cryo-pod-locked = Механизм извлечения не реагирует!
 
 cryo-pod-window-product-name = Nanotrasen CRPX-229
-cryo-pod-window-product-subtitle = Cryogenic Restoration Pod
+cryo-pod-window-product-subtitle = Капсула криогенного восстановления
 cryo-pod-window-loading = Инициализация
 cryo-pod-window-atmos-pressure = Давление
 cryo-pod-window-atmos-temperature = Температура
@@ -32,11 +32,11 @@ cryo-pod-window-eject-error = Сбой механизма извлечения. 
 
 cryo-pod-window-chems-no-beaker = Ёмкость не вставлена
 cryo-pod-window-chems-empty-beaker = Ёмкость пуста
-cryo-pod-window-chems-injecting-tooltip = Ввод { $quantity }u
-cryo-pod-window-inject-1u = 1u
-cryo-pod-window-inject-5u = 5u
-cryo-pod-window-inject-10u = 10u
-cryo-pod-window-inject-20u = 20u
+cryo-pod-window-chems-injecting-tooltip = Ввод { $quantity }ед.
+cryo-pod-window-inject-1u = 1ед.
+cryo-pod-window-inject-5u = 5ед.
+cryo-pod-window-inject-10u = 10ед.
+cryo-pod-window-inject-20u = 20ед.
 # The eject beaker button has very little horizontal space, which is why it only says "eject"
 cryo-pod-window-eject-beaker = Извлечь
 cryo-pod-window-eject-patient = Извлечь пациента

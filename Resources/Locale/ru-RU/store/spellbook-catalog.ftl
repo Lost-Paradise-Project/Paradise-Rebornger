@@ -73,7 +73,7 @@ spellbook-staff-animation-description = Оживите неодушевлённ�
 # Events
 
 spellbook-event-summon-ghosts-name = Призыв призраков
-spellbook-event-summon-ghosts-description = Who ya gonna call?
+spellbook-event-summon-ghosts-description = Кому ты позвонишь?
 
 spellbook-event-summon-guns-name = Призыв оружия
 spellbook-event-summon-guns-description = АК-47 для всех! Размещает перед каждым случайное огнестрельное оружие. Отключает возврат средств при покупке!

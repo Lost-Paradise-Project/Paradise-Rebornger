@@ -1,4 +1,4 @@
-ent-BaseWeaponLightMachineGun = BaseWeaponLightMachineGun
+ent-BaseWeaponLightMachineGun = Пулемёт
     .desc = Дерзай — налетай, целься и стреляй.
 ent-WeaponLightMachineGunL6 = L6 SAW
     .desc = Разработанный компанией Waffle Corp, L6 SAW — это смертоносный лёгкий пулемёт, часто используемое мародёрами Gorlex. Несмотря на громоздкость и плохую эргономичность, его тяжёлый ствол и большая ёмкость магазина делают его идеальным для подавления противника градом пуль. Питается от патронных лент .30 калибра.

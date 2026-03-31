@@ -1,6 +1,6 @@
-ent-BaseWeaponLauncher = BaseWeaponLauncher
+ent-BaseWeaponLauncher = Гранатомёт
     .desc = Дерзай — налетай, целься и стреляй.
-ent-WeaponLauncherChinaLake = China Lake
+ent-WeaponLauncherChinaLake = China-Lake
     .desc = БЛУП.
 ent-WeaponLauncherHydra = гидра
     .desc = БЛУП... ПШШШШШШ...

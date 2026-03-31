@@ -11,7 +11,7 @@ bounty-console-manifest-entry =
     }
 bounty-console-manifest-reward = Награда: ${ $reward }
 bounty-console-description-label = [color=gray]{ $description }[/color]
-bounty-console-id-label = АйДи#{ $id }
+bounty-console-id-label = ID#{ $id }
 
 bounty-console-flavor-left = Запросы, полученные от местных недобросовестных торговцев.
 bounty-console-flavor-right = версия 1.4
