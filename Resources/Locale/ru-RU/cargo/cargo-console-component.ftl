@@ -2,7 +2,7 @@
 
 cargo-console-menu-title = Консоль заказа грузов
 cargo-console-menu-flavor-left = Заказывайте больше пиццы чем обычно!
-cargo-console-menu-flavor-right = v2.1
+cargo-console-menu-flavor-right = версия 2.1
 cargo-console-menu-account-name-label = Аккаунт:{ " " }
 cargo-console-menu-account-name-none-text = Нет
 cargo-console-menu-account-name-format = [bold][color={ $color }]{ $name }[/color][/bold] [font="Monospace"]\[{ $code }\][/font]
@@ -22,7 +22,7 @@ cargo-console-menu-orders-label = Заказы
 cargo-console-menu-populate-categories-all-text = Все
 cargo-console-menu-order-row-title = { $productName } (x{ $orderAmount } за { $orderPrice }$)
 cargo-console-menu-populate-orders-cargo-order-row-product-name-text = Запрошено: { $orderRequester } с аккаунта [color={ $accountColor }]{ $account }[/color]
-cargo-console-menu-order-row-product-description = Reason: { $orderReason }
+cargo-console-menu-order-row-product-description = Причина: { $orderReason }
 cargo-console-menu-order-row-button-approve = Одобрить
 cargo-console-menu-order-row-button-cancel = Отменить
 cargo-console-menu-order-row-alerts-reason-absent = Причина не указана

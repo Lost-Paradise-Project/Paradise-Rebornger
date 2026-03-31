@@ -1,5 +1,5 @@
 admin-logs-title = Панель админ логов
-admin-logs-count = Показано { $showing }/{ $total }
+admin-logs-count = Показано { $showing }/{ $total } из { $round }
 admin-logs-export = Экспорт
 admin-logs-pop-out = Поп-аут
 

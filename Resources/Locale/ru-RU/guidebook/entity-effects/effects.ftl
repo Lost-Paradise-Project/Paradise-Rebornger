@@ -389,8 +389,14 @@ entity-effect-guidebook-drunk =
 
 entity-effect-guidebook-electrocute =
     { $chance ->
-        [1] Бьёт током
-        *[other] бьют током
+        [1] { $stuns ->
+                [true] Бьёт током
+                *[false] Ударяет током
+            }
+        *[other] { $stuns ->
+                [true] бьют током
+                *[false] ударяют током
+            }
     } цель метаболизма на { NATURALFIXED($time, 3) } { $time ->
         [one] секунду
         [few] секунды

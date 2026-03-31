@@ -88,6 +88,7 @@ class RunContext:
         self,
         ignore_paths: Optional[List[Path]] = None,
         ignore_untranslated_paths: Optional[List[Path]] = None,
+        ignore_variable_mismatch_paths: Optional[List[Path]] = None,
     ):
         self._processed_files: Set[str] = set()
         self.parsed_ftl_cache: Dict[
@@ -100,6 +101,10 @@ class RunContext:
         self.ignore_untranslated_paths: List[str] = [
             os.path.normcase(os.path.abspath(p))
             for p in (ignore_untranslated_paths or [])
+        ]
+        self.ignore_variable_mismatch_paths: List[str] = [
+            os.path.normcase(os.path.abspath(p))
+            for p in (ignore_variable_mismatch_paths or [])
         ]
 
     def mark_processed(self, filepath: Path) -> bool:
@@ -125,6 +130,16 @@ class RunContext:
 
         file_abs = os.path.normcase(os.path.abspath(filepath))
         for ign in self.ignore_untranslated_paths:
+            if file_abs == ign or file_abs.startswith(ign + os.sep):
+                return True
+        return False
+
+    def is_variable_mismatch_ignored(self, filepath: Path) -> bool:
+        if not self.ignore_variable_mismatch_paths:
+            return False
+
+        file_abs = os.path.normcase(os.path.abspath(filepath))
+        for ign in self.ignore_variable_mismatch_paths:
             if file_abs == ign or file_abs.startswith(ign + os.sep):
                 return True
         return False
@@ -375,12 +390,13 @@ class LocalizationManager:
         self.prototypes_ru_dir = self.ru_ru_dir / "ss14-ru" / "prototypes"
         self.prototypes_src_dir = self.resources_dir / "Prototypes"
 
-        ignore_paths, ignore_untranslated = self._load_config(config_file)
-        self.context = RunContext(ignore_paths, ignore_untranslated)
+        ignore_paths, ignore_untranslated, ignore_variable_mismatch = self._load_config(config_file)
+        self.context = RunContext(ignore_paths, ignore_untranslated, ignore_variable_mismatch)
 
-    def _load_config(self, config_file: str) -> Tuple[List[Path], List[Path]]:
+    def _load_config(self, config_file: str) -> Tuple[List[Path], List[Path], List[Path]]:
         ignore_paths: List[Path] = []
         ignore_untranslated_paths: List[Path] = []
+        ignore_variable_mismatch_paths: List[Path] = []
 
         config_path = Path(config_file).resolve()
         if not config_path.exists():
@@ -397,6 +413,10 @@ class LocalizationManager:
                             ignore_untranslated_paths.append(
                                 (self.root_dir / p).resolve()
                             )
+                        for p in config_data.get("ignored_variable_mismatch_paths", []):
+                            ignore_variable_mismatch_paths.append(
+                                (self.root_dir / p).resolve()
+                            )
                 logging.info(f"Конфигурация загружена из {config_path.name}")
             except Exception as e:
                 logging.error(f"Ошибка чтения конфигурации {config_path}: {e}")
@@ -406,7 +426,7 @@ class LocalizationManager:
                 "Игнорирование путей отключено."
             )
 
-        return ignore_paths, ignore_untranslated_paths
+        return ignore_paths, ignore_untranslated_paths, ignore_variable_mismatch_paths
 
     def _get_parsed_ftl(
         self, filepath: Path
@@ -693,6 +713,7 @@ class LocalizationManager:
                     if (
                         key in ru_entries
                         and ru_entries[key].variables != en_entry.variables
+                        and not self.context.is_variable_mismatch_ignored(target_file)
                     ):
                         logging.warning(
                             f"Несовпадение переменных в {rel_path}: {key}. "
@@ -731,7 +752,10 @@ class LocalizationManager:
                         prec_text = ru_entries[key].preceding_text
                         key_sp = ru_entries[key].key_space
                         val_sp = ru_entries[key].val_space
-                        if ru_entries[key].variables != en_entry.variables:
+                        if (
+                            ru_entries[key].variables != en_entry.variables
+                            and not self.context.is_variable_mismatch_ignored(target_file)
+                        ):
                             logging.warning(
                                 f"Несовпадение переменных в {rel_path}: {key} "
                                 f"Ожидается: {en_entry.variables}, найдено: {ru_entries[key].variables}"

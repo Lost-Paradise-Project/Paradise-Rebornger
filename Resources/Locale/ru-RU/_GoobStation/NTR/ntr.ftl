@@ -136,7 +136,7 @@ ntr-bounty-console-reward-label = Награда: [color=limegreen]{ $reward } �
 ntr-bounty-console-manifest-entry =
     { $amount ->
         [1] { $item }
-        *[other] { $item } x{ $amount }
+        *[other] { $item } х{ $amount }
     }
 
 ntr-bounty-console-flavor-left = Задания одобрены Центральным Командованием. Взятки под запретом... наверное.

@@ -9,7 +9,7 @@ atmos-alerts-window-tab-fire-alarms = Пож. сигн.
 
 atmos-alerts-window-alarm-label = { CAPITALIZE($name) } ({ $address })
 atmos-alerts-window-temperature-label = Температура
-atmos-alerts-window-temperature-value = { $valueInC } °C ({ $valueInK } K)
+atmos-alerts-window-temperature-value = { $valueInC } °С ({ $valueInK } К)
 atmos-alerts-window-invalid-value = Н/Д
 atmos-alerts-window-total-mol-label = Всего молей
 atmos-alerts-window-total-mol-value = { $value } моль
@@ -35,4 +35,4 @@ atmos-alerts-window-alerts-being-silenced = Отключение предупр�
 atmos-alerts-window-toggle-overlays = Переключение отображения сигнализации
 
 atmos-alerts-window-flavor-left = Обратитесь за помощью к атмосферному технику
-atmos-alerts-window-flavor-right = v1.8
+atmos-alerts-window-flavor-right = версия 1.8

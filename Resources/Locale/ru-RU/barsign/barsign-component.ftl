@@ -69,7 +69,7 @@ barsign-prototype-name-zocalo = Сокало
 barsign-prototype-description-zocalo = Ранее находилось в Космоамерике.
 
 ## LV426
-barsign-prototype-name-lv426 = LV-426
+barsign-prototype-name-lv426 = ЛВ-426
 barsign-prototype-description-lv426 = Выпить с модной маской на лице явно важнее, чем сходить в медотсек.
 
 ## The Wiggle Roomm

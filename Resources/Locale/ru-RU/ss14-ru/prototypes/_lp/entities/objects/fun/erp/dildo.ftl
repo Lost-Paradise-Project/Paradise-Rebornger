@@ -1,5 +1,5 @@
 ent-LPPDildoAvian = птичий фаллоимитатор
-    .desc = Big rubber dildo
+    .desc = Большой резиновый фаллоимитатор
 ent-LPPDildoCanine = собачий фаллоимитатор
     .desc = { ent-LPPDildoAvian.desc }
 ent-LPPDildoDouble = двойной фаллоимитатор

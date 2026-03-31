@@ -4,8 +4,8 @@ reactor-smoke-stop = { CAPITALIZE($owner) } перестаёт дымиться.
 reactor-fire-start = { CAPITALIZE($owner) } начинает гореть!
 reactor-fire-stop = { CAPITALIZE($owner) } перестаёт гореть.
 
-reactor-unanchor-melted = Вы не можете открутить ядерный реактор, он вплавился в корпус!
-reactor-unanchor-warning = Вы не можете открутить ядерный реактор, пока он не пуст или его температура выше 80°C!
+reactor-unanchor-melted = Вы не можете открутить { $owner }, он вплавился в корпус!
+reactor-unanchor-warning = Вы не можете открутить { $owner }, пока он не пуст или его температура выше 80°C!
 reactor-anchor-warning = Неверное положение для закрепления.
 
 ### Messages
