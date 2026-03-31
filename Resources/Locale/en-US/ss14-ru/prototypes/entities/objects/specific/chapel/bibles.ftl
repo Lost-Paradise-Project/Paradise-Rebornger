@@ -16,3 +16,7 @@ ent-BibleHonk = mirth of the honkmother
     .desc = Oh great and glorious Mother, Mistress of Mirth, Matron of Mask and Merriments, Blessed is she amongst us jesters.
 ent-BibleRatvar = tablet of ratvar
     .desc = A holy relic of the Clockwork Cult, blessed by the Clockwork Justice, Ratvar.
+ent-HolyLightEffect = { "" }
+    .desc = { "" }
+ent-EvilLightEffect = { ent-HolyLightEffect }
+    .desc = { ent-HolyLightEffect.desc }

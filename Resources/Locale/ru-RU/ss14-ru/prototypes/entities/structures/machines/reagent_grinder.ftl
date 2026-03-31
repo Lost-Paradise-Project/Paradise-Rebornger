@@ -1,5 +1,11 @@
 ent-KitchenReagentGrinder = измельчитель реагентов
     .desc = От БлендерТех. Будет ли он работать? Давайте узнаем!
     .suffix = Измельчитель/соковыжималка
+ent-KitchenReagentGrinderBeaker = { ent-KitchenReagentGrinder }
+    .suffix = Мензурка
+    .desc = { ent-KitchenReagentGrinder.desc }
+ent-KitchenReagentGrinderBeakerLarge = { ent-KitchenReagentGrinder }
+    .suffix = Большая мензурка
+    .desc = { ent-KitchenReagentGrinder.desc }
 ent-ReagentGrinderIndustrial = промышленный измельчитель реагентов
     .desc = Промышленный измельчитель реагентов.

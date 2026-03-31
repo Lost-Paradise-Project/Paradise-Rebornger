@@ -7,7 +7,7 @@
   - type: StorageFill
     contents:
       - id: SpaceCash500
-        amount: 20 # Why? cuz a whole ass crate for 1 cash stack is wierd
+        amount: 10 # Why? cuz a whole ass crate for 1 cash stack is wierd # LP Edit 20 -> 10
 
 - type: entity
   id: NTRCratePointDisks

@@ -72,7 +72,6 @@
   - type: WirelessNetworkConnection
     range: 1200
   - type: StationLimitedNetwork
-  - type: Dirtable # Corvax-Wega-Dirtable
 
 - type: entity
   abstract: true
@@ -82,11 +81,6 @@
   - type: Clothing
     slots: [innerclothing]
     femaleMask: UniformTop
-  # Corvax-Wega-Dirtable-start
-  - type: Dirtable
-    dirtState: jumpskirt
-    equippedDirtState: equipped-jumpskirt
-  # Corvax-Wega-Dirtable-end
 
 - type: entity
   abstract: true

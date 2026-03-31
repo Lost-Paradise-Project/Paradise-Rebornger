@@ -1,6 +1,5 @@
 - type: marking
   id: TajaranPatch
-
   bodyPart: Chest
   groupWhitelist: [Tajaran]
   sponsorOnly: false # LP-edit
@@ -10,7 +9,6 @@
 
 - type: marking
   id: TajaranSkeletonBody
-
   bodyPart: Chest
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -20,7 +18,6 @@
 
 # - type: marking
 #   id: Points
-#
 #   bodyPart: Chest
 #   groupWhitelist: [Tajaran]
 #   sponsorOnly: true # Corvax-Sponsors
@@ -30,7 +27,6 @@
 
 - type: marking
   id: TajaranBlotsBody
-
   bodyPart: Chest
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -40,7 +36,6 @@
 
 - type: marking
   id: TajaranStripesBody
-
   bodyPart: Chest
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -50,7 +45,6 @@
 
 # - type: marking
 #   id: GradientRleg
-#   markingCategory: Legs
 #   bodyPart: RFoot
 #   groupWhitelist: [Tajaran]
 #   sponsorOnly: true # Corvax-Sponsors
@@ -60,7 +54,6 @@
 
 # - type: marking
 #   id: GradientLleg
-#   markingCategory: Legs
 #   bodyPart: LFoot
 #   groupWhitelist: [Tajaran]
 #   sponsorOnly: true # Corvax-Sponsors
@@ -70,7 +63,6 @@
 
 - type: marking
   id: TajaranGradientLhand
-
   bodyPart: LHand
   groupWhitelist: [Tajaran]
   sponsorOnly: false # LP-edit
@@ -80,7 +72,6 @@
 
 - type: marking
   id: TajaranGradientLarm
-
   bodyPart: LArm
   groupWhitelist: [Tajaran]
   sponsorOnly: false # LP-edit
@@ -90,7 +81,6 @@
 
 - type: marking
   id: TajaranGradientRhand
-
   bodyPart: RHand
   groupWhitelist: [Tajaran]
   sponsorOnly: false # LP-edit
@@ -100,7 +90,6 @@
 
 - type: marking
   id: TajaranGradientRarm
-
   bodyPart: RArm
   groupWhitelist: [Tajaran]
   sponsorOnly: false # LP-edit
@@ -110,7 +99,6 @@
 
 - type: marking
   id: TajaranSpikey
-
   bodyPart: Hair
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -120,7 +108,6 @@
 
 - type: marking
   id: TajaranHairLadiesretro # LP-edit
-
   bodyPart: Hair
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -130,7 +117,6 @@
 
 - type: marking
   id: TajaranHairBraid
-
   bodyPart: Hair
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -140,7 +126,6 @@
 
 - type: marking
   id: TajaranHairEyebrows
-
   bodyPart: Hair
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -150,7 +135,6 @@
 
 - type: marking
   id: TajaranHairPigtail
-
   bodyPart: Hair
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -160,7 +144,6 @@
 
 - type: marking
   id: TajaranHairCurly
-
   bodyPart: Hair
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -170,7 +153,6 @@
 
 - type: marking
   id: TajaranHairBob
-
   bodyPart: Hair
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -180,7 +162,6 @@
 
 - type: marking
   id: TajaranHairFingerwave
-
   bodyPart: Hair
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -190,7 +171,6 @@
 
 - type: marking
   id: TajaranHairPlait
-
   bodyPart: Hair
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -200,7 +180,6 @@
 
 - type: marking
   id: TajaranHairPonytail
-
   bodyPart: Hair
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -210,7 +189,6 @@
 
 - type: marking
   id: TajaranHairClean
-
   bodyPart: Hair
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -220,7 +198,6 @@
 
 - type: marking
   id: TajaranHairRattail
-
   bodyPart: Hair
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -230,7 +207,6 @@
 
 - type: marking
   id: TajaranHairBedhead
-
   bodyPart: Hair
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -240,7 +216,6 @@
 
 - type: marking
   id: TajaranHairVictory
-
   bodyPart: Hair
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -250,7 +225,6 @@
 
 - type: marking
   id: TajaranHairShaggy
-
   bodyPart: Hair
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -260,7 +234,6 @@
 
 - type: marking
   id: TajaranHairMohawk
-
   bodyPart: Hair
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -270,7 +243,6 @@
 
 - type: marking
   id: TajaranHairBangs
-
   bodyPart: Hair
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -280,7 +252,6 @@
 
 - type: marking
   id: TajaranHairMessy
-
   bodyPart: Hair
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -290,7 +261,6 @@
 
 - type: marking
   id: TajaranHairStraight
-
   bodyPart: Hair
   groupWhitelist: [Tajaran]
   sprites:
@@ -299,7 +269,6 @@
 
 - type: marking
   id: TajaranHairLong
-
   bodyPart: Hair
   groupWhitelist: [Tajaran]
   sprites:
@@ -308,7 +277,6 @@
 
 - type: marking
   id: TajaranMustache2
-
   bodyPart: FacialHair
   groupWhitelist: [Tajaran]
   sprites:
@@ -317,7 +285,6 @@
 
 - type: marking
   id: TajaranBeard
-
   bodyPart: FacialHair
   groupWhitelist: [Tajaran]
   sprites:
@@ -326,7 +293,6 @@
 
 - type: marking
   id: TajaranMustache3
-
   bodyPart: FacialHair
   groupWhitelist: [Tajaran]
   sprites:
@@ -335,7 +301,6 @@
 
 - type: marking
   id: TajaranCheeks
-
   bodyPart: FacialHair
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -345,7 +310,6 @@
 
 - type: marking
   id: TajaranMustache
-
   bodyPart: FacialHair
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -355,7 +319,6 @@
 
 - type: marking
   id: TajaranPatch2
-
   bodyPart: Head
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -365,7 +328,6 @@
 
 - type: marking
   id: TajaranEyeStripesHead
-
   bodyPart: Head
   groupWhitelist: [Tajaran]
   sprites:
@@ -374,7 +336,6 @@
 
 - type: marking
   id: TajaranTigerHead
-
   bodyPart: Head
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -384,7 +345,6 @@
 
 - type: marking
   id: TajaranMuzzle
-
   bodyPart: Snout
   groupWhitelist: [Tajaran]
   sprites:
@@ -393,7 +353,6 @@
 
 - type: marking
   id: TajaranTigerFace
-
   bodyPart: Head
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -403,7 +362,6 @@
 
 - type: marking
   id: TajaranStarHead
-
   bodyPart: Head
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -413,7 +371,6 @@
 
 - type: marking
   id: TajaranInears
-
   bodyPart: HeadTop
   groupWhitelist: [Tajaran]
   sprites:
@@ -424,7 +381,6 @@
 
 - type: marking
   id: TajaranNose
-
   bodyPart: Snout
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -434,7 +390,6 @@
 
 - type: marking
   id: TajaranRaccoon-head
-
   bodyPart: Head
   groupWhitelist: [Tajaran]
   sprites:
@@ -443,7 +398,6 @@
 
 - type: marking
   id: TajaranManeHead
-
   bodyPart: Head
   groupWhitelist: [Tajaran]
   sprites:
@@ -452,7 +406,6 @@
 
 - type: marking
   id: TajaranMuzzleinears
-
   bodyPart: Snout
   groupWhitelist: [Tajaran]
   sprites:
@@ -461,7 +414,6 @@
 
 - type: marking
   id: TajaranTailFluffy
-
   bodyPart: Tail
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -472,7 +424,6 @@
 
 - type: marking
   id: TajaranBelly2
-
   bodyPart: Chest
   groupWhitelist: [Tajaran]
   sprites:
@@ -481,7 +432,6 @@
 
 - type: marking
   id: TajaranChest
-
   bodyPart: Chest
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -491,7 +441,6 @@
 
 - type: marking
   id: TajaranBelly1
-
   bodyPart: Chest
   groupWhitelist: [Tajaran]
   sprites:
@@ -500,7 +449,6 @@
 
 - type: marking
   id: TajaranBelly3
-
   bodyPart: Chest
   groupWhitelist: [Tajaran]
   sprites:
@@ -510,7 +458,6 @@
 - type: marking
   id: TajaranTailM
   bodyPart: Tail
-
   groupWhitelist: []
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_tail.rsi
@@ -519,7 +466,6 @@
 - type: marking
   id: TajaranTailRing
   bodyPart: Tail
-
   groupWhitelist: [Tajaran]
   sponsorOnly: false # Corvax-Sponsors
   sprites:
@@ -530,7 +476,6 @@
 
 - type: marking
   id: TajaranTailSkeleton
-
   bodyPart: Tail
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -542,7 +487,6 @@
 
 - type: marking
   id: TajaranTailTip
-
   bodyPart: Tail
   groupWhitelist: [Tajaran]
   sponsorOnly: false # LP-edit
@@ -554,7 +498,6 @@
 
 - type: marking
   id: TajaranTailFluffySkeleton
-
   bodyPart: Tail
   groupWhitelist: [Tajaran]
   sponsorOnly: true # Corvax-Sponsors
@@ -567,7 +510,6 @@
 
 - type: marking
   id: TajaranTailWingler1
-
   bodyPart: Tail
   groupWhitelist: [Tajaran]
   sprites:
@@ -578,7 +520,6 @@
 
 - type: marking
   id: TajaranTailWingler2
-
   bodyPart: Tail
   groupWhitelist: [Tajaran]
   sprites:
@@ -589,7 +530,6 @@
 
 - type: marking
   id: TajaranTailWingler3
-
   bodyPart: Tail
   groupWhitelist: [Tajaran]
   sprites:
@@ -602,7 +542,6 @@
 - type: marking
   id: TajaranTailFluffyAnimated
   bodyPart: Tail
-
   groupWhitelist: []
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_tail.rsi
@@ -610,7 +549,6 @@
 
 - type: marking
   id: TailWingler1Animated
-
   bodyPart: Tail
   groupWhitelist: []
   sprites:
@@ -621,7 +559,6 @@
 
 - type: marking
   id: TailWingler2Animated
-
   bodyPart: Tail
   groupWhitelist: []
   sprites:
@@ -632,7 +569,6 @@
 
 - type: marking
   id: TailWingler3Animated
-
   bodyPart: Tail
   groupWhitelist: []
   sprites:
@@ -644,7 +580,6 @@
 - type: marking
   id: TailFluffySkeletonAnimated
   bodyPart: Tail
-
   groupWhitelist: []
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_tail.rsi
@@ -654,7 +589,6 @@
 
 - type: marking
   id: TailTipAnimated
-
   bodyPart: Tail
   groupWhitelist: []
   sprites:
@@ -667,7 +601,6 @@
 - type: marking
   id: TajaranTailMAnimated
   bodyPart: Tail
-
   groupWhitelist: []
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_tail.rsi
@@ -676,7 +609,6 @@
 - type: marking
   id: TailRingAnimated
   bodyPart: Tail
-
   groupWhitelist: []
   sprites:
     - sprite: Corvax/Mobs/Customization/Tajaran/tajaran_tail.rsi
@@ -686,7 +618,6 @@
 
 - type: marking
   id: TailSkeletonAnimated
-
   bodyPart: Tail
   groupWhitelist: []
   sprites:

@@ -40,7 +40,6 @@ namespace Content.Server.Preferences.Managers
         [Dependency] private readonly IPlayerManager _playerManager = default!;
         [Dependency] private readonly IDependencyCollection _dependencies = default!;
         [Dependency] private readonly ILogManager _log = default!;
-        [Dependency] private readonly IServerPreferencesManager _prefs = default!; // LP edit
         [Dependency] private readonly UserDbDataManager _userDb = default!;
         [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
         [Dependency] private readonly MarkingManager _marking = default!;
@@ -89,17 +88,11 @@ namespace Content.Server.Preferences.Managers
                 profiles[profile.Slot] = ConvertProfiles(profile);
             }
 
-            //LP edit start
-            CustomGhostPrototype? customGhost = null;
-            if (_prefs.TryGetCachedPreferences(player, out var CustomGhost)) //LP edit вынужденый хардкод
-                customGhost = _prototypeManager.Index(CustomGhost.CustomGhost);
-            //LP edit end
-
             var constructionFavorites = new List<ProtoId<ConstructionPrototype>>(prefs.ConstructionFavorites.Count);
             foreach (var favorite in prefs.ConstructionFavorites)
                 constructionFavorites.Add(new ProtoId<ConstructionPrototype>(favorite));
 
-            return new PlayerPreferences(profiles, prefs.SelectedCharacterSlot, Color.FromHex(prefs.AdminOOCColor), constructionFavorites, new ProtoId<CustomGhostPrototype>(customGhost?.ID ?? "default")); // LP edit
+            return new PlayerPreferences(profiles, prefs.SelectedCharacterSlot, Color.FromHex(prefs.AdminOOCColor), constructionFavorites, new ProtoId<CustomGhostPrototype>(prefs.GhostId)); // LP edit
         }
 
         internal HumanoidCharacterProfile ConvertProfiles(Profile profile)

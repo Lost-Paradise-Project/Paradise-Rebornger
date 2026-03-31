@@ -55,8 +55,8 @@
   id: HyperNobliumProduction
   priority: 7
   # LP Edit Start
-  minimumTemperature: 73
-  maximumTemperature: 80
+  minimumTemperature: 23
+  maximumTemperature: 26
   # LP Edit End
   minimumRequirements:
     Nitrogen: 10

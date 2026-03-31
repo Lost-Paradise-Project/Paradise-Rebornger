@@ -7,9 +7,6 @@ ntr-scan-success = Successfully credited {$amount} loyalty points.
 # listing
 # station
 
-ntr-executive-eva = EVA crate
-ntr-executive-eva-desc = A crate containing 3 pairs of EVA hardsuits, to keep you and your people alive in a catastrophic situation.
-
 ntr-executive-mindshield = Mindshield crate
 ntr-executive-mindshield-desc = A crate containing 3 mindshield implants. Corporate advises you to buy them in cargo anyway.
 
@@ -25,17 +22,11 @@ ntr-executive-emergency-meds-desc = A small crate containing trauma medkits. Be 
 ntr-executive-disablers-name = Disablers crate
 ntr-executive-disablers-desc = A crate containing 3 disablers and 1 disabler SMG. NanoTrasen is not liable for any damages caused by these weapons.
 
-ntr-executive-mats-name = Order materials
-ntr-executive-mats-desc = Order construction materials from NanoTrasen's global cargo department.
-
 ntr-executive-tools-small-name = Generic tools crate
 ntr-executive-tools-small-desc = A crate containing basic engineering tools.
 
 ntr-executive-water-cooler = premium water (?) cooler
 ntr-executive-water-cooler-desc = Made from the finest 24-karat hardened whiskey in the sector. Its shiny and golden, just like its insides. Comes with 500u of whiskey. Every fine executive has one of these in their room.
-
-ntr-executive-pizza-small-name = Order a small pizza party
-ntr-executive-pizza-small-desc = Order a small pizza party bundle from NanoTrasen. As a good employee, you should share this with your coworkers... or eat it all yourself.
 
 # personal
 
@@ -51,12 +42,6 @@ ntr-executive-single-intern-desc = Summons one basic intern. Interns are on your
 ntr-executive-bsd-name = Call Blueshield Deputy
 ntr-executive-bsd-desc = Request a Blueshield deputy from Central Command. This personal guard for you or command staff requires valid justification. Only one may be called.
 
-ntr-executive-softsuit-name = Order a softsuit
-ntr-executive-softsuit-desc = A basic softsuit designed for short-term space exposure. Offers minimal protection.
-
-ntr-executive-hardsuit-name = Order a hardsuit
-ntr-executive-hardsuit-desc = A durable hardsuit for extreme environments. Are you sure this purchase is justified?
-
 ntr-executive-cigs-deluxe = Executive cig vendor
 ntr-executive-cigs-deluxe-desc = For those who know that lung cancer is non-existent, Nanotrasen made this, a vendor full of ciggaretes and expensive flippos for you to smoke.
 
@@ -71,9 +56,6 @@ ntr-executive-whiskey-desc = A full bottle of premium whiskey, distilled in 2879
 
 ntr-executive-glasses-name = CentComm glasses
 ntr-executive-glasses-desc = For when you need to look more important than you actually are.
-
-ntr-executive-savaliniaharunianisimious-name = Svalinn laser pistol
-ntr-executive-savaliniaharunianisimious-desc = A standard Svalinn laser pistol, commonly used in NanoTrasen self-defense training programs.
 
 ntr-executive-1984-name = Deckard revolver
 ntr-executive-1984-desc = A standard Deckard sidearm for personal defense.
@@ -109,12 +91,6 @@ ntr-executive-task-flatpack-desc = A normal flatpack containing a spare task con
 ntr-executive-telecom-name = Telecom server machine boards
 ntr-executive-telecom-desc = A crate containing 2 telecom server machine boards. Essential for AI communication systems.
 
-ntr-executive-silo-name = Silo machine board
-ntr-executive-silo-desc = Contains 1 silo machine board. For when someone "misplaces" your original silo.
-
-ntr-executive-fat-name = Fat extractor
-ntr-executive-fat-desc = Machine board for a fat extraction device. Corporate wellness policies prohibit employee obesity.
-
 ntr-executive-grav-name = Mini gravity generator
 ntr-executive-grav-desc = Machine board for a compact gravity generator.
 
@@ -132,9 +108,6 @@ ntr-executive-rnd-desc = Constructs a research and development server when insta
 
 ntr-executive-comms-name = Communications console board
 ntr-executive-comms-desc = High-value computer board for emergency communications consoles.
-
-ntr-executive-cargosell-name = Cargo sales console board
-ntr-executive-cargosell-desc = Enables resource sales. Financial transactions are not subject to employee review.
 
 ntr-executive-cargoshuttle-name = Cargo shuttle console board
 ntr-executive-cargoshuttle-desc = Specialized control console for cargo shuttles. Unauthorized use violates transport protocols.

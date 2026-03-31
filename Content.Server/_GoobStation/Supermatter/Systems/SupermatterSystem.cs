@@ -100,7 +100,7 @@ public sealed class SupermatterSystem : SharedSupermatterSystem
         if (!_gameTiming.IsFirstTimePredicted)
             return;
 
-        foreach (var sm in EntityManager.EntityQuery<SupermatterComponent>())
+        foreach (var sm in EntityQuery<SupermatterComponent>())
         {
             if (!sm.Activated)
                 continue;
@@ -682,11 +682,11 @@ public sealed class SupermatterSystem : SharedSupermatterSystem
         if (!HasComp<ProjectileComponent>(target))
         {
             _adminLog.Add(LogType.Supermatter, LogImpact.Medium, $"Supermatter {ToPrettyString(uid)} has consumed {ToPrettyString(target)}");
-            EntityManager.SpawnEntity("Ash", Transform(target).Coordinates);
+            Spawn("Ash", Transform(target).Coordinates);
             _audio.PlayPvs(sm.DustSound, uid);
         }
 
-        EntityManager.QueueDeleteEntity(target);
+        QueueDel(target);
     }
 
     private void OnHandInteract(EntityUid uid, SupermatterComponent sm, ref InteractHandEvent args)
@@ -701,9 +701,9 @@ public sealed class SupermatterSystem : SharedSupermatterSystem
 
         sm.MatterPower += 200;
 
-        EntityManager.SpawnEntity("Ash", Transform(target).Coordinates);
+        Spawn("Ash", Transform(target).Coordinates);
         _audio.PlayPvs(sm.DustSound, uid);
-        EntityManager.QueueDeleteEntity(target);
+        QueueDel(target);
     }
 
     private void OnItemInteract(EntityUid uid, SupermatterComponent sm, ref InteractUsingEvent args)

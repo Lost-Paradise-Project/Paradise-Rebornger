@@ -105388,40 +105388,6 @@ entities:
     - type: Transform
       pos: -43.476906,-18.407085
       parent: 2
-- proto: Shower
-  entities:
-  - uid: 917
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -67.5,-52.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
-  - uid: 932
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -29.5,-43.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
-  - uid: 954
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -29.5,-48.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
-  - uid: 19583
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -95.5,-30.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
 - proto: ShuttersFrame
   entities:
   - uid: 13776
@@ -132734,13 +132700,6 @@ entities:
       parent: 18674
     - type: WarpPoint
       location: Протуберанец
-- proto: WashingMachine
-  entities:
-  - uid: 910
-    components:
-    - type: Transform
-      pos: -65.5,-53.5
-      parent: 2
 - proto: WaterCooler
   entities:
   - uid: 18212

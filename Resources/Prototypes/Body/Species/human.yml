@@ -38,7 +38,7 @@
       limit: 1
       required: false
     enum.HumanoidVisualLayers.Tail:
-      limit: 1 # LP edit
+      limit: 1 # Corvax-Sponsors
       required: false
     enum.HumanoidVisualLayers.Special:
       limit: 1 # LP edit
