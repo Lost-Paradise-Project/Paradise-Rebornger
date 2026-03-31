@@ -16,7 +16,7 @@
 - type: entity
   parent: BaseAction
   name: RGB Lighting
-  desc: Changes lamps to RGB
+  description: Changes lamps to RGB
   id: ActionStationAiRgbLighting
   components:
   - type: Action
@@ -38,7 +38,7 @@
 - type: entity
   parent: BaseAction
   name: Light Synthesizer
-  desc: Send nanytes to fix lamp
+  description: Send nanytes to fix lamp
   id: ActionStationAiLightSynthesizer
   components:
   - type: Action
@@ -62,7 +62,7 @@
 - type: entity
   parent: BaseAction
   name: Bike Horn
-  desc: Play honk sound from holopad
+  description: Play honk sound from holopad
   id: ActionStationAiBikeHorn
   components:
   - type: Action
@@ -88,7 +88,7 @@
 - type: entity
   parent: BaseAction
   name: Holo Pointer
-  desc: Mark zone by hologramm
+  description: Mark zone by hologramm
   id: ActionStationAiHoloPointer
   components:
   - type: Action
@@ -129,7 +129,7 @@
 - type: entity
   parent: BaseAction
   name: Repair nanites
-  desc: Send nanytes to repair borg
+  description: Send nanytes to repair borg
   id: ActionStationAiRepairNanites
   components:
   - type: Action
@@ -158,7 +158,7 @@
 - type: entity
   id: ActionStationAiEmergencySealant
   name: Emergency Sealant
-  desc: Seal any holes with steel foam
+  description: Seal any holes with steel foam
   components:
   - type: Action
     itemIconStyle: BigAction
