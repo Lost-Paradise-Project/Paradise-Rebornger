@@ -7,7 +7,7 @@ ci:
   submodules: false
 
 fail_fast: false
-files: ^(Resources/Locale/|.*/_[^/]+/)
+files: "/_[^/]+/"
 
 repos:
   - repo: "https://github.com/pre-commit/pre-commit-hooks"
