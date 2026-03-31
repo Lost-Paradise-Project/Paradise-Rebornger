@@ -745,7 +745,6 @@
 - type: entity
   parent: GasCanisterBrokenBase
   id: WaterVaporCanisterBroken
-  name: broken water vapor canister
   categories: [ HideSpawnMenu ]
   components:
     - type: Sprite
