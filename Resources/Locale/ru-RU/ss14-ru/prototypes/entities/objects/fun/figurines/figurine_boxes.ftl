@@ -6,5 +6,5 @@ ent-MysteryLighterBox = коробка с сюрпризом: сувенирна
     .desc = Коробка со снятыми с производства рекламными зажигалками, многие из которых с тех пор были объявлены «контрабандой».
     .suffix = Заполненная
 ent-UplinkLighterBox = { ent-MysteryLighterBox }
-    .suffix = Аплинк
     .desc = { ent-MysteryLighterBox.desc }
+    .suffix = Аплинк
