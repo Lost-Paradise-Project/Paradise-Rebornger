@@ -43,6 +43,36 @@
         shader: shaded
       - state: equipped-INNERCLOTHING-unshaded
         shader: unshaded
+      jumpsuit-moth:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded-moth
+        shader: shaded
+      - state: equipped-INNERCLOTHING-unshaded-moth
+        shader: unshaded
+      jumpsuit-reptilian:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded-reptilian
+        shader: shaded
+      - state: equipped-INNERCLOTHING-unshaded-reptilian
+        shader: unshaded
+      jumpsuit-vox:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded-vox
+        shader: shaded
+      - state: equipped-INNERCLOTHING-unshaded-vox
+        shader: unshaded
+      jumpsuit-vulpkanin:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded-vulpkanin
+        shader: shaded
+      - state: equipped-INNERCLOTHING-unshaded-vulpkanin
+        shader: unshaded
+      jumpsuit-Tajaran:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded-Tajaran
+        shader: shaded
+      - state: equipped-INNERCLOTHING-unshaded-Tajaran
+        shader: unshaded
 
 - type: entity
   parent: ClothingUniformBase
