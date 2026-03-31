@@ -2398,4 +2398,14 @@
   id: 5714
   time: '2026-03-29T12:24:34.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/192
+- author: Aferist958
+  changes:
+  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0430 \u043E\u0448\
+      \u0438\u0431\u043A\u0430 \u0441 \u043A\u043E\u043D\u0441\u043E\u043B\u044C\u044E\
+      \ \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u043A\u043E\u043D\
+      \u0442\u0440\u0430\u043A\u0442\u0430\u043C\u0438."
+    type: Fix
+  id: 5715
+  time: '2026-03-30T22:15:25.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/200
 Order: 1

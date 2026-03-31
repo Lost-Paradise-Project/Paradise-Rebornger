@@ -44,26 +44,6 @@ public sealed class JobSlotsConsoleSystem : EntitySystem
 
     private void OnStartup(Entity<JobSlotsConsoleComponent> ent, ref ComponentStartup args)
     {
-        // Try to find the station this console belongs to
-        ent.Comp.Station = _station.GetOwningStation(ent);
-
-        if (ent.Comp.Station != null)
-        {
-            if (!_stationConsoles.TryGetValue(ent.Comp.Station.Value, out var consoles))
-            {
-                consoles = [];
-                _stationConsoles[ent.Comp.Station.Value] = consoles;
-            }
-            consoles.Add(ent);
-
-            // Initialize last known jobs for this station
-            if (!_lastKnownJobs.ContainsKey(ent.Comp.Station.Value))
-            {
-                var jobs = _jobs.GetJobs(ent.Comp.Station.Value);
-                _lastKnownJobs[ent.Comp.Station.Value] = jobs.ToDictionary();
-            }
-        }
-
         UpdateUi(ent);
     }
 
@@ -88,6 +68,30 @@ public sealed class JobSlotsConsoleSystem : EntitySystem
 
     private void OnUiOpened(Entity<JobSlotsConsoleComponent> ent, ref  BoundUIOpenedEvent args)
     {
+        // LP edit start
+        // Try to find the station this console belongs to
+        if (ent.Comp.Station == null)
+        {
+            ent.Comp.Station = _station.GetOwningStation(ent);
+
+            if (ent.Comp.Station != null)
+            {
+                if (!_stationConsoles.TryGetValue(ent.Comp.Station.Value, out var consoles))
+                {
+                    consoles = [];
+                    _stationConsoles[ent.Comp.Station.Value] = consoles;
+                }
+                consoles.Add(ent);
+
+                // Initialize last known jobs for this station
+                if (!_lastKnownJobs.ContainsKey(ent.Comp.Station.Value))
+                {
+                    var jobs = _jobs.GetJobs(ent.Comp.Station.Value);
+                    _lastKnownJobs[ent.Comp.Station.Value] = jobs.ToDictionary();
+                }
+            }
+        }
+        // LP edit end
         UpdateUi(ent);
     }
 
