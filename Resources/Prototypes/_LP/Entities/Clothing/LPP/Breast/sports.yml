@@ -194,11 +194,11 @@
   parent: LPPSportsBraAltBlack
   id: LPPSportsBraAltBlue
   components:
-  - type: SpriteLPPSportsBraAltBlack
+  - type: Sprite
     layers:
     - state: icon
       color: "#52AECC"
-  - type: ClothingLPPSportsBraAltBlack
+  - type: Clothing
     clothingVisuals:
       breast:
       - state: equipped-BREAST
@@ -208,11 +208,11 @@
   parent: LPPSportsBraAltBlack
   id: LPPSportsBraAltBrown
   components:
-  - type: SpriteLPPSportsBraAltBlack
+  - type: Sprite
     layers:
     - state: icon
       color: "#A17229"
-  - type: ClothingLPPSportsBraAltBlack
+  - type: Clothing
     clothingVisuals:
       breast:
       - state: equipped-BREAST
@@ -222,11 +222,11 @@
   parent: LPPSportsBraAltBlack
   id: LPPSportsBraAltGreen
   components:
-  - type: SpriteLPPSportsBraAltBlack
+  - type: Sprite
     layers:
     - state: icon
       color: "#6FBC22"
-  - type: ClothingLPPSportsBraAltBlack
+  - type: Clothing
     clothingVisuals:
       breast:
       - state: equipped-BREAST
@@ -236,11 +236,11 @@
   parent: LPPSportsBraAltBlack
   id: LPPSportsBraAltGrey
   components:
-  - type: SpriteLPPSportsBraAltBlack
+  - type: Sprite
     layers:
     - state: icon
       color: "#B3B3B3"
-  - type: ClothingLPPSportsBraAltBlack
+  - type: Clothing
     clothingVisuals:
       breast:
       - state: equipped-BREAST
@@ -250,11 +250,11 @@
   parent: LPPSportsBraAltBlack
   id: LPPSportsBraAltLightpurple
   components:
-  - type: SpriteLPPSportsBraAltBlack
+  - type: Sprite
     layers:
     - state: icon
       color: "#944DFE"
-  - type: ClothingLPPSportsBraAltBlack
+  - type: Clothing
     clothingVisuals:
       breast:
       - state: equipped-BREAST
@@ -264,11 +264,11 @@
   parent: LPPSportsBraAltBlack
   id: LPPSportsBraAltMaroon
   components:
-  - type: SpriteLPPSportsBraAltBlack
+  - type: Sprite
     layers:
     - state: icon
       color: "#BE273E"
-  - type: ClothingLPPSportsBraAltBlack
+  - type: Clothing
     clothingVisuals:
       breast:
       - state: equipped-BREAST
@@ -278,11 +278,11 @@
   parent: LPPSportsBraAltBlack
   id: LPPSportsBraAltOrange
   components:
-  - type: SpriteLPPSportsBraAltBlack
+  - type: Sprite
     layers:
     - state: icon
       color: "#FF8C19"
-  - type: ClothingLPPSportsBraAltBlack
+  - type: Clothing
     clothingVisuals:
       breast:
       - state: equipped-BREAST
@@ -292,11 +292,11 @@
   parent: LPPSportsBraAltBlack
   id: LPPSportsBraAltRed
   components:
-  - type: SpriteLPPSportsBraAltBlack
+  - type: Sprite
     layers:
     - state: icon
       color: "#EE1511"
-  - type: ClothingLPPSportsBraAltBlack
+  - type: Clothing
     clothingVisuals:
       breast:
       - state: equipped-BREAST
@@ -306,11 +306,11 @@
   parent: LPPSportsBraAltBlack
   id: LPPSportsBraAltTeal
   components:
-  - type: SpriteLPPSportsBraAltBlack
+  - type: Sprite
     layers:
     - state: icon
       color: "#77F3B7"
-  - type: ClothingLPPSportsBraAltBlack
+  - type: Clothing
     clothingVisuals:
       breast:
       - state: equipped-BREAST
@@ -320,11 +320,11 @@
   parent: LPPSportsBraAltBlack
   id: LPPSportsBraAltWhite
   components:
-  - type: SpriteLPPSportsBraAltBlack
+  - type: Sprite
     layers:
     - state: icon
       color: "#FFFFFF"
-  - type: ClothingLPPSportsBraAltBlack
+  - type: Clothing
     clothingVisuals:
       breast:
       - state: equipped-BREAST
@@ -334,11 +334,11 @@
   parent: LPPSportsBraAltBlack
   id: LPPSportsBraAltYellow
   components:
-  - type: SpriteLPPSportsBraAltBlack
+  - type: Sprite
     layers:
     - state: icon
       color: "#FBC72D"
-  - type: ClothingLPPSportsBraAltBlack
+  - type: Clothing
     clothingVisuals:
       breast:
       - state: equipped-BREAST
