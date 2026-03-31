@@ -46,6 +46,7 @@
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
+      firing_pin: !type:Container # Starlight
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -53,3 +54,18 @@
   - type: Appearance
   - type: Item
     size: Large
+  - type: EmitSoundOnPickup
+    sound:
+      collection: RiflesPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: RiflesDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: RiflesDrop
+  - type: FiringPinHolder
+    supportedPins: [ Rifle, GunUpgrade ]
+  - type: ContainerFill
+    containers:
+      firing_pin:
+      - FiringPin
