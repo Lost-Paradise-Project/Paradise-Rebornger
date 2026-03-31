@@ -68,11 +68,11 @@
         shader: shaded
       - state: equipped-INNERCLOTHING-unshaded-vulpkanin
         shader: unshaded
-      jumpsuit-Tajaran:
+      jumpsuit-tajaran:
       - state: equipped-INNERCLOTHING
-      - state: equipped-INNERCLOTHING-unshaded-Tajaran
+      - state: equipped-INNERCLOTHING-unshaded-tajaran
         shader: shaded
-      - state: equipped-INNERCLOTHING-unshaded-Tajaran
+      - state: equipped-INNERCLOTHING-unshaded-tajaran
         shader: unshaded
 
 - type: entity
@@ -189,11 +189,11 @@
         shader: shaded
       - state: equipped-INNERCLOTHING-unshaded-vulpkanin
         shader: unshaded
-      jumpsuit-Tajaran:
+      jumpsuit-tajaran:
       - state: equipped-INNERCLOTHING
-      - state: equipped-INNERCLOTHING-unshaded-Tajaran
+      - state: equipped-INNERCLOTHING-unshaded-tajaran
         shader: shaded
-      - state: equipped-INNERCLOTHING-unshaded-Tajaran
+      - state: equipped-INNERCLOTHING-unshaded-tajaran
         shader: unshaded
 
 - type: entity
