@@ -11,7 +11,7 @@ delivery-unlocked-others = { CAPITALIZE($recipient) } { GENDER($recipient) ->
     [female] разблокировала
     [epicene] разблокировали
     *[neuter] разблокировало
-} { $delivery } используя свой отпечаток пальца.
+} { $delivery } используя { POSS-ADJ($possadj) } отпечаток пальца.
 delivery-opened-others = { CAPITALIZE($recipient) } { GENDER($recipient) ->
     [male] открыл
     [female] открыла

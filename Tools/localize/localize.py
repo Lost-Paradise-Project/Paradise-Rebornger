@@ -733,7 +733,7 @@ class LocalizationManager:
                         val_sp = ru_entries[key].val_space
                         if ru_entries[key].variables != en_entry.variables:
                             logging.warning(
-                                f"Несовпадение переменных в {rel_path}: {key}. "
+                                f"Несовпадение переменных в {rel_path}: {key} "
                                 f"Ожидается: {en_entry.variables}, найдено: {ru_entries[key].variables}"
                             )
                     else:

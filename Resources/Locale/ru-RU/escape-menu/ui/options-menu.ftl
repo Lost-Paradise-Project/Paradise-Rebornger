@@ -19,7 +19,7 @@ ui-options-value-percent = { TOSTRING($value, "P0") }
 
 ui-options-discordrich = Включить Discord Rich Presence
 ui-options-general-ui-style = Стиль UI
-ui-options-general-discord = Discord
+ui-options-general-discord = Дискорд
 ui-options-general-cursor = Курсор
 ui-options-general-speech = Речь
 ui-options-general-storage = Инвентарь
@@ -86,7 +86,7 @@ ui-options-hud-layout-default = Стандартный
 ui-options-hud-layout-separated = Разделённый
 ui-options-vp-stretch = Растянуть изображение для соответствия окну игры
 ui-options-vp-scale = Фиксированный масштаб окна игры:
-ui-options-vp-scale-value = x{ $scale }
+ui-options-vp-scale-value = х{ $scale }
 ui-options-vp-integer-scaling = Использовать целочисленное масштабирование (может вызывать появление чёрных полос/обрезания)
 ui-options-vp-integer-scaling-tooltip = Если эта опция включена, область просмотра будет масштабироваться,
                                         используя целочисленное значение при определённых разрешениях. Хотя это и
@@ -316,11 +316,11 @@ ui-options-function-text-cut = Вырезать
 ui-options-function-text-paste = Вставить
 ui-options-function-text-history-prev = Предыдущее с истории
 ui-options-function-text-history-next = Следующее с истории
-ui-options-function-text-release-focus = Release focus
+ui-options-function-text-release-focus = Потеря фокуса
 ui-options-function-text-scroll-to-bottom = Пролистать вниз
-ui-options-function-text-tab-complete = Tab completion
-ui-options-function-text-complete-next = Complete next
-ui-options-function-text-complete-prev = Complete previous
+ui-options-function-text-tab-complete = Автодополнение (Tab)
+ui-options-function-text-complete-next = Дополнить следующее
+ui-options-function-text-complete-prev = Дополнить предыдущее
 
 ## Network menu
 

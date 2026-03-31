@@ -60,6 +60,7 @@ cargo-console-paper-print-text = Заказ #{ $orderNumber }
     Кол-во: { $orderQuantity }
     Запросил: { $requester }
     Причина: { $reason }
+    Оплатил { $account } [font="Monospace"]\[{ $accountcode }\][/font]
     Одобрил: { $approver }
 
 # Cargo shuttle console

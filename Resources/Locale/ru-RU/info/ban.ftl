@@ -1,12 +1,12 @@
 # ban
 cmd-ban-desc = Банит кого-либо
-cmd-ban-help = Использование: ban <name or user ID> <reason> [продолжительность в минутах, без указания или 0 для пермабана]
+cmd-ban-help = Использование: ban <имя/guid> <причина> [продолжительность в минутах, без указания или 0 для пермабана]
 cmd-ban-player = Не удалось найти игрока с таким именем.
 cmd-ban-invalid-minutes = { $minutes } не является допустимым количеством минут!
 cmd-ban-invalid-severity = { $severity } не является допустимой тяжестью!
 cmd-ban-invalid-arguments = Недопустимое число аргументов
-cmd-ban-hint = <name/user ID>
-cmd-ban-hint-reason = <reason>
+cmd-ban-hint = <имя/guid>
+cmd-ban-hint-reason = <причина>
 cmd-ban-hint-duration = [продолжительность]
 cmd-ban-hint-severity = [тяжесть]
 
@@ -25,9 +25,9 @@ cmd-banpanel-player-err = Указанный игрок не может быть
 
 # listbans
 cmd-banlist-desc = Список активных банов пользователя.
-cmd-banlist-help = Использование: banlist <name or user ID>
+cmd-banlist-help = Использование: banlist <имя/guid>
 cmd-banlist-empty = Нет активных банов у пользователя { $user }
-cmd-banlist-hint = <name/user ID>
+cmd-banlist-hint = <имя/guid>
 
 cmd-ban_exemption_update-desc = Установить исключение на типы банов игрока.
 cmd-ban_exemption_update-help = Использование: ban_exemption_update <player> <flag> [<flag> [...]]
@@ -38,8 +38,8 @@ cmd-ban_exemption_update-nargs = Ожидается хотя бы 2 аргуме
 cmd-ban_exemption_update-locate = Не удалось найти игрока '{ $player }'.
 cmd-ban_exemption_update-invalid-flag = Недопустимый флаг '{ $flag }'.
 cmd-ban_exemption_update-success = Обновлены флаги исключений банов для '{ $player }' ({ $uid }).
-cmd-ban_exemption_update-arg-player = <player>
-cmd-ban_exemption_update-arg-flag = <flag>
+cmd-ban_exemption_update-arg-player = <игрок>
+cmd-ban_exemption_update-arg-flag = <флаг>
 
 cmd-ban_exemption_get-desc = Показать исключения банов для определённого игрока.
 cmd-ban_exemption_get-help = Использование: ban_exemption_get <player>
@@ -47,13 +47,13 @@ cmd-ban_exemption_get-help = Использование: ban_exemption_get <play
 cmd-ban_exemption_get-nargs = Ожидается ровно 1 аргумент
 cmd-ban_exemption_get-none = Пользователь не имеет исключений от банов.
 cmd-ban_exemption_get-show = Пользователь исключён из банов со следующими флагами: { $flags }.
-cmd-ban_exemption_get-arg-player = <player>
+cmd-ban_exemption_get-arg-player = <игрок>
 
 # Ban panel
 ban-panel-title = Панель банов
 ban-panel-player = Игрок
-ban-panel-ip = IP
-ban-panel-hwid = HWID
+ban-panel-ip = АйПи
+ban-panel-hwid = аппаратный ID
 ban-panel-reason = Причина
 ban-panel-last-conn = Использовать IP и HWID с последнего подключения?
 ban-panel-submit = Забанить
