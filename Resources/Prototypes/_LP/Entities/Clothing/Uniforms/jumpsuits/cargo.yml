@@ -21,8 +21,8 @@
     sprite: _LP/Clothing/Uniforms/Cargo/gorka_cargo.rsi
 
 - type: entity
-  parent: ClothingUniformBase
-  id: LPPClothingUniformJumpsuitGorkaReflBase
+  parent: LPPClothingUniformJumpsuitGorkaReflBase
+  id: LPPClothingUniformJumpsuitCargoGorkaRefl
   name: Cargo Gorka with Reflectors # Горка с отражателями
   description:
   components:
