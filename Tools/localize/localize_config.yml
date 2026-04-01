@@ -67,7 +67,7 @@ ignored_untranslated_paths: # Игнорирует предупреждения 
 - "Resources/Locale/ru-RU/escape-menu/ui/options-menu.ftl"
 - "Resources/Locale/ru-RU/worldgen/applyworldgenconfig.ftl"
 - "Resources/Locale/ru-RU/teleportation/teleportation-menu-gui.ftl"
-- "Resources/Locale/ru-RU/ss14-ru/prototypes/pprototypes/"
+- "Resources/Locale/ru-RU/ss14-ru/prototypes/pprototypes"
 ignored_variable_mismatch_paths:
 - "Resources/Locale/ru-RU/stack/stacks.ftl"
 - "Resources/Locale/ru-RU/bed/cryostorage/cryogenic-storage.ftl"

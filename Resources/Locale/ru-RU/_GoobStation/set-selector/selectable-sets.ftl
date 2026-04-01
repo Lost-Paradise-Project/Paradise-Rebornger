@@ -27,7 +27,9 @@ selectable-set-blueshield-syringe-description =
 # Blueshield hardsuits
 
 selectable-set-blueshield-hardsuit-light-name = бронированный боевой костюм
-selectable-set-blueshield-hardsuit-light-description = Бронированный боевой костюм, дающий больше скорости за счет меньшей защиты.
+selectable-set-blueshield-hardsuit-light-description =
+    Бронированный боевой костюм, дающий больше скорости за счет меньшей защиты.
+
 # LP stuff
 selectable-set-blueshield-french-name = Набор ОПЗ
 selectable-set-blueshield-french-description =

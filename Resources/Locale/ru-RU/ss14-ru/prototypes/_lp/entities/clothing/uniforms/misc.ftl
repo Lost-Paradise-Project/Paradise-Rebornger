@@ -1,3 +1,5 @@
+ent-LPPClothingUniformJumpsuitGorkaReflBase = Горка
+    .desc = { ent-ClothingUniformBase.desc }
 ent-LPPSchoolgirl = костюм ученицы
     .desc = { ent-ClothingUniformBase.desc }
 ent-LPPSchoolgirlgreen = костюм ученицы
