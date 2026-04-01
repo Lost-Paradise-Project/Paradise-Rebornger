@@ -69,3 +69,5 @@
             # LP job
             BlueshieldOfficer: [ 1, 1 ]
             NanotrasenRepresentative: [ 1, 1 ]
+            Brigmedic: [ 1, 1 ]
+            LPPSecurityEnginer: [ 1, 1 ] # Полевой инженер, LP
