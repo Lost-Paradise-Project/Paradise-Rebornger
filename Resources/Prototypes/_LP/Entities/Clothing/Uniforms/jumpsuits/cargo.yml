@@ -22,57 +22,14 @@
 
 - type: entity
   parent: ClothingUniformBase
-  id: LPPClothingUniformJumpsuitCargoGorkaRefl
+  id: LPPClothingUniformJumpsuitGorkaReflBase
   name: Cargo Gorka with Reflectors # Горка с отражателями
   description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Uniforms/Cargo/gorka_cargo_varg.rsi
-    layers:
-    - state: icon
-    - state: icon-unshaded
-      shader: shaded
-    - state: icon-unshaded
-      shader: unshaded
   - type: Clothing
     sprite: _LP/Clothing/Uniforms/Cargo/gorka_cargo_varg.rsi
-    clothingVisuals:
-      jumpsuit:
-      - state: equipped-INNERCLOTHING
-      - state: equipped-INNERCLOTHING-unshaded
-        shader: shaded
-      - state: equipped-INNERCLOTHING-unshaded
-        shader: unshaded
-      jumpsuit-moth:
-      - state: equipped-INNERCLOTHING
-      - state: equipped-INNERCLOTHING-unshaded-moth
-        shader: shaded
-      - state: equipped-INNERCLOTHING-unshaded-moth
-        shader: unshaded
-      jumpsuit-reptilian:
-      - state: equipped-INNERCLOTHING
-      - state: equipped-INNERCLOTHING-unshaded-reptilian
-        shader: shaded
-      - state: equipped-INNERCLOTHING-unshaded-reptilian
-        shader: unshaded
-      jumpsuit-vox:
-      - state: equipped-INNERCLOTHING
-      - state: equipped-INNERCLOTHING-unshaded-vox
-        shader: shaded
-      - state: equipped-INNERCLOTHING-unshaded-vox
-        shader: unshaded
-      jumpsuit-vulpkanin:
-      - state: equipped-INNERCLOTHING
-      - state: equipped-INNERCLOTHING-unshaded-vulpkanin
-        shader: shaded
-      - state: equipped-INNERCLOTHING-unshaded-vulpkanin
-        shader: unshaded
-      jumpsuit-Tajaran:
-      - state: equipped-INNERCLOTHING
-      - state: equipped-INNERCLOTHING-unshaded-Tajaran
-        shader: shaded
-      - state: equipped-INNERCLOTHING-unshaded-Tajaran
-        shader: unshaded
 
 - type: entity
   parent: ClothingUniformBase

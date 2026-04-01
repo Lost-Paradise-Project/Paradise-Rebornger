@@ -1,3 +1,58 @@
+# abstract
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitGorkaReflBase
+  abstract: true
+  name: LPPBaseGorka # Горка с отражателями
+  description:
+  components:
+  - type: Sprite
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: shaded
+    - state: icon-unshaded
+      shader: unshaded
+  - type: Clothing
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: shaded
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
+      jumpsuit-moth:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded-moth
+        shader: shaded
+      - state: equipped-INNERCLOTHING-unshaded-moth
+        shader: unshaded
+      jumpsuit-reptilian:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded-reptilian
+        shader: shaded
+      - state: equipped-INNERCLOTHING-unshaded-reptilian
+        shader: unshaded
+      jumpsuit-vox:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded-vox
+        shader: shaded
+      - state: equipped-INNERCLOTHING-unshaded-vox
+        shader: unshaded
+      jumpsuit-vulpkanin:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded-vulpkanin
+        shader: shaded
+      - state: equipped-INNERCLOTHING-unshaded-vulpkanin
+        shader: unshaded
+      jumpsuit-corvaxtajaran:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded-corvaxtajaran
+        shader: shaded
+      - state: equipped-INNERCLOTHING-unshaded-corvaxtajaran
+        shader: unshaded
+
+# misc
 - type: entity
   parent: ClothingUniformBase
   id: LPPSchoolgirl
