@@ -27,3 +27,11 @@ selectable-set-blueshield-syringe-description =
 
 selectable-set-blueshield-hardsuit-light-name = blueshield hardsuit
 selectable-set-blueshield-hardsuit-light-description = An armoured hardsuit, allowing for more speed at the cost of protection.
+selectable-set-blueshield-hardsuit-light-description =
+    An armoured hardsuit, allowing for more speed at the cost of protection.
+
+# LP stuff
+selectable-set-blueshield-french-name = OPZ set
+selectable-set-blueshield-french-description =
+    Don't forget to take your baguette, ho-ho-ho.
+    Includes: LE-MAS hyperburst rifle and jagdkommando knife

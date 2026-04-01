@@ -28,3 +28,8 @@ selectable-set-blueshield-syringe-description =
 
 selectable-set-blueshield-hardsuit-light-name = бронированный боевой костюм
 selectable-set-blueshield-hardsuit-light-description = Бронированный боевой костюм, дающий больше скорости за счет меньшей защиты.
+# LP stuff
+selectable-set-blueshield-french-name = Набор ОПЗ
+selectable-set-blueshield-french-description =
+    Не забудьте захватить свой багет, хо-хо-хо.
+    Содержит: Хайпербёрст автомат ЛЕ-МАС и нож йагдкомммандо.

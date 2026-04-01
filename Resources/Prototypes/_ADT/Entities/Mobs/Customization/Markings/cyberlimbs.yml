@@ -1,0 +1,51 @@
+- type: marking
+  id: Malstrem
+  bodyPart: Eyes
+  groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+          negative: true
+  sprites:
+  - sprite: _ADT/Mobs/Customization/augments/headaugs.rsi
+    state: malstrem
+
+- type: marking
+  id: Beholder
+  bodyPart: Eyes
+  groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+          negative: true
+  sprites:
+  - sprite: _ADT/Mobs/Customization/augments/headaugs.rsi
+    state: beholder
+
+- type: marking
+  id: Terminator
+  bodyPart: Eyes
+  groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+          negative: true
+  sprites:
+  - sprite: _ADT/Mobs/Customization/augments/headaugs.rsi
+    state: terminator
+
+- type: marking
+  id: Iron_jaw
+  bodyPart: Head
+  groupWhitelist: [Human]
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+          negative: true
+  sprites:
+  - sprite: _ADT/Mobs/Customization/augments/headaugs.rsi
+    state: iron_jaw

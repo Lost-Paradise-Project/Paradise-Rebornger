@@ -102,6 +102,7 @@
     # DO NOT ADD MORE, USE UNIFORM DYING
   contrabandInventory:
     ClothingMaskNeckGaiter: 2
+    ClothingUniformJumpsuitTurtleneckTactick: 2 # LP edit
     ClothingUniformJumpsuitTacticool: 1
     ClothingUniformJumpskirtTacticool: 1
     ToyFigurinePassenger: 1

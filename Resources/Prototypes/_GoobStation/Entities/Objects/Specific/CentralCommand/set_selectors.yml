@@ -15,6 +15,7 @@
     - BSORevolverSet
     - BSOChesterSet
     - BSOSyringeSet
+    - LPPBSOCFrenchSet #LP edit
     maxSelectedSets: 2
 
 - type: entity
