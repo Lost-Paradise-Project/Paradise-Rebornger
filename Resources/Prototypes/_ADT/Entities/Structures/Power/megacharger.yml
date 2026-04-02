@@ -26,7 +26,7 @@
   - type: PowerCellSlot
     cellSlotId: charger_slot
   - type: Charger
-    chargeRate: 3000.0
+    chargeRate: 1000.0 # LP Edit
     slotId: charger_slot
   - type: ItemSlots
     slots:

@@ -1078,17 +1078,21 @@
   products:
     Silencer: 3
 
-# - type: reaction
-#   id: Singulo
-#   reactants:
-#     Vodka:
-#       amount: 5
-#     Wine:
-#       amount: 5
-#     LiquidDarkMatter:
-#       amount: 1
-#   products:
-#     Singulo: 10
+# LP Edit Start
+- type: reaction
+  id: Singulo
+  requiredMixerCategories:
+  - Shake
+  reactants:
+    Vodka:
+      amount: 5
+    Wine:
+      amount: 5
+    Uranium:
+      amount: 5
+  products:
+    Singulo: 15
+# LP Edit End
 # Waiting until LiquidDarkMatter added
 
 - type: reaction
