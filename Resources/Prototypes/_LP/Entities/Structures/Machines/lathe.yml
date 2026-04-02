@@ -40,6 +40,12 @@
         - Sheet
         - RawMaterial
         - Ingot
+  # LP Edit Start
+  - type: BlueprintReceiver
+    whitelist:
+      tags:
+      - BlueprintProtolathe
+  # LP Edit End
 
 - type: entity
   id: LPPScienceProtolathe
@@ -81,6 +87,12 @@
     - ADTMegaCellPack
   - type: MaterialStorage
     whitelist: *StandardMaterialWhitelist
+  # LP Edit Start
+  - type: BlueprintReceiver
+    whitelist:
+      tags:
+      - BlueprintProtolathe
+  # LP Edit End
 
 - type: entity
   id: LPPEngineeringProtolathe
@@ -122,6 +134,12 @@
     - ADTMegaCellPack
   - type: MaterialStorage
     whitelist: *StandardMaterialWhitelist
+  # LP Edit Start
+  - type: BlueprintReceiver
+    whitelist:
+      tags:
+      - BlueprintProtolathe
+  # LP Edit End
 
 - type: entity
   id: LPPCargoProtolathe
@@ -157,6 +175,12 @@
     - Equipment
   - type: MaterialStorage
     whitelist: *StandardMaterialWhitelist
+  # LP Edit Start
+  - type: BlueprintReceiver
+    whitelist:
+      tags:
+      - BlueprintProtolathe
+  # LP Edit End
 
 - type: entity
   id: LPPSpaceForge

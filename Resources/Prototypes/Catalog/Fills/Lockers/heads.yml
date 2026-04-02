@@ -278,7 +278,6 @@
   id: LockerFillResearchDirectorNoHardsuit
   table: !type:AllSelector
     children:
-    - id: AnomalyCoreBluespace # LP Edit
     - id: Intellicard
     - id: BoxEncryptionKeyScience
     - id: BoxRDCircuitboards
