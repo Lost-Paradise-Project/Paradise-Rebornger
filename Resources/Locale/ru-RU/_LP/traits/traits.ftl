@@ -1,2 +1,2 @@
-trait-impaired-mobility-name = Нарушение подвижности
-trait-impaired-mobility-desc = Вам тяжело передвигаться без посторонней помощи.
+trait-messy-drinker-name = Неряшливо пьющий
+trait-messy-drinker-desc = Ваш малый опыт в использовании стаканов будет давать о себе знать
