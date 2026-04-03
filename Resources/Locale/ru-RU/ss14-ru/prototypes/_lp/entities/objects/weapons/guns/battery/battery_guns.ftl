@@ -1,11 +1,11 @@
 ent-LPPStunbatonBorgSec = { ent-Stunbaton }
-    .suffix = Киборг, Безопасность
     .desc = { ent-Stunbaton.desc }
+    .suffix = Киборг, Безопасность
 ent-LPPWeaponDisablerBorgSec = { ent-WeaponDisabler }
-    .suffix = Киборг, Безопасность
     .desc = { ent-WeaponDisabler.desc }
-ent-LPPWeaponLaserCarbineBorgSec = { ent-WeaponLaserCarbine }
     .suffix = Киборг, Безопасность
+ent-LPPWeaponLaserCarbineBorgSec = { ent-WeaponLaserCarbine }
     .desc = { ent-WeaponLaserCarbine.desc }
+    .suffix = Киборг, Безопасность
 ent-LPPBlueshieldRevolver = револьвер синего щита
     .desc = Стильно и со вкусом.

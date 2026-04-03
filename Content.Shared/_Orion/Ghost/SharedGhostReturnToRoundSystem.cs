@@ -1,4 +1,4 @@
-using Content.Shared.CCVar;
+using Content.Shared._Orion.CCVar;
 using Robust.Shared.Configuration;
 using Robust.Shared.Timing;
 
@@ -13,7 +13,7 @@ public abstract class SharedGhostReturnToRoundSystem : EntitySystem
     {
         base.Initialize();
 
-        Cfg.OnValueChanged(CCVars.GhostRespawnTime,
+        Cfg.OnValueChanged(OCCVars.GhostRespawnTime,
             ghostRespawnTime =>
             {
                 GhostRespawnTime = TimeSpan.FromSeconds(ghostRespawnTime);

@@ -115,7 +115,7 @@ public sealed class MiningServerCircuitboardSystem : EntitySystem
     {
         if (!TryComp<MiningServerCircuitboardRepairComponent>(uid, out var repair))
         {
-            repair = EntityManager.AddComponent<MiningServerCircuitboardRepairComponent>(uid);
+            repair = AddComp<MiningServerCircuitboardRepairComponent>(uid);
         }
 
         if (!repair.IsScanned)

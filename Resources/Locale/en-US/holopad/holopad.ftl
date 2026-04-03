@@ -1,4 +1,4 @@
-﻿# Window headers
+# Window headers
 holopad-window-title = {CAPITALIZE($title)}
 holopad-window-subtitle = [color=white][bold]Holographic communication system[/bold][/color]
 holopad-window-options = [color=darkgray][font size=10][italic]Please select an option from the list below[/italic][/font][/color]
@@ -95,7 +95,7 @@ holopad-medical-clinic = Medical - Clinic
 holopad-cargo-front = Cargo - Front
 holopad-cargo-bay = Cargo - Cargo Bay
 holopad-cargo-salvage-bay = Cargo - Salvage Bay
-holopad-cargo-breakroom  = Cargo - Breakroom
+holopad-cargo-breakroom = Cargo - Breakroom
 holopad-cargo-ats = Cargo - ATS
 holopad-cargo-shuttle = Cargo - Shuttle
 holopad-cargo-mailroom = Cargo - Mailroom

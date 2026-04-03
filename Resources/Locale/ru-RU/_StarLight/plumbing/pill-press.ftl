@@ -7,6 +7,7 @@ plumbing-pill-press-output-mode = Выход:
 plumbing-pill-press-mode-pill = Таблетки
 plumbing-pill-press-mode-patch = Пластыри
 plumbing-pill-press-dosage = Дозировка (ед.):
+plumbing-pill-press-label = Этикетка:
 plumbing-pill-press-set = Установить
 plumbing-pill-press-pill-type = Тип таблетки
 plumbing-pill-press-mixing-mode = Режим смешивания (В/З входы)

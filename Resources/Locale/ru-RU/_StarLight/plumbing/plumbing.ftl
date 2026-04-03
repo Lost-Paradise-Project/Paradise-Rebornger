@@ -2,8 +2,10 @@
 
 plumbing-input-full = Входной буфер полон!
 plumbing-input-poured = Влито { $amount }ед. в водопроводную сеть.
+
 plumbing-output-empty = Выходной буфер пуст!
 plumbing-output-filled = Контейнер наполнен { $amount }ед. из водопроводной сети.
+
 # Reactor UI
 plumbing-reactor-window-title = Водопроводный реактор
 plumbing-reactor-status = Статус:
@@ -21,6 +23,7 @@ plumbing-reactor-clear = Очистить всё
 plumbing-reactor-remove-selected = Удалить выбранное
 plumbing-reactor-output = Содержимое выхода
 plumbing-reactor-invalid-reagent = Неизвестный реагент: { $reagent }
+
 # Filter UI
 plumbing-filter-window-title = Водопроводный фильтр
 plumbing-filter-status = Статус:
@@ -34,6 +37,7 @@ plumbing-filter-clear = Очистить всё
 plumbing-filter-remove-selected = Удалить выбранное
 plumbing-filter-invalid-reagent = Неизвестный реагент: { $reagent }
 plumbing-filter-max-reagents = Вы можете филтровать до { $count } реагентов.
+
 # Synthesizer UI
 plumbing-synthesizer-window-title = Водопроводный синтезатор
 plumbing-synthesizer-status = Статус:
@@ -47,6 +51,7 @@ plumbing-synthesizer-select-reagent = Выбрать реагент
 plumbing-synthesizer-none = Нет
 plumbing-synthesizer-buffer = Содержимое буфера
 plumbing-synthesizer-buffer-empty = Пусто
+
 # Plunger drain
 plumbing-drain-success = Слито { $amount }ед. на пол.
 plumbing-drain-empty = Нечего сливать.

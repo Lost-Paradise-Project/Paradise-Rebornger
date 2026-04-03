@@ -4,6 +4,8 @@
   id: BlueShieldShield
   description: The iconic namesake of these soldiers, the Blueshield. Known to take shots meant for high-ranking officials.
   components:
+    - type: EmpResistance
+      strengthMultiplier: 0
     - type: ContainerContainer
     - type: ItemToggle
       predictable: false

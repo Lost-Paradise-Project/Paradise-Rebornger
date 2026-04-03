@@ -30,7 +30,7 @@
     gloves: ClothingHandsGlovesCombat
     shoes: ClothingShoesBootsJack
     id: BlueshieldPDA
-    ears: ClothingHeadsetAltCommand
+    ears: ClothingHeadsetAltCentCom # LP Edit
     pocket1: DrinkEnergyDrinkCan
     pocket2: Stunbaton # LP Edit -> REPLACE WITH TELESCOPICBATON
     back: ClothingBackpackBlueshield
@@ -40,7 +40,7 @@
     - Flash
     # - BluespaceLifelineImplanter
     - DefibrillatorCompact # wow personal doctor for NTR
-    - LPPCombatHypospray # LP Edit
+    - LPPHyposprayZero # LP Edit1
     - BlueshieldUndeterminedWeapon # LP Edit
   inhand:
     - MedkitCombatFilled

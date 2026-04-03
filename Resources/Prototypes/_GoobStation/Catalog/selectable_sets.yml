@@ -36,6 +36,20 @@
   - MagazineShotgunLeverRifle
 #  tables:
 #  - ChesterRandomAmmoTable
+#LPP edit start
+- type: selectableSet
+  id: LPPBSOCFrenchSet
+  name: selectable-set-blueshield-french-name
+  description: selectable-set-blueshield-french-description
+  sprite:
+    sprite: _LP/Objects/Weapons/Guns/Rifles/le-mas.rsi
+    state: base
+  content:
+  - LPPWeaponRifleLemas
+  - LPPKnifeJagdkommando
+  - MagazineRifle
+  - MagazineRifle
+#LPP edit end
 
 - type: selectableSet
   id: BSOSyringeSet

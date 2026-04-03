@@ -10,7 +10,7 @@ comp-climbable-verb-climb = Vault
 comp-climbable-user-climbs = You jump onto { THE($climbable) }!
 
 # Shown to others when $user climbs on $climbable
-comp-climbable-user-climbs-other  = { CAPITALIZE(THE($user)) } jumps onto { THE($climbable) }!
+comp-climbable-user-climbs-other = { CAPITALIZE(THE($user)) } jumps onto { THE($climbable) }!
 
 # Shown to you when your character forces someone to climb on $climbable
 comp-climbable-user-climbs-force = You force { THE($moved-user) } onto { THE($climbable) }!

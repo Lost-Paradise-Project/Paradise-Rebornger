@@ -1,6 +1,7 @@
 - type: entity
   parent: GasCanister
   id: BZCanister
+  name: bz canister
   components:
   - type: Sprite
     sprite: _AruMoon/Structures/Storage/canister.rsi
@@ -10,16 +11,7 @@
     gasMixture:
       volume: 1000
       moles:
-      - 0 # oxygen
-      - 0 # nitrogen
-      - 0 # CO2
-      - 0 # Plasma
-      - 0 # Tritium
-      - 0 #  Water vapor
-      - 0 # Miasma
-      - 0 # N2O
-      - 0 # Frezon
-      - 1871.71051 # BZ
+        BZ: 1871.71051
       temperature: 293.15
   - type: Destructible
     thresholds:
@@ -48,6 +40,7 @@
     locked: true
 
 - type: entity
+  name: pluoxium canister
   parent: GasCanister
   id: PluoxiumCanister
   components:
@@ -59,17 +52,7 @@
     gasMixture:
       volume: 1000
       moles:
-      - 0 # oxygen
-      - 0 # nitrogen
-      - 0 # CO2
-      - 0 # Plasma
-      - 0 # Tritium
-      - 0 #  Water vapor
-      - 0 # Miasma
-      - 0 # N2O
-      - 0 # Frezon
-      - 0 # BZ
-      - 1871.71051 # Pluoxium
+        Pluoxium: 1871.71051
       temperature: 293.15
   - type: Destructible
     thresholds:
@@ -99,6 +82,7 @@
 
 - type: entity
   parent: GasCanister
+  name: hydrogen canister
   id: HydrogenCanister
   components:
   - type: Sprite
@@ -109,18 +93,7 @@
     gasMixture:
       volume: 1000
       moles:
-      - 0 # oxygen
-      - 0 # nitrogen
-      - 0 # CO2
-      - 0 # Plasma
-      - 0 # Tritium
-      - 0 #  Water vapor
-      - 0 # Miasma
-      - 0 # N2O
-      - 0 # Frezon
-      - 0 # BZ
-      - 0 # Pluoxium
-      - 1871.71051 # Hydrogen
+        Hydrogen: 1871.71051
       temperature: 293.15
   - type: Destructible
     thresholds:
@@ -150,6 +123,7 @@
 
 - type: entity
   parent: GasCanister
+  name: nitrium canister
   id: NitriumCanister
   components:
   - type: Sprite
@@ -160,19 +134,7 @@
     gasMixture:
       volume: 1000
       moles:
-      - 0 # oxygen
-      - 0 # nitrogen
-      - 0 # CO2
-      - 0 # Plasma
-      - 0 # Tritium
-      - 0 #  Water vapor
-      - 0 # Miasma
-      - 0 # N2O
-      - 0 # Frezon
-      - 0 # BZ
-      - 0 # Pluoxium
-      - 0 # Hydrogen
-      - 1871.71051 # Nitrium
+        Nitrium: 1871.71051
       temperature: 293.15
   - type: Destructible
     thresholds:
@@ -202,6 +164,7 @@
 
 - type: entity
   parent: GasCanister
+  name: healium canister
   id: HealiumCanister
   components:
   - type: Sprite
@@ -212,26 +175,7 @@
     gasMixture:
       volume: 1000
       moles:
-      - 0 # oxygen
-      - 0 # nitrogen
-      - 0 # CO2
-      - 0 # Plasma
-      - 0 # Tritium
-      - 0 #  Water vapor
-      - 0 # Miasma
-      - 0 # N2O
-      - 0 # Frezon
-      - 0 # BZ
-      - 0 # Pluoxium
-      - 0 # Hydrogen
-      - 0 # Nitrium
-      - 1871.71051 # Healium
-      - 0 # Hyper-Noblium
-      - 0 # Proto-Nitrate
-      - 0 # Zauker
-      - 0 # Halon
-      - 0 # Helium
-      - 0 # Anti-Noblium
+        Healium: 1871.71051
       temperature: 293.15
   - type: Destructible
     thresholds:
@@ -261,6 +205,7 @@
 
 - type: entity
   parent: GasCanister
+  name: hypernoblium canister
   id: HyperNobliumCanister
   components:
   - type: Sprite
@@ -271,26 +216,7 @@
     gasMixture:
       volume: 1000
       moles:
-      - 0 # oxygen
-      - 0 # nitrogen
-      - 0 # CO2
-      - 0 # Plasma
-      - 0 # Tritium
-      - 0 #  Water vapor
-      - 0 # Miasma
-      - 0 # N2O
-      - 0 # Frezon
-      - 0 # BZ
-      - 0 # Pluoxium
-      - 0 # Hydrogen
-      - 0 # Nitrium
-      - 0 # Healium
-      - 1871.71051 # Hyper-Noblium
-      - 0 # Proto-Nitrate
-      - 0 # Zauker
-      - 0 # Halon
-      - 0 # Helium
-      - 0 # Anti-Noblium
+        HyperNoblium: 1871.71051
       temperature: 293.15
   - type: Destructible
     thresholds:
@@ -320,6 +246,7 @@
 
 - type: entity
   parent: GasCanister
+  name: proto nitrate canister
   id: ProtoNitrateCanister
   components:
   - type: Sprite
@@ -330,26 +257,7 @@
     gasMixture:
       volume: 1000
       moles:
-      - 0 # oxygen
-      - 0 # nitrogen
-      - 0 # CO2
-      - 0 # Plasma
-      - 0 # Tritium
-      - 0 #  Water vapor
-      - 0 # Miasma
-      - 0 # N2O
-      - 0 # Frezon
-      - 0 # BZ
-      - 0 # Pluoxium
-      - 0 # Hydrogen
-      - 0 # Nitrium
-      - 0 # Healium
-      - 0 # Hyper-Noblium
-      - 1871.71051 # Proto-Nitrate
-      - 0 # Zauker
-      - 0 # Halon
-      - 0 # Helium
-      - 0 # Anti-Noblium
+        ProtoNitrate: 1871.71051
       temperature: 293.15
   - type: Destructible
     thresholds:
@@ -379,6 +287,7 @@
 
 - type: entity
   parent: GasCanister
+  name: zauker canister
   id: ZaukerCanister
   components:
   - type: Sprite
@@ -389,26 +298,7 @@
     gasMixture:
       volume: 1000
       moles:
-      - 0 # oxygen
-      - 0 # nitrogen
-      - 0 # CO2
-      - 0 # Plasma
-      - 0 # Tritium
-      - 0 #  Water vapor
-      - 0 # Miasma
-      - 0 # N2O
-      - 0 # Frezon
-      - 0 # BZ
-      - 0 # Pluoxium
-      - 0 # Hydrogen
-      - 0 # Nitrium
-      - 0 # Healium
-      - 0 # Hyper-Noblium
-      - 0 # Proto-Nitrate
-      - 1871.71051 # Zauker
-      - 0 # Halon
-      - 0 # Helium
-      - 0 # Anti-Noblium
+        Zauker: 1871.71051
       temperature: 293.15
   - type: Destructible
     thresholds:
@@ -438,6 +328,7 @@
 
 - type: entity
   parent: GasCanister
+  name: halon canister
   id: HalonCanister
   components:
   - type: Sprite
@@ -448,26 +339,7 @@
     gasMixture:
       volume: 1000
       moles:
-      - 0 # oxygen
-      - 0 # nitrogen
-      - 0 # CO2
-      - 0 # Plasma
-      - 0 # Tritium
-      - 0 #  Water vapor
-      - 0 # Miasma
-      - 0 # N2O
-      - 0 # Frezon
-      - 0 # BZ
-      - 0 # Pluoxium
-      - 0 # Hydrogen
-      - 0 # Nitrium
-      - 0 # Healium
-      - 0 # Hyper-Noblium
-      - 0 # Proto-Nitrate
-      - 0 # Zauker
-      - 1871.71051 # Halon
-      - 0 # Helium
-      - 0 # Anti-Noblium
+        Halon: 1871.71051
       temperature: 293.15
   - type: Destructible
     thresholds:
@@ -497,6 +369,7 @@
 
 - type: entity
   parent: GasCanister
+  name: helium canister
   id: HeliumCanister
   components:
   - type: Sprite
@@ -507,26 +380,7 @@
     gasMixture:
       volume: 1000
       moles:
-      - 0 # oxygen
-      - 0 # nitrogen
-      - 0 # CO2
-      - 0 # Plasma
-      - 0 # Tritium
-      - 0 #  Water vapor
-      - 0 # Miasma
-      - 0 # N2O
-      - 0 # Frezon
-      - 0 # BZ
-      - 0 # Pluoxium
-      - 0 # Hydrogen
-      - 0 # Nitrium
-      - 0 # Healium
-      - 0 # Hyper-Noblium
-      - 0 # Proto-Nitrate
-      - 0 # Zauker
-      - 0 # Halon
-      - 1871.71051 # Helium
-      - 0 # Anti-Noblium
+        Helium: 1871.71051
       temperature: 293.15
   - type: Destructible
     thresholds:
@@ -556,6 +410,7 @@
 
 - type: entity
   parent: GasCanister
+  name: anti-noblium canister
   id: AntiNobliumCanister
   components:
   - type: Sprite
@@ -566,26 +421,7 @@
     gasMixture:
       volume: 1000
       moles:
-      - 0 # oxygen
-      - 0 # nitrogen
-      - 0 # CO2
-      - 0 # Plasma
-      - 0 # Tritium
-      - 0 #  Water vapor
-      - 0 # Miasma
-      - 0 # N2O
-      - 0 # Frezon
-      - 0 # BZ
-      - 0 # Pluoxium
-      - 0 # Hydrogen
-      - 0 # Nitrium
-      - 0 # Healium
-      - 0 # Hyper-Noblium
-      - 0 # Proto-Nitrate
-      - 0 # Zauker
-      - 0 # Halon
-      - 0 # Helium
-      - 1871.71051 # Anti-Noblium
+        AntiNoblium: 1871.71051
       temperature: 293.15
   - type: Destructible
     thresholds:

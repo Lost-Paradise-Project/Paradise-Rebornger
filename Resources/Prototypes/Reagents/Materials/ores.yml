@@ -4,7 +4,7 @@
   name: materials-raw-iron
   unit: materials-unit-chunk
   icon: { sprite: Objects/Materials/ore.rsi, state: iron }
-  price: 0.05
+  price: 0.50 # LP Edit 0.05 -> 0.50
 
 - type: material
   id: RawQuartz
@@ -13,7 +13,7 @@
   unit: materials-unit-chunk
   icon: { sprite: Objects/Materials/ore.rsi, state: spacequartz }
   color: "#a8ccd7"
-  price: 0.075
+  price: 0.25 # LP Edit 0.075 -> 0.25
 
 - type: material
   id: RawGold
@@ -22,7 +22,7 @@
   unit: materials-unit-chunk
   icon: { sprite: Objects/Materials/ore.rsi, state: gold }
   color: "#FFD700"
-  price: 0.2
+  price: 0.7 # LP Edit 0.2 -> 0.7
 
 - type: material
   id: RawDiamond
@@ -40,7 +40,7 @@
   unit: materials-unit-chunk
   icon: { sprite: Objects/Materials/ore.rsi, state: silver }
   color: "#C0C0C0"
-  price: 0.15
+  price: 0.45 # LP Edit 0.15 -> 0.45
 
 - type: material
   id: RawPlasma
@@ -49,7 +49,7 @@
   unit: materials-unit-chunk
   icon: { sprite: Objects/Materials/ore.rsi, state: plasma }
   color: "#7e009e"
-  price: 0.2
+  price: 0.4 # LP Edit 0.2 -> 0.4
 
 - type: material
   id: RawUranium

@@ -15,4 +15,3 @@ swap-teleporter-examine-time-remaining = Time left to recharge: [color=purple]{$
     [one].
     *[other]s.
 }[/color]
-

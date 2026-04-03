@@ -1,5 +1,7 @@
 ent-FlaskBase = { ent-DrinkBase }
-    .desc = { ent-DrinkBase.desc }
+    .desc = { ent-DrinkBaseMaterialStrongMetal.desc }
+ent-DrinkFlaskOld = старая фляга
+    .desc = Старая потрёпанная фляга, у которой, похоже, отсутствует крышка.
 ent-DrinkShinyFlask = блестящая фляга
     .desc = Блестящая металлическая фляга. Похоже, на ней нарисован греческий символ.
 ent-DrinkMREFlask = фляга ИРП
@@ -13,8 +15,6 @@ ent-DrinkFlask = фляга капитана
     .desc = Металлическая фляга, принадлежащая капитану.
 ent-DrinkFlaskBar = фляга
     .desc = Многоразовая металлическая фляга. Куда элегантнее, чем пить прямо из бутылки.
-ent-DrinkFlaskOld = старая фляга
-    .desc = Старая потрёпанная фляга, у которой, похоже, отсутствует крышка.
 ent-DrinkLithiumFlask = литиевая фляга
     .desc = Фляга с нарисованным на ней символом атома лития.
 ent-DrinkVacuumFlask = термос

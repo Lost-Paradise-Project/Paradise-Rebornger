@@ -1,6 +1,6 @@
 ent-BaseMagazinePistolCaselessRifle = пистолетный магазин (.25 безгильзовые)
-    .desc = { ent-BaseMagazineCaselessRifle.desc }
+    .desc = { ent-BaseItem.desc }
 ent-MagazinePistolCaselessRifle = пистолетный магазин (.25 безгильзовые)
-    .desc = { ent-BaseMagazinePistolCaselessRifle.desc }
+    .desc = Магазин на 10 патронов для пистолета Кобра. Предназначен для хранения кинетических боеприпасов общего назначения.
 ent-MagazinePistolCaselessRiflePractice = пистолетный магазин (.25 безгильзовые учебные)
-    .desc = { ent-BaseMagazinePistolCaselessRifle.desc }
+    .desc = Магазин на 10 патронов для пистолета Кобра. Предназначен для хранения безвредных учебных боеприпасов.

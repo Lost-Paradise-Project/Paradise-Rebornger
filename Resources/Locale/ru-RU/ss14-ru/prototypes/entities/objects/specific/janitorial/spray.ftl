@@ -1,4 +1,4 @@
-ent-SprayBottleBase = { ent-DrinkBaseMaterialPlastic }
+ent-SprayBottleBase = { ent-DrinkBase }
     .desc = { ent-DrinkBaseMaterialPlastic.desc }
 ent-SprayBottle = распылитель
     .desc = Распылитель с отвинчивающимся верхом.
@@ -7,9 +7,9 @@ ent-MegaSprayBottle = мега-распылитель
     .desc = Большая бутылка-распылитель, обладающая непревзойдённой чистящей силой.
     .suffix = Пустой
 ent-SprayBottleWater = распылитель
-    .suffix = Полный
     .desc = { ent-SprayBottle.desc }
-ent-SprayBottleSpaceCleaner = космический очиститель
+    .suffix = Полный
+ent-SprayBottleSpaceCleaner = { ent-SprayBottle }
     .desc = Непенящийся очиститель бренда BLAM!
     .suffix = Космический очиститель
 ent-MegaSprayBottleSpaceCleaner = { ent-MegaSprayBottle }

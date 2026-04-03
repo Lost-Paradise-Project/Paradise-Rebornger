@@ -32,10 +32,6 @@
   - "\u2591"
   - "\u2592"
   - "\u2593"
-  - "\u2600"
-  - "\u2605"
-  - "\u2606"
-  - "\u2665"
 
 - type: chatProtectionList
   id: OOC_BannedWords

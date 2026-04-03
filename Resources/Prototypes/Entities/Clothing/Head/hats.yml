@@ -10,7 +10,7 @@
     sprite: Clothing/Head/Hats/beaver_hat.rsi
 
 - type: entity
-  parent: ClothingHeadBaseBeret # Corvax-Wega-Dirtable
+  parent: ClothingHeadBase
   id: ClothingHeadHatBeret
   name: beret
   description: An artist's favorite headwear.
@@ -29,7 +29,7 @@
     - WhitelistChameleon
 
 - type: entity
-  parent: ClothingHeadBaseBeret # Corvax-Wega-Dirtable
+  parent: ClothingHeadBase
   id: ClothingHeadHatBeretFrench
   name: french beret
   description: A French beret. "Vive la France!"
@@ -49,7 +49,7 @@
     - WhitelistChameleon
 
 - type: entity
-  parent: ClothingHeadBaseBeret # Corvax-Wega-Dirtable
+  parent: ClothingHeadBase
   id: ClothingHeadHatBeretSecurity
   name: security beret
   description: A beret with the security department's insignia. For officers that are more inclined towards style than safety.
@@ -98,7 +98,7 @@
       - CorgiWearable
 
 - type: entity
-  parent: ClothingHeadBaseBeret # Corvax-Wega-Dirtable
+  parent: ClothingHeadBase
   id: ClothingHeadHatBeretRND
   name: scientific beret
   description: A beret for real scientists.
@@ -117,7 +117,7 @@
     - WhitelistChameleon
 
 - type: entity
-  parent: ClothingHeadBaseBeret # Corvax-Wega-Dirtable
+  parent: ClothingHeadBase
   id: ClothingHeadHatBeretEngineering
   name: engineering beret
   description: A beret with the engineering department's insignia. For engineers that are more inclined towards style than safety.
@@ -136,7 +136,7 @@
     - WhitelistChameleon
 
 - type: entity
-  parent: ClothingHeadBaseBeret # Corvax-Wega-Dirtable
+  parent: ClothingHeadBase
   id: ClothingHeadHatBeretQM
   name: quartermaster's beret
   description: A beret with the cargo department's insignia.
@@ -155,7 +155,7 @@
     - WhitelistChameleon
 
 - type: entity
-  parent: ClothingHeadBaseBeret # Corvax-Wega-Dirtable
+  parent: ClothingHeadBase
   id: ClothingHeadHatBeretHoS
   name: head of security's beret
   description: A black beret with a commander's rank emblem. For officers that are more inclined towards style than safety.
@@ -174,7 +174,7 @@
     - WhitelistChameleon
 
 - type: entity
-  parent: ClothingHeadBaseBeret # Corvax-Wega-Dirtable
+  parent: ClothingHeadBase
   id: ClothingHeadHatBeretWarden
   name: warden's beret
   description: A corporate-blue beret with a warden's rank emblem. For officers that are more inclined towards style than safety.
@@ -189,7 +189,7 @@
     - CorgiWearable
 
 - type: entity
-  parent: ClothingHeadBaseBeret # Corvax-Wega-Dirtable
+  parent: ClothingHeadBase
   id: ClothingHeadHatBeretSeniorPhysician
   name: physician beret
   description: Donning the colours of medical and chemistry, physicians are the pride of this department!
@@ -204,7 +204,7 @@
     - CorgiWearable
 
 - type: entity
-  parent: ClothingHeadBaseBeret # Corvax-Wega-Dirtable
+  parent: ClothingHeadBase
   id: ClothingHeadHatBeretBrigmedic
   name: brigmedical beret
   description: A white beret for brigmedics.
@@ -219,7 +219,7 @@
     - CorgiWearable
 
 - type: entity
-  parent: ClothingHeadBaseBeret # Corvax-Wega-Dirtable
+  parent: [ ClothingHeadBase ]
   id: ClothingHeadHatBeretMerc
   name: mercenary beret
   description: An olive beret with a badge depicting a jackal on a rock.
@@ -234,7 +234,7 @@
     - CorgiWearable
 
 - type: entity
-  parent: ClothingHeadHatBeret
+  parent: ClothingHeadBase
   id: ClothingHeadHatBeretCommand
   name: command beret
   description: A beret with the Nanotrasen logo. It has an aura of authority.
@@ -284,11 +284,6 @@
     - Recyclable
     - HamsterWearable
     - WhitelistChameleon
-  # Corvax-Wega-Dirtable-start
-  - type: Dirtable
-    dirtState: cap
-    equippedDirtState: equipped-cap
-  # Corvax-Wega-Dirtable-end
 
 - type: entity
   parent: ClothingHeadBase
@@ -427,11 +422,6 @@
     - Recyclable
     - HamsterWearable
     - WhitelistChameleon
-  # Corvax-Wega-Dirtable-start
-  - type: Dirtable
-    dirtState: caphop
-    equippedDirtState: equipped-caphop
-  # Corvax-Wega-Dirtable-end
 
 - type: entity
   parent: [ClothingHeadBase, BaseCommandContraband]
@@ -451,11 +441,6 @@
     - Recyclable
     - HamsterWearable
     - WhitelistChameleon
-  # Corvax-Wega-Dirtable-start
-  - type: Dirtable
-    dirtState: hathos
-    equippedDirtState: equipped-hathos
-  # Corvax-Wega-Dirtable-end
 
 - type: entity
   parent: ClothingHeadBase
@@ -612,7 +597,7 @@
     - CorgiWearable
 
 - type: entity
-  parent: ClothingHeadBaseSurgcap # Corvax-Wega-Dirtable
+  parent: ClothingHeadBase
   id: ClothingHeadHatSurgcapBlue
   name: blue surgical cap
   description: A blue cap surgeons wear during operations. Keeps their hair from tickling your internal organs.
@@ -634,7 +619,7 @@
       HeadSide : HEAD
 
 - type: entity
-  parent: ClothingHeadBaseSurgcap # Corvax-Wega-Dirtable
+  parent: ClothingHeadBase
   id: ClothingHeadHatSurgcapGreen
   name: green surgical cap
   description: A green cap surgeons wear during operations. Keeps their hair from tickling your internal organs.
@@ -650,7 +635,7 @@
       HeadSide : HEAD
 
 - type: entity
-  parent: ClothingHeadBaseSurgcap # Corvax-Wega-Dirtable
+  parent: ClothingHeadBase
   id: ClothingHeadHatSurgcapPurple
   name: purple surgical cap
   description: A purple cap surgeons wear during operations. Keeps their hair from tickling your internal organs.
@@ -779,11 +764,6 @@
     tags:
     - PetWearable
     - CorgiWearable
-  # Corvax-Wega-Dirtable-start
-  - type: Dirtable
-    dirtState: hat
-    equippedDirtState: equipped-hat
-  # Corvax-Wega-Dirtable-end
 
 - type: entity
   parent: ClothingHeadBase
@@ -1044,7 +1024,7 @@
         HeadSide : HEAD
 
 - type: entity
-  parent: [ClothingHeadBaseBeret, BaseCommandContraband] # Corvax-Wega-Dirtable
+  parent: [ClothingHeadBase, BaseCommandContraband]
   id: ClothingHeadHatBeretCmo
   name: chief medical officer's beret
   description: A turquoise beret with a cross on the front. The sight of it calms you down and makes it clear that you will be cured.
@@ -1116,11 +1096,6 @@
     sprite: Clothing/Head/Hats/syndiecap.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/syndiecap.rsi
-  # Corvax-Wega-Dirtable-start
-  - type: Dirtable
-    dirtState: hat
-    equippedDirtState: equipped-hat
-  # Corvax-Wega-Dirtable-end
 
 - type: entity
   parent: ClothingHeadBase
@@ -1132,11 +1107,6 @@
     sprite: Clothing/Head/Hats/syndiecap_maa.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/syndiecap_maa.rsi
-  # Corvax-Wega-Dirtable-start
-  - type: Dirtable
-    dirtState: hat
-    equippedDirtState: equipped-hat
-  # Corvax-Wega-Dirtable-end
 
 - type: entity
   parent: ClothingHeadBase
@@ -1221,11 +1191,6 @@
     flavorKind: station-event-random-sentience-flavor-inanimate
     weight: 0.0002 # 5,000 times less likely than 1 regular animal
   - type: BlockMovement
-  # Corvax-Wega-Dirtable-start
-  - type: Dirtable
-    dirtState: capalt
-    equippedDirtState: equipped-capalt
-  # Corvax-Wega-Dirtable-end
 
 - type: entity
   parent: [ ClothingHeadBase, BaseCentcommContraband ]
@@ -1247,11 +1212,6 @@
     - Recyclable
     - WhitelistChameleon
     - HamsterWearable
-  # Corvax-Wega-Dirtable-start
-  - type: Dirtable
-    dirtState: capalt
-    equippedDirtState: equipped-capalt
-  # Corvax-Wega-Dirtable-end
 
 - type: entity
   parent: ClothingHeadBase
@@ -1510,7 +1470,7 @@
         acts: [ "Destruction" ]
 
 - type: entity
-  parent: ClothingHeadBaseBeret # Corvax-Wega-Dirtable
+  parent: ClothingHeadBase
   id: ClothingHeadHatBeretMedic
   name: medical beret
   description: A sterile white beret.

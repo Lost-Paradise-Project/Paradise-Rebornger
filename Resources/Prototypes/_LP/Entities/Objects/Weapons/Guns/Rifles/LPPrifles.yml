@@ -1,0 +1,71 @@
+- type: entity
+  name: LE-MAS
+  parent: [BaseWeaponRifle, BaseCommandContraband]
+  id: LPPWeaponRifleLemas
+  description: Bullpup rifle made by FRENCH OPZ concern *ugh*. Fires 3 bullets in hyperburst. Uses .20 ammo.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Guns/Rifles/le-mas.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _LP/Objects/Weapons/Guns/Rifles/le-mas.rsi
+  - type: Gun
+    fireRate: 3.5
+    burstFireRate: 40
+    selectedMode: SemiAuto
+    availableModes:
+      - Burst
+      - SemiAuto
+    shotsPerBurst: 3
+    burstCooldown: 1
+    soundGunshot:
+      path: /Audio/_LP/Weapons/Guns/Gunshots/M4A1_Shot.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        startingItem: MagazineRifle
+        insertSound: /Audio/_LP/Weapons/Guns/MagIn/M4A1_Magin.ogg
+        ejectSound: /Audio/_LP/Weapons/Guns/MagOut/M4A1_Magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifle
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeRifle
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeRifle
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+      firing_pin: !type:Container # Starlight
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: Item
+    size: Large
+  - type: EmitSoundOnPickup
+    sound:
+      collection: RiflesPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: RiflesDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: RiflesDrop
+  - type: FiringPinHolder
+    supportedPins: [ Rifle, GunUpgrade ]
+  - type: ContainerFill
+    containers:
+      firing_pin:
+      - FiringPin

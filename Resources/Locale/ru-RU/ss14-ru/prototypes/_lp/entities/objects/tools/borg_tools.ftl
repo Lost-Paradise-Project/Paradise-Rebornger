@@ -1,6 +1,6 @@
 ent-LPPHoloprojectorSecurityBorgSec = проектор голобарьера киборга
+    .desc = { ent-HoloprojectorSecurity.desc }
     .suffix = Киборг, СБ
-    .desc = Создаёт твёрдый, но хрупкий барьер.
 ent-LPPMonitorCriminalRecordsBorgSec = монитор криминальных записей киборга
-    .suffix = Киборг, СБ
     .desc = Небольшой экранчик, открывающий доступ к базе данных Службы Безопасности. Его можно использовать для проверки судимостей.
+    .suffix = Киборг, СБ

@@ -1,9 +1,9 @@
 using Content.Server.Administration.Logs;
 using Content.Server.Chat.Managers;
 using Content.Server.GameTicking;
+using Content.Shared._Orion.CCVar;
 using Content.Shared._Orion.Ghost;
 using Content.Shared.Administration;
-using Content.Shared.CCVar;
 using Content.Shared.Chat;
 using Content.Shared.Database;
 using Content.Shared.GameTicking;
@@ -31,7 +31,7 @@ public sealed class GhostReturnToRoundSystem : SharedGhostReturnToRoundSystem
 
         SubscribeNetworkEvent<GhostReturnToRoundRequest>(OnGhostReturnToRoundRequest);
 
-        Cfg.OnValueChanged(CCVars.GhostRespawnMaxPlayers,
+        Cfg.OnValueChanged(OCCVars.GhostRespawnMaxPlayers,
             ghostRespawnMaxPlayers =>
             {
                 _ghostRespawnMaxPlayers = ghostRespawnMaxPlayers;

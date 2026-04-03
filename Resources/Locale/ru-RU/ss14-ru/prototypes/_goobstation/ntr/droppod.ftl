@@ -1,4 +1,4 @@
-ent-SpawnSupplyEmpty = SpawnSupplyEmpty
+ent-SpawnSupplyEmpty = Спавн Пустых Поставок
     .desc = { "" }
 ent-SpawnSupplypodAnimation = { "" }
     .desc = { "" }

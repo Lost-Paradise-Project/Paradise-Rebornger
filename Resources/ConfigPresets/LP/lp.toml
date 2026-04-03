@@ -26,7 +26,7 @@ disable_with_admins = true
 
 [server]
 rules_file = "LPPRuleset"
-lobby_name = "Lost Paradise 3.0"
+lobby_name = "Lost Paradise 3.1"
 force_client_hud_version_watermark = true
 
 [hub]

@@ -4,7 +4,7 @@
                       xmlns:customControls="clr-namespace:Content.Client.Administration.UI.CustomControls;assembly=Content.Client"
                       xmlns:nf="clr-namespace:Content.Client._NF.Research.UI"
                       Title="{Loc 'research-console-menu-title'}"
-                      SetSize="1680 800"
+                      SetSize="1280 600"
                       MinSize="800 400"> <!--LP edit SetSize-->
     <BoxContainer Orientation="Vertical"
                   HorizontalExpand="True"

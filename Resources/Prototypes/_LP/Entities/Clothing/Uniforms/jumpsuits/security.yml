@@ -21,28 +21,15 @@
     sprite: _LP/Clothing/Uniforms/Sec/gorka_sec.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: LPPClothingUniformJumpsuitGorkaReflBase
   id: LPPClothingUniformJumpsuitSecGorkaRefl
   name: Gorka with reflectors Security # Горка с отражателями
   description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Uniforms/Sec/gorka_sec_varg.rsi
-    layers:
-    - state: icon
-    - state: icon-unshaded
-      shader: shaded
-    - state: icon-unshaded
-      shader: unshaded
   - type: Clothing
     sprite: _LP/Clothing/Uniforms/Sec/gorka_sec_varg.rsi
-    clothingVisuals:
-      jumpsuit:
-      - state: equipped-INNERCLOTHING
-      - state: equipped-INNERCLOTHING-unshaded
-        shader: shaded
-      - state: equipped-INNERCLOTHING-unshaded
-        shader: unshaded
 
 - type: entity
   parent: ClothingUniformBase

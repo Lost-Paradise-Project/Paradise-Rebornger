@@ -79,7 +79,7 @@
   showInVote: true #2boring2vote
   description: extended-description
   rules:
-  - BasicStationEventScheduler
+  - LPPExtendedBasicStationEventScheduler
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
@@ -90,7 +90,7 @@
   - greenshift
   - shittersafarideluxeedition
   name: greenshift-title
-  showInVote: false #4boring4vote
+  showInVote: true #4boring4vote
   description: greenshift-description
   rules:
   - BasicRoundstartVariation

@@ -1,0 +1,17 @@
+- type: entity
+  parent: BaseFlatpack
+  id: LPPComputerJobSlotsFlatpack
+  name: job slots console flatpack
+  description: A flatpack used for constructing a job slots console.
+  components:
+  - type: Flatpack
+    entity: ComputerJobSlots
+
+- type: entity
+  parent: BaseFlatpack
+  id: LPPComputerIdFlatpack
+  name: ID card computer flatpack
+  description: A flatpack used for constructing a ID card computer.
+  components:
+  - type: Flatpack
+    entity: ComputerId

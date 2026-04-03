@@ -20,6 +20,26 @@
         {
             "name": "equipped-INNERCLOTHING-unshaded",
             "directions": 4
+        },
+        {
+            "name": "equipped-INNERCLOTHING-unshaded-reptilian",
+            "directions": 4
+        },
+        {
+            "name": "equipped-INNERCLOTHING-unshaded-vox",
+            "directions": 4
+        },
+        {
+            "name": "equipped-INNERCLOTHING-unshaded-moth",
+            "directions": 4
+        },
+        {
+            "name": "equipped-INNERCLOTHING-unshaded-vulpkanin",
+            "directions": 4
+        },
+        {
+            "name": "equipped-INNERCLOTHING-unshaded-corvaxtajaran",
+            "directions": 4
         }
     ]
 }

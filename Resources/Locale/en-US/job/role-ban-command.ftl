@@ -1,4 +1,4 @@
-﻿### Localization for role ban command
+### Localization for role ban command
 
 cmd-roleban-desc = Bans a player from a role
 cmd-roleban-help = Usage: roleban <name or user ID> <job> <reason> [duration in minutes, leave out or 0 for permanent ban]
@@ -47,7 +47,7 @@ cmd-roleban-name-parse = Unable to find a player with that name.
 cmd-roleban-success = Role banned {$target} from {$role} with reason {$reason} {$length}.
 
 cmd-roleban-inf = permanently
-cmd-roleban-until =  until {$expires}
+cmd-roleban-until = until {$expires}
 
 # Department bans
 cmd-departmentban-desc = Bans a player from the roles comprising a department

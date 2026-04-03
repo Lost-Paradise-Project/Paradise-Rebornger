@@ -22,28 +22,15 @@
     sprite: _LP/Clothing/Uniforms/Engineering_department/atmos/gorka_atmos.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: LPPClothingUniformJumpsuitGorkaReflBase
   id: LPPClothingUniformJumpsuitAtmosGorkaRefl
   name: Gorka with reflectors atmos # Горка с отражателями
   description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Uniforms/Engineering_department/atmos/gorka_atmos_varg.rsi
-    layers:
-    - state: icon
-    - state: icon-unshaded
-      shader: shaded
-    - state: icon-unshaded
-      shader: unshaded
   - type: Clothing
     sprite: _LP/Clothing/Uniforms/Engineering_department/atmos/gorka_atmos_varg.rsi
-    clothingVisuals:
-      jumpsuit:
-      - state: equipped-INNERCLOTHING
-      - state: equipped-INNERCLOTHING-unshaded
-        shader: shaded
-      - state: equipped-INNERCLOTHING-unshaded
-        shader: unshaded
 
 - type: entity
   parent: ClothingUniformBase
@@ -113,28 +100,15 @@
     sprite: _LP/Clothing/Uniforms/Engineering_department/engineers/gorka_engineers.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: LPPClothingUniformJumpsuitGorkaReflBase
   id: LPPClothingUniformJumpsuitEngineerGorkaRefl
   name: Gorka with reflectors Engineer # Горка с отражателями
   description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Uniforms/Engineering_department/engineers/gorka_engineers_varg.rsi
-    layers:
-    - state: icon
-    - state: icon-unshaded
-      shader: shaded
-    - state: icon-unshaded
-      shader: unshaded
   - type: Clothing
     sprite: _LP/Clothing/Uniforms/Engineering_department/engineers/gorka_engineers_varg.rsi
-    clothingVisuals:
-      jumpsuit:
-      - state: equipped-INNERCLOTHING
-      - state: equipped-INNERCLOTHING-unshaded
-        shader: shaded
-      - state: equipped-INNERCLOTHING-unshaded
-        shader: unshaded
 
 - type: entity
   parent: ClothingUniformBase

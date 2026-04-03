@@ -21,28 +21,15 @@
     sprite: _LP/Clothing/Uniforms/Cargo/gorka_cargo.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: LPPClothingUniformJumpsuitGorkaReflBase
   id: LPPClothingUniformJumpsuitCargoGorkaRefl
   name: Cargo Gorka with Reflectors # Горка с отражателями
   description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Uniforms/Cargo/gorka_cargo_varg.rsi
-    layers:
-    - state: icon
-    - state: icon-unshaded
-      shader: shaded
-    - state: icon-unshaded
-      shader: unshaded
   - type: Clothing
     sprite: _LP/Clothing/Uniforms/Cargo/gorka_cargo_varg.rsi
-    clothingVisuals:
-      jumpsuit:
-      - state: equipped-INNERCLOTHING
-      - state: equipped-INNERCLOTHING-unshaded
-        shader: shaded
-      - state: equipped-INNERCLOTHING-unshaded
-        shader: unshaded
 
 - type: entity
   parent: ClothingUniformBase

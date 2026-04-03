@@ -721,14 +721,27 @@
   - type: PlumbingSynthesizer
     bufferSolutionName: buffer
     generatableReagents:
-      Iron: 2
-      Carbon: 2
-      Copper: 2
-      Hydrogen: 2
-      Oxygen: 0
-      Sugar: 2
-      Silicon: 5
-      Phosphorus: 5
+      Nitrogen: 4
+      Aluminium: 4
+      Iodine: 10
+      Potassium: 4
+      Lithium: 10
+      Sodium: 4
+      Radium: 10
+      Mercury: 10
+      Sulfur: 10
+      Fluorine: 10
+      Chlorine: 10
+      Ethanol: 4
+      Iron: 4
+      Carbon: 4
+      Copper: 4
+      Hydrogen: 4
+      Oxygen: 2
+      Sugar: 4
+      Silicon: 10
+      Phosphorus: 10
+      Plasma: 15
   - type: Plungeable
   - type: PlumbingOutlet
     solutionName: buffer

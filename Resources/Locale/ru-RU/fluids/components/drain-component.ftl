@@ -5,4 +5,4 @@ drain-component-examine-hint-full = [color=cyan]Заполнено до краё
 drain-component-examine-volume = [color=cyan]Доступный объём — { $volume } ед.[/color]
 drain-component-unclog-fail = Устройство { $object } всё ещё переполнено.
 drain-component-unclog-success = Устройство { $object } было прочищено.
-drain-component-unclog-notapplicable = Это не переполнено.
+drain-component-unclog-notapplicable = { CAPITALIZE($object) } не переполнено.

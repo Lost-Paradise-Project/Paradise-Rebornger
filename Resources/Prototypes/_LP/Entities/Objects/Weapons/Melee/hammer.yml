@@ -21,6 +21,8 @@
         Blunt: 10
         Structural: 30
     bluntStaminaDamageFactor: 2.00
+    soundHit:
+      path: /Audio/_LP/Weapons/Effects/hammer_hit.ogg
   - type: Wieldable
   - type: IncreaseDamageOnWield
     damage:

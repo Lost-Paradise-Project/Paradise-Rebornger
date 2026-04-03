@@ -23,4 +23,3 @@ xenoborg-max-number = The highest number of xenoborgs was: {$count}
 
 xenoborgs-list-start = The starting xenoborg team were:
 xenoborgs-list = - [color=White]{$name}[/color] ([color=gray]{$user}[/color])
-

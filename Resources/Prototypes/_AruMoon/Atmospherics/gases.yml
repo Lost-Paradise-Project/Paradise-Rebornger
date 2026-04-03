@@ -1,137 +1,157 @@
 - type: gas
   id: BZ
   name: gases-bz
-  specificHeat: 20
+  abbreviation: gas-bz-abbreviation
+  molarHeatCapacity: 20
   heatCapacityRatio: 1.3
   molarMass: 100
-  color: e69edd
+  color: '#e69edd'
   reagent: BZ
-  pricePerMole: 3
+  pricePerMole: 1 # LP Edit 3 -> 1
 
 - type: gas
   id: Pluoxium
   name: gases-pluoxium
-  specificHeat: 80
+  abbreviation: gas-pluoxium-abbreviation
+  molarHeatCapacity: 80
   heatCapacityRatio: 1.3
   molarMass: 40
-  color: 0054AA
+  color: '#0054AA'
   reagent: Pluoxium
-  pricePerMole: 5
+  pricePerMole: 2 # LP Edit 5 -> 2
+  isOxidizer: true
 
 - type: gas
   id: Hydrogen
   name: gases-hydrogen
-  specificHeat: 15
+  abbreviation: gas-hydrogen-abbreviation
+  molarHeatCapacity: 15
   heatCapacityRatio: 1.4
   molarMass: 2
-  color: FFFFFF
+  color: '#FFFFFF'
   reagent: Hydrogen
-  pricePerMole: 5
+  pricePerMole: 2 # LP Edit 5 -> 2
+  isFuel: true
 
 - type: gas
   id: Nitrium
   name: gases-nitrium
-  specificHeat: 10
+  abbreviation: gas-nitrium-abbreviation
+  molarHeatCapacity: 10
   heatCapacityRatio: 1.3
   molarMass: 60
-  gasOverlaySprite: /Textures/_AruMoon/Effects/atmospherics.rsi
-  gasOverlayState: nitrium
+  gasOverlaySprite:
+    sprite: /Textures/_AruMoon/Effects/atmospherics.rsi
+    state: nitrium
   gasMolesVisible: 0.1
-  gasVisbilityFactor: 500
-  color: 7E4732
+  gasVisibilityFactor: 500
+  color: '#7E4732'
   reagent: Nitrium
-  pricePerMole: 12
+  pricePerMole: 3 # LP Edit 12 -> 3
 
 - type: gas
   id: Healium
   name: gases-healium
-  specificHeat: 10
+  abbreviation: gas-healium-abbreviation
+  molarHeatCapacity: 10
   heatCapacityRatio: 1.3
   molarMass: 40
-  gasOverlaySprite: /Textures/_AruMoon/Effects/atmospherics.rsi
-  gasOverlayState: healium
+  gasOverlaySprite:
+    sprite: /Textures/_AruMoon/Effects/atmospherics.rsi
+    state: healium
   gasMolesVisible: 0.1
-  gasVisbilityFactor: 500
-  color: d97e7e
+  gasVisibilityFactor: 500
+  color: '#d97e7e'
   reagent: Healium
-  pricePerMole: 12
+  pricePerMole: 20 # LP Edit 12 -> 20
 
 - type: gas
   id: HyperNoblium
   name: gases-hyper-noblium
-  specificHeat: 2000
+  abbreviation: gas-hypernoblium-abbreviation
+  molarHeatCapacity: 2000
   heatCapacityRatio: 1.3
   molarMass: 150
-  gasOverlaySprite: /Textures/_AruMoon/Effects/atmospherics.rsi
-  gasOverlayState: frezon
+  gasOverlaySprite:
+    sprite: /Textures/Effects/atmospherics.rsi
+    state: frezon
   gasMolesVisible: 0.1
-  gasVisbilityFactor: 1000
-  color: 33cccc
+  gasVisibilityFactor: 1000
+  color: '#33cccc'
   reagent: Hyper-Noblium
-  pricePerMole: 15
+  pricePerMole: 4 # LP Edit 15 -> 4
 
 - type: gas
   id: ProtoNitrate
   name: gases-proto-nitrate
-  specificHeat: 30
+  abbreviation: gas-protonitrate-abbreviation
+  molarHeatCapacity: 30
   heatCapacityRatio: 1.3
   molarMass: 120
-  gasOverlaySprite: /Textures/_AruMoon/Effects/atmospherics.rsi
-  gasOverlayState: proto_nitrate
+  gasOverlaySprite:
+    sprite: /Textures/_AruMoon/Effects/atmospherics.rsi
+    state: proto_nitrate
   gasMolesVisible: 0.1
-  gasVisbilityFactor: 1000
-  color: 009933
+  gasVisibilityFactor: 1000
+  color: '#009933'
   reagent: Proto-Nitrate
   pricePerMole: 5
 
 - type: gas
   id: Zauker
   name: gases-zauker
-  specificHeat: 350
+  abbreviation: gas-zauker-abbreviation
+  molarHeatCapacity: 350
   heatCapacityRatio: 1.3
   molarMass: 110
-  gasOverlaySprite: /Textures/_AruMoon/Effects/atmospherics.rsi
-  gasOverlayState: zauker
+  gasOverlaySprite:
+    sprite: /Textures/_AruMoon/Effects/atmospherics.rsi
+    state: zauker
   gasMolesVisible: 0.1
-  gasVisbilityFactor: 250
-  color: 1c1a1a
+  gasVisibilityFactor: 250
+  color: '#1c1a1a'
   reagent: Zauker
-  pricePerMole: 15
+  pricePerMole: 20 # LP Edit 15 -> 20
 
 - type: gas
   id: Halon
   name: gases-halon
-  specificHeat: 1.4
+  abbreviation: gas-halon-abbreviation
+  molarHeatCapacity: 1.4
   heatCapacityRatio: 1.3
   molarMass: 150
-  gasOverlaySprite: /Textures/_AruMoon/Effects/atmospherics.rsi
-  gasOverlayState: halon
+  gasOverlaySprite:
+    sprite: /Textures/_AruMoon/Effects/atmospherics.rsi
+    state: halon
   gasMolesVisible: 0.1
-  gasVisbilityFactor: 500
-  color: e3574d
+  gasVisibilityFactor: 500
+  color: '#e3574d'
   reagent: Halon
-  pricePerMole: 8
+  pricePerMole: 2 # LP Edit 8 -> 2
 
 - type: gas
   id: Helium
   name: gases-helium
-  specificHeat: 15
+  abbreviation: gas-helium-abbreviation
+  molarHeatCapacity: 15
   heatCapacityRatio: 20
   molarMass: 4
-  color: 005959
+  color: '#005959'
   reagent: Helium
-  pricePerMole: 7
+  pricePerMole: 2 # LP Edit 7 -> 2
 
 - type: gas
   id: AntiNoblium
   name: gases-anti-noblium
-  specificHeat: 1
+  abbreviation: gas-antinoblium-abbreviation
+  molarHeatCapacity: 1
   heatCapacityRatio: 1
   molarMass: 200
-  gasOverlaySprite: /Textures/_AruMoon/Effects/atmospherics.rsi
-  gasOverlayState: anti_noblium
+  gasOverlaySprite:
+    sprite: /Textures/_AruMoon/Effects/atmospherics.rsi
+    state: anti_noblium
   gasMolesVisible: 0.1
-  gasVisbilityFactor: 100
-  color: 525151
+  gasVisibilityFactor: 100
+  color: '#525151'
   reagent: Anti-Noblium
   pricePerMole: 20

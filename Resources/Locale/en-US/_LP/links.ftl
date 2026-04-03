@@ -1,1 +1,0 @@
-launcher-heading-name = Ссылки

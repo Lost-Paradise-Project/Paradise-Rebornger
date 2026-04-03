@@ -1,5 +1,5 @@
 - type: entity
-  parent: [WeaponLauncherHydra]
+  parent: WeaponLauncherHydra
   id: LPPWeaponLauncherHydra
   suffix: empty
   components:
