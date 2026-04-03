@@ -28,7 +28,7 @@ trait-unrevivable-name = Unrevivable
 trait-unrevivable-desc = You are unable to be revived by defibrillators.
 
 trait-messy-drinker-name = Messy Drinker
-trait-messy-drinker-desc = Your little experience in using glasses will make itself felt
+trait-messy-drinker-desc = Your lack of experience with glassware shows.
 
 trait-accentless-name = Accentless
 trait-accentless-desc = You don't have the accent that your species would usually have.

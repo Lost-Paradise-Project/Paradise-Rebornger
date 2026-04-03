@@ -114,4 +114,4 @@
   category: Disabilities
   components:
     - type: MessyDrinker
-      spillageChance: 0.33
+      spillChance: 0.33
