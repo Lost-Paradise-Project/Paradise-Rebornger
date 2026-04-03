@@ -27,6 +27,9 @@ trait-paracusia-desc = Вы слышите звуки, которых на са�
 trait-unrevivable-name = Невозрождаемость
 trait-unrevivable-desc = Вас невозможно оживить при помощи дефибриллятора.
 
+trait-messy-drinker-name = Неряшливо пьющий
+trait-messy-drinker-desc = Ваш малый опыт в использовании стаканов будет давать о себе знать
+
 trait-accentless-name = Отсутствие акцента
 trait-accentless-desc = У вас нет того акцента, который характерен для представителей вашего вида.
 
