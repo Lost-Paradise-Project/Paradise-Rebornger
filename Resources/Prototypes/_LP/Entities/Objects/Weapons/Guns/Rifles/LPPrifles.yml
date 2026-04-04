@@ -1,6 +1,6 @@
 - type: entity
   name: LE-MAS
-  parent: [BaseWeaponRifle, BaseCommandContraband]
+  parent: [BaseWeaponRifle, BaseCentcommContraband]
   id: LPPWeaponRifleLemas
   description: Bullpup rifle made by FRENCH OPZ concern *ugh*. Fires 3 bullets in hyperburst. Uses .20 ammo.
   components:
