@@ -241,10 +241,9 @@
   result: ClothingOuterHardsuitMaxim
   parent: LPPLatheRecipe15Sec
   materials:
-    Plastic: 1000
-    Steel: 2000
+    Steel: 1700
     Plasteel: 200
-    Gold: 800
+    Gold: 150
     Plasma: 1400
     Silver: 800
     Glass: 200
