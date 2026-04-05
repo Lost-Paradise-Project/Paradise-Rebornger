@@ -69,6 +69,7 @@
 - type: latheRecipePack
   id: ScienceBoards
   recipes:
+  - LPPBaseResearchAndDevelopmentPointSourceCircuitboard # LP Edit
   - TurboItemRechargerCircuitboard
   - AutolatheHyperConvectionMachineCircuitboard
   - ProtolatheHyperConvectionMachineCircuitboard

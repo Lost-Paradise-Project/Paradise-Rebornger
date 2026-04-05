@@ -226,7 +226,7 @@
     soundGunshot: null
   - type: RechargeBasicEntityAmmo
     showExamineText: false
-    rechargeCooldown: 0
+    rechargeCooldown: 2
     rechargeSound: null
   - type: BasicEntityAmmoProvider
     proto: MobHivelordBrood

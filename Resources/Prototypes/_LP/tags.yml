@@ -45,3 +45,9 @@
 
 - type: Tag
   id: BlueprintProtolathe
+
+- type: Tag
+  id: BlueprintSpaceForge
+
+- type: Tag
+  id: AnomalyCore

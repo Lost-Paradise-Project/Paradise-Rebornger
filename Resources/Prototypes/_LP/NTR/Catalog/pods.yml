@@ -303,6 +303,26 @@
   - type: SpawnOnDespawn
     prototype: LPPBoxMagazinePistolSubMachineGunUranium
 
+# Machine boards
+
+- type: entity
+  id: LPPSpawnPodCloningPodMachineCircuitboard
+  categories: [ HideSpawnMenu ]
+  name: SpawnCloningPodMachineCircuitboard
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: CloningPodMachineCircuitboard
+
+- type: entity
+  id: LPPSpawnPodCloningConsoleComputerCircuitboard
+  categories: [ HideSpawnMenu ]
+  name: SpawnCloningConsoleComputerCircuitboard
+  parent: SpawnSupplyEmpty
+  components:
+  - type: SpawnOnDespawn
+    prototype: CloningConsoleComputerCircuitboard
+
 # responce teams
 
 - type: entity

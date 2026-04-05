@@ -119,5 +119,25 @@
         amount: 5
         defaultPrototype: Beaker
       BluespaceAnomaly:
-        amount: 1
+        amount: 5
+        defaultPrototype: AnomalyCoreBluespace
+
+- type: entity
+  id: LPPBaseResearchAndDevelopmentPointSourceCircuitboard
+  parent: BaseMachineCircuitboard
+  name: base RnD point source machine board
+  description: A machine printed circuit board for a base RnD point source.
+  components:
+  - type: Sprite
+    state: science
+  - type: MachineBoard
+    prototype: BaseResearchAndDevelopmentPointSource
+    stackRequirements:
+      Manipulator: 15
+    tagRequirements:
+      GlassBeaker:
+        amount: 5
+        defaultPrototype: Beaker
+      AnomalyCore:
+        amount: 10
         defaultPrototype: AnomalyCoreBluespace

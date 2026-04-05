@@ -306,7 +306,7 @@
     sprite: Objects/Specific/Medical/firstaidkits.rsi
     state: blackkit
   cost:
-    NTLoyaltyPoint: 10 # LP Edit 15 -> 10
+    NTLoyaltyPoint: 25 # LP Edit 15 -> 25
   categories:
   - NTRpersonal
   restockTime: 300

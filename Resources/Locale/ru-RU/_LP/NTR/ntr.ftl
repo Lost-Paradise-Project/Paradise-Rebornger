@@ -92,6 +92,14 @@ ntr-executive-box-magazine-pistol-sub-machine-gun-incendiary-desc = Полная
 ntr-executive-box-magazine-pistol-sub-machine-gun-uranium-name = Коробка магазинов для ПП .35 (урановые) авто
 ntr-executive-box-magazine-pistol-sub-machine-gun-uranium-desc = Полная коробка магазинов для ПП с патронами калибра .35 (урановые) авто.
 
+# Machine boards
+
+ntr-executive-cloning-pod = Капсула клонирования
+ntr-executive-cloning-pod-desc = Плата капсулы клонирования, поставка предназначенная для мед блока в критической ситуации.
+
+ntr-executive-cloning-console = Консоль клонирования
+ntr-executive-cloning-console-desc = Плата консоли клонирования, поставка предназначенная для мед блока в критической ситуации.
+
 # Response teams
 
 ntr-executive-ert-standard-name = Вызвать ОБР

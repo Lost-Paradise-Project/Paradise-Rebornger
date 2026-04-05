@@ -1,0 +1,14 @@
+- type: technology
+  id: LPPBaseRnDPointSource
+  name: research-technology-base-rnd-point-source
+  icon:
+    sprite: Structures/Machines/rndpointsource.rsi
+    state: rndpointsource-off
+  discipline: Experimental
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - LPPBaseResearchAndDevelopmentPointSourceCircuitboard
+  position: 9, 24 # LP edit
+  technologyPrerequisites:
+  - AdvancedAnomalyResearch

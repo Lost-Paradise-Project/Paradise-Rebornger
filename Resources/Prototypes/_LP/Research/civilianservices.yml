@@ -21,9 +21,9 @@
   tier: 1
   cost: 5000
   recipeUnlocks:
-  - ClothingOuterHardsuitEVA
-  - ClothingHeadHelmetEVA
-  - ClothingOuterSuitEmergency
+  - LPPClothingOuterHardsuitEVA
+  - LPPClothingHeadHelmetEVA
+  - LPPClothingOuterSuitEmergency
   technologyPrerequisites:
   - LPPSpaceForge
   position: 2, 29 # ВКД
@@ -38,8 +38,8 @@
   tier: 2
   cost: 10000
   recipeUnlocks:
-  - ClothingOuterHardsuitAtmos
-  - ClothingOuterHardsuitEngineering
+  - LPPClothingOuterHardsuitAtmos
+  - LPPClothingOuterHardsuitEngineering
   technologyPrerequisites:
   - LPPEVAHardsuits
   position: 4, 30 # скафы инженеров
@@ -56,7 +56,7 @@
   tier: 2
   cost: 10000
   recipeUnlocks:
-  - ClothingOuterHardsuitSpatio
+  - LPPClothingOuterHardsuitSpatio
   technologyPrerequisites:
   - LPPEVAHardsuits
   position: 1, 30 # базовые шатхтерские скафы
@@ -73,7 +73,7 @@
   tier: 2
   cost: 10000
   recipeUnlocks:
-  - ClothingOuterHardsuitSalvage
+  - LPPClothingOuterHardsuitSalvage
   technologyPrerequisites:
   - LPPBaseMiningHardsuits
   position: 2, 31 # Шахтерские скафы

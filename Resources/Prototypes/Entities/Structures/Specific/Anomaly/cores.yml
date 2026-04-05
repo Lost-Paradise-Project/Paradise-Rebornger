@@ -29,6 +29,7 @@
   - type: Tag
     tags:
     - ForceableFollow
+    - AnomalyCore # LP Edit
   - type: AnomalyCore
     timeToDecay: 600
     startPrice: 10000
@@ -125,6 +126,7 @@
   - type: Tag
     tags:
       - BluespaceAnomaly
+      - AnomalyCore
   # LP Edit End
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/bluespace_core.rsi
@@ -307,6 +309,7 @@
   - type: Tag
     tags:
       - BluespaceAnomaly
+      - AnomalyCore
   # LP Edit End
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/bluespace_core.rsi
