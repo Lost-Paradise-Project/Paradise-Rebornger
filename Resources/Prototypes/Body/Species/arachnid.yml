@@ -148,7 +148,7 @@
   abstract: true
   components:
   - type: Metabolizer
-    metabolizerTypes: [ Arachnid ]
+    metabolizerTypes: [ Arachnid, Animal ] # LP Edit
 
 - type: entity
   parent: OrganArachnid
@@ -246,13 +246,13 @@
   id: OrganArachnidHeart
 
 - type: entity
-  parent: [ OrganBaseStomach, OrganArachnidInternal, OrganAnimalMetabolizer ]
+  parent: [ OrganBaseStomach, OrganArachnidInternal, OrganArachnidMetabolizer ] # LP Edit
   id: OrganArachnidStomach
 
 - type: entity
-  parent: [ OrganBaseLiver, OrganSpriteHumanInternal, OrganArachnidInternal, OrganAnimalMetabolizer ]
+  parent: [ OrganBaseLiver, OrganSpriteHumanInternal, OrganArachnidInternal, OrganArachnidMetabolizer ] # LP Edit
   id: OrganArachnidLiver
 
 - type: entity
-  parent: [ OrganBaseKidneys, OrganSpriteHumanInternal, OrganArachnidInternal, OrganAnimalMetabolizer ]
+  parent: [ OrganBaseKidneys, OrganSpriteHumanInternal, OrganArachnidInternal, OrganArachnidMetabolizer ] # LP Edit
   id: OrganArachnidKidneys
