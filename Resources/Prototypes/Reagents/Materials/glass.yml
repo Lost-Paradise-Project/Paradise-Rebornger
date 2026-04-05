@@ -4,7 +4,7 @@
   name: materials-glass
   icon: { sprite: Objects/Materials/Sheets/glass.rsi, state: glass }
   color: "#a8ccd7"
-  price: 0.35 # $15 for one unit # LP Edit 0.15 -> 0.35
+  price: 0.15 # $15 for one unit
   properties: # FH edit
     electrical: 3
     thermal: 3
@@ -18,7 +18,7 @@
   name: materials-reinforced-glass
   icon: { sprite: Objects/Materials/Sheets/glass.rsi, state: rglass }
   color: "#549bb0"
-  price: 0.425 # 1-0.5 mix of glass and metal. # LP Edit 0.325 -> 0.425
+  price: 0.225 # 1-0.5 mix of glass and metal.
   # Interpolated properties
   properties: # FH edit
     electrical: 3.66
