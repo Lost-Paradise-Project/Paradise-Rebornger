@@ -1,6 +1,7 @@
 - type: entity
   parent: GasCanister
   id: BZCanister
+  name: bz canister
   components:
   - type: Sprite
     sprite: _AruMoon/Structures/Storage/canister.rsi
@@ -39,6 +40,7 @@
     locked: true
 
 - type: entity
+  name: pluoxium canister
   parent: GasCanister
   id: PluoxiumCanister
   components:
@@ -80,6 +82,7 @@
 
 - type: entity
   parent: GasCanister
+  name: hydrogen canister
   id: HydrogenCanister
   components:
   - type: Sprite
@@ -120,6 +123,7 @@
 
 - type: entity
   parent: GasCanister
+  name: nitrium canister
   id: NitriumCanister
   components:
   - type: Sprite
@@ -160,6 +164,7 @@
 
 - type: entity
   parent: GasCanister
+  name: healium canister
   id: HealiumCanister
   components:
   - type: Sprite
@@ -200,6 +205,7 @@
 
 - type: entity
   parent: GasCanister
+  name: hypernoblium canister
   id: HyperNobliumCanister
   components:
   - type: Sprite
@@ -240,6 +246,7 @@
 
 - type: entity
   parent: GasCanister
+  name: proto nitrate canister
   id: ProtoNitrateCanister
   components:
   - type: Sprite
@@ -280,6 +287,7 @@
 
 - type: entity
   parent: GasCanister
+  name: zauker canister
   id: ZaukerCanister
   components:
   - type: Sprite
@@ -320,6 +328,7 @@
 
 - type: entity
   parent: GasCanister
+  name: halon canister
   id: HalonCanister
   components:
   - type: Sprite
@@ -360,6 +369,7 @@
 
 - type: entity
   parent: GasCanister
+  name: helium canister
   id: HeliumCanister
   components:
   - type: Sprite
@@ -400,6 +410,7 @@
 
 - type: entity
   parent: GasCanister
+  name: anti-noblium canister
   id: AntiNobliumCanister
   components:
   - type: Sprite

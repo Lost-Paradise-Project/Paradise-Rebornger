@@ -12,7 +12,7 @@
       required: false
     enum.HumanoidVisualLayers.Snout:
       limit: 1
-      required: true
+      required: false
       default: [ IpcOrangeS ]
     enum.HumanoidVisualLayers.Head:
       limit: 1

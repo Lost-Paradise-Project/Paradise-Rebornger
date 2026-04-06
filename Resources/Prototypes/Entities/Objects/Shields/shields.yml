@@ -541,6 +541,8 @@
     - type: StaticPrice
       price: 350
     # WD EDIT START
+    - type: EmpResistance
+      strengthMultiplier: 0
     - type: Battery
       maxCharge: 300
       startingCharge: 300

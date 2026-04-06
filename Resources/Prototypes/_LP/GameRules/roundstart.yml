@@ -1,0 +1,23 @@
+- type: entityTable
+  id: LPPExtendedBasicGameRulesTable
+  table: !type:AllSelector # we need to pass a list of rules, since rules have further restrictions to consider via StationEventComp
+    children:
+    - !type:NestedSelector
+      tableId: BasicCalmEventsTable
+    - !type:NestedSelector
+      tableId: CargoGiftsTable
+    - !type:NestedSelector
+      tableId: CalmPestEventsTable
+
+- type: entity
+  id: LPPExtendedBasicStationEventScheduler
+  parent: BaseGameRule
+  components:
+  - type: BasicStationEventScheduler
+    scheduledGameRules: !type:NestedSelector
+      tableId: LPPExtendedBasicGameRulesTable
+    # Corvax-MRP-start
+    minMaxEventTiming:
+      min: 420 # 5 mins # C# const- 3
+      max: 900 # 15 mins # C# const- 10
+    # Corvax-MRP-end

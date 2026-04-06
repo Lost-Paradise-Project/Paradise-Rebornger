@@ -1,4 +1,4 @@
-﻿### Loc for the pneumatic cannon.
+### Loc for the pneumatic cannon.
 
 pneumatic-cannon-component-itemslot-name = Gas Tank
 
@@ -17,4 +17,3 @@ pneumatic-cannon-component-change-power = { $power ->
 ## Shown when being stunned by having the power too high.
 
 pneumatic-cannon-component-power-stun = The pure force of { THE($cannon) } knocks you over!
-

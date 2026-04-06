@@ -14,6 +14,6 @@
   - MiningMonitoringComputerCircuitboard
   position: 3, 12 # LP edit
   technologyPrerequisites:
-  - LPPBluespaceMiner # LP Edit
+  - IndustrialEngineering # LP Edit
   radioChannels:
   - Engineering

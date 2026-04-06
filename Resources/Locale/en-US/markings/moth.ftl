@@ -144,7 +144,7 @@ marking-MothChestCharred = Moth Chest (Charred)
 marking-MothHeadCharred-charred_head = Head
 marking-MothHeadCharred = Moth Head (Charred)
 
-marking-MothLLegCharred-charred_l_leg =  Left Leg
+marking-MothLLegCharred-charred_l_leg = Left Leg
 marking-MothLLegCharred = Moth Left Leg (Charred)
 
 marking-MothRLegCharred-charred_r_leg = Right Leg
@@ -221,7 +221,7 @@ marking-MothRArmFirewatch = Moth Right Arm (Firewatch)
 marking-MothChestGothic-gothic_chest = Chest
 marking-MothChestGothic = Moth Chest (Gothic)
 
-marking-MothHeadGothic-gothic_head = Head 
+marking-MothHeadGothic-gothic_head = Head
 marking-MothHeadGothic = Moth Head (Gothic)
 
 marking-MothLLegGothic-gothic_l_leg = Left Leg

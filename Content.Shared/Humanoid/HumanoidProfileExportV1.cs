@@ -99,10 +99,10 @@ public sealed partial class HumanoidCharacterProfileV1
 
     // ADT edit start
     [DataField]
-    public string oocNotes;
+    public string oocNotes = string.Empty;
 
     [DataField]
-    public string headshotUrl;
+    public string headshotUrl = string.Empty;
     // ADT edit end
 
     public HumanoidCharacterProfile ToV2()

@@ -1,0 +1,67 @@
+- type: entity
+  parent: BaseItem
+  id: LPPBaseBlueprintProtolathe
+  name: blueprint
+  description: A blueprint for some machine. It can be inserted into an autolathe.
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Objects/Tools/blueprint.rsi
+    state: icon
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,2,0
+    storedSprite:
+      sprite: Objects/Tools/blueprint.rsi
+      state: storage
+  - type: Blueprint
+  - type: StaticPrice
+    price: 1000
+  - type: Tag
+    tags:
+    - BlueprintProtolathe
+
+- type: entity
+  parent: BaseItem
+  id: LPPBaseBlueprintSpaceForge
+  name: blueprint
+  description: A blueprint for some machine. It can be inserted into an space forge.
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Objects/Tools/blueprint.rsi
+    state: icon
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,2,0
+    storedSprite:
+      sprite: Objects/Tools/blueprint.rsi
+      state: storage
+  - type: Blueprint
+  - type: StaticPrice
+    price: 1000
+  - type: Tag
+    tags:
+    - BlueprintSpaceForge
+
+- type: entity
+  parent: LPPBaseBlueprintProtolathe
+  id: LPPBlueprintBluespaceMiner
+  name: bluespace miner circuitboard blueprint
+  description: A blueprint with a schematic of a bluespace miner circuitboard. It can be inserted into an protolathe.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - LPPBluespaceMinerMachineCircuitboard
+
+- type: entity
+  parent: LPPBaseBlueprintSpaceForge
+  id: LPPBlueprintClothingOuterHardsuitMaxim
+  name: salvager maxim hardsuit blueprint
+  description: A blueprint with a schematic of a salvager maxim hardsuit. It can be inserted into an space forge.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - LPPClothingOuterHardsuitMaxim

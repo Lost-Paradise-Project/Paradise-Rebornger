@@ -91,6 +91,7 @@
   parent: PaperFormCmd
   id: DocStReport
   name: Station Situation Report
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-report-station
@@ -99,6 +100,7 @@
   parent: PaperFormCmd
   id: DocADStatement
   name: Acting Director appointment statement
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-acting-director-statement
@@ -107,6 +109,7 @@
   parent: PaperFormCmd
   id: DocRRTInquiriesAndAppeals
   name: Emergency Response Team Inquiry
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-emergency-response-team-inquiry
@@ -115,6 +118,7 @@
   parent: PaperFormCmd
   id: DocESStatement
   name: Evacuation Shuttle Inquiry
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-evacuation-shuttle-statement
@@ -123,6 +127,7 @@
   parent: PaperFormCmd
   id: DocCCRStatement
   name: Central Command Representative Inquiry
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-cent-comm-representative-statement
@@ -131,6 +136,7 @@
   parent: PaperFormCmd
   id: DocBASStatement
   name: Bluespace Artillery Strike Inquiry
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-bluespace-artillery-strike-statement
@@ -139,6 +145,7 @@
   parent: PaperFormCmd
   id: DocDWReport
   name: Department Work Report
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-department-work-report
@@ -147,6 +154,7 @@
   parent: PaperFormCmd
   id: DocRAOrders
   name: Order for revocation of access
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-revocation-of-access-order
@@ -155,6 +163,7 @@
   parent: PaperFormCmd
   id: DocEWReport
   name: Employer Work report
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-employer-work-report
@@ -163,6 +172,7 @@
   parent: PaperFormCmd
   id: DocDHMReport
   name: Heads of Department Meeting Report
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-department-heads-meeting-report
@@ -171,6 +181,7 @@
   parent: PaperFormCmd
   id: DocPAStatement
   name: Promotion Application Inquiry
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-promotion-application-statement
@@ -179,6 +190,7 @@
   parent: PaperFormCmd
   id: DocJAStatment
   name: Job Application Inquiry
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-job-application-statement
@@ -187,6 +199,7 @@
   parent: PaperFormCmd
   id: DocJRStatment
   name: Job Resignation Inquiry
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-job-resignation-statement
@@ -195,6 +208,7 @@
   parent: PaperFormCmd
   id: DocAAStatement
   name: Application for Access Inquiry
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-application-for-access-statment
@@ -203,6 +217,7 @@
   parent: PaperFormCmd
   id: DocJRSOrder
   name: Job Resignation Order
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-job-resignation-order
@@ -211,6 +226,7 @@
   parent: PaperFormCmd
   id: DocROrder
   name: Order to reward
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-reward-order
@@ -219,6 +235,7 @@
   parent: PaperFormCmd
   id: DocCPDStatements
   name: Certificate of Professional Development Statement
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-certificate-of-professional-development-statement
@@ -227,6 +244,7 @@
   parent: PaperFormCmd
   id: DocAFEStatements
   name: Application for Equipment Statement
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-application-for-equipment-statement
@@ -235,6 +253,7 @@
   parent: PaperFormCmd
   id: DocPFEPermissions
   name: Permission for Equipment
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-permission-for-equipment
@@ -243,6 +262,7 @@
   parent: PaperFormCmd
   id: DocAmenstyStatements
   name: Amnesty Statement
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-amensty-statement
@@ -251,6 +271,7 @@
   parent: PaperFormLaw
   id: DocVOLOComplaints
   name: Violation of Labor Order Complaints
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-violation-of-the-labor-order-complaintst
@@ -259,6 +280,7 @@
   parent: PaperFormLaw
   id: DocIAAReport
   name: Internal Affairs Agent Report
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-internal-affairs-agent-report
@@ -267,6 +289,7 @@
   parent: PaperFormLaw
   id: DocIFRLDInquiriesAndAppeals
   name: Inquiry for Removal of Legal Defense
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-inquiry-for-remove-legal-defense
@@ -275,6 +298,7 @@
   parent: PaperFormLaw
   id: DocCTOrder
   name: Conduct Trial Order
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-conduct-trial-order
@@ -283,6 +307,7 @@
   parent: PaperFormLaw
   id: DocParoleInquiriesAndAppeals
   name: Parole Inquiry
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-parole-inquiry
@@ -291,6 +316,7 @@
   parent: PaperFormLaw
   id: DocROCStatement
   name: Reconsideration of Case Statement
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-reconsideration-of-the-case-statement
@@ -299,6 +325,7 @@
   parent: PaperFormLaw
   id: DocCTWStatement
   name: Calling the Witness Statement
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-calling-the-witness-statement
@@ -307,6 +334,7 @@
   parent: PaperFormLaw
   id: DocInquiriesAndAppeals
   name: Document Inquiry
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-document-inquiry
@@ -315,6 +343,7 @@
   parent: PaperFormLaw
   id: DocRILDOrder
   name: Remove or Impose Legal Defense Order
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-remove-or-impose-legal-defense-order
@@ -323,6 +352,7 @@
   parent: PaperFormLaw
   id: DocCVConclusionsAndDecisions
   name: Court Verdict
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-court-verdict
@@ -331,6 +361,7 @@
   parent: PaperFormLaw
   id: DocBIRStatement
   name: Bill Initiation Request
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-bill-initiation-request
@@ -339,6 +370,7 @@
   parent: PaperFormLaw
   id: DocBIOrder
   name: Bill Integration Order
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-bill-integration-order
@@ -347,6 +379,7 @@
   parent: PaperFormLaw
   id: DocAdjustmentOrder
   name: Adjustment in Order
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-adjustment-in-order
@@ -355,6 +388,7 @@
   parent: PaperFormSec
   id: DocCAOComplaints
   name: Complaint About Offense
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-complaint-about-offense
@@ -363,6 +397,7 @@
   parent: PaperFormSec
   id: DocATWOrder
   name: Appointment of Temporary Warden
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-appointment-of-temporary-warden
@@ -371,6 +406,7 @@
   parent: PaperFormSec
   id: DocDutyOrder
   name: Duty Order
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-duty-order
@@ -379,6 +415,7 @@
   parent: PaperFormSec
   id: DocPFSDWPermissions
   name: Permission for Self Defense Weapon
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-permission-for-self-defense-weapon
@@ -387,6 +424,7 @@
   parent: PaperFormSec
   id: DocILOAReport
   name: Inventory List of Arsenal
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-inventory-list-of-arsenal
@@ -395,6 +433,7 @@
   parent: PaperFormSec
   id: DocIReport
   name: Investigation Report
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-investigation-report
@@ -403,6 +442,7 @@
   parent: PaperFormSec
   id: DocVerdictConclusionsAndDecisions
   name: Verdict
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-verdict
@@ -411,6 +451,7 @@
   parent: PaperFormSec
   id: DocCOOReport
   name: Certificate of Offense
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-certificate-of-offense
@@ -419,6 +460,7 @@
   parent: PaperFormSec
   id: DocSWPermission
   name: Search Warrant Permission
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-search-warrant-permission
@@ -427,6 +469,7 @@
   parent: PaperFormSec
   id: DocWAPermission
   name: Warrant Arrest Permission
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-warrant-arrest-permission
@@ -435,6 +478,7 @@
   parent: PaperFormSec
   id: DocPPOrder
   name: Prisoner Parole Order
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-prisoner-parole-order
@@ -443,6 +487,7 @@
   parent: PaperFormSec
   id: DocMIOrder
   name: Medical Intervention Order
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-medical-intervention-order
@@ -451,6 +496,7 @@
   parent: PaperFormMed
   id: DocProductionInquiriesAndAppeals
   name: Medical Production Request
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-medical-prosuction-request
@@ -459,6 +505,7 @@
   parent: PaperFormMed
   id: DocCMIOrder
   name: Compulsory Medical Intervention Order
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-compulsory-medical-intervention-order
@@ -467,6 +514,7 @@
   parent: PaperFormMed
   id: DocCMIReport
   name: Compulsory Medical Intervention Report
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-compulsory-medical-intervention-report
@@ -475,6 +523,7 @@
   parent: PaperFormMed
   id: DocPSReport
   name: Psychological Status Report
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-psychological-status-report
@@ -483,6 +532,7 @@
   parent: PaperFormMed
   id: DocAFPDPermission
   name: Authorization for Prescription Drug
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-authorization-for-a-prescription-drug
@@ -491,6 +541,7 @@
   parent: PaperFormMed
   id: DocSHReport
   name: Conclusion on State of Health
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-conclusion-on-the-state-of-health
@@ -499,6 +550,7 @@
   parent: PaperFormMed
   id: DocMDDOrder
   name: List of Medical Department Duties
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-list-of-medical-department-duties
@@ -507,6 +559,7 @@
   parent: PaperFormMed
   id: DocEuthanasiaInquiriesAndAppeals
   name: Euthanasia Inquiry
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-euthanasia-inquiry
@@ -515,6 +568,7 @@
   parent: PaperFormMed
   id: DocDeathReport
   name: Death Certificate
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-death-certificate
@@ -523,6 +577,7 @@
   parent: PaperFormMed
   id: DocBDPermission
   name: Permission to Dispose of Body
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-permission-to-dispose-of-the-body
@@ -531,6 +586,7 @@
   parent: PaperFormMed
   id: DocInfectionReport
   name: Evidence of Infection
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-evidence-of-infection
@@ -539,6 +595,7 @@
   parent: PaperFormMed
   id: DocQuarantineOrder
   name: Quarantine Order
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-quarantine-order
@@ -547,6 +604,7 @@
   parent: PaperFormMed
   id: DocEpidemiologicalReport
   name: Epidemiological Conclusion
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-epidemiological-conclusion
@@ -555,6 +613,7 @@
   parent: PaperFormEng
   id: DocEPPInquiriesAndAppeals
   name: Engineer Product Production Inquiry
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-engeneer-product-production-inquiry
@@ -563,6 +622,7 @@
   parent: PaperFormEng
   id: DocLEDReport
   name: List of Engineer Duties
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-list-of-engeneer-duties
@@ -571,6 +631,7 @@
   parent: PaperFormEng
   id: DocBuildingPermission
   name: Building Permission
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-building-permission
@@ -579,6 +640,7 @@
   parent: PaperFormEng
   id: DocTCReport
   name: Technical Condition Report
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-technical-condition-report
@@ -587,6 +649,7 @@
   parent: PaperFormEng
   id: DocRCWInquiriesAndAppeals
   name: Construction Work Request
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-construction-work-request
@@ -595,6 +658,7 @@
   parent: PaperFormSci
   id: DocPPInquiriesAndAppeals
   name: Science Product Request
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-science-product-request
@@ -603,6 +667,7 @@
   parent: PaperFormSci
   id: DocOSReport
   name: Object Study Report
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-object-study-report
@@ -611,6 +676,7 @@
   parent: PaperFormSci
   id: DocExperimentReport
   name: Experiment Report
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-experiment-report
@@ -619,6 +685,7 @@
   parent: PaperFormSci
   id: DocExpeditionReport
   name: Expedition Report
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-expedition-report
@@ -627,6 +694,7 @@
   parent: PaperFormSci
   id: DocADReport
   name: Anomaly Documentation
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-anomaly-documentation
@@ -635,6 +703,7 @@
   parent: PaperFormSci
   id: DocRRBOrder
   name: Recognizing Reasonableness of Being Order
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-recognizing-the-reasonableness-of-a-being-order
@@ -643,6 +712,7 @@
   parent: PaperFormSci
   id: DocLOSDReport
   name: List of Scientists Duties
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-list-of-scientists-duties
@@ -651,6 +721,7 @@
   parent: PaperFormCargo
   id: DocDisposalReport
   name: Disposal Report
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-disposal-report
@@ -659,6 +730,7 @@
   parent: PaperFormCargo
   id: DocExpeditionPermission
   name: Cargo Permission to Expedition
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-cargo-permission-to-an-expedition
@@ -667,6 +739,7 @@
   parent: PaperFormCargo
   id: DocPOInquiriesAndAppeals
   name: Purchase Order
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-purchase-order
@@ -675,6 +748,7 @@
   parent: PaperFormCC
   id: DocEvacOrder
   name: Evacuation Order
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-evacuation-order
@@ -683,6 +757,7 @@
   parent: PaperFormCC
   id: DocSGOrder
   name: Station Goal Order
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-station-goal-order
@@ -691,6 +766,7 @@
   parent: PaperFormCC
   id: DocSSROrder
   name: Station Situation Report Order
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-station-situation-report-order
@@ -699,6 +775,7 @@
   parent: PaperFormCC
   id: DocAOHInquiriesAndAppeals
   name: Decree on Availability of Headers
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-decree-on-the-availability-of-headers
@@ -707,6 +784,7 @@
   parent: PaperFormCC
   id: DocExecutiveOrder
   name: Executive Order
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-executive-order
@@ -715,6 +793,7 @@
   parent: PaperFormCC
   id: DocDeliveryOrder
   name: Delivery Order
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-delivery-order
@@ -723,6 +802,7 @@
   parent: PaperFormCC
   id: DocCCReport
   name: Central Command Report
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-cent-comm-report
@@ -731,6 +811,7 @@
   parent: PaperFormCC
   id: DocCCFMReport
   name: Central Command Fire Mission Report
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-cent-comm-fire-mission-report
@@ -739,6 +820,7 @@
   parent: PaperFormCC
   id: DocOperationOrder
   name: Operation Order
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-operation-order
@@ -747,6 +829,7 @@
   parent: PaperFormCC
   id: DocOperationReport
   name: Operation Report
+  suffix: Form
   components:
   - type: Paper
     content: doc-text-printer-operation-report

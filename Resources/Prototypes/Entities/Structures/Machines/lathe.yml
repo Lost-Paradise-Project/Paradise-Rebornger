@@ -235,6 +235,20 @@
     - SecurityExplosives
     - SecurityEquipment
     - SecurityWeapons
+  # LP Edit Start
+  - type: BlueprintReceiver
+    whitelist:
+      tags:
+      - BlueprintProtolathe
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      blueprint: !type:Container
+  - type: EmptyOnMachineDeconstruct
+    containers:
+    - blueprint
+  # LP Edit End
 
 - type: entity
   id: ProtolatheHyperConvection
@@ -414,7 +428,10 @@
     - SecurityAmmoStatic
     - SecurityWeaponsStatic
     dynamicPacks:
-    - LPPGrenadeLauncherSec # LP Edit
+    # LP Edit Start
+    - LPPGrenadeLauncherSec
+    - ScienceClothing
+    # LP Edit End
     - SalvageSecurityBoards
     - SalvageSecurityWeapons
     - SecurityEquipment
@@ -501,6 +518,10 @@
     - EmptyMedkitsStatic
     - SurgeryStatic
     dynamicPacks:
+    # LP Edit Start
+    - ScienceClothing
+    - MedicalBoards
+    # LP Edit End
     - Chemistry
     - LPPExperimentalRPLD # LP edit
   - type: Machine
@@ -642,7 +663,6 @@
       idleState: icon
       runningState: building
       defaultProductionAmount: 10
-      outputToStorage: true # Goob edit
       staticPacks:
       - OreSmelting
       - RGlassSmelting

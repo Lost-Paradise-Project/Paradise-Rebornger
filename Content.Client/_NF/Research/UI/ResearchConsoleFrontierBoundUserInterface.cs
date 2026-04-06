@@ -103,10 +103,10 @@ public sealed class ResearchConsoleFrontierBoundUserInterface : BoundUserInterfa
             return;
         }
 
-        _sawmill.Debug($"Updating UI state with {castState.Points} points and {castState.Researches.Count} technologies");
+        // _sawmill.Debug($"Updating UI state with {castState.Points} points and {castState.Researches.Count} technologies"); // LP Edit
 
         var availableTechs = castState.Researches.Count(t => t.Value == ResearchAvailability.Available);
-        _sawmill.Debug($"Available technologies: {availableTechs}");
+        // _sawmill.Debug($"Available technologies: {availableTechs}"); // LP Edit
 
         if (!_consoleMenu.List.SequenceEqual(castState.Researches))
         {

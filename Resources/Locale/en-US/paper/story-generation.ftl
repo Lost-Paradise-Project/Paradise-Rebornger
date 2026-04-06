@@ -8,8 +8,8 @@ story-gen-book-type7 = tome
 story-gen-book-type8 = journal
 story-gen-book-type9 = archives
 story-gen-book-type10= codex
-story-gen-book-type11= memories
-story-gen-book-type12= compendium
+story-gen-book-type11 = memories
+story-gen-book-type12 = compendium
 
 story-gen-book-genre1 = work of crime fiction
 story-gen-book-genre2 = comedy
@@ -21,10 +21,10 @@ story-gen-book-genre7 = work of science-fiction
 story-gen-book-genre8 = fantasy story
 story-gen-book-genre9 = romance
 story-gen-book-genre10= thriller
-story-gen-book-genre11= work of historical fiction
-story-gen-book-genre12= biography
-story-gen-book-genre13= adventure story
-story-gen-book-genre14= drama
+story-gen-book-genre11 = work of historical fiction
+story-gen-book-genre12 = biography
+story-gen-book-genre13 = adventure story
+story-gen-book-genre14 = drama
 
 story-gen-book-appearance1 = ancient
 story-gen-book-appearance2 = shabby
@@ -36,23 +36,23 @@ story-gen-book-appearance7 = dusty
 story-gen-book-appearance8 = scary
 story-gen-book-appearance9 = bloody
 story-gen-book-appearance10= bright
-story-gen-book-appearance11= dubious
-story-gen-book-appearance12= intriguing
-story-gen-book-appearance13= ugly
-story-gen-book-appearance14= crooked
-story-gen-book-appearance15= crumpled
-story-gen-book-appearance16= dirty
-story-gen-book-appearance17= elegant
-story-gen-book-appearance18= ornate
-story-gen-book-appearance19= weathered
+story-gen-book-appearance11 = dubious
+story-gen-book-appearance12 = intriguing
+story-gen-book-appearance13 = ugly
+story-gen-book-appearance14 = crooked
+story-gen-book-appearance15 = crumpled
+story-gen-book-appearance16 = dirty
+story-gen-book-appearance17 = elegant
+story-gen-book-appearance18 = ornate
+story-gen-book-appearance19 = weathered
 story-gen-book-appearance20= crisp
-story-gen-book-appearance21= lavish
-story-gen-book-appearance22= tattered
-story-gen-book-appearance23= polished
-story-gen-book-appearance24= embossed
-story-gen-book-appearance25= mismatched
-story-gen-book-appearance26= gilded
-story-gen-book-appearance27= strange
+story-gen-book-appearance21 = lavish
+story-gen-book-appearance22 = tattered
+story-gen-book-appearance23 = polished
+story-gen-book-appearance24 = embossed
+story-gen-book-appearance25 = mismatched
+story-gen-book-appearance26 = gilded
+story-gen-book-appearance27 = strange
 
 story-gen-book-character1 = clown
 story-gen-book-character2 = mime
@@ -230,15 +230,3 @@ story-gen-book-element-trait10 = interesting
 story-gen-book-element-trait11 = inadequate
 story-gen-book-element-trait12 = sad
 story-gen-book-element-trait13 = rather depressing
-
-
-
-
-
-
-
-
-
-
-
-

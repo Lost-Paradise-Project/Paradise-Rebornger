@@ -7,4 +7,3 @@ access-overrider-window-missing-privileges = Access to this device cannot be mod
 access-overrider-window-missing-privileges-no-id = Access to this device cannot be modified. Missing the following privileges:
 access-overrider-cannot-modify-access = You do not have sufficient privileges to modify this device!
 access-overrider-out-of-range = The connected device is too far away
-

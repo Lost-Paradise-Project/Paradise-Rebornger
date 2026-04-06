@@ -201,15 +201,19 @@
     highPressureMultiplier: 0.02
     lowPressureMultiplier: 1000
   - type: ClothingSpeedModifier
-    walkModifier: 1.0
-    sprintModifier: 1.0
+#LP edit start
+    walkModifier: 0.8
+    sprintModifier: 0.8
+#LP edit end
   - type: Armor
     modifiers:
       coefficients:
+#LP edit start
         Blunt: 0.6
         Slash: 0.6
-        Piercing: 0.5
-        Heat: 0.3
+        Piercing: 0.6
+        Heat: 0.85
+#LP edit end
         Radiation: 0.1
   - type: ExplosionResistance
     damageCoefficient: 0.2

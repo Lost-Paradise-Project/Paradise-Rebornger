@@ -4,6 +4,11 @@
   name: R&D server
   description: Contains the collective knowledge of the station's scientists. Destroying it would send them back to the stone age. You don't want that do you?
   components:
+  # LP Edit Start
+  - type: ResearchPointSource
+    pointspersecond: 5
+    active: true
+  # LP Edit End
   - type: Sprite
     sprite: Structures/Machines/server.rsi
     snapCardinals: true
@@ -23,6 +28,7 @@
     color: "#b211b2"
   - type: LitOnPowered
   - type: ResearchServer
+  - type: ResearchClient # LP Edit
   - type: TechnologyDatabase
     supportedDisciplines:
     - Industrial
@@ -78,10 +84,18 @@
 
 - type: entity
   id: BaseResearchAndDevelopmentPointSource
-  parent: BaseMachinePowered
+  parent: [BaseMachinePowered, ConstructibleMachine] # LP Edit
   name: "base R&D point source"
   # We should make this abstract once there are actual point sources.
   components:
+  # LP Edit Start
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+  - type: Machine
+    board: LPPBaseResearchAndDevelopmentPointSourceCircuitboard
+  # LP Edit End
   - type: Sprite
     sprite: Structures/Machines/rndpointsource.rsi
     layers:
@@ -91,7 +105,7 @@
       map: ["enum.PowerDeviceVisualLayers.Powered"]
   - type: ResearchClient
   - type: ResearchPointSource
-    pointspersecond: 25
+    pointspersecond: 15 # LP Edit 25 -> 15
     active: true
   - type: PointLight
     radius: 1.5

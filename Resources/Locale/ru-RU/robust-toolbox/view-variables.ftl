@@ -11,22 +11,23 @@ view-variable-instance-entity-server-components-search-bar-placeholder = Пои�
 view-variable-instance-entity-add-window-server-components = Добавить компонент [Сервер]
 view-variable-instance-entity-add-window-client-components = Добавить компонен [Клиент]
 
-## SoundSpecifier
 
-vv-sound-none = None
-vv-sound-path = Path
-vv-sound-collection = Collection
-vv-sound-volume = volume
-vv-sound-pitch = Pitch
-vv-sound-max-distance = Max Distance
-vv-sound-rolloff-factor = Rolloff Factor
-vv-sound-reference-distance = Reference Distance
-vv-sound-loop = Loop
-vv-sound-play-offset = Play Offset (s)
-vv-sound-variation = Pitch variation
+## SoundSpecifier
+vv-sound-none = Нет
+vv-sound-path = Путь
+vv-sound-collection = Коллекция
+
+vv-sound-volume = Громкость
+vv-sound-pitch = Высота звука
+vv-sound-max-distance = Макс. дистанция
+vv-sound-rolloff-factor = Коэффициент затухания
+vv-sound-reference-distance = Эталонная дистанция
+vv-sound-loop = Зацикливание
+vv-sound-play-offset = Смещение воспроизведения (с)
+vv-sound-variation = Вариация высоты звука
+
 
 ## ProtoId
-
-vv-protoid-id-placeholder = Prototype ID
-vv-protoid-select-button-label = Select
-vv-protoid-addwindow-title = Set Prototype
+vv-protoid-id-placeholder = ID прототипа
+vv-protoid-select-button-label = Выбрать
+vv-protoid-addwindow-title = Установить прототип

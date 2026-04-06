@@ -3,6 +3,7 @@ research-discipline-industrial = Промышленность
 research-discipline-arsenal = Арсенал
 research-discipline-experimental = Экспериментальное
 research-discipline-civilian-services = Обслуживание персонала
+
 research-technology-fulton = Фултоны
 research-technology-salvage-equipment = Снаряжение для утилизации
 research-technology-advanced-powercells = Продвинутые батареи
@@ -20,6 +21,7 @@ research-technology-bluespace-storage = Блюспейс-хранилище
 research-technology-optimized-microgalvanism = Оптимизированный микрогальванизм
 research-technology-space-scanning = Сканирование космоса
 research-technology-excavation = Массовые раскопки
+
 research-technology-salvage-weapons = Утилизаторское оружие
 research-technology-draconic-munitions = Драконьи боеприпасы
 research-technology-uranium-munitions = Урановые боеприпасы
@@ -38,6 +40,7 @@ research-technology-basic-shuttle-armament = Базовое корабельно
 research-technology-advanced-shuttle-weapon = Продвинутое корабельное оружие
 research-technology-thermal-weaponry = Термальное вооружение
 research-technology-dual-wielding-technology = Технология двойного оперирования
+
 research-technology-basic-robotics = Основы робототехники
 research-technology-basic-anomalous-research = Основы исследования аномалий
 research-technology-basic-xenoarcheology = Основы ксеноархеологии
@@ -53,6 +56,7 @@ research-technology-advanced-anomaly-research = Продвинутое изуч�
 research-technology-rped = Быстрая замена компонентов
 research-technology-super-parts = Суперкомпоненты
 research-technology-deterrence = Технология сдерживания
+
 research-technology-janitorial-equipment = Уборочное оборудование
 research-technology-laundry-tech = Прачечная технология
 research-technology-basic-hydroponics = Основы гидропоники

@@ -1,4 +1,4 @@
-# Имена
+# Names
 chat-emote-name-scream = Кричать
 chat-emote-name-laugh = Смеяться
 chat-emote-name-honk = Хонк
@@ -38,7 +38,8 @@ chat-emote-name-whine = Скулить
 chat-emote-name-howl = Выть
 chat-emote-name-growl = Рычать
 chat-emote-name-flap = Хлопать крыльями
-# Сообщение
+
+# Message
 chat-emote-msg-scream = кричит!
 chat-emote-msg-laugh = смеётся.
 chat-emote-msg-honk = хонкает.
@@ -48,15 +49,15 @@ chat-emote-msg-crying = плачет.
 chat-emote-msg-squish = хлюпает.
 chat-emote-msg-chitter = щебечет.
 chat-emote-msg-squeak = пищит.
-chat-emote-msg-thump = стучит своим хвостом.
+chat-emote-msg-thump = { POSS-ADJ($entity) } стучит своим хвостом.
 chat-emote-msg-click = клацает.
 chat-emote-msg-clap = хлопает!
-chat-emote-msg-clap-single = делает одиночный хлопок.
-chat-emote-msg-snap = щёлкает пальцами.
+chat-emote-msg-clap-single = { POSS-ADJ($entity) } делает одиночный хлопок.
+chat-emote-msg-snap = { POSS-ADJ($entity) } щёлкает пальцами.
 chat-emote-msg-salute = салютует.
 chat-emote-msg-gasp = задыхается.
 chat-emote-msg-deathgasp = замирает и бездыханно оседает, { POSS-ADJ($entity) } глаза мертвы и безжизненны...
-chat-emote-msg-deathgasp-monkey = издаёт слабый взвизг, оседает и замирает...
+chat-emote-msg-deathgasp-monkey = { POSS-ADJ($entity) } издаёт слабый взвизг, оседает и замирает...
 chat-emote-msg-deathgasp-scurret = издаёт последний "ва" и замирает...
 chat-emote-msg-buzz = жужжит!
 chat-emote-msg-weh = вехает!

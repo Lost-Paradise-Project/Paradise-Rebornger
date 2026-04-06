@@ -1,10 +1,4 @@
 - type: loadout
-  id: LPBraAlt
-  equipment:
-    breast: LPPBraAlt
-  groupBy: "bra_alt"
-
-- type: loadout
   id: LPBraBlack
   equipment:
     breast: LPPBraBlack

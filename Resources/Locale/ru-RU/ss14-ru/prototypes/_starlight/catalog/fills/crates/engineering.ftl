@@ -1,2 +1,3 @@
 ent-CrateRPD = ящик РСУАП
     .desc = Ящик, содержащий одно ручное строительное устройство атмосферного предназначения.
+    .suffix = { ent-CrateEngineeringSecure.suffix }

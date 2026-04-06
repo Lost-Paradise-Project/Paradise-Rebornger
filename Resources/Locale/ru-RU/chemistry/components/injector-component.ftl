@@ -1,10 +1,8 @@
 ## UI
 
-injector-volume-transfer-label =
-    Объем: [color=white]{ $currentVolume }/{ $totalVolume }ед.[/color]
+injector-volume-transfer-label = Объем: [color=white]{ $currentVolume }/{ $totalVolume }ед.[/color]
     Режим: [color=white]{ $modeString }[/color] ([color=white]{ $transferVolume }ед.[/color])
-injector-volume-label =
-    Объем: [color=white]{ $currentVolume }/{ $totalVolume }ед.[/color]
+injector-volume-label = Объем: [color=white]{ $currentVolume }/{ $totalVolume }ед.[/color]
     Режим: [color=white]{ $modeString }[/color]
 injector-toggle-verb-text = Переключить режим Инъектора
 
@@ -51,5 +49,4 @@ injector-component-spray-injecting-user = Вы начинаете вводить
 injector-component-spray-injecting-target = { CAPITALIZE($user) } начинает вводить содержимое инъектора в вас!
 
 ## Target Popup Success messages
-
 injector-component-feel-prick-message = Вы чувствуете легкий укол!

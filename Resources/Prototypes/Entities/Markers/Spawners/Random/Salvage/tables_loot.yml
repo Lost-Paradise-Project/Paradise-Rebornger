@@ -256,6 +256,10 @@
   id: SalvageEquipmentLegendary
   table: !type:GroupSelector
     children:
+    # LP Edit Start
+    - id: LPPBlueprintBluespaceMiner
+    - id: LPPBlueprintClothingOuterHardsuitMaxim
+    # LP Edit End
     - id: AdvancedMineralScanner
     - id: BlueprintFulton
     - id: BlueprintSeismicCharge

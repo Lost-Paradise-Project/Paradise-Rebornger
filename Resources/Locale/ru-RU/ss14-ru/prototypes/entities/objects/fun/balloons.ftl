@@ -1,4 +1,4 @@
-ent-BaseBalloon = воздушный шарик
+ent-BaseBalloon = { ent-BaseItem }
     .desc = { ent-BaseItem.desc }
 ent-BalloonSyn = шарик Синдиката
     .desc = Раздавался самым смелым душам, выжившим на аттракционе «Атомный смерч» в Синдиленде.

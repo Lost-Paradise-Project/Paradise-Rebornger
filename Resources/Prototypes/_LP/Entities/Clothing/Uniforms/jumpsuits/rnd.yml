@@ -21,28 +21,15 @@
     sprite: _LP/Clothing/Uniforms/rnd/gorka_rnd.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: LPPClothingUniformJumpsuitGorkaReflBase
   id: LPPClothingUniformJumpsuitScienceGorkaRefl
   name: Gorka with reflectors Science # Горка с отражателями
   description:
   components:
   - type: Sprite
     sprite: _LP/Clothing/Uniforms/rnd/gorka_rnd_varg.rsi
-    layers:
-    - state: icon
-    - state: icon-unshaded
-      shader: shaded
-    - state: icon-unshaded
-      shader: unshaded
   - type: Clothing
     sprite: _LP/Clothing/Uniforms/rnd/gorka_rnd_varg.rsi
-    clothingVisuals:
-      jumpsuit:
-      - state: equipped-INNERCLOTHING
-      - state: equipped-INNERCLOTHING-unshaded
-        shader: shaded
-      - state: equipped-INNERCLOTHING-unshaded
-        shader: unshaded
 
 - type: entity
   parent: ClothingUniformBase

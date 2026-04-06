@@ -1,0 +1,6 @@
+- type: marking
+  id: LPPHumanHairAki
+  bodyPart: Hair
+  sprites:
+    - sprite: _LP/Mobs/Customization/human_hair.rsi
+      state: aki

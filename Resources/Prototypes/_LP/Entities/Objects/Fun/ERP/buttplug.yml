@@ -21,7 +21,6 @@
   name: Medium green buttplug
   id: LPPMedGreenButtplug
   parent: LPPBigGreenButtplug
-  description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Buttplug/MGreen.rsi
@@ -35,7 +34,6 @@
   name: Small green buttplug
   id: LPPSmallGreenButtplug
   parent: LPPBigGreenButtplug
-  description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Buttplug/SGreen.rsi
@@ -49,7 +47,6 @@
   name: big metal buttplug
   id: LPPBigmetalButtplug
   parent: LPPBigGreenButtplug
-  description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Buttplug/BMetal.rsi
@@ -63,7 +60,6 @@
   name: Medium metal buttplug
   id: LPPMedmetalButtplug
   parent: LPPBigGreenButtplug
-  description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Buttplug/MMetal.rsi
@@ -77,7 +73,6 @@
   name: Small metal buttplug
   id: LPPSmallmetalButtplug
   parent: LPPBigGreenButtplug
-  description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Buttplug/SMetal.rsi
@@ -91,7 +86,6 @@
   name: big pink buttplug
   id: LPPBigpinkButtplug
   parent: LPPBigGreenButtplug
-  description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Buttplug/BPink.rsi
@@ -105,7 +99,6 @@
   name: Medium pink buttplug
   id: LPPMedpinkButtplug
   parent: LPPBigGreenButtplug
-  description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Buttplug/MPink.rsi
@@ -119,7 +112,6 @@
   name: Small pink buttplug
   id: LPPSmallpinkButtplug
   parent: LPPBigGreenButtplug
-  description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Buttplug/SPink.rsi
@@ -133,7 +125,6 @@
   name: big tail buttplug
   id: LPPBigtailButtplug
   parent: LPPBigGreenButtplug
-  description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
     sprite: _LP/Clothing/Underwear/buttplugtail/big.rsi
@@ -147,7 +138,6 @@
   name: Medium tail buttplug
   id: LPPMedtailButtplug
   parent: LPPBigGreenButtplug
-  description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
     sprite: _LP/Clothing/Underwear/buttplugtail/medium.rsi
@@ -161,7 +151,6 @@
   name: Small tail buttplug
   id: LPPSmalltailButtplug
   parent: LPPBigGreenButtplug
-  description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
     sprite: _LP/Clothing/Underwear/buttplugtail/small.rsi
@@ -175,7 +164,6 @@
   name: big teal buttplug
   id: LPPBigtealButtplug
   parent: LPPBigGreenButtplug
-  description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Buttplug/BTeal.rsi
@@ -189,7 +177,6 @@
   name: Medium teal buttplug
   id: LPPMedtealButtplug
   parent: LPPBigGreenButtplug
-  description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Buttplug/MTeal.rsi
@@ -203,7 +190,6 @@
   name: Small teal buttplug
   id: LPPSmalltealButtplug
   parent: LPPBigGreenButtplug
-  description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Buttplug/STeal.rsi
@@ -217,7 +203,6 @@
   name: big yellow buttplug
   id: LPPBigyellowButtplug
   parent: LPPBigGreenButtplug
-  description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Buttplug/BYellow.rsi
@@ -231,7 +216,6 @@
   name: Medium yellow buttplug
   id: LPPMedyellowButtplug
   parent: LPPBigGreenButtplug
-  description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Buttplug/MYellow.rsi
@@ -245,7 +229,6 @@
   name: Small yellow buttplug
   id: LPPSmallyellowButtplug
   parent: LPPBigGreenButtplug
-  description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
     sprite: _LP/Objects/Fun/ERP/Buttplug/SYellow.rsi

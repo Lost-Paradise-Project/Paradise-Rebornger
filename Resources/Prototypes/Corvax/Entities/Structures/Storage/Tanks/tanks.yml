@@ -1,6 +1,7 @@
 # Kvass
 - type: entity
   id: KvassTank
+  name: Kvass Tank
   parent: StorageTank
   suffix: Empty
   components:

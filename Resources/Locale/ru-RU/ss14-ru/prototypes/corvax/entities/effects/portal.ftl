@@ -1,8 +1,8 @@
 ent-PortalGate = { ent-BasePortal }
     .desc = { ent-BasePortal.desc }
-ent-PortalRedAdmemeCNInvisible = { ent-PortalGate }
+ent-PortalRedAdmemeCNInvisible = блюспейс портал
+    .desc = { ent-MarkerBase.desc }
     .suffix = АДМЕМЫ, Невидимый
-    .desc = { ent-PortalGate.desc }
-ent-PortalBlueAdmemeCNInvisible = { ent-PortalGate }
+ent-PortalBlueAdmemeCNInvisible = блюспейс портал
+    .desc = { ent-PortalRedAdmemeCNInvisible.desc }
     .suffix = АДМЕМЫ, Невидимый
-    .desc = { ent-PortalGate.desc }

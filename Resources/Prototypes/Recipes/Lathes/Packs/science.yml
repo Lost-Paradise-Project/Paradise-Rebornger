@@ -69,6 +69,7 @@
 - type: latheRecipePack
   id: ScienceBoards
   recipes:
+  - LPPBaseResearchAndDevelopmentPointSourceCircuitboard # LP Edit
   - TurboItemRechargerCircuitboard
   - AutolatheHyperConvectionMachineCircuitboard
   - ProtolatheHyperConvectionMachineCircuitboard
@@ -84,7 +85,6 @@
   - APECircuitboard
   - ArtifactAnalyzerMachineCircuitboard
   - ArtifactCrusherMachineCircuitboard
-  - LPPBluespaceMinerMachineCircuitboard # LP Edit
 
 - type: latheRecipePack
   id: CameraBoards

@@ -539,6 +539,44 @@
   resetRestockOnPurchase: true
   restockAfterPurchase: 600
 
+# Machine boards
+
+- type: listing
+  id: NTRExecutiveCloningPodMachineCircuitboard
+  name: ntr-executive-cloning-pod
+  description: ntr-executive-cloning-pod-desc
+  productEntity: LPPSpawnPodCloningPodMachineCircuitboard
+  icon:
+    sprite: Structures/Machines/cloning.rsi
+    state: pod_0
+  cost:
+    NTLoyaltyPoint: 35
+  categories:
+  - NTRBoards
+  restockTime: 300
+  resetRestockOnPurchase: false
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
+- type: listing
+  id: NTRExecutiveCloningConsoleComputerCircuitboard
+  name: ntr-executive-cloning-console
+  description: ntr-executive-cloning-console-desc
+  productEntity: LPPSpawnPodCloningConsoleComputerCircuitboard
+  icon:
+    sprite: Structures/Machines/computers.rsi
+    state: computer
+  cost:
+    NTLoyaltyPoint: 35
+  categories:
+  - NTRBoards
+  restockTime: 300
+  resetRestockOnPurchase: false
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
 # Responce teams
 
 - type: listing

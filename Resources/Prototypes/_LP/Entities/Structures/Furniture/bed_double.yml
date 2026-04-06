@@ -2,6 +2,7 @@
   name: Bed double up
   id: LPPBedDoubleUp
   parent: BaseStructure
+  suffix: up
   description: This is used to lie in, sleep in or strap on. Resting here provides extremely slow healing.
   components:
   - type: HealOnBuckle
@@ -59,6 +60,7 @@
   parent: LPPBedDoubleUp
   id: LPPBedDoubleDown
   name: bed double down
+  suffix: down
   description: Better sleep in that then on the floor i guess.
   components:
   - type: Construction

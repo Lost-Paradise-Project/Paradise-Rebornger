@@ -68,7 +68,7 @@
 # Every Stamina damage 10% += 2 Plasteel
 
 - type: latheRecipe
-  id: ClothingHeadHelmetEVALarge
+  id: LPPClothingHeadHelmetEVALarge
   result: ClothingHeadHelmetEVALarge
   parent: LPPLatheRecipe15Sec
   materials:
@@ -76,7 +76,7 @@
     Plastic: 1000
 
 - type: latheRecipe
-  id: ClothingOuterHardsuitEVAPrisoner
+  id: LPPClothingOuterHardsuitEVAPrisoner
   result: ClothingOuterHardsuitEVAPrisoner
   parent: LPPLatheRecipe15Sec
   materials:
@@ -84,7 +84,7 @@
     Plastic: 1000
 
 - type: latheRecipe
-  id: ClothingOuterHardsuitCombatOfficer
+  id: LPPClothingOuterHardsuitCombatOfficer
   result: ClothingOuterHardsuitCombatOfficer
   parent: LPPLatheRecipe15Sec
   materials:
@@ -96,7 +96,7 @@
     Glass: 200
 
 - type: latheRecipe
-  id: ClothingOuterHardsuitSecurity
+  id: LPPClothingOuterHardsuitSecurity
   result: ClothingOuterHardsuitSecurity
   parent: LPPLatheRecipe15Sec
   materials:
@@ -107,7 +107,7 @@
     Glass: 200
 
 - type: latheRecipe
-  id: ClothingOuterHardsuitCombatMedical
+  id: LPPClothingOuterHardsuitCombatMedical
   result: ClothingOuterHardsuitCombatMedical
   parent: LPPLatheRecipe15Sec
   materials:
@@ -119,7 +119,7 @@
     Glass: 200
 
 - type: latheRecipe
-  id: ClothingOuterHardsuitCombatRiot
+  id: LPPClothingOuterHardsuitCombatRiot
   result: ClothingOuterHardsuitCombatRiot
   parent: LPPLatheRecipe15Sec
   materials:
@@ -131,7 +131,7 @@
     Glass: 200
 
 - type: latheRecipe
-  id: ClothingOuterHardsuitSecurityPilot
+  id: LPPClothingOuterHardsuitSecurityPilot
   result: ClothingOuterHardsuitSecurityPilot
   parent: LPPLatheRecipe15Sec
   materials:
@@ -154,7 +154,7 @@
     Glass: 200
 
 - type: latheRecipe
-  id: ClothingOuterHardsuitBrigmedic
+  id: LPPClothingOuterHardsuitBrigmedic
   result: ClothingOuterHardsuitBrigmedic
   parent: LPPLatheRecipe15Sec
   materials:
@@ -166,7 +166,7 @@
     Silver: 100
 
 - type: latheRecipe
-  id: ClothingOuterHardsuitWarden
+  id: LPPClothingOuterHardsuitWarden
   result: ClothingOuterHardsuitWarden
   parent: LPPLatheRecipe15Sec
   materials:
@@ -177,7 +177,7 @@
     Glass: 200
 
 - type: latheRecipe
-  id: ClothingOuterHardsuitLuxury
+  id: LPPClothingOuterHardsuitLuxury
   result: ClothingOuterHardsuitLuxury
   parent: LPPLatheRecipe15Sec
   materials:
@@ -201,7 +201,7 @@
     Glass: 200
 
 - type: latheRecipe
-  id: ClothingOuterHardsuitMedical
+  id: LPPClothingOuterHardsuitMedical
   result: ClothingOuterHardsuitMedical
   parent: LPPLatheRecipe15Sec
   materials:
@@ -213,7 +213,7 @@
     Plasma: 1100
 
 - type: latheRecipe
-  id: ClothingOuterHardsuitEngineeringWhite
+  id: LPPClothingOuterHardsuitEngineeringWhite
   result: ClothingOuterHardsuitEngineeringWhite
   parent: LPPLatheRecipe15Sec
   materials:
@@ -225,7 +225,7 @@
     Glass: 200
 
 - type: latheRecipe
-  id: ClothingOuterHardsuitSecurityRed
+  id: LPPClothingOuterHardsuitSecurityRed
   result: ClothingOuterHardsuitSecurityRed
   parent: LPPLatheRecipe15Sec
   materials:
@@ -237,20 +237,19 @@
     Gold: 100
 
 - type: latheRecipe
-  id: ClothingOuterHardsuitMaxim
+  id: LPPClothingOuterHardsuitMaxim
   result: ClothingOuterHardsuitMaxim
   parent: LPPLatheRecipe15Sec
   materials:
-    Plastic: 1000
-    Steel: 2000
+    Steel: 1700
     Plasteel: 200
-    Gold: 800
+    Gold: 150
     Plasma: 1400
     Silver: 800
     Glass: 200
 
 - type: latheRecipe
-  id: ClothingOuterHardsuitCap
+  id: LPPClothingOuterHardsuitCap
   result: ClothingOuterHardsuitCap
   parent: LPPLatheRecipe15Sec
   materials:

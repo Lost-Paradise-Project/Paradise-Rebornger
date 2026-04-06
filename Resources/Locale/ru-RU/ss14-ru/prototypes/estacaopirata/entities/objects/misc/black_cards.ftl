@@ -1,8 +1,8 @@
 ent-CardBoxBlack = чёрная коробка для колоды
     .desc = { ent-CardBoxBase.desc }
 ent-CardDeckBlack = колода карт
-    .suffix = НЕ МАППИТЬ
     .desc = { ent-CardDeckBase.desc }
+    .suffix = НЕ МАППИТЬ
 ent-CardBase = карта
     .desc = { ent-BaseItem.desc }
 ent-CardSc2OfClubsBlack = { ent-CardBase }

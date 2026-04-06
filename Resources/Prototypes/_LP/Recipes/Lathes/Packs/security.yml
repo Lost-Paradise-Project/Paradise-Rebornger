@@ -9,23 +9,22 @@
 - type: latheRecipePack
   id: LPPSpaceForgeCMDHardsuits
   recipes:
-  - ClothingHeadHelmetEVALarge
-  - ClothingOuterHardsuitEVAPrisoner
-  - ClothingOuterHardsuitCombatOfficer
-  - ClothingOuterHardsuitSecurity
-  - ClothingOuterHardsuitCombatMedical
-  - ClothingOuterHardsuitCombatRiot
-  - ClothingOuterHardsuitSecurityPilot
+  - LPPClothingHeadHelmetEVALarge
+  - LPPClothingOuterHardsuitEVAPrisoner
+  - LPPClothingOuterHardsuitCombatOfficer
+  - LPPClothingOuterHardsuitSecurity
+  - LPPClothingOuterHardsuitCombatMedical
+  - LPPClothingOuterHardsuitCombatRiot
+  - LPPClothingOuterHardsuitSecurityPilot
   - LPPClothingOuterHardsuitSecurityEng
-  - ClothingOuterHardsuitBrigmedic
-  - ClothingOuterHardsuitWarden
-  - ClothingOuterHardsuitLuxury
+  - LPPClothingOuterHardsuitBrigmedic
+  - LPPClothingOuterHardsuitWarden
+  - LPPClothingOuterHardsuitLuxury
   - LPPClothingOuterHardsuitRd
-  - ClothingOuterHardsuitMedical
-  - ClothingOuterHardsuitEngineeringWhite
-  - ClothingOuterHardsuitSecurityRed
-  - ClothingOuterHardsuitMaxim
-  - ClothingOuterHardsuitCap
+  - LPPClothingOuterHardsuitMedical
+  - LPPClothingOuterHardsuitEngineeringWhite
+  - LPPClothingOuterHardsuitSecurityRed
+  - LPPClothingOuterHardsuitCap
 
 - type: latheRecipePack
   id: LPPGrenadeLauncherSec

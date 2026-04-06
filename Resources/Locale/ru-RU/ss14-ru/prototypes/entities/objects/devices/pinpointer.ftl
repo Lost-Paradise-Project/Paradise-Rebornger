@@ -11,7 +11,6 @@ ent-PinpointerStation = пинпоинтер станции
     .suffix = Станция
 ent-PinpointerMothership = пинпоинтер ядра
     .desc = Портативное устройство слежения, способное отслеживать ядро материнского корабля.
-    .suffix = Материнский корабль
 ent-PinpointerMothershipPiece = фрагмент пинпоинтера ядра
     .desc = Часть пинпоинтера ядра. Вам нужно четыре таких фрагмента, чтобы починить его.
 ent-PinpointerMothershipRepaired = отремонтированный пинпоинтер ядра

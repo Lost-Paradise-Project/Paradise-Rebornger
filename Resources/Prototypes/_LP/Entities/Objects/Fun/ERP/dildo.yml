@@ -1,6 +1,7 @@
 - type: entity
   name: dildo avian
   id: LPPDildoAvian
+  description: Big rubber dildo
   parent: [LPPClothingUnderwearBase, Plunger]
   components:
   - type: Sprite
