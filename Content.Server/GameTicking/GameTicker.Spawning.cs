@@ -148,7 +148,7 @@ namespace Content.Server.GameTicking
 
             if (jobId != null)
             {
-                var jobs = new List<ProtoId<JobPrototype>> {jobId};
+                var jobs = new List<ProtoId<JobPrototype>> { jobId };
                 var ev = new IsRoleAllowedEvent(player, jobs, null);
                 RaiseLocalEvent(ref ev);
                 if (ev.Cancelled)
@@ -212,7 +212,7 @@ namespace Content.Server.GameTicking
                     speciesId = weights.Pick(_robustRandom);
                 }
 
-                character = HumanoidCharacterProfile.RandomWithSpecies(speciesId);
+                character = HumanoidCharacterProfile.RandomWithSpecies(speciesId, SponsorSimpleManager.GetTier(player.UserId));
                 // Corvax-Sponsors-Start
                 var sponsorPrototypes = SponsorSimpleManager.GetMarkings(player.UserId).ToArray();
                 character.Appearance = HumanoidCharacterAppearance.EnsureValid(character.Appearance, character.Species, character.Sex, sponsorPrototypes);
