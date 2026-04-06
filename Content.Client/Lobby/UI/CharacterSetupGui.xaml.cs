@@ -56,7 +56,7 @@ namespace Content.Client.Lobby.UI
 
             _createNewCharacterButton.OnPressed += args =>
             {
-                _preferencesManager.CreateCharacter(HumanoidCharacterProfile.Random());
+                _preferencesManager.CreateCharacter(HumanoidCharacterProfile.Random(sponsorTier: SponsorSimpleManager.GetTier()));  //LP edit
                 ReloadCharacterPickers();
                 args.Event.Handle();
             };
