@@ -1,10 +1,71 @@
 - type: entity
-  parent: WeaponLauncherHydra
-  id: LPPWeaponLauncherHydra
+  parent: [BaseItem, BaseSecurityContraband]
+  name: hydrozoa
+  description: Compact single shot grenade launcher.
+  id: LPPWeaponLauncherHydrozoa
   suffix: empty
   components:
-  - type: RevolverAmmoProvider
-    proto: null
-    capacity: 6
-    chambers: [ null, null, null, null, null, null ]
-    ammoSlots: [ null, null, null, null, null, null ]
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Guns/Launchers/hydrasec.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Item
+    size: Normal
+  - type: ItemSlots
+    slots:
+      gun_chamber:
+        name: Chamber
+        startingItem: null
+        priority: 1
+        whitelist:
+          tags:
+          - Grenade
+  - type: Appearance
+  - type: Gun
+    fireRate: 4
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
+  - type: ContainerContainer
+    containers:
+      gun_chamber: !type:ContainerSlot
+  - type: ChamberMagazineAmmoProvider
+    autoCycle: false
+    boltClosed: false
+    canRack: false
+    soundBoltClosed: /Audio/Weapons/Guns/Cock/revolver_cock.ogg
+    soundBoltOpened: /Audio/Weapons/Guns/Cock/revolver_cock.ogg
+    soundRack: /Audio/Weapons/Guns/Cock/revolver_cock.ogg
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_GoobStation/Items/handling/gun_pickup.ogg
+      params:
+        volume: -8
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_GoobStation/Items/handling/gun_drop.ogg
+      params:
+        volume: -8
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_GoobStation/Items/handling/gun_drop.ogg
+      params:
+        volume: -8
+
+- type: entity
+  parent: LPPWeaponLauncherHydrozoa
+  id: LPPWeaponLauncherHydrozoaFull
+  suffix: full
+  components:
+  - type: ItemSlots
+    slots:
+      gun_chamber:
+        name: Chamber
+        startingItem: GrenadeFrag
+        priority: 1
+        whitelist:
+          tags:
+          - Grenade

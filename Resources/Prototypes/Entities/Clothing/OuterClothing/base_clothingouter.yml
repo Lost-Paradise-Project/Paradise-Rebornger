@@ -189,6 +189,13 @@
   - type: HideLayerClothing
     slots:
     - Tail
+#LP edit start
+  - type: Clothing
+    slots:
+    - outerClothing
+    equipDelay: 2
+    unequipDelay: 2
+#LP edit end
 
 - type: entity
   abstract: true
@@ -221,6 +228,13 @@
   - type: HideLayerClothing
     slots:
     - Tail
+#LP edit start
+  - type: Clothing
+    slots:
+    - outerClothing
+    equipDelay: 0.5
+    unequipDelay: 0.5
+#LP edit end
 
 - type: entity
   parent: ClothingOuterBase
