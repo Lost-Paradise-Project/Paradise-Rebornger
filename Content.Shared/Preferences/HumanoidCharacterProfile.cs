@@ -844,7 +844,7 @@ namespace Content.Shared.Preferences
                 return false;
             // LP edit end
 
-            return voice.RoundStart && sex == Sex.Unsexed || (voice.Sex == sex || voice.Sex == Sex.Unsexed);
+            return (voice.RoundStart && sex == Sex.Unsexed || (voice.Sex == sex || voice.Sex == Sex.Unsexed)) && (!voice.SponsorOnly || sponsorTier >= 3);
         }
         // Corvax-TTS-End
 
