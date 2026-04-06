@@ -3,4 +3,4 @@ ent-LPPWeaponLauncherHydrozoa = гидроза
     .suffix = Пустой
 ent-LPPWeaponLauncherHydrozoaFull = { ent-LPPWeaponLauncherHydrozoa }
     .desc = { ent-LPPWeaponLauncherHydrozoa.desc }
-    .suffix = full
+    .suffix = Полный
