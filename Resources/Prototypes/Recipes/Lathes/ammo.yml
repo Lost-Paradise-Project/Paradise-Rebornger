@@ -495,11 +495,15 @@
   result: GrenadeBlast
   categories:
   - Ammo
-  completetime: 3
+#LP edit start
+  completetime: 5
   materials:
-    Steel: 450
-    Plastic: 300
-    Gold: 150
+    Steel: 750
+    Plastic: 500
+    Gold: 350
+    Silver: 350
+    Plasma: 350
+#LP edit end
 
 - type: latheRecipe
   id: GrenadeFlash
