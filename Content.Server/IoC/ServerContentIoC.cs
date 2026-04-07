@@ -33,7 +33,6 @@ using Content.Shared.IoC;
 using Content.Shared.Kitchen;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.Players.RateLimiting;
-using Content.Server._GoobStation.Antag;
 using Content.Server._Orion.ServerProtection;
 using Content.Server._Orion.ServerProtection.Administration;
 using Content.Server._Orion.ServerProtection.Chat;
@@ -99,7 +98,6 @@ internal static class ServerContentIoC
         deps.Register<ServerFeedbackManager>();
         deps.Register<ISharedFeedbackManager, ServerFeedbackManager>();
         deps.Register<TTSManager>(); // Corvax-TTS
-        deps.Register<LastRolledAntagManager>(); // Goobstation - antag pity
         // Orion-Start
         deps.Register<ServerProtectionAuditManager>();
         deps.Register<ServerProtectionPunishmentSystem>();
