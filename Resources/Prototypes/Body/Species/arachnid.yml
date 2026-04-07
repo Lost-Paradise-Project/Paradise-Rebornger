@@ -64,6 +64,7 @@
       Kidneys: OrganArachnidKidneys
   - type: HumanoidProfile
     species: Arachnid
+  - type: FootprintOwner # starcup
 
 - type: entity
   parent:

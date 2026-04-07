@@ -170,6 +170,8 @@
   # LP edit end
   - type: Posing # Orion
   - type: OfferItem # EE edit
+  - type: FootprintOwner # starcup
+    footprint: humanFootprint # starcup
 
 - type: entity
   abstract: true

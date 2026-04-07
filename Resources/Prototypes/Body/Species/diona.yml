@@ -63,6 +63,8 @@
       Stomach: OrganDionaStomachNymphing
   - type: HumanoidProfile
     species: Diona
+  - type: FootprintOwner # starcup
+    footprint: dionaFootprint # starcup
 
 - type: entity
   parent:
