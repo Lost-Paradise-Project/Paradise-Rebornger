@@ -46,7 +46,6 @@
 | `_EE`            | Einstein Engines     | https://github.com/Simple-Station/Einstein-Engines          | AGPL 3.0 |
 | `_ADT`           | Adventure Time       | https://github.com/AdventureTimeSS14/space_station_ADT      | AGPL 3.0 |
 | `_NF`            | New Froniters        | https://github.com/new-frontiers-14/frontier-station-14     | AGPL 3.0 |
-| `_FloofStation`  | Floof Station        | https://github.com/Floof-Station/Floof-Station              | AGPL 3.0 |
 | `_CD`            | Cosmatic Drift       | https://github.com/cosmatic-drift-14/cosmatic-drift         | MIT      |
 | `_NC`            | Nuclear 14           | https://github.com/Vault-Overseers/nuclear-14               | AGPL 3.0 |
 | `_DV`            | Delta V              | https://github.com/DeltaV-Station/Delta-v/                  | AGPL 3.0 |
@@ -64,6 +63,7 @@
 | `_White`         | W White Dream Public | https://github.com/WWhiteDreamProject/wwdpublic             | AGPL 3.0 |
 | `_Orion`         | Orion                | https://github.com/AtaraxiaSpaceFoundation/Orion-Station-14 | AGPL 3.0 |
 | `_VDS`           | Vermist Dust Sector  | https://github.com/vermist-sector/vermist-dust              | AGPL 3.0 |
+| `_StarCup`       | StarCup              | https://github.com/teamstarcup/starcup/                     | AGPL 3.0 |
 
 
 ## Отказ от гарантий
