@@ -906,10 +906,6 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("TEXT")
                         .HasColumnName("last_read_rules");
 
-                    b.Property<TimeSpan?>("LastRolledAntag")
-                        .HasColumnType("TEXT")
-                        .HasColumnName("last_rolled_antag");
-
                     b.Property<string>("LastSeenAddress")
                         .IsRequired()
                         .HasColumnType("TEXT")

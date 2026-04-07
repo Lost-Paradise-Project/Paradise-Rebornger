@@ -75,11 +75,11 @@
       types:
         Blunt: 15
     openSound:
-      path: /Audio/_RMC14/Machines/airlock.ogg
+      path: /Audio/_DV/Machines/airlock_open.ogg #Delta V - Change Sound, was /Audio/Machines/airlock_open.ogg
     closeSound:
-      path: /Audio/_RMC14/Machines/airlock.ogg
+      path: /Audio/_DV/Machines/airlock_close.ogg #Delta V - Change Sound, was /Audio/Machines/airlock_close.ogg
     denySound:
-      path: /Audio/_RMC14/Machines/buzz_two.ogg
+      path: /Audio/Machines/airlock_deny.ogg
   - type: ContainerContainer
     containers:
       board: !type:Container

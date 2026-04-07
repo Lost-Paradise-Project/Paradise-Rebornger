@@ -2737,4 +2737,18 @@
   id: 5725
   time: '2026-04-06T09:08:23.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/211
+- author: Evgecheg, PuroSlavKing, This_Is_Gray, Darklyac
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0430 \u0432\u043E\u0437\
+      \u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u0441\u043E\u0435\u0434\u0438\
+      \u043D\u0435\u043D\u0438\u044F \u043A\u043E\u043D\u0441\u043E\u043B\u0435\u0439\
+      !"
+    type: Add
+  - message: "\u0418\u0437\u043C\u0435\u043D\u0435\u043D\u044B \u0437\u0432\u0443\u043A\
+      \u0438 \u0448\u043B\u044E\u0437\u043E\u0432 \u043D\u0430 \u0431\u043E\u043B\u0435\
+      \u0435 \u043F\u0440\u0438\u044F\u0442\u043D\u044B\u0435!"
+    type: Tweak
+  id: 5726
+  time: '2026-04-07T16:09:10.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/215
 Order: 1
