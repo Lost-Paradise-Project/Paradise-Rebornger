@@ -1,4 +1,4 @@
-﻿using Content.Shared._StarCup.Footprints;
+using Content.Shared._StarCup.Footprints;
 using Robust.Client.GameObjects;
 
 namespace Content.Client._StarCup.Footprints;
