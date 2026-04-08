@@ -65,7 +65,6 @@
     deconstructionTarget: null
     graph: ModularSuitVariants
     node: base_suit
-    defaultTarget: base_suit
 
 # Cores
 - type: entity
