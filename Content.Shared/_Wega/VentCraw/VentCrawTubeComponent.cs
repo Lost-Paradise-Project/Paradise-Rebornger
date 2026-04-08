@@ -1,4 +1,4 @@
-﻿using Robust.Shared.Containers;
+using Robust.Shared.Containers;
 using Robust.Shared.GameStates;
 
 namespace Content.Shared.VentCraw.Components;

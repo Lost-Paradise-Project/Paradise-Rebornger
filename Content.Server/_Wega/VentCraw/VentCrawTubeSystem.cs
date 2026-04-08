@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using Content.Server.Construction.Completions;
 using Content.Server.NodeContainer.Nodes;
 using Content.Server.Popups;
