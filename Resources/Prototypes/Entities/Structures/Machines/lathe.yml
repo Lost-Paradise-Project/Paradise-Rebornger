@@ -345,8 +345,12 @@
     - RoboticsStatic
     - BorgModulesStatic
     - BorgLimbsStatic
+    - ModesuitPartStatic # Corvax-Wega-Edit
+    - ModesuitModuleStatic # Corvax-Wega-Edit
     dynamicPacks:
     - Robotics
+    - ModesuitPlatingReach # Corvax-Wega-Edit
+    - ModesuitModuleReach # Corvax-Wega-Edit
     - BorgModules
     - MechParts
     - MechEquipment
@@ -356,6 +360,12 @@
   - type: GuideHelp
     guides:
     - Robotics
+# Corvax-wega-start
+  - type: EmagLatheRecipes
+    emagStaticPacks:
+    - ModesuitModuleSecStatic
+    - ModesuitModuleSecReach
+# Corvax-wega-end
 
 - type: entity
   id: Biofabricator
@@ -427,6 +437,7 @@
     - SecurityPracticeStatic
     - SecurityAmmoStatic
     - SecurityWeaponsStatic
+    - ModesuitModuleSecStatic # Corvax-Wega-Edit
     dynamicPacks:
     # LP Edit Start
     - LPPGrenadeLauncherSec
@@ -441,6 +452,7 @@
     - SecurityWeapons
     - SecurityDisablers
     - LPPSecurityModuls # Lost Paridise edit 2026.01.30 Модули для боргов
+    - ModesuitModuleSecReach # Corvax-Wega-Edit
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SyndicateAmmoStatic

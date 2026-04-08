@@ -5,6 +5,7 @@ using Content.Client.Inventory;
 using Content.Shared.Clothing;
 using Content.Shared.Clothing.Components;
 using Content.Shared.Clothing.EntitySystems;
+using Content.Shared._Wega.Clothing.Upgrades.Components; // Corvax-Wega-UpgradableClothing
 using Content.Shared.Humanoid;
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
@@ -12,6 +13,7 @@ using Content.Shared.Item;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Client.ResourceManagement;
+using Robust.Shared.Containers; // Corvax-Wega-UpgradableClothing
 using Robust.Shared.Serialization.TypeSerializers.Implementations;
 using Robust.Shared.Utility;
 using static Robust.Client.GameObjects.SpriteComponent;
@@ -55,6 +57,7 @@ public sealed class ClientClothingSystem : ClothingSystem
     [Dependency] private readonly InventorySystem _inventorySystem = default!;
     [Dependency] private readonly DisplacementMapSystem _displacement = default!;
     [Dependency] private readonly SpriteSystem _sprite = default!;
+    [Dependency] private readonly SharedContainerSystem _container = default!; // Corvax-Wega-UpgradableClothing
 
     public override void Initialize()
     {
@@ -134,6 +137,26 @@ public sealed class ClientClothingSystem : ClothingSystem
             item.MappedLayer = key;
             args.Layers.Add((key, layer));
         }
+
+        // Corvax-Wega-UpgradableClothing-start
+        if (TryComp<UpgradeableClothingComponent>(uid, out var upgradeable))
+        {
+            foreach (var upgrade in GetCurrentUpgrades(uid, upgradeable))
+            {
+                if (upgrade.Comp.EquippedState is not SpriteSpecifier.Rsi rsi)
+                    continue;
+
+                var layerData = new PrototypeLayerData
+                {
+                    RsiPath = rsi.RsiPath.ToString(),
+                    State = rsi.RsiState,
+                };
+
+                var key = $"upgrade-{upgrade.Owner}-{args.Slot}";
+                args.Layers.Add((key, layerData));
+            }
+        }
+        // Corvax-Wega-UpgradableClothing-end
     }
 
     /// <summary>
@@ -347,4 +370,17 @@ public sealed class ClientClothingSystem : ClothingSystem
 
         RaiseLocalEvent(equipment, new EquipmentVisualsUpdatedEvent(equipee, slot, revealedLayers), true);
     }
+    // Corvax-Wega-UpgradableClothing-start
+    private IEnumerable<Entity<ClothingUpgradeComponent>> GetCurrentUpgrades(EntityUid clothing, UpgradeableClothingComponent component)
+    {
+        if (!_container.TryGetContainer(clothing, component.UpgradesContainerId, out var container))
+            yield break;
+
+        foreach (var contained in container.ContainedEntities)
+        {
+            if (TryComp<ClothingUpgradeComponent>(contained, out var upgradeComp))
+                yield return (contained, upgradeComp);
+        }
+    }
+    // Corvax-Wega-UpgradableClothing-end
 }
