@@ -1,4 +1,4 @@
-﻿using Content.Client.SubFloor;
+using Content.Client.SubFloor;
 using Content.Shared.VentCraw;
 using Robust.Client.Player;
 using Robust.Shared.Timing;

@@ -1,4 +1,4 @@
-﻿vent-craw-verb-exit = Выйти из вентиляции
+vent-craw-verb-exit = Выйти из вентиляции
 vent-craw-verb-enter = Войти в вентиляцию
 
 vent-craw-direction-north = север

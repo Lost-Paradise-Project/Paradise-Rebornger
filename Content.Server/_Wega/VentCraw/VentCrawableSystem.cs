@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using Content.Server.NodeContainer.Nodes;
 using Content.Shared.Body.Components;
 using Content.Shared.Item;
