@@ -84,6 +84,7 @@
       suit_module: !type:Container { }
       suit_part: !type:Container { }
       suit_hidden: !type:Container { }
+      item: !type:ContainerSlot { }
   - type: ContainerFill
     containers:
       suit_core:

@@ -154,7 +154,7 @@
   - PortableScrubberMachineCircuitBoard
   - HolofanProjector
   - AtmosPlating # Corvax-Wega-Add
-  # - TemperatureRegulatorSuitModule # Corvax-Wega-add
+  - TemperatureRegulatorSuitModule # Corvax-Wega-add
   technologyPrerequisites:
   - AtmosphericTech
   position: 2, 15 # LP edit
@@ -282,7 +282,7 @@
   recipeUnlocks:
   - PowerCellMicroreactor
   - PowerCellHyper
-  # - ModularSuitCoreInfinite # Corvax-Wega-Add
+  - ModularSuitCoreInfinite # Corvax-Wega-Add
   position: 0, 11 # LP edit
   technologyPrerequisites:
   - AdvancedPowercells

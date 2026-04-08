@@ -1,8 +1,8 @@
 - type: constructionGraph
   id: ModularSuitVariants
-  start: start
+  start: base_suit
   graph:
-    - node: start
+    - node: base_suit
       entity: ModularSuitConstructionFinished
       edges:
         # 1. Basic

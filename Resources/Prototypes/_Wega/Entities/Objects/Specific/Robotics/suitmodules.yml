@@ -13,6 +13,8 @@
   id: BaseStorageSuitModule
   abstract: true
   components:
+  - type: Item
+    size: Huge
   - type: ModularSuitStorageModule
   - type: ModularSuitModule
     tags: [ StorageSuitModule ]

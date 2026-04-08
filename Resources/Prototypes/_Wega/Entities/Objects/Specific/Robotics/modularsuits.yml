@@ -62,9 +62,9 @@
   - type: Sprite
     state: mod8
   - type: Construction
+    deconstructionTarget: null
     graph: ModularSuitVariants
-    node: start
-    defaultTarget: start
+    node: base_suit
 
 # Cores
 - type: entity
