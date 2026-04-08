@@ -1,6 +1,7 @@
 ent-ToggleModularSuitDeployAction = [color=#58c4e8]Развернуть костюм[/color]
     .desc = Раскрывает модульный костюм, надевая все установленные части на тело. При повторном нажатии сворачивает костюм обратно в компактное состояние.
 ent-ToggleModularSuitUiAction = [color=#58c4e8]Открыть интерфейс MODSuit[/color]
+    .desc = { ent-BaseAction.desc }
 ent-ToggleLightModuleAction = [color=#58c4e8]Переключить свет[/color]
     .desc = Включает или выключает встроенную систему освещения костюма.
 ent-ActivateTeleporterModuleAction = [color=#58c4e8]Активировать телепортатор[/color]
