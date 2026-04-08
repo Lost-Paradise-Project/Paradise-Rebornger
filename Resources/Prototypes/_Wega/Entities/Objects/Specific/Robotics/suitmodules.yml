@@ -305,7 +305,6 @@
       damageContainers:
       - Inorganic
       - Silicon
-      - Android
   - type: ModularSuitModule
     verbIcon:
       sprite: *modules-rsi

@@ -135,6 +135,7 @@
       - ForceableFollow
       - BluespaceAnomaly
       - AnomalyCore
+      - BluespaceCore
   # LP Edit End
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/bluespace_core.rsi
@@ -325,6 +326,7 @@
     tags:
       - ForceableFollow
       - BluespaceAnomaly
+      - AnomalyCore
       - AnomalyCore
   # LP Edit End
   - type: Sprite

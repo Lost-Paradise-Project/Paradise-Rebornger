@@ -397,7 +397,7 @@
       state: icon-sealed
   - type: FootstepModifier
     footstepSoundCollection:
-      collection: FootstepHeavy
+      collection: FootstepBoots
 
 # Asteroid
 - type: entity
