@@ -1,9 +1,10 @@
 ﻿using Content.Server.Atmos.EntitySystems;
 using Content.Server.NodeContainer.Nodes;
+using Content.Shared.Atmos;
 using Content.Shared.NodeContainer;
 using Content.Shared.VentCraw.Components;
 
-namespace Content.Server.VentCraw;
+namespace Content.Server._Wega.VentCraw;
 
 public sealed class BeingVentCrawSystem : EntitySystem
 {

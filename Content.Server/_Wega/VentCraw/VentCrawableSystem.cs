@@ -1,12 +1,13 @@
 ﻿using System.Linq;
 using Content.Server.NodeContainer.Nodes;
+using Content.Shared.Body;
 using Content.Shared.Body.Components;
 using Content.Shared.Item;
 using Content.Shared.Movement.Events;
 using Content.Shared.Movement.Systems;
 using Content.Shared.NodeContainer;
 using Content.Shared.Tools.Components;
-using Content.Shared.VentCraw;
+using Content.Shared._Wega.VentCraw;
 using Content.Shared.VentCraw.Components;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
@@ -14,7 +15,7 @@ using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Timing;
 
-namespace Content.Server.VentCraw;
+namespace Content.Server._Wega.VentCraw;
 
 public sealed class VentCrawableSystem : EntitySystem
 {

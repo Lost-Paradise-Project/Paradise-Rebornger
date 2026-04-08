@@ -9,7 +9,7 @@ using Content.Shared.DoAfter;
 using Content.Shared.Movement.Systems;
 using Content.Shared.NodeContainer;
 using Content.Shared.Tools.Components;
-using Content.Shared.VentCraw;
+using Content.Shared._Wega.VentCraw;
 using Content.Shared.VentCraw.Components;
 using Content.Shared.Verbs;
 using Robust.Server.GameObjects;
@@ -19,7 +19,7 @@ using Robust.Shared.Map.Components;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 
-namespace Content.Server.VentCraw;
+namespace Content.Server._Wega.VentCraw;
 
 public sealed class VentCrawTubeSystem : EntitySystem
 {

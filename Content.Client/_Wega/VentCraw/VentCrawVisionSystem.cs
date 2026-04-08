@@ -1,9 +1,9 @@
 ﻿using Content.Client.SubFloor;
-using Content.Shared.VentCraw;
+using Content.Shared._Wega.VentCraw;
 using Robust.Client.Player;
 using Robust.Shared.Timing;
 
-namespace Content.Client.VentCraw;
+namespace Content.Client._Wega.VentCraw;
 
 public sealed class VentCrawVisionSystem : EntitySystem
 {

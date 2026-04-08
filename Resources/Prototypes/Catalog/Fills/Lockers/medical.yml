@@ -121,7 +121,6 @@
     - id: LPPClothingShoesBootsMagParamed
     - id: HandheldCrewMonitor
     # LP Edit End
-    - id: ClothingModularControllerRescuePreassembled # Corvax-Wega-ModularSuits-Edit
     - id: ClothingEyesHudMedical
     - id: ClothingOuterHardsuitVoidParamed
     - id: ClothingBeltMedicalEMTFilled
