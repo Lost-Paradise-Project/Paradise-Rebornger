@@ -63,8 +63,8 @@
     state: mod8
   - type: Construction
     graph: ModularSuitVariants
-    node: base_suit
-    defaultTarget: base_suit
+    node: start
+    defaultTarget: start
 
 # Cores
 - type: entity
