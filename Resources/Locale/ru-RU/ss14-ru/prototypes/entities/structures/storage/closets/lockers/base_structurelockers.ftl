@@ -1,4 +1,4 @@
 ent-LockerBase = { ent-ClosetBase }
     .desc = { ent-ClosetBase.desc }
-ent-LockerBaseSecure = { ent-LockerBase }
+ent-LockerBaseSecure = защищенный шкаф
     .desc = { ent-LockerBase.desc }
