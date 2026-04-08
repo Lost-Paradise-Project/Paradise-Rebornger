@@ -1749,7 +1749,7 @@
   name: uplink-hardsuit-syndieelite-name
   description: uplink-hardsuit-syndieelite-desc
   icon: { sprite: /Textures/_Wega/Clothing/Modular/Elite/control.rsi, state: icon } # Corvax-Wega-ModularSuits-Edit
-  productEntity: ClothingBackpackDuffelSyndicateEliteHardsuitBundle
+  productEntity: CrateSynModsuitBundle # Corvax-Wega-ModularSuits-Edit
   cost:
     Telecrystal: 12
   categories:

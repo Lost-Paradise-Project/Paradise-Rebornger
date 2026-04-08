@@ -336,7 +336,7 @@
     containers:
       storagebase: !type:AllSelector
         children:
-        - id: ClothingModularControllerElitePreassembled # Corvax-Wega-ModularSuits-Edit
+        - id: ClothingOuterHardsuitSyndieElite
         - !type:NestedSelector
           tableId: SyndicateHardsuitExtrasEntityTable
 
