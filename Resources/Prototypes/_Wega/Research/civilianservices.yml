@@ -10,9 +10,12 @@
   tier: 1
   cost: 7500
   recipeUnlocks:
-  - SadTromboneImplant
-  - LightImplant
   - MicrowaveBeamSuitModule
   - BurgerDispenserSuitModule
   - ApparatusSuitModule
   - AdvancedFlashlightSuitModule
+  position: 2, 32 # LP edit
+  technologyPrerequisites:
+  - LPPMiningHardsuits # LP Edit
+  radioChannels:
+  - Service

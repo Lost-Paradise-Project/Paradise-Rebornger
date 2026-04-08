@@ -128,6 +128,7 @@
   - type: Sharp
   - type: TTS # Corvax-TTS
     voice: nyx_assassin_dota_2
+  - type: VentCrawler # Corvax-Wega-VentCrawling
 
 - type: entity
   id: MobRatKingBuff
@@ -205,7 +206,7 @@
     - map: [ "enum.DamageStateVisualLayers.BaseUnshaded"]
       state: eyes
       shader: unshaded
-
+  - type: VentCrawler # Corvax-Wega-VentCrawling
   - type: SpriteMovement
     movementLayers:
       movement:

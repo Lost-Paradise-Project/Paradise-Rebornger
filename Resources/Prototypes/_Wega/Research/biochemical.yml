@@ -4,12 +4,16 @@
   icon:
     sprite: _Wega/Clothing/Modular/Medical/control.rsi
     state: icon
-  discipline: Biochemical
+  discipline: Experimental
   tier: 1
   cost: 10000
   recipeUnlocks:
-  - ArmSyntheticDefib
   - DefibrillatorSuitModule
   - InjectorSuitModule
   - MedicalPlating
   - SolutionScannerSuitModule
+  position: 3, 31 # LP edit
+  technologyPrerequisites:
+  - LPPMiningHardsuits # LP Edit
+  radioChannels:
+  - Medical

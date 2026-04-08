@@ -28,8 +28,6 @@
   id: ClothingModularControllerBase
   abstract: true
   components:
-  - type: EdibleMatter
-    canBeEaten: false
   - type: Item
     size: Huge
   - type: Clothing
@@ -103,12 +101,6 @@
         name: power-cell-slot-component-slot-name-default
   - type: Damageable
     damageContainer: Clothing
-  - type: Reactive
-    reactions:
-    - reagents: [Water, SpaceCleaner]
-      methods: [Touch]
-      effects:
-      - !type:WashDirt
   - type: ClothingSpeedModifier
     walkModifier: 0.8
     sprintModifier: 0.8
@@ -126,8 +118,6 @@
   id: ClothingModularHelmetBase
   abstract: true
   components:
-  - type: EdibleMatter
-    canBeEaten: false
   - type: Item
     size: Normal
   - type: Clothing
@@ -152,8 +142,6 @@
     - HeadTop
     - HeadSide
     - FacialHair
-  - type: DiseaseProtection
-    protection: 0.05
   - type: IdentityBlocker
     enabled: false
   - type: ToggleableVisuals
@@ -225,8 +213,6 @@
   id: ClothingModularChestPlateBase
   abstract: true
   components:
-  - type: EdibleMatter
-    canBeEaten: false
   - type: Item
     size: Normal
   - type: Clothing
@@ -239,8 +225,6 @@
       - state: equipped-OUTERCLOTHING-reptilian
       outerClothing-vox:
       - state: equipped-OUTERCLOTHING-vox
-  - type: DiseaseProtection
-    protection: 0.05
   - type: GroupExamine
   - type: ToggleableVisuals
     clothingVisuals:
@@ -269,8 +253,6 @@
   id: ClothingModularGauntletsBase
   abstract: true
   components:
-  - type: EdibleMatter
-    canBeEaten: false
   - type: Item
     size: Small
     storedRotation: -90
@@ -280,8 +262,6 @@
     clothingVisuals:
       gloves:
       - state: equipped-HAND
-  - type: DiseaseProtection
-    protection: 0.05
   - type: ToggleableVisuals
     clothingVisuals:
       gloves:

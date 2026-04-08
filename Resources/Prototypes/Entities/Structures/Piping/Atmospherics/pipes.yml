@@ -87,6 +87,11 @@
     sound:
       collection: PipeDrop
   # Goobstation edit end
+  # Corvax-Wega-VentCrawling-start
+  - type: ContainerContainer
+    containers:
+      VentCrawTube: !type:Container
+  # Corvax-Wega-VentCrawling-end
 
 - type: entity
   abstract: true
@@ -179,6 +184,14 @@
     guides:
     - Pipes
     - PipeNetworks
+  # Corvax-Wega-VentCrawling-start
+  - type: VentCrawTube
+    containerId: VentCrawTube
+  - type: VentCrawTransit
+  - type: ContainerContainer
+    containers:
+      VentCrawTube: !type:Container
+  # Corvax-Wega-VentCrawling-end
 
 - type: entity
   parent: GasPipeBase
@@ -229,6 +242,14 @@
     guides:
     - Pipes
     - PipeNetworks
+  # Corvax-Wega-VentCrawling-start
+  - type: VentCrawTube
+    containerId: VentCrawTube
+  - type: VentCrawBend
+  - type: ContainerContainer
+    containers:
+      VentCrawTube: !type:Container
+  # Corvax-Wega-VentCrawling-end
 
 - type: entity
   parent: GasPipeBase
@@ -272,6 +293,18 @@
     guides:
     - Pipes
     - PipeNetworks
+  # Corvax-Wega-VentCrawling-start
+  - type: VentCrawTube
+    containerId: VentCrawTube
+  - type: VentCrawJunction
+    degrees:
+      - 0
+      - 90
+      - -90
+  - type: ContainerContainer
+    containers:
+      VentCrawTube: !type:Container
+  # Corvax-Wega-VentCrawling-end
 
 - type: entity
   parent: GasPipeBase
@@ -317,6 +350,19 @@
     guides:
     - Pipes
     - PipeNetworks
+  # Corvax-Wega-VentCrawling-start
+  - type: VentCrawTube
+    containerId: VentCrawTube
+  - type: VentCrawJunction
+    degrees:
+      - 0
+      - 90
+      - -90
+      - 180
+  - type: ContainerContainer
+    containers:
+      VentCrawTube: !type:Container
+  # Corvax-Wega-VentCrawling-end
 
 - type: entity
   id: GasPipeBroken
@@ -424,3 +470,15 @@
     navMapBlip: GasPipeManifold
     showAbsentConnections: false
   - type: AtmosDevice
+  # Corvax-Wega-VentCrawling-start
+  - type: VentCrawTube
+    containerId: VentCrawTube
+  - type: VentCrawJunction
+    degrees:
+      - 0
+      - 180
+  - type: VentCrawManifold
+  - type: ContainerContainer
+    containers:
+      VentCrawTube: !type:Container
+  # Corvax-Wega-VentCrawling-end

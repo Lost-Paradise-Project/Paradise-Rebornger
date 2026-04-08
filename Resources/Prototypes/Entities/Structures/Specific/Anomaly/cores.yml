@@ -132,6 +132,7 @@
   # LP Edit Start
   - type: Tag
     tags:
+      - ForceableFollow
       - BluespaceAnomaly
       - AnomalyCore
   # LP Edit End
@@ -142,13 +143,6 @@
     energy: 3.5
     color: "#00ccff"
     castShadows: false
-  # Corvax-Wega-Add-start
-  - type: Tag
-    tags:
-    - ForceableFollow
-    - AnomalyCore
-    - BluespaceCore
-  # Corvax-Wega-Add-end
 
 - type: entity
   parent: BaseAnomalyCore
@@ -329,6 +323,7 @@
   # LP Edit Start
   - type: Tag
     tags:
+      - ForceableFollow
       - BluespaceAnomaly
       - AnomalyCore
   # LP Edit End
@@ -339,13 +334,6 @@
     energy: 3.5
     color: "#00ccff"
     castShadows: false
-  # Corvax-Wega-Add-start
-  - type: Tag
-    tags:
-    - ForceableFollow
-    - AnomalyCore
-    - BluespaceCore
-  # Corvax-Wega-Add-end
 
 - type: entity
   parent: BaseAnomalyInertCore

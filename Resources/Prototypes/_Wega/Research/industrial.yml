@@ -29,8 +29,11 @@
     - OreBagSuitModule
     - DrillSuitModule
     - EngineeringPlating
-    - ArmSyntheticPry
-    - LegSyntheticJump
+  position: 5, 30 # LP edit
+  technologyPrerequisites:
+  - LPPEngineeringHardsuits # LP Edit
+  radioChannels:
+  - Engineering
 
 - type: technology
   id: Gidravlik
@@ -44,6 +47,11 @@
   recipeUnlocks:
     - QuickCarrySuitModule
     - GrabberSuitModule
+  position: 6, 30 # LP edit
+  technologyPrerequisites:
+  - IndustrialModifier # LP Edit
+  radioChannels:
+  - Engineering
 
 - type: technology
   id: AdvencedIndustrialModifier
@@ -58,3 +66,8 @@
     - StorageLargeSuitModule
     - JetpackSuitModule
     - ConstructorSuitModule
+  position: 6, 31 # LP edit
+  technologyPrerequisites:
+  - Gidravlik # LP Edit
+  radioChannels:
+  - Engineering

@@ -349,7 +349,6 @@
     verbIcon:
       sprite: _Wega/Clothing/Modular/Apocryphal/chestplate.rsi
       state: icon-sealed
-  - type: ClothingSterility
   - type: Armor
     modifiers:
       coefficients:
@@ -1392,8 +1391,6 @@
         Heat: 0.2
         Radiation: 0
         Caustic: 0.5
-  - type: DiseaseProtection
-    protection: 0.2
   - type: ExplosionResistance
     damageCoefficient: 0.2
   - type: StaminaResistance
@@ -2155,8 +2152,6 @@
         color: "#907993"
   - type: PointLight
     color: "#907993"
-  - type: DiseaseProtection
-    protection: 0.15
 
 - type: entity
   parent: ClothingModularChestPlateBase
@@ -2177,8 +2172,6 @@
     modifiers:
       coefficients:
         Caustic: 0.1
-  - type: DiseaseProtection
-    protection: 0.2
 
 - type: entity
   parent: ClothingModularGauntletsBase
@@ -2240,8 +2233,6 @@
         - type: TemperatureProtection
           heatingCoefficient: 0.1
           coolingCoefficient: 0.1
-        - type: ClothingAshStormProtection
-          modifier: 0.2
       outerClothing:
         - type: PressureProtection
           highPressureMultiplier: 0.5
@@ -2249,16 +2240,8 @@
         - type: TemperatureProtection
           heatingCoefficient: 0.01
           coolingCoefficient: 0.01
-        - type: ClothingAshStormProtection
-          modifier: 0.2
         - type: FireProtection
           reduction: 0.5
-      gloves:
-        - type: ClothingAshStormProtection
-          modifier: 0.1
-      shoes:
-        - type: ClothingAshStormProtection
-          modifier: 0.1
   - type: ClothingSpeedModifier
     walkModifier: 0.85
     sprintModifier: 0.85
@@ -2647,8 +2630,6 @@
         color: "#f7e0e1"
   - type: PointLight
     color: "#f7e0e1"
-  - type: DiseaseProtection
-    protection: 0.15
   - type: Armor
     modifiers:
       coefficients:
@@ -2676,8 +2657,6 @@
         Heat: 0.90
         Radiation: 0.75
         Caustic: 0.5
-  - type: DiseaseProtection
-    protection: 0.15
 
 - type: entity
   parent: ClothingModularGauntletsBase
@@ -2788,8 +2767,6 @@
         color: "#a4fef4"
   - type: PointLight
     color: "#a4fef4"
-  - type: DiseaseProtection
-    protection: 0.15
 
 - type: entity
   parent: ClothingModularChestPlateBase

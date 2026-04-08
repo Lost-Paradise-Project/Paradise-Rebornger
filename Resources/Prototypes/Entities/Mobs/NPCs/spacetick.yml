@@ -92,6 +92,7 @@
   - type: Speech
     speechVerb: SmallMob
   - type: NonSpreaderZombie
+  - type: VentCrawler # Corvax-Wega-VentCrawling
 
 - type: entity
   id: MobTickSalvage
