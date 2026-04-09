@@ -31,7 +31,7 @@
 
 - type: entity
   name: blueshield revolver
-  parent: BaseWeaponBatterySmall
+  parent: [BaseWeaponBatterySmall, BaseCentcommContraband]
   id: LPPBlueshieldRevolver
   description: Stylish and tasteful.
   components:

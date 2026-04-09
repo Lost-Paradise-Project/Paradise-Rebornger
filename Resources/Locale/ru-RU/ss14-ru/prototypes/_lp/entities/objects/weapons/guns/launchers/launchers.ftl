@@ -1,3 +1,6 @@
-ent-LPPWeaponLauncherHydra = { ent-WeaponLauncherHydra }
-    .desc = { ent-WeaponLauncherHydra.desc }
-    .suffix = Пустое
+ent-LPPWeaponLauncherHydrozoa = гидроза
+    .desc = Компактный однозарядный гранатомёт службы безопасности.
+    .suffix = Пустой
+ent-LPPWeaponLauncherHydrozoaFull = { ent-LPPWeaponLauncherHydrozoa }
+    .desc = { ent-LPPWeaponLauncherHydrozoa.desc }
+    .suffix = Полный

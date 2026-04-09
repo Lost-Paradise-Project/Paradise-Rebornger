@@ -264,8 +264,8 @@
 
 - type: latheRecipe
   parent: BaseWeaponRecipeLong
-  id: LPPWeaponLauncherHydra
-  result: LPPWeaponLauncherHydra
+  id: LPPWeaponLauncherHydrozoa
+  result: LPPWeaponLauncherHydrozoa
   materials:
     Steel: 1250
     Plastic: 750

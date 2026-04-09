@@ -94984,16 +94984,12 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 88.5,-60.5
       parent: 2
-    - type: RadiationSource
-      intensity: 4
   - uid: 13201
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 87.5,-61.5
       parent: 2
-    - type: RadiationSource
-      intensity: 4
 - proto: CrystalSpawner
   entities:
   - uid: 37123
@@ -201086,14 +201082,12 @@ entities:
     - type: Transform
       pos: 87.403564,-60.5276
       parent: 2
-    - type: RadiationSource
   - uid: 27179
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 88.684814,-62.668224
       parent: 2
-    - type: RadiationSource
 - proto: ShardGlass
   entities:
   - uid: 27180

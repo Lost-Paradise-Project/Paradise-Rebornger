@@ -1,6 +1,6 @@
 - type: entity
   name: Jagdkommando
-  parent: [BaseKnife, BaseCommandContraband]
+  parent: [BaseKnife, BaseCentcommContraband]
   id: LPPKnifeJagdkommando
   description: Favourite knife of most elite OPZ special groups, be cautios to use- your combat equipment might get a bit bloody after pulling this knife out of your enemy.
   components:

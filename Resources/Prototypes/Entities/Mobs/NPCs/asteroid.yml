@@ -140,7 +140,7 @@
       fix:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.45,-0.45,0.45,0.45"
+          bounds: "-0.25,-0.25,0.25,0.25"
         mask:
         - Impassable
         layer:

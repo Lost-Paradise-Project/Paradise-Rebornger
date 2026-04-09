@@ -1,3 +1,4 @@
+using Content.Client._LP.Sponsors;
 using Content.Shared.Preferences;
 
 namespace Content.Client.Lobby.UI;
@@ -38,7 +39,7 @@ public sealed partial class HumanoidProfileEditor
 
     private void RandomizeEverything()
     {
-        Profile = HumanoidCharacterProfile.Random();
+        Profile = HumanoidCharacterProfile.Random(sponsorTier: SponsorSimpleManager.GetTier()); //LP edit
         SetProfile(Profile, CharacterSlot);
         SetDirty();
     }

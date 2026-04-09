@@ -134,13 +134,7 @@ namespace Content.Server.GameTicking
                         {
                             _pvsOverride.RemoveSessionOverride(mindId.Value, session);
                         }
-
-#if !LP
                         _userDb.ClientDisconnected(session);
-#else
-                        if (_playerGameStatuses.ContainsKey(session.UserId))
-                            _userDb.ClientDisconnected(session);
-#endif
                         break;
                     }
             }
