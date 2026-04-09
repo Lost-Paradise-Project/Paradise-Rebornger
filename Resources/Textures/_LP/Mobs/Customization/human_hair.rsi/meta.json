@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Aki hairstyle taken from https://github.com/Blackstone-SS13/BLACKSTONE",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "aki",
+            "directions": 4
+        }
+    ]
+}

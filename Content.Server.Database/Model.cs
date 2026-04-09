@@ -511,8 +511,6 @@ namespace Content.Server.Database
         public List<Round> Rounds { get; set; } = null!;
         public List<AdminLogPlayer> AdminLogs { get; set; } = null!;
 
-        public TimeSpan? LastRolledAntag { get; set; } // Goobstation
-
         public DateTime? LastReadRules { get; set; }
 
         public List<AdminNote> AdminNotesReceived { get; set; } = null!;

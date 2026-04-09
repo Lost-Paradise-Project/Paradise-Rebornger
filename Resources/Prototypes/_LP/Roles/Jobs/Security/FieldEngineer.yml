@@ -38,7 +38,7 @@
     gloves: ClothingHandsGlovesColorYellow
     head: ClothingHeadHatHardhatYellow
     id: LPPSecurityEnginerPDA
-    outerClothing: ClothingOuterVestHazard
+    outerClothing: LPClothingOuterVestSecurityEngineer
     ears: LPPClothingHeadsetSecurityEngineer
     belt: LPPClothingMilitaryWebbingSecEng
   storage:

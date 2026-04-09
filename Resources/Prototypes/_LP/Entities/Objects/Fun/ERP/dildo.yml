@@ -39,6 +39,14 @@
     damage:
       types:
         Blunt: 0
+  - type: Ammo
+    muzzleFlash: null
+  - type: Projectile
+    deleteOnCollide: false
+    onlyCollideWhenShot: true
+    damage:
+      types:
+        Blunt: 3
 
 - type: entity
   name: dildo canine

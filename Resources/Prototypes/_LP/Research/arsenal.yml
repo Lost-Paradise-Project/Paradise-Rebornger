@@ -146,7 +146,7 @@
   tier: 2
   cost: 7500
   recipeUnlocks:
-  - LPPWeaponLauncherHydra
+  - LPPWeaponLauncherHydrozoa
   - LPPGrenadeBaton
   - LPPGrenadeEMP
   technologyPrerequisites:

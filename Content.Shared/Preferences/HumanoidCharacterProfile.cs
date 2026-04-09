@@ -182,7 +182,7 @@ namespace Content.Shared.Preferences
             string oocNotes,
             string headshotUrl
             )
-            //ADT-tweak-end
+        //ADT-tweak-end
         {
             Name = name;
             FlavorText = flavortext;
@@ -241,7 +241,7 @@ namespace Content.Shared.Preferences
                 // ADT start
                 other.OOCNotes,
                 other.HeadshotUrl
-                // ADT end
+            // ADT end
             )
         {
         }
@@ -275,7 +275,7 @@ namespace Content.Shared.Preferences
         }
 
         // TODO: This should eventually not be a visual change only.
-        public static HumanoidCharacterProfile Random(HashSet<string>? ignoredSpecies = null)
+        public static HumanoidCharacterProfile Random(HashSet<string>? ignoredSpecies = null, int sponsorTier = 0)   //LP edit
         {
             var prototypeManager = IoCManager.Resolve<IPrototypeManager>();
             var random = IoCManager.Resolve<IRobustRandom>();
@@ -286,10 +286,10 @@ namespace Content.Shared.Preferences
                 .ToArray()
             ).ID;
 
-            return RandomWithSpecies(species);
+            return RandomWithSpecies(species, sponsorTier); //LP edit
         }
 
-        public static HumanoidCharacterProfile RandomWithSpecies(string? species = null)
+        public static HumanoidCharacterProfile RandomWithSpecies(string? species = null, int sponsorTier = 0)   //LP edit
         {
             species ??= HumanoidCharacterProfile.DefaultSpecies;
 
@@ -311,7 +311,7 @@ namespace Content.Shared.Preferences
             // Corvax-TTS-Start
             var voiceId = random.Pick(prototypeManager
                 .EnumeratePrototypes<TTSVoicePrototype>()
-                .Where(o => CanHaveVoice(o, sex, species)).ToArray() // LP edit
+                .Where(o => CanHaveVoice(o, sex, species, sponsorTier)).ToArray() // LP edit
             ).ID;
             // Corvax-TTS-End
 
@@ -842,9 +842,12 @@ namespace Content.Shared.Preferences
 
             if (voice.SpeciesWhitelist.Count > 0 && !voice.SpeciesWhitelist.Contains(species))
                 return false;
-            // LP edit end
 
-            return voice.RoundStart && sex == Sex.Unsexed || (voice.Sex == sex || voice.Sex == Sex.Unsexed);
+
+            return (!voice.SponsorOnly || sponsorTier >= 3) &&
+                    voice.RoundStart &&
+                    (sex == Sex.Unsexed || voice.Sex == sex || voice.Sex == Sex.Unsexed);
+            // LP edit end
         }
         // Corvax-TTS-End
 

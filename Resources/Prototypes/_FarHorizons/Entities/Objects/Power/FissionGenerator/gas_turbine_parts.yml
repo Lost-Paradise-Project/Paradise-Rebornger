@@ -49,6 +49,11 @@
   - type: PhysicalComposition
     materialComposition:
       Brass: 1000
+#LP edit start
+  - type: Sprite
+    sprite: _FarHorizons/Objects/Power/FissionGenerator/gas_turbine_parts.rsi
+    color: "#AE8742"
+#LP edit end
 
 - type: entity
   id: DiamondGasTurbineBlade
@@ -60,6 +65,11 @@
   - type: PhysicalComposition
     materialComposition:
       Diamond: 1000
+#LP edit start
+  - type: Sprite
+    sprite: _FarHorizons/Objects/Power/FissionGenerator/gas_turbine_parts.rsi
+    color: "#00B7EB"
+#LP edit end
 
 - type: entity
   id: GoldGasTurbineBlade
@@ -71,6 +81,11 @@
   - type: PhysicalComposition
     materialComposition:
       Gold: 1000
+#LP edit start
+  - type: Sprite
+    sprite: _FarHorizons/Objects/Power/FissionGenerator/gas_turbine_parts.rsi
+    color: "#FFD700"
+#LP edit end
 
 - type: entity
   id: PlasteelGasTurbineBlade
@@ -82,6 +97,11 @@
   - type: PhysicalComposition
     materialComposition:
       Plasteel: 1000
+#LP edit start
+  - type: Sprite
+    sprite: _FarHorizons/Objects/Power/FissionGenerator/gas_turbine_parts.rsi
+    color: "#B3B1AD"
+#LP edit end
 
 # Stators
 - type: entity
@@ -119,6 +139,11 @@
   - type: PhysicalComposition
     materialComposition:
       Silver: 1000
+#LP edit start
+  - type: Sprite
+    state: turbine_stator
+    color: "#C9C0BB"
+#LP edit end
 
 - type: entity
   id: GoldGasTurbineStator
@@ -130,3 +155,8 @@
   - type: PhysicalComposition
     materialComposition:
       Gold: 1000
+#LP edit start
+  - type: Sprite
+    state: turbine_stator
+    color: "#FFD700"
+#LP edit end

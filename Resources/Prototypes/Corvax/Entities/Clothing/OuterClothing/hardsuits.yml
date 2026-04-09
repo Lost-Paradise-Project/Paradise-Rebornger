@@ -1,5 +1,5 @@
 - type: entity
-  parent: ClothingOuterHardsuitBase
+  parent: [ClothingOuterHardsuitBase, BaseCentcommContraband]
   id: ClothingOuterHardsuitCBURNLeader
   name: CBURN commander exosuit
   description: A lightweight yet strong exosuit used for special cleanup operations.
