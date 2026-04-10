@@ -15,14 +15,6 @@
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
   sponsorOnly: true
-  layering:
-    m_tail_9sune_BEHIND_primary: TailBehind
-    m_tail_9sune_BEHIND_secondary: TailBehind
-    m_tail_9sune_FRONT_primary: TailOversuit
-    m_tail_9sune_FRONT_secondary: TailOversuit
-  colorLinks:
-    m_tail_9sune_BEHIND_primary: m_tail_9sune_FRONT_primary
-    m_tail_9sune_BEHIND_secondary: m_tail_9sune_FRONT_secondary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_9sune_FRONT_primary
@@ -38,14 +30,6 @@
   id: TailAvian1
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_avian1_BEHIND_primary: TailBehind
-    m_tail_avian1_BEHIND_secondary: TailBehind
-    m_tail_avian1_FRONT_primary: TailOversuit
-    m_tail_avian1_FRONT_secondary: TailOversuit
-  colorLinks:
-    m_tail_avian1_BEHIND_primary: m_tail_avian1_FRONT_primary
-    m_tail_avian1_BEHIND_secondary: m_tail_avian1_FRONT_secondary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_avian1_FRONT_primary
@@ -61,14 +45,6 @@
   id: TailAvian2
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_avian2_BEHIND_primary: TailBehind
-    m_tail_avian2_BEHIND_secondary: TailBehind
-    m_tail_avian2_FRONT_primary: TailOversuit
-    m_tail_avian2_FRONT_secondary: TailOversuit
-  colorLinks:
-    m_tail_avian2_BEHIND_primary: m_tail_avian2_FRONT_primary
-    m_tail_avian2_BEHIND_secondary: m_tail_avian2_FRONT_secondary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_avian2_FRONT_primary
@@ -83,14 +59,6 @@
   id: TailBatl
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_batl_BEHIND_primary: TailBehind
-    m_tail_batl_BEHIND_secondary: TailBehind
-    m_tail_batl_FRONT_primary: TailOversuit
-    m_tail_batl_FRONT_secondary: TailOversuit
-  colorLinks:
-    m_tail_batl_BEHIND_primary: m_tail_batl_FRONT_primary
-    m_tail_batl_BEHIND_secondary: m_tail_batl_FRONT_secondary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_batl_FRONT_primary
@@ -105,14 +73,6 @@
   id: TailBats
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_bats_BEHIND_primary: TailBehind
-    m_tail_bats_BEHIND_secondary: TailBehind
-    m_tail_bats_FRONT_primary: TailOversuit
-    m_tail_bats_FRONT_secondary: TailOversuit
-  colorLinks:
-    m_tail_bats_BEHIND_primary: m_tail_bats_FRONT_primary
-    m_tail_bats_BEHIND_secondary: m_tail_bats_FRONT_secondary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_bats_FRONT_primary
@@ -126,14 +86,6 @@
 - type: marking
   id: TailBee
   bodyPart: Tail
-  layering:
-    m_tail_bee_BEHIND_primary: TailBehind
-    m_tail_bee_BEHIND_secondary: TailBehind
-    m_tail_bee_FRONT_primary: TailOversuit
-    m_tail_bee_FRONT_secondary: TailOversuit
-  colorLinks:
-    m_tail_bee_BEHIND_primary: m_tail_bee_FRONT_primary
-    m_tail_bee_BEHIND_secondary: m_tail_bee_FRONT_secondary
   groupWhitelist: [Slime, Human]
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
@@ -150,14 +102,6 @@
   id: TailCable
   bodyPart: Tail
   groupWhitelist: [Human, Ipc]
-  layering:
-    m_tail_cable_BEHIND_primary: TailBehind
-    m_tail_cable_BEHIND_secondary: TailBehind
-    m_tail_cable_FRONT_primary: TailOversuit
-    m_tail_cable_FRONT_secondary: TailOversuit
-  colorLinks:
-    m_tail_cable_BEHIND_primary: m_tail_cable_FRONT_primary
-    m_tail_cable_BEHIND_secondary: m_tail_cable_FRONT_secondary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_cable_FRONT_primary
@@ -168,11 +112,6 @@
   id: TailCat
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_cat_BEHIND: TailBehind
-    m_tail_cat_FRONT: Tail #should go over backpack!
-  colorLinks:
-    m_tail_cat_BEHIND: m_tail_cat_FRONT
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_cat_FRONT
@@ -183,11 +122,6 @@
   id: TailCatBig
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_catbig_BEHIND: TailBehind
-    m_tail_catbig_FRONT: TailOversuit
-  colorLinks:
-    m_tail_catbig_BEHIND: m_tail_catbig_FRONT
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_catbig_FRONT
@@ -198,11 +132,6 @@
   id: TailCow
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_cow_BEHIND_primary: TailBehind
-    m_tail_cow_FRONT_primary: TailOversuit
-  colorLinks:
-    m_tail_cow_BEHIND_primary: m_tail_cow_FRONT_primary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_cow_FRONT_primary
@@ -214,14 +143,6 @@
   id: TailDeer
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_deer_BEHIND_primary: TailBehind
-    m_tail_deer_BEHIND_secondary: TailBehind
-    m_tail_deer_FRONT_primary: TailOversuit
-    m_tail_deer_FRONT_secondary: TailOversuit
-  colorLinks:
-    m_tail_deer_BEHIND_primary: m_tail_deer_FRONT_primary
-    m_tail_deer_BEHIND_secondary: m_tail_deer_FRONT_secondary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_deer_FRONT_primary
@@ -236,11 +157,6 @@
   id: TailDeerTwo
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_deer_two_BEHIND: TailBehind
-    m_tail_deer_two_FRONT: TailOversuit
-  colorLinks:
-    m_tail_deer_two_BEHIND: m_tail_deer_two_FRONT
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_deer_two_FRONT
@@ -252,14 +168,6 @@
   id: TailDoubleKitsune
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_doublekitsune_BEHIND_primary: TailBehind
-    m_tail_doublekitsune_BEHIND_secondary: TailBehind
-    m_tail_doublekitsune_FRONT_primary: TailOversuit
-    m_tail_doublekitsune_FRONT_secondary: TailOversuit
-  colorLinks:
-    m_tail_doublekitsune_BEHIND_primary: m_tail_doublekitsune_FRONT_primary
-    m_tail_doublekitsune_BEHIND_secondary: m_tail_doublekitsune_FRONT_secondary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_doublekitsune_FRONT_primary
@@ -274,11 +182,6 @@
   id: TailDTiger
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_dtiger_BEHIND: TailBehind
-    m_tail_dtiger_FRONT: TailOversuit
-  colorLinks:
-    m_tail_dtiger_BEHIND: m_tail_dtiger_FRONT
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_dtiger_FRONT
@@ -290,14 +193,6 @@
   id: TailEvolox
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_evolox_BEHIND_primary: TailBehind
-    m_tail_evolox_BEHIND_secondary: TailBehind
-    m_tail_evolox_FRONT_primary: TailOversuit
-    m_tail_evolox_FRONT_secondary: TailOversuit
-  colorLinks:
-    m_tail_evolox_BEHIND_primary: m_tail_evolox_FRONT_primary
-    m_tail_evolox_BEHIND_secondary: m_tail_evolox_FRONT_secondary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_evolox_FRONT_primary
@@ -313,14 +208,6 @@
   id: TailFennec
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_fennec_BEHIND_primary: TailBehind
-    m_tail_fennec_BEHIND_secondary: TailBehind
-    m_tail_fennec_FRONT_primary: TailOversuit
-    m_tail_fennec_FRONT_secondary: TailOversuit
-  colorLinks:
-    m_tail_fennec_BEHIND_primary: m_tail_fennec_FRONT_primary
-    m_tail_fennec_BEHIND_secondary: m_tail_fennec_FRONT_secondary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_fennec_FRONT_primary
@@ -336,11 +223,6 @@
   id: TailFox2
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_fox2_BEHIND_primary: TailBehind
-    m_tail_fox2_FRONT_primary: TailOversuit
-  colorLinks:
-    m_tail_fox2_BEHIND_primary: m_tail_fox2_FRONT_primary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_fox2_FRONT_primary
@@ -352,11 +234,6 @@
   id: TailFox3
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_fox3_BEHIND_primary: TailBehind
-    m_tail_fox3_FRONT_primary: TailOversuit
-  colorLinks:
-    m_tail_fox3_BEHIND_primary: m_tail_fox3_FRONT_primary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_fox3_FRONT_primary
@@ -367,11 +244,6 @@
   id: TailVirtuasaur
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_virtuasaur_BEHIND_primary: TailBehind
-    m_tail_virtuasaur_FRONT_primary: TailOversuit
-  colorLinks:
-    m_tail_virtuasaur_BEHIND_primary: m_tail_virtuasaur_FRONT_primary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_virtuasaur_FRONT_primary
@@ -382,14 +254,6 @@
   id: TailHawk
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_hawk_BEHIND_primary: TailBehind
-    m_tail_hawk_BEHIND_secondary: TailBehind
-    m_tail_hawk_FRONT_primary: TailOversuit
-    m_tail_hawk_FRONT_secondary: TailOversuit
-  colorLinks:
-    m_tail_hawk_BEHIND_primary: m_tail_hawk_FRONT_primary
-    m_tail_hawk_BEHIND_secondary: m_tail_hawk_FRONT_secondary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_hawk_FRONT_primary
@@ -404,11 +268,6 @@
   id: TailHorse
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_horse_BEHIND: TailBehind
-    m_tail_horse_FRONT: TailOversuit
-  colorLinks:
-    m_tail_horse_BEHIND: m_tail_horse_FRONT
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_horse_FRONT
@@ -419,11 +278,6 @@
   id: TailHusk
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_husk_BEHIND_primary: TailBehind
-    m_tail_husk_FRONT_primary: TailOversuit
-  colorLinks:
-    m_tail_husk_BEHIND_primary: m_tail_husk_FRONT_primary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_husk_FRONT_primary
@@ -434,14 +288,6 @@
   id: TailHusky
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_husky_BEHIND_primary: TailBehind
-    m_tail_husky_BEHIND_secondary: TailBehind
-    m_tail_husky_FRONT_primary: Tail # is an uppy tail
-    m_tail_husky_FRONT_secondary: Tail
-  colorLinks:
-    m_tail_husky_BEHIND_primary: m_tail_husky_FRONT_primary
-    m_tail_husky_BEHIND_secondary: m_tail_husky_FRONT_secondary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_husky_FRONT_primary
@@ -456,11 +302,6 @@
   id: TailInsect
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_insect_BEHIND_primary: TailBehind
-    m_tail_insect_FRONT_primary: TailOversuit
-  colorLinks:
-    m_tail_insect_BEHIND_primary: m_tail_insect_FRONT_primary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_insect_FRONT_primary
@@ -471,11 +312,6 @@
   id: TailKangaroo
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_kangaroo_BEHIND_primary: TailBehind
-    m_tail_kangaroo_FRONT_primary: TailOversuit
-  colorLinks:
-    m_tail_kangaroo_BEHIND_primary: m_tail_kangaroo_FRONT_primary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_kangaroo_FRONT_primary
@@ -486,14 +322,6 @@
   id: TailKitsune
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_kitsune_BEHIND_primary: TailBehind
-    m_tail_kitsune_BEHIND_secondary: TailBehind
-    m_tail_kitsune_FRONT_primary: Tail
-    m_tail_kitsune_FRONT_secondary: Tail
-  colorLinks:
-    m_tail_kitsune_BEHIND_primary: m_tail_kitsune_FRONT_primary
-    m_tail_kitsune_BEHIND_secondary: m_tail_kitsune_FRONT_secondary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_kitsune_FRONT_primary
@@ -508,11 +336,6 @@
   id: TailLab
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_lab_BEHIND_primary: TailBehind
-    m_tail_lab_FRONT_primary: Tail
-  colorLinks:
-    m_tail_lab_BEHIND_primary: m_tail_lab_FRONT_primary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_lab_FRONT_primary
@@ -523,14 +346,6 @@
   id: TailLeopard
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_leopard_BEHIND_primary: TailBehind
-    m_tail_leopard_BEHIND_secondary: TailBehind
-    m_tail_leopard_FRONT_primary: TailOversuit
-    m_tail_leopard_FRONT_secondary: TailOversuit
-  colorLinks:
-    m_tail_leopard_BEHIND_primary: m_tail_leopard_FRONT_primary
-    m_tail_leopard_BEHIND_secondary: m_tail_leopard_FRONT_secondary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_leopard_FRONT_primary
@@ -545,11 +360,6 @@
   id: TailLTiger
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_ltiger_BEHIND: TailBehind
-    m_tail_ltiger_FRONT: Tail
-  colorLinks:
-    m_tail_ltiger_BEHIND: m_tail_ltiger_FRONT
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_ltiger_FRONT
@@ -561,11 +371,6 @@
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
   sponsorOnly: true
-  layering:
-    m_tail_lunasune_BEHIND: TailBehind
-    m_tail_lunasune_FRONT: Tail
-  colorLinks:
-    m_tail_lunasune_BEHIND: m_tail_lunasune_FRONT
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_lunasune_FRONT
@@ -576,11 +381,6 @@
   id: TailMurid
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_murid_BEHIND_primary: TailBehind
-    m_tail_murid_FRONT_primary: TailOversuit
-  colorLinks:
-    m_tail_murid_BEHIND_primary: m_tail_murid_FRONT_primary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_murid_FRONT_primary
@@ -591,11 +391,6 @@
   id: TailMuridTwo
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_murid_two_BEHIND_primary: TailBehind
-    m_tail_murid_two_FRONT_primary: TailOversuit
-  colorLinks:
-    m_tail_murid_two_BEHIND_primary: m_tail_murid_two_FRONT_primary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_murid_two_FRONT_primary
@@ -606,11 +401,6 @@
   id: TailOrca
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_orca_BEHIND_primary: TailBehind
-    m_tail_orca_FRONT_primary: TailOversuit
-  colorLinks:
-    m_tail_orca_BEHIND_primary: m_tail_orca_FRONT_primary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_orca_FRONT_primary
@@ -621,11 +411,6 @@
   id: TailOtie
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_otie_BEHIND_primary: TailBehind
-    m_tail_otie_FRONT_primary: TailOversuit
-  colorLinks:
-    m_tail_otie_BEHIND_primary: m_tail_otie_FRONT_primary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_otie_FRONT_primary
@@ -636,17 +421,6 @@
   id: TailPede
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_leopard_BEHIND_primary: TailBehind
-    m_tail_leopard_BEHIND_secondary: TailBehind
-    m_tail_leopard_BEHIND_tertiary: TailBehind
-    m_tail_leopard_FRONT_primary: Tail
-    m_tail_leopard_FRONT_secondary: Tail
-    m_tail_leopard_FRONT_tertiary: Tail
-  colorLinks:
-    m_tail_leopard_BEHIND_primary: m_tail_leopard_FRONT_primary
-    m_tail_leopard_BEHIND_secondary: m_tail_leopard_FRONT_secondary
-    m_tail_leopard_BEHIND_tertiary: m_tail_leopard_FRONT_tertiary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_pede_FRONT_primary
@@ -665,17 +439,6 @@
   id: TailPlugTail
   bodyPart: Tail
   groupWhitelist: [Human, Ipc]
-  layering:
-    m_tail_plugtail_BEHIND_primary: TailBehind
-    m_tail_plugtail_BEHIND_secondary: TailBehind
-    m_tail_plugtail_BEHIND_tertiary: TailBehind
-    m_tail_plugtail_FRONT_primary: TailOversuit
-    m_tail_plugtail_FRONT_secondary: TailOversuit
-    m_tail_plugtail_FRONT_tertiary: TailOversuit
-  colorLinks:
-    m_tail_plugtail_BEHIND_primary: m_tail_plugtail_FRONT_primary
-    m_tail_plugtail_BEHIND_secondary: m_tail_plugtail_FRONT_secondary
-    m_tail_plugtail_BEHIND_tertiary: m_tail_plugtail_FRONT_tertiary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_plugtail_FRONT_primary
@@ -695,14 +458,6 @@
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
   sponsorOnly: true
-  layering:
-    m_tail_queenbee_BEHIND_primary: TailBehind
-    m_tail_queenbee_BEHIND_secondary: TailBehind
-    m_tail_queenbee_FRONT_primary: TailOversuit
-    m_tail_queenbee_FRONT_secondary: TailOversuit
-  colorLinks:
-    m_tail_queenbee_BEHIND_primary: m_tail_queenbee_FRONT_primary
-    m_tail_queenbee_BEHIND_secondary: m_tail_queenbee_FRONT_secondary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_queenbee_FRONT_primary
@@ -718,14 +473,6 @@
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
   sponsorOnly: true
-  layering:
-    m_tail_queeninsect_BEHIND_primary: TailBehind
-    m_tail_queeninsect_BEHIND_secondary: TailBehind
-    m_tail_queeninsect_FRONT_primary: TailOversuit
-    m_tail_queeninsect_FRONT_secondary: TailOversuit
-  colorLinks:
-    m_tail_queeninsect_BEHIND_primary: m_tail_queeninsect_FRONT_primary
-    m_tail_queeninsect_BEHIND_secondary: m_tail_queeninsect_FRONT_secondary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_queeninsect_FRONT_primary
@@ -736,11 +483,6 @@
   id: TailRabbit
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_rabbit_BEHIND_primary: TailBehind
-    m_tail_rabbit_FRONT_primary: Tail
-  colorLinks:
-    m_tail_rabbit_BEHIND_primary: m_tail_rabbit_FRONT_primary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_rabbit_FRONT_primary
@@ -751,9 +493,6 @@
   id: TailRabbitAlt
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_rabbit_alt_FRONT_primary: Tail
-    m_tail_rabbit_alt_FRONT_secondary: Tail
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_rabbit_alt_FRONT_primary
@@ -764,12 +503,6 @@
   id: TailRaccoon
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_raccoon_BEHIND_primary: TailBehind
-    m_tail_raccoon_BEHIND_secondary: TailBehind
-  colorLinks:
-    m_tail_raccoon_BEHIND_primary: m_tail_raccoon_FRONT_primary
-    m_tail_raccoon_BEHIND_secondary: m_tail_raccoon_FRONT_secondary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_raccoon_FRONT_primary
@@ -784,17 +517,6 @@
   id: TailRaptor
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_raptor_BEHIND_primary: TailBehind
-    m_tail_raptor_BEHIND_secondary: TailBehind
-    m_tail_raptor_BEHIND_tertiary: TailBehind
-    m_tail_raptor_FRONT_primary: Tail
-    m_tail_raptor_FRONT_secondary: Tail
-    m_tail_raptor_FRONT_tertiary: Tail
-  colorLinks:
-    m_tail_raptor_BEHIND_primary: m_tail_raptor_FRONT_primary
-    m_tail_raptor_BEHIND_secondary: m_tail_raptor_FRONT_secondary
-    m_tail_raptor_BEHIND_tertiary: m_tail_raptor_FRONT_tertiary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_raptor_FRONT_primary
@@ -829,14 +551,6 @@
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
   sponsorOnly: true
-  layering:
-    m_tail_sabresune_BEHIND_primary: TailBehind
-    m_tail_sabresune_BEHIND_secondary: TailBehind
-    m_tail_sabresune_FRONT_primary: Tail
-    m_tail_sabresune_FRONT_secondary: Tail
-  colorLinks:
-    m_tail_sabresune_BEHIND_primary: m_tail_sabresune_FRONT_primary
-    m_tail_sabresune_BEHIND_secondary: m_tail_sabresune_FRONT_secondary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_sabresune_FRONT_primary
@@ -851,17 +565,6 @@
   id: TailSegmentedTail
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_segmentedtail_BEHIND_primary: TailBehind
-    m_tail_segmentedtail_BEHIND_secondary: TailBehind
-    m_tail_segmentedtail_BEHIND_tertiary: TailBehind
-    m_tail_segmentedtail_FRONT_primary: Tail
-    m_tail_segmentedtail_FRONT_secondary: Tail
-    m_tail_segmentedtail_FRONT_tertiary: Tail
-  colorLinks:
-    m_tail_segmentedtail_BEHIND_primary: m_tail_segmentedtail_FRONT_primary
-    m_tail_segmentedtail_BEHIND_secondary: m_tail_segmentedtail_FRONT_secondary
-    m_tail_segmentedtail_BEHIND_tertiary: m_tail_segmentedtail_FRONT_tertiary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_segmentedtail_FRONT_primary
@@ -880,14 +583,6 @@
   id: TailSergal
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_sergal_BEHIND_primary: TailBehind
-    m_tail_sergal_BEHIND_secondary: TailBehind
-    m_tail_sergal_FRONT_primary: TailOversuit
-    m_tail_sergal_FRONT_secondary: TailOversuit
-  colorLinks:
-    m_tail_sergal_BEHIND_primary: m_tail_sergal_FRONT_primary
-    m_tail_sergal_BEHIND_secondary: m_tail_sergal_FRONT_secondary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_sergal_FRONT_primary
@@ -903,14 +598,6 @@
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
   sponsorOnly: true
-  layering:
-    m_tail_sevenkitsune_BEHIND_primary: TailBehind
-    m_tail_sevenkitsune_BEHIND_secondary: TailBehind
-    m_tail_sevenkitsune_FRONT_primary: TailOversuit
-    m_tail_sevenkitsune_FRONT_secondary: TailOversuit
-  colorLinks:
-    m_tail_sevenkitsune_BEHIND_primary: m_tail_sevenkitsune_FRONT_primary
-    m_tail_sevenkitsune_BEHIND_secondary: m_tail_sevenkitsune_FRONT_secondary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_sevenkitsune_FRONT_primary
@@ -925,11 +612,6 @@
   id: TailShark
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_shark_BEHIND_primary: TailBehind
-    m_tail_shark_FRONT_primary: TailOversuit
-  colorLinks:
-    m_tail_shark_BEHIND_primary: m_tail_shark_FRONT_primary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_shark_FRONT_primary
@@ -940,11 +622,6 @@
   id: TailSharkNoFin
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_sharknofin_BEHIND_primary: TailBehind
-    m_tail_sharknofin_FRONT_primary: TailOversuit
-  colorLinks:
-    m_tail_sharknofin_BEHIND_primary: m_tail_sharknofin_FRONT_primary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_sharknofin_FRONT_primary
@@ -955,14 +632,6 @@
   id: TailShepherd
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_shepherd_BEHIND_secondary: TailBehind
-    m_tail_shepherd_BEHIND_tertiary: TailBehind
-    m_tail_shepherd_FRONT_secondary: Tail
-    m_tail_shepherd_FRONT_tertiary: Tail
-  colorLinks:
-    m_tail_shepherd_BEHIND_secondary: m_tail_shepherd_FRONT_secondary
-    m_tail_shepherd_BEHIND_tertiary: m_tail_shepherd_FRONT_tertiary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_shepherd_FRONT_secondary
@@ -977,17 +646,6 @@
   id: TailSkunk
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_skunk_BEHIND_primary: TailBehind
-    m_tail_skunk_BEHIND_secondary: TailBehind
-    m_tail_skunk_BEHIND_tertiary: TailBehind
-    m_tail_skunk_FRONT_primary: Tail
-    m_tail_skunk_FRONT_secondary: Tail
-    m_tail_skunk_FRONT_tertiary: Tail
-  colorLinks:
-    m_tail_skunk_BEHIND_primary: m_tail_skunk_FRONT_primary
-    m_tail_skunk_BEHIND_secondary: m_tail_skunk_FRONT_secondary
-    m_tail_skunk_BEHIND_tertiary: m_tail_skunk_FRONT_tertiary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_skunk_FRONT_primary
@@ -1006,11 +664,6 @@
   id: TailSmooth
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_smooth_BEHIND: TailBehind
-    m_tail_smooth_FRONT: TailOversuit
-  colorLinks:
-    m_tail_smooth_BEHIND: m_tail_smooth_FRONT
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_smooth_FRONT
@@ -1022,14 +675,6 @@
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
   sponsorOnly: true
-  layering:
-    m_tail_snakedual_BEHIND_primary: TailBehind
-    m_tail_snakedual_BEHIND_secondary: TailBehind
-    m_tail_snakedual_FRONT_primary: Tail
-    m_tail_snakedual_FRONT_secondary: Tail
-  colorLinks:
-    m_tail_snakedual_BEHIND_primary: m_tail_snakedual_FRONT_primary
-    m_tail_snakedual_BEHIND_secondary: m_tail_snakedual_FRONT_secondary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_snakedual_FRONT_primary
@@ -1045,14 +690,6 @@
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
   sponsorOnly: true
-  layering:
-    m_tail_snakestripe_BEHIND_primary: TailBehind
-    m_tail_snakestripe_BEHIND_secondary: TailBehind
-    m_tail_snakestripe_FRONT_primary: Tail
-    m_tail_snakestripe_FRONT_secondary: Tail
-  colorLinks:
-    m_tail_snakestripe_BEHIND_primary: m_tail_snakestripe_FRONT_primary
-    m_tail_snakestripe_BEHIND_secondary: m_tail_snakestripe_FRONT_secondary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_snakestripe_FRONT_primary
@@ -1068,14 +705,6 @@
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
   sponsorOnly: true
-  layering:
-    m_tail_snakestripealt_BEHIND_primary: TailBehind
-    m_tail_snakestripealt_BEHIND_secondary: TailBehind
-    m_tail_snakestripealt_FRONT_primary: Tail
-    m_tail_snakestripealt_FRONT_secondary: Tail
-  colorLinks:
-    m_tail_snakestripealt_BEHIND_primary: m_tail_snakestripealt_FRONT_primary
-    m_tail_snakestripealt_BEHIND_secondary: m_tail_snakestripealt_FRONT_secondary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_snakestripealt_FRONT_primary
@@ -1091,11 +720,6 @@
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
   sponsorOnly: true
-  layering:
-    m_tail_snaketail_BEHIND: TailBehind
-    m_tail_snaketail_FRONT: Tail
-  colorLinks:
-    m_tail_snaketail_BEHIND: m_tail_snaketail_FRONT
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_snaketail_FRONT
@@ -1107,14 +731,6 @@
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
   sponsorOnly: true
-  layering:
-    m_tail_snakeunder_BEHIND_primary: TailBehind
-    m_tail_snakeunder_BEHIND_secondary: TailBehind
-    m_tail_snakeunder_FRONT_primary: Tail
-    m_tail_snakeunder_FRONT_secondary: Tail
-  colorLinks:
-    m_tail_snakeunder_BEHIND_primary: m_tail_snakeunder_FRONT_primary
-    m_tail_snakeunder_BEHIND_secondary: m_tail_snakeunder_FRONT_secondary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_snakeunder_FRONT_primary
@@ -1129,11 +745,6 @@
   id: TailSpade
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_spade_BEHIND_primary: TailBehind
-    m_tail_spade_FRONT_primary: TailOversuit
-  colorLinks:
-    m_tail_spade_BEHIND_primary: m_tail_spade_FRONT_primary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_spade_FRONT_primary
@@ -1144,11 +755,6 @@
   id: TailSpikes
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_spikes_BEHIND: TailBehind
-    m_tail_spikes_FRONT: TailOversuit
-  colorLinks:
-    m_tail_spikes_BEHIND: m_tail_spikes_FRONT
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_spikes_FRONT
@@ -1159,11 +765,6 @@
   id: TailSquirrel
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_squirrel_BEHIND: TailBehind
-    m_tail_squirrel_FRONT: Tail
-  colorLinks:
-    m_tail_squirrel_BEHIND: m_tail_squirrel_FRONT
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_squirrel_FRONT
@@ -1174,11 +775,6 @@
   id: TailStraightTail
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_straighttail_BEHIND_primary: TailBehind
-    m_tail_straighttail_FRONT_primary: Tail
-  colorLinks:
-    m_tail_straighttail_BEHIND_primary: m_tail_straighttail_FRONT_primary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_straighttail_FRONT_primary
@@ -1189,11 +785,6 @@
   id: TailThreeCat
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_threecat_BEHIND_primary: TailBehind
-    m_tail_threecat_FRONT_primary: Tail
-  colorLinks:
-    m_tail_threecat_BEHIND_primary: m_tail_threecat_FRONT_primary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_threecat_FRONT_primary
@@ -1204,17 +795,6 @@
   id: TailTiger
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_tiger_BEHIND_primary: TailBehind
-    m_tail_tiger_BEHIND_secondary: TailBehind
-    m_tail_tiger_BEHIND_tertiary: TailBehind
-    m_tail_tiger_FRONT_primary: Tail
-    m_tail_tiger_FRONT_secondary: Tail
-    m_tail_tiger_FRONT_tertiary: Tail
-  colorLinks:
-    m_tail_tiger_BEHIND_primary: m_tail_tiger_FRONT_primary
-    m_tail_tiger_BEHIND_secondary: m_tail_tiger_FRONT_secondary
-    m_tail_tiger_BEHIND_tertiary: m_tail_tiger_FRONT_tertiary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_tiger_FRONT_primary
@@ -1233,17 +813,6 @@
   id: TailTiger2
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_tiger2_BEHIND_primary: TailBehind
-    m_tail_tiger2_BEHIND_secondary: TailBehind
-    m_tail_tiger2_BEHIND_tertiary: TailBehind
-    m_tail_tiger2_FRONT_primary: Tail
-    m_tail_tiger2_FRONT_secondary: Tail
-    m_tail_tiger2_FRONT_tertiary: Tail
-  colorLinks:
-    m_tail_tiger2_BEHIND_primary: m_tail_tiger2_FRONT_primary
-    m_tail_tiger2_BEHIND_secondary: m_tail_tiger2_FRONT_secondary
-    m_tail_tiger2_BEHIND_tertiary: m_tail_tiger2_FRONT_tertiary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_tiger2_FRONT_primary
@@ -1262,11 +831,6 @@
   id: TailTwoCat
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_twocat_BEHIND_primary: TailBehind
-    m_tail_twocat_FRONT_primary: Tail
-  colorLinks:
-    m_tail_twocat_BEHIND_primary: m_tail_twocat_FRONT_primary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_twocat_FRONT_primary
@@ -1277,14 +841,6 @@
   id: TailWah
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_wah_BEHIND_primary: TailBehind
-    m_tail_wah_BEHIND_secondary: TailBehind
-    m_tail_wah_FRONT_primary: Tail
-    m_tail_wah_FRONT_secondary: Tail
-  colorLinks:
-    m_tail_wah_BEHIND_primary: m_tail_wah_FRONT_primary
-    m_tail_wah_BEHIND_secondary: m_tail_wah_FRONT_secondary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_wah_FRONT_primary
@@ -1299,11 +855,6 @@
   id: TailWolf
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_wolf_BEHIND: TailBehind
-    m_tail_wolf_FRONT: Tail
-  colorLinks:
-    m_tail_wolf_BEHIND: m_tail_wolf_FRONT
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_wolf_FRONT
@@ -1315,17 +866,6 @@
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
   sponsorOnly: true
-  layering:
-    m_tail_zorgoia_BEHIND_primary: TailBehind
-    m_tail_zorgoia_BEHIND_secondary: TailBehind
-    m_tail_zorgoia_BEHIND_tertiary: TailBehind
-    m_tail_zorgoia_FRONT_primary: Tail
-    m_tail_zorgoia_FRONT_secondary: Tail
-    m_tail_zorgoia_FRONT_tertiary: Tail
-  colorLinks:
-    m_tail_zorgoia_BEHIND_primary: m_tail_zorgoia_FRONT_primary
-    m_tail_zorgoia_BEHIND_secondary: m_tail_zorgoia_FRONT_secondary
-    m_tail_zorgoia_BEHIND_tertiary: m_tail_zorgoia_FRONT_tertiary
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_zorgoia_FRONT_primary

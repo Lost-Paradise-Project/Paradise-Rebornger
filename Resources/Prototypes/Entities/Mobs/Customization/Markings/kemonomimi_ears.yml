@@ -1,7 +1,6 @@
 - type: marking
   id: BullishHorns
   bodyPart: HeadTop
-  markingCategory: HeadTop
   groupWhitelist: [Human]
   sponsorOnly: true # LPP-Sponsors
   coloring:
@@ -18,7 +17,6 @@
 - type: marking
   id: BunnyEars
   bodyPart: HeadTop
-  markingCategory: HeadTop
   groupWhitelist: [Human]
   sponsorOnly: true # LPP-Sponsors
   coloring:
@@ -42,7 +40,6 @@
 - type: marking
   id: FoxEarsalt
   bodyPart: HeadTop
-  markingCategory: HeadTop
   groupWhitelist: [Human]
   sponsorOnly: true # LPP-Sponsors
   coloring:
@@ -59,7 +56,6 @@
 - type: marking
   id: GoatHorns
   bodyPart: HeadTop
-  markingCategory: HeadTop
   groupWhitelist: [Human]
   sponsorOnly: true # LPP-Sponsors
   coloring:
