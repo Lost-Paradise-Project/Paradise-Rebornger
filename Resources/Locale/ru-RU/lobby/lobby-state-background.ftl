@@ -1,6 +1,9 @@
 lobby-state-background-warden-title = Варден
 lobby-state-background-warden-artist = Solbusaur
 
+lobby-state-background-invisiblewall-title = Невидимая Стена
+lobby-state-background-invisiblewall-artist = Vandersloot
+
 lobby-state-background-pharmacy-title = Аптека
 lobby-state-background-pharmacy-artist = Solbusaur
 

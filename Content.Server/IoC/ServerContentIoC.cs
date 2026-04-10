@@ -24,7 +24,6 @@ using Content.Server.Preferences.Managers;
 using Content.Server.ServerInfo;
 using Content.Server.ServerUpdates;
 using Content.Server.Voting.Managers;
-using Content.Server.Worldgen.Tools;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Administration.Managers;
 using Content.Shared.Chat;
@@ -33,7 +32,6 @@ using Content.Shared.IoC;
 using Content.Shared.Kitchen;
 using Content.Shared.Players.PlayTimeTracking;
 using Content.Shared.Players.RateLimiting;
-using Content.Server._GoobStation.Antag;
 using Content.Server._Orion.ServerProtection;
 using Content.Server._Orion.ServerProtection.Administration;
 using Content.Server._Orion.ServerProtection.Chat;
@@ -80,7 +78,6 @@ internal static class ServerContentIoC
         deps.Register<PlayTimeTrackingManager>();
         deps.Register<UserDbDataManager>();
         deps.Register<ServerInfoManager>();
-        deps.Register<PoissonDiskSampler>();
         deps.Register<DiscordWebhook>();
         deps.Register<VoteWebhooks>();
         deps.Register<ServerDbEntryManager>();
@@ -99,7 +96,6 @@ internal static class ServerContentIoC
         deps.Register<ServerFeedbackManager>();
         deps.Register<ISharedFeedbackManager, ServerFeedbackManager>();
         deps.Register<TTSManager>(); // Corvax-TTS
-        deps.Register<LastRolledAntagManager>(); // Goobstation - antag pity
         // Orion-Start
         deps.Register<ServerProtectionAuditManager>();
         deps.Register<ServerProtectionPunishmentSystem>();

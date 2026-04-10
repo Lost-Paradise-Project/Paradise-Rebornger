@@ -12,6 +12,14 @@
       state: icon
     - map: ["computerLayerScreen"]
       state: unshaded
+  - type: GenericVisualizer # Orion
+    visuals:
+      enum.EdgeConnectionVisuals.ConnectionMask:
+        computerLayerBody:
+          None: { state: icon, sprite: Structures/Machines/tech_disk_printer.rsi }
+          East: { state: icon, sprite: Structures/Machines/tech_disk_printer.rsi }
+          West: { state: icon, sprite: Structures/Machines/tech_disk_printer.rsi }
+          East, West: { state: icon, sprite: Structures/Machines/tech_disk_printer.rsi }
   - type: DiskConsole
   - type: ResearchClient
   - type: ActivatableUI
@@ -31,6 +39,8 @@
     energy: 0.5
     color: "#b53ca1"
 
+# The value per-disk equate to an average of 1000 research points -> 100 spesos
+# Average is calculated from this table, default speso value in TechnologyDiskComponent, and default point cost in DiskConsoleComponent
 - type: weightedRandom
   id: TechDiskTierWeights
   weights:
