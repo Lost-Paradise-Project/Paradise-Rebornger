@@ -1034,6 +1034,10 @@
         {
             "name": "m_tail_reptileslim_BEHIND",
             "directions": 4
+        },
+        {
+            "name": "m_tail_stripe_BEHIND_primary",
+            "directions": 4
         }
     ]
 }
