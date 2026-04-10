@@ -42,11 +42,16 @@
       limit: 1
       required: false
     enum.HumanoidVisualLayers.Tail:
-      limit: 0
+      limit: 1 #LP edit
       required: false
     enum.HumanoidVisualLayers.Special:
       limit: 0
       required: false
+#LP edit start
+    enum.HumanoidVisualLayers.HeadTop:
+      limit: 1
+      required: false
+#LP edit end
 
 - type: entity
   parent: BaseSpeciesAppearance
