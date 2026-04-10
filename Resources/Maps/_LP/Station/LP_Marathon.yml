@@ -109085,13 +109085,6 @@ entities:
         moles:
           Oxygen: 3.4430928
           Nitrogen: 12.952587
-- proto: LockerBlueshieldOfficerFilled
-  entities:
-  - uid: 22843
-    components:
-    - type: Transform
-      pos: -1.5,41.5
-      parent: 30
 - proto: LockerBoozeFilled
   entities:
   - uid: 453
@@ -109531,13 +109524,6 @@ entities:
     components:
     - type: Transform
       pos: -18.5,-16.5
-      parent: 30
-- proto: LockerNanorepFilled
-  entities:
-  - uid: 23357
-    components:
-    - type: Transform
-      pos: -1.5,38.5
       parent: 30
 - proto: LockerParamedicFilled
   entities:
