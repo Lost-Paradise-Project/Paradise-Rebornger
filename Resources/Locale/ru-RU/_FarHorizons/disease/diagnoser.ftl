@@ -1,5 +1,5 @@
-# diagnoser-cant-use-swab = { CAPITALIZE(THE($machine)) } отклоняет { THE($swab) }.
-# diagnoser-insert-swab = Вы вставляете { THE($swab) } в { THE($machine) }.
+# diagnoser-cant-use-swab = {CAPITALIZE(THE($machine))} rejects {THE($swab)}.
+# diagnoser-insert-swab = You insert {THE($swab)} into {THE($machine)}.
 
 diagnoser-disease-report-none = [bold]Заключение: Здоров[/bold]
 diagnoser-disease-report-subject = [bold]Субъект:[/bold] { $name }

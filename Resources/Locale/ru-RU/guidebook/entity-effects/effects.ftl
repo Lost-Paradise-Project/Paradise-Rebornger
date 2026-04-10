@@ -339,7 +339,7 @@ entity-effect-guidebook-cure-disease =
     { $chance ->
         [1] Излечивает
         *[other] излечивают
-    } болезни
+    } болезнь { $disease }
 
 entity-effect-guidebook-eye-damage =
     { $chance ->
