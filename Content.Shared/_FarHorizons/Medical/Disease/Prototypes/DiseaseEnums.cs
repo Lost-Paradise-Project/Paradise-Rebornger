@@ -57,4 +57,3 @@ public static class DiseaseEffectiveness
         (SlotFlags.INNERCLOTHING, 0.9f),
     ];
 }
-
