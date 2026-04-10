@@ -253,10 +253,9 @@ namespace Content.Server.Lathe
                     }
                     else
                     {
+                        var result = Spawn(resultProto, Transform(uid).Coordinates);
                         var ev = new LatheProductFinishedEvent(result); //FarHorizons
                         RaiseLocalEvent(uid, ref ev); //FarHorizons
-
-                        var result = Spawn(resultProto, Transform(uid).Coordinates);
                         RaiseLocalEvent(uid, new LatheGetResultEvent(result)); // CorvaxGoob-Prefilled-Printers
                         _stack.TryMergeToContacts(result);
                         if (TryComp<ScannableForPointsComponent>(result, out var scannable)) // Goobstation
