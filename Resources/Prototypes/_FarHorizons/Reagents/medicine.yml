@@ -61,25 +61,9 @@
     Bloodstream:
       metabolismRate: 0.1
       effects:
-      - !type:AdjustTemperature
-        amount: -20000
-        conditions:
-        - !type:TemperatureCondition
-            min: 300.15
-        - !type:MetabolizerTypeCondition
-            type: [ Avali, ProtoBird, Resomi ]
-            inverted: true
-      - !type:AdjustTemperature
-        amount: -20000
-        conditions:
-        - !type:TemperatureCondition
-            min: 266.15
-        - !type:MetabolizerTypeCondition
-            type: [ Avali, ProtoBird, Resomi ]
       - !type:EvenHealthChange
         damage:
           Brute: -0.5
-        affectAllLimbs: true
       - !type:HealthChange
         damage:
           types:
