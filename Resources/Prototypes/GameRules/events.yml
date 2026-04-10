@@ -18,6 +18,7 @@
     - id: MouseMigration
     - id: PowerGridCheck
     - id: RandomSentience
+    - id: DiseaseOutbreak #FarHorizons
     - id: SlimesSpawnHorde
     - id: SolarFlare
     - id: SnakeSpawnHorde

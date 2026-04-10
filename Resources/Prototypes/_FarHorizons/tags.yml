@@ -3,3 +3,9 @@
 
 - type: Tag
   id: GasTurbineStator
+
+- type: Tag
+  id: BoxMouthSwab
+
+- type: Tag
+  id: DiseaseSwab
