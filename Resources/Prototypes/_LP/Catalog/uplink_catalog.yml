@@ -1,0 +1,13 @@
+- type: listing
+  id: LPPUplinkBundleOlymp
+  name: uplink-bundle-olymp-name
+  description: uplink-bundle-olymp-desc
+  icon: { sprite:  _LP/Objects/Weapons/Guns/Snipers/Olymp_64x32.rsi, state: icon}
+  productEntity: LPPClothingBackpackDuffelSyndicateFilledOlymp
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 20
+  cost:
+    Telecrystal: 30
+  categories:
+  - UplinkWeaponry

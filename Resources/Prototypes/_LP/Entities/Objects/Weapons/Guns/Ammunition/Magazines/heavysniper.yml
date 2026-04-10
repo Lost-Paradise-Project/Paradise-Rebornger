@@ -1,0 +1,54 @@
+- type: entity
+  abstract: true
+  parent: [ BaseItem, BaseSyndicateContraband ]
+  id: LPPBaseMagazineHeavySniper
+  name: "magazine (.60 )"
+  components:
+  - type: Tag
+    tags:
+      - LPPMagazineHeavySniper
+  - type: Item
+    size: Small
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgeAntiMateriel
+    capacity: 7
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Ammunition/Magazine/heavysniper_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: LPPBaseMagazineHeavySniper
+  id: LPPMagazineHeavySniper
+  name: "magazine (.60 AntiMateriel)"
+  description: 7-round double stack magazine for AM sniper rifles. Intended to hold high presure kinetic ammunition.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeAntiMateriel
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Normal
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      right:
+      - state: inhand-right-mag

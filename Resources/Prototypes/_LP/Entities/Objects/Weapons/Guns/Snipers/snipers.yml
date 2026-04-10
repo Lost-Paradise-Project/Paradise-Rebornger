@@ -1,0 +1,92 @@
+- type: entity
+  name: Olymp
+  parent: [BaseItem, BaseGunWieldable, BaseSyndicateContraband]
+  id: LPPWeaponSniperOlymp
+  description: Semi-automatic magfed sniper rifle chambered in .60. Furniture feels realy light on this weapon and it's probably for CQB. Who put collimator on AM sniper rifles???
+  components:
+  - type: AmmoCounter
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_LP/Weapons/Guns/Gunshots/noscope.ogg
+    fireRate: 0.6
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+      firing_pin: !type:Container # Starlight
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: StaticPrice
+    price: 10000
+  - type: ContainerFill
+    containers:
+      firing_pin:
+      - FiringPin
+  - type: FiringPinHolder
+    supportedPins: [ Rifle, GunUpgrade ]
+  - type: Item
+    sprite: _LP/Objects/Weapons/Guns/Snipers/Olymp.rsi
+    size: Huge
+    shape:
+    - 0,0,5,2
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Guns/Snipers/Olymp_64x32.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+        scale: "0.8,0.8"
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+        scale: "0.8,0.8"
+  - type: Clothing
+    sprite: _LP/Objects/Weapons/Guns/Snipers/Olymp.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: LPPMagazineHeavySniper
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - LPPMagazineHeavySniper
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeAntiMateriel
+  - type: Appearance
+  - type: UseDelay
+    delay: 1.5
+  - type: UseDelayOnShoot
+  - type: GunRequiresWield
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.85
+    sprintModifier: 0.85
+  - type: EmitSoundOnPickup
+    sound:
+      collection: RiflesPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: RiflesDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: RiflesDrop

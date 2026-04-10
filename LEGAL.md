@@ -46,7 +46,6 @@
 | `_EE`            | Einstein Engines     | https://github.com/Simple-Station/Einstein-Engines          | AGPL 3.0 |
 | `_ADT`           | Adventure Time       | https://github.com/AdventureTimeSS14/space_station_ADT      | AGPL 3.0 |
 | `_NF`            | New Froniters        | https://github.com/new-frontiers-14/frontier-station-14     | AGPL 3.0 |
-| `_FloofStation`  | Floof Station        | https://github.com/Floof-Station/Floof-Station              | AGPL 3.0 |
 | `_CD`            | Cosmatic Drift       | https://github.com/cosmatic-drift-14/cosmatic-drift         | MIT      |
 | `_NC`            | Nuclear 14           | https://github.com/Vault-Overseers/nuclear-14               | AGPL 3.0 |
 | `_DV`            | Delta V              | https://github.com/DeltaV-Station/Delta-v/                  | AGPL 3.0 |
@@ -56,14 +55,13 @@
 | `_FarHorizons`   | Far Horizons         | https://github.com/Far-Horizons-SS14/Far-Horizons-SS14      | MIT      |
 | `_DEN`           | The Den              | https://github.com/TheDenSS14/TheDen                        | AGPL 3.0 |
 | `_CorvaxNext`    | Corvax Next          | https://github.com/space-syndicate/space-station-14-next    | AGPL 3.0 |
-| `_FunkyStation`  | Funky Station        | https://github.com/funky-station/funky-station              | AGPL 3.0 |
 | `_CorvaxGoob`    | Corvax Goob          | https://github.com/space-syndicate/Goob-Station             | AGPL 3.0 |
 | `_Mono`          | Monolith Station     | https://github.com/Monolith-Station/Monolith                | AGPL 3.0 |
-| `_RMC14`         | RMC-14               | https://github.com/RMC-14/RMC-14                            | MIT      |
 | `_L5`            | Lagrange Substations | https://github.com/lagrange14/substations                   | AGPL 3.0 |
 | `_White`         | W White Dream Public | https://github.com/WWhiteDreamProject/wwdpublic             | AGPL 3.0 |
 | `_Orion`         | Orion                | https://github.com/AtaraxiaSpaceFoundation/Orion-Station-14 | AGPL 3.0 |
 | `_VDS`           | Vermist Dust Sector  | https://github.com/vermist-sector/vermist-dust              | AGPL 3.0 |
+| `_StarCup`       | StarCup              | https://github.com/teamstarcup/starcup/                     | AGPL 3.0 |
 
 
 ## Отказ от гарантий
