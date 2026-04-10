@@ -186,8 +186,6 @@
   id: EarsCow
   bodyPart: HeadTop
   groupWhitelist: [Slime, Human]
-  colorLinks:
-    m_ears_cow_ADJ: m_ears_cow_FRONT
   sprites:
   - sprite: _Floof/Mobs/Customization/skyratears.rsi
     state: m_ears_cow_ADJ
@@ -198,8 +196,6 @@
   id: EarsDeer
   bodyPart: HeadTop
   groupWhitelist: [Slime, Human]
-  colorLinks:
-    m_ears_cow_ADJ: m_ears_cow_FRONT
   sprites:
   - sprite: _Floof/Mobs/Customization/skyratears.rsi
     state: m_ears_deer_ADJ
@@ -210,8 +206,6 @@
   id: EarsDeer2
   bodyPart: HeadTop
   groupWhitelist: [Slime, Human]
-  colorLinks:
-    m_ears_cow_ADJ: m_ears_cow_FRONT
   sprites:
   - sprite: _Floof/Mobs/Customization/skyratears.rsi
     state: m_ears_deer2_ADJ
@@ -290,8 +284,6 @@
   id: EarsFish
   bodyPart: HeadTop
   groupWhitelist: [Slime, Human]
-  colorLinks:
-    m_ears_fish_ADJ: m_ears_fish_FRONT
   sprites:
   - sprite: _Floof/Mobs/Customization/skyratears.rsi
     state: m_ears_fish_FRONT

@@ -535,11 +535,6 @@
   id: TailReptileSlim
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
-  layering:
-    m_tail_reptileslim_BEHIND: TailBehind
-    m_tail_reptileslim_FRONT: Tail
-  colorLinks:
-    m_tail_reptileslim_BEHIND: m_tail_reptileslim_FRONT
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_reptileslim_FRONT
