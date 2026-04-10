@@ -5,6 +5,7 @@ using Content.Client.Stylesheets.Stylesheets;
 using Robust.Client.ResourceManagement;
 using Robust.Client.UserInterface;
 using Robust.Shared.Reflection;
+using Content.Client._Starlight;
 
 namespace Content.Client.Stylesheets
 {
@@ -26,6 +27,9 @@ namespace Content.Client.Stylesheets
 
         [Obsolete("Update to use SheetSystem instead")]
         public Stylesheet SheetSpace { get; private set; } = default!;
+
+        [Obsolete("Update to use SheetSystem instead")] // Starlight
+        public Stylesheet Starlight { get; private set; } = default!;  //StarLight
 
         private Dictionary<string, Stylesheet> Stylesheets { get; set; } = default!;
 
@@ -51,7 +55,7 @@ namespace Content.Client.Stylesheets
             SheetSystem = Init(new SystemStylesheet(new BaseStylesheet.NoConfig(), this));
             SheetNano = new StyleNano(_resCache).Stylesheet; // TODO: REMOVE (obsolete)
             SheetSpace = new StyleSpace(_resCache).Stylesheet; // TODO: REMOVE (obsolete)
-
+            Starlight = new StyleStarlight(_resCache).Stylesheet; //StarLight TODO: REMOVE (obsolete)
             _userInterfaceManager.Stylesheet = SheetNanotrasen;
 
             // warn about unused sheetlets

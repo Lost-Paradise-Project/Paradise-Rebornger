@@ -1,5 +1,5 @@
 using System.Linq;
-using Content.Client._Starlight.UI;
+using Content.Client._StarLight.UI;
 using Content.Client.Materials;
 using Content.Client.Power.Components;
 using Content.Client.UserInterface.Controls;

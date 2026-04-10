@@ -13,6 +13,12 @@ namespace Content.Client.Stylesheets
     [Obsolete("Please use the new sheetlet system to define styles, and remove all references to this class as it may be deleted in the future")]
     public abstract class StyleBase
     {
+        public const string ClassCardHeader = "CardHeader"; // StarLight
+        public const string ClassCardBorder = "CardBorder"; // StarLight
+        public const string ClassCardBanner = "CardBanner"; // StarLight
+        public const string ClassCardBody = "CardBody"; // StarLight
+        public const string ClassMenuBar = "MenuBar"; // StarLight
+
         public abstract Stylesheet Stylesheet { get; }
 
         protected StyleRule[] BaseRules { get; }
@@ -24,6 +30,10 @@ namespace Content.Client.Stylesheets
         protected StyleBoxTexture BaseButtonSquare { get; }
 
         protected StyleBoxTexture BaseAngleRect { get; }
+        protected StyleBoxTexture BaseHeaderRect { get; } // StarLight
+        protected StyleBoxTexture BaseBannerRect { get; } // StarLight
+        protected StyleBoxTexture BaseBodyRect { get; } // StarLight
+        protected StyleBoxTexture MenuBarRect { get; } // StarLight
         protected StyleBoxTexture AngleBorderRect { get; }
 
         protected StyleBase(IResourceCache resCache)
@@ -101,12 +111,45 @@ namespace Content.Client.Stylesheets
             };
             BaseAngleRect.SetPatchMargin(StyleBox.Margin.All, 10);
 
+            // StarLight start
+            BaseHeaderRect = new StyleBoxTexture
+            {
+                Texture = resCache.GetTexture("/Textures/_Starlight/Interface/Nano/card_header.png"),
+            };
+            BaseHeaderRect.SetPatchMargin(StyleBox.Margin.Top, 2);
+            BaseHeaderRect.SetPatchMargin(StyleBox.Margin.Bottom, 10);
+            BaseHeaderRect.SetPatchMargin(StyleBox.Margin.Left, 10);
+            BaseHeaderRect.SetPatchMargin(StyleBox.Margin.Right, 7);
+
+            BaseBannerRect = new StyleBoxTexture
+            {
+                Texture = resCache.GetTexture("/Textures/_Starlight/Interface/Nano/card_banner.png"),
+            };
+            BaseBannerRect.SetPatchMargin(StyleBox.Margin.Top, 8);
+            BaseBannerRect.SetPatchMargin(StyleBox.Margin.Bottom, 13);
+            BaseBannerRect.SetPatchMargin(StyleBox.Margin.Left, 10);
+            BaseBannerRect.SetPatchMargin(StyleBox.Margin.Right, 18);
+
+            BaseBodyRect = new StyleBoxTexture
+            {
+                Texture = resCache.GetTexture("/Textures/_Starlight/Interface/Nano/card_body.png"),
+            };
+            BaseBodyRect.SetPatchMargin(StyleBox.Margin.All, 3);
+            MenuBarRect = new StyleBoxTexture
+            {
+                Texture = resCache.GetTexture("/Textures/_Starlight/Interface/Nano/menu.png"),
+            };
+            MenuBarRect.SetPatchMargin(StyleBox.Margin.Top, 5);
+            MenuBarRect.SetPatchMargin(StyleBox.Margin.Bottom, 5);
+            MenuBarRect.SetPatchMargin(StyleBox.Margin.Left, 4);
+            MenuBarRect.SetPatchMargin(StyleBox.Margin.Right, 8);
+            // StarLight end
+
             AngleBorderRect = new StyleBoxTexture
             {
                 Texture = resCache.GetTexture("/Textures/Interface/Nano/geometric_panel_border.svg.96dpi.png"),
             };
             AngleBorderRect.SetPatchMargin(StyleBox.Margin.All, 10);
-
 
             BaseRules = new[]
             {
