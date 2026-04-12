@@ -87,7 +87,7 @@
   - type: Blueprint
     providedRecipes:
     - ClothingBackpackHolding
-  
+
 - type: entity
   parent: LPPBaseBlueprintProtolathe
   id: LPPBlueprintBackpackSatchelHolding
@@ -149,5 +149,3 @@
   - type: Blueprint
     providedRecipes:
     - LPPClothingOuterHardsuitMaxim
-
-
