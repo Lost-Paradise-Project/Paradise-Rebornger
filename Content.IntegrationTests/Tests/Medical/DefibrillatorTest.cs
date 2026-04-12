@@ -97,6 +97,6 @@ public sealed class DefibrillatorTest : InteractionTest
         await Interact();
 
         // The target should be revived, but in crit.
-        Assert.That(targetMobState.CurrentState, Is.EqualTo(MobState.Critical), "Target mob was not revived from being defibrillated.");
+        Assert.That(targetMobState.CurrentState, Is.EqualTo(MobState.SoftCritical), "Target mob was not revived from being defibrillated."); // LP Edit
     }
 }

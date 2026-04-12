@@ -139,28 +139,12 @@ public sealed class EntityHealthBarOverlay : Overlay
                 return null;
 
             if (!_mobThresholdSystem.TryGetThresholdForState(uid, MobState.SoftCritical, out var threshold, thresholds) && // LP Edit
-                !_mobThresholdSystem.TryGetThresholdForState(uid, MobState.Critical, out threshold, thresholds) && // LP Edit
                 !_mobThresholdSystem.TryGetThresholdForState(uid, MobState.Dead, out threshold, thresholds))
                 return (1, false);
 
             var ratio = 1 - ((FixedPoint2)(totalDamage / threshold)).Float();
             return (ratio, false);
         }
-
-        // LP Edit Start
-
-        if (_mobStateSystem.IsSoftCritical(uid, component))
-        {
-            if (!_mobThresholdSystem.TryGetThresholdForState(uid, MobState.SoftCritical, out var softCritThreshold, thresholds))
-            {
-                return (1, true);
-            }
-            var ratio = 1 - ((FixedPoint2)(totalDamage / softCritThreshold)).Float();
-
-            return (ratio, true);
-        }
-
-        // LP Edit End
 
         if (_mobStateSystem.IsCritical(uid, component))
         {
