@@ -77,8 +77,10 @@ public sealed class DamageOverlay : Overlay
         var handle = args.WorldHandle;
         var distance = args.ViewportBounds.Width;
 
-        var time = (float) _timing.RealTime.TotalSeconds;
-        var lastFrameTime = (float) _timing.FrameTime.TotalSeconds;
+        // LP Edit Start -> Fix formatting
+        var time = (float)_timing.RealTime.TotalSeconds;
+        var lastFrameTime = (float)_timing.FrameTime.TotalSeconds;
+        // LP Edit End -> Fix formatting and add SoftCrit
 
         // If they just died then lerp out the white overlay.
         if (State != MobState.Dead)
@@ -171,7 +173,7 @@ public sealed class DamageOverlay : Overlay
             _oldPainLevel = PainLevel;
         }
 
-        level = State != MobState.Critical ? _oldOxygenLevel : 1f;
+        level = State is MobState.SoftCritical or MobState.Critical ? 1f : _oldOxygenLevel; // LP Edit
 
         if (level > 0f)
         {

@@ -84,6 +84,7 @@ public sealed partial class DamageableComponent : Component
     public Dictionary<MobState, ProtoId<HealthIconPrototype>> HealthIcons = new()
     {
         { MobState.Alive, "HealthIconFine" },
+        { MobState.SoftCritical, "HealthIconCritical"}, // LP Edit
         { MobState.Critical, "HealthIconCritical" },
         { MobState.Dead, "HealthIconDead" },
     };
