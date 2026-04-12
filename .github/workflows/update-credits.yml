@@ -63,5 +63,4 @@ jobs:
           gh pr merge ${{ steps.cpr.outputs.pull-request-number }} \
             --squash \
             --admin \
-            --delete-branch \
             --repo ${{ github.repository }}
