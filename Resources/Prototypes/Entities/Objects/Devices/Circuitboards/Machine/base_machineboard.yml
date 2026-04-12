@@ -11,14 +11,12 @@
       state: generic
     - type: Item
       storedRotation: -90
-    # LP Edit Start 100 -> 10 and no PhysicalComposition
     - type: StaticPrice
-      price: 10
-    # - type: PhysicalComposition
-    #   materialComposition:
-    #     Glass: 230
-    #   chemicalComposition:
-    #     Silicon: 20
-    # LP Edit End 100 -> 10 and no PhysicalComposition
+      price: 100
+    - type: PhysicalComposition
+      materialComposition:
+        Glass: 230
+      chemicalComposition:
+        Silicon: 20
     - type: Circuitboard
 
