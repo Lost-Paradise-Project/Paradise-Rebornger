@@ -59,18 +59,16 @@ public partial class MobStateSystem
 
     private void PlayStateAudio(EntityUid uid, MobState state)
     {
+        if (!_timing.IsFirstTimePredicted)
+            return;
+
         if (!StateAudio.TryGetValue(state, out var data))
             return;
 
-        StopStateAudio(uid);
-
         if (!TryComp<ActorComponent>(uid, out var actor))
-        {
-            _sawmill.Warning($"No actor for {ToPrettyString(uid)}");
             return;
-        }
 
-        _sawmill.Info($"PLAY {state} for {ToPrettyString(uid)}");
+        StopStateAudio(uid);
 
         var spec = new SoundPathSpecifier(data.sound);
 
@@ -102,8 +100,6 @@ public partial class MobStateSystem
     {
         if (!_stateAudio.TryGetValue(uid, out var audio))
             return;
-
-        _sawmill.Info($"STOP audio {ToPrettyString(uid)} -> {audio}");
 
         if (Exists(audio))
             QueueDel(audio);
