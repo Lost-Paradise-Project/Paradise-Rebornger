@@ -32,7 +32,7 @@
           tags:
           - ShellShotgun
   - type: Gun
-    fireRate: 1.1
+    fireRate: 0.7
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/batrifle.ogg
   - type: ChamberMagazineAmmoProvider
