@@ -12,6 +12,7 @@
     - type: Item
       storedRotation: -90
     # LP Edit Start 100 -> 10 and no PhysicalComposition
+    - type: StaticPrice
       price: 10
     # - type: PhysicalComposition
     #   materialComposition:
