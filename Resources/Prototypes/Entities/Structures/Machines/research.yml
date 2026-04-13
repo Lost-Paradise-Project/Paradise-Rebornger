@@ -78,10 +78,18 @@
 
 - type: entity
   id: BaseResearchAndDevelopmentPointSource
-  parent: BaseMachinePowered
+  parent: [BaseMachinePowered, ConstructibleMachine] # LP Edit
   name: "base R&D point source"
   # We should make this abstract once there are actual point sources.
   components:
+  # LP Edit Start
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+  - type: Machine
+    board: LPPBaseResearchAndDevelopmentPointSourceCircuitboard
+  # LP Edit End
   - type: Sprite
     sprite: Structures/Machines/rndpointsource.rsi
     layers:
@@ -91,7 +99,7 @@
       map: ["enum.PowerDeviceVisualLayers.Powered"]
   - type: ResearchClient
   - type: ResearchPointSource
-    pointspersecond: 25
+    pointspersecond: 50 # LP Edit 25 -> 50
     active: true
   - type: PointLight
     radius: 1.5

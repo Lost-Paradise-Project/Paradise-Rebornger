@@ -11,13 +11,13 @@ maxcharacterslots = 5
 
 [infolinks]
 discord = "https://wiki.lost-paradise.space/discord"
-github = "https://github.com/Lost-Paradise-Project/Goob-Station"
+github = "https://github.com/Lost-Paradise-Project/Paradise-Rebornger"
 wiki = "http://wiki.lost-paradise.space/"
 website = "https://boosty.to/lost-paradise"
 appeal = "https://discord.gg/lost-paradise-14"
 
 [game.panic_bunker]
-enabled = true
+enabled = false
 show_reason = true
 min_account_age = 300
 min_overall_minutes = 300
@@ -36,7 +36,7 @@ tags = "lang:ru,region:eu_e,rp:med,18+"
 arrivals_planet = false
 emergency_early_launch_allowed = true
 arrivals_map = "/Maps/_LP/Misc/paradise_terminal.yml"
-auto_call_time = 120
+auto_call_time = 180
 
 [viewport]
 maximum_width = 26
@@ -71,7 +71,7 @@ same_type_timeout = 300.0
 timerrestart = 30
 map_enabled = false
 preset_enabled = false
-restart_enabled = true
+restart_enabled = false
 map_autovote_enabled = true
 preset_autovote_enabled = true
 

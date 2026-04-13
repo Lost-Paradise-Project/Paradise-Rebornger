@@ -27,6 +27,7 @@
     - SurgeryStatic
     - ServiceBoardsStatic
     dynamicPacks:
+    - ScienceClothing
     - CameraBoards
     - ServiceBoards
     - PowerCells
@@ -40,6 +41,18 @@
         - Sheet
         - RawMaterial
         - Ingot
+  - type: BlueprintReceiver
+    whitelist:
+      tags:
+      - BlueprintProtolathe
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      blueprint: !type:Container
+  - type: EmptyOnMachineDeconstruct
+    containers:
+    - blueprint
 
 - type: entity
   id: LPPScienceProtolathe
@@ -81,6 +94,18 @@
     - ADTMegaCellPack
   - type: MaterialStorage
     whitelist: *StandardMaterialWhitelist
+  - type: BlueprintReceiver
+    whitelist:
+      tags:
+      - BlueprintProtolathe
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      blueprint: !type:Container
+  - type: EmptyOnMachineDeconstruct
+    containers:
+    - blueprint
 
 - type: entity
   id: LPPEngineeringProtolathe
@@ -109,6 +134,7 @@
     staticPacks:
     - EngineeringBoardsStatic
     dynamicPacks:
+    - ScienceClothing
     - ReactorCircuitboards
     - ShuttleBoards
     - EngineeringBoards
@@ -122,6 +148,18 @@
     - ADTMegaCellPack
   - type: MaterialStorage
     whitelist: *StandardMaterialWhitelist
+  - type: BlueprintReceiver
+    whitelist:
+      tags:
+      - BlueprintProtolathe
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      blueprint: !type:Container
+  - type: EmptyOnMachineDeconstruct
+    containers:
+    - blueprint
 
 - type: entity
   id: LPPCargoProtolathe
@@ -151,12 +189,26 @@
     - ChemistryStatic
     - CargoBoardsStatic
     dynamicPacks:
+    - SalvageSecurityWeapons
+    - ScienceClothing
     - CargoBoards
     - PowerCells
     - Mining
     - Equipment
   - type: MaterialStorage
     whitelist: *StandardMaterialWhitelist
+  - type: BlueprintReceiver
+    whitelist:
+      tags:
+      - BlueprintProtolathe
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      blueprint: !type:Container
+  - type: EmptyOnMachineDeconstruct
+    containers:
+    - blueprint
 
 - type: entity
   id: LPPSpaceForge
@@ -186,11 +238,19 @@
     dynamicPacks:
     - LPPSpaceForgeHardsuits
   - type: MaterialStorage
+    whitelist: *StandardMaterialWhitelist
+  - type: BlueprintReceiver
     whitelist:
       tags:
-        - Sheet
-        - RawMaterial
-        - Ingot
+      - BlueprintSpaceForge
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      blueprint: !type:Container
+  - type: EmptyOnMachineDeconstruct
+    containers:
+    - blueprint
 
 - type: entity
   id: LPPSpaceForgeCMD
@@ -221,3 +281,15 @@
     - LPPSpaceForgeCMDHardsuits
   - type: MaterialStorage
     whitelist: *StandardMaterialWhitelist
+  - type: BlueprintReceiver
+    whitelist:
+      tags:
+      - BlueprintSpaceForge
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      blueprint: !type:Container
+  - type: EmptyOnMachineDeconstruct
+    containers:
+    - blueprint

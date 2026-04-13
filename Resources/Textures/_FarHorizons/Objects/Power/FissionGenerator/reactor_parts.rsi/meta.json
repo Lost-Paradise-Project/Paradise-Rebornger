@@ -15,6 +15,18 @@
         },
         {
             "name": "nuclear_waste"
+        },
+        {
+            "name": "fuel"
+        },
+        {
+            "name": "control"
+        },
+        {
+            "name": "gas"
+        },
+        {
+            "name": "heat"
         }
     ]
 }

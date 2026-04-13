@@ -98,7 +98,7 @@ public sealed class LoadoutSystem : EntitySystem
             return GetName(gear);
         }
 
-        return GetName((IEquipmentLoadout) loadout);
+        return GetName((IEquipmentLoadout)loadout);
     }
 
     /// <summary>
@@ -163,7 +163,7 @@ public sealed class LoadoutSystem : EntitySystem
         var id = _random.Pick(loadoutGroups);
         var proto = _protoMan.Index(id);
         var loadout = new RoleLoadout(id);
-        loadout.SetDefault(GetProfile(uid), _actors.GetSession(uid), _protoMan, true, sponsorTier, uuid);  //LP edit
+        loadout.SetDefault(GetProfile(uid, sponsorTier), _actors.GetSession(uid), _protoMan, true, sponsorTier, uuid);  //LP edit
         _station.EquipRoleLoadout(uid, loadout, proto);
 
         GearEquipped(uid);
@@ -175,10 +175,10 @@ public sealed class LoadoutSystem : EntitySystem
         RaiseLocalEvent(uid, ref ev);
     }
 
-    public HumanoidCharacterProfile GetProfile(EntityUid? uid)
+    public HumanoidCharacterProfile GetProfile(EntityUid? uid, int sponsorTier = 0) //LP edit
     {
         return TryComp<HumanoidProfileComponent>(uid, out var profile)
             ? HumanoidCharacterProfile.DefaultWithSpecies(profile.Species, profile.Sex)
-            : HumanoidCharacterProfile.Random();
+            : HumanoidCharacterProfile.Random(sponsorTier: sponsorTier);
     }
 }

@@ -19,3 +19,6 @@ ent-LPPSpaceForgeCMDMachineCircuitboard = космическая кузница 
 ent-LPPBluespaceMinerMachineCircuitboard = блюспейс майнер (машинная плата)
     .desc = Печатная плата блюспейс майнера.
     .suffix = { ent-BaseMachineCircuitboard.suffix }
+ent-LPPBaseResearchAndDevelopmentPointSourceCircuitboard = базовый источник РнД (машинная плата)
+    .desc = Печатная плата базового источника РнД .
+    .suffix = { ent-BaseMachineCircuitboard.suffix }

@@ -1,0 +1,202 @@
+#Базовые спрайты
+- type: marking
+  id: LPPIpcBaseHead
+  bodyPart: Head
+  groupWhitelist: [Ipc]
+  sprites:
+    - sprite: Corvax/Mobs/Species/Ipc/parts.rsi
+      state: head
+
+- type: marking
+  id: LPPIpcBaseTorso
+  bodyPart: Chest
+  groupWhitelist: [Ipc]
+  sprites:
+    - sprite: Corvax/Mobs/Species/Ipc/parts.rsi
+      state: torso
+
+- type: marking
+  id: LPPIpcBaseLeftArm
+  bodyPart: LArm
+  groupWhitelist: [Ipc]
+  sprites:
+    - sprite: Corvax/Mobs/Species/Ipc/parts.rsi
+      state: l_arm
+
+- type: marking
+  id: LPPIpcBaseRightArm
+  bodyPart: RArm
+  groupWhitelist: [Ipc]
+  sprites:
+    - sprite: Corvax/Mobs/Species/Ipc/parts.rsi
+      state: r_arm
+
+- type: marking
+  id: LPPIpcBaseLeftHand
+  bodyPart: LHand
+  groupWhitelist: [Ipc]
+  sprites:
+    - sprite: Corvax/Mobs/Species/Ipc/parts.rsi
+      state: l_hand
+
+- type: marking
+  id: LPPIpcBaseRightHand
+  bodyPart: RHand
+  groupWhitelist: [Ipc]
+  sprites:
+    - sprite: Corvax/Mobs/Species/Ipc/parts.rsi
+      state: r_hand
+
+- type: marking
+  id: LPPIpcBaseLeftLeg
+  bodyPart: LLeg
+  groupWhitelist: [Ipc]
+  sprites:
+    - sprite: Corvax/Mobs/Species/Ipc/parts.rsi
+      state: l_leg
+
+- type: marking
+  id: LPPIpcBaseRightLeg
+  bodyPart: RLeg
+  groupWhitelist: [Ipc]
+  sprites:
+    - sprite: Corvax/Mobs/Species/Ipc/parts.rsi
+      state: r_leg
+
+- type: marking
+  id: LPPIpcBaseLeftFoot
+  bodyPart: LFoot
+  groupWhitelist: [Ipc]
+  sprites:
+    - sprite: Corvax/Mobs/Species/Ipc/parts.rsi
+      state: l_foot
+
+- type: marking
+  id: LPPIpcBaseRightFoot
+  bodyPart: RFoot
+  groupWhitelist: [Ipc]
+  sprites:
+    - sprite: Corvax/Mobs/Species/Ipc/parts.rsi
+      state: r_foot
+
+#Няндроиды
+- type: marking
+  id: LPPIpcAndroidHeadM
+  bodyPart: Head
+  groupWhitelist: [Ipc]
+  sprites:
+    - sprite: _LP/Mobs/Customization/IPCparts.rsi
+      state: head_m
+
+
+- type: marking
+  id: LPPIpcAndroidHeadF
+  bodyPart: Head
+  groupWhitelist: [Ipc]
+  sprites:
+    - sprite: _LP/Mobs/Customization/IPCparts.rsi
+      state: head_f
+
+- type: marking
+  id: LPPIpcAndroidLegLeft
+  bodyPart: LLeg
+  groupWhitelist: [Ipc]
+  sprites:
+    - sprite: _LP/Mobs/Customization/IPCparts.rsi
+      state: l_leg
+
+- type: marking
+  id: LPPIpcAndroidLegRight
+  bodyPart: RLeg
+  groupWhitelist: [Ipc]
+  sprites:
+    - sprite: _LP/Mobs/Customization/IPCparts.rsi
+      state: r_leg
+
+- type: marking
+  id: LPPIpcAndroidFootLeft
+  bodyPart: LFoot
+  groupWhitelist: [Ipc]
+  sprites:
+    - sprite: _LP/Mobs/Customization/IPCparts.rsi
+      state: l_foot
+
+- type: marking
+  id: LPPIpcAndroidFootRight
+  bodyPart: RFoot
+  groupWhitelist: [Ipc]
+  sprites:
+    - sprite: _LP/Mobs/Customization/IPCparts.rsi
+      state: r_foot
+
+- type: marking
+  id: LPPIpcAndroidArmLeft
+  bodyPart: LArm
+  groupWhitelist: [Ipc]
+  sprites:
+    - sprite: _LP/Mobs/Customization/IPCparts.rsi
+      state: l_arm
+
+- type: marking
+  id: LPPIpcAndroidArmRight
+  bodyPart: RArm
+  groupWhitelist: [Ipc]
+  sprites:
+    - sprite: _LP/Mobs/Customization/IPCparts.rsi
+      state: r_arm
+
+- type: marking
+  id: LPPIpcAndroidHandLeft
+  bodyPart: LHand
+  groupWhitelist: [Ipc]
+  sprites:
+    - sprite: _LP/Mobs/Customization/IPCparts.rsi
+      state: l_hand
+
+- type: marking
+  id: LPPIpcAndroidHandRight
+  bodyPart: RHand
+  groupWhitelist: [Ipc]
+  sprites:
+    - sprite: _LP/Mobs/Customization/IPCparts.rsi
+      state: r_hand
+
+- type: marking
+  id: LPPIpcAndroidChestM
+  bodyPart: Chest
+  groupWhitelist: [Ipc]
+  sprites:
+    - sprite: _LP/Mobs/Customization/IPCparts.rsi
+      state: torso_m
+
+- type: marking
+  id: LPPIpcAndroidChestF
+  bodyPart: Chest
+  groupWhitelist: [Ipc]
+  sprites:
+    - sprite: _LP/Mobs/Customization/IPCparts.rsi
+      state: torso_f
+
+- type: marking
+  id: LPPIpcAndroidEyes
+  bodyPart: Snout #Костыль корвакса, спасибо деду за попыт(ку) создания норм КПБ
+  groupWhitelist: [Ipc]
+  sprites:
+    - sprite: _LP/Mobs/Customization/android_eyes.rsi
+      state: eyes
+    - sprite: _LP/Mobs/Customization/android_eyes.rsi
+      state: eyes1
+
+- type: marking
+  id: LPPIpcAndroidEyesAlt
+  bodyPart: Snout
+  groupWhitelist: [Ipc]
+  sprites:
+    - sprite: _LP/Mobs/Customization/android_eyes.rsi
+      state: eyes
+    - sprite: _LP/Mobs/Customization/android_eyes.rsi
+      state: eyes1
+    - sprite: _LP/Mobs/Customization/android_eyes.rsi
+      state: eyes2
+    - sprite: _LP/Mobs/Customization/android_eyes.rsi
+      state: eyes3

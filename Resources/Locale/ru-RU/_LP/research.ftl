@@ -14,3 +14,4 @@ research-technology-mining-hardsuits = Шахтёрские скафандры
 research-technology-bluespace-miner = Блюспейс добыча
 research-technology-grenade-launcher-security = Гранатамёты службы безопасности
 research-technology-inducer = Беспроводная передача энергии
+research-technology-base-rnd-point-source = Базовая генерация очков исследований

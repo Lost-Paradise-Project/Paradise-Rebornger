@@ -1,0 +1,23 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Base & bolt-open Sprited by willybillygilly, everything else by MegaDaimond",
+    "size": {
+        "x": 64,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "bolt-open"
+        },
+        {
+            "name": "base"
+        },
+        {
+            "name": "mag-0"
+        },
+        {
+            "name": "icon"
+        }
+    ]
+}

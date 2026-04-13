@@ -235,6 +235,20 @@
     - SecurityExplosives
     - SecurityEquipment
     - SecurityWeapons
+  # LP Edit Start
+  - type: BlueprintReceiver
+    whitelist:
+      tags:
+      - BlueprintProtolathe
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      blueprint: !type:Container
+  - type: EmptyOnMachineDeconstruct
+    containers:
+    - blueprint
+  # LP Edit End
 
 - type: entity
   id: ProtolatheHyperConvection
@@ -414,7 +428,10 @@
     - SecurityAmmoStatic
     - SecurityWeaponsStatic
     dynamicPacks:
-    - LPPGrenadeLauncherSec # LP Edit
+    # LP Edit Start
+    - LPPGrenadeLauncherSec
+    - ScienceClothing
+    # LP Edit End
     - SalvageSecurityBoards
     - SalvageSecurityWeapons
     - SecurityEquipment
@@ -432,6 +449,20 @@
   # - type: OreSiloClient # Goob edit
   - type: LatheAnnouncing
     channels: [Security]
+  # LP Edit Start
+  - type: BlueprintReceiver
+    whitelist:
+      tags:
+      - BlueprintProtolathe
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      blueprint: !type:Container
+  - type: EmptyOnMachineDeconstruct
+    containers:
+    - blueprint
+  # LP Edit End
 
 - type: entity
   id: AmmoTechFab
@@ -501,6 +532,10 @@
     - EmptyMedkitsStatic
     - SurgeryStatic
     dynamicPacks:
+    # LP Edit Start
+    - ScienceClothing
+    - MedicalBoards
+    # LP Edit End
     - Chemistry
     - LPPExperimentalRPLD # LP edit
   - type: Machine
@@ -510,6 +545,20 @@
   # - type: OreSiloClient # Goob edit
   - type: LatheAnnouncing
     channels: [Medical]
+  # LP Edit Start
+  - type: BlueprintReceiver
+    whitelist:
+      tags:
+      - BlueprintProtolathe
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      blueprint: !type:Container
+  - type: EmptyOnMachineDeconstruct
+    containers:
+    - blueprint
+  # LP Edit End
 
 - type: entity
   parent: BaseLathe
@@ -726,10 +775,15 @@
     - FloorSteelTilesStatic
     - FloorWhiteTilesStatic
     - FloorMaintsTilesStatic
+    - FloorIndustrialTilesStatic
     - FloorWoodTilesStatic
     - FloorConcreteTilesStatic
     - CircuitFloorsStatic
     - FloorMarbleTilesStatic
+    - FloorShuttleTilesStatic
+    - PlasticTilesStatic
+    - CarpetTilesStatic
+    - PreciousTilesStatic
     dynamicPacks:
     - FauxTiles
   - type: MaterialStorage

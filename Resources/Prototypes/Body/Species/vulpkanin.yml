@@ -54,6 +54,7 @@
 - type: entity
   parent: BaseSpeciesAppearance
   id: AppearanceVulpkanin
+  categories: [ HideSpawnMenu ]
   name: vulpkanin appearance
   components:
   - type: InitialBody
@@ -209,8 +210,6 @@
         color: "#ccac1f"
       Burn:
         sprite: Mobs/Effects/burn_damage.rsi
-  - type: MessyDrinker
-    spillChance: 0.33
   - type: Speech
     speechSounds: Vulpkanin
     speechVerb: Vulpkanin
@@ -261,6 +260,10 @@
       reagents:
       - ReagentId: SulfurBlood
         Quantity: 300
+  - type: CreamPied
+    sprite:
+      sprite: Effects/creampie.rsi
+      state: creampie_vulpkanin
 
 - type: entity
   parent: OrganBase

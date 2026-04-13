@@ -1,0 +1,72 @@
+- type: marking
+  id: TailAxolotl
+  bodyPart: Tail
+  groupWhitelist: [Slime, Human]
+  sprites:
+    - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
+      state: axolotl
+
+- type: marking
+  id: TailEasternDragon
+  bodyPart: Tail
+  groupWhitelist: [Slime, Human]
+  sprites:
+    - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
+      state: easternd_primary
+    - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
+      state: easternd_secondary
+
+- type: marking
+  id: TailFish
+  bodyPart: Tail
+  groupWhitelist: [Slime, Human]
+  sprites:
+    - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
+      state: fish_primary
+    - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
+      state: fish_secondary
+
+- type: marking
+  id: TailGecko
+  bodyPart: Tail
+  groupWhitelist: [Slime, Human]
+  sprites:
+    - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
+      state: gecko_primary
+    - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
+      state: gecko_secondary
+    - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
+      state: gecko_tertiary
+
+- type: marking
+  id: TailMaw
+  bodyPart: Tail
+  groupWhitelist: [Slime, Human]
+  sprites:
+    - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
+      state: maw
+
+- type: marking
+  id: TailSnake
+  bodyPart: Tail
+  groupWhitelist: [Slime, Human]
+  sprites:
+    - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
+      state: snake
+
+- type: marking
+  id: TailSuccubus
+  bodyPart: Tail
+  groupWhitelist: [Slime, Human]
+  sprites:
+    - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
+      state: succubus
+
+- type: marking
+  id: TailTentacle
+  bodyPart: Tail
+  groupWhitelist: [Slime, Human]
+  sponsorOnly: true
+  sprites:
+    - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
+      state: tentacle

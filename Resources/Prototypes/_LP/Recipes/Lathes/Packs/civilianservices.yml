@@ -6,10 +6,10 @@
 - type: latheRecipePack
   id: LPPSpaceForgeHardsuits
   recipes:
-  - ClothingHeadHelmetEVA
-  - ClothingOuterHardsuitEVA
-  - ClothingOuterSuitEmergency
-  - ClothingOuterHardsuitAtmos
-  - ClothingOuterHardsuitEngineering
-  - ClothingOuterHardsuitSpatio
-  - ClothingOuterHardsuitSalvage
+  - LPPClothingHeadHelmetEVA
+  - LPPClothingOuterHardsuitEVA
+  - LPPClothingOuterSuitEmergency
+  - LPPClothingOuterHardsuitAtmos
+  - LPPClothingOuterHardsuitEngineering
+  - LPPClothingOuterHardsuitSpatio
+  - LPPClothingOuterHardsuitSalvage

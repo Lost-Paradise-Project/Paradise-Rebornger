@@ -1,5 +1,6 @@
 using System.Linq;
 using System.Numerics;
+using Content.Server._LP.Sponsors;
 using Content.Server.Announcements;
 using Content.Server.Discord;
 using Content.Server.GameTicking.Events;
@@ -194,7 +195,7 @@ namespace Content.Server.GameTicking
         {
             var ev = RaisePreLoad(proto, options, offset, rot);
 
-            // LP edit start 
+            // LP edit start
             var mapS = ev.GameMap.MapPath;
             if (ev.GameMap.MapPaths.Count > 0)
             {
@@ -252,7 +253,7 @@ namespace Content.Server.GameTicking
         {
             var ev = RaisePreLoad(proto, opts, offset, rot);
 
-            // LP edit start 
+            // LP edit start
             var mapS = ev.GameMap.MapPath;
             if (ev.GameMap.MapPaths.Count > 0)
             {
@@ -420,7 +421,7 @@ namespace Content.Server.GameTicking
                 {
                     var speciesToBlacklist =
                         new HashSet<string>(_cfg.GetCVar(CCVars.ICNewAccountSpeciesBlacklist).Split(","));
-                    profile = HumanoidCharacterProfile.Random(speciesToBlacklist);
+                    profile = HumanoidCharacterProfile.Random(speciesToBlacklist, SponsorSimpleManager.GetTier(userId));    //LP edit
                 }
                 readyPlayerProfiles.Add(userId, profile);
             }
@@ -739,7 +740,7 @@ namespace Content.Server.GameTicking
                 if (_webhookIdentifier == null)
                     return;
 
-                    // LP edit start
+                // LP edit start
                 var descriptionText = Loc.GetString("discord-round-notifications-new");
                 var embedColor = 0x91B2C7;
 

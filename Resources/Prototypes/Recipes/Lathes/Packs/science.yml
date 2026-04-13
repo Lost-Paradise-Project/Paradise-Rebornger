@@ -30,16 +30,18 @@
   recipes:
   - ClothingShoesBootsMagSci
   - ClothingShoesBootsMoon
-  - ClothingShoesBootsSpeed
+  # - ClothingShoesBootsSpeed # LP Edit
   - ClothingShoesBootsJump
-  - ClothingBackpackHolding
-  - ClothingBackpackSatchelHolding
-  - ClothingBackpackDuffelHolding
+  # LP Edit Start
+  # - ClothingBackpackHolding
+  # - ClothingBackpackSatchelHolding
+  # - ClothingBackpackDuffelHolding
+  # LP Edit End
 
 - type: latheRecipePack
   id: PowerCells
   recipes:
-  - PowerCellMicroreactor
+  # - PowerCellMicroreactor # LP Edit
   - PowerCellHigh
   - PowerCellHyper
 
@@ -69,6 +71,7 @@
 - type: latheRecipePack
   id: ScienceBoards
   recipes:
+  - LPPBaseResearchAndDevelopmentPointSourceCircuitboard # LP Edit
   - TurboItemRechargerCircuitboard
   - AutolatheHyperConvectionMachineCircuitboard
   - ProtolatheHyperConvectionMachineCircuitboard
@@ -84,7 +87,6 @@
   - APECircuitboard
   - ArtifactAnalyzerMachineCircuitboard
   - ArtifactCrusherMachineCircuitboard
-  - LPPBluespaceMinerMachineCircuitboard # LP Edit
 
 - type: latheRecipePack
   id: CameraBoards

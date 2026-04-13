@@ -18,7 +18,7 @@
   unit: materials-unit-bar
   icon: { sprite: Objects/Materials/ingots.rsi, state: gold }
   color: "#FFD700"
-  price: 0.75 # $75 for 1 unit
+  price: 0.25 # $75 for 1 unit # LP Edit 0.75 -> 0.25
   properties: # FH edit
     electrical: 7
     thermal: 7

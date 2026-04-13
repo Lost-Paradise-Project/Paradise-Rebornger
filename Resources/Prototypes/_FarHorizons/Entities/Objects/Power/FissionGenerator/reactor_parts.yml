@@ -57,6 +57,11 @@
   - type: SentienceTarget
     flavorKind: station-event-random-sentience-flavor-inanimate
     weight: 0.2
+#LP edit start
+  - type: Sprite
+    sprite: _FarHorizons/Objects/Power/FissionGenerator/reactor_parts.rsi
+    state: fuel
+#LP edit end
 
 - type: entity
   id: BaseReactorControlRod
@@ -74,6 +79,11 @@
   - type: PhysicalComposition
     materialComposition:
       Steel: 250
+#LP edit start
+  - type: Sprite
+    sprite: _FarHorizons/Objects/Power/FissionGenerator/reactor_parts.rsi
+    state: control
+#LP edit end
 
 - type: entity
   id: BaseReactorGasChannel
@@ -92,6 +102,11 @@
   - type: PhysicalComposition
     materialComposition:
       Steel: 250
+#LP edit start
+  - type: Sprite
+    sprite: _FarHorizons/Objects/Power/FissionGenerator/reactor_parts.rsi
+    state: gas
+#LP edit end
 
 - type: entity
   id: BaseReactorHeatExchanger
@@ -108,6 +123,11 @@
   - type: PhysicalComposition
     materialComposition:
       Steel: 250
+#LP edit start
+  - type: Sprite
+    sprite: _FarHorizons/Objects/Power/FissionGenerator/reactor_parts.rsi
+    state: heat
+#LP edit end
 #endregion
 
 #region Materials

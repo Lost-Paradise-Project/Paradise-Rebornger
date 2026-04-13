@@ -43,7 +43,7 @@
 
 - type: latheRecipe
   parent: LPPLatheRecipe15Sec
-  id: ClothingHeadHelmetEVA
+  id: LPPClothingHeadHelmetEVA
   result: ClothingHeadHelmetEVA
   materials:
     Glass: 200
@@ -51,7 +51,7 @@
 
 - type: latheRecipe
   parent: LPPLatheRecipe15Sec
-  id: ClothingOuterHardsuitEVA
+  id: LPPClothingOuterHardsuitEVA
   result: ClothingOuterHardsuitEVA
   materials:
     Plasteel: 200
@@ -59,7 +59,7 @@
 
 - type: latheRecipe
   parent: LPPLatheRecipe15Sec
-  id: ClothingOuterSuitEmergency
+  id: LPPClothingOuterSuitEmergency
   result: ClothingOuterSuitEmergency
   materials:
     Plasteel: 300
@@ -68,7 +68,7 @@
 
 - type: latheRecipe
   parent: LPPLatheRecipe15Sec
-  id: ClothingOuterHardsuitAtmos
+  id: LPPClothingOuterHardsuitAtmos
   result: ClothingOuterHardsuitAtmos
   materials:
     Plasteel: 300
@@ -80,7 +80,7 @@
 
 - type: latheRecipe
   parent: LPPLatheRecipe15Sec
-  id: ClothingOuterHardsuitEngineering
+  id: LPPClothingOuterHardsuitEngineering
   result: ClothingOuterHardsuitEngineering
   materials:
     Plasteel: 300
@@ -92,7 +92,7 @@
 
 - type: latheRecipe
   parent: LPPLatheRecipe15Sec
-  id: ClothingOuterHardsuitSpatio
+  id: LPPClothingOuterHardsuitSpatio
   result: ClothingOuterHardsuitSpatio
   materials:
     Steel: 1050
@@ -103,7 +103,7 @@
 
 - type: latheRecipe
   parent: LPPLatheRecipe15Sec
-  id: ClothingOuterHardsuitSalvage
+  id: LPPClothingOuterHardsuitSalvage
   result: ClothingOuterHardsuitSalvage
   materials:
     Steel: 1750

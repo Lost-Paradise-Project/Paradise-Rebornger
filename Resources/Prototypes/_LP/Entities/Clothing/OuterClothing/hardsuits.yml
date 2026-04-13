@@ -31,7 +31,7 @@
 
 #Research Director's Hardsuit but without steal target moment
 - type: entity
-  parent: ClothingOuterHardsuitBase
+  parent: [ClothingOuterHardsuitBase, BaseCommandContraband]
   id: LPPClothingOuterHardsuitRd
   name: experimental research hardsuit
   description: A special suit that protects against hazardous, low pressure environments. Has an additional layer of armor.

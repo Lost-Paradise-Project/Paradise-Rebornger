@@ -257,8 +257,10 @@ public sealed class MiningServerSystem : EntitySystem
     {
         return mode switch
         {
-            MiningMode.Credits => stage * 0.35f, // ~500к за 2 часа для 50 серверов
-            MiningMode.Research => stage * 0.17f, // ~250к за 2 часа
+            // LP Edit Start
+            MiningMode.Credits => stage * 2.0f, // ~500к за 2 часа для 50 серверов
+            MiningMode.Research => stage * 1.83f, // ~250к за 2 часа
+            // LP Edit End
             _ => 0f
         };
     }
