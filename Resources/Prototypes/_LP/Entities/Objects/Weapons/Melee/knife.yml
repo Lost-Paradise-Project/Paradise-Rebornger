@@ -2,7 +2,7 @@
   name: Jagdkommando
   parent: [BaseKnife, BaseCentcommContraband]
   id: LPPKnifeJagdkommando
-  description: Favourite knife of most elite OPZ special groups, be cautios to use- your combat equipment might get a bit bloody after pulling this knife out of your enemy.
+  description: Favourite knife of most elite special groups of OPZ, be cautios to use- your combat equipment might get a bit bloody after pulling this knife out of your enemy.
   components:
   - type: Tag
     tags:
@@ -28,7 +28,7 @@
   - type: DisarmMalus
     malus: 0.225
   - type: ThrowingAngle
-    angle: 225
+    angle: 350
   - type: MeleeChemicalInjector
     solution: melee
   - type: RefillableSolution

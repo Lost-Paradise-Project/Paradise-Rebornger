@@ -12,5 +12,6 @@
     penetrationThreshold: 360
     penetrationDamageTypeRequirement:
     - Structural
+    - Piercing
   - type: StaminaDamageOnCollide
     damage: 60
