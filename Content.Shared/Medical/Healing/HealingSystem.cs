@@ -237,8 +237,13 @@ public sealed class HealingSystem : EntitySystem
         if (!Resolve(ent, ref ent.Comp1, ref ent.Comp2, false))
             return mod;
 
+        // LP Edit Start
+        if (!_mobThresholdSystem.TryGetThresholdForState(ent, MobState.SoftCritical, out var softAmount, ent.Comp2))
+            return 1;
         if (!_mobThresholdSystem.TryGetThresholdForState(ent, MobState.Critical, out var amount, ent.Comp2))
             return 1;
+        amount = softAmount + amount;
+        // LP Edit End
 
         var percentDamage = (float)(_damageable.GetTotalDamage(ent) / amount);
         //basically make it scale from 1 to the multiplier.

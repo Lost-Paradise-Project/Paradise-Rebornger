@@ -273,40 +273,44 @@
 
 # Tier 3
 
-- type: technology
-  id: QuantumFiberWeaving
-  name: research-technology-quantum-fiber-weaving
-  icon:
-    sprite: Clothing/Shoes/Boots/speedboots.rsi
-    state: icon
-  discipline: CivilianServices
-  tier: 3
-  cost: 10000
-  recipeUnlocks:
-  - ClothingShoesBootsSpeed
-  position: 1, 28 # LP edit
-  technologyPrerequisites:
-  - BluespaceCargoTransport
-  radioChannels:
-  - Service
+# LP Edit Start
 
-- type: technology
-  id: BluespaceChemistry
-  name: research-technology-bluespace-chemistry
-  icon:
-    sprite: Objects/Specific/Chemistry/beaker_bluespace.rsi
-    state: beakerbluespace
-  discipline: CivilianServices
-  tier: 3
-  cost: 10000
-  recipeUnlocks:
-  - BluespaceBeaker
-  - SyringeBluespace
-  position: 8, 28 # LP edit
-  technologyPrerequisites:
-  - BiochemicalStasis
-  radioChannels:
-  - Service
+# - type: technology
+#   id: QuantumFiberWeaving
+#   name: research-technology-quantum-fiber-weaving
+#   icon:
+#     sprite: Clothing/Shoes/Boots/speedboots.rsi
+#     state: icon
+#   discipline: CivilianServices
+#   tier: 3
+#   cost: 10000
+#   recipeUnlocks:
+#   - ClothingShoesBootsSpeed
+#   position: 1, 28 # LP edit
+#   technologyPrerequisites:
+#   - BluespaceCargoTransport
+#   radioChannels:
+#   - Service
+
+# - type: technology
+#   id: BluespaceChemistry
+#   name: research-technology-bluespace-chemistry
+#   icon:
+#     sprite: Objects/Specific/Chemistry/beaker_bluespace.rsi
+#     state: beakerbluespace
+#   discipline: CivilianServices
+#   tier: 3
+#   cost: 10000
+#   recipeUnlocks:
+#   - BluespaceBeaker
+#   - SyringeBluespace
+#   position: 8, 28 # LP edit
+#   technologyPrerequisites:
+#   - BiochemicalStasis
+#   radioChannels:
+#   - Service
+
+# LP Edit End
 
 - type: technology
   id: LauncherSyringe
@@ -322,6 +326,6 @@
   - MiniSyringe
   position: 8, 29 # LP edit
   technologyPrerequisites:
-  - BluespaceChemistry
+  - BiochemicalStasis # LP Edit
   radioChannels:
   - Service

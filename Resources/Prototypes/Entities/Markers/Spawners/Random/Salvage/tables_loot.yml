@@ -232,6 +232,13 @@
   id: SalvageEquipmentRare
   table: !type:GroupSelector
     children:
+    # LP Edit Start
+    - id: LPPBlueprintBluespaceMiner
+    - id: LPPBlueprintClothingOuterHardsuitMaxim
+    - id: LPPBlueprintBluespaceBeaker
+    - id: LPPBlueprintMiningDrillDiamond
+    - id: LPPBlueprintPowerCellMicroreactor
+    # LP Edit End
     - id: BlueprintDoubleEmergencyTank
     - id: FultonBeacon
     - id: Fulton
@@ -257,8 +264,11 @@
   table: !type:GroupSelector
     children:
     # LP Edit Start
-    - id: LPPBlueprintBluespaceMiner
-    - id: LPPBlueprintClothingOuterHardsuitMaxim
+    - id: LPPBlueprintBackpackDuffelHolding
+    - id: LPPBlueprintBackpackHolding
+    - id: LPPBlueprintBackpackSatchelHolding
+    - id: LPPBlueprintShoesBootsSpeed
+    - id: LPPBlueprintOreBagOfHolding
     # LP Edit End
     - id: AdvancedMineralScanner
     - id: BlueprintFulton

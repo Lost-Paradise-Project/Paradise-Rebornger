@@ -149,6 +149,7 @@ public sealed partial class HealthAnalyzerControl : BoxContainer
         return mobState switch
         {
             MobState.Alive => Loc.GetString("health-analyzer-window-entity-alive-text"),
+            MobState.SoftCritical => Loc.GetString("health-analyzer-window-entity-soft-critical-text"), // LP Edit
             MobState.Critical => Loc.GetString("health-analyzer-window-entity-critical-text"),
             MobState.Dead => Loc.GetString("health-analyzer-window-entity-dead-text"),
             _ => Loc.GetString("health-analyzer-window-entity-unknown-text"),

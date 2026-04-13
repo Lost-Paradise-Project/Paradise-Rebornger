@@ -175,7 +175,8 @@ public sealed class MobThresholdSystem : EntitySystem
         if (!Resolve(target, ref thresholdComponent))
             return false;
 
-        return TryGetThresholdForState(target, MobState.Critical, out threshold, thresholdComponent)
+        return TryGetThresholdForState(target, MobState.SoftCritical, out threshold, thresholdComponent) // LP Edit
+               || TryGetThresholdForState(target, MobState.Critical, out threshold, thresholdComponent) // LP Edit
                || TryGetThresholdForState(target, MobState.Dead, out threshold, thresholdComponent);
     }
 
@@ -204,6 +205,53 @@ public sealed class MobThresholdSystem : EntitySystem
         percentage = FixedPoint2.Min(1.0f, damage / threshold.Value);
         return true;
     }
+
+    // LP Edit Start
+
+    /// <summary>
+    /// Try to get the Damage Threshold for critical
+    /// </summary>
+    /// <param name="target">Target Entity</param>
+    /// <param name="threshold">The Damage Threshold for critical</param>
+    /// <param name="thresholdComponent">Threshold Component owned by the target</param>
+    /// <returns>true if successfully retrieved incapacitation threshold</returns>
+    public bool TryGetCriticalThreshold(EntityUid target, [NotNullWhen(true)] out FixedPoint2? threshold,
+        MobThresholdsComponent? thresholdComponent = null)
+    {
+        threshold = null;
+        if (!Resolve(target, ref thresholdComponent, false))
+            return false;
+
+        return TryGetThresholdForState(target, MobState.Critical, out threshold, thresholdComponent);
+    }
+
+    /// <summary>
+    /// Try to get a percentage of the Damage Threshold for critical
+    /// </summary>
+    /// <param name="target">Target Entity</param>
+    /// <param name="damage">The damage being applied</param>
+    /// <param name="percentage">Percentage of Damage compared to the Critical Threshold</param>
+    /// <param name="thresholdComponent">Threshold Component Owned by the target</param>
+    /// <returns>true if successfully retrieved critical percentage</returns>
+    public bool TryGetCriticalPercentage(EntityUid target, FixedPoint2 damage,
+        [NotNullWhen(true)] out FixedPoint2? percentage,
+        MobThresholdsComponent? thresholdComponent = null)
+    {
+        percentage = null;
+        if (!TryGetCriticalThreshold(target, out var threshold, thresholdComponent))
+            return false;
+
+        if (damage == 0)
+        {
+            percentage = 0;
+            return true;
+        }
+
+        percentage = FixedPoint2.Min(1.0f, damage / threshold.Value);
+        return true;
+    }
+
+    // LP Edit End
 
     /// <summary>
     /// Try to get the Damage Threshold for death
