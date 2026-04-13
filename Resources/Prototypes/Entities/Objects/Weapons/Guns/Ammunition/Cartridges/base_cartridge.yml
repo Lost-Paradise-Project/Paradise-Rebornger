@@ -39,4 +39,4 @@
       params:
         volume: -1
   - type: StaticPrice
-    price: 8 # LP Edit
+    price: 1 # LP Edit
