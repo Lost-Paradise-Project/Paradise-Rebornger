@@ -2,7 +2,7 @@
   id: Ipc
   limits:
     enum.HumanoidVisualLayers.Hair:
-      limit: 0
+      limit: 1 #LP edit
       required: false
     enum.HumanoidVisualLayers.FacialHair:
       limit: 0
@@ -282,10 +282,10 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Corvax/Mobs/Species/Ipc/parts.rsi
+    sprite: _EE/Mobs/Species/IPC/parts.rsi #LP edit
   - type: VisualOrgan
     data:
-      sprite: Corvax/Mobs/Species/Ipc/parts.rsi
+      sprite: _EE/Mobs/Species/IPC/parts.rsi #LP edit
   - type: VisualOrganMarkings
     markingData:
       group: Ipc

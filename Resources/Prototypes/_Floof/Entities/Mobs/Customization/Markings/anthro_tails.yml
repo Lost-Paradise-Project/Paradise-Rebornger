@@ -86,7 +86,7 @@
 - type: marking
   id: TailBee
   bodyPart: Tail
-  groupWhitelist: [Slime, Human]
+  groupWhitelist: [Slime, Human, Arachnid, Moth]
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_bee_FRONT_primary
@@ -301,7 +301,7 @@
 - type: marking
   id: TailInsect
   bodyPart: Tail
-  groupWhitelist: [Slime, Human]
+  groupWhitelist: [Slime, Human, Arachnid, Moth]
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_insect_FRONT_primary
@@ -456,7 +456,7 @@
 - type: marking
   id: TailQueenBee
   bodyPart: Tail
-  groupWhitelist: [Slime, Human]
+  groupWhitelist: [Slime, Human, Arachnid, Moth]
   sponsorOnly: true
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
@@ -471,7 +471,7 @@
 - type: marking
   id: TailQueenInsect
   bodyPart: Tail
-  groupWhitelist: [Slime, Human]
+  groupWhitelist: [Slime, Human, Arachnid, Moth]
   sponsorOnly: true
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi

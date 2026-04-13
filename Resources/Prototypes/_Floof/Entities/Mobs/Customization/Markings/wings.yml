@@ -28,7 +28,7 @@
 - type: marking
   id: WingsHarpy
   bodyPart: Tail
-  groupWhitelist: [Human]
+  groupWhitelist: [Slime, Human]
   sponsorOnly: true
   sprites:
     - sprite: SimpleStation14/Mobs/Customization/wings64x32.rsi
