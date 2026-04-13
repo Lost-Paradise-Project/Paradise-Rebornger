@@ -45,9 +45,6 @@ alerts-ensnared-desc = Ваши конечности [color=yellow]чем-то �
 alerts-buckled-name = [color=yellow]Пристёгнуты[/color]
 alerts-buckled-desc = Вы к чему-то [color=yellow]пристёгнуты[/color]. Щёлкните по иконке чтобы отстегнуться, если на вас [color=yellow]не надеты наручники.[/color]
 
-alerts-soft-crit-name = [color=red]Полу-осознанное состояние[/color]
-alerts-soft-crit-desc = Вы серьёзно ранены и чудом всё ещё в сознании, вы можете только ползти и шептать.
-
 alerts-crit-name = [color=red]Критическое состояние[/color]
 alerts-crit-desc = Вы серьёзно ранены и без сознания.
 

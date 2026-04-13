@@ -750,7 +750,7 @@ public sealed partial class ChatSystem : SharedChatSystem
         else if (!_loocEnabled) return;
 
         // If crit player LOOC is disabled, don't send the message at all.
-        if (!_critLoocEnabled && _mobStateSystem.IsCritical(source) || _mobStateSystem.IsSoftCritical(source))
+        if (!_critLoocEnabled && _mobStateSystem.IsCritical(source) || _mobStateSystem.IsSoftCritical(source)) // LP Edit
             return;
 
         // Orion-Start

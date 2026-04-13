@@ -6,7 +6,6 @@ health-analyzer-window-entity-unknown-value-text = N/A
 health-analyzer-window-entity-alive-text = Alive
 health-analyzer-window-entity-dead-text = Dead
 health-analyzer-window-entity-critical-text = Critical
-health-analyzer-window-entity-soft-critical-text = Soft-Critical
 
 health-analyzer-window-entity-temperature-text = Temperature:
 health-analyzer-window-entity-blood-level-text = Blood Level:

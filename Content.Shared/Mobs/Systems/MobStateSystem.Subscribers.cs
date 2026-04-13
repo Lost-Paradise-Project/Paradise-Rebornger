@@ -92,6 +92,7 @@ public partial class MobStateSystem
         switch (state)
         {
             case MobState.Alive:
+                //unused
                 break;
             // LP Edit Start
             case MobState.SoftCritical:
@@ -123,41 +124,42 @@ public partial class MobStateSystem
         _blocker.UpdateCanMove(target); //update movement anytime a state changes
         switch (state)
         {
-            // LP Edit Start -> Fix formatting and add SoftCritical
             case MobState.Alive:
-                {
-                    _standing.Stand(target);
-                    _appearance.SetData(target, MobStateVisuals.State, MobState.Alive);
-                    break;
-                }
+            {
+                _standing.Stand(target);
+                _appearance.SetData(target, MobStateVisuals.State, MobState.Alive);
+                break;
+            }
+            // LP Edit Start
             case MobState.SoftCritical:
-                {
-                    Down(target);
-                    _appearance.SetData(target, MobStateVisuals.State, MobState.SoftCritical);
-                    break;
-                }
+            {
+                Down(target);
+                _appearance.SetData(target, MobStateVisuals.State, MobState.SoftCritical);
+                break;
+            }
+            // LP Edit End
             case MobState.Critical:
-                {
-                    Down(target);
-                    _appearance.SetData(target, MobStateVisuals.State, MobState.Critical);
-                    break;
-                }
+            {
+                Down(target);
+                _appearance.SetData(target, MobStateVisuals.State, MobState.Critical);
+                break;
+            }
             case MobState.Dead:
-                {
-                    EnsureComp<CollisionWakeComponent>(target);
-                    Down(target);
-                    _appearance.SetData(target, MobStateVisuals.State, MobState.Dead);
-                    break;
-                }
+            {
+                EnsureComp<CollisionWakeComponent>(target);
+                Down(target);
+                _appearance.SetData(target, MobStateVisuals.State, MobState.Dead);
+                break;
+            }
             case MobState.Invalid:
-                {
-                    break;
-                }
+            {
+                //unused;
+                break;
+            }
             default:
-                {
-                    throw new NotImplementedException();
-                }
-                // LP Edit End -> Fix formatting and add SoftCritical
+            {
+                throw new NotImplementedException();
+            }
         }
     }
 
@@ -197,9 +199,13 @@ public partial class MobStateSystem
     {
         switch (component.CurrentState)
         {
-            case MobState.SoftCritical: // LP Edit
+            case MobState.Dead:
+            // LP Edit Start
+            case MobState.SoftCritical:
+                args.Cancel();
+                break;
+            // LP Edit End
             case MobState.Critical:
-            case MobState.Dead: // LP Edit
                 args.Cancel();
                 break;
         }
