@@ -79,16 +79,6 @@
   group: SalvageJobReward2
 
 - type: cargoProduct
-  id: LPPCargoSalvageExpeditionKineticMachete
-  icon:
-    sprite: _Lavaland/Objects/Weapons/Crushers/crusher_machete.rsi
-    state: icon
-  product: LavalandWeaponKineticMachete
-  cost: 6500
-  category: cargoproduct-category-name-cargo
-  group: SalvageJobReward2
-
-- type: cargoProduct
   id: LPPCargoSalvageExpeditionSchwarzlose
   icon:
     sprite: _LP/Objects/Weapons/Guns/Pistols/Shvartloze.rsi
