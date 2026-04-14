@@ -244,7 +244,8 @@
         Piercing: 0.9
         Heat: 0.9
   - type: TemperatureProtection
-    coefficient: 0.005
+    heatingCoefficient: 0.01
+    coolingCoefficient: 0.01
   - type: Foldable
     canFoldInsideContainer: true
   - type: FoldableClothing

@@ -16,7 +16,7 @@
   product: WeaponProtoKineticPistol
   cost: 2500
   category: cargoproduct-category-name-cargo
-  group: SalvageJobReward1
+  group: SalvageJobReward2
 
 - type: cargoProduct
   id: LPPCargoSalvageExpeditionKineticRepeater
@@ -86,7 +86,7 @@
   product: LPPweaponSchwarzlose
   cost: 3500
   category: cargoproduct-category-name-cargo
-  group: SalvageJobReward1
+  group: SalvageJobReward2
 
 - type: cargoProduct
   id: LPPCargoSalvageExpeditionPibodi
