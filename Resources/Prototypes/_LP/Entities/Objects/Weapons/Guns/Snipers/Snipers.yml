@@ -173,7 +173,7 @@
     capacity: 2
     proto: CartridgeAntiMateriel
   - type: GunRequiresWield
-  - type: EyeCursorOffset 
-    maxOffset: 7 
-    pvsIncrease: 7 
+  - type: EyeCursorOffset
+    maxOffset: 7
+    pvsIncrease: 7
   - type: CursorOffsetRequiresWield

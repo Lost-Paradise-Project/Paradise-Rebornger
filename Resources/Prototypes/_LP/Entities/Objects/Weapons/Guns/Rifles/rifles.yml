@@ -133,7 +133,7 @@
       - FiringPin
 
 - type: entity
-  name: 6P168 
+  name: 6P168
   parent: [BaseWeaponRifle, BaseSyndicateContraband]
   id: LPPWeaponRifleAek
   description: Second iteration of USSP experimental rifle. Famously used by USSP GRU specops . It can use .20 or .30 ammo and mags, also it has hyperburst firemode.
