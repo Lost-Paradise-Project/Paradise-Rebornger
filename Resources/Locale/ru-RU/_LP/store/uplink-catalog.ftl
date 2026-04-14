@@ -15,3 +15,7 @@ uplink-weapon-oc38-name = Револьвер ОС-38
 uplink-weapon-oc38-desc = Короткий револьер скрытого ношения с интегрированным глушителем под .45 магнум. Вмещает на 1 патрон меньше чем свой большой брат.
 uplink-weapon-naigun-name = Самозарядный гвоздемёт
 uplink-weapon-naigun-desc = Самозарядный гвоздемёт, что стреляет крайне опасными дротиками, которые ещё немного ядовиты, полезно как запасное оружие.
+uplink-weapon-m1a-name = М1А
+uplink-weapon-m1a-desc = Простенькая и дешёвая автоматическая(?) винтовка под патрон .30
+uplink-weapon-magazinelightrifle-name = Магазин (.30 винтовочные)
+uplink-weapon-magazinelightrifle-desc = Полный магазин под патрон .30

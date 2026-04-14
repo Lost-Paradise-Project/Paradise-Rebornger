@@ -1,0 +1,14 @@
+ent-LPPBulletPibodi = Пуля пибоди
+    .desc = Как ты это читаешь?
+ent-LPPNail = Гвоздь
+    .desc = Как ты это читаешь?
+ent-LPPNailRifle = Гвоздь
+    .desc = Как ты это читаешь?
+ent-LPPBulletLebel = Пуля лебеля
+    .desc = Как ты это читаешь?
+ent-LPPBulletCharge2 = Болт
+    .desc = Как ты это читаешь?
+ent-LPPBulletchargebarrage = Барраж
+    .desc = { ent-LPPBulletCharge2.desc }
+ent-LPPBulletChargeWeak = Слаби болт
+    .desc = Как ты это читаешь?

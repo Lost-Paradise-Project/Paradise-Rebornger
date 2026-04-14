@@ -3,3 +3,7 @@ ent-LPPClothingBeltFlamingo = надувной фламинго
 ent-LPPClothingMilitaryWebbingSecEng = РПС полевого инженера
     .desc = Ременно-плечевая система тактических ремней для полевого инженера.
     .suffix = Безопасность
+ent-LPPClothingBeltMaximumWebbing = Webbing "Hamster"
+    .desc = A set of pockets, bags and other rubbish provides a lot of space for your various things that you will stuff here. It looks extremely cumbersome, however.
+ent-LPPClothingBeltMaximumWebbingSalvager = Salvager webbing
+    .desc = A set of pockets, bags and other rubbish provides a lot of space for your various things that you will stuff here. It looks extremely cumbersome, however.
