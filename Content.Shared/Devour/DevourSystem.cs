@@ -69,6 +69,7 @@ public sealed class DevourSystem : EntitySystem
         {
             switch (targetState.CurrentState)
             {
+                case MobState.SoftCritical: // LP Edit
                 case MobState.Critical:
                 case MobState.Dead:
 

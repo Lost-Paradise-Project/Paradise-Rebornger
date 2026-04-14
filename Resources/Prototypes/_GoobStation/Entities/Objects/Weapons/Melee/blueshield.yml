@@ -30,9 +30,10 @@
       types:
         Heat: 1
   - type: Stunbaton
-    energyPerUse: 40
+    energyPerUse: 80
   - type: MeleeWeapon
     angle: 0
+    attackRate: 0.75
     wideAnimationRotation: -135
     damage:
       types:
@@ -42,7 +43,7 @@
     soundHit:
       path: /Audio/_LP/Weapons/Effects/mace_hit.ogg # LP Edit
   - type: StaminaDamageOnHit
-    damage: 35
+    damage: 25
     sound: /Audio/Weapons/egloves.ogg
   - type: LandAtCursor
   - type: Battery

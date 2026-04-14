@@ -1,0 +1,169 @@
+- type: marking
+  id: BunnyTail
+  bodyPart: Tail
+  groupWhitelist: [Slime, Human]
+  sponsorOnly: true # LPP-Sponsors
+  coloring:
+    default:
+      type:
+        !type:CategoryColoring
+          category: Hair
+      fallbackTypes:
+        - !type:CategoryColoring
+          category: FacialHair
+        - !type:SkinColoring
+  sprites:
+  - sprite: _EE/Mobs/Customization/kemonomimi-tails.rsi
+    state: bunnytail
+
+- type: marking
+  id: DobleFur
+  bodyPart: Tail
+  groupWhitelist: [Slime, Human]
+  sponsorOnly: true # LPP-Sponsors
+  coloring:
+    default:
+      type:
+        !type:CategoryColoring
+          category: Hair
+      fallbackTypes:
+        - !type:CategoryColoring
+          category: FacialHair
+        - !type:SkinColoring
+  sprites:
+  - sprite: _EE/Mobs/Customization/kemonomimi-tails.rsi
+    state: doblefurtailtone1
+  - sprite: _EE/Mobs/Customization/kemonomimi-tails.rsi
+    state: doblefurtailtone2
+
+- type: marking
+  id: FluffyTail
+  bodyPart: Tail
+  groupWhitelist: [Slime, Human]
+  sponsorOnly: true # LPP-Sponsors
+  coloring:
+    default:
+      type:
+        !type:CategoryColoring
+          category: Hair
+      fallbackTypes:
+        - !type:CategoryColoring
+          category: FacialHair
+        - !type:SkinColoring
+  sprites:
+  - sprite: _EE/Mobs/Customization/kemonomimi-tails.rsi
+    state: fluffytail
+
+- type: marking
+  id: FoxNineTails
+  bodyPart: Tail
+  groupWhitelist: [Slime, Human]
+  sponsorOnly: true # LPP-Sponsors
+  coloring:
+    default:
+      type:
+        !type:CategoryColoring
+          category: Hair
+      fallbackTypes:
+        - !type:CategoryColoring
+          category: FacialHair
+        - !type:SkinColoring
+  sprites:
+  - sprite: _EE/Mobs/Customization/kemonomimi-tails.rsi
+    state: foxninetailstone1
+  - sprite: _EE/Mobs/Customization/kemonomimi-tails.rsi
+    state: foxninetailstone2
+
+- type: marking
+  id: FoxThreeTails
+  bodyPart: Tail
+  groupWhitelist: [Slime, Human]
+  sponsorOnly: true # LPP-Sponsors
+  coloring:
+    default:
+      type:
+        !type:CategoryColoring
+          category: Hair
+      fallbackTypes:
+        - !type:CategoryColoring
+          category: FacialHair
+        - !type:SkinColoring
+  sprites:
+  - sprite: _EE/Mobs/Customization/kemonomimi-tails.rsi
+    state: foxthreetailstone1
+  - sprite: _EE/Mobs/Customization/kemonomimi-tails.rsi
+    state: foxthreetailstone2
+
+- type: marking
+  id: HorseTailCulty
+  bodyPart: Tail
+  groupWhitelist: [Slime, Human]
+  sponsorOnly: true # LPP-Sponsors
+  coloring:
+    default:
+      type:
+        !type:CategoryColoring
+          category: Hair
+      fallbackTypes:
+        - !type:CategoryColoring
+          category: FacialHair
+        - !type:SkinColoring
+  sprites:
+  - sprite: _EE/Mobs/Customization/kemonomimi-tails.rsi
+    state: horsetailculty
+
+- type: marking
+  id: HorseTailLong
+  bodyPart: Tail
+  groupWhitelist: [Slime, Human]
+  sponsorOnly: true # LPP-Sponsors
+  coloring:
+    default:
+      type:
+        !type:CategoryColoring
+          category: Hair
+      fallbackTypes:
+        - !type:CategoryColoring
+          category: FacialHair
+        - !type:SkinColoring
+  sprites:
+  - sprite: _EE/Mobs/Customization/kemonomimi-tails.rsi
+    state: horsetaillong
+
+- type: marking
+  id: SharkTail
+  bodyPart: Tail
+  groupWhitelist: [Slime, Human]
+  sponsorOnly: true # LPP-Sponsors
+  coloring:
+    default:
+      type:
+        !type:CategoryColoring
+          category: Hair
+      fallbackTypes:
+        - !type:CategoryColoring
+          category: FacialHair
+        - !type:SkinColoring
+  sprites:
+  - sprite: _EE/Mobs/Customization/kemonomimi-tails.rsi
+    state: sharktail
+
+- type: marking
+  id: TasselTail
+  bodyPart: Tail
+  groupWhitelist: [Slime, Human]
+  sponsorOnly: true # LPP-Sponsors
+  coloring:
+    default:
+      type:
+        !type:CategoryColoring
+          category: Hair
+      fallbackTypes:
+        - !type:CategoryColoring
+          category: FacialHair
+        - !type:SkinColoring
+  sprites:
+  - sprite: _EE/Mobs/Customization/kemonomimi-tails.rsi
+    state: tasseltailtone1
+  - sprite: _EE/Mobs/Customization/kemonomimi-tails.rsi
+    state: tasseltailtone2

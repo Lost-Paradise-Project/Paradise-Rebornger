@@ -144,7 +144,7 @@ public sealed class PullingSystem : EntitySystem
         if (component.Pulling == null)
             return;
 
-        if (TryComp<PullableComponent>(component.Pulling, out var comp) && (args.NewMobState == MobState.Critical || args.NewMobState == MobState.Dead))
+        if (TryComp<PullableComponent>(component.Pulling, out var comp) && (args.NewMobState is MobState.SoftCritical or MobState.Critical or MobState.Dead)) // LP Edit
         {
             TryStopPull(component.Pulling.Value, comp);
         }

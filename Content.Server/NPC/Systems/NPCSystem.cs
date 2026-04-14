@@ -166,6 +166,7 @@ namespace Content.Server.NPC.Systems
                 case MobState.Alive:
                     WakeNPC(uid, component);
                     break;
+                case MobState.SoftCritical: // LP Edit
                 case MobState.Critical:
                 case MobState.Dead:
                     SleepNPC(uid, component);

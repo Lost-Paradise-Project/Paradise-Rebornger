@@ -96,8 +96,10 @@
   - ChemicalPayload
   - CryostasisBeaker
   - SyringeCryostasis
-  - BluespaceBeaker
-  - SyringeBluespace
+  # LP Edit Start
+  # - BluespaceBeaker
+  # - SyringeBluespace
+  # LP Edit End
   - LauncherSyringe
   - MiniSyringe
   - AdvancedJetInjector

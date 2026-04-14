@@ -233,7 +233,7 @@ public sealed partial class AdminVerbSystem
                 {
                     var totalDamage = _damageable.GetTotalDamage((args.Target, damageable));
                     int damageToDeal;
-                    if (!_mobThresholdSystem.TryGetThresholdForState(args.Target, MobState.Critical, out var criticalThreshold))
+                    if (!_mobThresholdSystem.TryGetThresholdForState(args.Target, MobState.SoftCritical, out var criticalThreshold)) // LP Edit
                     {
                         // We can't crit them so try killing them.
                         if (!_mobThresholdSystem.TryGetThresholdForState(args.Target, MobState.Dead,

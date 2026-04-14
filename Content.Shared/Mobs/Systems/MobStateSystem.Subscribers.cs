@@ -19,6 +19,7 @@ using Content.Shared.Standing;
 using Content.Shared.Strip.Components;
 using Content.Shared.Throwing;
 using Robust.Shared.Physics.Components;
+using Content.Shared.Movement.Systems; // LP Edit
 
 namespace Content.Shared.Mobs.Systems;
 
@@ -40,13 +41,17 @@ public partial class MobStateSystem
         SubscribeLocalEvent<MobStateComponent, DropAttemptEvent>(CheckAct);
         SubscribeLocalEvent<MobStateComponent, PickupAttemptEvent>(CheckAct);
         SubscribeLocalEvent<MobStateComponent, StartPullAttemptEvent>(CheckAct);
-        SubscribeLocalEvent<MobStateComponent, UpdateCanMoveEvent>(CheckAct);
+        // SubscribeLocalEvent<MobStateComponent, UpdateCanMoveEvent>(CheckAct);
         SubscribeLocalEvent<MobStateComponent, StandAttemptEvent>(CheckAct);
         SubscribeLocalEvent<MobStateComponent, PointAttemptEvent>(CheckAct);
         SubscribeLocalEvent<MobStateComponent, TryingToSleepEvent>(OnSleepAttempt);
         SubscribeLocalEvent<MobStateComponent, CombatModeShouldHandInteractEvent>(OnCombatModeShouldHandInteract);
         SubscribeLocalEvent<MobStateComponent, AttemptPacifiedAttackEvent>(OnAttemptPacifiedAttack);
         SubscribeLocalEvent<MobStateComponent, DamageModifyEvent>(OnDamageModify);
+        // LP Edit Start
+        SubscribeLocalEvent<MobStateComponent, RefreshMovementSpeedModifiersEvent>(OnSoftCritSpeed);
+        SubscribeLocalEvent<MobStateComponent, UpdateCanMoveEvent>(OnUpdateCanMove);
+        // LP Edit End
 
         SubscribeLocalEvent<MobStateComponent, UnbuckleAttemptEvent>(OnUnbuckleAttempt);
     }
@@ -71,6 +76,11 @@ public partial class MobStateSystem
         switch (ent.Comp.CurrentState)
         {
             case MobState.Dead:
+            // LP Edit Start
+            case MobState.SoftCritical:
+                args.Cancelled = true;
+                break;
+            // LP Edit End
             case MobState.Critical:
                 args.Cancelled = true;
                 break;
@@ -84,6 +94,11 @@ public partial class MobStateSystem
             case MobState.Alive:
                 //unused
                 break;
+            // LP Edit Start
+            case MobState.SoftCritical:
+                _standing.Stand(target);
+                break;
+            // LP Edit End
             case MobState.Critical:
                 _standing.Stand(target);
                 break;
@@ -115,6 +130,14 @@ public partial class MobStateSystem
                 _appearance.SetData(target, MobStateVisuals.State, MobState.Alive);
                 break;
             }
+            // LP Edit Start
+            case MobState.SoftCritical:
+            {
+                Down(target);
+                _appearance.SetData(target, MobStateVisuals.State, MobState.SoftCritical);
+                break;
+            }
+            // LP Edit End
             case MobState.Critical:
             {
                 Down(target);
@@ -153,8 +176,12 @@ public partial class MobStateSystem
         // Incapacitated or dead targets get stripped two or three times as fast. Makes stripping corpses less tedious.
         if (IsDead(target, component))
             args.Multiplier /= 3;
+        // LP Edit Start
         else if (IsCritical(target, component))
+            args.Multiplier /= 3;
+        else if (IsSoftCritical(target, component))
             args.Multiplier /= 2;
+        // LP Edit End
     }
 
     private void OnSpeakAttempt(EntityUid uid, MobStateComponent component, SpeakAttemptEvent args)
@@ -173,6 +200,11 @@ public partial class MobStateSystem
         switch (component.CurrentState)
         {
             case MobState.Dead:
+            // LP Edit Start
+            case MobState.SoftCritical:
+                args.Cancel();
+                break;
+            // LP Edit End
             case MobState.Critical:
                 args.Cancel();
                 break;
