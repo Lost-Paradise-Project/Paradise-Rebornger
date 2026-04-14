@@ -38,7 +38,6 @@
     capacity: 1
     count: 1
   - type: UpgradeableGun
-    maxUpgradeCapacity: 3
     whitelist:
       tags:
       - PKAUpgrade
@@ -74,7 +73,6 @@
     capacity: 3
     count: 3
   - type: UpgradeableGun
-    maxUpgradeCapacity: 3
     whitelist:
       tags:
       - PKAUpgrade
