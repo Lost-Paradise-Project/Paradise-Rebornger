@@ -25,7 +25,7 @@
   - LPPClothingOuterHardsuitEngineeringWhite
   - LPPClothingOuterHardsuitSecurityRed
   - LPPClothingOuterHardsuitCap
-
+  - LPPClothingOuterHardsuitCombatAlternative
 - type: latheRecipePack
   id: LPPGrenadeLauncherSec
   recipes:

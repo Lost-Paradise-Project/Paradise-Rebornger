@@ -74,7 +74,7 @@
     containerId: contents
   cost: 8000
   category: cargoproduct-category-name-cargo
-  group: SalvageJobReward3
+  group: SalvageJobReward2 #LP edit
 
 # Max Rank
 

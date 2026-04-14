@@ -119,6 +119,7 @@
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
+      firing_pin: !type:Container # Starlight
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -183,6 +184,7 @@
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
+      firing_pin: !type:Container # Starlight
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -215,7 +217,7 @@
     - Back
     - suitStorage
   - type: Gun
-    fireRate: 2.5
+    fireRate: 1.25
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
@@ -245,6 +247,7 @@
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
+      firing_pin: !type:Container # Starlight
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -308,6 +311,7 @@
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
+      firing_pin: !type:Container # Starlight
   - type: MagazineVisuals
     magState: mag
     steps: 1
