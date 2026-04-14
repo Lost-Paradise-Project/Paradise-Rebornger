@@ -39,23 +39,21 @@
       limit: 1
       required: false
     enum.HumanoidVisualLayers.HeadTop:
-      limit: 1
+      limit: 3 #LP edit
       required: false
-#LP edit end
   appearances:
     enum.HumanoidVisualLayers.Hair:
       layerAlpha: 0.72
-      matchSkin: true
+      matchSkin: false 
     enum.HumanoidVisualLayers.FacialHair:
       layerAlpha: 0.72
-      matchSkin: true
-#LP edit start
+      matchSkin: false
     enum.HumanoidVisualLayers.Tail:
       layerAlpha: 0.72
-      matchSkin: true
+      matchSkin: false
     enum.HumanoidVisualLayers.HeadTop:
       layerAlpha: 0.72
-      matchSkin: true
+      matchSkin: false
 #LP edit end
 
 - type: entity

@@ -1,0 +1,47 @@
+- type: marking
+  id: WingsFlyAlt
+  bodyPart: Tail
+  groupWhitelist: [Human]
+  sponsorOnly: true
+  sprites:
+    - sprite: SimpleStation14/Mobs/Customization/wings96x34.rsi
+      state: fly
+
+- type: marking
+  id: WingsRobotic
+  bodyPart: Tail
+  groupWhitelist: [Human, Ipc]
+  sponsorOnly: true
+  sprites:
+    - sprite: SimpleStation14/Mobs/Customization/wings96x34.rsi
+      state: robotic
+
+- type: marking
+  id: WingsSkeleton
+  bodyPart: Tail
+  groupWhitelist: [Human]
+  sponsorOnly: true
+  sprites:
+    - sprite: SimpleStation14/Mobs/Customization/wings96x34.rsi
+      state: skeleton
+
+- type: marking
+  id: WingsHarpy
+  bodyPart: Tail
+  groupWhitelist: [Slime, Human]
+  sponsorOnly: true
+  sprites:
+    - sprite: SimpleStation14/Mobs/Customization/wings64x32.rsi
+      state: harpy
+
+- type: marking
+  id: WingsHarpyBionic
+  bodyPart: Tail
+  groupWhitelist: [Human]
+  sponsorOnly: true
+  sprites:
+    - sprite: _Floof/Mobs/Customization/wings64-32.rsi
+      state: bionic_wings_tone_1
+    - sprite: _Floof/Mobs/Customization/wings64-32.rsi
+      state: bionic_wings_tone_2
+      shader: unshaded

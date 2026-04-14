@@ -163,14 +163,18 @@
   id: MassExcavation
   name: research-technology-excavation
   icon:
-    sprite: Objects/Tools/handdrilldiamond.rsi
-    state: handdrill
+    # LP Edit Start
+    sprite: Objects/Specific/Mining/mineral_scanner.rsi
+    state: adv
+    # LP Edit End
   discipline: Industrial
   tier: 2
   cost: 12500
   recipeUnlocks:
-    - OreBagOfHolding
-    - MiningDrillDiamond
+    # LP Edit Start
+    # - OreBagOfHolding
+    # - MiningDrillDiamond
+    # LP Edit End
     - AdvancedMineralScannerEmpty
     - BorgModuleAdvancedMining
     - SalvageExpeditionsComputerCircuitboard
@@ -221,24 +225,28 @@
 
 # Tier 3
 
-- type: technology
-  id: BluespaceStorage
-  name: research-technology-bluespace-storage
-  icon:
-    sprite: Clothing/Back/Backpacks/holding.rsi
-    state: holding
-  discipline: Industrial
-  tier: 3
-  cost: 15000
-  recipeUnlocks:
-  - ClothingBackpackHolding
-  - ClothingBackpackSatchelHolding
-  - ClothingBackpackDuffelHolding
-  position: 0, 13 # LP edit
-  technologyPrerequisites:
-  - MassExcavation
-  radioChannels:
-  - Engineering
+# LP Edit Start
+
+# - type: technology
+#   id: BluespaceStorage
+#   name: research-technology-bluespace-storage
+#   icon:
+#     sprite: Clothing/Back/Backpacks/holding.rsi
+#     state: holding
+#   discipline: Industrial
+#   tier: 3
+#   cost: 15000
+#   recipeUnlocks:
+#   - ClothingBackpackHolding
+#   - ClothingBackpackSatchelHolding
+#   - ClothingBackpackDuffelHolding
+#   position: 0, 13 # LP edit
+#   technologyPrerequisites:
+#   - MassExcavation
+#   radioChannels:
+#   - Engineering
+
+# LP Edit End
 
 - type: technology
   id: AdvancedToolsTechnology
@@ -270,12 +278,12 @@
   name: research-technology-optimized-microgalvanism
   icon:
     sprite: Objects/Power/power_cells.rsi
-    state: microreactor
+    state: hyper # LP Edit
   discipline: Industrial
   tier: 3
   cost: 10000
   recipeUnlocks:
-  - PowerCellMicroreactor
+  # - PowerCellMicroreactor # LP Edit
   - PowerCellHyper
   position: 0, 11 # LP edit
   technologyPrerequisites:

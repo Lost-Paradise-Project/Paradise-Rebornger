@@ -98,24 +98,6 @@
     prototype: ClothingOuterHardsuitExperimentalNanorep
 
 - type: entity
-  id: SpawnPodGoldCase
-  categories: [ HideSpawnMenu ]
-  name: SpawnSupplyCigar
-  parent: SpawnSupplyEmpty
-  components:
-  - type: SpawnOnDespawn
-    prototype: CigarGoldCase # might be an overill but who cares lol
-
-- type: entity
-  id: SpawnPodWhiskey
-  categories: [ HideSpawnMenu ]
-  name: SpawnSupplyWhiskey
-  parent: SpawnSupplyEmpty
-  components:
-  - type: SpawnOnDespawn
-    prototype: DrinkWhiskeyBottleFull
-
-- type: entity
   id: SpawnPodCentCommGlasses
   categories: [ HideSpawnMenu ]
   name: SpawnPodCentCommGlasses
@@ -276,24 +258,6 @@
   components:
   - type: SpawnOnDespawn
     prototype: ComputerNTRTasksFlatpack
-
-- type: entity
-  id: SpawnPodNTRCigs
-  categories: [ HideSpawnMenu ]
-  name: SpawnPodNTRCigs
-  parent: SpawnSupplyEmpty
-  components:
-  - type: SpawnOnDespawn
-    prototype: VendingMachineCigsDeluxe
-
-- type: entity
-  id: SpawnPodWaterCoolerGold
-  categories: [ HideSpawnMenu ]
-  name: SpawnPodWaterCoolerGold
-  parent: SpawnSupplyEmpty
-  components:
-  - type: SpawnOnDespawn
-    prototype: WaterCoolerGold
 
 - type: entity
   id: SpawnPodNTRCassettePlayer

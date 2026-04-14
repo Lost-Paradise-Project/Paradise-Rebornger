@@ -966,3 +966,7 @@ CrateVendingMachineRestockGetmoreChocolateCorpFilled: VendingMachineRestockGetmo
 CrateVendingMachineRestockChangFilled: VendingMachineRestockChang
 CrateVendingMachineRestockDiscountDansFilled: VendingMachineRestockDiscountDans
 CrateVendingMachineRestockDonutFilled: VendingMachineRestockDonut
+
+# LP Edit 2026-04-12
+
+ComputerSalvageExpedition: null

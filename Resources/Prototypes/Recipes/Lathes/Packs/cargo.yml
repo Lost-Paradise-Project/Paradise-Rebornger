@@ -19,10 +19,10 @@
   id: Mining
   recipes:
   - MiningDrill
-  - MiningDrillDiamond
+  # - MiningDrillDiamond # LP Edit
   - MineralScannerEmpty
   - AdvancedMineralScannerEmpty
-  - OreBagOfHolding
+  # - OreBagOfHolding # LP Edit
 
 - type: latheRecipePack
   id: CargoBoards
