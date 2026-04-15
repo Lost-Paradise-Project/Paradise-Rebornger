@@ -187,6 +187,9 @@
   description: uplink-weapon-magazinelightrifle-desc
   icon: { sprite:  Objects/Weapons/Guns/Ammunition/Magazine/LightRifle/light_rifle_mag.rsi, state: base}
   productEntity: MagazineLightRifle
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 1
   cost:
     Telecrystal: 1
   categories:
