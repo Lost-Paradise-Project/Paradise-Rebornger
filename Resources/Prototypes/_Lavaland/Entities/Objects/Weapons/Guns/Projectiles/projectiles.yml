@@ -45,15 +45,9 @@
         Blunt: 12
 
 - type: entity
-  id: PelletKinetic
-  categories: [ HideSpawnMenu ]
-  parent: WeakBulletKinetic
-  components:
-
-- type: entity
   id: PelletKineticSpread
   categories: [ HideSpawnMenu ]
-  parent: PelletKinetic
+  parent: WeakBulletKinetic
   components:
   - type: ProjectileSpread
     proto: PelletKinetic
