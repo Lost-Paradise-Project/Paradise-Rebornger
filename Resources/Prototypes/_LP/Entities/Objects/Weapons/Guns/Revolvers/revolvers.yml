@@ -258,3 +258,4 @@
     size: Small
     shape:
     - 1,0,1,0
+  - type: ContainerContainer
