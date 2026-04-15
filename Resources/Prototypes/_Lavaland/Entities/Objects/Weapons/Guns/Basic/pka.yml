@@ -46,7 +46,7 @@
     sprite: _Lavaland/Objects/Weapons/Guns/Basic/kinetic_shotgun.rsi
     shape:
     - 0,0,4,0
-
+  - type: ContainerContainer
 - type: entity
   name: proto-kinetic repeater
   id: WeaponProtoKineticRepeater
@@ -84,6 +84,7 @@
     rechargeCooldown: 0.5
     rechargeSound:
       path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
+  - type: ContainerContainer
 
 - type: entity
   name: proto-kinetic pistol
@@ -118,3 +119,4 @@
     rechargeCooldown: 0.5
     rechargeSound:
       path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
+  - type: ContainerContainer

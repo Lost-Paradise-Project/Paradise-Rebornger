@@ -52,4 +52,4 @@
   - type: ProjectileSpread
     proto: WeakBulletKinetic
     count: 4
-    spread: 35
+    spread: 30

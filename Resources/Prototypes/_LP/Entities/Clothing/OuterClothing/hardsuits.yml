@@ -164,6 +164,16 @@
             - Medkit
     sprite: _LP/Clothing/OuterClothing/Hardsuits/upgrmining.rsi
   - type: Appearance
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot
+        showEnts: False
+        occludes: True
+        ent: null
+      item: !type:ContainerSlot
+        showEnts: False
+        occludes: True
+        ent: null
 
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseCargoContraband]
@@ -320,7 +330,17 @@
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
+        showEnts: False
+        occludes: True
         ents: []
+      toggleable-clothing: !type:ContainerSlot
+        showEnts: False
+        occludes: True
+        ent: null
+      item: !type:ContainerSlot
+        showEnts: False
+        occludes: True
+        ent: null
 
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseSecurityContraband]
@@ -436,6 +456,7 @@
   components:
   - type: Item
     size: Huge
+    heldPrefix: null
   - type: Sprite
     sprite: _LP/Clothing/OuterClothing/Hardsuits/hardsuitinteq.rsi
   - type: Clothing
@@ -459,7 +480,6 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.95
     sprintModifier: 0.95
-  - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: LPPClothingHeadHelmetHardsuitInteq
   - type: StaminaResistance
