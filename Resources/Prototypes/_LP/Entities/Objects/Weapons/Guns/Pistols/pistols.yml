@@ -55,8 +55,6 @@
           False: { visible: True }
   - type: RechargeBasicEntityAmmo
     rechargeCooldown: 0.9
-    rechargeSound:
-      path: /Audio/_LP/Weapons/clone.ogg
   - type: BasicEntityAmmoProvider
     proto: LPPNail
     capacity: 15

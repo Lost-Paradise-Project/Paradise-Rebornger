@@ -454,8 +454,6 @@
         Radiation: 0.1
         Shock: 0.4
         Cold: 0.4
-  - type: TemperatureProtection
-    coefficient: 0.5
   - type: ExplosionResistance
     damageCoefficient: 0.2
   - type: ClothingSpeedModifier

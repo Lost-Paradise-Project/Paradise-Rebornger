@@ -50,6 +50,6 @@
   parent: WeakBulletKinetic
   components:
   - type: ProjectileSpread
-    proto: PelletKinetic
+    proto: WeakBulletKinetic
     count: 4
     spread: 35
