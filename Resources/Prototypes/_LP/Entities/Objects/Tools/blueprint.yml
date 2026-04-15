@@ -2,7 +2,7 @@
   parent: BaseItem
   id: LPPBaseBlueprintProtolathe
   name: blueprint
-  description: A blueprint for some machine. It can be inserted into an autolathe.
+  description: A blueprint for some machine. It can be inserted into an protolathe or techfab.
   abstract: true
   components:
   - type: Sprite
@@ -46,15 +46,99 @@
     tags:
     - BlueprintSpaceForge
 
+# Protolathe
+
 - type: entity
   parent: LPPBaseBlueprintProtolathe
   id: LPPBlueprintBluespaceMiner
   name: bluespace miner circuitboard blueprint
-  description: A blueprint with a schematic of a bluespace miner circuitboard. It can be inserted into an protolathe.
+  description: A blueprint with a schematic of a bluespace miner circuitboard. It can be inserted into an protolathe or techfab.
   components:
   - type: Blueprint
     providedRecipes:
     - LPPBluespaceMinerMachineCircuitboard
+
+- type: entity
+  parent: LPPBaseBlueprintProtolathe
+  id: LPPBlueprintBluespaceBeaker
+  name: bluespace beaker blueprint
+  description: A blueprint with a schematic of a bluespace beaker. It can be inserted into an protolathe or techfab.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - BluespaceBeaker
+
+- type: entity
+  parent: LPPBaseBlueprintProtolathe
+  id: LPPBlueprintBackpackDuffelHolding
+  name: backpack duffel holding blueprint
+  description: A blueprint with a schematic of a backpack duffel holding. It can be inserted into an protolathe or techfab.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - ClothingBackpackDuffelHolding
+
+- type: entity
+  parent: LPPBaseBlueprintProtolathe
+  id: LPPBlueprintBackpackHolding
+  name: backpack holding blueprint
+  description: A blueprint with a schematic of a backpack holding. It can be inserted into an protolathe or techfab.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - ClothingBackpackHolding
+
+- type: entity
+  parent: LPPBaseBlueprintProtolathe
+  id: LPPBlueprintBackpackSatchelHolding
+  name: backpack satchel holding blueprint
+  description: A blueprint with a schematic of a backpack satchel holding. It can be inserted into an protolathe or techfab.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - ClothingBackpackSatchelHolding
+
+- type: entity
+  parent: LPPBaseBlueprintProtolathe
+  id: LPPBlueprintShoesBootsSpeed
+  name: shoes boots speed blueprint
+  description: A blueprint with a schematic of a shoes boots speed. It can be inserted into an protolathe or techfab.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - ClothingShoesBootsSpeed
+
+- type: entity
+  parent: LPPBaseBlueprintProtolathe
+  id: LPPBlueprintOreBagOfHolding
+  name: ore bag of holding blueprint
+  description: A blueprint with a schematic of a ore bag of holding. It can be inserted into an protolathe or techfab.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - OreBagOfHolding
+
+- type: entity
+  parent: LPPBaseBlueprintProtolathe
+  id: LPPBlueprintMiningDrillDiamond
+  name: mining drill diamond blueprint
+  description: A blueprint with a schematic of a mining drill diamond. It can be inserted into an protolathe or techfab.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - MiningDrillDiamond
+
+- type: entity
+  parent: LPPBaseBlueprintProtolathe
+  id: LPPBlueprintPowerCellMicroreactor
+  name: power cell microreactor blueprint
+  description: A blueprint with a schematic of a mining drill diamond. It can be inserted into an protolathe or techfab.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - PowerCellMicroreactor
+
+# Space Forge
 
 - type: entity
   parent: LPPBaseBlueprintSpaceForge

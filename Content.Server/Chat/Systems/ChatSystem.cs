@@ -13,6 +13,9 @@ using Content.Shared.Administration;
 using Content.Shared.CCVar;
 using Content.Shared.Chat;
 using Content.Shared.Corvax.TTS; // LP edit
+using Content.Shared.Damage.ForceSay; // LP Edit
+using Content.Shared.Cuffs.Components; // Orion Edit
+using Content.Server.Popups; // Orion Edit
 using Content.Shared.Database;
 using Content.Shared.Examine;
 using Content.Shared.Ghost;
@@ -65,6 +68,7 @@ public sealed partial class ChatSystem : SharedChatSystem
     [Dependency] private readonly ExamineSystemShared _examineSystem = default!;
     [Dependency] private readonly ChatProtectionSystem _chatProtection = default!; // Orion
     [Dependency] private readonly EmoteProtectionSystem _emoteProtection = default!; // Orion
+    [Dependency] private readonly PopupSystem _popupSystem = default!; // Orion Edit
 
     // Corvax-TTS-Start: Moved from Server to Shared
     // public const int VoiceRange = 10; // how far voice goes in world units
@@ -231,12 +235,28 @@ public sealed partial class ChatSystem : SharedChatSystem
         // This message may have a radio prefix, and should then be whispered to the resolved radio channel
         if (checkRadioPrefix)
         {
-            if (TryProcessRadioMessage(source, message, out var modMessage, out var channel))
+            // Orion-Start
+            if (IsRadioPrefixMessage(message) && !CanUseRadio(source))
+            {
+                if (TryProcessRadioMessage(source, message, out var fallbackMessage, out _, quiet: true))
+                    message = fallbackMessage;
+
+                desiredType = InGameICChatType.Whisper;
+                checkRadioPrefix = false;
+            }
+
+            if (checkRadioPrefix && TryProcessRadioMessage(source, message, out var modMessage, out var channel)) // Orion-Edit
             {
                 SendEntityWhisper(source, modMessage, range, channel, nameOverride, hideLog, ignoreActionBlocker);
                 return;
             }
+            // Orion-End
         }
+
+        // LP Edit Start
+        if (desiredType == InGameICChatType.Speak && _mobStateSystem.IsSoftCritical(source))
+            desiredType = InGameICChatType.Whisper;
+        // LP Edit End
 
         // Otherwise, send whatever type.
         switch (desiredType)
@@ -257,6 +277,34 @@ public sealed partial class ChatSystem : SharedChatSystem
                 // LP edit end
         }
     }
+
+    // Orion Edit Start
+
+    private bool IsRadioPrefixMessage(string message)
+    {
+        return message.StartsWith(RadioCommonPrefix) ||
+               message.StartsWith(RadioChannelPrefix) ||
+               message.StartsWith(RadioChannelAltPrefix);
+    }
+
+    private bool CanUseRadio(EntityUid source)
+    {
+        if (_mobStateSystem.IsCritical(source))
+        {
+            _popupSystem.PopupEntity(Loc.GetString("chat-manager-cannot-radio-while-critical"), source, source);
+            return false;
+        }
+
+        if (TryComp<CuffableComponent>(source, out var cuffable) && cuffable.CuffedHandCount > 0)
+        {
+            _popupSystem.PopupEntity(Loc.GetString("chat-manager-cannot-radio-with-bound-hands"), source, source);
+            return false;
+        }
+
+        return true;
+    }
+
+    // Orion Edit End
 
     /// <inheritdoc />
     public override void TrySendInGameOOCMessage(
@@ -297,7 +345,7 @@ public sealed partial class ChatSystem : SharedChatSystem
             sendType = InGameOOCChatType.Dead;
 
         // If crit player LOOC is disabled, don't send the message at all.
-        if (!_critLoocEnabled && _mobStateSystem.IsCritical(source))
+        if (!_critLoocEnabled && _mobStateSystem.IsCritical(source) || _mobStateSystem.IsSoftCritical(source)) // LP Edit
             return;
 
         // Systems can differentiate Looc and DeadChat by type, and cancel the speak attempt if necessary.
@@ -511,8 +559,20 @@ public sealed partial class ChatSystem : SharedChatSystem
         bool ignoreActionBlocker = false
         )
     {
+        // LP Edit Start
+        var allowSoftCritWhisper = false;
+        if (!ignoreActionBlocker && _mobStateSystem.IsSoftCritical(source) && !HasComp<AllowNextCritSpeechComponent>(source))
+        {
+            allowSoftCritWhisper = true;
+            EnsureComp<AllowNextCritSpeechComponent>(source);
+        }
         if (!_actionBlocker.CanSpeak(source) && !ignoreActionBlocker)
+        {
+            if (allowSoftCritWhisper)
+                RemCompDeferred<AllowNextCritSpeechComponent>(source);
             return;
+        }
+        // LP Edit End
 
         var message = TransformSpeech(source, FormattedMessage.RemoveMarkupOrThrow(originalMessage));
         if (message.Length == 0)
@@ -690,7 +750,7 @@ public sealed partial class ChatSystem : SharedChatSystem
         else if (!_loocEnabled) return;
 
         // If crit player LOOC is disabled, don't send the message at all.
-        if (!_critLoocEnabled && _mobStateSystem.IsCritical(source))
+        if (!_critLoocEnabled && _mobStateSystem.IsCritical(source) || _mobStateSystem.IsSoftCritical(source)) // LP Edit
             return;
 
         // Orion-Start

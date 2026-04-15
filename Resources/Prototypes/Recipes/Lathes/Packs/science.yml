@@ -30,16 +30,18 @@
   recipes:
   - ClothingShoesBootsMagSci
   - ClothingShoesBootsMoon
-  - ClothingShoesBootsSpeed
+  # - ClothingShoesBootsSpeed # LP Edit
   - ClothingShoesBootsJump
-  - ClothingBackpackHolding
-  - ClothingBackpackSatchelHolding
-  - ClothingBackpackDuffelHolding
+  # LP Edit Start
+  # - ClothingBackpackHolding
+  # - ClothingBackpackSatchelHolding
+  # - ClothingBackpackDuffelHolding
+  # LP Edit End
 
 - type: latheRecipePack
   id: PowerCells
   recipes:
-  - PowerCellMicroreactor
+  # - PowerCellMicroreactor # LP Edit
   - PowerCellHigh
   - PowerCellHyper
 

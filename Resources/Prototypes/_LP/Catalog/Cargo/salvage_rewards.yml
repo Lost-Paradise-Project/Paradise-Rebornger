@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: LPPCargoSalvageExpeditionFlatpack
+  icon:
+    sprite: Structures/Machines/computers.rsi
+    state: mining
+  product: LPPComputerSalvageExpeditionFlatpack
+  cost: 10000
+  category: cargoproduct-category-name-cargo
+  group: SalvageJobReward2

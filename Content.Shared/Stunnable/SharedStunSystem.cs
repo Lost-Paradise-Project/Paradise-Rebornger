@@ -85,6 +85,7 @@ public abstract partial class SharedStunSystem : EntitySystem
                 {
                     break;
                 }
+            case MobState.SoftCritical: // LP Edit
             case MobState.Critical:
                 {
                     _status.TryRemoveStatusEffect(uid, StunId);

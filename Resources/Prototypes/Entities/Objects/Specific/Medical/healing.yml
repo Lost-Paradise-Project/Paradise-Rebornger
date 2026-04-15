@@ -53,7 +53,7 @@
     stackType: Ointment
     count: 10
   - type: StackPrice
-    price: 50 # LP Edit 5 -> 50
+    price: 5
 
 - type: entity
   id: Ointment1
@@ -101,7 +101,7 @@
     stackType: RegenerativeMesh
     count: 10
   - type: StackPrice
-    price: 200 # LP Edit 20 -> 200
+    price: 20
 
 - type: entity
   id: OintmentAdvanced1
@@ -148,7 +148,7 @@
     stackType: Brutepack
     count: 10
   - type: StackPrice
-    price: 50 # LP Edit 5 -> 10
+    price: 5
 
 - type: entity
   id: Brutepack1
@@ -197,7 +197,7 @@
     stackType: MedicatedSuture
     count: 10
   - type: StackPrice
-    price: 200 # LP Edit 20 -> 200
+    price: 20
 
 - type: entity
   id: BrutepackAdvanced1
@@ -243,7 +243,7 @@
     stackType: Bloodpack
     count: 10
   - type: StackPrice
-    price: 100 # LP Edit 10 -> 100
+    price: 10
 
 - type: entity
   parent: Bloodpack
@@ -260,10 +260,6 @@
   name: tourniquet
   description: Stops bleeding! Hopefully.
   components:
-    # LP Edit Start
-    - type: StaticPrice
-      price: 200
-    # LP Edit End
     - type: Tag
       tags:
         - SecBeltEquip
@@ -332,7 +328,7 @@
     stackType: Gauze
     count: 10
   - type: StackPrice
-    price: 100 # LP Edit 10 -> 100
+    price: 10
 
 - type: entity
   id: Gauze1
