@@ -57,15 +57,6 @@
       - Energy
   - type: UseDelay
     delay: 1
-  - type: ToggleableLightVisuals
-    spriteLayer: blade
-    inhandVisuals:
-      left:
-      - state: inhand-left-blade
-        shader: unshaded
-      right:
-      - state: inhand-right-blade
-        shader: unshaded
   - type: IgniteOnMeleeHit
     fireStacks: 0.5
   - type: MeleeRequiresWield
@@ -131,15 +122,6 @@
       - Energy
   - type: UseDelay
     delay: 1
-  - type: ToggleableLightVisuals
-    spriteLayer: blade
-    inhandVisuals:
-      left:
-      - state: inhand-left-blade
-        shader: unshaded
-      right:
-      - state: inhand-right-blade
-        shader: unshaded
 
 - type: entity
   name: energy broadsword
@@ -205,15 +187,6 @@
     color: white
     netsync: false
   - type: Appearance
-  - type: ToggleableLightVisuals
-    spriteLayer: blade
-    inhandVisuals:
-      left:
-      - state: inhand-left-blade
-        shader: unshaded
-      right:
-      - state: inhand-right-blade
-        shader: unshaded
   - type: DisarmMalus
     malus: 0
   - type: Reflect
