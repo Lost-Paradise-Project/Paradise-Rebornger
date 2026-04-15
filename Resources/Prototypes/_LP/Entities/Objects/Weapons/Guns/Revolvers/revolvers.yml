@@ -259,3 +259,12 @@
     shape:
     - 1,0,1,0
   - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+        showEnts: False
+        occludes: True
+        ent: null
+      gun_chamber: !type:ContainerSlot
+        showEnts: False
+        occludes: True
+        ent: null

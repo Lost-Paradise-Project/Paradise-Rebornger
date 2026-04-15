@@ -235,7 +235,6 @@
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 10000
   - type: Item
-    heldPrefix: open
   - type: Armor
     modifiers:
       coefficients:

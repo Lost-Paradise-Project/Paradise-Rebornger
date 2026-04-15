@@ -47,6 +47,11 @@
     shape:
     - 0,0,4,0
   - type: ContainerContainer
+    containers:
+      upgrades: !type:Container
+        showEnts: False
+        occludes: True
+        ents: []
 
 - type: entity
   name: proto-kinetic repeater
@@ -86,6 +91,11 @@
     rechargeSound:
       path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
   - type: ContainerContainer
+    containers:
+      upgrades: !type:Container
+        showEnts: False
+        occludes: True
+        ents: []
 
 - type: entity
   name: proto-kinetic pistol
@@ -121,3 +131,8 @@
     rechargeSound:
       path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
   - type: ContainerContainer
+    containers:
+      upgrades: !type:Container
+        showEnts: False
+        occludes: True
+        ents: []
