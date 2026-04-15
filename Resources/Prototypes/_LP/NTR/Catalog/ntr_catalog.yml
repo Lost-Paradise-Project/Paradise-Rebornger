@@ -9,7 +9,7 @@
     sprite: Objects/Specific/Medical/implanter.rsi
     state: implanter0
   cost:
-    NTLoyaltyPoint: 5
+    NTLoyaltyPoint: 3
   categories:
   - NTRstation
   restockTime: 300 # 5 min
@@ -25,7 +25,7 @@
     sprite: Objects/Tools/drill.rsi
     state: drill_screw
   cost:
-    NTLoyaltyPoint: 25
+    NTLoyaltyPoint: 30
   categories:
   - NTRstation
   restockTime: 300 # 5 min
@@ -76,7 +76,7 @@
     sprite: Objects/Fun/Instruments/h_synthesizer.rsi
     state: supersynth
   cost:
-    NTLoyaltyPoint: 5
+    NTLoyaltyPoint: 3
   categories:
   - NTRstation
   restockTime: 300 # 5 mins
@@ -110,7 +110,7 @@
     sprite: Objects/Weapons/Guns/Battery/advancedlasergun.rsi
     state: base
   cost:
-    NTLoyaltyPoint: 15
+    NTLoyaltyPoint: 35
   categories:
   - NTRpersonal
   restockTime: 300 # 5 mins
@@ -209,7 +209,7 @@
     sprite: Clothing/OuterClothing/Armor/centcomm_carapace.rsi
     state: icon
   cost:
-    NTLoyaltyPoint: 10
+    NTLoyaltyPoint: 20
   categories:
   - NTRpersonal
   restockTime: 300 # 5 mins
@@ -228,7 +228,7 @@
     sprite: _GoobStation/Objects/Specific/Security/blueshieldundetermined.rsi
     state: icon
   cost:
-    NTLoyaltyPoint: 50
+    NTLoyaltyPoint: 150
   categories:
   - NTRpersonal
   restockTime: 900 # 15 mins
@@ -236,308 +236,7 @@
   restockAfterPurchase: 600
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 2
-
-# Ammo supplies
-
-# Rifle
-
-- type: listing
-  id: LPPNTRExecutiveBoxMagazineRifle
-  name: ntr-executive-box-magazine-rifle-name
-  description: ntr-executive-box-magazine-rifle-desc
-  productEntity: LPPSpawnPodBoxMagazineRifle
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Boxes/rifle.rsi
-    state: base
-  cost:
-    NTLoyaltyPoint: 15
-  categories:
-  - LPPNTRAmmoSupplies
-  restockTime: 600 # 10 mins
-  resetRestockOnPurchase: true
-  restockAfterPurchase: 600
-
-- type: listing
-  id: LPPNTRExecutiveBoxMagazineRifleIncendiary
-  name: ntr-executive-box-magazine-rifle-incendiary-name
-  description: ntr-executive-box-magazine-rifle-incendiary-desc
-  productEntity: LPPSpawnPodBoxMagazineRifleIncendiary
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Boxes/rifle.rsi
-    state: base
-  cost:
-    NTLoyaltyPoint: 20
-  categories:
-  - LPPNTRAmmoSupplies
-  restockTime: 600 # 10 mins
-  resetRestockOnPurchase: true
-  restockAfterPurchase: 600
-
-- type: listing
-  id: LPPNTRExecutiveBoxMagazineRifleUranium
-  name: ntr-executive-box-magazine-rifle-uranium-name
-  description: ntr-executive-box-magazine-rifle-uranium-desc
-  productEntity: LPPSpawnPodBoxMagazineRifleUranium
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Boxes/rifle.rsi
-    state: base
-  cost:
-    NTLoyaltyPoint: 20
-  categories:
-  - LPPNTRAmmoSupplies
-  restockTime: 600 # 10 mins
-  resetRestockOnPurchase: true
-  restockAfterPurchase: 600
-
-# Revolver
-
-- type: listing
-  id: LPPNTRExecutiveBoxSpeedLoaderMagnum
-  name: ntr-executive-box-speed-loader-magnum-name
-  description: ntr-executive-box-speed-loader-magnum-desc
-  productEntity: LPPSpawnPodBoxSpeedLoaderMagnum
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi
-    state: base
-  cost:
-    NTLoyaltyPoint: 15
-  categories:
-  - LPPNTRAmmoSupplies
-  restockTime: 600 # 10 mins
-  resetRestockOnPurchase: true
-  restockAfterPurchase: 600
-
-- type: listing
-  id: LPPNTRExecutiveBoxSpeedLoaderMagnumAP
-  name: ntr-executive-box-speed-loader-magnum-ap-name
-  description: ntr-executive-box-speed-loader-magnum-ap-desc
-  productEntity: LPPSpawnPodBoxSpeedLoaderMagnumAP
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi
-    state: base
-  cost:
-    NTLoyaltyPoint: 25
-  categories:
-  - LPPNTRAmmoSupplies
-  restockTime: 900 # 15 mins
-  resetRestockOnPurchase: true
-  restockAfterPurchase: 600
-
-- type: listing
-  id: LPPNTRExecutiveSpeedLoaderMagnumIncendiary
-  name: ntr-executive-box-speed-loader-magnum-incendiary-name
-  description: ntr-executive-box-speed-loader-magnum-incendiary-desc
-  productEntity: LPPSpawnPodBoxSpeedLoaderMagnumIncendiary
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi
-    state: base
-  cost:
-    NTLoyaltyPoint: 20
-  categories:
-  - LPPNTRAmmoSupplies
-  restockTime: 600 # 10 mins
-  resetRestockOnPurchase: true
-  restockAfterPurchase: 600
-
-- type: listing
-  id: LPPNTRExecutiveBoxSpeedLoaderMagnumUranium
-  name: ntr-executive-box-speed-loader-magnum-uranium-name
-  description: ntr-executive-box-speed-loader-magnum-uranium-desc
-  productEntity: LPPSpawnPodBoxSpeedLoaderMagnumUranium
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi
-    state: base
-  cost:
-    NTLoyaltyPoint: 20
-  categories:
-  - LPPNTRAmmoSupplies
-  restockTime: 600 # 10 mins
-  resetRestockOnPurchase: true
-  restockAfterPurchase: 600
-
-# Shotgun
-
-- type: listing
-  id: LPPNTRExecutiveBoxLethalshot
-  name: ntr-executive-box-lethalshot-name
-  description: ntr-executive-box-lethalshot-desc
-  productEntity: LPPSpawnPodBoxLethalshot
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Boxes/shotgun.rsi
-    state: base
-  cost:
-    NTLoyaltyPoint: 15
-  categories:
-  - LPPNTRAmmoSupplies
-  restockTime: 600 # 10 mins
-  resetRestockOnPurchase: true
-  restockAfterPurchase: 600
-
-- type: listing
-  id: LPPNTRExecutiveBoxShotgunSlug
-  name: ntr-executive-box-shotgun-slug-name
-  description: ntr-executive-box-shotgun-slug-desc
-  productEntity: LPPSpawnPodBoxShotgunSlug
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Boxes/shotgun.rsi
-    state: base
-  cost:
-    NTLoyaltyPoint: 20
-  categories:
-  - LPPNTRAmmoSupplies
-  restockTime: 600 # 10 mins
-  resetRestockOnPurchase: true
-  restockAfterPurchase: 600
-
-- type: listing
-  id: LPPNTRExecutiveBoxShotgunIncendiary
-  name: ntr-executive-box-shotgun-incendiary-name
-  description: ntr-executive-box-shotgun-incendiary-desc
-  productEntity: LPPSpawnPodBoxShotgunIncendiary
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Boxes/shotgun.rsi
-    state: base
-  cost:
-    NTLoyaltyPoint: 20
-  categories:
-  - LPPNTRAmmoSupplies
-  restockTime: 600 # 10 mins
-  resetRestockOnPurchase: true
-  restockAfterPurchase: 600
-
-- type: listing
-  id: LPPNTRExecutiveBoxShotgunUranium
-  name: ntr-executive-box-shotgun-uranium-name
-  description: ntr-executive-box-shotgun-uranium-desc
-  productEntity: LPPSpawnPodBoxShotgunUranium
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Boxes/shotgun.rsi
-    state: base
-  cost:
-    NTLoyaltyPoint: 20
-  categories:
-  - LPPNTRAmmoSupplies
-  restockTime: 600 # 10 mins
-  resetRestockOnPurchase: true
-  restockAfterPurchase: 600
-
-# Pistols and Submachine-Gun
-
-# WT550
-- type: listing
-  id: LPPNTRExecutiveBoxMagazinePistolSubMachineGunTopMounted
-  name: ntr-executive-box-magazine-pistol-sub-machine-gun-top-mounted-name
-  description: ntr-executive-box-magazine-pistol-sub-machine-gun-top-mounted-desc
-  productEntity: LPPSpawnPodBoxMagazinePistolSubMachineGunTopMounted
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag_top_mounted.rsi
-    state: base
-  cost:
-    NTLoyaltyPoint: 15
-  categories:
-  - LPPNTRAmmoSupplies
-  restockTime: 600 # 10 mins
-  resetRestockOnPurchase: true
-  restockAfterPurchase: 600
-
-# Pistol MK 58
-- type: listing
-  id: LPPNTRExecutiveBoxMagazinePistol
-  name: ntr-executive-box-magazine-pistol-name
-  description: ntr-executive-box-magazine-pistol-desc
-  productEntity: LPPSpawnPodBoxMagazinePistol
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi
-    state: base
-  cost:
-    NTLoyaltyPoint: 15
-  categories:
-  - LPPNTRAmmoSupplies
-  restockTime: 600 # 10 mins
-  resetRestockOnPurchase: true
-  restockAfterPurchase: 600
-
-- type: listing
-  id: LPPNTRExecutiveBoxMagazinePistolIncendiary
-  name: ntr-executive-box-magazine-pistol-incendiary-name
-  description: ntr-executive-box-magazine-pistol-incendiary-desc
-  productEntity: LPPSpawnPodBoxMagazinePistolIncendiary
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi
-    state: base
-  cost:
-    NTLoyaltyPoint: 20
-  categories:
-  - LPPNTRAmmoSupplies
-  restockTime: 600 # 10 mins
-  resetRestockOnPurchase: true
-  restockAfterPurchase: 600
-
-- type: listing
-  id: LPPNTRExecutiveBoxMagazinePistolUranium
-  name: ntr-executive-box-magazine-pistol-uranium-name
-  description: ntr-executive-box-magazine-pistol-uranium-desc
-  productEntity: LPPSpawnPodBoxMagazinePistolUranium
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi
-    state: base
-  cost:
-    NTLoyaltyPoint: 20
-  categories:
-  - LPPNTRAmmoSupplies
-  restockTime: 600 # 10 mins
-  resetRestockOnPurchase: true
-  restockAfterPurchase: 600
-
-# Drozd
-- type: listing
-  id: LPPNTRExecutiveBoxMagazinePistolSubMachineGun
-  name: ntr-executive-box-magazine-pistol-sub-machine-gun-name
-  description: ntr-executive-box-magazine-pistol-sub-machine-gun-desc
-  productEntity: LPPSpawnPodBoxMagazinePistolSubMachineGun
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag.rsi
-    state: base
-  cost:
-    NTLoyaltyPoint: 15
-  categories:
-  - LPPNTRAmmoSupplies
-  restockTime: 600 # 10 mins
-  resetRestockOnPurchase: true
-  restockAfterPurchase: 600
-
-- type: listing
-  id: LPPNTRExecutiveBoxMagazinePistolSubMachineGunIncendiary
-  name: ntr-executive-box-magazine-pistol-sub-machine-gun-incendiary-name
-  description: ntr-executive-box-magazine-pistol-sub-machine-gun-incendiary-desc
-  productEntity: LPPSpawnPodBoxMagazinePistolSubMachineGunIncendiary
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag.rsi
-    state: base
-  cost:
-    NTLoyaltyPoint: 20
-  categories:
-  - LPPNTRAmmoSupplies
-  restockTime: 600 # 10 mins
-  resetRestockOnPurchase: true
-  restockAfterPurchase: 600
-
-- type: listing
-  id: LPPNTRExecutiveBoxMagazinePistolSubMachineGunUranium
-  name: ntr-executive-box-magazine-pistol-sub-machine-gun-uranium-name
-  description: ntr-executive-box-magazine-pistol-sub-machine-gun-uranium-desc
-  productEntity: LPPSpawnPodBoxMagazinePistolSubMachineGunUranium
-  icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/smg_mag.rsi
-    state: base
-  cost:
-    NTLoyaltyPoint: 20
-  categories:
-  - LPPNTRAmmoSupplies
-  restockTime: 600 # 10 mins
-  resetRestockOnPurchase: true
-  restockAfterPurchase: 600
+    stock: 1
 
 # Machine boards
 
@@ -550,7 +249,7 @@
     sprite: Structures/Machines/cloning.rsi
     state: pod_0
   cost:
-    NTLoyaltyPoint: 35
+    NTLoyaltyPoint: 100
   categories:
   - NTRBoards
   restockTime: 300
@@ -568,7 +267,7 @@
     sprite: Structures/Machines/computers.rsi
     state: computer
   cost:
-    NTLoyaltyPoint: 35
+    NTLoyaltyPoint: 100
   categories:
   - NTRBoards
   restockTime: 300
@@ -588,7 +287,7 @@
     sprite: _GoobStation/Objects/Tools/executive_briefcase.rsi
     state: icon_alt
   cost:
-    NTLoyaltyPoint: 100
+    NTLoyaltyPoint: 300
   categories:
   - LPPNTRERTSquads
   restockTime: 1800 # 30 mins
@@ -605,7 +304,7 @@
     sprite: _GoobStation/Objects/Tools/executive_briefcase.rsi
     state: icon_alt
   cost:
-    NTLoyaltyPoint: 100
+    NTLoyaltyPoint: 300
   categories:
   - LPPNTRERTSquads
   restockTime: 1800 # 30 mins
@@ -622,7 +321,7 @@
     sprite: _GoobStation/Objects/Tools/executive_briefcase.rsi
     state: icon_alt
   cost:
-    NTLoyaltyPoint: 100
+    NTLoyaltyPoint: 300
   categories:
   - LPPNTRERTSquads
   restockTime: 1800 # 30 mins
@@ -639,7 +338,7 @@
     sprite: _GoobStation/Objects/Tools/executive_briefcase.rsi
     state: icon_alt
   cost:
-    NTLoyaltyPoint: 50
+    NTLoyaltyPoint: 250
   categories:
   - LPPNTRERTSquads
   restockTime: 1800 # 30 mins
@@ -656,7 +355,7 @@
     sprite: _GoobStation/Objects/Tools/executive_briefcase.rsi
     state: icon_alt
   cost:
-    NTLoyaltyPoint: 75
+    NTLoyaltyPoint: 275
   categories:
   - LPPNTRERTSquads
   restockTime: 1800 # 30 mins
@@ -673,7 +372,7 @@
     sprite: _GoobStation/Objects/Tools/executive_briefcase.rsi
     state: icon_alt
   cost:
-    NTLoyaltyPoint: 100
+    NTLoyaltyPoint: 300
   categories:
   - LPPNTRERTSquads
   restockTime: 1800 # 30 mins

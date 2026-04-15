@@ -25,9 +25,6 @@ ntr-executive-disablers-desc = A crate containing 3 disablers and 1 disabler SMG
 ntr-executive-tools-small-name = Generic tools crate
 ntr-executive-tools-small-desc = A crate containing basic engineering tools.
 
-ntr-executive-water-cooler = premium water (?) cooler
-ntr-executive-water-cooler-desc = Made from the finest 24-karat hardened whiskey in the sector. Its shiny and golden, just like its insides. Comes with 500u of whiskey. Every fine executive has one of these in their room.
-
 # personal
 
 ntr-executive-intern-call = Call intern squad
@@ -41,9 +38,6 @@ ntr-executive-single-intern-desc = Summons one basic intern. Interns are on your
 
 ntr-executive-bsd-name = Call Blueshield Deputy
 ntr-executive-bsd-desc = Request a Blueshield deputy from Central Command. This personal guard for you or command staff requires valid justification. Only one may be called.
-
-ntr-executive-cigs-deluxe = Executive cig vendor
-ntr-executive-cigs-deluxe-desc = For those who know that lung cancer is non-existent, Nanotrasen made this, a vendor full of ciggaretes and expensive flippos for you to smoke.
 
 ntr-experimental-hardsuit-name = Order a hardsuit
 ntr-experimental-hardsuit-desc = Nanotrasen is testing an experimental exosuit built from Bluespace-conductive plates reverse-engineered from Cybersun’s Redspace Dread Suit, with live trials conducted under your supervision.

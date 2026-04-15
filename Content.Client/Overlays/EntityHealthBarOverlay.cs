@@ -138,7 +138,7 @@ public sealed class EntityHealthBarOverlay : Overlay
             if (dmg.HealthBarThreshold != null && totalDamage < dmg.HealthBarThreshold)
                 return null;
 
-            if (!_mobThresholdSystem.TryGetThresholdForState(uid, MobState.Critical, out var threshold, thresholds) &&
+            if (!_mobThresholdSystem.TryGetThresholdForState(uid, MobState.SoftCritical, out var threshold, thresholds) && // LP Edit
                 !_mobThresholdSystem.TryGetThresholdForState(uid, MobState.Dead, out threshold, thresholds))
                 return (1, false);
 
@@ -148,7 +148,7 @@ public sealed class EntityHealthBarOverlay : Overlay
 
         if (_mobStateSystem.IsCritical(uid, component))
         {
-            if (!_mobThresholdSystem.TryGetThresholdForState(uid, MobState.Critical, out var critThreshold, thresholds) ||
+            if (!_mobThresholdSystem.TryGetThresholdForState(uid, MobState.SoftCritical, out var critThreshold, thresholds) || // LP Edit
                 !_mobThresholdSystem.TryGetThresholdForState(uid, MobState.Dead, out var deadThreshold, thresholds))
             {
                 return (1, true);

@@ -115,7 +115,10 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Critical
+      # LP Edit Start
+      100: SoftCritical
+      150: Critical
+      # LP Edit End
       200: Dead
   - type: MobStateActions
     actions:
