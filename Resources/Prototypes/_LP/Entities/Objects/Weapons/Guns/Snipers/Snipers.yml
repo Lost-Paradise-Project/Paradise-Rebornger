@@ -90,3 +90,90 @@
   - type: EmitSoundOnLand
     sound:
       collection: RiflesDrop
+
+- type: entity
+  name: LPPBaseWeaponSniper
+  parent: BaseItem
+  id: LPPBaseWeaponSniper
+  description: A rooty tooty point and shooty.
+  abstract: true
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Snipers/bolt_gun_wood.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: Gun
+    fireRate: 0.75
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
+  - type: ContainerContainer
+    containers:
+      firing_pin: !type:Container # Starlight
+      ballistic-ammo: !type:Container
+        ents: []
+  - type: StaticPrice
+    price: 500
+  - type: EmitSoundOnPickup
+    sound:
+      collection: RiflesPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: RiflesDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: RiflesDrop
+  - type: ContainerFill
+    containers:
+      firing_pin:
+      - FiringPin
+  - type: FiringPinHolder
+    supportedPins: [ Rifle, GunUpgrade ]
+
+- type: entity
+  name: Goliath
+  parent: [LPPBaseWeaponSniper, BaseGunWieldable]
+  id: LPPWeaponGoliath
+  description: Specialised "tool" for breaching . Uses .60 anti-materiel ammo.
+  components:
+  - type: Item
+    size: Ginormous
+  - type: ClothingSpeedModifier
+    walkModifier: 0.8
+    sprintModifier: 0.8
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Guns/Snipers/Goliath.rsi
+    state: base
+  - type: Clothing
+    sprite: _LP/Objects/Weapons/Guns/Snipers/Goliath.rsi
+    slots:
+    - Back
+    - suitStorage
+  - type: Gun
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+  - type: UseDelayOnShoot
+  - type: UseDelay
+    delay: 1
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - CartridgeAntiMateriel
+    capacity: 2
+    proto: CartridgeAntiMateriel
+  - type: GunRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 7
+    pvsIncrease: 7
+  - type: CursorOffsetRequiresWield
