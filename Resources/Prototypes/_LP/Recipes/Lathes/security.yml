@@ -146,11 +146,11 @@
   result: LPPClothingOuterHardsuitSecurityEng
   parent: LPPLatheRecipe15Sec
   materials:
-    Plasteel: 350
-    Steel: 1800
+    Plasteel: 275
+    Steel: 1500
     Silver: 200
-    Gold: 1350
-    Plasma: 1200
+    Gold: 950
+    Plasma: 950
     Glass: 200
 
 - type: latheRecipe
