@@ -6,3 +6,20 @@
   components:
   - type: Sprite
     sprite: _LP/Clothing/Back/Duffels/securityEngineer.rsi
+
+- type: entity
+  parent: [ClothingBackpackDuffel, BaseSyndicateContraband]
+  id: LPPClothingBackpackDuffelContractor
+  name: contractor duffel bag
+  description:
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Back/Duffels/integduffel.rsi
+  - type: Storage
+    grid:
+    - 0,0,8,4
+  - type: ClothingSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
+  - type: ExplosionResistance
+    damageCoefficient: 0.1

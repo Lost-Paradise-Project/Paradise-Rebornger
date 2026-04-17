@@ -1403,11 +1403,18 @@
     - map: [ "mask" ]
     - map: [ "head" ]
   - type: Carriable #DeltaV
+#LP edit start
   - type: Hands
-    activeHandId: Hand
+    activeHandId: Right
     hands:
-      Hand:
+      Right:
+        location: Right
+      Left:
         location: Left
+    sortedHands:
+    - hand_right
+    - hand_left
+#LP edit end
   - type: ComplexInteraction
   - type: CreamPied
     sprite:

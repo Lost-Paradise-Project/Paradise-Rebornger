@@ -157,9 +157,13 @@
       # Corvax-Brigmedic-Start
     - id: ClothingMaskBreathMedicalSecurity
     - id: BoxBodyBag
-    - id: LPPCombatDefibrillator # LP Edit
     - id: MedkitAdvancedFilled
       # Corvax-Brigmedic-End
+#LP edit start
+    - id: LPPCombatDefibrillator
+    - id: LPPClothingHandsGlovesCombatNitrile
+    - id: LPPWeaponPistolHippocraticoath
+#LP edit end
 
 - type: entity
   id: LockerDetectiveFilled
