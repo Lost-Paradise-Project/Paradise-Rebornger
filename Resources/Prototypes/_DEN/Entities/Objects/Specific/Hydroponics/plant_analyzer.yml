@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   id: PlantAnalyzer
   parent: [BaseItem, PowerCellSlotSmallItem]
   name: plant analyzer

@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using Content.Client.UserInterface.Controls;
 using Content.Shared._DEN.Botany.PlantAnalyzer;
 using Content.Shared.IdentityManagement;
