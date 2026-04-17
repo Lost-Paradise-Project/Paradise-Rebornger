@@ -35,6 +35,9 @@
       "name": "closed-glass"
     },
     {
+      "name": "panel_closed"
+    },
+    {
       "name": "closing",
       "delays": [
         [
