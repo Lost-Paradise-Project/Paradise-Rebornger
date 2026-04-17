@@ -1,5 +1,4 @@
 using System.Linq;
-using Content.Client._StarLight.UI;
 using Content.Client.Materials;
 using Content.Client.Power.Components;
 using Content.Client.UserInterface.Controls;
@@ -126,11 +125,11 @@ public sealed partial class VaccinatorMenu : FancyWindow
                 Text = $"{Math.Round(immunity.Value*100)}%",
                 Margin = new Thickness(0, 10, 0, -5)
             };
-            Row.AddChildren([ImmunityName, ImmunityStrength]);
+            Row.AddChild(ImmunityName);
+            Row.AddChild(ImmunityStrength);
             ImmunityPanel.AddChild(Row);
         }
     }
-
     public void CheckIfCraftable()
     {
         if (!_prototypeManager.TryIndex<LatheRecipePrototype>(_vaccine, out var recipe))

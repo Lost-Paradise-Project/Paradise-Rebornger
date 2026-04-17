@@ -20,9 +20,6 @@ public interface IStylesheetManager
     [Obsolete("Update to use SheetSystem instead")]
     Stylesheet SheetSpace { get; }
 
-    [Obsolete("Update to use SheetSystem instead")]
-    Stylesheet Starlight { get; }
-
     /// get a stylesheet by name
     public bool TryGetStylesheet(string name, [MaybeNullWhen(false)]  out Stylesheet stylesheet);
 
