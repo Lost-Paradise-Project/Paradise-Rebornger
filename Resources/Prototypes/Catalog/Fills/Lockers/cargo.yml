@@ -23,7 +23,7 @@
         value: 3
     - id: PlushieLizardJobSalvagespecialist
       prob: 0.02
-
+    - id: LPPClothingHandsGlovesSalvage #LP EDIT
 - type: entity
   id: LockerSalvageSpecialistFilledHardsuit
   suffix: Filled, Hardsuit

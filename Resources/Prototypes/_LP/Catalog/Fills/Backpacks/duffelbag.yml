@@ -2,7 +2,7 @@
   parent: ClothingBackpackDuffelSyndicateBundle
   id: LPPClothingBackpackDuffelSyndicateFilledOlymp
   name: Bulldog bundle
-  description: "Lean and mean: Conatins AM magfed sniper rifle, with 2 spare mags and a box of spare ammo" #, and a pair of Thermal Imaging Goggles.
+  description: "Lean and mean: Conatins AM magfed sniper rifle, with 2 spare mags and a box of spare ammo"
   components:
   - type: EntityTableContainerFill
     containers:
@@ -12,3 +12,17 @@
         - id: LPPMagazineHeavySniper
           amount: 2
         - id: MagazineBoxAntiMateriel
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: LPPClothingBackpackDuffelSyndicateFilledBoomstick
+  name: Boomstick bundle
+  description: "Lean and mean: Conatins Boomstick shotgun and 2 boxes of .50 ammo."
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: LPPWeaponShotgunTBS2S
+        - id: BoxShotgunSlug
+        - id: BoxLethalshot
