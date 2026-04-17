@@ -334,7 +334,7 @@
         conditions:
           # they gotta be in crit first
         - !type:MobStateCondition
-          mobstate: SoftCritical # LP Edit
+          mobstate: Critical
         - !type:ReagentCondition
           reagent: Epinephrine
           max: 20
@@ -346,7 +346,7 @@
         conditions:
           # they gotta be in crit first
         - !type:MobStateCondition
-          mobstate: SoftCritical # LP Edit
+          mobstate: Critical
         - !type:ReagentCondition
           reagent: Epinephrine
           max: 20
@@ -459,7 +459,7 @@
         conditions:
           # they gotta be in crit first
         - !type:MobStateCondition
-          mobstate: SoftCritical # LP Edit
+          mobstate: Critical
         damage:
           types:
             Asphyxiation: -2

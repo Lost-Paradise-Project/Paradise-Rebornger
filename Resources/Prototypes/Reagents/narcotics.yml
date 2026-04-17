@@ -191,14 +191,14 @@
       - !type:EvenHealthChange
         conditions:
         - !type:MobStateCondition
-          mobstate: SoftCritical # LP Edit
+          mobstate: Critical
         damage: # Doesn't heal poison because if you OD'd I'm not giving you a safety net
           Burn: -0.5
           Brute: -0.5
       - !type:HealthChange
         conditions:
         - !type:MobStateCondition
-          mobstate: SoftCritical # LP Edit
+          mobstate: Critical
         damage:
           types:
             Asphyxiation: -2
