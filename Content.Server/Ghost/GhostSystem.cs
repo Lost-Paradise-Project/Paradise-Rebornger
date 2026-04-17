@@ -190,7 +190,7 @@ namespace Content.Server.Ghost
             if (!_minds.TryGetMind(uid, out var mindId, out var mind) || mind.IsVisitingEntity)
                 return;
 
-            if (component.MustBeDead && (_mobState.IsAlive(uid) || _mobState.IsCritical(uid)))
+            if (component.MustBeDead && (_mobState.IsAlive(uid) || _mobState.IsCritical(uid) || _mobState.IsSoftCritical(uid))) // LP Edit
                 return;
 
             OnGhostAttempt(mindId, component.CanReturn, mind: mind);
@@ -376,7 +376,7 @@ namespace Content.Server.Ghost
                 var jobName = _jobs.MindTryGetJobName(mind?.Mind);
                 var playerInfo = $"{Comp<MetaDataComponent>(attached).EntityName} ({jobName})";
 
-                if (_mobState.IsAlive(attached) || _mobState.IsCritical(attached))
+                if (_mobState.IsAlive(attached) || _mobState.IsCritical(attached) || _mobState.IsSoftCritical(attached)) // LP Edit
                     yield return new GhostWarp(GetNetEntity(attached), playerInfo, false);
             }
         }
@@ -600,6 +600,30 @@ namespace Content.Server.Ghost
 
                     _damageable.ChangeDamage(playerEntity.Value, damage, true);
                 }
+
+                // LP Edit Start
+
+                if (_mobState.IsSoftCritical(playerEntity.Value, mobState))
+                {
+                    canReturn = true;
+
+                    FixedPoint2 dealtDamage = 200;
+
+                    if (TryComp<DamageableComponent>(playerEntity, out var damageable)
+                        && TryComp<MobThresholdsComponent>(playerEntity, out var thresholds))
+                    {
+                        var playerDeadThreshold = _mobThresholdSystem.GetThresholdForState(playerEntity.Value, MobState.Dead, thresholds);
+                        dealtDamage = playerDeadThreshold -
+                                      _damageable.GetTotalDamage((playerEntity.Value, damageable));
+                    }
+
+                    DamageSpecifier damage = new(_prototypeManager.Index(AsphyxiationDamageType), dealtDamage);
+
+                    _damageable.ChangeDamage(playerEntity.Value, damage, true);
+                }
+
+                // LP Edit End
+
             }
 
             if (playerEntity != null)

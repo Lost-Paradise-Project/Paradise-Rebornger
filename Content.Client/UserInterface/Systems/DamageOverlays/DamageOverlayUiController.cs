@@ -98,6 +98,7 @@ public sealed class DamageOverlayUiController : UIController
 
         switch (mobState.CurrentState)
         {
+            // LP Edit Start
             case MobState.Alive:
             {
                 FixedPoint2 painLevel = 0;
@@ -128,6 +129,7 @@ public sealed class DamageOverlayUiController : UIController
                 _overlay.DeadLevel = 0;
                 break;
             }
+            case MobState.SoftCritical:
             case MobState.Critical:
             {
                 if (!_mobThresholdSystem.TryGetDeadPercentage(entity,
@@ -145,6 +147,7 @@ public sealed class DamageOverlayUiController : UIController
                 _overlay.CritLevel = 0;
                 break;
             }
+            // LP Edit End
         }
     }
 }

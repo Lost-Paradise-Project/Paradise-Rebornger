@@ -564,7 +564,7 @@
   - type: ExplosionResistance
     damageCoefficient: 0.5
   - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
-    damageCoefficient: 0.75
+    damageCoefficient: 0.65 #LP edit
   - type: Armor
     modifiers:
       coefficients:
@@ -631,7 +631,7 @@
   - type: FireProtection
     reduction: 0.8
   - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
-    damageCoefficient: 0.6
+    damageCoefficient: 0.55 #LP edit
   - type: Armor
     modifiers:
       coefficients:
@@ -644,8 +644,8 @@
   - type: Item
     size: Huge
   - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 0.9
+    walkModifier: 1.0 #LP edit
+    sprintModifier: 1.0 #LP edit
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndieElite
@@ -694,7 +694,6 @@
     - WhitelistChameleon
   - type: DNALocker # ADT edit
 
-
 #Cybersun Juggernaut Hardsuit
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseSyndicateContraband]
@@ -711,7 +710,10 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.3
-  # - type: StaminaResistance # Should not have stamina resistance, this is purely so people know it was not forgotten.
+#LP edit start
+  - type: StaminaResistance
+    damageCoefficient: 0.35
+#LP edit end
   - type: Armor
     modifiers:
       coefficients:

@@ -63,7 +63,7 @@ public abstract class SharedStealthSystem : EntitySystem
 
     private void OnMobStateChanged(EntityUid uid, StealthComponent component, MobStateChangedEvent args)
     {
-        if (args.NewMobState == MobState.Dead)
+        if (args.NewMobState is MobState.Dead or MobState.SoftCritical or MobState.Critical) // LP Edit
         {
             component.Enabled = component.EnabledOnDeath;
         }

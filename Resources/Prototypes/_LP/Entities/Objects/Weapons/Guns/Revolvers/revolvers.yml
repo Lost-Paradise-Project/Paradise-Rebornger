@@ -1,0 +1,270 @@
+- type: entity
+  name: Colt Peacemaker
+  parent: [BaseWeaponRevolver, BaseSecurityContraband]
+  id: LPPWeaponRevolverColtpeacemaker
+  description: Legendary revolver from wild west. Uses .45 magnum bullets
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Guns/Revolvers/colt-45.rsi
+  - type: Clothing
+    sprite: _LP/Objects/Weapons/Guns/Revolvers/colt-45.rsi
+  - type: RevolverAmmoProvider
+    capacity: 6
+    chambers: [ True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null ]
+
+- type: entity
+  name: peacemakerbase
+  parent: [BaseItem, BaseSecurityContraband]
+  id: LPPAVBase
+  description: The weapon carried by Detective Artemon Vealis uses a .357 magnum caliber and is engraved with his initials A.V.
+  abstract: true
+  components:
+  - type: Sprite
+    state: icon
+  - type: Item
+    size: Small
+  - type: Clothing
+    sprite: _LP/Objects/Weapons/Guns/Revolvers/colt-artemon.rsi
+    quickEquip: false
+    slots:
+    - suitStorage
+    - Belt
+  - type: Gun
+    selectedMode: SemiAuto
+    fireRate: 3
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/revolver.ogg
+  - type: ContainerContainer
+    containers:
+      revolver-ammo: !type:Container
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - CartridgeMagnum
+        - SpeedLoaderMagnum
+    proto: CartridgeMagnum
+    capacity: 8
+    chambers: [ True, True, True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null, null, null ]
+    soundEject:
+      path: /Audio/Weapons/Guns/MagOut/revolver_magout.ogg
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/revolver_magin.ogg
+
+- type: entity
+  name: peacemaker
+  parent: LPPAVBase
+  id: LPPWeaponRevolverPeacemaker
+  description: The weapon carried by Detective Artemon Vealis uses a .357 magnum caliber and is engraved with his initials A.V.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Guns/Revolvers/colt-artemon.rsi
+  - type: Clothing
+    sprite: _LP/Objects/Weapons/Guns/Revolvers/colt-artemon.rsi
+  - type: RevolverAmmoProvider
+    capacity: 8
+    chambers: [ True, True, True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null, null, null ]
+
+- type: entity
+  name: Colt Special
+  parent: [BaseWeaponRevolver, BaseSecurityContraband]
+  id: LPPWeaponRevolverColtspecial
+  description: Uses .45 magnum bullets
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Guns/Revolvers/colt-spcl.rsi
+  - type: Clothing
+    sprite: _LP/Objects/Weapons/Guns/Revolvers/colt-spcl.rsi
+  - type: RevolverAmmoProvider
+    capacity: 7
+    chambers: [ True, True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null, null ]
+
+- type: entity
+  name: collection inspector
+  parent: [BaseWeaponRevolver, BaseSecurityContraband]
+  id: LPPWeaponRevolverInspectorCollection
+  description: Basically, this is given for special merits before the law, order, and professionalism. Uses .45 magnum cartridges.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Guns/Revolvers/inspector-collection.rsi
+  - type: Clothing
+    sprite: _LP/Objects/Weapons/Guns/Revolvers/inspector-collection.rsi
+  - type: RevolverAmmoProvider
+    capacity: 6
+    chambers: [ True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null ]
+
+- type: entity
+  name: Judge
+  parent: [BaseWeaponRevolver, BaseSecurityContraband]
+  id: LPPWeaponRevolverJudgeLethal
+  suffix: Lethal
+  description: There is only one sentence with this revolver - death, the recoil of this weapon is so lethal that a person can hardly stand on his feet. Uses .60 anti-materiel rounds.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Guns/Revolvers/judge.rsi
+  - type: Clothing
+    sprite: _LP/Objects/Weapons/Guns/Revolvers/judge.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: Item
+    size: Huge
+    shape:
+    - 1,0,5,0
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - CartridgeAntiMateriel
+    proto: CartridgeAntiMateriel
+    capacity: 3
+    chambers: [ True, True, True ]
+    ammoSlots: [ null, null, null ]
+  - type: UseDelayOnShoot
+  - type: UseDelay
+    delay: 0.25
+  - type: Gun
+    selectedMode: SemiAuto
+    fireRate: 0.75
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+
+- type: entity
+  name: Revolver OC-38
+  parent: [BaseWeaponRevolver, BaseSyndicateContraband]
+  id: LPPWeaponRevolverOC38
+  description: Snub nosed revolver with integrated supressor. «Let's go sneaky beaky like».
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Guns/Revolvers/oc-38.rsi
+  - type: Clothing
+    sprite: _LP/Objects/Weapons/Guns/Revolvers/oc-38.rsi
+  - type: Item
+    sprite: _LP/Objects/Weapons/Guns/Revolvers/oc-38.rsi
+    size: Small
+    shape:
+    - 0,0,1,0
+  - type: RevolverAmmoProvider
+    capacity: 5
+    chambers: [ True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null ]
+    soundEject:
+      path: /Audio/Weapons/Guns/MagOut/revolver_magout.ogg
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/revolver_magin.ogg
+  - type: Gun
+    selectedMode: SemiAuto
+    fireRate: 2.0
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/silenced.ogg
+      params:
+        volume: -14
+
+- type: entity
+  name: RT-46
+  parent: [BaseWeaponRevolver, BaseMajorContraband]
+  id: LPPWeaponRevolverRT46
+  description: Revolver Tulskii 46 is a handheld cannon chambered in .60 caliber. Popular among USSP comissars and pirates.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Guns/Revolvers/rt46.rsi
+  - type: Clothing
+    sprite: _LP/Objects/Weapons/Guns/Revolvers/rt46.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: Item
+    size: Huge
+    shape:
+    - 1,0,5,0
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - CartridgeAntiMateriel
+    proto: CartridgeAntiMateriel
+    capacity: 4
+    chambers: [ True, True, True, True]
+    ammoSlots: [ null, null, null, null ]
+  - type: UseDelayOnShoot
+  - type: UseDelay
+    delay: 0.25
+  - type: Gun
+    selectedMode: SemiAuto
+    fireRate: 0.5
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+
+- type: entity
+  name: SDRE
+  parent: [BaseItem, BaseSecurityContraband]
+  id: LPPWeaponRevolverFieldEngineer
+  description: Self defence revolver (Engineer) is the most cheapest weapon you can find available in the market. It feeds full .45 speedloaders and requres manual spin of the cylinder to reload.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Guns/Revolvers/sdre.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        startingItem: SpeedLoaderMagnum
+        insertSound: /Audio/Weapons/Guns/MagIn/rifle_load.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/sfrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - SpeedLoaderMagnum
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        priority: 1
+        whitelist:
+          tags:
+          - CartridgeMagnum
+  - type: Gun
+    fireRate: 5
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/batrifle.ogg
+  - type: ChamberMagazineAmmoProvider
+    autoCycle: false
+    autoEject: false
+    soundAutoEject:
+      path: /Audio/_GoobStation/Weapons/Guns/MagOut/garand_eject.ogg
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/batrifle_cock.ogg
+      params:
+        volume: -3
+    soundBoltClosed:
+      path: /Audio/_GoobStation/Weapons/Guns/Bolt/lever_bolt_closed.ogg
+      params:
+        volume: -3
+    soundBoltOpened:
+      path: /Audio/_GoobStation/Weapons/Guns/Bolt/lever_bolt_opened.ogg
+      params:
+        volume: -3
+  - type: Appearance
+  - type: UseDelay
+    delay: 0.8
+  - type: Item
+    size: Small
+    shape:
+    - 1,0,1,0
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+        showEnts: False
+        occludes: True
+        ent: null
+      gun_chamber: !type:ContainerSlot
+        showEnts: False
+        occludes: True
+        ent: null

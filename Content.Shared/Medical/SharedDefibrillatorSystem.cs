@@ -106,7 +106,7 @@ public abstract class SharedDefibrillatorSystem : EntitySystem
         if (!targetCanBeAlive && _mobState.IsAlive(target, mobState))
             return false;
 
-        if (!targetCanBeAlive && !ent.Comp.CanDefibCrit && _mobState.IsCritical(target, mobState))
+        if (!targetCanBeAlive && !ent.Comp.CanDefibCrit && (_mobState.IsCritical(target, mobState) || _mobState.IsSoftCritical(target, mobState))) // LP Edit
             return false;
 
         return true;
@@ -212,7 +212,7 @@ public abstract class SharedDefibrillatorSystem : EntitySystem
                 _mobThreshold.TryGetThresholdForState(target, MobState.Dead, out var threshold, targetThresholds) &&
                 _damageable.GetTotalDamage(target) < threshold)
             {
-                _mobState.ChangeMobState(target, MobState.Critical, targetMobState, user);
+                _mobState.ChangeMobState(target, MobState.SoftCritical, targetMobState, user); // LP Edit
                 failedRevive = false;
             }
 

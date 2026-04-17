@@ -1,0 +1,198 @@
+- type: entity
+  name: energy axe
+  parent: EnergySwordDouble
+  id: LPPEnergyAxe
+  description: Syndicate engineer's intern thought that having only energy swords was not cool enough.
+  components:
+  - type: EnergySword
+  - type: ItemToggle
+    soundActivate:
+      path: /Audio/Weapons/ebladeon.ogg
+      params:
+        volume: 5
+    soundDeactivate:
+      path: /Audio/Weapons/ebladeoff.ogg
+      params:
+        volume: 5
+  - type: ItemToggleMeleeWeapon
+    activatedSoundOnSwing:
+      path: /Audio/Weapons/eblademiss.ogg
+      params:
+        volume: 5
+        variation: 0.250
+    activatedDamage:
+        types:
+            Slash: 15
+            Heat: 25
+            Structural: 275
+  - type: ItemToggleActiveSound
+    activeSound:
+      path: /Audio/Weapons/ebladehum.ogg
+      params:
+        volume: 3
+  - type: Wieldable
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    attackRate: 0.7
+    angle: 100
+    damage:
+      types:
+        Blunt: 12
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Melee/e_axe.rsi
+    layers:
+      - state: e_axe
+      - state: e_axe_blade
+        color: "#FFFFFF"
+        visible: false
+        shader: unshaded
+        map: [ "blade" ]
+  - type: Item
+    size: Huge
+    sprite: _LP/Objects/Weapons/Melee/e_axe-inhands.rsi
+  - type: Reflect
+    reflectProb: 0.5
+    spread: 120
+    reflects:
+      - Energy
+  - type: UseDelay
+    delay: 1
+  - type: IgniteOnMeleeHit
+    fireStacks: 0.5
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.95
+    sprintModifier: 0.95
+
+- type: entity
+  name: energy scythe
+  parent: EnergySwordDouble
+  id: LPPEnergyscythe
+  description: Syndicate farmer's intern thought that having only energy swords was not cool enough.
+  components:
+  - type: EnergySword
+  - type: ItemToggle
+    soundActivate:
+      path: /Audio/Weapons/ebladeon.ogg
+      params:
+        volume: 5
+    soundDeactivate:
+      path: /Audio/Weapons/ebladeoff.ogg
+      params:
+        volume: 5
+  - type: ItemToggleMeleeWeapon
+    activatedSoundOnSwing:
+      path: /Audio/Weapons/eblademiss.ogg
+      params:
+        volume: 5
+        variation: 0.250
+    activatedDamage:
+        types:
+            Slash: 8
+            Heat: 8
+            Structural: 15
+  - type: ItemToggleActiveSound
+    activeSound:
+      path: /Audio/Weapons/ebladehum.ogg
+      params:
+        volume: 3
+  - type: MeleeWeapon
+    wideAnimationRotation: -45
+    attackRate: 3
+    angle: 100
+    damage:
+      types:
+        Blunt: 10
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Melee/e_scythe.rsi
+    layers:
+      - state: e_scythe
+      - state: e_scythe_blade
+        color: "#FFFFFF"
+        visible: false
+        shader: unshaded
+        map: [ "blade" ]
+  - type: Item
+    size: Huge
+    sprite: _LP/Objects/Weapons/Melee/e_scythe-inhands.rsi
+  - type: Reflect
+    reflectProb: 0.95
+    spread: 10
+    reflects:
+      - Energy
+  - type: UseDelay
+    delay: 1
+
+- type: entity
+  name: energy broadsword
+  parent: EnergySword
+  id: LPPEnergyBroadsword
+  description: A very loud & even more dangerous sword with a beam made of pure, concentrated plasma. Cuts through unarmored targets like butter.
+  components:
+  - type: EnergySword
+  - type: ItemToggle
+    soundActivate:
+      path: /Audio/Weapons/ebladeon.ogg
+    soundDeactivate:
+      path: /Audio/Weapons/ebladeoff.ogg
+  - type: ItemToggleActiveSound
+    activeSound:
+      path: /Audio/Weapons/ebladehum.ogg
+  - type: ItemToggleHot
+  - type: ItemToggleSize
+    activatedSize: Huge
+  - type: ItemToggleMeleeWeapon
+    activatedSoundOnHit:
+      path: /Audio/Weapons/eblade1.ogg
+      params:
+        variation: 0.250
+    activatedSoundOnHitNoDamage:
+      path: /Audio/Weapons/eblade1.ogg
+      params:
+        variation: 0.250
+        volume: -10
+    activatedSoundOnSwing:
+      path: /Audio/Weapons/eblademiss.ogg
+      params:
+        variation: 0.125
+    activatedDamage:
+        types:
+            Slash: 12.5
+            Heat: 22.5
+            Structural: 50
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Melee/e_swordbig.rsi
+    layers:
+      - state: e_sword
+      - state: e_sword_blade
+        color: "#FFFFFF"
+        visible: false
+        shader: unshaded
+        map: [ "blade" ]
+  - type: MeleeWeapon
+    wideAnimationRotation: -45
+    attackRate: 0.9
+    damage:
+      types:
+        Blunt: 7.5
+  - type: Item
+    size: Normal
+    sprite: _LP/Objects/Weapons/Melee/e_swordbig-inhands.rsi
+  - type: UseDelay
+    delay: 1.5
+  - type: PointLight
+    enabled: false
+    radius: 3
+    energy: 3
+    color: white
+    netsync: false
+  - type: Appearance
+  - type: DisarmMalus
+    malus: 0
+  - type: Reflect
+    reflectProb: 0.35
+    spread: 10
+  - type: IgnitionSource
+    temperature: 700
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9

@@ -119,7 +119,7 @@
         amount: 5
         defaultPrototype: Beaker
       BluespaceAnomaly:
-        amount: 5
+        amount: 2
         defaultPrototype: AnomalyCoreBluespace
 
 - type: entity
@@ -139,5 +139,5 @@
         amount: 5
         defaultPrototype: Beaker
       AnomalyCore:
-        amount: 10
+        amount: 3
         defaultPrototype: AnomalyCoreBluespace
