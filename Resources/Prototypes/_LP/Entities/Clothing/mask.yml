@@ -230,3 +230,27 @@
   - type: Construction
     graph: Muzzle
     node: muzzle
+
+- type: entity
+  parent: [ClothingMaskGas, BaseSyndicateContraband]
+  id: LPPClothingMaskNeckGaiterLoneOps
+  name: neck gaiter
+  suffix: LoneOps
+  description: Stylish neck gaiter for your neck, can protect from the cosmic wind and even some projectiles.
+  components:
+  - type: Sprite
+    sprite: Clothing/Mask/neckgaiter.rsi
+  - type: Clothing
+    sprite: Clothing/Mask/neckgaiter.rsi
+  - type: IdentityBlocker
+    coverage: MOUTH
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95

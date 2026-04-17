@@ -34,3 +34,6 @@ ent-LPPClothingXMaskMime = маска мима-Х
     .desc = Маска мима — Х.
 ent-LPPClothingMaskKinkyMuzzle = БДСМ маска
     .desc = Мпфх!
+ent-LPPClothingMaskNeckGaiterLoneOps = кевларовый шейный гетр
+    .desc = Стильный шейный гетр со скрытыми вставками из кевлара, сможет словить а вас шрапнель.
+    .suffix = Лонопс
