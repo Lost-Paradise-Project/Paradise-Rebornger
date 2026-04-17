@@ -137,3 +137,22 @@
   parent: SyndicateOperativeGearFull
   equipment:
     pocket2: BaseUplinkRadio60TC
+#LP edit start
+    jumpsuit: LPPClothingUniformJumpsuitInteq
+    eyes: LPPClothingEyesGlassesContractor
+    outerClothing: LPPClothingOuterHardsuitInteq
+    belt: LPPClothingBeltMaximumWebbing
+    back: LPPClothingBackpackDuffelContractor
+    mask: LPPClothingMaskNeckGaiterLoneOps
+    neck: LPPClothingNeckCollarSpiked
+  inhand:
+    - LPPWeaponRifleAek
+  storage:
+    back:
+    - MagazineLightRifle
+    - MagazineRifle
+    - WeaponPistolViper
+    - PinpointerSyndicateNuclear
+    - HandheldHealthAnalyzer
+    - DeathAcidifierImplanter
+#LP edit end
