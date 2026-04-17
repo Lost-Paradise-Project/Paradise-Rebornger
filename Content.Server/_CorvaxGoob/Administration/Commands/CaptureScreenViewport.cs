@@ -7,7 +7,7 @@ using Robust.Shared.Console;
 
 namespace Content.Server._CorvaxGoob.Administration.Commands;
 
-[AdminCommand(AdminFlags.Moderator)]
+[AdminCommand(AdminFlags.Ban)]
 public sealed class CaptureViewportCommand : IConsoleCommand
 {
     [Dependency] private readonly IPlayerManager _player = default!;
