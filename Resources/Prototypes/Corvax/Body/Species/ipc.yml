@@ -2,7 +2,7 @@
   id: Ipc
   limits:
     enum.HumanoidVisualLayers.Hair:
-      limit: 0
+      limit: 1 #LP edit
       required: false
     enum.HumanoidVisualLayers.FacialHair:
       limit: 0
@@ -42,11 +42,16 @@
       limit: 1
       required: false
     enum.HumanoidVisualLayers.Tail:
-      limit: 0
+      limit: 1 #LP edit
       required: false
     enum.HumanoidVisualLayers.Special:
       limit: 0
       required: false
+#LP edit start
+    enum.HumanoidVisualLayers.HeadTop:
+      limit: 1
+      required: false
+#LP edit end
 
 - type: entity
   parent: BaseSpeciesAppearance
@@ -223,10 +228,14 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Critical
+      # LP Edit Start
+      100: SoftCritical
+      150: Critical
+      # LP Edit End
       200: Dead
     stateAlertDict:
       Alive: BorgHealth
+      SoftCritical: LPPBorgSoftCrit # LP Edit
       Critical: BorgCrit
       Dead: BorgDead
   - type: Fingerprint
@@ -277,10 +286,10 @@
   abstract: true
   components:
   - type: Sprite
-    sprite: Corvax/Mobs/Species/Ipc/parts.rsi
+    sprite: _EE/Mobs/Species/IPC/parts.rsi #LP edit
   - type: VisualOrgan
     data:
-      sprite: Corvax/Mobs/Species/Ipc/parts.rsi
+      sprite: _EE/Mobs/Species/IPC/parts.rsi #LP edit
   - type: VisualOrganMarkings
     markingData:
       group: Ipc

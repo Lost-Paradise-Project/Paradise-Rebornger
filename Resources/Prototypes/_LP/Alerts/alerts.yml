@@ -1,0 +1,17 @@
+- type: alert
+  id: LPPHumanSoftCrit
+  category: Health
+  icons:
+  - sprite: /Textures/Interface/Alerts/human_critical.rsi
+    state: critical
+  name: alerts-soft-crit-name
+  description: alerts-soft-crit-desc
+
+- type: alert
+  id: LPPBorgSoftCrit
+  category: Health
+  icons:
+  - sprite: /Textures/Interface/Alerts/borg_critical.rsi
+    state: critical
+  name: alerts-soft-crit-name
+  description: alerts-soft-crit-desc

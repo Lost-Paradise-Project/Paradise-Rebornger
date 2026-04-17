@@ -140,6 +140,10 @@
           amount: 4
         - id: GrenadeFrag
           amount: 4
+#LP edit start
+        - id: GrenadeEMP
+          amount: 4
+#LP edit end
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle

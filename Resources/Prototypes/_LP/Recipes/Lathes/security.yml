@@ -146,11 +146,11 @@
   result: LPPClothingOuterHardsuitSecurityEng
   parent: LPPLatheRecipe15Sec
   materials:
-    Plasteel: 350
-    Steel: 1800
+    Plasteel: 275
+    Steel: 1500
     Silver: 200
-    Gold: 1350
-    Plasma: 1200
+    Gold: 950
+    Plasma: 950
     Glass: 200
 
 - type: latheRecipe
@@ -260,6 +260,17 @@
     Silver: 900
     Glass: 200
 
+- type: latheRecipe
+  id: LPPClothingOuterHardsuitCombatAlternative
+  result: LPPClothingOuterHardsuitCombatAlternative
+  parent: LPPLatheRecipe15Sec
+  materials:
+    Steel: 2000
+    Plasteel: 600
+    Plasma: 600
+    Silver: 900
+    Glass: 200
+    Gold: 100
 # Weapons
 
 - type: latheRecipe
@@ -270,6 +281,14 @@
     Steel: 1250
     Plastic: 750
     Gold: 350
+
+- type: latheRecipe
+  parent: BaseWeaponRecipeLong
+  id: LPPWeaponRifleM14
+  result: LPPWeaponRifleM14
+  materials:
+    Steel: 2500
+    Plastic: 250
 
 - type: latheRecipe
   parent: BaseAmmoBoxRecipe
@@ -293,3 +312,18 @@
   result: MagazineShotgunLeverRifle
   materials:
     Steel: 475
+
+- type: latheRecipe
+  parent: BaseWeaponRecipeLong
+  id: LPPWeaponPF20kit
+  result: LPPCBoxCardboardArmoryPF20
+  materials:
+    Steel: 4000
+    Plastic: 1250
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: LPPMagazinePistolPF20lethal
+  result: LPPMagazinePistolPF20lethal
+  materials:
+    Steel: 350

@@ -61,7 +61,7 @@ jobs:
           GH_TOKEN: ${{secrets.BOT_TOKEN}}
         run: |
           gh pr merge ${{ steps.cpr.outputs.pull-request-number }} \
+            --merge-queue \
             --squash \
             --admin \
-            --delete-branch \
             --repo ${{ github.repository }}

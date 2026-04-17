@@ -1,0 +1,189 @@
+- type: cargoProduct
+  id: LPPCargoSalvageExpeditionFlatpack
+  icon:
+    sprite: Structures/Machines/computers.rsi
+    state: mining
+  product: LPPComputerSalvageExpeditionFlatpack
+  cost: 10000
+  category: cargoproduct-category-name-cargo
+  group: SalvageJobReward2
+
+- type: cargoProduct
+  id: LPPCargoSalvageExpeditionKineticPistol
+  icon:
+    sprite: _Lavaland/Objects/Weapons/Guns/Basic/kinetic_pistol.rsi
+    state: icon
+  product: WeaponProtoKineticPistol
+  cost: 2500
+  category: cargoproduct-category-name-cargo
+  group: SalvageJobReward2
+
+- type: cargoProduct
+  id: LPPCargoSalvageExpeditionKineticRepeater
+  icon:
+    sprite: _Lavaland/Objects/Weapons/Guns/Basic/kinetic_repeater.rsi
+    state: icon
+  product: WeaponProtoKineticRepeater
+  cost: 12500
+  category: cargoproduct-category-name-cargo
+  group: SalvageJobRewardMAX
+
+- type: cargoProduct
+  id: LPPCargoSalvageExpeditionKineticShotgun
+  icon:
+    sprite: _Lavaland/Objects/Weapons/Guns/Basic/kinetic_shotgun.rsi
+    state: icon
+  product: WeaponProtoKineticShotgun
+  cost: 12500
+  category: cargoproduct-category-name-cargo
+  group: SalvageJobRewardMAX
+
+- type: cargoProduct
+  id: LPPCargoSalvageExpeditionKineticSpear
+  icon:
+    sprite: _Lavaland/Objects/Weapons/Crushers/crusher_spear.rsi
+    state: icon
+  product: LavalandWeaponKineticSpear
+  cost: 9500
+  category: cargoproduct-category-name-cargo
+  group: SalvageJobRewardMAX
+
+- type: cargoProduct
+  id: LPPCargoSalvageExpeditionKineticHammer
+  icon:
+    sprite: _Lavaland/Objects/Weapons/Crushers/crusher_hammer.rsi
+    state: icon
+  product: LavalandWeaponKineticHammer
+  cost: 11000
+  category: cargoproduct-category-name-cargo
+  group: SalvageJobRewardMAX
+
+- type: cargoProduct
+  id: LPPCargoSalvageExpeditionKineticClaws
+  icon:
+    sprite: _Lavaland/Objects/Weapons/Crushers/crusher_claws.rsi
+    state: icon
+  product: LavalandWeaponKineticClaws
+  cost: 4500
+  category: cargoproduct-category-name-cargo
+  group: SalvageJobReward2
+
+- type: cargoProduct
+  id: LPPCargoSalvageExpeditionKineticMachete
+  icon:
+    sprite: _Lavaland/Objects/Weapons/Crushers/crusher_machete.rsi
+    state: icon
+  product: LavalandWeaponKineticMachete
+  cost: 6500
+  category: cargoproduct-category-name-cargo
+  group: SalvageJobReward2
+
+- type: cargoProduct
+  id: LPPCargoSalvageExpeditionSchwarzlose
+  icon:
+    sprite: _LP/Objects/Weapons/Guns/Pistols/Shvartloze.rsi
+    state: icon
+  product: LPPweaponSchwarzlose
+  cost: 3500
+  category: cargoproduct-category-name-cargo
+  group: SalvageJobReward2
+
+- type: cargoProduct
+  id: LPPCargoSalvageExpeditionPibodi
+  icon:
+    sprite: _LP/Objects/Weapons/Guns/Snipers/Pibodi.rsi
+    state: icon
+  product: LPPweaponPibodi
+  cost: 7000
+  category: cargoproduct-category-name-cargo
+  group: SalvageJobReward2
+
+- type: cargoProduct
+  id: LPPCargoSalvageExpeditionShasspo
+  icon:
+    sprite: _LP/Objects/Weapons/Guns/Pistols/Shvartloze.rsi
+    state: icon
+  product: LPPweaponShasspo
+  cost: 7000
+  category: cargoproduct-category-name-cargo
+  group: SalvageJobReward3
+
+- type: cargoProduct
+  id: LPPCargoSalvageExpeditionManlicher
+  icon:
+    sprite: _LP/Objects/Weapons/Guns/Shotguns/Manlicher.rsi
+    state: icon
+  product: LPPweaponManlicher
+  cost: 12000
+  category: cargoproduct-category-name-cargo
+  group: SalvageJobRewardMAX
+
+- type: cargoProduct
+  id: LPPCargoSalvageExpeditionLebel
+  icon:
+    sprite: _LP/Objects/Weapons/Guns/Snipers/Lebel.rsi
+    state: icon
+  product: LPPweaponLebel
+  cost: 11000
+  category: cargoproduct-category-name-cargo
+  group: SalvageJobRewardMAX
+
+- type: cargoProduct
+  id: LPPCargoSalvageExpeditionMaximumWebbing
+  icon:
+    sprite: _LP/Clothing/Belt/salvwebbing.rsi
+    state: icon
+  product: LPPClothingBeltMaximumWebbingSalvager
+  cost: 5000
+  category: cargoproduct-category-name-cargo
+  group: SalvageJobReward3
+
+- type: cargoProduct
+  id: LPPCargoSalvageExpeditionHardsuitUpgradedMining
+  icon:
+    sprite: _LP/Clothing/OuterClothing/Hardsuits/upgrmining.rsi
+    state: icon
+  product: LPPClothingOuterHardsuitUpgradedMining
+  cost: 17500
+  category: cargoproduct-category-name-cargo
+  group: SalvageJobReward3
+
+- type: cargoProduct
+  id: LPPCargoSalvageExpeditionHardsuitMiningPlus
+  icon:
+    sprite: _LP/Clothing/OuterClothing/Hardsuits/salvplus.rsi
+    state: icon
+  product: LPPClothingOuterHardsuitMiningPlus
+  cost: 12500
+  category: cargoproduct-category-name-cargo
+  group: SalvageJobReward2
+
+- type: cargoProduct
+  id: LPPCargoSalvageExpeditionHardsuitMiningJuggernaut
+  icon:
+    sprite: _LP/Clothing/OuterClothing/Hardsuits/miningjugg.rsi
+    state: icon
+  product: LPPClothingOuterHardsuitMiningJuggernaut
+  cost: 20000
+  category: cargoproduct-category-name-cargo
+  group: SalvageJobReward3
+
+- type: cargoProduct
+  id: LPPCargoSalvageExpeditionHardsuitSpatioUpgraded
+  icon:
+    sprite: _LP/Clothing/OuterClothing/Hardsuits/spatioupgr.rsi
+    state: icon
+  product: LPPClothingOuterHardsuitSpatioUpgraded
+  cost: 10000
+  category: cargoproduct-category-name-cargo
+  group: SalvageJobReward3
+
+- type: cargoProduct
+  id: LPPCargoSalvageExpeditionHardsuitSpatioJugger
+  icon:
+    sprite: _LP/Clothing/OuterClothing/Hardsuits/spatioupgr.rsi
+    state: icon
+  product: LPPClothingOuterHardsuitSpatioJugger
+  cost: 16661
+  category: cargoproduct-category-name-cargo
+  group: SalvageJobRewardMAX

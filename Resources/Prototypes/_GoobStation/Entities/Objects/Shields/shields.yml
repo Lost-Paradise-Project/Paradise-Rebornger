@@ -61,7 +61,7 @@
       color: "#678AD9"
     - type: ItemTogglePointLight
     - type: Blocking
-      passiveBlockFraction: 0.65
+      passiveBlockFraction: 0.45
       passiveBlockModifier:
         coefficients:
           Blunt: 0.9
@@ -75,18 +75,18 @@
           Piercing: 0.8
           Heat: 0.8
         flatReductions:
-          Heat: 2
-          Blunt: 2
-          Slash: 2
-          Piercing: 2
+          Heat: 1
+          Blunt: 1
+          Slash: 1
+          Piercing: 1
     - type: Appearance
     - type: Damageable
       damageContainer: Shield
     - type: StaticPrice
       price: 350
     - type: Battery
-      maxCharge: 600
-      startingCharge: 600
+      maxCharge: 450
+      startingCharge: 450
     - type: RechargeableBlocking
       dischargedRechargeRate: 0
       chargedRechargeRate: 0

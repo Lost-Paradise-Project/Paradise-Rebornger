@@ -1,0 +1,10 @@
+ent-LPPBaseMagazinePistolPF20 = пистолетный магазин (.20 винтовочные)
+    .desc = { ent-BaseItem.desc }
+ent-LPPMagazinePistolPF20lethal = пистолетный магазин (.20 винтовочные)
+    .desc = { ent-LPPBaseMagazinePistolPF20.desc }
+ent-LPPMagazinePistolPF20Practice = пистолетный магазин (.20 тренировочные)
+    .desc = { ent-LPPBaseMagazinePistolPF20.desc }
+ent-LPPMagazinePistolPF20Uranium = пистолетный магазин (.20 урановые)
+    .desc = { ent-LPPBaseMagazinePistolPF20.desc }
+ent-LPPMagazinePistolPF20Incendiary = пистолетный магазин (.20 зажигательные)
+    .desc = { ent-LPPBaseMagazinePistolPF20.desc }
