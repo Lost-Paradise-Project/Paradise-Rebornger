@@ -342,6 +342,20 @@
           types:
             Asphyxiation: -3
             Poison: -0.5
+      # LP Edit Start
+      - !type:HealthChange
+        conditions:
+          # they gotta be in crit first
+        - !type:MobStateCondition
+          mobstate: SoftCritical
+        - !type:ReagentCondition
+          reagent: Epinephrine
+          max: 20
+        damage:
+          types:
+            Asphyxiation: -3
+            Poison: -0.5
+      # LP Edit End
       - !type:EvenHealthChange
         conditions:
           # they gotta be in crit first
@@ -353,6 +367,19 @@
         damage:
           Brute: -0.5
           Burn: -0.5
+      # LP Edit Start
+      - !type:EvenHealthChange
+        conditions:
+          # they gotta be in crit first
+        - !type:MobStateCondition
+          mobstate: SoftCritical
+        - !type:ReagentCondition
+          reagent: Epinephrine
+          max: 20
+        damage:
+          Brute: -0.5
+          Burn: -0.5
+      # LP Edit End
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
@@ -463,6 +490,16 @@
         damage:
           types:
             Asphyxiation: -2
+      # LP Edit Start
+      - !type:HealthChange
+        conditions:
+          # they gotta be in crit first
+        - !type:MobStateCondition
+          mobstate: SoftCritical
+        damage:
+          types:
+            Asphyxiation: -2
+      # LP Edit End
       - !type:ModifyBleed
         amount: -0.25
 

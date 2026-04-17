@@ -195,6 +195,15 @@
         damage: # Doesn't heal poison because if you OD'd I'm not giving you a safety net
           Burn: -0.5
           Brute: -0.5
+      # LP Edit Start
+      - !type:EvenHealthChange
+        conditions:
+        - !type:MobStateCondition
+          mobstate: SoftCritical
+        damage: # Doesn't heal poison because if you OD'd I'm not giving you a safety net
+          Burn: -0.5
+          Brute: -0.5
+      # LP Edit End
       - !type:HealthChange
         conditions:
         - !type:MobStateCondition
@@ -202,6 +211,15 @@
         damage:
           types:
             Asphyxiation: -2
+      # LP Edit Start
+      - !type:HealthChange
+        conditions:
+        - !type:MobStateCondition
+          mobstate: SoftCritical
+        damage:
+          types:
+            Asphyxiation: -2
+      # LP Edit End
       # Side effects
       - !type:ResetNarcolepsy
       - !type:SatiateHunger
