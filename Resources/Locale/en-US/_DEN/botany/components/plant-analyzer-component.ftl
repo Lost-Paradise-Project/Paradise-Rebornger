@@ -1,4 +1,4 @@
-﻿plant-analyzer-component-no-seed = no plant found
+plant-analyzer-component-no-seed = no plant found
 
 plant-analyzer-component-health = Health:
 plant-analyzer-component-age = Age:

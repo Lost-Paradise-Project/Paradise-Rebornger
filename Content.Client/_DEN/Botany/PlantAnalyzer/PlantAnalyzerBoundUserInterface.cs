@@ -1,4 +1,4 @@
-﻿using Content.Shared._DEN.Botany.PlantAnalyzer;
+using Content.Shared._DEN.Botany.PlantAnalyzer;
 using JetBrains.Annotations;
 using Robust.Client.UserInterface;
 

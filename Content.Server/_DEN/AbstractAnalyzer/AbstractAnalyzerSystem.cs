@@ -1,4 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
+using System.Diagnostics.CodeAnalysis;
 using Content.Server._DEN.AbstractAnalyzer;
 using Content.Shared.DoAfter;
 using Content.Shared.Interaction;
