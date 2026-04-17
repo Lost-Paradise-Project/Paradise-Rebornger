@@ -10,24 +10,6 @@
     Telecrystal: 1
 
 - type: listing
-  id: UplinkPlateCompressionSuitModule
-  name: uplink-syndie-plate-compression-name
-  description: uplink-syndie-plate-compression-desc
-  icon: { sprite: _Wega/Objects/Specific/Robotics/modules.rsi, state: plate_compression }
-  productEntity: PlateCompressionSuitModule
-  categories:
-  - UplinkJob
-  discountCategory: veryRareDiscounts
-  cost:
-    Telecrystal: 2
-  conditions:
-  - !type:BuyerJobCondition
-    whitelist:
-    - AtmosphericTechnician
-  - !type:ListingLimitedStockCondition
-    stock: 1
-
-- type: listing
   id: UplinEnergyShieldSuitModuleNukeOps
   name: uplink-syndie-energy-shield-module-name
   description: uplink-syndie-energy-shield-module-desc

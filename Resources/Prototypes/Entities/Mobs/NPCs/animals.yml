@@ -457,7 +457,6 @@
     damage:
       types:
         Piercing: 0
-  - type: VentCrawler # Corvax-Wega-VentCrawling
 
 - type: entity
   name: glockroach
@@ -1026,7 +1025,6 @@
   - type: HTN
     rootTask:
       task: RuminantCompound
-  - type: VentCrawler # Corvax-Wega-VentCrawling
 
 - type: entity
   name: goat
@@ -1472,7 +1470,6 @@
   - type: StatusIcon
     bounds: -0.5,-0.5,0.5,0.5
   - type: JobStatus # marks them as crew
-  - type: VentCrawler # Corvax-Wega-VentCrawling
 
 - type: entity
   name: monkey
@@ -1912,7 +1909,6 @@
       behaviors:
       - !type:GibBehavior
         recursive: false
-  - type: VentCrawler # Corvax-Wega-VentCrawling
 
 - type: entity
   parent: MobMouse
@@ -2162,7 +2158,6 @@
       reagents:
       - ReagentId: Blood
         Quantity: 50
-  - type: VentCrawler # Corvax-Wega-VentCrawling
 
 - type: entity
   name: frog
@@ -2235,7 +2230,6 @@
       behaviors:
       - !type:GibBehavior
         recursive: false
-  - type: VentCrawler # Corvax-Wega-VentCrawling
 
 # Would be cool to have some functionality for the parrot to be able to sit on stuff
 - type: entity
@@ -2523,7 +2517,6 @@
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: Scale
-  - type: VentCrawler # Corvax-Wega-VentCrawling
 
 # Code unique spider prototypes or combine them all into one spider and get a
 # random sprite state when you spawn it.
@@ -2618,7 +2611,6 @@
         Heat: -0.03
         Cold: -0.03
         Shock: -0.03
-  - type: VentCrawler # Corvax-Wega-VentCrawling
 
 - type: entity
   parent: MobSpiderBase
@@ -3124,7 +3116,6 @@
   - type: Grammar
     attributes:
       gender: epicene
-  - type: VentCrawler # Corvax-Wega-VentCrawling
 
 - type: entity
   name: cat
@@ -3634,7 +3625,6 @@
       behaviors:
       - !type:GibBehavior
         recursive: false
-  - type: VentCrawler # Corvax-Wega-VentCrawling
 
 - type: entity
   name: pig

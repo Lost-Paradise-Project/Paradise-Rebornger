@@ -1152,36 +1152,6 @@
 
 - type: entity
   parent: BaseSuitModule
-  id: PlateCompressionSuitModule
-  name: plate compression suit module
-  description: "A banned Cybersun Industries development. Nanocompressors temporarily reduce the volume of armor plates and servos, allowing the wearer to squeeze through vents and other narrow passages. The suit's removal mechanism is locked while the module is active, making it impossible to take off without external assistance. Incompatible with armor booster modules due to compression system overload."
-  components:
-  - type: Sprite
-    state: plate_compression
-  - type: ModularSuitPermanentInstalled
-  - type: ModularSuitModuleEffect
-    activeComponents:
-    - type: SelfUnremovableClothing
-    # Just in case
-    returnedComponents:
-    - type: SelfUnremovableClothing
-  - type: ModularSuitModuleWearerEffect
-    activeComponents:
-    - type: VentCrawler
-  - type: ModularSuitModule
-    tags: [ CompressionModuleConflict ]
-    modulePart: Torso
-    modulePrefix: 'C'
-    active: true
-    verbIcon:
-      sprite: *modules-rsi
-      state: plate_compression
-  - type: Tag
-    tags:
-    - CompressionModuleConflict
-
-- type: entity
-  parent: BaseSuitModule
   id: BurgerDispenserSuitModule
   name: burger dispenser suit module
   description: "A rare piece of technology reverse-engineered from a prototype found in a Donk Corporation vessel. This can draw incredible amounts of power from the suit's cell to create edible organic matter in the palm of the wearer's glove; however, research seemed to have entirely stopped at burgers. Notably, all attempts to get it to dispense Earl Grey tea have failed."

@@ -91,14 +91,6 @@
   - type: GuideHelp
     guides:
     - Pumps
-  # Corvax-Wega-VentCrawling-start
-  - type: VentCrawTube
-    containerId: VentCrawTube
-  - type: VentCrawTransit
-  - type: ContainerContainer
-    containers:
-      VentCrawTube: !type:Container
-  # Corvax-Wega-VentCrawling-end
 
 - type: entity
   parent: GasBinaryBase
@@ -172,14 +164,6 @@
     - type: GuideHelp
       guides:
       - Pumps
-    # Corvax-Wega-VentCrawling-start
-    - type: VentCrawTube
-      containerId: VentCrawTube
-    - type: VentCrawTransit
-    - type: ContainerContainer
-      containers:
-        VentCrawTube: !type:Container
-    # Corvax-Wega-VentCrawling-end
 
 - type: entity
   parent: GasBinaryBase
@@ -241,14 +225,6 @@
   - type: GuideHelp
     guides:
     - PressureRegulator
-  # Corvax-Wega-VentCrawling-start
-  - type: VentCrawTube
-    containerId: VentCrawTube
-  - type: VentCrawTransit
-  - type: ContainerContainer
-    containers:
-      VentCrawTube: !type:Container
-  # Corvax-Wega-VentCrawling-end
 
 - type: entity
   parent: GasBinaryBase
@@ -291,14 +267,6 @@
     - type: GuideHelp
       guides:
       - PassiveGate
-    # Corvax-Wega-VentCrawling-start
-    - type: VentCrawTube
-      containerId: VentCrawTube
-    - type: VentCrawTransit
-    - type: ContainerContainer
-      containers:
-        VentCrawTube: !type:Container
-    # Corvax-Wega-VentCrawling-end
 
 - type: entity
   parent: GasBinaryBase
@@ -360,14 +328,6 @@
     - type: GuideHelp
       guides:
       - ManualValve
-    # Corvax-Wega-VentCrawling-start
-    - type: VentCrawTube
-      containerId: VentCrawTube
-    - type: VentCrawTransit
-    - type: ContainerContainer
-      containers:
-        VentCrawTube: !type:Container
-    # Corvax-Wega-VentCrawling-end
 
 - type: entity
   parent: GasBinaryBase
@@ -440,14 +400,6 @@
   - type: GuideHelp
     guides:
     - SignalValve
-  # Corvax-Wega-VentCrawling-start
-  - type: VentCrawTube
-    containerId: VentCrawTube
-  - type: VentCrawTransit
-  - type: ContainerContainer
-    containers:
-      VentCrawTube: !type:Container
-  # Corvax-Wega-VentCrawling-end
 
 - type: entity
   parent: GasBinaryBase
@@ -493,16 +445,6 @@
     - type: GuideHelp
       guides:
       - GasCanisters
-    # Corvax-Wega-VentCrawling-start
-    - type: VentCrawTube
-      containerId: VentCrawTube
-    - type: VentCrawJunction
-      degrees:
-        - 0
-    - type: ContainerContainer
-      containers:
-        VentCrawTube: !type:Container
-    # Corvax-Wega-VentCrawling-ens
 
 - type: entity
   parent: GasVentPump

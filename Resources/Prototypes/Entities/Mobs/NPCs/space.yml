@@ -275,7 +275,6 @@
       Unsexed: UnisexArachnid
   - type: TypingIndicator
     proto: spider
-  - type: VentCrawler # Corvax-Wega-VentCrawling
 
 - type: entity
   id: MobSpiderSpaceSalvage
@@ -531,7 +530,6 @@
         visualType: Large
         messages: [ "snail-hurt-by-salt-popup" ]
         probability: 0.66
-  - type: VentCrawler # Corvax-Wega-VentCrawling
 
 - type: entity
   parent: MobSnail
