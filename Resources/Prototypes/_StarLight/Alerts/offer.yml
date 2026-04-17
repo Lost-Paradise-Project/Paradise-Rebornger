@@ -1,4 +1,4 @@
-﻿- type: alert
+- type: alert
   id: Offer
   clickEvent: !type:OfferItemAlertEvent  { }
   icons:

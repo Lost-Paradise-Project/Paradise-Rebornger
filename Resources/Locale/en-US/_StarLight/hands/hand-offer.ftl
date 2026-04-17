@@ -1,4 +1,4 @@
-﻿hands-full = Your hands are full!
+hands-full = Your hands are full!
 
 offering = You offer {THE($item)} to {$target}
 offering-target = {$user} offers you {THE($item)}
