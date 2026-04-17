@@ -54,9 +54,3 @@
 
 - type: Tag
   id: LPPMagazineHeavySniper
-
-- type: Tag
-  id: MagazineBoxLightRifle
-
-- type: Tag
-  id: LPPMagazineLightSniper
