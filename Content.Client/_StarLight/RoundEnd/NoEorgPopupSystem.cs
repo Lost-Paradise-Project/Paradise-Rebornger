@@ -1,4 +1,4 @@
-﻿using Content.Shared.GameTicking;
+using Content.Shared.GameTicking;
 using Content.Shared._StarLight.CCVar;
 using Robust.Shared.Configuration;
 

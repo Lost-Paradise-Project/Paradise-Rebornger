@@ -1,4 +1,4 @@
-﻿no-eorg-popup-title = Starlight
+no-eorg-popup-title = Starlight
 no-eorg-popup-label = Welcome to the End of Round!
 no-eorg-popup-message = [bold]End-of-round grief (EORG)[/bold] is not allowed on Starlight. Please stay in character until the lobby screen appears to maintain an immersive environment for everyone. Thank you for respecting the community rules!
 no-eorg-popup-rule = [bold][color=#a4885c]End of round grief is not permitted and results in an instant minimum 90 minute game ban.[/color][/bold]
