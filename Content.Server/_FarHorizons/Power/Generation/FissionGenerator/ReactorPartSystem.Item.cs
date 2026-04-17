@@ -1,4 +1,5 @@
 using Content.Server.Atmos.EntitySystems;
+using Content.Server.Radiation.Systems;
 using Content.Shared._FarHorizons.Power.Generation.FissionGenerator;
 using Content.Shared.Atmos;
 using Content.Shared.Damage;
@@ -12,6 +13,7 @@ namespace Content.Server._FarHorizons.Power.Generation.FissionGenerator;
 
 public sealed partial class ReactorPartSystem
 {
+    [Dependency] private readonly RadiationSystem _radiation = default!;
     [Dependency] private readonly EntityManager _entityManager = default!;
     [Dependency] private readonly DamageableSystem _damageableSystem = default!;
     [Dependency] private readonly SharedPointLightSystem _lightSystem = default!;
@@ -34,8 +36,7 @@ public sealed partial class ReactorPartSystem
         var radvalue = (component.Properties.Radioactivity * 0.1f) + (component.Properties.NeutronRadioactivity * 0.15f) + (component.Properties.FissileIsotopes * 0.125f);
         if (radvalue > 0)
         {
-            var radcomp = EnsureComp<RadiationSourceComponent>(uid);
-            radcomp.Intensity = radvalue;
+            _radiation.SetIntensity(uid, radvalue);
         }
 
         if (component.Properties.NeutronRadioactivity > 0)
