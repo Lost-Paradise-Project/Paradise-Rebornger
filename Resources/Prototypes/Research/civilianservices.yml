@@ -292,25 +292,25 @@
 #   radioChannels:
 #   - Service
 
-# - type: technology
-#   id: BluespaceChemistry
-#   name: research-technology-bluespace-chemistry
-#   icon:
-#     sprite: Objects/Specific/Chemistry/beaker_bluespace.rsi
-#     state: beakerbluespace
-#   discipline: CivilianServices
-#   tier: 3
-#   cost: 10000
-#   recipeUnlocks:
-#   - BluespaceBeaker
-#   - SyringeBluespace
-#   position: 8, 28 # LP edit
-#   technologyPrerequisites:
-#   - BiochemicalStasis
-#   radioChannels:
-#   - Service
-
 # LP Edit End
+
+- type: technology
+  id: BluespaceChemistry
+  name: research-technology-bluespace-chemistry
+  icon:
+    sprite: Objects/Specific/Chemistry/beaker_bluespace.rsi
+    state: beakerbluespace
+  discipline: CivilianServices
+  tier: 3
+  cost: 10000
+  recipeUnlocks:
+  - BluespaceBeaker
+  - SyringeBluespace
+  position: 8, 28 # LP edit
+  technologyPrerequisites:
+  - BiochemicalStasis
+  radioChannels:
+  - Service
 
 - type: technology
   id: LauncherSyringe
@@ -326,6 +326,6 @@
   - MiniSyringe
   position: 8, 29 # LP edit
   technologyPrerequisites:
-  - BiochemicalStasis # LP Edit
+  - BluespaceChemistry # LP Edit
   radioChannels:
   - Service

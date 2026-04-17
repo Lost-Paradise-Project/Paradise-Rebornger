@@ -163,18 +163,14 @@
   id: MassExcavation
   name: research-technology-excavation
   icon:
-    # LP Edit Start
-    sprite: Objects/Specific/Mining/mineral_scanner.rsi
-    state: adv
-    # LP Edit End
+    sprite: Objects/Tools/handdrilldiamond.rsi
+    state: handdrill
   discipline: Industrial
   tier: 2
   cost: 12500
   recipeUnlocks:
-    # LP Edit Start
-    # - OreBagOfHolding
-    # - MiningDrillDiamond
-    # LP Edit End
+    # - OreBagOfHolding# LP Edit
+    - MiningDrillDiamond
     - AdvancedMineralScannerEmpty
     - BorgModuleAdvancedMining
     - SalvageExpeditionsComputerCircuitboard
