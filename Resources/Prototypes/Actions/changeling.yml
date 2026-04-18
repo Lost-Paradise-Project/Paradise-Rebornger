@@ -32,6 +32,7 @@
   - type: TargetAction
   - type: EntityTargetAction
     event: !type:ChangelingDevourActionEvent
+  - type: EorgAction
 
 - type: entity
   id: ActionChangelingTransform

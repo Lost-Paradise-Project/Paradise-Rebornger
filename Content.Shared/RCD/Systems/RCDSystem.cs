@@ -206,7 +206,7 @@ public sealed class RCDSystem : EntitySystem
         var verb = new UtilityVerb
         {
             Act = () => SwitchPipeMode(uid, component, args.User),
-            Text = Loc.GetString("rcd-verb-switch-mode"),
+            Text = Loc.GetString("rpd-verb-switch-mode"),
             Icon = new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/VerbIcons/settings.svg.192dpi.png")),
             Impact = LogImpact.Low
         };
@@ -226,7 +226,7 @@ public sealed class RCDSystem : EntitySystem
         var verb = new AlternativeVerb
         {
             Act = () => SwitchPipeMode(uid, component, args.User),
-            Text = Loc.GetString("rcd-verb-switch-mode"),
+            Text = Loc.GetString("rpd-verb-switch-mode"),
             Icon = new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/VerbIcons/settings.svg.192dpi.png")),
             Impact = LogImpact.Low
         };
