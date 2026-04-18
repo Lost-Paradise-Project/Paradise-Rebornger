@@ -628,27 +628,6 @@
 
 - type: entity
   parent: BaseSuitModule
-  id: RadiationShieldSuitModule
-  name: radshield suit module
-  description: "A module utilizing polymers and reflective shielding to protect the user against ionizing radiation; a common danger in space. This comes with software to notify the wearer that they're even in a radioactive area, giving a voice to an otherwise silent killer."
-  components:
-  - type: Sprite
-    state: radshield
-  - type: ModularSuitModuleEffect
-    activeComponents:
-    - type: RadiationReceiver
-    - type: RadiationProtection
-    - type: Geiger
-      attachedToSuit: true
-  - type: ModularSuitModule
-    modulePart: Torso
-    powerUsage: 0.3
-    verbIcon:
-      sprite: *modules-rsi
-      state: radshield
-
-- type: entity
-  parent: BaseSuitModule
   id: EMPShieldSuitModule
   name: empshield suit module
   description: "A field inhibitor installed into the suit, protecting it against feedback such as electromagnetic pulses that would otherwise damage the electronic systems of the suit or devices on the wearer. However, it will take from the suit's power to do so. Luckily, your PDA already has one of these."

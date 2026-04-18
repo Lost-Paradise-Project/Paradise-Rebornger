@@ -191,11 +191,6 @@
 
 - type: latheRecipe
   parent: BaseModesuitModule
-  id: RadiationShieldSuitModule
-  result: RadiationShieldSuitModule
-
-- type: latheRecipe
-  parent: BaseModesuitModule
   id: StorageSuitModule
   result: StorageSuitModule
   materials:

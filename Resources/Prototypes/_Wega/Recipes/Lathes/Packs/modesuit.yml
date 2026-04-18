@@ -30,7 +30,6 @@
   - VisorMedicalSuitModule
   - WeldingSuitModule
   - VisorMesonSuitModule
-  - RadiationShieldSuitModule
   - StorageSuitModule
   - HealthAnalyzerSuitModule
   - FlashlightSuitModule

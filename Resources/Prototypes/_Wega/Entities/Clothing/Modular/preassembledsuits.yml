@@ -36,7 +36,6 @@
   - type: ModularSuitPreassembled
     modules:
     - WeldingSuitModule
-    - RadiationShieldSuitModule
     - MagnetSuitModule
     - StorageSuitModule
     - FlashlightSuitModuleCyan
@@ -63,7 +62,6 @@
   - type: ModularSuitPreassembled
     modules:
     - WeldingSuitModule
-    - RadiationShieldSuitModule
     - MagnetSuitModule
     - TRaySuitModule
     - StorageSuitModule
@@ -82,7 +80,6 @@
   - type: ModularSuitPreassembled
     modules:
     - WeldingSuitModule
-    - RadiationShieldSuitModule
     - JetpackSuitModule
     - MagnetAdvancedSuitModule
     - StorageLargeSuitModule
@@ -217,7 +214,6 @@
   - type: ModularSuitPreassembled
     modules:
     - WeldingSuitModule
-    - RadiationShieldSuitModule
     - SolutionScannerSuitModule
     - TRaySuitModule
     - StorageLargeSuitModule
@@ -349,7 +345,6 @@
     - JetpackAdvancedSuitModule
     - MagnetAdvancedSuitModule
     - QuickCarrySuitModule
-    - RadiationShieldSuitModule
     - WeldingSuitModule
     - HolsterSuitModule
     - StorageHoldingSuitModule
@@ -372,7 +367,6 @@
     - JetpackAdvancedSuitModule
     - ArmorBossterSuitModule
     - MagnetAdvancedSuitModule
-    - RadiationShieldSuitModule
     - WeldingSuitModule
     - StorageHoldingSuitModule
     - AdvancedFlashlightSuitModuleAqua
@@ -393,7 +387,6 @@
     - JetpackSuitModule
     - ArmorBossterSuitModule
     - MagnetSuitModule
-    - RadiationShieldSuitModule
     - WeldingSuitModule
     - StorageLargeSuitModule
     - AdvancedFlashlightSuitModuleAqua
@@ -414,7 +407,6 @@
     - JetpackSuitModule
     - ArmorBossterSuitModule
     - MagnetSuitModule
-    - RadiationShieldSuitModule
     - WeldingSuitModule
     - StorageLargeSuitModule
     - AdvancedFlashlightSuitModuleAqua
