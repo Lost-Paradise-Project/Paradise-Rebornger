@@ -61,7 +61,7 @@
       color: "#678AD9"
     - type: ItemTogglePointLight
     - type: Blocking
-      passiveBlockFraction: 0.45
+      passiveBlockFraction: 0.65
       passiveBlockModifier:
         coefficients:
           Blunt: 0.9
