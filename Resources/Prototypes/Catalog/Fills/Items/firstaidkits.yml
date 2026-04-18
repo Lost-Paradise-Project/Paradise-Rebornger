@@ -105,6 +105,10 @@
   suffix: Filled
   parent: MedkitCombat
   components:
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,4,1
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
@@ -115,6 +119,7 @@
         - id: SyringeSaline
         - id: BruteAutoInjector
         - id: BurnAutoInjector
+        - id: Bloodpack # LP Edit
 
 - type: entity
   id: StimkitFilled

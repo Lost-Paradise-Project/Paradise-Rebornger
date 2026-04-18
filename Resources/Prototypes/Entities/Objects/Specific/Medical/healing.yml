@@ -227,8 +227,8 @@
       - Biological
     damage:
       types:
-        Bloodloss: -0.5 #lowers bloodloss damage
-    modifyBloodLevel: 15 #restores about 5% blood per use on standard humanoids.
+        Bloodloss: -0.5 #lowers bloodloss damage 
+    modifyBloodLevel: 30 #restores about 5% blood per use on standard humanoids. # LP Edit 15 -> 30
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
       params:
