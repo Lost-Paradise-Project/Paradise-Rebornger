@@ -1,13 +1,16 @@
-using Content.Server.Explosion.EntitySystems;
-using Content.Shared.Emag.Systems;
-using Content.Shared.Forensics.Components;
-using Content.Shared.Interaction.Components;
+using Content.Server._ADT.DNALocker.Components;
 using Content.Shared.Inventory.Events;
-using Content.Shared.Popups;
-using Content.Shared.Verbs;
+using Content.Server.Explosion.EntitySystems;
 using Robust.Shared.Audio.Systems;
+using Content.Shared.Popups;
+using Content.Shared.Emag.Systems;
 using Robust.Shared.Timing;
+using Content.Shared.Interaction.Components;
+using Content.Shared.Verbs;
+using Content.Shared.Forensics.Components;
 using Robust.Shared.Utility;
+using Content.Server.Administration.Logs;
+using Content.Shared.Database;
 
 namespace Content.Server._ADT.DNALocker.Systems;
 
@@ -16,17 +19,18 @@ public sealed partial class DNALockerSystem : EntitySystem
     [Dependency] private readonly SharedAudioSystem _audioSystem = default!;
     [Dependency] private readonly ExplosionSystem _explosion = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
+    [Dependency] private readonly IAdminLogManager _adminLogger = default!;
 
     public override void Initialize()
     {
         base.Initialize();
 
-        SubscribeLocalEvent<Components.DNALockerComponent, GetVerbsEvent<AlternativeVerb>>(OnAltVerb);
-        SubscribeLocalEvent<Components.DNALockerComponent, GotEquippedEvent>(OnEquip);
-        SubscribeLocalEvent<Components.DNALockerComponent, GotEmaggedEvent>(OnGotEmagged);
+        SubscribeLocalEvent<DNALockerComponent, GetVerbsEvent<AlternativeVerb>>(OnAltVerb);
+        SubscribeLocalEvent<DNALockerComponent, GotEquippedEvent>(OnEquip);
+        SubscribeLocalEvent<DNALockerComponent, GotEmaggedEvent>(OnGotEmagged);
     }
 
-    public void LockEntity(EntityUid uid, Components.DNALockerComponent component, EntityUid equipee)
+    public void LockEntity(EntityUid uid, DNALockerComponent component, EntityUid equipee)
     {
         if (!TryComp<DnaComponent>(equipee, out var dna))
         {
@@ -40,10 +44,8 @@ public sealed partial class DNALockerSystem : EntitySystem
         _popup.PopupEntity(selfMessage, equipee, equipee);
     }
 
-    public void ExplodeEntity(EntityUid uid, Components.DNALockerComponent component, EntityUid equipee)
+    public void ExplodeEntity(EntityUid uid, DNALockerComponent component, EntityUid equipee)
     {
-        if (!component.Enabled)
-            return;
         if (!component.IsLocked)
             return;
 
@@ -61,25 +63,27 @@ public sealed partial class DNALockerSystem : EntitySystem
         });
     }
 
-    private void OnEquip(EntityUid uid, Components.DNALockerComponent component, GotEquippedEvent args)
+    private void OnEquip(EntityUid uid, DNALockerComponent component, GotEquippedEvent args)
     {
-        Log.Debug($"{args.Slot}");
+        if (!component.Enabled)
+            return;
         if (!component.IsLocked)
         {
-            LockEntity(uid, component, args.Equipee);
+            LockEntity(uid, component, args.EquipTarget);
             return;
         }
 
-        if (TryComp<DnaComponent>(args.Equipee, out var dna))
+        if (TryComp<DnaComponent>(args.EquipTarget, out var dna))
         {
             if (component.DNA != null && component.DNA != dna.DNA)
             {
-                ExplodeEntity(uid, component, args.Equipee);
+                _adminLogger.Add(LogType.AdminMessage, LogImpact.High, $"{ToPrettyString(args.EquipTarget)} exploded DNA Locker of {ToPrettyString(uid)}");
+                ExplodeEntity(uid, component, args.EquipTarget);
             }
         }
     }
 
-    private void OnGotEmagged(EntityUid uid, Components.DNALockerComponent component, ref GotEmaggedEvent args)
+    private void OnGotEmagged(EntityUid uid, DNALockerComponent component, ref GotEmaggedEvent args)
     {
         if (!component.CanBeEmagged || !component.Enabled)
             return;
@@ -98,7 +102,7 @@ public sealed partial class DNALockerSystem : EntitySystem
         args.Handled = true;
     }
 
-    private void OnAltVerb(EntityUid uid, Components.DNALockerComponent component, GetVerbsEvent<AlternativeVerb> args)
+    private void OnAltVerb(EntityUid uid, DNALockerComponent component, GetVerbsEvent<AlternativeVerb> args)
     {
         if (!component.IsLocked || !component.Enabled)
             return;
@@ -112,7 +116,7 @@ public sealed partial class DNALockerSystem : EntitySystem
         args.Verbs.Add(verbDNALock);
     }
 
-    private void MakeUnlocked(EntityUid uid, Components.DNALockerComponent component, EntityUid userUid)
+    private void MakeUnlocked(EntityUid uid, DNALockerComponent component, EntityUid userUid)
     {
         if (TryComp<DnaComponent>(userUid, out var userDNAComponent) && component.DNA == userDNAComponent.DNA)
         {

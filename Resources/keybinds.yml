@@ -305,7 +305,7 @@ binds:
   mod1: Shift
 - function: FlipObject
   type: State
-  key: J
+  key: F
 - function: TextCursorLeft
   type: State
   key: Left
@@ -680,8 +680,3 @@ binds:
   type: State
   key: E
 # Orion-End
-# EE edit start
-- function: OfferItem
-  type: State
-  key: F
-# EE edit end
