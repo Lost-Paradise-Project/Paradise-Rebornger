@@ -31,6 +31,7 @@
   id: LockerFillCaptainNoLaser
   table: !type:AllSelector
     children:
+    - id: LPPMagnatePlating # LP Edit
     - id: CaptainIDCard
     - id: CigarGoldCase
       prob: 0.25
@@ -76,7 +77,7 @@
   id: FillCaptainHardsuit
   table: !type:AllSelector
     children:
-    - id: ClothingModularControllerMagnatePreassembled # Corvax-Wega-ModularSuits-Edit
+    - id: ClothingOuterHardsuitCap
     - id: ClothingMaskGasCaptain
     - id: JetpackCaptainFilled
     - id: OxygenTankFilled
@@ -332,6 +333,7 @@
   id: LockerFillHeadOfSecurityNoHardsuit
   table: !type:AllSelector
     children:
+    - id: RedSecurityPlating # LP Edit
     - id: WeaponEnergyMagnum
     - id: BookSpaceLaw
     - id: BoxEncryptionKeySecurity
@@ -366,7 +368,7 @@
   table: !type:AllSelector
     children:
     - id: ClothingMaskGasSwat
-    - id: ClothingModularControllerSafeguardPreassembled # Corvax-Wega-ModularSuits-Edit
+    - id: ClothingOuterHardsuitSecurityRed
     - id: JetpackSecurityFilled
     - id: OxygenTankFilled
 

@@ -1,0 +1,12 @@
+ent-LPPTechnologyDiskBluespaceMiner = { ent-TechnologyDisk }
+    .desc = { ent-TechnologyDisk.desc }
+    .suffix = Блюспейс майнер
+ent-LPPTechnologyDiskClothingHolding = { ent-TechnologyDisk }
+    .desc = { ent-TechnologyDisk.desc }
+    .suffix = Бездонные вещи
+ent-LPPTechnologyDiskBootsSpeed = { ent-TechnologyDisk }
+    .desc = { ent-TechnologyDisk.desc }
+    .suffix = Скороходы
+ent-LPPTechnologyDiskMicroreactor = { ent-TechnologyDisk }
+    .desc = { ent-TechnologyDisk.desc }
+    .suffix = Микрореакторная батарейка

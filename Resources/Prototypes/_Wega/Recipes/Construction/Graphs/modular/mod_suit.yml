@@ -149,6 +149,21 @@
           completed:
             - !type:DestroyEntity {}
 
+        # LP Edit Start
+        # 12. Magnate
+        - to: magnate_suit
+          steps:
+            - tag: MagnatePlating
+              name: construction-graph-tag-magnate-kit
+              icon:
+                sprite: "_LP/Objects/Specific/Robotics/modular_suits.rsi"
+                state: "magnate-plating"
+            - tool: Screwing
+              doAfter: 2
+          completed:
+            - !type:DestroyEntity {}
+        # LP Edit End
+
     - node: basic_suit
       actions:
         - !type:SpawnPrototype
@@ -203,3 +218,10 @@
       actions:
         - !type:SpawnPrototype
           prototype: ClothingModularControllerResearch
+
+    # LP Edit Start
+    - node: magnate_suit
+      actions:
+        - !type:SpawnPrototype
+          prototype: ClothingModularControllerMagnate
+    # LP Edit End
