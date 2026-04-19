@@ -21,10 +21,7 @@ public sealed class GhostReturnToRoundSystem : SharedGhostReturnToRoundSystem
         base.FrameUpdate(frameTime);
 
         var player = _playerManager.LocalSession?.AttachedEntity;
-        if (player == null)
-            return;
-
-        if (!TryComp<GhostComponent>(player, out var ghostComponent))
+        if (player == null || !TryComp<GhostComponent>(player, out var ghostComponent))
             return;
 
         var ui = _userInterfaceManager.GetActiveUIWidgetOrNull<GhostGui>();
@@ -34,14 +31,12 @@ public sealed class GhostReturnToRoundSystem : SharedGhostReturnToRoundSystem
         var timeOffset = _gameTiming.RealTime - ghostComponent.TimeOfDeath;
         var rawTimeLeft = GhostRespawnTime - timeOffset;
         var timeLeft = rawTimeLeft > TimeSpan.Zero ? rawTimeLeft : TimeSpan.Zero;
-        var canReturn = timeLeft == TimeSpan.Zero;
 
+        var canReturn = timeLeft <= TimeSpan.Zero;   // LPP edit
         var displayTime = timeLeft.ToString(@"mm\:ss");
 
-        var buttonStateChanged = ui.ReturnToRound.Disabled == canReturn;
-        var timeChanged = _lastTimeLeft.ToString(@"mm\:ss") != displayTime;
-
-        if (!buttonStateChanged && !timeChanged)
+        if (ui.ReturnToRound.Disabled == !canReturn &&
+            _lastTimeLeft == timeLeft)
             return;
 
         ui.ReturnToRound.Disabled = !canReturn;
