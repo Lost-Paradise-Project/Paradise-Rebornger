@@ -37,6 +37,7 @@
   canBeAntag: false
   accessGroups:
   - AllAccess
+  - Cargo # LP Edit
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]

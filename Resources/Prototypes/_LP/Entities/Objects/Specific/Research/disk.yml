@@ -1,0 +1,46 @@
+- type: entity
+  parent: TechnologyDisk
+  id: LPPTechnologyDiskBluespaceMiner
+  suffix: BluespaceMiner
+  components:
+  - type: TechnologyDisk
+    tier: 3
+    discipline: LPPSecretDiscipline
+    recipes:
+    - LPPBluespaceMinerMachineCircuitboard
+
+- type: entity
+  parent: TechnologyDisk
+  id: LPPTechnologyDiskClothingHolding
+  suffix: ClothingHolding
+  components:
+  - type: TechnologyDisk
+    tier: 3
+    discipline: LPPSecretDiscipline
+    recipes:
+    - ClothingBackpackDuffelHolding
+    - ClothingBackpackHolding
+    - ClothingBackpackSatchelHolding
+    - OreBagOfHolding
+
+- type: entity
+  parent: TechnologyDisk
+  id: LPPTechnologyDiskBootsSpeed
+  suffix: BootsSpeed
+  components:
+  - type: TechnologyDisk
+    tier: 3
+    discipline: LPPSecretDiscipline
+    recipes:
+    - ClothingShoesBootsSpeed
+
+- type: entity
+  parent: TechnologyDisk
+  id: LPPTechnologyDiskMicroreactor
+  suffix: Microreactor
+  components:
+  - type: TechnologyDisk
+    tier: 3
+    discipline: LPPSecretDiscipline
+    recipes:
+    - PowerCellMicroreactor

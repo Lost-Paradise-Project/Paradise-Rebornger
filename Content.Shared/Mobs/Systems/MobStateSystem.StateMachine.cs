@@ -68,7 +68,6 @@ public partial class MobStateSystem
     protected virtual void OnEnterState(EntityUid entity, MobStateComponent component, MobState state)
     {
         // LP Edit Start
-        _sawmill.Info($"ENTER STATE {state} {ToPrettyString(entity)}");
         StopStateAudio(entity);
 
         if (StateAudio.ContainsKey(state))
@@ -98,11 +97,7 @@ public partial class MobStateSystem
     /// <param name="state">The old MobState</param>
     protected virtual void OnExitState(EntityUid entity, MobStateComponent component, MobState state)
     {
-        // LP Edit Start
-        _sawmill.Info($"ENTER STATE {state} {ToPrettyString(entity)}");
-
-        StopStateAudio(entity);
-        // LP Edit End
+        StopStateAudio(entity); // LP Edit
 
         OnStateExitSubscribers(entity, component, state);
     }

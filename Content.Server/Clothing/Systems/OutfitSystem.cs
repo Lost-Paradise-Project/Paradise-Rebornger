@@ -1,5 +1,6 @@
 ﻿using Content.Server.Hands.Systems;
 using Content.Server.Preferences.Managers;
+using Content.Server.Storage.EntitySystems;
 using Content.Shared.Access.Components;
 using Content.Shared.Clothing;
 using Content.Shared.Hands.Components;
@@ -11,6 +12,8 @@ using Content.Shared.Preferences;
 using Content.Shared.Preferences.Loadouts;
 using Content.Shared.Roles;
 using Content.Shared.Station;
+using Content.Shared.Containers.ItemSlots;
+using Content.Shared.Storage;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Content.Server._LP.Sponsors;      //LP edit
@@ -24,6 +27,8 @@ public sealed class OutfitSystem : EntitySystem
     [Dependency] private readonly HandsSystem _handSystem = default!;
     [Dependency] private readonly InventorySystem _invSystem = default!;
     [Dependency] private readonly SharedStationSpawningSystem _spawningSystem = default!;
+    [Dependency] private readonly ItemSlotsSystem _itemSlotsSystem = default!;
+    [Dependency] private readonly StorageSystem _storageSystem = default!;
 
     public bool SetOutfit(EntityUid target, string gear, Action<EntityUid, EntityUid>? onEquipped = null, bool unremovable = false)
     {
@@ -69,9 +74,35 @@ public sealed class OutfitSystem : EntitySystem
             }
         }
 
+        var coords = Transform(target).Coordinates;
+        foreach (var (slotName, storageContainers) in startingGear.Storage)
+        {
+            if (storageContainers.Count == 0)
+                continue;
+
+            if (!_invSystem.TryGetSlotEntity(target, slotName, out var slotEnt))
+                continue;
+
+            if (TryComp<StorageComponent>(slotEnt, out var storage))
+            {
+                foreach (var entProto in storageContainers)
+                {
+                    var spawnedEntity = SpawnAtPosition(entProto, coords);
+                    _storageSystem.Insert(slotEnt.Value, spawnedEntity, out _, user: null, storageComp: storage, playSound: false);
+                }
+            }
+            else if (TryComp<ItemSlotsComponent>(slotEnt, out var itemSlots))
+            {
+                foreach (var entProto in storageContainers)
+                {
+                    var spawnedEntity = SpawnAtPosition(entProto, coords);
+                    _itemSlotsSystem.TryInsertEmpty((slotEnt.Value, itemSlots), spawnedEntity, null, excludeUserAudio: true);
+                }
+            }
+        }
+
         if (TryComp(target, out HandsComponent? handsComponent))
         {
-            var coords = Comp<TransformComponent>(target).Coordinates;
             foreach (var prototype in startingGear.Inhand)
             {
                 var inhandEntity = Spawn(prototype, coords);
