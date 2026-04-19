@@ -148,6 +148,30 @@ public sealed partial class HealthIconPrototype : StatusIconPrototype, IInheriti
     public bool Abstract { get; private set; }
 }
 
+//FarHorizons Start
+/// <summary>
+/// StatusIcons for disease HUD. Separate type to decouple from health icons.
+/// </summary>
+[Prototype]
+public sealed partial class DiseaseIconPrototype : StatusIconPrototype, IInheritingPrototype
+{
+    /// <inheritdoc />
+    [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<DiseaseIconPrototype>))]
+    public string[]? Parents { get; private set; }
+
+    /// <inheritdoc />
+    [NeverPushInheritance]
+    [AbstractDataField]
+    public bool Abstract { get; private set; }
+
+    /// <summary>
+    /// Priority of the icon displayed on the disease HUD.
+    /// </summary>
+    [DataField]
+    public int PriorityDisease = 1;
+}
+//FarHorizons End
+
 /// <summary>
 /// StatusIcons for the beer goggles and fried onion goggles
 /// </summary>

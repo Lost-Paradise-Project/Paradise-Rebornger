@@ -39,21 +39,18 @@
       - material: Cable
         amount: 2
         doAfter: 5
-
-# Starlight-start: Maintenance Panel for Lockers
-
-  - node: Cutted
-    actions:
-    - !type:SetWiresPanelSecurity
-      wiresAccessible: false
+  - node: done
+    entity: LockerSteel
     edges:
     - to: start
       steps:
-      - tool: Prying
+      - tool: Screwing
         doAfter: 5
       conditions:
       - !type:StorageWelded
-        welded: true
+        welded: false
+      - !type:Locked
+        locked: false
       completed:
       - !type:SpawnPrototype
         prototype: SheetSteel1
@@ -63,24 +60,6 @@
         amount: 2
       - !type:EmptyAllContainers
       - !type:DeleteEntity
-
-  - node: done
-    entity: LockerSteel
-    actions:
-    - !type:SetWiresPanelSecurity
-      wiresAccessible: true
-    edges:
-    - to: Cutted
-      steps:
-      - tool: Cutting
-        doAfter: 2.5
-      conditions:
-      - !type:Locked
-        locked: false
-      - !type:WirePanel {}
-      - !type:AllWiresCut
-
-# Starlight-end: Maintenance Panel for Lockers
 
 - type: constructionGraph
   id: ClosetFreezer

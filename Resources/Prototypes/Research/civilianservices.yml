@@ -229,6 +229,7 @@
   recipeUnlocks:
   - PushHorn
   - BorgModuleAdvancedClowning
+  - ClownPlating # Corvax-Wega-add
   position: 1, 24 # LP edit
   technologyPrerequisites:
   - CritterMechs
