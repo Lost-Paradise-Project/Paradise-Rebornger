@@ -14,6 +14,7 @@
   - SolarControlComputerCircuitboard
   - SolarTrackerElectronics
   - EmitterCircuitboard
+  - ModularSuitCorePlasma # Corvax-Wega-Edit
   position: 4, 19 # LP edit
   radioChannels:
   - Engineering
@@ -26,10 +27,11 @@
     state: icon
   discipline: Industrial
   tier: 1
-  cost: 5000
+  cost: 7500 # 5000 Corvax-Wega-edit
   recipeUnlocks:
   - RadarConsoleCircuitboard
   - HandHeldMassScanner
+  - GPSSuitModule # Corvax-Wega-Add
   position: 3, 18 # LP edit
   technologyPrerequisites:
   - PowerGeneration
@@ -146,11 +148,13 @@
     state: icon
   discipline: Industrial
   tier: 2
-  cost: 7500
+  cost: 10000 # Corvax-Wega-edit 7500
   recipeUnlocks:
   - HellfireFreezerMachineCircuitBoard
   - PortableScrubberMachineCircuitBoard
   - HolofanProjector
+  - AtmosPlating # Corvax-Wega-Add
+  - TemperatureRegulatorSuitModule # Corvax-Wega-add
   technologyPrerequisites:
   - AtmosphericTech
   position: 2, 15 # LP edit
@@ -178,6 +182,7 @@
     - AdvancedMineralScannerEmpty
     - BorgModuleAdvancedMining
     - SalvageExpeditionsComputerCircuitboard
+    - StorageHoldingSuitModule # Corvax-Wega-add
   position: 0, 15 # LP edit
   technologyPrerequisites:
   - RipleyAPLU
@@ -285,6 +290,7 @@
   recipeUnlocks:
   # - PowerCellMicroreactor # LP Edit
   - PowerCellHyper
+  - ModularSuitCoreInfinite # Corvax-Wega-Add
   position: 0, 11 # LP edit
   technologyPrerequisites:
   - AdvancedPowercells

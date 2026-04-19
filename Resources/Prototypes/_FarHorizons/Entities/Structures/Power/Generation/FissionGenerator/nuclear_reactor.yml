@@ -308,7 +308,7 @@
 #region Melted Reactors
 - type: entity
   id: NuclearReactorMelted # This is more of a decoration than anything else
-  parent: [BaseStructure, GasMinerBase] # LP Edit
+  parent: BaseStructure
   suffix: "Melted"
   name: Nuclear Reactor
   description: A broken nuclear reactor vessel. It glows with heat and radiation.
@@ -338,12 +338,6 @@
     falloff: 2
     radius: 3.5
     color: "#FFAAAAFF"
-  # LP Edit Start
-  - type: GasMiner
-    spawnGas: Tritium
-    maxExternalPressure: 4000
-    spawnAmount: 1000
-  # LP Edit End
 
 - type: entity
   id: NuclearReactorSmallMelted

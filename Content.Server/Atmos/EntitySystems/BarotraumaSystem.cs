@@ -9,6 +9,7 @@ using Content.Shared.Database;
 using Content.Shared.FixedPoint;
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
+using Content.Shared._Wega.ModularSuit; // Corvax-Wega-ModularSuit
 using Robust.Shared.Containers;
 
 namespace Content.Server.Atmos.EntitySystems
@@ -60,21 +61,32 @@ namespace Content.Server.Atmos.EntitySystems
             {
                 UpdateCachedResistances(uid, barotrauma);
             }
+
+            // Corvax-Wega-ModularSuit-start
+            if (TryComp<AttachedModularSuitPartComponent>(uid, out var attached) && attached.Suit != null)
+            {
+                if (TryComp<ModularSuitComponent>(attached.Suit.Value, out var modular) && modular.Wearer != null)
+                {
+                    if (TryComp<BarotraumaComponent>(modular.Wearer.Value, out var wearerBarotrauma))
+                        UpdateCachedResistances(modular.Wearer.Value, wearerBarotrauma);
+                }
+            }
+            // Corvax-Wega-ModularSuit-end
         }
 
         private void OnPressureProtectionEquipped(EntityUid uid, PressureProtectionComponent pressureProtection, GotEquippedEvent args)
         {
-            if (TryComp<BarotraumaComponent>(args.Equipee, out var barotrauma) && barotrauma.ProtectionSlots.Contains(args.Slot))
+            if (TryComp<BarotraumaComponent>(args.EquipTarget, out var barotrauma) && barotrauma.ProtectionSlots.Contains(args.Slot))
             {
-                UpdateCachedResistances(args.Equipee, barotrauma);
+                UpdateCachedResistances(args.EquipTarget, barotrauma);
             }
         }
 
         private void OnPressureProtectionUnequipped(EntityUid uid, PressureProtectionComponent pressureProtection, GotUnequippedEvent args)
         {
-            if (TryComp<BarotraumaComponent>(args.Equipee, out var barotrauma) && barotrauma.ProtectionSlots.Contains(args.Slot))
+            if (TryComp<BarotraumaComponent>(args.EquipTarget, out var barotrauma) && barotrauma.ProtectionSlots.Contains(args.Slot))
             {
-                UpdateCachedResistances(args.Equipee, barotrauma);
+                UpdateCachedResistances(args.EquipTarget, barotrauma);
             }
         }
 

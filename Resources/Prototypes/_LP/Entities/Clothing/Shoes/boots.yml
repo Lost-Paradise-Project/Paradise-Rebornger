@@ -54,7 +54,7 @@
     sprite: _LP/Clothing/Shoes/Boots/clownPomni.rsi
 
 - type: entity
-  parent: ClothingShoesBootsJack
+  parent: [ClothingShoesBootsJack, ClothingShoesBootsSecFilled]
   id: LPPClothingShoesBootsJackSecEnginer
   components:
     - type: Sprite

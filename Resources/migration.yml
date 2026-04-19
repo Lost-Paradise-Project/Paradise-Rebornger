@@ -967,6 +967,9 @@ CrateVendingMachineRestockChangFilled: VendingMachineRestockChang
 CrateVendingMachineRestockDiscountDansFilled: VendingMachineRestockDiscountDans
 CrateVendingMachineRestockDonutFilled: VendingMachineRestockDonut
 
-# LP Edit 2026-04-12
+# 2026-04-02 FH
+Vaccinator: DiseasePandemic2300
+DiseaseDiagnoser: DiseaseDiagnoser2300
 
+# LP Edit 2026-04-12
 ComputerSalvageExpedition: null

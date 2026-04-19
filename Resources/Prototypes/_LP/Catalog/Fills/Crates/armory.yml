@@ -1,0 +1,32 @@
+- type: entity
+  parent: [ CrateWeaponSecure, BaseSecurityContraband ]
+  id: LPPCrateArmoryRiflePadefame
+  name: PA-DE-FAME crate
+  description: Contains two high-powered assault rifles with four mags. Requires Armory access to open.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: LPPWeaponRiflepadefame
+          amount: 2
+        - id: MagazineRifle
+          amount: 4
+
+- type: entity
+  parent: [ BoxCardboard, BaseSecurityContraband ]
+  id: LPPCBoxCardboardArmoryPF20
+  name: PF20 box
+  description: Contains PF20 pistol and 3 mags for it.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: LPPWeaponPistolPF20
+          amount: 1
+        - id: LPPMagazinePistolPF20lethal
+          amount: 3
+  - type: Sprite
+    layers:
+      - state: box_of_doom

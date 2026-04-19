@@ -68,6 +68,16 @@
     Digestion:
       metabolites:
         UncookedAnimalProteins: 1
+      #FarHorizons Start
+      effects:
+      - !type:CauseDisease
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Animal, Vox ]
+          inverted: true
+        disease: DiseaseFoodPoisoning
+        probability: 0.2
+      #FarHorizons End
 
 - type: reagent
   id: EggCooked
