@@ -4,3 +4,5 @@ ent-LPPBaseWeaponSniper = LPPBaseWeaponSniper
     .desc = A rooty tooty point and shooty.
 ent-LPPWeaponGoliath = Голиаф
     .desc = Specialised "Инструмент" для вскрытия шлюзов, стен, стекла и прочих неподвижных объектов. Использует .60 антиматериальные.
+ent-LPPWeaponSniperScout = Scout
+    .desc = Bolt-action magfed rifle with scope, it's pretty light and compact for it caliber. Uses .30 rifle

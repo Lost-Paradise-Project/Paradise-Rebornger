@@ -19,7 +19,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _LP/Objects/Weapons/Ammunition/Magazine/heavysniper_mag.rsi
+    sprite: _LP/Objects/Weapons/Guns/Ammunition/Magazine/heavysniper_mag.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]

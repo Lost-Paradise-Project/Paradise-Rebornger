@@ -101,7 +101,7 @@
 - type: cargoProduct
   id: LPPCargoSalvageExpeditionShasspo
   icon:
-    sprite: _LP/Objects/Weapons/Guns/Pistols/Shvartloze.rsi
+    sprite: _LP/Objects/Weapons/Guns/Pistols/Shasspo.rsi
     state: icon
   product: LPPweaponShasspo
   cost: 7000

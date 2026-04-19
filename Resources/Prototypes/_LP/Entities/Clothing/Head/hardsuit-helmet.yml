@@ -223,12 +223,6 @@
   - type: BreathMask
   - type: Sprite
     sprite: _LP/Clothing/Head/Hardsuits/hardsuitinteqhelm.rsi
-    layers:
-    - state: icon
-      map: [ "unfoldedLayer" ]
-    - state: icon-up
-      map: ["foldedLayer"]
-      visible: false
   - type: Clothing
     sprite: _LP/Clothing/Head/Hardsuits/hardsuitinteqhelm.rsi
   - type: PressureProtection
@@ -245,8 +239,15 @@
   - type: TemperatureProtection
     heatingCoefficient: 0.01
     coolingCoefficient: 0.01
-  - type: Foldable
-    canFoldInsideContainer: true
-  - type: FoldableClothing
-    foldedEquippedPrefix: up
-    foldedHeldPrefix: up
+
+- type: entity
+  parent: LPPClothingHeadHelmetHardsuitInteq
+  id: LPPClothingHeadHelmetHardsuitVeteranHelmet
+  categories: [ HideSpawnMenu ]
+  name: INT-05QS helmet
+  description: Stury helmet that offers flash protection for your eyes. It has two modes, just for style.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Hardsuits/acientsyndiehardsuithelmet.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Hardsuits/acientsyndiehardsuithelmet.rsi

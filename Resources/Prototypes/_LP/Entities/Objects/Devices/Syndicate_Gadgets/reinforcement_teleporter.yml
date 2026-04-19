@@ -1,0 +1,18 @@
+
+- type: entity
+  parent: ReinforcementRadio
+  id: LPPReinforcementRadioVeteran
+  name: syndicate veteran reinforcement radio
+  description: Call in a syndicate operative of perfect quality, instantly!
+  components:
+  - type: GhostRole
+    name: ghost-role-information-nukeop-reinforcement-name
+    description: ghost-role-information-nukeop-reinforcement-description
+    rules: ghost-role-information-nukeop-reinforcement-rules
+    mindRoles:
+    - MindRoleGhostRoleTeamAntagonist
+    raffle:
+      settings: default
+  - type: GhostRoleMobSpawner
+    prototype: MobHumanSyndicateAgentNukeops
+    selectablePrototypes: ["LPPSyndicateLoneOperativeVeteran", "LPPSyndicateOperativeVeteran"]
