@@ -92,6 +92,7 @@
           Arsenal: { color: "#dc373b" }
           Experimental: { color: "#9a6ef0" }
           CivilianServices: { color: "#7ecd48" }
+          LPPSecretDiscipline: { color: "#ffffff" } # LP Edit
 
       enum.TechDiskVisuals.Tier:
         t2_marks:
@@ -105,6 +106,12 @@
   - type: StealTarget
     stealGroup: TechnologyDisk
   - type: TechnologyDisk
+    # LP Edit Start
+    diskPricePerTier:
+      1: 1000
+      2: 1500
+      3: 2000
+    # LP Edit End
 
 # random tech disks by tier
 - type: entity

@@ -17,7 +17,6 @@ using JetBrains.Annotations;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
-using Content.Shared._StarLight.Power.Components; // Starlight-edit
 
 namespace Content.Shared.Lock;
 
@@ -109,7 +108,7 @@ public sealed class LockSystem : EntitySystem
         if (!component.Locked)
             return;
 
-        if (!args.Silent && component.PopupMessage) // Starlight-edit
+        if (!args.Silent)
             _sharedPopupSystem.PopupClient(Loc.GetString("entity-storage-component-locked-message"), uid, args.User);
 
         args.Cancelled = true;
@@ -172,7 +171,7 @@ public sealed class LockSystem : EntitySystem
         if (!Resolve(uid, ref lockComp))
             return;
 
-        if (lockComp.Locked || (lockComp.PowerNeeded && TryComp<PoweredLockerComponent>(uid, out var power) && !power.Powered)) // Starlight-edit: Powered Locker
+        if (lockComp.Locked)
             return;
 
         if (user is { Valid: true })
@@ -205,7 +204,7 @@ public sealed class LockSystem : EntitySystem
         if (!Resolve(uid, ref lockComp))
             return;
 
-        if (!lockComp.Locked || (lockComp.PowerNeeded && TryComp<PoweredLockerComponent>(uid, out var power) && !power.Powered)) // Starlight-edit: Powered Locker
+        if (!lockComp.Locked)
             return;
 
         if (user is { Valid: true })
@@ -383,7 +382,7 @@ public sealed class LockSystem : EntitySystem
         if (!_emag.CompareFlag(args.Type, EmagType.Access))
             return;
 
-        if (!component.Locked || !component.BreakOnAccessBreaker || (component.PowerNeeded && TryComp<PoweredLockerComponent>(uid, out var power) && !power.Powered)) // Starlight-edit: Powered Locker
+        if (!component.Locked || !component.BreakOnAccessBreaker)
             return;
 
         _audio.PlayPredicted(component.UnlockSound, uid, args.UserUid);
@@ -474,17 +473,17 @@ public sealed class LockSystem : EntitySystem
         if (args.Cancelled)
             return;
 
-        if (TryComp<LockComponent>(uid, out var lockComp) && lockComp.Locked != component.RequireLocked)
+        if (!TryComp<LockComponent>(uid, out var lockComp) || lockComp.Locked == component.RequireLocked)
+            return;
+
+        args.Cancel();
+
+        if (args.Silent)
+            return;
+
+        if (lockComp.Locked && component.Popup != null)
         {
-            args.Cancel();
-
-            if (args.Silent)
-                return;
-
-            if (lockComp.Locked && lockComp.PopupMessage) // Starlight-edit
-            {
-                _sharedPopupSystem.PopupClient(Loc.GetString("entity-storage-component-locked-message"), uid, args.User);
-            }
+            _sharedPopupSystem.PopupClient(Loc.GetString(component.Popup), uid, args.User);
         }
 
         _audio.PlayPredicted(component.AccessDeniedSound, uid, args.User);

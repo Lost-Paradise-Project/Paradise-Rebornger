@@ -1,0 +1,13 @@
+# We dont want to RnD have this discipline unlocked
+
+- type: techDiscipline
+  id: LPPSecretDiscipline
+  name: research-discipline-secret
+  color: "#ffffff"
+  icon:
+    sprite: Interface/Misc/research_disciplines.rsi
+    state: industrial
+  tierPrerequisites:
+    1: 0
+    2: 0.75
+    3: 0.75
