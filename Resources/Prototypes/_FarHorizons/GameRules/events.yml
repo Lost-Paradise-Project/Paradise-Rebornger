@@ -1,0 +1,20 @@
+- type: entity
+  parent: BaseGameRule
+  id: DiseaseOutbreak
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-disease-outbreak-announcement
+    startAudio:
+      path: /Audio/Announcements/outbreak7.ogg
+      params:
+        volume: -4
+    weight: 5
+    duration: 1
+    earliestStart: 15
+  - type: RandomDiseaseRule
+    disease:
+    - DiseaseCold
+    - DiseaseCold9
+    - DiseaseFlu
+    minInfections: 2
+    maxInfections: 5

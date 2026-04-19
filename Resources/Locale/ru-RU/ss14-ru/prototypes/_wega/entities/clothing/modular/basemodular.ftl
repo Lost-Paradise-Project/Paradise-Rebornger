@@ -1,0 +1,14 @@
+ent-BaseClothingModularToggler = { "" }
+    .desc = { "" }
+ent-ClothingModularControllerBase = { ent-BaseItem }
+    .desc = { ent-BaseItem.desc }
+ent-ClothingModularHelmetBase = { ent-BaseItem }
+    .desc = { ent-BaseItem.desc }
+ent-ClothingModularControllerLockedBase = { "" }
+    .desc = { "" }
+ent-ClothingModularChestPlateBase = { ent-BaseItem }
+    .desc = { ent-BaseItem.desc }
+ent-ClothingModularGauntletsBase = { ent-BaseItem }
+    .desc = { ent-BaseItem.desc }
+ent-ClothingModularBootsBase = { ent-BaseItem }
+    .desc = { ent-BaseItem.desc }

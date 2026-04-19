@@ -76,7 +76,7 @@
   id: FillCaptainHardsuit
   table: !type:AllSelector
     children:
-    - id: ClothingOuterHardsuitCap
+    - id: ClothingModularControllerMagnatePreassembled # Corvax-Wega-ModularSuits-Edit
     - id: ClothingMaskGasCaptain
     - id: JetpackCaptainFilled
     - id: OxygenTankFilled
@@ -189,6 +189,7 @@
     - id: LPPCEGorillaGlove  # LP Edit
     - id: ClothingMaskGasAtmos
     - id: ClothingOuterHardsuitEngineeringWhite
+    - id: WhiteEngineeringPlating # Corvax-Wega-ModularSuits-Edit
     - id: ClothingShoesBootsMagAdv
     - id: JetpackVoidFilled
     - id: OxygenTankFilled
@@ -245,6 +246,7 @@
     children:
     - id: ClothingMaskBreathMedical
     - id: ClothingOuterHardsuitMedical
+    - id: RescuePlating # Corvax-Wega-ModularSuits-Edit
     - id: OxygenTankFilled
 
 # No hardsuit locker
@@ -296,6 +298,7 @@
     children:
     - id: ClothingMaskBreath
     - id: ClothingOuterHardsuitRd
+    - id: RDPlating # Corvax-Wega-ModularSuits-Edit
     - id: OxygenTankFilled
 
 # No hardsuit locker
@@ -363,7 +366,7 @@
   table: !type:AllSelector
     children:
     - id: ClothingMaskGasSwat
-    - id: ClothingOuterHardsuitSecurityRed
+    - id: ClothingModularControllerSafeguardPreassembled # Corvax-Wega-ModularSuits-Edit
     - id: JetpackSecurityFilled
     - id: OxygenTankFilled
 
