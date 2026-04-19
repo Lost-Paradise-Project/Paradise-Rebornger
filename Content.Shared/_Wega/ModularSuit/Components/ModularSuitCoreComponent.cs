@@ -1,8 +1,9 @@
 using Robust.Shared.Utility;
+using Robust.Shared.GameStates;
 
 namespace Content.Shared._Wega.ModularSuit;
 
-[RegisterComponent, Access(typeof(SharedModularSuitSystem))]
+[RegisterComponent, NetworkedComponent, Access(typeof(SharedModularSuitSystem))]
 public sealed partial class ModularSuitCoreComponent : Component
 {
     [DataField]
