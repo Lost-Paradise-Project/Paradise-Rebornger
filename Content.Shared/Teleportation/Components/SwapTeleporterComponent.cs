@@ -44,7 +44,7 @@ public sealed partial class SwapTeleporterComponent : Component
     /// A minimum waiting period inbetween teleports.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan Cooldown = TimeSpan.FromMinutes(1); // LP Edit 5 -> 1
+    public TimeSpan Cooldown = TimeSpan.FromMinutes(5);
 
     /// <summary>
     /// Sound played when teleportation begins
