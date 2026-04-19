@@ -39,6 +39,7 @@
   - type: Tag
     tags:
     - Hardsuit
+    - ModNotEquipable # Corvax-Wega-ModularSuit
     - WhitelistChameleon
 
 #Engineering Hardsuit
@@ -75,6 +76,7 @@
   - type: Tag
     tags:
     - Hardsuit
+    - ModNotEquipable # Corvax-Wega-ModularSuit
     - WhitelistChameleon
 
 #Spationaut Hardsuit
@@ -108,6 +110,7 @@
   - type: Tag
     tags:
     - Hardsuit
+    - ModNotEquipable # Corvax-Wega-ModularSuit
     - WhitelistChameleon
     - HardsuitSpatio
 
@@ -145,6 +148,7 @@
   - type: Tag
     tags:
     - Hardsuit
+    - ModNotEquipable # Corvax-Wega-ModularSuit
     - WhitelistChameleon
 
 #Goliath Hardsuit
@@ -184,6 +188,7 @@
   - type: Tag
     tags:
     - Hardsuit
+    - ModNotEquipable # Corvax-Wega-ModularSuit
     - WhitelistChameleon
 
 #Maxim Hardsuit
@@ -256,6 +261,7 @@
   - type: Tag
     tags:
     - Hardsuit
+    - ModNotEquipable # Corvax-Wega-ModularSuit
     - WhitelistChameleon
 
 #Brigmedic Hardsuit
@@ -354,6 +360,7 @@
   - type: Tag
     tags:
     - Hardsuit
+    - ModNotEquipable # Corvax-Wega-ModularSuit
     - WhitelistChameleon
 
 #Chief Engineer's Hardsuit
@@ -391,6 +398,7 @@
   - type: Tag
     tags:
     - Hardsuit
+    - ModNotEquipable # Corvax-Wega-ModularSuit
     - WhitelistChameleon
   - type: ClothingGrantComponent # Goobstation - Make sure the CE doesn't get cooked by supermatter
     component:
@@ -432,6 +440,7 @@
   - type: Tag
     tags:
     - Hardsuit
+    - ModNotEquipable # Corvax-Wega-ModularSuit
     - WhitelistChameleon
 
 #Research Director's Hardsuit
@@ -472,6 +481,7 @@
     - WhitelistChameleon
     - HighRiskItem
     - Hardsuit
+    - ModNotEquipable # Corvax-Wega-ModularSuit
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitRd
   - type: StaticPrice
@@ -584,6 +594,7 @@
     tags:
     - MonkeyWearable
     - Hardsuit
+    - ModNotEquipable # Corvax-Wega-ModularSuit
     - WhitelistChameleon
     - ScurretWearable
   - type: StaticPrice
@@ -606,6 +617,7 @@
   - type: Tag
     tags:
     - Hardsuit
+    - ModNotEquipable # Corvax-Wega-ModularSuit
     - WhitelistChameleon
   - type: DNALocker # ADT edit
 
@@ -652,6 +664,7 @@
   - type: Tag
     tags:
     - Hardsuit
+    - ModNotEquipable # Corvax-Wega-ModularSuit
     - WhitelistChameleon
   - type: DNALocker # ADT edit
 
@@ -691,6 +704,7 @@
   - type: Tag
     tags:
     - Hardsuit
+    - ModNotEquipable # Corvax-Wega-ModularSuit
     - WhitelistChameleon
   - type: DNALocker # ADT edit
 
@@ -733,6 +747,7 @@
     tags:
     - MonkeyWearable
     - Hardsuit
+    - ModNotEquipable # Corvax-Wega-ModularSuit
     - WhitelistChameleon
   - type: DNALocker # ADT edit
 
@@ -770,6 +785,7 @@
   - type: Tag
     tags:
     - Hardsuit
+    - ModNotEquipable # Corvax-Wega-ModularSuit
     - WhitelistChameleon
 
 #Ling Space Suit
@@ -962,6 +978,7 @@
   - type: Tag
     tags:
     - Hardsuit
+    - ModNotEquipable # Corvax-Wega-ModularSuit
     - WhitelistChameleon
     # ADT edit start
   - type: DNALocker

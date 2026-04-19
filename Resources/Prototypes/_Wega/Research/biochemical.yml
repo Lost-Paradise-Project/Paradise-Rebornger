@@ -1,0 +1,19 @@
+- type: technology
+  id: MedicalModifier
+  name: research-technology-medical-modifier
+  icon:
+    sprite: _Wega/Clothing/Modular/Medical/control.rsi
+    state: icon
+  discipline: Experimental
+  tier: 1
+  cost: 10000
+  recipeUnlocks:
+  - DefibrillatorSuitModule
+  - InjectorSuitModule
+  - MedicalPlating
+  - SolutionScannerSuitModule
+  position: 3, 31 # LP edit
+  technologyPrerequisites:
+  - LPPMiningHardsuits # LP Edit
+  radioChannels:
+  - Medical

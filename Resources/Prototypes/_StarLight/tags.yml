@@ -1,2 +1,8 @@
 - type: Tag
   id: PlumbingDuct
+
+- type: Tag
+  id: SecuredLocker
+
+- type: Tag
+  id: Locker
