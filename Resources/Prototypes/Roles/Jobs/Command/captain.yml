@@ -38,7 +38,6 @@
   accessGroups:
   - AllAccess
   - Cargo # LP Edit
-  - LPPCargoConsole # LP Edit
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
