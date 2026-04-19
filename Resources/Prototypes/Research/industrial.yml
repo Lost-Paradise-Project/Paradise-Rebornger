@@ -169,7 +169,7 @@
   tier: 2
   cost: 12500
   recipeUnlocks:
-    # - OreBagOfHolding# LP Edit
+    # - OreBagOfHolding # LP Edit
     - MiningDrillDiamond
     - AdvancedMineralScannerEmpty
     - BorgModuleAdvancedMining

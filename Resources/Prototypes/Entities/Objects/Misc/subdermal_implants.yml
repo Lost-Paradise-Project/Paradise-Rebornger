@@ -116,7 +116,7 @@
         - Hands # no use giving a mouse a storage implant, but a monkey is another story...
     - type: Storage
       grid:
-      - 0,0,2,2
+      - 0,0,2,2 # LP Edit
     - type: ContainerContainer
       containers:
         storagebase: !type:Container

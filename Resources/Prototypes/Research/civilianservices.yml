@@ -326,6 +326,6 @@
   - MiniSyringe
   position: 8, 29 # LP edit
   technologyPrerequisites:
-  - BluespaceChemistry # LP Edit
+  - BluespaceChemistry
   radioChannels:
   - Service
