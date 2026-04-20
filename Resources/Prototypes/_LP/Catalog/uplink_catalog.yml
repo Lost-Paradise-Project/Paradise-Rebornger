@@ -6,8 +6,191 @@
   productEntity: LPPClothingBackpackDuffelSyndicateFilledOlymp
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 20
+    Telecrystal: 15
   cost:
-    Telecrystal: 30
+    Telecrystal: 25
   categories:
   - UplinkWeaponry
+
+- type: listing
+  id: LPPUplinkWeaponEnergyBroadSword
+  name: uplink-weapon-energybroadsword-name
+  description: uplink-weapon-energybroadsword-desc
+  icon: { sprite:  _LP/Objects/Weapons/Melee/e_swordbig.rsi, state: icon}
+  productEntity: LPPEnergyBroadsword
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 5
+  cost:
+    Telecrystal: 11
+  categories:
+  - UplinkWeaponry
+
+- type: listing
+  id: LPPUplinkWeaponEnergyScythe
+  name: uplink-weapon-energyscythe-name
+  description: uplink-weapon-energyscythe-desc
+  icon: { sprite:  _LP/Objects/Weapons/Melee/e_scythe.rsi, state: icon}
+  productEntity: LPPEnergyscythe
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 15
+  cost:
+    Telecrystal: 22
+  categories:
+  - UplinkWeaponry
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+
+- type: listing
+  id: LPPUplinkWeaponEnergyAxe
+  name: uplink-weapon-energyaxe-name
+  description: uplink-weapon-energyaxe-desc
+  icon: { sprite: _LP/Objects/Weapons/Melee/e_axe.rsi, state: icon}
+  productEntity: LPPEnergyAxe
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 10
+  cost:
+    Telecrystal: 18
+  categories:
+  - UplinkWeaponry
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+
+- type: listing
+  id: LPPUplinkWeaponEnergySwordDouble
+  name: uplink-weapon-energysworddouble-name
+  description: uplink-weapon-energysworddouble-desc
+  icon: { sprite:  Objects/Weapons/Melee/e_sword_double.rsi, state: icon}
+  productEntity: EnergySwordDouble
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 15
+  cost:
+    Telecrystal: 20
+  categories:
+  - UplinkWeaponry
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+
+- type: listing
+  id: LPPUplinkBundleBoomStick
+  name: uplink-bundle-boomstick-name
+  description: uplink-bundle-boomstick-desc
+  icon: { sprite:  _LP/Objects/Weapons/Guns/Shotguns/Boomstick.rsi, state: icon}
+  productEntity: LPPClothingBackpackDuffelSyndicateFilledBoomstick
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 14
+  cost:
+    Telecrystal: 20
+  categories:
+  - UplinkWeaponry
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+
+- type: listing
+  id: LPPUplinkWeaponRevolverOC38
+  name: uplink-weapon-oc38-name
+  description: uplink-weapon-oc38-desc
+  icon: { sprite:  _LP/Objects/Weapons/Guns/Revolvers/oc-38.rsi, state: icon}
+  productEntity: LPPWeaponRevolverOC38
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 3
+  cost:
+    Telecrystal: 5
+  categories:
+  - UplinkWeaponry
+
+- type: listing
+  id: LPPUplinkWeaponRevolverPythonAP
+  name: ent-ClothingBackpackDuffelSyndicateFilledRevolver
+  description: uplink-revolver-python-desc
+  icon: { sprite:  Objects/Weapons/Guns/Revolvers/python.rsi, state: icon}
+  productEntity: ClothingBackpackDuffelSyndicateFilledRevolver
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 11
+  cost:
+    Telecrystal: 18
+  categories:
+  - UplinkWeaponry
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+
+- type: listing
+  id: LPPUplinkWeaponNailGun
+  name: uplink-weapon-naigun-name
+  description: uplink-weapon-naigun-desc
+  icon: { sprite:  _LP/Objects/Weapons/Guns/Pistols/Nailgun.rsi, state: icon}
+  productEntity: LPPWeaponNailGun
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 6
+  cost:
+    Telecrystal: 10
+  categories:
+  - UplinkWeaponry
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink
+
+- type: listing
+  id: LPPUplinkWeaponM1A
+  name: uplink-weapon-m1a-name
+  description: uplink-weapon-m1a-desc
+  icon: { sprite:  _LP/Objects/Weapons/Guns/Rifles/m1a.rsi, state: icon}
+  productEntity: LPPWeaponRifleM1A
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 1
+  cost:
+    Telecrystal: 4
+  categories:
+  - UplinkWeaponry
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 2
+
+- type: listing
+  id: LPPUplinkMagazineLightRifle
+  name: uplink-weapon-magazinelightrifle-name
+  description: uplink-weapon-magazinelightrifle-desc
+  icon: { sprite:  Objects/Weapons/Guns/Ammunition/Magazine/LightRifle/light_rifle_mag.rsi, state: base}
+  productEntity: MagazineLightRifle
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 1
+  cost:
+    Telecrystal: 1
+  categories:
+  - UplinkAmmo

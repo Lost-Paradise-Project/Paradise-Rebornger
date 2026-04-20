@@ -208,6 +208,12 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
         foreach (var tech in List)
         {
             var proto = _prototype.Index<TechnologyPrototype>(tech.Key);
+
+            // LP Edit Start
+            if (proto.Hidden)
+                continue;
+            // LP Edit End
+
             var position = DefaultPosition + (GridSize * proto.Position.X, GridSize * proto.Position.Y);
 
             if (!boundsSet)
@@ -242,6 +248,12 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
         foreach (var tech in List)
         {
             var proto = _prototype.Index<TechnologyPrototype>(tech.Key);
+
+            // LP Edit Start
+            if (proto.Hidden)
+                continue;
+            // LP Edit End
+
             var control = new FancyResearchConsoleItem(proto, _sprite, tech.Value);
 
             DragContainer.AddChild(control);

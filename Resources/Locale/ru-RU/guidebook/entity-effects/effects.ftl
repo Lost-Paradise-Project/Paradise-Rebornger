@@ -323,18 +323,6 @@ entity-effect-guidebook-adjust-temperature =
         *[-1] у тела, в котором находится
     }
 
-entity-effect-guidebook-chem-cause-disease =
-    { $chance ->
-        [1] Вызывает
-        *[other] вызывают
-    } болезнь { $disease }
-
-entity-effect-guidebook-chem-cause-random-disease =
-    { $chance ->
-        [1] Вызывает
-        *[other] вызывают
-    } болезни: { $diseases }
-
 entity-effect-guidebook-jittering =
     { $chance ->
         [1] Вызывает
@@ -351,7 +339,7 @@ entity-effect-guidebook-cure-disease =
     { $chance ->
         [1] Излечивает
         *[other] излечивают
-    } болезни
+    } болезнь { $disease }
 
 entity-effect-guidebook-eye-damage =
     { $chance ->
@@ -568,6 +556,12 @@ entity-effect-guidebook-plant-phalanximine =
         [1] Восстанавливает
         *[other] восстанавливают
     } жизнеспособность растения, утраченную из-за мутации
+
+entity-effect-guidebook-plant-remove-kudzu =
+    { $chance ->
+        [1] Удаляет
+        *[other] удаляет
+    } кудзу из растения
 
 entity-effect-guidebook-plant-diethylamine =
     { $chance ->

@@ -1,0 +1,12 @@
+- type: entity
+  parent: BasePlating
+  id: LPPMagnatePlating
+  name: magnate plating
+  description: "Advanced command plating. Shock, fire, and acid-proof with high capacity and speed."
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Specific/Robotics/modular_suits.rsi
+    state: magnate-plating
+  - type: Tag
+    tags:
+    - MagnatePlating

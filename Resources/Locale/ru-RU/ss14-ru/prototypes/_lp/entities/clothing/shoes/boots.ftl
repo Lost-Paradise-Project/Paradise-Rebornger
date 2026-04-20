@@ -10,3 +10,4 @@ ent-LPPClothingShoesClownPomni = ботинки шута
     .desc = Такие приятные ботинки с мягкой подкладкой внутри, что заставляет вас чувствовать, что ваши ноги закованы в них...
 ent-LPPClothingShoesBootsJackSecEnginer = { ent-ClothingShoesBootsJack }
     .desc = { ent-ClothingShoesBootsJack.desc }
+    .suffix = { ent-ClothingShoesBootsSecFilled.suffix }

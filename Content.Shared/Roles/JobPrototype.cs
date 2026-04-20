@@ -85,6 +85,12 @@ namespace Content.Shared.Roles
         public bool CanBeAntag { get; private set; } = true;
 
         /// <summary>
+        ///     STARLIGHT: Whether to bypass EOR pacification.
+        /// </summary>
+        [DataField]
+        public bool BypassEorPacification { get; private set; }
+
+        /// <summary>
         ///     The "weight" or importance of this job. If this number is large, the job system will assign this job
         ///     before assigning other jobs.
         /// </summary>

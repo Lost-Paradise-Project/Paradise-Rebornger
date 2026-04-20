@@ -15,6 +15,7 @@
   - Salvage
   - Maintenance
   - External
+  - LPPCargoConsole # LP Edit
 
 - type: startingGear
   id: SalvageSpecialistGear

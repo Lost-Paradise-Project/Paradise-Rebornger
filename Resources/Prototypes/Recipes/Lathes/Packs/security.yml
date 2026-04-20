@@ -52,6 +52,7 @@
   - SpeedLoaderMagnum
   - SpeedLoaderMagnumEmpty
   - LPPMagazineShotgunLeverRifle # LP Edit
+  - LPPMagazinePistolPF20lethal #LP edit
 
 - type: latheRecipePack
   id: SecurityWeaponsStatic
@@ -60,7 +61,8 @@
   - Stunbaton
   - CombatKnife
   - RiotShield
-
+  - LPPWeaponRifleM14 #LP Edit
+  - LPPWeaponPF20kit #LP edit
 ## Dynamic recipes
 
 - type: latheRecipePack
