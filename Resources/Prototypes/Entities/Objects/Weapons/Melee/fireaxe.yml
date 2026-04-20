@@ -68,3 +68,4 @@
     quickEquip: false
     slots:
     - back
+    - suitStorage #LP edit

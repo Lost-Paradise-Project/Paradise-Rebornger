@@ -286,11 +286,11 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.35
+        Blunt: 0.45
         Slash: 0.65
         Piercing: 0.75
         Caustic: 0.5
-        Heat: 1.15
+        Heat: 0.8
         Radiation: 0.5
         Shock: 0.5
   - type: ClothingSpeedModifier
@@ -306,13 +306,7 @@
   - type: Storage
     maxItemSize: Normal
     grid:
-    - 0,0,9,3
-    quickInsert: true
-    areaInsert: true
-    whitelist:
-      tags:
-        - ArtifactFragment
-        - Ore
+    - 0,0,2,2
   - type: Dumpable
   - type: ItemSlots
     slots:
@@ -438,8 +432,8 @@
         Radiation: 0.5
         Shock: 0.5
   - type: ClothingSpeedModifier
-    walkModifier: 0.75
-    sprintModifier: 0.75
+    walkModifier: 0.8
+    sprintModifier: 0.8
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: LPPClothingHeadHelmetHardsuitMiningMutant

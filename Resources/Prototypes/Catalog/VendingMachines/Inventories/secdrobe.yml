@@ -28,6 +28,13 @@
     ClothingShoesBootsCombat: 1
     ClothingShoesBootsWinterSec: 2
     ClothingHeadHelmetJustice: 1
+#LP edit start
+    LPPClothingMaskPGWrittenOff: 3
+    LPPClothingBalaclavawide: 3
+    LPPClothingHeadSecurityHatCamo: 3
+    LPPClothingUniformJumpsuitSecCamo: 3
+    LPPClothingNeckShemagRed: 3
+#LP edit end
   contrabandInventory:
     ClothingMaskClownSecurity: 1
     ClothingMaskMimeSecurity: 1

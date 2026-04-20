@@ -87,9 +87,9 @@
         variation: 0.250
     activatedDamage:
         types:
-            Slash: 8
-            Heat: 8
-            Structural: 15
+            Slash: 6.5
+            Heat: 6.5
+            Structural: 10
   - type: ItemToggleActiveSound
     activeSound:
       path: /Audio/Weapons/ebladehum.ogg
@@ -145,6 +145,7 @@
       path: /Audio/Weapons/eblade1.ogg
       params:
         variation: 0.250
+        volume: 5
     activatedSoundOnHitNoDamage:
       path: /Audio/Weapons/eblade1.ogg
       params:

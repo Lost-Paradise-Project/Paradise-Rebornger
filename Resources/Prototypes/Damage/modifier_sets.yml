@@ -201,8 +201,8 @@
   coefficients:
     Blunt: 0.7
     Slash: 0.8
-    Heat: 1.5
-    Shock: 1.2
+    Heat: 1.15 #LP edit
+    Shock: 1.15 #LP edit
 
 - type: damageModifierSet
   id: Moth # Slightly worse at everything but cold
