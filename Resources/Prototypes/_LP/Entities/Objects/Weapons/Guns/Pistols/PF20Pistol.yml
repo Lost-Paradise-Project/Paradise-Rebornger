@@ -26,8 +26,8 @@
     - suitStorage
     - Belt
   - type: Gun
-    fireRate: 4
-    minAngle: 1
+    fireRate: 3.5
+    minAngle: 3
     maxAngle: 15
     selectedMode: SemiAuto
     availableModes:
