@@ -4,7 +4,7 @@ meta:
   engineVersion: 275.2.0
   forkId: ""
   forkVersion: ""
-  time: 04/20/2026 17:00:42
+  time: 04/20/2026 21:06:49
   entityCount: 38376
 maps:
 - 1
@@ -9085,54 +9085,40 @@ entities:
             4678: 16,17
             4679: 13,25
         - node:
-            cleanable: True
-            zIndex: 100
             color: '#FFFFFFFF'
             id: SpaceStationSign1
           decals:
-            4286: -3,11
+            7662: -3,11
         - node:
-            cleanable: True
-            zIndex: 100
             color: '#FFFFFFFF'
             id: SpaceStationSign2
           decals:
-            4287: -2,11
+            7663: -2,11
         - node:
-            cleanable: True
-            zIndex: 100
             color: '#FFFFFFFF'
             id: SpaceStationSign3
           decals:
-            4289: -1,11
+            7664: -1,11
         - node:
-            cleanable: True
-            zIndex: 100
             color: '#FFFFFFFF'
             id: SpaceStationSign4
           decals:
-            4291: 0,11
+            7665: 0,11
         - node:
-            cleanable: True
-            zIndex: 100
             color: '#FFFFFFFF'
             id: SpaceStationSign5
           decals:
-            4293: 1,11
+            7666: 1,11
         - node:
-            cleanable: True
-            zIndex: 100
             color: '#FFFFFFFF'
             id: SpaceStationSign6
           decals:
-            4294: 2,11
+            7667: 2,11
         - node:
-            cleanable: True
-            zIndex: 100
             color: '#FFFFFFFF'
             id: SpaceStationSign7
           decals:
-            4296: 3,11
+            7668: 3,11
         - node:
             color: '#DE3A3AFF'
             id: StandClear
@@ -12396,11 +12382,11 @@ entities:
           -4,-16:
             2: 2
             1: 3840
-            4: 8
-          -5,-16:
             3: 8
+          -5,-16:
+            4: 8
             1: 3840
-            4: 2
+            3: 2
           -4,-15:
             0: 65535
           -5,-15:
@@ -12413,17 +12399,17 @@ entities:
             0: 3855
           -4,-17:
             2: 8704
-            4: 34816
+            3: 34816
             1: 15
           -3,-16:
-            4: 1
+            3: 1
             1: 3840
           -3,-15:
             0: 56797
           -3,-14:
             0: 57117
           -3,-17:
-            4: 4352
+            3: 4352
             1: 15
           -2,-16:
             1: 3874
@@ -12550,7 +12536,7 @@ entities:
             1: 16383
           -9,-16:
             1: 255
-            4: 28672
+            3: 28672
           -8,-15:
             1: 13107
             0: 34952
@@ -12559,36 +12545,36 @@ entities:
             0: 34952
           -9,-15:
             1: 61440
-            4: 119
+            3: 119
           -9,-13:
             1: 61680
           -8,-17:
             1: 61423
           -7,-16:
             1: 3840
-            4: 10
+            3: 10
           -7,-15:
             0: 65535
           -7,-14:
             0: 65535
           -7,-17:
-            4: 43520
+            3: 43520
             1: 15
           -6,-16:
             1: 3840
             6: 2
-            4: 8
+            3: 8
           -6,-15:
             0: 65535
           -6,-14:
             0: 65535
           -6,-17:
             6: 8704
-            4: 34816
+            3: 34816
             1: 15
           -5,-17:
-            4: 8704
-            3: 34816
+            3: 8704
+            4: 34816
             1: 15
           -8,0:
             0: 62702
@@ -12948,19 +12934,19 @@ entities:
             1: 4383
           -10,-16:
             1: 13311
-            4: 32768
+            3: 32768
           -10,-15:
             1: 62259
-            4: 136
+            3: 136
           -10,-13:
             1: 61683
           -10,-17:
             1: 4383
           -10,-14:
             1: 13107
-            4: 34944
+            3: 34944
           -9,-14:
-            4: 30576
+            3: 30576
           -16,-15:
             1: 4592
           -16,-14:
@@ -15021,11 +15007,11 @@ entities:
             Nitrogen: 6666.982
         - volume: 2500
           temperature: 293.15
-          moles:
-            Oxygen: 6666.982
+          moles: {}
         - volume: 2500
           temperature: 293.15
-          moles: {}
+          moles:
+            Oxygen: 6666.982
         - volume: 2500
           temperature: 5000
           moles:
@@ -97642,12 +97628,19 @@ entities:
     - type: Transform
       pos: 2.5482569,-31.389421
       parent: 2
-- proto: DiseaseDiagnoser
+- proto: DiseaseDiagnoser2300
   entities:
   - uid: 13302
     components:
     - type: Transform
       pos: 24.5,-31.5
+      parent: 2
+- proto: DiseasePandemic2300
+  entities:
+  - uid: 30040
+    components:
+    - type: Transform
+      pos: 25.5,-31.5
       parent: 2
 - proto: DisposalBend
   entities:
@@ -115597,7 +115590,7 @@ entities:
       pos: 70.5,-9.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -413155.16
+      secondsUntilStateChange: -413255.06
       state: Closing
     - type: DeviceNetwork
       deviceLists:
@@ -222593,13 +222586,6 @@ entities:
     components:
     - type: Transform
       pos: 42.52035,34.54785
-      parent: 2
-- proto: Vaccinator
-  entities:
-  - uid: 30040
-    components:
-    - type: Transform
-      pos: 25.5,-31.5
       parent: 2
 - proto: VariantCubeBox
   entities:
