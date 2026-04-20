@@ -49,3 +49,24 @@
     graph: Blindfold
     node: blindfold
   - type: FlashImmunity
+
+- type: entity
+  parent: [ClothingEyesBase, ShowSecurityIcons, ShowMedicalIcons, BaseSyndicateContraband]
+  id: LPPClothingEyesGlassesContractor
+  name: Contractor glasses
+  description: Glasses, that provides protection from flashes and secure wearers eyes from wielding.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Eyes/LoneMercenaryhudglasses.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Eyes/LoneMercenaryhudglasses.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
+  - type: ShowSyndicateIcons
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95

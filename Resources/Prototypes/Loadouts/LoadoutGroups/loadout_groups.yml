@@ -30,6 +30,7 @@
   - Cane
   - TowelColorWhite
   - TapeRecorder # DeltaV
+  - LPPCheapSunglasses # LP Edit
 
 - type: loadoutGroup
   id: Glasses
@@ -1293,6 +1294,7 @@
   - ArmorVestSec # Corvax
   - ArmorVest
   - ArmorVestSlim
+  - SecurityOfficerOvercoat # Corvax
   - SecurityOfficerWintercoat
 
 - type: loadoutGroup

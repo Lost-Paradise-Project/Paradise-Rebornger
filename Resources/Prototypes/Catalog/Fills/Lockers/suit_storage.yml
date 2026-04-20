@@ -183,6 +183,7 @@
     children:
     - id: OxygenTankFilled
     - id: ClothingOuterHardsuitSecurity
+    - id: SecurityPlating # Corvax-Wega-ModularSuits-Edit
     - id: ClothingMaskBreath
 
 #CE's hardsuit

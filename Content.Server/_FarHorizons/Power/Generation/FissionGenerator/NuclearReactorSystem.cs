@@ -46,6 +46,7 @@ using Robust.Shared.Timing;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Numerics;
+using Content.Server.Radiation.Systems;
 using Content.Shared.Atmos.Components;
 
 namespace Content.Server._FarHorizons.Power.Generation.FissionGenerator;
@@ -57,6 +58,7 @@ namespace Content.Server._FarHorizons.Power.Generation.FissionGenerator;
 public sealed class NuclearReactorSystem : EntitySystem
 {
     // The great wall of dependencies
+    [Dependency] private readonly RadiationSystem _radiation = default!;
     [Dependency] private readonly AlertLevelSystem _alertLevel = default!;
     [Dependency] private readonly AmbientSoundSystem _ambientSoundSystem = default!;
     [Dependency] private readonly AtmosphereSystem _atmosphereSystem = default!;
@@ -433,7 +435,12 @@ public sealed class NuclearReactorSystem : EntitySystem
         var comp = EnsureComp<RadiationSourceComponent>(uid);
 
         // Linear scaling up to maximum, logarithmic beyond that
-        comp.Intensity = (float)Math.Max(reactor.RadiationLevel <= reactor.MaximumRadiation ? reactor.RadiationLevel : reactor.MaximumRadiation + Math.Log(reactor.RadiationLevel - reactor.MaximumRadiation + 1), reactor.Melted ? reactor.MeltdownRadiation : 0);
+        _radiation.SetIntensity(reactor.Owner, (float)Math.Max(
+            reactor.RadiationLevel <= reactor.MaximumRadiation
+                ? reactor.RadiationLevel
+                : reactor.MaximumRadiation + Math.Log(reactor.RadiationLevel - reactor.MaximumRadiation + 1),
+            reactor.Melted ? reactor.MeltdownRadiation : 0
+        ));
         reactor.RadiationLevel /= Math.Max(reactor.RadiationStability, 1);
     }
 

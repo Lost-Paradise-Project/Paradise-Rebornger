@@ -76,7 +76,7 @@
   idPrefix: CC
   entries:
   - name: bounty-item-carp
-    amount: 1
+    amount: 3 # LP Edit 1 -> 3
     whitelist:
       tags:
       - Carp
@@ -98,7 +98,7 @@
   description: bounty-description-crayon
   entries:
   - name: bounty-item-crayon
-    amount: 24
+    amount: 15 # LP Edit 24 -> 15
     whitelist:
       tags:
       - Crayon

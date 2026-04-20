@@ -13,7 +13,7 @@
     state: icon
   entries:
   - name: bounty-item-tooth-space-carp
-    amount: 10
+    amount: 7 # LP Edit 10 -> 7
     whitelist:
       tags:
       - ToothSpaceCarp
@@ -28,7 +28,7 @@
     state: metal-1
   entries:
   - name: bounty-item-scrap
-    amount: 10
+    amount: 7 # LP Edit 10 -> 7
     whitelist:
       tags:
       - SalvageScrap
@@ -43,7 +43,7 @@
     state: gold
   entries:
   - name: bounty-item-ore-gold
-    amount: 45
+    amount: 30 # LP Edit 45 -> 30
     whitelist:
       tags:
       - OreGold
@@ -58,7 +58,7 @@
     state: silver
   entries:
   - name: bounty-item-ore-silver
-    amount: 45
+    amount: 30 # LP Edit 45 -> 30
     whitelist:
       tags:
       - OreSilver
