@@ -204,7 +204,7 @@
     sprite: _Wega/Clothing/Modular/Prototype/helmet.rsi
     state: icon-sealed
   product: ClothingModularControllerPrototypePreassembled
-  cost: 30000
+  cost: 20000
   category: cargoproduct-category-name-cargo
   group: SalvageJobReward2
 
@@ -214,7 +214,7 @@
     sprite: _Wega/Clothing/Modular/Asteroid/helmet.rsi
     state: icon-sealed
   product: ClothingModularControllerAsteroidPreassembled
-  cost: 40000
+  cost: 35000
   category: cargoproduct-category-name-cargo
   group: SalvageJobReward3
 
