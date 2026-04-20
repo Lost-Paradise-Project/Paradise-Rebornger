@@ -201,7 +201,7 @@
 - type: cargoProduct
   id: LPPCargoSalvageExpeditionModularControllerPrototype
   icon:
-    sprite: _Wega\Clothing\Modular\Prototype\helmet.rsi
+    sprite: _Wega/Clothing/Modular/Prototype/helmet.rsi
     state: icon-sealed
   product: ClothingModularControllerPrototypePreassembled
   cost: 30000
@@ -211,7 +211,7 @@
 - type: cargoProduct
   id: LPPCargoSalvageExpeditionModularControllerAsteroid
   icon:
-    sprite: _Wega\Clothing\Modular\Asteroid\helmet.rsi
+    sprite: _Wega/Clothing/Modular/Asteroid/helmet.rsi
     state: icon-sealed
   product: ClothingModularControllerAsteroidPreassembled
   cost: 40000
@@ -221,7 +221,7 @@
 - type: cargoProduct
   id: LPPCargoSalvageModularControllerMining
   icon:
-    sprite: _Wega\Clothing\Modular\Mining\helmet.rsi
+    sprite: _Wega/Clothing/Modular/Mining/helmet.rsi
     state: icon-sealed
   product: ClothingModularControllerMiningPreassembled
   cost: 50000
