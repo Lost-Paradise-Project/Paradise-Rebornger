@@ -14,6 +14,7 @@
   access:
   - Cargo
   - Maintenance
+  - LPPCargoConsole # LP Edit
   extendedAccess:
   - Salvage
   special:

@@ -166,6 +166,7 @@
   table: !type:AllSelector
     children:
     - id: ClothingOuterHardsuitAtmos
+    - id: AtmosPlating # Corvax-Wega-ModularSuits-Edit
     - id: OxygenTankFilled
     - id: ClothingMaskBreath
 

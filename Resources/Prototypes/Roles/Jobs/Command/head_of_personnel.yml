@@ -27,7 +27,7 @@
       - Muted
     #LP edit start
     - !type:AgeRequirement
-      requiredAge: 26
+      requiredAge: 20
     #LP edit end
   weight: 20
   startingGear: HoPGear

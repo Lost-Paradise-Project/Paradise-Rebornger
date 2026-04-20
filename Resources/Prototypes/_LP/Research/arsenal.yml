@@ -126,6 +126,7 @@
   - LPPClothingOuterHardsuitEngineeringWhite
   - LPPClothingOuterHardsuitSecurityRed
   - LPPClothingOuterHardsuitCap
+  - LPPClothingOuterHardsuitCombatAlternative
   technologyPrerequisites:
   - LPPAdvancedMiningHardsuits
   - LPPEngineeringHardsuits

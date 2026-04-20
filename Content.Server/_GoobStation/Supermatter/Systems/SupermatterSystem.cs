@@ -15,6 +15,7 @@ using Content.Shared.Kitchen.Components; // LP Edit
 using Content.Shared._EE.Supermatter.Monitor;
 using Content.Server.Lightning;
 using Content.Server.Popups;
+using Content.Server.Radiation.Systems;
 using Content.Server.Station.Systems;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Atmos;
@@ -49,6 +50,7 @@ public sealed class SupermatterSystem : SharedSupermatterSystem
     [Dependency] private readonly ExplosionSystem _explosion = default!;
     [Dependency] private readonly TransformSystem _xform = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
+    [Dependency] private readonly RadiationSystem _radiation = default!;
     [Dependency] private readonly IGameTiming _gameTiming = default!;
     [Dependency] private readonly AmbientSoundSystem _ambient = default!;
     [Dependency] private readonly LightningSystem _lightning = default!;
@@ -233,7 +235,7 @@ public sealed class SupermatterSystem : SharedSupermatterSystem
         if (TryComp<RadiationSourceComponent>(uid, out var rad))
         {
             var transmittedpower = sm.Power * Math.Max(0, 1f + transmissionBonus / 10f);
-            rad.Intensity = transmittedpower * sm.RadiationOutputFactor;
+            _radiation.SetIntensity(uid, transmittedpower * sm.RadiationOutputFactor);
         }
 
         //Power * 0.55 * a value between 1 and 0.8

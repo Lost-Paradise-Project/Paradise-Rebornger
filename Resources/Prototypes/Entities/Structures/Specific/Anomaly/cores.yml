@@ -63,6 +63,13 @@
     energy: 10
     color: "#1e070e"
     castShadows: false
+  # Corvax-Wega-Add-start
+  - type: Tag
+    tags:
+    - ForceableFollow
+    - AnomalyCore
+    - GravityCore
+  # Corvax-Wega-Add-end
 
 - type: entity
   parent: BaseAnomalyCore
@@ -125,8 +132,10 @@
   # LP Edit Start
   - type: Tag
     tags:
+      - ForceableFollow
       - BluespaceAnomaly
       - AnomalyCore
+      - BluespaceCore
   # LP Edit End
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/bluespace_core.rsi
@@ -246,6 +255,13 @@
     energy: 10
     color: "#1e070e"
     castShadows: false
+  # Corvax-Wega-Add-start
+  - type: Tag
+    tags:
+    - ForceableFollow
+    - AnomalyCore
+    - GravityCore
+  # Corvax-Wega-Add-end
 
 - type: entity
   parent: BaseAnomalyInertCore
@@ -308,7 +324,9 @@
   # LP Edit Start
   - type: Tag
     tags:
+      - ForceableFollow
       - BluespaceAnomaly
+      - AnomalyCore
       - AnomalyCore
   # LP Edit End
   - type: Sprite

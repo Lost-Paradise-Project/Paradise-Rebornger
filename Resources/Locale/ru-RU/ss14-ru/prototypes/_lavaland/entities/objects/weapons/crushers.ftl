@@ -1,0 +1,10 @@
+ent-LavalandWeaponKineticBase = { ent-BaseItem }
+    .desc = { ent-BaseItem.desc }
+ent-LavalandWeaponKineticSpear = копьё-крушитель
+    .desc = Оружие для дистанции, отлично подойдёт тем, кто не хочет получить по лицу.
+ent-LavalandWeaponKineticHammer = молот-крушитель
+    .desc = Мощное двуручное оружие, ломает хребет на раз-два.
+ent-LavalandWeaponKineticClaws = когти-крушители
+    .desc = Когти-крушители это отличное компактное оружие, которое можно носить вместо перчаток когда хотите просто покрамсать противников.
+ent-LavalandWeaponKineticMachete = мачете-крушитель
+    .desc = Мини-крушитель, удобно сидит в одной руке.

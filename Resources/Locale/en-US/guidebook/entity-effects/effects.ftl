@@ -269,18 +269,6 @@ entity-effect-guidebook-adjust-temperature =
             *[-1] from
         } the body it's in
 
-entity-effect-guidebook-chem-cause-disease =
-    { $chance ->
-        [1] Causes
-        *[other] cause
-    } the disease { $disease }
-
-entity-effect-guidebook-chem-cause-random-disease =
-    { $chance ->
-        [1] Causes
-        *[other] cause
-    } the diseases { $diseases }
-
 entity-effect-guidebook-jittering =
     { $chance ->
         [1] Causes
@@ -297,7 +285,7 @@ entity-effect-guidebook-cure-disease =
     { $chance ->
         [1] Cures
         *[other] cure
-    } diseases
+    } the disease { $disease }
 
 entity-effect-guidebook-eye-damage =
     { $chance ->
@@ -494,6 +482,12 @@ entity-effect-guidebook-plant-phalanximine =
         [1] Restores
         *[other] restore
     } viability to a plant rendered nonviable by a mutation
+
+entity-effect-guidebook-plant-remove-kudzu =
+    { $chance ->
+        [1] Removes
+        *[other] remove
+    } kudzu weed growth from a plant
 
 entity-effect-guidebook-plant-diethylamine =
     { $chance ->

@@ -168,6 +168,9 @@
   cost: 5000
   recipeUnlocks:
   - ClothingBackpackElectropack
+  - SecurityPlating
+  - ArmorBossterSuitModule
+  - EMPShieldSuitModule
   position: 5, 15 # LP edit
   technologyPrerequisites:
   - AdvancedRiotControl

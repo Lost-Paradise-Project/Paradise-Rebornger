@@ -69,3 +69,257 @@
     containers:
       firing_pin:
       - FiringPin
+
+- type: entity
+  name: PA-DE-FAME
+  parent: [BaseWeaponRifle, BaseSecurityContraband]
+  id: LPPWeaponRiflepadefame
+  description: Unbullpup your bullpup. Security variant of LE-MAS rifle. It's a bit bigger than the original one but it's also fires in hyperburst. Uses .20 ammo.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Guns/Rifles/le-massiv.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _LP/Objects/Weapons/Guns/Rifles/le-massiv.rsi
+  - type: Gun
+    fireRate: 15
+    burstFireRate: 15
+    selectedMode: Burst
+    availableModes:
+      - Burst
+    shotsPerBurst: 2
+    burstCooldown: 1.1
+    soundGunshot:
+      path: /Audio/_LP/Weapons/Guns/Gunshots/M4A1_Shot.ogg
+  - type: Item
+    size: Huge
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        startingItem: MagazineRifle
+        insertSound: /Audio/_LP/Weapons/Guns/MagIn/M4A1_Magin.ogg
+        ejectSound: /Audio/_LP/Weapons/Guns/MagOut/M4A1_Magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifle
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeRifle
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeRifle
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+      firing_pin: !type:Container # Starlight
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: FiringPinHolder
+    supportedPins: [ Rifle, GunUpgrade ]
+  - type: ContainerFill
+    containers:
+      firing_pin:
+      - FiringPin
+
+- type: entity
+  name: 6P168
+  parent: [BaseWeaponRifle, BaseSyndicateContraband]
+  id: LPPWeaponRifleAek
+  description: Second iteration of USSP experimental rifle. Famously used by USSP GRU specops . It can use .20 or .30 ammo and mags, also it has hyperburst firemode.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Guns/Rifles/aek.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _LP/Objects/Weapons/Guns/Rifles/aek.rsi
+  - type: Gun
+    fireRate: 5
+    burstFireRate: 20
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+      - Burst
+    shotsPerBurst: 2
+    burstCooldown: 0.6
+    soundGunshot:
+      path: /Audio/_LP/Weapons/Guns/Gunshots/aek.ogg
+  - type: Item
+    size: Huge
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        startingItem: MagazineLightRifle
+        insertSound: /Audio/_LP/Weapons/Guns/MagIn/M4A1_Magin.ogg
+        ejectSound: /Audio/_LP/Weapons/Guns/MagOut/M4A1_Magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifle
+            - MagazineLightRifle
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeLightRifle
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeLightRifle
+            - CartridgeRifle
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+      firing_pin: !type:Container # Starlight
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: FiringPinHolder
+    supportedPins: [ Rifle, GunUpgrade ]
+  - type: ContainerFill
+    containers:
+      firing_pin:
+      - FiringPin
+
+- type: entity
+  name: M14
+  parent: [BaseWeaponRifle, BaseSecurityContraband]
+  id: LPPWeaponRifleM14
+  description: An old rifle from distant wars, it smells slightly of the jungle. Uses .30 rifle
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Guns/Rifles/m14w.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _LP/Objects/Weapons/Guns/Rifles/m14w.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: Gun
+    fireRate: 1.25
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/lmg.ogg
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        startingItem: MagazineLightRifle
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineLightRifle
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeLightRifle
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeLightRifle
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+      firing_pin: !type:Container # Starlight
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: FiringPinHolder
+    supportedPins: [ Rifle, GunUpgrade ]
+  - type: ContainerFill
+    containers:
+      firing_pin:
+      - FiringPin
+
+- type: entity
+  name: M1A
+  parent: [BaseWeaponRifle, BaseSecurityContraband]
+  id: LPPWeaponRifleM1A
+  description: A modified version of the old rifle, an indicator of the mixing of old weapons and new materials, uses .30
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Guns/Rifles/m1a.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _LP/Objects/Weapons/Guns/Rifles/m1a.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: Gun
+    fireRate: 2.5
+    selectedMode: SemiAuto
+    availableModes:
+      - FullAuto
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/lmg.ogg
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        startingItem: MagazineLightRifle
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineLightRifle
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeLightRifle
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeLightRifle
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+      firing_pin: !type:Container # Starlight
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: FiringPinHolder
+    supportedPins: [ Rifle, GunUpgrade ]
+  - type: ContainerFill
+    containers:
+      firing_pin:
+      - FiringPin

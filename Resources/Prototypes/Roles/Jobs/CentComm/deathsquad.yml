@@ -8,6 +8,7 @@
   icon: "JobIconDeathSquad"
   supervisors: job-supervisors-centcom
   canBeAntag: false
+  bypassEorPacification: true # Starlight
   accessGroups:
   - AllAccess
   access:
@@ -24,12 +25,12 @@
   id: DeathSquadGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitDeathSquad
-    back: ClothingBackpackDeathSquad
+    back: ClothingModularControllerApocryphalPreassembled # Corvax-Wega-ModularSuits-Edit
     mask: ClothingMaskGasDeathSquad
     eyes: ClothingEyesHudSecurity
     ears: ClothingHeadsetAltCentCom
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitDeathsquad
+    # outerClothing: ClothingOuterHardsuitDeathsquad # Corvax-Wega-ModularSuits-Edit
     shoes: ClothingShoesBootsMagAdv
     id: DeathsquadPDA
     pocket1: EnergySword

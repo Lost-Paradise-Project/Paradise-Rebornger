@@ -420,3 +420,14 @@
     sprite: _LP/Clothing/Uniforms/Jumpsuit/greensportsuit.rsi
   - type: Clothing
     sprite: _LP/Clothing/Uniforms/Jumpsuit/greensportsuit.rsi
+
+- type: entity
+  parent: ClothingUniformJumpsuitOperative
+  id: LPPClothingUniformJumpsuitInteq
+  name: contractor jumpsuit
+  description: Elite clothing for elite mercs.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/inteqjumpsuit.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/inteqjumpsuit.rsi
