@@ -266,7 +266,7 @@
     action: ActionToggleMagboots
     mustEquip: false
   - type: Magboots
-    disabledAutoOff: true 
+    disabledAutoOff: true
 
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseCargoContraband]

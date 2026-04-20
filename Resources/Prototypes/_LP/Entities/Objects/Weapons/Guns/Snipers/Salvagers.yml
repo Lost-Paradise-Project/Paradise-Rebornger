@@ -250,7 +250,7 @@
         Blunt: 2.5
   - type: MeleeRequiresWield
   - type: AltFireMelee
-    attackType: Light 
+    attackType: Light
 
 - type: entity
   parent: [BaseItem, BaseCargoContraband ]
