@@ -25,7 +25,7 @@
     minAngle: -43
     maxAngle: -43
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 4.25
+    rechargeCooldown: 5
     rechargeSound: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
   - type: BasicEntityAmmoProvider
     proto: LPPBulletPibodi
@@ -35,7 +35,7 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Piercing: 10.5
+        Piercing: 8.5
     angle: 0
     animation: WeaponArcThrust
     soundHit:
@@ -102,7 +102,7 @@
     minAngle: -63
     maxAngle: -63
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 5
+    rechargeCooldown: 6.25
     rechargeSound: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
   - type: BasicEntityAmmoProvider
     proto: LPPNailRifle
@@ -155,17 +155,17 @@
     fireRate: 0.5
     selectedMode: SemiAuto
     angleDecay: 45
-    minAngle: 64
+    minAngle: 35
     maxAngle: 65
     availableModes:
     - SemiAuto
     soundGunshot:
       path: /Audio/_LP/Weapons/Guns/Gunshots/shasspo.ogg
   - type: GunWieldBonus
-    minAngle: -63
-    maxAngle: -63
+    minAngle: -33
+    maxAngle: -64
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 4
+    rechargeCooldown: 3
     rechargeSound: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
   - type: BasicEntityAmmoProvider
     proto: LPPBulletLebel
@@ -210,7 +210,7 @@
     size: Huge
   - type: AmmoCounter
   - type: Gun
-    fireRate: 0.45
+    fireRate: 0.65
     selectedMode: SemiAuto
     angleDecay: 45
     minAngle: 2

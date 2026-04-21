@@ -44,7 +44,7 @@
     sprite: _Lavaland/Objects/Weapons/Crushers/crusher_spear.rsi
     state: icon
   product: LavalandWeaponKineticSpear
-  cost: 9500
+  cost: 12500
   category: cargoproduct-category-name-cargo
   group: SalvageJobReward3
 
@@ -54,7 +54,7 @@
     sprite: _Lavaland/Objects/Weapons/Crushers/crusher_hammer.rsi
     state: icon
   product: LavalandWeaponKineticHammer
-  cost: 11000
+  cost: 14000
   category: cargoproduct-category-name-cargo
   group: SalvageJobReward3
 
@@ -64,7 +64,7 @@
     sprite: _Lavaland/Objects/Weapons/Crushers/crusher_claws.rsi
     state: icon
   product: LavalandWeaponKineticClaws
-  cost: 4500
+  cost: 8500
   category: cargoproduct-category-name-cargo
   group: SalvageJobReward2
 
@@ -74,7 +74,7 @@
     sprite: _Lavaland/Objects/Weapons/Crushers/crusher_machete.rsi
     state: icon
   product: LavalandWeaponKineticMachete
-  cost: 6500
+  cost: 10000
   category: cargoproduct-category-name-cargo
   group: SalvageJobReward2
 
@@ -194,7 +194,7 @@
     sprite: _LP/Clothing/OuterClothing/Hardsuits/winterhunter.rsi
     state: icon
   product: LPPClothingOuterHardsuitHunter
-  cost: 37500
+  cost: 32500
   category: cargoproduct-category-name-cargo
   group: SalvageJobRewardMAX
 
@@ -214,7 +214,7 @@
     sprite: _Wega/Clothing/Modular/Asteroid/helmet.rsi
     state: icon-sealed
   product: ClothingModularControllerAsteroidPreassembled
-  cost: 35000
+  cost: 30000
   category: cargoproduct-category-name-cargo
   group: SalvageJobReward3
 
@@ -224,6 +224,6 @@
     sprite: _Wega/Clothing/Modular/Mining/helmet.rsi
     state: icon-sealed
   product: ClothingModularControllerMiningPreassembled
-  cost: 50000
+  cost: 45000
   category: cargoproduct-category-name-cargo
   group: SalvageJobRewardMAX

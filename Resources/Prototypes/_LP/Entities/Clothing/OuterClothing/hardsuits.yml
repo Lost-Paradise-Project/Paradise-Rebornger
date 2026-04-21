@@ -139,8 +139,8 @@
         Radiation: 0.3
         Cold: 0.8
   - type: ClothingSpeedModifier
-    walkModifier: 0.75
-    sprintModifier: 0.75
+    walkModifier: 0.8
+    sprintModifier: 0.8
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: LPPClothingHeadHelmetHardsuitUpgradedMining
@@ -245,12 +245,13 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.45
-        Caustic: 0.05
-        Radiation: 0.05
+        Blunt: 0.3
+        Slash: 0.3
+        Piercing: 0.3
+        Caustic: 0.1
+        Radiation: 0.1
         Cold: 0.1
+        Shock: 0.1
         Heat: 1.15
   - type: ClothingSpeedModifier
     walkModifier: 0.65
@@ -288,14 +289,14 @@
       coefficients:
         Blunt: 0.45
         Slash: 0.65
-        Piercing: 0.75
+        Piercing: 0.8
         Caustic: 0.5
         Heat: 0.8
         Radiation: 0.5
         Shock: 0.5
   - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 0.9
+    walkModifier: 0.85
+    sprintModifier: 0.85
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: LPPClothingHeadHelmetHardsuitSpatioUpgraded
@@ -389,10 +390,9 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.8
         Slash: 0.55
         Piercing: 0.55
-        Heat: 1.05
+        Heat: 1.1
         Radiation: 0.5
         Caustic: 0.2
         Cold: 0.05
