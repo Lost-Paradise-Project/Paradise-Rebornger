@@ -1,0 +1,99 @@
+- type: reagent
+  id: LPPCarporidine
+  name: reagent-name-carporidine
+  group: Medicine
+  desc: reagent-desc-carporidine
+  physicalDesc: reagent-physical-desc-viscous
+  flavor: medicine
+  color: "#562e0b"
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:EvenHealthChange
+        damage:
+          Brute: -6
+      - !type:ModifyBleed
+        amount: -2
+
+- type: reagent
+  id: LPPCarpomalin
+  name: reagent-name-carpomalin
+  group: Medicine
+  desc: reagent-desc-carpomalin
+  physicalDesc: reagent-physical-desc-thick
+  flavor: medicine
+  color: "#0f5315"
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Heat: -6
+            Shock: -4
+            Cold: -3
+            Caustic: -2
+
+- type: reagent
+  id: LPPCarpoxalin
+  name: reagent-name-carpoxalin
+  group: Medicine
+  desc: reagent-desc-carpoxalin
+  physicalDesc: reagent-physical-desc-cloudy
+  flavor: medicine
+  color: "#019570"
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Asphyxiation: -10
+            Bloodloss: -4
+      - !type:ModifyBloodLevel
+        amount: 10
+
+- type: reagent
+  id: LPPCarpoloven
+  name: reagent-name-carpoloven
+  group: Medicine
+  desc: reagent-desc-carpoloven
+  physicalDesc: reagent-physical-desc-soothing
+  flavor: medicine
+  color: "#04884c"
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: -6
+            Radiation: -2
+
+- type: reagent
+  id: LPPCarpozine
+  name: reagent-name-carpozine
+  group: Medicine
+  desc: reagent-desc-carpozine
+  physicalDesc: reagent-physical-desc-sickly
+  flavor: medicine
+  color: "#3f4d87"
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: -8
+            Radiation: -4
+            Asphyxiation: -12
+            Bloodloss: -6
+            Heat: -10
+            Shock: -6
+            Cold: -5
+            Caustic: -4
+            Slash: -10
+            Blunt: -10
+            Piercing: -10
+      - !type:ModifyBleed
+        amount: -3

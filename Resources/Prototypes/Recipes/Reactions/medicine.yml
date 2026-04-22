@@ -559,16 +559,20 @@
 
 - type: reaction
   id: Opporozidone
-  minTemp: 400 #Maybe if a method of reducing reagent temp exists one day, this could be -50
+  minTemp: 340 #Maybe if a method of reducing reagent temp exists one day, this could be -50 # LP Edit
   reactants:
-    Cognizine:
+  # LP Edit Start
+    CarpoToxin:
       amount: 1
     Plasma:
       amount: 2
-    Doxarubixadone:
+    Aloxadone:
+      amount: 1
+    Stellibinin:
       amount: 1
   products:
-    Opporozidone: 3
+    Opporozidone: 4
+    # LP Edit End
 
 - type: reaction
   id: Arcryox

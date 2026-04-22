@@ -1,0 +1,76 @@
+- type: reaction
+  id: LPPCarporidine
+  minTemp: 525
+  reactants:
+    CarpoToxin:
+      amount: 1
+    Bicaridine:
+      amount: 1
+    Blood:
+      amount: 1
+    TranexamicAcid:
+      amount: 1
+  products:
+    LPPCarporidine: 3
+
+- type: reaction
+  id: LPPCarpomalin
+  minTemp: 474
+  reactants:
+    Pyrazine:
+      amount: 1
+    CarpoToxin:
+      amount: 1
+    Leporazine:
+      amount: 1
+    Insuzine:
+      amount: 1
+  products:
+    LPPCarpomalin: 3
+
+- type: reaction
+  id: LPPCarpoxalin
+  minTemp: 456
+  reactants:
+    Plasma:
+      amount: 1
+    DexalinPlus:
+      amount: 1
+    CarpoToxin:
+      amount: 1
+    Blood:
+      amount: 2
+  products:
+    LPPCarpoxalin: 3
+
+- type: reaction
+  id: LPPCarpoloven
+  minTemp: 470
+  reactants:
+    Dylovene:
+      amount: 1
+    Oil:
+      amount: 1
+    CarpoToxin:
+      amount: 1
+    Hyronalin:
+      amount: 1
+  products:
+    LPPCarpoloven: 3
+
+- type: reaction
+  id: LPPCarpozine
+  minTemp: 340
+  reactants:
+    LPPCarporidine:
+      amount: 1
+    LPPCarpomalin:
+      amount: 1
+    LPPCarpoxalin:
+      amount: 1
+    LPPCarpoloven:
+      amount: 1
+    Siderlac:
+      amount: 2
+  products:
+    LPPCarpozine: 6
