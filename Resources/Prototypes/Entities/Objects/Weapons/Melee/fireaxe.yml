@@ -38,7 +38,7 @@
     quickEquip: false
     slots:
     - back
-    - suitStorage
+    - suitStorage # LP Edit
   - type: Tool
     qualities:
       - Prying
