@@ -96,7 +96,10 @@ public sealed class TryCatchBreathSystem : EntitySystem
 
         if (roll < 0.01f)
         {
-            damage.DamageDict.Add("Blunt", -1);
+            damage.DamageDict.Add("Blunt", -2);
+            damage.DamageDict.Add("Slash", -2);
+            damage.DamageDict.Add("Piercing", -2);
+            damage.DamageDict.Add("Asphyxiation", -4);
             _adminLogger.Add(LogType.CatchBreath, LogImpact.Low, $"{ev.User} has got BLUNT SUCCESS!");
             _popup.PopupEntity(Loc.GetString("catch-breath-blunt-success"), uid);
             audio = new SoundPathSpecifier("/Audio/_LP/Alerts/Event/CatchBreath/catch-breath-bluntsuccess.ogg");
@@ -110,7 +113,7 @@ public sealed class TryCatchBreathSystem : EntitySystem
         }
         else if (roll < 0.76f)
         {
-            damage.DamageDict.Add("Asphyxiation", 5);
+            damage.DamageDict.Add("Asphyxiation", 3);
             _adminLogger.Add(LogType.CatchBreath, LogImpact.Low, $"{ev.User} has got FAILURE!");
             _popup.PopupEntity(Loc.GetString("catch-breath-failure"), uid);
             audio = new SoundPathSpecifier("/Audio/_LP/Alerts/Event/CatchBreath/catch-breath-failure.ogg");
