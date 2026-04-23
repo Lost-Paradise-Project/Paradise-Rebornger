@@ -289,6 +289,10 @@
   - type: ClothingSpeedModifier
     walkModifier: 1.0
     sprintModifier: 1.0
+#LP edit start
+  - type: DNALocker
+    enabled: true
+#LP edit end
 
 - type: entity
   parent: ClothingModularHelmetBase
@@ -944,6 +948,10 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
+#LP edit start
+  - type: DNALocker
+    enabled: true
+#LP edit end
 
 - type: entity
   parent: ClothingModularHelmetBase
@@ -1324,6 +1332,10 @@
   - type: ClothingSpeedModifier
     walkModifier: 1
     sprintModifier: 1
+#LP edit start
+  - type: DNALocker
+    enabled: true
+#LP edit end
 
 - type: entity
   parent: ClothingModularHelmetBase
@@ -1738,6 +1750,10 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
+#LP edit start
+  - type: DNALocker
+    enabled: true
+#LP edit end
 
 - type: entity
   parent: ClothingModularHelmetBase
@@ -3289,6 +3305,10 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
+#LP edit start
+  - type: DNALocker
+    enabled: true
+#LP edit end
 
 - type: entity
   parent: ClothingModularHelmetBase

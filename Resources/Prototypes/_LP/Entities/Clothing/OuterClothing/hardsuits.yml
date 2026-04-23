@@ -139,8 +139,8 @@
         Radiation: 0.3
         Cold: 0.8
   - type: ClothingSpeedModifier
-    walkModifier: 0.75
-    sprintModifier: 0.75
+    walkModifier: 0.8
+    sprintModifier: 0.8
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: LPPClothingHeadHelmetHardsuitUpgradedMining
@@ -248,13 +248,14 @@
         Blunt: 0.3
         Slash: 0.3
         Piercing: 0.3
-        Caustic: 0.05
-        Radiation: 0.05
+        Caustic: 0.1
+        Radiation: 0.1
         Cold: 0.1
+        Shock: 0.1
         Heat: 1.15
   - type: ClothingSpeedModifier
-    walkModifier: 0.6
-    sprintModifier: 0.6
+    walkModifier: 0.65
+    sprintModifier: 0.65
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: LPPClothingHeadHelmetHardsuitMiningJuggernaut
@@ -265,8 +266,8 @@
   - type: ToggleClothing
     action: ActionToggleMagboots
     mustEquip: false
-  - type: Magboots # Corvax-Wega-AdvMagboots
-    disabledAutoOff: true # Corvax-Wega-AdvMagboots
+  - type: Magboots
+    disabledAutoOff: true
 
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseCargoContraband]
@@ -286,16 +287,16 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.3
-        Slash: 0.3
-        Piercing: 0.4
+        Blunt: 0.45
+        Slash: 0.65
+        Piercing: 0.8
         Caustic: 0.5
-        Heat: 1.15
+        Heat: 0.8
         Radiation: 0.5
         Shock: 0.5
   - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 0.9
+    walkModifier: 0.85
+    sprintModifier: 0.85
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: LPPClothingHeadHelmetHardsuitSpatioUpgraded
@@ -306,13 +307,7 @@
   - type: Storage
     maxItemSize: Normal
     grid:
-    - 0,0,9,3
-    quickInsert: true
-    areaInsert: true
-    whitelist:
-      tags:
-        - ArtifactFragment
-        - Ore
+    - 0,0,2,2
   - type: Dumpable
   - type: ItemSlots
     slots:
@@ -395,10 +390,9 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.8
         Slash: 0.55
         Piercing: 0.55
-        Heat: 1.05
+        Heat: 1.1
         Radiation: 0.5
         Caustic: 0.2
         Cold: 0.05
@@ -438,8 +432,8 @@
         Radiation: 0.5
         Shock: 0.5
   - type: ClothingSpeedModifier
-    walkModifier: 0.75
-    sprintModifier: 0.75
+    walkModifier: 0.8
+    sprintModifier: 0.8
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: LPPClothingHeadHelmetHardsuitMiningMutant
@@ -486,3 +480,40 @@
     damageCoefficient: 0.5
   - type: DNALocker
     enabled: true
+
+- type: entity
+  parent: LPPClothingOuterHardsuitInteq
+  id: LPPClothingOuterHardsuitInteqVeteran
+  name: Syndicate hermit veteran hardsuit
+  description: Hardsuit INT-05Q - "Lochern" With stamps of cleaness. It's given by loneops veterans as marks of successful operations.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/OuterClothing/Hardsuits/hardsuitinteq.rsi
+    layers:
+    - state: icon
+    - state: stamps1
+  - type: Clothing
+    sprite: _LP/Clothing/OuterClothing/Hardsuits/hardsuitinteq.rsi
+    clothingVisuals:
+      outerClothing:
+      - state: equipped-OUTERCLOTHING
+      - state: stamps
+      outerClothing-reptilian:
+      - state: equipped-OUTERCLOTHING-reptilian
+      - state: stamps
+      outerClothing-vulpkanin:
+      - state: equipped-OUTERCLOTHING-vulpkanin
+      - state: stamps
+
+- type: entity
+  parent: LPPClothingOuterHardsuitInteq
+  id: LPPClothingOuterHardsuitSyndicateVeteran
+  name: Syndicate veteran hardsuit
+  description: Hardsuit INT-05QS - "Perforator" is syndicate version of classic "Lochern" hardsuit, colored in traditional colors.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/OuterClothing/Hardsuits/acientsyndiehardsuit.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/OuterClothing/Hardsuits/acientsyndiehardsuit.rsi
+  - type: ToggleableClothing
+    clothingPrototype: LPPClothingHeadHelmetHardsuitVeteranHelmet

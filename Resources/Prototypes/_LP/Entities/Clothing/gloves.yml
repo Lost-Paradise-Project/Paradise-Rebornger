@@ -43,6 +43,6 @@
         Slash: 0.95
   - type: RandomInsulation
     list:
+      - 0.0
       - 0.1
-      - 0.4
-      - 0.5
+      - 0.25

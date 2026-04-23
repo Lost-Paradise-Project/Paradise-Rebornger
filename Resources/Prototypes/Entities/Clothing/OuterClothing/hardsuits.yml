@@ -170,9 +170,9 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.7
-        Slash: 0.7
-        Piercing: 0.5
+        Blunt: 0.65 #LP edit
+        Slash: 0.65 #LP edit
+        Piercing: 0.7 #LP edit
         Heat: 0.7 #Goliath hide gets grilled instead of you
         Radiation: 0.3
         Caustic: 0.8

@@ -20,7 +20,7 @@
       types:
         Blunt: 25
         Structural: 50
-        Piercing: 25
+        Piercing: 15
   - type: TimedDespawn
     lifetime: 1
 
@@ -65,8 +65,9 @@
     impactEffect: BulletImpactEffect
     damage:
       types:
-        Piercing: 37.5
+        Piercing: 17.5
         Blunt: 37.5
+        Structural: 75
 
 - type: entity
   id: LPPBulletLebel
@@ -154,4 +155,4 @@
         Blunt: 17.5
         Structural: 25
   - type: TimedDespawn
-    lifetime: 0.35
+    lifetime: 0.2

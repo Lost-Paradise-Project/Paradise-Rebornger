@@ -10,7 +10,7 @@
         children:
         - id: LPPWeaponSniperOlymp
         - id: LPPMagazineHeavySniper
-          amount: 2
+          amount: 3
         - id: MagazineBoxAntiMateriel
 
 - type: entity

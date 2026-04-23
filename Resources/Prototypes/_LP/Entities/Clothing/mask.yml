@@ -254,3 +254,42 @@
         Slash: 0.95
         Piercing: 0.95
         Heat: 0.95
+  - type: HideLayerClothing
+    slots:
+    - Snout
+
+- type: entity
+  parent: [ClothingMaskGas, BaseSecurityContraband]
+  id: LPPClothingBalaclavawide
+  name: Balaclava with a wide cutout for the eyes
+  description: Feel extremely tacticool with this kevlar balaclava, which will protect your entire face except your eyes, so it is recommended to use glasses to protect your eyes from airsoft balls (It is unlikely to save you from real bullets).
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Mask/widebalaclava.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Mask/widebalaclava.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
+
+- type: entity
+  parent: LPPClothingBalaclavawide
+  id: LPPClothingMaskPGWrittenOff
+  name: balaclava
+  description: A decommissioned balaclava that was used by PG soldiers.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Mask/balaclava.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Mask/balaclava.rsi

@@ -8,7 +8,7 @@
   - type: Gun
     soundGunshot:
       path: /Audio/_LP/Weapons/Guns/Gunshots/noscope.ogg
-    fireRate: 0.6
+    fireRate: 0.75
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -42,10 +42,10 @@
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
-        scale: "0.8,0.8"
+        scale: "0.8,1.0"
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
-        scale: "0.8,0.8"
+        scale: "0.8,1.0"
   - type: Clothing
     sprite: _LP/Objects/Weapons/Guns/Snipers/Olymp.rsi
     quickEquip: false
@@ -176,4 +176,100 @@
   - type: EyeCursorOffset
     maxOffset: 7
     pvsIncrease: 7
+  - type: CursorOffsetRequiresWield
+
+- type: entity
+  name: Scout
+  parent: [BaseItem, BaseGunWieldable, BaseSecurityContraband]
+  id: LPPWeaponSniperScout
+  description: Bolt-action magfed rifle with scope, it's pretty light and compact for it caliber. Uses .30 rifle
+  components:
+  - type: AmmoCounter
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_LP/Weapons/Guns/Gunshots/Scoutshot.ogg
+      params:
+        volume: -3
+    fireRate: 1.75
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+  - type: ChamberMagazineAmmoProvider
+    autoCycle: false
+    autoEject: false
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+    soundBoltClosed:
+      path: /Audio/Weapons/Guns/MagIn/sfrifle_magin.ogg
+    soundBoltOpened:
+      path: /Audio/Weapons/Guns/MagOut/sfrifle_magout.ogg
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+      firing_pin: !type:Container # Starlight
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: ContainerFill
+    containers:
+      firing_pin:
+      - FiringPin
+  - type: FiringPinHolder
+    supportedPins: [ Rifle, GunUpgrade ]
+  - type: Item
+    sprite: _LP/Objects/Weapons/Guns/Snipers/Scout.rsi
+    size: Large
+    shape:
+    - 0,0,3,0
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Guns/Snipers/Scout_64x32.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+        scale: "0.7,1.0"
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+        scale: "0.7,1.0"
+  - type: Clothing
+    sprite: _LP/Objects/Weapons/Guns/Snipers/Scout.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: LPPMagazineLightSniper
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - LPPMagazineLightSniper
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeLightRifle
+  - type: Appearance
+  - type: UseDelay
+    delay: 0.5
+  - type: GunRequiresWield
+  - type: EmitSoundOnPickup
+    sound:
+      collection: RiflesPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: RiflesDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: RiflesDrop
+  - type: EyeCursorOffset
+    maxOffset: 4
+    pvsIncrease: 1
   - type: CursorOffsetRequiresWield

@@ -12,7 +12,7 @@
     whitelist:
       tags:
         - CartridgeRifle
-    capacity: 18
+    capacity: 15
   - type: Item
     size: Small
   - type: ContainerContainer
