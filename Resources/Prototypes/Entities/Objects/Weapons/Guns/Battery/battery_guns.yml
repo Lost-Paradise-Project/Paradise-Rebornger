@@ -959,18 +959,18 @@
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
   - type: BatteryAmmoProvider
     proto: BulletLaserMagnum
-    fireCost: 150
+    fireCost: 75 #LP edit Для баланса вселенной
   - type: BatteryWeaponFireModes
     fireModes:
     - proto: BulletLaserMagnum
-      fireCost: 150
+      fireCost: 75 #LP edit
     - proto: BulletLaserWindowPiercingMagnum
-      fireCost: 150
+      fireCost: 75 #LP edit
     - proto: BulletDisabler
-      fireCost: 62.5
+      fireCost: 31.25 #LP edit
       pacifismAllowedMode: true
   - type: BatterySelfRecharger
-    autoRechargeRate: 48
+    autoRechargeRate: 32 #LP edit чутка снижена самозарядка взамен на снижение в 2 раза цены
     autoRechargePauseTime: 10
   # starlight start
   - type: ContainerContainer
