@@ -488,4 +488,9 @@ public enum LogType
     /// Supermatter events, mostly activations.
     /// </summary>
     Supermatter = 10003, // Goobstation
+
+    /// <summary>
+    /// Catch Breath
+    /// </summary>
+    CatchBreath = 10050, // LP Edit
 }
