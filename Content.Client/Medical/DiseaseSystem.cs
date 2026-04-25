@@ -1,4 +1,4 @@
-namespace Content.Client._FarHorizons.Medical;
+namespace Content.Client.Medical;
 
 /* Here be dragons */
 

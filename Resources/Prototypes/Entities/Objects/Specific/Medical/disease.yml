@@ -9,16 +9,14 @@
   - type: Sprite
     sprite: Objects/Specific/Medical/mouth_swab.rsi
     state: icon
-  - type: DiseaseSample
   - type: Tag
     tags:
     - Recyclable
     - Trash
-    - DiseaseSwab
   - type: BotanySwab
   - type: GuideHelp
     guides:
-  # - Virology (when it will be written)
+  # - Virology (when it's back)
     - Botany
     - Chemicals
 
@@ -38,46 +36,20 @@
       - BotanySwab
     proto: DiseaseSwab
     capacity: 30
-  - type: Tag
-    tags:
-    - BoxMouthSwab
   - type: GuideHelp
     guides:
-  # - Virology (when it will be written)
+  # - Virology (when it's back)
     - Botany
     - Chemicals
 
 - type: entity
-  parent: ChemicalMedipen
+  parent: BaseItem
   id: Vaccine
   name: vaccine
   description: Prevents people who DON'T already have a disease from catching it.
   components:
   - type: Item
-    inhandVisuals:
-      left:
-      - state: base-needle-inhand-left
-      - state: base-colorA-inhand-left
-        color: "#75a845"
-      - state: base-colorB-inhand-left
-      right:
-      - state: base-needle-inhand-right
-      - state: base-colorA-inhand-right
-        color: "#75a845"
-      - state: base-colorB-inhand-right
+    size: Tiny
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
-    layers:
-    - state: salpen
-      map: [ "enum.SolutionContainerLayers.Fill" ]
-  - type: SolutionContainerVisuals
-    maxFillLevels: 1
-    changeColor: false
-    emptySpriteName: salpen_empty
-  - type: SolutionContainerManager
-    solutions:
-      pen:
-        maxVol: 5
-        reagents:
-          - ReagentId: Vaccine
-            Quantity: 5
+    state: salpen
