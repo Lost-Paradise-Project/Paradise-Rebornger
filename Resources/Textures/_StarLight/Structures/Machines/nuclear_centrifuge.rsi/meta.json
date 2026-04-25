@@ -1,20 +1,23 @@
-{
+﻿{
     "version": 1,
-    "license": "CC-BY-NC-SA-3.0",
-    "copyright": "taken from goonstation https://github.com/goonstation/goonstation/blob/ff86b044/icons/obj/pathology.dmi",
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Paradise Station, Edited for Starlight",
     "size": {
         "x": 32,
         "y": 32
     },
     "states": [
         {
-            "name": "centrifuge"
+            "name": "centrifuge",
+            "copyright": "Taken from Paradise Station https://github.com/ParadiseSS13/Paradise/blob/HEAD/icons/obj/fission/reactor_machines.dmi"
         },
         {
-            "name": "centrifuge_onlight"
+            "name": "centrifuge_onlight",
+            "copyright": "Taken from Paradise Station https://github.com/ParadiseSS13/Paradise/blob/HEAD/icons/obj/fission/reactor_machines.dmi"
         },
         {
             "name": "centrifuge_process",
+            "copyright": "Taken from Paradise Station https://github.com/ParadiseSS13/Paradise/blob/HEAD/icons/obj/fission/reactor_machines.dmi",
             "delays": [
                 [
                     0.1,
@@ -34,6 +37,7 @@
         },
         {
             "name": "centrifuge_processfull",
+            "copyright": "Taken from Paradise Station https://github.com/ParadiseSS13/Paradise/blob/HEAD/icons/obj/fission/reactor_machines.dmi",
             "delays": [
                 [
                     0.1,
