@@ -2,8 +2,7 @@ using Content.Server.GameTicking;
 using Content.Server.Ghost.Roles.Components;
 using Content.Server.Polymorph.Components;
 using Content.Server.Shuttles.Components;
-using Content.Shared._StarLight.GameTicking.Components;
-using Content.Shared.Actions.Events;
+using Content.Shared._StarLight.EndOfRoundGriefing;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.CombatMode.Pacification;
 using Content.Shared.GameTicking;
@@ -12,37 +11,46 @@ using Content.Shared.Mind;
 using Content.Shared.Mind.Components;
 using Content.Shared.Movement.Components;
 using Content.Shared.Polymorph;
-using Content.Shared.Popups;
 using Content.Shared.Roles;
 using Content.Shared._StarLight.CCVar;
+using Content.Shared._StarLight.EndOfRoundGriefing.Components;
 using Robust.Shared.Configuration;
 using Robust.Shared.Prototypes;
 
-namespace Content.Server._StarLight.GameTicking;
+namespace Content.Server._StarLight.EndOfRoundGriefing;
 
-public sealed class PeacefulRoundEndSystem : EntitySystem
+/// <summary>
+/// <inheritdoc/>
+///
+/// The server side of the EORG prevent system manages state and is responsible for managing the <see cref="PreventEorgComponent"/>s on players.
+/// </summary>
+public sealed class EorgPreventionSystem : SharedEorgPreventionSystem
 {
     [Dependency] private readonly IConfigurationManager _cfg = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly IPrototypeManager _proto = default!;
     [Dependency] private readonly SharedRoleSystem _role = default!;
-
-    private bool _isEnabled = false;
-    private bool _roundedEnded = false;
-
 
     public override void Initialize()
     {
         base.Initialize();
-        _cfg.OnValueChanged(StarlightCCVars.PeacefulRoundEnd, v => _isEnabled = v, true);
+        _cfg.OnValueChanged(StarlightCCVars.PeacefulRoundEnd, v =>
+        {
+            IsEnabled = v;
+            BroadcastState();
+        }, true);
 
         SubscribeLocalEvent<RoundEndTextAppendEvent>(OnRoundEnded);
         SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnSpawnComplete);
         SubscribeLocalEvent<GotRehydratedEvent>(OnRehydrateEvent);
         SubscribeLocalEvent<RoundRestartCleanupEvent>(OnRoundCleanup);
-        SubscribeLocalEvent<EorgActionComponent, ActionValidateEvent>(OnValidatePossiblyEorgAction);
         SubscribeLocalEvent<PreventEorgComponent, PolymorphedEvent>(OnPolymorphed);
+
+        SubscribeNetworkEvent<RequestEorgPreventionStateEvent>(OnRequestEorgPreventionState);
     }
+
+    private void OnRequestEorgPreventionState(RequestEorgPreventionStateEvent msg, EntitySessionEventArgs args) => RaiseNetworkEvent(new EorgPreventionStateEvent(IsEnabled, HasRoundEnded));
+
+    private void BroadcastState() => RaiseNetworkEvent(new EorgPreventionStateEvent(IsEnabled, HasRoundEnded));
 
     /// <summary>
     /// Validate an entity is eligible for pacification, and applies it if so.
@@ -50,7 +58,7 @@ public sealed class PeacefulRoundEndSystem : EntitySystem
     /// <param name="target">The entity to potentially pacify</param>
     private void SpreadPeaceNow(EntityUid target)
     {
-        if (!_isEnabled || !_roundedEnded) return;
+        if (!IsEnabled || !HasRoundEnded) return;
         if (!ShouldPacify(target)) return;
         Pacify(target);
 
@@ -169,6 +177,7 @@ public sealed class PeacefulRoundEndSystem : EntitySystem
     }
 
     #endregion
+
     #region Event handlers
 
     private void OnSpawnComplete(PlayerSpawnCompleteEvent ev)
@@ -178,12 +187,16 @@ public sealed class PeacefulRoundEndSystem : EntitySystem
         => SpreadPeaceNow(ev.Target);
 
     private void OnRoundCleanup(RoundRestartCleanupEvent ev)
-        => _roundedEnded = false;
+    {
+        HasRoundEnded = false;
+        BroadcastState();
+    }
 
     private void OnRoundEnded(RoundEndTextAppendEvent ev)
     {
-        _roundedEnded = true;
-        if (!_isEnabled) return;
+        HasRoundEnded = true;
+        BroadcastState();
+        if (!IsEnabled) return;
 
         var candidates = new List<EntityUid>();
 
@@ -210,6 +223,7 @@ public sealed class PeacefulRoundEndSystem : EntitySystem
                     deleting = true;
                     candidates.Remove(polymorphed.Parent.Value);
                 }
+
                 current = polymorphed.Parent.Value;
             }
         }
@@ -220,24 +234,9 @@ public sealed class PeacefulRoundEndSystem : EntitySystem
     }
 
     /// <summary>
-    /// Prevents performing actions marked as <see cref="EorgActionComponent"/> if the user has
-    /// <see cref="PreventEorgComponent"/>.
-    /// </summary>
-    private void OnValidatePossiblyEorgAction(EntityUid uid, EorgActionComponent component, ref ActionValidateEvent args)
-    {
-        if (!_isEnabled || !_roundedEnded) return;
-        if (!HasComp<PreventEorgComponent>(args.User))  return;
-
-        _popup.PopupEntity(Loc.GetString("eorg-action"), args.User, args.User, PopupType.LargeCaution);
-        args.Invalid = true;
-    }
-
-
-    /// <summary>
     /// If someone with <see cref="PreventEorgComponent"/> polymorphs, also apply it to their polymorph.
     /// </summary>
     private void OnPolymorphed(EntityUid uid, PreventEorgComponent comp, PolymorphedEvent ev) => Pacify(ev.NewEntity);
 
     #endregion
-
 }

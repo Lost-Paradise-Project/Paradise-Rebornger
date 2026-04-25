@@ -1,6 +1,6 @@
 using Robust.Shared.GameStates;
 
-namespace Content.Shared._StarLight.GameTicking.Components;
+namespace Content.Shared._StarLight.EndOfRoundGriefing.Components;
 
 /// <summary>
 /// Marker component to disable antagonism. Intended for use in EOR to prevent EORG.
