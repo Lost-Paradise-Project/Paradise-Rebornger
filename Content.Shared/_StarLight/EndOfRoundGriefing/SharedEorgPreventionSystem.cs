@@ -1,4 +1,4 @@
-﻿using Content.Shared._StarLight.EndOfRoundGriefing.Components;
+using Content.Shared._StarLight.EndOfRoundGriefing.Components;
 using Content.Shared.Actions.Events;
 using Content.Shared.Interaction;
 using Content.Shared.Interaction.Events;
