@@ -100,9 +100,6 @@
 
 - type: loadout
   id: SeniorResearcherLabCoat
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: SeniorResearcher
   equipment:
     outerClothing: ClothingOuterCoatLabSeniorResearcher
 
