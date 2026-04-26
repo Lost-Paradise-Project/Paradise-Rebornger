@@ -968,5 +968,8 @@ CrateVendingMachineRestockDiscountDansFilled: VendingMachineRestockDiscountDans
 CrateVendingMachineRestockDonutFilled: VendingMachineRestockDonut
 
 # LP Edit 2026-04-12
-
 ComputerSalvageExpedition: null
+
+# LP edit 2026-04-26
+DiseasePandemic2300: Vaccinator
+DiseaseDiagnoser2300: DiseaseDiagnoser
