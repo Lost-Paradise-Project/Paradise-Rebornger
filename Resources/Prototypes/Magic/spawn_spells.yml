@@ -20,3 +20,4 @@
       offset: 0, 1
   - type: SpeakOnAction
     sentence: action-speech-spell-summon-magicarp
+  - type: EorgPreventAction # Starlight

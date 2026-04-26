@@ -18,3 +18,4 @@
       posData: !type:TargetInFront
   - type: SpeakOnAction
     sentence: action-speech-spell-forcewall
+  - type: EorgPreventAction # Starlight

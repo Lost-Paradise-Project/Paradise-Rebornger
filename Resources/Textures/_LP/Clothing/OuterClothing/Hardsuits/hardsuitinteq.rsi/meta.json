@@ -11,7 +11,18 @@
             "name": "icon"
         },
         {
+            "name": "stamps1"
+        },
+        {
             "name": "equipped-OUTERCLOTHING",
+            "directions": 4
+        },
+        {
+            "name": "equipped-OUTERCLOTHING-vulpkanin",
+            "directions": 4
+        },
+        {
+            "name": "equipped-OUTERCLOTHING-reptilian",
             "directions": 4
         },
         {
@@ -23,19 +34,7 @@
             "directions": 4
         },
         {
-            "name": "equipped-OUTERCLOTHING-shark",
-            "directions": 4
-        },
-        {
-            "name": "equipped-OUTERCLOTHING-reptilian",
-            "directions": 4
-        },
-        {
-            "name": "equipped-OUTERCLOTHING-vulpkanin",
-            "directions": 4
-        },
-        {
-            "name": "equipped-OUTERCLOTHING-tajaran",
+            "name": "stamps",
             "directions": 4
         }
     ]

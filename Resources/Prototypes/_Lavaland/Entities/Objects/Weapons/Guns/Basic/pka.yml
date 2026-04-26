@@ -67,7 +67,7 @@
   - type: Gun
     selectedMode: Burst
     minAngle: 1
-    maxAngle: 10
+    maxAngle: 7
     burstFireRate: 3
     burstCooldown: 2.5
     availableModes:
@@ -120,6 +120,7 @@
     availableModes:
     - FullAuto
     - SemiAuto
+    minAngle: 9
   - type: Item
     sprite: _Lavaland/Objects/Weapons/Guns/Basic/kinetic_pistol.rsi
     size: Small

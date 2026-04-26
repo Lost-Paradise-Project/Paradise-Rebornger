@@ -96,3 +96,14 @@
     sprite: _LP/Clothing/Uniforms/Sec/Engineer/securityEngineerJumpSuit.rsi
   - type: Clothing
     sprite: _LP/Clothing/Uniforms/Sec/Engineer/securityEngineerJumpSuit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitSecCamo
+  name: security camo jumpsuit
+  description: A jumpsuit with camo color pallete of security. I don't think that you can blend in somewhere on the station.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Sec/camo.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Sec/camo.rsi

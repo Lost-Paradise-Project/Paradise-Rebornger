@@ -23,6 +23,8 @@
     # jumpsuit: ClothingUniformJumpsuitSalvageSpecialist # LP edit
     id: SalvagePDA
     ears: ClothingHeadsetCargo
+    outerClothing: LPPExpeditorCoat #LP edit
+    gloves: LPPClothingHandsGlovesSalvage #LP edit
   #storage:
     #back:
     #- Stuff

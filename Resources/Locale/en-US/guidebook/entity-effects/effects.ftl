@@ -269,6 +269,18 @@ entity-effect-guidebook-adjust-temperature =
             *[-1] from
         } the body it's in
 
+entity-effect-guidebook-chem-cause-disease =
+    { $chance ->
+        [1] Causes
+        *[other] cause
+    } the disease { $disease }
+
+entity-effect-guidebook-chem-cause-random-disease =
+    { $chance ->
+        [1] Causes
+        *[other] cause
+    } the diseases { $diseases }
+
 entity-effect-guidebook-jittering =
     { $chance ->
         [1] Causes
@@ -285,7 +297,7 @@ entity-effect-guidebook-cure-disease =
     { $chance ->
         [1] Cures
         *[other] cure
-    } the disease { $disease }
+    } diseases
 
 entity-effect-guidebook-eye-damage =
     { $chance ->

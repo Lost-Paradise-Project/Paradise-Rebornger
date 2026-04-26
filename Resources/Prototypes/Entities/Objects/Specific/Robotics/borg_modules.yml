@@ -984,20 +984,6 @@
           - FitsInDispenser
           tags:
           - ChemDispensable
-    - item: BoxMouthSwab #Far Horizons
-      hand:
-        emptyLabel: borg-slot-mouth-swab-box-empty
-        emptyRepresentative: BoxMouthSwab
-        whitelist:
-          tags:
-          - BoxMouthSwab
-    - item: DiseaseSwab #Far Horizons
-      hand:
-        emptyLabel: borg-slot-mouth-swab-empty
-        emptyRepresentative: DiseaseSwab
-        whitelist:
-          tags:
-          - DiseaseSwab
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: chem-module }
 

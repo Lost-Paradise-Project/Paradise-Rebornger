@@ -240,4 +240,3 @@
   - type: FireVisuals
     alternateState: Standing
   - type: StunVisuals
-  - type: DiseaseCarrier #FarHorizons - Holds the Disease information and stuff.
