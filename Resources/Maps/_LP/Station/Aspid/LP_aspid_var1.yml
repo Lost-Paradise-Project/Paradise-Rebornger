@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.2.0
   forkId: ""
   forkVersion: ""
-  time: 04/26/2026 18:38:34
-  entityCount: 18921
+  time: 04/26/2026 20:07:30
+  entityCount: 18953
 maps:
 - 1
 grids:
@@ -94448,6 +94448,12 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -21.5,42.5
       parent: 2
+  - uid: 14938
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -13.5,52.5
+      parent: 2
   - uid: 14952
     components:
     - type: Transform
@@ -105024,10 +105030,10 @@ entities:
       parent: 2
 - proto: SpawnMobMonkeyPunpun
   entities:
-  - uid: 14938
+  - uid: 18953
     components:
     - type: Transform
-      pos: -10.5,7.5
+      pos: -8.5,10.5
       parent: 2
 - proto: SpawnMobMouse
   entities:
@@ -105404,6 +105410,163 @@ entities:
     components:
     - type: Transform
       pos: 11.5,27.5
+      parent: 2
+- proto: SpawnPointPassenger
+  entities:
+  - uid: 18922
+    components:
+    - type: Transform
+      pos: 2.5,43.5
+      parent: 2
+  - uid: 18923
+    components:
+    - type: Transform
+      pos: 5.5,43.5
+      parent: 2
+  - uid: 18924
+    components:
+    - type: Transform
+      pos: 8.5,43.5
+      parent: 2
+  - uid: 18925
+    components:
+    - type: Transform
+      pos: 7.5,50.5
+      parent: 2
+  - uid: 18926
+    components:
+    - type: Transform
+      pos: 8.5,50.5
+      parent: 2
+  - uid: 18927
+    components:
+    - type: Transform
+      pos: -1.5,9.5
+      parent: 2
+  - uid: 18928
+    components:
+    - type: Transform
+      pos: -1.5,8.5
+      parent: 2
+  - uid: 18929
+    components:
+    - type: Transform
+      pos: 0.5,9.5
+      parent: 2
+  - uid: 18930
+    components:
+    - type: Transform
+      pos: 0.5,8.5
+      parent: 2
+  - uid: 18931
+    components:
+    - type: Transform
+      pos: 0.5,4.5
+      parent: 2
+  - uid: 18932
+    components:
+    - type: Transform
+      pos: 0.5,3.5
+      parent: 2
+  - uid: 18933
+    components:
+    - type: Transform
+      pos: -1.5,4.5
+      parent: 2
+  - uid: 18934
+    components:
+    - type: Transform
+      pos: -1.5,3.5
+      parent: 2
+  - uid: 18935
+    components:
+    - type: Transform
+      pos: -4.5,3.5
+      parent: 2
+  - uid: 18936
+    components:
+    - type: Transform
+      pos: -5.5,3.5
+      parent: 2
+  - uid: 18937
+    components:
+    - type: Transform
+      pos: -5.5,1.5
+      parent: 2
+  - uid: 18938
+    components:
+    - type: Transform
+      pos: -4.5,1.5
+      parent: 2
+  - uid: 18939
+    components:
+    - type: Transform
+      pos: -1.5,-0.5
+      parent: 2
+  - uid: 18940
+    components:
+    - type: Transform
+      pos: -1.5,-1.5
+      parent: 2
+  - uid: 18941
+    components:
+    - type: Transform
+      pos: 0.5,-0.5
+      parent: 2
+  - uid: 18942
+    components:
+    - type: Transform
+      pos: 0.5,-1.5
+      parent: 2
+  - uid: 18943
+    components:
+    - type: Transform
+      pos: -1.5,-5.5
+      parent: 2
+  - uid: 18944
+    components:
+    - type: Transform
+      pos: 0.5,-5.5
+      parent: 2
+  - uid: 18945
+    components:
+    - type: Transform
+      pos: -10.5,1.5
+      parent: 2
+  - uid: 18946
+    components:
+    - type: Transform
+      pos: -11.5,1.5
+      parent: 2
+  - uid: 18947
+    components:
+    - type: Transform
+      pos: -11.5,3.5
+      parent: 2
+  - uid: 18948
+    components:
+    - type: Transform
+      pos: -10.5,3.5
+      parent: 2
+  - uid: 18949
+    components:
+    - type: Transform
+      pos: -12.5,-4.5
+      parent: 2
+  - uid: 18950
+    components:
+    - type: Transform
+      pos: -11.5,-4.5
+      parent: 2
+  - uid: 18951
+    components:
+    - type: Transform
+      pos: -11.5,-2.5
+      parent: 2
+  - uid: 18952
+    components:
+    - type: Transform
+      pos: -12.5,-2.5
       parent: 2
 - proto: SpawnPointQuartermaster
   entities:
