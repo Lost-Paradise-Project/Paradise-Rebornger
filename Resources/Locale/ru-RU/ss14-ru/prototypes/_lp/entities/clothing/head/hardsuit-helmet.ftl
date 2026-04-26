@@ -16,3 +16,5 @@ ent-LPPClothingHeadHelmetHardsuitMiningMutant = шлем HpIP-004/22
     .desc = Облегчённый шлем от экзоскафандра, вертеть головой было бы невозможно даже после облегчения, хорошо что здесь есть сервоприводы и гироскоп.
 ent-LPPClothingHeadHelmetHardsuitInteq = шлем INT-05Q
     .desc = Горе будет тем, кто увидит своё отражение в отполированной поверхности данного шлема.
+ent-LPPClothingHeadHelmetHardsuitVeteranHelmet = шлем INT-05QS
+    .desc = Горе будет тем, кто увидит своё отражение в отполированной поверхности данного шлема.

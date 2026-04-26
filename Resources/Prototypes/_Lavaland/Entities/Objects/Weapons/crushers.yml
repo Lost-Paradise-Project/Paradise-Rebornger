@@ -76,7 +76,7 @@
   - type: AmmoCounter
   - type: UseDelayOnShoot
   - type: UseDelay
-    delay: 0.9
+    delay: 0.8
   - type: Gun
     soundGunshot: /Audio/Weapons/plasma_cutter.ogg
     fireRate: 1
@@ -90,20 +90,24 @@
     capacity: 1
     count: 1
   - type: MeleeWeapon
-    attackRate: 0.6 # insane reach
+    attackRate: 0.75 # insane reach
     wideAnimationRotation: -135
     damage:
       types:
         Blunt: 10
         Slash: 5
+        Structural: 25
     soundHit:
       collection: MetalThud
     angle: 0
     animation: WeaponArcThrust
-    range: 2.9
+    range: 2.75
   - type: GunRequiresWield
   - type: Item
-    size: Ginormous
+    size: Large
+    shape:
+    - 0,0,0,6
+    storedRotation: 135
     sprite: _Lavaland/Objects/Weapons/Crushers/crusher_spear-inhands.rsi
   - type: DisarmMalus
   - type: Wieldable
@@ -133,6 +137,7 @@
     damage:
       types:
         Blunt: 29.5
+        Structural: 50
     soundHit:
       collection: MetalThud
     angle: 0
@@ -171,7 +176,8 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Slash: 8.5
+        Slash: 11.5
+        Structural: 5
     soundHit:
       collection: MetalThud
     angle: 0
@@ -182,6 +188,12 @@
     size: Normal
     sprite: _Lavaland/Objects/Weapons/Crushers/crusher_claws-inhands.rsi
   - type: Sharp
+  - type: LeechOnMarker
+    leech:
+      types:
+        Blunt: -17.5
+        Piercing: -17.5
+        Slash: -17.5
 
 - type: entity
   parent: LavalandWeaponKineticBase
@@ -199,13 +211,17 @@
     damage:
       types:
         Slash: 12.5
+        Structural: 15
     soundHit:
       collection: MetalThud
-    angle: 0
+    wideAnimationRotation: -135
     animation: WeaponArcThrust
     range: 1.6
   - type: Item
-    size: Ginormous
+    size: Normal
+    shape:
+    - 0,0,0,3
+    storedRotation: 135
     sprite: _Lavaland/Objects/Weapons/Crushers/crusher_machete-inhands.rsi
   # too lazy to port parrying and risk a [redacted] lmao
   - type: Sharp

@@ -69,7 +69,7 @@ public sealed class AffectedModuleSpringlockSystem : EntitySystem
                     if (!Exists(user) || !TryComp<ActorComponent>(user, out var actor))
                         return;
 
-                    _audio.PlayGlobal(new SoundPathSpecifier("/Audio/_Wega/Ambience/toreadormarch.ogg"), actor.PlayerSession);
+                    _audio.PlayGlobal(new SoundPathSpecifier("/Audio/_Wega/Ambience/fnafharhar.ogg"), actor.PlayerSession);  ///LP edit
                 });
             }
         });

@@ -191,6 +191,22 @@
   discountDownTo:
     Telecrystal: 1
   cost:
-    Telecrystal: 1
+    Telecrystal: 2
   categories:
   - UplinkAmmo
+
+- type: listing
+  id: LPPUplinkReinforcementRadioSyndicateNukeopsVeteran # Усиленный вариант нюкопсеров
+  name: uplink-reinforcement-radio-nukeopsveteran-name
+  description: uplink-reinforcement-radio-nukeopsveteran-desc
+  productEntity: LPPReinforcementRadioVeteran
+  icon: { sprite: Objects/Devices/communication.rsi, state: old-radio-nukeop }
+  cost:
+    Telecrystal: 45
+  categories:
+  - UplinkAllies
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - NukeOpsUplink

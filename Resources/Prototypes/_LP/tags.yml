@@ -59,4 +59,10 @@
   id: LPPpka
 
 - type: Tag
+  id: MagazineBoxLightRifle
+
+- type: Tag
+  id: LPPMagazineLightSniper
+
+- type: Tag
   id: MagnatePlating

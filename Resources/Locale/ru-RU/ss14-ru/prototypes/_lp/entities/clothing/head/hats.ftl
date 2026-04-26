@@ -4,3 +4,5 @@ ent-LPPClothingHeadSecHat = шляпа службы безопасности
     .desc = Чёрная шляпа, чтобы показать, кто здесь шериф.
 ent-LPPClothingAnonMask = маска Анонимуса
     .desc = Анон!
+ent-LPPClothingHeadSecurityHatCamo = камуфляжная шляпа службы безопасности
+    .desc = Камуфляжная шляпа службы безопасности для защиты от солнца в стиле "Door kicker"!

@@ -609,7 +609,7 @@
   description: uplink-estoc-ammo-desc
   productEntity: MagazineRifle
   cost:
-    Telecrystal: 2
+    Telecrystal: 1 #LP edit
   categories:
   - UplinkAmmo
 
@@ -1286,7 +1286,7 @@
   productEntity: ReinforcementRadioSyndicateNukeops
   icon: { sprite: Objects/Devices/communication.rsi, state: old-radio-nukeop }
   cost:
-    Telecrystal: 30
+    Telecrystal: 20 #LP edit 30>20 (Они реально дерьмовые)
   categories:
   - UplinkAllies
   conditions:

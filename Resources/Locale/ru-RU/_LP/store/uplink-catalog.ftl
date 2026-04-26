@@ -19,3 +19,5 @@ uplink-weapon-m1a-name = М1А
 uplink-weapon-m1a-desc = Простенькая и дешёвая автоматическая(?) винтовка под патрон .30
 uplink-weapon-magazinelightrifle-name = Магазин (.30 винтовочные)
 uplink-weapon-magazinelightrifle-desc = Полный магазин под патрон .30
+uplink-reinforcement-radio-nukeopsveteran-name = Подкрепелние ветерана горлекса
+uplink-reinforcement-radio-nukeopsveteran-desc = Подкрепление из одного элитного ветерана Gorlex Marauders, укомплектованным хорошим комплектом снаряжения. На выбор ветеран синдиката или ветеран лонопс.
