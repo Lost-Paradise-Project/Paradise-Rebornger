@@ -61,17 +61,11 @@
 
 - type: loadout
   id: SeniorResearcherJumpsuit
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: SeniorResearcher
   equipment:
     jumpsuit: ClothingUniformJumpsuitSeniorResearcher
 
 - type: loadout
   id: SeniorResearcherJumpskirt
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: SeniorResearcher
   equipment:
     jumpsuit: ClothingUniformJumpskirtSeniorResearcher
 
