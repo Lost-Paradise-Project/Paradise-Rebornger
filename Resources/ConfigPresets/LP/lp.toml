@@ -21,7 +21,7 @@ enabled = false
 show_reason = true
 min_account_age = 300
 min_overall_minutes = 300
-enable_without_admins = true
+enable_without_admins = false
 disable_with_admins = true
 
 [server]
