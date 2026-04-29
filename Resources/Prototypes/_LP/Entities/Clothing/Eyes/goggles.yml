@@ -38,6 +38,10 @@
     - type: Tag
       tags:
       - WhitelistChameleon
+    - type: ClothingGrantComponent
+      component:
+      - type: FlashModifier
+        modifier: 2
 
 - type: entity
   id: LPPClothingEyesMesonNVG
@@ -49,6 +53,10 @@
       tint2: 1.0
       tint3: 0.3
     - type: EyeProtection
+    - type: ClothingGrantComponent
+      component:
+      - type: FlashModifier
+        modifier: 2
 
 - type: entity
   id: LPPClothingEyesSecNVG
@@ -90,6 +98,10 @@
     sprite: _LP/Clothing/Eyes/NVG/medicalNVG.rsi
   - type: Clothing
     sprite: _LP/Clothing/Eyes/NVG/medicalNVG.rsi
+  - type: ClothingGrantComponent
+    component:
+    - type: FlashModifier
+      modifier: 2
 
 - type: entity
   id: LPPClothingEyesDiagnosticNVG
@@ -110,6 +122,10 @@
     - Inorganic
     - Silicon
     - SiliconIpc
+  - type: ClothingGrantComponent
+    component:
+    - type: FlashModifier
+      modifier: 2
 
 - type: entity
   parent: BaseAction
