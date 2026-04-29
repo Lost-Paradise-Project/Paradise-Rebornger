@@ -79,7 +79,7 @@
   name: N1912
   parent: [BaseItem, BaseSecurityContraband]
   id: LPPWeaponPistolN1912
-  description: 
+  description:
     N1912 is a fixed mag pistol- the oldest type of pistols. The reliability is at top and this model is still used by some of the old school security officers. It can shoot in hyperburst mod. Uses .35 auto.
     We have taken point Butter.
   components:
