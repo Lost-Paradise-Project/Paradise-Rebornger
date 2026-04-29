@@ -49,3 +49,7 @@
     - HosSniperSet
     - LPPHosRevolverSet #LP Edit
     maxSelectedSets: 1
+#LP edit start
+  - type: StealTarget
+    stealGroup: WeaponEnergyMagnum
+#LP edit end
