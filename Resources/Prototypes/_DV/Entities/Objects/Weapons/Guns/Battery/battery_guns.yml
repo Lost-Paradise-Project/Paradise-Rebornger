@@ -61,17 +61,17 @@
     soundEmpty:
       path: /Audio/_DV/Weapons/Guns/Empty/dry_fire.ogg
   - type: Battery
-    maxCharge: 650
-    startingCharge: 650
+    maxCharge: 270
+    startingCharge: 270
   - type: BatteryAmmoProvider
     proto: BulletDisabler
-    fireCost: 25
+    fireCost: 15
   - type: BatteryWeaponFireModes
     fireModes:
     - proto: BulletDisabler
-      fireCost: 25
+      fireCost: 15
     - proto: BulletEnergyGunLaser
-      fireCost: 50
+      fireCost: 25
   - type: MagazineVisuals
     magState: mag
     steps: 5
@@ -95,9 +95,9 @@
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
   - type: Clothing
-    sprite: _DV/Objects/Weapons/Guns/Battery/multiphase_energygun.rsi
+    sprite: _DV/Objects/Weapons/Guns/Battery/mini_energygun.rsi
   - type: Gun
-    fireRate: 3.5
+    fireRate: 3
     soundGunshot:
       path: /Audio/_DV/Weapons/Guns/Gunshots/laser.ogg
     soundEmpty:
@@ -107,7 +107,7 @@
     startingCharge: 850
   - type: BatteryAmmoProvider
     proto: BulletDisabler
-    fireCost: 25
+    fireCost: 50
   - type: BatteryWeaponFireModes
     fireModes:
     - proto: BulletDisabler
@@ -147,12 +147,12 @@
     soundEmpty:
       path: /Audio/_DV/Weapons/Guns/Empty/dry_fire.ogg
     selectedMode: SemiAuto
-    fireRate: 3
+    fireRate: 2
     availableModes:
       - SemiAuto
   - type: Battery
-    maxCharge: 3000
-    startingCharge: 3000
+    maxCharge: 2500
+    startingCharge: 2500
   - type: BatteryAmmoProvider
     proto: BulletEnergyGunLaser
     fireCost: 100

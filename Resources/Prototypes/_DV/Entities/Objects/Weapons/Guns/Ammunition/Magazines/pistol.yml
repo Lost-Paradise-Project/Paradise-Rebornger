@@ -12,7 +12,7 @@
     whitelist:
       tags:
         - CartridgeSpecial
-    capacity: 5
+    capacity: 6
   - type: Item
     size: Small
   - type: ContainerContainer

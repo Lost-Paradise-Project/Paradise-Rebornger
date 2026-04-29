@@ -182,6 +182,8 @@
     - id: WeaponSniperMosin
       weight: 2
     - id: ClothingHandsKnuckleDustersSyndicate
+    - id: LPPClothingBackpackDuffelMafia #LP edit
+    - id: WeaponRevolverFaithEmpty #LP edit
 
 - type: entityTable
   id: MaintenanceLockerLoot

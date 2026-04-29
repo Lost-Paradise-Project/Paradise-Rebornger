@@ -1,7 +1,7 @@
 - type: entity
-  name: heart-breaker
+  name: valkyria
   parent: [BaseWeaponPistol, BaseSecurityContraband]
-  id: WeaponPistolHeartBreaker
+  id: WeaponPistolvalkyria
   description: Big, flashy pistol with a epoxi fiber grip. Provides tactical advantage. Uses .38 special ammo.
   components:
   - type: Sprite
@@ -11,7 +11,7 @@
     availableModes:
     - SemiAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/pistol.ogg
+      path: /Audio/_Impstation/Weapons/Guns/Gunshots/pistolfree.ogg
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -41,3 +41,5 @@
     - 0,0,2,0
     - 0,1,0,1
     storedOffset: 0,-6
+  - type: StealTarget
+    stealGroup: OfficerHandgun

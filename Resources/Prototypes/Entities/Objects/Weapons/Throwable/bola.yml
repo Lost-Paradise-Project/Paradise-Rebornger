@@ -59,3 +59,8 @@
         - ItemMask
         restitution: 0.3
         friction: 0.2
+#LP edit start
+  - type: Tag
+    tags:
+    - Bola
+#LP edit end

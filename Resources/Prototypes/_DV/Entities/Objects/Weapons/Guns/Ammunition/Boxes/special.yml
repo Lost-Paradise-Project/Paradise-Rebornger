@@ -9,7 +9,7 @@
       tags:
         - CartridgeSpecial
     proto: CartridgeSpecial
-    capacity: 18
+    capacity: 24
   - type: Item
     size: Small
   - type: ContainerContainer

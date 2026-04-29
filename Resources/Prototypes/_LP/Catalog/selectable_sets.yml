@@ -1,0 +1,130 @@
+# Sec officer
+- type: selectableSet
+  id: LPPSecuritySetPeacemaker
+  name: selectable-set-security-peacemaker-name
+  description: selectable-set-security-peacemaker-description
+  sprite:
+    sprite: _LP/Objects/Weapons/Guns/Revolvers/colt-45.rsi
+    state: icon
+  content:
+    - LPPWeaponRevolverColtpeacemaker
+    - SpeedLoaderMagnum
+
+- type: selectableSet
+  id: LPPSecuritySetN1912
+  name: selectable-set-security-n1912-name
+  description: selectable-set-security-n1912-description
+  sprite:
+    sprite: _LP/Objects/Weapons/Guns/Pistols/n1912.rsi
+    state: base
+  content:
+    - LPPWeaponPistolN1912
+    - MagazineBoxPistol
+
+- type: selectableSet
+  id: LPPSecuritySetN1912Experimental
+  name: selectable-set-security-n1912experimental-name
+  description: selectable-set-security-n1912experimental-description
+  sprite:
+    sprite: _LP/Objects/Weapons/Guns/Pistols/n1912.rsi
+    state: icon
+  content:
+    - LPPWeaponPistolN1912Experimental
+    - MagazinePistol
+
+- type: selectableSet
+  id: LPPSecuritySetMk93
+  name: selectable-set-security-mk93-name
+  description: selectable-set-security-mk93-description
+  sprite:
+    sprite: _Impstation/Objects/Weapons/Guns/Pistols/mk93.rsi
+    state: icon
+  content:
+    - WeaponPistolMk93
+    - MagazinePistol
+
+- type: selectableSet
+  id: LPPSecuritySetPF20
+  name: selectable-set-security-pf20-name
+  description: selectable-set-security-pf20-description
+  sprite:
+    sprite: _LP/Objects/Weapons/Guns/Pistols/PF20.rsi
+    state: icon
+  content:
+    - LPPWeaponPistolPF20
+    - LPPMagazinePistolPF20lethal
+
+- type: selectableSet
+  id: LPPSecuritySetEnergyGunMini
+  name: selectable-set-security-energygunmini-name
+  description: selectable-set-security-energygunmini-description
+  sprite:
+    sprite: _DV/Objects/Weapons/Guns/Battery/mini_energygun.rsi
+    state: icon
+  content:
+    - WeaponEnergyGunMini
+
+- type: selectableSet
+  id: LPPSecuritySetK38Master
+  name: selectable-set-security-k38-name
+  description: selectable-set-security-k38-description
+  sprite:
+    sprite: _DV/Objects/Weapons/Guns/Revolvers/k38master.rsi
+    state: icon
+  content:
+    - WeaponRevolverK38Master
+    - SpeedLoaderSpecial
+
+- type: selectableSet
+  id: LPPSecuritySetFitz
+  name: selectable-set-security-fitz-name
+  description: selectable-set-security-fitz-description
+  sprite:
+    sprite: _DV/Objects/Weapons/Guns/Revolvers/fitz.rsi
+    state: icon
+  content:
+    - WeaponRevolverFitz
+    - SpeedLoaderSpecial
+
+- type: selectableSet
+  id: LPPSecuritySetValkyria
+  name: selectable-set-security-valkyria-name
+  description: selectable-set-security-valkyria-description
+  sprite:
+    sprite: _DV/Objects/Weapons/Guns/Pistols/psibreaker.rsi
+    state: icon
+  content:
+    - WeaponPistolvalkyria
+    - MagazinePistolSpecial
+
+- type: selectableSet
+  id: LPPSecuritySetDominator
+  name: selectable-set-security-dominator-name
+  description: selectable-set-security-dominator-description
+  sprite:
+    sprite: _LP/Objects/Weapons/Guns/Battery/dominator.rsi
+    state: icon
+  content:
+    - LPPWeaponEnergyGunPistolDominator
+
+- type: selectableSet
+  id: LPPSecuritySetSvalinn
+  name: selectable-set-security-svalinn-name
+  description: selectable-set-security-svalinn-description
+  sprite:
+    sprite: Objects/Weapons/Guns/Battery/svalinn.rsi
+    state: base
+  content:
+    - WeaponLaserSvalinn
+    - PowerCellMedium
+
+- type: selectableSet
+  id: LPPSecuritySetMk58
+  name: selectable-set-security-mk58-name
+  description: selectable-set-security-mk58-description
+  sprite:
+    sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
+    state: icon
+  content:
+    - WeaponPistolMk58
+    - MagazinePistol

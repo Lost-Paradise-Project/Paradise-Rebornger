@@ -1,0 +1,23 @@
+- type: entity
+  id: LPPSecurityWeaponUndetermined
+  name: Weapon tablet
+  description: A tablet that provides quick access to any weapons for security officers that they can use as their sidearm.
+  parent: [ BaseItem, BaseSetSelector, BaseSecurityContraband ]
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Devices/Security/secdeviceweaponl.rsi
+    state: icon
+  - type: SetSelector
+    possibleSets:
+    - LPPSecuritySetMk58
+    - LPPSecuritySetMk93
+    - LPPSecuritySetN1912
+    - LPPSecuritySetN1912Experimental
+    - LPPSecuritySetPF20
+    - LPPSecuritySetValkyria
+    - LPPSecuritySetK38Master
+    - LPPSecuritySetFitz
+    - LPPSecuritySetPeacemaker
+    - LPPSecuritySetEnergyGunMini
+    - LPPSecuritySetDominator
+    maxSelectedSets: 1

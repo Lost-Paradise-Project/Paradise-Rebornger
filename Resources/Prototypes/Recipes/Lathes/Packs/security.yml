@@ -54,6 +54,12 @@
   - LPPMagazineShotgunLeverRifle # LP Edit
   - LPPMagazinePistolPF20lethal #LP edit
   - LPPMagazineLightSniper #LP Edit
+  - MagazinePistolSpecial #LP edit
+  - SpeedLoaderSpecial #LP edit
+  - MagazinePistolSpecialPractice #LP edit
+  - SpeedLoaderSpecialPractice #LP edit
+  - MagazineBoxSpecial #LP edit
+  - MagazineBoxSpecialPractice #LP edit 
 
 - type: latheRecipePack
   id: SecurityWeaponsStatic
@@ -128,6 +134,16 @@
   - MagazineShotgunIncendiary
   - SpeedLoaderMagnumIncendiary
   - SpeedLoaderMagnumUranium
+#LP edit start
+  - LPPMagazinePistolPF20Incendiary
+  - MagazineBoxSpecialIncendiary
+  - MagazineBoxSpecialUranium
+  - MagazineBoxSpecialRubber
+  - SpeedLoaderSpecialRubber
+  - MagazinePistolSpecialRubber
+  - SpeedLoaderSpecialUranium
+  - LPPMagazinePistolPF20Uranium
+#LP edit end
 
 - type: latheRecipePack
   id: SecurityWeapons
@@ -138,9 +154,18 @@
   - WeaponLaserCarbine
   - WeaponXrayCannon
   - WeaponTemperatureGun
-
+  - LPPWeaponEnergyGunPistolDominator #LP edit
+  - LPPWeaponRiflepadefame #LP edit
+  - WeaponStarflareSMG #LP edit
+  - PowerCellStarflarePrinted #LP edit
+  - WeaponEnergyGun #LP edit
 - type: latheRecipePack
   id: SecurityDisablers
   recipes:
   - WeaponDisabler
   - WeaponDisablerSMG
+  - WeaponPocketDisabler
+  - WeaponStunProjector
+  - WeaponAutoDisabler
+  - WeaponDisablerCarbine
+  - WeaponDisablerShotgun
