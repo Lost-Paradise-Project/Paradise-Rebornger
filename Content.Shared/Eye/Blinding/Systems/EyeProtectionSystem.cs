@@ -71,7 +71,7 @@ namespace Content.Shared.Eye.Blinding.Systems
 
             // Add permanent eye damage if they had zero protection, also somewhat scale their temporary blindness by
             // how much damage they already accumulated.
-            _blindingSystem.AdjustEyeDamage((args.User, blindable), eyeDamage);
+            _blindingSystem.AdjustEyeDamage((args.User, blindable), eyeDamage); // LP Edit
             var statusTimeSpan = TimeSpan.FromSeconds(time * MathF.Sqrt(blindable.EyeDamage));
             _statusEffectsSystem.TryAddStatusEffect(args.User, TemporaryBlindnessSystem.BlindingStatusEffect,
                 statusTimeSpan, false, TemporaryBlindnessSystem.BlindingStatusEffect);
