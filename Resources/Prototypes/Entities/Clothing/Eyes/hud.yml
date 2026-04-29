@@ -25,7 +25,6 @@
   components:
   - type: ShowHealthBars
   - type: ShowHealthIcons
-  - type: ShowDiseaseIcons #Far Horizons
 
 - type: entity
   parent: ClothingEyesHudBase

@@ -26,6 +26,7 @@
     effectedLevels:
       2: ActionFireballII
       3: ActionFireballIII
+  - type: EorgPreventAction # Starlight
 
 - type: entity
   parent: ActionFireball

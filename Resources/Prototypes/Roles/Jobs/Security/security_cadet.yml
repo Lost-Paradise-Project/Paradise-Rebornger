@@ -6,10 +6,6 @@
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 2h # LP edit
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 10h # LP edit
-      inverted: true # stop playing intern if you're good at security!
     # LP edit start
     - !type:SpeciesRequirement
       inverted: true
