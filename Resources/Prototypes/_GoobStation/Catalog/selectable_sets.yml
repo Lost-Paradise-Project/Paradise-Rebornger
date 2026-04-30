@@ -80,7 +80,7 @@
   name: selectable-set-hos-smg-name
   description: selectable-set-hos-smg-description
   sprite:
-    sprite: _Goobstation/Objects/Weapons/Guns/Battery/HeadOfSecurity/smg.rsi
+    sprite: _GoobStation/Objects/Weapons/Guns/Battery/HeadOfSecurity/smg.rsi
     state: icon
   content:
   - WeaponHeadOfSecuritySMG
@@ -90,7 +90,7 @@
   name: selectable-set-hos-shotgun-name
   description: selectable-set-hos-shotgun-description
   sprite:
-    sprite: _Goobstation/Objects/Weapons/Guns/Battery/HeadOfSecurity/shotgun.rsi
+    sprite: _GoobStation/Objects/Weapons/Guns/Battery/HeadOfSecurity/shotgun.rsi
     state: icon
   content:
   - WeaponHeadOfSecurityShotgun
@@ -100,7 +100,7 @@
   name: selectable-set-hos-sniper-name
   description: selectable-set-hos-sniper-description
   sprite:
-    sprite: _Goobstation/Objects/Weapons/Guns/Battery/HeadOfSecurity/sniper.rsi
+    sprite: _GoobStation/Objects/Weapons/Guns/Battery/HeadOfSecurity/sniper.rsi
     state: icon
   content:
   - WeaponHeadOfSecuritySniper
@@ -110,7 +110,7 @@
   name: selectable-set-hos-rifle-name
   description: selectable-set-hos-rifle-description
   sprite:
-    sprite: _Goobstation/Objects/Weapons/Guns/Battery/HeadOfSecurity/rifle.rsi
+    sprite: _GoobStation/Objects/Weapons/Guns/Battery/HeadOfSecurity/rifle.rsi
     state: icon
   content:
   - WeaponHeadOfSecurityRifle
