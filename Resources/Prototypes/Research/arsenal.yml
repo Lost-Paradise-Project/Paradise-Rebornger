@@ -336,6 +336,7 @@
   cost: 15000
   recipeUnlocks:
   - WeaponTemperatureGun
+  - WeaponGunLaserCarbineAutomatic #LP edit
   position: 12, 22 # LP edit
   technologyPrerequisites:
   - PortableMicrofusionWeaponry

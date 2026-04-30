@@ -407,7 +407,7 @@
     Plastic: 140
 
 - type: latheRecipe
-  parent: BaseAmmoBoxRecipe
+  parent: BaseAmmoRecipe
   id: SpeedLoaderSpecialUranium
   result: SpeedLoaderSpecialUranium
   materials:

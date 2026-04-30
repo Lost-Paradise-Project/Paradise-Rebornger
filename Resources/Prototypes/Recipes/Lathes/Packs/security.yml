@@ -159,6 +159,9 @@
   - WeaponStarflareSMG #LP edit
   - PowerCellStarflarePrinted #LP edit
   - WeaponEnergyGun #LP edit
+  - WeaponEnergyGunPistol #LP edit
+  - WeaponGunLaserCarbineAutomatic #LP edit
+
 - type: latheRecipePack
   id: SecurityDisablers
   recipes:
