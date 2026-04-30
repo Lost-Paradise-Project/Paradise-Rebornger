@@ -185,4 +185,3 @@
         Heat: 0
   - type: StaminaDamageOnCollide
     damage: 20
-    overtime: 15
