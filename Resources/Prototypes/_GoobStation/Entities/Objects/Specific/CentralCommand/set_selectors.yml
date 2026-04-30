@@ -39,7 +39,7 @@
   parent: [ BaseItem, BaseSetSelector, BaseGrandTheftContraband ]
   components:
   - type: Sprite
-    sprite: _Goobstation/Objects/Specific/Security/hosundetermined.rsi
+    sprite: _GoobStation/Objects/Specific/Security/hosundetermined.rsi
     state: icon
   - type: SetSelector
     possibleSets:
