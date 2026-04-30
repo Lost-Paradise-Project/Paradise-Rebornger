@@ -62,17 +62,6 @@
 
 - type: entity
   name: heavy laser barrage
-  id: BulletLaserSpreadHeavy
-  categories: [ HideSpawnMenu ]
-  parent: BulletLaserHeavy
-  components:
-  - type: ProjectileSpread
-    proto: BulletLaserHeavyStructural
-    count: 6
-    spread: 30
-
-- type: entity
-  name: heavy laser barrage
   id: LaserSniper
   parent: BasicHitscan
   categories: [ HideSpawnMenu ]
@@ -103,6 +92,7 @@
       types:
         Heat: 18
         Shock: 2
+  - type: HitscanBasicVisuals
   muzzleFlash:
     sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
     state: muzzle_laser
