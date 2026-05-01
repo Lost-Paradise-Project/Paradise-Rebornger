@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.2.0
   forkId: ""
   forkVersion: ""
-  time: 05/01/2026 19:37:31
-  entityCount: 18957
+  time: 05/01/2026 19:39:28
+  entityCount: 18961
 maps:
 - 1
 grids:
@@ -14384,6 +14384,20 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
+- proto: BaseGasCondenser
+  entities:
+  - uid: 12614
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 4.5,25.5
+      parent: 2
+  - uid: 18960
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -8.5,-41.5
+      parent: 2
 - proto: Basketball
   entities:
   - uid: 647
@@ -58304,7 +58318,7 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-  - uid: 18957
+  - uid: 18958
     components:
     - type: Transform
       pos: 14.5,21.5
@@ -63224,14 +63238,6 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
-  - uid: 11112
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 12.5,32.5
-      parent: 2
-    - type: AtmosPipeColor
-      color: '#03FCD3FF'
   - uid: 11120
     components:
     - type: Transform
@@ -63299,6 +63305,14 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#990000FF'
+  - uid: 18957
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 12.5,32.5
+      parent: 2
+    - type: AtmosPipeColor
+      color: '#03FCD3FF'
 - proto: GasPipeBendAlt1
   entities:
   - uid: 9907
@@ -77466,14 +77480,6 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#990000FF'
-  - uid: 10824
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 11.5,32.5
-      parent: 2
-    - type: AtmosPipeColor
-      color: '#03FCD3FF'
   - uid: 10827
     components:
     - type: Transform
@@ -79311,6 +79317,14 @@ entities:
   - uid: 11111
     components:
     - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 11.5,32.5
+      parent: 2
+    - type: AtmosPipeColor
+      color: '#03FCD3FF'
+  - uid: 11112
+    components:
+    - type: Transform
       rot: -1.5707963267948966 rad
       pos: 11.5,33.5
       parent: 2
@@ -79495,6 +79509,12 @@ entities:
       rot: 3.141592653589793 rad
       pos: -20.5,-37.5
       parent: 2
+  - uid: 14625
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 5.5,25.5
+      parent: 2
   - uid: 18056
     components:
     - type: Transform
@@ -79503,6 +79523,11 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#0335FCFF'
+  - uid: 18961
+    components:
+    - type: Transform
+      pos: -8.5,-40.5
+      parent: 2
 - proto: GasPortAlt1
   entities:
   - uid: 18517
@@ -89437,15 +89462,15 @@ entities:
       parent: 2
 - proto: LockerChemistryFilled
   entities:
+  - uid: 10824
+    components:
+    - type: Transform
+      pos: 8.5,22.5
+      parent: 2
   - uid: 12613
     components:
     - type: Transform
       pos: 3.5,25.5
-      parent: 2
-  - uid: 12614
-    components:
-    - type: Transform
-      pos: 4.5,25.5
       parent: 2
 - proto: LockerChiefEngineerFilled
   entities:
@@ -103694,10 +103719,11 @@ entities:
       parent: 2
 - proto: SinkWide
   entities:
-  - uid: 14625
+  - uid: 18959
     components:
     - type: Transform
-      pos: 5.5,25.5
+      rot: -1.5707963267948966 rad
+      pos: 6.5,25.5
       parent: 2
 - proto: SmartFridge
   entities:
