@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.2.0
   forkId: ""
   forkVersion: ""
-  time: 04/30/2026 19:33:23
-  entityCount: 19679
+  time: 05/01/2026 20:21:30
+  entityCount: 19678
 maps:
 - 1
 grids:
@@ -16688,7 +16688,7 @@ entities:
       pos: -52.5,7.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -5357.7183
+      secondsUntilStateChange: -5399.5938
       state: Opening
     - type: DeviceLinkSink
       invokeCounter: 1
@@ -17204,7 +17204,7 @@ entities:
       pos: -43.5,-45.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -57695.09
+      secondsUntilStateChange: -57736.965
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -52358,13 +52358,6 @@ entities:
     - type: Transform
       pos: -63.533943,-75.576324
       parent: 2
-- proto: ClothingOuterCoatExpensive
-  entities:
-  - uid: 6724
-    components:
-    - type: Transform
-      pos: -71.3014,-74.41928
-      parent: 2
 - proto: ClothingOuterCoatLab
   entities:
   - uid: 6590
@@ -60589,7 +60582,7 @@ entities:
       tags:
       - DrinkBottle
     - type: PressurizedSolution
-      sprayFizzinessThresholdRoll: 0.4577256
+      sprayFizzinessThresholdRoll: 0.9608068
     - type: SolutionContainerManager
       solutions: null
       containers:
