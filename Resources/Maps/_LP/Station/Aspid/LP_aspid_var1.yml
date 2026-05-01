@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.2.0
   forkId: ""
   forkVersion: ""
-  time: 04/26/2026 20:07:30
-  entityCount: 18953
+  time: 05/01/2026 16:22:22
+  entityCount: 18956
 maps:
 - 1
 grids:
@@ -14710,6 +14710,19 @@ entities:
     - type: Transform
       pos: -20.461817,11.449449
       parent: 2
+- proto: Biogenerator
+  entities:
+  - uid: 12509
+    components:
+    - type: Transform
+      pos: 5.5,8.5
+      parent: 2
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
 - proto: BiomassReclaimer
   entities:
   - uid: 704
@@ -61795,6 +61808,23 @@ entities:
     - type: Transform
       pos: -3.4239073,34.287933
       parent: 2
+- proto: FoodMeat
+  entities:
+  - uid: 18954
+    components:
+    - type: Transform
+      pos: 10.839542,2.2518346
+      parent: 2
+  - uid: 18955
+    components:
+    - type: Transform
+      pos: 10.589542,1.7049596
+      parent: 2
+  - uid: 18956
+    components:
+    - type: Transform
+      pos: 10.948917,1.8143346
+      parent: 2
 - proto: FoodMeatBaconCooked
   entities:
   - uid: 8853
@@ -88577,11 +88607,6 @@ entities:
     components:
     - type: Transform
       pos: 5.5,10.5
-      parent: 2
-  - uid: 12509
-    components:
-    - type: Transform
-      pos: 5.5,8.5
       parent: 2
   - uid: 12510
     components:
