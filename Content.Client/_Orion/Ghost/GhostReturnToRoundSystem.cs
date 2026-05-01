@@ -28,7 +28,7 @@ public sealed class GhostReturnToRoundSystem : SharedGhostReturnToRoundSystem
         if (ui == null)
             return;
 
-        var timeOffset = _gameTiming.RealTime - ghostComponent.TimeOfDeath;
+        var timeOffset = _gameTiming.CurTime - ghostComponent.TimeOfDeath; // LP edit
         var rawTimeLeft = GhostRespawnTime - timeOffset;
         var timeLeft = rawTimeLeft > TimeSpan.Zero ? rawTimeLeft : TimeSpan.Zero;
 
