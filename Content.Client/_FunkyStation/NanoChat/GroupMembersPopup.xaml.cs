@@ -9,7 +9,7 @@ using Robust.Client.UserInterface.XAML;
 using Robust.Shared.IoC;
 using Robust.Client.ResourceManagement;
 
-namespace Content.Client._Funkystation.NanoChat;
+namespace Content.Client._FunkyStation.NanoChat;
 
 [GenerateTypedNameReferences]
 public sealed partial class GroupMembersPopup : DefaultWindow
@@ -135,7 +135,7 @@ public sealed partial class GroupMembersPopup : DefaultWindow
                 adminButton.AddStyleClass("OpenBoth");
                 adminButton.AddChild(new TextureRect
                 {
-                    Texture = resCache.GetTexture("/Textures/_Funkystation/Interface/NanoChat/admin.png"),
+                    Texture = resCache.GetTexture("/Textures/_FunkyStation/Interface/NanoChat/admin.png"),
                     Stretch = TextureRect.StretchMode.KeepAspectCentered,
                     MinSize = new Vector2(28, 28),
                     MaxSize = new Vector2(28, 28),
@@ -158,7 +158,7 @@ public sealed partial class GroupMembersPopup : DefaultWindow
                 deadminButton.AddStyleClass("OpenBoth");
                 deadminButton.AddChild(new TextureRect
                 {
-                    Texture = resCache.GetTexture("/Textures/_Funkystation/Interface/NanoChat/deadmin.png"),
+                    Texture = resCache.GetTexture("/Textures/_FunkyStation/Interface/NanoChat/deadmin.png"),
                     Stretch = TextureRect.StretchMode.KeepAspectCentered,
                     MinSize = new Vector2(28, 28),
                     MaxSize = new Vector2(28, 28),

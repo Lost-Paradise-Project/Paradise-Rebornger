@@ -2,7 +2,7 @@
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
-namespace Content.Shared._Funkystation.NanoChat;
+namespace Content.Shared._FunkyStation.NanoChat;
 
 /// <summary>
 /// Shared emoji definitions for NanoChat.

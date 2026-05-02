@@ -68,7 +68,7 @@
                         StyleClasses="OpenBoth"
                         ToolTip="{Loc nano-chat-create-group}">
                     <TextureRect StyleClasses="ButtonSquare"
-                                 TexturePath="/Textures/_Funkystation/Interface/NanoChat/members.png"
+                                 TexturePath="/Textures/_FunkyStation/Interface/NanoChat/members.png"
                                  Stretch="KeepAspectCentered"
                                  MinSize="18 18" />
                 </Button>
@@ -217,7 +217,7 @@
                                 Margin="0 0 4 0"
                                 ToolTip="{Loc nano-chat-invite-to-group}">
                             <TextureRect StyleClasses="ButtonSquare"
-                                        TexturePath="/Textures/_Funkystation/Interface/NanoChat/invite.png"
+                                        TexturePath="/Textures/_FunkyStation/Interface/NanoChat/invite.png"
                                         Stretch="KeepAspectCentered"
                                         MinSize="18 18" />
                         </Button>
@@ -229,7 +229,7 @@
                                 Margin="0 0 4 0"
                                 ToolTip="{Loc nano-chat-view-members}">
                             <TextureRect StyleClasses="ButtonSquare"
-                                        TexturePath="/Textures/_Funkystation/Interface/NanoChat/members.png"
+                                        TexturePath="/Textures/_FunkyStation/Interface/NanoChat/members.png"
                                         Stretch="KeepAspectCentered"
                                         MinSize="18 18" />
                         </Button>

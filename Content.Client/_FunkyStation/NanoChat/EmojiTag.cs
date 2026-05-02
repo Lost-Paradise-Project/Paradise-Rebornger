@@ -5,10 +5,10 @@ using Robust.Client.ResourceManagement;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.RichText;
-using Content.Shared._Funkystation.NanoChat;
+using Content.Shared._FunkyStation.NanoChat;
 using Robust.Shared.Utility;
 
-namespace Content.Client._Funkystation.NanoChat;
+namespace Content.Client._FunkyStation.NanoChat;
 
 /// <summary>
 /// Markup tag for rendering emoji images inline in RichTextLabel.

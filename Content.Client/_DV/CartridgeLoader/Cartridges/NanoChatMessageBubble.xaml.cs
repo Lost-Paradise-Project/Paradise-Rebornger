@@ -5,7 +5,7 @@ using Robust.Client.Graphics;
 using Robust.Client.UserInterface.Controls;
 using Robust.Client.UserInterface.XAML;
 using Robust.Shared.Utility; // Funky Station
-using Content.Client._Funkystation.NanoChat; // Funky Station
+using Content.Client._FunkyStation.NanoChat; // Funky Station
 
 namespace Content.Client._DV.CartridgeLoader.Cartridges;
 

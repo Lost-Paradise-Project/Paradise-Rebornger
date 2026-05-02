@@ -2,43 +2,43 @@
 - type: nanoChatEmoji
   id: godo
   category: Godo
-  sprite: /Textures/_Funkystation/Interface/NanoChat/Emotes/godo.png
+  sprite: /Textures/_FunkyStation/Interface/NanoChat/Emotes/godo.png
 
 - type: nanoChatEmoji
   id: do
   category: Godo
-  sprite: /Textures/_Funkystation/Interface/NanoChat/Emotes/do.png
+  sprite: /Textures/_FunkyStation/Interface/NanoChat/Emotes/do.png
 
 - type: nanoChatEmoji
   id: donow
   category: Godo
-  sprite: /Textures/_Funkystation/Interface/NanoChat/Emotes/donow.png
+  sprite: /Textures/_FunkyStation/Interface/NanoChat/Emotes/donow.png
 
 - type: nanoChatEmoji
   id: gocrazy
   category: Godo
-  sprite: /Textures/_Funkystation/Interface/NanoChat/Emotes/donot.png
+  sprite: /Textures/_FunkyStation/Interface/NanoChat/Emotes/donot.png
 
 - type: nanoChatEmoji
   id: gosad
   category: Godo
-  sprite: /Textures/_Funkystation/Interface/NanoChat/Emotes/dontdo.png
+  sprite: /Textures/_FunkyStation/Interface/NanoChat/Emotes/dontdo.png
 
 - type: nanoChatEmoji
   id: godover
   category: Godo
-  sprite: /Textures/_Funkystation/Interface/NanoChat/Emotes/godover.png
+  sprite: /Textures/_FunkyStation/Interface/NanoChat/Emotes/godover.png
 
 - type: nanoChatEmoji
   id: golove
   category: Godo
-  sprite: /Textures/_Funkystation/Interface/NanoChat/Emotes/golove.png
+  sprite: /Textures/_FunkyStation/Interface/NanoChat/Emotes/golove.png
 
 # Misc emotes
 - type: nanoChatEmoji
   id: troll
   category: Misc
-  sprite: /Textures/_Funkystation/Interface/NanoChat/Emotes/troll.png
+  sprite: /Textures/_FunkyStation/Interface/NanoChat/Emotes/troll.png
 
 # Character emotes
 - type: nanoChatEmoji
@@ -54,22 +54,22 @@
 - type: nanoChatEmoji
   id: chime
   category: Character
-  sprite: /Textures/_Funkystation/Interface/NanoChat/Emotes/chime.png
+  sprite: /Textures/_FunkyStation/Interface/NanoChat/Emotes/chime.png
 
 - type: nanoChatEmoji
   id: chirp
   category: Character
-  sprite: /Textures/_Funkystation/Interface/NanoChat/Emotes/chirp.png
+  sprite: /Textures/_FunkyStation/Interface/NanoChat/Emotes/chirp.png
 
 - type: nanoChatEmoji
   id: clap
   category: Character
-  sprite: /Textures/_Funkystation/Interface/NanoChat/Emotes/clap.png
+  sprite: /Textures/_FunkyStation/Interface/NanoChat/Emotes/clap.png
 
 - type: nanoChatEmoji
   id: click
   category: Character
-  sprite: /Textures/_Funkystation/Interface/NanoChat/Emotes/click.png
+  sprite: /Textures/_FunkyStation/Interface/NanoChat/Emotes/click.png
 
 - type: nanoChatEmoji
   id: cough
@@ -104,7 +104,7 @@
 - type: nanoChatEmoji
   id: honk
   category: Character
-  sprite: /Textures/_Funkystation/Interface/NanoChat/Emotes/honk.png
+  sprite: /Textures/_FunkyStation/Interface/NanoChat/Emotes/honk.png
 
 - type: nanoChatEmoji
   id: laugh
@@ -134,7 +134,7 @@
 - type: nanoChatEmoji
   id: squeak
   category: Character
-  sprite: /Textures/_Funkystation/Interface/NanoChat/Emotes/squeak.png
+  sprite: /Textures/_FunkyStation/Interface/NanoChat/Emotes/squeak.png
 
 - type: nanoChatEmoji
   id: tailslap
@@ -193,7 +193,7 @@
 - type: nanoChatEmoji
   id: rouny
   category: Plushies
-  sprite: /Textures/_Funkystation/Interface/NanoChat/Emotes/rouny.png
+  sprite: /Textures/_FunkyStation/Interface/NanoChat/Emotes/rouny.png
 
 - type: nanoChatEmoji
   id: lizard
@@ -268,7 +268,7 @@
 - type: nanoChatEmoji
   id: diona
   category: Plushies
-  sprite: /Textures/_Funkystation/Interface/NanoChat/Emotes/plushie_diona.png
+  sprite: /Textures/_FunkyStation/Interface/NanoChat/Emotes/plushie_diona.png
 
 - type: nanoChatEmoji
   id: human
@@ -294,12 +294,12 @@
 - type: nanoChatEmoji
   id: rainbowcarp
   category: Plushies
-  sprite: /Textures/_Funkystation/Interface/NanoChat/Emotes/rainbowcarp.png
+  sprite: /Textures/_FunkyStation/Interface/NanoChat/Emotes/rainbowcarp.png
 
 - type: nanoChatEmoji
   id: rainbowlizard
   category: Plushies
-  sprite: /Textures/_Funkystation/Interface/NanoChat/Emotes/rainbowlizardplush.png
+  sprite: /Textures/_FunkyStation/Interface/NanoChat/Emotes/rainbowlizardplush.png
 
 - type: nanoChatEmoji
   id: nar
@@ -312,14 +312,14 @@
   id: cirno
   category: Plushies
   sprite:
-    sprite: /Textures/_Funkystation/Objects/Fun/toys.rsi
+    sprite: /Textures/_FunkyStation/Objects/Fun/toys.rsi
     state: plushie_cirno
 
 - type: nanoChatEmoji
   id: mothroach
   category: Plushies
   sprite:
-    sprite: /Textures/_Funkystation/Objects/Fun/toys.rsi
+    sprite: /Textures/_FunkyStation/Objects/Fun/toys.rsi
     state: plushie_mothroach
 
 - type: nanoChatEmoji
@@ -340,4 +340,4 @@
 - type: nanoChatEmoji
   id: floorgoblin
   category: Misc
-  sprite: /Textures/_Funkystation/Interface/NanoChat/Emotes/floorgoblin.png
+  sprite: /Textures/_FunkyStation/Interface/NanoChat/Emotes/floorgoblin.png
