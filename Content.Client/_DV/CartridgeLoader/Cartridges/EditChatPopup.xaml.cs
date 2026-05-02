@@ -9,6 +9,8 @@ namespace Content.Client._DV.CartridgeLoader.Cartridges;
 public sealed partial class EditChatPopup : DefaultWindow
 {
     private const int MaxNumberLength = 4;
+    private const int MaxFullNameLength = 30;
+    private const int MaxJobTitleLength = 30;
 
     // Used to see if the user input is different from the original data
     // to check if the user can submit
@@ -38,15 +40,15 @@ public sealed partial class EditChatPopup : DefaultWindow
         // Input validation
         NameInput.OnTextChanged += args =>
         {
-            if (args.Text.Length > IdCardConsoleComponent.MaxFullNameLength)
-                NameInput.Text = args.Text[..IdCardConsoleComponent.MaxFullNameLength];
+            if (args.Text.Length > MaxFullNameLength)
+                NameInput.Text = args.Text[..MaxFullNameLength];
             ValidateInputs();
         };
 
         JobInput.OnTextChanged += args =>
         {
-            if (args.Text.Length > IdCardConsoleComponent.MaxJobTitleLength)
-                JobInput.Text = args.Text[..IdCardConsoleComponent.MaxJobTitleLength];
+            if (args.Text.Length > MaxJobTitleLength)
+                JobInput.Text = args.Text[..MaxJobTitleLength];
             ValidateInputs();
         };
     }

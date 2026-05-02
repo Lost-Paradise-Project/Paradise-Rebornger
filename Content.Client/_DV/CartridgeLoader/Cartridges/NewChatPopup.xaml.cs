@@ -10,6 +10,8 @@ namespace Content.Client._DV.CartridgeLoader.Cartridges;
 public sealed partial class NewChatPopup : DefaultWindow
 {
     private const int MaxNumberLength = 4; // i hardcoded it to be 4 so suffer
+    private const int MaxFullNameLength = 30;
+    private const int MaxJobTitleLength = 30;
 
     public event Action<uint, string, string?>? OnChatCreated;
 
@@ -50,15 +52,15 @@ public sealed partial class NewChatPopup : DefaultWindow
 
         NameInput.OnTextChanged += args =>
         {
-            if (args.Text.Length > IdCardConsoleComponent.MaxFullNameLength)
-                NameInput.Text = args.Text[..IdCardConsoleComponent.MaxFullNameLength];
+            if (args.Text.Length > MaxFullNameLength)
+                NameInput.Text = args.Text[..MaxFullNameLength];
             ValidateInputs();
         };
 
         JobInput.OnTextChanged += args =>
         {
-            if (args.Text.Length > IdCardConsoleComponent.MaxJobTitleLength)
-                JobInput.Text = args.Text[..IdCardConsoleComponent.MaxJobTitleLength];
+            if (args.Text.Length > MaxJobTitleLength)
+                JobInput.Text = args.Text[..MaxJobTitleLength];
         };
     }
 

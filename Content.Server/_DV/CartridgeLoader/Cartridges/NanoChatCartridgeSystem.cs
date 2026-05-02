@@ -3,7 +3,6 @@ using Content.Server.Administration.Logs;
 using Content.Server.CartridgeLoader;
 using Content.Server.Power.Components;
 using Content.Server.Radio;
-using Content.Server.Radio.Components;
 using Content.Server.Station.Systems;
 using Content.Shared.Access.Components;
 using Content.Shared.CartridgeLoader;
@@ -34,7 +33,8 @@ public sealed class NanoChatCartridgeSystem : EntitySystem
     // The max length of the name and job title on the notification before being truncated.
     private const int NotificationTitleMaxLength = 32;
 
-
+    private const int MaxFullNameLength = 30;
+    private const int MaxJobTitleLength = 30;
 
     public override void Initialize()
     {
@@ -187,16 +187,16 @@ public sealed class NanoChatCartridgeSystem : EntitySystem
         if (!string.IsNullOrWhiteSpace(name))
         {
             name = name.Trim();
-            if (name.Length > IdCardConsoleComponent.MaxFullNameLength)
-                name = name[..IdCardConsoleComponent.MaxFullNameLength];
+            if (name.Length > MaxFullNameLength)
+                name = name[..MaxFullNameLength];
         }
 
         var jobTitle = msg.RecipientJob;
         if (!string.IsNullOrWhiteSpace(jobTitle))
         {
             jobTitle = jobTitle.Trim();
-            if (jobTitle.Length > IdCardConsoleComponent.MaxJobTitleLength)
-                jobTitle = jobTitle[..IdCardConsoleComponent.MaxJobTitleLength];
+            if (jobTitle.Length > MaxJobTitleLength)
+                jobTitle = jobTitle[..MaxJobTitleLength];
         }
 
         // Add new recipient
@@ -248,16 +248,16 @@ public sealed class NanoChatCartridgeSystem : EntitySystem
         if (!string.IsNullOrWhiteSpace(name))
         {
             name = name.Trim();
-            if (name.Length > IdCardConsoleComponent.MaxFullNameLength)
-                name = name[..IdCardConsoleComponent.MaxFullNameLength];
+            if (name.Length > MaxFullNameLength)
+                name = name[..MaxFullNameLength];
         }
 
         var jobTitle = msg.RecipientJob;
         if (!string.IsNullOrWhiteSpace(jobTitle))
         {
             jobTitle = jobTitle.Trim();
-            if (jobTitle.Length > IdCardConsoleComponent.MaxJobTitleLength)
-                jobTitle = jobTitle[..IdCardConsoleComponent.MaxJobTitleLength];
+            if (jobTitle.Length > MaxJobTitleLength)
+                jobTitle = jobTitle[..MaxJobTitleLength];
         }
 
         // Update recipient
@@ -828,8 +828,8 @@ public sealed class NanoChatCartridgeSystem : EntitySystem
         if (!string.IsNullOrWhiteSpace(name))
         {
             name = name.Trim();
-            if (name.Length > IdCardConsoleComponent.MaxFullNameLength)
-                name = name[..IdCardConsoleComponent.MaxFullNameLength];
+            if (name.Length > MaxFullNameLength)
+                name = name[..MaxFullNameLength];
         }
 
         // Generate a unique group number (surely unique I actually have no idea how to generate good unique numbers.)

@@ -8,6 +8,8 @@ namespace Content.Client._FunkyStation.NanoChat;
 [GenerateTypedNameReferences]
 public sealed partial class CreateGroupChatPopup : DefaultWindow
 {
+    private const int MaxFullNameLength = 30;
+    private const int MaxJobTitleLength = 30;
     public event Action<string>? OnGroupCreated;
 
     public CreateGroupChatPopup()
@@ -25,8 +27,8 @@ public sealed partial class CreateGroupChatPopup : DefaultWindow
 
         GroupNameInput.OnTextChanged += args =>
         {
-            if (args.Text.Length > IdCardConsoleComponent.MaxFullNameLength)
-                GroupNameInput.Text = args.Text[..IdCardConsoleComponent.MaxFullNameLength];
+            if (args.Text.Length > MaxFullNameLength)
+                GroupNameInput.Text = args.Text[..MaxFullNameLength];
             ValidateInputs();
         };
     }

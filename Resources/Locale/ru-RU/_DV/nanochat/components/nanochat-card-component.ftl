@@ -1,7 +1,7 @@
 # Examine
-nanochat-card-examine-no-number = The NanoChat card has not been assigned a number yet.
-nanochat-card-examine-number = The NanoChat card displays #{ $number }.
+nanochat-card-examine-no-number = Этой карте НаноЧат ещё не присвоен номер.
+nanochat-card-examine-number = На карте НаноЧат отображается номер #{ $number }.
 
 # Microwave interactions
-nanochat-card-microwave-erased = The { $card } emits a soft beep as all its message history vanishes into the ether!
-nanochat-card-microwave-scrambled = The { $card } crackles as its messages become scrambled!
+nanochat-card-microwave-erased = { $card } издаёт тихий писк, пока вся история сообщений исчезает в небытие!
+nanochat-card-microwave-scrambled = { $card } трещит, а сообщения на ней перемешиваются!

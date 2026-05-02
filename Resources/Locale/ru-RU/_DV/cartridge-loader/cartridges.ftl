@@ -1,50 +1,50 @@
 ## NanoChat
 
 # General
-nano-chat-program-name = NanoChat
-nano-chat-title = NanoChat
-nano-chat-new-chat = New Chat
-nano-chat-contacts = CONTACTS
-nano-chat-no-chats = No active chats
-nano-chat-select-chat = Select a chat to begin
-nano-chat-message-placeholder = Type a message...
-nano-chat-send = Send
-nano-chat-edit = Edit Contact
-nano-chat-delete = Delete
-nano-chat-loading = Loading...
-nano-chat-message-too-long = Message too long ({ $current }/{ $max } characters)
-nano-chat-max-recipients = Maximum number of chats reached
-nano-chat-new-message-title = Message from { $sender }
+nano-chat-program-name = НаноЧат
+nano-chat-title = НаноЧат
+nano-chat-new-chat = Новый чат
+nano-chat-contacts = КОНТАКТЫ
+nano-chat-no-chats = Нет активных чатов
+nano-chat-select-chat = Выберите чат, чтобы начать
+nano-chat-message-placeholder = Введите сообщение...
+nano-chat-send = Отправить
+nano-chat-edit = Изменить контакт
+nano-chat-delete = Удалить
+nano-chat-loading = Загрузка...
+nano-chat-message-too-long = Сообщение слишком длинное ({ $current }/{ $max } символов)
+nano-chat-max-recipients = Достигнуто максимальное количество чатов
+nano-chat-new-message-title = Сообщение от { $sender }
 nano-chat-new-message-title-recipient = { $sender } ({ $jobTitle })
 nano-chat-new-message-body = { $message }
-nano-chat-toggle-mute = Mute notifications
-nano-chat-toggle-mute-chat = Mute chat
-nano-chat-delivery-failed = Failed to deliver
-nano-chat-look-up-no-server = No valid telecommunications server found
-nano-chat-look-up = Look up numbers
-nano-chat-list-number = List number
+nano-chat-toggle-mute = Без звука (уведомления)
+nano-chat-toggle-mute-chat = Без звука (чат)
+nano-chat-delivery-failed = Ошибка доставки
+nano-chat-look-up-no-server = Сервер телекоммуникаций не найден
+nano-chat-look-up = Поиск номеров
+nano-chat-list-number = Показать номер в списке
 
 # Create chat popup
-nano-chat-new-title = Add a new chat
-nano-chat-number-label = Number
-nano-chat-name-label = Name
-nano-chat-job-label = Job title
-nano-chat-number-placeholder = Enter a number
-nano-chat-name-placeholder = Enter a name
-nano-chat-job-placeholder = Enter a job title (optional)
-nano-chat-cancel = Cancel
-nano-chat-create = Create
+nano-chat-new-title = Добавить новый чат
+nano-chat-number-label = Номер
+nano-chat-name-label = Имя
+nano-chat-job-label = Должность
+nano-chat-number-placeholder = Введите номер...
+nano-chat-name-placeholder = Введите имя...
+nano-chat-job-placeholder = Введите должность (опционально)
+nano-chat-cancel = Отмена
+nano-chat-create = Создать
 
 # Edit chat popup
-nano-chat-edit-title = Edit a contact
-nano-chat-confirm = Confirm
+nano-chat-edit-title = Изменение контакта
+nano-chat-confirm = Подтвердить
 
 # LogProbe additions
-log-probe-scan-nanochat = Scanned { $card }'s NanoChat logs
-log-probe-header-access = Access Log Scanner
-log-probe-header-nanochat = NanoChat Log Scanner
-log-probe-label-message = Message
-log-probe-card-number = Card: { $number }
-log-probe-recipients = { $count } Recipients
-log-probe-recipient-list = Known Recipients:
+log-probe-scan-nanochat = Просканированы логи NanoChat субъекта { $card }
+log-probe-header-access = Сканер логов доступа
+log-probe-header-nanochat = Сканер логов NanoChat
+log-probe-label-message = Сообщение
+log-probe-card-number = Карта: { $number }
+log-probe-recipients = Получателей: { $count }
+log-probe-recipient-list = Известные получатели:
 log-probe-message-format = { $sender } → { $recipient }: { $content }
