@@ -1481,5 +1481,3 @@
         type: AgentIDCardBoundUserInterface
   - type: Contract
     contract: ContractAdmin
-  - type: NanoChatCard # DeltaV
-    notificationsMuted: true
