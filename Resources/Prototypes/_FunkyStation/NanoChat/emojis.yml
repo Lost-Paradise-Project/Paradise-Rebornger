@@ -41,10 +41,6 @@
   sprite: /Textures/_FunkyStation/Interface/NanoChat/Emotes/troll.png
 
 # Character emotes
-- type: nanoChatEmoji
-  id: bubble
-  category: Character
-  sprite: /Textures/Interface/Emotes/bubble.png
 
 - type: nanoChatEmoji
   id: buzz
@@ -85,16 +81,6 @@
   id: deathgasp
   category: Character
   sprite: /Textures/Interface/Emotes/deathgasp.png
-
-- type: nanoChatEmoji
-  id: fizz
-  category: Character
-  sprite: /Textures/Interface/Emotes/fizz.png
-
-- type: nanoChatEmoji
-  id: hat
-  category: Character
-  sprite: /Textures/Interface/Emotes/hat.png
 
 - type: nanoChatEmoji
   id: hew
