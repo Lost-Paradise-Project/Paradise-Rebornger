@@ -1,4 +1,4 @@
-﻿<BoxContainer
+<BoxContainer
     xmlns="https://spacestation14.io"
     xmlns:graphics="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
     HorizontalExpand="True">

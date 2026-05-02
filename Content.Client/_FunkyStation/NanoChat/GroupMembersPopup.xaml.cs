@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using System.Numerics;
 using Content.Client.Resources;
 using Content.Shared._DV.CartridgeLoader.Cartridges;

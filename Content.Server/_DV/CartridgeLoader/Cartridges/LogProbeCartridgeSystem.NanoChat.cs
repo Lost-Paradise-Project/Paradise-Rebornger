@@ -1,4 +1,4 @@
-﻿using Content.Shared.Audio;
+using Content.Shared.Audio;
 using Content.Shared.CartridgeLoader;
 using Content.Shared._DV.CartridgeLoader.Cartridges;
 using Content.Shared._DV.NanoChat;

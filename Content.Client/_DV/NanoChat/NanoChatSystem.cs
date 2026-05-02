@@ -1,4 +1,4 @@
-﻿using Content.Shared._DV.NanoChat;
+using Content.Shared._DV.NanoChat;
 
 namespace Content.Client._DV.NanoChat;
 

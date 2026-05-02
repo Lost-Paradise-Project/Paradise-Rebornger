@@ -1,4 +1,4 @@
-﻿## NanoChat
+## NanoChat
 
 # General
 nano-chat-program-name = NanoChat
