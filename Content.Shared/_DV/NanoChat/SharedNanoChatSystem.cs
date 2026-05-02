@@ -1,4 +1,4 @@
-﻿using Content.Shared._DV.CartridgeLoader.Cartridges;
+using Content.Shared._DV.CartridgeLoader.Cartridges;
 using Content.Shared.Examine;
 using Robust.Shared.Timing;
 

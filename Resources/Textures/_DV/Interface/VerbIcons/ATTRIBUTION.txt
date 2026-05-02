@@ -1,4 +1,4 @@
-﻿bell.svg taken from https://coreui.io/icons/
+bell.svg taken from https://coreui.io/icons/
 Licensed under CC BY 4.0
 
 hamburger_icon.svg.png

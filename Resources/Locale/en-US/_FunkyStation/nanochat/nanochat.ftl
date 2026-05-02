@@ -1,4 +1,4 @@
-﻿# Group chat
+# Group chat
 nano-chat-create-group = Create Group Chat
 nano-chat-invite-to-group = Invite to Group
 nano-chat-view-members = View Members

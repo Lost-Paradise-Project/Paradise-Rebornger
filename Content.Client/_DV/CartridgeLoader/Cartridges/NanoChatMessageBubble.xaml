@@ -1,4 +1,4 @@
-﻿<cartridges:NanoChatMessageBubble
+<cartridges:NanoChatMessageBubble
     HorizontalExpand="True"
     xmlns="https://spacestation14.io"
     xmlns:cartridges="clr-namespace:Content.Client._DV.CartridgeLoader.Cartridges"

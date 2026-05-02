@@ -1,4 +1,4 @@
-﻿using Content.Shared.Radio;
+using Content.Shared.Radio;
 using Robust.Shared.Prototypes;
 
 namespace Content.Server._DV.CartridgeLoader.Cartridges;

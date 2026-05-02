@@ -1,4 +1,4 @@
-﻿using Content.Shared._DV.CartridgeLoader.Cartridges;
+using Content.Shared._DV.CartridgeLoader.Cartridges;
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 

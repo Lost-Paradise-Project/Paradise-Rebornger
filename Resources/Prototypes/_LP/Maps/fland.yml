@@ -3,7 +3,7 @@
   mapName: 'Fland Installation'
   mapPath: /Maps/_LP/Station/LP_Fland.yml
   randomRotation: false
-  minPlayers: 25 # LP edit
+  minPlayers: 30 # LP edit
   stations:
     LP_Fland:
       stationProto: StandardNanotrasenStation

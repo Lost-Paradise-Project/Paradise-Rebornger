@@ -1,4 +1,4 @@
-﻿<DefaultWindow xmlns="https://spacestation14.io"
+<DefaultWindow xmlns="https://spacestation14.io"
                Title="{Loc nano-chat-new-title}"
                MinSize="300 200">
     <PanelContainer StyleClasses="AngleRect">

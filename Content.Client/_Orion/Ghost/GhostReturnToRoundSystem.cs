@@ -1,4 +1,4 @@
-﻿using Content.Client.UserInterface.Systems.Ghost.Widgets;
+using Content.Client.UserInterface.Systems.Ghost.Widgets;
 using Content.Shared._Orion.Ghost;
 using Content.Shared.Ghost;
 using Robust.Client.Player;
