@@ -18,6 +18,7 @@ using Content.Shared.Lock;
 using Content.Shared.PDA;
 using Content.Shared._L5.Contract; // L5
 using Content.Shared.VoiceMask;
+using Content.Shared._DV.NanoChat; // DeltaV
 
 namespace Content.Server.Access.Systems
 {
@@ -31,6 +32,7 @@ namespace Content.Server.Access.Systems
         [Dependency] private readonly ChameleonControllerSystem _chamController = default!;
         [Dependency] private readonly LockSystem _lock = default!;
         [Dependency] private readonly SharedJobStatusSystem _jobStatus = default!;
+        [Dependency] private readonly SharedNanoChatSystem _nanoChat = default!; // DeltaV
 
         public override void Initialize()
         {
@@ -44,6 +46,17 @@ namespace Content.Server.Access.Systems
             SubscribeLocalEvent<AgentIDCardComponent, InventoryRelayedEvent<ChameleonControllerOutfitSelectedEvent>>(OnChameleonControllerOutfitChangedItem);
             SubscribeLocalEvent<AgentIDCardComponent, InventoryRelayedEvent<VoiceMaskNameUpdatedEvent>>(OnVoiceMaskNameChanged);
             SubscribeLocalEvent<AgentIDCardComponent, AgentIdCardContractChangedMessage>(OnContractChanged); // L5
+            SubscribeLocalEvent<AgentIDCardComponent, AgentIDCardNumberChangedMessage>(OnNumberChanged); // DeltaV
+        }
+
+        // DeltaV - Add number change handler
+        private void OnNumberChanged(Entity<AgentIDCardComponent> ent, ref AgentIDCardNumberChangedMessage args)
+        {
+            if (!TryComp<NanoChatCardComponent>(ent, out var comp))
+                return;
+
+            _nanoChat.SetNumber((ent, comp), args.Number);
+            Dirty(ent, comp);
         }
 
         private void OnChameleonControllerOutfitChangedItem(Entity<AgentIDCardComponent> ent, ref InventoryRelayedEvent<ChameleonControllerOutfitSelectedEvent> args)
@@ -118,6 +131,34 @@ namespace Content.Server.Access.Systems
             access.Tags.UnionWith(targetAccess.Tags);
             var addedLength = access.Tags.Count - beforeLength;
 
+            // DeltaV - Copy NanoChat data if available
+            if (TryComp<NanoChatCardComponent>(args.Target, out var targetNanoChat) &&
+                TryComp<NanoChatCardComponent>(uid, out var agentNanoChat))
+            {
+                // First clear existing data
+                _nanoChat.Clear((uid, agentNanoChat));
+
+                // Copy the number
+                if (_nanoChat.GetNumber((args.Target.Value, targetNanoChat)) is { } number)
+                    _nanoChat.SetNumber((uid, agentNanoChat), number);
+
+                // Copy all recipients and their messages
+                foreach (var (recipientNumber, recipient) in _nanoChat.GetRecipients((args.Target.Value, targetNanoChat)))
+                {
+                    _nanoChat.SetRecipient((uid, agentNanoChat), recipientNumber, recipient);
+
+                    if (_nanoChat.GetMessagesForRecipient((args.Target.Value, targetNanoChat), recipientNumber) is not
+                        { } messages)
+                        continue;
+
+                    foreach (var message in messages)
+                    {
+                        _nanoChat.AddMessage((uid, agentNanoChat), recipientNumber, message);
+                    }
+                }
+            }
+            // End DeltaV
+
             _popupSystem.PopupEntity(Loc.GetString("agent-id-new", ("number", addedLength), ("card", args.Target)), args.Target.Value, args.User);
             if (addedLength > 0)
                 Dirty(uid, access);
@@ -135,7 +176,18 @@ namespace Content.Server.Access.Systems
             if (TryComp<ContractComponent>(uid, out var contract))
                 currentContract = contract.Contract;
 
-            var state = new AgentIDCardBoundUserInterfaceState(idCard.FullName ?? "", idCard.LocalizedJobTitle ?? "", idCard.JobIcon, currentContract);// L5 — current contract ID
+            // DeltaV - Get current number if it exists
+            uint? currentNumber = null;
+            if (TryComp<NanoChatCardComponent>(uid, out var comp))
+                currentNumber = comp.Number;
+
+            var state = new AgentIDCardBoundUserInterfaceState(
+                idCard.FullName ?? "",
+                idCard.LocalizedJobTitle ?? "",
+                idCard.JobIcon,
+                currentContract, // L5 — current contract ID
+                currentNumber); // DeltaV - Pass current number
+
             _uiSystem.SetUiState(uid, AgentIDCardUiKey.Key, state);
         }
 
