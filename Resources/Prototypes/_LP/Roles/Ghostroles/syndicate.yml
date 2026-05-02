@@ -1,0 +1,15 @@
+- type: ghostRole
+  id: LPPSyndicateLoneOperativeVeteran
+  name: ghost-role-information-syndicate-reinforcement-loneveteran-name
+  description: ghost-role-information-syndicate-reinforcement-loneveteran-description
+  rules: ghost-role-information-syndicate-reinforcement-rules
+  entityPrototype: LPPMobHumanLoneNuclearOperativeVeteran
+  iconPrototype: LPPClothingHeadHelmetHardsuitInteq
+
+- type: ghostRole
+  id: LPPSyndicateOperativeVeteran
+  name: ghost-role-information-syndicate-reinforcement-veteran-name
+  description: ghost-role-information-syndicate-reinforcement-veteran-description
+  rules: ghost-role-information-syndicate-reinforcement-rules
+  entityPrototype: LPPMobHumanNuclearOperativeVeteran
+  iconPrototype: LPPClothingHeadHelmetHardsuitVeteranHelmet

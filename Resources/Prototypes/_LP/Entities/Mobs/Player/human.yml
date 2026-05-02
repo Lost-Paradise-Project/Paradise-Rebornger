@@ -1,0 +1,41 @@
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: MobHuman
+  id: LPPMobHumanLoneNuclearOperativeVeteran
+  name: Lone Veteran Operative
+  components:
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: NukeOperative
+  - type: Loadout
+    prototypes: [LPPSyndicateLoneOperativeVeteranGearFull]
+    roleLoadout: [ RoleSurvivalSyndicate ]
+  - type: RandomMetadata
+    nameSegments:
+    - NamesSyndicatePrefix
+    - NamesSyndicateNormal
+    nameFormat: name-format-nukie-generic
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: MobHuman
+  id: LPPMobHumanNuclearOperativeVeteran
+  name: Veteran Operative
+  components:
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: NukeOperative
+  - type: Loadout
+    prototypes: [LPPSyndicateOperativeVeteranGearFull]
+    roleLoadout: [ RoleSurvivalSyndicate ]
+  - type: RandomMetadata
+    nameSegments:
+    - NamesSyndicatePrefix
+    - NamesSyndicateNormal
+    nameFormat: name-format-nukie-generic
+  - type: NpcFactionMember
+    factions:
+    - Syndicate

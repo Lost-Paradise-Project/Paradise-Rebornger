@@ -452,3 +452,4 @@ marking-LPPIpcAndroidChestM = Торс из синтплоти (мужской)
 marking-LPPIpcAndroidChestF = Торс из синтплоти (женский)
 marking-LPPIpcAndroidEyes = Глаза андроида
 marking-LPPIpcAndroidEyesAlt = Глаза андроида (альт)
+marking-LPPAnthroEyes = Антро глаза

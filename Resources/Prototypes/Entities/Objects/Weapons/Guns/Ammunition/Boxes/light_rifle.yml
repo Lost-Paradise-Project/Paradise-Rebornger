@@ -34,6 +34,11 @@
     steps: 4
     zeroVisible: false
   - type: Appearance
+#LP edit start
+  - type: Tag
+    tags:
+    - MagazineBoxLightRifle
+#LP edit end
 
 # Boxes
 - type: entity

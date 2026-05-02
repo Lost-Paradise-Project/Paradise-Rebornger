@@ -163,7 +163,7 @@
     proto: diona
   - type: BodyEmotes
     soundsId: DionaBodyEmotes
-  - type: Pacified # Corvax-DionaPacifist
+  # - type: Pacified # Corvax-DionaPacifist LP edit
   - type: IgnoreKudzu
   - type: IgniteOnHeatDamage
     fireStacks: 1

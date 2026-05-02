@@ -41,6 +41,7 @@
     sentence: action-speech-spell-smite
   - type: Magic
     requiresClothes: true
+  - type: EorgPreventAction # Starlight
 
 # For the Snail
 - type: entity
@@ -71,6 +72,7 @@
     sentence: action-speech-spell-cluwne
   - type: Magic
     requiresClothes: true
+  - type: EorgPreventAction # Starlight
 
 - type: entity
   parent: BaseSmiteAction
@@ -95,3 +97,4 @@
     sentence: action-speech-spell-slip
   - type: Magic
     requiresClothes: false
+  - type: EorgPreventAction # Starlight

@@ -36,7 +36,7 @@
   - type: GunUpgradeDamage
     damage:
       types:
-        Blunt: 10
+        Blunt: 15 #LP edit
         Structural: 15
 
 - type: entity

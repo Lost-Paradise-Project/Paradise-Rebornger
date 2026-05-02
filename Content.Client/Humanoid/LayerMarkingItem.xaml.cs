@@ -171,7 +171,7 @@ public sealed partial class LayerMarkingItem : BoxContainer, ISearchableControl
             ColorsContainer.AddChild(container);
 
             var selector = new ColorSelectorSliders();
-            selector.SelectorType = ColorSelectorSliders.ColorSelectorType.Hsv;
+            selector.SelectorType = ColorSelectorSliders.ColorSelectorType.Rgb; // LP edit - RGB
 
             var label = _markingPrototype.Sprites[i] switch
             {

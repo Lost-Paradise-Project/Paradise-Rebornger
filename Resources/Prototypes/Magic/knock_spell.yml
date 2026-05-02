@@ -16,3 +16,4 @@
     event: !type:KnockSpellEvent
   - type: SpeakOnAction
     sentence: action-speech-spell-knock
+  - type: EorgPreventAction # Starlight

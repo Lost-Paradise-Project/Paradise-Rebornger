@@ -25,7 +25,7 @@
     minAngle: -43
     maxAngle: -43
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 4.25
+    rechargeCooldown: 5
     rechargeSound: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
   - type: BasicEntityAmmoProvider
     proto: LPPBulletPibodi
@@ -35,7 +35,7 @@
     wideAnimationRotation: -135
     damage:
       types:
-        Piercing: 10.5
+        Piercing: 8.5
     angle: 0
     animation: WeaponArcThrust
     soundHit:
@@ -66,12 +66,12 @@
     - suitStorage
   - type: Execution
   - type: CursorOffsetRequiresWield
-  - type: EyeCursorOffset # Frontier
-    maxOffset: 1.5 # Frontier
-    pvsIncrease: 0.15 # Frontier
+  - type: EyeCursorOffset
+    maxOffset: 1.5
+    pvsIncrease: 0.15
   - type: MeleeRequiresWield
-  - type: AltFireMelee # Frontier
-    attackType: Light # Frontier
+  - type: AltFireMelee
+    attackType: Light
   - type: Sharp
     butcherDelayModifier: 2 #It's a bayonet
 
@@ -102,7 +102,7 @@
     minAngle: -63
     maxAngle: -63
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 5
+    rechargeCooldown: 6.25
     rechargeSound: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
   - type: BasicEntityAmmoProvider
     proto: LPPNailRifle
@@ -131,12 +131,12 @@
       types:
         Blunt: 2.5
   - type: MeleeRequiresWield
-  - type: AltFireMelee # Frontier
-    attackType: Light # Frontier
+  - type: AltFireMelee
+    attackType: Light
   - type: CursorOffsetRequiresWield
-  - type: EyeCursorOffset # Frontier
-    maxOffset: 4 # Frontier
-    pvsIncrease: 0.5 # Frontier
+  - type: EyeCursorOffset
+    maxOffset: 4
+    pvsIncrease: 0.5
 
 - type: entity
   parent: [BaseItem, BaseCargoContraband ]
@@ -155,17 +155,17 @@
     fireRate: 0.5
     selectedMode: SemiAuto
     angleDecay: 45
-    minAngle: 64
+    minAngle: 35
     maxAngle: 65
     availableModes:
     - SemiAuto
     soundGunshot:
       path: /Audio/_LP/Weapons/Guns/Gunshots/shasspo.ogg
   - type: GunWieldBonus
-    minAngle: -63
-    maxAngle: -63
+    minAngle: -33
+    maxAngle: -64
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 4
+    rechargeCooldown: 3
     rechargeSound: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
   - type: BasicEntityAmmoProvider
     proto: LPPBulletLebel
@@ -193,8 +193,8 @@
       types:
         Blunt: 2.5
   - type: MeleeRequiresWield
-  - type: AltFireMelee # Frontier
-    attackType: Light # Frontier
+  - type: AltFireMelee
+    attackType: Light
 
 - type: entity
   parent: [BaseItem, BaseCargoContraband ]
@@ -210,7 +210,7 @@
     size: Huge
   - type: AmmoCounter
   - type: Gun
-    fireRate: 0.45
+    fireRate: 0.65
     selectedMode: SemiAuto
     angleDecay: 45
     minAngle: 2
@@ -249,8 +249,8 @@
       types:
         Blunt: 2.5
   - type: MeleeRequiresWield
-  - type: AltFireMelee # Frontier
-    attackType: Light # Frontier
+  - type: AltFireMelee
+    attackType: Light
 
 - type: entity
   parent: [BaseItem, BaseCargoContraband ]
@@ -270,13 +270,13 @@
     selectedMode: SemiAuto
     angleDecay: 45
     minAngle: 2
-    maxAngle: 5
+    maxAngle: 10
     availableModes:
     - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/plasma_cutter.ogg
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 1.75
+    rechargeCooldown: 2
     rechargeSound: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
   - type: BasicEntityAmmoProvider
     proto: LPPBulletChargeWeak
@@ -298,5 +298,5 @@
     wideAnimationRotation: 60
     soundHit:
       collection: MetalThud
-  - type: AltFireMelee # Frontier
-    attackType: Light # Frontier
+  - type: AltFireMelee
+    attackType: Light

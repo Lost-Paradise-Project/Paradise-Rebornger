@@ -1,0 +1,13 @@
+- type: entity
+  id: LPPCigaretteEndeless
+  suffix: endeless
+  parent: Cigarette
+  name: cigarette cancer++
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      smokable:
+        maxVol: 1000
+        reagents:
+          - ReagentId: Nicotine
+            Quantity: 1000

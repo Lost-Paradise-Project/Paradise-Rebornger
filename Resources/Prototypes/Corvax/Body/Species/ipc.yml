@@ -273,7 +273,6 @@
     thermalRegulationTemperatureThreshold: 2
   - type: FootprintOwner # starcup
     footprint: humanFootprint # starcup
-  - type: PreventInfection
 
 - type: entity
   parent: OrganBase

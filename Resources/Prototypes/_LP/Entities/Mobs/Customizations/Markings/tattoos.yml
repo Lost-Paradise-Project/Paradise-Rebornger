@@ -36,3 +36,17 @@
   sprites:
   - sprite: _LP/Mobs/Customization/tattoos.rsi
     state: big_eye_right
+
+- type: marking
+  id: LPPAnthroEyes
+  bodyPart: Eyes
+  groupWhitelist: [Vulpkanin, Tajaran]
+  sprites:
+    - sprite: _LP/Mobs/Customization/android_eyes.rsi
+      state: eyes
+    - sprite: _LP/Mobs/Customization/android_eyes.rsi
+      state: eyes1
+    - sprite: _LP/Mobs/Customization/android_eyes.rsi
+      state: eyes2
+    - sprite: _LP/Mobs/Customization/android_eyes.rsi
+      state: eyes3
