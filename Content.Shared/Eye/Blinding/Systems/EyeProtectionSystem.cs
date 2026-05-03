@@ -4,8 +4,7 @@ using Content.Shared.Eye.Blinding.Components;
 using Content.Shared.Tools.Components;
 using Content.Shared.Item.ItemToggle.Components;
 using Content.Shared.Clothing.Components;
-using Content.Shared._LP.Body.Components;
-using Robust.Shared.Serialization.TypeSerializers.Implementations;
+using Content.Shared._LP.Body.Components; // LP Edit
 
 namespace Content.Shared.Eye.Blinding.Systems
 {

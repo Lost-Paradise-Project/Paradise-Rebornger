@@ -219,13 +219,14 @@
   - type: ShowSyndicateIcons
 
 - type: entity
-  parent: [ClothingEyesHudBase, ShowSecurityIcons, BaseSyndicateContraband, BaseToggleClothing]
+  parent: [ClothingEyesHudBase, ShowSecurityIcons, BaseSyndicateContraband, BaseToggleClothing] # LP Edit
   id: ClothingEyesHudSyndicate
   name: syndicate visor
   description: The syndicate's professional head-up display, designed for better detection of humanoids and their subsequent elimination.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Hud/synd.rsi
+  # LP Edit Start
     layers:
       - state: icon
         map: [ "enum.ToggleableVisuals.Layer" ]
@@ -237,7 +238,6 @@
     tint1: 0.3
     tint2: 1.0
     tint3: 0.3
-    vignette: 1.25
   - type: ItemTogglePrefix
     prefixOn: on
   - type: ToggleClothingPrefix
@@ -247,8 +247,9 @@
     visuals:
       enum.ToggleableVisuals.Enabled:
         enum.ToggleableVisuals.Layer:
-          True: {state: icon}
+          True: {state: icon-on}
           False: {state: icon}
+  # LP Edit End
   - type: Clothing
     sprite: Clothing/Eyes/Hud/synd.rsi
   - type: ShowSyndicateIcons
@@ -258,13 +259,14 @@
     - WhitelistChameleon
 
 - type: entity
-  parent: [ClothingEyesHudBase, ShowSecurityIcons, BaseSyndicateContraband, BaseToggleClothing]
+  parent: [ClothingEyesHudBase, ShowSecurityIcons, BaseSyndicateContraband, BaseToggleClothing] # LP Edit
   id: ClothingEyesHudSyndicateAgent
   name: syndicate medical visor
   description: The Syndicate Corpsman's professional heads-up display, designed for quick diagnosis of their team's status.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Hud/syndagent.rsi
+  # LP Edit Start
     layers:
       - state: icon
         map: [ "enum.ToggleableVisuals.Layer" ]
@@ -276,7 +278,6 @@
     tint1: 0.3
     tint2: 0.3
     tint3: 0.7
-    vignette: 1.25
   - type: ItemTogglePrefix
     prefixOn: on
   - type: ToggleClothingPrefix
@@ -286,8 +287,9 @@
     visuals:
       enum.ToggleableVisuals.Enabled:
         enum.ToggleableVisuals.Layer:
-          True: {state: icon}
+          True: {state: icon-on}
           False: {state: icon}
+  # LP Edit End
   - type: Clothing
     sprite: Clothing/Eyes/Hud/syndagent.rsi
   - type: ShowSyndicateIcons

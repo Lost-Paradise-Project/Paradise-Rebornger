@@ -9,7 +9,7 @@ namespace Content.Shared._LP.Clothing.Components;
 public sealed partial class NightVisionComponent : Component
 {
     /// <summary>
-    /// NOT WORKING RIGHT NOW
+    /// IsAnimal NOT WORKING RIGHT NOW, CHANGE IN NEXT UPDATE
     /// </summary>
     [DataField("animal")]
     public bool IsAnimal = false;
@@ -47,7 +47,7 @@ public sealed partial class NightVisionComponent : Component
     public float Scanline = 0.01f;
 
     [DataField]
-    public float Vignette = 0.35f;
+    public float Vignette = 1.25f;
 
     [DataField]
     public float Flicker = 2.0f;

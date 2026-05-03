@@ -140,4 +140,4 @@
         defaultPrototype: Beaker
       AnomalyCore:
         amount: 3
-        defaultPrototype: AnomalyCoreBluespace
+        defaultPrototype: LPPBaseAnomalyCore

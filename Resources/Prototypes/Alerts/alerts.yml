@@ -24,7 +24,6 @@
     - category: Hunger
     - category: Thirst
     - alertType: Magboots
-    - alertType: LPPNightVision # LP Edit
     - alertType: Rooted
     - alertType: Pacified
     - alertType: Stealthy

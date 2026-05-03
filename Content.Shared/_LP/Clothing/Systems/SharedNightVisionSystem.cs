@@ -39,5 +39,3 @@ public abstract class SharedNightVisionSystem : EntitySystem
 
     protected virtual void UpdateNightVisionEffects(EntityUid user, Entity<NightVisionComponent> ent, bool state) { }
 }
-
-public sealed partial class ToggleNightVisionEvent : InstantActionEvent { }

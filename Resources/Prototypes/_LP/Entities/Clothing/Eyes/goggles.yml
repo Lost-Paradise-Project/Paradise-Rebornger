@@ -16,12 +16,15 @@
       mustEquip: true
     - type: NightVision
       requiredSlot: eyes
+      # Change if you need, this will change overlay
       tint1: 0.1 # Red
       tint2: 0.1 # Green
       tint3: 0.1 # Blue
-      vignette: 1.25
-      # strength: 2 # Add if you need
-      # noise: 0.5 # Add if you need
+      # vignette: 1.25
+      # strength: 2
+      # noise: 0.03
+      # scanline: 0.01
+      # flicker: 2.0
     - type: ItemTogglePrefix
       prefixOn: on
     - type: ToggleClothingPrefix

@@ -10,10 +10,8 @@ public sealed class NightVisionOverlay : Overlay
     private readonly IPrototypeManager _prototypeManager;
     private readonly NightVisionSystem _nvSystem;
     private static readonly ProtoId<ShaderPrototype> Shader = "LPPNightVision";
-
     public override bool RequestScreenTexture => true;
     public override OverlaySpace Space => OverlaySpace.WorldSpace;
-
     private readonly ShaderInstance _shader;
 
     public NightVisionOverlay(NightVisionSystem nightVisionSystem)

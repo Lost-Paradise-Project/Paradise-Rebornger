@@ -270,13 +270,14 @@
       - WhitelistChameleon
 
 - type: entity
-  parent: [ClothingEyesBase, BaseHighlyIllegalContraband, BaseToggleClothing]
+  parent: [ClothingEyesBase, BaseHighlyIllegalContraband, BaseToggleClothing] # LP Edit
   id: ClothingEyesVisorNinja
   name: ninja visor
   description: An advanced visor protecting a ninja's eyes from flashing lights.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/ninjavisor.rsi
+  # LP Edit Start
     layers:
       - state: icon
         map: [ "enum.ToggleableVisuals.Layer" ]
@@ -285,10 +286,9 @@
     mustEquip: true
   - type: NightVision
     requiredSlot: eyes
-    tint1: 0.1 # Red
-    tint2: 0.1 # Green
-    tint3: 0.1 # Blue
-    vignette: 1.25
+    tint1: 0.1
+    tint2: 0.1
+    tint3: 0.1
   - type: ItemTogglePrefix
     prefixOn: on
   - type: ToggleClothingPrefix
@@ -298,8 +298,9 @@
     visuals:
       enum.ToggleableVisuals.Enabled:
         enum.ToggleableVisuals.Layer:
-          True: {state: icon}
+          True: {state: icon-on}
           False: {state: icon}
+  # LP Edit End
   - type: Clothing
     sprite: Clothing/Eyes/Glasses/ninjavisor.rsi
   - type: FlashImmunity

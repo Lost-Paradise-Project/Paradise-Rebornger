@@ -38,6 +38,7 @@
 - type: entity
   parent: BaseAnomalyCore
   id: AnomalyCorePyroclastic
+  name: anomaly core # LP Edit
   suffix: Pyroclastic
   components:
   - type: Sprite
@@ -54,6 +55,7 @@
 - type: entity
   parent: BaseAnomalyCore
   id: AnomalyCoreGravity
+  name: anomaly core # LP Edit
   suffix: Gravity
   components:
   - type: Sprite
@@ -74,6 +76,7 @@
 - type: entity
   parent: BaseAnomalyCore
   id: AnomalyCoreIce
+  name: anomaly core # LP Edit
   suffix: Ice
   components:
   - type: Sprite
@@ -87,6 +90,7 @@
 - type: entity
   parent: BaseAnomalyCore
   id: AnomalyCoreFlesh
+  name: anomaly core # LP Edit
   description: The core of a destroyed flesh anomaly. Pulsates sickeningly, but might be a hearty meal if cooked.
   suffix: Flesh
   components:
@@ -101,6 +105,7 @@
 - type: entity
   parent: BaseAnomalyCore
   id: AnomalyCoreRock
+  name: anomaly core # LP Edit
   suffix: Rock
   components:
   - type: Sprite
@@ -114,6 +119,7 @@
 - type: entity
   parent: BaseAnomalyCore
   id: AnomalyCoreLiquid
+  name: anomaly core # LP Edit
   suffix: Liquid
   components:
   - type: Sprite
@@ -127,6 +133,7 @@
 - type: entity
   parent: BaseAnomalyCore
   id: AnomalyCoreBluespace
+  name: anomaly core # LP Edit
   suffix: Bluespace
   components:
   # LP Edit Start
@@ -148,6 +155,7 @@
 - type: entity
   parent: BaseAnomalyCore
   id: AnomalyCoreElectricity
+  name: anomaly core # LP Edit
   suffix: Electricity
   components:
   - type: Sprite
@@ -162,6 +170,7 @@
 - type: entity
   parent: BaseAnomalyCore
   id: AnomalyCoreFlora
+  name: anomaly core # LP Edit
   suffix: Flora
   components:
   - type: Seed
@@ -177,6 +186,7 @@
 - type: entity
   parent: [ BaseAnomalyCore, BaseShadow ]
   id: AnomalyCoreShadow
+  name: anomaly core # LP Edit
   suffix: Shadow
   components:
   - type: Sprite
@@ -190,6 +200,7 @@
 - type: entity
   parent: BaseAnomalyCore
   id: AnomalyCoreTech
+  name: anomaly core # LP Edit
   suffix: Tech
   components:
   - type: Sprite
@@ -203,6 +214,7 @@
 - type: entity
   parent: BaseAnomalyCore
   id: AnomalyCoreSanta
+  name: anomaly core # LP Edit
   suffix: Santa
   components:
   - type: Sprite
@@ -233,6 +245,7 @@
 - type: entity
   parent: BaseAnomalyInertCore
   id: AnomalyCorePyroclasticInert
+  name: anomaly core # LP Edit
   suffix: Pyroclastic, Inert
   components:
   - type: Sprite
@@ -246,6 +259,7 @@
 - type: entity
   parent: BaseAnomalyInertCore
   id: AnomalyCoreGravityInert
+  name: anomaly core # LP Edit
   suffix: Gravity, Inert
   components:
   - type: Sprite
@@ -266,6 +280,7 @@
 - type: entity
   parent: BaseAnomalyInertCore
   id: AnomalyCoreIceInert
+  name: anomaly core # LP Edit
   suffix: Ice, Inert
   components:
   - type: Sprite
@@ -279,6 +294,7 @@
 - type: entity
   parent: BaseAnomalyInertCore
   id: AnomalyCoreFleshInert # Can be microwaved to turn it into a massive piece of meat
+  name: anomaly core # LP Edit
   description: The inert core of a destroyed flesh anomaly. Pulsates sickeningly, but might be good food in the right hands?
   suffix: Flesh, Inert
   components:
@@ -293,6 +309,7 @@
 - type: entity
   parent: BaseAnomalyInertCore
   id: AnomalyCoreRockInert
+  name: anomaly core # LP Edit
   suffix: Rock, Inert
   components:
   - type: Sprite
@@ -306,6 +323,7 @@
 - type: entity
   parent: BaseAnomalyInertCore
   id: AnomalyCoreLiquidInert
+  name: anomaly core # LP Edit
   suffix: Liquid, Inert
   components:
   - type: Sprite
@@ -319,6 +337,7 @@
 - type: entity
   parent: BaseAnomalyInertCore
   id: AnomalyCoreBluespaceInert
+  name: anomaly core # LP Edit
   suffix: Bluespace, Inert
   components:
   # LP Edit Start
@@ -340,6 +359,7 @@
 - type: entity
   parent: BaseAnomalyInertCore
   id: AnomalyCoreElectricityInert
+  name: anomaly core # LP Edit
   suffix: Electricity, Inert
   components:
   - type: Sprite
@@ -353,6 +373,7 @@
 - type: entity
   parent: BaseAnomalyInertCore
   id: AnomalyCoreFloraInert #Turns into a seed that grows into artifexium
+  name: anomaly core # LP Edit
   suffix: Flora, Inert
   components:
   - type: Seed
@@ -368,6 +389,7 @@
 - type: entity
   parent: [ BaseAnomalyInertCore, BaseShadow ]
   id: AnomalyCoreShadowInert
+  name: anomaly core # LP Edit
   suffix: Shadow, Inert
   components:
   - type: Sprite
@@ -381,6 +403,7 @@
 - type: entity
   parent: BaseAnomalyInertCore
   id: AnomalyCoreTechInert
+  name: anomaly core # LP Edit
   suffix: Tech, Inert
   components:
   - type: Sprite
@@ -394,6 +417,7 @@
 - type: entity
   parent: BaseAnomalyInertCore
   id: AnomalyCoreSantaInert
+  name: anomaly core # LP Edit
   suffix: Santa, Inert
   components:
   - type: Sprite

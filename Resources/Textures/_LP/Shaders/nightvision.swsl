@@ -30,7 +30,7 @@ void fragment()
     // tint
     color.rgb = mix(color.rgb, tint, grey);
 
-    // soft scanlines (намного мягче)
+    // soft scanlines
     highp float scan = sin(uv.y * 200.0) * scanline_intensity;
     color.rgb -= scan;
 
