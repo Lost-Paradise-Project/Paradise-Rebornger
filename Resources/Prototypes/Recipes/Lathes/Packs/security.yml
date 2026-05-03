@@ -167,6 +167,7 @@
   recipes:
   - WeaponDisabler
   - WeaponDisablerSMG
+  # LP Edit Start
   - WeaponPocketDisabler
   - WeaponStunProjector
   - WeaponAutoDisabler
