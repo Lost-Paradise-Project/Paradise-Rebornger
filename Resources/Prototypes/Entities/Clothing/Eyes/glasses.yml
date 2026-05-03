@@ -67,6 +67,7 @@
     coverage: EYES
   - type: Tag
     tags:
+    - MesonGoggles # LP Edit
     - PetWearable
     - WhitelistChameleon
 
@@ -270,13 +271,37 @@
       - WhitelistChameleon
 
 - type: entity
-  parent: [ClothingEyesBase, BaseHighlyIllegalContraband]
+  parent: [ClothingEyesBase, BaseHighlyIllegalContraband, BaseToggleClothing] # LP Edit
   id: ClothingEyesVisorNinja
   name: ninja visor
   description: An advanced visor protecting a ninja's eyes from flashing lights.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Glasses/ninjavisor.rsi
+  # LP Edit Start
+    layers:
+      - state: icon
+        map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: ToggleClothing
+    action: LPPToggleNightVisionAction
+    mustEquip: true
+  - type: NightVision
+    requiredSlot: eyes
+    tint1: 0.1
+    tint2: 0.1
+    tint3: 0.1
+  - type: ItemTogglePrefix
+    prefixOn: on
+  - type: ToggleClothingPrefix
+    prefixOn: on
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
+          True: {state: icon-on}
+          False: {state: icon}
+  # LP Edit End
   - type: Clothing
     sprite: Clothing/Eyes/Glasses/ninjavisor.rsi
   - type: FlashImmunity

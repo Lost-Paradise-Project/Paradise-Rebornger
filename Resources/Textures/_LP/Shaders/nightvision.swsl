@@ -1,0 +1,60 @@
+light_mode unshaded;
+
+uniform sampler2D SCREEN_TEXTURE;
+
+uniform highp vec3 tint;
+uniform highp float luminance_threshold;
+uniform highp float noise_amount;
+
+uniform highp float scanline_intensity;
+uniform highp float vignette_strength;
+uniform highp float flicker_speed;
+
+lowp float rand(lowp vec2 co)
+{
+    return fract(sin(dot(co, vec2(12.9898,78.233))) * 43758.5453);
+}
+
+void fragment()
+{
+    highp vec2 uv = FRAGCOORD.xy * SCREEN_PIXEL_SIZE;
+    highp vec4 color = zTextureSpec(SCREEN_TEXTURE, uv);
+
+    // grayscale amplify
+    highp float grey = dot(color.rgb, vec3(0.299,0.587,0.114));
+    highp float threshold = grey * luminance_threshold;
+
+    if (grey < threshold)
+        grey += (threshold - grey) * 0.5;
+
+    // tint
+    color.rgb = mix(color.rgb, tint, grey);
+
+    // soft scanlines
+    highp float scan = sin(uv.y * 200.0) * scanline_intensity;
+    color.rgb -= scan;
+
+    // very soft noise
+    highp float noise = rand(uv + TIME) * noise_amount * 0.2;
+    color.rgb += noise;
+
+    // soft flicker
+    highp float flicker = sin(TIME * flicker_speed) * 0.004;
+    color.rgb += flicker;
+
+    // vignette
+    highp vec2 screen_uv = FRAGCOORD.xy * SCREEN_PIXEL_SIZE;
+    highp vec2 centered = screen_uv - vec2(0.5);
+
+    highp float radius = length(centered);
+
+    radius /= 0.7071;
+
+    highp float vignette = pow(1.0 - radius, 2.2);
+
+    vignette = mix(1.0, vignette, vignette_strength);
+
+    color.rgb *= vignette;
+
+    COLOR = color;
+}

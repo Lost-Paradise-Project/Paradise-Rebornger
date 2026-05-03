@@ -28,6 +28,11 @@
 - type: latheRecipePack
   id: ScienceClothing
   recipes:
+  # LP Edit Start
+  - LPPBaseNVGRecipe
+  - LPPClothingEyesDiagnosticNVG
+  - LPPClothingEyesHudDiagnostic
+  # LP Edit End
   - ClothingShoesBootsMagSci
   - ClothingShoesBootsMoon
   - ClothingShoesBootsSpeed

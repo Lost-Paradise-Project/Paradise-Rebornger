@@ -112,3 +112,60 @@
     Silver: 600
     Glass: 200
     Plasteel: 250
+
+- type: latheRecipe
+  id: LPPBaseHUDRecipe
+  result: ClothingEyesGlassesMeson
+  completetime: 5
+  materials:
+    Plastic: 350
+    Glass: 350
+
+- type: latheRecipe
+  id: LPPBaseNVGRecipe
+  result: LPPClothingEyesNVG
+  completetime: 10
+  materials:
+    Plastic: 500
+    Glass: 500
+    Silver: 300
+
+- type: latheRecipe
+  parent: LPPBaseHUDRecipe
+  id: LPPClothingEyesGlassesMeson
+  result: ClothingEyesGlassesMeson
+
+- type: latheRecipe
+  parent: LPPBaseHUDRecipe
+  id: LPPClothingEyesHudMedical
+  result: ClothingEyesHudMedical
+
+- type: latheRecipe
+  parent: LPPBaseHUDRecipe
+  id: LPPClothingEyesHudDiagnostic
+  result: ClothingEyesHudDiagnostic
+
+- type: latheRecipe
+  parent: LPPBaseHUDRecipe
+  id: LPPClothingEyesHudSecurity
+  result: ClothingEyesHudSecurity
+
+- type: latheRecipe
+  parent: LPPBaseNVGRecipe
+  id: LPPClothingEyesMesonNVG
+  result: LPPClothingEyesMesonNVG
+
+- type: latheRecipe
+  parent: LPPBaseNVGRecipe
+  id: LPPClothingEyesSecNVG
+  result: LPPClothingEyesSecNVG
+
+- type: latheRecipe
+  parent: LPPBaseNVGRecipe
+  id: LPPClothingEyesMedNVG
+  result: LPPClothingEyesMedNVG
+
+- type: latheRecipe
+  parent: LPPBaseNVGRecipe
+  id: LPPClothingEyesDiagnosticNVG
+  result: LPPClothingEyesDiagnosticNVG

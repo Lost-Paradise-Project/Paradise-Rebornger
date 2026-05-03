@@ -1,0 +1,152 @@
+- type: entity
+  parent: [ClothingEyesBase, BaseToggleClothing]
+  id: LPPClothingEyesNVG
+  name: night vision goggles
+  description: Now you can see in the dark! It has the label "BL CORP technology".
+  components:
+    - type: Sprite
+      sprite: _LP/Clothing/Eyes/NVG/NVG.rsi
+      layers:
+      - state: icon
+        map: [ "enum.ToggleableVisuals.Layer" ]
+    - type: Clothing
+      sprite: _LP/Clothing/Eyes/NVG/NVG.rsi
+    - type: ToggleClothing
+      action: LPPToggleNightVisionAction
+      mustEquip: true
+    - type: NightVision
+      requiredSlot: eyes
+      # Change if you need, this will change overlay
+      tint1: 0.1 # Red
+      tint2: 0.1 # Green
+      tint3: 0.1 # Blue
+      # vignette: 1.25
+      # strength: 2
+      # noise: 0.03
+      # scanline: 0.01
+      # flicker: 2.0
+    - type: ItemTogglePrefix
+      prefixOn: on
+    - type: ToggleClothingPrefix
+      prefixOn: on
+    - type: Appearance
+    - type: GenericVisualizer
+      visuals:
+        enum.ToggleableVisuals.Enabled:
+          enum.ToggleableVisuals.Layer:
+            True: {state: icon-on}
+            False: {state: icon}
+    - type: StaticPrice
+      price: 200
+    - type: Tag
+      tags:
+      - WhitelistChameleon
+    - type: ClothingGrantComponent
+      component:
+      - type: FlashModifier
+        modifier: 2
+      - type: EyeDamageModifier
+        modifier: 2
+
+- type: entity
+  id: LPPClothingEyesMesonNVG
+  parent: [LPPClothingEyesNVG, BaseEngineeringContraband]
+  name: engineering night vision goggles
+  components:
+    - type: NightVision
+      tint1: 0.3
+      tint2: 1.0
+      tint3: 0.3
+    - type: EyeProtection
+    - type: ClothingGrantComponent
+      component:
+      - type: FlashModifier
+        modifier: 2
+
+- type: entity
+  id: LPPClothingEyesSecNVG
+  parent: [LPPClothingEyesNVG, ShowSecurityIcons, BaseSecurityContraband]
+  name: security night vision goggles
+  components:
+  - type: Tag
+    tags:
+    - HudSecurity
+  - type: NightVision
+    tint1: 1.0
+    tint2: 0.3
+    tint3: 0.3
+  - type: Sprite
+    sprite: _LP/Clothing/Eyes/NVG/securityNVG.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Eyes/NVG/securityNVG.rsi
+  - type: FlashImmunity
+  - type: ClothingGrantComponent
+    component:
+    - type: EyeDamageModifier
+      modifier: 2
+
+- type: entity
+  id: LPPClothingEyesMedNVG
+  parent: [LPPClothingEyesNVG, BaseMedicalContraband]
+  name: medical night vision goggles
+  components:
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
+  - type: ShowHealthIcons
+    damageContainers:
+    - Biological
+  - type: Tag
+    tags:
+    - HudMedical
+  - type: NightVision
+    tint1: 0.3
+    tint2: 0.3
+    tint3: 0.7
+  - type: Sprite
+    sprite: _LP/Clothing/Eyes/NVG/medicalNVG.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Eyes/NVG/medicalNVG.rsi
+  - type: ClothingGrantComponent
+    component:
+    - type: FlashModifier
+      modifier: 2
+    - type: EyeDamageModifier
+      modifier: 2
+
+- type: entity
+  id: LPPClothingEyesDiagnosticNVG
+  parent: [LPPClothingEyesNVG, BaseScienceContraband]
+  name: diagnostic night vision goggles
+  components:
+  - type: NightVision
+    tint1: 1.0
+    tint2: 1.0
+    tint3: 0.3
+  - type: Sprite
+    sprite: _LP/Clothing/Eyes/NVG/diagnosticNVG.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Eyes/NVG/diagnosticNVG.rsi
+  - type: EyeProtection
+  - type: ShowHealthBars
+    damageContainers:
+    - Inorganic
+    - Silicon
+    - SiliconIpc
+  - type: ClothingGrantComponent
+    component:
+    - type: FlashModifier
+      modifier: 2
+
+- type: entity
+  parent: BaseAction
+  id: LPPToggleNightVisionAction
+  name: Toggle Night Vision
+  description: Toggles the night vision on and off.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    startDelay: true
+    useDelay: 1
+  - type: InstantAction
+    event: !type:ToggleActionEvent

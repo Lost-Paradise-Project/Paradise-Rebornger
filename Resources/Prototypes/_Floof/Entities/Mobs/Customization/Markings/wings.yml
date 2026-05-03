@@ -4,7 +4,7 @@
   groupWhitelist: [Human]
   sponsorOnly: true
   sprites:
-    - sprite: SimpleStation14/Mobs/Customization/wings96x34.rsi
+    - sprite: _EE/Mobs/Customization/wings96x34.rsi
       state: fly
 
 - type: marking
@@ -13,7 +13,7 @@
   groupWhitelist: [Human, Ipc]
   sponsorOnly: true
   sprites:
-    - sprite: SimpleStation14/Mobs/Customization/wings96x34.rsi
+    - sprite: _EE/Mobs/Customization/wings96x34.rsi
       state: robotic
 
 - type: marking
@@ -22,7 +22,7 @@
   groupWhitelist: [Human]
   sponsorOnly: true
   sprites:
-    - sprite: SimpleStation14/Mobs/Customization/wings96x34.rsi
+    - sprite: _EE/Mobs/Customization/wings96x34.rsi
       state: skeleton
 
 - type: marking
@@ -31,7 +31,7 @@
   groupWhitelist: [Slime, Human]
   sponsorOnly: true
   sprites:
-    - sprite: SimpleStation14/Mobs/Customization/wings64x32.rsi
+    - sprite: _EE/Mobs/Customization/wings64x32.rsi
       state: harpy
 
 - type: marking
