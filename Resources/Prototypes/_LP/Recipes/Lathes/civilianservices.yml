@@ -115,6 +115,7 @@
 
 - type: latheRecipe
   id: LPPBaseHUDRecipe
+  result: ClothingEyesGlassesMeson
   completetime: 5
   materials:
     Plastic: 350
