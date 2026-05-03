@@ -188,6 +188,7 @@
       types:
         Slash: 7.5
         Heat: 7.5
+        # LP Edit End
   - type: ComponentToggler
     components:
     - type: Sharp
