@@ -180,9 +180,11 @@
     sprite: Clothing/Eyes/Hud/medsec.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Hud/medsec.rsi
-  - type: Construction
-    graph: HudMedSec
-    node: medsecHud
+  # LP Edit Start
+  # - type: Construction
+  #   graph: HudMedSec
+  #   node: medsecHud
+  # LP Edit End
 
 - type: entity
   parent: [ClothingEyesHudBase, ShowSecurityIcons, ShowMedicalIcons]

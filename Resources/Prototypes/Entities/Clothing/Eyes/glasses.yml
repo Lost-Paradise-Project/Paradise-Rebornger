@@ -67,6 +67,7 @@
     coverage: EYES
   - type: Tag
     tags:
+    - MesonGoggles # LP Edit
     - PetWearable
     - WhitelistChameleon
 
