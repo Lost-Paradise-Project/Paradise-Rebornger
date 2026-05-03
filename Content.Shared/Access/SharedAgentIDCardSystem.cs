@@ -30,13 +30,15 @@ namespace Content.Shared.Access.Systems
         public string CurrentJob { get; }
         public string CurrentJobIconId { get; }
         public string CurrentContract { get; } // L5
+        public uint? CurrentNumber { get; } // DeltaV
 
-        public AgentIDCardBoundUserInterfaceState(string currentName, string currentJob, string currentJobIconId, string currentContract)
+        public AgentIDCardBoundUserInterfaceState(string currentName, string currentJob, string currentJobIconId, string currentContract, uint? currentNumber = null) // DeltaV - Added currentNumber
         {
             CurrentName = currentName;
             CurrentJob = currentJob;
             CurrentJobIconId = currentJobIconId;
             CurrentContract = currentContract; // L5
+            CurrentNumber = currentNumber; // DeltaV
         }
     }
 
@@ -49,6 +51,18 @@ namespace Content.Shared.Access.Systems
         public AgentIdCardContractChangedMessage(ProtoId<ContractPrototype> contractId)
         {
             ContractId = contractId;
+        }
+    }
+
+    // DeltaV - Add number change message
+    [Serializable, NetSerializable]
+    public sealed class AgentIDCardNumberChangedMessage : BoundUserInterfaceMessage
+    {
+        public uint Number { get; }
+
+        public AgentIDCardNumberChangedMessage(uint number)
+        {
+            Number = number;
         }
     }
 

@@ -84,7 +84,7 @@
       - NotekeeperCartridge
       - NanoTaskCartridge
       - NewsReaderCartridge
-      - NanoChatCartridge # Corvax-Wega-NanoChat
+      - NanoChatCartridge # DeltaV
     cartridgeSlot:
       priority: -1
       name: device-pda-slot-component-slot-name-cartridge
@@ -156,8 +156,8 @@
     - NotekeeperCartridge
     - NanoTaskCartridge
     - NewsReaderCartridge
-    - NanoChatCartridge # Corvax-Wega-NanoChat
     - WantedListCartridge
+    - NanoChatCartridge # DeltaV
 
 - type: entity
   parent: BasePDA
@@ -171,8 +171,8 @@
       - NotekeeperCartridge
       - NanoTaskCartridge
       - NewsReaderCartridge
-      - NanoChatCartridge # Corvax-Wega-NanoChat
       - MedTekCartridge
+      - NanoChatCartridge # DeltaV
 
 - type: entity
   parent: BasePDA
@@ -485,8 +485,8 @@
     - NotekeeperCartridge
     - NanoTaskCartridge
     - NewsReaderCartridge
-    - NanoChatCartridge # Corvax-Wega-NanoChat
     - AstroNavCartridge
+    - NanoChatCartridge # DeltaV
 
 - type: entity
   parent: BasePDA
@@ -531,8 +531,8 @@
       - NotekeeperCartridge
       - NanoTaskCartridge
       - NewsReaderCartridge
-      - NanoChatCartridge # Corvax-Wega-NanoChat
       - AstroNavCartridge
+      - NanoChatCartridge # DeltaV
 
 - type: entity
   parent: BasePDA
@@ -881,9 +881,9 @@
     - NotekeeperCartridge
     - NanoTaskCartridge
     - NewsReaderCartridge
-    - NanoChatCartridge # Corvax-Wega-NanoChat
     - WantedListCartridge
     - LogProbeCartridge
+    - NanoChatCartridge # DeltaV
 
 - type: entity
   parent: BaseSecurityPDA
@@ -952,11 +952,11 @@
       - NotekeeperCartridge
       - NanoTaskCartridge
       - NewsReaderCartridge
-      - NanoChatCartridge # Corvax-Wega-NanoChat
       - MedTekCartridge
       - WantedListCartridge
       - LogProbeCartridge
       - AstroNavCartridge
+      - NanoChatCartridge # DeltaV
 
 - type: entity
   parent: CentcomPDA
@@ -974,16 +974,17 @@
   - type: CartridgeLoader
     uiKey: enum.PdaUiKey.Key
     notificationsEnabled: false
+    diskSpace: 10 # DeltaV
     preinstalled:
       - CrewManifestCartridge
       - NotekeeperCartridge
       - NanoTaskCartridge
       - NewsReaderCartridge
-      - NanoChatCartridge # Corvax-Wega-NanoChat
       - LogProbeCartridge
       - WantedListCartridge
       - MedTekCartridge
       - AstroNavCartridge
+      - NanoChatCartridge # DeltaV
   - type: Tag #  Ignore Chameleon tags
     tags:
     - DoorBumpOpener
@@ -1102,6 +1103,7 @@
     preinstalled:
       - NotekeeperCartridge
       - NanoTaskCartridge
+      - NanoChatCartridge # DeltaV
 
 - type: entity
   parent: [ SyndiPDA, BaseSyndicateContraband ]
@@ -1140,6 +1142,7 @@
       - NotekeeperCartridge
       - NanoTaskCartridge
       - MedTekCartridge
+      - NanoChatCartridge # DeltaV
 
 - type: entity
   parent: [ SyndiOperativePDA, BaseSyndicateContraband ]
@@ -1184,11 +1187,11 @@
       - NotekeeperCartridge
       - NanoTaskCartridge
       - NewsReaderCartridge
-      - NanoChatCartridge # Corvax-Wega-NanoChat
       - MedTekCartridge
       - WantedListCartridge
       - LogProbeCartridge
       - AstroNavCartridge
+      - NanoChatCartridge # DeltaV
 
 - type: entity
   parent: ERTLeaderPDA
@@ -1356,9 +1359,9 @@
     - NotekeeperCartridge
     - NanoTaskCartridge
     - NewsReaderCartridge
-    - NanoChatCartridge # Corvax-Wega-NanoChat
     - WantedListCartridge
     - LogProbeCartridge
+    - NanoChatCartridge # DeltaV
 
 - type: entity
   parent: BaseMedicalPDA
@@ -1385,9 +1388,9 @@
     - NotekeeperCartridge
     - NanoTaskCartridge
     - NewsReaderCartridge
-    - NanoChatCartridge # Corvax-Wega-NanoChat
     - WantedListCartridge
     - MedTekCartridge
+    - NanoChatCartridge # DeltaV
 
 - type: entity
   parent: ClownPDA
