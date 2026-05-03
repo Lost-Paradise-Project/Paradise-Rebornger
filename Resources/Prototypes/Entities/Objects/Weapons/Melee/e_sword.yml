@@ -186,6 +186,7 @@
         variation: 0.250
     activatedDamage:
       types:
+        # LP Edit Start
         Slash: 7.5
         Heat: 7.5
         # LP Edit End
