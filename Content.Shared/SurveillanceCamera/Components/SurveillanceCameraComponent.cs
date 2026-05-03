@@ -15,7 +15,7 @@ public sealed partial class SurveillanceCameraComponent : Component
     /// will immediately have their subscription revoked.
     /// </summary>
     [ViewVariables]
-    public HashSet<EntityUid> ActivePvsViewers { get; } = new();
+    public Dictionary<EntityUid, EntityUid> ActivePvsViewers { get; } = new(); // Orion-Edit: Was HashSet
 
     /// <summary>
     /// Monitors != Viewers, as viewers are entities that are tied

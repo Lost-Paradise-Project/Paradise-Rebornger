@@ -1,0 +1,9 @@
+- type: entity
+  id: XenomorphBloodstream
+  parent: MobBloodstream
+  components:
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: Blood
+        Quantity: 300

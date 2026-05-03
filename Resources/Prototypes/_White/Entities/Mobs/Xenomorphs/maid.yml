@@ -1,0 +1,36 @@
+- type: entity
+  parent: BaseMobXenomorphAdult
+  id: MobXenomorphMaid
+  name: xenomorph maid
+  description: I mean, I guess it is kinda cute?
+  components:
+  - type: Sprite
+    sprite: _White/Mobs/Aliens/Xenomorphs/maid.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: xenomorph
+    - map: [ "pocket1" ]
+    - map: [ "pocket2" ]
+    - map: ["enum.HumanoidVisualLayers.Handcuffs"]
+      color: "#ffffff"
+      sprite: _White/Objects/Misc/handcuffs.rsi
+      state: body-overlay-xenomorph
+      visible: false
+  - type: Cuffable
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      200: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      150: 0.9
+      170: 0.7
+      190: 0.6
+  - type: MeleeWeapon
+    damage:
+      types:
+        Slash: 3.3
+        Piercing: 3.3
+        Blunt: 3.3
+  - type: OwOAccent
+  - type: Pacified

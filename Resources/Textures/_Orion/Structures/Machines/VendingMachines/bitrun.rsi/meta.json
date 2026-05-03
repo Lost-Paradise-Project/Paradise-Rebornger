@@ -1,0 +1,48 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from TG Station | Edited by PuroSlavKing (Github) | broken and deny-unshaded bu BL02DL (Github)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "broken"
+        },
+        {
+            "name": "off"
+        },
+        {
+            "name": "normal-unshaded",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "panel"
+        },
+        {
+            "name": "deny-unshaded",
+            "delays": [
+                [
+                    1.5,
+                    0.5
+                ]
+            ]
+        }
+    ]
+}

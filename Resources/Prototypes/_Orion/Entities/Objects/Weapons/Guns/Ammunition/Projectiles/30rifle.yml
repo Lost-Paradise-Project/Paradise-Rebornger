@@ -1,0 +1,10 @@
+- type: entity
+  parent: BaseBullet
+  id: BulletRifle762
+  name: bullet (7.62mm rifle)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 24

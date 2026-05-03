@@ -1,10 +1,11 @@
 using Content.Shared.DeviceNetwork.Systems;
+using Robust.Shared.GameStates; // LP Edit
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 namespace Content.Shared.DeviceNetwork.Components
 {
-    [RegisterComponent]
-    [Access(typeof(SharedDeviceNetworkSystem), typeof(DeviceNet))]
+    [RegisterComponent, NetworkedComponent] // LP Edit
+    // [Access(typeof(SharedDeviceNetworkSystem), typeof(DeviceNet))] // Orion Edit
     public sealed partial class DeviceNetworkComponent : Component
     {
         public enum DeviceNetIdDefaults

@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckFellForItAward
+  name: nanotrasen gullibility award
+  description: An award given out by nanotrasen to mark extreme cases of gullibility
+  components:
+  - type: Sprite
+    sprite: _GoobStation/Clothing/Neck/Misc/fellforitaward.rsi
+  - type: Clothing
+    sprite: _GoobStation/Clothing/Neck/Misc/fellforitaward.rsi

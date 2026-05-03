@@ -46,8 +46,10 @@ public sealed partial class DamageableComponent : Component
     /// <remarks>
     ///     If this data-field is specified, this allows damageable components to be initialized with non-zero damage.
     /// </remarks>
-    [DataField]
-    [Access(typeof(DamageableSystem), Other = AccessPermissions.None)]
+    // Orion Edit Start
+    [DataField(readOnly: true)]
+    // [Access(typeof(DamageableSystem), Other = AccessPermissions.None)]
+    // Orion Edit End
     public DamageSpecifier Damage = new();
 
     /// <summary>
@@ -65,7 +67,7 @@ public sealed partial class DamageableComponent : Component
     ///     The sum of all damages in the DamageableComponent.
     /// </summary>
     [ViewVariables]
-    [Access(typeof(DamageableSystem), Other = AccessPermissions.None)]
+    // [Access(typeof(DamageableSystem), Other = AccessPermissions.None)] // Orion Edit
     public FixedPoint2 TotalDamage;
 
     [DataField("radiationDamageTypes")]

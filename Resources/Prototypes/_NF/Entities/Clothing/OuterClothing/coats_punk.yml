@@ -1,0 +1,11 @@
+# Jackets
+- type: entity
+  id: ClothingOuterCoatJacketLeather
+  parent: ClothingOuterStorageBase
+  name: leather jacket
+  description: Rock'n'roll, babe!
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/OuterClothing/Coats/jacket_leather.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/OuterClothing/Coats/jacket_leather.rsi

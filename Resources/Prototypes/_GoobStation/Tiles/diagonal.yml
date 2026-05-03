@@ -1,0 +1,63 @@
+- type: tile
+  id: LatticeDiagonalNW
+  name: tiles-lattice-diagonal-NW
+  sprite: /Textures/_GoobStation/Tiles/latticeDiagonalNW.png
+  baseTurf: Space
+  isSubfloor: true
+  deconstructTools: [ Cutting ]
+  weather: true
+  footstepSounds:
+    collection: FootstepCatwalk
+  friction: 1.5
+  isSpace: true
+  itemDrop: PartRodMetal1
+  heatCapacity: 10000
+  mass: 200
+
+- type: tile
+  id: LatticeDiagonalNE
+  name: tiles-lattice-diagonal-NE
+  sprite: /Textures/_GoobStation/Tiles/latticeDiagonalNE.png
+  baseTurf: Space
+  isSubfloor: true
+  deconstructTools: [ Cutting ]
+  weather: true
+  footstepSounds:
+    collection: FootstepCatwalk
+  friction: 1.5
+  isSpace: true
+  itemDrop: PartRodMetal1
+  heatCapacity: 10000
+  mass: 200
+
+- type: tile
+  id: LatticeDiagonalSW
+  name: tiles-lattice-diagonal-SW
+  sprite: /Textures/_GoobStation/Tiles/latticeDiagonalSW.png
+  baseTurf: Space
+  isSubfloor: true
+  deconstructTools: [ Cutting ]
+  weather: true
+  footstepSounds:
+    collection: FootstepCatwalk
+  friction: 1.5
+  isSpace: true
+  itemDrop: PartRodMetal1
+  heatCapacity: 10000
+  mass: 200
+
+- type: tile
+  id: LatticeDiagonalSE
+  name: tiles-lattice-diagonal-SE
+  sprite: /Textures/_GoobStation/Tiles/latticeDiagonalSE.png
+  baseTurf: Space
+  isSubfloor: true
+  deconstructTools: [ Cutting ]
+  weather: true
+  footstepSounds:
+    collection: FootstepCatwalk
+  friction: 1.5
+  isSpace: true
+  itemDrop: PartRodMetal1
+  heatCapacity: 10000
+  mass: 200

@@ -1,0 +1,27 @@
+﻿- type: entity
+  parent: IDCardStandard
+  id: BitrunnerIDCard
+  name: bitrunner ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - sprite: &icon-rsi _Orion/Interface/Misc/job_icons.rsi
+      offset: &icon-offset -0.15625, 0 # LP Edit
+      state: bitrunner
+  - type: PresetIdCard
+    job: Bitrunner
+
+- type: entity
+  parent: IDCardStandard
+  id: BitrunAvatarIDCard
+  name: bitrun avatar ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - sprite: *icon-rsi
+      offset: *icon-offset
+      state: bitrun-avatar
+  - type: PresetIdCard
+    job: BitrunAvatar

@@ -1,0 +1,11 @@
+- type: npcFaction
+  id: PirateFaction
+  hostile:
+  - NanoTrasen
+  - Syndicate
+  - SimpleHostile
+  - Xeno
+  - PetsNT
+  - Zombie
+  - Dragon
+  - AllHostile

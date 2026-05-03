@@ -31,3 +31,9 @@
   - CargoTelepadMachineCircuitboard
   - ShuttleGunKineticCircuitboard
   - SalvageExpeditionsComputerCircuitboard # Corvax-Cringe
+  # Orion-Start
+  - QuantumConsoleCircuitboard
+  - QuantumServerMachineCircuitboard
+  - NetpodMachineCircuitboard
+  - ByteforgeMachineCircuitboard
+  # Orion-End

@@ -1,0 +1,12 @@
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: ClothingHeadHelmetBasicAlt
+  suffix: Alt
+  components:
+  - type: Sprite
+    sprite: _GoobStation/Clothing/Head/Helmets/security.rsi
+  - type: Clothing
+    sprite: _GoobStation/Clothing/Head/Helmets/security.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon

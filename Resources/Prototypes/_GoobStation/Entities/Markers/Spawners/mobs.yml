@@ -1,0 +1,13 @@
+- type: entity
+  name: Bear Spawner
+  id: SpawnMobBearGoon
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: bear
+      sprite: _GoobStation/Mobs/Animals/brullbar.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobBearGoon

@@ -1,0 +1,54 @@
+- type: entity
+  parent: [BaseWeaponLightMachineGun, BaseSecurityContraband]
+  id: WeaponRifleM41
+  name: M-41
+  description: The M-41 is a large man portable machine, allowing for sustained, accurate suppressive firepower at the cost of mobility and handling. Commonly seen where their preferred tactics of fast, mobile aggression is ill suited.
+  components:
+  - type: Sprite
+    sprite: _Orion/Objects/Weapons/Guns/LMGs/t42/big.rsi
+    scale: 0.9, 0.9
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Orion/Objects/Weapons/Guns/LMGs/t42/tiny.rsi
+  - type: Item
+    sprite: _Orion/Objects/Weapons/Guns/LMGs/t42/tiny.rsi
+  - type: GunWieldBonus
+    minAngle: -30
+    maxAngle: -50
+  - type: Gun
+    angleDecay: 10
+    angleIncrease: 2
+    minAngle: 32
+    maxAngle: 60
+    cameraRecoilScalar: 1.5
+    fireRate: 6
+    soundGunshot:
+      path: /Audio/_Orion/Weapons/Guns/LMGs/m41.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        startingItem: MagazineHeavyRifleM41
+        insertSound: /Audio/_Orion/Weapons/Guns/LMGs/m60_reload.ogg
+        ejectSound: /Audio/_Orion/Weapons/Guns/LMGs/m60_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineHeavyRifleM41
+      gun_chamber:
+        startingItem: CartridgeRifle
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeRifle
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: true
+  - type: Appearance
+  - type: GunRequiresWield
+  - type: HeldSpeedModifier
+    sprintModifier: 0.9

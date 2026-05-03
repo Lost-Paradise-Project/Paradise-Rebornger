@@ -119,6 +119,17 @@ public sealed class EntityWhitelistSystem : EntitySystem
         return !IsValid(whitelist, uid);
     }
 
+    // Orion Edit
+    /// <summary>
+    /// Helper function to determine if Blacklist is not null and entity is on list
+    /// Duplicate of equivalent Whitelist function
+    /// </summary>
+    public bool IsBlacklistPass(EntityWhitelist? blacklist, EntityUid uid)
+    {
+        return IsWhitelistPass(blacklist, uid);
+    }
+    // Orion Edit
+
     private List<ComponentRegistration>? StringsToRegs(string[]? input)
     {
         if (input == null || input.Length == 0)

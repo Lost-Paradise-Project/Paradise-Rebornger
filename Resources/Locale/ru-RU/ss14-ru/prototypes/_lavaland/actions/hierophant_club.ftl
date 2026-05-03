@@ -1,0 +1,10 @@
+ent-ActionHierophantClubTileMovement = Проклятье Тайлохода
+    .desc = Заставляет цель двигаться строго по тайлам.
+ent-ActionHierophantClubBlink = Скачок
+    .desc = Телепортирует вас в любое место, до которого вы способны физически добраться.
+ent-ActionHierophantClubBox = Квадрат
+    .desc = Призывает плитки Иерофанта в виде квадрата.
+ent-ActionHierophantClubCrosses = Кресты
+    .desc = Призывает плитки Иерофанта в виде креста.
+ent-ActionHierophantClubChasers = Преследователи
+    .desc = Призывает плитки Иерофанта, преследующие цель.

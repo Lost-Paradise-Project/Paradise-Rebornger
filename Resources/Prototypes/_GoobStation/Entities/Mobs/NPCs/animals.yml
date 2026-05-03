@@ -1,0 +1,36 @@
+- type: entity
+  name: bear
+  id: MobBearGoon
+  parent: [ SimpleSpaceMobBase, MobCombat ]
+  description: Why are you staring? Never seen a bear before?
+  components:
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _GoobStation/Mobs/Animals/brullbar.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: bear
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: bear
+      Dead:
+        Base: beardead
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 4
+    baseSprintSpeed : 4
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatBear
+      amount: 1
+  - type: Fauna # Lavaland Change

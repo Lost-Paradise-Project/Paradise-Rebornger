@@ -1,0 +1,182 @@
+# ---- Syndicate Simple Mobs ----
+
+- type: entity
+  parent: MarkerBase
+  id: SpawnMobSimpleSyndicateBlade
+  name: spawner Simple Syndicate Blade
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: alive
+      sprite: _Orion/Mobs/Npc/simple_syndicate/blade.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobSimpleSyndicateBlade
+
+- type: entity
+  parent: MarkerBase
+  id: SpawnMobSimpleSyndicateKnife
+  name: spawner Simple Syndicate Knife
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: alive
+      sprite: _Orion/Mobs/Npc/simple_syndicate/knife.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobSimpleSyndicateKnife
+
+- type: entity
+  parent: MarkerBase
+  id: SpawnMobSimpleSyndicatePistol
+  name: spawner Simple Syndicate Pistol
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: alive
+      sprite: _Orion/Mobs/Npc/simple_syndicate/pistol.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobSimpleSyndicatePistol
+
+- type: entity
+  parent: MarkerBase
+  id: SpawnMobSimpleSyndicateShotgun
+  name: spawner Simple Syndicate Shotgun
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: alive
+      sprite: _Orion/Mobs/Npc/simple_syndicate/shotgun.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobSimpleSyndicateShotgun
+
+- type: entity
+  parent: MarkerBase
+  id: SpawnMobSimpleSyndicateSMG
+  name: spawner Simple Syndicate SMG
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - state: alive
+      sprite: _Orion/Mobs/Npc/simple_syndicate/smg.rsi
+  - type: ConditionalSpawner
+    prototypes:
+    - MobSimpleSyndicateSMG
+
+# ---- Assistant Mobs ----
+
+- type: entity
+  parent: MarkerBase
+  id: SpawnMobAssistantBat
+  name: spawner Assistant Bat
+  categories: [ Spawner ]
+  suffix: AI, Bat
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+  - type: ConditionalSpawner
+    prototypes:
+    - MobAssistantBat
+
+- type: entity
+  parent: MarkerBase
+  id: SpawnMobAssistantAxe
+  name: spawner Assistant Axe
+  categories: [ Spawner ]
+  suffix: AI, Axe
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+  - type: ConditionalSpawner
+    prototypes:
+    - MobAssistantAxe
+
+- type: entity
+  parent: MarkerBase
+  id: SpawnMobAssistantToolbox
+  name: spawner Assistant Toolbox
+  categories: [ Spawner ]
+  suffix: AI, Toolbox
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+  - type: ConditionalSpawner
+    prototypes:
+    - MobAssistantToolbox
+
+- type: entity
+  parent: MarkerBase
+  id: SpawnMobAssistantSpear
+  name: spawner Assistant Spear
+  categories: [ Spawner ]
+  suffix: AI, Spear
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+  - type: ConditionalSpawner
+    prototypes:
+    - MobAssistantSpear
+
+# ---- Pirate Mobs ----
+
+- type: entity
+  parent: MarkerBase
+  id: SpawnMobPirateEvaCutlass
+  name: pirate spawner
+  suffix: Cutlass
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Mobs/Species/Skeleton/parts.rsi
+      state: full
+  - type: ConditionalSpawner
+    prototypes:
+    - MobPirateEvaCutlass
+
+- type: entity
+  parent: SpawnMobPirateEvaCutlass
+  id: SpawnMobPirateEvaLaserCarbine
+  name: pirate spawner
+  suffix: Laser Carbine
+  components:
+  - type: ConditionalSpawner
+    prototypes:
+    - MobPirateEvaLaserCarbine
+
+- type: entity
+  parent: SpawnMobPirateEvaCutlass
+  id: SpawnMobPirateCutlass
+  name: pirate spawner
+  suffix: Energy Cutlass
+  components:
+  - type: ConditionalSpawner
+    prototypes:
+    - MobPirateCutlass
+
+- type: entity
+  parent: SpawnMobPirateEvaCutlass
+  id: SpawnMobPirateFlintlock
+  name: pirate spawner
+  suffix: Pistol Flintlock
+  components:
+  - type: ConditionalSpawner
+    prototypes:
+    - MobPirateFlintlock

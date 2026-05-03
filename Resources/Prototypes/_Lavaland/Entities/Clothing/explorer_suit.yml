@@ -1,0 +1,58 @@
+- type: entity
+  parent: [ ClothingOuterBaseMedium, AllowSuitStorageClothing, BaseCargoContraband ]
+  id: LavalandEquipmentExplorerSuit
+  suffix: Lava
+  name: explorer suit
+  description: An armoured suit for exploring harsh environments.
+  components:
+  - type: Sprite
+    sprite: _Lavaland/Equipment/explorer_suit.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Lavaland/Equipment/explorer_suit.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.65
+        Heat: 0.6
+        Caustic: 0.6
+  - type: ExplosionResistance
+    damageCoefficient: 0.6
+  - type: ToggleableClothing
+    clothingPrototype: LavalandEquipmentExplorerHood
+  - type: FireProtection
+    reduction: 0.4
+  - type: Tag
+    tags:
+    - ExplorerSuit
+
+- type: entity
+  parent: ClothingHeadBase
+  id: LavalandEquipmentExplorerHood
+  suffix: Lava
+  name: explorer hood
+  description: An armoured hood for exploring harsh environments.
+  components:
+  - type: Sprite
+    sprite: _Lavaland/Equipment/explorer_suit.rsi
+    state: icon_head
+  - type: Clothing
+    sprite: _Lavaland/Equipment/explorer_suit.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - HeadTop
+    - HeadSide
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.65
+        Slash: 0.65
+        Piercing: 0.7
+        Heat: 0.65
+        Caustic: 0.65

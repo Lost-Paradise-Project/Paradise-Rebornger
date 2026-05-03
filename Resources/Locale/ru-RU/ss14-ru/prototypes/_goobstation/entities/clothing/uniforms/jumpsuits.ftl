@@ -6,3 +6,5 @@ ent-ClothingUniformJumpsuitBlueshieldOfficer = комбинезон офицер
     .desc = Серо-голубой комбинезон с короткими рукавами из прочного материала. Стандартное снаряжение офицера Синего Щита.
 ent-ClothingUniformJumpsuitBlueshieldShirt = синяя рубашка офицера Синего Щита
     .desc = Официальная форма службы безопасности. Надежная и загруженная.
+ent-ClothingUniformJumpsuitShaftMiner = костюм шахтёра
+    .desc = Это стильный комбинезон, выглядит немного выгоревшим.

@@ -1,0 +1,9 @@
+ent-MarkerBeacon = маяк-метка
+    .desc = Освещает ваш путь сквозь тьму. Полезен, чтобы не потеряться на обширных ландшафтах.
+    .suffix = Не закреплён
+ent-MarkerBeaconActive = { ent-MarkerBeacon }
+    .desc = { ent-MarkerBeacon.desc }
+    .suffix = Не закреплён, Активен
+ent-MarkerBeaconActiveAnchored = { ent-MarkerBeaconActive }
+    .desc = { ent-MarkerBeaconActive.desc }
+    .suffix = Закреплён, Активен

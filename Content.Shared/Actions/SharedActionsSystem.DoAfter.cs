@@ -76,7 +76,7 @@ public abstract partial class SharedActionsSystem
             args.Args.Delay = ent.Comp.DelayReduction.Value;
 
         // Validate again for charges, blockers, etc
-        if (TryPerformAction(args.Input, performer, skipDoActionRequest: true))
+        if (TryPerformAction(performer, args.Input)) // Goobstation edit
             return;
 
         // Cancel this doafter if we can't validate the action

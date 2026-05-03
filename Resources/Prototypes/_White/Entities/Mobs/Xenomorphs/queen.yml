@@ -1,0 +1,61 @@
+- type: entity
+  parent: BaseMobXenomorphAdult
+  id: BaseMobXenomorphQueen
+  name: xenomorph queen
+  description: The highest individual, the central element and mother of the Hive. The destruction of the Queen in most cases means the collapse of the Hive.
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _White/Mobs/Aliens/Xenomorphs/queen.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: xenomorph
+      offset: 0, 0.6
+    - map: [ "pocket1" ]
+    - map: [ "pocket2" ]
+  - type: Body
+  - type: TypingIndicator
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.40
+        density: 300
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      735: Critical
+      750: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      600: 0.9
+      645: 0.7
+      690: 0.6
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2
+    baseSprintSpeed: 2.5
+  - type: MeleeWeapon
+    damage:
+      types:
+        Slash: 16.6
+        Piercing: 16.6
+        Blunt: 16.6
+  - type: Speech
+    speechVerb: LargeMob
+
+- type: entity
+  parent: [BaseMobXenomorphDungeon, BaseMobXenomorphQueen]
+  id: MobXenomorphQueenDungeon
+  components:
+  - type: MovementSpeedModifier
+    baseSprintSpeed: 3.8
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      600: 0.7
+      645: 0.6
+      690: 0.5

@@ -1,0 +1,65 @@
+- type: entity
+  parent: BaseMobXenomorph
+  id: BaseMobXenomorphLarva
+  name: xenomorph larva
+  description: An early stage of development characterized by small size, a worm-like body shape, and the absence of distinct limbs.
+  abstract: true
+  components:
+  - type: Sprite
+    drawdepth: SmallMobs
+    sprite: _White/Mobs/Aliens/Xenomorphs/larva.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base", "movement"]
+      state: xenomorph
+  - type: SpriteMovement
+    movementLayers:
+      movement:
+        state: xenomorph-moving
+    noMovementLayers:
+      movement:
+        state: xenomorph
+  - type: Body
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.2
+        density: 10
+        mask:
+        - SmallMobMask
+        layer:
+        - SmallMobLayer
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      25: Dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2
+    baseSprintSpeed: 5
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Weapons/Xeno/alien_claw_flesh1.ogg
+    damage:
+      types:
+        Blunt: 2
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: FluorosulfuricAcid
+        Quantity: 50
+  - type: MobPrice
+    price: 250
+
+- type: entity
+  parent: BaseMobXenomorphLarva
+  id: MobXenomorphLarva
+  components:
+  - type: UserInterface
+    interfaces:
+      enum.RadialSelectorUiKey.Key:
+        type: TrackedRadialSelectorMenuBUI
+
+- type: entity
+  parent: [BaseMobXenomorphDungeon, BaseMobXenomorphLarva]
+  id: MobXenomorphLarvaDungeon

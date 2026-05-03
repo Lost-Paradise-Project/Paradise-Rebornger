@@ -41,3 +41,16 @@
     sprite: _GoobStation/Clothing/Uniforms/Jumpsuit/blueshield_shirt.rsi
   - type: Clothing
     sprite: _GoobStation/Clothing/Uniforms/Jumpsuit/blueshield_shirt.rsi
+
+# Cargo
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpsuitShaftMiner
+  name: shaft miner's jumpsuit
+  description: It's a snappy jumpsuit, looks a bit burnt.
+  components:
+  - type: Sprite
+    sprite: _GoobStation/Clothing/Uniforms/Jumpsuit/Cargo/shaft_miner.rsi
+  - type: Clothing
+    sprite: _GoobStation/Clothing/Uniforms/Jumpsuit/Cargo/shaft_miner.rsi

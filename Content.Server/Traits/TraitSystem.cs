@@ -5,6 +5,7 @@ using Content.Shared.Roles;
 using Content.Shared.Traits;
 using Content.Shared.Whitelist;
 using Robust.Shared.Prototypes;
+using Content.Shared.Preferences; // Orion-Edit
 
 namespace Content.Server.Traits;
 
@@ -69,4 +70,39 @@ public sealed class TraitSystem : EntitySystem
                 handsComp: handsComponent);
         }
     }
+
+    // Orion-Edit-Start
+    public void ApplyTraits(EntityUid mob, HumanoidCharacterProfile profile)
+    {
+        foreach (var traitId in profile.TraitPreferences)
+        {
+            if (!_prototypeManager.TryIndex(traitId, out var traitPrototype))
+            {
+                Log.Warning($"No trait found with ID {traitId}!");
+                continue;
+            }
+
+            if (_whitelistSystem.IsWhitelistFail(traitPrototype.Whitelist, mob) ||
+                _whitelistSystem.IsBlacklistPass(traitPrototype.Blacklist, mob))
+                continue;
+
+            // Add all components required by the prototype
+            EntityManager.AddComponents(mob, traitPrototype.Components, false);
+
+            // Add item required by the trait
+            if (traitPrototype.TraitGear == null)
+                continue;
+
+            if (!TryComp(mob, out HandsComponent? handsComponent))
+                continue;
+
+            var coords = Transform(mob).Coordinates;
+            var inhandEntity = Spawn(traitPrototype.TraitGear, coords);
+            _sharedHandsSystem.TryPickup(mob,
+                inhandEntity,
+                checkActionBlocker: false,
+                handsComp: handsComponent);
+        }
+    }
+    // Orion-Edit-End
 }

@@ -1,0 +1,156 @@
+- type: entity
+  parent:
+  - BaseMob
+  - MobDamageable
+  - MobPolymorphable
+  - MobCombat
+  - XenomorphBloodstream # Goob, uses custom bloodstream so we can disable bleeding for the time being.
+  - MobFlammable
+  id: BaseMobXenomorph
+  abstract: true
+  components:
+  - type: NameIdentifier
+    group: GenericNumber
+  - type: CombatMode
+    combatToggleAction: ActionCombatModeToggleXenomorph
+    canDisarm: true
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3
+    baseSprintSpeed: 4.5
+  - type: NpcFactionMember
+    factions:
+    - Xeno
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: xenomorph
+      Critical:
+        Base: xenomorph_unconscious
+      Dead:
+        Base: xenomorph_dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      185: Critical
+      200: Dead
+    stateAlertDict:
+      Alive: XenomorphHealth
+      Critical: XenomorphCrit
+      Dead: XenomorphDead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      105: 0.9
+      125: 0.7
+      150: 0.6
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Xenomorph
+  - type: Stamina
+    baseCritThreshold: 500
+  # - type: Fixtures # Orion-Edit
+  #   fixtures:
+  #     fix1:
+  #       shape:
+  #         !type:PhysShapeCircle
+  #         radius: 0.25
+  #       density: 200
+  #       mask:
+  #       - MobMask
+  #       layer:
+  #       - MobLayer
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: FluorosulfuricAcid
+        Quantity: 250
+  - type: MeleeWeapon
+    altDisarm: true
+    angle: 0
+    soundHit:
+      collection: AlienClaw
+    animation: WeaponArcBite
+    damage:
+      types:
+        Slash: 8.3
+        Piercing: 8.3
+        Blunt: 8.3
+  - type: TypingIndicator
+    proto: alien
+  - type: AtmosExposed
+  - type: Temperature
+    currentTemperature: 310.15
+    specificHeat: 42
+  - type: ZombieImmune
+  - type: StatusEffects
+    allowed:
+    - Stun
+    - KnockedDown
+  - type: NoSlip
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0.0005
+  - type: LizardAccent
+  - type: Speech
+    speechVerb: SmallMob
+  - type: SSDIndicator
+  - type: Emoting
+  - type: BodyEmotes
+    soundsId: GeneralBodyEmotes
+
+- type: entity
+  parent: [BaseMobXenomorph, StripableInventoryBase]
+  id: BaseMobXenomorphAdult
+  abstract: true
+  components:
+  - type: Prying #Switched from Tools component to this
+    speedModifier: 1.5
+    pryPowered: true
+  - type: ComplexInteraction
+  - type: Hands
+  - type: ShowHealthIcons
+  - type: Puller
+    needsHands: false
+  - type: IdExaminable
+  - type: Inventory
+    templateId: xenomorph
+  - type: Stripping
+  - type: UserInterface
+    interfaces:
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
+      enum.InstrumentUiKey.Key:
+        type: InstrumentBoundUserInterface
+        requireInputValidation: false
+  - type: RotationVisuals
+    defaultRotation: 90
+    horizontalRotation: 90
+  - type: Dna
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+    - FootstepSound
+
+- type: entity
+  id: BaseMobXenomorphDungeon
+  abstract: true
+  suffix: Dungeon
+  components:
+  - type: Damageable
+    damageModifierSet: XenomorphDungeon
+  - type: HTN
+    rootTask:
+      task: XenomorphCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+      FreeHands: !type:Bool
+        false
+      ActiveHandFree: !type:Bool
+        false
+      Inventory: !type:Bool
+        false

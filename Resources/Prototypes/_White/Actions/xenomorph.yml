@@ -1,0 +1,8 @@
+# Combat action
+- type: entity
+  id: ActionCombatModeToggleXenomorph
+  parent: ActionCombatModeToggle
+  components:
+  - type: Action
+    icon: { sprite: _White/Interface/Actions/xenomorph.rsi, state: help }
+    iconOn: { sprite: _White/Interface/Actions/xenomorph.rsi, state: harm }

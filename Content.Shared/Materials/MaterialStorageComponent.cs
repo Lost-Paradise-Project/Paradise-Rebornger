@@ -120,12 +120,15 @@ public readonly record struct GetStoredMaterialsEvent(Entity<MaterialStorageComp
 public readonly record struct ConsumeStoredMaterialsEvent(Entity<MaterialStorageComponent> Entity, Dictionary<ProtoId<MaterialPrototype>, int> Materials, bool LocalOnly);
 
 /// <summary>
-/// event raised on the materialStorage when a material entity is inserted into it.
+/// Lavaland Change: Event raised on the materialStorage when a material entity is inserted into it.
 /// </summary>
 [ByRefEvent]
-public readonly record struct MaterialEntityInsertedEvent(MaterialComponent MaterialComp)
+public readonly record struct MaterialEntityInsertedEvent(EntityUid User, EntityUid Inserted, MaterialComponent MaterialComp, int Count) // Lavaland edit
 {
+    public readonly EntityUid User = User; // Lavaland edit
+    public readonly EntityUid Inserted = Inserted; // Lavaland edit
     public readonly MaterialComponent MaterialComp = MaterialComp;
+    public readonly int Count = Count; // Lavaland edit
 }
 
 /// <summary>

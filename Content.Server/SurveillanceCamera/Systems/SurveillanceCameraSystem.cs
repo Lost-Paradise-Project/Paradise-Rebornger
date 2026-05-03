@@ -10,6 +10,12 @@ using Robust.Server.GameObjects;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Content.Shared.DeviceNetwork.Components;
+// Orion edit start
+using System.Linq;
+using System.Numerics;
+using Content.Server._Orion.Bitrunning.Components;
+using Content.Shared._Orion.Bitrunning.Components;
+// Orion edit end
 
 namespace Content.Server.SurveillanceCamera;
 
@@ -180,6 +186,26 @@ public sealed partial class SurveillanceCameraSystem : SharedSurveillanceCameraS
         UpdateSetupInterface(uid, component);
     }
 
+    // Orion-Start
+    public void ConfigureCameraNetwork(EntityUid uid, ProtoId<DeviceFrequencyPrototype> receiveFrequencyId, ProtoId<DeviceFrequencyPrototype>? transmitFrequencyId = null, SurveillanceCameraComponent? camera = null, DeviceNetworkComponent? deviceNet = null)
+    {
+        if (!Resolve(uid, ref camera, ref deviceNet))
+            return;
+
+        deviceNet.ReceiveFrequencyId = receiveFrequencyId;
+
+        if (transmitFrequencyId != null)
+            deviceNet.TransmitFrequencyId = transmitFrequencyId.Value;
+
+        if (!camera.AvailableNetworks.Contains(receiveFrequencyId))
+            camera.AvailableNetworks.Add(receiveFrequencyId);
+
+        camera.NetworkSet = true;
+        Dirty(uid, camera);
+        Dirty(uid, deviceNet);
+    }
+    // Orion-End
+
     protected override void OpenSetupInterface(EntityUid uid, EntityUid player, SurveillanceCameraComponent? camera = null)
     {
         if (!Resolve(uid, ref camera))
@@ -234,7 +260,7 @@ public sealed partial class SurveillanceCameraSystem : SharedSurveillanceCameraS
 
         var ev = new SurveillanceCameraDeactivateEvent(camera);
 
-        RemoveActiveViewers(camera, new(component.ActivePvsViewers), null, component);
+        RemoveActiveViewers(camera, new(component.ActivePvsViewers.Keys), null, component); // Orion-Edit
         component.Active = false;
 
         // Send a targetted event to all monitors.
@@ -304,9 +330,11 @@ public sealed partial class SurveillanceCameraSystem : SharedSurveillanceCameraS
             return;
         }
 
-        _viewSubscriberSystem.AddViewSubscriber(camera, actor.PlayerSession);
-
-        component.ActivePvsViewers.Add(player);
+        // Orion-Edit-Start
+        var subscribeTarget = ResolveSubscribeTarget(camera);
+        _viewSubscriberSystem.AddViewSubscriber(subscribeTarget, actor.PlayerSession);
+        component.ActivePvsViewers[player] = subscribeTarget;
+        // Orion-Edit-End
 
         if (monitor != null)
         {
@@ -377,6 +405,37 @@ public sealed partial class SurveillanceCameraSystem : SharedSurveillanceCameraS
 
         UpdateVisuals(camera, component);
     }
+
+    // Orion-Start
+    public void ClearActiveViewers(EntityUid camera, SurveillanceCameraComponent? component = null)
+    {
+        if (!Resolve(camera, ref component))
+            return;
+
+//        var subscribeTarget = ResolveSubscribeTarget(camera); // Orion-Edit
+        foreach (var (viewer, subscribeTarget) in component.ActivePvsViewers.ToArray()) // Orion-Edit
+        {
+            if (!TryComp<ActorComponent>(viewer, out var actor))
+                continue;
+
+            _viewSubscriberSystem.RemoveViewSubscriber(subscribeTarget, actor.PlayerSession);
+        }
+
+        component.ActivePvsViewers.Clear();
+        UpdateVisuals(camera, component);
+    }
+
+    private EntityUid ResolveSubscribeTarget(EntityUid camera)
+    {
+        if (TryComp<AvatarNavRelayComponent>(camera, out var relay) && relay.RelayEntity is { } relayUid && Exists(relayUid))
+            return relayUid;
+
+        if (TryComp<NetpodComponent>(camera, out var pod) && pod.Avatar is { } avatar && Exists(avatar))
+            return avatar;
+
+        return camera;
+    }
+    // Orion-End
 
     public void RemoveActiveViewers(EntityUid camera, HashSet<EntityUid> players, EntityUid? monitor = null, SurveillanceCameraComponent? component = null)
     {

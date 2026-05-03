@@ -1,0 +1,14 @@
+- type: soundCollection
+  id: HierophantMusic
+  files:
+    - /Audio/_LP/Mobs/Bosses/hierophant_second.ogg
+    - /Audio/_Lavaland/Mobs/Bosses/hierophant.ogg
+
+- type: bossMusic
+  id: Hierophant
+  fade: true
+  fadeInTime: 5
+  fadeOutTime: 8
+  positionOnEnd: 0
+  sound:
+    collection: HierophantMusic

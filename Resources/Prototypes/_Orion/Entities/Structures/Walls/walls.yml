@@ -1,0 +1,51 @@
+- type: entity
+  parent: BaseWall
+  id: WallPaper 
+  name: paper wall
+  description: Helps to contain the repeated screams of martial artists.
+  components:
+  - type: Sprite
+    sprite: _Orion/Structures/Walls/paper.rsi
+  - type: Icon
+    sprite: _Orion/Structures/Walls/paper.rsi
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/_Orion/Effects/paper_tear.ogg
+      - !type:ChangeConstructionNodeBehavior
+        node: girder
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: IconSmooth
+    key: walls
+    base: paperwall
+
+- type: entity
+  parent: BaseWall
+  id: WallBinaryIndestructible
+  name: tear in the fabric of reality
+  suffix: Indestructible
+  components:
+  - type: Sprite
+    sprite: _Orion/Structures/Walls/binary.rsi
+    noRot: true
+    layers:
+    - state: full
+      shader: unshaded
+  - type: Icon
+    sprite: _Orion/Structures/Walls/binary.rsi
+  - type: Destructible

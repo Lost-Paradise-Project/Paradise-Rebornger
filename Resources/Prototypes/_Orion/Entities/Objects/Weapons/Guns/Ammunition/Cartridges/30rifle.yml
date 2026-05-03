@@ -1,0 +1,30 @@
+- type: entity
+  parent: BaseCartridgeRifle762
+  id: CartridgeRifle762
+  name: cartridge (7.62mm rifle)
+  description: A classic intermediate cartridge used by many combat rifles and LMGs. Standard kinetic ammunition is common and useful in most situations.
+  components:
+  - type: CartridgeAmmo
+    proto: BulletRifle762
+
+- type: entity
+  parent: [ BaseCartridge, BaseSecurityContraband ]
+  id: BaseCartridgeRifle762
+  name: cartridge (7.62mm rifle)
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - CartridgeRifle762
+  - type: CartridgeAmmo
+    proto: BulletRifle762
+  - type: Sprite
+    sprite: _Orion/Objects/Weapons/Guns/Ammunition/Casings/30_casing.rsi
+    scale: 0.9, 0.9
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: base

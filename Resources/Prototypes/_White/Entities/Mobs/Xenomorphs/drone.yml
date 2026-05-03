@@ -1,0 +1,47 @@
+- type: entity
+  parent: BaseMobXenomorphAdult
+  id: BaseMobXenomorphDrone
+  name: xenomorph drone
+  description: A specialized individual designed to build and maintain a hive. Less aggressive than other xenomorph forms, but still deadly when approached.
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _White/Mobs/Aliens/Xenomorphs/drone.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: xenomorph
+    - map: [ "pocket1" ]
+    - map: [ "pocket2" ]
+    - map: ["enum.HumanoidVisualLayers.Handcuffs"]
+      color: "#ffffff"
+      sprite: _White/Objects/Misc/handcuffs.rsi
+      state: body-overlay-xenomorph
+      visible: false
+  - type: Cuffable
+  - type: Body
+
+- type: entity
+  parent: BaseMobXenomorphDrone
+  id: MobXenomorphDrone
+  components:
+  - type: UserInterface
+    interfaces:
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
+      enum.InstrumentUiKey.Key:
+        type: InstrumentBoundUserInterface
+        requireInputValidation: false
+      enum.RadialSelectorUiKey.Key:
+        type: TrackedRadialSelectorMenuBUI
+
+- type: entity
+  parent: [BaseMobXenomorphDungeon, BaseMobXenomorphDrone]
+  id: MobXenomorphDroneDungeon
+  components:
+  - type: MovementSpeedModifier
+    baseSprintSpeed: 4
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      105: 0.7
+      125: 0.6
+      150: 0.5

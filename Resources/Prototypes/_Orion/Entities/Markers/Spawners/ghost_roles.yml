@@ -1,0 +1,22 @@
+- type: entity
+  parent: BaseStructure
+  id: SpawnPointSkeletonPirate
+  name: skeleton pirate sleeper
+  suffix: Spawner, Ghost Role
+  categories: [ Spawner ]
+  components:
+  - type: GhostRole
+    name: ghost-role-information-skeleton-pirate-bitrunning-name
+    description: ghost-role-information-skeleton-pirate-bitrunning-description
+    rules: ghost-role-information-antagonist-rules
+    raffle:
+      settings: default
+    mindRoles:
+    - MindRoleGhostRoleFreeAgent
+  - type: GhostRoleMobSpawner
+    prototype: MobSkeletonPirateBitrun
+  - type: Sprite
+    layers:
+    - sprite: _Orion/Structures/cryostasis_sleeper.rsi
+      state: sleeper_1
+      map: [ "base" ]

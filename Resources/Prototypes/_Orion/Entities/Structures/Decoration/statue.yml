@@ -1,0 +1,43 @@
+- type: entity
+  parent: BaseStructure
+  id: StatueBaseDecoration
+  abstract: true
+  name: statue
+  description: Piece of art.
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _Orion/Structures/Decoration/statue.rsi
+    state: base
+    drawdepth: Mobs
+  - type: Transform
+    anchored: true
+  - type: Anchorable
+  - type: InteractionOutline
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+        - !type:DoActsBehavior
+          acts: ["Destruction"]
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+  - type: StaticPrice
+    price: 200
+
+# BUST
+
+- type: entity
+  parent: StatueBaseDecoration
+  id: StatueBustDecoration
+  name: bust
+  description: Just someone bust.
+  components:
+  - type: Sprite
+    state: bust

@@ -1,0 +1,11 @@
+- type: Tag
+  id: CartridgeRifle762
+
+- type: Tag
+  id: MagazineRifle762Sniper
+
+- type: Tag
+  id: MagazineRifle762
+
+- type: Tag
+  id: MagazineHeavyRifleM41

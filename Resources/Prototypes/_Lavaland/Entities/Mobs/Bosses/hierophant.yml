@@ -1,0 +1,105 @@
+- type: entity
+  id: MobHierophant
+  name: hierophant
+  description: A massive metal club that hangs in the air as though waiting. It'll make you dance to its beat.
+  components:
+  # Basic stuff
+  - type: Physics
+    bodyType: KinematicController
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.6,0.35,0.6"
+        density: 10000 # 10 tons. Can't really push this thing
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Sprite
+    noRot: true
+    drawdepth: Mobs
+    sprite: _Lavaland/Mobs/Bosses/hierophant.rsi
+    state: hierophant
+  - type: Clickable
+  - type: InteractionOutline
+  - type: InputMover
+  - type: Input
+    context: "human"
+  - type: LagCompensation
+  - type: MobMover
+  - type: Actions
+  - type: Appearance
+  - type: RotationVisuals
+    defaultRotation: 0
+    horizontalRotation: 0
+  - type: DoAfter
+  - type: Examiner
+  - type: Eye
+  - type: ContentEye
+  - type: RequireProjectileTarget
+    active: False
+  - type: CombatMode
+  - type: MobState
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Hierophant
+  - type: NoSlip
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 1.5
+    baseSprintSpeed: 1.5
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      2500: Dead
+  - type: Tag
+    tags:
+    - CannotSuicide
+  # Actual boss from here
+  - type: ActionGrant
+    actions:
+    - ActionHierophantBox
+    - ActionHierophantCrosses
+    - ActionHierophantChasers
+    - ActionHierophantBlink
+  - type: Fauna
+  - type: Anger
+    totalHp: 2500
+  - type: Aggressive
+    forgiveRange: 25
+  - type: MobPhases
+    phaseThresholds:
+      0:    1
+      1000: 2
+      2000: 3
+  - type: BossMusic
+    soundId: Hierophant
+  - type: TileMovement
+  - type: DamageSquareImmunity
+  - type: SpawnLootOnDeath
+    table: !type:AllSelector
+      children:
+      - id: LavalandHierophantClub
+      # - id: CrusherUpgradeMainMarker
+    deleteOnDeath: true
+  - type: MegafaunaAi
+    actionDelay: !type:MegafaunaConstantNumberSelector
+      value: 0.5
+    selector: !type:NestedMegafaunaSelector
+      id: Hierophant
+  - type: AngerPlayerScaling
+    angerScale: 1.1
+    hpScale: 1.2
+  - type: MegafaunaFieldGenerator
+    wallId: WallHierophantArenaTemporary
+    wallShape: !type:NestedEntityShape
+      id: BoxHollow
+      size: 11 # Radius of the arena
+  - type: MegafaunaAnchor
+  - type: MegafaunaBlink
+    spawnOnTarget: HierophantShapeBlink
+    spawnOnUsed: HierophantShapeBlink
+  - type: MegafaunaBlinkInactive
+  - type: MegafaunaGodmode
+  - type: MegafaunaRejuvenate

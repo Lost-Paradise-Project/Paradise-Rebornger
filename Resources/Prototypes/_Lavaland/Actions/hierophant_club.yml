@@ -1,0 +1,85 @@
+# Hierophant club
+- type: entity
+  id: ActionHierophantClubTileMovement
+  name: Curse of Tile Movement
+  description: Makes the target move only by tiles.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    priority: -23
+    useDelay: 30
+    icon:
+      sprite: /Textures/_Lavaland/Interface/Alerts/hierophantbeat.rsi
+      state: hierophant
+    itemIconStyle: NoItem
+  - type: TargetAction
+    range: 5
+  - type: EntityTargetAction
+    event: !type:ToggleTileMovementActionEvent
+
+- type: entity
+  id: ActionHierophantClubBlink
+  parent: ActionBaseHierophant
+  name: Blink
+  description: Teleports you to any position you can physically reach.
+  components:
+  - type: Action
+    raiseOnUser: true
+    priority: -24
+    useDelay: 10
+    icon:
+      sprite: _Lavaland/Objects/Weapons/hierophant_club.rsi
+      state: icon
+  - type: TargetAction
+    range: 10
+  - type: WorldTargetAction
+    event: !type:MegafaunaBlinkActionEvent
+
+- type: entity
+  id: ActionHierophantClubBox
+  parent: ActionBaseHierophant
+  name: Expanding Box
+  description: Spawns an expanding box on the target position.
+  components:
+  - type: Action
+    useDelay: 3
+    icon:
+      sprite: _Lavaland/Objects/Weapons/hierophant_club.rsi
+      state: icon
+  - type: WorldTargetAction
+    event: !type:SpawnEntityActionEvent
+      spawn: HierophantShapeBoxExpanding
+
+- type: entity
+  id: ActionHierophantClubCrosses
+  parent: ActionBaseHierophant
+  name: Sequence Crosses
+  description: Spawns a sequence of crosses on the target position.
+  components:
+  - type: Action
+    useDelay: 3
+    icon:
+      sprite: _Lavaland/Objects/Weapons/hierophant_club.rsi
+      state: icon
+  - type: WorldTargetAction
+    event: !type:SpawnEntityActionEvent
+      spawn: HierophantShapeCrossSequence
+      attachToTarget: true
+
+- type: entity
+  id: ActionHierophantClubChasers
+  parent: ActionBaseHierophant
+  name: Spawn Chasers
+  description: Spawns hierophant tile chasers that move towards the target.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    useDelay: 20
+    icon:
+      sprite: _Lavaland/Objects/Weapons/hierophant_club.rsi
+      state: icon
+  - type: EntityTargetAction # Without a target it's pretty much useless?
+  - type: WorldTargetAction
+    event: !type:SpawnEntityActionEvent
+      spawn: LavalandHierophantChaser
+      spawnAtUser: true
