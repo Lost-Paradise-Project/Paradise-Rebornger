@@ -217,7 +217,7 @@
     netsync: false
   - type: MeleeWeapon
     wideAnimationRotation: 145
-    attackRate: 1
+    attackRate: 1.75 # LP Edit
     hidden: true
     damage:
       types:
@@ -235,6 +235,9 @@
   - type: Tag
     tags:
     - Write
+  - type: Reflect
+    reflectProb: 0.1
+    # LP Edit End
 
 - type: entity
   parent: [BaseItem, BaseSyndicateContraband]

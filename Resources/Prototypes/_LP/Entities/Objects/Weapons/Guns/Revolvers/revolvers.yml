@@ -233,14 +233,12 @@
   - type: Gun
     fireRate: 5
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/batrifle.ogg
+      path: /Audio/Weapons/Guns/Gunshots/revolver.ogg
   - type: ChamberMagazineAmmoProvider
     autoCycle: false
     autoEject: false
-    soundAutoEject:
-      path: /Audio/_GoobStation/Weapons/Guns/MagOut/garand_eject.ogg
     soundRack:
-      path: /Audio/Weapons/Guns/Cock/batrifle_cock.ogg
+      path: /Audio/Weapons/Guns/Cock/hpistol_cock.ogg
       params:
         volume: -3
     soundBoltClosed:
@@ -253,11 +251,11 @@
         volume: -3
   - type: Appearance
   - type: UseDelay
-    delay: 0.8
+    delay: 0.75
   - type: Item
     size: Small
     shape:
-    - 1,0,1,0
+    - 0,0,0,1
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

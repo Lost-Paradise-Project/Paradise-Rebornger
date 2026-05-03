@@ -1,7 +1,0 @@
-- type: latheRecipe
-  id: Vaccine
-  result: Vaccine
-  completetime: 2
-  materials:
-    Steel: 100
-    Plastic: 50

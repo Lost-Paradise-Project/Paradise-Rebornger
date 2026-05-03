@@ -2,3 +2,10 @@
   id: LPPCheapSunglasses
   equipment:
     eyes: ClothingEyesGlassesCheapSunglasses
+
+- type: loadout
+  id: LPPCigaretteEndeless
+  storage:
+    back:
+    - LPPCigaretteEndeless
+  groupBy: "smokeables"

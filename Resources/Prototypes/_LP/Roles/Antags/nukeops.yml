@@ -1,0 +1,40 @@
+- type: startingGear
+  id: LPPSyndicateLoneOperativeVeteranGearFull
+  parent: SyndicateOperativeGearFull
+  equipment:
+    pocket2: ThrowingKnife
+    jumpsuit: LPPClothingUniformJumpsuitInteq
+    eyes: LPPClothingEyesGlassesContractor
+    outerClothing: LPPClothingOuterHardsuitInteqVeteran
+    belt: LPPClothingBeltMaximumWebbing
+    back: LPPClothingBackpackDuffelContractor
+    mask: LPPClothingMaskNeckGaiterLoneOps
+    neck: LPPClothingNeckCollarSpiked
+  inhand:
+    - LPPWeaponRifleAek
+  storage:
+    back:
+    - MagazineLightRifle
+    - MagazineRifle
+    - WeaponPistolViper
+    - PinpointerSyndicateNuclear
+    - HandheldHealthAnalyzer
+    - MicroBombImplanter
+
+- type: startingGear
+  id: LPPSyndicateOperativeVeteranGearFull
+  parent: SyndicateOperativeGearFull
+  equipment:
+    pocket2: ThrowingKnife
+    outerClothing: LPPClothingOuterHardsuitSyndicateVeteran
+    back: ClothingBackpackSyndicate
+  inhand:
+    - WeaponSubMachineGunC20r
+  storage:
+    back:
+    - MagazinePistolSubMachineGun
+    - MagazineShotgun
+    - WeaponShotgunSawn
+    - PinpointerSyndicateNuclear
+    - HandheldHealthAnalyzer
+    - MicroBombImplanter

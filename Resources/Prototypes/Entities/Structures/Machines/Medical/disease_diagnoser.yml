@@ -17,7 +17,6 @@
   - type: Appearance
   - type: Machine
     board: DiagnoserMachineCircuitboard
-  - type: DiseaseDiagnoser #FH
 
 - type: entity
   name: disease diagnoser report
@@ -43,4 +42,4 @@
     backgroundPatchMargin: 0.0, 6.0, 0.0, 6.0
     contentMargin: 12.0, 0.0, 12.0, 0.0
     # This is a narrow piece of paper
-    maxWritableArea: 256.0, 0.0 #Far Horizons
+    maxWritableArea: 128.0, 0.0
