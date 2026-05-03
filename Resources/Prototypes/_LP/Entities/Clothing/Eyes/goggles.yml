@@ -50,7 +50,7 @@
 
 - type: entity
   id: LPPClothingEyesMesonNVG
-  parent: LPPClothingEyesNVG
+  parent: [LPPClothingEyesNVG, BaseEngineeringContraband]
   name: engineering night vision goggles
   components:
     - type: NightVision
@@ -65,7 +65,7 @@
 
 - type: entity
   id: LPPClothingEyesSecNVG
-  parent: [LPPClothingEyesNVG, ShowSecurityIcons]
+  parent: [LPPClothingEyesNVG, ShowSecurityIcons, BaseSecurityContraband]
   name: security night vision goggles
   components:
   - type: Tag
@@ -87,7 +87,7 @@
 
 - type: entity
   id: LPPClothingEyesMedNVG
-  parent: LPPClothingEyesNVG
+  parent: [LPPClothingEyesNVG, BaseMedicalContraband]
   name: medical night vision goggles
   components:
   - type: ShowHealthBars
@@ -116,7 +116,7 @@
 
 - type: entity
   id: LPPClothingEyesDiagnosticNVG
-  parent: LPPClothingEyesNVG
+  parent: [LPPClothingEyesNVG, BaseScienceContraband]
   name: diagnostic night vision goggles
   components:
   - type: NightVision

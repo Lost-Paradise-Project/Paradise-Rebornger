@@ -28,3 +28,22 @@
   position: 3,10
   technologyPrerequisites:
   - ADTMegaCells
+
+- type: technology
+  id: LPPNVGAdvHUD
+  name: research-technology-nvg-adv-hud
+  icon:
+    sprite: _LP/Clothing/Eyes/NVG/NVG.rsi
+    state: icon
+  discipline: Industrial
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+    - LPPBaseNVGRecipe
+    - LPPClothingEyesMesonNVG
+    - LPPClothingEyesSecNVG
+    - LPPClothingEyesMedNVG
+    - LPPClothingEyesDiagnosticNVG
+  technologyPrerequisites:
+  - LPPBasicHUD
+  position: 2, 21

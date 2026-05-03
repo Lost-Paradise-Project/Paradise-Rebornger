@@ -79,3 +79,21 @@
   position: 2, 31 # Шахтерские скафы
   radioChannels:
   - Supply
+
+- type: technology
+  id: LPPBasicHUD
+  name: research-technology-basic-hud
+  icon:
+    sprite: Clothing/Eyes/Glasses/meson.rsi
+    state: icon
+  discipline: CivilianServices
+  tier: 1
+  cost: 5000
+  recipeUnlocks:
+    - LPPClothingEyesGlassesMeson
+    - LPPClothingEyesHudMedical
+    - LPPClothingEyesHudDiagnostic
+    - LPPClothingEyesHudSecurity
+  technologyPrerequisites:
+  - AdvancedEntertainment
+  position: 2, 22
