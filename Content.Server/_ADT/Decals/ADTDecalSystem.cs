@@ -3,12 +3,6 @@ using Content.Server.Administration.Managers;
 using Content.Shared._ADT.Decals;
 using Content.Shared.Administration;
 using Content.Shared.Database;
-using Content.Shared.Decals;
-using Content.Shared.Maps;
-using Robust.Server.GameObjects;
-using Robust.Server.Player;
-using Robust.Shared.Map;
-using Robust.Shared.Player;
 
 namespace Content.Server._ADT.Decals;
 
@@ -17,12 +11,10 @@ namespace Content.Server._ADT.Decals;
 /// </summary>
 public sealed class ADTDecalSystem : EntitySystem
 {
-    [Dependency] private readonly IPlayerManager _playerManager = default!;
     [Dependency] private readonly IAdminManager _adminManager = default!;
     [Dependency] private readonly IAdminLogManager _adminLogger = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly Server.Decals.DecalSystem _decalSystem = default!;
-    [Dependency] private readonly TurfSystem _turf = default!;
 
     public override void Initialize()
     {
