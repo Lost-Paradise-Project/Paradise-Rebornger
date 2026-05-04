@@ -87,7 +87,7 @@
               - /Maps/_LP/Shuttles/LP_expeditor.yml
             # LP-Edit-End
         - type: StationJobs
-          availableJobs: 
+          availableJobs:
             # Coomand
             Captain: [ 1, 1 ]
             IAA: [ 1, 1 ] # Corvax-IAA
