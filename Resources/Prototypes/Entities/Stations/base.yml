@@ -51,6 +51,8 @@
   components:
     - type: StationCargoShuttle
       path: /Maps/Shuttles/cargo.yml
+    - type: StationSalvageShuttle # LP Edit
+      path: /Maps/_LP/Shuttles/LP_mining.yml # LP Edit
     - type: GridSpawn
       groups:
         trade: !type:GridSpawnGroup
@@ -118,11 +120,6 @@
             inherent: true
           protos:
           - VGRoid
-        # LP-Edit-Start
-        mining: !type:GridSpawnGroup
-          paths:
-          - /Maps/_LP/Shuttles/LP_mining.yml
-        # LP-Edit-End
 
 - type: entity
   id: BaseStationCentcomm
