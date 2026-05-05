@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.2.0
   forkId: ""
   forkVersion: ""
-  time: 05/04/2026 10:53:14
-  entityCount: 30460
+  time: 05/05/2026 14:04:32
+  entityCount: 30459
 maps:
 - 84
 grids:
@@ -16883,7 +16883,7 @@ entities:
       pos: -5.5,-28.5
       parent: 82
     - type: Door
-      secondsUntilStateChange: -4050.6738
+      secondsUntilStateChange: -4160.955
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -75901,6 +75901,13 @@ entities:
     components:
     - type: Transform
       pos: -30.605223,25.633827
+      parent: 82
+- proto: ClothingMaskGasSyndicate
+  entities:
+  - uid: 8619
+    components:
+    - type: Transform
+      pos: -63.413437,-20.024296
       parent: 82
 - proto: ClothingMaskMuzzle
   entities:
@@ -165213,15 +165220,6 @@ entities:
     - type: Transform
       pos: -6.3613095,1.8561449
       parent: 82
-- proto: RubberStampClown
-  entities:
-  - uid: 21648
-    components:
-    - type: Transform
-      pos: -8.755251,-48.022705
-      parent: 82
-    - type: Tag
-      tags: []
 - proto: RubberStampDenied
   entities:
   - uid: 1102
@@ -165238,13 +165236,6 @@ entities:
     components:
     - type: Transform
       pos: -6.204983,1.7154217
-      parent: 82
-- proto: RubberStampSyndicate
-  entities:
-  - uid: 8619
-    components:
-    - type: Transform
-      pos: -63.2649,-19.79454
       parent: 82
 - proto: ScalpelShiv
   entities:
@@ -199432,7 +199423,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -135199.66
+      secondsUntilStateChange: -135309.94
       state: Opening
     - type: Airlock
       autoClose: False

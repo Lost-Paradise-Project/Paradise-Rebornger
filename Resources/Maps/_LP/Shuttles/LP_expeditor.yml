@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.2.0
   forkId: ""
   forkVersion: ""
-  time: 05/03/2026 13:47:51
-  entityCount: 350
+  time: 05/05/2026 13:30:05
+  entityCount: 351
 maps: []
 grids:
 - 1
@@ -408,11 +408,11 @@ entities:
       - 57
     - type: Fixtures
       fixtures: {}
-  - uid: 330
+  - uid: 351
     components:
     - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -1.5,-2.5
+      rot: -1.5707963267948966 rad
+      pos: 2.5,-2.5
       parent: 1
     - type: DeviceList
       devices:
@@ -426,12 +426,6 @@ entities:
       - 108
       - 287
       - 294
-    - type: AccessReader
-      accessListsOriginal:
-      - - Atmospherics
-      access:
-      - - Atmospherics
-      - - Salvage
     - type: Fixtures
       fixtures: {}
 - proto: AirCanister
@@ -1313,6 +1307,16 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 4.5,-4.5
       parent: 1
+- proto: DefibrillatorCabinetFilled
+  entities:
+  - uid: 330
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -1.5,-2.5
+      parent: 1
+    - type: Fixtures
+      fixtures: {}
 - proto: DrinkVodkaBottleFull
   entities:
   - uid: 342
@@ -1330,7 +1334,7 @@ entities:
       parent: 1
     - type: DeviceNetwork
       deviceLists:
-      - 330
+      - 351
       - 225
   - uid: 108
     components:
@@ -1340,7 +1344,7 @@ entities:
       parent: 1
     - type: DeviceNetwork
       deviceLists:
-      - 330
+      - 351
       - 225
 - proto: GasPassiveVentAlt2
   entities:
@@ -1796,7 +1800,7 @@ entities:
       parent: 1
     - type: DeviceNetwork
       deviceLists:
-      - 330
+      - 351
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 277
@@ -1807,7 +1811,7 @@ entities:
       parent: 1
     - type: DeviceNetwork
       deviceLists:
-      - 330
+      - 351
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 279
@@ -1818,7 +1822,7 @@ entities:
       parent: 1
     - type: DeviceNetwork
       deviceLists:
-      - 330
+      - 351
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 287
@@ -1829,7 +1833,7 @@ entities:
       parent: 1
     - type: DeviceNetwork
       deviceLists:
-      - 330
+      - 351
     - type: AtmosPipeColor
       color: '#0055CCFF'
   - uid: 289
@@ -1883,7 +1887,7 @@ entities:
       parent: 1
     - type: DeviceNetwork
       deviceLists:
-      - 330
+      - 351
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 295
@@ -1894,7 +1898,7 @@ entities:
       parent: 1
     - type: DeviceNetwork
       deviceLists:
-      - 330
+      - 351
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 296
@@ -1905,7 +1909,7 @@ entities:
       parent: 1
     - type: DeviceNetwork
       deviceLists:
-      - 330
+      - 351
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 314
@@ -1916,7 +1920,7 @@ entities:
       parent: 1
     - type: DeviceNetwork
       deviceLists:
-      - 330
+      - 351
     - type: AtmosPipeColor
       color: '#990000FF'
 - proto: GeneratorWallmountAPU
