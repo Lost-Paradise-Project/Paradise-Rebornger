@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.2.0
   forkId: ""
   forkVersion: ""
-  time: 05/04/2026 20:57:53
-  entityCount: 19085
+  time: 05/05/2026 16:30:17
+  entityCount: 19093
 maps:
 - 1
 grids:
@@ -8980,16 +8980,16 @@ entities:
           id: docking21483
           localAnchorB: -5,0.5
           localAnchorA: 38,3.5
-          damping: 791.76697
-          stiffness: 7106.8833
+          damping: 791.7895
+          stiffness: 7107.086
         docking21482: !type:WeldJoint
           bodyB: 18045
           bodyA: 2
           id: docking21482
           localAnchorB: -5,-1.5
           localAnchorA: 38,1.5
-          damping: 791.76697
-          stiffness: 7106.8833
+          damping: 791.7895
+          stiffness: 7107.086
     - type: SpreaderGrid
     - type: GridPathfinding
     - type: TileHistory
@@ -30300,6 +30300,26 @@ entities:
     components:
     - type: Transform
       pos: 0.5,39.5
+      parent: 2
+  - uid: 19086
+    components:
+    - type: Transform
+      pos: 6.5,45.5
+      parent: 2
+  - uid: 19087
+    components:
+    - type: Transform
+      pos: 6.5,44.5
+      parent: 2
+  - uid: 19088
+    components:
+    - type: Transform
+      pos: 10.5,46.5
+      parent: 2
+  - uid: 19089
+    components:
+    - type: Transform
+      pos: 11.5,46.5
       parent: 2
 - proto: CableApcStack
   entities:
@@ -52584,14 +52604,6 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-  - uid: 7420
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -36.5,3.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
   - uid: 7421
     components:
     - type: Transform
@@ -52642,6 +52654,13 @@ entities:
     components:
     - type: Transform
       pos: 40.5,41.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
+  - uid: 19091
+    components:
+    - type: Transform
+      pos: -36.5,3.5
       parent: 2
     - type: Fixtures
       fixtures: {}
@@ -88669,10 +88688,10 @@ entities:
       parent: 2
 - proto: HolopadCargoBay
   entities:
-  - uid: 18273
+  - uid: 19090
     components:
     - type: Transform
-      pos: -37.5,3.5
+      pos: -39.5,3.5
       parent: 2
 - proto: HolopadCargoFront
   entities:
@@ -101781,6 +101800,11 @@ entities:
       parent: 2
 - proto: RubberStampApproved
   entities:
+  - uid: 7420
+    components:
+    - type: Transform
+      pos: -37.677708,3.7778323
+      parent: 2
   - uid: 14393
     components:
     - type: Transform
@@ -101796,6 +101820,17 @@ entities:
     - type: Transform
       pos: -43.345627,8.726026
       parent: 2
+  - uid: 19092
+    components:
+    - type: MetaData
+      name: печать ДОСТАВЛЕНО
+    - type: Transform
+      pos: -37.505833,3.5434573
+      parent: 2
+    - type: Stamp
+      stampState: paper_stamp-qm
+      stampedName: ДОСТАВЛЕНО
+      stampedColor: '#855B3CFF'
 - proto: RubberStampDenied
   entities:
   - uid: 14396
@@ -101817,6 +101852,11 @@ entities:
     components:
     - type: Transform
       pos: -43.470627,8.455193
+      parent: 2
+  - uid: 19093
+    components:
+    - type: Transform
+      pos: -37.333958,3.7465823
       parent: 2
 - proto: SalvageMagnet
   entities:
@@ -109944,6 +109984,11 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 0.5,3.5
       parent: 18045
+  - uid: 18273
+    components:
+    - type: Transform
+      pos: -37.5,3.5
+      parent: 2
   - uid: 18426
     components:
     - type: Transform
