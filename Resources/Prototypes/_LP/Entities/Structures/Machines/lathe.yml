@@ -27,7 +27,7 @@
     - SurgeryStatic
     - ServiceBoardsStatic
     dynamicPacks:
-    - ScienceClothing
+    - LPPServiceClothing
     - CameraBoards
     - ServiceBoards
     - PowerCells
@@ -134,7 +134,7 @@
     staticPacks:
     - EngineeringBoardsStatic
     dynamicPacks:
-    - ScienceClothing
+    - LPPEngineeringClothing
     - ReactorCircuitboards
     - ShuttleBoards
     - EngineeringBoards
@@ -190,7 +190,7 @@
     - CargoBoardsStatic
     dynamicPacks:
     - SalvageSecurityWeapons
-    - ScienceClothing
+    - LPPCargoClothing
     - CargoBoards
     - PowerCells
     - Mining

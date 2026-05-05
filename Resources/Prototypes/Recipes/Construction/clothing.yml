@@ -70,13 +70,15 @@
   category: construction-category-clothing
   objectType: Item
 
-- type: construction
-  id: ClothingEyesHudMedSec
-  graph: HudMedSec
-  startNode: start
-  targetNode: medsecHud
-  category: construction-category-clothing
-  objectType: Item
+# LP Edit Start
+# - type: construction
+#   id: ClothingEyesHudMedSec
+#   graph: HudMedSec
+#   startNode: start
+#   targetNode: medsecHud
+#   category: construction-category-clothing
+#   objectType: Item
+# LP Edit End
 
 - type: construction
   id: ClothingShoeSlippersDuck

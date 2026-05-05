@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.Shared._LP.Body.Components; // LP Edit
 using Content.Shared.Charges.Components;
 using Content.Shared.Charges.Systems;
 using Content.Shared.Clothing.Components;
@@ -183,17 +184,34 @@ public abstract class SharedFlashSystem : EntitySystem
         var attempt = new FlashAttemptEvent(target, user, used);
         RaiseLocalEvent(target, ref attempt, true);
 
+        // LP Edit Start
+
+        var flashDur = flashDuration;
+
+        if (!TryComp<FlashModifierComponent>(target, out var modifier))
+        {
+            flashDur = flashDuration;
+        }
+
+        if (modifier != null)
+        {
+            var ticks = flashDuration.Ticks * modifier.Modifier;
+            flashDur = TimeSpan.FromTicks((long)Math.Ceiling(ticks));
+        }
+
+        // LP Edit End
+
         if (attempt.Cancelled)
             return;
 
         // don't paralyze, slowdown or convert to rev if the target is immune to flashes
-        if (!_statusEffectsSystem.TryAddStatusEffect<FlashedComponent>(target, FlashedKey, flashDuration, true))
+        if (!_statusEffectsSystem.TryAddStatusEffect<FlashedComponent>(target, FlashedKey, flashDur, true)) // LP Edit
             return;
 
         if (stunDuration != null)
             _stun.TryUpdateParalyzeDuration(target, stunDuration.Value);
         else
-            _movementMod.TryUpdateMovementSpeedModDuration(target, MovementModStatusSystem.FlashSlowdown, flashDuration, slowTo);
+            _movementMod.TryUpdateMovementSpeedModDuration(target, MovementModStatusSystem.FlashSlowdown, flashDur, slowTo); // LP Edit
 
         if (displayPopup && user != null && target != user && Exists(user.Value))
         {

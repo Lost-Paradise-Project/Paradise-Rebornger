@@ -13,3 +13,37 @@
   - LPPClothingOuterHardsuitEngineering
   - LPPClothingOuterHardsuitSpatio
   - LPPClothingOuterHardsuitSalvage
+
+- type: latheRecipePack
+  id: LPPServiceClothing
+  recipes:
+  - LPPBaseNVGRecipe
+  - ClothingBackpackHolding
+  - ClothingBackpackSatchelHolding
+  - ClothingBackpackDuffelHolding
+  - ClothingShoesBootsMagSci
+  - ClothingShoesBootsSpeed
+
+- type: latheRecipePack
+  id: LPPCargoClothing
+  recipes:
+  - LPPBaseNVGRecipe
+  - LPPClothingEyesGlassesMeson
+  - ClothingBackpackHolding
+  - ClothingBackpackSatchelHolding
+  - ClothingBackpackDuffelHolding
+  - ClothingShoesBootsMagSci
+  - ClothingShoesBootsMoon
+  - ClothingShoesBootsSpeed
+  - ClothingShoesBootsJump
+
+- type: latheRecipePack
+  id: LPPMedicalClothing
+  recipes:
+  - LPPClothingEyesMedNVG
+  - LPPClothingEyesHudMedical
+  - ClothingBackpackHolding
+  - ClothingBackpackSatchelHolding
+  - ClothingBackpackDuffelHolding
+  - ClothingShoesBootsMagSci
+  - ClothingShoesBootsSpeed

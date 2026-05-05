@@ -1,0 +1,34 @@
+- type: constructionGraph
+  id: LPPHudEngiSec
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: engisecHud
+          steps:
+            - tag: MesonGoggles
+              name: construction-graph-tag-meson
+              icon:
+                sprite: Clothing/Eyes/Glasses/meson.rsi
+                state: icon
+              doAfter: 5
+            - tag: HudSecurity
+              name: construction-graph-tag-security-hud
+              icon:
+                sprite: Clothing/Eyes/Hud/sec.rsi
+                state: icon
+              doAfter: 5
+            - material: Cable
+              amount: 5
+              doAfter: 5
+            - tag: Radio
+              name: construction-graph-tag-radio
+              icon:
+                sprite: Objects/Devices/communication.rsi
+                state: walkietalkie
+              doAfter: 5
+            - material: Manipulator
+              amount: 2
+              doAfter: 5
+    - node: engisecHud
+      entity: LPPClothingEyesHudSecEng

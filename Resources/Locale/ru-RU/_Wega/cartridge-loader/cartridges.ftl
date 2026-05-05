@@ -1,1 +1,0 @@
-nano-chat-program-name = НаноЧат
