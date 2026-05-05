@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.2.0
   forkId: ""
   forkVersion: ""
-  time: 05/05/2026 14:53:20
-  entityCount: 30461
+  time: 05/05/2026 15:51:44
+  entityCount: 30451
 maps:
 - 84
 grids:
@@ -12177,17 +12177,6 @@ entities:
     - type: Transform
       pos: -9.519083,35.601566
       parent: 82
-- proto: ActionBibleSummon
-  entities:
-  - uid: 3854
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 3819
-    - type: Action
-      originalIconColor: '#FFFFFFFF'
-      container: 3819
 - proto: ActionToggleInternals
   entities:
   - uid: 26539
@@ -12394,7 +12383,7 @@ entities:
       devices:
       - 13470
       - 13515
-      - 11246
+      - 3854
     - type: Fixtures
       fixtures: {}
   - uid: 2267
@@ -12422,7 +12411,7 @@ entities:
       - 3697
       - 3696
       - 10415
-      - 10416
+      - 3819
       - 3708
       - 3703
       - 13770
@@ -12796,7 +12785,7 @@ entities:
       parent: 82
     - type: DeviceList
       devices:
-      - 283
+      - 3403
       - 10415
       - 3758
       - 13947
@@ -12915,7 +12904,7 @@ entities:
       parent: 82
     - type: DeviceList
       devices:
-      - 11246
+      - 3854
       - 11340
       - 11341
       - 11342
@@ -13027,7 +13016,7 @@ entities:
       - 2145
       - 2151
       - 15493
-      - 283
+      - 3403
     - type: Fixtures
       fixtures: {}
   - uid: 15492
@@ -13040,7 +13029,7 @@ entities:
       devices:
       - 13949
       - 13948
-      - 10416
+      - 3819
     - type: Fixtures
       fixtures: {}
   - uid: 15669
@@ -16883,7 +16872,7 @@ entities:
       pos: -5.5,-28.5
       parent: 82
     - type: Door
-      secondsUntilStateChange: -4212.034
+      secondsUntilStateChange: -6837.1616
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -23058,36 +23047,6 @@ entities:
       parent: 82
 - proto: Bible
   entities:
-  - uid: 3819
-    components:
-    - type: Transform
-      parent: 3403
-    - type: Summonable
-      summonActionEntity: 3854
-    - type: Storage
-      storedItems:
-        4180:
-          position: 0,0
-          _rotation: South
-        4531:
-          position: 0,1
-          _rotation: South
-    - type: ContainerContainer
-      containers:
-        storagebase: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 4180
-          - 4531
-        actions: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 3854
-    - type: Physics
-      canCollide: False
-    - type: ActionsContainer
   - uid: 20245
     components:
     - type: Transform
@@ -23729,22 +23688,6 @@ entities:
     - type: Transform
       pos: -8.303806,9.664098
       parent: 82
-- proto: BookHowToSurvive
-  entities:
-  - uid: 7375
-    components:
-    - type: Transform
-      parent: 3403
-    - type: Physics
-      canCollide: False
-- proto: BookPossum
-  entities:
-  - uid: 6862
-    components:
-    - type: Transform
-      parent: 3403
-    - type: Physics
-      canCollide: False
 - proto: BookRandom
   entities:
   - uid: 2097
@@ -23782,7 +23725,8 @@ entities:
     - type: MetaData
       name: Поучительные истории для осужденных
     - type: Transform
-      parent: 3403
+      pos: 59.73765,-42.384373
+      parent: 82
     - type: Paper
       content: >-
         [italic]   Если вы надеетесь в скорейшем времени покинуть пермабриг, эти поучительные истории, полные нравственности и морали, помогут вам в вашем нелёгком деле.
@@ -23816,17 +23760,10 @@ entities:
           Эта история учит нас о важности коммуникации.
 
         [/italic]
-    - type: Physics
-      canCollide: False
   - uid: 18269
     components:
     - type: Transform
       pos: 44.502953,42.617794
-      parent: 82
-  - uid: 19971
-    components:
-    - type: Transform
-      pos: 59.229374,-42.20847
       parent: 82
   - uid: 19972
     components:
@@ -23862,62 +23799,13 @@ entities:
     - type: Transform
       pos: 5.7916775,-9.257294
       parent: 82
-- proto: BookRedspace
-  entities:
-  - uid: 11205
-    components:
-    - type: Transform
-      parent: 3403
-    - type: Physics
-      canCollide: False
 - proto: Bookshelf
   entities:
-  - uid: 3403
+  - uid: 283
     components:
     - type: Transform
       pos: 59.5,-39.5
       parent: 82
-    - type: Storage
-      storedItems:
-        3819:
-          position: 5,0
-          _rotation: South
-        6862:
-          position: 4,0
-          _rotation: South
-        7375:
-          position: 6,0
-          _rotation: South
-        10988:
-          position: 3,0
-          _rotation: South
-        10989:
-          position: 0,0
-          _rotation: South
-        11205:
-          position: 1,0
-          _rotation: South
-        11229:
-          position: 2,0
-          _rotation: South
-    - type: UserInterface
-      actors:
-        enum.StorageUiKey.Key:
-        - invalid
-    - type: ContainerContainer
-      containers:
-        storagebase: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 3819
-          - 6862
-          - 7375
-          - 10988
-          - 10989
-          - 11205
-          - 11229
-    - type: ActiveUserInterface
   - uid: 19955
     components:
     - type: Transform
@@ -23975,22 +23863,6 @@ entities:
     - type: Transform
       pos: 25.5,27.5
       parent: 82
-- proto: BookSlothClownSSS
-  entities:
-  - uid: 10989
-    components:
-    - type: Transform
-      parent: 3403
-    - type: Physics
-      canCollide: False
-- proto: BookSpaceLaw
-  entities:
-  - uid: 10988
-    components:
-    - type: Transform
-      parent: 3403
-    - type: Physics
-      canCollide: False
 - proto: BookUSSP
   entities:
   - uid: 28032
@@ -78737,14 +78609,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 3.5,-29.5
       parent: 82
-- proto: CyberPen
-  entities:
-  - uid: 4180
-    components:
-    - type: Transform
-      parent: 3819
-    - type: Physics
-      canCollide: False
 - proto: d20Dice
   entities:
   - uid: 21921
@@ -90189,7 +90053,6 @@ entities:
       parent: 82
     - type: DeviceList
       devices:
-      - 10416
       - 10415
     - type: Fixtures
       fixtures: {}
@@ -91074,15 +90937,6 @@ entities:
       parent: 82
 - proto: Firelock
   entities:
-  - uid: 283
-    components:
-    - type: Transform
-      pos: 13.5,-15.5
-      parent: 82
-    - type: DeviceNetwork
-      deviceLists:
-      - 11571
-      - 15491
   - uid: 1949
     components:
     - type: Transform
@@ -91123,6 +90977,15 @@ entities:
       deviceLists:
       - 2267
       - 6007
+  - uid: 3403
+    components:
+    - type: Transform
+      pos: 13.5,-15.5
+      parent: 82
+    - type: DeviceNetwork
+      deviceLists:
+      - 11571
+      - 15491
   - uid: 3607
     components:
     - type: Transform
@@ -91141,6 +91004,15 @@ entities:
       deviceLists:
       - 12712
       - 18728
+  - uid: 3854
+    components:
+    - type: Transform
+      pos: -16.5,-11.5
+      parent: 82
+    - type: DeviceNetwork
+      deviceLists:
+      - 2165
+      - 13523
   - uid: 5596
     components:
     - type: Transform
@@ -91204,22 +91076,9 @@ entities:
       pos: 11.5,-12.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 2271
       - 11571
-  - uid: 10416
-    components:
-    - type: Transform
-      pos: 3.5,-12.5
-      parent: 82
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 2271
-      - 15492
   - uid: 10446
     components:
     - type: Transform
@@ -91562,18 +91421,6 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 11954
-  - uid: 11246
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -16.5,-11.5
-      parent: 82
-    - type: DeviceNetwork
-      configurators:
-      - invalid
-      deviceLists:
-      - 2165
-      - 13523
   - uid: 11578
     components:
     - type: Transform
@@ -92046,8 +91893,6 @@ entities:
       pos: -5.5,3.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 15905
       - 28087
@@ -92057,8 +91902,6 @@ entities:
       pos: -10.5,3.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 15905
   - uid: 28061
@@ -92067,8 +91910,6 @@ entities:
       pos: -12.5,-1.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 15905
       - 22519
@@ -92140,8 +91981,6 @@ entities:
       pos: 1.5,-33.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 28554
   - uid: 28627
@@ -92810,8 +92649,6 @@ entities:
       pos: -38.5,-26.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 22706
       - 16285
@@ -92937,8 +92774,6 @@ entities:
       pos: -0.5,-10.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 2271
   - uid: 3697
@@ -92948,8 +92783,6 @@ entities:
       pos: -0.5,-11.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 2271
   - uid: 3703
@@ -92959,8 +92792,6 @@ entities:
       pos: 15.5,-11.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 2271
   - uid: 3708
@@ -92970,9 +92801,16 @@ entities:
       pos: 15.5,-10.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
+      - 2271
+  - uid: 3819
+    components:
+    - type: Transform
+      pos: 3.5,-12.5
+      parent: 82
+    - type: DeviceNetwork
+      deviceLists:
+      - 15492
       - 2271
   - uid: 5521
     components:
@@ -93656,8 +93494,6 @@ entities:
       pos: -19.5,-12.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 13523
       - 28138
@@ -93667,8 +93503,6 @@ entities:
       pos: -19.5,-13.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 13523
       - 28138
@@ -93678,8 +93512,6 @@ entities:
       pos: -19.5,-14.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 13523
       - 28138
@@ -93689,8 +93521,6 @@ entities:
       pos: -19.5,-15.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 13523
       - 28138
@@ -93700,8 +93530,6 @@ entities:
       pos: -19.5,-16.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 13523
       - 28138
@@ -93711,8 +93539,6 @@ entities:
       pos: -19.5,-17.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 13523
       - 28138
@@ -93750,8 +93576,6 @@ entities:
       pos: -36.5,-24.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 22706
       - 2996
@@ -94396,8 +94220,6 @@ entities:
       pos: -27.5,-26.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 22706
       - 27427
@@ -94408,8 +94230,6 @@ entities:
       pos: -36.5,-28.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 22706
       - 26173
@@ -94420,8 +94240,6 @@ entities:
       pos: -27.5,-25.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 22706
       - 27427
@@ -94736,8 +94554,6 @@ entities:
       pos: -5.5,0.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 15905
       - 28098
@@ -127944,8 +127760,6 @@ entities:
       pos: 4.5,-11.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 2271
     - type: AtmosPipeColor
@@ -127957,8 +127771,6 @@ entities:
       pos: 10.5,-11.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 2271
     - type: AtmosPipeColor
@@ -128815,8 +128627,6 @@ entities:
       pos: -37.5,-27.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 22706
     - type: AtmosPipeColor
@@ -128828,8 +128638,6 @@ entities:
       pos: -32.5,-27.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 22706
     - type: AtmosPipeColor
@@ -129460,8 +129268,6 @@ entities:
       pos: -10.5,0.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 15905
     - type: AtmosPipeColor
@@ -129698,8 +129504,6 @@ entities:
       pos: 1.5,-30.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 28554
     - type: AtmosPipeColor
@@ -130137,8 +129941,6 @@ entities:
     - type: AtmosPipeColor
       color: '#FF1212FF'
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 20572
   - uid: 7738
@@ -130573,8 +130375,6 @@ entities:
       pos: -16.5,-15.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 13523
     - type: AtmosPipeColor
@@ -130585,8 +130385,6 @@ entities:
       pos: -4.5,2.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 15905
     - type: AtmosPipeColor
@@ -130613,8 +130411,6 @@ entities:
       pos: 2.5,-10.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 2271
     - type: AtmosPipeColor
@@ -130625,8 +130421,6 @@ entities:
       pos: 12.5,-10.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 2271
     - type: AtmosPipeColor
@@ -131558,8 +131352,6 @@ entities:
       pos: -34.5,-27.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 22706
     - type: AtmosPipeColor
@@ -131570,8 +131362,6 @@ entities:
       pos: -31.5,-25.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 22706
     - type: AtmosPipeColor
@@ -132404,8 +132194,6 @@ entities:
       pos: 3.5,-31.5
       parent: 82
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 28554
     - type: AtmosPipeColor
@@ -175790,14 +175578,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 46.35662,27.869354
       parent: 82
-- proto: SyndicateBusinessCard
-  entities:
-  - uid: 4531
-    components:
-    - type: Transform
-      parent: 3819
-    - type: Physics
-      canCollide: False
 - proto: Syringe
   entities:
   - uid: 11516
@@ -199435,7 +199215,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -135361.02
+      secondsUntilStateChange: -137986.14
       state: Opening
     - type: Airlock
       autoClose: False
