@@ -38,7 +38,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 400 # LP Edit
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
