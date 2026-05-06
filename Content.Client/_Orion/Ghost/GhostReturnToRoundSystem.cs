@@ -14,29 +14,33 @@ public sealed class GhostReturnToRoundSystem : SharedGhostReturnToRoundSystem
     [Dependency] private readonly IGameTiming _gameTiming = default!;
 
     private TimeSpan _lastTimeLeft = TimeSpan.Zero;
-    private bool _lastButtonState = true;
 
     public override void FrameUpdate(float frameTime)
     {
         base.FrameUpdate(frameTime);
 
         var player = _playerManager.LocalSession?.AttachedEntity;
-        if (player == null || !TryComp<GhostComponent>(player, out var ghostComponent))
+        if (player == null)
+            return;
+
+        if (!TryComp<GhostComponent>(player, out var ghostComponent))
             return;
 
         var ui = _userInterfaceManager.GetActiveUIWidgetOrNull<GhostGui>();
         if (ui == null)
             return;
 
-        var timeOffset = _gameTiming.RealTime - ghostComponent.TimeOfDeath;
+        var timeOffset = _gameTiming.CurTime - ghostComponent.TimeOfDeath;
         var rawTimeLeft = GhostRespawnTime - timeOffset;
         var timeLeft = rawTimeLeft > TimeSpan.Zero ? rawTimeLeft : TimeSpan.Zero;
+        var canReturn = timeLeft == TimeSpan.Zero;
 
-        var canReturn = timeLeft <= TimeSpan.Zero;   // LPP edit
-        var displayTime = timeLeft.ToString(@"mm\:ss");
+        var displayTime = FormatTimeLeft(timeLeft);
 
-        if (ui.ReturnToRound.Disabled == !canReturn &&
-            _lastTimeLeft == timeLeft)
+        var buttonStateChanged = ui.ReturnToRound.Disabled == canReturn;
+        var timeChanged = FormatTimeLeft(_lastTimeLeft) != displayTime;
+
+        if (!buttonStateChanged && !timeChanged)
             return;
 
         ui.ReturnToRound.Disabled = !canReturn;
@@ -45,6 +49,13 @@ public sealed class GhostReturnToRoundSystem : SharedGhostReturnToRoundSystem
             : Loc.GetString("ghost-gui-return-to-round-button", ("time", displayTime));
 
         _lastTimeLeft = timeLeft;
-        _lastButtonState = !canReturn;
+    }
+
+    private static string FormatTimeLeft(TimeSpan timeLeft)
+    {
+        var totalMinutes = (int) timeLeft.TotalMinutes;
+        var seconds = timeLeft.Seconds;
+
+        return $"{totalMinutes:00}:{seconds:00}";
     }
 }

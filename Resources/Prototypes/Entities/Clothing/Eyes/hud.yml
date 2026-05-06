@@ -180,9 +180,11 @@
     sprite: Clothing/Eyes/Hud/medsec.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Hud/medsec.rsi
-  - type: Construction
-    graph: HudMedSec
-    node: medsecHud
+  # LP Edit Start
+  # - type: Construction
+  #   graph: HudMedSec
+  #   node: medsecHud
+  # LP Edit End
 
 - type: entity
   parent: [ClothingEyesHudBase, ShowSecurityIcons, ShowMedicalIcons]
@@ -219,13 +221,37 @@
   - type: ShowSyndicateIcons
 
 - type: entity
-  parent: [ClothingEyesHudBase, ShowSecurityIcons, BaseSyndicateContraband]
+  parent: [ClothingEyesHudBase, ShowSecurityIcons, BaseSyndicateContraband, BaseToggleClothing] # LP Edit
   id: ClothingEyesHudSyndicate
   name: syndicate visor
   description: The syndicate's professional head-up display, designed for better detection of humanoids and their subsequent elimination.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Hud/synd.rsi
+  # LP Edit Start
+    layers:
+      - state: icon
+        map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: ToggleClothing
+    action: LPPToggleNightVisionAction
+    mustEquip: true
+  - type: NightVision
+    requiredSlot: eyes
+    tint1: 0.3
+    tint2: 1.0
+    tint3: 0.3
+  - type: ItemTogglePrefix
+    prefixOn: on
+  - type: ToggleClothingPrefix
+    prefixOn: on
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
+          True: {state: icon-on}
+          False: {state: icon}
+  # LP Edit End
   - type: Clothing
     sprite: Clothing/Eyes/Hud/synd.rsi
   - type: ShowSyndicateIcons
@@ -235,13 +261,37 @@
     - WhitelistChameleon
 
 - type: entity
-  parent: [ClothingEyesHudBase, ShowSecurityIcons, BaseSyndicateContraband]
+  parent: [ClothingEyesHudBase, ShowSecurityIcons, BaseSyndicateContraband, BaseToggleClothing] # LP Edit
   id: ClothingEyesHudSyndicateAgent
   name: syndicate medical visor
   description: The Syndicate Corpsman's professional heads-up display, designed for quick diagnosis of their team's status.
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Hud/syndagent.rsi
+  # LP Edit Start
+    layers:
+      - state: icon
+        map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: ToggleClothing
+    action: LPPToggleNightVisionAction
+    mustEquip: true
+  - type: NightVision
+    requiredSlot: eyes
+    tint1: 0.3
+    tint2: 0.3
+    tint3: 0.7
+  - type: ItemTogglePrefix
+    prefixOn: on
+  - type: ToggleClothingPrefix
+    prefixOn: on
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
+          True: {state: icon-on}
+          False: {state: icon}
+  # LP Edit End
   - type: Clothing
     sprite: Clothing/Eyes/Hud/syndagent.rsi
   - type: ShowSyndicateIcons

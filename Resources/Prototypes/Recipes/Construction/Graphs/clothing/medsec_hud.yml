@@ -31,4 +31,4 @@
               amount: 2
               doAfter: 5
     - node: medsecHud
-      entity: ClothingEyesHudMedSec
+      entity: LPPClothingEyesHudSecMed # LP Edit

@@ -1,0 +1,12 @@
+ent-LPPClothingEyesNVG = ПНВ
+    .desc = Теперь ты можешь видеть в темноте! Имеет этикетку "BL CORP Technology".
+ent-LPPClothingEyesMesonNVG = мезонный ПНВ
+    .desc = { ent-LPPClothingEyesNVG.desc }
+ent-LPPClothingEyesSecNVG = охранный ПНВ
+    .desc = { ent-LPPClothingEyesNVG.desc }
+ent-LPPClothingEyesMedNVG = медицинский ПНВ
+    .desc = { ent-LPPClothingEyesNVG.desc }
+ent-LPPClothingEyesDiagnosticNVG = диагностирующий ПНВ
+    .desc = { ent-LPPClothingEyesNVG.desc }
+ent-LPPToggleNightVisionAction = Переключить ПНВ
+    .desc = Включате и выключает ПНВ.

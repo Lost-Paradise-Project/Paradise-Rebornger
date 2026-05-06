@@ -307,6 +307,7 @@
       damageContainers:
       - Inorganic
       - Silicon
+      - SiliconIpc # LP Edit
   - type: ModularSuitModule
     verbIcon:
       sprite: *modules-rsi

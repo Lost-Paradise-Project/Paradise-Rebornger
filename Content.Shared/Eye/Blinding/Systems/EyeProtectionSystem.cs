@@ -4,6 +4,7 @@ using Content.Shared.Eye.Blinding.Components;
 using Content.Shared.Tools.Components;
 using Content.Shared.Item.ItemToggle.Components;
 using Content.Shared.Clothing.Components;
+using Content.Shared._LP.Body.Components; // LP Edit
 
 namespace Content.Shared.Eye.Blinding.Systems
 {
@@ -47,13 +48,29 @@ namespace Content.Shared.Eye.Blinding.Systems
             var ev = new GetEyeProtectionEvent();
             RaiseLocalEvent(args.User, ev);
 
-            var time = (float) (component.StatusEffectTime - ev.Protection).TotalSeconds;
+            // LP Edit Start
+
+            var timeSpan = component.StatusEffectTime - ev.Protection;
+            var eyeDamage = 1;
+
+            if (TryComp<EyeDamageModifierComponent>(args.User, out var modifier))
+            {
+                var ticks = timeSpan.Ticks * modifier.Modifier;
+
+                timeSpan = TimeSpan.FromTicks((long)Math.Ceiling(ticks));
+                eyeDamage = 2;
+            }
+
+            var time = (float)timeSpan.TotalSeconds;
+
+            // LP Edit End
+
             if (time <= 0)
                 return;
 
             // Add permanent eye damage if they had zero protection, also somewhat scale their temporary blindness by
             // how much damage they already accumulated.
-            _blindingSystem.AdjustEyeDamage((args.User, blindable), 1);
+            _blindingSystem.AdjustEyeDamage((args.User, blindable), eyeDamage); // LP Edit
             var statusTimeSpan = TimeSpan.FromSeconds(time * MathF.Sqrt(blindable.EyeDamage));
             _statusEffectsSystem.TryAddStatusEffect(args.User, TemporaryBlindnessSystem.BlindingStatusEffect,
                 statusTimeSpan, false, TemporaryBlindnessSystem.BlindingStatusEffect);

@@ -62,6 +62,9 @@
 | `_Orion`         | Orion                | https://github.com/AtaraxiaSpaceFoundation/Orion-Station-14 | AGPL 3.0 |
 | `_VDS`           | Vermist Dust Sector  | https://github.com/vermist-sector/vermist-dust              | AGPL 3.0 |
 | `_StarCup`       | StarCup              | https://github.com/teamstarcup/starcup/                     | AGPL 3.0 |
+| `_Floof`         | Floof Station        | https://github.com/Floof-Station/Panta-Rhei                 | AGPL 3.0 |
+| `_FunkyStation`  | Funky Station        | https://github.com/funky-station/funky-station              | AGPL 3.0 |
+| `_AruMoon`       | AruMoon              | github.com/Workbench-Team/space-station-14                  | MIT      |
 
 
 ## Отказ от гарантий

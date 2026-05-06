@@ -26,6 +26,25 @@
         {
             "name": "inhand-right",
             "directions": 4
+        },
+        {
+            "name": "icon-on"
+        },
+        {
+            "name": "on-equipped-EYES",
+            "directions": 4
+        },
+        {
+            "name": "on-equipped-EYES-arachnid",
+            "directions": 4
+        },
+        {
+            "name": "on-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "on-inhand-right",
+            "directions": 4
         }
     ]
 }

@@ -1,0 +1,12 @@
+- type: entity
+  parent: BaseAnomalyCore
+  id: LPPBaseAnomalyCore
+  # categories: [HideSpawnMenu]
+  components:
+  - type: Sprite
+    sprite: Structures/Specific/Anomalies/Cores/pyro_core.rsi
+  - type: PointLight
+    radius: 1.5
+    energy: 2.7
+    color: "#E25822"
+    castShadows: false
