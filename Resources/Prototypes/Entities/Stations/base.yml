@@ -108,8 +108,8 @@
           - ChunkDebrisSmall
           - ChunkDebris
         vgroid: !type:DungeonSpawnGroup
-          minimumDistance: 300
-          maximumDistance: 350
+          minimumDistance: 900 # LP Edit Из-за размеров данж конфликтует космическим мусором и спавнится за три тыщи миллионов миллиардов мегапарсек от станции. Так что попробуем такое значение.
+          maximumDistance: 1000 # LP Edit
           nameDataset: NamesBorer
           stationGrid: false
           addComponents:
