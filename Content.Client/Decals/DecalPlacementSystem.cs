@@ -10,6 +10,7 @@ using Robust.Client.Input;
 using Robust.Shared.Input;
 using Robust.Shared.Input.Binding;
 using Robust.Shared.Prototypes;
+using Content.Shared._ADT.Decals; // ADT-Tweak
 
 namespace Content.Client.Decals;
 
@@ -34,6 +35,7 @@ public sealed class DecalPlacementSystem : EntitySystem
     private bool _snap;
     private int _zIndex;
     private bool _cleanable;
+    private bool _singleErase; // ADT-Tweak
 
     private bool _active;
     private bool _placing;
@@ -94,7 +96,16 @@ public sealed class DecalPlacementSystem : EntitySystem
 
                 _erasing = true;
 
-                RaiseNetworkEvent(new RequestDecalRemovalEvent(GetNetCoordinates(coords)));
+                // ADT-Tweak start
+                if (_singleErase && _decalId != null)
+                {
+                    RaiseNetworkEvent(new RequestSingleDecalRemovalEvent(GetNetCoordinates(coords), _decalId));
+                }
+                else
+                {
+                    RaiseNetworkEvent(new RequestDecalRemovalEvent(GetNetCoordinates(coords)));
+                }
+                // ADT-Tweak end
 
                 return true;
             }, (session, coords, uid) =>
@@ -176,7 +187,7 @@ public sealed class DecalPlacementSystem : EntitySystem
         CommandBinds.Unregister<DecalPlacementSystem>();
     }
 
-    public void UpdateDecalInfo(string id, Color color, float rotation, bool snap, int zIndex, bool cleanable)
+    public void UpdateDecalInfo(string id, Color color, float rotation, bool snap, int zIndex, bool cleanable, bool singleErase = false) // ADT-Tweak
     {
         _decalId = id;
         _decalColor = color;
@@ -184,6 +195,7 @@ public sealed class DecalPlacementSystem : EntitySystem
         _snap = snap;
         _zIndex = zIndex;
         _cleanable = cleanable;
+        _singleErase = singleErase; // ADT-Tweak
     }
 
     public void SetActive(bool active)
