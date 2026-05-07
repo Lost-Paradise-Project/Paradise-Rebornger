@@ -1,0 +1,24 @@
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatHyenhSweater
+  name: comfy sweater
+  description: It's comfy.
+  components:
+    - type: Sprite
+      sprite: _NyanoTrasen/Clothing/OuterClothing/WinterCoats/hyenh.rsi
+    - type: Clothing
+      sprite: _NyanoTrasen/Clothing/OuterClothing/WinterCoats/hyenh.rsi
+    - type: TemperatureProtection
+      heatingCoefficient: 0.1
+      coolingCoefficient: 0.1
+
+- type: entity
+  parent: ClothingOuterWinterCoat
+  id: ClothingOuterWinterCoatLong
+  name: long winter coat
+  description: Even your legs will be warm with this stylish coat.
+  components:
+    - type: Sprite
+      sprite: _NyanoTrasen/Clothing/OuterClothing/WinterCoats/long_winter_coat.rsi
+    - type: Clothing
+      sprite: _NyanoTrasen/Clothing/OuterClothing/WinterCoats/long_winter_coat.rsi

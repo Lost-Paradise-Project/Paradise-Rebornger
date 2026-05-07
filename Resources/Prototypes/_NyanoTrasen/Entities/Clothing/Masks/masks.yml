@@ -1,0 +1,21 @@
+- type: entity
+  parent: ClothingMaskPullableBase
+  id: ClothingMaskOniBlue
+  name: blue oni mask
+  components:
+  - type: Sprite
+    sprite: _NyanoTrasen/Clothing/Mask/mask_oni_blue.rsi
+  - type: Clothing
+    sprite: _NyanoTrasen/Clothing/Mask/mask_oni_blue.rsi
+  - type: IdentityBlocker
+  - type: IngestionBlocker
+
+- type: entity
+  parent: ClothingMaskOniBlue
+  id: ClothingMaskOniRed
+  name: red oni mask
+  components:
+  - type: Sprite
+    sprite: _NyanoTrasen/Clothing/Mask/mask_oni_red.rsi
+  - type: Clothing
+    sprite: _NyanoTrasen/Clothing/Mask/mask_oni_red.rsi
