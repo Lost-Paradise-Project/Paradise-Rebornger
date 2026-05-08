@@ -21,13 +21,7 @@
     sprite: _NyanoTrasen/Clothing/Head/ReverseEngineering/juggernaut.rsi
   - type: Clothing
     sprite: _NyanoTrasen/Clothing/Head/ReverseEngineering/juggernaut.rsi
-    clothingVisuals:
-      head:
-      - state: equipped-HELMET
-      - state: equipped-HELMET-glow
-        shader: unshaded
   - type: HideLayerClothing
     slots:
     - Snout
     - Hair
-    - Head

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Made by emisse for ss14, reverse engineered version modified by Hyenh",
+  "copyright": "Sprited by MegaDaimond",
   "size": {
     "x": 32,
     "y": 32
@@ -14,16 +14,16 @@
       "name": "equipped-OUTERCLOTHING",
       "directions": 4
     },
-	{
-      "name": "equipped-OUTERCLOTHING-glow",
-      "directions": 4
-    },
     {
       "name": "inhand-left",
       "directions": 4
     },
     {
       "name": "inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "equipped-OUTERCLOTHING-reptilian",
       "directions": 4
     }
   ]
