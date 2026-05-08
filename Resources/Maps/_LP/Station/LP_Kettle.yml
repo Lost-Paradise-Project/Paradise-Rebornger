@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.2.0
   forkId: ""
   forkVersion: ""
-  time: 05/06/2026 12:59:45
-  entityCount: 30460
+  time: 05/08/2026 07:35:51
+  entityCount: 30471
 maps:
 - 84
 grids:
@@ -16844,7 +16844,7 @@ entities:
       pos: -5.5,-28.5
       parent: 82
     - type: Door
-      secondsUntilStateChange: -7823.173
+      secondsUntilStateChange: -7989.7495
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -18279,6 +18279,14 @@ entities:
       parent: 82
 - proto: APCBasic
   entities:
+  - uid: 1503
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -35.5,26.5
+      parent: 82
+    - type: Fixtures
+      fixtures: {}
   - uid: 2243
     components:
     - type: Transform
@@ -18744,13 +18752,9 @@ entities:
   - uid: 16502
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -35.5,26.5
+      rot: 3.141592653589793 rad
+      pos: -44.5,28.5
       parent: 82
-    - type: Apc
-      enabled: False
-    - type: PowerNetworkBattery
-      canDischarge: False
     - type: Fixtures
       fixtures: {}
   - uid: 16540
@@ -33488,7 +33492,7 @@ entities:
   - uid: 16531
     components:
     - type: Transform
-      pos: -39.5,28.5
+      pos: 55.5,2.5
       parent: 82
   - uid: 16532
     components:
@@ -41205,6 +41209,11 @@ entities:
     - type: Transform
       pos: 36.5,11.5
       parent: 82
+  - uid: 25925
+    components:
+    - type: Transform
+      pos: -21.5,-46.5
+      parent: 82
   - uid: 25951
     components:
     - type: Transform
@@ -45384,6 +45393,41 @@ entities:
     components:
     - type: Transform
       pos: -42.5,-16.5
+      parent: 82
+  - uid: 30462
+    components:
+    - type: Transform
+      pos: -20.5,-46.5
+      parent: 82
+  - uid: 30463
+    components:
+    - type: Transform
+      pos: -19.5,-46.5
+      parent: 82
+  - uid: 30464
+    components:
+    - type: Transform
+      pos: -40.5,26.5
+      parent: 82
+  - uid: 30465
+    components:
+    - type: Transform
+      pos: -41.5,26.5
+      parent: 82
+  - uid: 30466
+    components:
+    - type: Transform
+      pos: -42.5,26.5
+      parent: 82
+  - uid: 30467
+    components:
+    - type: Transform
+      pos: -43.5,26.5
+      parent: 82
+  - uid: 30471
+    components:
+    - type: Transform
+      pos: -44.5,28.5
       parent: 82
 - proto: CableApcStack
   entities:
@@ -63389,6 +63433,21 @@ entities:
     - type: Transform
       pos: -3.5,56.5
       parent: 82
+  - uid: 30468
+    components:
+    - type: Transform
+      pos: -44.5,28.5
+      parent: 82
+  - uid: 30469
+    components:
+    - type: Transform
+      pos: -44.5,29.5
+      parent: 82
+  - uid: 30470
+    components:
+    - type: Transform
+      pos: -44.5,30.5
+      parent: 82
 - proto: CableMVStack
   entities:
   - uid: 4174
@@ -75159,9 +75218,6 @@ entities:
         1502:
           position: 0,0
           _rotation: East
-        1503:
-          position: 8,2
-          _rotation: South
     - type: ContainerContainer
       containers:
         storagebase: !type:Container
@@ -75172,7 +75228,6 @@ entities:
           - 26538
           - 26540
           - 1502
-          - 1503
 - proto: ClothingBeltChampion
   entities:
   - uid: 4365
@@ -171893,14 +171948,6 @@ entities:
     - type: Transform
       pos: -32.5,-17.5
       parent: 82
-- proto: SpaceMedipen
-  entities:
-  - uid: 1503
-    components:
-    - type: Transform
-      parent: 26536
-    - type: Physics
-      canCollide: False
 - proto: SpaceVillainArcade
   entities:
   - uid: 28480
@@ -199275,7 +199322,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -138972.16
+      secondsUntilStateChange: -139138.73
       state: Opening
     - type: Airlock
       autoClose: False
