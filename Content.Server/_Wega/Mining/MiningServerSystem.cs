@@ -8,12 +8,10 @@ using Content.Shared.Audio;
 using Content.Shared.Examine;
 // LP edit start
 using Content.Shared._LP.Mining.Components;
-using Robust.Shared.GameObjects;
-using Content.Shared.Construction.Components;
 using Content.Server.Construction;
 using Content.Server.Construction.Components;
 using Robust.Shared.Containers;
-using Robust.Shared.Timing;
+using Content.Shared.Atmos;
 // LP edit end
 
 namespace Content.Server._Wega.Mining;
@@ -35,6 +33,7 @@ public sealed class MiningServerSystem : EntitySystem
         // LP edit start
         SubscribeLocalEvent<MiningServerComponent, EntGotInsertedIntoContainerMessage>(OnBoardInserted);
         SubscribeLocalEvent<MiningServerComponent, EntGotRemovedFromContainerMessage>(OnBoardRemoved);
+        SubscribeLocalEvent<MiningServerComponent, AtmosExposedUpdateEvent>(OnAtmosExposed);
         // LP edit end
     }
 
@@ -108,7 +107,7 @@ public sealed class MiningServerSystem : EntitySystem
                     }
                 }
 
-                server.CurrentTemperature = Math.Max(server.CurrentTemperature - 0.145f * frameTime, 293f);
+                // server.CurrentTemperature = Math.Max(server.CurrentTemperature - 0.145f * frameTime, 293f); // LP Edit -> Maybe better use OnAtmosExposed?
                 continue;
             }
 
@@ -146,13 +145,15 @@ public sealed class MiningServerSystem : EntitySystem
                     }
                 }
             }
-            else
-            {
-                server.CurrentTemperature += heatGeneration * 0.2f;
-            }
+            // LP Edit Start -> Maybe better use OnAtmosExposed?
+            // else
+            // {
+            //     server.CurrentTemperature += heatGeneration * 0.2f;
+            // }
 
-            server.CurrentTemperature -= 0.145f * frameTime;
-            server.CurrentTemperature = Math.Max(server.CurrentTemperature, 293f);
+            // server.CurrentTemperature -= 0.145f * frameTime;
+            // server.CurrentTemperature = Math.Max(server.CurrentTemperature, 293f);
+            // LP Edit End
 
             if (server.CurrentTemperature >= server.BreakdownTemperature && !server.IsBroken)
             {
@@ -267,8 +268,14 @@ public sealed class MiningServerSystem : EntitySystem
 
     private void HeatSurroundingAtmosphere(EntityUid uid, float heatEnergy)
     {
-        if (_atmosphereSystem.GetContainingMixture(uid, excite: true) is { } atmosphere)
-            _atmosphereSystem.AddHeat(atmosphere, heatEnergy * 500f);
+        // LP Edit Start
+        var gasMix = _atmosphereSystem.GetContainingMixture(uid, true, true);
+
+        if (gasMix == null || gasMix.Immutable || gasMix.TotalMoles < Atmospherics.GasMinMoles)
+            return;
+
+        _atmosphereSystem.AddHeat(gasMix, heatEnergy * 2500f);
+        // LP Edit End
     }
 
     private void UpdateAppearance(EntityUid uid, MiningServerComponent? server = null)
@@ -282,4 +289,26 @@ public sealed class MiningServerSystem : EntitySystem
             _appearance.SetData(uid, MiningServerVisuals.IsActive, server.IsActive, appearance);
         }
     }
+
+    // LP Edit Start
+
+    private void OnAtmosExposed(EntityUid uid, MiningServerComponent component, ref AtmosExposedUpdateEvent args)
+    {
+        var gasMix = _atmosphereSystem.GetContainingMixture(uid, false, true);
+
+        if (gasMix == null || gasMix.TotalMoles < Atmospherics.GasMinMoles)
+            return;
+
+        var deltaT = component.CurrentTemperature - gasMix.Temperature;
+
+        if (Math.Abs(deltaT) < 0.01f)
+            return;
+
+        var transfer = deltaT * 0.08f;
+
+        component.CurrentTemperature -= transfer;
+    }
+
+    // LP Edit End
+
 }

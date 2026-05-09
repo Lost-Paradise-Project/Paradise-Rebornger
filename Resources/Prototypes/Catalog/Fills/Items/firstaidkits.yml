@@ -105,12 +105,6 @@
   suffix: Filled
   parent: MedkitCombat
   components:
-  # LP Edit Start
-  - type: Storage
-    maxItemSize: Small
-    grid:
-    - 0,0,4,1
-  # LP Edit End
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
