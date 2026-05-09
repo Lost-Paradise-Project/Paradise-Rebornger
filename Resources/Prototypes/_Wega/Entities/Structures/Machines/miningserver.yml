@@ -6,6 +6,7 @@
   placement:
     mode: SnapgridCenter
   components:
+  - type: AtmosExposed # LP Edit
   - type: Sprite
     sprite: _Wega/Structures/Machines/miningserver.rsi
     layers:

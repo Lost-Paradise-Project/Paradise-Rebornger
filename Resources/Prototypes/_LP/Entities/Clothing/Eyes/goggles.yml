@@ -4,6 +4,8 @@
   name: night vision goggles
   description: Now you can see in the dark! It has the label "BL CORP technology".
   components:
+    - type: ItemToggle
+      onActivate: false
     - type: Sprite
       sprite: _LP/Clothing/Eyes/NVG/NVG.rsi
       layers:
