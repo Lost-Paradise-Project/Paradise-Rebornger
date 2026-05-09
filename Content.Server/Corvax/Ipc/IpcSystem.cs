@@ -17,6 +17,7 @@ using Content.Shared.Sound.Components;
 using Robust.Shared.Audio;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
+using static Content.Server.Power.Pow3r.PowerState;
 
 namespace Content.Server.Corvax.Ipc;
 
@@ -97,6 +98,14 @@ public sealed partial class IpcSystem : EntitySystem
     {
         if (MetaData(uid).EntityLifeStage >= EntityLifeStage.Terminating)
             return;
+
+        if (HasComp<BatteryDrainerComponent>(uid))
+        {
+            RemComp<BatteryDrainerComponent>(uid);
+        }
+
+        component.DrainActivated = false;
+        _action.SetToggled(component.ActionEntity, false);
 
         UpdateBatteryAlert((uid, component));
     }
