@@ -36,7 +36,7 @@ tags = "lang:ru,region:eu_e,rp:med,rp:high,18+"
 arrivals_planet = false
 emergency_early_launch_allowed = true
 arrivals_map = "/Maps/_LP/Misc/paradise_terminal.yml"
-auto_call_time = 0
+auto_call_time = 180
 
 [viewport]
 maximum_width = 26
