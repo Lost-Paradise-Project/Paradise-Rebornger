@@ -6,7 +6,7 @@
   components:
   - type: Tag
     tags:
-      - MagazinePistol
+      - LPPMagazinePistolRifle
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:

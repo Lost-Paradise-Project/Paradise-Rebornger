@@ -320,6 +320,7 @@
       - id: SawImprov
       - id: HydroponicsToolMiniHoe
       - id: ClothingHandsKnuckleDusters
+      - id: MagazineBoxSpecial #LP edit
       - !type:NestedSelector
         tableId: AllToyWeaponsTable
 

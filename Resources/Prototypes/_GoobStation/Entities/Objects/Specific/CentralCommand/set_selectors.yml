@@ -31,3 +31,25 @@
     possibleSets:
     - BSOHardsuitLightSet
     maxSelectedSets: 1
+
+- type: entity
+  id: HeadOfSecurityWeaponUndetermined
+  name: X-00 Series Box
+  description: A small remote utilizing bluespace technology to drop in a weapon from the X-00 series to you. Choose wisely.
+  parent: [ BaseItem, BaseSetSelector, BaseGrandTheftContraband ]
+  components:
+  - type: Sprite
+    sprite: _GoobStation/Objects/Specific/Security/hosundetermined.rsi
+    state: icon
+  - type: SetSelector
+    possibleSets:
+    - HosSmgSet
+    - HosRifleSet
+    - HosShotgunSet
+    - HosSniperSet
+    - LPPHosRevolverSet #LP Edit
+    maxSelectedSets: 1
+#LP edit start
+  - type: StealTarget
+    stealGroup: WeaponEnergyMagnum
+#LP edit end

@@ -1,0 +1,12 @@
+ent-BaseCartridgeSpecial = патрон (.38 специальные)
+    .desc = { ent-BaseCartridge.desc }
+ent-CartridgeSpecial = патрон (.38 специальные)
+    .desc = { ent-BaseCartridgeSpecial.desc }
+ent-CartridgeSpecialPractice = патрон (.38 специальные учебные)
+    .desc = { ent-BaseCartridgeSpecial.desc }
+ent-CartridgeSpecialRubber = патрон (.38 специальные резиновые)
+    .desc = { ent-BaseCartridgeSpecial.desc }
+ent-CartridgeSpecialIncendiary = патрон (.38 специальные зажигательные)
+    .desc = { ent-BaseCartridgeSpecial.desc }
+ent-CartridgeSpecialUranium = патрон (.38 специальные урановые)
+    .desc = { ent-BaseCartridgeSpecial.desc }

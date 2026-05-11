@@ -186,8 +186,10 @@
         variation: 0.250
     activatedDamage:
       types:
-        Slash: 10
-        Heat: 10
+        # LP Edit Start
+        Slash: 7.5
+        Heat: 7.5
+        # LP Edit End
   - type: ComponentToggler
     components:
     - type: Sharp
@@ -343,7 +345,7 @@
     size: Small
     sprite: Objects/Weapons/Melee/e_sword_double-inhands.rsi
   - type: Reflect
-    reflectProb: .4 #LP edit
+    reflectProb: .45 #LP edit
     spread: 75
 
 # Item will look weird in handslot. Will need to adjust handstorage visuals in a future PR
