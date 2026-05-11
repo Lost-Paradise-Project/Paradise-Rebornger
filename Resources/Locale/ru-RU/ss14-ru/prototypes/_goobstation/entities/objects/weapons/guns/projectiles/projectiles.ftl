@@ -1,2 +1,14 @@
 ent-BulletEnergyGunDisabler = болт станнера
     .desc = { ent-BulletDisabler.desc }
+ent-BulletLaserHeavy = тяжёлый лазерный болт
+    .desc = { ent-BulletLaser.desc }
+ent-LaserSniper = тяжёлый лазерный болт
+    .desc = { ent-BasicHitscan.desc }
+ent-RedMediumSplitLaser = энергетический болт
+    .desc = { ent-BasicHitscan.desc }
+ent-BulletBigshot = противо-структурный болт
+    .desc = { ent-BaseBullet.desc }
+ent-BulletHotshot = ХотШот болт
+    .desc = { ent-BaseBullet.desc }
+ent-BulletDetain = ослабляющий болт
+    .desc = { ent-BaseBullet.desc }

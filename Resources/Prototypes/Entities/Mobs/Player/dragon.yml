@@ -172,6 +172,17 @@
   parent: BaseMobDragon
   id: MobDragon
   components:
+  # LP Edit Start
+  - type: Damageable
+    damageModifierSet: LPPDragon
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 13.3
+        Piercing: 13.3
+        Slash: 13.3
+        Structural: 80
+  # LP Edit End
   - type: Dragon
     spawnRiftAction: ActionSpawnRift
   - type: GhostRole
@@ -191,7 +202,7 @@
   description: For dragon's breathing.
   components:
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 5
+    rechargeCooldown: 10 # LP Edit
     rechargeSound:
       path: /Audio/Animals/space_dragon_roar.ogg
   - type: BasicEntityAmmoProvider

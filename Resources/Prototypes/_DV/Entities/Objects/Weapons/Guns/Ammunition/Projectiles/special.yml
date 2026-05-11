@@ -1,0 +1,60 @@
+- type: entity
+  id: BulletSpecial
+  name: bullet (.38 special)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 30
+
+- type: entity
+  id: BulletSpecialPractice
+  name: bullet (.38 special practice)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 1
+
+- type: entity
+  id: BulletSpecialRubber
+  name: bullet (.38 special rubber)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 3
+  - type: StaminaDamageOnCollide
+    damage: 30
+
+- type: entity
+  id: BulletSpecialIncendiary
+  name: bullet (.38 special incendiary)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 3
+        Heat: 27
+  - type: IgnitionSource
+    ignited: true
+
+- type: entity
+  id: BulletSpecialUranium
+  name: bullet (.38 special uranium)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Radiation: 12
+        Piercing: 18

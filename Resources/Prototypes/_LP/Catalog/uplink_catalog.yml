@@ -20,9 +20,9 @@
   productEntity: LPPEnergyBroadsword
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 5
+    Telecrystal: 10
   cost:
-    Telecrystal: 11
+    Telecrystal: 14
   categories:
   - UplinkWeaponry
 
@@ -57,7 +57,7 @@
   discountDownTo:
     Telecrystal: 10
   cost:
-    Telecrystal: 18
+    Telecrystal: 15
   categories:
   - UplinkWeaponry
   conditions:
@@ -76,18 +76,14 @@
   productEntity: EnergySwordDouble
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 15
+    Telecrystal: 14
   cost:
-    Telecrystal: 20
+    Telecrystal: 18
   categories:
   - UplinkWeaponry
   conditions:
   - !type:ListingLimitedStockCondition
     stock: 1
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - NukeOpsUplink
 
 - type: listing
   id: LPPUplinkBundleBoomStick
@@ -196,7 +192,21 @@
   - UplinkAmmo
 
 - type: listing
-  id: LPPUplinkReinforcementRadioSyndicateNukeopsVeteran # Усиленный вариант нюкопсеров
+  id: LPPUplinkSpeedLoaderMagnum
+  name: uplink-weapon-speedloadermagnum-name
+  description: uplink-weapon-speedloadermagnum-desc
+  icon: { sprite:  Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi, state: base}
+  productEntity: SpeedLoaderMagnum
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 1
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkAmmo
+
+- type: listing
+  id: LPPUplinkReinforcementRadioSyndicateNukeopsVeteran # Усиленный вариант нюкопс подкрепы
   name: uplink-reinforcement-radio-nukeopsveteran-name
   description: uplink-reinforcement-radio-nukeopsveteran-desc
   productEntity: LPPReinforcementRadioVeteran

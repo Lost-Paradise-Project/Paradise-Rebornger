@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.2.0
   forkId: ""
   forkVersion: ""
-  time: 05/01/2026 20:21:30
-  entityCount: 19678
+  time: 05/05/2026 16:28:36
+  entityCount: 19684
 maps:
 - 1
 grids:
@@ -11643,7 +11643,8 @@ entities:
             0: 3
             1: 35052
           -12,3:
-            0: 13073
+            0: 12561
+            3: 512
             1: 34956
           -13,3:
             0: 65535
@@ -11781,13 +11782,13 @@ entities:
             0: 2
           -19,0:
             0: 7
-            3: 1792
+            4: 1792
           -19,1:
-            4: 7
+            5: 7
             2: 1792
           -19,2:
             2: 1031
-            5: 768
+            6: 768
           -19,3:
             2: 7
             0: 4096
@@ -12542,10 +12543,10 @@ entities:
             0: 65535
           -10,-9:
             0: 4431
-            6: 52224
+            7: 52224
           -10,-8:
             0: 273
-            6: 3276
+            7: 3276
           -9,-8:
             0: 1638
           -13,-8:
@@ -12989,6 +12990,11 @@ entities:
         - volume: 2500
           temperature: 293.15
           moles: {}
+        - volume: 2500
+          temperature: 293.14975
+          moles:
+            Oxygen: 21.824879
+            Nitrogen: 82.10312
         - volume: 2500
           temperature: 293.15
           moles:
@@ -16688,7 +16694,7 @@ entities:
       pos: -52.5,7.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -5399.5938
+      secondsUntilStateChange: -6385.412
       state: Opening
     - type: DeviceLinkSink
       invokeCounter: 1
@@ -17204,7 +17210,7 @@ entities:
       pos: -43.5,-45.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -57736.965
+      secondsUntilStateChange: -58722.785
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -54469,6 +54475,13 @@ entities:
     - type: Transform
       pos: 23.5,-22.5
       parent: 2
+- proto: CrateCerenkiteFuelRod
+  entities:
+  - uid: 6724
+    components:
+    - type: Transform
+      pos: -46.5,14.5
+      parent: 2
 - proto: CrateCoffin
   entities:
   - uid: 7003
@@ -54576,11 +54589,6 @@ entities:
         moles:
           Oxygen: 1.7459903
           Nitrogen: 6.568249
-  - uid: 19579
-    components:
-    - type: Transform
-      pos: -46.5,14.5
-      parent: 2
 - proto: CrateEngineeringAMEControl
   entities:
   - uid: 7012
@@ -56206,6 +56214,21 @@ entities:
     components:
     - type: Transform
       pos: -18.5,-15.5
+      parent: 2
+  - uid: 19682
+    components:
+    - type: Transform
+      pos: -20.5,0.5
+      parent: 2
+  - uid: 19683
+    components:
+    - type: Transform
+      pos: -21.5,0.5
+      parent: 2
+  - uid: 19684
+    components:
+    - type: Transform
+      pos: -19.5,0.5
       parent: 2
 - proto: DeskBell
   entities:
@@ -60582,7 +60605,7 @@ entities:
       tags:
       - DrinkBottle
     - type: PressurizedSolution
-      sprayFizzinessThresholdRoll: 0.9608068
+      sprayFizzinessThresholdRoll: 0.07170039
     - type: SolutionContainerManager
       solutions: null
       containers:
@@ -85128,7 +85151,7 @@ entities:
       pos: -67.5,-8.5
       parent: 2
     - type: RadiationSource
-      intensity: 0.8
+      intensity: 1.4
 - proto: Girder
   entities:
   - uid: 10903
@@ -104167,6 +104190,22 @@ entities:
     - type: Transform
       pos: -74.74511,-28.638134
       parent: 2
+  - uid: 19579
+    components:
+    - type: Transform
+      pos: -16.3826,-47.16534
+      parent: 2
+  - uid: 19681
+    components:
+    - type: MetaData
+      name: печать ДОСТАВЛЕНО
+    - type: Transform
+      pos: -16.398226,-47.32159
+      parent: 2
+    - type: Stamp
+      stampState: paper_stamp-qm
+      stampedName: ДОСТАВЛЕНО
+      stampedColor: '#855B3CFF'
 - proto: RubberStampDenied
   entities:
   - uid: 13627
@@ -104193,6 +104232,11 @@ entities:
     components:
     - type: Transform
       pos: -0.809185,-40.38205
+      parent: 2
+  - uid: 19680
+    components:
+    - type: Transform
+      pos: -16.41385,-47.47784
       parent: 2
 - proto: Salt1
   entities:
@@ -107421,6 +107465,13 @@ entities:
     components:
     - type: Transform
       pos: 16.5,-20.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
+  - uid: 14490
+    components:
+    - type: Transform
+      pos: -55.5,15.5
       parent: 2
     - type: Fixtures
       fixtures: {}
@@ -110698,13 +110749,6 @@ entities:
     components:
     - type: Transform
       pos: -68.5,-16.5
-      parent: 2
-- proto: SpawnPointSurgeon
-  entities:
-  - uid: 14490
-    components:
-    - type: Transform
-      pos: -64.5,-38.5
       parent: 2
 - proto: SpawnPointTechnicalAssistant
   entities:

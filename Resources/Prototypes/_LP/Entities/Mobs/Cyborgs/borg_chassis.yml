@@ -1,6 +1,6 @@
 - type: entity
   id: LPPBorgSecurityGeneric
-  parent: BorgChassisSelectable
+  parent: [BorgChassisSelectable, FlyingMobBase]
   name: security cyborg
   components:
   - type: BorgSwitchableType

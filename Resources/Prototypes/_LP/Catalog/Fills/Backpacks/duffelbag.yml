@@ -26,3 +26,23 @@
         - id: LPPWeaponShotgunTBS2S
         - id: BoxShotgunSlug
         - id: BoxLethalshot
+
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: LPPClothingBackpackDuffelMafia
+  name: Mafia station bundle
+  description: "Lean and mean: Station falls asleep- mafia wakes up."
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ClothingHandsGlovesLatex
+        - id: ClothingOuterCoatTrench
+        - id: WeaponSubMachineGunTypewriterPractice
+        - id: ClothingEyesGlassesSunglasses
+        - id: CigarGoldCase
+        - id: ClothingUniformJumpsuitDetective
+        - id: ClothingShoesBootsLaceup
+        - id: ClothingHeadHatFedoraBrown
+        - id: FlippoEngravedLighter

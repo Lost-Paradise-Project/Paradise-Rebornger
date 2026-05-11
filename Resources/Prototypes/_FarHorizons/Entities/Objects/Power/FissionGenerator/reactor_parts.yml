@@ -209,6 +209,10 @@
   parent: BaseReactorFuelRod
   name: Uranium Fuel Rod
   components:
+  # LP Edit Start
+  - type: RadiationSource
+    intensity: 0.001
+  # LP Edit End
   - type: ReactorPart
     material: Uranium
 
@@ -217,6 +221,10 @@
   parent: BaseReactorFuelRod
   name: Plutonium Fuel Rod
   components:
+  # LP Edit Start
+  - type: RadiationSource
+    intensity: 0.001
+  # LP Edit End
   - type: ReactorPart
     material: Plutonium
   - type: GhostRole
@@ -246,6 +254,10 @@
   parent: BaseReactorFuelRod
   name: Plasma Fuel Rod
   components:
+  # LP Edit Start
+  - type: RadiationSource
+    intensity: 0.001
+  # LP Edit End
   - type: ReactorPart
     material: Plasma
 
@@ -254,6 +266,10 @@
   parent: BaseReactorFuelRod
   name: Uranium Glass Fuel Rod
   components:
+  # LP Edit Start
+  - type: RadiationSource
+    intensity: 0.001
+  # LP Edit End
   - type: ReactorPart
     material: UraniumGlass
 

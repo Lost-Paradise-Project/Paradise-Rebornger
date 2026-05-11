@@ -1,0 +1,51 @@
+- type: entity
+  name: Mk 93
+  parent: [ BaseWeaponPistol, BaseSecurityContraband ]
+  id: WeaponPistolMk93
+  description: A cheap pistol built for fully automatic fire. Uses .35 auto ammo.
+  components:
+  - type: Sprite
+    sprite: _Impstation/Objects/Weapons/Guns/Pistols/mk93.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Impstation/Objects/Weapons/Guns/Pistols/mk93.rsi
+  - type: Gun
+    minAngle: 3
+    maxAngle: 25
+    angleIncrease: 5
+    angleDecay: 15
+    fireRate: 7.5
+    selectedMode: FullAuto
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      path: /Audio/_Impstation/Weapons/Guns/Gunshots/light-pistol.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistol
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistol
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgePistol
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgePistol
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+      firing_pin: !type:Container # starlight

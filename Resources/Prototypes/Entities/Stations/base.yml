@@ -51,6 +51,8 @@
   components:
     - type: StationCargoShuttle
       path: /Maps/Shuttles/cargo.yml
+    - type: StationSalvageShuttle # LP Edit
+      path: /Maps/_LP/Shuttles/LP_mining.yml # LP Edit
     - type: GridSpawn
       groups:
         trade: !type:GridSpawnGroup
@@ -108,8 +110,8 @@
           - ChunkDebrisSmall
           - ChunkDebris
         vgroid: !type:DungeonSpawnGroup
-          minimumDistance: 300
-          maximumDistance: 350
+          minimumDistance: 900 # LP Edit Из-за размеров данж конфликтует космическим мусором и спавнится за три тыщи миллионов миллиардов мегапарсек от станции. Так что попробуем такое значение.
+          maximumDistance: 1000 # LP Edit
           nameDataset: NamesBorer
           stationGrid: false
           addComponents:
@@ -118,11 +120,6 @@
             inherent: true
           protos:
           - VGRoid
-        # LP-Edit-Start
-        mining: !type:GridSpawnGroup
-          paths:
-          - /Maps/_LP/Shuttles/LP_mining.yml
-        # LP-Edit-End
 
 - type: entity
   id: BaseStationCentcomm

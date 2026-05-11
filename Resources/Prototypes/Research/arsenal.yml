@@ -26,6 +26,9 @@
   cost: 7500
   recipeUnlocks:
   - WeaponLaserCarbine
+  - WeaponStarflareSMG #LP edit
+  - PowerCellStarflarePrinted #LP edit
+  - WeaponEnergyGun #LP edit
   position: 8, 20 # LP edit
   radioChannels:
   - Security
@@ -44,6 +47,11 @@
   - BoxShellTranquilizer
   - BoxBeanbag
   - WeaponDisabler
+  - SpeedLoaderSpecialRubber #LP edit
+  - MagazinePistolSpecialRubber #LP edit
+  - MagazineBoxSpecialRubber #LP edit
+  - WeaponAutoDisabler #LP edit
+  - WeaponPocketDisabler #LP edit
   position: 6, 18 # LP edit
   technologyPrerequisites:
   - SalvageWeapons
@@ -71,6 +79,8 @@
   - MagazineBoxMagnumIncendiary
   - MagazineBoxLightRifleIncendiary
   - MagazineBoxRifleIncendiary
+  - MagazineBoxSpecialIncendiary #LP edit
+  - LPPMagazinePistolPF20Incendiary #LP edit
   position: 7, 18 # LP edit
   technologyPrerequisites:
   - SalvageWeapons
@@ -88,6 +98,8 @@
   cost: 10000
   recipeUnlocks:
   - WeaponLaserCannon
+  - LPPWeaponEnergyGunPistolDominator #LP edit
+  - WeaponEnergyGunPistol #LP edit
   position: 9, 21 # LP edit
   technologyPrerequisites:
   - WeaponizedLaserManipulation
@@ -125,6 +137,10 @@
   - TelescopicShield
   - HoloprojectorSecurity
   - WeaponDisablerSMG
+  - WeaponStunProjector #LP edit
+  - WeaponDisablerCarbine #LP edit
+  - WeaponDisablerShotgun #LP edit
+  - LPPWeaponRiflepadefame #LP edit
   position: 6, 16 # LP edit
   technologyPrerequisites:
   - NonlethalAmmunition
@@ -151,6 +167,9 @@
   - MagazineBoxLightRifleUranium
   - MagazineBoxRifleUranium
   - BoxShotgunUranium
+  - LPPMagazinePistolPF20Uranium #LP edit
+  - MagazineBoxSpecialUranium #LP edit
+  - SpeedLoaderSpecialUranium #LP edit
   position: 9, 17 # LP edit
   technologyPrerequisites:
   - DraconicMunitions
@@ -277,6 +296,7 @@
   recipeUnlocks:
   - WeaponAdvancedLaser
   - PortableRecharger
+  - WeaponGunLaserCarbineAutomatic #LP edit
   position: 11, 21 # LP edit
   technologyPrerequisites:
   - ConcentratedLaserWeaponry
@@ -316,6 +336,7 @@
   cost: 15000
   recipeUnlocks:
   - WeaponTemperatureGun
+  - WeaponGunLaserCarbineAutomatic #LP edit
   position: 12, 22 # LP edit
   technologyPrerequisites:
   - PortableMicrofusionWeaponry

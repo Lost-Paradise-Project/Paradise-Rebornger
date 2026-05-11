@@ -74,3 +74,124 @@
     containers:
       firing_pin:
       - FiringPinPistol
+
+- type: entity
+  name: N1912
+  parent: [BaseItem, BaseSecurityContraband]
+  id: LPPWeaponPistolN1912
+  description:
+    N1912 is a fixed mag pistol- the oldest type of pistols. The reliability is at top and this model is still used by some of the old school security officers. It can shoot in hyperburst mod. Uses .35 auto.
+    We have taken point Butter.
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    sprite: _LP/Objects/Weapons/Guns/Pistols/n1912.rsi
+  - type: Gun
+    fireRate: 5
+    burstFireRate: 40
+    minAngle: 3
+    maxAngle: 15
+    angleIncrease: 1
+    angleDecay: 2
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    - Burst
+    shotsPerBurst: 2
+    burstCooldown: 0.3
+    soundGunshot:
+      path: /Audio/_Impstation/Weapons/Guns/Gunshots/pistolp2.ogg
+  - type: BallisticAmmoProvider
+    capacity: 18
+    proto: CartridgePistol
+    whitelist:
+      tags:
+      - CartridgePistol
+  - type: Clothing
+    sprite: _LP/Objects/Weapons/Guns/Pistols/n1912.rsi
+    quickEquip: true
+    slots:
+    - Belt
+    - suitStorage
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,1,0
+    - 0,1,0,1
+    storedOffset: 0,-4
+  - type: AmmoCounter
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+      firing_pin: !type:Container # Starlight
+  - type: ContainerFill
+    containers:
+      firing_pin:
+      - FiringPinPistol
+  - type: Tag
+    tags:
+    - Sidearm
+  - type: FiringPinHolder
+    supportedPins: [ Pistol, GunUpgrade ]
+  # Goobstation edit start
+  - type: EmitSoundOnPickup
+    sound:
+      collection: PistolsPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: PistolsDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: PistolsDrop
+  # Goobstation edit end
+  - type: StealTarget
+    stealGroup: OfficerHandgun
+
+- type: entity
+  name: N1912 experimental
+  parent: [BaseWeaponPistol, BaseSecurityContraband]
+  id: LPPWeaponPistolN1912Experimental
+  description:
+    Experimental model of N1912, this pistol have full auto mod and detachable magazine. Can use high capacity mags. Uses .35 auto.
+    We have captured point Apples.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Guns/Pistols/n1912.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _LP/Objects/Weapons/Guns/Pistols/n1912.rsi
+  - type: Gun
+    fireRate: 5
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      path: /Audio/_Impstation/Weapons/Guns/Gunshots/pistolp2.ogg
+  - type: StealTarget
+    stealGroup: OfficerHandgun
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistolHighCapacity
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistol
+            - MagazinePistolHighCapacity
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgePistol

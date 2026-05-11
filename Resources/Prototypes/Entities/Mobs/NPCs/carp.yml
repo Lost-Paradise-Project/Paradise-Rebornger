@@ -169,6 +169,20 @@
   suffix: DragonBrood
   parent: MobCarp
   components:
+    # LP Edit Start
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        65: Dead
+    - type: MeleeWeapon
+      damage:
+        types:
+          Blunt: 6
+          Slash: 6
+          Piercing: 6
+          Structural: 50
+      bluntStaminaDamageFactor: 1.50
+    # LP Edit End
     - type: GhostRole
       allowMovement: true
       allowSpeech: true
