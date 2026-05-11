@@ -3961,4 +3961,12 @@
   id: 5768
   time: '2026-05-10T13:43:39.0000000+00:00'
   url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/271
+- author: C2EBE0E4
+  changes:
+  - message: "\u0418\u0441\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0437\
+      \u0430\u0440\u044F\u0434\u043A\u0438 \u041A\u041F\u0411."
+    type: Fix
+  id: 5769
+  time: '2026-05-11T11:12:38.0000000+00:00'
+  url: https://github.com/Lost-Paradise-Project/Paradise-Rebornger/pull/272
 Order: 1
