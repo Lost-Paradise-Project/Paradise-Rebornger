@@ -20,7 +20,7 @@
   - type: BurnStateVisuals
   - type: HoloCigar
   - type: StaticPrice
-    price: 300
+    price: 0
   - type: ClothingGrantComponent
     component:
     - type: TheManWhoSoldTheWorld
