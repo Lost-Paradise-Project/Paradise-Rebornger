@@ -1,0 +1,15 @@
+ent-ClothingUniformRandomPunkCroptop = панковский комбинезон с топом
+    .desc = Сгенерированно самымми панковскими нейросетями что есть в сети.
+    .suffix = Случайный визуал
+ent-ClothingUniformRandomPunkTanktop = панковский комбинезон с майкой
+    .desc = { ent-ClothingUniformRandomPunkCroptop.desc }
+    .suffix = { ent-ClothingUniformRandomPunkCroptop.suffix }
+ent-ClothingUniformRandomArmlessNoSkirt = панковский комбинезон без рукавов
+    .desc = { ent-ClothingUniformRandomPunkCroptop.desc }
+    .suffix = { ent-ClothingUniformRandomPunkCroptop.suffix }
+ent-ClothingUniformRandomPunkCroptopShorts = панковский комбинезон с топом и шортами
+    .desc = Сгенерированно самымми панковскими нейросетями что есть в сети.
+    .suffix = Случайный визуал
+ent-ClothingUniformRandomPunkTanktopShorts = панковский комбинезон с майкой и шортами
+    .desc = { ent-ClothingUniformRandomPunkCroptopShorts.desc }
+    .suffix = { ent-ClothingUniformRandomPunkCroptopShorts.suffix }

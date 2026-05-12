@@ -1,10 +1,10 @@
 # Headgear other than armor
 - type: entity
   parent: [ClothingHeadHardsuitBase]
-  id: ClothingHeadHelmetHardsuitTCFLTacsuit
-  name: TCFL tacsuit helmet
-  suffix: TCFL
-  description: A modern helmet used with the standard TCFL tacsuit
+  id: ClothingHeadHelmetHardsuitAISTacsuit
+  name: AIS tacsuit helmet
+  suffix: AIS
+  description: A modern helmet used with the standard AIS tacsuit
   components:
     - type: Sprite
       sprite: _EE/Clothing/BieselRepublic/Helmet/TCFL_tacsuit_helmet.rsi
@@ -25,14 +25,13 @@
           Slash: 0.9
           Piercing: 0.9
           Heat: 0.9
-    - type: BreathMask
 
 - type: entity
   parent: [ClothingHeadHelmetBasic]
-  id: ClothingHeadHelmetTCFLHeavy
-  name: TCFL heavy tactical helmet
-  suffix: TCFL
-  description: Much of the equipment used by the TCFL is repurposed from older Solarian wargear. This advanced helmet includes a ballistic polymer face shield.
+  id: ClothingHeadHelmetAISHeavy
+  name: AIS heavy tactical helmet
+  suffix: AIS
+  description: Much of the equipment used by the AIS is repurposed from older Solarian wargear. This advanced helmet includes a ballistic polymer face shield.
   components:
     - type: Sprite
       sprite: _EE/Clothing/BieselRepublic/Helmet/TCAF_tactical_helmet_full.rsi
@@ -46,28 +45,24 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.875
-          Slash: 0.875
-          Piercing: 0.875
-          Heat: 0.875
-          Caustic: 0.875
+          Blunt: 0.9
+          Slash: 0.9
+          Piercing: 0.8
+          Heat: 0.8
     - type: Reflect
-      reflectProb: 0.03
+      reflectProb: 0.05
       spread: 270
       innate: true
       reflects:
         - Energy
         - NonEnergy
-    - type: ClothingSpeedModifier
-      walkModifier: 0.95
-      sprintModifier: 0.95
 
 - type: entity
   parent: [ClothingHeadHelmetBasic]
-  id: ClothingHeadHelmetTCFLNoVisor
-  name: TCAF light tactical helmet
-  suffix: TCFL
-  description: A basic tactical helmet worn by members of the Tau-Ceti Armed Forces.
+  id: ClothingHeadHelmetAISNoVisor
+  name: AIS light tactical helmet
+  suffix: AIS
+  description: A basic tactical helmet worn by members of the AIS Armed Forces.
   components:
     - type: Sprite
       sprite: _EE/Clothing/BieselRepublic/Helmet/TCAF_tactical_helmet_novisor.rsi
@@ -77,9 +72,9 @@
 - type: entity
   parent: [ClothingHeadHelmetBasic]
   id: ClothingHeadHelmetTCFLVisor
-  name: TCAF light tactical helmet
-  suffix: TCFL
-  description: A basic tactical helmet worn by members of the Tau-Ceti Armed Forces.
+  name: AIS light tactical helmet
+  suffix: AIS
+  description: A basic tactical helmet worn by members of the AIS Armed Forces.
   components:
     - type: Sprite
       sprite: _EE/Clothing/BieselRepublic/Helmet/TCAF_tactical_helmet_visor.rsi
@@ -89,9 +84,9 @@
 - type: entity
   parent: [ClothingHeadBaseButcherable]
   id: ClothingHeadHatTCAFBeretDress
-  name: TCAF dress beret
-  suffix: TCFL
-  description: A formal beret worn by current and former members of the Tau-Ceti Armed Forces.
+  name: AIS dress beret
+  suffix: AIS
+  description: A formal beret worn by current and former members of the AIS Armed Forces.
   components:
     - type: Sprite
       sprite: _EE/Clothing/BieselRepublic/Helmet/TCAF_beret_dress.rsi
@@ -100,10 +95,10 @@
 
 - type: entity
   parent: [ClothingHeadBaseButcherable]
-  id: ClothingHeadHatTCAFBeretField
-  name: TCAF field beret
-  suffix: TCFL
-  description: A field beret worn by current and former members of the Tau-Ceti Armed Forces.
+  id: ClothingHeadHatAISBeretField
+  name: AIS field beret
+  suffix: AIS
+  description: A field beret worn by current and former members of the AIS Armed Forces.
   components:
     - type: Sprite
       sprite: _EE/Clothing/BieselRepublic/Helmet/TCAF_beret_field.rsi
@@ -112,10 +107,10 @@
 
 - type: entity
   parent: [ClothingHeadBaseButcherable]
-  id: ClothingHeadHatTCFLBeretDress
-  name: TCFL dress beret
-  suffix: TCFL
-  description: A dress beret worn by current and former members of the Tau-Ceti Foreign Legion. This beret is a common sight in bars all across the Orion Spur.
+  id: ClothingHeadHatAISBeretDress
+  name: AIS dress beret
+  suffix: AIS
+  description: A dress beret worn by current and former members of the AIS Foreign Legion. This beret is a common sight in bars all across the Orion Spur.
   components:
     - type: Sprite
       sprite: _EE/Clothing/BieselRepublic/Helmet/TCFL_beret_dress.rsi
@@ -125,9 +120,9 @@
 - type: entity
   parent: [ClothingHeadBaseButcherable]
   id: ClothingHeadHatTCFLBeretField
-  name: TCFL field beret
-  suffix: TCFL
-  description: A field beret worn by current and former members of the Tau-Ceti Foreign Legion. This beret is a common sight in bars all across the Orion Spur.
+  name: AIS field beret
+  suffix: AIS
+  description: A field beret worn by current and former members of the AIS Foreign Legion. This beret is a common sight in bars all across the Orion Spur.
   components:
     - type: Sprite
       sprite: _EE/Clothing/BieselRepublic/Helmet/TCFL_beret_field.rsi
@@ -137,9 +132,9 @@
 - type: entity
   parent: [ClothingHeadBaseButcherable]
   id: ClothingHeadHatTCFLBeretSentinel
-  name: TCFL sentinel beret
-  suffix: TCFL
-  description: A dress beret worn by the elite members of the Tau-Ceti Foreign Legion.
+  name: AIS sentinel beret
+  suffix: AIS
+  description: A dress beret worn by the elite members of the AIS Foreign Legion.
   components:
     - type: Sprite
       sprite: _EE/Clothing/BieselRepublic/Helmet/TCFL_beret_sentinel.rsi
@@ -149,9 +144,9 @@
 - type: entity
   parent: [ClothingHeadHeadHatBaseFlippable]
   id: ClothingHeadHatTCFLSoftCap
-  name: TCFL soft cap
-  suffix: TCFL
-  description: A soft wool hat worn by current and former members of the Tau-Ceti Foreign Legion.
+  name: AIS soft cap
+  suffix: AIS
+  description: A soft wool hat worn by current and former members of the AIS Foreign Legion.
   components:
     - type: Sprite
       sprite: _EE/Clothing/BieselRepublic/Helmet/TCFL_softcap.rsi

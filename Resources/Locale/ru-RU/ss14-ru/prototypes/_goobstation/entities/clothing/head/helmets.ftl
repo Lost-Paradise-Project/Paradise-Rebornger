@@ -1,0 +1,16 @@
+ent-ClothingHeadHatHelmetTemplar = шлем времён крестовых походов
+    .desc = Deus Vult.
+ent-ClothingHeadHatHelmetCage = клетка на голову
+    .desc = Сними это, ты не персонаж бладборна...
+ent-ClothingHeadHatHelmetAncient = древний шлем 
+    .desc = Тысячи лет стояния на одном месте, зато никто не пройдёт!
+ent-ClothingHeadHatHelmetWitchhunter = шляпа охотника на ведьм
+    .desc = Женщины раньше были прямо огонь! Пора исправить.
+ent-ClothingHeadHatHelmetAdept = капюшон адепта
+    .desc = Это ересь только когда кто-то другой это делает.
+ent-ClothingHeadHatHelmetClock = забытый шлем
+    .desc = Через визор этого шлема давно забытый Бог может вновь посмотреть на этот мир.
+ent-ClothingHeadHatHelmetMonk = капюшон монаха
+    .desc = По взгляду человека можно понять его мотивы, поэтому мы натянем капюшон.
+ent-ClothingHeadHatHelmetBishop = митра епископа
+    .desc = Данная шапка выступает как радио для связи с Богом. Не бойтесь говорить с Богом, бойтесь, что вам могут ответить.

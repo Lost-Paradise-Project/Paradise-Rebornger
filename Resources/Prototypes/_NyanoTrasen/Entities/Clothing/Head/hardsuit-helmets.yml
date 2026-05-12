@@ -21,7 +21,3 @@
     sprite: _NyanoTrasen/Clothing/Head/ReverseEngineering/juggernaut.rsi
   - type: Clothing
     sprite: _NyanoTrasen/Clothing/Head/ReverseEngineering/juggernaut.rsi
-  - type: HideLayerClothing
-    slots:
-    - Snout
-    - Hair

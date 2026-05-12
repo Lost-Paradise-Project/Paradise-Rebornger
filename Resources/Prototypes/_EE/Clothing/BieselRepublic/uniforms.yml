@@ -1,9 +1,9 @@
 - type: entity
   parent: [ClothingUniformBase]
-  id: ClothingUniformJumpsuitTCAFArmsman
-  name: TCAF Armsman uniform
-  suffix: TCFL
-  description: A uniform worn by current and former infantry in the Tau-Ceti Armed Forces
+  id: ClothingUniformJumpsuitAISArmsman
+  name: AIS Armsman uniform
+  suffix: AIS
+  description: A uniform worn by current and former infantry in the AIS Armed Forces.
   components:
     - type: Sprite
       sprite: _EE/Clothing/BieselRepublic/Uniforms/TCAF_armsman.rsi
@@ -12,10 +12,10 @@
 
 - type: entity
   parent: [ClothingUniformBase, ClothingUniformFoldableBase]
-  id: ClothingUniformJumpsuitTCFLLegate
-  name: TCFL Legate uniform
-  suffix: TCFL
-  description: A uniform worn by commissioned officers in the Tau-Ceti Foreign Legion
+  id: ClothingUniformJumpsuitAISLegate
+  name: AIS Legate uniform
+  suffix: AIS
+  description: A uniform worn by commissioned officers in the AIS Foreign Legion.
   components:
     - type: Sprite
       sprite: _EE/Clothing/BieselRepublic/Uniforms/TCFL_legate.rsi
@@ -24,10 +24,10 @@
 
 - type: entity
   parent: [ClothingUniformBase, ClothingUniformFoldableBase]
-  id: ClothingUniformJumpsuitTCFLPilot
-  name: TCFL pilot uniform
-  suffix: TCFL
-  description: A uniform worn by current and former pilots in the Tau-Ceti Foreign Legion
+  id: ClothingUniformJumpsuitAISPilot
+  name: AIS pilot uniform
+  suffix: AIS
+  description: A uniform worn by current and former pilots in the AIS Foreign Legion.
   components:
     - type: Sprite
       sprite: _EE/Clothing/BieselRepublic/Uniforms/TCFL_pilot.rsi
@@ -36,10 +36,10 @@
 
 - type: entity
   parent: [ClothingUniformBase, ClothingUniformFoldableBase]
-  id: ClothingUniformJumpsuitTCFLSentinel
-  name: TCFL Sentinel uniform
-  suffix: TCFL
-  description: A uniform worn by the non-commissioned officers of the Tau-Ceti Foreign Legion
+  id: ClothingUniformJumpsuitAISSentinel
+  name: AIS Sentinel uniform
+  suffix: AIS
+  description: A uniform worn by the non-commissioned officers of the AIS Foreign Legion.
   components:
     - type: Sprite
       sprite: _EE/Clothing/BieselRepublic/Uniforms/TCFL_sentinel.rsi
@@ -48,10 +48,10 @@
 
 - type: entity
   parent: [ClothingUniformBase, ClothingUniformFoldableBase]
-  id: ClothingUniformJumpsuitTCFLVolunteer
-  name: TCFL volunteer uniform
-  suffix: TCFL
-  description: A uniform worn by the enlisted members of the Tau-Ceti Foreign Legion. As an all-volunteer service that accepts any, regardless of race, species, or creed, every member of the TCFL starts out at this level.
+  id: ClothingUniformJumpsuitAISVolunteer
+  name: AIS volunteer uniform
+  suffix: AIS
+  description: A uniform worn by the enlisted members of the AIS Foreign Legion. As an all-volunteer service that accepts any, regardless of race, species, or creed, every member of the AIS starts out at this level.
   components:
     - type: Sprite
       sprite: _EE/Clothing/BieselRepublic/Uniforms/TCFL_volunteer.rsi

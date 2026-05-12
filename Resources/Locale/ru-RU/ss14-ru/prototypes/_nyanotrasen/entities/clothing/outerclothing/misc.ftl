@@ -1,0 +1,10 @@
+ent-ClothingOuterCoatLettermanBlue = голубая школьная куртка
+    .desc = Куртка, которую носят старшекласники или студенты, на ней вышето большое число "14".
+ent-ClothingOuterCoatLettermanRed = красная школьная куртка
+    .desc = Куртка, которую носят старшекласники или студенты, на ней вышето большое число "14".
+ent-ClothingOuterCoatMNKWhiteHoodie = белое худди MNK
+    .desc = Классическое белое худди от бренда MNK.
+ent-ClothingOuterCoatMNKBlackTopCoat = пальто MNK
+    .desc = Крепкое пальто от бренда MNK.
+ent-ClothingOuterCoatMNKBlackJacket = чёрная куртка MNK
+    .desc = Лёгкая куртка от бренда MNK.

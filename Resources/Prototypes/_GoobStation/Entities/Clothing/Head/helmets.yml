@@ -21,6 +21,10 @@
     - WhitelistChameleon
   - type: FireProtection
     reduction: 0.1
+  - type: HideLayerClothing
+    slots:
+    - Snout
+    - Hair
 
 - type: entity
   parent: ClothingHeadHatHelmetTemplar
@@ -51,6 +55,10 @@
     state: icon
   - type: Clothing
     sprite: _ShitChap/Clothing/Head/Misc/ancient.rsi
+  - type: HideLayerClothing
+    slots:
+    - Snout
+    - Hair
 
 - type: entity
   parent: ClothingHeadHatHelmetTemplar
@@ -90,6 +98,10 @@
     state: icon
   - type: Clothing
     sprite: _ShitChap/Clothing/Head/Misc/clock.rsi
+  - type: HideLayerClothing
+    slots:
+    - Snout
+    - Hair
 
 - type: entity
   parent: ClothingHeadHatHelmetTemplar
