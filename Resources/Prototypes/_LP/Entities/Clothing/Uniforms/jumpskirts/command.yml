@@ -1,0 +1,59 @@
+- type: entity
+  parent: ClothingUniformJumpskirtCaptain
+  id: LPPClothingUniformJumpskirtCaptainFormalSkirt
+  name: captain formal skirt
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpskirt/captain.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpskirt/captain.rsi
+
+- type: entity
+  parent: ClothingUniformJumpskirtHoP
+  id: LPPClothingUniformJumpskirtHoPFormalSkirt
+  name: head of personel formal skirt
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpskirt/hop.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpskirt/hop.rsi
+
+- type: entity
+  parent: ClothingUniformJumpskirtCMOTurtle
+  id: LPPClothingUniformJumpskirtCMOFormalSkirt
+  name: chief medical officer's formal skirt
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpskirt/cmo_turtle.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpskirt/cmo_turtle.rsi
+
+- type: entity
+  parent: ClothingUniformJumpskirtHoSAlt
+  id: LPPClothingUniformJumpskirtHoSFormalSkirt
+  name: head of security formal skirt
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpskirt/hos_alt.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpskirt/hos_alt.rsi
+
+- type: entity
+  parent: ClothingUniformJumpskirtQMTurtleneck
+  id: LPPClothingUniformJumpskirtQMFormalSkirt
+  name: quartermaster's formal skirt
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpskirt/qmturtleskirt.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpskirt/qmturtleskirt.rsi
+
+- type: entity
+  parent: ClothingUniformJumpskirtResearchDirector
+  id: LPPClothingUniformJumpskirtResearchDirectorFormalSkirt
+  name: research director's formal skirt
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpskirt/rnd.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpskirt/rnd.rsi
