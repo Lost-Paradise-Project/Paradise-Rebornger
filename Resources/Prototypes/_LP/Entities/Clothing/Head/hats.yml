@@ -41,3 +41,80 @@
     sprite: _LP/Clothing/Head/Hats/sechatcamo.rsi
   - type: Clothing
     sprite: _LP/Clothing/Head/Hats/sechatcamo.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: LPPClothingHeadHatPGBeret
+  name: PG beret
+  description: It's a black beret.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Hats/pg-beret.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Hats/pg-beret.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: LPPClothingHeadHatPGPanama
+  name: PG panama
+  description: Protects the head from falling snakes.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Hats/pg-hat.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Hats/pg-hat.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: LPPClothingHeadHatPGCap
+  name: PG cap
+  description: Protects from the sun. It won't protect you from snakes.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Hats/pg-cap.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Hats/pg-cap.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: LPPClothingHeadHatBeretUEG
+  name: UEG Beret
+  description: Remember what you're fighting for. (For humanity, in case you've forgotten)
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Hats/upgberet.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Hats/upgberet.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: LPPClothingHeadHatCapUEG
+  name: UEG Cap
+  description: The cap of the representatives of the armed forces of the UEG, strikes fear into the hearts of xenophiles, there is nothing more to say.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Hats/upgofficerhat.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Hats/upgofficerhat.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: LPPClothingHeadHatMaid
+  name: Maid's cap
+  description: An item of clothing that is an integral part of any elite maid.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Hats/maidencap.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Hats/maidencap.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: LPPClothingHeadHatBeretSalvager
+  name: salvager beret
+  description: You are wearing it because of two things- you only flying on expeditions or your co-workers forget you on the station.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Hats/salvagerberet.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Hats/salvagerberet.rsi

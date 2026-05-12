@@ -6,3 +6,24 @@
   components:
   - type: Sprite
     sprite: _LP/Clothing/Back/Backpacks/securityEngineer.rsi
+
+- type: entity
+  parent: ClothingBackpackERTLeader
+  id: LPPClothingBackpackBackPackUEG
+  name: UEG backpack
+  description: It will contain everything you need.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Back/Backpacks/upgbacpacks.rsi
+
+- type: entity
+  parent: ClothingBackpack
+  id: LPPClothingBackpackHunter
+  name: Hunter backpack
+  description: A durable backpack with additional pockets, which significantly increases the capacity and at the same time does not restrict the movement of the wearer in any way.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Back/Backpacks/backhunter.rsi
+  - type: Storage
+    grid:
+    - 0,0,7,3

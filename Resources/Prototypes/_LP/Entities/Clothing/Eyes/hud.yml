@@ -27,3 +27,16 @@
     tags:
     - HudSecurity
     - HudMedical
+
+- type: entity
+  parent: [ClothingEyesBase, ShowSecurityIcons, ShowMedicalIcons]
+  id: LPPUEGEyehud
+  name: UEG HUD
+  description: The HUD of the UEG, with built-in additional elements such as protection from bright flashes, as well as, in connection with the latest cooperation measures between the UEG and NT, the built-in database of NanoTraisen to identify ranks and criminals at the corporation's facilities.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Eyes/HUD/upgHUD.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Eyes/HUD/upgHUD.rsi
+  - type: FlashImmunity
+  - type: EyeProtection

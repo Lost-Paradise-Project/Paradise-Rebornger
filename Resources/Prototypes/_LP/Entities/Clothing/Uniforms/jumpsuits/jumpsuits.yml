@@ -1,0 +1,36 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitPG
+  name: PG jumpsuit
+  description: Jumpsuit for all PG army's needs
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/WTF/pg-uniform.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/WTF/pg-uniform.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9 # Those overalls ARE sturdy.
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformBlackJumpsuitPG
+  name: black PG jumpsuit
+  description: Jumpsuit for all PG elite stealth army's needs
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/WTF/pg-black-uniform.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/WTF/pg-black-uniform.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformSnowJumpsuitPG
+  name: snow PG jumpsuit
+  description: Jumpsuit for all PG army's needs
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/WTF/snow-pg-uniform.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/WTF/snow-pg-uniform.rsi

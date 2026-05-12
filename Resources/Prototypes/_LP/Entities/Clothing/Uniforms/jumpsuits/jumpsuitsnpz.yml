@@ -1,0 +1,66 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitOperativeUEG
+  name: UEG operative jumpsuit
+  description: Trousers and sweater of refinery operatives, with additional Kevlar lining.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/upgcloth.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/upgcloth.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.95
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpskirtMadienPNZ
+  name: UEG maid's uniform
+  description: Created from the latest fabrics, the uniform is perfect for tactical cleaning of premises, and is also ideal for any figure.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/maidenUEG.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/maidenUEG.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.95
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitOverallsUEG
+  name: UEG technical jumpsuit
+  description: Sweater and trousers with straps, do not stain the shirt!
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/UEGoverall.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/UEGoverall.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitRepresentativeUEG
+  name: UEG Representative suit
+  description: Washed jeans with the most expensive shirt that you can find on the market, are you compensating for something?
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/representive.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/representive.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitCamoUEG
+  name: UEG urban camo
+  description: No, this is not a reference to some fanatics from Chernobyl.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/solider.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/solider.rsi

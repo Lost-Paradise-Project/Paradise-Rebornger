@@ -68,6 +68,10 @@
       sprite: _EE/Clothing/BieselRepublic/Helmet/TCAF_tactical_helmet_novisor.rsi
     - type: Clothing
       sprite: _EE/Clothing/BieselRepublic/Helmet/TCAF_tactical_helmet_novisor.rsi
+      clothingVisuals:
+        head:
+        - state: equipped-HELMET
+        - state: equipped-HELMET-unshaded
 
 - type: entity
   parent: [ClothingHeadHelmetBasic]
@@ -80,6 +84,10 @@
       sprite: _EE/Clothing/BieselRepublic/Helmet/TCAF_tactical_helmet_visor.rsi
     - type: Clothing
       sprite: _EE/Clothing/BieselRepublic/Helmet/TCAF_tactical_helmet_visor.rsi
+      clothingVisuals:
+        head:
+        - state: equipped-HELMET
+        - state: equipped-HELMET-unshaded
 
 - type: entity
   parent: [ClothingHeadBaseButcherable]

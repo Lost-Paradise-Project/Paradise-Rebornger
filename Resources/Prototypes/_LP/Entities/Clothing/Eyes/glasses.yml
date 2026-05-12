@@ -70,3 +70,42 @@
         Slash: 0.95
         Piercing: 0.95
         Heat: 0.95
+
+- type: entity
+  parent: ClothingEyesBase
+  id: LPPClothingEyesGlassesSunglassesPG
+  name: PG black protection glasses
+  description: Useful for special operations.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Eyes/Glasses/pg-black-glasses.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Eyes/Glasses/pg-black-glasses.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
+
+- type: entity
+  parent: ClothingEyesBase
+  id: LPPClothingEyesGlassesNVG
+  name: PG nightvision goggles
+  description: Useful for special operations.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Eyes/nvg.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Eyes/nvg.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
+
+- type: entity
+  parent: [ClothingEyesBase, ShowSecurityIcons]
+  id: LPPClothingEyesGlassesAviatorUEG
+  name: UEG aviators
+  description: Only for the most coolest guys in this sector.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Eyes/Glasses/UEGaviators.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Eyes/Glasses/UEGaviators.rsi
+  - type: FlashImmunity
+  - type: EyeProtection

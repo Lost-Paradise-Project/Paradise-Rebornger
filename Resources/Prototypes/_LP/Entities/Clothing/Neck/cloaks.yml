@@ -33,3 +33,50 @@
   components:
     - type: Sprite
       sprite: _LP/Clothing/Neck/Cloaks/zulie_paramedic_gif.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: LPPClothingNeckMantlePG
+  name: pg mantle
+  description: mantle for best mercenaries.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Neck/Mantles/pg-mantle.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Neck/Mantles/pg-mantle.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: LPParbitercloak
+  name: Arbiter cloak
+  description: An expensive raincoat of an unknown company with a fur collar. Soft fur and silk of the highest quality. Gold is visible between the threads. Luxury.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Neck/Cloaks/arbitercloak.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: LPPCloakUEG
+  name: Cloak UEG
+  description: A cloak for stylish smashing in the wind while you humiliate the pathetic xenos.
+  components:
+    - type: Sprite
+      sprite: _LP/Clothing/Neck/UEG/upgneck.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: LPPCloakAdmiralUEG
+  name: Cloak of UEG admiral
+  description: A cloak for pretentious throwing off to show everyone your medals and decorations!
+  components:
+    - type: Sprite
+      sprite: _LP/Clothing/Neck/UEG/upgneckadmiral.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: LPPCloakMantleUEG
+  name: Cape UEG
+  description: Are we in a hurry or are we acting stealthy?
+  components:
+    - type: Sprite
+      sprite: _LP/Clothing/Neck/UEG/UEGmantle.rsi
