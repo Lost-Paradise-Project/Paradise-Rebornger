@@ -650,7 +650,7 @@
 
 - type: entity
   parent: ClothingOuterHardsuitBase
-  id: LPPClothingOuterHardsuitLeaderNFSD
+  id: LPPClothingOuterHardsuitLeaderUEG
   name: Hardsuit UEG-75e - "Liquidator"
   description: A prototype of a new line of UEG spacesuits. Mobility, bullet deflection, protection from extremely high pressure and all this is in YOUR hands. Xenophobia is included.
   components:
@@ -683,7 +683,7 @@
     sprintModifier: 0.85
   - type: HeldSpeedModifier
   - type: ToggleableClothing
-    clothingPrototype: LPPClothingOuterHardsuitHelmetLeaderNFSD
+    clothingPrototype: LPPClothingOuterHardsuitHelmetLeaderUEG
   - type: StaminaResistance
     coefficient: 0.3
 

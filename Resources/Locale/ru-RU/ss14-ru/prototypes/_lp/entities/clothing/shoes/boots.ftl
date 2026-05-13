@@ -11,3 +11,7 @@ ent-LPPClothingShoesClownPomni = ботинки шута
 ent-LPPClothingShoesBootsJackSecEnginer = { ent-ClothingShoesBootsJack }
     .desc = { ent-ClothingShoesBootsJack.desc }
     .suffix = { ent-ClothingShoesBootsSecFilled.suffix }
+ent-LPPClothingShoesBootsCombatPG = сапоги ПГ
+    .desc = Крепкие сапоги для мерков ПГ.
+ent-LPPClothingShoesBootsUEG = сапоги скитариев ОПЗ
+    .desc = Крепкие сапоги для топанья по любой поверхности.

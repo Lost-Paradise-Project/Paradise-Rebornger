@@ -328,7 +328,7 @@
 
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
-  id: LPPClothingOuterHardsuitHelmetLeaderNFSD
+  id: LPPClothingOuterHardsuitHelmetLeaderUEG
   name: Helmet UEG-75e
   description: Flutter like a butterfly, it's a pity that you're already dead, you pathetic xenos!
   categories: [ HideSpawnMenu ]
