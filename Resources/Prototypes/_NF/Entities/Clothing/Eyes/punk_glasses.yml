@@ -68,11 +68,3 @@
           base_glasses_02: CyberpunkNeon
         infoshades_decor:
           decor_base_glasses_02: CyberpunkNeon
-  - type: ShowHealthBars
-    damageContainers:
-    - Inorganic
-    - Silicon
-    - Biological
-  - type: ShowHealthIcons
-    damageContainers:
-    - Biological
