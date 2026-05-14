@@ -87,6 +87,7 @@
     - id: HandLabeler
     - id: BarSpoon # Should be replaced by a stirring tool with medical theming, like a glass rod
     - id: PlasmaChemistryVial
+    - id: ClothingHandsGlovesChemist #LP edit
     - !type:AllSelector # The wonderful world of chemical storage
       children:
       - id: BoxSyringe

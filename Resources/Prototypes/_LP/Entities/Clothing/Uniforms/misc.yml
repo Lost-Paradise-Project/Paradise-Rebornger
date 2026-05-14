@@ -532,3 +532,33 @@
     sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_blackred.rsi
   - type: Clothing
     sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_blackred.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitSummershirt
+  name: black summer shirt
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/blackbeachshirt.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/blackbeachshirt.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitSummershirtblack
+  name: summer shirt
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/whitebeachshirt.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/whitebeachshirt.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitLacerobe
+  name: lacerobe
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/lacerobe.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/lacerobe.rsi

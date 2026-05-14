@@ -12,5 +12,5 @@ ent-LPPClothingUniformJumpsuitSkysummer = летние шорты и топик 
     .desc = Почувствуй тепло солнца.
 ent-LPPClothingUniformJumpsuitSky = рубашка и джинсы небесного цвета
     .desc = Небесно голубого цвета костюм, самое то под лето.
-ent-LPPClothingUniformJumpsuitDirtyblue = dirty blue shirt and jeans
+ent-LPPClothingUniformJumpsuitDirtyblue = рубашка и джинсы грязно голубого цвета
     .desc = Грязно голубого цвета костюм, самое то под лето для тех, кто хочет менее заметные пятны на своей одежде.

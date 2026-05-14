@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ClothingOuterStorageBase, AllowSuitStorageClothing]
+  parent: ClothingOuterCoatDetective
   id: ClothingOuterJacketZavDetective
   name: detective jacket
   suffix: Zavodskoi
@@ -9,19 +9,12 @@
       sprite: _EE/Clothing/Zavodskoi/OuterClothing/zav_jacket_detective.rsi
     - type: Clothing
       sprite: _EE/Clothing/Zavodskoi/OuterClothing/zav_jacket_detective.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.95
-          Slash: 0.95
-          Piercing: 0.95
-          Heat: 0.85
     - type: TemperatureProtection
       heatingCoefficient: 0.1
       coolingCoefficient: 0.1
 
 - type: entity
-  parent: [ClothingOuterStorageBase, AllowSuitStorageClothing]
+  parent: ClothingOuterVestSecurityMedic
   id: ClothingOuterJacketZavSecurity
   name: security shell jacket
   suffix: Zavodskoi
@@ -31,19 +24,12 @@
       sprite: _EE/Clothing/Zavodskoi/OuterClothing/zav_jacket_security.rsi
     - type: Clothing
       sprite: _EE/Clothing/Zavodskoi/OuterClothing/zav_jacket_security.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.95
-          Slash: 0.95
-          Piercing: 0.95
-          Heat: 0.85
     - type: TemperatureProtection
       heatingCoefficient: 0.1
       coolingCoefficient: 0.1
 
 - type: entity
-  parent: [ClothingOuterStorageBase, AllowSuitStorageClothing]
+  parent: ClothingOuterVestSecurityMedic
   id: ClothingOuterJacketZavSecurityAlt
   name: security shell jacket
   suffix: Zavodskoi, alt
@@ -53,13 +39,6 @@
       sprite: _EE/Clothing/Zavodskoi/OuterClothing/zav_jacket_security_alt.rsi
     - type: Clothing
       sprite: _EE/Clothing/Zavodskoi/OuterClothing/zav_jacket_security_alt.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.95
-          Slash: 0.95
-          Piercing: 0.95
-          Heat: 0.85
     - type: TemperatureProtection
       heatingCoefficient: 0.1
       coolingCoefficient: 0.1

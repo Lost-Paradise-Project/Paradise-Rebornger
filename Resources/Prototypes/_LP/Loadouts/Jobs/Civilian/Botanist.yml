@@ -1,0 +1,25 @@
+
+- type: loadout
+  id: LPPBotanistEOC
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSecurityEOC
+
+- type: loadout
+  id: LPPBotanistskirtEOC
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtSecurityEOC
+
+- type: loadout
+  id: LPPBotanistEOCalt
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHydroponicsEOC
+
+- type: loadout
+  id: LPPBotanistskirtEOCalt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtHydroponicsEOC
+
+- type: loadout
+  id: LPPBotanistMilitary
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryHydroponics

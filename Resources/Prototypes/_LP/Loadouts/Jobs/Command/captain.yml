@@ -2,3 +2,18 @@
   id: LPCapPanties
   equipment:
     underwear: LPPCapPanties
+
+- type: loadout
+  id: LPPCaptainSummer
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCaptainSummer
+
+- type: loadout
+  id: LPPCaptainFormalskirt
+  equipment:
+    jumpsuit: LPPClothingUniformJumpskirtCaptainFormalSkirt
+
+- type: loadout
+  id: LPPCaptainMilitary
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryCaptain

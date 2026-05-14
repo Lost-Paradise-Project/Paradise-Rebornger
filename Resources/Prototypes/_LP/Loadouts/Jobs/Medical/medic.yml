@@ -49,6 +49,11 @@
     jumpsuit: LPPClothingUniformJumpskirtMedicShirt
 
 - type: loadout
+  id: LPPMedicMilitaryChemistry
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryChemistry
+
+- type: loadout
   id: LPPSeniorMedicPDA
   equipment:
     id: LPPSeniorMedicPDA

@@ -17,3 +17,8 @@
   id: LPPPassangerGreenTracksuit
   equipment:
     jumpsuit: LPPClothingUniformGreenTracksuit
+
+- type: loadout
+  id: LPPPassangerMilitary
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryService
