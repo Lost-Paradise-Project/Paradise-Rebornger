@@ -27,6 +27,9 @@
     - type: ClothingSpeedModifier
       walkModifier: 0.8
       sprintModifier: 0.8
+    - type: Item
+      size: Huge
+    - type: HeldSpeedModifier
 
 - type: entity
   parent: [ClothingOuterStorageBase, AllowSuitStorageClothing]
@@ -58,6 +61,9 @@
     - type: ClothingSpeedModifier
       walkModifier: 0.7
       sprintModifier: 0.7
+    - type: Item
+      size: Huge
+    - type: HeldSpeedModifier
 
 - type: entity
   parent: [ClothingOuterStorageBase, AllowSuitStorageClothing]
@@ -88,6 +94,9 @@
     - type: ClothingSpeedModifier
       walkModifier: 0.7
       sprintModifier: 0.7
+    - type: Item
+      size: Huge
+    - type: HeldSpeedModifier
 
 - type: entity
   parent: [ClothingOuterStorageBase, AllowSuitStorageClothing]
@@ -124,6 +133,9 @@
     - type: ClothingSpeedModifier
       walkModifier: 0.8
       sprintModifier: 0.8
+    - type: Item
+      size: Huge
+    - type: HeldSpeedModifier
 
 - type: entity
   parent: [ClothingOuterArmorStandardHeavy, AllowSuitStorageClothing]
@@ -148,3 +160,6 @@
           Piercing: 0.5
           Heat: 0.5
           Caustic: 0.5
+    - type: Item
+      size: Huge
+    - type: HeldSpeedModifier

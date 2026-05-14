@@ -31,8 +31,7 @@
         coefficients:
           Blunt: 0.5
           Slash: 0.5
-          Piercing: 0.5
-          Heat: 0.5
+          Piercing: 0.35
           Caustic: 0.5
     - type: ExplosionResistance
       damageCoefficient: 0.35
