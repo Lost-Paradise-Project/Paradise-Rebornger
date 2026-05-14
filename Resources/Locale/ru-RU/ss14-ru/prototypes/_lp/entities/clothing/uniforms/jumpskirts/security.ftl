@@ -6,3 +6,5 @@ ent-LPPClothingUniformJumpskirtSecShirt = рубашка с юбкой служ�
     .desc = { ent-ClothingUniformBase.desc }
 ent-LPPClothingUniformJumpSkirtSecEngineer = юбка-комбинезон полевого инженера
     .desc = Комбинезон изготовлен из прочного материала, обеспечивающего надежную защиту.
+ent-LPPClothingUniformJumpSuitTactical = тактический комплект одежды службы безопасности
+    .desc = Этот комбинезон с налокотниками и подлокотниками имеепт хорошую защиту от падения.

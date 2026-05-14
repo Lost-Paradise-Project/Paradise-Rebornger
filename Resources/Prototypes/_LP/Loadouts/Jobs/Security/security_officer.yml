@@ -92,3 +92,8 @@
   id: LPPSecurityZavodCadet
   equipment:
     jumpsuit: ClothingUniformJumpsuitZavodCadet
+
+- type: loadout
+  id: LPPSecurityTactical
+  equipment:
+    jumpsuit: LPPClothingUniformJumpSuitTactical
