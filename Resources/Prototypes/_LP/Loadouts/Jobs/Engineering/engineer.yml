@@ -72,7 +72,7 @@
   id: LPPEngineerNTAlt
   equipment:
     jumpsuit: ClothingUniformJumpsuitNTEngineeringApprentice
-    
+
 - type: loadout
   id: LPPEngineerNTAlt2
   equipment:
@@ -87,7 +87,7 @@
   id: LPPEngineerZavodAlt
   equipment:
     jumpsuit: ClothingUniformJumpsuitZavodEngineerApprentice
-    
+
 - type: loadout
   id: LPPEngineerZavodAlt2
   equipment:
