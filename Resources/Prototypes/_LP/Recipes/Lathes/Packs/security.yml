@@ -26,9 +26,22 @@
   - LPPClothingOuterHardsuitSecurityRed
   - LPPClothingOuterHardsuitCap
   - LPPClothingOuterHardsuitCombatAlternative
+
 - type: latheRecipePack
   id: LPPGrenadeLauncherSec
   recipes:
   - LPPWeaponLauncherHydrozoa
   - LPPGrenadeBaton
   - LPPGrenadeEMP
+
+- type: latheRecipePack
+  id: LPPSecurityClothing
+  recipes:
+  - LPPClothingEyesSecNVG
+  - LPPClothingEyesHudSecurity
+  - ClothingBackpackHolding
+  - ClothingBackpackSatchelHolding
+  - ClothingBackpackDuffelHolding
+  - ClothingShoesBootsSpeed
+  - ClothingShoesBootsMoon
+  - ClothingShoesBootsJump

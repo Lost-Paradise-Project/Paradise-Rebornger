@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: ClothingHeadBase
   id: LPPClothingHeadHatCapBlack
   name: black cap

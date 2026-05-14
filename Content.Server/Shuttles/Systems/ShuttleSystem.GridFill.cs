@@ -1,4 +1,4 @@
-using System.Numerics;
+using Content.Server._LP.Shuttles;
 using Content.Server.Shuttles.Components;
 using Content.Server.Station.Events;
 using Content.Shared.CCVar;
@@ -9,6 +9,7 @@ using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
+using System.Numerics;
 
 namespace Content.Server.Shuttles.Systems;
 
@@ -18,6 +19,8 @@ public sealed partial class ShuttleSystem
     {
         SubscribeLocalEvent<GridSpawnComponent, StationPostInitEvent>(OnGridSpawnPostInit);
         SubscribeLocalEvent<StationCargoShuttleComponent, StationPostInitEvent>(OnCargoSpawnPostInit);
+        SubscribeLocalEvent<StationSalvageShuttleComponent, StationPostInitEvent>(OnSalvageSpawnPostInit);
+
 
         SubscribeLocalEvent<GridFillComponent, MapInitEvent>(OnGridFillMapInit);
 
@@ -55,6 +58,13 @@ public sealed partial class ShuttleSystem
         CargoSpawn(uid, component);
     }
 
+    // LP Edit Start
+    private void OnSalvageSpawnPostInit(EntityUid uid, StationSalvageShuttleComponent component, ref StationPostInitEvent args)
+    {
+        SalvageSpawn(uid, component);
+    }
+    // LP Edit End
+
     private void CargoSpawn(EntityUid uid, StationCargoShuttleComponent component)
     {
         if (!_cfg.GetCVar(CCVars.GridFill))
@@ -77,6 +87,31 @@ public sealed partial class ShuttleSystem
 
         _mapSystem.DeleteMap(mapId);
     }
+
+    // LP Edit Start
+    private void SalvageSpawn(EntityUid uid, StationSalvageShuttleComponent component)
+    {
+        if (!_cfg.GetCVar(CCVars.GridFill))
+            return;
+
+        var targetGrid = _station.GetLargestGrid(uid);
+
+        if (targetGrid == null)
+            return;
+
+        _mapSystem.CreateMap(out var mapId);
+
+        if(_loader.TryLoadGrid(mapId, component.Path, out var ent))
+        {
+            if (HasComp<ShuttleComponent>(ent))
+                TryFTLProximity(ent.Value, targetGrid.Value);
+
+            _station.AddGridToStation(uid, ent.Value);
+        }
+
+        _mapSystem.DeleteMap(mapId);
+    }
+    // LP Edit End
 
     private bool TryDungeonSpawn(Entity<MapGridComponent?> targetGrid, DungeonSpawnGroup group, out EntityUid spawned)
     {

@@ -527,15 +527,6 @@
           type: [ Vox ]
         reagent: Protein
         amount: 0.25
-      #FarHorizons Start
-      - !type:CauseDisease
-        conditions:
-        - !type:MetabolizerTypeCondition
-          type: [ Animal, Vox ]
-          inverted: true
-        disease: DiseaseFoodPoisoning
-        probability: 0.05
-        #FarHorizons End
 
 - type: reagent
   id: Allicin

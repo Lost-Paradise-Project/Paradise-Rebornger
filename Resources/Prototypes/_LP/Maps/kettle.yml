@@ -1,0 +1,77 @@
+- type: gameMap
+  id: LPKettle
+  mapName: 'Kettle Station'
+  mapPath: /Maps/_LP/Station/LP_Kettle.yml
+  minPlayers: 20 # Lost Paradise C2EBE0E4
+  stations:
+    LPKettle:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} Кеттл {1}' # Lost Paradise C2EBE0E4
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: 'LP'
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/Shuttles/emergency_box.yml
+        - type: StationSalvageShuttle
+          path: /Maps/_LP/Shuttles/LP_expeditor.yml
+        - type: StationJobs
+          availableJobs:
+            # Coomand
+            Captain: [ 1, 1 ]
+            IAA: [ 1, 1 ] # Corvax-IAA
+            HeadOfPersonnel: [ 1, 1 ]
+            HeadOfSecurity: [ 1, 1 ]
+            ChiefMedicalOfficer: [ 1, 1 ]
+            ChiefEngineer: [ 1, 1 ]
+            ResearchDirector: [ 1, 1 ]
+            Quartermaster: [ 1, 1 ]
+            # Senior
+            SeniorEngineer: [ 1, 1 ]
+            SeniorPhysician: [ 1, 1 ]
+            SeniorOfficer: [ 1, 1 ]
+            SeniorResearcher: [ 1, 1 ]
+            #Service
+            Bartender: [ 2, 2 ]
+            Botanist: [ 3, 3 ]
+            Chef: [ 2, 2 ]
+            Janitor: [ 3, 3 ]
+            Chaplain: [ 1, 1 ]
+            Librarian: [ 1, 1 ]
+            Reporter: [ 2, 2 ]
+            ServiceWorker: [ 3, 4 ]
+            #Engineering
+            AtmosphericTechnician: [ 3, 3 ]
+            StationEngineer: [ 4, 4 ]
+            TechnicalAssistant: [ 3, 3 ] #intern, exclude from dept count
+            #Medical
+            Chemist: [ 2, 2 ]
+            MedicalDoctor: [ 3, 4 ]
+            Paramedic: [ 1, 1 ]
+            MedicalIntern: [ 3, 3 ]
+            #Science
+            Scientist: [ 3, 3 ]
+            ResearchAssistant: [ 2, 2 ] #intern, exclude from dept count
+            #Security
+            Warden: [ 1, 1 ]
+            SecurityOfficer: [ 4, 6 ]
+            Detective: [ 1, 1 ]
+            SecurityCadet: [ 4, 4 ] #intern, exclude from dept count
+            Brigmedic: [ 1, 1 ]
+            LPPSecurityEnginer: [ 1, 1 ] # Полевой инженер, LP
+            #Lawyer: [ 2, 2 ] # Corvax-IAA
+            #Supply
+            SalvageSpecialist: [ 3, 3 ]
+            CargoTechnician: [ 4, 4 ]
+            #Civilian
+            Passenger: [ -1, -1 ] #infinite, not counted
+            Clown: [ 1, 1 ]
+            Mime: [ 1, 1 ]
+            Musician: [ 3, 4 ]
+            #Sillycon
+            StationAi: [ 1, 1 ]
+            Borg: [ 2, 3 ]
+            # LP job
+            BlueshieldOfficer: [ 1, 1 ]
+            NanotrasenRepresentative: [ 1, 1 ]

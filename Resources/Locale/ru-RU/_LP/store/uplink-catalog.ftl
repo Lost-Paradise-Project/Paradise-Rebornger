@@ -21,3 +21,5 @@ uplink-weapon-magazinelightrifle-name = Магазин (.30 винтовочны
 uplink-weapon-magazinelightrifle-desc = Полный магазин под патрон .30
 uplink-reinforcement-radio-nukeopsveteran-name = Подкрепелние ветерана горлекса
 uplink-reinforcement-radio-nukeopsveteran-desc = Подкрепление из одного элитного ветерана Gorlex Marauders, укомплектованным хорошим комплектом снаряжения. На выбор ветеран синдиката или ветеран лонопс.
+uplink-weapon-speedloadermagnum-name = спидлоудер .45 магнум
+uplink-weapon-speedloadermagnum-desc = Спидлоудер для револьверов под .45 магнум.

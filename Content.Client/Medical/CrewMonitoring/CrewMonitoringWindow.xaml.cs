@@ -260,23 +260,6 @@ public sealed partial class CrewMonitoringWindow : FancyWindow
 
             statusContainer.AddChild(statusIcon);
 
-            //FarHorizons Start
-            // Disease icon
-            if (sensor.ShowDisease && !string.IsNullOrEmpty(sensor.DiseaseIcon)
-                && _prototypeManager.TryIndex<DiseaseIconPrototype>(sensor.DiseaseIcon, out var diseaseProto))
-            {
-                var diseaseIcon = new TextureRect
-                {
-                    HorizontalAlignment = HAlignment.Center,
-                    VerticalAlignment = VAlignment.Center,
-                    Margin = new Thickness(0, 1, 3, 0),
-                    TextureScale = new Vector2(2f, 2f),
-                    Texture = _spriteSystem.Frame0(diseaseProto.Icon)
-                };
-                statusContainer.AddChild(diseaseIcon);
-            }
-            //FarHorizons End
-
             // User name
             var nameLabel = new Label()
             {

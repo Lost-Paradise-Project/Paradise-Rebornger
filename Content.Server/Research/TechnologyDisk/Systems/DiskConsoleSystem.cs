@@ -6,6 +6,7 @@ using Content.Shared.Research.Components;
 using Robust.Server.Audio;
 using Robust.Server.GameObjects;
 using Robust.Shared.Timing;
+using Robust.Shared.Random; //LP edit
 
 namespace Content.Server.Research.TechnologyDisk.Systems;
 
@@ -15,6 +16,7 @@ public sealed class DiskConsoleSystem : EntitySystem
     [Dependency] private readonly AudioSystem _audio = default!;
     [Dependency] private readonly ResearchSystem _research = default!;
     [Dependency] private readonly UserInterfaceSystem _ui = default!;
+    [Dependency] private readonly IRobustRandom _random = default!; //LP edit
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -38,7 +40,11 @@ public sealed class DiskConsoleSystem : EntitySystem
                 continue;
 
             RemComp(uid, printing);
-            Spawn(console.DiskPrototype, xform.Coordinates);
+            //LP edit start
+            var diskPrototypes = new[] { "TechnologyDiskT1", "TechnologyDiskT2" };
+            var chosenPrototype = _random.Pick(diskPrototypes);
+            //LP edit end
+            Spawn(chosenPrototype, xform.Coordinates);  //LP edit
         }
     }
 

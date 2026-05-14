@@ -27,7 +27,7 @@
     - suitStorage
     - Belt
   - type: Gun
-    fireRate: 6
+    fireRate: 7 #LP Edit
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
@@ -131,7 +131,7 @@
   description: A cyborg-mounted weapon system based on the Viper pistol. Creates ammunition on the fly from an internal fabricator, which slowly self-charges.
   components:
   - type: Gun
-    fireRate: 6
+    fireRate: 7 #LP Edit
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -178,7 +178,7 @@
   - type: ChamberMagazineAmmoProvider
     boltClosed: null
   - type: Gun
-    fireRate: 4
+    fireRate: 5.5 #LP edit
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/silenced.ogg
       params:
@@ -229,7 +229,7 @@
   - type: Item
     storedOffset: 0,-2
   - type: Gun
-    fireRate: 5
+    fireRate: 6.5 #LP edit
     availableModes:
     - SemiAuto
     soundGunshot:

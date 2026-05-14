@@ -285,5 +285,6 @@ public sealed partial class DragonSystem : EntitySystem
         comp.WeakenedAccumulator = comp.WeakenedDuration;
         _movement.RefreshMovementSpeedModifiers(uid);
         _popup.PopupEntity(Loc.GetString("carp-rift-destroyed"), uid, uid);
+        DeleteRifts(uid, false, comp); // LP Edit
     }
 }

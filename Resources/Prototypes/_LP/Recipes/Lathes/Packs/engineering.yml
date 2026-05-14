@@ -13,3 +13,14 @@
   recipes:
   - LPPEngiInducerRecipe
   - LPPRNDInducerRecipe
+
+- type: latheRecipePack
+  id: LPPEngineeringClothing
+  recipes:
+  - LPPClothingEyesMesonNVG
+  - LPPClothingEyesGlassesMeson
+  - ClothingBackpackHolding
+  - ClothingBackpackSatchelHolding
+  - ClothingBackpackDuffelHolding
+  - ClothingShoesBootsMagSci
+  - ClothingShoesBootsSpeed

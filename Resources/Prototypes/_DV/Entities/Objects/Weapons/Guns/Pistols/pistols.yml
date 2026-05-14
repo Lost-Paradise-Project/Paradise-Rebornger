@@ -1,0 +1,45 @@
+- type: entity
+  name: valkyria
+  parent: [BaseWeaponPistol, BaseSecurityContraband]
+  id: WeaponPistolvalkyria
+  description: Big, flashy pistol with a epoxi fiber grip. Provides tactical advantage. Uses .38 special ammo.
+  components:
+  - type: Sprite
+    sprite: _DV/Objects/Weapons/Guns/Pistols/psibreaker.rsi
+  - type: Gun
+    fireRate: 3
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/_Impstation/Weapons/Guns/Gunshots/pistolfree.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistolSpecial
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolSpecial
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeSpecial
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeSpecial
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+      firing_pin: !type:Container # Starlight
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,2,0
+    - 0,1,0,1
+    storedOffset: 0,-6
+  - type: StealTarget
+    stealGroup: OfficerHandgun

@@ -3,7 +3,7 @@
   mapName: 'Marathon Station'
   mapPath: /Maps/_LP/Station/LP_Marathon.yml
   randomRotation: false
-  minPlayers: 25
+  minPlayers: 0
   maxPlayers: 55
   stations:
     LP_Marathon:

@@ -1,4 +1,4 @@
-using Content.Shared._StarLight.GameTicking.Components;
+using Content.Shared._StarLight.EndOfRoundGriefing.Components;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Charges.Components;
 using Content.Shared.Charges.Systems;

@@ -8,10 +8,6 @@
     - !type:OverallPlaytimeRequirement
       time: 1h
     # LP edit end
-    - !type:DepartmentTimeRequirement
-      department: Science
-      time: 10h
-      inverted: true # stop playing intern if you're good at science!
   startingGear: ResearchAssistantGear
   icon: "JobIconResearchAssistant"
   supervisors: job-supervisors-science

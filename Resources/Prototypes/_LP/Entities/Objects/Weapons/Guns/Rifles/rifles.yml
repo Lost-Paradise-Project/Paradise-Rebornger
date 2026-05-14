@@ -92,7 +92,7 @@
     availableModes:
       - Burst
     shotsPerBurst: 2
-    burstCooldown: 1.1
+    burstCooldown: 0.8
     soundGunshot:
       path: /Audio/_LP/Weapons/Guns/Gunshots/M4A1_Shot.ogg
   - type: Item

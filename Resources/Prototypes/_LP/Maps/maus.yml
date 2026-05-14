@@ -5,7 +5,7 @@
   maxRandomOffset: 0
   randomRotation: false
   minPlayers: 0
-  maxPlayers: 25
+  maxPlayers: 60
   stations:
     LP_Maus:
       stationProto: StandardNanotrasenStation
@@ -16,7 +16,7 @@
            !type:NanotrasenNameGenerator
             prefixCreator: "MG"
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Corvax/Shuttles/emergency_maus.yml
+          emergencyShuttlePath: /Maps/_LP/Shuttles/LP_emergency_maus.yml
         - type: StationJobs
           availableJobs:
             # Командование
