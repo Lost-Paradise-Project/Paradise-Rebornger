@@ -54,5 +54,4 @@
     vignette: 1
     strength: 1.5
     noise: 0.05
-    canline: 0.01
     flicker: 1.0

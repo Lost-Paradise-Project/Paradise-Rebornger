@@ -78,7 +78,6 @@
     vignette: 1
     strength: 1.5
     noise: 0.05
-    canline: 0.01
     flicker: 1.0
 
 - type: entity
@@ -114,7 +113,6 @@
     vignette: 1.6
     strength: 1.5
     noise: 1
-    canline: 0.75
     flicker: 2
 
 - type: entity

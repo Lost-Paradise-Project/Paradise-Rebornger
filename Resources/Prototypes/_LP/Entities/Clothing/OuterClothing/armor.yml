@@ -118,7 +118,7 @@
   - type: ExplosionResistance
     damageCoefficient: 0.8
   - type: StaminaResistance
-    coefficient: 0.8
+    damageCoefficient: 0.8
 
 - type: entity
   parent: ClothingOuterArmorBasic

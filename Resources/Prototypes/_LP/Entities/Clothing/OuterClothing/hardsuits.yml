@@ -549,7 +549,7 @@
   - type: ToggleableClothing
     clothingPrototype: LPPClothingHeadHelmetDetectiveHardsuit
   - type: StaminaResistance
-    coefficient: 0.7
+    damageCoefficient: 0.7
 
 - type: entity
   parent: ClothingOuterHardsuitBase
@@ -581,7 +581,7 @@
   - type: ToggleableClothing
     clothingPrototype: LPPClothingHeadHelmetHardsuitSWAT
   - type: StaminaResistance
-    coefficient: 0.3
+    damageCoefficient: 0.3
 
 - type: entity
   parent: ClothingOuterHardsuitBase
@@ -654,7 +654,7 @@
   - type: ToggleableClothing
     clothingPrototype: LPPClothingOuterHardsuitHelmetLeaderUEG
   - type: StaminaResistance
-    coefficient: 0.3
+    damageCoefficient: 0.3
 
 - type: entity
   parent: ClothingOuterHardsuitBase
@@ -689,7 +689,7 @@
   - type: ToggleableClothing
     clothingPrototype: LPPClothingOuterHardsuitHelmetUEG
   - type: StaminaResistance
-    coefficient: 0.7
+    damageCoefficient: 0.7
 
 - type: entity
   parent: ClothingOuterHardsuitBase
@@ -730,4 +730,4 @@
   - type: StaticPrice
     price: 350
   - type: StaminaResistance
-    coefficient: 0.55
+    damageCoefficient: 0.55

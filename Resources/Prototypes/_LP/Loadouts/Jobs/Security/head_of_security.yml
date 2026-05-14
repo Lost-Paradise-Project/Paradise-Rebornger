@@ -6,7 +6,7 @@
 - type: loadout
   id: LPPHOSSummer
   equipment:
-    jumpsuit: ClothingUniformJumpsuitHOSSummer
+    jumpsuit: ClothingUniformJumpsuitHoSSummer
 
 - type: loadout
   id: LPPHOSFormalskirt
