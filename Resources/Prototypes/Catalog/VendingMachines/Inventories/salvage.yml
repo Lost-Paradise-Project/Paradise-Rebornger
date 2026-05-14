@@ -10,5 +10,11 @@
     RadioHandheld: 2
     WeaponGrapplingGun: 4
     WeaponProtoKineticAccelerator: 4
+#LP edit start
+    LPPClothingHeadHelmetSalvager: 3
+    LPPClothingOuterVestSalvager: 3
+    WeaponCrusher: 2
+    ClothingBeltSalvageWebbing: 1
+#LP edit end
   contrabandInventory:
     PlushieCarp: 1

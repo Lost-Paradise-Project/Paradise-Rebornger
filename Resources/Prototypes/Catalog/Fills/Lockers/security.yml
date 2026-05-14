@@ -163,6 +163,7 @@
     - id: LPPCombatDefibrillator
     - id: LPPClothingHandsGlovesCombatNitrile
     - id: LPPWeaponPistolHippocraticoath
+    - id: ClothingBeltCorpsmanWebbing
 #LP edit end
 
 - type: entity

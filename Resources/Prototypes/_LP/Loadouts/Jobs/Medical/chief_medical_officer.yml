@@ -4,11 +4,6 @@
     underwear: LPPCMOPanties
 
 - type: loadout
-  id: LPPCMOSummer
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitCMOSummer
-
-- type: loadout
   id: LPPCMOFormalskirt
   equipment:
     jumpsuit: LPPClothingUniformJumpskirtCMOFormalSkirt

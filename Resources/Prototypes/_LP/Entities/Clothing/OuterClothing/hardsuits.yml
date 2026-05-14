@@ -585,37 +585,6 @@
 
 - type: entity
   parent: ClothingOuterHardsuitBase
-  id: LPPClothingOuterHardsuitBlueshield
-  name: blueshield's hardsuit
-  components:
-  - type: Sprite
-    sprite: _LP/Clothing/OuterClothing/Hardsuits/blueshield_hardsuit.rsi
-  - type: Clothing
-    sprite: _LP/Clothing/OuterClothing/Hardsuits/blueshield_hardsuit.rsi
-  - type: ToggleableClothing
-    clothingPrototype: LPPClothingOuterHardsuitBlueshieldHelm
-  - type: Item
-    size: Huge
-  - type: ExplosionResistance
-    damageCoefficient: 0.5
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.45
-        Heat: 0.45
-        Radiation: 0.45
-        Caustic: 0.45
-  - type: HeldSpeedModifier
-  - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 0.9
-  - type: StaminaResistance
-    coefficient: 0.65
-
-- type: entity
-  parent: ClothingOuterHardsuitBase
   id: LPPClothingOuterHardsuitScienceUEG
   name: Hardsuit UEG-34r - "Gelehrt"
   description: A research spacesuit designed for the work of UEG scientists, as well as technicians in outer space and harsh planetary conditions.

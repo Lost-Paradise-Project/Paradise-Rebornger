@@ -44,8 +44,10 @@
   - type: RandomInsulation
     list:
       - 0.0
+      - 0.0
       - 0.1
       - 0.25
+  - type: Insulated
 
 - type: entity
   parent: ClothingHandsButcherable

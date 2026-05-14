@@ -10,3 +10,7 @@
     ClothingHeadBandSkull: 2
     ClothingHeadsetRobotics: 2
     ClothingOuterWinterRobo: 2
+#LP edit start
+    ClothingOuterRobeTechPriest: 2
+    ClothingHeadTechPriest: 2
+#LP edit end

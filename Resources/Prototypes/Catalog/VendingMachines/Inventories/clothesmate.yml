@@ -155,6 +155,12 @@
     LPPClothingHeadHatCapBlack: 2
     LPPClothingHeadHatCapBlue: 2
     ClothingHandsGlovesAerostatic: 1
+    LPPClothingNeckShemagWhite: 5
+    LPPClothingNeckShemagRed: 5
+    LPPClothingNeckShemagGreen: 5
+    LPPClothingNeckShemagBrown: 5
+    LPPClothingNeckShemagBlue: 5
+    LPPClothingNeckShemagPurple: 5
     # LP edit end
     # DO NOT ADD MORE, USE UNIFORM DYING
     ClothingShoesColorBlack: 8

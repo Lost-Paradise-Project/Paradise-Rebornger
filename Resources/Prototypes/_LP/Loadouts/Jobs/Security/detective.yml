@@ -6,7 +6,7 @@
 - type: loadout
   id: LPPDetectiveZavodAlt
   equipment:
-    jumpsuit: ClothingUniformJumpsuitZavodDetective
+    jumpsuit: ClothingUniformJumpsuitZavodDetectiveAlt
 
 - type: loadout
   id: LPPDetectiveZavodCoat

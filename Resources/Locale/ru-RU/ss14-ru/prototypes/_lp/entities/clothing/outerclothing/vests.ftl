@@ -8,5 +8,5 @@ ent-LPPClothingOuterVestSalvager = бронежилет утилизатора
     .desc = Потёртая и поношенная броня с карманами, уж лучше это, чем ничего.
 ent-LPPClothingOuterVestSneakingVest = стелс костюм
     .desc = That is NOT Soild Snake!
-ent-LPPClothingOuterVestDareDevil = костюм смельчака
-    .desc = Bring me to live!!!
+ent-LPPClothingOuterVestDareDevil = супергеройский костюм Смельчака
+    .desc = Bring me to life!!!

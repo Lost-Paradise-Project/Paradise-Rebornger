@@ -16,4 +16,4 @@
 - type: loadout
   id: LPPRDMilitary
   equipment:
-    jumpsuit: LClothingUniformJumpsuitMilitaryResearchDirector
+    jumpsuit: ClothingUniformJumpsuitMilitaryResearchDirector

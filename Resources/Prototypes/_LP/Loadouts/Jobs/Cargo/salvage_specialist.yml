@@ -18,6 +18,16 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitMilitarySalvageSpecialist
 
+- type: loadout
+  id: LPPSalvageNTMiner
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNTMiner
+
+- type: loadout
+  id: LPPSalvageHephMiner
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHephMiner
+
 - type: loadoutGroup
   id: LPPSalvageSpecialistJumpsuit
   name: loadout-group-salvage-specialist-jumpsuit
@@ -26,3 +36,5 @@
   - LPPSalvageExplorerAlternative
   - LPPSalvageExplorer
   - LPPSalvageMilitary
+  - LPPSalvageNTMiner
+  - LPPSalvageHephMiner

@@ -787,6 +787,9 @@
   - LPPCargoBlackShirt
   - LPPCargoBlackSkirt
   - LPPCargoMilitary
+  - LPPCargoNTTech
+  - LPPCargoHephTech
+  - LPPCargoHephTechAlt
   # LP edit end
 
 - type: loadoutGroup
@@ -1153,6 +1156,7 @@
   - LPPScienceTurtleneckSkirt
   - LPPScienceBlackShirt
   - LPPScienceBlackSkirt
+  - LPPScienceNTRoboticist
   # LP edit end
 
 - type: loadoutGroup
@@ -1174,6 +1178,7 @@
   - RoboticistLabCoat
   - RoboticistWintercoat
   - SeniorResearcherLabCoat
+  - LPPScienceExplorerCoat #LP edit
 
 - type: loadoutGroup
   id: ScientistShoes

@@ -95,7 +95,7 @@
       coefficients:
         Blunt: 0.65
         Slash: 0.65
-        Piercing: 0.75
+        Piercing: 0.85
   - type: ExplosionResistance
     damageCoefficient: 0.9
 
@@ -112,9 +112,9 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.65
-        Slash: 0.65
-        Piercing: 0.65
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.5
   - type: ExplosionResistance
     damageCoefficient: 0.65
 
@@ -128,3 +128,11 @@
     sprite: _LP/Clothing/OuterClothing/Vests/daredevil.rsi
   - type: Clothing
     sprite: _LP/Clothing/OuterClothing/Vests/daredevil.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.95

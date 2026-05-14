@@ -19,15 +19,14 @@
     - type: ExplosionResistance
       damageCoefficient: 0.5
     - type: Reflect
-      reflectProb: 0.05
+      reflectProb: 0.8
       spread: 270
       innate: true
       reflects:
         - Energy
-        - NonEnergy
     - type: ClothingSpeedModifier
-      walkModifier: 0.7
-      sprintModifier: 0.7
+      walkModifier: 0.8
+      sprintModifier: 0.8
 
 - type: entity
   parent: [ClothingOuterStorageBase, AllowSuitStorageClothing]
@@ -73,19 +72,18 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.3
-          Slash: 0.5
+          Blunt: 0.2
+          Slash: 0.2
           Piercing: 0.85
           Heat: 0.85
           Caustic: 0.85
     - type: ExplosionResistance
       damageCoefficient: 0.5
     - type: Reflect
-      reflectProb: 0.05
+      reflectProb: 0.1
       spread: 270
       innate: true
       reflects:
-        - Energy
         - NonEnergy
     - type: ClothingSpeedModifier
       walkModifier: 0.7
@@ -109,8 +107,8 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.5
-          Slash: 0.5
+          Blunt: 0.6
+          Slash: 0.6
           Piercing: 0.5
           Heat: 0.5
           Caustic: 0.5
@@ -124,8 +122,8 @@
         - Energy
         - NonEnergy
     - type: ClothingSpeedModifier
-      walkModifier: 0.7
-      sprintModifier: 0.7
+      walkModifier: 0.8
+      sprintModifier: 0.8
 
 - type: entity
   parent: [ClothingOuterArmorStandardHeavy, AllowSuitStorageClothing]
@@ -142,3 +140,11 @@
         - state: equipped-OUTERCLOTHING
         - state: equipped-OUTERCLOTHING-unshaded
           shader: unshaded
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.5
+          Slash: 0.5
+          Piercing: 0.5
+          Heat: 0.5
+          Caustic: 0.5

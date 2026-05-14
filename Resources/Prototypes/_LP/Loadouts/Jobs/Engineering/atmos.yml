@@ -39,6 +39,11 @@
     jumpsuit: LPPClothingUniformJumpskirtAtmosBlackSkirt
 
 - type: loadout
+  id: LPPAtmosShirtSkirt
+  equipment:
+    jumpsuit: LPPClothingUniformJumpskirtAtmosShirt
+
+- type: loadout
   id: LPPAtmosTurtleneckSkirt
   equipment:
     jumpsuit: LPPClothingUniformJumpskirtAtmosTurtleneck
