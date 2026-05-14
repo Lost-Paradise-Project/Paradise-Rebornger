@@ -1,5 +1,5 @@
 ﻿[game]
-hostname = "[18+] 🔥 LOST PARADISE ❤️"
+hostname = "[18+][RU] 🔥 LOST PARADISE ❤️"
 desc = "- Мы проект со средним требованием к отыгрышу с разрешенным ЕРП. \n- Наша цель это создание приятного времяпрепровождения для всех игроков не зависимо от их предпочитаемого геймплея \n- Присоединяйтесь в наше Дискорд сообщество"
 lobbyduration = 120
 map_pool = "LPmaps"
@@ -21,7 +21,7 @@ enabled = false
 show_reason = true
 min_account_age = 300
 min_overall_minutes = 300
-enable_without_admins = true
+enable_without_admins = false
 disable_with_admins = true
 
 [server]
@@ -30,7 +30,7 @@ lobby_name = "Lost Paradise 3.1"
 force_client_hud_version_watermark = true
 
 [hub]
-tags = "lang:ru,region:eu_e,rp:med,18+"
+tags = "lang:ru,region:eu_e,rp:med,rp:high,18+"
 
 [shuttle]
 arrivals_planet = false

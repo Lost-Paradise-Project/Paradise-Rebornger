@@ -23,3 +23,5 @@ ghost-respawn-log-character-almost-same =
        *[false] попытался зайти
     } в раунд после возвращения в лобби с похожим именем. Прошлое имя: { $oldName }, текущее: { $newName }.
 ghost-respawn-log-return-to-lobby = { $userName } вернулся в лобби.
+ghost-respawn-command-no-entity = Эту команду может использовать только игрок с привязанной сущностью.
+ghost-respawn-time-left = До возможности вернуться в раунд: { $time }

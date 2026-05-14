@@ -1,5 +1,6 @@
 using Content.Shared.CartridgeLoader.Cartridges;
-﻿using Content.Shared.Paper;
+using Content.Shared.Paper;
+using Content.Shared._DV.CartridgeLoader.Cartridges; // DeltaV
 using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
@@ -48,4 +49,10 @@ public sealed partial class LogProbeCartridgeComponent : Component
     /// </summary>
     [DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), AutoPausedField]
     public TimeSpan NextPrintAllowed = TimeSpan.Zero;
+
+    /// <summary>
+    /// DeltaV: The last scanned NanoChat data, if any
+    /// </summary>
+    [DataField]
+    public NanoChatData? ScannedNanoChatData;
 }

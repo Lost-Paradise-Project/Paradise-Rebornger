@@ -55,8 +55,10 @@
   - type: Explosive
     explosionType: FireBomb
     totalIntensity: 5 # low intensity, the point is to burn attackers not to break open walls, dragons can just eat them
-    intensitySlope: 1
-    maxIntensity: 3
+    # LP Edit Start
+    intensitySlope: 2
+    maxIntensity: 30
+    # LP Edit End
     canCreateVacuum: false
     deleteAfterExplosion: false
     repeatable: true

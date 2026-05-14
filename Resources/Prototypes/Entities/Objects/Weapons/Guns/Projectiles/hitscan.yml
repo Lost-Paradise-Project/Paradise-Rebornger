@@ -45,7 +45,7 @@
   - type: HitscanBasicDamage
     damage:
       types:
-        Heat: 7
+        Heat: 12 #LP edit
 
 - type: entity
   parent: BasicHitscan

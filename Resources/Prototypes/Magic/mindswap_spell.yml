@@ -20,3 +20,4 @@
     event: !type:MindSwapSpellEvent
   - type: SpeakOnAction
     sentence: action-speech-spell-mind-swap
+  - type: EorgPreventAction # Starlight

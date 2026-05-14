@@ -3,7 +3,7 @@
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
   sprites:
-    - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
+    - sprite: _EE/Mobs/Customization/tails32x32.rsi
       state: axolotl
 
 - type: marking
@@ -11,9 +11,9 @@
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
   sprites:
-    - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
+    - sprite: _EE/Mobs/Customization/tails32x32.rsi
       state: easternd_primary
-    - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
+    - sprite: _EE/Mobs/Customization/tails32x32.rsi
       state: easternd_secondary
 
 - type: marking
@@ -21,9 +21,9 @@
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
   sprites:
-    - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
+    - sprite: _EE/Mobs/Customization/tails32x32.rsi
       state: fish_primary
-    - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
+    - sprite: _EE/Mobs/Customization/tails32x32.rsi
       state: fish_secondary
 
 - type: marking
@@ -31,11 +31,11 @@
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
   sprites:
-    - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
+    - sprite: _EE/Mobs/Customization/tails32x32.rsi
       state: gecko_primary
-    - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
+    - sprite: _EE/Mobs/Customization/tails32x32.rsi
       state: gecko_secondary
-    - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
+    - sprite: _EE/Mobs/Customization/tails32x32.rsi
       state: gecko_tertiary
 
 - type: marking
@@ -43,7 +43,7 @@
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
   sprites:
-    - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
+    - sprite: _EE/Mobs/Customization/tails32x32.rsi
       state: maw
 
 - type: marking
@@ -51,7 +51,7 @@
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
   sprites:
-    - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
+    - sprite: _EE/Mobs/Customization/tails32x32.rsi
       state: snake
 
 - type: marking
@@ -59,7 +59,7 @@
   bodyPart: Tail
   groupWhitelist: [Slime, Human]
   sprites:
-    - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
+    - sprite: _EE/Mobs/Customization/tails32x32.rsi
       state: succubus
 
 - type: marking
@@ -68,5 +68,5 @@
   groupWhitelist: [Slime, Human]
   sponsorOnly: true
   sprites:
-    - sprite: SimpleStation14/Mobs/Customization/tails32x32.rsi
+    - sprite: _EE/Mobs/Customization/tails32x32.rsi
       state: tentacle

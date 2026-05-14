@@ -681,7 +681,7 @@
 
 - type: entity
   name: pill
-  suffix: Tricordrazine 20u # Far Horizons
+  suffix: Tricordrazine 10u
   parent: Pill
   id: PillTricordrazine
   components:
@@ -690,23 +690,23 @@
   - type: Sprite
     state: pill3
   - type: Label
-    currentLabel: tricordrazine-20u # LP edit
+    currentLabel: tricordrazine-10u # LP edit
   - type: SolutionContainerManager
     solutions:
       food:
         maxVol: 20
         reagents:
-        - ReagentId: Tricordrazine # Far Horizons
-          Quantity: 20
+        - ReagentId: Tricordrazine
+          Quantity: 10
 
 - type: entity
   name: pill canister
   parent: PillCanister
   id: PillCanisterTricordrazine
-  suffix: Tricordrazine 20u, 5
+  suffix: Tricordrazine 10u, 5
   components:
   - type: Label
-    currentLabel: tricordrazine-20u # LP edit
+    currentLabel: tricordrazine-10u # LP edit
   - type: EntityTableContainerFill
     containers:
       storagebase:

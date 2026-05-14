@@ -111,8 +111,6 @@ namespace Content.Server.PDA
             var id = CompOrNull<IdCardComponent>(pda.ContainedId);
             if (id != null)
                 pda.OwnerName = id.FullName;
-            var ev = new OwnerNameChangedEvent(); // Corvax-Wega-NanoChat
-            RaiseLocalEvent(uid, ref ev); // Corvax-Wega-NanoChat
             UpdatePdaUi(uid, pda);
         }
 
@@ -139,8 +137,6 @@ namespace Content.Server.PDA
         {
             pda.OwnerName = ownerName;
             pda.PdaOwner = owner;
-            var ev = new OwnerNameChangedEvent(); // Corvax-Wega-NanoChat
-            RaiseLocalEvent(uid, ref ev); // Corvax-Wega-NanoChat
             UpdatePdaUi(uid, pda);
         }
 
@@ -359,6 +355,3 @@ namespace Content.Server.PDA
         }
     }
 }
-
-[ByRefEvent] // Corvax-Wega-NanoChat
-public record struct OwnerNameChangedEvent(); // Corvax-Wega-NanoChat

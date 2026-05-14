@@ -25,6 +25,7 @@
     - WhitelistChameleonIdCard
   - type: StealTarget
     stealGroup: IDCard
+  - type: NanoChatCard # DeltaV
   # Goobstation edit start
   - type: EmitSoundOnPickup
     sound:
@@ -956,6 +957,8 @@
     price: 0
   - type: Contract # L5
     contract: ContractIndependent
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -979,6 +982,8 @@
   - type: Unremoveable
   - type: Contract # L5
     contract: ContractIndependent
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -998,6 +1003,8 @@
     job: Visitor
   - type: Contract # L5
     contract: ContractIndependent
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 #Antags
 
@@ -1028,6 +1035,8 @@
         type: AgentIDCardBoundUserInterface
       enum.ChameleonUiKey.Key:
         type: ChameleonBoundUserInterface
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: AgentIDCard
@@ -1041,6 +1050,8 @@
     - NuclearOperative
   - type: Contract # L5
     contract: ContractGorlex
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: [ IDCardStandard, BaseSyndicateContraband ]
@@ -1067,6 +1078,8 @@
     - SyndicateAgent
   - type: Contract # L5
     contract: ContractGorlex
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: [ SyndicateIDCard, BaseSyndicateContraband ]
@@ -1088,6 +1101,8 @@
     jobIcon: JobIconSyndicateOperative
   - type: Contract # L5
     contract: ContractGorlex
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: [ SyndiOperativeIDCard, BaseSyndicateContraband ]
@@ -1108,6 +1123,8 @@
     jobIcon: JobIconSyndicateCorpsman
   - type: Contract # L5
     contract: ContractGorlex
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: [ SyndiOperativeIDCard, BaseSyndicateContraband ]
@@ -1128,6 +1145,8 @@
     jobIcon: JobIconSyndicateCommander
   - type: Contract # L5
     contract: ContractGorlex
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: [ IDCardStandard, BaseHighlyIllegalContraband ]
@@ -1153,6 +1172,8 @@
   - type: Access
     tags:
     - Maintenance
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: [ IDCardStandard, BaseMajorContraband ]
@@ -1169,6 +1190,8 @@
     heldPrefix: orange #this is close enough to the weird puce color pirate IDs have going on
   - type: IdCard
     jobIcon: JobIconPirate
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -1181,6 +1204,8 @@
   - type: Access
     tags:
     - Xenoborg
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: [ IDCardStandard, BaseMagicalContraband ]
@@ -1202,6 +1227,8 @@
     - Maintenance
   - type: IdCard
     jobIcon: JobIconWizard
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 #ERT/Centcomm
 
@@ -1224,6 +1251,8 @@
     heldPrefix: blue
   - type: PresetIdCard
     job: CentralCommandOfficial
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -1244,6 +1273,8 @@
     heldPrefix: gold
   - type: PresetIdCard
     job: ERTLeader
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -1264,6 +1295,8 @@
     heldPrefix: blue
   - type: PresetIdCard
     job: ERTChaplain
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -1284,6 +1317,8 @@
     heldPrefix: blue
   - type: PresetIdCard
     job: ERTEngineer
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -1304,6 +1339,8 @@
     heldPrefix: blue
   - type: PresetIdCard
     job: ERTJanitor
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -1324,6 +1361,8 @@
     heldPrefix: blue
   - type: PresetIdCard
     job: ERTMedical
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -1344,6 +1383,8 @@
     heldPrefix: blue
   - type: PresetIdCard
     job: ERTSecurity
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -1364,6 +1405,8 @@
     job: DeathSquad
   - type: Contract # L5
     contract: ContractIndependent
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -1385,6 +1428,8 @@
     heldPrefix: blue
   - type: PresetIdCard
     job: CBURN
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -1423,6 +1468,9 @@
   - type: Tag #  Ignore Chameleon tags
     tags:
     - DoorBumpOpener
+  - type: NanoChatCard # DeltaV
+    notificationsMuted: true
+    listNumber: false
   - type: AgentIDCard
   - type: ActivatableUI
     key: enum.AgentIDCardUiKey.Key

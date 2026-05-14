@@ -50,11 +50,11 @@
     id: HoSPDA
     gloves: ClothingHandsGlovesCombat
     ears: ClothingHeadsetAltSecurity
-    pocket1: WeaponPistolMk58
+    pocket1: WeaponRevolverSnub #LP edit
   storage:
     back:
     - Flash
-    - MagazinePistol
+    - SpeedLoaderMagnum # LP Edit
 
 - type: chameleonOutfit
   id: HeadOfSecurityChameleonOutfit

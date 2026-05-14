@@ -441,7 +441,7 @@
     dynamicPacks:
     # LP Edit Start
     - LPPGrenadeLauncherSec
-    - ScienceClothing
+    - LPPSecurityClothing
     # LP Edit End
     - SalvageSecurityBoards
     - SalvageSecurityWeapons
@@ -545,7 +545,7 @@
     - SurgeryStatic
     dynamicPacks:
     # LP Edit Start
-    - ScienceClothing
+    - LPPMedicalClothing
     - MedicalBoards
     # LP Edit End
     - Chemistry

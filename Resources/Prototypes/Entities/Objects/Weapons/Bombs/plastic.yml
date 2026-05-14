@@ -35,6 +35,7 @@
         base:
           Primed: { state: primed }
           Unprimed: { state: icon }
+  - type: EorgPreventSticking # Starlight
 
 - type: entity
   name: composition C-4

@@ -164,6 +164,7 @@
         orGroup: Guns
   - type: SpeakOnAction
     sentence: action-speech-spell-summon-guns
+  - type: EorgPreventAction # Starlight
 
 - type: entity
   parent: BaseAction
@@ -212,3 +213,4 @@
         orGroup: Magics
   - type: SpeakOnAction
     sentence: action-speech-spell-summon-magic
+  - type: EorgPreventAction # Starlight

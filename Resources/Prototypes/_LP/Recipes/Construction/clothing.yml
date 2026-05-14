@@ -1,0 +1,15 @@
+- type: construction
+  id: LPPClothingEyesHudSecEng
+  graph: LPPHudEngiSec
+  startNode: start
+  targetNode: engisecHud
+  category: construction-category-clothing
+  objectType: Item
+
+- type: construction
+  id: LPPClothingEyesHudSecMed
+  graph: HudMedSec
+  startNode: start
+  targetNode: medsecHud
+  category: construction-category-clothing
+  objectType: Item

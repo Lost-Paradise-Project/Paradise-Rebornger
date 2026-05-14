@@ -98,6 +98,16 @@ public sealed partial class IpcSystem : EntitySystem
         if (MetaData(uid).EntityLifeStage >= EntityLifeStage.Terminating)
             return;
 
+        // LP Edit Start
+        if (HasComp<BatteryDrainerComponent>(uid))
+        {
+            RemComp<BatteryDrainerComponent>(uid);
+        }
+
+        component.DrainActivated = false;
+        _action.SetToggled(component.ActionEntity, false);
+        // LP Edit End
+
         UpdateBatteryAlert((uid, component));
     }
     private void OnToggleAction(EntityUid uid, IpcComponent component, ToggleDrainActionEvent args)
