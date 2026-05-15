@@ -183,3 +183,14 @@
       coefficients:
         Blunt: 0.95
         Slash: 0.95
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: LPPClothingOuterCoatPizzasecurity
+  name: pizzaria security coat
+  description: Coat for protection againts cold at your nightshift in pizzaria.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/OuterClothing/Coats/jaybomber.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/OuterClothing/Coats/jaybomber.rsi
