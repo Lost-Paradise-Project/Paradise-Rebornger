@@ -15,6 +15,16 @@
           shader: unshaded
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitAISTacsuit
+    - type: ContainerContainer
+      containers:
+  storagebase: !type:Container
+    showEnts: False
+    occludes: True
+    ents: []
+  toggleable-clothing: !type:ContainerSlot
+    showEnts: False
+    occludes: True
+    ent: null
 
 - type: entity
   parent: [ClothingOuterStorageBase, AllowSuitStorageClothing]

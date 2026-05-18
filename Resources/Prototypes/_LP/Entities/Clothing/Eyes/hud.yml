@@ -43,9 +43,6 @@
     sprite: _LP/Clothing/Eyes/HUD/upgHUD.rsi
   - type: FlashImmunity
   - type: EyeProtection
-  - type: Construction
-    graph: HudMedSec
-    node: medsecHud
   - type: NightVision
     requiredSlot: eyes
     tint1: 0.6
