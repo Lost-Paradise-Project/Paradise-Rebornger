@@ -181,9 +181,9 @@
   - type: Clothing
     sprite: Clothing/Eyes/Hud/medsec.rsi
   # LP Edit Start
-  # - type: Construction
-  #   graph: HudMedSec
-  #   node: medsecHud
+  - type: Construction
+    graph: HudMedSec
+    node: medsecHud
   # LP Edit End
 
 - type: entity
