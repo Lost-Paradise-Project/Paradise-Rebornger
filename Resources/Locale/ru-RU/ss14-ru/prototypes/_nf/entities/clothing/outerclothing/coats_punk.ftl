@@ -1,7 +1,7 @@
 ent-ClothingOuterCoatBomberPunkRed = красный бомбер панка
     .desc = Время клянчить вейпы! Ну, или что сейчас модно курить.
 ent-ClothingOuterCoatJacketLeather = кожанная куртка
-    .desc = Rock'n'roll, babe!
+    .desc = Рок'н'ролл, детка!
 ent-ClothingOuterCoatJacketBiker = байкерская косуха
     .desc = Сделанная из самой крепкой синтетической кожи данная косуха горячо любима всеми, кто хоть когда-то падал в ней с мотоцикла.
 ent-ClothingOuterCoatJacketLettermanBlue = голубая куртка-бомбер

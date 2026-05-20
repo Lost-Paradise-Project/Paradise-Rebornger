@@ -1,5 +1,5 @@
 ent-ClothingHeadHelmetHardsuitAISTacsuit = шлем "тактек" костюма АНС
-    .desc = A modern helmet used with the standard AIS tacsuit
+    .desc = Современный шлем от штатных костюмов АНС.
     .suffix = Альянс Независимых Систем
 ent-ClothingHeadHelmetAISHeavy = тяжёлый тактический шлем АНС
     .desc = Большая часть снаряжения АНС это старые земные модели, данная модель датируется чуть ли не 23 веком. По видимому, она лежала на хорошем складе.
