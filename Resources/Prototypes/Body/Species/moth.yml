@@ -1,9 +1,9 @@
 - type: markingsGroup
   id: Moth
-  onlyGroupWhitelisted: true
+  onlyGroupWhitelisted: false #LP edit
   limits:
     enum.HumanoidVisualLayers.Hair:
-      limit: 0
+      limit: 1 #LP edit
       required: false
     enum.HumanoidVisualLayers.FacialHair:
       limit: 0
