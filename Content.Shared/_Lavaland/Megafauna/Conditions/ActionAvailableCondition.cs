@@ -1,4 +1,4 @@
-﻿using Content.Shared._Lavaland.Megafauna.Systems;
+using Content.Shared._Lavaland.Megafauna.Systems;
 using Content.Shared.Actions;
 using Robust.Shared.Prototypes;
 

@@ -1,6 +1,6 @@
 - type: entity
   parent: BaseWall
-  id: WallPaper 
+  id: WallPaper
   name: paper wall
   description: Helps to contain the repeated screams of martial artists.
   components:

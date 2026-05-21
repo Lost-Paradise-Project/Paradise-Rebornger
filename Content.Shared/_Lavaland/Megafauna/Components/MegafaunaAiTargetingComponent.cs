@@ -1,4 +1,4 @@
-﻿using Robust.Shared.GameStates;
+using Robust.Shared.GameStates;
 using Robust.Shared.Map;
 
 namespace Content.Shared._Lavaland.Megafauna.Components;

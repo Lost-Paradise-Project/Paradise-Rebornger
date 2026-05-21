@@ -1,4 +1,4 @@
-﻿using Content.Shared._Lavaland.EntityShapes.Shapes;
+using Content.Shared._Lavaland.EntityShapes.Shapes;
 using Robust.Shared.Serialization;
 using Robust.Shared.Serialization.Manager;
 using Robust.Shared.Serialization.Markdown.Mapping;

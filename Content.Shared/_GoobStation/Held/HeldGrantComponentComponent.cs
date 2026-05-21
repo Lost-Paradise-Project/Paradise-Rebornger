@@ -12,4 +12,3 @@ public sealed partial class HeldGrantComponentComponent : Component
     [ViewVariables(VVAccess.ReadWrite)]
     public Dictionary<string, bool> Active = new();
 }
-

@@ -1,4 +1,4 @@
-﻿using Content.Shared._Lavaland.Megafauna.Components;
+using Content.Shared._Lavaland.Megafauna.Components;
 using Content.Shared.Damage.Systems;
 using Robust.Shared.Player;
 

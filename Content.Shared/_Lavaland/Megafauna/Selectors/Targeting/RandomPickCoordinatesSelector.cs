@@ -1,4 +1,4 @@
-﻿using Content.Shared._Lavaland.Megafauna.Systems;
+using Content.Shared._Lavaland.Megafauna.Systems;
 
 // ReSharper disable once CheckNamespace
 namespace Content.Shared._Lavaland.Megafauna.Selectors;

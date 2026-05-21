@@ -1,4 +1,4 @@
-﻿using Content.Shared._Lavaland.Aggression;
+using Content.Shared._Lavaland.Aggression;
 using Content.Shared._Lavaland.Megafauna.Components;
 using Content.Shared._Lavaland.Megafauna.Selectors;
 using Content.Shared.Mobs.Systems;

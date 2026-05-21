@@ -1,4 +1,4 @@
-﻿using Content.Shared._Lavaland.EntityShapes.Shapes;
+using Content.Shared._Lavaland.EntityShapes.Shapes;
 using Robust.Shared.Prototypes;
 
 namespace Content.Shared._Lavaland.EntityShapes;

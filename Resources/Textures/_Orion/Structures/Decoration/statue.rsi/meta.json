@@ -1,17 +1,17 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from https://github.com/BlueMoon-Labs/MOLOT-BlueMoon-Station/commit/16fddbb1401993856d9360f08303ea263eacf237 | Edited by PuroSlavKing (Github)",
-  "size": {
-    "x": 32,
-    "y": 32
-  },
-  "states": [
-    {
-      "name": "bust"
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from https://github.com/BlueMoon-Labs/MOLOT-BlueMoon-Station/commit/16fddbb1401993856d9360f08303ea263eacf237 | Edited by PuroSlavKing (Github)",
+    "size": {
+        "x": 32,
+        "y": 32
     },
-    {
-      "name": "base"
-    }
-  ]
+    "states": [
+        {
+            "name": "bust"
+        },
+        {
+            "name": "base"
+        }
+    ]
 }

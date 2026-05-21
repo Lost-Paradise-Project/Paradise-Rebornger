@@ -1,4 +1,4 @@
-﻿using Content.Shared._Lavaland.Megafauna.Components;
+using Content.Shared._Lavaland.Megafauna.Components;
 using Content.Shared._Lavaland.Megafauna.Events;
 using Content.Shared.Coordinates.Helpers;
 using Robust.Shared.Audio;

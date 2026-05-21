@@ -1,4 +1,4 @@
-﻿using System.Numerics;
+using System.Numerics;
 using Robust.Shared.Prototypes;
 
 namespace Content.Shared._Lavaland.EntityShapes.Shapes;

@@ -6,7 +6,7 @@
     },
     "copyright": "Taked From TG Station",
     "license": "CC-BY-SA-3.0",
-   "states": [
+    "states": [
         {
             "name": "full"
         },

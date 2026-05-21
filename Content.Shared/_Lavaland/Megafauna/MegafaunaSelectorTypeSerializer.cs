@@ -1,4 +1,4 @@
-﻿using Content.Shared._Lavaland.Megafauna.Selectors;
+using Content.Shared._Lavaland.Megafauna.Selectors;
 using Robust.Shared.Serialization;
 using Robust.Shared.Serialization.Manager;
 using Robust.Shared.Serialization.Markdown.Mapping;

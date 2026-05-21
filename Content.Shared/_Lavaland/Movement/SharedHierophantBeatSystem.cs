@@ -1,4 +1,4 @@
-﻿using Content.Shared._vg.TileMovement;
+using Content.Shared._vg.TileMovement;
 using Content.Shared.Alert;
 using Content.Shared.Movement.Systems;
 using Robust.Shared.Prototypes;

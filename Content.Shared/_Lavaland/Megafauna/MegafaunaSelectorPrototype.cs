@@ -1,4 +1,4 @@
-﻿using Content.Shared._Lavaland.Megafauna.Selectors;
+using Content.Shared._Lavaland.Megafauna.Selectors;
 using Robust.Shared.Prototypes;
 
 namespace Content.Shared._Lavaland.Megafauna;

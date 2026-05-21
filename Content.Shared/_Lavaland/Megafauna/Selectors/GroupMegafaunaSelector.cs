@@ -1,4 +1,4 @@
-﻿using Content.Shared.Random.Helpers;
+using Content.Shared.Random.Helpers;
 
 namespace Content.Shared._Lavaland.Megafauna.Selectors;
 
