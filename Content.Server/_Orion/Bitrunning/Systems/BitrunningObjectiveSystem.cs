@@ -142,7 +142,9 @@ public sealed class BitrunningObjectiveSystem : EntitySystem
         if (ent.Comp.DomainMapUid != null)
             return;
 
-        if (!TryComp<TransformComponent>(ent, out var xform) || xform.MapUid is not { } mapUid)
+        var xform = Transform(ent);
+
+        if (xform.MapUid is not { } mapUid)
             return;
 
         ent.Comp.DomainMapUid = mapUid;

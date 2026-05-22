@@ -760,8 +760,7 @@ public sealed class QuantumServerSystem : EntitySystem
                 var spawnedNearAvatar = false;
                 foreach (var avatar in serverEnt.Comp.ActiveConnections)
                 {
-                    if (!TryComp<TransformComponent>(avatar, out var xform))
-                        continue;
+                    var xform = Transform(avatar);
 
                     SpawnRewardCache(serverEnt.Comp, xform.Coordinates);
                     spawnedNearAvatar = true;

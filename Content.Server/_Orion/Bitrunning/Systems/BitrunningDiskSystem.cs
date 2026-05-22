@@ -285,8 +285,9 @@ public sealed class BitrunningDiskSystem : EntitySystem
 
         var ancestors = new HashSet<EntityUid>();
         var current = entity;
-        while (TryComp<TransformComponent>(current, out var xform))
+        while (Exists(current))
         {
+            var xform = Transform(current);
             ancestors.Add(current);
 
             var parent = xform.ParentUid;

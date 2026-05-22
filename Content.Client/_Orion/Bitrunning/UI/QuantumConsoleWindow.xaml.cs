@@ -426,6 +426,7 @@ public sealed partial class QuantumConsoleWindow : DefaultWindow
             BitrunningDifficulty.Medium => Loc.GetString("bitrunning-ui-difficulty-medium"),
             BitrunningDifficulty.Hard => Loc.GetString("bitrunning-ui-difficulty-hard-skull"),
             BitrunningDifficulty.Extreme => Loc.GetString("bitrunning-ui-difficulty-extreme"),
+            _ => throw new NotImplementedException(),
         };
 
         var selected = _selectedDifficulty == difficulty;

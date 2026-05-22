@@ -1,4 +1,3 @@
-using System.Linq;
 using Content.Shared._GoobStation.Effects;
 using Content.Server.Storage.EntitySystems;
 using Content.Shared._Orion.Bitrunning;
@@ -12,8 +11,6 @@ using Content.Shared.Power;
 using Content.Shared.Power.EntitySystems;
 using Content.Shared.Storage;
 using Content.Shared.Storage.Components;
-using Robust.Shared.Containers;
-using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 
@@ -24,7 +21,6 @@ public sealed class ByteforgeSystem : EntitySystem
     [Dependency] private readonly BitrunningDomainSystem _domains = default!;
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
     [Dependency] private readonly SharedPowerReceiverSystem _power = default!;
-    [Dependency] private readonly SharedContainerSystem _container = default!;
     [Dependency] private readonly StorageSystem _storage = default!;
     [Dependency] private readonly EntityStorageSystem _entityStorage = default!;
     [Dependency] private readonly EntityTableSystem _entityTable = default!;
@@ -116,8 +112,7 @@ public sealed class ByteforgeSystem : EntitySystem
             return false;
 
         var byteforgeUid = server.LinkedByteforge!.Value;
-        if (!TryComp<TransformComponent>(byteforgeUid, out var byteforgeXform))
-            return false;
+        var byteforgeXform = Transform(byteforgeUid);
 
         if (!_prototype.HasIndex<EntityPrototype>(server.RewardCachePrototype))
         {
