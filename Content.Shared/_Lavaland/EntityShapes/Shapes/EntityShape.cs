@@ -1,6 +1,7 @@
 using System.Numerics;
 using JetBrains.Annotations;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Random;
 
 namespace Content.Shared._Lavaland.EntityShapes.Shapes;
 
@@ -49,7 +50,7 @@ public abstract partial class EntityShape
     /// Calculates this shape and also lets you customize some parameters of shape's generation.
     /// </summary>
     public List<Vector2> GetShape(
-        System.Random rand,
+        IRobustRandom random,
         IPrototypeManager proto,
         Vector2? center = null,
         int? size = null,
@@ -62,8 +63,8 @@ public abstract partial class EntityShape
         Offset = DefaultOffset ?? center ?? Offset;
         Size = DefaultSize ?? size ?? Size;
         StepSize = DefaultStepSize ?? stepSize ?? StepSize;
-        return GetShapeImplementation(rand, proto);
+        return GetShapeImplementation(random, proto);
     }
 
-    protected abstract List<Vector2> GetShapeImplementation(System.Random rand, IPrototypeManager proto);
+    protected abstract List<Vector2> GetShapeImplementation(IRobustRandom random, IPrototypeManager proto);
 }

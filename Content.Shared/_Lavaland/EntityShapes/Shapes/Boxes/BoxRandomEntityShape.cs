@@ -1,6 +1,7 @@
 using System.Linq;
 using System.Numerics;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Random;
 
 namespace Content.Shared._Lavaland.EntityShapes.Shapes;
 
@@ -22,12 +23,13 @@ public sealed partial class BoxRandomEntityShape : EntityShape
     [DataField]
     public int? RemoveAmount;
 
-    protected override List<Vector2> GetShapeImplementation(System.Random rand, IPrototypeManager proto)
+    protected override List<Vector2> GetShapeImplementation(IRobustRandom random, IPrototypeManager proto)
     {
         if (FilledChance != null)
-            return ShapeHelpers.MakeBoxChanceRandom(Offset, Size, rand, FilledChance.Value, StepSize).ToList();
+            return ShapeHelpers.MakeBoxChanceRandom(Offset, Size, random, FilledChance.Value, StepSize).ToList();
+
         if (RemoveAmount != null)
-            return ShapeHelpers.MakeBoxCountRandom(Offset, Size, rand, RemoveAmount.Value, StepSize).ToList();
+            return ShapeHelpers.MakeBoxCountRandom(Offset, Size, random, RemoveAmount.Value, StepSize).ToList();
 
         return ShapeHelpers.MakeBoxFilled(Offset, Size, StepSize).ToList();
     }

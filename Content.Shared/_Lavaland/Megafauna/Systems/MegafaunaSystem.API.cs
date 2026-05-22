@@ -10,6 +10,7 @@ namespace Content.Shared._Lavaland.Megafauna.Systems;
 
 public sealed partial class MegafaunaSystem
 {
+    [Dependency] private readonly IRobustRandom _robustRandom = default!;
     public void StartupMegafauna(Entity<MegafaunaAiComponent> ent)
     {
         RaiseLocalEvent(ent, new MegafaunaStartupEvent());
@@ -49,7 +50,7 @@ public sealed partial class MegafaunaSystem
         var uid = args.Entity;
         var mapId = Transform(uid).MapID;
 
-        var randomVector = new Vector2(args.Random.NextFloat(-radius, radius), args.Random.NextFloat(-radius, radius));
+        var randomVector = new Vector2(_robustRandom.NextFloat(-radius, radius), _robustRandom.NextFloat(-radius, radius));
         var position = _xform.GetWorldPosition(uid) + randomVector;
         var newMapCoords = new MapCoordinates(position, mapId);
         var coords = _xform.ToCoordinates(newMapCoords);

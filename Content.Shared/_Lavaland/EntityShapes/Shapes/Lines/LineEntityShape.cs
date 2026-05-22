@@ -1,6 +1,7 @@
 using System.Linq;
 using System.Numerics;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Random;
 
 namespace Content.Shared._Lavaland.EntityShapes.Shapes;
 
@@ -13,7 +14,7 @@ public sealed partial class LineEntityShape : EntityShape
     [DataField]
     public Vector2 Direction = Vector2.UnitX;
 
-    protected override List<Vector2> GetShapeImplementation(System.Random rand, IPrototypeManager proto)
+    protected override List<Vector2> GetShapeImplementation(IRobustRandom random, IPrototypeManager proto)
     {
         return ShapeHelpers.MakeLine(Offset, Size, Direction).ToList();
     }

@@ -1,6 +1,7 @@
 using System.Linq;
 using System.Numerics;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Random;
 
 namespace Content.Shared._Lavaland.EntityShapes.Shapes;
 
@@ -15,7 +16,7 @@ public sealed partial class AllEntityShape : EntityShape
     [DataField]
     public Dictionary<string, GroupEntityShapeOptions>? Options;
 
-    protected override List<Vector2> GetShapeImplementation(System.Random rand, IPrototypeManager proto)
+    protected override List<Vector2> GetShapeImplementation(IRobustRandom random, IPrototypeManager proto)
     {
         var result = new List<Vector2>();
         foreach (var child in Children)
@@ -33,7 +34,7 @@ public sealed partial class AllEntityShape : EntityShape
                 stepSize = options.GroupStepSize;
             }
 
-            result.AddRange(child.GetShape(rand, proto, offset, size, stepSize));
+            result.AddRange(child.GetShape(random, proto, offset, size, stepSize));
         }
 
         return result.Distinct().ToList();
