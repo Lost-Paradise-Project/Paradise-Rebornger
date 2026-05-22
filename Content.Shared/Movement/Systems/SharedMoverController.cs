@@ -25,7 +25,6 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 using PullableComponent = Content.Shared.Movement.Pulling.Components.PullableComponent;
-using Content.Shared.Interaction; // Tile Movement edit
 using Content.Shared._vg.TileMovement; // Tile Movement edit
 
 namespace Content.Shared.Movement.Systems;
@@ -49,7 +48,6 @@ public abstract partial class SharedMoverController : VirtualController
     [Dependency] private   readonly SharedGravitySystem _gravity = default!;
     [Dependency] private   readonly SharedTransformSystem _transform = default!;
     [Dependency] private   readonly TagSystem _tags = default!;
-    [Dependency] private readonly SharedInteractionSystem _interaction = default!; // Tile Movement Change
 
     [Dependency] protected readonly EntityQuery<CanMoveInAirComponent> CanMoveInAirQuery = default!;
     [Dependency] protected readonly EntityQuery<FootstepModifierComponent> FootstepModifierQuery = default!;

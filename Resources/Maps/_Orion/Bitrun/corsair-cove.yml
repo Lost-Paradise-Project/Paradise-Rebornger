@@ -2558,11 +2558,6 @@ entities:
         entity_storage: !type:Container
           showEnts: False
           occludes: True
-          ents:
-          - 428
-          - 427
-          - 429
-          - 430
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -2577,11 +2572,6 @@ entities:
         entity_storage: !type:Container
           showEnts: False
           occludes: True
-          ents:
-          - 433
-          - 432
-          - 434
-          - 435
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
