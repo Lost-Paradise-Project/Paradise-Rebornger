@@ -1,0 +1,71 @@
+- type: entity
+  parent: [ClothingOuterHardsuitBase, BaseSecurityContraband]
+  id: ClothingOuterHardsuitSyndieReverseEngineered
+  suffix: reverse-engineered
+  name: reverse-engineered hardsuit
+  description: RESEC-01 is reverse-engineered syndicate hardsuit. Not as great as the original, but at least it's better than standard security hardsuits.
+  components:
+  - type: Sprite
+    sprite: _NyanoTrasen/Clothing/OuterClothing/ReverseEngineering/syndicate.rsi
+  - type: Clothing
+    sprite:  _NyanoTrasen/Clothing/OuterClothing/ReverseEngineering/syndicate.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.75
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.55
+        Slash: 0.55
+        Piercing: 0.55
+        Heat: 0.65
+        Radiation: 0.55
+        Caustic: 0.55
+  - type: ClothingSpeedModifier
+    sprintModifier: 0.85
+    walkModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitSyndieReverseEngineered
+    # ADT edit start
+  - type: DNALocker
+    enabled: true
+    # ADT edit end
+
+- type: entity
+  parent: [ClothingOuterHardsuitBase, BaseSecurityContraband]
+  id: ClothingOuterHardsuitJuggernautReverseEngineered
+  suffix: reverse-engineered
+  name: reverse-engineered elite hardsuit
+  description: RESEC-01H is bulky and heavy hardsuit that reverse-engineered from specialised hardsuits of syndicate. Perfect protection against energy blades.
+  components:
+  - type: Sprite
+    sprite: _NyanoTrasen/Clothing/OuterClothing/ReverseEngineering/juggernaut.rsi
+  - type: Clothing
+    sprite:  _NyanoTrasen/Clothing/OuterClothing/ReverseEngineering/juggernaut.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitJuggernautReverseEngineered
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.7
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.3
+        Piercing: 0.4
+        Heat: 0.3
+        Radiation: 0.8
+        Caustic: 0.55
+  - type: ClothingSpeedModifier
+    sprintModifier: 0.7
+    walkModifier: 0.8
+  - type: HeldSpeedModifier
+    # ADT edit start
+  - type: DNALocker
+    enabled: true
+    # ADT edit end

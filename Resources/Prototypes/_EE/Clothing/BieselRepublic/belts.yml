@@ -1,0 +1,11 @@
+- type: entity
+  parent: [ClothingBeltStorageBase]
+  id: ClothingBeltAISWebbing
+  name: AIS webbing
+  suffix: AIS
+  description: Ideal for storing everything from ammo to weapons and combat essentials.
+  components:
+  - type: Sprite
+    sprite: _EE/Clothing/BieselRepublic/Belt/TCAF_webbing.rsi
+  - type: Clothing
+    sprite: _EE/Clothing/BieselRepublic/Belt/TCAF_webbing.rsi

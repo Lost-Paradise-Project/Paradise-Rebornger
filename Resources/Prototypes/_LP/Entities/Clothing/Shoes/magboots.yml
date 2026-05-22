@@ -20,3 +20,65 @@
     - WhitelistChameleon
   - type: StaticPrice
     price: 350
+
+- type: entity
+  parent: ClothingShoesBootsMag
+  id: LPPClothingShoesBootsMagAtmos
+  name: magboots atmos
+  description: Magnetic boots atmos, often used during extravehicular activity to ensure the user remains safely attached to the vehicle.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Shoes/Boots/atmos_magboots.rsi
+    state: icon
+  - type: Clothing
+    sprite: _LP/Clothing/Shoes/Boots/atmos_magboots.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.85
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: StaticPrice
+    price: 450
+
+- type: entity
+  parent: ClothingShoesBootsMag
+  id: LPPClothingShoesBootsMagUEG
+  name: UEG magboots
+  description: Standardized magnetic boots from the military research forces of the Independent Government of Earth.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Shoes/Boots/UEGmagboots.rsi
+    state: icon
+  - type: Clothing
+    sprite: _LP/Clothing/Shoes/Boots/UEGmagboots.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: NoSlip
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: StaticPrice
+    price: 450
+
+- type: entity
+  parent: ClothingShoesBootsMag
+  id: LPPClothingShoesBootsMagHunter
+  name: magboots of carp hunter
+  description: Commercial magnetic boots for those who prefer to hunt in zero gravity or in low gravity.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Shoes/Boots/huntermagboots.rsi
+    state: icon
+  - type: Clothing
+    sprite: _LP/Clothing/Shoes/Boots/huntermagboots.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: NoSlip
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: StaticPrice
+    price: 450

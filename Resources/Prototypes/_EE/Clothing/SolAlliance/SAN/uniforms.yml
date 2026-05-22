@@ -1,0 +1,165 @@
+# Uniforms
+- type: entity
+  parent: [ClothingUniformBase]
+  id: ClothingUniformJumpsuitUEGArmyService
+  name: UEG army uniform
+  description: A standard service uniform for enlisted men in the UEG Army. It is rarely used, as most enlisted men instead will wear their BDUs except for formal occasions.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_army_service.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_army_service.rsi
+
+- type: entity
+  parent: [ClothingUniformBase]
+  id: ClothingUniformJumpsuitUEGArmyServiceGeneral
+  name: UEG army general uniform
+  description: A standard service uniform for officers in the UEG Army. It is to be worn by generals in the field.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_army_service_general.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_army_service_general.rsi
+
+- type: entity
+  parent: [ClothingUniformBase]
+  id: ClothingUniformJumpsuitUEGArmyServiceOfficer
+  name: UEG army officer uniform
+  description: A standard service uniform for officers in the UEG Army.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_army_service_officer.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_army_service_officer.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpsuitUEGFatigueGreen
+  name: UEG green BDUs
+  description: A common uniform worn by "grunts" in the UEG Armed Forces. Although Earth is no longer the green paradise of old, olive BDUs remain an emblem of old Earth's militaries.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_fatigue_green.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_fatigue_green.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpsuitUEGFatigueGrey
+  name: UEG grey BDUs
+  description: A common uniform worn by "grunts" in the UEG Armed Forces. Although not as common as olive BDUs, "stone gray" remains a popular choice of uniform color.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_fatigue_grey.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_fatigue_grey.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpsuitUEGFatigueIPC
+  name: UEG IPC fatigues
+  description: IPCs serve as the only exception to the infamous xenophobia of the UEGs Armed Forces. For while SAN has never once permitted an alien to serve, it is eager to make use of synthetics to save pure humans from back breaking labor or charging into meat grinders.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_fatigue_ipc.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_fatigue_ipc.rsi
+
+- type: entity
+  parent: [ClothingUniformBase]
+  id: ClothingUniformJumpsuitUEGFatigueTan
+  name: UEG fatigues
+  description: A common uniform worn by "grunts" in the UEG Armed Forces. This one is colored khaki for desert environments.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_fatigue_tan.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_fatigue_tan.rsi
+
+- type: entity
+  parent: [ClothingUniformBase]
+  id: ClothingUniformJumpsuitUEGMarineDress
+  name: UEG marine dress blues
+  description: A set of "Dress Blues" worn by UEG marines during formal occasions.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_mahreen_dress.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_mahreen_dress.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpsuitUEGNavyCoveralls
+  name: UEG navy coveralls
+  description: A common working uniform for members of the UEG Navy.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_navy_coveralls.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_navy_coveralls.rsi
+
+- type: entity
+  parent: [ClothingUniformBase]
+  id: ClothingUniformJumpsuitUEGNavyDress
+  name: UEG navy dress uniform
+  description: A dress worn by UEG navy personnel during formal occasions. Or by officers as a standard uniform.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_navy_dress.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_navy_dress.rsi
+
+- type: entity
+  parent: [ClothingUniformBase]
+  id: ClothingUniformJumpsuitUEGNavyDressAdmiral
+  name: UEG navy dress admiral uniform
+  description: A formal dress uniform for UEG Admiralty. Unlike other ranks, the Admiralty are required to wear this as their service uniform as well.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_navy_dress_admiral.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_navy_dress_admiral.rsi
+
+- type: entity
+  parent: [ClothingUniformBase]
+  id: ClothingUniformJumpsuitUEGNavyDressOfficer
+  name: UEG navy dress officer uniform
+  description: A formal dress uniform for UEG Navy officers. Depending on the rank, it may also be the service uniform.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_navy_dress_officer.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_navy_dress_officer.rsi
+
+- type: entity
+  parent: [ClothingUniformBase]
+  id: ClothingUniformJumpsuitUEGNavyDressSeniorOfficer
+  name: UEG navy dress senior officer uniform
+  description: A formal dress uniform for UEG Navy senior officers. It is also to be worn as a service uniform.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_navy_dress_senior_officer.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_navy_dress_senior_officer.rsi
+
+- type: entity
+  parent: [ClothingUniformBase]
+  id: ClothingUniformJumpsuitUEGNavySailor
+  name: UEG navy sailor uniform
+  description: A service uniform for enlisted members of the UEG Navy.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_sailor.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_sailor.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: ClothingUniformJumpsuitUEGServiceWhite
+  name: UEG army uniform
+  description: A service uniform for enlisted members of the UEG Navy. This one is colored in Summer White and is to be worn during times of peace. Today it is almost never seen.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_service_white.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Uniforms/SAN_service_white.rsi

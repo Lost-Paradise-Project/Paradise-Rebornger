@@ -141,9 +141,56 @@
       coefficients:
         Blunt: 0.75
         Slash: 0.75
-        Piercing: 0.9
+        Piercing: 0.75
         Heat: 0.9
   - type: Tag
     tags:
     - ClothMade
     - WhitelistChameleon
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: LPPClothingOuterUEGRepresentative
+  name: UEG Representative coat
+  description: Leather trench coat with a bulletproof vest, it screams- "Stylish!".
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/OuterClothing/Coats/UEGreprcoat.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/OuterClothing/Coats/UEGreprcoat.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.65
+        Slash: 0.65
+        Piercing: 0.65
+        Heat: 0.65
+  - type: ExplosionResistance
+    damageCoefficient: 0.7
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: LPPClothingOuterCoatUEG
+  name: UEG Coat
+  description: Lightweight nylon coat with bright neon stripes and a print on the back, as well as pockets.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/OuterClothing/Coats/UEGcoat.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/OuterClothing/Coats/UEGcoat.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: LPPClothingOuterCoatPizzasecurity
+  name: pizzaria security coat
+  description: Coat for protection againts cold at your nightshift in pizzaria.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/OuterClothing/Coats/jaybomber.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/OuterClothing/Coats/jaybomber.rsi

@@ -1,0 +1,19 @@
+- type: loadout
+  id: LPPDetectiveZavod
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitZavodDetective
+
+- type: loadout
+  id: LPPDetectiveZavodAlt
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitZavodDetectiveAlt
+
+- type: loadout
+  id: LPPDetectiveZavodCoat
+  equipment:
+    outerClothing: ClothingOuterJacketZavDetective
+
+- type: loadout
+  id: LPPDetectiveZavodCaotalt
+  equipment:
+    outerClothing: ClothingOuterJacketZavSecurity

@@ -63,3 +63,29 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.95
     sprintModifier: 0.95
+
+- type: entity
+  parent: [ClothingBeltStorageBase, BaseMajorContraband]
+  id: LPPClothingBeltPGWebbing
+  name: PG webbing
+  description: Predator Grosperox Webbing for all the soldier's needs
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Belt/pg-rps.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Belt/pg-rps.rsi
+
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: LPPClothingBeltUEGWebbing
+  name: UEG webbing
+  description: Dense durathread webbing in the colors of the UEG troops.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Belt/UEG.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Belt/UEG.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.9

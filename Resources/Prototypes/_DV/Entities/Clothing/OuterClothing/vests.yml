@@ -1,0 +1,19 @@
+- type: entity
+  parent: ClothingOuterBase
+  id: ClothingOuterVestFlak
+  name: flak jacket
+  description: A dusty and weathered flak jacket.
+  components:
+  - type: Sprite
+    sprite: _DV/Clothing/OuterClothing/Vests/flak.rsi
+  - type: Clothing
+    sprite: _DV/Clothing/OuterClothing/Vests/flak.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.75
+        Heat: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.4

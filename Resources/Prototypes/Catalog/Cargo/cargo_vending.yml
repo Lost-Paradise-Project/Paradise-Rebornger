@@ -41,7 +41,7 @@
   container:
     entity: WrappedParcel
     containerId: contents
-  cost: 2580
+  cost: 6500 #LP edit
   category: cargoproduct-category-name-service
   group: market
 

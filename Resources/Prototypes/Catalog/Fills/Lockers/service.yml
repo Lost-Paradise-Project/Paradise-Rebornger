@@ -105,6 +105,7 @@
       - id: WireBrush
     - id: PlushieLizardJobJanitor
       prob: 0.02
+    - id: ClothingNeckCloakJanitor #LP edit
 
 - type: entity
   id: ClosetLegalFilled

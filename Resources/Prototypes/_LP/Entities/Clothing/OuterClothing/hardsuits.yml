@@ -517,3 +517,207 @@
     sprite: _LP/Clothing/OuterClothing/Hardsuits/acientsyndiehardsuit.rsi
   - type: ToggleableClothing
     clothingPrototype: LPPClothingHeadHelmetHardsuitVeteranHelmet
+
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: LPPClothingOuterDetectiveHardsuit
+  name: Detective pressure protection suit
+  description: FDA-87d - "Watson" is a lightweight suit that helps NanoTrasen detectives investigate even in space!
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/OuterClothing/Hardsuits/detectivehardsuit.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/OuterClothing/Hardsuits/detectivehardsuit.rsi
+  - type: Item
+    size: Large
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.85
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.65
+        Caustic: 0.7
+        Heat: 0.8
+  - type: ClothingSpeedModifier
+    sprintModifier: 0.90
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: LPPClothingHeadHelmetDetectiveHardsuit
+  - type: StaminaResistance
+    damageCoefficient: 0.7
+
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: LPPClothingOuterHardsuitSWAT
+  name: SWAT hardsuit
+  description: FPA-56 - "Rhino" is a special protective kit that protects against the dangerous effects of a low-pressure environment. It has an innovative additional layer of armor used by security personnel.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/OuterClothing/Hardsuits/swat-armor.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/OuterClothing/Hardsuits/swat-armor.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.7
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.45
+        Slash: 0.45
+        Piercing: 0.6
+        Heat: 0.8
+        Radiation: 0.25
+        Caustic: 0.75
+  - type: ExplosionResistance
+    damageCoefficient: 0.4
+  - type: ToggleableClothing
+    clothingPrototype: LPPClothingHeadHelmetHardsuitSWAT
+  - type: StaminaResistance
+    damageCoefficient: 0.3
+
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: LPPClothingOuterHardsuitScienceUEG
+  name: Hardsuit UEG-34r - "Gelehrt"
+  description: A research spacesuit designed for the work of UEG scientists, as well as technicians in outer space and harsh planetary conditions.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/OuterClothing/Hardsuits/UEGsciense/body.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/OuterClothing/Hardsuits/UEGsciense/body.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Caustic: 0.6
+        Heat: 0.6
+        Radiation: 0.1
+        Shock: 0.5
+        Cold: 0.5
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: LPPClothingHeadHelmetScienceUEG
+
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: LPPClothingOuterHardsuitLeaderUEG
+  name: Hardsuit UEG-75e - "Liquidator"
+  description: A prototype of a new line of UEG spacesuits. Mobility, bullet deflection, protection from extremely high pressure and all this is in YOUR hands. Xenophobia is included.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/OuterClothing/Hardsuits/UEGleader/upgrlead.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/OuterClothing/Hardsuits/UEGleader/upgrlead.rsi
+  - type: Item
+    size: Huge
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.3
+        Slash: 0.3
+        Piercing: 0.3
+        Caustic: 0.2
+        Heat: 0.5
+        Radiation: 0.2
+  - type: Reflect
+    reflectProb: 0.15
+    spread: 100
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.85
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: LPPClothingOuterHardsuitHelmetLeaderUEG
+  - type: StaminaResistance
+    damageCoefficient: 0.3
+
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: LPPClothingOuterHardsuitUEG
+  name: Hardsuit UEG-72s - "Soldat"
+  description: The standard spacesuit of the troops of the New Government of the Earth is convenient and reliable.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/OuterClothing/Hardsuits/UEGtrooper/hard.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/OuterClothing/Hardsuits/UEGtrooper/hard.rsi
+  - type: Item
+    size: Huge
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.45
+        Caustic: 0.5
+        Heat: 0.5
+        Radiation: 0.2
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: LPPClothingOuterHardsuitHelmetUEG
+  - type: StaminaResistance
+    damageCoefficient: 0.5
+
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: LPPClothingOuterHardsuitSpecopsUEG
+  name: Hardsuit UEG-72+ - "Schatten"
+  description: A modified version of the standard UEG spacesuit provides mobility, durability, as well as good protection from all kinds of damage.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/OuterClothing/Hardsuits/UEGspecops/hard.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/OuterClothing/Hardsuits/UEGspecops/hard.rsi
+  - type: Item
+    size: Huge
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.65
+        Slash: 0.65
+        Piercing: 0.35
+        Caustic: 0.2
+        Heat: 0.4
+        Radiation: 0.2
+  - type: Reflect
+    reflectProb: 0.1
+    spread: 100
+  - type: ClothingSpeedModifier
+    walkModifier: 1.1
+    sprintModifier: 1.05
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: LPPClothingOuterHardsuitHelmetSpecopsUEG
+  - type: StaticPrice
+    price: 350
+  - type: StaminaResistance
+    damageCoefficient: 0.55

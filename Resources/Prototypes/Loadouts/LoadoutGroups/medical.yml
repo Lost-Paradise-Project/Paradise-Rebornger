@@ -50,6 +50,10 @@
   - ChiefMedicalOfficerJumpskirt
   - ChiefMedicalOfficerTurtleneckJumpsuit
   - ChiefMedicalOfficerTurtleneckJumpskirt
+#LP edit start
+  - LPPCMOFormalskirt
+  - LPPCMOMilitary
+#LP edit end
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerOuterClothing
@@ -164,6 +168,7 @@
   loadouts:
   - ChemistJumpsuit
   - ChemistJumpskirt
+  - LPPMedicMilitaryChemistry #LP edit
 
 - type: loadoutGroup
   id: ChemistOuterClothing

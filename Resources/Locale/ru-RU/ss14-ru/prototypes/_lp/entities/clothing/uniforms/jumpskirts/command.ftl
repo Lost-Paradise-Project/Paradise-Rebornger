@@ -1,0 +1,12 @@
+ent-LPPClothingUniformJumpskirtCaptainFormalSkirt = строгая юбка капитана
+    .desc = { ent-ClothingUniformJumpskirtCaptain.desc }
+ent-LPPClothingUniformJumpskirtHoPFormalSkirt = строгая юбка главы персонала
+    .desc = { ent-ClothingUniformJumpskirtHoP.desc }
+ent-LPPClothingUniformJumpskirtCMOFormalSkirt = строгая юбка главного врача
+    .desc = { ent-ClothingUniformJumpskirtCMOTurtle.desc }
+ent-LPPClothingUniformJumpskirtHoSFormalSkirt = строгая юбка главы службы безопасности
+    .desc = { ent-ClothingUniformJumpskirtHoSAlt.desc }
+ent-LPPClothingUniformJumpskirtQMFormalSkirt = строгая юбка квартирмейстера
+    .desc = { ent-ClothingUniformJumpskirtQMTurtleneck.desc }
+ent-LPPClothingUniformJumpskirtResearchDirectorFormalSkirt = строгая юбка научного директора
+    .desc = { ent-ClothingUniformJumpskirtResearchDirector.desc }

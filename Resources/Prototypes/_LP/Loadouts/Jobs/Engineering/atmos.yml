@@ -39,11 +39,31 @@
     jumpsuit: LPPClothingUniformJumpskirtAtmosBlackSkirt
 
 - type: loadout
+  id: LPPAtmosShirtSkirt
+  equipment:
+    jumpsuit: LPPClothingUniformJumpskirtAtmosShirt
+
+- type: loadout
   id: LPPAtmosTurtleneckSkirt
   equipment:
     jumpsuit: LPPClothingUniformJumpskirtAtmosTurtleneck
 
 - type: loadout
-  id: LPPAtmosShirtSkirt
+  id: LPPAtmosJumpsuitZavod
   equipment:
-    jumpsuit: LPPClothingUniformJumpskirtAtmosShirt
+    jumpsuit: ClothingUniformJumpsuitZavodAtmos
+
+- type: loadout
+  id: LPPAtmosJumpsuitNT
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNTAtmos
+
+- type: loadout
+  id: LPPAtmosJumpsuitHeph
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHephAtmos
+
+- type: loadout
+  id: LPPAtmosJumpsuitMilitary
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryAtmospherics

@@ -35,9 +35,9 @@
   priority: 5
   minimumTemperature: 1500
   minimumRequirements:
-    Nitrogen: 10
-    Tritium: 20
-    BZ: 5
+    Nitrogen: 0.01
+    Tritium: 0.01
+    BZ: 0.01
   effects:
   - !type:NitriumProductionReaction {}
 
@@ -59,8 +59,8 @@
   maximumTemperature: 26
   # LP Edit End
   minimumRequirements:
-    Nitrogen: 10
-    Tritium: 5
+    Nitrogen: 0.01
+    Tritium: 0.01
   effects:
   - !type:HyperNobliumProductionReaction {}
 

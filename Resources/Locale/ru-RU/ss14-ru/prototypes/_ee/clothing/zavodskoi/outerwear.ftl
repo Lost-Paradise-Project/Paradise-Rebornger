@@ -1,0 +1,9 @@
+ent-ClothingOuterJacketZavDetective = жилет детектива
+    .desc = Крепкий дюратканевый жилет частных детективов компании Zavodskoi Interstellar.
+    .suffix = Zavodskoi
+ent-ClothingOuterJacketZavSecurity = ветровка службы безопасности
+    .desc = Ветровая куртка охранный служб от Zavodskoi Interstellar.
+    .suffix = Zavodskoi
+ent-ClothingOuterJacketZavSecurityAlt = ветровка службы безопасности
+    .desc = Ветровая куртка охранный служб от Zavodskoi Interstellar. В альтернативных цветах.
+    .suffix = Zavodskoi, альт

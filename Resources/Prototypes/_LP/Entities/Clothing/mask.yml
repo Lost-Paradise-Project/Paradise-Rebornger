@@ -284,6 +284,17 @@
     - Snout
 
 - type: entity
+  parent: ClothingMaskGasDeathSquad
+  id: LPPClothingMaskUEG
+  name: UEG skitarii gasmask
+  description: Stirdy gasmask for skitarii units.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Mask/UEGgas.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Mask/UEGgas.rsi
+
+- type: entity
   parent: LPPClothingBalaclavawide
   id: LPPClothingMaskPGWrittenOff
   name: balaclava
@@ -293,3 +304,11 @@
     sprite: _LP/Clothing/Mask/balaclava.rsi
   - type: Clothing
     sprite: _LP/Clothing/Mask/balaclava.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+        Radiation: 0.75

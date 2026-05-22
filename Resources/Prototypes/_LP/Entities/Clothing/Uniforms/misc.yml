@@ -431,3 +431,134 @@
     sprite: _LP/Clothing/Uniforms/Jumpsuit/inteqjumpsuit.rsi
   - type: Clothing
     sprite: _LP/Clothing/Uniforms/Jumpsuit/inteqjumpsuit.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: LPPBikinisWhiteblue
+  name: white blue bikini
+  description: You can't call me Miku.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_whiteblue.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_whiteblue.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: LPPBikinisWhitegreen
+  name: white green bikini
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_whitegreen.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_whitegreen.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: LPPBikinisWhiteorange
+  name: white orange bikini
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_whiteorange.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_whiteorange.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: LPPBikinisWhitepurple
+  name: white purple bikini
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_whitepurple.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_whitepurple.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: LPPBikinisWhitered
+  name: white red bikini
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_whitered.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_whitered.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: LPPBikinisBlackblue
+  name: black blue bikini
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_blackblue.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_blackblue.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: LPPBikinisBlackgreen
+  name: black green bikini
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_blackgreen.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_blackgreen.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: LPPBikinisBlackorange
+  name: black orange bikini
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_blackorange.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_blackorange.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: LPPBikinisBlackpurple
+  name: black purple bikini
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_blackpurple.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_blackpurple.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: LPPBikinisBlackred
+  name: black red bikini
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_blackred.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Summer/Bikinis/bikinis_blackred.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitSummershirt
+  name: black summer shirt
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/blackbeachshirt.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/blackbeachshirt.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitSummershirtblack
+  name: summer shirt
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/whitebeachshirt.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/whitebeachshirt.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitLacerobe
+  name: lacerobe
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/lacerobe.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/lacerobe.rsi

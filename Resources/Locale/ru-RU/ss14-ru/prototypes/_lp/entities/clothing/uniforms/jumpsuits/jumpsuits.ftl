@@ -1,0 +1,16 @@
+ent-LPPClothingUniformJumpsuitPG = комбинезон ПГ
+    .desc = Стандартный комбнезон наёмников ПГ.
+ent-LPPClothingUniformBlackJumpsuitPG = чёрный комбинезон ПГ
+    .desc = Стелс костюм для ночных операций.
+ent-LPPClothingUniformSnowJumpsuitPG = снежный комбинезон ПГ
+    .desc = Стандартный комбинезон в снежной расцветке ПГ.
+ent-LPPClothingUniformJumpsuitShortsky = топик и джинсы небесного цвета
+    .desc = Почувствуй тепло солнца.
+ent-LPPClothingUniformJumpsuitSummer = летние шорты и топик
+    .desc = Почувствуй тепло солнца.
+ent-LPPClothingUniformJumpsuitSkysummer = летние шорты и топик небесного цвета
+    .desc = Почувствуй тепло солнца.
+ent-LPPClothingUniformJumpsuitSky = рубашка и джинсы небесного цвета
+    .desc = Небесно голубого цвета костюм, самое то под лето.
+ent-LPPClothingUniformJumpsuitDirtyblue = рубашка и джинсы грязно голубого цвета
+    .desc = Грязно голубого цвета костюм, самое то под лето для тех, кто хочет менее заметные пятны на своей одежде.

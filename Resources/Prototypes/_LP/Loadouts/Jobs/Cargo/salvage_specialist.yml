@@ -8,9 +8,33 @@
   equipment:
     jumpsuit: LPPClothingUniformExplorerAlternative
 
+- type: loadout
+  id: LPPSalvageExplorer
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitExplorer
+
+- type: loadout
+  id: LPPSalvageMilitary
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitarySalvageSpecialist
+
+- type: loadout
+  id: LPPSalvageNTMiner
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNTMiner
+
+- type: loadout
+  id: LPPSalvageHephMiner
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHephMiner
+
 - type: loadoutGroup
   id: LPPSalvageSpecialistJumpsuit
   name: loadout-group-salvage-specialist-jumpsuit
   loadouts:
   - LPPSalvageSpecialistUniform
   - LPPSalvageExplorerAlternative
+  - LPPSalvageExplorer
+  - LPPSalvageMilitary
+  - LPPSalvageNTMiner
+  - LPPSalvageHephMiner

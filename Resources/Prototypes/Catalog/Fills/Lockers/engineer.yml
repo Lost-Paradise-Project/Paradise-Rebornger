@@ -169,6 +169,7 @@
     - id: AtmosPlating # Corvax-Wega-ModularSuits-Edit
     - id: OxygenTankFilled
     - id: ClothingMaskBreath
+    - id: LPPClothingShoesBootsMagAtmos #LP edit
 
 - type: entity
   id: LockerEngineerFilledHardsuit

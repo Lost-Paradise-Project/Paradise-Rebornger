@@ -22,3 +22,279 @@
   - type: Construction
     graph: LPPHelmetSecLight
     node: LPPHelmetSecLight
+
+- type: entity
+  parent: ClothingHeadHatHardhatBase
+  id: LPPClothingHeadHatTacticalHelmet
+  name: PG tactical helmet
+  description: Tactical helmet, for special operations. got a flashlight.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Helmets/pg-helmet-tacticool.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Helmets/pg-helmet-tacticool.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.6
+        Heat: 0.8
+
+- type: entity
+  parent: ClothingHeadBase
+  id: LPPClothingHeadTSFHelmet
+  name: TSF helmet
+  description: Helmet for TSF needs
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Helmets/tsf-helmet.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Helmets/tsf-helmet.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.6
+        Piercing: 0.7
+        Heat: 0.8
+
+- type: entity
+  parent: ClothingHeadBase
+  id: LPPClothingHeadUrbanHelmetPG
+  name: urban PG helmet
+  description: Helmet for PG needs
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Helmets/tan-helmet.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Helmets/tan-helmet.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.6
+        Heat: 0.8
+
+- type: entity
+  parent: ClothingHeadBase
+  id: LPPClothingHeadHelmetUEG
+  name: UEG Helmet
+  description: A sturdy helmet made of kevlar and plasteel, will protect against small-caliber bullets, as well as shrapnel.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Helmets/UEGhelm.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Helmets/UEGhelm.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.85
+
+- type: entity
+  parent: LPPClothingHeadUrbanHelmetPG
+  id: LPPClothingHeadHelmetUEGAssault
+  name: UEG assault helmet
+  description: Robust helmet with additional armor on neck, pretty good for asaults.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Helmets/UEGassault.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Helmets/UEGassault.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: LPPClothingHeadHelmetHeavy
+  name: Heavy armor helmet
+  description: A sturdy helmet made of kevlar and plasteel, will protect against small-caliber bullets, as well as shrapnel.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Helmets/heavy.rsi
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+      visible: false
+    - state: icon-open
+      visible: true
+      map: ["foldedLayer"]
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Helmets/heavy.rsi
+    equippedPrefix: open
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.85
+  - type: Foldable
+    folded: true
+    canFoldInsideContainer: true
+    unfoldVerbText: fold-zip-verb
+    foldVerbText: fold-unzip-verb
+  - type: FoldableClothing
+    foldedEquippedPrefix: open
+    foldedHeldPrefix: open
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: PressureProtection
+    lowPressureMultiplier: 100
+  - type: BreathMask
+  - type: Item
+    heldPrefix: open
+
+- type: entity
+  parent: ClothingHeadBase
+  id: LPPClothingHeadHelmetSwat
+  name: SWAT armor helmet
+  description: A sturdy helmet made of kevlar and plasteel, will protect against small-caliber bullets, as well as shrapnel.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Helmets/swat.rsi
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+      visible: false
+    - state: icon-open
+      visible: true
+      map: ["foldedLayer"]
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Helmets/swat.rsi
+    equippedPrefix: open
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.85
+  - type: Foldable
+    folded: true
+    canFoldInsideContainer: true
+    unfoldVerbText: fold-zip-verb
+    foldVerbText: fold-unzip-verb
+  - type: FoldableClothing
+    foldedEquippedPrefix: open
+    foldedHeldPrefix: open
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: PressureProtection
+    lowPressureMultiplier: 100
+  - type: BreathMask
+  - type: Item
+    heldPrefix: open
+
+- type: entity
+  parent: ClothingHeadBase
+  id: LPPClothingHeadHelmetSwatAlternative
+  name: Lightened SWAT armor helmet
+  description: A sturdy helmet made of kevlar and plasteel, will protect against small-caliber bullets, as well as shrapnel.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Helmets/swatalt.rsi
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+      visible: false
+    - state: icon-open
+      visible: true
+      map: ["foldedLayer"]
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Helmets/swatalt.rsi
+    equippedPrefix: open
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+  - type: Foldable
+    folded: true
+    canFoldInsideContainer: true
+    unfoldVerbText: fold-zip-verb
+    foldVerbText: fold-unzip-verb
+  - type: FoldableClothing
+    foldedEquippedPrefix: open
+    foldedHeldPrefix: open
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: PressureProtection
+    lowPressureMultiplier: 100
+  - type: BreathMask
+  - type: Item
+    heldPrefix: open
+
+- type: entity
+  parent: ClothingHeadBase
+  id: LPPClothingHeadHelmetSwatEpistemic
+  name: Epistemic SWAT armor helmet
+  description: A sturdy helmet made of kevlar and plasteel, will protect against small-caliber bullets, as well as shrapnel.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Helmets/swatepistemic.rsi
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+      visible: false
+    - state: icon-open
+      visible: true
+      map: ["foldedLayer"]
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Helmets/swatepistemic.rsi
+    equippedPrefix: open
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+  - type: Foldable
+    folded: true
+    canFoldInsideContainer: true
+    unfoldVerbText: fold-zip-verb
+    foldVerbText: fold-unzip-verb
+  - type: FoldableClothing
+    foldedEquippedPrefix: open
+    foldedHeldPrefix: open
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: PressureProtection
+    lowPressureMultiplier: 100
+  - type: BreathMask
+  - type: Item
+    heldPrefix: open
+
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: LPPClothingHeadHelmetSalvager
+  name: Salvager helmet
+  description: Sturdy metal helmet, what else do you need?
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Helmets/salvhelmet.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Helmets/salvhelmet.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+
+- type: entity
+  parent: ClothingHeadHatHardhatBase
+  id: LPPClothingHeadHatTacticalHelmetWrittenOff
+  name: Decommissioned tactical helmet PG
+  description: A decommissioned PG helmet with a built-in flashlight
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Helmets/pg-helmet-tacticool.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Helmets/pg-helmet-tacticool.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9

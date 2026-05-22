@@ -1,0 +1,10 @@
+ent-ClothingHeadHatHoodAcidRaincoat = капюшон противокислотного плаща
+    .desc = Полупрозрачный капюшон от плаща, защищают от кислотных воздействий.
+ent-ClothingHeadHatHoodAcidRaincoatBlue = { ent-ClothingHeadHatHoodAcidRaincoat }
+    .desc = { ent-ClothingHeadHatHoodAcidRaincoat.desc }
+ent-ClothingHeadHatHoodAcidRaincoatGreen = { ent-ClothingHeadHatHoodAcidRaincoat }
+    .desc = { ent-ClothingHeadHatHoodAcidRaincoat.desc }
+ent-ClothingHeadHatHoodAcidRaincoatMagenta = { ent-ClothingHeadHatHoodAcidRaincoat }
+    .desc = { ent-ClothingHeadHatHoodAcidRaincoat.desc }
+ent-ClothingHeadHatHoodAcidRaincoatYellow = { ent-ClothingHeadHatHoodAcidRaincoat }
+    .desc = { ent-ClothingHeadHatHoodAcidRaincoat.desc }

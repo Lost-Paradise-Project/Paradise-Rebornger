@@ -239,6 +239,7 @@
     - id: BoxCMOCircuitboards
     - id: PlushieLizardJobChiefmedicalofficer
       prob: 0.02
+    - id: ClothingBeltMilitaryWebbingCMO #LP edit
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -361,7 +362,11 @@
     - id: ClothingOuterCoatHoSGreatcoat
     - id: BookBusido
     # Corvax-End
-    - id: HeadOfSecurityWeaponUndetermined #LP Edit
+#LP edit start
+    - id: HeadOfSecurityWeaponUndetermined
+    - id: ClothingOuterArmorHoSHeavy
+    - id: ClothingHeadHelmetHeavyHoS
+#LP edit end
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable

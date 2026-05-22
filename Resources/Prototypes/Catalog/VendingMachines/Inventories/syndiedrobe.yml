@@ -16,6 +16,12 @@
     ClothingNeckScarfStripedSyndieRed: 2
     ClothingShoesBootsWinterSyndicate: 2
     CardBoxSyndicate: 2 # Floof - from Frontier
+#LP edit start
+    ClothingUniformJumpsuitParamedicSyndie: 2
+    ClothingUniformJumpsuitRecruitSyndie: 2
+    ClothingUniformJumpsuitRepairmanSyndie: 2
+    ClothingUniformJumpsuitChiefEngineerSyndie: 2
+#LP edit end
   contrabandInventory:
     ToyFigurineFootsoldier: 1
     ToyFigurineNukieElite: 1

@@ -41,3 +41,14 @@
     sprite: _LP/Clothing/Uniforms/Sec/Engineer/securityEngineerJumpSkirt.rsi
   - type: Clothing
     sprite: _LP/Clothing/Uniforms/Sec/Engineer/securityEngineerJumpSkirt.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpSuitTactical
+  name: security tactical jumpsuit
+  description: This jumpsuit is a full set of protection with elbow and knee pads.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Sec/tactic.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Sec/tactic.rsi

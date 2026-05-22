@@ -1,0 +1,123 @@
+# Headgear other than armor
+- type: entity
+  parent: [ClothingHeadHelmetBasic]
+  id: ClothingHeadHelmetHeavyAblative
+  name: heavy laser-ablative helmet
+  description: A heavy laser-ablative helmet manufactured by Zavodskoi Interstellar and sold to NT Security. It trades mobility for unparalleled protection against laser weaponry.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/Generic/Helmet/heavy_helmet_ablative.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/Generic/Helmet/heavy_helmet_ablative.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.95
+          Slash: 0.95
+          Piercing: 0.95
+          Heat: 0.7
+          Caustic: 0.9
+    - type: Reflect
+      reflectProb: 0.25
+      spread: 270
+      reflects:
+        - Energy
+    - type: ClothingSpeedModifier
+      walkModifier: 0.95
+      sprintModifier: 0.95
+
+- type: entity
+  parent: [ClothingHeadHelmetBasic]
+  id: ClothingHeadHelmetHeavyBallistic
+  name: heavy ballistic helmet
+  description: A heavy ballistic helmet manufactured by Zavodskoi Interstellar and sold to NT Security. It trades mobility for unparalleled protection against ballistic weaponry.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/Generic/Helmet/heavy_helmet_ballistic.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/Generic/Helmet/heavy_helmet_ballistic.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.95
+          Slash: 0.95
+          Piercing: 0.7
+    - type: ClothingSpeedModifier
+      walkModifier: 0.95
+      sprintModifier: 0.95
+
+- type: entity
+  parent: [ClothingHeadHelmetBasic]
+  id: ClothingHeadHelmetHeavyRiot
+  name: heavy riot helmet
+  description: A heavy riot helmet manufactured by Zavodskoi Interstellar and sold to NT Security. It trades mobility for unparalleled protection against blunt force.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/Generic/Helmet/heavy_helmet_riot.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/Generic/Helmet/heavy_helmet_riot.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.7
+          Slash: 0.7
+          Piercing: 0.9
+    - type: Reflect
+      reflectProb: 0.05
+      spread: 270
+      reflects:
+        - Energy
+        - NonEnergy
+    - type: ClothingSpeedModifier
+      walkModifier: 0.95
+      sprintModifier: 0.95
+
+- type: entity
+  parent: [ClothingHeadHelmetBasic]
+  id: ClothingHeadHelmetHeavyStandard
+  name: heavy security helmet
+  description: A heavy security helmet manufactured by Zavodskoi Interstellar and sold to NT Security. It trades mobility for unparalleled protection against general threats.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/Generic/Helmet/heavy_helmet_standard.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/Generic/Helmet/heavy_helmet_standard.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.9
+          Slash: 0.85
+          Piercing: 0.85
+          Heat: 0.9
+          Caustic: 0.8
+    - type: Reflect
+      reflectProb: 0.05
+      spread: 270
+      reflects:
+        - Energy
+        - NonEnergy
+    - type: ClothingSpeedModifier
+      walkModifier: 0.95
+      sprintModifier: 0.95
+
+- type: entity
+  parent: [ClothingHeadHelmetHeavyStandard]
+  id: ClothingHeadHelmetHeavyHoS
+  name: advanced combat helmet
+  description: A heavy security helmet manufactured by Zavodskoi Interstellar and sold to NT Security. This helmet bears markings for NT Command Staff.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/Generic/Helmet/heavy_helmet_hos.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/Generic/Helmet/heavy_helmet_hos.rsi
+      clothingVisuals:
+        head:
+        - state: equipped-HELMET
+        - state: equipped-HELMET-unshaded
+          shader: unshaded
+    - type: Reflect
+      reflectProb: 0.1
+      spread: 270
+      reflects:
+        - Energy
+        - NonEnergy

@@ -2,3 +2,18 @@
   id: LPRDPanties
   equipment:
     underwear: LPPRDPanties
+
+- type: loadout
+  id: LPPRDSummer
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitRDSummer
+
+- type: loadout
+  id: LPPRDFormalskirt
+  equipment:
+    jumpsuit: LPPClothingUniformJumpskirtResearchDirectorFormalSkirt
+
+- type: loadout
+  id: LPPRDMilitary
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryResearchDirector

@@ -1,0 +1,91 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitPG
+  name: PG jumpsuit
+  description: Jumpsuit for all PG army's needs
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/WTF/pg-uniform.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/WTF/pg-uniform.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9 # Those overalls ARE sturdy.
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformBlackJumpsuitPG
+  name: black PG jumpsuit
+  description: Jumpsuit for all PG elite stealth army's needs
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/WTF/pg-black-uniform.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/WTF/pg-black-uniform.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformSnowJumpsuitPG
+  name: snow PG jumpsuit
+  description: Jumpsuit for all PG army's needs
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/WTF/snow-pg-uniform.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/WTF/snow-pg-uniform.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: LPPClothingUniformJumpsuitShortsky
+  name: short sky shirts and jeans
+  description: Feel the heat of the sun.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/shortsky.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/shortsky.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: LPPClothingUniformJumpsuitSummer
+  name: summer shorts
+  description: Feel the heat of the sun.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/summer.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/summer.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: LPPClothingUniformJumpsuitSkysummer
+  name: sky summer shorts
+  description: Feel the heat of the sun.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/skysummer.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/skysummer.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: LPPClothingUniformJumpsuitSky
+  name: sky shirt and jeans
+  description: Clean sky colored jeans with white shirt.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/sky.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/sky.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: LPPClothingUniformJumpsuitDirtyblue
+  name: dirty blue shirt and jeans
+  description: Dirty blue colored jeans with white shirt.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/dirtyblue.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/dirtyblue.rsi

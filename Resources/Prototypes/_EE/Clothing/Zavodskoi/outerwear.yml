@@ -1,0 +1,44 @@
+- type: entity
+  parent: ClothingOuterCoatDetective
+  id: ClothingOuterJacketZavDetective
+  name: detective jacket
+  suffix: Zavodskoi
+  description: A sturdy jacket worn by detectives contracted from Zavodskoi Interstellar
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/Zavodskoi/OuterClothing/zav_jacket_detective.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/Zavodskoi/OuterClothing/zav_jacket_detective.rsi
+    - type: TemperatureProtection
+      heatingCoefficient: 0.1
+      coolingCoefficient: 0.1
+
+- type: entity
+  parent: ClothingOuterVestSecurityMedic
+  id: ClothingOuterJacketZavSecurity
+  name: security shell jacket
+  suffix: Zavodskoi
+  description: A shell jacket worn by security staff contracted from Zavodskoi Interstellar
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/Zavodskoi/OuterClothing/zav_jacket_security.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/Zavodskoi/OuterClothing/zav_jacket_security.rsi
+    - type: TemperatureProtection
+      heatingCoefficient: 0.1
+      coolingCoefficient: 0.1
+
+- type: entity
+  parent: ClothingOuterVestSecurityMedic
+  id: ClothingOuterJacketZavSecurityAlt
+  name: security shell jacket
+  suffix: Zavodskoi, alt
+  description: A shell jacket worn by security staff contracted from Zavodskoi Interstellar
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/Zavodskoi/OuterClothing/zav_jacket_security_alt.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/Zavodskoi/OuterClothing/zav_jacket_security_alt.rsi
+    - type: TemperatureProtection
+      heatingCoefficient: 0.1
+      coolingCoefficient: 0.1

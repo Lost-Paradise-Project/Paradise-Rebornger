@@ -1,0 +1,10 @@
+ent-LPPClothingUniformJumpsuitOperativeUEG = костюм скитария ОПЗ
+    .desc = Свитер и карго брюки- стиль и удобство.
+ent-LPPClothingUniformJumpskirtMadienPNZ = костюм горничной ОПЗ
+    .desc = Современный костюм с возможностью подтянуть его во всех местах, для максимального раскрытия вашей фигуры.
+ent-LPPClothingUniformJumpsuitOverallsUEG = комбинезон техника скитариев ОПЗ
+    .desc = Комбинезон с подтяжками. Не бойтесь запачкаться!
+ent-LPPClothingUniformJumpsuitRepresentativeUEG = костюм представителя ОПЗ
+    .desc = Прямые брюки и выглаженная рубашка показатель вашей серьёзности.
+ent-LPPClothingUniformJumpsuitCamoUEG = городской камуфляж скитариев ОПЗ
+    .desc = Нет, это не отсылка на фанатиков из Чернобыля.

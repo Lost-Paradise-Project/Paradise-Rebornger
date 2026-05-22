@@ -34,6 +34,11 @@
     LPPClothingHeadSecurityHatCamo: 3
     LPPClothingUniformJumpsuitSecCamo: 3
     LPPClothingNeckShemagRed: 3
+    LPPClothingHandsGlovesTacticalFingerless: 3
+    ClothingUniformJumpsuitSecSummer: 3
+    LPPClothingOuterVestDareDevil: 3
+    ClothingOuterArmorDuraVest: 3
+    ClothingOuterArmorPlateCarrier: 3
 #LP edit end
   contrabandInventory:
     ClothingMaskClownSecurity: 1

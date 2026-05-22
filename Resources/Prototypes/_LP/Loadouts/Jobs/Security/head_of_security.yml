@@ -2,3 +2,18 @@
   id: LPHOSPanties
   equipment:
     underwear: LPPHOSPanties
+
+- type: loadout
+  id: LPPHOSSummer
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHoSSummer
+
+- type: loadout
+  id: LPPHOSFormalskirt
+  equipment:
+    jumpsuit: LPPClothingUniformJumpskirtHoSFormalSkirt
+
+- type: loadout
+  id: LPPHOSCloakFur
+  equipment:
+    neck: ClothingNeckCloakHosFur

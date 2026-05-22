@@ -106,6 +106,11 @@
   - CaptainJumpsuitTurtleneck
   - CaptainJumpskirtTurtleneck
   # Corvax-Loadouts-End
+#LP edit start
+  - LPPCaptainSummer
+  - LPPCaptainFormalskirt
+  - LPPCaptainMilitary
+#LP edit end
 
 - type: loadoutGroup
   id: CaptainNeck
@@ -154,6 +159,11 @@
   - HoPJumpsuitTurtleneck
   - HoPJumpskirtTurtleneck
   # Corvax-Loadouts-End
+#LP edit start
+  - LPPHOPSummer
+  - LPPHOPFormalskirt
+  - LPPHOPMilitary
+#LP edit end
 
 - type: loadoutGroup
   id: HoPNeck
@@ -162,6 +172,10 @@
   loadouts:
   - HoPCloak
   - HoPMantle
+#LP edit start
+  - LPPHOPCloakBoat
+  - LPPHOPCloakNT
+#LP edit end
 
 - type: loadoutGroup
   id: HoPBackpack
@@ -200,6 +214,7 @@
   - LPPPassangerBlueTracksuit
   - LPPPassangerRedTracksuit
   - LPPPassangerGreenTracksuit
+  - LPPPassangerMilitary
   # LP edit end
 
 - type: loadoutGroup
@@ -482,6 +497,13 @@
   - BotanistJumpsuit
   - BotanistJumpskirt
   - BotanistOveralls
+#LP edit start
+  - LPPBotanistEOC
+  - LPPBotanistskirtEOC
+  - LPPBotanistEOCalt
+  - LPPBotanistskirtEOCalt
+  - LPPBotanistMilitary
+#LP edit end
 
 - type: loadoutGroup
   id: BotanistBackpack
@@ -706,6 +728,11 @@
   - QuartermasterTurtleneck
   - QuartermasterTurtleneckSkirt
   - QuartermasterFormalSuit
+#LP edit start
+  - LPPQMSummer
+  - LPPQMFormalskirt
+  - LPPQMMilitary
+#LP edit end
 
 - type: loadoutGroup
   id: QuartermasterNeck
@@ -759,6 +786,10 @@
   - LPPCargoTurtleneckSkirt
   - LPPCargoBlackShirt
   - LPPCargoBlackSkirt
+  - LPPCargoMilitary
+  - LPPCargoNTTech
+  - LPPCargoHephTech
+  - LPPCargoHephTechAlt
   # LP edit end
 
 - type: loadoutGroup
@@ -841,6 +872,10 @@
   - ChiefEngineerJumpskirt
   - ChiefEngineerTurtleneck
   - ChiefEngineerTurtleneckSkirt
+#LP edit start
+  - LPPCESummer
+  - LPPCEMilitary
+#LP edit end
 
 - type: loadoutGroup
   id: ChiefEngineerNeck
@@ -876,6 +911,11 @@
   loadouts:
   - YellowJumpsuit
   - YellowJumpskirt
+#LP edit start
+  - LPPEngineerHephAlt
+  - LPPEngineerNTAlt
+  - LPPEngineerZavodAlt
+#LP edit end
 
 #- type: loadoutGroup
 #  id: TechnicalAssistantJobTrinkets
@@ -913,6 +953,15 @@
   - LPPEngineerTurtleneckSkirt
   - LPPEngineerBlackShirt
   - LPPEngineerBlackSkirt
+  - LPPEngineerHeph
+  - LPPEngineerHephAlt
+  - LPPEngineerHephAlt2
+  - LPPEngineerNT
+  - LPPEngineerNTAlt
+  - LPPEngineerNTAlt2
+  - LPPEngineerZavod
+  - LPPEngineerZavodAlt
+  - LPPEngineerZavodAlt2
   # LP edit end
 
 - type: loadoutGroup
@@ -969,6 +1018,13 @@
   - LPPAtmosTurtleneckSkirt
   - LPPAtmosBlackShirt
   - LPPAtmosBlackSkirt
+  - LPPAtmosJumpsuitZavod
+  - LPPAtmosJumpsuitNT
+  - LPPAtmosJumpsuitHeph
+  - LPPAtmosJumpsuitMilitary
+  - LPPEngineerHephAlt2
+  - LPPEngineerNTAlt2
+  - LPPEngineerZavodAlt2
   # LP edit end
 
 - type: loadoutGroup
@@ -1036,6 +1092,11 @@
   - ResearchDirectorJumpsuitClassical
   - ResearchDirectorJumpskirtClassical
   # Corvax-Loadouts-End
+#LP edit start
+  - LPPRDFormalskirt
+  - LPPRDSummer
+  - LPPRDMilitary
+#LP edit end
 
 - type: loadoutGroup
   id: ResearchDirectorOuterClothing
@@ -1095,6 +1156,7 @@
   - LPPScienceTurtleneckSkirt
   - LPPScienceBlackShirt
   - LPPScienceBlackSkirt
+  - LPPScienceNTRoboticist
   # LP edit end
 
 - type: loadoutGroup
@@ -1116,6 +1178,7 @@
   - RoboticistLabCoat
   - RoboticistWintercoat
   - SeniorResearcherLabCoat
+  - LPPScienceExplorerCoat #LP edit
 
 - type: loadoutGroup
   id: ScientistShoes
@@ -1183,6 +1246,10 @@
   - HeadofSecurityJumpsuitBlack
   - HeadofSecurityJumpskirtBlack
   # Corvax-Loadouts-End
+#LP edit start
+  - LPPHOSSummer
+  - LPPHOSFormalskirt
+#LP edit end
 
 - type: loadoutGroup
   id: HeadofSecurityNeck
@@ -1193,6 +1260,7 @@
   - HeadofSecurityMantle
   - HeadofSecurityShoulderMantle # Corvax-Loadouts
   - HeadOfSecurityRobe # DeltaV
+  - LPPHOSCloakFur #LP edit
 
 - type: loadoutGroup
   id: HeadofSecurityOuterClothing
@@ -1222,6 +1290,7 @@
   loadouts:
   - WardenJumpsuit
   - WardenJumpskirt
+  - LPPWardenZavod #LP edit
 
 - type: loadoutGroup
   id: WardenOuterClothing
@@ -1271,6 +1340,10 @@
   - LPPSecurityBlackShirt
   - LPPSecuritySkirtBlackSkirt
   - LPPSecurityJeansSportswear
+  - LPPSecurityZavod
+  - LPPSecurityZavodAlt
+  - LPPSecurityZavodAlt2
+  - LPPSecurityTactical
   # LP edit end
 
 - type: loadoutGroup
@@ -1297,6 +1370,10 @@
   - ArmorVestSlim
   - SecurityOfficerOvercoat # Corvax
   - SecurityOfficerWintercoat
+#LP edit start
+  - LPPSecurityZavodJacket
+  - LPPSecurityZavodJacketAlt
+#LP edit end
 
 - type: loadoutGroup
   id: SecurityShoes
@@ -1343,6 +1420,10 @@
   - DetectiveJumpskirt
   - NoirJumpsuit
   - NoirJumpskirt
+#LP edit start
+  - LPPDetectiveZavod
+  - LPPDetectiveZavodAlt
+#LP edit end
 
 - type: loadoutGroup
   id: DetectiveOuterClothing
@@ -1351,6 +1432,10 @@
   - DetectiveArmorVest
   - DetectiveCoat
   - DetectiveCoatGrey
+#LP edit start
+  - LPPDetectiveZavodCoat
+  - LPPDetectiveZavodCaotalt
+#LP edit end
 
 - type: loadoutGroup
   id: DetectiveJobTrinkets
@@ -1365,6 +1450,7 @@
   loadouts:
   - SecurityJumpsuitGrey # Corvax-Resprite
   - SecurityJumpskirtGrey # Corvax-Resprite
+  - LPPSecurityZavodCadet #LP edit
 
 #- type: loadoutGroup
 #  id: SecurityCadetJobTrinkets

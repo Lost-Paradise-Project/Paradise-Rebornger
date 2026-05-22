@@ -1,0 +1,14 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadTechPriest
+  name: automaturge hood
+  description: Protects the mind that makes artificial minds.
+  components:
+  - type: Sprite
+    sprite: _NyanoTrasen/Clothing/Head/Hats/techpriest.rsi
+  - type: Clothing
+    sprite: _NyanoTrasen/Clothing/Head/Hats/techpriest.rsi
+  - type: HideLayerClothing
+    slots:
+    - Snout
+    - Hair

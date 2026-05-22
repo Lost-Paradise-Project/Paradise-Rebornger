@@ -47,3 +47,23 @@
   id: LPPCargoShirtSkirt
   equipment:
     jumpsuit: LPPClothingUniformJumpskirtCargoShirt
+
+- type: loadout
+  id: LPPCargoMilitary
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryCargo
+
+- type: loadout
+  id: LPPCargoNTTech
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNTCargoTech
+
+- type: loadout
+  id: LPPCargoHephTech
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHephCargoTech
+
+- type: loadout
+  id: LPPCargoHephTechAlt
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHephCargoTechAlt

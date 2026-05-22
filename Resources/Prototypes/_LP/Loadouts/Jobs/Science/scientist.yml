@@ -49,6 +49,16 @@
     jumpsuit: LPPClothingUniformJumpskirtScienceShirt
 
 - type: loadout
+  id: LPPScienceNTRoboticist
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNTRoboticist
+
+- type: loadout
+  id: LPPScienceExplorerCoat
+  equipment:
+    outerClothing: ClothingOuterExplorerCoat
+
+- type: loadout
   id: LPPSeniorScientistPDA
   equipment:
     id: LPPSeniorScientistPDA

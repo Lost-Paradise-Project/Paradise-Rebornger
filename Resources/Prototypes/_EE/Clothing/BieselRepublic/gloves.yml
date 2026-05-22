@@ -1,0 +1,11 @@
+- type: entity
+  parent: [ClothingHandsGlovesCombat]
+  id: ClothingHandsGlovesCombatAIS
+  name: AIS combat gloves
+  description: A pair of tactical gloves of an ancient Solarian design, which see common use in the Alliance of Independent Systems's armed forces.
+  suffix: AIS
+  components:
+  - type: Sprite
+    sprite: _EE/Clothing/BieselRepublic/Gloves/TCAF_combat_gloves.rsi
+  - type: Clothing
+    sprite: _EE/Clothing/BieselRepublic/Gloves/TCAF_combat_gloves.rsi

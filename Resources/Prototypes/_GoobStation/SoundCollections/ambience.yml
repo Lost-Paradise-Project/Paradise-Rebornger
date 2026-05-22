@@ -6,4 +6,7 @@
 - type: soundCollection
   id: RandomComputerSounds
   files:
-    - /Audio/_GoobStation/Ambience/keyboardtypingfast.ogg
+  ## LP edit start
+    - /Audio/_LP/Ambience/consolehdd.ogg
+    - /Audio/_LP/Ambience/computer-vibrating-45885.ogg
+  ## LP edit end

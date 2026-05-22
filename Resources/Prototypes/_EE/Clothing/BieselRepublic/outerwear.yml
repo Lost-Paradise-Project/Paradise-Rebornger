@@ -1,0 +1,94 @@
+- type: entity
+  parent: [ClothingOuterArmorAISHeavy]
+  id: ClothingOuterHardsuitAIS
+  name: AIS Tacsuit
+  description: Standard-issue body armor for AIS marines. While the rest of their gear may be cheap, the armor worn on top was apparently made by the highest bidder. A suit of polymer fabric encases a large plastitanium plate.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/BieselRepublic/OuterClothing/TCFL_tacsuit.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/BieselRepublic/OuterClothing/TCFL_tacsuit.rsi
+      clothingVisuals:
+        outerClothing:
+        - state: equipped-OUTERCLOTHING
+        - state: equipped-OUTERCLOTHING-unshaded
+          shader: unshaded
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetHardsuitAISTacsuit
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+          showEnts: False
+          occludes: True
+          ents: []
+        toggleable-clothing: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+
+- type: entity
+  parent: [ClothingOuterStorageBase, AllowSuitStorageClothing]
+  id: ClothingOuterArmorAISHeavy
+  name: AIS heavy armor
+  description: A suit of heavy armor used by members of the AIS Armed Forces.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/BieselRepublic/OuterClothing/TCAF_plate_carrier_heavy.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/BieselRepublic/OuterClothing/TCAF_plate_carrier_heavy.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.5
+          Slash: 0.5
+          Piercing: 0.35
+          Caustic: 0.5
+    - type: ExplosionResistance
+      damageCoefficient: 0.35
+    - type: Reflect
+      reflectProb: 0.05
+      spread: 270
+      reflects:
+        - Energy
+        - NonEnergy
+    - type: ClothingSpeedModifier
+      walkModifier: 0.7
+      sprintModifier: 0.7
+
+- type: entity
+  parent: [ClothingOuterStorageBase, AllowSuitStorageClothing]
+  id: ClothingOuterArmorAISLight
+  name: AIS plate carrier
+  description: A plate carrier worn by members of the AIS Armed Forces.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/BieselRepublic/OuterClothing/TCAF_plate_carrier_light.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/BieselRepublic/OuterClothing/TCAF_plate_carrier_light.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.80
+          Slash: 0.80
+          Piercing: 0.50
+
+- type: entity
+  parent: [ClothingOuterStorageBase, AllowSuitStorageClothing]
+  id: ClothingOuterJacketTCAF
+  name: AIS Jacket
+  description: A high quality jacket made from a blend of tear resistant and fire retardant fabric.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/BieselRepublic/OuterClothing/TCAF_jacket.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/BieselRepublic/OuterClothing/TCAF_jacket.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.75
+          Slash: 0.75
+          Piercing: 0.65
+          Heat: 0.85
+    - type: TemperatureProtection
+      heatingCoefficient: 0.1
+      coolingCoefficient: 0.1

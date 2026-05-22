@@ -2,3 +2,13 @@
   id: LPCMOPanties
   equipment:
     underwear: LPPCMOPanties
+
+- type: loadout
+  id: LPPCMOFormalskirt
+  equipment:
+    jumpsuit: LPPClothingUniformJumpskirtCMOFormalSkirt
+
+- type: loadout
+  id: LPPCMOMilitary
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryCMO

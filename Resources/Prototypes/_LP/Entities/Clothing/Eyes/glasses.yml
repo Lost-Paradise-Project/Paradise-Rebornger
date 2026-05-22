@@ -51,7 +51,7 @@
   - type: FlashImmunity
 
 - type: entity
-  parent: [ClothingEyesBase, ShowSecurityIcons, ShowMedicalIcons, BaseSyndicateContraband]
+  parent: [ClothingEyesBase, ShowSecurityIcons, ShowMedicalIcons, BaseSyndicateContraband, LPPClothingEyesNVG]
   id: LPPClothingEyesGlassesContractor
   name: Contractor glasses
   description: Glasses, that provides protection from flashes and secure wearers eyes from wielding.
@@ -70,3 +70,60 @@
         Slash: 0.95
         Piercing: 0.95
         Heat: 0.95
+  - type: NightVision
+    requiredSlot: eyes
+    tint1: 0.65
+    tint2: 0.4
+    tint3: 0.2
+    vignette: 1
+    strength: 1.5
+    noise: 0.05
+    flicker: 1.0
+
+- type: entity
+  parent: ClothingEyesBase
+  id: LPPClothingEyesGlassesSunglassesPG
+  name: PG black protection glasses
+  description: Useful for special operations.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Eyes/Glasses/pg-black-glasses.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Eyes/Glasses/pg-black-glasses.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
+
+- type: entity
+  parent: [ClothingEyesBase, LPPClothingEyesNVG]
+  id: LPPClothingEyesGlassesNVG
+  name: PG nightvision goggles
+  description: Useful for special operations.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Eyes/nvg.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Eyes/nvg.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
+  - type: NightVision
+    requiredSlot: eyes
+    tint1: 0.3
+    tint2: 0.9
+    tint3: 0.3
+    vignette: 1.6
+    strength: 1.5
+    noise: 1
+    flicker: 2
+
+- type: entity
+  parent: [ClothingEyesBase, ShowSecurityIcons]
+  id: LPPClothingEyesGlassesAviatorUEG
+  name: UEG aviators
+  description: Only for the most coolest guys in this sector.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Eyes/Glasses/UEGaviators.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Eyes/Glasses/UEGaviators.rsi
+  - type: FlashImmunity
+  - type: EyeProtection

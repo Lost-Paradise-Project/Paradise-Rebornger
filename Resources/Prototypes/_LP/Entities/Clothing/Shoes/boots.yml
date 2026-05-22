@@ -61,3 +61,25 @@
       sprite: _LP/Clothing/Shoes/Boots/jackboots_sec_enginer.rsi
     - type: Clothing
       sprite: _LP/Clothing/Shoes/Boots/jackboots_sec_enginer.rsi
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: LPPClothingShoesBootsCombatPG
+  name: PG combat boots
+  description: boots for all the PG needs.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Shoes/Boots/pg-boots.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Shoes/Boots/pg-boots.rsi
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: LPPClothingShoesBootsUEG
+  name: UEG Boots
+  description: Strong boots for any difficult terrain.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Shoes/Boots/upgjackboots.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Shoes/Boots/upgjackboots.rsi

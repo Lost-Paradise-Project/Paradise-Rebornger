@@ -62,3 +62,38 @@
   id: LPPSergeantPDA
   equipment:
     id: LPPSergeantPDA
+
+- type: loadout
+  id: LPPSecurityZavod
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitZavodSecurityOfficer
+
+- type: loadout
+  id: LPPSecurityZavodAlt
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitZavodSecurityOfficerAlt1
+
+- type: loadout
+  id: LPPSecurityZavodAlt2
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitZavodSecurityOfficerAlt2
+
+- type: loadout
+  id: LPPSecurityZavodJacket
+  equipment:
+    outerClothing: ClothingOuterJacketZavSecurity
+
+- type: loadout
+  id: LPPSecurityZavodJacketAlt
+  equipment:
+    outerClothing: ClothingOuterJacketZavSecurityAlt
+
+- type: loadout
+  id: LPPSecurityZavodCadet
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitZavodCadet
+
+- type: loadout
+  id: LPPSecurityTactical
+  equipment:
+    jumpsuit: LPPClothingUniformJumpSuitTactical

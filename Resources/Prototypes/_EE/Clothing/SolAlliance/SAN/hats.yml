@@ -1,0 +1,192 @@
+# Headgear other than armor
+- type: entity
+  parent: [ClothingHeadBaseButcherable]
+  id: ClothingHeadHatUEGArmyCampaign
+  name: UEG campaign hat
+  suffix: UEG
+  description: A hat worn by United Earth Goverment officers on parades.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_army_campaign.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_army_campaign.rsi
+
+- type: entity
+  parent: [ClothingHeadBaseButcherable]
+  id: ClothingHeadHatUEGArmyCap
+  name: UEG army cap
+  suffix: UEG
+  description: Tradition holds that the brim of this hat must never be used to shield one's eyes from mother Sol'.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_army_cap.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_army_cap.rsi
+
+- type: entity
+  parent: [ClothingHeadBaseButcherable]
+  id: ClothingHeadHatUEGArmyCapOfficer
+  name: UEG army officer cap
+  suffix: UEG
+  description: Tradition holds that the brim of this hat must never be used to shield one's eyes from mother Sol'. This hat bears officer chevrons.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_army_cap_officer.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_army_cap_officer.rsi
+
+- type: entity
+  parent: [ClothingHeadBaseButcherable]
+  id: ClothingHeadHatUEGArmyCapSenior
+  name: UEG army senior officer cap
+  suffix: UEG
+  description: A pristine hat worn for the purpose of casting a larger shadow when looking down on aliens.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_army_cap_senior.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_army_cap_senior.rsi
+
+- type: entity
+  parent: [ClothingHeadBaseButcherable]
+  id: ClothingHeadHatUEGArmyField
+  name: UEG army field hat
+  suffix: UEG
+  description: A common field hat worn by UEG grunts. This one is colored olive drab.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_army_field.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_army_field.rsi
+
+- type: entity
+  parent: [ClothingHeadBaseButcherable]
+  id: ClothingHeadHatUEGArmyFieldGrey
+  name: UEG army field hat
+  suffix: UEG
+  description: A common field hat worn by UEG grunts. This one is colored stone grey.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_army_field_grey.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_army_field_grey.rsi
+
+- type: entity
+  parent: [ClothingHeadBaseButcherable]
+  id: ClothingHeadHatUEGArmyGarrison
+  name: UEG army garrison hat
+  suffix: UEG
+  description: A garrison hat worn by grunts in the UEG PDF.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_army_garrison.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_army_garrison.rsi
+
+- type: entity
+  parent: [ClothingHeadBaseButcherable]
+  id: ClothingHeadHatUEGArmyGarrisonCaptain
+  name: UEG army garrison captain hat
+  suffix: UEG
+  description: A garrison hat worn by a UEG PDF Captain.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_army_garrison_captain.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_army_garrison_captain.rsi
+
+- type: entity
+  parent: [ClothingHeadBaseButcherable]
+  id: ClothingHeadHatUEGArmyGarrisonOficer
+  name: UEG army garrison officer hat
+  suffix: UEG
+  description: A garrison hat worn by a UEG PDF Officer.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_army_garrison_officer.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_army_garrison_officer.rsi
+
+- type: entity
+  parent: [ClothingHeadBaseButcherable]
+  id: ClothingHeadHatUEGMarineUtility
+  name: UEG marine utility hat
+  suffix: UEG
+  description: A common hat worn by UEG grunts. This one is colored olive drab.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_marine_utility.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_marine_utility.rsi
+
+- type: entity
+  parent: [ClothingHeadBaseButcherable]
+  id: ClothingHeadHatUEGMarineUtilityGrey
+  name: UEG marine utility hat
+  suffix: UEG
+  description: A common hat worn by UEG grunts. This one is colored stone grey.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_marine_utility_grey.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_marine_utility_grey.rsi
+
+- type: entity
+  parent: [ClothingHeadBaseButcherable]
+  id: ClothingHeadHatUEGNavyCap
+  name: UEG navy cap
+  suffix: UEG
+  description: A simple cap worn by UEG Navy ratings.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_navy_cap.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_navy_cap.rsi
+
+- type: entity
+  parent: [ClothingHeadBaseButcherable]
+  id: ClothingHeadHatUEGNavyCapAdmiral
+  name: UEG navy admiral cap
+  suffix: UEG
+  description: When ordering the glassing of Xenos cities, accept no substitute but this hat upon thy head.
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_navy_cap_admiral.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_navy_cap_admiral.rsi
+
+- type: entity
+  parent: [ClothingHeadBaseButcherable]
+  id: ClothingHeadHatUEGNavyCapOfficer
+  name: UEG navy officer cap
+  suffix: UEG
+  description: A hat worn by officers in the UEG Navy
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_navy_cap_officer.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_navy_cap_officer.rsi
+
+- type: entity
+  parent: [ClothingHeadBaseButcherable]
+  id: ClothingHeadHatUEGNavyCapOfficerSenior
+  name: UEG navy senior officer cap
+  suffix: UEG
+  description: A hat worn by senior officers in the UEG Navy
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_navy_cap_senior.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_navy_cap_senior.rsi
+
+- type: entity
+  parent: [ClothingHeadBaseButcherable]
+  id: ClothingHeadHatUEGWheelCap
+  name: UEG wheel cap
+  suffix: UEG
+  description: Also known as a "Mechanic hat", this hat is worn by technicians in the UEG Armed Forces
+  components:
+    - type: Sprite
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_wheel_cap.rsi
+    - type: Clothing
+      sprite: _EE/Clothing/SolAlliance/Helmet/SAN_wheel_cap.rsi

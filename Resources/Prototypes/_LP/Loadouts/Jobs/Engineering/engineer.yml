@@ -49,6 +49,51 @@
     jumpsuit: LPPClothingUniformJumpskirtEngineerShirt
 
 - type: loadout
+  id: LPPEngineerHeph
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHephEngineer
+
+- type: loadout
+  id: LPPEngineerHephAlt
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHephEngineerApprentice
+
+- type: loadout
+  id: LPPEngineerHephAlt2
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHephAtmos
+
+- type: loadout
+  id: LPPEngineerNT
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNTEngineer
+
+- type: loadout
+  id: LPPEngineerNTAlt
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNTEngineeringApprentice
+
+- type: loadout
+  id: LPPEngineerNTAlt2
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNTAtmos
+
+- type: loadout
+  id: LPPEngineerZavod
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitZavodEngineer
+
+- type: loadout
+  id: LPPEngineerZavodAlt
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitZavodEngineerApprentice
+
+- type: loadout
+  id: LPPEngineerZavodAlt2
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitZavodAtmos
+
+- type: loadout
   id: LPPEngineerFirstGradePDA
   equipment:
     id: LPPEngineerFirstGradePDA

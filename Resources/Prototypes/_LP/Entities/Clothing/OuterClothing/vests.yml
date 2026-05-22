@@ -41,3 +41,98 @@
         Slash: 0.8
         Piercing: 0.6
         Heat: 0.9
+
+- type: entity
+  parent: [ ClothingOuterStorageBase, AllowSuitStorageClothing ]
+  id: LPPClothingOuterVestPG
+  name: PG vest
+  description: A synthetic armor vest. This one has added webbing and ballistic plates. For all PG army needs.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/OuterClothing/Armor/pg-vest.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/OuterClothing/Armor/pg-vest.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.3
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+
+- type: entity
+  parent: [ ClothingOuterStorageBase, AllowSuitStorageClothing ]
+  id: LPPClothingOuterVestUrbanPG
+  name: urban PG vest
+  description: A synthetic armor vest. This one has added webbing and ballistic plates. For all PG army needs.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/OuterClothing/Armor/pg-urban-vest.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/OuterClothing/Armor/pg-urban-vest.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.3
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+
+- type: entity
+  parent: [ ClothingOuterStorageBase, AllowSuitStorageClothing ]
+  id: LPPClothingOuterVestSalvager
+  name: Salvager vest
+  description: A synthetic armor vest. This one has added webbing and ballistic plates.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/OuterClothing/Vests/salvagerwebvest.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/OuterClothing/Vests/salvagerwebvest.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.65
+        Slash: 0.65
+        Piercing: 0.85
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+
+- type: entity
+  parent: [ ClothingOuterStorageBase, AllowSuitStorageClothing ]
+  id: LPPClothingOuterVestSneakingVest
+  name:  Sneaking suit
+  description: Full body suit for specops operations.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/OuterClothing/Vests/sneaking-suit.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/OuterClothing/Vests/sneaking-suit.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.5
+  - type: ExplosionResistance
+    damageCoefficient: 0.65
+
+- type: entity
+  parent: LPPClothingOuterVestSneakingVest
+  id: LPPClothingOuterVestDareDevil
+  name:  daredevil suit
+  description: Bring me to live.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/OuterClothing/Vests/daredevil.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/OuterClothing/Vests/daredevil.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.95

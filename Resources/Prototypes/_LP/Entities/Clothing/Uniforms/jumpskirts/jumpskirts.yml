@@ -1,0 +1,10 @@
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformFoldableBase]
+  id: LPPClothingUniformJumpskirtSky
+  name: sky shirt and skirt
+  description: Dirty blue colored jeans with white shirt.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpskirt/skyskirt.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpskirt/skyskirt.rsi

@@ -1,2 +1,12 @@
 ent-LPClothingOuterVestSecurityEngineer = светоотражающий жилет
     .desc = Светоотражающий жилет для технических работ с дополнительным бронированием.
+ent-LPPClothingOuterVestPG = бронежилет ПГ
+    .desc = Крепкий бронежилет с карманами, штатная модель для работяг ПГ.
+ent-LPPClothingOuterVestUrbanPG = бронежилет ПГ
+    .desc = Крепкий бронежилет с карманами, штатная модель для работяг ПГ. В городской расцветке.
+ent-LPPClothingOuterVestSalvager = бронежилет утилизатора
+    .desc = Потёртая и поношенная броня с карманами, уж лучше это, чем ничего.
+ent-LPPClothingOuterVestSneakingVest = стелс костюм
+    .desc = That is NOT Soild Snake!
+ent-LPPClothingOuterVestDareDevil = супергеройский костюм Смельчака
+    .desc = Bring me to life!!!

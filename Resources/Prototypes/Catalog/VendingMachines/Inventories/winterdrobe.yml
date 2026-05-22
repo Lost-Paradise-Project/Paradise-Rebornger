@@ -19,6 +19,49 @@
     ClothingHeadHatCanadaBeanie: 4
     ClothingHeadHatSantahat: 2
     ClothingHeadHatXmasCrown: 2
+#LP edit start
+    ClothingOuterWinterColorBlack: 2
+    ClothingOuterWinterColorYellow: 2
+    ClothingOuterWinterColorWhite: 2
+    ClothingOuterWinterColorGreen: 2
+    ClothingOuterWinterColorOrange: 2
+    ClothingOuterWinterColorRed: 2
+    ClothingOuterWinterColorBrown: 2
+    ClothingOuterWinterColorLightBrown: 2
+    ClothingOuterWinterColorGray: 2
+    ClothingOuterWinterColorPurple: 2
+    ClothingOuterWinterColorBlue: 2
+    ClothingOuterVest: 2
+    ClothingOuterCoatExpensive: 1
+    ClothingOuterCoatSpaceAsshole: 1
+    ClothingOuterWinterCoatLong: 3
+    ClothingOuterCoatBomberPinkSleeves: 2
+    ClothingOuterCoatJacketLettermanBlue: 2
+    ClothingOuterCoatLettermanBlue: 2
+    ClothingOuterCoatBomberPunkRed: 2
+    ClothingOuterCoatLettermanRed: 2
+    ClothingOuterCoatJacketLettermanRed: 2
+    ClothingOuterCoatJacketLeather: 2
+    ClothingOuterCoatGentle: 2
+    ClothingOuterCoatJacketBiker: 2
+    ClothingOuterCoatHyenhSweater: 2
+    ClothingOuterAerostaticBomberJacket: 2
+    ClothingOuterDiscoAssBlazer: 2
+    ClothingOuterCoatJensen: 2
+    LPPClothingOuterCoatBomber1: 2
+    LPPClothingOuterCoatBomber2: 2
+    LPPClothingOuterCoatBomber3: 2
+    LPPClothingOuterCoatBomber4: 2
+    LPPClothingOuterCoatBomber5: 2
+    LPPClothingOuterCoatPajamsSharkPink: 2
+    LPPClothingOuterCoatPajamsSharkGray: 2
+    LPPClothingOuterCoatPajamsSharkBlue: 2
+    LPPClothingHeadHatGreenBeanie: 3
+    LPPClothingHeadHatRedBeanie: 3
+    LPPClothingHeadHatBlackBeanie: 3
+    LPPClothingHeadHatBlueBeanie: 3
+    ClothingNeckFurWrap: 2
+#LP edit end
   emaggedInventory:
     ClothingNeckScarfStripedSyndieGreen: 3
     ClothingNeckScarfStripedSyndieRed: 3
