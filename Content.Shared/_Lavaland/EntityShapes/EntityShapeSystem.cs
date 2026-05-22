@@ -5,6 +5,7 @@ using Content.Shared._Lavaland.Megafauna.Events;
 using Robust.Shared.Map;
 using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Random;
 using Robust.Shared.Timing;
 
 namespace Content.Shared._Lavaland.EntityShapes;
@@ -14,6 +15,7 @@ public sealed class EntityShapeSystem : EntitySystem
     [Dependency] private readonly AngerSystem _anger = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly IPrototypeManager _protoMan = default!;
+    [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly INetManager _net = default!;
     [Dependency] private readonly IMapManager _mapMan = default!;
 
@@ -80,7 +82,7 @@ public sealed class EntityShapeSystem : EntitySystem
         if (_net.IsClient)
             return;
 
-        var result = shape.GetShape(GetRandom(), _protoMan);
+        var result = shape.GetShape(_random, _protoMan);
         for (int i = 0; i < result.Count; i++)
         {
             result[i] += coords.Position;
