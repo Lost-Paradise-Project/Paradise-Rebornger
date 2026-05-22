@@ -115,7 +115,7 @@
   id: MailStealCollectionObjective
   components:
   - type: NotJobRequirement
-    jobs: [ CargoTechnician, SalvageSpecialist ]
+    jobs: [ CargoTechnician, SalvageSpecialist, Bitrunner ] # LP Edit
   - type: StealCondition
     stealGroup: Mail
     minCollectionSize: 4
@@ -129,7 +129,7 @@
   id: IDCardsStealCollectionObjective
   components:
   - type: NotJobRequirement #Here cause you can buy a personnel crate from cargo which is 8 ID cards. Meaning the ID you start with is number nine and you only need to steal one.
-    jobs: [ CargoTechnician, SalvageSpecialist ]
+    jobs: [ CargoTechnician, SalvageSpecialist, Bitrunner ] # LP Edit
   - type: StealCondition
     stealGroup: IDCard
     minCollectionSize: 5
@@ -305,7 +305,7 @@
   id: CargoShuttleCircuitboardStealObjective
   components:
   - type: NotJobRequirement
-    jobs: [ CargoTechnician, SalvageSpecialist ]
+    jobs: [ CargoTechnician, SalvageSpecialist, Bitrunner ] # LP Edit
   - type: StealCondition
     stealGroup: CargoShuttleConsoleCircuitboard
   - type: Objective

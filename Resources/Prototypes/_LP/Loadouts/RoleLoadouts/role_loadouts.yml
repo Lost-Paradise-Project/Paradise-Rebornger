@@ -1,0 +1,16 @@
+- type: roleLoadout
+  id: JobBitrunner
+  groups:
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  - GroupTankHarness
+  - CargoTechnicianHead
+  - CargoTechnicianJumpsuit
+  - CargoTechnicianBackpack
+  - CargoTechnicianOuterClothing
+  - CargoTechnicianShoes
+  - Glasses
+  - Survival
+  - Trinkets
+  - GroupSpeciesBreathTool

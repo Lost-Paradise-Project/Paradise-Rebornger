@@ -43,6 +43,7 @@
     jobsToAdd:
       CargoTechnician: 1
       SalvageSpecialist: 1
+      Bitrunner: 1 # LP Edit
 
 - type: entity
   id: EngineeringJobUnlock

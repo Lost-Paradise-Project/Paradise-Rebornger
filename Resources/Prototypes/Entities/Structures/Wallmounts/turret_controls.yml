@@ -123,9 +123,14 @@
     - Research
     - ResearchDirector
     - Salvage
+    - Bitrun # Orion Edit
     - Security
     - Service
     - Theatre
+    # LP Edit Start
+    - NanotrasenRepresentative
+    - BlueshieldOfficer
+    # LP Edit End
   - type: DeviceList
     isAllowList: true
   - type: DeviceNetwork
