@@ -9,6 +9,7 @@ public sealed class ShopVendorSystem : SharedShopVendorSystem
 {
     [Dependency] private readonly AnimationPlayerSystem _animationPlayer = default!;
     [Dependency] private readonly AppearanceSystem _appearance = default!;
+    [Dependency] private readonly SpriteSystem _sprite = default!;
 
     public override void Initialize()
     {
@@ -68,15 +69,14 @@ public sealed class ShopVendorSystem : SharedShopVendorSystem
         }
     }
 
-    private static void SetLayerState(VendingMachineVisualLayers layer, string? state, Entity<SpriteComponent> ent)
+    private void SetLayerState(VendingMachineVisualLayers layer, string? state, Entity<SpriteComponent> ent)
     {
         if (state == null)
             return;
 
-        var spriteSystem = IoCManager.Resolve<SpriteSystem>();
-        spriteSystem.LayerSetVisible((ent, ent.Comp), layer, true);
-        spriteSystem.LayerSetAutoAnimated((ent, ent.Comp), layer, true);
-        spriteSystem.LayerSetRsiState((ent, ent.Comp), layer, state);
+        _sprite.LayerSetVisible((ent, ent.Comp), layer, true);
+        _sprite.LayerSetAutoAnimated((ent, ent.Comp), layer, true);
+        _sprite.LayerSetRsiState((ent, ent.Comp), layer, state);
     }
 
     private void PlayAnimation(EntityUid uid, VendingMachineVisualLayers layer, string? state, TimeSpan time, Entity<SpriteComponent> ent)
@@ -84,10 +84,8 @@ public sealed class ShopVendorSystem : SharedShopVendorSystem
         if (state == null || _animationPlayer.HasRunningAnimation(uid, state))
             return;
 
-        var spriteSystem = IoCManager.Resolve<SpriteSystem>();
-
         var animation = GetAnimation(layer, state, time);
-        spriteSystem.LayerSetVisible((ent, ent.Comp), layer, true);
+        _sprite.LayerSetVisible((ent, ent.Comp), layer, true);
         _animationPlayer.Play(uid, animation, state);
     }
 
@@ -110,19 +108,17 @@ public sealed class ShopVendorSystem : SharedShopVendorSystem
         };
     }
 
-    private static void HideLayers(Entity<SpriteComponent> ent)
+    private void HideLayers(Entity<SpriteComponent> ent)
     {
         HideLayer(VendingMachineVisualLayers.BaseUnshaded, ent);
         HideLayer(VendingMachineVisualLayers.Screen, ent);
     }
 
-    private static void HideLayer(VendingMachineVisualLayers layer, Entity<SpriteComponent> ent)
+    private void HideLayer(VendingMachineVisualLayers layer, Entity<SpriteComponent> ent)
     {
-        var spriteSystem = IoCManager.Resolve<SpriteSystem>();
-
-        if (!spriteSystem.LayerMapTryGet((ent.Owner, ent.Comp), layer, out var actualLayer, false))
+        if (!_sprite.LayerMapTryGet((ent.Owner, ent.Comp), layer, out var actualLayer, false))
             return;
 
-        spriteSystem.LayerSetVisible((ent.Owner, ent.Comp), actualLayer, false);
+        _sprite.LayerSetVisible((ent.Owner, ent.Comp), actualLayer, false);
     }
 }
