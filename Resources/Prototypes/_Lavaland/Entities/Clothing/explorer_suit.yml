@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ ClothingOuterBaseMedium, AllowSuitStorageClothing, BaseCargoContraband ]
+  parent: [ ClothingOuterBaseMedium, AllowSuitStorageClothing, BaseCargoContraband, ClothingOuterBaseToggleable ]
   id: LavalandEquipmentExplorerSuit
   suffix: Lava
   name: explorer suit
