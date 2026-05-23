@@ -141863,7 +141863,7 @@ entities:
       pos: 52.5,33.5
       parent: 2
     - type: ConditionalSpawner
-      prototypes: 
+      prototypes:
       - MobGiantSpiderAngry
       gameRules: []
     missingComponents:
