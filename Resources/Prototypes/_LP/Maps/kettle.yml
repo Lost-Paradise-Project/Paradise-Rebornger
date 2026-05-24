@@ -63,7 +63,7 @@
             #Lawyer: [ 2, 2 ] # Corvax-IAA
             #Supply
             SalvageSpecialist: [ 3, 3 ]
-	    Bitrunner: [ 3, 3 ]
+            Bitrunner: [ 3, 3 ]
             CargoTechnician: [ 4, 4 ]
             #Civilian
             Passenger: [ -1, -1 ] #infinite, not counted

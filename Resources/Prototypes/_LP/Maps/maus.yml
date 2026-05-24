@@ -45,7 +45,7 @@
 
             # Снабжение
             SalvageSpecialist: [ 2, 3 ]
-	    Bitrunner: [ 2, 3 ]
+            Bitrunner: [ 2, 3 ]
             CargoTechnician: [ 2, 2 ]
 
             # Инженерия
