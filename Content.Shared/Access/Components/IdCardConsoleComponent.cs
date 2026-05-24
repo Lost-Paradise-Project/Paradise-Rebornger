@@ -77,6 +77,7 @@ public sealed partial class IdCardConsoleComponent : Component
         "NanotrasenRepresentative", //Corvax-Goob
         "BlueshieldOfficer", //Corvax-Goob
         "LPPCargoConsole", // LP Edit
+        "Bitrun", // LP Edit
     };
 
     [Serializable, NetSerializable]

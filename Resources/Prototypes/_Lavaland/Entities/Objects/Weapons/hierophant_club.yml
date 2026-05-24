@@ -4,6 +4,9 @@
   name: hierophant club
   description: Get item'ed lol
   components:
+  - type: Construction
+    graph: LPPHierophantClub
+    node: hierophantClub
   - type: Sprite
     sprite: _Lavaland/Objects/Weapons/hierophant_club.rsi
     state: icon

@@ -15,7 +15,6 @@
   access:
   - Cargo
   - Bitrun
+  - Salvage
   - Maintenance
   - LPPCargoConsole
-  extendedAccess:
-  - Salvage

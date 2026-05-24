@@ -1,0 +1,37 @@
+- type: constructionGraph
+  id: LPPHierophantClub
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: hierophantClub
+      steps:
+      - tag: HierophantClubPiece
+        name: construction-graph-tag-hierophant-club-piece
+        icon:
+          sprite: _LP/Objects/Materials/hierophant_club_piece.rsi
+          state: icon
+        doAfter: 30
+      - tag: HierophantClubPiece
+        name: construction-graph-tag-hierophant-club-piece
+        icon:
+          sprite: _LP/Objects/Materials/hierophant_club_piece.rsi
+          state: icon
+      - tag: HierophantClubPiece
+        name: construction-graph-tag-hierophant-club-piece
+        icon:
+          sprite: _LP/Objects/Materials/hierophant_club_piece.rsi
+          state: icon
+      - tag: HierophantClubPiece
+        name: construction-graph-tag-hierophant-club-piece
+        icon:
+          sprite: _LP/Objects/Materials/hierophant_club_piece.rsi
+          state: icon
+      - tag: HierophantClubPiece
+        name: construction-graph-tag-hierophant-club-piece
+        icon:
+          sprite: _LP/Objects/Materials/hierophant_club_piece.rsi
+          state: icon
+
+  - node: hierophantClub
+    entity: LavalandHierophantClub

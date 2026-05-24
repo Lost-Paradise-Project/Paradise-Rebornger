@@ -1,0 +1,14 @@
+- type: entity
+  parent: BaseItem
+  id: LPPHierophantClubPiece
+  name: hierophant club piece
+  description: A piece of the hierophant club. It looks like it could be used.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Materials/hierophant_club_piece.rsi
+    state: icon
+  - type: Tag
+    tags:
+      - HierophantClubPiece
+  - type: StaticPrice
+    price: 5000

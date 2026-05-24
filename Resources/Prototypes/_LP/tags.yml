@@ -75,3 +75,6 @@
 
 - type: Tag
   id: LPPMagazinePistolRifle
+
+- type: Tag
+  id: HierophantClubPiece

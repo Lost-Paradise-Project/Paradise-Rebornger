@@ -1,2 +1,2 @@
-job-name-bitrunner = Битраннер
-job-name-bitrun-avatar = Аватар битрана
+job-name-bitrunner = битраннер
+job-name-bitrun-avatar = аватар битрана
