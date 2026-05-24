@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.2.0
   forkId: ""
   forkVersion: ""
-  time: 05/23/2026 19:17:30
-  entityCount: 20757
+  time: 05/24/2026 09:57:39
+  entityCount: 20760
 maps:
 - 1
 grids:
@@ -17567,7 +17567,7 @@ entities:
       pos: -8.5,38.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -408387.78
+      secondsUntilStateChange: -408491.53
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -17579,7 +17579,7 @@ entities:
       pos: 9.5,38.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -408386.3
+      secondsUntilStateChange: -408490.06
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -17591,7 +17591,7 @@ entities:
       pos: -36.5,-19.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -408392
+      secondsUntilStateChange: -408495.75
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -17640,7 +17640,7 @@ entities:
       pos: -29.5,-42.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -247550.52
+      secondsUntilStateChange: -247654.28
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -120492,6 +120492,23 @@ entities:
     - type: Transform
       pos: 27.5,-0.5
       parent: 2
+- proto: SpawnPointBitrunner
+  entities:
+  - uid: 20758
+    components:
+    - type: Transform
+      pos: -31.5,36.5
+      parent: 2
+  - uid: 20759
+    components:
+    - type: Transform
+      pos: -30.5,36.5
+      parent: 2
+  - uid: 20760
+    components:
+    - type: Transform
+      pos: -29.5,36.5
+      parent: 2
 - proto: SpawnPointBlueshieldOfficer
   entities:
   - uid: 6921
@@ -141863,7 +141880,7 @@ entities:
       pos: 52.5,33.5
       parent: 2
     - type: ConditionalSpawner
-      prototypes: 
+      prototypes:
       - MobGiantSpiderAngry
       gameRules: []
     missingComponents:

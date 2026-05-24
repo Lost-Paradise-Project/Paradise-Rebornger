@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.2.0
   forkId: ""
   forkVersion: ""
-  time: 05/23/2026 22:08:39
-  entityCount: 30494
+  time: 05/24/2026 10:08:25
+  entityCount: 30497
 maps:
 - 84
 grids:
@@ -16854,7 +16854,7 @@ entities:
       pos: -5.5,-28.5
       parent: 82
     - type: Door
-      secondsUntilStateChange: -8748.127
+      secondsUntilStateChange: -9348.644
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -172371,6 +172371,23 @@ entities:
     - type: Transform
       pos: -18.5,-14.5
       parent: 82
+- proto: SpawnPointBitrunner
+  entities:
+  - uid: 30495
+    components:
+    - type: Transform
+      pos: 36.5,36.5
+      parent: 82
+  - uid: 30496
+    components:
+    - type: Transform
+      pos: 36.5,37.5
+      parent: 82
+  - uid: 30497
+    components:
+    - type: Transform
+      pos: 36.5,38.5
+      parent: 82
 - proto: SpawnPointBlueshieldOfficer
   entities:
   - uid: 30387
@@ -199486,7 +199503,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -139897.11
+      secondsUntilStateChange: -140497.62
       state: Opening
     - type: Airlock
       autoClose: False

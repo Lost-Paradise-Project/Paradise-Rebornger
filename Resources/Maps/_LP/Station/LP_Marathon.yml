@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.2.0
   forkId: ""
   forkVersion: ""
-  time: 05/23/2026 21:37:55
-  entityCount: 24233
+  time: 05/24/2026 10:08:55
+  entityCount: 24237
 maps:
 - 5350
 grids:
@@ -6783,13 +6783,13 @@ entities:
             2: 34952
           6,-6:
             2: 61440
-            6: 224
+            5: 224
           6,-8:
             4: 224
             3: 57344
           6,-7:
             3: 224
-            5: 57344
+            6: 57344
           6,-9:
             3: 57568
           7,-8:
@@ -7867,11 +7867,11 @@ entities:
         - volume: 2500
           temperature: 293.15
           moles:
-            Oxygen: 6666.982
+            Nitrogen: 6666.982
         - volume: 2500
           temperature: 293.15
           moles:
-            Nitrogen: 6666.982
+            Oxygen: 6666.982
         chunkSize: 4
     - type: BecomesStation
       id: LP_Marathon
@@ -12172,7 +12172,7 @@ entities:
       pos: 34.5,45.5
       parent: 30
     - type: Door
-      secondsUntilStateChange: -134763.95
+      secondsUntilStateChange: -134785.1
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -129821,6 +129821,28 @@ entities:
     components:
     - type: Transform
       pos: -9.5,18.5
+      parent: 30
+- proto: SpawnPointBitrunner
+  entities:
+  - uid: 24234
+    components:
+    - type: Transform
+      pos: 35.5,-12.5
+      parent: 30
+  - uid: 24235
+    components:
+    - type: Transform
+      pos: 35.5,-13.5
+      parent: 30
+  - uid: 24236
+    components:
+    - type: Transform
+      pos: 35.5,-14.5
+      parent: 30
+  - uid: 24237
+    components:
+    - type: Transform
+      pos: 33.5,-14.5
       parent: 30
 - proto: SpawnPointBlueshieldOfficer
   entities:

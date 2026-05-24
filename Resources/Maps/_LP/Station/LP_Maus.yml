@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.2.0
   forkId: ""
   forkVersion: ""
-  time: 05/23/2026 21:01:51
-  entityCount: 19698
+  time: 05/24/2026 10:09:32
+  entityCount: 19702
 maps:
 - 1
 grids:
@@ -16729,7 +16729,7 @@ entities:
       pos: -52.5,7.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -8641.771
+      secondsUntilStateChange: -8664.601
       state: Opening
     - type: DeviceLinkSink
       invokeCounter: 1
@@ -17245,7 +17245,7 @@ entities:
       pos: -43.5,-45.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -60979.15
+      secondsUntilStateChange: -61001.977
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -60671,7 +60671,7 @@ entities:
       tags:
       - DrinkBottle
     - type: PressurizedSolution
-      sprayFizzinessThresholdRoll: 0.63285184
+      sprayFizzinessThresholdRoll: 0.05158588
     - type: SolutionContainerManager
       solutions: null
       containers:
@@ -110463,6 +110463,28 @@ entities:
     components:
     - type: Transform
       pos: -35.5,-26.5
+      parent: 2
+- proto: SpawnPointBitrunner
+  entities:
+  - uid: 19699
+    components:
+    - type: Transform
+      pos: -18.5,-62.5
+      parent: 2
+  - uid: 19700
+    components:
+    - type: Transform
+      pos: -17.5,-62.5
+      parent: 2
+  - uid: 19701
+    components:
+    - type: Transform
+      pos: -17.5,-61.5
+      parent: 2
+  - uid: 19702
+    components:
+    - type: Transform
+      pos: -16.5,-62.5
       parent: 2
 - proto: SpawnPointBlueshieldOfficer
   entities:
