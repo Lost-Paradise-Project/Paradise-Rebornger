@@ -3,7 +3,7 @@
   name: job-name-bitrunner
   description: job-description-bitrunner
   playTimeTracker: JobBitrunner
-  startingGear: CargoTechGear # TODO
+  startingGear: BitrunnerGear #LP edit
   icon: "JobIconBitrunner"
   supervisors: job-supervisors-qm
   requirements:
@@ -18,3 +18,11 @@
   - Salvage
   - Maintenance
   - LPPCargoConsole
+
+#LP edit start
+- type: startingGear
+  id: BitrunnerGear
+  equipment:
+    ears: ClothingHeadsetCargo
+    id: BitrunnerPDA
+#LP edit end

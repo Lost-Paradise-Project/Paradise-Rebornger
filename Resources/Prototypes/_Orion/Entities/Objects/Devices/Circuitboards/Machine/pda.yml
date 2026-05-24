@@ -1,0 +1,19 @@
+#LP edit start
+- type: entity
+  parent: BasePDA
+  id: BitrunnerPDA
+  name: bitrunner PDA
+  description: PDA for the guys that eats the pizzas.
+  components:
+  - type: Pda
+    id: BitrunnerIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-cargo
+  - type: PdaBorderColor
+    borderColor: "#e39751"
+  - type: Icon
+    state: pda-cargo
+#LP edit end
