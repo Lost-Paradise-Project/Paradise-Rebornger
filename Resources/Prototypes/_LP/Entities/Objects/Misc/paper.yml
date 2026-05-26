@@ -14,6 +14,8 @@
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/_LP/Paper/nanotrasen_sec_form_header.png"
+  - type: Paper
+    content: doc-text-printer-form-security
 
 - type: entity
   parent: BasePaperForm
@@ -22,6 +24,8 @@
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/_LP/Paper/nanotrasen_law_form_header.png"
+  - type: Paper
+    content: doc-text-printer-form-law
 
 - type: entity
   parent: BasePaperForm
@@ -30,6 +34,8 @@
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/_LP/Paper/nanotrasen_sci_form_header.png"
+  - type: Paper
+    content: doc-text-printer-form-science
 
 - type: entity
   parent: BasePaperForm
@@ -38,6 +44,8 @@
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/_LP/Paper/nanotrasen_cmd_form_header.png"
+  - type: Paper
+    content: doc-text-printer-form-command
 
 - type: entity
   parent: BasePaperForm
@@ -46,6 +54,8 @@
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/_LP/Paper/nanotrasen_med_form_header.png"
+  - type: Paper
+    content: doc-text-printer-form-medical
 
 - type: entity
   parent: BasePaperForm
@@ -54,6 +64,8 @@
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/_LP/Paper/nanotrasen_cargo_form_header.png"
+  - type: Paper
+    content: doc-text-printer-form-cargo
 
 - type: entity
   parent: BasePaperForm
@@ -62,6 +74,8 @@
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/_LP/Paper/nanotrasen_eng_form_header.png"
+  - type: Paper
+    content: doc-text-printer-form-engineer
 
 - type: entity
   parent: BasePaperForm
@@ -70,6 +84,8 @@
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/_LP/Paper/nanotrasen_cc_form_header.png"
+  - type: Paper
+    content: doc-text-printer-form-centcom
 
 - type: entity
   parent: BasePaperForm
@@ -78,6 +94,8 @@
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/_LP/Paper/nanotrasen_cc_secure_form_header.png"
+  - type: Paper
+    content: doc-text-printer-form-centcom-secure
 
 - type: entity
   parent: BasePaperForm
@@ -86,6 +104,8 @@
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/_LP/Paper/syndie_form_header.png"
+  - type: Paper
+    content: doc-text-printer-form-syndie
 
 - type: entity
   parent: PaperFormCmd

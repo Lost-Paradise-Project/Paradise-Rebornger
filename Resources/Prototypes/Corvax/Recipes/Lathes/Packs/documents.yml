@@ -84,3 +84,14 @@
   # - RecipeDocCCFMReport # LP Edit
   - RecipeDocOperationOrder
   - RecipeDocOperationReport
+  # LP edit start
+  - RecipePaperFormSec
+  - RecipePaperFormLaw
+  - RecipePaperFormSci
+  - RecipePaperFormCmd
+  - RecipePaperFormMed
+  - RecipePaperFormCargo
+  - RecipePaperFormEng
+  - RecipePaperFormCC
+  - RecipePaperFormCCSecure
+  # LP edit end

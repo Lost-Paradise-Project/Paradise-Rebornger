@@ -1,4 +1,8 @@
 - type: latheCategory
+  id: Templates
+  name: lathe-category-templates
+
+- type: latheCategory
   id: Reports
   name: lathe-category-reports
 
