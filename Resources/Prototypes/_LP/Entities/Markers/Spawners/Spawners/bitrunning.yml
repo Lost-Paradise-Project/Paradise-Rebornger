@@ -1,0 +1,153 @@
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobAISRegular
+  name: AIS regular spawner
+  suffix: AI, AIS, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobAISRegular
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobAISHeavy
+  name: AIS heavy spawner
+  suffix: AI, AISHeavy, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobAISHeavy
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobAISElite
+  name: AIS elite spawner
+  suffix: AI, AISElite, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobAISElite
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobAISRegularK38
+  name: AIS regular spawner
+  suffix: AI, AISK38, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobAISRegularK38
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobAISRegularN1912
+  name: AIS regular spawner
+  suffix: AI, AISN1912, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobAISRegularN1912
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobAISRegularFitz
+  name: AIS regular spawner
+  suffix: AI, AISFitz, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobAISRegularFitz
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobAISRegularMelee
+  name: AIS regular spawner
+  suffix: AI, AISMelee, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobAISRegularMelee
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobAISHeavyMelee
+  name: AIS heavy spawner
+  suffix: AI, AISHeavyMelee, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobAISHeavyMelee
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobAISHeavyKineticRepeater
+  name: AIS heavy spawner
+  suffix: AI, AISHeavyKineticRepeater, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobAISHeavyKineticRepeater
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobAISEliteRT46
+  name: AIS elite spawner
+  suffix: AI, AISEliteRT46, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobAISEliteRT46
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobAISEliteArmBlade
+  name: AIS elite spawner
+  suffix: AI, AISEliteArmBlade, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobAISEliteArmBlade

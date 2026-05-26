@@ -147,6 +147,26 @@
     - BitrunnerAvatarCargoTechnicianGear
     - BitrunnerAvatarSalvageSpecialistGear
     - BitrunnerAvatarShaftMinerGear
+#LP edit start
+    - LPPBitrunnerAvatarWeeb
+    - LPPBitrunnerAvatarPG
+    - LPPBitrunnerAvatarPGBlack
+    - LPPBitrunnerAvatarHorny
+    - LPPBitrunnerAvatarHornyPriest
+    - LPPBitrunnerAvatarSyndie
+    - LPPBitrunnerAvatarGreytide
+    - LPPBitrunnerAvatarSecCamo
+    - LPPBitrunnerAvatarHoS
+    - LPPBitrunnerAvatarAISSentinel
+    - LPPBitrunnerAvatarUEGCamo
+    - LPPBitrunnerAvatarUEGSkitarii
+    - LPPBitrunnerAvatarUEG
+    - LPPBitrunnerAvatarUEGIPC
+    - LPPBitrunnerAvatarTacticalMaid
+    - LPPBitrunnerAvatarCultist
+    - LPPBitrunnerAvatarRichard
+    - LPPBitrunnerAvatarMerc
+#LP edit end
 
 - type: entity
   parent: [ BaseMachinePowered, ConstructibleMachine ]

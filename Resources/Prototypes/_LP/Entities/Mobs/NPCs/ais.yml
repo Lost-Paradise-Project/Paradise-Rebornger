@@ -1,0 +1,127 @@
+- type: entity
+  parent: MobHuman
+  id: LPPMobAISRegular
+  name: AIS soldier
+  suffix: AI, AIS, Regular
+  components:
+  - type: NpcFactionMember
+    factions:
+    - AllHostile
+  - type: Loadout
+    prototypes:
+    - LPPAISRegular
+  - type: HTN
+    rootTask:
+      task: SimpleHumanoidHostileCompound
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+
+- type: entity
+  parent: LPPMobAISRegular
+  id: LPPMobAISHeavy
+  name: AIS soldier
+  suffix: AI, AIS, Heavy
+  components:
+  - type: Loadout
+    prototypes:
+    - LPPAISHeavy
+
+- type: entity
+  parent: LPPMobAISRegular
+  id: LPPMobAISElite
+  name: AIS soldier
+  suffix: AI, AIS, Elite
+  components:
+  - type: Loadout
+    prototypes:
+    - LPPAISElite
+
+- type: entity
+  parent: LPPMobAISRegular
+  id: LPPMobAISRegularK38
+  name: AIS soldier
+  suffix: AI, AIS, RegularK38
+  components:
+  - type: Loadout
+    prototypes:
+    - LPPAISRegularK38
+
+- type: entity
+  parent: LPPMobAISRegular
+  id: LPPMobAISRegularN1912
+  name: AIS soldier
+  suffix: AI, AIS, RegularN1912
+  components:
+  - type: Loadout
+    prototypes:
+    - LPPAISRegularN1912
+
+- type: entity
+  parent: LPPMobAISRegular
+  id: LPPMobAISRegularFitz
+  name: AIS soldier
+  suffix: AI, AIS, RegularFitz
+  components:
+  - type: Loadout
+    prototypes:
+    - LPPAISRegularFitz
+
+- type: entity
+  parent: LPPMobAISRegular
+  id: LPPMobAISRegularMelee
+  name: AIS soldier
+  suffix: AI, AIS, RegularMelee
+  components:
+  - type: Loadout
+    prototypes:
+    - LPPAISRegularMelee
+
+- type: entity
+  parent: LPPMobAISRegular
+  id: LPPMobAISHeavyMelee
+  name: AIS soldier
+  suffix: AI, AIS, HeavyMelee
+  components:
+  - type: Loadout
+    prototypes:
+    - LPPAISHeavyMelee
+
+- type: entity
+  parent: LPPMobAISRegular
+  id: LPPMobAISHeavyKineticRepeater
+  name: AIS soldier
+  suffix: AI, AIS, HeavyKineticRepeater
+  components:
+  - type: Loadout
+    prototypes:
+    - LPPAISHeavyKineticRepeater
+
+- type: entity
+  parent: LPPMobAISRegular
+  id: LPPMobAISEliteSniper
+  name: AIS soldier
+  suffix: AI, AIS, EliteSniper
+  components:
+  - type: Loadout
+    prototypes:
+    - LPPAISEliteSniper
+
+- type: entity
+  parent: LPPMobAISRegular
+  id: LPPMobAISEliteRT46
+  name: AIS soldier
+  suffix: AI, AIS, EliteRT46
+  components:
+  - type: Loadout
+    prototypes:
+    - LPPAISEliteRT46
+
+- type: entity
+  parent: LPPMobAISRegular
+  id: LPPMobAISEliteArmBlade
+  name: AIS soldier
+  suffix: AI, AIS, EliteArmBlade
+  components:
+  - type: Loadout
+    prototypes:
+    - LPPAISEliteArmBlade

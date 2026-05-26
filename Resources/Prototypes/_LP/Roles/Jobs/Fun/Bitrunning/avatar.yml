@@ -1,0 +1,184 @@
+
+# --- ЛОДАУТЫ АВАТАРОВ (Netpod) ---
+
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  id: LPPBitrunnerAvatarWeeb
+  equipment:
+    mask: ClothingMaskOniRed
+    jumpsuit: ClothingUniformJumpsuitKimono
+    shoes: ClothingShoesWizard
+
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  id: LPPBitrunnerAvatarPG
+  equipment:
+    head: LPPClothingHeadHatPGPanama
+    jumpsuit: LPPClothingUniformJumpsuitPG
+    shoes: LPPClothingShoesBootsCombatPG
+    neck: LPPClothingNeckMantlePG
+
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  id: LPPBitrunnerAvatarPGBlack
+  equipment:
+    eyes: ClothingEyesGlassesCheapSunglasses
+    jumpsuit: LPPClothingUniformBlackJumpsuitPG
+    gloves: LPPClothingHandsGlovesTacticalFingerless
+    shoes: ClothingShoesSwat
+
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  id: LPPBitrunnerAvatarHorny
+  equipment:
+    eyes: LPPHypnogogglesPink
+    jumpsuit: LPPBikinisBlack
+    gloves: ClothingHandsGlovesChemist
+    shoes: ClothingShoesBootsLaceup
+    breast: LPPSwimsuitplusTightsBodyBra2
+
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  id: LPPBitrunnerAvatarHornyPriest
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitLacerobe
+    gloves: ClothingHandsGlovesColorWhite
+    shoes: ClothingShoesBootsLaceup
+    socks: LPPClothingUnderPantyhoseBlack
+
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  id: LPPBitrunnerAvatarSyndie
+  equipment:
+    eyes: ClothingEyesGlassesCheapSunglasses
+    jumpsuit: ClothingUniformJumpsuitOperative
+    gloves: ClothingHandsGlovesChemist
+    shoes: ClothingShoesBootsWinterSyndicate
+
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  id: LPPBitrunnerAvatarGreytide
+  equipment:
+    mask: ClothingMaskGas
+    jumpsuit: ClothingUniformJumpsuitAncient
+    gloves: ClothingHandsGlovesFingerlessInsulated
+    shoes: ClothingShoesColorBlack
+
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  id: LPPBitrunnerAvatarSecCamo
+  equipment:
+    head: LPPClothingHeadSecurityHatCamo
+    jumpsuit: LPPClothingUniformJumpsuitSecCamo
+    gloves: LPPClothingHandsGlovesTacticalFingerless
+    shoes: ClothingShoesSwat
+    eyes: ClothingEyesGlassesCheapSunglasses
+
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  id: LPPBitrunnerAvatarHoS
+  equipment:
+    head: ClothingHeadHatBeretHoS
+    jumpsuit: ClothingUniformJumpsuitHoSAlt
+    gloves: LPPClothingHandsGlovesTacticalFingerless
+    shoes: ClothingShoesSwat
+    eyes: ClothingEyesGlassesCheapSunglasses
+    neck: ClothingNeckMantleHOSShoulder
+
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  id: LPPBitrunnerAvatarAISSentinel
+  equipment:
+    head: ClothingHeadHatAISBeretSentinel
+    jumpsuit: ClothingUniformJumpsuitAISArmsman
+    gloves: LPPClothingHandsGlovesTacticalFingerless
+    shoes: ClothingShoesSwat
+    eyes: ClothingEyesGlassesCheapSunglasses
+
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  id: LPPBitrunnerAvatarUEGCamo
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitCamoUEG
+    gloves: LPPClothingHandsGlovesTacticalFingerless
+    shoes: LPPClothingShoesBootsUEG
+    eyes: ClothingEyesGlassesCheapSunglasses
+
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  id: LPPBitrunnerAvatarUEGSkitarii
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitOperativeUEG
+    gloves: LPPClothingHandsGlovesTacticalFingerless
+    shoes: LPPClothingShoesBootsUEG
+    eyes: ClothingEyesGlassesCheapSunglasses
+
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  id: LPPBitrunnerAvatarUEG
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitUEGFatigueGreen
+    gloves: LPPClothingHandsGlovesTacticalFingerless
+    shoes: ClothingShoesSwat
+    head: ClothingHeadHatUEGArmyGarrison
+
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  id: LPPBitrunnerAvatarUEGIPC
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitUEGFatigueIPC
+    shoes: ClothingShoesSwat
+    outerClothing: ClothingOuterVestTank
+
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  id: LPPBitrunnerAvatarTacticalMaid
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtTacticalMaid
+    shoes: ClothingShoesSwat
+    head: ClothingHeadHatTacticalMaidHeadband
+
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  id: LPPBitrunnerAvatarCultist
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitTacticool
+    shoes: ClothingShoesCult
+    outerClothing: ClothingOuterRobesCult
+    head: ClothingHeadHatHoodCulthood
+    gloves: ClothingHandsGlovesColorRed
+    neck: BedsheetCult
+
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  id: LPPBitrunnerAvatarRichard
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitSky
+    shoes: ClothingShoesColorBlack
+    outerClothing: ClothingOuterCoatLettermanRed
+    head: ClothingHeadHatRichard
+    gloves: ClothingHandsGlovesFingerless
+
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  id: LPPBitrunnerAvatarMerc
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMercenary
+    shoes: ClothingShoesBootsMerc
+    mask: ClothingMaskBandMerc
+    head: ClothingHeadHatBeretMerc
+    gloves: ClothingHandsGlovesMercFingerless
+
+# --- ЛОДАУТЫ ДОМЕНОВ ---
+
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  id: LPPBitrunnerAvatarCombatUEG
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitUEGFatigueGreen
+    shoes: ClothingShoesBootsJackFilled
+    outerClothing: ClothingOuterVestWebUEG
+    head: ClothingHeadHelmetUEG
+    gloves: ClothingHandsMercGlovesCombat
+    eyes: LPPClothingEyesGlassesNVG
+    mask: ClothingMaskGasSecurity

@@ -1,0 +1,101 @@
+- type: startingGear
+  id: LPPAISRegular
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitAISVolunteer
+    shoes: ClothingShoesSwat
+    outerClothing: ClothingOuterArmorAISLight
+    head: ClothingHeadHelmetAISNoVisor
+    gloves: ClothingHandsGlovesCombatAIS
+
+- type: startingGear
+  id: LPPAISRegularK38
+  parent: LPPAISRegular
+  inhand:
+  - WeaponRevolverK38Master
+
+- type: startingGear
+  id: LPPAISRegularN1912
+  parent: LPPAISRegular
+  inhand:
+  - LPPWeaponPistolN1912
+
+- type: startingGear
+  id: LPPAISRegularFitz
+  parent: LPPAISRegular
+  inhand:
+  - WeaponRevolverFitz
+
+- type: startingGear
+  id: LPPAISRegularAlt
+  parent: LPPAISRegular
+  equipment:
+    head: ClothingHeadHelmetAISVisor
+
+- type: startingGear
+  id: LPPAISRegularMelee
+  parent: LPPAISRegularAlt
+  inhand:
+  - Machete
+  - RiotShield
+
+- type: startingGear
+  id: LPPAISHeavy
+  parent: LPPAISRegular
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitAISSentinel
+    outerClothing: ClothingOuterArmorAISHeavy
+    head: ClothingHeadHelmetAISHeavy
+
+- type: startingGear
+  id: LPPAISHeavyMelee
+  parent: LPPAISHeavy
+  inhand:
+  - Truncheon
+  - UEGShield
+
+- type: startingGear
+  id: LPPAISHeavyStarflareSMG
+  parent: LPPAISHeavy
+  inhand:
+  - WeaponStarflareSMG
+
+- type: startingGear
+  id: LPPAISHeavyKineticRepeater
+  parent: LPPAISHeavy
+  inhand:
+  - WeaponProtoKineticRepeater
+  - RiotBulletShield
+
+- type: startingGear
+  id: LPPAISElite
+  parent: LPPAISRegular
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitAISArmsman
+    outerClothing: ClothingOuterHardsuitAIS
+    head: ClothingHeadHelmetHardsuitAISTacsuit
+
+- type: startingGear
+  id: LPPAISEliteSniper
+  parent: LPPAISElite
+  inhand:
+  - LPPweaponShasspo
+
+- type: startingGear
+  id: LPPAISEliteRT46
+  parent: LPPAISElite
+  inhand:
+  - LPPWeaponRevolverRT46
+  - UEGShield
+
+- type: startingGear
+  id: LPPAISEliteNailGun
+  parent: LPPAISElite
+  inhand:
+  - LPPWeaponNailGun
+
+- type: startingGear
+  id: LPPAISEliteArmBlade
+  parent: LPPAISElite
+  inhand:
+  - ArmBlade
+  - UEGShield

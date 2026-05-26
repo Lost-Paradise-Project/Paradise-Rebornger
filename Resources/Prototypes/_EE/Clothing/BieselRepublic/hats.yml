@@ -74,7 +74,7 @@
 
 - type: entity
   parent: [ClothingHeadHelmetBasic]
-  id: ClothingHeadHelmetTCFLVisor
+  id: ClothingHeadHelmetAISVisor
   name: AIS light tactical helmet
   suffix: AIS
   description: A basic tactical helmet worn by members of the AIS Armed Forces.
@@ -90,7 +90,7 @@
 
 - type: entity
   parent: [ClothingHeadBaseButcherable]
-  id: ClothingHeadHatTCAFBeretDress
+  id: ClothingHeadHatAISFBeretDress
   name: AIS dress beret
   suffix: AIS
   description: A formal beret worn by current and former members of the AIS Armed Forces.
@@ -126,7 +126,7 @@
 
 - type: entity
   parent: [ClothingHeadBaseButcherable]
-  id: ClothingHeadHatTCFLBeretField
+  id: ClothingHeadHatAISLegionBeretField
   name: AIS field beret
   suffix: AIS
   description: A field beret worn by current and former members of the AIS Foreign Legion. This beret is a common sight in bars all across the Orion Spur.
@@ -138,7 +138,7 @@
 
 - type: entity
   parent: [ClothingHeadBaseButcherable]
-  id: ClothingHeadHatTCFLBeretSentinel
+  id: ClothingHeadHatAISBeretSentinel
   name: AIS sentinel beret
   suffix: AIS
   description: A dress beret worn by the elite members of the AIS Foreign Legion.
@@ -150,7 +150,7 @@
 
 - type: entity
   parent: [ClothingHeadHeadHatBaseFlippable]
-  id: ClothingHeadHatTCFLSoftCap
+  id: ClothingHeadHatAISSoftCap
   name: AIS soft cap
   suffix: AIS
   description: A soft wool hat worn by current and former members of the AIS Foreign Legion.
