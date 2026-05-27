@@ -151,3 +151,220 @@
   - type: ConditionalSpawner
     prototypes:
       - LPPMobAISEliteArmBlade
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnPointCyberpoliceOfficer
+  name: cyberpolice officer
+  suffix: Spawner, Ghost Role, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: GhostRole
+    name: ghost-role-information-cyberpolice-officer-bitrunning-name
+    description: ghost-role-information-cyberpolice-officer-description
+    rules: ghost-role-cyberpolice-officer-rules
+    raffle:
+      settings: default
+    mindRoles:
+    - MindRoleGhostRoleFreeAgent
+  - type: GhostRoleMobSpawner
+    prototype: LPPMobCyberpoliceBitrunEasy
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnPointCyberpoliceOfficerMelee
+  name: cyberpolice officer melee
+  suffix: Spawner, Ghost Role, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: GhostRole
+    name: ghost-role-information-cyberpolice-officer-bitrunning-name
+    description: ghost-role-information-cyberpolice-officer-description
+    rules: ghost-role-cyberpolice-officer-rules
+    raffle:
+      settings: default
+    mindRoles:
+    - MindRoleGhostRoleFreeAgent
+  - type: GhostRoleMobSpawner
+    prototype: LPPMobCyberpoliceBitrunEasyMelee
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnPointCyberpoliceOfficerAntilaser
+  name: cyberpolice officer antilaser
+  suffix: Spawner, Ghost Role, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: GhostRole
+    name: ghost-role-information-cyberpolice-officer-bitrunning-name
+    description: ghost-role-information-cyberpolice-officer-description
+    rules: ghost-role-cyberpolice-officer-rules
+    raffle:
+      settings: default
+    mindRoles:
+    - MindRoleGhostRoleFreeAgent
+  - type: GhostRoleMobSpawner
+    prototype: LPPMobCyberpoliceBitrunEasyAntilaser
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnPointCyberpoliceSwat
+  name: cyberpolice swat
+  suffix: Spawner, Ghost Role, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: GhostRole
+    name: ghost-role-information-cyberpolice-officer-bitrunning-name
+    description: ghost-role-information-cyberpolice-officer-description
+    rules: ghost-role-cyberpolice-officer-rules
+    raffle:
+      settings: default
+    mindRoles:
+    - MindRoleGhostRoleFreeAgent
+  - type: GhostRoleMobSpawner
+    prototype: LPPMobCyberpoliceBitrunMedium
+
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnPointCyberpoliceSwatAntilaser
+  name: cyberpolice officer antilaser
+  suffix: Spawner, Ghost Role, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: GhostRole
+    name: ghost-role-information-cyberpolice-officer-bitrunning-name
+    description: ghost-role-information-cyberpolice-officer-description
+    rules: ghost-role-cyberpolice-officer-rules
+    raffle:
+      settings: default
+    mindRoles:
+    - MindRoleGhostRoleFreeAgent
+  - type: GhostRoleMobSpawner
+    prototype: LPPMobCyberpoliceBitrunMediumAntilaser
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnPointCyberpoliceSwatMelee
+  name: cyberpolice swat melee
+  suffix: Spawner, Ghost Role, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: GhostRole
+    name: ghost-role-information-cyberpolice-officer-bitrunning-name
+    description: ghost-role-information-cyberpolice-officer-description
+    rules: ghost-role-cyberpolice-officer-rules
+    raffle:
+      settings: default
+    mindRoles:
+    - MindRoleGhostRoleFreeAgent
+  - type: GhostRoleMobSpawner
+    prototype: LPPMobCyberpoliceBitrunMediumMelee
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnPointCyberpoliceSwatElite
+  name: cyberpolice swat elite antilaser
+  suffix: Spawner, Ghost Role, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: GhostRole
+    name: ghost-role-information-cyberpolice-officer-bitrunning-name
+    description: ghost-role-information-cyberpolice-officer-description
+    rules: ghost-role-cyberpolice-officer-rules
+    raffle:
+      settings: default
+    mindRoles:
+    - MindRoleGhostRoleFreeAgent
+  - type: GhostRoleMobSpawner
+    prototype: LPPMobCyberpoliceBitrunHard
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnPointCyberpoliceSwatEliteMelee
+  name: cyberpolice swat elite melee
+  suffix: Spawner, Ghost Role, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: GhostRole
+    name: ghost-role-information-cyberpolice-officer-bitrunning-name
+    description: ghost-role-information-cyberpolice-officer-description
+    rules: ghost-role-cyberpolice-officer-rules
+    raffle:
+      settings: default
+    mindRoles:
+    - MindRoleGhostRoleFreeAgent
+  - type: GhostRoleMobSpawner
+    prototype: LPPMobCyberpoliceBitrunHardMelee
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnPointCyberpoliceSwatEliteAntilaser
+  name: cyberpolice swat elite antilaser
+  suffix: Spawner, Ghost Role, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: GhostRole
+    name: ghost-role-information-cyberpolice-officer-bitrunning-name
+    description: ghost-role-information-cyberpolice-officer-description
+    rules: ghost-role-cyberpolice-officer-rules
+    raffle:
+      settings: default
+    mindRoles:
+    - MindRoleGhostRoleFreeAgent
+  - type: GhostRoleMobSpawner
+    prototype: LPPMobCyberpoliceBitrunHardAntilaser
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnPointCyberpoliceSpecops
+  name: cyberpolice specops
+  suffix: Spawner, Ghost Role, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: GhostRole
+    name: ghost-role-information-cyberpolice-officer-bitrunning-name
+    description: ghost-role-information-cyberpolice-officer-description
+    rules: ghost-role-cyberpolice-officer-rules
+    raffle:
+      settings: default
+    mindRoles:
+    - MindRoleGhostRoleFreeAgent
+  - type: GhostRoleMobSpawner
+    prototype: LPPMobCyberpoliceBitrunMedium
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnPointCyberpoliceSpecopsMelee
+  name: cyberpolice specops melee
+  suffix: Spawner, Ghost Role, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: GhostRole
+    name: ghost-role-information-cyberpolice-officer-bitrunning-name
+    description: ghost-role-information-cyberpolice-officer-description
+    rules: ghost-role-cyberpolice-officer-rules
+    raffle:
+      settings: default
+    mindRoles:
+    - MindRoleGhostRoleFreeAgent
+  - type: GhostRoleMobSpawner
+    prototype: LPPMobCyberpoliceBitrunMediumMelee
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnPointCyberpoliceSpecopsAntilaser
+  name: cyberpolice specops antilaser
+  suffix: Spawner, Ghost Role, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: GhostRole
+    name: ghost-role-information-cyberpolice-officer-bitrunning-name
+    description: ghost-role-information-cyberpolice-officer-description
+    rules: ghost-role-cyberpolice-officer-rules
+    raffle:
+      settings: default
+    mindRoles:
+    - MindRoleGhostRoleFreeAgent
+  - type: GhostRoleMobSpawner
+    prototype: LPPMobCyberpoliceBitrunMediumAntilaser

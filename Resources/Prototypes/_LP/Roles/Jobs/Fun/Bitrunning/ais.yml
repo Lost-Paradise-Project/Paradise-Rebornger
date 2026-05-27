@@ -78,7 +78,8 @@
   id: LPPAISEliteSniper
   parent: LPPAISElite
   inhand:
-  - LPPweaponShasspo
+  - WeaponPistolEchis
+  - UEGShield
 
 - type: startingGear
   id: LPPAISEliteRT46

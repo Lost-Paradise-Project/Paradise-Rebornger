@@ -182,3 +182,251 @@
     gloves: ClothingHandsMercGlovesCombat
     eyes: LPPClothingEyesGlassesNVG
     mask: ClothingMaskGasSecurity
+
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  id: LPPBitrunnerAvatarCombatPG
+  equipment:
+    eyes: LPPClothingEyesGlassesSunglassesPG
+    jumpsuit: LPPClothingUniformBlackJumpsuitPG
+    gloves: ClothingHandsGlovesCombat
+    shoes: ClothingShoesBootsJack
+    head: LPPClothingHeadUrbanHelmetPG
+    mask: LPPClothingMaskPGWrittenOff
+    outerClothing: LPPClothingOuterVestUrbanPG
+
+# --- КИБЕРПОЛИЦИЯ ---
+
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  id: LPPBitrunnerCyberPolice
+  equipment:
+    eyes: ClothingEyesGlassesBSO
+    jumpsuit: ClothingUniformJumpsuitTurtleneckTactick
+    gloves: ClothingHandsGlovesCombat
+    shoes: ClothingShoesBootsJack
+    head: ClothingHeadHatCowboyBountyHunter
+    mask: ClothingMaskGasSecurity
+    outerClothing: ClothingOuterArmorBasic
+    belt: ClothingBeltSecurityWebbingFilled
+    back: ClothingBackpackSatchel
+    pocket1: MagazinePistol
+    pocket2: MagazinePistol
+    id: BitrunAvatarIDCard
+
+- type: startingGear
+  parent: LPPBitrunnerCyberPolice
+  id: LPPBitrunnerCyberPoliceEasy
+  inhand:
+  - WeaponPistolG22
+  storage:
+    back:
+    - MedkitFilled
+    - Bola
+    - GrenadeFlashBang
+    - MagazineBoxPistol
+    - Crowbar
+
+- type: startingGear
+  parent: LPPBitrunnerCyberPolice
+  id: LPPBitrunnerCyberPoliceEasyMelee
+  equipment:
+    outerClothing: ClothingOuterArmorRiot
+    pocket1: CombatKnife
+    pocket2: SyringeEphedrine
+  inhand:
+  - Truncheon
+  - TelescopicShield
+  storage:
+    back:
+    - MedkitFilled
+    - Bola
+    - GrenadeFlashBang
+    - MagazineBoxPistol
+    - Crowbar
+
+- type: startingGear
+  parent: LPPBitrunnerCyberPolice
+  id: LPPBitrunnerCyberPoliceEasyMeleeAntilaser
+  equipment:
+    head: ClothingHeadHelmetHeavyAblative
+    pocket1: MagazinePistol
+    pocket2: BurnAutoInjector
+  inhand:
+  - WeaponPistolG22
+  storage:
+    back:
+    - MedkitFilled
+    - Bola
+    - GrenadeFlashBang
+    - MagazineBoxPistol
+    - Crowbar
+
+- type: startingGear
+  parent: LPPBitrunnerCyberPolice
+  id: LPPBitrunnerCyberPoliceMedium
+  equipment:
+    outerClothing: LPPlothingOuterArmorSwatAlternative
+    head: LPPClothingHeadHelmetSwatAlternative
+    pocket1: MagazineRifle
+    pocket2: MagazineRifle
+  inhand:
+  - LPPWeaponRifleLemas
+  storage:
+    back:
+    - MedkitFilled
+    - Bola
+    - GrenadeStinger
+    - LPPWeaponEnergyGunPistolDominator
+    - Crowbar
+
+- type: startingGear
+  parent: LPPBitrunnerCyberPolice
+  id: LPPBitrunnerCyberPoliceMediumMelee
+  equipment:
+    outerClothing: LPPlothingOuterArmorSwat
+    head: LPPClothingHeadHelmetSwat
+    pocket1: WeaponRevolverFaith
+    pocket2: SyringeStimulants
+  inhand:
+  - CaptainSabre
+  - BlueShieldShield
+  storage:
+    back:
+    - MedkitFilled
+    - Bola
+    - Bola
+    - GrenadeStinger
+    - Crowbar
+
+- type: startingGear
+  parent: LPPBitrunnerCyberPolice
+  id: LPPBitrunnerCyberPoliceMediumAntilaser
+  equipment:
+    outerClothing: ClothingOuterArmorReflective
+    head: ClothingHeadHelmetSwat
+    pocket1: LPPMagazinePistolPF20lethal
+    pocket2: LPPMagazinePistolPF20lethal
+  inhand:
+  - LPPWeaponPistolPF20
+  - LPPKnifeJagdkommando
+  storage:
+    back:
+    - MedkitFilled
+    - Bola
+    - GrenadeStinger
+    - Crowbar
+
+- type: startingGear
+  parent: LPPBitrunnerCyberPolice
+  id: LPPBitrunnerCyberPoliceHard
+  equipment:
+    outerClothing: ClothingOuterArmorStandardHeavy
+    head: ClothingHeadHelmetHeavyStandard
+    mask: ClothingMaskGasSwat
+    pocket1: MagazineRifle
+    pocket2: MagazineRifle
+  inhand:
+  - LPPWeaponRifleAek
+  storage:
+    back:
+    - MedkitCombatFilled
+    - Bola
+    - GrenadeShrapnel
+    - JawsOfLife
+
+- type: startingGear
+  parent: LPPBitrunnerCyberPolice
+  id: LPPBitrunnerCyberPoliceHardMelee
+  equipment:
+    outerClothing: ClothingOuterArmorRiotHeavy
+    head: ClothingHeadHelmetHeavyRiot
+    pocket1: StimpackMini
+    pocket2: LPPKnifeJagdkommando
+  inhand:
+  - LPPEnergyAxe
+  storage:
+    back:
+    - MedkitCombatFilled
+    - Bola
+    - GrenadeShrapnel
+    - JawsOfLife
+
+- type: startingGear
+  parent: LPPBitrunnerCyberPolice
+  id: LPPBitrunnerCyberPoliceHardAntilaser
+  equipment:
+    outerClothing: ClothingOuterArmorAblativeHeavy
+    head: ClothingHeadHelmetSwat
+    pocket1: MagazineMagnum
+    pocket2: MagazineMagnum
+  inhand:
+  - WeaponPistolN1984
+  - Machete
+  storage:
+    back:
+    - MedkitCombatFilled
+    - Bola
+    - JawsOfLife
+    - MagazineBoxMagnum
+
+- type: startingGear
+  parent: LPPBitrunnerCyberPolice
+  id: LPPBitrunnerCyberPoliceExtreme
+  equipment:
+    outerClothing: ClothingOuterArmorHoSHeavy
+    head: ClothingHeadHelmetHeavyHoS
+    mask: ClothingMaskGasDeathSquad
+    shoes: ClothingShoesChameleonNoSlips
+    back: LPPClothingBackpackHunter
+    pocket1: MagazineRifle
+    pocket2: MagazineRifle
+  inhand:
+  - WeaponRifleM16A4
+  storage:
+    back:
+    - MedkitCombatFilled
+    - Bola
+    - GrenadeShrapnel
+    - JawsOfLife
+    - StimpackMini
+
+- type: startingGear
+  parent: LPPBitrunnerCyberPolice
+  id: LPPBitrunnerCyberPoliceExtremeMelee
+  equipment:
+    outerClothing: ClothingOuterArmorRiotHeavy
+    head: LPPClothingHeadTSFHelmet
+    back: LPPClothingBackpackHunter
+    pocket1: WeaponPistolG22
+    pocket2: AirlossAutoInjector
+  inhand:
+  - LPPEnergyBroadsword
+  - BlueShieldShield
+  storage:
+    back:
+    - MedkitCombatFilled
+    - StimkitFilled
+    - GrenadeShrapnel
+    - JawsOfLife
+
+- type: startingGear
+  parent: LPPBitrunnerCyberPolice
+  id: LPPBitrunnerCyberPoliceExtremeAntilaser
+  equipment:
+    outerClothing: LPPClothingOuterArmorErengySyndie
+    head: LPPClothingHeadTSFHelmet
+    back: LPPClothingBackpackHunter
+    pocket1: LPPKnifeJagdkommando
+    pocket2: AirlossAutoInjector
+  inhand:
+  - LPPWeaponRiflepadefame
+  storage:
+    back:
+    - MedkitCombatFilled
+    - StimpackMini
+    - GrenadeShrapnel
+    - JawsOfLife
+    - MagazineRifle
+    - MagazineRifle
+    - MagazineRifle
