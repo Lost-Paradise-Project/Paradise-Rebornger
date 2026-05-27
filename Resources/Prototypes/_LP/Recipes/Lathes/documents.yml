@@ -75,7 +75,7 @@
   categories:
   - Templates
   completetime: 2
-  applyMaterialDiscount: false 
+  applyMaterialDiscount: false
   materials:
     PrinterPaper: 100
 
