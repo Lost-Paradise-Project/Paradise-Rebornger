@@ -169,6 +169,16 @@
     head: ClothingHeadHatBeretMerc
     gloves: ClothingHandsGlovesMercFingerless
 
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  id: LPPBitrunnerAvatarTechPriest
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitRoboticist
+    gloves: ClothingHandsGlovesRobohands
+    shoes: ClothingShoesCult
+    head: ClothingHeadTechPriest
+    outerClothing: ClothingOuterRobeTechPriest
+
 # --- ЛОДАУТЫ ДОМЕНОВ ---
 
 - type: startingGear
@@ -182,6 +192,7 @@
     gloves: ClothingHandsMercGlovesCombat
     eyes: LPPClothingEyesGlassesNVG
     mask: ClothingMaskGasSecurity
+    belt: ClothingBeltHolster
 
 - type: startingGear
   parent: BitrunnerAvatarGear
@@ -194,6 +205,7 @@
     head: LPPClothingHeadUrbanHelmetPG
     mask: LPPClothingMaskPGWrittenOff
     outerClothing: LPPClothingOuterVestUrbanPG
+    belt: ClothingBeltHolster
 
 # --- КИБЕРПОЛИЦИЯ ---
 

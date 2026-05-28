@@ -11,6 +11,10 @@
     cost: 325
   - id: MedkitBurnFilled
     cost: 325
+#LP edit start Хилка для КПБ
+  - id: CableApcStack
+    cost: 325
+#LP edit end
   - id: ClothingEyesGlassesSunglasses
     cost: 650
   - id: ClothingOuterCoatJacketLeather
@@ -22,20 +26,54 @@
   - id: BitrunningGearSimpleDisk
     cost: 487
   - id: BitrunningGearComplexDisk
-    cost: 812
+    cost: 1012 #LP edit баланс
   - id: BitrunningGearAdvancedDisk
-    cost: 1300
+    cost: 1500 #LP edit баланс
   - id: BitrunningProgramBasicDisk
     cost: 487
   - id: BitrunningProgramComplexDisk
-    cost: 974
+    cost: 1512 #LP edit баланс
   # - id: BitrunningProgramEliteDisk
   #   cost: 1625
   - id: BitrunningGearPKAModsDisk
-    cost: 487
+    cost: 387 #LP edit баланс
   - id: BitrunningGearPremiumPKAModsDisk
-    cost: 1040
+    cost: 787 #LP edit баланс
   - id: BitrunningGearCrusherModsDisk
     cost: 487
   - id: BitrunningGearPremiumCrusherModsDisk
     cost: 1040
+#LP edit start
+  - id: LPPBitrunningPKASimpleDisk
+    cost: 687
+  - id: LPPBitrunningPKAPremiumDisk
+    cost: 1240
+  - id: LPPBitrunningContainersSimpleDisk
+    cost: 450
+  - id: LPPBitrunningContainersPremiumDisk
+    cost: 1040
+  - id: LPPBitrunningContainersEliteDisk
+    cost: 2500
+  - id: LPPBitrunningContainersEliteDisk
+    cost: 3540
+  - id: LPPBitrunningHealingDisk
+    cost: 1100
+  - id: LPPBitrunningWeaponaryBasicDisk
+    cost: 702
+  - id: LPPBitrunningWeaponaryComplexDisk
+    cost: 1451
+  - id: LPPBitrunningWeaponaryPremiumDisk
+    cost: 2184
+  - id: LPPBitrunningAmmunitionDisk
+    cost: 250
+  - id: LPPBitrunningGimmicSecurityDisk
+    cost: 1520
+  - id: LPPBitrunningGimmicHeadofSecurityDisk
+    cost: 4250
+  - id: SpaceCash500
+    cost: 100
+  - id: SpaceCash2500
+    cost: 500
+  - id: SpaceCash5000
+    cost: 1000
+#LP edit end

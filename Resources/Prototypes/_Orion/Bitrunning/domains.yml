@@ -137,9 +137,11 @@
   name: bitrunning-domain-zealot-arena-name
   description: bitrunning-domain-zealot-arena-desc
   difficulty: Hard
-  cost: 3
-  serverRewardPoints: 6
-  bitrunningRewardPoints: 600
+#LP edit start хэштег хватитрдочитьиерофанта
+  cost: 10
+  serverRewardPoints: 0
+  bitrunningRewardPoints: 800
+#LP edit end
   mapPath: /Maps/_Orion/Bitrun/zealot-arena.yml
   objectiveType: EliminateEnemies
 

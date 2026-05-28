@@ -89,3 +89,5 @@
     modifiers:
       coefficients:
         Slash: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.5

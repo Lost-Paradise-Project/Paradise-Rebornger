@@ -1,0 +1,24 @@
+# --- --- ---
+#  ТЯЖЁЛЫЕ
+# --- --- ---
+- type: bitrunningVirtualDomain
+  id: LPPEUGvsANS
+  name: bitrunning-domain-ueg-vs-ans-name
+  description: bitrunning-domain-ueg-vs-ans-desc
+  difficulty: Hard
+  cost: 10
+  serverRewardPoints: 20
+  bitrunningRewardPoints: 1200 #Продолжительность+сложность
+  forcedLoadout: LPPBitrunnerAvatarCombatUEG
+  isModular: true
+  completionLoot:
+    LPPCloakAdmiralUEG: 1
+  mapPath: /Maps/_LP/Bitrun/ueg-vs-ans.yml
+  objectiveType: EliminateEnemies
+  objectiveTarget: 0
+
+# --- --- ---
+#  СЕКСТРИМ 🗣️
+# --- --- ---
+
+# Делайте

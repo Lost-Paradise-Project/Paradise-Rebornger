@@ -1,0 +1,207 @@
+# TODO: Add medbeam gun from goob
+- type: entity
+  parent: BaseBitrunningDisk
+  id: LPPBitrunningPKASimpleDisk
+  name: "bitrunning pka: simple"
+  description: Use in hand to choose pka.
+  components:
+  - type: BitrunningAbilityDisk
+    grantMode: Item
+    options:
+      lppbitrunning-disk-option-pka-basic: WeaponProtoKineticAccelerator
+      lppbitrunning-disk-option-pka-pistol: WeaponProtoKineticPistol
+
+- type: entity
+  parent: BaseBitrunningDisk
+  id: LPPBitrunningPKAPremiumDisk
+  name: "bitrunning pka: premium"
+  description: Use in hand to choose pka.
+  components:
+  - type: BitrunningAbilityDisk
+    grantMode: Item
+    options:
+      lppbitrunning-disk-option-pka-shotgun: WeaponProtoKineticShotgun
+      lppbitrunning-disk-option-pka-repeater: WeaponProtoKineticRepeater
+
+- type: entity
+  parent: BaseBitrunningDisk
+  id: LPPBitrunningContainersSimpleDisk
+  name: "bitrunning containers: simple"
+  description: Use in hand to choose belt.
+  components:
+  - type: BitrunningAbilityDisk
+    grantMode: Item
+    options:
+      lppbitrunning-disk-option-belt-holster: ClothingBeltHolster
+      lppbitrunning-disk-option-belt-waistbag: ClothingBeltStorageWaistbag
+      lppbitrunning-disk-option-belt-assault: ClothingBeltAssault
+      lppbitrunning-disk-option-belt-medical: ClothingBeltMedical
+      lppbitrunning-disk-option-belt-security: ClothingBeltSecurity
+
+- type: entity
+  parent: BaseBitrunningDisk
+  id: LPPBitrunningContainersComplexDisk
+  name: "bitrunning containers: complex"
+  description: Use in hand to choose belt.
+  components:
+  - type: BitrunningAbilityDisk
+    grantMode: Item
+    options:
+      lppbitrunning-disk-option-belt-syndieholster: ClothingBeltSyndieHolster
+      lppbitrunning-disk-option-belt-webbingcmo: ClothingBeltMilitaryWebbingCMO
+      lppbitrunning-disk-option-belt-webbingsalvage: ClothingBeltSalvageWebbing
+      lppbitrunning-disk-option-belt-webbingais: ClothingBeltAISWebbing
+      lppbitrunning-disk-option-belt-webbingpg: LPPClothingBeltPGWebbing
+      lppbitrunning-disk-option-belt-webbingmerc: ClothingBeltMercWebbing
+      lppbitrunning-disk-option-belt-webbingmilitarycorpsman: ClothingBeltCorpsmanWebbing
+
+- type: entity
+  parent: BaseBitrunningDisk
+  id: LPPBitrunningContainersPremiumDisk
+  name: "bitrunning containers: premium"
+  description: Use in hand to choose belt.
+  components:
+  - type: BitrunningAbilityDisk
+    grantMode: Item
+    options:
+      lppbitrunning-disk-option-belt-webbingueg: LPPClothingBeltUEGWebbing
+      lppbitrunning-disk-option-belt-webbingmilitary: ClothingBeltMilitaryWebbing
+      lppbitrunning-disk-option-belt-webbingmilitarymedic: ClothingBeltMilitaryWebbingMed
+      lppbitrunning-disk-option-belt-webbingmilitaryert: ClothingBeltMilitaryWebbingERT
+
+- type: entity
+  parent: BaseBitrunningDisk
+  id: LPPBitrunningContainersEliteDisk
+  name: "bitrunning containers: elite"
+  description: Use in hand to choose container.
+  components:
+  - type: BitrunningAbilityDisk
+    grantMode: Item
+    options:
+      lppbitrunning-disk-option-belt-backpackmilitary: ClothingMilitaryBackpack
+      lppbitrunning-disk-option-belt-satchelmilitary: ClothingBackpackMilitarySatchel
+      lppbitrunning-disk-option-belt-backpacksyndicate: ClothingBackpackSyndicate
+      lppbitrunning-disk-option-belt-webbingsalvager: LPPClothingBeltMaximumWebbingSalvager
+      lppbitrunning-disk-option-belt-webbingmaximum: LPPClothingBeltMaximumWebbing
+
+- type: entity
+  parent: BaseBitrunningDisk
+  id: LPPBitrunningHealingDisk
+  name: "bitrunning healing"
+  description: Use in hand to choose heal item.
+  components:
+  - type: BitrunningAbilityDisk
+    grantMode: Item
+    options:
+      lppbitrunning-disk-option-medkit: MedkitFilled
+      lppbitrunning-disk-option-medipen: AirlossAutoInjector
+      lppbitrunning-disk-option-cable: CableApcStack
+
+- type: entity
+  parent: BaseBitrunningDisk
+  id: LPPBitrunningWeaponaryBasicDisk
+  name: "bitrunning weaponary: basic"
+  description: Use in hand to choose weapon.
+  components:
+  - type: BitrunningAbilityDisk
+    grantMode: Item
+    options:
+      lppbitrunning-disk-option-weapon-cleaver: ButchCleaver
+      lppbitrunning-disk-option-weapon-chimp: WeaponPistolCHIMPUpgraded
+      lppbitrunning-disk-option-weapon-faith: WeaponRevolverFaith
+      lppbitrunning-disk-option-weapon-musket: Musket
+      lppbitrunning-disk-option-weapon-m14: LPPWeaponRifleM14
+      lppbitrunning-disk-option-weapon-makeshiftlaser: WeaponMakeshiftLaser
+      lppbitrunning-disk-option-weapon-revolverfe: LPPWeaponRevolverFieldEngineer
+      lppbitrunning-disk-option-weapon-temperaturegun: WeaponTemperatureGun
+      lppbitrunning-disk-option-weapon-scout: LPPWeaponSniperScout
+
+- type: entity
+  parent: BaseBitrunningDisk
+  id: LPPBitrunningWeaponaryComplexDisk
+  name: "bitrunning weaponary: complex"
+  description: Use in hand to choose weapon.
+  components:
+  - type: BitrunningAbilityDisk
+    grantMode: Item
+    options:
+      lppbitrunning-disk-option-weapon-jagdkommando: LPPKnifeJagdkommando
+      lppbitrunning-disk-option-weapon-disableradvanced: WeaponDisablerAdvanced
+      lppbitrunning-disk-option-weapon-hushpup: WeaponShotgunHushpup
+      lppbitrunning-disk-option-weapon-pibodi: LPPweaponPibodi
+      lppbitrunning-disk-option-weapon-cobra: WeaponPistolCobra
+      lppbitrunning-disk-option-weapon-lemas: LPPWeaponRifleLemas
+      lppbitrunning-disk-option-weapon-hossmg: WeaponHeadOfSecuritySMG
+      lppbitrunning-disk-option-weapon-aek: LPPWeaponRifleAek
+      lppbitrunning-disk-option-weapon-typewriter: WeaponSubMachineGunTypewriter
+      lppbitrunning-disk-option-weapon-snub45: WeaponRevolverSnub
+      lppbitrunning-disk-option-weapon-revolverlucky: WeaponRevolverLucky
+      bitrunning-disk-option-syndicate-mini-bomb: SyndieMiniBomb
+
+- type: entity
+  parent: BaseBitrunningDisk
+  id: LPPBitrunningWeaponaryPremiumDisk
+  name: "bitrunning weaponary: premium"
+  description: Use in hand to choose weapon.
+  components:
+  - type: BitrunningAbilityDisk
+    grantMode: Item
+    options:
+      bitrunning-disk-option-energy-scythe: LPPEnergyscythe
+      lppbitrunning-disk-option-weapon-energy-broadsword: LPPEnergyBroadsword
+      lppbitrunning-disk-option-weapon-ak: WeaponRifleAk
+      lppbitrunning-disk-option-weapon-m16: WeaponRifleM16A4
+      lppbitrunning-disk-option-weapon-energy-shotgun: WeaponEnergyShotgun
+      lppbitrunning-disk-option-weapon-leverchester: WeaponLeverChester
+      lppbitrunning-disk-option-weapon-enforcer: WeaponShotgunEnforcer
+      lppbitrunning-disk-option-weapon-echis: WeaponPistolEchis
+      lppbitrunning-disk-option-weapon-lebel: LPPweaponLebel
+      lppbitrunning-disk-option-weapon-drozd: WeaponSubMachineGunDrozd
+
+- type: entity
+  parent: BaseBitrunningDisk
+  id: LPPBitrunningAmmunitionDisk
+  name: "bitrunning ammunition"
+  description: Use in hand to choose ammunition.
+  components:
+  - type: BitrunningAbilityDisk
+    grantMode: Item
+    options:
+      lppbitrunning-disk-option-ammo-pistolhighcapacity: MagazinePistolHighCapacity
+      lppbitrunning-disk-option-ammo-pistolcaseless: MagazinePistolCaselessRifle
+      lppbitrunning-disk-option-ammo-pistolsubmachinegun: MagazinePistolSubMachineGun
+      lppbitrunning-disk-option-ammo-speedloaderspecial: SpeedLoaderSpecial
+      lppbitrunning-disk-option-ammo-speedloadermagnum: SpeedLoaderMagnum
+      lppbitrunning-disk-option-ammo-magazinerifle: MagazineRifle
+      lppbitrunning-disk-option-ammo-magazinelightriflesniper: LPPMagazineLightSniper
+      lppbitrunning-disk-option-ammo-magazinelightrifle: MagazineLightRifle
+      lppbitrunning-disk-option-ammo-shotgunlever: MagazineShotgunLeverRifle
+      lppbitrunning-disk-option-ammo-antimateriel: CartridgeAntiMateriel
+
+- type: entity
+  parent: BaseBitrunningDisk
+  id: LPPBitrunningGimmicSecurityDisk
+  name: "bitrunning gimmic: security"
+  description: Use in hand to choose security equipment.
+  components:
+  - type: BitrunningAbilityDisk
+    grantMode: Item
+    options:
+      lppbitrunning-disk-option-security-tabel: LPPSecurityWeaponUndetermined
+      lppbitrunning-disk-option-security-stunnermagnum: WeaponStunProjector
+      lppbitrunning-disk-option-security-helmetheavy: ClothingHeadHelmetHeavyStandard
+      lppbitrunning-disk-option-security-daredevil: LPPClothingOuterVestDareDevil
+
+- type: entity
+  parent: BaseBitrunningDisk
+  id: LPPBitrunningGimmicHeadofSecurityDisk
+  name: "bitrunning gimmic: head of security"
+  description: Use in hand to choose hos equipment.
+  components:
+  - type: BitrunningAbilityDisk
+    grantMode: Item
+    options:
+      lppbitrunning-disk-option-hos-tabel: HeadOfSecurityWeaponUndetermined
+      lppbitrunning-disk-option-hos-shield: UEGShield
+      lppbitrunning-disk-option-hos-disablershotgun: WeaponDisablerShotgun
+      lppbitrunning-disk-option-hos-mod: ClothingModularControllerSafeguard
