@@ -159,7 +159,7 @@ lppbitrunning-disk-option-security-daredevil = Супергеройский ко
 lppbitrunning-disk-option-hos-tabel = Вызов табельного оружия ГСБ
 lppbitrunning-disk-option-hos-shield = Тяжёлый щит
 lppbitrunning-disk-option-hos-disablershotgun = Станнер дробовик
-lppbitrunning-disk-option-hos-mod = МОД ГСБ (Без модулей, считайте чисто броня+ изольки)
+lppbitrunning-disk-option-hos-mod = Модульный контроллер ГСБ (Без модулей, считайте чисто броня+ изольки)
 #LP edit end
 
 bitrunning-ui-title = Квантовая консоль
