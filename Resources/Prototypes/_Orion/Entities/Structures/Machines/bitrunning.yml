@@ -148,25 +148,25 @@
     - BitrunnerAvatarSalvageSpecialistGear
     - BitrunnerAvatarShaftMinerGear
 #LP edit start
-    - LPPBitrunnerAvatarWeeb
-    - LPPBitrunnerAvatarPG
-    - LPPBitrunnerAvatarPGBlack
-    - LPPBitrunnerAvatarHorny
-    - LPPBitrunnerAvatarHornyPriest
-    - LPPBitrunnerAvatarSyndie
-    - LPPBitrunnerAvatarGreytide
-    - LPPBitrunnerAvatarSecCamo
-    - LPPBitrunnerAvatarHoS
-    - LPPBitrunnerAvatarAISSentinel
-    - LPPBitrunnerAvatarUEGCamo
-    - LPPBitrunnerAvatarUEGSkitarii
-    - LPPBitrunnerAvatarUEG
-    - LPPBitrunnerAvatarUEGIPC
-    - LPPBitrunnerAvatarTacticalMaid
-    - LPPBitrunnerAvatarCultist
-    - LPPBitrunnerAvatarRichard
-    - LPPBitrunnerAvatarMerc
-    - LPPBitrunnerAvatarTechPriest
+    - BitrunnerAvatarWeeb
+    - BitrunnerAvatarPG
+    - BitrunnerAvatarPGBlack
+    - BitrunnerAvatarHorny
+    - BitrunnerAvatarHornyPriest
+    - BitrunnerAvatarSyndie
+    - BitrunnerAvatarGreytide
+    - BitrunnerAvatarSecCamo
+    - BitrunnerAvatarHoS
+    - BitrunnerAvatarAISSentinel
+    - BitrunnerAvatarUEGCamo
+    - BitrunnerAvatarUEGSkitarii
+    - BitrunnerAvatarUEG
+    - BitrunnerAvatarUEGIPC
+    - BitrunnerAvatarTacticalMaid
+    - BitrunnerAvatarCultist
+    - BitrunnerAvatarRichard
+    - BitrunnerAvatarMerc
+    - BitrunnerAvatarTechPriest
 #LP edit end
 
 - type: entity

@@ -18,7 +18,7 @@
   cost: 10
   serverRewardPoints: 16
   bitrunningRewardPoints: 1200 #Продолжительность+сложность
-  forcedLoadout: LPPBitrunnerAvatarCombatUEG
+  forcedLoadout: BitrunnerAvatarCombatUEG
   isModular: true
   completionLoot:
     LPPCloakAdmiralUEG: 1

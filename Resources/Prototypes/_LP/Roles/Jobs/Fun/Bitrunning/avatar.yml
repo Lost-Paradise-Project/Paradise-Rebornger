@@ -3,7 +3,7 @@
 
 - type: startingGear
   parent: BitrunnerAvatarGear
-  id: LPPBitrunnerAvatarWeeb
+  id: BitrunnerAvatarWeeb
   equipment:
     mask: ClothingMaskOniRed
     jumpsuit: ClothingUniformJumpsuitKimono
@@ -11,7 +11,7 @@
 
 - type: startingGear
   parent: BitrunnerAvatarGear
-  id: LPPBitrunnerAvatarPG
+  id: BitrunnerAvatarPG
   equipment:
     head: LPPClothingHeadHatPGPanama
     jumpsuit: LPPClothingUniformJumpsuitPG
@@ -20,7 +20,7 @@
 
 - type: startingGear
   parent: BitrunnerAvatarGear
-  id: LPPBitrunnerAvatarPGBlack
+  id: BitrunnerAvatarPGBlack
   equipment:
     eyes: ClothingEyesGlassesCheapSunglasses
     jumpsuit: LPPClothingUniformBlackJumpsuitPG
@@ -29,17 +29,17 @@
 
 - type: startingGear
   parent: BitrunnerAvatarGear
-  id: LPPBitrunnerAvatarHorny
+  id: BitrunnerAvatarHorny
   equipment:
     eyes: LPPHypnogogglesPink
-    jumpsuit: LPPBikinisBlack
+    jumpsuit: BikinisBlack
     gloves: ClothingHandsGlovesChemist
     shoes: ClothingShoesBootsLaceup
     breast: LPPSwimsuitplusTightsBodyBra2
 
 - type: startingGear
   parent: BitrunnerAvatarGear
-  id: LPPBitrunnerAvatarHornyPriest
+  id: BitrunnerAvatarHornyPriest
   equipment:
     jumpsuit: LPPClothingUniformJumpsuitLacerobe
     gloves: ClothingHandsGlovesColorWhite
@@ -48,7 +48,7 @@
 
 - type: startingGear
   parent: BitrunnerAvatarGear
-  id: LPPBitrunnerAvatarSyndie
+  id: BitrunnerAvatarSyndie
   equipment:
     eyes: ClothingEyesGlassesCheapSunglasses
     jumpsuit: ClothingUniformJumpsuitOperative
@@ -57,7 +57,7 @@
 
 - type: startingGear
   parent: BitrunnerAvatarGear
-  id: LPPBitrunnerAvatarGreytide
+  id: BitrunnerAvatarGreytide
   equipment:
     mask: ClothingMaskGas
     jumpsuit: ClothingUniformJumpsuitAncient
@@ -66,7 +66,7 @@
 
 - type: startingGear
   parent: BitrunnerAvatarGear
-  id: LPPBitrunnerAvatarSecCamo
+  id: BitrunnerAvatarSecCamo
   equipment:
     head: LPPClothingHeadSecurityHatCamo
     jumpsuit: LPPClothingUniformJumpsuitSecCamo
@@ -76,7 +76,7 @@
 
 - type: startingGear
   parent: BitrunnerAvatarGear
-  id: LPPBitrunnerAvatarHoS
+  id: BitrunnerAvatarHoS
   equipment:
     head: ClothingHeadHatBeretHoS
     jumpsuit: ClothingUniformJumpsuitHoSAlt
@@ -87,7 +87,7 @@
 
 - type: startingGear
   parent: BitrunnerAvatarGear
-  id: LPPBitrunnerAvatarAISSentinel
+  id: BitrunnerAvatarAISSentinel
   equipment:
     head: ClothingHeadHatAISBeretSentinel
     jumpsuit: ClothingUniformJumpsuitAISArmsman
@@ -97,7 +97,7 @@
 
 - type: startingGear
   parent: BitrunnerAvatarGear
-  id: LPPBitrunnerAvatarUEGCamo
+  id: BitrunnerAvatarUEGCamo
   equipment:
     jumpsuit: LPPClothingUniformJumpsuitCamoUEG
     gloves: LPPClothingHandsGlovesTacticalFingerless
@@ -106,7 +106,7 @@
 
 - type: startingGear
   parent: BitrunnerAvatarGear
-  id: LPPBitrunnerAvatarUEGSkitarii
+  id: BitrunnerAvatarUEGSkitarii
   equipment:
     jumpsuit: LPPClothingUniformJumpsuitOperativeUEG
     gloves: LPPClothingHandsGlovesTacticalFingerless
@@ -115,7 +115,7 @@
 
 - type: startingGear
   parent: BitrunnerAvatarGear
-  id: LPPBitrunnerAvatarUEG
+  id: BitrunnerAvatarUEG
   equipment:
     jumpsuit: ClothingUniformJumpsuitUEGFatigueGreen
     gloves: LPPClothingHandsGlovesTacticalFingerless
@@ -124,7 +124,7 @@
 
 - type: startingGear
   parent: BitrunnerAvatarGear
-  id: LPPBitrunnerAvatarUEGIPC
+  id: BitrunnerAvatarUEGIPC
   equipment:
     jumpsuit: ClothingUniformJumpsuitUEGFatigueIPC
     shoes: ClothingShoesSwat
@@ -132,7 +132,7 @@
 
 - type: startingGear
   parent: BitrunnerAvatarGear
-  id: LPPBitrunnerAvatarTacticalMaid
+  id: BitrunnerAvatarTacticalMaid
   equipment:
     jumpsuit: ClothingUniformJumpskirtTacticalMaid
     shoes: ClothingShoesSwat
@@ -140,7 +140,7 @@
 
 - type: startingGear
   parent: BitrunnerAvatarGear
-  id: LPPBitrunnerAvatarCultist
+  id: BitrunnerAvatarCultist
   equipment:
     jumpsuit: ClothingUniformJumpsuitTacticool
     shoes: ClothingShoesCult
@@ -151,7 +151,7 @@
 
 - type: startingGear
   parent: BitrunnerAvatarGear
-  id: LPPBitrunnerAvatarRichard
+  id: BitrunnerAvatarRichard
   equipment:
     jumpsuit: LPPClothingUniformJumpsuitSky
     shoes: ClothingShoesColorBlack
@@ -161,7 +161,7 @@
 
 - type: startingGear
   parent: BitrunnerAvatarGear
-  id: LPPBitrunnerAvatarMerc
+  id: BitrunnerAvatarMerc
   equipment:
     jumpsuit: ClothingUniformJumpsuitMercenary
     shoes: ClothingShoesBootsMerc
@@ -171,7 +171,7 @@
 
 - type: startingGear
   parent: BitrunnerAvatarGear
-  id: LPPBitrunnerAvatarTechPriest
+  id: BitrunnerAvatarTechPriest
   equipment:
     jumpsuit: ClothingUniformJumpsuitRoboticist
     gloves: ClothingHandsGlovesRobohands
@@ -183,7 +183,7 @@
 
 - type: startingGear
   parent: BitrunnerAvatarGear
-  id: LPPBitrunnerAvatarCombatUEG
+  id: BitrunnerAvatarCombatUEG
   equipment:
     jumpsuit: ClothingUniformJumpsuitUEGFatigueGreen
     shoes: ClothingShoesBootsJackFilled
@@ -196,7 +196,7 @@
 
 - type: startingGear
   parent: BitrunnerAvatarGear
-  id: LPPBitrunnerAvatarCombatPG
+  id: BitrunnerAvatarCombatPG
   equipment:
     eyes: LPPClothingEyesGlassesSunglassesPG
     jumpsuit: LPPClothingUniformBlackJumpsuitPG
@@ -211,7 +211,7 @@
 
 - type: startingGear
   parent: BitrunnerAvatarGear
-  id: LPPBitrunnerCyberPolice
+  id: BitrunnerCyberPolice
   equipment:
     eyes: ClothingEyesGlassesBSO
     jumpsuit: ClothingUniformJumpsuitTurtleneckTactick
@@ -227,8 +227,8 @@
     id: BitrunAvatarIDCard
 
 - type: startingGear
-  parent: LPPBitrunnerCyberPolice
-  id: LPPBitrunnerCyberPoliceEasy
+  parent: BitrunnerCyberPolice
+  id: BitrunnerCyberPoliceEasy
   inhand:
   - WeaponPistolG22
   storage:
@@ -240,8 +240,8 @@
     - Crowbar
 
 - type: startingGear
-  parent: LPPBitrunnerCyberPolice
-  id: LPPBitrunnerCyberPoliceEasyMelee
+  parent: BitrunnerCyberPolice
+  id: BitrunnerCyberPoliceEasyMelee
   equipment:
     outerClothing: ClothingOuterArmorRiot
     pocket1: CombatKnife
@@ -258,8 +258,8 @@
     - Crowbar
 
 - type: startingGear
-  parent: LPPBitrunnerCyberPolice
-  id: LPPBitrunnerCyberPoliceEasyMeleeAntilaser
+  parent: BitrunnerCyberPolice
+  id: BitrunnerCyberPoliceEasyMeleeAntilaser
   equipment:
     head: ClothingHeadHelmetHeavyAblative
     pocket1: MagazinePistol
@@ -275,8 +275,8 @@
     - Crowbar
 
 - type: startingGear
-  parent: LPPBitrunnerCyberPolice
-  id: LPPBitrunnerCyberPoliceMedium
+  parent: BitrunnerCyberPolice
+  id: BitrunnerCyberPoliceMedium
   equipment:
     outerClothing: LPPlothingOuterArmorSwatAlternative
     head: LPPClothingHeadHelmetSwatAlternative
@@ -293,8 +293,8 @@
     - Crowbar
 
 - type: startingGear
-  parent: LPPBitrunnerCyberPolice
-  id: LPPBitrunnerCyberPoliceMediumMelee
+  parent: BitrunnerCyberPolice
+  id: BitrunnerCyberPoliceMediumMelee
   equipment:
     outerClothing: LPPlothingOuterArmorSwat
     head: LPPClothingHeadHelmetSwat
@@ -312,8 +312,8 @@
     - Crowbar
 
 - type: startingGear
-  parent: LPPBitrunnerCyberPolice
-  id: LPPBitrunnerCyberPoliceMediumAntilaser
+  parent: BitrunnerCyberPolice
+  id: BitrunnerCyberPoliceMediumAntilaser
   equipment:
     outerClothing: ClothingOuterArmorReflective
     head: ClothingHeadHelmetSwat
@@ -330,8 +330,8 @@
     - Crowbar
 
 - type: startingGear
-  parent: LPPBitrunnerCyberPolice
-  id: LPPBitrunnerCyberPoliceHard
+  parent: BitrunnerCyberPolice
+  id: BitrunnerCyberPoliceHard
   equipment:
     outerClothing: ClothingOuterArmorStandardHeavy
     head: ClothingHeadHelmetHeavyStandard
@@ -348,8 +348,8 @@
     - JawsOfLife
 
 - type: startingGear
-  parent: LPPBitrunnerCyberPolice
-  id: LPPBitrunnerCyberPoliceHardMelee
+  parent: BitrunnerCyberPolice
+  id: BitrunnerCyberPoliceHardMelee
   equipment:
     outerClothing: ClothingOuterArmorRiotHeavy
     head: ClothingHeadHelmetHeavyRiot
@@ -365,8 +365,8 @@
     - JawsOfLife
 
 - type: startingGear
-  parent: LPPBitrunnerCyberPolice
-  id: LPPBitrunnerCyberPoliceHardAntilaser
+  parent: BitrunnerCyberPolice
+  id: BitrunnerCyberPoliceHardAntilaser
   equipment:
     outerClothing: ClothingOuterArmorAblativeHeavy
     head: ClothingHeadHelmetSwat
@@ -383,8 +383,8 @@
     - MagazineBoxMagnum
 
 - type: startingGear
-  parent: LPPBitrunnerCyberPolice
-  id: LPPBitrunnerCyberPoliceExtreme
+  parent: BitrunnerCyberPolice
+  id: BitrunnerCyberPoliceExtreme
   equipment:
     outerClothing: ClothingOuterArmorHoSHeavy
     head: ClothingHeadHelmetHeavyHoS
@@ -404,8 +404,8 @@
     - StimpackMini
 
 - type: startingGear
-  parent: LPPBitrunnerCyberPolice
-  id: LPPBitrunnerCyberPoliceExtremeMelee
+  parent: BitrunnerCyberPolice
+  id: BitrunnerCyberPoliceExtremeMelee
   equipment:
     outerClothing: ClothingOuterArmorRiotHeavy
     head: LPPClothingHeadTSFHelmet
@@ -423,8 +423,8 @@
     - JawsOfLife
 
 - type: startingGear
-  parent: LPPBitrunnerCyberPolice
-  id: LPPBitrunnerCyberPoliceExtremeAntilaser
+  parent: BitrunnerCyberPolice
+  id: BitrunnerCyberPoliceExtremeAntilaser
   equipment:
     outerClothing: LPPClothingOuterArmorErengySyndie
     head: LPPClothingHeadTSFHelmet
