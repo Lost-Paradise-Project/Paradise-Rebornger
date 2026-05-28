@@ -5,7 +5,7 @@
   name: cyberpolice officer
   components:
   - type: Loadout
-    prototypes: [ LPPBitrunnerCyberPoliceEasy ]
+    prototypes: [ BitrunnerCyberPoliceEasy ]
   - type: RandomHumanoidAppearance
   - type: NpcFactionMember
     factions:
@@ -17,7 +17,7 @@
   name: cyberpolice officer melee
   components:
   - type: Loadout
-    prototypes: [ LPPBitrunnerCyberPoliceEasyMelee ]
+    prototypes: [ BitrunnerCyberPoliceEasyMelee ]
   - type: RandomHumanoidAppearance
   - type: NpcFactionMember
     factions:
@@ -29,7 +29,7 @@
   name: cyberpolice officer antilaser
   components:
   - type: Loadout
-    prototypes: [ LPPBitrunnerCyberPoliceEasyMeleeAntilaser ]
+    prototypes: [ BitrunnerCyberPoliceEasyMeleeAntilaser ]
   - type: RandomHumanoidAppearance
   - type: NpcFactionMember
     factions:
@@ -41,7 +41,7 @@
   name: cyberpolice swat
   components:
   - type: Loadout
-    prototypes: [ LPPBitrunnerCyberPoliceMedium ]
+    prototypes: [ BitrunnerCyberPoliceMedium ]
   - type: RandomHumanoidAppearance
   - type: NpcFactionMember
     factions:
@@ -53,7 +53,7 @@
   name: cyberpolice swat melee
   components:
   - type: Loadout
-    prototypes: [ LPPBitrunnerCyberPoliceMediumMelee ]
+    prototypes: [ BitrunnerCyberPoliceMediumMelee ]
   - type: RandomHumanoidAppearance
   - type: NpcFactionMember
     factions:
@@ -65,7 +65,7 @@
   name: cyberpolice swat antilaser
   components:
   - type: Loadout
-    prototypes: [ LPPBitrunnerCyberPoliceMediumAntilaser ]
+    prototypes: [ BitrunnerCyberPoliceMediumAntilaser ]
   - type: RandomHumanoidAppearance
   - type: NpcFactionMember
     factions:
@@ -77,7 +77,7 @@
   name: cyberpolice swat elite
   components:
   - type: Loadout
-    prototypes: [ LPPBitrunnerCyberPoliceHard ]
+    prototypes: [ BitrunnerCyberPoliceHard ]
   - type: RandomHumanoidAppearance
   - type: NpcFactionMember
     factions:
@@ -89,7 +89,7 @@
   name: cyberpolice swat elite melee
   components:
   - type: Loadout
-    prototypes: [ LPPBitrunnerCyberPoliceHardMelee ]
+    prototypes: [ BitrunnerCyberPoliceHardMelee ]
   - type: RandomHumanoidAppearance
   - type: NpcFactionMember
     factions:
@@ -101,7 +101,7 @@
   name: cyberpolice swat elite antilaser
   components:
   - type: Loadout
-    prototypes: [ LPPBitrunnerCyberPoliceHardAntilaser ]
+    prototypes: [ BitrunnerCyberPoliceHardAntilaser ]
   - type: RandomHumanoidAppearance
   - type: NpcFactionMember
     factions:
@@ -113,7 +113,7 @@
   name: cyberpolice specops
   components:
   - type: Loadout
-    prototypes: [ LPPBitrunnerCyberPoliceExtreme ]
+    prototypes: [ BitrunnerCyberPoliceExtreme ]
   - type: RandomHumanoidAppearance
   - type: NpcFactionMember
     factions:
@@ -125,7 +125,7 @@
   name: cyberpolice specops melee
   components:
   - type: Loadout
-    prototypes: [ LPPBitrunnerCyberPoliceExtremeMelee ]
+    prototypes: [ BitrunnerCyberPoliceExtremeMelee ]
   - type: RandomHumanoidAppearance
   - type: NpcFactionMember
     factions:
@@ -137,7 +137,7 @@
   name: cyberpolice specops antilaser
   components:
   - type: Loadout
-    prototypes: [ LPPBitrunnerCyberPoliceExtremeAntilaser ]
+    prototypes: [ BitrunnerCyberPoliceExtremeAntilaser ]
   - type: RandomHumanoidAppearance
   - type: NpcFactionMember
     factions:
