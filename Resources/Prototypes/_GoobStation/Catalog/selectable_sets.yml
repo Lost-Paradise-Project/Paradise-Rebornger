@@ -36,7 +36,7 @@
   - MagazineShotgunLeverRifle
 #  tables:
 #  - ChesterRandomAmmoTable
-#LPP edit start
+#LP edit start
 - type: selectableSet
   id: LPPBSOCFrenchSet
   name: selectable-set-blueshield-french-name
@@ -49,7 +49,7 @@
   - LPPKnifeJagdkommando
   - MagazineRifle
   - MagazineRifle
-#LPP edit end
+#LP edit end
 
 - type: selectableSet
   id: BSOSyringeSet

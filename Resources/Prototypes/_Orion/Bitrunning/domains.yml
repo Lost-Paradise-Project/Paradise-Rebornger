@@ -137,7 +137,7 @@
   name: bitrunning-domain-zealot-arena-name
   description: bitrunning-domain-zealot-arena-desc
   difficulty: Hard
-#LP edit start хэштег хватитрдочитьиерофанта
+#LP edit start баланс
   cost: 10
   serverRewardPoints: 0
   bitrunningRewardPoints: 800

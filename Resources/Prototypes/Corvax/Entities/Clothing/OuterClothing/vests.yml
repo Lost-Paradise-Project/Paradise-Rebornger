@@ -21,7 +21,7 @@
       sprite: Corvax/Clothing/OuterClothing/Vests/armor_sec_med.rsi
 
 - type: entity
-  parent: [ClothingOuterBase, AllowSuitStorageClothing, BaseSecurityContraband] #LPP edit
+  parent: [ClothingOuterBase, AllowSuitStorageClothing, BaseSecurityContraband] #LP edit
   id: ClothingOuterVestSecurityMedic
   name: security medic vest
   description: A lightweight vest worn by the Security Medic.

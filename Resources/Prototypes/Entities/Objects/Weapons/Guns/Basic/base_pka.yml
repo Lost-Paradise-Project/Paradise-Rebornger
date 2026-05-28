@@ -50,8 +50,8 @@
     - Belt
   - type: UseDelay
     delay: 1
-#LPP edit start
+#LP edit start
   - type: Tag
     tags:
     - LPPpka
-#LPP edit end
+#LP edit end
