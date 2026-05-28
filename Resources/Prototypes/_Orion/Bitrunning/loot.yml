@@ -16,7 +16,7 @@
     - id: SpaceCash100
       weight: 2
 #LP edit start
-    - id: Coal10 
+    - id: Coal10
       weight: 1
 #LP edit end
 
@@ -36,7 +36,7 @@
     - id: SpaceCash100
       weight: 2
 #LP edit start
-    - id: Coal10 
+    - id: Coal10
       weight: 2
 #LP edit end
 
@@ -66,7 +66,7 @@
     - id: SpaceCash1000 #LP edit
       weight: 1
 #LP edit start
-    - id: Coal10 
+    - id: Coal10
       weight: 2
 #LP edit end
 
@@ -94,7 +94,7 @@
     - id: SpaceCash10000 #LP edit
       weight: 1
 #LP edit start
-    - id: Coal10 
+    - id: Coal10
       weight: 3
 #LP edit end
 
