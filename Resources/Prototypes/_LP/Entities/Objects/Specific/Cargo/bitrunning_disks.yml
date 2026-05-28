@@ -8,8 +8,8 @@
   - type: BitrunningAbilityDisk
     grantMode: Item
     options:
-      lppbitrunning-disk-option-pka-basic: WeaponProtoKineticAccelerator
-      lppbitrunning-disk-option-pka-pistol: WeaponProtoKineticPistol
+      bitrunning-disk-option-pka-basic: WeaponProtoKineticAccelerator
+      bitrunning-disk-option-pka-pistol: WeaponProtoKineticPistol
 
 - type: entity
   parent: BaseBitrunningDisk
@@ -20,8 +20,8 @@
   - type: BitrunningAbilityDisk
     grantMode: Item
     options:
-      lppbitrunning-disk-option-pka-shotgun: WeaponProtoKineticShotgun
-      lppbitrunning-disk-option-pka-repeater: WeaponProtoKineticRepeater
+      bitrunning-disk-option-pka-shotgun: WeaponProtoKineticShotgun
+      bitrunning-disk-option-pka-repeater: WeaponProtoKineticRepeater
 
 - type: entity
   parent: BaseBitrunningDisk
@@ -32,11 +32,11 @@
   - type: BitrunningAbilityDisk
     grantMode: Item
     options:
-      lppbitrunning-disk-option-belt-holster: ClothingBeltHolster
-      lppbitrunning-disk-option-belt-waistbag: ClothingBeltStorageWaistbag
-      lppbitrunning-disk-option-belt-assault: ClothingBeltAssault
-      lppbitrunning-disk-option-belt-medical: ClothingBeltMedical
-      lppbitrunning-disk-option-belt-security: ClothingBeltSecurity
+      bitrunning-disk-option-belt-holster: ClothingBeltHolster
+      bitrunning-disk-option-belt-waistbag: ClothingBeltStorageWaistbag
+      bitrunning-disk-option-belt-assault: ClothingBeltAssault
+      bitrunning-disk-option-belt-medical: ClothingBeltMedical
+      bitrunning-disk-option-belt-security: ClothingBeltSecurity
 
 - type: entity
   parent: BaseBitrunningDisk
@@ -47,13 +47,13 @@
   - type: BitrunningAbilityDisk
     grantMode: Item
     options:
-      lppbitrunning-disk-option-belt-syndieholster: ClothingBeltSyndieHolster
-      lppbitrunning-disk-option-belt-webbingcmo: ClothingBeltMilitaryWebbingCMO
-      lppbitrunning-disk-option-belt-webbingsalvage: ClothingBeltSalvageWebbing
-      lppbitrunning-disk-option-belt-webbingais: ClothingBeltAISWebbing
-      lppbitrunning-disk-option-belt-webbingpg: LPPClothingBeltPGWebbing
-      lppbitrunning-disk-option-belt-webbingmerc: ClothingBeltMercWebbing
-      lppbitrunning-disk-option-belt-webbingmilitarycorpsman: ClothingBeltCorpsmanWebbing
+      bitrunning-disk-option-belt-syndieholster: ClothingBeltSyndieHolster
+      bitrunning-disk-option-belt-webbingcmo: ClothingBeltMilitaryWebbingCMO
+      bitrunning-disk-option-belt-webbingsalvage: ClothingBeltSalvageWebbing
+      bitrunning-disk-option-belt-webbingais: ClothingBeltAISWebbing
+      bitrunning-disk-option-belt-webbingpg: LPPClothingBeltPGWebbing
+      bitrunning-disk-option-belt-webbingmerc: ClothingBeltMercWebbing
+      bitrunning-disk-option-belt-webbingmilitarycorpsman: ClothingBeltCorpsmanWebbing
 
 - type: entity
   parent: BaseBitrunningDisk
@@ -64,10 +64,10 @@
   - type: BitrunningAbilityDisk
     grantMode: Item
     options:
-      lppbitrunning-disk-option-belt-webbingueg: LPPClothingBeltUEGWebbing
-      lppbitrunning-disk-option-belt-webbingmilitary: ClothingBeltMilitaryWebbing
-      lppbitrunning-disk-option-belt-webbingmilitarymedic: ClothingBeltMilitaryWebbingMed
-      lppbitrunning-disk-option-belt-webbingmilitaryert: ClothingBeltMilitaryWebbingERT
+      bitrunning-disk-option-belt-webbingueg: LPPClothingBeltUEGWebbing
+      bitrunning-disk-option-belt-webbingmilitary: ClothingBeltMilitaryWebbing
+      bitrunning-disk-option-belt-webbingmilitarymedic: ClothingBeltMilitaryWebbingMed
+      bitrunning-disk-option-belt-webbingmilitaryert: ClothingBeltMilitaryWebbingERT
 
 - type: entity
   parent: BaseBitrunningDisk
@@ -78,11 +78,11 @@
   - type: BitrunningAbilityDisk
     grantMode: Item
     options:
-      lppbitrunning-disk-option-belt-backpackmilitary: ClothingMilitaryBackpack
-      lppbitrunning-disk-option-belt-satchelmilitary: ClothingBackpackMilitarySatchel
-      lppbitrunning-disk-option-belt-backpacksyndicate: ClothingBackpackSyndicate
-      lppbitrunning-disk-option-belt-webbingsalvager: LPPClothingBeltMaximumWebbingSalvager
-      lppbitrunning-disk-option-belt-webbingmaximum: LPPClothingBeltMaximumWebbing
+      bitrunning-disk-option-belt-backpackmilitary: ClothingMilitaryBackpack
+      bitrunning-disk-option-belt-satchelmilitary: ClothingBackpackMilitarySatchel
+      bitrunning-disk-option-belt-backpacksyndicate: ClothingBackpackSyndicate
+      bitrunning-disk-option-belt-webbingsalvager: LPPClothingBeltMaximumWebbingSalvager
+      bitrunning-disk-option-belt-webbingmaximum: LPPClothingBeltMaximumWebbing
 
 - type: entity
   parent: BaseBitrunningDisk
@@ -93,9 +93,9 @@
   - type: BitrunningAbilityDisk
     grantMode: Item
     options:
-      lppbitrunning-disk-option-medkit: MedkitFilled
-      lppbitrunning-disk-option-medipen: AirlossAutoInjector
-      lppbitrunning-disk-option-cable: CableApcStack
+      bitrunning-disk-option-medkit: MedkitFilled
+      bitrunning-disk-option-medipen: AirlossAutoInjector
+      bitrunning-disk-option-cable: CableApcStack
 
 - type: entity
   parent: BaseBitrunningDisk
@@ -106,15 +106,15 @@
   - type: BitrunningAbilityDisk
     grantMode: Item
     options:
-      lppbitrunning-disk-option-weapon-cleaver: ButchCleaver
-      lppbitrunning-disk-option-weapon-chimp: WeaponPistolCHIMPUpgraded
-      lppbitrunning-disk-option-weapon-faith: WeaponRevolverFaith
-      lppbitrunning-disk-option-weapon-musket: Musket
-      lppbitrunning-disk-option-weapon-m14: LPPWeaponRifleM14
-      lppbitrunning-disk-option-weapon-makeshiftlaser: WeaponMakeshiftLaser
-      lppbitrunning-disk-option-weapon-revolverfe: LPPWeaponRevolverFieldEngineer
-      lppbitrunning-disk-option-weapon-temperaturegun: WeaponTemperatureGun
-      lppbitrunning-disk-option-weapon-scout: LPPWeaponSniperScout
+      bitrunning-disk-option-weapon-cleaver: ButchCleaver
+      bitrunning-disk-option-weapon-chimp: WeaponPistolCHIMPUpgraded
+      bitrunning-disk-option-weapon-faith: WeaponRevolverFaith
+      bitrunning-disk-option-weapon-musket: Musket
+      bitrunning-disk-option-weapon-m14: LPPWeaponRifleM14
+      bitrunning-disk-option-weapon-makeshiftlaser: WeaponMakeshiftLaser
+      bitrunning-disk-option-weapon-revolverfe: LPPWeaponRevolverFieldEngineer
+      bitrunning-disk-option-weapon-temperaturegun: WeaponTemperatureGun
+      bitrunning-disk-option-weapon-scout: LPPWeaponSniperScout
 
 - type: entity
   parent: BaseBitrunningDisk
@@ -125,17 +125,17 @@
   - type: BitrunningAbilityDisk
     grantMode: Item
     options:
-      lppbitrunning-disk-option-weapon-jagdkommando: LPPKnifeJagdkommando
-      lppbitrunning-disk-option-weapon-disableradvanced: WeaponDisablerAdvanced
-      lppbitrunning-disk-option-weapon-hushpup: WeaponShotgunHushpup
-      lppbitrunning-disk-option-weapon-pibodi: LPPweaponPibodi
-      lppbitrunning-disk-option-weapon-cobra: WeaponPistolCobra
-      lppbitrunning-disk-option-weapon-lemas: LPPWeaponRifleLemas
-      lppbitrunning-disk-option-weapon-hossmg: WeaponHeadOfSecuritySMG
-      lppbitrunning-disk-option-weapon-aek: LPPWeaponRifleAek
-      lppbitrunning-disk-option-weapon-typewriter: WeaponSubMachineGunTypewriter
-      lppbitrunning-disk-option-weapon-snub45: WeaponRevolverSnub
-      lppbitrunning-disk-option-weapon-revolverlucky: WeaponRevolverLucky
+      bitrunning-disk-option-weapon-jagdkommando: LPPKnifeJagdkommando
+      bitrunning-disk-option-weapon-disableradvanced: WeaponDisablerAdvanced
+      bitrunning-disk-option-weapon-hushpup: WeaponShotgunHushpup
+      bitrunning-disk-option-weapon-pibodi: LPPweaponPibodi
+      bitrunning-disk-option-weapon-cobra: WeaponPistolCobra
+      bitrunning-disk-option-weapon-lemas: LPPWeaponRifleLemas
+      bitrunning-disk-option-weapon-hossmg: WeaponHeadOfSecuritySMG
+      bitrunning-disk-option-weapon-aek: LPPWeaponRifleAek
+      bitrunning-disk-option-weapon-typewriter: WeaponSubMachineGunTypewriter
+      bitrunning-disk-option-weapon-snub45: WeaponRevolverSnub
+      bitrunning-disk-option-weapon-revolverlucky: WeaponRevolverLucky
       bitrunning-disk-option-syndicate-mini-bomb: SyndieMiniBomb
 
 - type: entity
@@ -148,15 +148,15 @@
     grantMode: Item
     options:
       bitrunning-disk-option-energy-scythe: LPPEnergyscythe
-      lppbitrunning-disk-option-weapon-energy-broadsword: LPPEnergyBroadsword
-      lppbitrunning-disk-option-weapon-ak: WeaponRifleAk
-      lppbitrunning-disk-option-weapon-m16: WeaponRifleM16A4
-      lppbitrunning-disk-option-weapon-energy-shotgun: WeaponEnergyShotgun
-      lppbitrunning-disk-option-weapon-leverchester: WeaponLeverChester
-      lppbitrunning-disk-option-weapon-enforcer: WeaponShotgunEnforcer
-      lppbitrunning-disk-option-weapon-echis: WeaponPistolEchis
-      lppbitrunning-disk-option-weapon-lebel: LPPweaponLebel
-      lppbitrunning-disk-option-weapon-drozd: WeaponSubMachineGunDrozd
+      bitrunning-disk-option-weapon-energy-broadsword: LPPEnergyBroadsword
+      bitrunning-disk-option-weapon-ak: WeaponRifleAk
+      bitrunning-disk-option-weapon-m16: WeaponRifleM16A4
+      bitrunning-disk-option-weapon-energy-shotgun: WeaponEnergyShotgun
+      bitrunning-disk-option-weapon-leverchester: WeaponLeverChester
+      bitrunning-disk-option-weapon-enforcer: WeaponShotgunEnforcer
+      bitrunning-disk-option-weapon-echis: WeaponPistolEchis
+      bitrunning-disk-option-weapon-lebel: LPPweaponLebel
+      bitrunning-disk-option-weapon-drozd: WeaponSubMachineGunDrozd
 
 - type: entity
   parent: BaseBitrunningDisk
@@ -167,16 +167,16 @@
   - type: BitrunningAbilityDisk
     grantMode: Item
     options:
-      lppbitrunning-disk-option-ammo-pistolhighcapacity: MagazinePistolHighCapacity
-      lppbitrunning-disk-option-ammo-pistolcaseless: MagazinePistolCaselessRifle
-      lppbitrunning-disk-option-ammo-pistolsubmachinegun: MagazinePistolSubMachineGun
-      lppbitrunning-disk-option-ammo-speedloaderspecial: SpeedLoaderSpecial
-      lppbitrunning-disk-option-ammo-speedloadermagnum: SpeedLoaderMagnum
-      lppbitrunning-disk-option-ammo-magazinerifle: MagazineRifle
-      lppbitrunning-disk-option-ammo-magazinelightriflesniper: LPPMagazineLightSniper
-      lppbitrunning-disk-option-ammo-magazinelightrifle: MagazineLightRifle
-      lppbitrunning-disk-option-ammo-shotgunlever: MagazineShotgunLeverRifle
-      lppbitrunning-disk-option-ammo-antimateriel: CartridgeAntiMateriel
+      bitrunning-disk-option-ammo-pistolhighcapacity: MagazinePistolHighCapacity
+      bitrunning-disk-option-ammo-pistolcaseless: MagazinePistolCaselessRifle
+      bitrunning-disk-option-ammo-pistolsubmachinegun: MagazinePistolSubMachineGun
+      bitrunning-disk-option-ammo-speedloaderspecial: SpeedLoaderSpecial
+      bitrunning-disk-option-ammo-speedloadermagnum: SpeedLoaderMagnum
+      bitrunning-disk-option-ammo-magazinerifle: MagazineRifle
+      bitrunning-disk-option-ammo-magazinelightriflesniper: LPPMagazineLightSniper
+      bitrunning-disk-option-ammo-magazinelightrifle: MagazineLightRifle
+      bitrunning-disk-option-ammo-shotgunlever: MagazineShotgunLeverRifle
+      bitrunning-disk-option-ammo-antimateriel: CartridgeAntiMateriel
 
 - type: entity
   parent: BaseBitrunningDisk
@@ -187,10 +187,10 @@
   - type: BitrunningAbilityDisk
     grantMode: Item
     options:
-      lppbitrunning-disk-option-security-tabel: LPPSecurityWeaponUndetermined
-      lppbitrunning-disk-option-security-stunnermagnum: WeaponStunProjector
-      lppbitrunning-disk-option-security-helmetheavy: ClothingHeadHelmetHeavyStandard
-      lppbitrunning-disk-option-security-daredevil: LPPClothingOuterVestDareDevil
+      bitrunning-disk-option-security-tabel: LPPSecurityWeaponUndetermined
+      bitrunning-disk-option-security-stunnermagnum: WeaponStunProjector
+      bitrunning-disk-option-security-helmetheavy: ClothingHeadHelmetHeavyStandard
+      bitrunning-disk-option-security-daredevil: LPPClothingOuterVestDareDevil
 
 - type: entity
   parent: BaseBitrunningDisk
@@ -201,7 +201,7 @@
   - type: BitrunningAbilityDisk
     grantMode: Item
     options:
-      lppbitrunning-disk-option-hos-tabel: HeadOfSecurityWeaponUndetermined
-      lppbitrunning-disk-option-hos-shield: UEGShield
-      lppbitrunning-disk-option-hos-disablershotgun: WeaponDisablerShotgun
-      lppbitrunning-disk-option-hos-mod: ClothingModularControllerSafeguard
+      bitrunning-disk-option-hos-tabel: HeadOfSecurityWeaponUndetermined
+      bitrunning-disk-option-hos-shield: UEGShield
+      bitrunning-disk-option-hos-disablershotgun: WeaponDisablerShotgun
+      bitrunning-disk-option-hos-mod: ClothingModularControllerSafeguard
