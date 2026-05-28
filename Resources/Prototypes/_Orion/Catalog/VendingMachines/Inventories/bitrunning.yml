@@ -49,13 +49,11 @@
   - id: LPPBitrunningPKAPremiumDisk
     cost: 1240
   - id: LPPBitrunningContainersSimpleDisk
-    cost: 450
+    cost: 811
   - id: LPPBitrunningContainersPremiumDisk
-    cost: 1040
+    cost: 1540
   - id: LPPBitrunningContainersEliteDisk
-    cost: 2500
-  - id: LPPBitrunningContainersEliteDisk
-    cost: 3540
+    cost: 2800
   - id: LPPBitrunningHealingDisk
     cost: 1100
   - id: LPPBitrunningWeaponaryBasicDisk
@@ -69,7 +67,7 @@
   - id: LPPBitrunningGimmicSecurityDisk
     cost: 1520
   - id: LPPBitrunningGimmicHeadofSecurityDisk
-    cost: 4250
+    cost: 3250
   - id: SpaceCash500
     cost: 100
   - id: SpaceCash2500
