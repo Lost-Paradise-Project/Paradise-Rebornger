@@ -58,3 +58,8 @@
         whitelist:
           components:
           - IdCard
+  # LP edit start
+  - type: EmagLatheRecipes
+    emagStaticPacks:
+      - LPPSyndicateDocuments
+  # LP edit end

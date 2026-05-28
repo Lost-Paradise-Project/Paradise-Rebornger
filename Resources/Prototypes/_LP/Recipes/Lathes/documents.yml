@@ -1,3 +1,105 @@
+# Базовые формы
+- type: latheRecipe
+  id: RecipePaperFormSec
+  result: PaperFormSec
+  categories:
+  - Templates
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    PrinterPaper: 100
+
+- type: latheRecipe
+  id: RecipePaperFormLaw
+  result: PaperFormLaw
+  categories:
+  - Templates
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    PrinterPaper: 100
+
+- type: latheRecipe
+  id: RecipePaperFormSci
+  result: PaperFormSci
+  categories:
+  - Templates
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    PrinterPaper: 100
+
+- type: latheRecipe
+  id: RecipePaperFormCmd
+  result: PaperFormCmd
+  categories:
+  - Templates
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    PrinterPaper: 100
+
+- type: latheRecipe
+  id: RecipePaperFormMed
+  result: PaperFormMed
+  categories:
+  - Templates
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    PrinterPaper: 100
+
+- type: latheRecipe
+  id: RecipePaperFormCargo
+  result: PaperFormCargo
+  categories:
+  - Templates
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    PrinterPaper: 100
+
+- type: latheRecipe
+  id: RecipePaperFormEng
+  result: PaperFormEng
+  categories:
+  - Templates
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    PrinterPaper: 100
+
+- type: latheRecipe
+  id: RecipePaperFormCC
+  result: PaperFormCC
+  categories:
+  - Templates
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    PrinterPaper: 100
+
+- type: latheRecipe
+  id: RecipePaperFormCCSecure
+  result: PaperFormCCSecure
+  categories:
+  - Templates
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    PrinterPaper: 100
+
+- type: latheRecipe
+  id: RecipePaperFormSyndie
+  result: PaperFormSyndie
+  categories:
+  - ErrorDocument
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    PrinterPaper: 100
+
+# Документики
 - type: latheRecipe
   id: RecipeDocStReport
   result: DocStReport

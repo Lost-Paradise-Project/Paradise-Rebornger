@@ -1,5 +1,134 @@
+doc-text-printer-form-security = 
+    ⠀[bold]:СТАНЦИЯ: СБ[/bold]
+    ⠀
+    ⠀[color=#B51E50]НАИМЕНОВАНИЕ ДОКУМЕНТА[/color]
+    ⠀
+    ⠀[bold]Время и дата смены:[/bold] :ДАТА:
+    ⠀[bold]Составитель документа:[/bold] :ФИО:
+    ⠀[bold]Должность составителя:[/bold] :ДОЛЖНОСТЬ:
+    ⠀
+
+    ════════════════════════════════════
+    ⠀[italic]Поле для печати[/italic]
+    ⠀
+doc-text-printer-form-law = 
+    ⠀[bold]:СТАНЦИЯ: ЮР[/bold]
+    ⠀
+    ⠀[color=#6E89A9]НАИМЕНОВАНИЕ ДОКУМЕНТА[/color]
+    ⠀
+    ⠀[bold]Время и дата смены:[/bold] :ДАТА:
+    ⠀[bold]Составитель документа:[/bold] :ФИО:
+    ⠀[bold]Должность составителя:[/bold] :ДОЛЖНОСТЬ:
+    ⠀
+
+    ════════════════════════════════════
+    ⠀[italic]Поле для печати[/italic]
+    
+doc-text-printer-form-science = 
+    ⠀[bold]:СТАНЦИЯ: НИО[/bold]
+    ⠀
+    ⠀[color=#735EDB]НАИМЕНОВАНИЕ ДОКУМЕНТА[/color]
+    ⠀
+    ⠀[bold]Время и дата смены:[/bold] :ДАТА:
+    ⠀[bold]Составитель документа:[/bold] :ФИО:
+    ⠀[bold]Должность составителя:[/bold] :ДОЛЖНОСТЬ:
+    ⠀
+
+    ════════════════════════════════════
+    ⠀[italic]Поле для печати[/italic]
+  
+doc-text-printer-form-command = 
+    ⠀[bold]:СТАНЦИЯ: КОМ[/bold]
+    ⠀
+    ⠀[color=#2369AF]НАИМЕНОВАНИЕ ДОКУМЕНТА[/color]
+    ⠀
+    ⠀[bold]Время и дата смены:[/bold] :ДАТА:
+    ⠀[bold]Составитель документа:[/bold] :ФИО:
+    ⠀[bold]Должность составителя:[/bold] :ДОЛЖНОСТЬ:
+    ⠀
+
+    ════════════════════════════════════
+    ⠀[italic]Поле для печати[/italic]
+
+doc-text-printer-form-medical = 
+    ⠀[bold]:СТАНЦИЯ: МЕД[/bold]
+    ⠀
+    ⠀[color=#30BFCC]НАИМЕНОВАНИЕ ДОКУМЕНТА[/color]
+    ⠀
+    ⠀[bold]Время и дата смены:[/bold] :ДАТА:
+    ⠀[bold]Составитель документа:[/bold] :ФИО:
+    ⠀[bold]Должность составителя:[/bold] :ДОЛЖНОСТЬ:
+    ⠀
+
+    ════════════════════════════════════
+    ⠀[italic]Поле для печати[/italic]
+    ⠀
+doc-text-printer-form-cargo = 
+    ⠀[bold]:СТАНЦИЯ: СНБ[/bold]
+    ⠀
+    ⠀[color=#B18644]НАИМЕНОВАНИЕ ДОКУМЕНТА[/color]
+    ⠀
+    ⠀[bold]Время и дата смены:[/bold] :ДАТА:
+    ⠀[bold]Составитель документа:[/bold] :ФИО:
+    ⠀[bold]Должность составителя:[/bold] :ДОЛЖНОСТЬ:
+    ⠀
+
+    ════════════════════════════════════
+    ⠀[italic]Поле для печати[/italic]
+    ⠀
+doc-text-printer-form-engineer = 
+    ⠀[bold]:СТАНЦИЯ: ИНЖ[/bold]
+    ⠀
+    ⠀[color=#F29E18]НАИМЕНОВАНИЕ ДОКУМЕНТА[/color]
+    ⠀
+    ⠀[bold]Время и дата смены:[/bold] :ДАТА:
+    ⠀[bold]Составитель документа:[/bold] :ФИО:
+    ⠀[bold]Должность составителя:[/bold] :ДОЛЖНОСТЬ:
+    ⠀
+
+    ════════════════════════════════════
+    ⠀[italic]Поле для печати[/italic]
+    ⠀
+doc-text-printer-form-centcom = 
+    ⠀[bold]:СТАНЦИЯ: ЦК[/bold]
+    ⠀
+    ⠀[color=#36A55D]НАИМЕНОВАНИЕ ДОКУМЕНТА[/color]
+    ⠀
+    ⠀[bold]Время и дата смены:[/bold] :ДАТА:
+    ⠀[bold]Составитель документа:[/bold] :ФИО:
+    ⠀[bold]Должность составителя:[/bold] :ДОЛЖНОСТЬ:
+    ⠀
+
+    ════════════════════════════════════
+    ⠀[italic]Поле для печати[/italic]
+   
+doc-text-printer-form-centcom-secure = 
+    ⠀[bold]:СТАНЦИЯ: ЦК[/bold]
+    ⠀
+    ⠀[color=#36A55D]НАИМЕНОВАНИЕ ДОКУМЕНТА[/color]
+    ⠀
+    ⠀[bold]Время и дата смены:[/bold] :ДАТА:
+    ⠀[bold]Составитель документа:[/bold] :ФИО:
+    ⠀[bold]Должность составителя:[/bold] :ДОЛЖНОСТЬ:
+    ⠀
+
+    ════════════════════════════════════
+    ⠀[italic]Поле для печати[/italic]
+
+doc-text-printer-form-syndie = 
+    ⠀[bold]:СТАНЦИЯ: СИН[/bold]
+    ⠀
+    ⠀[color=#b50f1d]НАИМЕНОВАНИЕ ДОКУМЕНТА[/color]
+    ⠀
+    ⠀[bold]Время и дата смены:[/bold] :ДАТА:
+    ⠀[bold]Позывной агента:[/bold]
+    ⠀
+
+    ════════════════════════════════════
+    ⠀[italic]Поле для печати[/italic]
+
 doc-text-printer-acting-director-statement =
-    ⠀[bold]:СТАНЦИЯ: ПД-КОМ[/bold]
+    ⠀[bold]:СТАНЦИЯ: КОМ-ЦК[/bold]
     ⠀
     ⠀[color=#2369AF]ЗАЯВЛЕНИЕ О НАЗНАЧЕНИИ НА ВРИО[/color]
     ⠀
@@ -20,11 +149,11 @@ doc-text-printer-acting-director-statement =
     ⠀По прибытии главы отдела/капитана обязуюсь передать повышенный доступ, ценные предметы и снаряжение.
     ⠀
     ⠀
-    ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-emergency-response-team-inquiry =
-    ⠀[bold]:СТАНЦИЯ: ПД-КОМ[/bold]
+    ⠀[bold]:СТАНЦИЯ: КОМ-ЦК[/bold]
     ⠀
     ⠀[color=#2369AF]ЗАПРОС ВЫЗОВА ОТРЯДА БЫСТРОГО РЕАГИРОВАНИЯ[/color]
     ⠀
@@ -37,11 +166,11 @@ doc-text-printer-emergency-response-team-inquiry =
     ⠀[bold]Информация для отряда реагирования:[/bold]
     ⠀
     ⠀
-    ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-evacuation-shuttle-statement =
-    ⠀[bold]:СТАНЦИЯ: ПД-КОМ[/bold]
+    ⠀[bold]:СТАНЦИЯ: КОМ-ЦК[/bold]
     ⠀
     ⠀[color=#2369AF]ЗАПРОС ЭВАКУАЦИОННОГО ШАТТЛА[/color]
     ⠀
@@ -53,11 +182,11 @@ doc-text-printer-evacuation-shuttle-statement =
     ⠀[bold]Причина окончания смены:[/bold]
     ⠀
     ⠀
-    ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-cent-comm-representative-statement =
-    ⠀[bold]:СТАНЦИЯ: ПД-КОМ[/bold]
+    ⠀[bold]:СТАНЦИЯ: КОМ-ЦК[/bold]
     ⠀
     ⠀[color=#2369AF]ЗАПРОС ПОЛЕВОГО ОФИЦЕРА ЦЕНТРАЛЬНОГО КОМАНДОВАНИЯ[/color]
     ⠀
@@ -70,11 +199,11 @@ doc-text-printer-cent-comm-representative-statement =
     ⠀Все сотрудники станции будут заранее проинформированы о прибытии ПОЦК
     ⠀
     ⠀
-    ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-report-station =
-    ⠀[bold]:СТАНЦИЯ: ПД-КОМ[/bold]
+    ⠀[bold]:СТАНЦИЯ: КОМ-ЦК[/bold]
     ⠀
     ⠀[color=#2369AF]ОТЧЁТ О СИТУАЦИИ НА СТАНЦИИ[/color]
     ⠀
@@ -91,11 +220,11 @@ doc-text-printer-report-station =
     ⠀[bold]Текущая ситуация:[/bold]
     ⠀
     ⠀
-    ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-bluespace-artillery-strike-statement =
-    ⠀[bold]:СТАНЦИЯ: ПД-КОМ[/bold]
+    ⠀[bold]:СТАНЦИЯ: КОМ-ЦК[/bold]
     ⠀
     ⠀[color=#2369AF]ЗАПРОС УДАРА БЛЮСПЕЙС АРТИЛЛЕРИИ[/color]
     ⠀
@@ -112,11 +241,11 @@ doc-text-printer-bluespace-artillery-strike-statement =
     ⠀Утверждение выстрела происходит только во время боевого положения, затраты при ударе будут вычтены из зарплаты экипажа
     ⠀
     ⠀
-    ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-department-work-report =
-    ⠀[bold]:СТАНЦИЯ: ПД-КОМ[/bold]
+    ⠀[bold]:СТАНЦИЯ: КОМ[/bold]
     ⠀
     ⠀[color=#2369AF]ОТЧЁТ О РАБОТЕ ОТДЕЛА[/color]
     ⠀
@@ -130,13 +259,13 @@ doc-text-printer-department-work-report =
     ⠀[bold]Общее состояние отдела:[/bold]
     ⠀
     ⠀
-    ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-revocation-of-access-order =
-    ⠀[bold]:СТАНЦИЯ: ПД-КОМ[/bold]
+    ⠀[bold]:СТАНЦИЯ: КОМ[/bold]
     ⠀
-    ⠀[color=#2369AF]ПРИКАЗ НА АННУЛИРОВАНИЕ ДОСТУПА[/color]
+    ⠀[color=#2369AF]ПРИКАЗ ОБ АННУЛИРОВАНИИ ДОСТУПА[/color]
     ⠀
     ⠀[bold]Время и дата смены:[/bold] :ДАТА:
     ⠀[bold]Составитель документа:[/bold] :ФИО:
@@ -147,7 +276,7 @@ doc-text-printer-revocation-of-access-order =
     ⠀[bold]Причина:[/bold]
     ⠀
     ⠀
-    ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-employer-work-report =
@@ -163,11 +292,11 @@ doc-text-printer-employer-work-report =
     ⠀[bold]Произведённые работы:[/bold]
     ⠀
     ⠀
-    ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-department-heads-meeting-report =
-    ⠀[bold]:СТАНЦИЯ: ПД-КОМ[/bold]
+    ⠀[bold]:СТАНЦИЯ: КОМ[/bold]
     ⠀
     ⠀[color=#2369AF]ОТЧЁТ О СОБРАНИИ ГЛАВ[/color]
     ⠀
@@ -189,7 +318,7 @@ doc-text-printer-department-heads-meeting-report =
     ⠀[bold]Решение собрания глав:[/bold]
     ⠀
     ⠀
-    ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-job-application-statement =
@@ -205,13 +334,13 @@ doc-text-printer-job-application-statement =
     ⠀Обязуюсь следовать Стандартным Рабочим Процедурам отдела. Обязуюсь сдать рабочее снаряжение и экипировку отдела при переводе.
     ⠀
     ⠀
-    ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-promotion-application-statement =
     ⠀[bold]:СТАНЦИЯ: ПД-КОМ[/bold]
     ⠀
-    ⠀[color=#2369AF]ЗАЯВЛЕНИЕ О ПОВЫШЕНИИ[/color]
+    ⠀[color=#2369AF]ЗАЯВЛЕНИЕ НА ПОВЫШЕНИЕ[/color]
     ⠀
     ⠀[bold]Время и дата смены:[/bold] :ДАТА:
     ⠀[bold]Составитель документа:[/bold] :ФИО:
@@ -221,7 +350,7 @@ doc-text-printer-promotion-application-statement =
     ⠀Обязуюсь следовать новым Стандартным Рабочим Процедурам отдела и своим обязанностям. Обязуюсь сдать рабочее снаряжение и экипировку отдела при переводе.
     ⠀
     ⠀
-    ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-job-resignation-statement =
@@ -237,7 +366,7 @@ doc-text-printer-job-resignation-statement =
     ⠀Обязуюсь выплатить штраф, установленный условиями расторжения срочного/бессрочного контракта, на станции Центрального Командования.
     ⠀
     ⠀
-    ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-application-for-access-statment =
@@ -253,11 +382,11 @@ doc-text-printer-application-for-access-statment =
     ⠀[bold]Причина получения повышенного доступа:[/bold]
     ⠀
     ⠀
-    ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-job-resignation-order =
-    ⠀[bold]:СТАНЦИЯ: ПД-КОМ[/bold]
+    ⠀[bold]:СТАНЦИЯ: КОМ[/bold]
     ⠀
     ⠀[color=#2369AF]ПРИКАЗ ОБ УВОЛЬНЕНИИ[/color]
     ⠀
@@ -268,13 +397,13 @@ doc-text-printer-job-resignation-order =
     ⠀Я, :ФИО:, в должности :ДОЛЖНОСТЬ:, приказываю уволить сотрудника (ФИО) отдела (наименование отдела) в должности (полное наименование должности увольняемого) по причине:
     ⠀
     ⠀
-    ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-reward-order =
-    ⠀[bold]:СТАНЦИЯ: ПД-КОМ[/bold]
+    ⠀[bold]:СТАНЦИЯ: КОМ[/bold]
     ⠀
-    ⠀[color=#2369AF]ГРАМОТА[/color]
+    ⠀[color=#2369AF]ПРИКАЗ О ПООЩРЕНИИ[/color]
     ⠀
     ⠀[bold]Время и дата смены:[/bold] :ДАТА:
     ⠀[bold]Составитель документа:[/bold] :ФИО:
@@ -283,11 +412,11 @@ doc-text-printer-reward-order =
     ⠀Я, :ФИО:, в должности :ДОЛЖНОСТЬ: награждаю (ФИО) в должности (полное наименование должности награждаемого) медалью/грамотой/памятной вещью/премией в размере (размер премии) за следующие заслуги:
     ⠀
     ⠀
-    ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-certificate-of-professional-development-statement =
-    ⠀[bold]:СТАНЦИЯ: ПД-КОМ[/bold]
+    ⠀[bold]:СТАНЦИЯ: КОМ[/bold]
     ⠀
     ⠀[color=#2369AF]СВИДЕТЕЛЬСТВО О ПОВЫШЕНИИ КВАЛИФИКАЦИИ[/color]
     ⠀
@@ -298,7 +427,7 @@ doc-text-printer-certificate-of-professional-development-statement =
     ⠀Я, :ФИО:, в должности главы (полное наименование отдела), свидетельствую, что сотрудник (ФИО) в должности (должность сотрудника), успешно завершил образовательный курс "(название курса)" и был аттестован.
     ⠀
     ⠀
-    ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-application-for-equipment-statement =
@@ -315,11 +444,11 @@ doc-text-printer-application-for-equipment-statement =
     ⠀[bold]Причина получения снаряжения:[/bold]
     ⠀
     ⠀
-    ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-permission-for-equipment =
-    ⠀[bold]:СТАНЦИЯ: КОМ-ПД[/bold]
+    ⠀[bold]:СТАНЦИЯ: КОМ[/bold]
     ⠀
     ⠀[color=#2369AF]РАЗРЕШЕНИЕ НА ИСПОЛЬЗОВАНИЕ СНАРЯЖЕНИЯ[/color]
     ⠀
@@ -330,13 +459,14 @@ doc-text-printer-permission-for-equipment =
     ⠀Я, :ФИО:, в должности главы отдела (полное наименование отдела), разрешаю использовать (ФИО) в должности (полное наименование должности) следующее рабочее снаряжение отдела:
     ⠀
     ⠀
-    ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
+
 doc-text-printer-amensty-statement =
     ⠀[bold]:СТАНЦИЯ: ЮР-КОМ[/bold]
     ⠀
-    ⠀[color=#2369AF]ПОМИЛОВАНИЕ[/color]
+    ⠀[color=#2369AF]ЗАЯВЛЕНИЕ О ПОМИЛОВАНИИ[/color]
     ⠀
     ⠀[bold]Время и дата смены:[/bold] :ДАТА:
     ⠀[bold]Составитель документа:[/bold] :ФИО:
@@ -349,6 +479,7 @@ doc-text-printer-amensty-statement =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-violation-of-the-labor-order-complaintst =
@@ -366,6 +497,7 @@ doc-text-printer-violation-of-the-labor-order-complaintst =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-internal-affairs-agent-report =
@@ -383,6 +515,7 @@ doc-text-printer-internal-affairs-agent-report =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-conduct-trial-order =
@@ -404,6 +537,7 @@ doc-text-printer-conduct-trial-order =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-inquiry-for-remove-legal-defense =
@@ -420,6 +554,7 @@ doc-text-printer-inquiry-for-remove-legal-defense =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-parole-inquiry =
@@ -439,6 +574,7 @@ doc-text-printer-parole-inquiry =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-reconsideration-of-the-case-statement =
@@ -454,6 +590,7 @@ doc-text-printer-reconsideration-of-the-case-statement =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-calling-the-witness-statement =
@@ -469,6 +606,7 @@ doc-text-printer-calling-the-witness-statement =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-document-inquiry =
@@ -484,6 +622,7 @@ doc-text-printer-document-inquiry =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-remove-or-impose-legal-defense-order =
@@ -499,6 +638,7 @@ doc-text-printer-remove-or-impose-legal-defense-order =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-court-verdict =
@@ -518,6 +658,7 @@ doc-text-printer-court-verdict =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-bill-initiation-request =
@@ -536,12 +677,13 @@ doc-text-printer-bill-initiation-request =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-bill-integration-order =
     ⠀[bold]:СТАНЦИЯ: ЮР-КОМ[/bold]
     ⠀
-    ⠀[color=#6E89A9]ПРИКАЗ НА ИНТЕГРАЦИЮ ЗАКОНОПРОЕКТА[/color]
+    ⠀[color=#6E89A9]ПРИКАЗ ОБ ИНТЕГРАЦИЮ ЗАКОНОПРОЕКТА[/color]
     ⠀
     ⠀[bold]Время и дата смены:[/bold] :ДАТА:
     ⠀[bold]Составитель документа:[/bold] :ФИО:
@@ -555,6 +697,7 @@ doc-text-printer-bill-integration-order =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-adjustment-in-order =
@@ -577,6 +720,7 @@ doc-text-printer-adjustment-in-order =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-complaint-about-offense =
@@ -594,10 +738,11 @@ doc-text-printer-complaint-about-offense =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-appointment-of-temporary-warden =
-    ⠀[bold]:СТАНЦИЯ: ПД-СБ[/bold]
+    ⠀[bold]:СТАНЦИЯ: СБ[/bold]
     ⠀
     ⠀[color=#B51E50]НАЗНАЧЕНИЕ ВРЕМЕННОГО СМОТРИТЕЛЯ[/color]
     ⠀
@@ -612,6 +757,7 @@ doc-text-printer-appointment-of-temporary-warden =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-duty-order =
@@ -637,6 +783,7 @@ doc-text-printer-duty-order =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-permission-for-self-defense-weapon =
@@ -661,6 +808,7 @@ doc-text-printer-permission-for-self-defense-weapon =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-inventory-list-of-arsenal =
@@ -681,6 +829,7 @@ doc-text-printer-inventory-list-of-arsenal =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-investigation-report =
@@ -701,6 +850,7 @@ doc-text-printer-investigation-report =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-verdict =
@@ -724,6 +874,7 @@ doc-text-printer-verdict =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-search-warrant-permission =
@@ -751,22 +902,24 @@ doc-text-printer-search-warrant-permission =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-warrant-arrest-permission =
     ⠀[bold]:СТАНЦИЯ: СБ[/bold]
     ⠀
-    ⠀[color=#B51E50]ОРДЕР НА ЗАДЕРЖАНИЕ[/color]
+    ⠀[color=#B51E50]ОРДЕР НА АРЕСТ[/color]
     ⠀
     ⠀[bold]Время и дата смены:[/bold] :ДАТА:
     ⠀[bold]Составитель документа:[/bold] :ФИО:
     ⠀[bold]Должность составителя:[/bold] :ДОЛЖНОСТЬ:
     ⠀
-    ⠀[bold]Провести задержание и арест лиц(а):):[/bold]
+    ⠀[bold]Провести задержание и арест лиц(а):ФИО:[/bold]
     ⠀[bold]Причина:[/bold]
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-prisoner-parole-order =
@@ -783,6 +936,7 @@ doc-text-printer-prisoner-parole-order =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-medical-intervention-order =
@@ -799,6 +953,7 @@ doc-text-printer-medical-intervention-order =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-medical-prosuction-request =
@@ -816,12 +971,13 @@ doc-text-printer-medical-prosuction-request =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-compulsory-medical-intervention-order =
     ⠀[bold]:СТАНЦИЯ: КОМ-МЕД[/bold]
     ⠀
-    ⠀[color=#30BFCC]ПРИКАЗ ОБ ПРИНУДИТЕЛЬНОМ ХИРУРГИЧЕСКОМ ВМЕШАТЕЛЬСТВЕ[/color]
+    ⠀[color=#30BFCC]ПРИКАЗ О ПРИНУДИТЕЛЬНОМ ХИРУРГИЧЕСКОМ ВМЕШАТЕЛЬСТВЕ[/color]
     ⠀
     ⠀[bold]Время и дата смены:[/bold] :ДАТА:
     ⠀[bold]Составитель документа:[/bold] :ФИО:
@@ -832,10 +988,11 @@ doc-text-printer-compulsory-medical-intervention-order =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-psychological-status-report =
-    ⠀[bold]:СТАНЦИЯ: КОМ-ПД[/bold]
+    ⠀[bold]:СТАНЦИЯ: МЕД-ПД[/bold]
     ⠀
     ⠀[color=#30BFCC]ОТЧЕТ О ПСИХОЛОГИЧЕСКОМ СОСТОЯНИИ[/color]
     ⠀
@@ -850,6 +1007,7 @@ doc-text-printer-psychological-status-report =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
     ⠀
@@ -865,11 +1023,12 @@ doc-text-printer-authorization-for-a-prescription-drug =
     ⠀Я, :ФИО:, в должности :ДОЛЖНОСТЬ:, разрешаю хранение и использование рецептурного препарата или наркотического препарата "(полное наименование вещества)" пациенту (ФИО), в должности (полное наименование должности).
     ⠀[bold]Поставленный диагноз:[/bold]
     ⠀
-    ⠀[bold]Рекомендуемые к употреблению лекарства:[/bold]
+    ⠀[bold]Перечень разрешаемых рецептурных препаратов:[/bold]
     ⠀
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-conclusion-on-the-state-of-health =
@@ -895,10 +1054,11 @@ doc-text-printer-conclusion-on-the-state-of-health =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-list-of-medical-department-duties =
-    ⠀[bold]:СТАНЦИЯ: МЕД-ПД[/bold]
+    ⠀[bold]:СТАНЦИЯ: МЕД[/bold]
     ⠀
     ⠀[color=#30BFCC]СПИСОК ДЕЖУРСТВ МЕДИЦИНСКОГО ОТДЕЛА[/color]
     ⠀
@@ -918,10 +1078,11 @@ doc-text-printer-list-of-medical-department-duties =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-euthanasia-inquiry =
-    ⠀[bold]:СТАНЦИЯ: МЕД-ПД[/bold]
+    ⠀[bold]:СТАНЦИЯ: ПД-МЕД[/bold]
     ⠀
     ⠀[color=#30BFCC]ЗАПРОС НА ПРОВЕДЕНИЕ ЭВТАНАЗИИ[/color]
     ⠀
@@ -934,10 +1095,11 @@ doc-text-printer-euthanasia-inquiry =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-death-certificate =
-    ⠀[bold]:СТАНЦИЯ: МЕД-ПД[/bold]
+    ⠀[bold]:СТАНЦИЯ: МЕД[/bold]
     ⠀
     ⠀[color=#30BFCC]СВИДЕТЕЛЬСТВО О СМЕРТИ[/color]
     ⠀
@@ -954,10 +1116,11 @@ doc-text-printer-death-certificate =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-permission-to-dispose-of-the-body =
-    ⠀[bold]:СТАНЦИЯ: МЕД-ПД[/bold]
+    ⠀[bold]:СТАНЦИЯ: МЕД[/bold]
     ⠀
     ⠀[color=#30BFCC]РАЗРЕШЕНИЕ НА УТИЛИЗАЦИЮ ТЕЛА[/color]
     ⠀
@@ -971,10 +1134,11 @@ doc-text-printer-permission-to-dispose-of-the-body =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-evidence-of-infection =
-    ⠀[bold]:СТАНЦИЯ: МЕД-ПД[/bold]
+    ⠀[bold]:СТАНЦИЯ: МЕД[/bold]
     ⠀
     ⠀[color=#30BFCC]СВИДЕТЕЛЬСТВО ОБ ИНФЕКЦИИ[/color]
     ⠀
@@ -983,7 +1147,6 @@ doc-text-printer-evidence-of-infection =
     ⠀[bold]Должность составителя:[/bold] :ДОЛЖНОСТЬ:
     ⠀
     ⠀
-    ⠀Я, :ФИО:, в должности :ДОЛЖНОСТЬ:, разрешаю утилизировать тело (ФИО), в должности (полное наименование должности) в связи с невозможностью его реанимации и клонирования.
     ⠀[bold]Постановитель диагноза:[/bold]
     ⠀[bold]Должность постановителя:[/bold]
     ⠀
@@ -995,6 +1158,7 @@ doc-text-printer-evidence-of-infection =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-epidemiological-conclusion =
@@ -1016,6 +1180,7 @@ doc-text-printer-epidemiological-conclusion =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-compulsory-medical-intervention-report =
@@ -1034,12 +1199,13 @@ doc-text-printer-compulsory-medical-intervention-report =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-certificate-of-offense =
     ⠀[bold]:СТАНЦИЯ: ПД-СБ[/bold]
     ⠀
-    ⠀[color=#30BFCC]СВИДЕТЕЛЬСТВО О ПРАВОНАРУШЕНИИ[/color]
+    ⠀[color=#B51E50]СВИДЕТЕЛЬСТВО О ПРАВОНАРУШЕНИИ[/color]
     ⠀
     ⠀[bold]Время и дата смены:[/bold] :ДАТА:
     ⠀[bold]Составитель документа:[/bold] :ФИО:
@@ -1057,6 +1223,7 @@ doc-text-printer-certificate-of-offense =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-quarantine-order =
@@ -1075,10 +1242,11 @@ doc-text-printer-quarantine-order =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-engeneer-product-production-inquiry =
-    ⠀[bold]:СТАНЦИЯ: КОД-ИНЖ[/bold]
+    ⠀[bold]:СТАНЦИЯ: ПД-ИНЖ[/bold]
     ⠀
     ⠀[color=#F29E18]ЗАКАЗ НА ПРОИЗВОДСТВО ПРОДУКТА[/color]
     ⠀
@@ -1093,6 +1261,7 @@ doc-text-printer-engeneer-product-production-inquiry =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-list-of-engeneer-duties =
@@ -1110,6 +1279,7 @@ doc-text-printer-list-of-engeneer-duties =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-building-permission =
@@ -1126,6 +1296,7 @@ doc-text-printer-building-permission =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-technical-condition-report =
@@ -1146,6 +1317,7 @@ doc-text-printer-technical-condition-report =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-construction-work-request =
@@ -1162,6 +1334,7 @@ doc-text-printer-construction-work-request =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-science-product-request =
@@ -1180,6 +1353,7 @@ doc-text-printer-science-product-request =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-object-study-report =
@@ -1198,6 +1372,7 @@ doc-text-printer-object-study-report =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-experiment-report =
@@ -1224,6 +1399,7 @@ doc-text-printer-experiment-report =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-expedition-report =
@@ -1243,6 +1419,7 @@ doc-text-printer-expedition-report =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-anomaly-documentation =
@@ -1267,6 +1444,7 @@ doc-text-printer-anomaly-documentation =
     ⠀[bold]Выполняемые процедуры:[/bold] (Что обязаны выполнять сотрудник)
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-recognizing-the-reasonableness-of-a-being-order =
@@ -1287,6 +1465,7 @@ doc-text-printer-recognizing-the-reasonableness-of-a-being-order =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-list-of-scientists-duties =
@@ -1305,6 +1484,7 @@ doc-text-printer-list-of-scientists-duties =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-disposal-report =
@@ -1322,6 +1502,7 @@ doc-text-printer-disposal-report =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-cargo-permission-to-an-expedition =
@@ -1341,6 +1522,7 @@ doc-text-printer-cargo-permission-to-an-expedition =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
     ⠀
@@ -1358,10 +1540,11 @@ doc-text-printer-purchase-order =
     ⠀
     ⠀[bold]Место доставки товара:[/bold]
     ⠀
-    ⠀Причина:Обязуюсь проявлять осторожность при выполнении научно-исследовательских работ, выполнять команды старших по званию во время экспедиции. В случаи не возвращении меня или моего тела, прошу считать меня погибшим во время исполнения своего долга перед НаноТрейзен!
+    ⠀Причина:
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-evacuation-order =
@@ -1375,6 +1558,7 @@ doc-text-printer-evacuation-order =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-station-goal-order =
@@ -1386,29 +1570,32 @@ doc-text-printer-station-goal-order =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-station-situation-report-order =
     ⠀[bold]:СТАНЦИЯ: ЦК-КОМ[/bold]
     ⠀
-    ⠀[color=#36A55D]ПРИКАЗ ОБ ПРЕДОСТАВЛЕНИИ ОТЧЕТА О ЦЦК[/color]
+    ⠀[color=#36A55D]ПРИКАЗ О ПРЕДОСТАВЛЕНИИ ОТЧЕТА О ЦЦК[/color]
     ⠀
     ⠀Уважаемое командование станции! В соответствии с установленной целью космической станции, прошу представить отчёт о выполнении цели за период с начала смены станции до настоящего момента. Отчёт должен содержать информацию о прогрессе в выполнения цели, препятствиях, возникших на пути выполнения, и планах на их устранение.
     ⠀[bold]Срок выполнения:[/bold] немедленно.
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-decree-on-the-availability-of-headers =
     ⠀[bold]:СТАНЦИЯ: ЦК-КОМ[/bold]
     ⠀
-    ⠀[color=#36A55D]УКАЗ О НАЛИЧИИ ГЛАВ[/color]
+    ⠀[color=#36A55D]УКАЗ О НАЛИЧИИ РУКОВОДИТЕЛЕЙ[/color]
     ⠀
     ⠀Уважаемое командование станции station XX-000, в целях регулярной проверки командования станции центральным командованием, мы запрашиваем отчёт о наличии глав отделов. В отчёте должны быть указаны все пункты глав, на назначение ВРиО для отчёта у вас имеется ровно два часа смены, в случае если вы не успеете назначить всех врио и включить все пункты, на станцию будет отправлен ПОЦК для проверки. В случае удачного назначения и отправки отчёта зарплата всего командования станций будет увеличена на 10%!
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-executive-order =
@@ -1420,6 +1607,7 @@ doc-text-printer-executive-order =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-delivery-order =
@@ -1437,12 +1625,13 @@ doc-text-printer-delivery-order =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-cent-comm-report =
-    ⠀[bold]:СТАНЦИЯ: ЦК-КОМ[/bold]
+    ⠀[bold]:СТАНЦИЯ: ЦК[/bold]
     ⠀
-    ⠀[color=#36A55D]ОТВЕТ НА ЗАПРОС ЦЕНТКОМА[/color]
+    ⠀[color=#36A55D]ОТЧЁТ ЦЕНТРАЛЬНОГО КОМАНДОВАНИЯ[/color]
     ⠀
     ⠀[bold]Время и дата смены:[/bold] :ДАТА:
     ⠀[bold]Составитель документа:[/bold] :ФИО:
@@ -1452,10 +1641,11 @@ doc-text-printer-cent-comm-report =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-cent-comm-fire-mission-report =
-    ⠀[bold]:СТАНЦИЯ: ЦК-КОМ[/bold]
+    ⠀[bold]:СТАНЦИЯ: ДСО[/bold]
     ⠀
     ⠀[color=#36A55D]ОГНЕВАЯ ЗАДАЧА[/color]
     ⠀
@@ -1472,12 +1662,13 @@ doc-text-printer-cent-comm-fire-mission-report =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-operation-order =
     ⠀[bold]:СТАНЦИЯ: ДСО[/bold]
     ⠀
-    ⠀[color=#36A55D]ПРИКАЗ О НАЧАЛЕ ОПЕРАЦИИ[/color]
+    ⠀[color=#36A55D]ПРИКАЗ О НАЧАЛЕ СПЕЦИАЛЬНОЙ ОПЕРАЦИИ[/color]
     ⠀
     ⠀Я, :ФИО:, в должности офицера специальных операций приказываю начать специальную операцию (название операции).
     ⠀
@@ -1490,12 +1681,13 @@ doc-text-printer-operation-order =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]
     ⠀
 doc-text-printer-operation-report =
     ⠀[bold]:СТАНЦИЯ: ДСО-ЦК[/bold]
     ⠀
-    ⠀[color=#36A55D]ОТЧЁТ ОБ ОПЕРАЦИИ[/color]
+    ⠀[color=#36A55D]ОТЧЁТ ОБ СПЕЦИАЛЬНОЙ ОПЕРАЦИИ[/color]
     ⠀
     ⠀Я, (звание и ФИО), в должности (полное название должности) докладываю об успешно-выполненной/проваленной спецальной операции (название операции).
     ⠀
@@ -1510,4 +1702,5 @@ doc-text-printer-operation-report =
     ⠀
     ⠀
     ⠀
+    ════════════════════════════════════
     ⠀[italic]Поле для печати[/italic]

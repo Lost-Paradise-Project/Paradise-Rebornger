@@ -1,10 +1,12 @@
 station-goal-fax-paper-name = бумага
 station-goal-news-title = Цель { $station }
 station-goal-news-author = Центральное командование
-station-goal-start = ═══════[color=#36A55D]ЦЕЛЬ СТАНЦИИ[/color]═══════
+station-goal-start = 
+    { $station } ЦК-КМД
+    ════════════[color=#36A55D]ЦЕЛЬ СТАНЦИИ[/color]═════════════
 station-goal-end =
     Слава NanoTrasen!
-    ═════════════════════════════════════════[italic]
+    ════════════════════════════════════[italic]
     Поле для печати[/italic]
 station-goal-singularity =
     { station-goal-start }[bold]
