@@ -307,6 +307,23 @@
   - type: Armor
     modifiers:
       coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+
+- type: entity
+  parent: ClothingMaskGasDeathSquad
+  id: LPPClothingMaskUEGExlorer
+  name: UEG skitarii explorer gasmask
+  description: Stirdy gasmask for expeditionary skitarii units.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Mask/UEGexplorer.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Mask/UEGexplorer.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
         Blunt: 0.9
         Slash: 0.9
         Piercing: 0.9

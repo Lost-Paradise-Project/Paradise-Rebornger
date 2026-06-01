@@ -523,7 +523,6 @@
     tags:
     - HidesHair
 
-
 - type: entity
   parent: ClothingHeadBase
   id: LPPHelmetHardsuitHoodViro
