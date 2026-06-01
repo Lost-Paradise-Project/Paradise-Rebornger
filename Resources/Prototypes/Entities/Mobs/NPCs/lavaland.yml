@@ -45,7 +45,7 @@
       50: Dead
   - type: Butcherable
     spawned:
-    - id: DiamondOre1
+    - id: DiamondOre1Unprocessed # Lavaland edit
       amount: 1
   - type: MovementSpeedModifier
     baseWalkSpeed: 5

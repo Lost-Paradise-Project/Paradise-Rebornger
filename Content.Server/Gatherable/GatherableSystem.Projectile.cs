@@ -1,6 +1,7 @@
 using Content.Server.Gatherable.Components;
 using Content.Shared.Projectiles;
 using Robust.Shared.Physics.Events;
+using Robust.Shared.Random; // Goobstation edit
 
 namespace Content.Server.Gatherable;
 
@@ -16,12 +17,15 @@ public sealed partial class GatherableSystem
         if (!args.OtherFixture.Hard ||
             args.OurFixtureId != SharedProjectileSystem.ProjectileFixture ||
             gathering.Comp.Amount <= 0 ||
-            !TryComp<GatherableComponent>(args.OtherEntity, out var gatherable))
+            !TryComp<GatherableComponent>(args.OtherEntity, out var gatherable) || // Goobstation edit
+            gatherable.IsGathered || // Goobstation
+            !_random.Prob(gathering.Comp.Probability)) // Goobstation
         {
             return;
         }
 
         Gather(args.OtherEntity, gathering, gatherable);
+        gatherable.IsGathered = true; // Goobstation
         gathering.Comp.Amount--;
 
         if (gathering.Comp.Amount <= 0)

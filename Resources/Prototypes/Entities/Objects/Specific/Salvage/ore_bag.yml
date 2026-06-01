@@ -4,7 +4,6 @@
   parent: BaseStorageItem
   description: A robust bag for salvage specialists and miners alike to carry large amounts of ore. Magnetises any nearby ores when attached to a belt.
   components:
-  - type: MagnetPickup
   - type: Sprite
     sprite: Objects/Specific/Mining/ore_bag.rsi
     state: icon
@@ -13,12 +12,16 @@
     quickEquip: false
     slots:
     - belt
+  # DeltaV Edit Start
+  - type: MagnetPickup
+    range: 1.5
+  # DeltaV Edit End
   - type: Item
     size: Ginormous
   - type: Storage
     maxItemSize: Normal
     grid:
-    - 0,0,9,3
+    - 0,0,9,7 # LP Edit
     quickInsert: true
     areaInsert: true
     whitelist:

@@ -59,6 +59,9 @@
         layer:
         - WallLayer
         density: 2000
+  - type: Gatherable # Lavaland Change
+    toolWhitelist:
+      tags: []
 
 - type: entity
   abstract: true
@@ -807,16 +810,16 @@
   - type: SoundOnGather
   - type: Gatherable
     toolWhitelist:
-      tags:
-      - Pickaxe
+      tags: [] # Lavaland Change
+      #- Pickaxe
   - type: Damageable
     damageContainer: StructuralInorganic
-    damageModifierSet: Metallic
+    damageModifierSet: Rock # Lavaland Change
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 120 # Lavaland edit
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
