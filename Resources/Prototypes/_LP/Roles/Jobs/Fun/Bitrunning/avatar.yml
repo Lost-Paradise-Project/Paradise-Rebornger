@@ -207,6 +207,16 @@
     outerClothing: LPPClothingOuterVestUrbanPG
     belt: ClothingBeltHolster
 
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  equipment:
+    eyes: LPPUEGEyehud
+    jumpsuit: LPPClothingUniformJumpsuitOverallsUEG
+    gloves: LPPClothingHandsGlovesUEGCombat
+    shoes: LPPClothingShoesUEGLegsUnremovable
+    mask: LPPClothingMaskUEGExpeditor
+    outerClothing: LPPClothingOuterUEGExpeditor
+    belt: LPPClothingBeltUEGWebbing
 # --- КИБЕРПОЛИЦИЯ ---
 
 - type: startingGear

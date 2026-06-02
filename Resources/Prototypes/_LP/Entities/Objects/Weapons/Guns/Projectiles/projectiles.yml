@@ -156,3 +156,32 @@
         Structural: 25
   - type: TimedDespawn
     lifetime: 0.2
+
+- type: entity
+  name: magnum window-piercing bolt
+  id: LPPBulletLaserHeavy
+  categories: [ HideSpawnMenu ]
+  parent: BulletLaser
+  components:
+  - type: Sprite
+    sprite: _Impstation\Objects\Weapons\Guns\Projectiles\energybolts.rsi
+    layers:
+    - state: syndcrossbolt
+      shader: unshaded
+  - type: PointLight
+    enabled: true
+    color: "#39ff2b"
+  - type: Projectile
+    impactEffect: BulletImpactEffectOrangeDisabler
+    damage:
+      types:
+        Heat: 25
+  - type: Fixtures
+    fixtures:
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.1,-0.1,0.1,0.1"
+        hard: false
+        mask:
+        - Opaque

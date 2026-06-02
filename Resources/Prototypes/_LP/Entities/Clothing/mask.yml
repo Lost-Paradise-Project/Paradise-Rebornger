@@ -313,8 +313,8 @@
 
 - type: entity
   parent: ClothingMaskGasDeathSquad
-  id: LPPClothingMaskUEGExlorer
-  name: UEG skitarii explorer gasmask
+  id: LPPClothingMaskUEGExpeditor
+  name: UEG skitarii expeditor gasmask
   description: Stirdy gasmask for expeditionary skitarii units.
   components:
   - type: Sprite

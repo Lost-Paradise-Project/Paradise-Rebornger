@@ -131,3 +131,137 @@
       - FiringPinLaser
   - type: FiringPinHolder
     supportedPins: [ Laser ]
+
+- type: entity
+  name: Galvanic rifle
+  parent: [BaseWeaponPowerCell, BaseGunWieldable ]
+  id: LPPWeaponGalvanicrifle
+  description: Weapon of Skitarii units- galvanic rifle. Energy weapon with detachable powercell that loved by all regiments. Mostly used for scouting and mid range combats.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Guns/Battery/galvanic/big.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+        scale: "0.7,1.0"
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+        scale: "0.7,1.0"
+  - type: Item
+    size: Large
+    sprite: _LP/Objects/Weapons/Guns/Battery/galvanic/tiny.rsi
+    shape:
+    - 0,0,5,0
+  - type: Appearance
+  - type: Clothing
+    sprite: _LP/Objects/Weapons/Guns/Battery/galvanic/tiny.rsi
+    quickEquip: true
+    slots:
+      - Back
+      - suitStorage
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Wieldable
+    unwieldOnUse: true
+  - type: GunRequiresWield
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: Gun
+    projectileSpeed: 55
+    angleIncrease: 5
+    angleDecay: 45
+    fireRate: 2.5
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/_Orion/Weapons/Guns/EGE-XR/shot.ogg
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: Magazine
+        startingItem: LPPPowerCellGalvanicRifle
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        whitelist:
+          tags:
+            - LPPGalvainc
+  - type: Tag
+    tags:
+    - LaserWeapon
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+  - type: ContainerContainer
+    containers:
+      cell_slot: !type:ContainerSlot
+  - type: BatteryAmmoProvider
+    proto: LPPBulletLaserHeavy
+    fireCost: 50
+
+- type: entity
+  name: Arc rifle
+  parent: [BaseWeaponBatterySmall, BaseCentcommContraband]
+  id: LPPWeaponArcrifle
+  description: Part of arc weapon family. A bit crude looking laser weapon with self-charging battery on top. Don't underastimade it- power behind it can SHOCK you easily.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Guns/Battery/arcrifle/big.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+      scale: "0.8,0.8"
+    - state: mag-unshaded-14
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+      scale: "0.8,0.8"
+  - type: Clothing
+    sprite: _LP/Objects/Weapons/Guns/Battery/arcrifle/tiny.rsi
+    quickEquip: true
+    slots:
+      - Back
+      - suitStorage
+  - type: Item
+    size: Large
+    sprite: _LP/Objects/Weapons/Guns/Battery/arcrifle/tiny.rsi
+    shape:
+    - 0,0,3,1
+  - type: Wieldable
+    unwieldOnUse: true
+  - type: GunRequiresWield
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: Gun
+    fireRate: 0.75
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/_Orion/Weapons/Guns/EGE-XR/shot.ogg
+  - type: BatteryAmmoProvider
+    proto: LPPArc
+    fireCost: 100
+  - type: MagazineVisuals
+    magState: mag
+    steps: 15
+    zeroVisible: true
+  - type: Appearance
+  - type: Battery
+    maxCharge: 1400
+    startingCharge: 1400
+  - type: ContainerContainer
+    containers:
+      firing_pin: !type:Container
+  - type: ContainerFill
+    containers:
+      firing_pin:
+      - FiringPinAdvancedLaser
+  - type: FiringPinHolder
+    supportedPins: [ AdvancedLaser ]
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 20
+    autoRechargePauseTime: 10

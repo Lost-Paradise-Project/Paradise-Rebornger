@@ -59,6 +59,7 @@ bitrunning-disk-option-weapon-revolverfe = Револьвер самооборо
 bitrunning-disk-option-weapon-temperaturegun = Температурная пушка
 bitrunning-disk-option-weapon-scout = Скаут
 bitrunning-disk-option-weapon-jagdkommando = Йагдкоммандо
+bitrunning-disk-option-weapon-chainsaw = Бензопила
 bitrunning-disk-option-weapon-disableradvanced = Продвинутый станнер
 bitrunning-disk-option-weapon-hushpup = Дробовик Чигура
 bitrunning-disk-option-weapon-pibodi = СВ Пибоди

@@ -1,0 +1,39 @@
+# Cells compatible with the Starflare EPDW-6.
+- type: entity
+  name: Galvanic rifle powercell
+  description: A rechargeable power cell compatible with the Skitarii's Galvanic Rifle. Sadly its proprietary formfactor is not compatible elsewhere.
+  id: LPPPowerCellGalvanicRifle
+  parent: [ BasePowerCell ]
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Guns/Ammunition/Magazine/galvanicriflemag.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 250
+    intensitySlope: 1.5
+  - type: SolutionContainerManager
+    solutions:
+      battery:
+        maxVol: 8
+  - type: Extractable
+    juiceSolution:
+      reagents:
+        - ReagentId: Zinc
+          Quantity: 8
+  - type: Appearance
+  - type: Riggable
+  - type: Item
+    size: Small
+  - type: Battery
+    maxCharge: 1000
+    startingCharge: 1000
+  - type: BatteryAmmoProvider
+    proto: LPPBulletLaserHeavy
+    fireCost: 50
+  - type: Tag
+    tags:
+      - LPPGalvainc
+  - type: PowerCell

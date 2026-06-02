@@ -126,6 +126,7 @@
     grantMode: Item
     options:
       bitrunning-disk-option-weapon-jagdkommando: LPPKnifeJagdkommando
+      bitrunning-disk-option-weapon-chainsaw: Chainsaw
       bitrunning-disk-option-weapon-disableradvanced: WeaponDisablerAdvanced
       bitrunning-disk-option-weapon-hushpup: WeaponShotgunHushpup
       bitrunning-disk-option-weapon-pibodi: LPPweaponPibodi

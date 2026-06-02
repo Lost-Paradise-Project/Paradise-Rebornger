@@ -18,3 +18,24 @@
     impactFlash:
       sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
       state: impact_blue
+
+- type: entity
+  parent: BasicHitscan
+  id: LPPArc
+  name: Arc laser
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Shock: 30
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: _LP/Objects/Weapons/Guns/Projectiles/gauss.rsi
+      state: muzzle_gauss
+    travelFlash:
+      sprite: _LP/Objects/Weapons/Guns/Projectiles/gauss.rsi
+      state: gauss
+    impactFlash:
+      sprite: _LP/Objects/Weapons/Guns/Projectiles/gauss.rsi
+      state: impact_gauss
