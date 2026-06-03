@@ -76,18 +76,19 @@ public sealed class BatterySystem : SharedBatterySystem
         if (!Resolve(uid, ref battery))
             return 0;
 
-        return Convert.ToInt32(battery.MaxCharge - battery.LastCharge);
+        // LP Edit Start
+        var current = GetCharge((uid, battery));
+
+        return (int)(battery.MaxCharge - current);
+        // LP Edit End
     }
+
     public float AddCharge(EntityUid uid, float value, BatteryComponent? battery = null)
     {
-        if (value <= 0 || !Resolve(uid, ref battery))
+        if (value <= 0) // LP Edit
             return 0;
 
-        var newValue = Math.Clamp(battery.LastCharge + value, 0, battery.MaxCharge);
-        var delta = newValue - battery.LastCharge;
-        var ev = new ChargeChangedEvent(newValue, delta, battery.ChargeRate, battery.MaxCharge);
-        RaiseLocalEvent(uid, ref ev);
-        return newValue;
+        return ChangeCharge((uid, battery), value); // LP Edit
     }
     // Goobstation edit end
 
