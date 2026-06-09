@@ -1,0 +1,104 @@
+- type: shopInventory
+  id: SalvageVendorInventory
+  listings:
+  - id: DrinkWhiskeyBottleFull
+    cost: 100
+  - id: DrinkAbsintheBottleFull
+    cost: 100
+  - id: Flare
+    cost: 100
+  - id: CigarGold
+    cost: 150
+  - id: Soap
+    cost: 200
+  - id: SeismicCharge
+    cost: 200
+  # - id: BoxMarkerBeacons
+  #   cost: 300
+  # - id: LavalandJaunter
+  #   cost: 300
+  - id: Fulton
+    cost: 300
+  - id: ClothingEyesGlassesMeson
+    cost: 400
+  - id: ClothingBeltSalvageWebbing
+    cost: 400
+  - id: FultonBeacon
+    cost: 500
+  - id: PowerCellHigh
+    cost: 500
+  - id: ClothingShoesBootsJack
+    cost: 550
+  - id: MineralScanner
+    cost: 550
+  - id: MedkitBruteFilled
+    cost: 600
+  - id: MedkitBurnFilled
+    cost: 600
+  - id: DoubleEmergencyOxygenTankFilled
+    cost: 650
+  - id: DoubleEmergencyNitrogenTankFilled
+    cost: 650
+  - id: ClothingMaskWeldingGas
+    cost: 750
+  - id: SpaceCash5000
+    cost: 750
+  - id: MiningDrill
+    cost: 800
+  - id: OreBag
+    cost: 800
+  # - id: SurvivalMedipen
+  #   cost: 800
+  - id: PKAUpgradeRange
+    cost: 1000
+  - id: PKAUpgradeFireRate
+    cost: 1000
+  # - id: ShelterCapsule
+  #   cost: 1000
+  - id: LavalandEquipmentExplorerSuit
+    cost: 1000
+  - id: LavalandWeaponKineticMachete
+    cost: 1050
+  - id: LavalandWeaponKineticClaws
+    cost: 1050
+  - id: WeaponCrusherDagger
+    cost: 1050
+  - id: AdvancedMineralScanner
+    cost: 1150
+  - id: PKAUpgradeDamage
+    cost: 1200
+  # - id: ClothingBackpackDuffelSalvageConscription
+  #   cost: 1250
+  # - id: LuxuryMedipen
+  #   cost: 1500
+  - id: WeaponPlasmaCutter
+    cost: 1500
+  - id: BorgModuleAdvancedMining
+    cost: 2000
+  - id: ClothingHandsGlovesCombat
+    cost: 2000
+  - id: OreBagOfHolding
+    cost: 2000
+  - id: ClothingShoesBootsMoon
+    cost: 2000
+  - id: ClothingShoesBootsJump
+    cost: 2000
+  - id: ClothingOuterHardsuitSalvage
+    cost: 2000
+    #TODO: super resonator for 2500
+  - id: ClothingOuterHardsuitLuxury
+    cost: 3000 #still costs more than just buying it with spesos you got from vendor but whatever
+  - id: MedkitCombatFilled
+    cost: 3000
+  # - id: ShelterCapsuleLuxury
+  #   cost: 3000
+  - id: LPPClothingEyesNVG
+    cost: 3500
+  - id: MiningDrillDiamond
+    cost: 4000 #Mostly for flexing
+  # - id: ClothingNeckEnsembleSalvager #Earn. It.
+  #   cost: 10000
+  # - id: CrateCargoClarkeAssembly
+  #   cost: 12500 #TODO: Make modules real
+  # TODO: luxury elite bar capsule for 10k
+  # TODO: mining drone stuff

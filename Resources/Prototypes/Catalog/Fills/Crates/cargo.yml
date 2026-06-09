@@ -170,8 +170,10 @@
     - id: IngotGold1
     - id: IngotGold
       weight: 0.1
-    - id: GoldOre1
-    - id: GoldOre
+    # Lavaland edit start
+    - id: GoldOre1Unprocessed
+    - id: GoldOreUnprocessed
+    # Lavaland edit end
       weight: 0.1
     - id: DrinkGoldenCup
     - id: ToolboxGoldFilled

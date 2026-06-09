@@ -5,6 +5,7 @@ using Content.Shared.Rejuvenate;
 using Robust.Shared.Utility;
 using Robust.Shared.Containers; // Goobstation Edit
 using System.Diagnostics.CodeAnalysis; // Goobstation Edit
+using Content.Shared.Power; // Goobstation Edit
 
 namespace Content.Server.Power.EntitySystems;
 
@@ -68,6 +69,28 @@ public sealed class BatterySystem : SharedBatterySystem
             SetCharge((uid, bat), netBat.NetworkBattery.CurrentStorage);
         }
     }
+
+    // Goobstation edit start
+    public int GetChargeDifference(EntityUid uid, BatteryComponent? battery = null) // Debug
+    {
+        if (!Resolve(uid, ref battery))
+            return 0;
+
+        // LP Edit Start
+        var current = GetCharge((uid, battery));
+
+        return (int)(battery.MaxCharge - current);
+        // LP Edit End
+    }
+
+    public float AddCharge(EntityUid uid, float value, BatteryComponent? battery = null)
+    {
+        if (value <= 0) // LP Edit
+            return 0;
+
+        return ChangeCharge((uid, battery), value); // LP Edit
+    }
+    // Goobstation edit end
 
     // WD EDIT START
     public bool TryGetBatteryComponent(EntityUid uid, [NotNullWhen(true)] out BatteryComponent? battery,

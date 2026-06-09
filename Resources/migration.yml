@@ -973,3 +973,22 @@ ComputerSalvageExpedition: null
 # LP edit 2026-04-26
 DiseasePandemic2300: Vaccinator
 DiseaseDiagnoser2300: DiseaseDiagnoser
+
+# LP Edit 2026-06-01
+
+GoldOre: GoldOreUnprocessed
+GoldOre1: GoldOre1Unprocessed
+DiamondOre1: DiamondOre1Unprocessed
+SteelOre: SteelOreUnprocessed
+SteelOre1: SteelOre1Unprocessed
+PlasmaOre: PlasmaOreUnprocessed
+PlasmaOre1: PlasmaOre1Unprocessed
+SilverOre: SilverOreUnprocessed
+SilverOre1: SilverOre1Unprocessed
+SpaceQuartz1: SpaceQuartz1Unprocessed
+UraniumOre: UraniumOreUnprocessed
+UraniumOre1: UraniumOre1Unprocessed
+BananiumOre: BananiumOreUnprocessed
+BananiumOre1: BananiumOre1Unprocessed
+Coal: CoalUnprocessed
+Coal1: Coal1Unprocessed

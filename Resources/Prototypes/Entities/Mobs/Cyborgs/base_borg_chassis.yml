@@ -258,6 +258,7 @@
     requiredMobState:
     - Critical
     - Dead
+  - type: MiningPoints # goobstation borgs can claim mining points
   - type: TTS # Corvax-TTS
     voice: turret_floor
 

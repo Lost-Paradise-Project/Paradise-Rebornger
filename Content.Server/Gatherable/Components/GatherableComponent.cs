@@ -37,4 +37,12 @@ public sealed partial class GatherableComponent : Component
     /// </summary>
     [DataField]
     public float GatherOffset = 0.3f;
+
+    // Goobstation edit start
+    /// <summary>
+    ///     Whether the resource has been gathered or not.
+    /// </summary>
+    [DataField]
+    public bool IsGathered = false;
+    // Goobstation edit end
 }

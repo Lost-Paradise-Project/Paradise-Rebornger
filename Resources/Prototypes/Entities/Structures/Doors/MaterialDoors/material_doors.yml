@@ -404,7 +404,7 @@
             volume: -6
       - !type:SpawnEntitiesBehavior
         spawn:
-          SteelOre1:
+          SteelOre1Unprocessed: # Lavaland edit
             min: 0
             max: 1
 

@@ -427,6 +427,6 @@
     - Energy
   - type: Butcherable
     spawned:
-    - id: DiamondOre1
+    - id: DiamondOre1Unprocessed # Lavaland edit
       amount: 1
       maxAmount: 3

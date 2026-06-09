@@ -318,7 +318,7 @@
       spawned:
         - id: FoodMeatSnake
           amount: 2
-        - id: UraniumOre1
+        - id: UraniumOre1Unprocessed # Lavaland edit
           amount: 1
         - id: ClothingShoesSnakeskinBoots
           amount: 1

@@ -348,7 +348,7 @@
         orGroup: GiftPool
       - id: Ash
         orGroup: GiftPool
-      - id: Coal1
+      - id: Coal1Unprocessed # Lavaland edit
         orGroup: GiftPool
       - id: MiningDrill
         orGroup: GiftPool
@@ -385,15 +385,15 @@
   - type: SpawnItemsOnUse
     items:
       - id: PresentTrash
-      - id: Coal1
+      - id: Coal1Unprocessed # Lavaland edit
         orGroup: GiftPool
-      - id: Coal5
+      - id: Coal5Unprocessed # Lavaland edit
         prob: .4
         orGroup: GiftPool
-      - id: Coal10
+      - id: Coal10Unprocessed # Lavaland edit
         prob: .2
         orGroup: GiftPool
-      - id: Coal15
+      - id: Coal15Unprocessed # Lavaland edit
         prob: .1
         orGroup: GiftPool
     sound:
