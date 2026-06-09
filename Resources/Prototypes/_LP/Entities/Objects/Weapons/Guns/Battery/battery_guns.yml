@@ -261,7 +261,6 @@
   - type: FiringPinHolder
     supportedPins: [ AdvancedLaser ]
   - type: BatterySelfRecharger
-    autoRecharge: true
     autoRechargeRate: 40
     autoRechargePauseTime: 5
 
@@ -326,7 +325,6 @@
   - type: FiringPinHolder
     supportedPins: [ AdvancedLaser ]
   - type: BatterySelfRecharger
-    autoRecharge: true
     autoRechargeRate: 20
     autoRechargePauseTime: 10
 
@@ -367,7 +365,6 @@
   - type: FiringPinHolder
     supportedPins: [ AdvancedLaser ]
   - type: BatterySelfRecharger
-    autoRecharge: true
     autoRechargeRate: 25
     autoRechargePauseTime: 10
   - type: Item
