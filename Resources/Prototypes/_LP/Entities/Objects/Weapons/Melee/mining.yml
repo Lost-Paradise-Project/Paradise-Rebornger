@@ -1,0 +1,68 @@
+- type: entity
+  name: Omnisian crusher axe
+  parent: [BaseWeaponCrusher, BaseSecurityCargoContraband]
+  id: LPPWeaponCrusherUEG
+  description: These fearsome weapons have no equal amongst other power weapons. Saw-toothed and marked with sacred equations, to the followers of the Machine God, the bearer of an Omnisian axe is a most blessed figure, a furious incarnation of the Machine God's power in war.
+  components:
+  - type: Tag
+    tags:
+      - Pickaxe
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Melee/uegcrusher.rsi
+    state: icon
+  - type: Item
+    size: Ginormous
+    sprite: _LP/Objects/Weapons/Melee/uegcrusher-inhands.rsi
+  - type: Clothing
+    sprite: _LP/Objects/Weapons/Melee/uegcrusher.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: AmmoCounter
+  - type: UseDelayOnShoot
+  - type: UseDelay
+    delay: 0.9
+  - type: LeechOnMarker
+    leech:
+      types:
+        Blunt: -10
+        Slash: -10
+        Piercing: -10
+        Radiation: -10
+        Heat: -2.5
+  - type: Gun
+    soundGunshot: /Audio/Weapons/plasma_cutter.ogg
+    fireRate: 1
+    useKey: false
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 0.5
+    rechargeSound:
+      path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
+  - type: BasicEntityAmmoProvider
+    proto: BulletCharge
+    capacity: 1
+    count: 1
+  - type: MeleeWeapon
+    attackRate: 1
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 7.5
+        Slash: 2.5
+        Caustic: 2.5
+        Shock: 2.5
+        Radiation: 5
+    soundHit:
+      collection: MetalThud
+  - type: Wieldable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Caustic: 5
+        Shock: 5
+        Radiation: 5
+        Structural: 55
+  - type: GunRequiresWield
+  - type: DisarmMalus
+  - type: Prying

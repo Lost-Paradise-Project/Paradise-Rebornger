@@ -66,10 +66,14 @@
     cost: 2184
   - id: LPPBitrunningAmmunitionDisk
     cost: 250
+  - id: LPPBitrunningAmmunitionBoxesDisk
+    cost: 550
+  - id: LPPBitrunningGimmicSalvager
+    cost: 1489
   - id: LPPBitrunningGimmicSecurityDisk
-    cost: 1520
+    cost: 1850
   - id: LPPBitrunningGimmicHeadofSecurityDisk
-    cost: 3250
+    cost: 4010
   - id: SpaceCash500
     cost: 100
   - id: SpaceCash2500

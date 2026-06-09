@@ -13,6 +13,15 @@
   - type: HTN
     rootTask:
       task: SimpleHumanoidHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        false
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
   - type: Perishable
     molsPerSecondPerUnitMass: 0
   - type: BitrunningDomainEnemyObjective

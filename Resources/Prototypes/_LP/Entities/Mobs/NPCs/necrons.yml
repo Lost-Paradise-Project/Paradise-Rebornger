@@ -1,0 +1,214 @@
+- type: entity
+  name: necron
+  id: LPPMobNecron
+  parent: [ SimpleSpaceMobBase ]
+  description: Not a good time to read this.
+  suffix: AI, Necron
+  components:
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: HTN
+    rootTask:
+      task: SimpleRangedHostileCompound
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _LP/Mobs/NPC/necron.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: rifle
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      150: Dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 1.75
+    baseSprintSpeed: 1.75
+  - type: BatteryAmmoProvider
+    proto: XrayLaser
+    fireCost: 50
+  - type: BatterySelfRecharger
+    autoRechargeRate: 50
+  - type: Battery
+    maxCharge: 500
+    startingCharge: 500
+  - type: Gun
+    fireRate: 0.75
+    useKey: false
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: CombatMode
+  - type: InteractionPopup
+    successChance: 0.3
+    interactSuccessString: petting-success-slimes
+    interactFailureString: petting-failure-generic
+    interactSuccessSound:
+      path: /Audio/Animals/lizard_happy.ogg
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: FerrochromicAcid
+        Quantity: 5
+    bloodlossDamage:
+      types:
+        Bloodloss:
+          0.5
+    bloodlossHealDamage:
+      types:
+        Bloodloss:
+          -1
+  - type: AutoImplant
+    implants:
+    - DeathAcidifierImplant
+  - type: EntityTableContainerFill
+    containers:
+      body_organs: !type:AllSelector
+        children:
+        - id: Ash
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: LPPNecron
+  - type: BitrunningDomainEnemyObjective
+
+- type: entity
+  name: necron
+  id: LPPMobNecronImmortal
+  parent: [ SimpleSpaceMobBase ]
+  description: Not a good time to read this.
+  suffix: AI, Necron Immortal
+  components:
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: HTN
+    rootTask:
+      task: SimpleRangedHostileCompound
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _LP/Mobs/NPC/necron.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: heavy
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      225: Dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 1
+    baseSprintSpeed: 1
+  - type: BatteryAmmoProvider
+    proto: LPPXrayLaser
+    fireCost: 50
+  - type: BatterySelfRecharger
+    autoRechargeRate: 25
+  - type: Battery
+    maxCharge: 350
+    startingCharge: 350
+  - type: Gun
+    fireRate: 0.25
+    useKey: false
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: CombatMode
+  - type: InteractionPopup
+    successChance: 0.3
+    interactSuccessString: petting-success-slimes
+    interactFailureString: petting-failure-generic
+    interactSuccessSound:
+      path: /Audio/Animals/lizard_happy.ogg
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: FerrochromicAcid
+        Quantity: 5
+    bloodlossDamage:
+      types:
+        Bloodloss:
+          0.5
+    bloodlossHealDamage:
+      types:
+        Bloodloss:
+          -1
+  - type: AutoImplant
+    implants:
+    - DeathAcidifierImplant
+  - type: EntityTableContainerFill
+    containers:
+      body_organs: !type:AllSelector
+        children:
+        - id: Ash
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: LPPNecronImmortal
+  - type: BitrunningDomainEnemyObjective
+
+- type: entity
+  name: necron
+  id: LPPMobNecronFlesher
+  parent: [ SimpleSpaceMobBase ]
+  description: Not a good time to read this.
+  suffix: AI, Flesher
+  components:
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _LP/Mobs/NPC/necron.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: meat
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      90: Dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3
+    baseSprintSpeed: 5
+  - type: MeleeWeapon
+    angle: 0
+    animation: WeaponArcSmash
+    soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+    damage:
+        types:
+          Slash: 20
+  - type: CombatMode
+  - type: InteractionPopup
+    successChance: 0.3
+    interactSuccessString: petting-success-slimes
+    interactFailureString: petting-failure-generic
+    interactSuccessSound:
+      path: /Audio/Animals/lizard_happy.ogg
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: FerrochromicAcid
+        Quantity: 5
+    bloodlossDamage:
+      types:
+        Bloodloss:
+          0.5
+    bloodlossHealDamage:
+      types:
+        Bloodloss:
+          -1
+  - type: AutoImplant
+    implants:
+    - DeathAcidifierImplant
+  - type: EntityTableContainerFill
+    containers:
+      body_organs: !type:AllSelector
+        children:
+        - id: Ash
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: LPPNecronFlesher
+  - type: BitrunningDomainEnemyObjective

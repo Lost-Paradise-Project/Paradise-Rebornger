@@ -1,0 +1,251 @@
+- type: entity
+  parent: MobHuman
+  id: LPPMobPunk
+  name: Punk
+  suffix: AI, Punk
+  components:
+  - type: NpcFactionMember
+    factions:
+    - AllHostile
+  - type: Loadout
+    prototypes:
+    - LPPPunk
+  - type: HTN
+    rootTask:
+      task: SimpleHumanoidHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        false
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: BitrunningDomainEnemyObjective
+
+- type: entity
+  parent: MobHuman
+  id: LPPMobPunkShield
+  name: Shielded punk
+  suffix: AI, Punk
+  components:
+  - type: NpcFactionMember
+    factions:
+    - AllHostile
+  - type: Loadout
+    prototypes:
+    - LPPPunkShield
+  - type: HTN
+    rootTask:
+      task: SimpleHumanoidHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        false
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: BitrunningDomainEnemyObjective
+
+- type: entity
+  parent: MobHuman
+  id: LPPMobPunkShooter
+  name: Punk shooter
+  suffix: AI, Punk
+  components:
+  - type: NpcFactionMember
+    factions:
+    - AllHostile
+  - type: Loadout
+    prototypes:
+    - LPPPunkShooter
+  - type: HTN
+    rootTask:
+      task: SimpleHumanoidHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        false
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: BitrunningDomainEnemyObjective
+
+- type: entity
+  parent: MobHuman
+  id: LPPMobPunkArmored
+  name: Punk armored
+  suffix: AI, Punk
+  components:
+  - type: NpcFactionMember
+    factions:
+    - AllHostile
+  - type: Loadout
+    prototypes:
+    - LPPPunkArmored
+  - type: HTN
+    rootTask:
+      task: SimpleHumanoidHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        false
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: BitrunningDomainEnemyObjective
+
+- type: entity
+  parent: MobHuman
+  id: LPPMobPunkArmoredShield
+  name: Punk armored
+  suffix: AI, Punk
+  components:
+  - type: NpcFactionMember
+    factions:
+    - AllHostile
+  - type: Loadout
+    prototypes:
+    - LPPPunkArmoredShield
+  - type: HTN
+    rootTask:
+      task: SimpleHumanoidHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        false
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: BitrunningDomainEnemyObjective
+
+- type: entity
+  parent: MobHuman
+  id: LPPMobPunkArmoredShooter
+  name: Punk armored
+  suffix: AI, Punk
+  components:
+  - type: NpcFactionMember
+    factions:
+    - AllHostile
+  - type: Loadout
+    prototypes:
+    - LPPPunkArmoredShooter
+  - type: HTN
+    rootTask:
+      task: SimpleHumanoidHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        false
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: BitrunningDomainEnemyObjective
+
+- type: entity
+  parent: MobHuman
+  id: LPPMobPunkElite
+  name: Punk
+  suffix: AI, Punk
+  components:
+  - type: NpcFactionMember
+    factions:
+    - AllHostile
+  - type: Loadout
+    prototypes:
+    - LPPPunkElite
+  - type: HTN
+    rootTask:
+      task: SimpleHumanoidHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        false
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: BitrunningDomainEnemyObjective
+
+- type: entity
+  parent: MobHuman
+  id: LPPMobPunkEliteShield
+  name: Punk
+  suffix: AI, Punk
+  components:
+  - type: NpcFactionMember
+    factions:
+    - AllHostile
+  - type: Loadout
+    prototypes:
+    - LPPPunkEliteShield
+  - type: HTN
+    rootTask:
+      task: SimpleHumanoidHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        false
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: BitrunningDomainEnemyObjective
+
+- type: entity
+  parent: MobHuman
+  id: LPPMobPunkEliteShooter
+  name: Punk
+  suffix: AI, Punk
+  components:
+  - type: NpcFactionMember
+    factions:
+    - AllHostile
+  - type: Loadout
+    prototypes:
+    - LPPPunkEliteShooter
+  - type: HTN
+    rootTask:
+      task: SimpleHumanoidHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        false
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: BitrunningDomainEnemyObjective

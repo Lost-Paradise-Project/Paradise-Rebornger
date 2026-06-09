@@ -196,7 +196,7 @@
     sprite: _LP/Clothing/OuterClothing/Coats/jaybomber.rsi
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: [ClothingOuterStorageBase, AllowSuitStorageClothing]
   id: LPPClothingOuterUEGExpeditor
   name: UEG skitarii expeditor coat
   description: Classic coat with light weight armor piece. Masteful combination of protection and mobility.

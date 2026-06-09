@@ -139,3 +139,22 @@
         Heat: 0.65
   - type: ExplosionResistance
     damageCoefficient: 0.7
+
+- type: entity
+  parent: ClothingOuterArmorBasic
+  id: LPPClothingOuterArmorSoviet
+  name: soviet flak vest
+  description: Standart issued body armor for USSP troops. Pretty old design but, how they say- Old but gold.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/OuterClothing/Armor/sovietflak.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/OuterClothing/Armor/sovietflak.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.4
+  - type: ExplosionResistance
+    damageCoefficient: 0.6

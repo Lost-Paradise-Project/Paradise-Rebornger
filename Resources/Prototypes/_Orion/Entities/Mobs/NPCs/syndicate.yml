@@ -37,6 +37,7 @@
             Heat: 15
     - type: Perishable # Nuh, no.
       molsPerSecondPerUnitMass: 0
+    - type: BitrunningDomainEnemyObjective
 
 - type: entity
   parent: MobBaseNPC
@@ -74,6 +75,7 @@
             Piercing: 5
     - type: Perishable # Nuh, no.
       molsPerSecondPerUnitMass: 0
+    - type: BitrunningDomainEnemyObjective
 
 - type: entity
   parent: MobBaseNPC
@@ -119,6 +121,7 @@
           volume: -100
     - type: Perishable # Nuh, no.
       molsPerSecondPerUnitMass: 0
+    - type: BitrunningDomainEnemyObjective
 
 - type: entity
   parent: MobBaseNPC
@@ -164,6 +167,7 @@
           volume: -100
     - type: Perishable # Nuh, no.
       molsPerSecondPerUnitMass: 0
+    - type: BitrunningDomainEnemyObjective
 
 - type: entity
   parent: MobBaseNPC
@@ -209,3 +213,4 @@
           volume: -100
     - type: Perishable # Nuh, no.
       molsPerSecondPerUnitMass: 0
+    - type: BitrunningDomainEnemyObjective

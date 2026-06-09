@@ -1,0 +1,68 @@
+- type: startingGear
+  id: LPPGangsterMobster
+  equipment:
+    jumpsuit: LPPClothingUniformBlackTracksuit
+    shoes: ClothingShoesColorBlack
+  inhand:
+  - BaseBallBat
+
+- type: startingGear
+  id: LPPGangsterMobsterAlt
+  equipment:
+    jumpsuit: LPPClothingUniformBlackTracksuit
+    shoes: ClothingShoesColorBlack
+  inhand:
+  - SurvivalKnife
+  - MakeshiftShield
+
+- type: startingGear
+  id: LPPGangsterMobsterShooter
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSecBlue
+    shoes: ClothingShoesBootsLaceup
+  inhand:
+  - WeaponShotgunHandmade
+  - SurvivalKnife
+
+- type: startingGear
+  id: LPPGangsterMobsterElite
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitReporter
+    shoes: ClothingShoesBootsLaceup
+    outerClothing: ClothingOuterArmorBasic
+    head: ClothingHeadHatCowboyBlack
+  inhand:
+  - WeaponRevolverFaith
+
+- type: startingGear
+  id: LPPGangsterMobsterBodyguard
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitJournalist
+    shoes: ClothingShoesBootsLaceup
+    outerClothing: ClothingOuterArmorScrap
+    head: ClothingHeadHelmetScrap
+  inhand:
+  - WeaponRevolverLucky
+  - MakeshiftShield
+
+- type: startingGear
+  id: LPPGangsterMobsterBodyguardAlt
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitJournalist
+    shoes: ClothingShoesBootsJack
+    outerClothing: ClothingOuterCoatDetectiveLoadoutGrey
+    head: LPPClothingHeadUrbanHelmetPG
+    mask: ClothingMaskBandSkull
+  inhand:
+  - Machete
+  - MakeshiftShield
+
+- type: startingGear
+  id: LPPGangsterMafiaBoss
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMusician
+    shoes: ClothingShoesSnakeskinBoots
+    outerClothing: ClothingOuterArmorBulletproof
+    head: ClothingHeadHatTophat
+  inhand:
+  - LPPWeaponPistolN1912

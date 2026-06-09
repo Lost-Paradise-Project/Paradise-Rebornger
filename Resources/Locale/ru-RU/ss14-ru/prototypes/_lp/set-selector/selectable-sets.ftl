@@ -31,7 +31,7 @@ selectable-set-security-dominator-name = Доминатор
 selectable-set-security-dominator-description =
     Многофункциональный энергетический пистолет, с четырьмя режимам стрельбы (Нелетал, летал, поджигающий и пробивной). Крайне долгий заряд батареи.
 selectable-set-security-svalinn-name = Свалинн
-selectable-set-security-svalinn-description =
+selectable-set-security-svalinn-description = Лазерный пистолет, питающийся батарейками, в комплекте одна допонительная батарея.
     Лазерный пистолет, что использует батареи для стрельбы. Отличное оружие для щёлканья фауны или стрельбы сквозь стекло за счёт быстрой перезарядки и доступности.
 selectable-set-security-mk58-name = МК58
 selectable-set-security-mk58-description =

@@ -7,6 +7,34 @@
 # --- --- ---
 #   СРЕДНИЕ
 # --- --- ---
+- type: bitrunningVirtualDomain
+  id: LPPERT
+  name: bitrunning-domain-ert-name
+  description: bitrunning-domain-ert-desc
+  difficulty: Medium
+  cost: 2
+  serverRewardPoints: 6
+  bitrunningRewardPoints: 425
+  forcedLoadout: BitrunnerAvatarERTcombat
+  isModular: true
+  mapPath: /Maps/_LP/Bitrun/ert.yml
+  objectiveType: EliminateEnemies
+  objectiveTarget: 0
+
+- type: bitrunningVirtualDomain
+  id: LPPUSSPPunk
+  name: bitrunning-domain-ussp-name
+  description: bitrunning-domain-ussp-desc
+  difficulty: Medium
+  cost: 2
+  serverRewardPoints: 10
+  bitrunningRewardPoints: 195
+  forcedLoadout: BitrunnerAvatarUSSP
+  isModular: true
+  mapPath: /Maps/_LP/Bitrun/ussppunk.yml
+  objectiveType: EliminateEnemies
+  objectiveTarget: 0
+
 # --- --- ---
 #  ТЯЖЁЛЫЕ
 # --- --- ---
@@ -25,6 +53,38 @@
   mapPath: /Maps/_LP/Bitrun/ueg-vs-ans.yml
   objectiveType: EliminateEnemies
   objectiveTarget: 0
+
+- type: bitrunningVirtualDomain
+  id: LPPMafiaCity
+  name: bitrunning-domain-mafia-city-name
+  description: bitrunning-domain-mafia-city-desc
+  difficulty: Hard
+  cost: 4
+  serverRewardPoints: 7
+  bitrunningRewardPoints: 475
+  forcedLoadout: BitrunnerAvatarNoirCombat
+  isModular: true
+  mapPath: /Maps/_LP/Bitrun/mafiacity.yml
+  objectiveType: EliminateEnemies
+  objectiveTarget: 0
+
+- type: bitrunningVirtualDomain
+  id: LPPSkitariiExpedition
+  name: bitrunning-domain-skitarii-necron-name
+  description: bitrunning-domain-skitarii-necron-desc
+  difficulty: Hard
+  cost: 15
+  serverRewardPoints: 10 #Много очков битрана плюсом 3 ящика руды
+  bitrunningRewardPoints: 1750
+  forcedLoadout: BitrunnerAvatarUEGSkitariiCombat
+  isModular: true
+  mapPath: /Maps/_LP/Bitrun/skitariinecron.yml
+  objectiveTypePool:
+  - DeliveryCacheCrate
+  - EliminateEnemies
+  objectiveTargetByType:
+    DeliveryCacheCrate: 3
+    EliminateEnemies: 0
 
 # --- --- ---
 #  ЭКСТРИМ 🗣️ Видны лишь после емага консоли

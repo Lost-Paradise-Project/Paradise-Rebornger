@@ -11,3 +11,5 @@ ent-LPPClothingBeltPGWebbing = РПС ПГ
     .desc = РПС Predator Grosperox для хранения любых вещей.
 ent-LPPClothingBeltUEGWebbing = РПС скитариев ОПЗ
     .desc = Прочная дюратканевая разгрузочная система.
+ent-LPPClothingBeltSovietWebbing = РПС СССП
+    .desc = Водопрочный жилет с обильным количеством карманов для ваших магазинов под АК.

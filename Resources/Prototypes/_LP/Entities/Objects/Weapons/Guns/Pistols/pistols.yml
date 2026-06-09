@@ -91,16 +91,16 @@
   - type: Gun
     fireRate: 5
     burstFireRate: 40
-    minAngle: 3
-    maxAngle: 15
-    angleIncrease: 1
-    angleDecay: 2
+    minAngle: 5
+    maxAngle: 20
+    angleIncrease: 4
+    angleDecay: 6
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
     - Burst
     shotsPerBurst: 2
-    burstCooldown: 0.3
+    burstCooldown: 0.25
     soundGunshot:
       path: /Audio/_Impstation/Weapons/Guns/Gunshots/pistolp2.ogg
   - type: BallisticAmmoProvider

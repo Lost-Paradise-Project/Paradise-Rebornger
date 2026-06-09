@@ -89,3 +89,14 @@
     sprite: _LP/Clothing/Uniforms/Jumpsuit/dirtyblue.rsi
   - type: Clothing
     sprite: _LP/Clothing/Uniforms/Jumpsuit/dirtyblue.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: LPPClothingUniformJumpsuitSoviet
+  name: Afghanka
+  description: Military issued sand colored uniform of USSP troops.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/soviet.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Uniforms/Jumpsuit/soviet.rsi
