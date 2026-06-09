@@ -42,7 +42,7 @@ selectable-set-hos-smg-description =
     Высокая скорострельность при низком уроне.
 
 selectable-set-hos-shotgun-name = X-12 "Фламбэ"
-selectable-set-hos-sniper-description
+selectable-set-hos-shotgun-description =
     Эргономичный дробовик, стреляющий залпом из энергетических болтов.
     Отлично подойдёт для любителей ближнего боя.
 
