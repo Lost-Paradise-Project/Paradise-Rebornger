@@ -490,6 +490,20 @@
 
 - type: entity
   parent: MarkerBase
+  id: LPPSpawnMobGangsterMafiaBoss
+  name: Gangster mafia boss alt spawner
+  suffix: AI, Gangster mafia boss, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobGangsterMafiaBoss
+
+- type: entity
+  parent: MarkerBase
   id: LPPSpawnMobPunk
   name: Punk spawner
   suffix: AI, Punk, Bitrunning
