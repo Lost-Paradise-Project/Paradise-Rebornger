@@ -183,6 +183,10 @@
         blacklist:
           tags:
           - PotatoBattery
+          # Goobstation edit start
+          components:
+          - MaterialEnergy
+          # Goobstation edit end
   - type: Item
     size: Ginormous
   - type: MultiHandedItem
@@ -216,6 +220,10 @@
           tags:
           - PotatoBattery
           - ADTMegaCell # ADT-Tweak
+          # Goobstation edit start
+          components:
+          - MaterialEnergy
+          # Goobstation edit end
   - type: Item
     size: Ginormous
   - type: MultiHandedItem

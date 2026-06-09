@@ -7,16 +7,16 @@
     rolls: !type:RangeNumberSelector
       range: 6, 10
     children:
-    - id: SteelOre1
+    - id: SteelOre1Unprocessed
       weight: 30
-    - id: SpaceQuartz1
+    - id: SpaceQuartz1Unprocessed
       weight: 20
-    - id: SilverOre1
+    - id: SilverOre1Unprocessed
       weight: 7
     - id: SpaceCash100
       weight: 2
 #LP edit start
-    - id: Coal10
+    - id: Coal10Unprocessed
       weight: 1
 #LP edit end
 
@@ -27,16 +27,16 @@
     rolls: !type:RangeNumberSelector
       range: 12, 20
     children:
-    - id: SteelOre1
+    - id: SteelOre1Unprocessed
       weight: 30
-    - id: SpaceQuartz1
+    - id: SpaceQuartz1Unprocessed
       weight: 20
-    - id: SilverOre1
+    - id: SilverOre1Unprocessed
       weight: 7
     - id: SpaceCash100
       weight: 2
 #LP edit start
-    - id: Coal10
+    - id: Coal10Unprocessed
       weight: 2
 #LP edit end
 
@@ -47,26 +47,26 @@
     rolls: !type:RangeNumberSelector
       range: 24, 36
     children:
-    - id: SteelOre1
+    - id: SteelOre1Unprocessed
       weight: 25
-    - id: SpaceQuartz1
+    - id: SpaceQuartz1Unprocessed
       weight: 18
-    - id: SilverOre1
+    - id: SilverOre1Unprocessed
       weight: 10
-    - id: PlasmaOre1
+    - id: PlasmaOre1Unprocessed
       weight: 10
-    - id: GoldOre1
+    - id: GoldOre1Unprocessed
       weight: 6
-    - id: UraniumOre1
+    - id: UraniumOre1Unprocessed
       weight: 4
-    - id: MaterialDiamond1
+    - id: DiamondOre1Unprocessed
       weight: 3
     - id: SpaceCash500 #LP edit
       weight: 2
     - id: SpaceCash1000 #LP edit
       weight: 1
 #LP edit start
-    - id: Coal10
+    - id: Coal10Unprocessed
       weight: 2
 #LP edit end
 
@@ -77,24 +77,24 @@
     rolls: !type:RangeNumberSelector
       range: 33, 48
     children:
-    - id: SteelOre1
+    - id: SteelOre1Unprocessed
       weight: 32 #LP edit
-    - id: SpaceQuartz1
+    - id: SpaceQuartz1Unprocessed
       weight: 26 #LP edit
-    - id: SilverOre1
+    - id: SilverOre1Unprocessed
       weight: 20 #LP edit
-    - id: PlasmaOre1
+    - id: PlasmaOre1Unprocessed
       weight: 21 #LP edit
-    - id: GoldOre1
+    - id: GoldOre1Unprocessed
       weight: 18 #LP edit
-    - id: UraniumOre1
+    - id: UraniumOre1Unprocessed
       weight: 17 #LP edit
-    - id: MaterialDiamond1
+    - id: DiamondOre1Unprocessed
       weight: 10 #LP edit
     - id: SpaceCash10000 #LP edit
       weight: 1
 #LP edit start
-    - id: Coal10
+    - id: Coal10Unprocessed
       weight: 3
 #LP edit end
 
@@ -105,19 +105,19 @@
     rolls: !type:RangeNumberSelector
       range: 42, 60
     children:
-    - id: SteelOre1
+    - id: SteelOre1Unprocessed
       weight: 20
-    - id: SpaceQuartz1
+    - id: SpaceQuartz1Unprocessed
       weight: 14
-    - id: SilverOre1
+    - id: SilverOre1Unprocessed
       weight: 10
-    - id: PlasmaOre1
+    - id: PlasmaOre1Unprocessed
       weight: 12
-    - id: GoldOre1
+    - id: GoldOre1Unprocessed
       weight: 9
-    - id: UraniumOre1
+    - id: UraniumOre1Unprocessed
       weight: 8
-    - id: MaterialDiamond1
+    - id: DiamondOre1Unprocessed
       weight: 7
     - id: SpaceCash500
       weight: 1

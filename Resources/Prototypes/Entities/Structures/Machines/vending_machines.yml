@@ -1469,12 +1469,12 @@
   name: Salvage Vendor
   description: A dwarf's best friend!
   components:
-  - type: VendingMachine
-    pack: SalvageEquipmentInventory
-    offState: off
-    brokenState: broken
-    normalState: normal-unshaded
-    denyState: deny-unshaded
+  #- type: VendingMachine # DeltaV: Use mining points instead of limited stock
+  #  pack: SalvageEquipmentInventory
+  #  offState: off
+  #  brokenState: broken
+  #  normalState: normal-unshaded
+  #  denyState: deny-unshaded
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/mining.rsi
     layers:
@@ -1489,6 +1489,25 @@
     radius: 1.5
     energy: 3.0
     color: "#b89f25"
+  # DeltaV edit start
+  - type: ShopVendor # DeltaV
+    pack: SalvageVendorInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    denyState: deny-unshaded
+  - type: PointsVendor # DeltaV
+  - type: UserInterface # DeltaV: Replace vending machine BUI with shop vendor
+    interfaces:
+      enum.VendingMachineUiKey.Key:
+        type: ShopVendorBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
+      enum.MiningVoucherUiKey.Key:
+        type: MiningVoucherBoundUserInterface
+  - type: Wires # DeltaV: Use shop vendor wires layout
+    layoutId: ShopVendor
+  # DeltaV edit end
   - type: AccessReader
     access: [["Salvage"]]
   - type: GuideHelp

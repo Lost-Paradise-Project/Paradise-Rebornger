@@ -12,3 +12,7 @@ ent-BulletHotshot = ХотШот болт
     .desc = { ent-BaseBullet.desc }
 ent-BulletDetain = ослабляющий болт
     .desc = { ent-BaseBullet.desc }
+ent-BulletPlasmaCutter = болт резака
+    .desc = Не самый страшный, но всё равно лучше не ловить его.
+ent-BulletPlasmaCutterStrong = { ent-BulletPlasmaCutter }
+    .desc = { ent-BulletPlasmaCutter.desc }
