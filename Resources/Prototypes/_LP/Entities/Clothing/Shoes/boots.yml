@@ -102,10 +102,10 @@
     sprintModifier: 1.1
   - type: FootstepModifier
     footstepSoundCollection: null
-  - type: HideLayerClothing
-    slots:
-    - LFoot
-    - RFoot
+  # - type: HideLayerClothing ToDo: Сделать скрываемые слои для ступней
+  #   slots:
+  #   - LFoot
+  #   - RFoot
 
 - type: entity
   parent: LPPClothingShoesUEGLegs
