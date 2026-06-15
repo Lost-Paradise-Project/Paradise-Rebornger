@@ -67,4 +67,14 @@ public sealed partial class HealthAnalyzerComponent : Component
     /// </summary>
     [DataField]
     public bool Silent;
+
+    // LP Edit Start
+
+    /// <summary>
+    /// The user that is currently scanning an entity.
+    /// </summary>
+    public EntityUid? ScannerUser;
+
+    // LP Edit End
+
 }
