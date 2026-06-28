@@ -5,6 +5,7 @@
   description: It's a space carp.
   abstract: true
   components:
+    - type: WeatherImmune # Lavaland Change
     - type: InputMover
     - type: MobMover
     - type: HTN
@@ -87,6 +88,7 @@
       interactFailureString: petting-failure-carp
       interactFailureSound:
         path: /Audio/Effects/bite.ogg
+    - type: Fauna # Lavaland Change
 
 - type: entity
   parent: BaseMobCarp
@@ -158,10 +160,10 @@
   suffix: "Salvage Ruleset"
   components:
     - type: SalvageMobRestrictions
-    - type: MobThresholds
-      thresholds:
-        0: Alive
-        30: Dead
+#    - type: MobThresholds # Lavaland change
+#      thresholds:
+#        0: Alive
+#        30: Dead
 
 - type: entity
   name: space carp
@@ -247,7 +249,8 @@
     - type: MobThresholds
       thresholds:
         0: Alive
-        82: Dead # Might seem random, but this brings up the hits to kill with a crusher mark to 3
+        #82: Dead # Might seem random, but this brings up the hits to kill with a crusher mark to 3
+        150: Dead # Lavaland Change
     - type: Stamina
       baseCritThreshold: 150
     - type: DamageStateVisuals

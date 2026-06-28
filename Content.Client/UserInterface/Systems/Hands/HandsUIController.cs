@@ -14,6 +14,7 @@ using Robust.Shared.Input;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+using Content.Client._NF.Interaction.Components; // Frontier edit
 
 namespace Content.Client.UserInterface.Systems.Hands;
 
@@ -134,6 +135,13 @@ public sealed class HandsUIController : UIController, IOnStateEntered<GameplaySt
                 handButton.SetEntity(virt.BlockingEntity);
                 handButton.Blocked = true;
             }
+            // Frontier - borg hand placeholder
+            else if (_entities.TryGetComponent(held, out HandPlaceholderVisualsComponent? placeholder))
+            {
+                handButton.SetEntity(placeholder.Dummy);
+                handButton.Blocked = true;
+            }
+            // End Frontier - borg hand placeholder
             else if (held != null)
             {
                 handButton.SetEntity(held);

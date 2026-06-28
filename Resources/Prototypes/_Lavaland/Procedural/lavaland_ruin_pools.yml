@@ -1,0 +1,35 @@
+- type: lavalandRuinPool
+  id: LavalandRuins
+  gridRuins:
+    SyndicateBase: 3
+    Ratvar: 1
+    HierophantArena: 1
+    RougeAI: 2
+    BiodomeBeach: 2
+    BiodomeSnow: 2
+    GolemShuttle: 3
+    ToyShop: 1
+    Chemistry: 2
+    Graveyard: 5
+    SeedVault: 1
+    Hermit: 2
+    WaffleCo: 2
+    ArrivalsBack: 1
+    ArrivalsFront: 1
+    VulpLab: 1
+    Shelter: 3
+    MiningPost: 3
+    # AbductorDebris: 1 # LP Edit, NO ABDUCTORS
+    CultBase: 2
+    Hunter: 2
+    XenoNest: 3
+#WIZDEN RUINS (only peak ones, rest are trash) man
+    CargoWreck: 2
+    Murder: 2
+    EscapePod: 2
+    Desk: 2
+    Generator: 3
+    Mug: 2
+    Temple: 3
+  dungeonRuins:
+    CommonRuin5x5: 60

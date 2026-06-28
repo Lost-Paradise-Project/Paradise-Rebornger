@@ -54,3 +54,21 @@
   - type: Physics
     canCollide: False
     bodyType: Static
+
+- type: entity
+  parent: BaseAmmoProvider # this is for cycling swabs out and not spawning 30 entities, trust
+  id: BoxMarkerBeacons
+  name: marker beacon dispenser
+  description: Dispenses 30 marker beacons, extremely useful for space and planet exploration.
+  components:
+  - type: Sprite
+    layers:
+    - state: boxwide
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - MarkerBeacon
+    proto: MarkerBeaconActive
+    capacity: 30
+  - type: UseDelay
+    delay: 1.0 # to prevent salvagers from creating neutron stars that kill client performance for everyone

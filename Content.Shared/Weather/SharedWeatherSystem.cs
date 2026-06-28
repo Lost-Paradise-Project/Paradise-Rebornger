@@ -9,6 +9,8 @@ using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
+using Content.Shared._GoobStation.Weather; // Goobstation edit
+using Robust.Shared.Serialization; // Goobstation edit
 
 namespace Content.Shared.Weather;
 
@@ -21,6 +23,7 @@ public abstract class SharedWeatherSystem : EntitySystem
     [Dependency] private readonly SharedMapSystem _mapSystem = default!;
     [Dependency] private readonly SharedRoofSystem _roof = default!;
     [Dependency] private readonly StatusEffectsSystem _statusEffects = default!;
+    [Dependency] private readonly MetaDataSystem _metadata = default!; // Goobstation edit
 
     [Dependency] private readonly EntityQuery<BlockWeatherComponent> _blockQuery = default!;
     [Dependency] private readonly EntityQuery<WeatherStatusEffectComponent> _weatherQuery = default!;
@@ -28,27 +31,32 @@ public abstract class SharedWeatherSystem : EntitySystem
     public static readonly TimeSpan StartupTime = TimeSpan.FromSeconds(15);
     public static readonly TimeSpan ShutdownTime = TimeSpan.FromSeconds(15);
 
-    public bool CanWeatherAffect(Entity<MapGridComponent?, RoofComponent?> ent, TileRef tileRef)
+    // Goobstation edit start
+    public override void Initialize()
+    {
+        base.Initialize();
+        SubscribeLocalEvent<WeatherComponent, EntityUnpausedEvent>(OnWeatherUnpaused);
+    }
+    // Goobstation edit end
+
+    public bool CanWeatherAffect(EntityUid uid, MapGridComponent grid, TileRef tileRef, RoofComponent? roofComp = null) // Goobstation edit
     {
         if (tileRef.Tile.IsEmpty)
             return true;
 
-        if (!Resolve(ent, ref ent.Comp1))
+        if (Resolve(uid, ref roofComp, false) && _roof.IsRooved((uid, grid, roofComp), tileRef.GridIndices)) // Goobstation edit
             return false;
 
-        if (Resolve(ent, ref ent.Comp2, false) && _roof.IsRooved((ent, ent.Comp1, ent.Comp2), tileRef.GridIndices))
-            return false;
-
-        var tileDef = (ContentTileDefinition)_tileDefManager[tileRef.Tile.TypeId];
+        var tileDef = (ContentTileDefinition)_tileDefManager[tileRef.Tile.TypeId]; // Goobstation edit
 
         if (!tileDef.Weather)
             return false;
 
-        var anchoredEntities = _mapSystem.GetAnchoredEntitiesEnumerator(ent, ent.Comp1, tileRef.GridIndices);
+        var anchoredEntities = _mapSystem.GetAnchoredEntitiesEnumerator(uid, grid, tileRef.GridIndices); // Goobstation edit
 
-        while (anchoredEntities.MoveNext(out var anchored))
+        while (anchoredEntities.MoveNext(out var ent)) // Goobstation edit
         {
-            if (_blockQuery.HasComponent(anchored.Value))
+            if (_blockQuery.HasComponent(ent.Value)) // Goobstation edit
                 return false;
         }
 
@@ -197,4 +205,201 @@ public abstract class SharedWeatherSystem : EntitySystem
         // Otherwise, add the specified weather
         return TryAddWeather(mapUid.Value, weatherProto.Value, out weatherEnt, duration);
     }
+
+    // Goobstation edit start
+
+    public override void Update(float frameTime)
+    {
+        base.Update(frameTime);
+
+        if (!Timing.IsFirstTimePredicted)
+            return;
+
+        var curTime = Timing.CurTime;
+
+        var query = EntityQueryEnumerator<WeatherComponent>();
+        while (query.MoveNext(out var uid, out var comp))
+        {
+            if (comp.Weather.Count == 0)
+                continue;
+
+            foreach (var (proto, weather) in comp.Weather)
+            {
+                var endTime = weather.EndTime;
+
+                // Ended
+                if (endTime != null && endTime < curTime)
+                {
+                    EndWeather(uid, comp, proto);
+                    continue;
+                }
+
+                var remainingTime = endTime - curTime;
+
+                // Admin messed up or the likes.
+                if (!ProtoMan.TryIndex<WeatherPrototype>(proto, out var weatherProto))
+                {
+                    Log.Error($"Unable to find weather prototype for {comp.Weather}, ending!");
+                    EndWeather(uid, comp, proto);
+                    continue;
+                }
+
+                // Shutting down
+                if (endTime != null && remainingTime < WeatherComponent.ShutdownTime)
+                {
+                    SetState(uid, WeatherState.Ending, comp, weather, weatherProto);
+                }
+                // Starting up
+                else
+                {
+                    var startTime = weather.StartTime;
+                    var elapsed = Timing.CurTime - startTime;
+
+                    if (elapsed < WeatherComponent.StartupTime)
+                    {
+                        SetState(uid, WeatherState.Starting, comp, weather, weatherProto);
+                    }
+                    // Begin DeltaV: Set state to Running when it finishes the starting time
+                    else
+                        SetState(uid, WeatherState.Running, comp, weather, weatherProto);
+                    // End DeltaV
+                }
+
+                // Run whatever code we need.
+                Run(uid, weather, weatherProto, frameTime);
+            }
+        }
+    }
+
+    private void OnWeatherUnpaused(EntityUid uid, WeatherComponent component, ref EntityUnpausedEvent args)
+    {
+        foreach (var weather in component.Weather.Values)
+        {
+            weather.StartTime += args.PausedTime;
+
+            if (weather.EndTime != null)
+                weather.EndTime = weather.EndTime.Value + args.PausedTime;
+        }
+        component.NextUpdate += args.PausedTime; // DeltaV
+    }
+
+    /// <summary>
+    /// Run every tick when the weather is running.
+    /// </summary>
+    protected virtual void Run(EntityUid uid, WeatherData weather, WeatherPrototype weatherProto, float frameTime) { }
+
+    protected virtual void EndWeather(EntityUid uid, WeatherComponent component, string proto)
+    {
+        if (!component.Weather.TryGetValue(proto, out var data))
+            return;
+
+        Audio.Stop(data.Stream);
+        data.Stream = null;
+        component.Weather.Remove(proto);
+        Dirty(uid, component);
+    }
+
+    protected virtual bool SetState(EntityUid uid, WeatherState state, WeatherComponent component, WeatherData weather, WeatherPrototype weatherProto)
+    {
+        if (weather.State.Equals(state))
+            return false;
+
+        weather.State = state;
+        Dirty(uid, component);
+        return true;
+    }
+
+    /// <summary>
+    /// Shuts down all existing weather and starts the new one if applicable.
+    /// </summary>
+    public void SetWeather(MapId mapId, WeatherPrototype? proto, TimeSpan? endTime)
+    {
+        if (!_mapSystem.TryGetMap(mapId, out var mapUid))
+            return;
+
+        var weatherComp = EnsureComp<WeatherComponent>(mapUid.Value);
+
+        foreach (var (eProto, weather) in weatherComp.Weather)
+        {
+            // if we turn off the weather, we don't want endTime = null
+            if (proto == null)
+                endTime ??= Timing.CurTime + WeatherComponent.ShutdownTime;
+
+            // Reset cooldown if it's an existing one.
+            if (proto is not null && eProto == proto.ID)
+            {
+                weather.EndTime = endTime;
+                if (weather.State == WeatherState.Ending)
+                    weather.State = WeatherState.Running;
+
+                Dirty(mapUid.Value, weatherComp);
+                continue;
+            }
+
+            // Speedrun
+            var end = Timing.CurTime + WeatherComponent.ShutdownTime;
+
+            if (weather.EndTime == null || weather.EndTime > end)
+            {
+                weather.EndTime = end;
+                Dirty(mapUid.Value, weatherComp);
+            }
+        }
+
+        if (proto != null)
+            StartWeather(mapUid.Value, weatherComp, proto, endTime);
+    }
+
+    protected void StartWeather(EntityUid uid, WeatherComponent component, WeatherPrototype weather, TimeSpan? endTime)
+    {
+        if (component.Weather.ContainsKey(weather.ID))
+            return;
+
+        var data = new WeatherData()
+        {
+            StartTime = Timing.CurTime,
+            EndTime = endTime,
+        };
+
+        component.Weather.Add(weather.ID, data);
+        Dirty(uid, component);
+    }
+
+    [Serializable, NetSerializable]
+    protected sealed class WeatherComponentState : ComponentState
+    {
+        public Dictionary<ProtoId<WeatherPrototype>, WeatherData> Weather;
+
+        public WeatherComponentState(Dictionary<ProtoId<WeatherPrototype>, WeatherData> weather)
+        {
+            Weather = weather;
+        }
+    }
+
+    public float GetPercent(WeatherData component, EntityUid mapUid)
+    {
+        var pauseTime = _metadata.GetPauseTime(mapUid);
+        var elapsed = Timing.CurTime - (component.StartTime + pauseTime);
+        var duration = component.Duration;
+        var remaining = duration - elapsed;
+        float alpha;
+
+        if (remaining < WeatherComponent.ShutdownTime)
+        {
+            alpha = (float) (remaining / WeatherComponent.ShutdownTime);
+        }
+        else if (elapsed < WeatherComponent.StartupTime)
+        {
+            alpha = (float) (elapsed / WeatherComponent.StartupTime);
+        }
+        else
+        {
+            alpha = 1f;
+        }
+
+        return alpha;
+    }
+
+    // Goobstation edit end
+
 }

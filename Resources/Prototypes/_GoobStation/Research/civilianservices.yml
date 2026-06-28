@@ -1,0 +1,16 @@
+# Tier 2
+
+- type: technology
+  id: ExtendedCommunications
+  name: research-technology-extended-communication
+  icon:
+    sprite: _GoobStation/Structures/Machines/comms_transmitter.rsi
+    state: base
+  discipline: CivilianServices
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - TelecomTransmitterCircuitboard
+  position: 3, 25
+  technologyPrerequisites:
+  - AudioVisualCommunication

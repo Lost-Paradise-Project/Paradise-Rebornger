@@ -9,7 +9,8 @@
       - Pickaxe
   - type: Sprite
     sprite: _LP/Objects/Weapons/Melee/uegcrusher.rsi
-    state: icon
+    layers:
+      - state: icon
   - type: Item
     size: Ginormous
     sprite: _LP/Objects/Weapons/Melee/uegcrusher-inhands.rsi

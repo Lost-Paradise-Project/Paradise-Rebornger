@@ -57,6 +57,8 @@ namespace Content.Shared.Containers.ItemSlots
             SubscribeLocalEvent<ItemSlotsComponent, ComponentHandleState>(HandleItemSlotsState);
 
             SubscribeLocalEvent<ItemSlotsComponent, ItemSlotButtonPressedEvent>(HandleButtonPressed);
+
+            InitializeGoob(); // Goobstation edit
         }
 
         #region ComponentManagement
@@ -68,6 +70,11 @@ namespace Content.Shared.Containers.ItemSlots
         {
             foreach (var slot in itemSlots.Slots.Values)
             {
+                // Lavaland Change start - light occlusion
+                if (slot.ContainerSlot != null)
+                    slot.ContainerSlot.OccludesLight = slot.OccludesLight;
+                // Lavaland Change end
+
                 if (slot.HasItem || string.IsNullOrEmpty(slot.StartingItem))
                     continue;
 
@@ -109,6 +116,7 @@ namespace Content.Shared.Containers.ItemSlots
             }
 
             slot.ContainerSlot = _containers.EnsureContainer<ContainerSlot>(uid, id);
+            slot.ContainerSlot.OccludesLight = slot.OccludesLight; // Lavaland Change
             itemSlots.Slots[id] = slot;
             Dirty(uid, itemSlots);
         }
@@ -206,7 +214,10 @@ namespace Content.Shared.Containers.ItemSlots
             if (args.Handled)
                 return;
 
-            if (!TryComp(args.User, out HandsComponent? hands))
+            args.Handled = TryInsertWithConditions(uid, itemSlots, args.User, args.Used); // Lavaland Change
+
+            // Lavaland change: ported the code below to a public TryInsertWithConditions method.
+            /*if (!TryComp(args.User, out HandsComponent? hands))
                 return;
 
             if (itemSlots.Slots.Count == 0)
@@ -272,7 +283,8 @@ namespace Content.Shared.Containers.ItemSlots
 
                 args.Handled = true;
                 return;
-            }
+            }*/
+            // Lavaland change end
         }
 
         #endregion
@@ -540,8 +552,13 @@ namespace Content.Shared.Containers.ItemSlots
         /// </summary>
         /// <param name="excludeUserAudio">If true, will exclude the user when playing sound. Does nothing client-side.
         /// Useful for predicted interactions</param>
-        private void Eject(EntityUid uid, ItemSlot slot, EntityUid item, EntityUid? user, bool excludeUserAudio = false)
+        private void Eject(EntityUid uid, ItemSlot slot, EntityUid item, EntityUid? user, bool excludeUserAudio = false, bool doAfter = true) // Lavaland Change
         {
+            // Lavaland Change start
+            if (doAfter && TryStartInsertDoAfter(slot, item, user))
+                return;
+            // Lavaland Change end
+
             bool? ejected = slot.ContainerSlot != null ? _containers.Remove(item, slot.ContainerSlot) : null;
             // ContainerSlot automatically raises a directed EntRemovedFromContainerMessage
 
@@ -610,8 +627,13 @@ namespace Content.Shared.Containers.ItemSlots
         ///     False if the id is not valid, the item slot is locked, or it has no item inserted. True otherwise, even
         ///     if the user has no hands.
         /// </returns>
-        public bool TryEjectToHands(EntityUid uid, ItemSlot slot, EntityUid? user, bool excludeUserAudio = false)
+        public bool TryEjectToHands(EntityUid uid, ItemSlot slot, EntityUid? user, bool excludeUserAudio = false, bool doAfter = true) // Lavaland Change
         {
+            // Lavaland Change start
+            if (doAfter && slot.EjectDelay != null)
+                return TryStartEjectDoAfter(slot, uid, user);
+            // Lavaland Change end
+
             if (!TryEject(uid, slot, user, out var item, excludeUserAudio))
                 return false;
 
@@ -651,7 +673,7 @@ namespace Content.Shared.Containers.ItemSlots
                     AlternativeVerb verb = new()
                     {
                         IconEntity = GetNetEntity(args.Using),
-                        Act = () => Insert(uid, slot, args.Using.Value, args.User, excludeUserAudio: true)
+                        Act = () => TryInsertOrDoAfter(uid, args.User, args.Using.Value, slot) // Lavaland Change
                     };
 
                     if (slot.InsertVerbText != null)
@@ -774,7 +796,7 @@ namespace Content.Shared.Containers.ItemSlots
                 InteractionVerb insertVerb = new()
                 {
                     IconEntity = GetNetEntity(args.Using),
-                    Act = () => Insert(uid, slot, args.Using.Value, args.User, excludeUserAudio: true)
+                    Act = () => TryInsertOrDoAfter(uid, args.User, args.Using.Value, slot) // Lavaland Change
                 };
 
                 if (slot.InsertVerbText != null)
@@ -898,6 +920,7 @@ namespace Content.Shared.Containers.ItemSlots
                 {
                     itemSlot.CopyFrom(serverSlot);
                     itemSlot.ContainerSlot = _containers.EnsureContainer<ContainerSlot>(uid, serverKey);
+                    itemSlot.ContainerSlot.OccludesLight = serverSlot.OccludesLight; // Lavaland Change
                 }
                 else
                 {

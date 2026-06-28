@@ -1,3 +1,4 @@
+/* We use Lavaland system now. LP Edit.
 using Content.Shared.Damage;
 using Robust.Shared.GameStates;
 
@@ -15,3 +16,4 @@ public sealed partial class GunUpgradeDamageComponent : Component
     [DataField]
     public DamageSpecifier Damage = new();
 }
+*/

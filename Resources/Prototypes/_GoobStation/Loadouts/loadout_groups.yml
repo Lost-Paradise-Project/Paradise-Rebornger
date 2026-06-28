@@ -56,30 +56,6 @@
   loadouts:
   - NanotrasenRepresentativeGloves
 
-# - type: loadoutGroup
-#   id: NanotrasenRepresentativeEnvirohelm
-#   name: loadout-group-ntr-envirohelm
-#   minLimit: 1
-#   maxLimit: 1
-#   loadouts:
-#   - NanotrasenRepresentativeEnvirohelm
-
-# - type: loadoutGroup
-#   id: NanotrasenRepresentativeEnvirosuit
-#   name: loadout-group-ntr-envirosuit
-#   minLimit: 1
-#   maxLimit: 1
-#   loadouts:
-#   - NanotrasenRepresentativeEnvirosuit
-
-# - type: loadoutGroup
-#   id: NanotrasenRepresentativeEnvirogloves
-#   name: loadout-group-ntr-envirogloves
-#   minLimit: 1
-#   maxLimit: 1
-#   loadouts:
-#   - BlackEnvirogloves
-
 # BSO
 - type: loadoutGroup
   id: BlueshieldOfficerHead
@@ -131,30 +107,6 @@
   - BlackCowboyBoots
   - SnowjacksBso
 
-# - type: loadoutGroup
-#   id: BlueshieldOfficerEnvirohelm
-#   name: loadout-group-bso-envirohelm
-#   minLimit: 1
-#   maxLimit: 1
-#   loadouts:
-#   - BlueshieldOfficerEnvirohelm
-
-# - type: loadoutGroup
-#   id: BlueshieldOfficerEnvirosuit
-#   name: loadout-group-bso-envirosuit
-#   minLimit: 1
-#   maxLimit: 1
-#   loadouts:
-#   - BlueshieldOfficerEnvirosuit
-
-# - type: loadoutGroup
-#   id: BlueshieldOfficerEnvirogloves
-#   name: loadout-group-bso-envirogloves
-#   minLimit: 1
-#   maxLimit: 1
-#   loadouts:
-#   - CombatEnvirogloves
-
 - type: loadoutGroup
   id: BlueshieldOfficerGloves
   name: loadout-group-bso-gloves
@@ -162,3 +114,20 @@
   maxLimit: 1
   loadouts:
   - CombatGloves
+
+# Salvage/Shaft Miner
+
+- type: loadoutGroup
+  id: SalvageSpecialistNeck
+  name: loadout-group-salvage-specialist-neck
+  minLimit: 0
+  loadouts:
+  - MinerCloak
+
+- type: loadoutGroup
+  id: ShaftMinerJumpsuit
+  name: loadout-group-shaft-miner-jumpsuit
+  loadouts:
+  - ShaftMinerJumpsuit
+  - ShaftMinerJumpskirt
+  - ShaftMinerOveralls

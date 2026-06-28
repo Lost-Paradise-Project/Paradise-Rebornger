@@ -74,6 +74,13 @@
     quickEquip: false
     slots:
       - Belt
+  # Lavaland Change start
+  - type: GunUpgrade
+    name: gun-upgrade-flashlight-name
+    examineTextType: gun-upgrade-examine-type-can-use
+    insertedTextType: gun-upgrade-inserted-examine-type-attached
+  - type: GunUpgradeFlashlight
+  # Lavaland Change end
 
 - type: entity
   name: seclite

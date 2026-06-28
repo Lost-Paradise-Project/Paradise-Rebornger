@@ -1,0 +1,17 @@
+- type: technology
+  id: KineticModifications
+  name: research-technology-kinetic-modifications
+  icon:
+    sprite: _Lavaland/Objects/Weapons/upgrade.rsi
+    state: display
+  discipline: Industrial
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - PKAUpgradeDamage
+  - PKAUpgradeRange
+  - PKAUpgradeFireRate
+  - PKAUpgradeSpace
+  position: 11, 18
+  technologyPrerequisites:
+  - WaveParticleHarnessing

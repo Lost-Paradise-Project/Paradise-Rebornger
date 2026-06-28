@@ -140,7 +140,7 @@ public sealed partial class DamageableSystem
                 ent.Comp.DamageModifierSetId != null &&
                 _prototypeManager.Resolve(ent.Comp.DamageModifierSetId, out var modifierSet)
             )
-                damage = DamageSpecifier.ApplyModifierSet(damage, modifierSet);
+                damage = DamageSpecifier.ApplyModifierSet(damage, DamageSpecifier.PenetrateArmor(modifierSet, damage.ArmorPenetration)); // Goob edit
 
             // TODO DAMAGE
             // byref struct event.
@@ -156,7 +156,8 @@ public sealed partial class DamageableSystem
             damage = ApplyUniversalAllModifiers(damage);
 
 
-        damageDone.DamageDict.EnsureCapacity(damage.DamageDict.Count);
+        var delta = new DamageSpecifier(damage.ArmorPenetration); // Goob edit
+        delta.DamageDict.EnsureCapacity(damage.DamageDict.Count); // Goob edit
 
         var dict = ent.Comp.Damage.DamageDict;
         foreach (var (type, value) in damage.DamageDict)

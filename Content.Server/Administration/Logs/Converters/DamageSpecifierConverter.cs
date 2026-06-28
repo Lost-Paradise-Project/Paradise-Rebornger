@@ -13,7 +13,7 @@ public sealed class DamageSpecifierConverter : AdminLogConverter<DamageSpecifier
         writer.WriteStartObject();
         foreach (var (damage, amount) in value.DamageDict)
         {
-            writer.WriteNumber(damage.Id, amount.Double());
+            writer.WriteNumber(damage, amount.Double()); // Goobstation edit
         }
         writer.WriteEndObject();
     }

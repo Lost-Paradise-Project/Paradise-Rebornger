@@ -18,9 +18,13 @@
   - type: TileEntityEffect
     effects:
     - !type:Flammable
-      multiplier: 3.75
+      multiplier: 2.5 # Lavaland Change
       multiplierOnExisting: 0.75
     - !type:Ignite
+  # Lavaland Change start
+    - !type:AdjustTemperature
+      amount: 10000 # thermal energy, not temperature!
+  # Lavaland Change end
   - type: Transform
     anchored: true
   - type: SyncSprite

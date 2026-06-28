@@ -867,6 +867,16 @@ public abstract partial class SharedActionsSystem : EntitySystem
         // See client-side system for UI code.
     }
 
+    // Goobstation start
+    public virtual void SaveActions(EntityUid performer)
+    {
+    }
+
+    public virtual void LoadActions(EntityUid performer)
+    {
+    }
+    // Goobstation end
+
     public bool ValidAction(Entity<ActionComponent> ent, bool canReach = true)
     {
         var (uid, comp) = ent;
@@ -958,6 +968,17 @@ public abstract partial class SharedActionsSystem : EntitySystem
         if (GameTiming.ApplyingState)
             return;
 
+        // Goobstation start
+        if (!TerminatingOrDeleted(args.Equipment))
+        {
+            var ev = new GetItemActionsEvent(_actionContainer, args.Equipment, args.Equipment, isEquipping: false); // Lavaland Change - added false for isEquipping
+            RaiseLocalEvent(args.Equipment, ev);
+
+            if (ev.Actions.Count > 0)
+                SaveActions(uid);
+        }
+        // Goobstation end
+
         RemoveProvidedActions(uid, args.Equipment, component);
     }
 
@@ -965,6 +986,17 @@ public abstract partial class SharedActionsSystem : EntitySystem
     {
         if (GameTiming.ApplyingState)
             return;
+
+        // Goobstation start
+        if (!TerminatingOrDeleted(args.Unequipped))
+        {
+            var ev = new GetItemActionsEvent(_actionContainer, args.User, args.Unequipped, isEquipping: false); // Lavaland Change - added false for isEquipping
+            RaiseLocalEvent(args.Unequipped, ev);
+
+            if (ev.Actions.Count > 0)
+                SaveActions(uid);
+        }
+        // Goobstation end
 
         RemoveProvidedActions(uid, args.Unequipped, component);
     }

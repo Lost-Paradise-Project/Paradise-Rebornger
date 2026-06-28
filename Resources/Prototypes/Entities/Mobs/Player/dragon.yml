@@ -161,6 +161,7 @@
     - NamesDragon
     - NamesDragonTitle
     nameFormat: name-format-dragon
+  - type: Fauna # Lavaland Change
   - type: Prying
     pryPowered: true
     force: true
