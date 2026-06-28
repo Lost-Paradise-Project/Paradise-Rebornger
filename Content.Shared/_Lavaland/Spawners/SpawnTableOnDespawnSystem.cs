@@ -1,4 +1,4 @@
-﻿using Content.Shared.EntityTable;
+using Content.Shared.EntityTable;
 using Robust.Shared.Spawners;
 
 namespace Content.Shared._Lavaland.Spawners;

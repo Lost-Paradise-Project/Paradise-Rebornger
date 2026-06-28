@@ -1,4 +1,4 @@
-﻿using Content.Shared._GoobStation.Weather;
+using Content.Shared._GoobStation.Weather;
 
 namespace Content.Client.Weather;
 

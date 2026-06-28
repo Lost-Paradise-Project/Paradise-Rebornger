@@ -1,4 +1,4 @@
-﻿using Content.Shared.Trigger;
+using Content.Shared.Trigger;
 using Content.Shared.Whitelist;
 
 namespace Content.Server._Lavaland.Trigger;

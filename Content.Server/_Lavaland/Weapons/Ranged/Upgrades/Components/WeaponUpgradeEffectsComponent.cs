@@ -1,4 +1,4 @@
-﻿using Content.Shared.EntityEffects;
+using Content.Shared.EntityEffects;
 
 namespace Content.Server._Lavaland.Weapons.Ranged.Upgrades.Components;
 

@@ -1,4 +1,4 @@
-﻿using Content.Shared.Weapons.Ranged.Systems;
+using Content.Shared.Weapons.Ranged.Systems;
 using Content.Shared.Whitelist;
 
 namespace Content.Shared._Lavaland.Weapons.Ranged.Restricted;
