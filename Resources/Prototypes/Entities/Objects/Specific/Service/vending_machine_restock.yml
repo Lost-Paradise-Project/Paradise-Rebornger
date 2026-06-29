@@ -362,23 +362,21 @@
       shader: unshaded
     - state: refill_sec
 
-# Lavaland Edit Start
-# - type: entity
-#   parent: BaseVendingMachineRestock
-#   id: VendingMachineRestockSalvageEquipment
-#   name: Salvage Vendor restock box
-#   description: Strike the earth ere the space carp nip your behind! Slam into a salvage vendor to begin.
-#   components:
-#   - type: VendingMachineRestock
-#     canRestock:
-#     - SalvageEquipmentInventory
-#   - type: Sprite
-#     layers:
-#     - state: base
-#     - state: green_bit
-#       shader: unshaded
-#     - state: refill_salvage
-# Lavaland Edit End
+- type: entity
+  parent: BaseVendingMachineRestock
+  id: VendingMachineRestockSalvageEquipment
+  name: Salvage Vendor restock box
+  description: Strike the earth ere the space carp nip your behind! Slam into a salvage vendor to begin.
+  components:
+  - type: VendingMachineRestock
+    canRestock:
+    - SalvageEquipmentInventory
+  - type: Sprite
+    layers:
+    - state: base
+    - state: green_bit
+      shader: unshaded
+    - state: refill_salvage
 
 - type: entity
   parent: BaseVendingMachineRestock
