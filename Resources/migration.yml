@@ -992,8 +992,3 @@ BananiumOre: BananiumOreUnprocessed
 BananiumOre1: BananiumOre1Unprocessed
 Coal: CoalUnprocessed
 Coal1: Coal1Unprocessed
-
-# LP Edit 2026-06-29
-
-VendingMachineRestockSalvageEquipment: null
-
