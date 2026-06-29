@@ -1,4 +1,4 @@
-﻿using System.Numerics;
+using System.Numerics;
 using Robust.Shared.Utility;
 
 namespace Content.Shared._Lavaland.Procedural;

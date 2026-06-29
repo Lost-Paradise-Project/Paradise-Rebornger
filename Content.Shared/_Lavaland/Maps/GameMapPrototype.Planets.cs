@@ -1,4 +1,4 @@
-﻿using Content.Shared._Lavaland.Procedural.Prototypes;
+using Content.Shared._Lavaland.Procedural.Prototypes;
 using Robust.Shared.Prototypes;
 
 // ReSharper disable once CheckNamespace

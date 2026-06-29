@@ -1,4 +1,4 @@
-﻿namespace Content.Server._Lavaland.Procedural;
+namespace Content.Server._Lavaland.Procedural;
 
 /// <summary>
 /// Raised when biome chunk is about to unload.

@@ -1,4 +1,4 @@
-﻿using Content.Shared._GoobStation.Weapons;
+using Content.Shared._GoobStation.Weapons;
 using Content.Shared._GoobStation.Weapons.Ranged;
 using Content.Shared._Lavaland.Weapons.Ranged.Upgrades.Components;
 using Content.Shared.Damage.Components;
