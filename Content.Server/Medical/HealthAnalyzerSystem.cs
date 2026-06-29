@@ -19,6 +19,8 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
 using Robust.Shared.Timing;
 using Content.Server.Body.Systems;
+using Content.Shared.Mobs; // LP Edit
+using Content.Shared._LP.HealthAnalyzer; // LP Edit
 
 namespace Content.Server.Medical;
 
@@ -111,8 +113,17 @@ public sealed class HealthAnalyzerSystem : EntitySystem
             _audio.PlayPvs(uid.Comp.ScanningEndSound, uid);
 
         OpenUserInterface(args.User, uid);
-        BeginAnalyzingEntity(uid, args.Target.Value);
+        // LP Edit Start
+        BeginAnalyzingEntity(uid, args.Target.Value, args.User);
+        var uiState = GetHealthAnalyzerUiState(args.Target.Value);
+
+        RaiseNetworkEvent(
+            new HealthAnalyzerAudioEvent(
+                uiState.MobState ?? MobState.Alive,
+                true),
+            args.User);
         args.Handled = true;
+        // LP Edit End
     }
 
     /// <summary>
@@ -122,6 +133,18 @@ public sealed class HealthAnalyzerSystem : EntitySystem
     {
         if (uid.Comp.ScannedEntity is { } patient)
             _toggle.TryDeactivate(uid.Owner);
+
+        // LP Edit Start
+
+        if (uid.Comp.ScannerUser != null)
+        {
+            RaiseNetworkEvent(
+                new HealthAnalyzerStopAudioEvent(),
+                uid.Comp.ScannerUser.Value);
+        }
+
+        // LP Edit End
+
     }
 
     /// <summary>
@@ -131,6 +154,18 @@ public sealed class HealthAnalyzerSystem : EntitySystem
     {
         if (!args.Activated && ent.Comp.ScannedEntity is { } patient)
             StopAnalyzingEntity(ent, patient);
+
+        // LP Edit Start
+
+        if (ent.Comp.ScannerUser != null)
+        {
+            RaiseNetworkEvent(
+                new HealthAnalyzerStopAudioEvent(),
+                ent.Comp.ScannerUser.Value);
+        }
+
+        // LP Edit End
+
     }
 
     /// <summary>
@@ -140,6 +175,18 @@ public sealed class HealthAnalyzerSystem : EntitySystem
     {
         if (uid.Comp.ScannedEntity is { } patient)
             _toggle.TryDeactivate(uid.Owner);
+
+        // LP Edit Start
+
+        if (uid.Comp.ScannerUser != null)
+        {
+            RaiseNetworkEvent(
+                new HealthAnalyzerStopAudioEvent(),
+                uid.Comp.ScannerUser.Value);
+        }
+
+        // LP Edit End
+
     }
 
     private void OpenUserInterface(EntityUid user, EntityUid analyzer)
@@ -155,10 +202,12 @@ public sealed class HealthAnalyzerSystem : EntitySystem
     /// </summary>
     /// <param name="healthAnalyzer">The health analyzer that should receive the updates</param>
     /// <param name="target">The entity to start analyzing</param>
-    private void BeginAnalyzingEntity(Entity<HealthAnalyzerComponent> healthAnalyzer, EntityUid target)
+    /// <param name="user">The user operating the analyzer</param> // LP Edit
+    private void BeginAnalyzingEntity(Entity<HealthAnalyzerComponent> healthAnalyzer, EntityUid target, EntityUid user) // LP Edit
     {
         //Link the health analyzer to the scanned entity
         healthAnalyzer.Comp.ScannedEntity = target;
+        healthAnalyzer.Comp.ScannerUser = user; // LP Edit
 
         _toggle.TryActivate(healthAnalyzer.Owner);
 
@@ -172,8 +221,23 @@ public sealed class HealthAnalyzerSystem : EntitySystem
     /// <param name="target">The entity to analyze</param>
     private void StopAnalyzingEntity(Entity<HealthAnalyzerComponent> healthAnalyzer, EntityUid target)
     {
+        var scannerUser = healthAnalyzer.Comp.ScannerUser; // LP Edit
+
         //Unlink the analyzer
         healthAnalyzer.Comp.ScannedEntity = null;
+
+        // LP Edit Start
+
+        healthAnalyzer.Comp.ScannerUser = null;
+
+        if (scannerUser != null)
+        {
+            RaiseNetworkEvent(
+                new HealthAnalyzerStopAudioEvent(),
+                scannerUser.Value);
+        }
+
+        // LP Edit End
 
         _toggle.TryDeactivate(healthAnalyzer.Owner);
 
@@ -188,6 +252,18 @@ public sealed class HealthAnalyzerSystem : EntitySystem
     /// <param name="target">The entity to analyze</param>
     private void PauseAnalyzingEntity(Entity<HealthAnalyzerComponent> healthAnalyzer, EntityUid target)
     {
+
+        // LP Edit Start
+
+        if (healthAnalyzer.Comp.ScannerUser != null)
+        {
+            RaiseNetworkEvent(
+                new HealthAnalyzerStopAudioEvent(),
+                healthAnalyzer.Comp.ScannerUser.Value);
+        }
+
+        // LP Edit End
+
         if (!healthAnalyzer.Comp.IsAnalyzerActive)
             return;
 
@@ -215,6 +291,16 @@ public sealed class HealthAnalyzerSystem : EntitySystem
             HealthAnalyzerUiKey.Key,
             new HealthAnalyzerScannedUserMessage(uiState)
         );
+
+        // LP Edit Start
+
+        if (TryComp<HealthAnalyzerComponent>(healthAnalyzer, out var analyzer) && analyzer.ScannerUser != null)
+        {
+            RaiseNetworkEvent(new HealthAnalyzerAudioEvent(uiState.MobState ?? MobState.Alive), analyzer.ScannerUser.Value);
+        }
+
+        // LP Edit End
+
     }
 
     /// <summary>
@@ -236,6 +322,7 @@ public sealed class HealthAnalyzerSystem : EntitySystem
         var bloodAmount = float.NaN;
         var bleeding = false;
         var unrevivable = false;
+        var mobState = MobState.Alive; // LP Edit
 
         if (TryComp<BloodstreamComponent>(entity, out var bloodstream) &&
             _solutionContainerSystem.ResolveSolution(entity, bloodstream.BloodSolutionName,
@@ -248,13 +335,19 @@ public sealed class HealthAnalyzerSystem : EntitySystem
         if (TryComp<UnrevivableComponent>(entity, out var unrevivableComp) && unrevivableComp.Analyzable)
             unrevivable = true;
 
+        // LP Edit Start
+        if (TryComp<MobStateComponent>(target, out var mob))
+            mobState = mob.CurrentState;
+        // LP Edit End
+
         return new HealthAnalyzerUiState(
             GetNetEntity(entity),
             bodyTemperature,
             bloodAmount,
             null,
             bleeding,
-            unrevivable
+            unrevivable,
+            mobState // LP Edit
         );
     }
 }
