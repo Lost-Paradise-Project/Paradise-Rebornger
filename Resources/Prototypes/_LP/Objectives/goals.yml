@@ -1,6 +1,7 @@
 - type: stationGoal
   id: LPTransit
   text: station-goal-transit
+  maxPlayers: 10
 
 - type: stationGoal
   id: LPRenovation
@@ -14,7 +15,7 @@
 - type: stationGoal
   id: LPReserveEnergy
   text: station-goal-reserv-energy
-  minPlayers: 20
+  minPlayers: 10
 
 - type: stationGoal
   id: LPStationPreparation
@@ -24,7 +25,7 @@
 - type: stationGoal
   id: LPCorporateEvent
   text: station-goal-podgotovka-k-korporativu
-  minPlayers: 10
+  minPlayers: 15
 
 - type: stationGoal
   id: LPTestPoligon
@@ -34,4 +35,4 @@
 - type: stationGoal
   id: LPTunnelInventory
   text: station-goal-maintenance-salvage
-  minPlayers: 10
+  minPlayers: 5

@@ -2,7 +2,7 @@
 - type: stationGoal
   id: Singularity
   text: station-goal-singularity
-  minPlayers: 15
+  minPlayers: 5 # LP edit 15 > 5
 
 - type: stationGoal
   id: SolarPanels
@@ -25,12 +25,12 @@
 - type: stationGoal
   id: MiningOutpost
   text: station-goal-mining-outpost
-  minPlayers: 15
+  minPlayers: 5 # LP edit 15 > 5
 
 - type: stationGoal
   id: Tesla
   text: station-goal-tesla
-  minPlayers: 15
+  minPlayers: 5 # LP edit 15 > 5
 
 - type: stationGoal
   id: SecurityTraining
@@ -62,11 +62,10 @@
   text: station-goal-shuttle-emergency
   minPlayers: 10
 
-# LP Edit Start
-# - type: stationGoal
-#   id: Theatre
-#   text: station-goal-theatre
-# LP Edit End
+- type: stationGoal
+  id: Theatre
+  text: station-goal-theatre
+  minPlayers: 15 # LP edit
 
 - type: stationGoal
   id: CellAI
@@ -76,6 +75,7 @@
 - type: stationGoal
   id: Botany
   text: station-goal-botany
+  minPlayers: 13 # LP edit
 
 - type: stationGoal
   id: Bunker
