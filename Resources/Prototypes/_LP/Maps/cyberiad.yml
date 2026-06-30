@@ -55,8 +55,10 @@
             Brigmedic: [ 1, 1 ]
             LPPSecurityEnginer: [ 1, 1 ] # Полевой инженер, LP
             #Lawyer: [ 2, 2 ] # Corvax-IAA
-            #Supply (6)
+            #Supply (12)
             SalvageSpecialist: [ 3, 3 ]
+            ShaftMiner: [ 3, 3 ]
+            Bitrunner: [ 3, 3 ]
             CargoTechnician: [ 3, 3 ]
             #Civilian (3+)
             Passenger: [ -1, -1 ] #infinite, not counted
