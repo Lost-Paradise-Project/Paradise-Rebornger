@@ -4,8 +4,8 @@ meta:
   engineVersion: 275.2.0
   forkId: ""
   forkVersion: ""
-  time: 06/29/2026 21:17:22
-  entityCount: 46590
+  time: 07/04/2026 18:34:15
+  entityCount: 46598
 maps:
 - 1
 grids:
@@ -691,12 +691,23 @@ entities:
         version: 2
         nodes:
         - node:
+            angle: -1.5707963267948966 rad
+            color: '#FFFFFFFF'
+            id: Arrows
+          decals:
+            9302: 36,34
+            9303: 35.999676,33.71932
+            9304: 35.999676,34.28146
+        - node:
             angle: 1.5707963267948966 rad
             color: '#FFFFFFFF'
             id: Arrows
           decals:
             8777: 47,-2
             8778: 43,-2
+            9299: 27,22
+            9300: 27.000069,21.72059
+            9301: 27.000069,22.282623
         - node:
             angle: 4.71238898038469 rad
             color: '#FFFFFFFF'
@@ -1123,6 +1134,8 @@ entities:
             9185: -23,-62
             9196: -21,-62
             9197: -20,-62
+            9305: 28,22
+            9307: 35,34
         - node:
             cleanable: True
             color: '#FFFFFFFF'
@@ -1358,6 +1371,8 @@ entities:
             8143: 41,15
             8144: 43,15
             8145: 43,14
+            9306: 28,22
+            9308: 35,34
         - node:
             zIndex: 1
             color: '#FFFFFFFF'
@@ -16405,16 +16420,16 @@ entities:
           id: docking54732
           localAnchorB: -2,2.5
           localAnchorA: 92,17.5
-          damping: 511.35974
-          stiffness: 4589.9546
+          damping: 511.36127
+          stiffness: 4589.9683
         docking54731: !type:WeldJoint
           bodyB: 28675
           bodyA: 2
           id: docking54731
           localAnchorB: -2,1.5
           localAnchorA: 92,16.5
-          damping: 511.35974
-          stiffness: 4589.9546
+          damping: 511.36127
+          stiffness: 4589.9683
   - uid: 28675
     components:
     - type: MetaData
@@ -215381,7 +215396,7 @@ entities:
       pos: -21.5,-84.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -54457.7
+      secondsUntilStateChange: -54733.348
       state: Opening
   - uid: 31919
     components:
@@ -237781,6 +237796,24 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -74.5,-47.5
       parent: 2
+  - uid: 44223
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 31.5,31.5
+      parent: 2
+  - uid: 44224
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 32.5,31.5
+      parent: 2
+  - uid: 44300
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 35.5,32.5
+      parent: 2
 - proto: RailingCorner
   entities:
   - uid: 35427
@@ -237877,6 +237910,22 @@ entities:
     - type: Transform
       pos: -68.5,-51.5
       parent: 2
+  - uid: 44225
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 34.5,31.5
+      parent: 2
+  - uid: 44301
+    components:
+    - type: Transform
+      pos: 35.5,31.5
+      parent: 2
+  - uid: 44302
+    components:
+    - type: Transform
+      pos: 33.5,31.5
+      parent: 44220
 - proto: RandomArcade
   entities:
   - uid: 13301
@@ -255065,6 +255114,22 @@ entities:
     components:
     - type: Transform
       pos: 9.5,-35.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
+- proto: SignNTMine
+  entities:
+  - uid: 44221
+    components:
+    - type: Transform
+      pos: 29.5,22.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
+  - uid: 44222
+    components:
+    - type: Transform
+      pos: 35.5,33.5
       parent: 2
     - type: Fixtures
       fixtures: {}
