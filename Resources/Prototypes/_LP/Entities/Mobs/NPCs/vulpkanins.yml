@@ -30,6 +30,7 @@
       task: SimpleHumanoidHostileCompound
   - type: Sprite
     scale: 1.1, 1.1
+    drawdepth: Mobs
 
 # злая розовая вульпа c "копьём"
 - type: entity
@@ -44,6 +45,7 @@
     prototypes: [ LPPPinkVulpkaninPiercingGear ]
   - type: Sprite
     scale: 1, 1
+    drawdepth: Mobs
 
 # злая розовая вульпа c плёткой
 - type: entity
@@ -58,6 +60,7 @@
     prototypes: [ LPPPinkVulpkaninSlashGear ]
   - type: Sprite
     scale: 0.9, 0.9
+    drawdepth: Mobs
 
 
 
@@ -73,6 +76,7 @@
   - type: BitrunningDomainEnemyObjective
   - type: Sprite
     scale: 1.1, 1.1
+    drawdepth: Mobs
 
 # злая розовая вульпа для битрана c "копьём"
 - type: entity
@@ -86,6 +90,7 @@
   - type: BitrunningDomainEnemyObjective
   - type: Sprite
     scale: 1, 1
+    drawdepth: Mobs
 
 # злая розовая вульпа для битрана c плетью
 - type: entity
@@ -99,3 +104,4 @@
   - type: BitrunningDomainEnemyObjective
   - type: Sprite
     scale: 0.9, 0.9
+    drawdepth: Mobs
