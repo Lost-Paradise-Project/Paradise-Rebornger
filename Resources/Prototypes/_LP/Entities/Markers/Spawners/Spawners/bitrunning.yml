@@ -768,7 +768,7 @@
   components:
   - type: Sprite
     layers:
-    - state: green 
+    - state: green
     - sprite: Corvax/Mobs/Species/Vulpkanin/parts.rsi
       state: full
     - state: ai

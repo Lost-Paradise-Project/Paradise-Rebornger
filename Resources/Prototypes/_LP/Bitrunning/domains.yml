@@ -17,7 +17,7 @@
   objectiveType: CollectEncryptedCaches
   objectiveTarget: 3
 
-# --- --- --- 
+# --- --- ---
 #   СРЕДНИЕ
 # --- --- ---
 - type: bitrunningVirtualDomain
