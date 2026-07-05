@@ -27,6 +27,11 @@
   # Goobstation edit end
   - type: Sprite
     state: icon
+  # LP edit start
+  - type: Tag
+    tags:
+      - CoatRack
+  # LP edit end
 
 - type: entity
   abstract: true
