@@ -13,7 +13,7 @@
   serverRewardPoints: 3
   bitrunningRewardPoints: 600
   isModular: true
-  AllowDiskModifications: false 
+  AllowDiskModifications: false
   mapPath: /Maps/_LP/Bitrun/floor_its_lava.yml
   objectiveType: CollectEncryptedCaches
   objectiveTarget: 3
