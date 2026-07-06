@@ -7924,6 +7924,8 @@ entities:
     - type: GridTree
     - type: Broadphase
     - type: OccluderTree
+    - type: Parallax
+      parallax: Default
 - proto: AcousticGuitarInstrument
   entities:
   - uid: 525

@@ -76,6 +76,8 @@ entities:
     - type: GridTree
     - type: Broadphase
     - type: OccluderTree
+    - type: Parallax
+      parallax: Default
   - uid: 2
     components:
     - type: MetaData
