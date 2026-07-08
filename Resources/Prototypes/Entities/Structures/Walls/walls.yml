@@ -1415,10 +1415,13 @@
   - type: IconSmooth
     key: walls
     base: mining
-  - type: RandomIconSmooth
-    randomStates:
-    - mining
-    - miningB
+  #  LP edit start
+  # Этот компач ломает к хренам текстуру шахтёрской стены при уроне по ней, а в некоторых случаях и после инициализации карты. К тому же этот компонет испотьзуется ТОЛЬКО в этом прототипе и больше нигде.
+  # - type: RandomIconSmooth
+  #   randomStates:
+  #   - mining
+  #   - miningB
+  # LP edit end
   - type: Appearance
 
 - type: entity
