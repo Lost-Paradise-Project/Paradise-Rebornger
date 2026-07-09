@@ -54,6 +54,18 @@
     sprite: _GoobStation/Clothing/Uniforms/Jumpsuit/Cargo/shaft_miner.rsi
   - type: Clothing
     sprite: _GoobStation/Clothing/Uniforms/Jumpsuit/Cargo/shaft_miner.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformOverallsShaftMiner
+  name: shaft miner's overalls
+  description: It's a sturdy set of overalls, looks a bit burnt.
+  components:
+  - type: Sprite
+    sprite: _GoobStation/Clothing/Uniforms/Other/Overalls/Cargo/shaft_miner.rsi
+  - type: Clothing
+    sprite: _GoobStation/Clothing/Uniforms/Other/Overalls/Cargo/shaft_miner.rsi
+
 - type: entity
   parent: ClothingUniformJumpsuitNavyGold
   id: ClothingUniformJumpskirtTrainer

@@ -1,3 +1,4 @@
+/* We use Lavaland system now. LP Edit.
 using Content.Shared.Tag;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
@@ -22,3 +23,4 @@ public sealed partial class GunUpgradeComponent : Component
     [DataField]
     public LocId ExamineText;
 }
+*/

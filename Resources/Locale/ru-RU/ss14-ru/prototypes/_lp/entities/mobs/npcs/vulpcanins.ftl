@@ -1,0 +1,12 @@
+ent-LPPMobPinkVulpkaninERPBlunt = Розовая вульпа
+    .desc = О БОЖЕ! ЭТО РОЗОВАЯ ВУЛЬПА!!! ОНА ХОЧЕТ ЗАТАЩИТЬ ТЕБЯ В ДОРМЫ! БЕГИ!!!
+ent-LPPMobPinkVulpkaninERPPiercing = Розовая вульпа
+    .desc = { ent-LPPMobPinkVulpkaninERPBlunt.desc }
+ent-LPPMobPinkVulpkaninERPSlash = Розовая вульпа
+    .desc = { ent-LPPMobPinkVulpkaninERPBlunt.desc }
+ent-LPPMobPinkVulpkaninERPBluntBitrunning = Розовая вульпа
+    .desc = { ent-LPPMobPinkVulpkaninERPBlunt.desc }
+ent-LPPMobPinkVulpkaninERPPiercingBitrunning = Розовая вульпа
+    .desc = { ent-LPPMobPinkVulpkaninERPBlunt.desc }
+ent-LPPMobPinkVulpkaninERPSlashBitrunning = Розовая вульпа
+    .desc = { ent-LPPMobPinkVulpkaninERPBlunt.desc }

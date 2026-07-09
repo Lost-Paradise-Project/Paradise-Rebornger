@@ -13,7 +13,7 @@
     ClothingHeadBandBrown: 3
     ClothingHeadsetCargo: 3
     ClothingOuterWinterCargo: 2
-    ClothingOuterWinterMiner: 2
+    # ClothingOuterWinterMiner: 2 # Lavaland Change
     ClothingNeckScarfStripedBrown: 3
     ClothingShoesBootsWinterCargo: 2
     MailBag: 2

@@ -7,3 +7,5 @@ ent-MarkerBeaconActive = { ent-MarkerBeacon }
 ent-MarkerBeaconActiveAnchored = { ent-MarkerBeaconActive }
     .desc = { ent-MarkerBeaconActive.desc }
     .suffix = Закреплён, Активен
+ent-BoxMarkerBeacons = раздатчик маяк-меток
+    .desc = Выдаёт 30 маяк-меток, чрезвычайно полезен для исследования космоса и планет.

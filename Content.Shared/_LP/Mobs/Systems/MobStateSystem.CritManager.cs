@@ -1,15 +1,10 @@
 using Content.Shared.Mobs.Components;
 using Content.Shared.Movement.Events;
-using Content.Shared.Movement.Components;
 using Robust.Shared.Audio;
-using Robust.Shared.Audio.Components;
 using Robust.Shared.Player;
 using Content.Shared.Damage.Components;
 using Robust.Shared.Audio.Systems;
-using AudioComponent = Robust.Shared.Audio.Components.AudioComponent;
 using Content.Shared.Movement.Systems;
-using Content.Shared.Mobs.Systems;
-using Content.Shared.Mind;
 
 namespace Content.Shared.Mobs.Systems;
 

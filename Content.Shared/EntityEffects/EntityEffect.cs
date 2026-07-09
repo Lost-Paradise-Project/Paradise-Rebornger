@@ -44,6 +44,17 @@ public abstract partial class EntityEffect
 
     [ViewVariables]
     public virtual LogType LogType => LogType.EntityEffect;
+
+    /// <summary>
+    ///     After how much seconds do we want it to trigger? - Goobstation
+    /// </summary>
+    [DataField]
+    public TimeSpan Delay = TimeSpan.Zero;
+
+    // /// <summary>
+    // ///     Goobstation - use the new EntityEffectSystem instead of a direct call.
+    // /// </summary>
+    // public abstract void Effect(EntityEffectBaseArgs args);
 }
 
 /// <summary>
@@ -60,3 +71,24 @@ public abstract partial class EntityEffectBase<T> : EntityEffect where T : Entit
         raiser.RaiseEffectEvent(target, type, scale, user);
     }
 }
+
+// Goobstation edit Start
+
+/// <summary>
+///     EntityEffectBaseArgs only contains the target of an effect.
+///     If a trigger wants to include more info (e.g. the quantity of the chemical triggering the effect), it can be extended (see EntityEffectReagentArgs).
+/// </summary>
+public record class EntityEffectBaseArgs
+{
+    public EntityUid TargetEntity;
+
+    public IEntityManager EntityManager = default!;
+
+    public EntityEffectBaseArgs(EntityUid targetEntity, IEntityManager entityManager)
+    {
+        TargetEntity = targetEntity;
+        EntityManager = entityManager;
+    }
+}
+
+// Goobstation edit End

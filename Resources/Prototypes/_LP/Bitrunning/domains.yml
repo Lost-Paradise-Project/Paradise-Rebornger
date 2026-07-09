@@ -4,6 +4,19 @@
 # --- --- ---
 #    ЛЁГКИЕ
 # --- --- ---
+- type: bitrunningVirtualDomain
+  id: LPPFloorItsLava # Паркур
+  name: bitrunning-domain-floor-its-lava-name
+  description: bitrunning-domain-floor-its-lava-desc
+  difficulty: Easy
+  cost: 1
+  serverRewardPoints: 3
+  bitrunningRewardPoints: 600
+  isModular: true
+  mapPath: /Maps/_LP/Bitrun/floor_its_lava.yml
+  objectiveType: CollectEncryptedCaches
+  objectiveTarget: 3
+
 # --- --- ---
 #   СРЕДНИЕ
 # --- --- ---
@@ -85,6 +98,22 @@
   objectiveTargetByType:
     DeliveryCacheCrate: 3
     EliminateEnemies: 0
+
+- type: bitrunningVirtualDomain
+  id: LPPRobust # Зачистка дорм
+  name: bitrunning-domain-robust-name
+  description: bitrunning-domain-robust-desc
+  difficulty: Hard
+  cost: 8
+  serverRewardPoints: 10
+  bitrunningRewardPoints: 1800
+  completionLoot:
+    DrinkColaCan: 3
+  forcedLoadout: LimitedPassengerGear
+  isModular: true
+  mapPath: /Maps/_LP/Bitrun/robust.yml
+  objectiveType: EliminateEnemies
+  objectiveTarget: 0
 
 # --- --- ---
 #  ЭКСТРИМ 🗣️ Видны лишь после емага консоли

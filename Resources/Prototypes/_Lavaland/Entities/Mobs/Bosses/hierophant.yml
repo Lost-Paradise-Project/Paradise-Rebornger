@@ -81,7 +81,7 @@
     table: !type:AllSelector
       children:
       - id: LavalandHierophantClub
-      # - id: CrusherUpgradeMainMarker
+      - id: CrusherUpgradeMainMarker
     deleteOnDeath: true
   - type: MegafaunaAi
     actionDelay: !type:MegafaunaConstantNumberSelector

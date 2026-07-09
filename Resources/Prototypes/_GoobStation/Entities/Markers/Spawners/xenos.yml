@@ -1,0 +1,41 @@
+- type: entity
+  parent: MarkerBase
+  id: SpawnMobXenomorphDrone
+  name: xeno drone spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: _White/Mobs/Aliens/Xenomorphs/drone.rsi
+      state: xenomorph
+  - type: ConditionalSpawner
+    prototypes:
+    - MobXenomorphDroneDungeon
+
+- type: entity
+  parent: MarkerBase
+  id: SpawnMobXenomorphPraetorian
+  name: xeno praetorian spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: _White/Mobs/Aliens/Xenomorphs/praetorian.rsi
+      state: xenomorph
+  - type: ConditionalSpawner
+    prototypes:
+    - MobXenomorphPraetorianDungeon
+
+- type: entity
+  parent: MarkerBase
+  id: SpawnMobXenomorphQueen
+  name: xeno queen spawner
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: _White/Mobs/Aliens/Xenomorphs/queen.rsi
+      state: xenomorph
+  - type: ConditionalSpawner
+    prototypes:
+    - MobXenomorphQueenDungeon

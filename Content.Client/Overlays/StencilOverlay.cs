@@ -12,6 +12,7 @@ using Robust.Shared.Enums;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
+using Content.Shared._GoobStation.Weather; // Goobstation edit
 
 namespace Content.Client.Overlays;
 
@@ -68,6 +69,22 @@ public sealed partial class StencilOverlay : Overlay
             res.Blep?.Dispose();
             res.Blep = _clyde.CreateRenderTarget(args.Viewport.Size, new RenderTargetFormatParameters(RenderTargetColorFormat.Rgba8Srgb), name: "weather-stencil");
         }
+
+        // Goobstation edit start
+
+        if (_entManager.TryGetComponent<WeatherComponent>(mapUid, out var comp))
+        {
+            foreach (var (proto, weather) in comp.Weather)
+            {
+                if (!_protoManager.TryIndex<WeatherPrototype>(proto, out var weatherProto))
+                    continue;
+
+                var alpha = _weather.GetPercent(weather, mapUid);
+                DrawWeather(args, res, weatherProto, alpha, invMatrix);
+            }
+        }
+
+        // Goobstation edit end
 
         if (_statusEffects.TryEffectsWithComp(mapUid, out _weatherSet))
             DrawWeather(args, res, _weatherSet, invMatrix);

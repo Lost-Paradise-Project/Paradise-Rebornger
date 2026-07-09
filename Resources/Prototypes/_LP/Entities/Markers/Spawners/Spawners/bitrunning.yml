@@ -669,3 +669,109 @@
   - type: ConditionalSpawner
     prototypes:
       - LPPMobNecronFlesher
+
+# спавнер злой розовой вульпы с "битой"
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobPinkVulpkaninERPBlunt
+  name: Spawner PinkVulp Blunt
+  suffix: Бита, AI
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: Corvax/Mobs/Species/Vulpkanin/parts.rsi
+      state: full
+    - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobPinkVulpkaninERPBlunt
+
+# спавнер злой розовой вульпы с "копьём"
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobPinkVulpkaninERPPiercing
+  name: Spawner PinkVulp Piercing
+  suffix: Копьё, AI
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - sprite: Corvax/Mobs/Species/Vulpkanin/parts.rsi
+      state: full
+    - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobPinkVulpkaninERPPiercing
+
+# спавнер злой розовой вульпы с плетью
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobPinkVulpkaninERPSlash
+  name: Spawner PinkVulp Slash
+  suffix: Нож, AI
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Corvax/Mobs/Species/Vulpkanin/parts.rsi
+      state: full
+    - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobPinkVulpkaninERPSlash
+
+
+# спавнер злой розовой вульпы для битрана с "битой"
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobPinkVulpkaninERPBluntBitrunning
+  name: Spawner PinkVulp Blunt bitrun
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: Corvax/Mobs/Species/Vulpkanin/parts.rsi
+      state: full
+    - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobPinkVulpkaninERPBluntBitrunning
+
+# спавнер злой розовой вульпы для битрана с "копьём"
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobPinkVulpkaninERPPiercingBitrunning
+  name: Spawner PinkVulp Piercing bitrun
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - sprite: Corvax/Mobs/Species/Vulpkanin/parts.rsi
+      state: full
+    - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobPinkVulpkaninERPPiercingBitrunning
+
+# спавнер злой розовой вульпы для битрана с плетью
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobPinkVulpkaninERPSlashBitrunning
+  name: Spawner PinkVulp Slash bitrun
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Corvax/Mobs/Species/Vulpkanin/parts.rsi
+      state: full
+    - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobPinkVulpkaninERPSlashBitrunning

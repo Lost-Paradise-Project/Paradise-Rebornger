@@ -191,6 +191,6 @@
   - type: BitrunningAbilityDisk
     grantMode: Item
     options:
-      bitrunning-disk-option-proto-kinetic-hammer: LavalandWeaponKineticHammer
+      bitrunning-disk-option-proto-kinetic-hammer: WeaponCrusherHammer
       bitrunning-disk-option-proto-kinetic-machete: LavalandWeaponKineticMachete
       bitrunning-disk-option-proto-kinetic-spear: LavalandWeaponKineticSpear #LP edit

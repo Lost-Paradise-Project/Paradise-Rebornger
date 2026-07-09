@@ -49,7 +49,7 @@
     sprite: _LP/Objects/Devices/pda.rsi
     state: pda-beer
   - type: PdaBorderColor
-    borderColor: "#333333"
+    borderColor: "#d2b88f"
 
 # Same PDA but custom name
 - type: entity

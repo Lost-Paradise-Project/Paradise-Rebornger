@@ -7,6 +7,7 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Network;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Timing;
+using Content.Shared._Lavaland.Weapons.Marker; // Lavaland Change
 
 namespace Content.Shared.Weapons.Marker;
 
@@ -38,6 +39,11 @@ public abstract class SharedDamageMarkerSystem : EntitySystem
         {
             _damageable.TryChangeDamage(args.User, leech.Leech, true, false, origin: args.Used);
         }
+
+        // Lavaland Change start
+        RaiseLocalEvent(uid, new ApplyMarkerBonusEvent(args.Used, args.User)); // For effects on the target
+        RaiseLocalEvent(args.Used, new ApplyMarkerBonusEvent(args.Used, args.User)); // For effects on the weapon
+        // Lavaland Change end
     }
 
     public override void Update(float frameTime)
@@ -72,6 +78,8 @@ public abstract class SharedDamageMarkerSystem : EntitySystem
         marker.Damage = new DamageSpecifier(component.Damage);
         marker.Marker = projectile.Weapon.Value;
         marker.EndTime = _timing.CurTime + component.Duration;
+        marker.Effect = component.Effect; // Goob edit: Pass the effect to the marker
+        marker.Sound = component.Sound; // Goob edit: Pass the effect to the marker
         component.Amount--;
         Dirty(args.OtherEntity, marker);
 

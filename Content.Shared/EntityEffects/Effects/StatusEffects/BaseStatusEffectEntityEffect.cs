@@ -19,11 +19,15 @@ public abstract partial class BaseStatusEntityEffect<T> : EntityEffectBase<T> wh
     [DataField]
     public StatusEffectMetabolismType Type = StatusEffectMetabolismType.Update;
 
-    /// <summary>
-    /// Delay before the effect starts. If another effect is added with a shorter delay, it takes precedence.
-    /// </summary>
-    [DataField]
-    public TimeSpan Delay;
+    // Goobstation edit start
+
+    // /// <summary>
+    // /// Delay before the effect starts. If another effect is added with a shorter delay, it takes precedence.
+    // /// </summary>
+    // [DataField]
+    // public TimeSpan Delay;
+
+    // Goobstation edit end
 }
 
 public enum StatusEffectMetabolismType

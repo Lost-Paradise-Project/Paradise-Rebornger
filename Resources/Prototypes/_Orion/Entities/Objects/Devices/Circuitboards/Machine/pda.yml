@@ -11,9 +11,13 @@
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
        !type:String
-       pda-cargo
+       pda-bitrunner
   - type: PdaBorderColor
-    borderColor: "#e39751"
+    borderColor: "#414341"
   - type: Icon
-    state: pda-cargo
+    sprite: _LP/Objects/Devices/pda.rsi
+    state: pda-bitrunner
+  - type: Sprite
+    sprite: _LP/Objects/Devices/pda.rsi
+    state: pda-bitrunner
 #LP edit end

@@ -49,14 +49,16 @@
 - type: entity
   id: LockerSalvageSpecialist
   parent: LockerBase
-  name: salvage specialist's equipment
-  description: Nevermind the pickaxe.
+  name: salvage specialist's locker # Lavaland Change
+  description: Contains equipment useful for space exploration. # Lavaland Change
   components:
   - type: Appearance
   - type: EntityStorageVisuals
-    stateBaseClosed: mining
-    stateDoorOpen: mining_open
-    stateDoorClosed: mining_door
+    # Lavaland Change start - new sprite for the locker
+    stateBaseClosed: cargo
+    stateDoorOpen: cargo_open
+    stateDoorClosed: salvage_door
+    # Lavaland Change end
   - type: AccessReader
     access: [["Salvage"]]
 

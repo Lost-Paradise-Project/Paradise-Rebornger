@@ -1,0 +1,166 @@
+- type: reagent
+  id: MinersSalve
+  name: reagent-name-minerssalve
+  group: Medicine
+  desc: reagent-desc-minerssalve
+  physicalDesc: reagent-physical-desc-shiny
+  flavor: metallic
+  color: "#f2c777"
+  recognizable: true
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:ModifyBloodLevel
+        amount: 1.5
+      - !type:EvenHealthChange
+        damage:
+          Burn: -1.75
+          Brute: -1.75
+      - !type:HealthChange
+        damage:
+          types:
+            Bloodloss: -1.25
+      - !type:ModifyBloodLevel
+        amount: 1.5
+        conditions:
+        - !type:PressureThresholdCondition
+          min: 1
+          max: 50
+          worksOnLavaland: true
+      - !type:EvenHealthChange
+        damage:
+          Burn: -4.75
+          Brute: -4.75
+        conditions:
+        - !type:PressureThresholdCondition
+          min: 1
+          max: 50
+          worksOnLavaland: true
+      - !type:HealthChange
+        damage:
+          types:
+            Bloodloss: -1.25
+        conditions:
+        - !type:PressureThresholdCondition
+          min: 1
+          max: 50
+          worksOnLavaland: true
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentCondition
+          reagent: MinersSalve
+          min: 21
+        - !type:PressureThresholdCondition
+          min: 1
+          max: 50
+          worksOnLavaland: true
+        damage:
+          types:
+            Poison: 5
+            Cold: 5
+      - !type:Jitter
+      - !type:PopupMessage
+        type: Local
+        visualType: Small
+        messages: [ "generic-reagent-effect-burning-insides" ]
+        probability: 0.1
+      - !type:Emote
+        emote: Scream
+        probability: 0.05
+        #It's balanced I swear!
+
+- type: reagent
+  id: Luxurium
+  name: reagent-name-luxurium
+  group: Medicine
+  desc: reagent-desc-luxurium
+  physicalDesc: reagent-physical-desc-powdery
+  flavor: metallic
+  color: "#302f70"
+  recognizable: true
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:EvenHealthChange
+        damage:
+          Toxin: 1.5
+          Brute: 7.5
+          Burn: 4
+          Airloss: 1.5
+      - !type:HealthChange
+        damage:
+          types:
+            Cold: 2
+            Asphyxiation: 1.75
+            Bloodloss: 3
+      - !type:EvenHealthChange
+        damage:
+          Toxin: -1.5
+          Brute: -7.5
+          Burn: -4
+          Airloss: -1.5
+        conditions:
+          - !type:PressureThresholdCondition
+            min: 1
+            max: 50
+            worksOnLavaland: true
+      - !type:HealthChange
+        damage:
+          types:
+            Cold: -2
+            Asphyxiation: -1.75
+            Bloodloss: -3
+        conditions:
+          - !type:PressureThresholdCondition
+            min: 1
+            max: 50
+            worksOnLavaland: true
+      # Cuts the amount healed roughly by 50% when in normal pressure.
+
+- type: reagent
+  id: VitriumFroth
+  name: reagent-name-vitrium-froth
+  group: Medicine
+  desc: reagent-desc-vitrium-froth
+  physicalDesc: reagent-physical-desc-exotic-smelling
+  flavor: sweet
+  color: "#d3a308"
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:EvenHealthChange
+        damage:
+          Brute: -2
+      - !type:HealthChange
+        damage:
+          types:
+            Heat: -1
+            Shock: -1
+            Cold: -1
+
+- type: reagent
+  id: SerakaExtract
+  name: reagent-name-seraka-extract
+  group: Medicine
+  desc: reagent-desc-seraka-extract
+  physicalDesc: reagent-physical-desc-sticky
+  flavor: metallic
+  color: "#00767c"
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Bloodloss: -1
+      - !type:ModifyBleed
+        amount: -1
+      - !type:ModifyBloodLevel
+        amount: 1
+      - !type:EvenHealthChange # Overdose can cause blood to clot in the veins
+        conditions:
+        - !type:ReagentCondition
+          reagent: SerakaExtract
+          min: 8
+        damage:
+          Airloss: 7

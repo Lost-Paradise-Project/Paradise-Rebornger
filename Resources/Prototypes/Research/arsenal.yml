@@ -11,6 +11,11 @@
   - WeaponProtoKineticAccelerator
   - ShuttleGunKineticCircuitboard
   - FiringPinExpedition # Starlight
+  # Lavaland Change start
+  - WeaponProtoKineticShotgun
+  - WeaponProtoKineticRepeater
+  - WeaponProtoKineticPistol
+  # Lavaland Change end
   position: 6, 19 # LP edit
   radioChannels:
   - Security
@@ -265,24 +270,26 @@
   radioChannels:
   - Security
 
-- type: technology
-  id: KineticModifications
-  name: research-technology-kinetic-modifications
-  icon:
-    sprite: Objects/Tools/upgrade.rsi
-    state: display
-  discipline: Arsenal
-  tier: 2
-  cost: 7500
-  recipeUnlocks:
-  - PKAUpgradeDamage
-  - PKAUpgradeRange
-  - PKAUpgradeFireRate
-  position: 11, 18 # LP edit
-  technologyPrerequisites:
-  - WaveParticleHarnessing
-  radioChannels:
-  - Security
+# Lavaland Change Start
+# - type: technology
+#   id: KineticModifications
+#   name: research-technology-kinetic-modifications
+#   icon:
+#     sprite: Objects/Tools/upgrade.rsi
+#     state: display
+#   discipline: Arsenal
+#   tier: 2
+#   cost: 7500
+#   recipeUnlocks:
+#   - PKAUpgradeDamage
+#   - PKAUpgradeRange
+#   - PKAUpgradeFireRate
+#   position: 11, 18 # LP edit
+#   technologyPrerequisites:
+#   - WaveParticleHarnessing
+#   radioChannels:
+#   - Security
+# Lavaland Change End
 
 - type: technology
   id: PortableMicrofusionWeaponry

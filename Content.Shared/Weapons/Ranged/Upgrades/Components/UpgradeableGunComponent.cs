@@ -1,3 +1,4 @@
+/* We use Lavaland system now. LP Edit.
 using Content.Shared.Whitelist;
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
@@ -34,3 +35,4 @@ public sealed partial class UpgradeableGunComponent : Component
     [DataField]
     public int MaxUpgradeCount = 3; ///LP edit
 }
+*/

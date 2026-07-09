@@ -116,6 +116,7 @@
         reagents:
         - ReagentId: Laughter
           Quantity: 300
+    - type: Fauna # Lavaland Change
 - type: entity
   name: behonker
   parent: BaseMobBehonker

@@ -27,6 +27,7 @@
   id: LockerFillShaftMiner
   table: !type:AllSelector
     children:
+    - id: UndeterminedWeaponShaftMiner
     - id: ClothingBeltUtilityFilled
     - id: SurvivalKnife
     - !type:NestedSelector

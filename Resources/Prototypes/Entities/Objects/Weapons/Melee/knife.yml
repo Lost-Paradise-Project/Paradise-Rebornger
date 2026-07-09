@@ -158,6 +158,11 @@
     malus: 0.225
   - type: ThrowingAngle
     angle: 225
+  - type: GunUpgrade # Lavaland Change
+    name: gun-upgrade-bayonet-name
+    examineTextType: gun-upgrade-examine-type-can-use
+    insertedTextType: gun-upgrade-inserted-examine-type-attached
+  - type: GunUpgradeBayonet # Lavaland Change
   - type: Fixtures
     fixtures:
       fix1:

@@ -39,6 +39,7 @@
   - LPPClothingUniformJumpskirtCargoTurtleneck
   - LPPClothingUniformJumpskirtCargoShirt
   # LP edit end
+  - ClothingUniformJumpsuitShaftMiner # Lavaland Change
 
 - type: latheRecipePack
   id: ClothingCommand

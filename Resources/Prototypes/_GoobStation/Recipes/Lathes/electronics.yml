@@ -1,0 +1,4 @@
+- type: latheRecipe
+  parent: [ BaseCircuitboardRecipe, BaseEngineeringMachineRecipeCategory ]
+  id: TelecomTransmitterCircuitboard
+  result: TelecomTransmitterCircuitboard

@@ -606,6 +606,9 @@
         },
         {
             "name": "panel_open"
+        },
+        {
+            "name": "salvage_door"
         }
     ]
 }

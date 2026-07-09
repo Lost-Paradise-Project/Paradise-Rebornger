@@ -69,7 +69,13 @@
   id: SalvageSecurityWeapons
   recipes:
   - WeaponProtoKineticAccelerator
+  # Lavaland Edit Start
+  - WeaponProtoKineticShotgun
+  - WeaponProtoKineticRepeater
+  - WeaponProtoKineticPistol
+  # Lavaland Edit End
   - PKAUpgradeDamage
   - PKAUpgradeRange
   - PKAUpgradeFireRate
+  - PKAUpgradeSpace # Lavaland Edit
   - FiringPinExpedition # starlight

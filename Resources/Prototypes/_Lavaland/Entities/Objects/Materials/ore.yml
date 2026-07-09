@@ -1,3 +1,41 @@
+- type: entity
+  parent: OreBase
+  id: ArtifactFragmentOre
+  name: artifact fragment ore
+  suffix: Full
+  components:
+  - type: Stack
+    stackType: ArtifactFragmentOre
+  - type: Sprite
+    sprite: _Lavaland/Objects/Materials/ore.rsi
+    state: artifact
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      RawArtifactFragment: 100
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Artifexium
+        Quantity: 10
+  - type: GuideHelp
+    guides:
+    - Xenoarchaeology
+  - type: Item
+    heldPrefix: artifact
+  - type: Tag
+    tags:
+    - Ore
+    - OreGold
+
+- type: entity
+  parent: ArtifactFragmentOre
+  id: ArtifactFragmentOre1
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1
+
 # This is kinda shitty, but the other choice is fucking with StackSystem to allow it to track entities so I can keep tabs on which ore specifically has been clained.
 # Or cook some nasty shitcode to split the unclaimed value across all of the entities in the stack if there is any. But that feels fairly wonky.
 # Enjoy having to shove any new ores here.
@@ -261,3 +299,23 @@
   components:
   - type: Stack
     count: 90
+
+- type: entity
+  parent: ArtifactFragmentOre
+  id: ArtifactFragmentOreUnprocessed
+  name: unprocessed artifact fragment ore
+  suffix: Full
+  components:
+  - type: Stack
+    stackType: ArtifactFragmentOreUnprocessed
+  - type: UnclaimedOre
+    miningPoints: 200
+
+- type: entity
+  parent: ArtifactFragmentOreUnprocessed
+  id: ArtifactFragmentOre1Unprocessed
+  name: unprocessed artifact fragment ore
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1

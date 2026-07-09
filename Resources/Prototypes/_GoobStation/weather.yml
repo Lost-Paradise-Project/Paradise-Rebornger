@@ -1,0 +1,27 @@
+- type: weather
+  id: Ashfall
+  sprite:
+    sprite: /Textures/Effects/weather.rsi
+    state: ashfall
+  sound:
+    path: /Audio/Effects/Weather/snowstorm_weak.ogg
+    params:
+      loop: true
+      volume: -6
+  damage: # DeltaV
+    types:
+      Heat: 4
+  damageBlacklist: # DeltaV
+    components:
+    - WeatherImmune
+
+- type: weather
+  id: AshfallLight
+  sprite:
+    sprite: /Textures/Effects/weather.rsi
+    state: ashfall_light
+  sound:
+    path: /Audio/Effects/Weather/snowstorm_weak.ogg
+    params:
+      loop: true
+      volume: -6

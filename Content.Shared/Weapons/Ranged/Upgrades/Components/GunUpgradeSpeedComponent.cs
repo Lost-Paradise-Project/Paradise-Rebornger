@@ -1,3 +1,4 @@
+/* We use Lavaland system now. LP Edit.
 using Robust.Shared.GameStates;
 
 namespace Content.Shared.Weapons.Ranged.Upgrades.Components;
@@ -14,3 +15,4 @@ public sealed partial class GunUpgradeSpeedComponent : Component
     [DataField]
     public float Coefficient = 1;
 }
+*/

@@ -54,9 +54,15 @@
   - WeaponPistolCHIMP
   - WeaponForceGun
   - WeaponProtoKineticAccelerator
+  # Lavaland Edit Start
+  - WeaponProtoKineticShotgun
+  - WeaponProtoKineticRepeater
+  - WeaponProtoKineticPistol
+  # Lavaland Edit End
   - PKAUpgradeDamage
   - PKAUpgradeRange
   - PKAUpgradeFireRate
+  - PKAUpgradeSpace # Lavaland Edit
   - WeaponTetherGun
   - WeaponGauntletGorilla
   - FiringPinExpedition # Starlight
