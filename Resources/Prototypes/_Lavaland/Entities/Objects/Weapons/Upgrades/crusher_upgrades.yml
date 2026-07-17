@@ -43,11 +43,11 @@
       soundGunshot: /Audio/Weapons/plasma_cutter.ogg
       fireRate: 1
       useKey: false
-    - type: MapRestrictedGun
-      planetWhitelist:
-        components:
-        - Biome
-      popupOnBlock: gun-lavaland-restricted-message
+    # - type: MapRestrictedGun
+    #   planetWhitelist:
+    #     components:
+    #     - Biome
+    #   popupOnBlock: gun-lavaland-restricted-message
     - type: RechargeBasicEntityAmmo
       rechargeCooldown: 1
       rechargeSound:
@@ -84,11 +84,11 @@
       soundGunshot: /Audio/Weapons/plasma_cutter.ogg
       fireRate: 0.125
       useKey: false
-    - type: MapRestrictedGun
-      planetWhitelist:
-        components:
-        - Biome
-      popupOnBlock: gun-lavaland-restricted-message
+    # - type: MapRestrictedGun
+    #   planetWhitelist:
+    #     components:
+    #     - Biome
+    #   popupOnBlock: gun-lavaland-restricted-message
     - type: RechargeBasicEntityAmmo
       rechargeCooldown: 8
       rechargeSound:
