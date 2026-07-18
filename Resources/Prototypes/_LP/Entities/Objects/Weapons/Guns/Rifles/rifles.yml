@@ -337,7 +337,7 @@
     maxAngle: 0
   - type: Gun
     minAngle: 16
-    maxAngle: 25  
+    maxAngle: 25
     fireRate: 5
     selectedMode: Burst
     availableModes:
@@ -357,4 +357,4 @@
     sprite: Objects/Weapons/Guns/Rifles/ak.rsi
     layers:
       - state: icon
-    
+

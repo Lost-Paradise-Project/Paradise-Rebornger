@@ -41,7 +41,7 @@
   difficulty: Medium
   cost: 2
   serverRewardPoints: 10
-  bitrunningRewardPoints: 695 
+  bitrunningRewardPoints: 695
   forcedLoadout: BitrunnerAvatarUSSP
   isModular: true
   mapPath: /Maps/_LP/Bitrun/ussppunk.yml

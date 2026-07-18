@@ -290,7 +290,7 @@
     maxAngle: 0
   - type: Gun
     minAngle: 2
-    maxAngle: 5  
+    maxAngle: 5
     fireRate: 0.35
     selectedMode: SemiAuto
     availableModes:
@@ -307,4 +307,4 @@
     sprite: _LP/Objects/Weapons/Guns/Snipers/Shasspo.rsi
     layers:
       - state: icon
-    
+
