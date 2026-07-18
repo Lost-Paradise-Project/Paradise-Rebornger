@@ -11,7 +11,7 @@
   difficulty: Easy
   cost: 1
   serverRewardPoints: 3
-  bitrunningRewardPoints: 600
+  bitrunningRewardPoints: 580
   isModular: true
   mapPath: /Maps/_LP/Bitrun/floor_its_lava.yml
   objectiveType: CollectEncryptedCaches
@@ -27,7 +27,7 @@
   difficulty: Medium
   cost: 2
   serverRewardPoints: 6
-  bitrunningRewardPoints: 425
+  bitrunningRewardPoints: 625
   forcedLoadout: BitrunnerAvatarERTcombat
   isModular: true
   mapPath: /Maps/_LP/Bitrun/ert.yml
@@ -41,10 +41,24 @@
   difficulty: Medium
   cost: 2
   serverRewardPoints: 10
-  bitrunningRewardPoints: 195
+  bitrunningRewardPoints: 695 
   forcedLoadout: BitrunnerAvatarUSSP
   isModular: true
   mapPath: /Maps/_LP/Bitrun/ussppunk.yml
+  objectiveType: EliminateEnemies
+  objectiveTarget: 0
+
+- type: bitrunningVirtualDomain
+  id: LPPCounterPunchMirage # Кска, мираж
+  name: bitrunning-domain-counter-punch-mirage-name
+  description: bitrunning-domain-counter-punch-mirage-desc
+  difficulty: Medium
+  cost: 4
+  serverRewardPoints: 8
+  bitrunningRewardPoints: 750
+  forcedLoadout: BitrunnerAvatarCounterTerrorist
+  isModular: true
+  mapPath: /Maps/_LP/Bitrun/counter_punch_series/mirage.yml
   objectiveType: EliminateEnemies
   objectiveTarget: 0
 

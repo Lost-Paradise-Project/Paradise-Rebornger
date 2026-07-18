@@ -670,6 +670,9 @@
     prototypes:
       - LPPMobNecronFlesher
 
+#
+# Увульпы для уровня "зачистки дорм"
+#
 # спавнер злой розовой вульпы с "битой"
 - type: entity
   parent: MarkerBase
@@ -775,3 +778,78 @@
   - type: ConditionalSpawner
     prototypes:
       - LPPMobPinkVulpkaninERPSlashBitrunning
+
+#
+# террористы для уровней серии "Контрудар"
+#
+# Спавнер террориста с калашом
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobTerroristAutoRifleBitrunning
+  name: Spawner Terrorist AutoRifle bitrun
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Mobs/Species/Human/parts.rsi
+      state: full
+    - sprite: Objects/Weapons/Guns/Rifles/ak.rsi
+      state: icon
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobTerroristAutoRifle
+
+# Спавнер террориста с ППшкой
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobTerroristSubmachineGunBitrunning
+  name: Spawner Terrorist SubmachineGun bitrun
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Mobs/Species/Human/parts.rsi
+      state: full
+    - sprite: Objects/Weapons/Guns/SMGs/drozd.rsi
+      state: icon
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobTerroristSubmachineGun
+
+# Спавнер террориста с Снайпой
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobTerroristSniperBitrunning
+  name: Spawner Terrorist Sniper bitrun
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Mobs/Species/Human/parts.rsi
+      state: full
+    - sprite: _LP/Objects/Weapons/Guns/Snipers/Shasspo.rsi
+      state: icon
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobTerroristSniper
+
+# Спавнер террориста с дробовиком
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobTerroristShotgunBitrunning
+  name: Spawner Terrorist Shotgun bitrun
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Mobs/Species/Human/parts.rsi
+      state: full
+    - sprite: Objects/Weapons/Guns/Shotguns/pump.rsi
+      state: icon
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobTerroristShotgun

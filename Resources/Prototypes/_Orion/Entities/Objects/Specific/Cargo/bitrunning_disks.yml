@@ -63,7 +63,7 @@
       bitrunning-disk-option-scraphelm: ClothingHeadHelmetScrap
       bitrunning-disk-option-bonearmor: ClothingOuterArmorBone
       bitrunning-disk-option-bonehelm: ClothingHeadHelmetBone
-      bitrunning-disk-option-swatepictemic: LPPlothingOuterArmorSwatEpistemic
+      bitrunning-disk-option-swatepictemic: LPPClothingOuterArmorSwatEpistemic
       bitrunning-disk-option-swatepictemichelm: LPPClothingHeadHelmetSwatEpistemic
       bitrunning-disk-option-templararmor: ClothingOuterArmorTemplar
       bitrunning-disk-option-templarhelm: ClothingHeadHatHelmetTemplar

@@ -323,3 +323,38 @@
     containers:
       firing_pin:
       - FiringPin
+
+# Калаш для террористов битрана
+- type: entity
+  name: Kalash
+  parent: [BaseLaserRifle, BaseGunWieldable]
+  id: LPPWeaponRifleAkBitrunning
+  description: "A Kalashnikov assault rifle that needs no introduction, common in both the digital and real worlds. \nLoaded with real digital .30 caliber rifle cartridges."
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: GunWieldBonus
+    minAngle: 0
+    maxAngle: 0
+  - type: Gun
+    minAngle: 16
+    maxAngle: 25  
+    fireRate: 5
+    selectedMode: Burst
+    availableModes:
+      - Burst
+      - SemiAuto
+    shotsPerBurst: 3
+    burstCooldown: 1.6
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rifle2.ogg
+  - type: BatteryAmmoProvider
+    proto: CartridgeLightRifle
+    fireCost: 1
+  - type: Battery
+    maxCharge: 120
+    startingCharge: 120
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Rifles/ak.rsi
+    layers:
+      - state: icon
+    

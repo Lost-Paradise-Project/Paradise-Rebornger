@@ -1,0 +1,34 @@
+# Пистолет-пулемёт для террористов битрана
+- type: entity
+  name: LPPPetuh
+  parent: [BaseLaserRifle, BaseGunWieldable]
+  id: LPPWeaponSubMachineGunDrozdBitrunning
+  description: "A submachine gun, likely named after those who use it. \nLoaded with genuine digital .35 Auto rounds."
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: GunWieldBonus
+    minAngle: 0
+    maxAngle: 0
+  - type: Gun
+    minAngle: 18
+    maxAngle: 28  
+    fireRate: 5
+    selectedMode: Burst
+    availableModes:
+      - Burst
+      - SemiAuto
+    shotsPerBurst: 5
+    burstCooldown: 1.5
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/atreides.ogg
+  - type: BatteryAmmoProvider
+    proto: CartridgePistol
+    fireCost: 1
+  - type: Battery
+    maxCharge: 150
+    startingCharge: 150
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/SMGs/drozd.rsi
+    layers:
+      - state: icon
+    
