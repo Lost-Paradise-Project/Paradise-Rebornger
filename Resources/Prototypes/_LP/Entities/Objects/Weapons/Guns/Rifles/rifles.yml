@@ -357,4 +357,3 @@
     sprite: Objects/Weapons/Guns/Rifles/ak.rsi
     layers:
       - state: icon
-

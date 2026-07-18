@@ -31,4 +31,3 @@
     sprite: Objects/Weapons/Guns/SMGs/drozd.rsi
     layers:
       - state: icon
-
