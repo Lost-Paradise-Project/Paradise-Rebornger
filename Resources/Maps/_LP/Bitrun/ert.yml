@@ -8628,7 +8628,7 @@ entities:
     - type: Transform
       pos: -19.459272,-14.106623
       parent: 1
-- proto: LPPlothingOuterArmorSwatAlternative
+- proto: LPPClothingOuterArmorSwatAlternative
   entities:
   - uid: 159
     components:

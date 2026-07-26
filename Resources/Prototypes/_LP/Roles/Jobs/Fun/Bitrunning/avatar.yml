@@ -252,6 +252,29 @@
     outerClothing: LPPClothingOuterArmorSoviet
     belt: LPPClothingBeltSovietWebbing
     head: ClothingHeadHatUshanka
+
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  id: BitrunnerAvatarCounterTerrorist # КТшник для уровней серии "Контрдар"
+  equipment:
+    head: ClothingHeadHelmetSwat
+    mask: ClothingMaskGasSwat
+    jumpsuit: ClothingUniformJumpsuitTurtleneckTactick
+    gloves: ClothingHandsGlovesCombat
+    shoes: ClothingShoesSwat
+    outerClothing: LPPClothingOuterArmorSwat
+    belt: LPPClothingBeltPGWebbing
+  inhand:
+  - WeaponRifleM16A4
+  storage:
+    belt:
+    - MagazineRifle
+    - MagazineRifle
+    - MagazineRifle
+    - MagazineRifle
+    - MagazineBoxRifle
+    - MagazineBoxRifle
+
 # --- КИБЕРПОЛИЦИЯ ---
 
 - type: startingGear
@@ -323,7 +346,7 @@
   parent: BitrunnerCyberPolice
   id: BitrunnerCyberPoliceMedium
   equipment:
-    outerClothing: LPPlothingOuterArmorSwatAlternative
+    outerClothing: LPPClothingOuterArmorSwatAlternative
     head: LPPClothingHeadHelmetSwatAlternative
     pocket1: MagazineRifle
     pocket2: MagazineRifle
@@ -341,7 +364,7 @@
   parent: BitrunnerCyberPolice
   id: BitrunnerCyberPoliceMediumMelee
   equipment:
-    outerClothing: LPPlothingOuterArmorSwat
+    outerClothing: LPPClothingOuterArmorSwat
     head: LPPClothingHeadHelmetSwat
     pocket1: WeaponRevolverFaith
     pocket2: SyringeStimulants

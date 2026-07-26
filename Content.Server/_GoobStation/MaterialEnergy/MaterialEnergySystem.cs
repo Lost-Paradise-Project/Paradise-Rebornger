@@ -3,6 +3,7 @@ using Content.Server.Stack;
 using Content.Shared.Interaction;
 using Content.Shared.Materials;
 using Content.Shared.Stacks;
+using Robust.Shared.Timing; // LP Edit
 
 namespace Content.Server._GoobStation.MaterialEnergy
 {
@@ -21,7 +22,9 @@ namespace Content.Server._GoobStation.MaterialEnergy
 
         private void OnInteract(EntityUid uid, MaterialEnergyComponent component, InteractUsingEvent args)
         {
-            if (component.MaterialWhiteList == null)
+            args.Handled = true; // LP Edit
+
+            if (component.MaterialWhiteList == null || component.LowQualityMaterialWhiteList == null) // LP Edit
                 return;
 
             _entityManager.TryGetComponent<PhysicalCompositionComponent>(args.Used, out var _composition);
@@ -39,44 +42,60 @@ namespace Content.Server._GoobStation.MaterialEnergy
                         uid,
                         args.Used,
                         _composition.MaterialComposition[fueltype],
-                        materialStack.Count);
+            // LP Edit Start, player can now use low quality materials to charge the plasma cutter, but at half efficiency
+                        materialStack.Count,
+                        isLowQuality: false);
             }
+
+            foreach (var fueltype in component.LowQualityMaterialWhiteList)
+            {
+                if (_composition.MaterialComposition.ContainsKey(fueltype))
+                    AddBatteryCharge(
+                        uid,
+                        args.Used,
+                        _composition.MaterialComposition[fueltype],
+                        materialStack.Count,
+                        isLowQuality: true);
+            }
+            // LP Edit End, player can now use low quality materials to charge the plasma cutter, but at half efficiency
         }
 
         private void AddBatteryCharge(
             EntityUid cutter,
             EntityUid _material,
             int materialPerSheet,
-            int sheetsInStack)
+            int sheetsInStack, // LP Edit
+            bool isLowQuality = false) // LP Edit
         {
             var chargeDiff = _batterySystem.GetChargeDifference(cutter);
-            if (chargeDiff == 0)
+
+            // LP Edit Start, player can now use low quality materials to charge the plasma cutter, but at half efficiency
+
+            if (chargeDiff <= 0)
                 return;
 
-            var totalMaterial = materialPerSheet * sheetsInStack;
-            var materialLeft = totalMaterial - chargeDiff;
-            var chargeToAdd = 0;
+            var totalEnergy = materialPerSheet * sheetsInStack;
+            var efficiency = isLowQuality ? 0.5f : 1f;
+            var energy = Math.Min(chargeDiff, (int)(totalEnergy * efficiency));
 
-            if (materialLeft == 0)
-            {
-                chargeToAdd = totalMaterial;
-            }
-            else if (materialLeft > 0)
-            {
-                chargeToAdd = (totalMaterial - materialLeft);
-            }
-            else
-            {
-                chargeToAdd = Math.Abs(Math.Abs(materialLeft) - chargeDiff);
-            }
+            if (energy <= 0)
+                return;
 
-            _batterySystem.AddCharge(cutter, chargeToAdd);
+            _batterySystem.AddCharge(cutter, energy);
 
-            var toDel = _stack.Split(
-                (EntityUid)_material,
-                chargeToAdd / materialPerSheet,
-                Transform(_material).Coordinates);
-            QueueDel(toDel);
+            var sheetsToRemove = (int)Math.Ceiling(energy / (materialPerSheet * efficiency));
+            var stackCount = Math.Min(sheetsToRemove, sheetsInStack);
+
+            if (stackCount > 0)
+            {
+                var removed = _stack.Split(_material, stackCount, Transform(_material).Coordinates);
+
+                Timer.Spawn(0, () =>
+                {
+                    if (Exists(removed))QueueDel(removed);
+                });
+            }
+            // LP Edit End, player can now use low quality materials to charge the plasma cutter, but at half efficiency
         }
     }
 }

@@ -14,12 +14,13 @@
   - type: Item
     size: Normal
     shape:
-    - 0,0,2,2
+    - 0,0,1,1 # LP Edit
   - type: Battery
     maxCharge: 1500
     startingCharge: 1500
   - type: MaterialEnergy
     materialWhiteList: [Plasma]
+    lowQualityMaterialWhiteList: [RawPlasma] # LP Edit
   - type: BatteryAmmoProvider
     proto: BulletPlasmaCutter
     fireCost: 100
