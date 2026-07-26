@@ -1,0 +1,32 @@
+- type: loadoutEffectGroup
+  id: MasterMiner
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobSalvageSpecialist
+      time: 72000 #20 hours
+
+- type: loadout
+  id: MinerCloak
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterMiner
+  equipment:
+    neck: ClothingNeckCloakSalvagerSupreme
+
+# Shaft Miner
+- type: loadout
+  id: ShaftMinerJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitShaftMiner
+
+- type: loadout
+  id: ShaftMinerJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtShaftMiner
+
+- type: loadout
+  id: ShaftMinerOveralls
+  equipment:
+    jumpsuit: ClothingUniformOverallsShaftMiner

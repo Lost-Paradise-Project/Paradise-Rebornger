@@ -18,3 +18,36 @@
   - type: GunRequiresWield
   - type: FiringPinHolder
     supportedPins: [ Rifle, GunUpgrade ]
+
+# Дробовик для террористов битрана
+- type: entity
+  name: Stara
+  parent: [BaseLaserRifle, BaseGunWieldable]
+  id: LPPWeaponShotgunKammererBitrunning
+  description: "A good old pump-action shotgun. \nLoaded with real digital .50 caliber ammo."
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: GunWieldBonus
+    minAngle: 0
+    maxAngle: 0
+  - type: Gun
+    fireRate: 0.5
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Corvax/Weapons/Guns/Gunshots/shotgun_alt.ogg
+  - type: BatteryAmmoProvider
+    proto: ShellShotgun
+    fireCost: 1
+  - type: Battery
+    maxCharge: 40
+    startingCharge: 40
+  - type: Item
+    sprite: Objects/Weapons/Guns/Shotguns/pump_inhands_64x.rsi
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Shotguns/pump.rsi
+    layers:
+      - state: icon
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Shotguns/pump.rsi

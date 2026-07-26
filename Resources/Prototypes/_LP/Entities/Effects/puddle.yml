@@ -1,0 +1,39 @@
+# лужа семени, кринж
+- type: entity
+  id: LPPPuddleMaleCumBig
+  parent: PuddleTemporary
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      puddle:
+        maxVol: 1000
+        reagents:
+        - ReagentId: MaleCum
+          Quantity: 33
+
+- type: entity
+  id: LPPPuddleMaleCumMedium
+  parent: PuddleTemporary
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      puddle:
+        maxVol: 1000
+        reagents:
+        - ReagentId: MaleCum
+          Quantity: 17
+
+- type: entity
+  id: LPPPuddleMaleCumSmall
+  parent: PuddleTemporary
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      puddle:
+        maxVol: 1000
+        reagents:
+        - ReagentId: MaleCum
+          Quantity: 5

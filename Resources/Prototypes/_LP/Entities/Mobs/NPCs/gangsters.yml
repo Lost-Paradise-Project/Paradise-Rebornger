@@ -1,0 +1,195 @@
+- type: entity
+  parent: MobHuman
+  id: LPPMobGangsterMobster
+  name: Mobster
+  suffix: AI, Gangster
+  components:
+  - type: NpcFactionMember
+    factions:
+    - AllHostile
+  - type: Loadout
+    prototypes:
+    - LPPGangsterMobster
+  - type: HTN
+    rootTask:
+      task: SimpleHumanoidHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        false
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: BitrunningDomainEnemyObjective
+
+- type: entity
+  parent: MobHuman
+  id: LPPMobGangsterMobsterAlt
+  name: Mobster
+  suffix: AI, Gangster, Alt
+  components:
+  - type: NpcFactionMember
+    factions:
+    - AllHostile
+  - type: Loadout
+    prototypes:
+    - LPPGangsterMobsterAlt
+  - type: HTN
+    rootTask:
+      task: SimpleHumanoidHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        false
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: BitrunningDomainEnemyObjective
+
+- type: entity
+  parent: MobHuman
+  id: LPPMobGangsterMobsterShooter
+  name: Mobster shooter
+  suffix: AI, Gangster, Shooter
+  components:
+  - type: NpcFactionMember
+    factions:
+    - AllHostile
+  - type: Loadout
+    prototypes:
+    - LPPGangsterMobsterShooter
+  - type: HTN
+    rootTask:
+      task: SimpleHumanoidHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        false
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: BitrunningDomainEnemyObjective
+
+- type: entity
+  parent: MobHuman
+  id: LPPMobGangsterMobsterElite
+  name: Mobster elite
+  suffix: AI, Gangster, elite
+  components:
+  - type: NpcFactionMember
+    factions:
+    - AllHostile
+  - type: Loadout
+    prototypes:
+    - LPPGangsterMobsterElite
+  - type: HTN
+    rootTask:
+      task: SimpleHumanoidHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        false
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: BitrunningDomainEnemyObjective
+
+- type: entity
+  parent: MobHuman
+  id: LPPMobGangsterMobsterBodyguard
+  name: Mobster bodyguard
+  suffix: AI, Gangster, bodyguard
+  components:
+  - type: NpcFactionMember
+    factions:
+    - AllHostile
+  - type: Loadout
+    prototypes:
+    - LPPGangsterMobsterBodyguard
+  - type: HTN
+    rootTask:
+      task: SimpleHumanoidHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        false
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: BitrunningDomainEnemyObjective
+
+- type: entity
+  parent: MobHuman
+  id: LPPMobGangsterMobsterBodyguardAlt
+  name: Mobster bodyguard
+  suffix: AI, Gangster, Bodyguard, Alt
+  components:
+  - type: NpcFactionMember
+    factions:
+    - AllHostile
+  - type: Loadout
+    prototypes:
+    - LPPGangsterMobsterBodyguardAlt
+  - type: HTN
+    rootTask:
+      task: SimpleHumanoidHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        false
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: BitrunningDomainEnemyObjective
+
+- type: entity
+  parent: MobHuman
+  id: LPPMobGangsterMafiaBoss
+  name: Mafia boss
+  suffix: AI, Gangster, Boss
+  components:
+  - type: NpcFactionMember
+    factions:
+    - AllHostile
+  - type: Loadout
+    prototypes:
+    - LPPGangsterMafiaBoss
+  - type: HTN
+    rootTask:
+      task: SimpleHumanoidHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        false
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: Perishable
+    molsPerSecondPerUnitMass: 0
+  - type: BitrunningDomainEnemyObjective

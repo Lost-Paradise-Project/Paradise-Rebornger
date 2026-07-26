@@ -40,6 +40,7 @@
   - type: ZombieImmune
   - type: ProtectedFromStepTriggers
   - type: StunVisuals
+  - type: Fauna # Lavaland Change
 
 - type: entity
   abstract: true
@@ -386,6 +387,7 @@
     solution: bloodstream
   - type: DrainableSolution
     solution: bloodstream
+  - type: Fauna # Lavaland Change
 
 - type: entity
   parent: MarkerBase

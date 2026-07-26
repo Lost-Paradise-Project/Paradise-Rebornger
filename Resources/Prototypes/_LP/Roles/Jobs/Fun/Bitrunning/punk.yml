@@ -1,0 +1,107 @@
+- type: startingGear
+  id: LPPPunk
+  equipment:
+    jumpsuit: ClothingUniformRandomPunkCroptopShorts
+    shoes: ClothingShoesBootsPunkRandomized
+    eyes: ClothingEyesPunkGoggles
+  inhand:
+  - PlasmaShiv
+
+- type: startingGear
+  id: LPPPunkShield
+  equipment:
+    jumpsuit: ClothingUniformRandomPunkCroptopShorts
+    shoes: ClothingShoesBootsPunkRandomized
+    eyes: ClothingEyesPunkGoggles
+    mask: ClothingMaskPunkHalf
+  inhand:
+  - SpearPlasma
+  - MakeshiftShield
+
+- type: startingGear
+  id: LPPPunkShooter
+  equipment:
+    jumpsuit: ClothingUniformRandomPunkCroptopShorts
+    shoes: ClothingShoesBootsPunkRandomized
+    eyes: ClothingEyesPunkGoggles
+    mask: ClothingMaskPunkHalf
+  inhand:
+  - WeaponPocketDisabler
+  - WeaponCrusherDagger
+
+- type: startingGear
+  id: LPPPunkArmored
+  equipment:
+    jumpsuit: ClothingUniformRandomPunkTanktopShorts
+    shoes: ClothingShoesBootsPunkRandomized
+    eyes: ClothingEyesPunkGoggles
+    outerClothing: ClothingOuterArmorPunkRandomized
+    mask: ClothingMaskPunkHalf
+  inhand:
+  - Machete
+
+- type: startingGear
+  id: LPPPunkArmoredShield
+  equipment:
+    jumpsuit: ClothingUniformRandomPunkTanktopShorts
+    shoes: ClothingShoesBootsPunkRandomized
+    eyes: ClothingEyesPunkGoggles
+    outerClothing: ClothingOuterArmorPunkRandomized
+    mask: ClothingMaskPunkHalf
+    head: ClothingHeadHelmetScrap
+  inhand:
+  - Claymore
+  - WoodenBuckler
+
+- type: startingGear
+  id: LPPPunkArmoredShooter
+  equipment:
+    jumpsuit: ClothingUniformRandomPunkTanktopShorts
+    shoes: ClothingShoesBootsPunkRandomized
+    eyes: ClothingEyesPunkGoggles
+    outerClothing: ClothingOuterArmorPunkRandomized
+    mask: ClothingMaskPunkHalf
+  inhand:
+  - WeaponMakeshiftLaser
+  - PlasmaShiv
+
+- type: startingGear
+  id: LPPPunkElite
+  equipment:
+    jumpsuit: ClothingUniformRandomPunkTanktop
+    shoes: ClothingShoesBootsPunkRandomized
+    eyes: ClothingEyesPunkInfoShades
+    outerClothing: ClothingOuterArmorElitePunkRandomized
+    mask: ClothingMaskPunkHalf
+    belt: ClothingBeltPunkRandomized
+  inhand:
+  - WeaponPistolFlintlock
+  - Machete
+
+- type: startingGear
+  id: LPPPunkEliteShield
+  equipment:
+    jumpsuit: ClothingUniformRandomPunkTanktop
+    shoes: ClothingShoesBootsPunkRandomized
+    eyes: ClothingEyesPunkInfoShades
+    outerClothing: ClothingOuterArmorElitePunkRandomized
+    mask: ClothingMaskPunkHalf
+    belt: ClothingBeltPunkRandomized
+    head: ClothingHeadHatHelmetClock
+  inhand:
+  - FireAxeFlaming
+  - ClockworkShield
+
+- type: startingGear
+  id: LPPPunkEliteShooter
+  equipment:
+    jumpsuit: ClothingUniformRandomPunkTanktop
+    shoes: ClothingShoesBootsPunkRandomized
+    eyes: ClothingEyesPunkInfoShades
+    outerClothing: ClothingOuterArmorElitePunkRandomized
+    mask: ClothingMaskPunkHalf
+    belt: ClothingBeltPunkRandomized
+    head: ClothingHeadHelmetRaid
+  inhand:
+  - LPPWeaponPistolN1912
+  - WeaponRevolverFitz

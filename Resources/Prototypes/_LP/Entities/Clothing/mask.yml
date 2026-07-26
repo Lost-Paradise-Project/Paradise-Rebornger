@@ -307,8 +307,47 @@
   - type: Armor
     modifiers:
       coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+
+- type: entity
+  parent: ClothingMaskGas
+  id: LPPClothingMaskUEGExpeditor
+  name: UEG skitarii expeditor gasmask
+  description: Stirdy gasmask for expeditionary skitarii units.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Mask/UEGexplorer.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Mask/UEGexplorer.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
         Blunt: 0.9
         Slash: 0.9
         Piercing: 0.9
         Heat: 0.9
         Radiation: 0.75
+  - type: HideLayerClothing
+    slots:
+    - Snout
+    - Hair
+
+- type: entity
+  parent: LPPClothingBalaclavawide
+  id: LPPClothingMaskGasSoviet
+  name: Soviet gasmask
+  description: USSP troopers gasmask. Good for protecting your face against shrapnel.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Mask/sovietgas.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Mask/sovietgas.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Piercing: 0.8
+  - type: HideLayerClothing
+    slots:
+    - Snout

@@ -19,7 +19,7 @@
     state: base
   content:
     - LPPWeaponPistolN1912
-    - MagazineBoxPistol
+    - MagazinePistolSubMachineGun
 
 - type: selectableSet
   id: LPPSecuritySetN1912Experimental
@@ -31,6 +31,7 @@
   content:
     - LPPWeaponPistolN1912Experimental
     - MagazinePistol
+    - MagazinePistol
 
 - type: selectableSet
   id: LPPSecuritySetMk93
@@ -41,6 +42,7 @@
     state: icon
   content:
     - WeaponPistolMk93
+    - MagazinePistol
     - MagazinePistol
 
 - type: selectableSet
@@ -74,6 +76,7 @@
   content:
     - WeaponRevolverK38Master
     - SpeedLoaderSpecial
+    - SpeedLoaderSpecial
 
 - type: selectableSet
   id: LPPSecuritySetFitz
@@ -84,6 +87,7 @@
     state: icon
   content:
     - WeaponRevolverFitz
+    - SpeedLoaderSpecial
     - SpeedLoaderSpecial
 
 - type: selectableSet
@@ -127,4 +131,5 @@
     state: icon
   content:
     - WeaponPistolMk58
+    - MagazinePistol
     - MagazinePistol

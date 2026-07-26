@@ -597,10 +597,10 @@
     modifiers:
       coefficients:
         Blunt: 0.6
-        Slash: 0.6
+        Slash: 0.75
         Caustic: 0.6
         Heat: 0.6
-        Radiation: 0.1
+        Radiation: 0.25
         Shock: 0.5
         Cold: 0.5
   - type: ExplosionResistance
@@ -634,7 +634,7 @@
         Piercing: 0.3
         Caustic: 0.2
         Heat: 0.5
-        Radiation: 0.2
+        Radiation: 0.6
   - type: Reflect
     reflectProb: 0.15
     spread: 100
@@ -672,7 +672,7 @@
         Piercing: 0.45
         Caustic: 0.5
         Heat: 0.5
-        Radiation: 0.2
+        Radiation: 0.5
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
@@ -707,7 +707,7 @@
         Piercing: 0.35
         Caustic: 0.2
         Heat: 0.4
-        Radiation: 0.2
+        Radiation: 0.25
   - type: Reflect
     reflectProb: 0.1
     spread: 100

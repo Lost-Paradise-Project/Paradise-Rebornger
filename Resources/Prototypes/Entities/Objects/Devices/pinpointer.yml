@@ -58,7 +58,9 @@
   parent: [ PinpointerBase, BaseCommandContraband ]
   components:
   - type: Pinpointer
-    component: NukeDisk
+    whitelist: # Goob edit: pinpointer whitelist
+      components: 
+      - NukeDisk
     targetName: nuclear authentication disk
 
 - type: entity
@@ -92,7 +94,9 @@
   - type: Icon
     state: pinpointer-syndicate
   - type: Pinpointer
-    component: NukeDisk
+    whitelist: # Goob edit: pinpointer whitelist
+      components: 
+      - NukeDisk
     targetName: nuclear authentication disk
 
 - type: entity
@@ -160,9 +164,14 @@
       - state: inhand-right-top
   - type: Icon
     state: pinpointer-station
+  # Goobstation edit start
   - type: Pinpointer
-    component: ResearchServer
-    targetName: the station
+    targetName: nearest station
+    whitelist: # Goob edit: pinpointer whitelist
+      components:
+      - BecomesStation
+      - LavalandStation # Lavaland change
+  # Goobstation edit end
 
 - type: entity
   parent: [ PinpointerBase, BaseXenoborgContraband ]
@@ -195,7 +204,9 @@
   - type: Icon
     state: pinpointer-xenoborg
   - type: Pinpointer
-    component: MothershipCore
+    whitelist: # Goob edit: pinpointer whitelist
+      components: 
+      - MothershipCore
     targetName: the Mothership
 
 - type: entity

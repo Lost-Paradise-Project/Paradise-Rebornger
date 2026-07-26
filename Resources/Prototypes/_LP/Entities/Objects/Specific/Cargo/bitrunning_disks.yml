@@ -68,7 +68,7 @@
       bitrunning-disk-option-belt-webbingmilitary: ClothingBeltMilitaryWebbing
       bitrunning-disk-option-belt-webbingmilitarymedic: ClothingBeltMilitaryWebbingMed
       bitrunning-disk-option-belt-webbingmilitaryert: ClothingBeltMilitaryWebbingERT
-
+      bitrunning-disk-option-belt-portablerecharger: PortableRecharger
 - type: entity
   parent: BaseBitrunningDisk
   id: LPPBitrunningContainersEliteDisk
@@ -96,6 +96,7 @@
       bitrunning-disk-option-medkit: MedkitFilled
       bitrunning-disk-option-medipen: AirlossAutoInjector
       bitrunning-disk-option-cable: CableApcStack
+      bitrunning-disk-option-powercell: PowerCellHigh
 
 - type: entity
   parent: BaseBitrunningDisk
@@ -115,7 +116,11 @@
       bitrunning-disk-option-weapon-revolverfe: LPPWeaponRevolverFieldEngineer
       bitrunning-disk-option-weapon-temperaturegun: WeaponTemperatureGun
       bitrunning-disk-option-weapon-scout: LPPWeaponSniperScout
-
+      bitrunning-disk-option-weapon-pirate: WeaponRevolverPirate
+      bitrunning-disk-option-weapon-oath: LPPWeaponPistolHippocraticoath
+      bitrunning-disk-option-weapon-sawn: WeaponShotgunSawn
+      bitrunning-disk-option-weapon-mosin: WeaponSniperMosin
+      bitrunning-disk-option-weapon-padefame: LPPWeaponRiflepadefame
 - type: entity
   parent: BaseBitrunningDisk
   id: LPPBitrunningWeaponaryComplexDisk
@@ -126,6 +131,7 @@
     grantMode: Item
     options:
       bitrunning-disk-option-weapon-jagdkommando: LPPKnifeJagdkommando
+      bitrunning-disk-option-weapon-chainsaw: Chainsaw
       bitrunning-disk-option-weapon-disableradvanced: WeaponDisablerAdvanced
       bitrunning-disk-option-weapon-hushpup: WeaponShotgunHushpup
       bitrunning-disk-option-weapon-pibodi: LPPweaponPibodi
@@ -137,6 +143,13 @@
       bitrunning-disk-option-weapon-snub45: WeaponRevolverSnub
       bitrunning-disk-option-weapon-revolverlucky: WeaponRevolverLucky
       bitrunning-disk-option-syndicate-mini-bomb: SyndieMiniBomb
+      bitrunning-disk-option-weapon-xl8: WeaponRifleLecterXL8
+      bitrunning-disk-option-weapon-lasergun: WeaponLaserGun
+      bitrunning-disk-option-weapon-deckard: WeaponRevolverDeckard
+      bitrunning-disk-option-weapon-coltspecial: LPPWeaponRevolverColtspecial
+      bitrunning-disk-option-weapon-judge: LPPWeaponRevolverJudgeLethal
+      bitrunning-disk-option-weapon-estoc: WeaponRifleEstoc
+      bitrunning-disk-option-weapon-energygun: WeaponEnergyGun
 
 - type: entity
   parent: BaseBitrunningDisk
@@ -155,8 +168,9 @@
       bitrunning-disk-option-weapon-leverchester: WeaponLeverChester
       bitrunning-disk-option-weapon-enforcer: WeaponShotgunEnforcer
       bitrunning-disk-option-weapon-echis: WeaponPistolEchis
-      bitrunning-disk-option-weapon-lebel: LPPweaponLebel
       bitrunning-disk-option-weapon-drozd: WeaponSubMachineGunDrozd
+      bitrunning-disk-option-weapon-mateba: WeaponRevolverMateba
+      bitrunning-disk-option-weapon-peacemakergraved: LPPWeaponRevolverPeacemaker
 
 - type: entity
   parent: BaseBitrunningDisk
@@ -177,6 +191,24 @@
       bitrunning-disk-option-ammo-magazinelightrifle: MagazineLightRifle
       bitrunning-disk-option-ammo-shotgunlever: MagazineShotgunLeverRifle
       bitrunning-disk-option-ammo-antimateriel: CartridgeAntiMateriel
+
+- type: entity
+  parent: BaseBitrunningDisk
+  id: LPPBitrunningAmmunitionBoxesDisk
+  name: "bitrunning ammunition boxes"
+  description: Use in hand to choose ammunition boxes.
+  components:
+  - type: BitrunningAbilityDisk
+    grantMode: Item
+    options:
+      bitrunning-disk-option-ammo-magazineboxpistol: MagazineBoxPistol
+      bitrunning-disk-option-ammo-magazineboxspecial: MagazineBoxSpecial
+      bitrunning-disk-option-ammo-magazineboxmagnum: MagazineBoxMagnum
+      bitrunning-disk-option-ammo-magazineboxrifle: MagazineBoxRifle
+      bitrunning-disk-option-ammo-magazineboxlightrifle: MagazineBoxLightRifle
+      bitrunning-disk-option-ammo-boxlethatlshot: BoxLethalshot
+      bitrunning-disk-option-ammo-boxshotgunslug: BoxShotgunSlug
+      bitrunning-disk-option-ammo-boxantimateriel: LPPMagazineHeavySniper
 
 - type: entity
   parent: BaseBitrunningDisk
@@ -202,6 +234,26 @@
     grantMode: Item
     options:
       bitrunning-disk-option-hos-tabel: HeadOfSecurityWeaponUndetermined
-      bitrunning-disk-option-hos-shield: UEGShield
-      bitrunning-disk-option-hos-disablershotgun: WeaponDisablerShotgun
+      bitrunning-disk-option-hos-shield: BlueShieldShield
+      bitrunning-disk-option-hos-olymp: LPPWeaponSniperOlymp
       bitrunning-disk-option-hos-mod: ClothingModularControllerSafeguard
+
+- type: entity
+  parent: BaseBitrunningDisk
+  id: LPPBitrunningGimmicSalvager
+  name: "bitrunning gimmic: slavager"
+  description: Use in hand to choose salvager equipment.
+  components:
+  - type: BitrunningAbilityDisk
+    grantMode: Item
+    options:
+      bitrunning-disk-option-salvager-schwarzlose: LPPweaponSchwarzlose
+      bitrunning-disk-option-salvager-manlicher: LPPweaponManlicher
+      bitrunning-disk-option-salvager-shasspo: LPPweaponShasspo
+      bitrunning-disk-option-salvager-pibodi: LPPweaponPibodi
+      bitrunning-disk-option-salvager-lebel: LPPweaponLebel
+      bitrunning-disk-option-salvager-mod: ClothingModularControllerPrototypePreassembled
+      bitrunning-disk-option-salvager-hardsuit: LPPClothingOuterHardsuitUpgradedMining
+      bitrunning-disk-option-salvager-hardsuitalt: LPPClothingOuterHardsuitSpatioUpgraded
+      bitrunning-disk-option-salvager-vest: LPPClothingOuterVestSalvager
+      bitrunning-disk-option-salvager-helmet: LPPClothingHeadHelmetSalvager

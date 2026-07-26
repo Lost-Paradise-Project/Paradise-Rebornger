@@ -403,3 +403,453 @@
   - type: Sprite
     layers:
     - state: blue
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobGangsterMobster
+  name: Gangster mobster spawner
+  suffix: AI, Gangster mobster, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobGangsterMobster
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobGangsterMobsterAlt
+  name: Gangster mobster alt spawner
+  suffix: AI, Gangster mobster alt, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobGangsterMobsterAlt
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobGangsterMobsterShooter
+  name: Gangster mobster shooter spawner
+  suffix: AI, Gangster mobster shooter, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobGangsterMobsterShooter
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobGangsterMobsterElite
+  name: Gangster mobster elite spawner
+  suffix: AI, Gangster mobster elite, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobGangsterMobsterElite
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobGangsterBodyguard
+  name: Gangster mobster bodyguard spawner
+  suffix: AI, Gangster bodyguard, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobGangsterMobsterBodyguard
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobGangsterBodyguardAlt
+  name: Gangster mobster bodyguard alt spawner
+  suffix: AI, Gangster bodyguard, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobGangsterMobsterBodyguardAlt
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobGangsterMafiaBoss
+  name: Gangster mafia boss alt spawner
+  suffix: AI, Gangster mafia boss, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobGangsterMafiaBoss
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobPunk
+  name: Punk spawner
+  suffix: AI, Punk, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobPunk
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnLPPMobPunkShield
+  name: Punk shield spawner
+  suffix: AI, Punk, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobPunkShield
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobPunkShooter
+  name: Punk shooter spawner
+  suffix: AI, Punk, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobPunkShooter
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobPunkArmored
+  name: Punk armored spawner
+  suffix: AI, Punk, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobPunkArmored
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobPunkArmoredShield
+  name: Punk armored shield spawner
+  suffix: AI, Punk, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobPunkArmoredShield
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobPunkArmoredShooter
+  name: Punk armored shooter spawner
+  suffix: AI, Punk, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobPunkArmoredShooter
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobPunkElite
+  name: Punk elite spawner
+  suffix: AI, Punk, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobPunkElite
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobPunkEliteShield
+  name: Punk elite shield spawner
+  suffix: AI, Punk, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobPunkEliteShield
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobPunkEliteShooter
+  name: Punk elite shooter spawner
+  suffix: AI, Punk, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobPunkEliteShooter
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobNecron
+  name: Necron spawner
+  suffix: AI, Necron, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobNecron
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobNecronImmortal
+  name: Necron immortal spawner
+  suffix: AI, Necron immortal, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobNecronImmortal
+
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobNecronFlesher
+  name: Necron flesher spawner
+  suffix: AI, Necron flesher, Bitrunning
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobNecronFlesher
+
+#
+# Увульпы для уровня "зачистки дорм"
+#
+# спавнер злой розовой вульпы с "битой"
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobPinkVulpkaninERPBlunt
+  name: Spawner PinkVulp Blunt
+  suffix: Бита, AI
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: Corvax/Mobs/Species/Vulpkanin/parts.rsi
+      state: full
+    - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobPinkVulpkaninERPBlunt
+
+# спавнер злой розовой вульпы с "копьём"
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobPinkVulpkaninERPPiercing
+  name: Spawner PinkVulp Piercing
+  suffix: Копьё, AI
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - sprite: Corvax/Mobs/Species/Vulpkanin/parts.rsi
+      state: full
+    - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobPinkVulpkaninERPPiercing
+
+# спавнер злой розовой вульпы с плетью
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobPinkVulpkaninERPSlash
+  name: Spawner PinkVulp Slash
+  suffix: Нож, AI
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Corvax/Mobs/Species/Vulpkanin/parts.rsi
+      state: full
+    - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobPinkVulpkaninERPSlash
+
+
+# спавнер злой розовой вульпы для битрана с "битой"
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobPinkVulpkaninERPBluntBitrunning
+  name: Spawner PinkVulp Blunt bitrun
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: Corvax/Mobs/Species/Vulpkanin/parts.rsi
+      state: full
+    - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobPinkVulpkaninERPBluntBitrunning
+
+# спавнер злой розовой вульпы для битрана с "копьём"
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobPinkVulpkaninERPPiercingBitrunning
+  name: Spawner PinkVulp Piercing bitrun
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+    - sprite: Corvax/Mobs/Species/Vulpkanin/parts.rsi
+      state: full
+    - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobPinkVulpkaninERPPiercingBitrunning
+
+# спавнер злой розовой вульпы для битрана с плетью
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobPinkVulpkaninERPSlashBitrunning
+  name: Spawner PinkVulp Slash bitrun
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Corvax/Mobs/Species/Vulpkanin/parts.rsi
+      state: full
+    - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobPinkVulpkaninERPSlashBitrunning
+
+#
+# террористы для уровней серии "Контрудар"
+#
+# Спавнер террориста с калашом
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobTerroristAutoRifleBitrunning
+  name: Spawner Terrorist AutoRifle bitrun
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Mobs/Species/Human/parts.rsi
+      state: full
+    - sprite: Objects/Weapons/Guns/Rifles/ak.rsi
+      state: icon
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobTerroristAutoRifle
+
+# Спавнер террориста с ППшкой
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobTerroristSubmachineGunBitrunning
+  name: Spawner Terrorist SubmachineGun bitrun
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Mobs/Species/Human/parts.rsi
+      state: full
+    - sprite: Objects/Weapons/Guns/SMGs/drozd.rsi
+      state: icon
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobTerroristSubmachineGun
+
+# Спавнер террориста с Снайпой
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobTerroristSniperBitrunning
+  name: Spawner Terrorist Sniper bitrun
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Mobs/Species/Human/parts.rsi
+      state: full
+    - sprite: _LP/Objects/Weapons/Guns/Snipers/Shasspo.rsi
+      state: icon
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobTerroristSniper
+
+# Спавнер террориста с дробовиком
+- type: entity
+  parent: MarkerBase
+  id: LPPSpawnMobTerroristShotgunBitrunning
+  name: Spawner Terrorist Shotgun bitrun
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Mobs/Species/Human/parts.rsi
+      state: full
+    - sprite: Objects/Weapons/Guns/Shotguns/pump.rsi
+      state: icon
+  - type: ConditionalSpawner
+    prototypes:
+      - LPPMobTerroristShotgun

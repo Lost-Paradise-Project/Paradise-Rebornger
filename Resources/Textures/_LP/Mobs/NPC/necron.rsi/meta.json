@@ -1,0 +1,27 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/53d1f1477d22a11a99c6c6924977cd431075761b",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "full",
+            "directions": 4
+        },
+        {
+            "name": "rifle",
+            "directions": 4
+        },
+        {
+            "name": "meat",
+            "directions": 4
+        },
+        {
+            "name": "heavy",
+            "directions": 4
+        }
+    ]
+}

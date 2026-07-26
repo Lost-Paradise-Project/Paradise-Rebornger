@@ -3,7 +3,7 @@
   id: WeaponMeleeToolboxRobust
   name: robust toolbox
   description: A tider's weapon.
-  categories: [ DoNotMap ]
+  # categories: [ DoNotMap ] # LP edit
   components:
   - type: Sprite
     sprite: Objects/Tools/Toolboxes/toolbox_red.rsi

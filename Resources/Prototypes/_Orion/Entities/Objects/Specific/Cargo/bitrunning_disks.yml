@@ -63,7 +63,7 @@
       bitrunning-disk-option-scraphelm: ClothingHeadHelmetScrap
       bitrunning-disk-option-bonearmor: ClothingOuterArmorBone
       bitrunning-disk-option-bonehelm: ClothingHeadHelmetBone
-      bitrunning-disk-option-swatepictemic: LPPlothingOuterArmorSwatEpistemic
+      bitrunning-disk-option-swatepictemic: LPPClothingOuterArmorSwatEpistemic
       bitrunning-disk-option-swatepictemichelm: LPPClothingHeadHelmetSwatEpistemic
       bitrunning-disk-option-templararmor: ClothingOuterArmorTemplar
       bitrunning-disk-option-templarhelm: ClothingHeadHatHelmetTemplar
@@ -191,6 +191,6 @@
   - type: BitrunningAbilityDisk
     grantMode: Item
     options:
-      bitrunning-disk-option-proto-kinetic-hammer: LavalandWeaponKineticHammer
+      bitrunning-disk-option-proto-kinetic-hammer: WeaponCrusherHammer
       bitrunning-disk-option-proto-kinetic-machete: LavalandWeaponKineticMachete
       bitrunning-disk-option-proto-kinetic-spear: LavalandWeaponKineticSpear #LP edit

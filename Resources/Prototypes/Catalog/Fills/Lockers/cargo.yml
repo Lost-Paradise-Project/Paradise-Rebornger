@@ -11,6 +11,7 @@
   id: LockerFillSalvageSpecialist
   table: !type:AllSelector
     children:
+    - id: UndeterminedWeaponSalvageSpecialist # Lavaland Edit
     - id: ClothingBeltUtilityFilled
     - id: SurvivalKnife
     - id: HandheldGPSBasic

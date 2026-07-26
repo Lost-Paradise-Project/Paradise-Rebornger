@@ -17,10 +17,20 @@
       - ShuttleRnd
       - ShuttleSrv
       - ShuttleEmergency
-      # - Theatre # LP Edit
+      - Theatre
       - CellAI
       - Botany
-      - Bunker
+      # LP edit start
+      # - Bunker # Максимально душная и неинтересная цель. Нафиг её
+      - LPTransit # Транзит
+      - LPRenovation # Почистить станцию
+      - LPBorgsForAI # Нафигачить боргов
+      - LPReserveEnergy # СМЭСики
+      - LPStationPreparation # Расширение дорм
+      - LPCorporateEvent # Пир для бюрократов
+      - LPTestPoligon # Испытательный полигон
+      - LPTunnelInventory # Растащить техи по отделам
+      # LP edit end
 
 - type: entity
   id: BaseStationSiliconLawNTDefault

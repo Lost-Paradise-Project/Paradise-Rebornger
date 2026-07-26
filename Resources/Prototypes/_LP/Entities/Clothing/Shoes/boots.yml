@@ -83,3 +83,33 @@
     sprite: _LP/Clothing/Shoes/Boots/upgjackboots.rsi
   - type: Clothing
     sprite: _LP/Clothing/Shoes/Boots/upgjackboots.rsi
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: LPPClothingShoesUEGLegs
+  name: UEG legs
+  description: Pair of prosthetic legs for skitarii units with built in magnetic suction pumps.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Shoes/Boots/UEGlegs.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Shoes/Boots/UEGlegs.rsi
+  - type: NoSlip
+  - type: Magboots
+    disabledAutoOff: true
+  - type: ClothingSpeedModifier
+    walkModifier: 1.1
+    sprintModifier: 1.1
+  - type: FootstepModifier
+    footstepSoundCollection: null
+  # - type: HideLayerClothing ToDo: Сделать скрываемые слои для ступней
+  #   slots:
+  #   - LFoot
+  #   - RFoot
+
+- type: entity
+  parent: LPPClothingShoesUEGLegs
+  id: LPPClothingShoesUEGLegsUnremovable
+  suffix: unremovable
+  components:
+  - type: Unremoveable

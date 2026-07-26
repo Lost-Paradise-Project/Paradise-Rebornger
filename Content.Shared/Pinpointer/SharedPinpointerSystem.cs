@@ -4,6 +4,9 @@ using Content.Shared.Emag.Systems;
 using Content.Shared.Examine;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Interaction;
+using System.Linq; // Goob edit
+using Content.Shared.Popups; // Goob edit
+using Content.Shared.Whitelist; // Goob edit
 
 namespace Content.Shared.Pinpointer;
 
@@ -11,6 +14,8 @@ public abstract class SharedPinpointerSystem : EntitySystem
 {
     [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
     [Dependency] private readonly EmagSystem _emag = default!;
+    [Dependency] protected readonly EntityWhitelistSystem Whitelist = default!; // Goob edit
+    [Dependency] private readonly SharedPopupSystem _popup = default!; // Goob edit
 
     public override void Initialize()
     {
@@ -23,41 +28,94 @@ public abstract class SharedPinpointerSystem : EntitySystem
     /// <summary>
     ///     Set the target if capable
     /// </summary>
-    private void OnAfterInteract(Entity<PinpointerComponent> ent, ref AfterInteractEvent args)
+    private void OnAfterInteract(EntityUid uid, PinpointerComponent component, AfterInteractEvent args) // Goob edit
     {
         if (!args.CanReach || args.Target is not { } target)
             return;
 
-        if (!ent.Comp.CanRetarget || ent.Comp.IsActive)
+        if (!component.CanRetarget || component.IsActive) // Goob edit
             return;
 
-        // TODO add doafter once the freeze is lifted
+        // Goob edit start: retargeting has a whitelist
         args.Handled = true;
-        ent.Comp.Target = args.Target;
-        _adminLogger.Add(LogType.Action, LogImpact.Low, $"{ToPrettyString(args.User):player} set target of {ToPrettyString(ent):pinpointer} to {ToPrettyString(ent.Comp.Target.Value):target}");
-        if (ent.Comp.UpdateTargetName)
-            ent.Comp.TargetName = ent.Comp.Target == null ? null : Identity.Name(ent.Comp.Target.Value, EntityManager);
+
+        if (Whitelist.IsWhitelistFail(component.RetargetingWhitelist, target) ||
+            Whitelist.IsBlacklistPass(component.RetargetingBlacklist, target))
+        {
+            return;
+        }
+
+        // TODO add doafter once the freeze is lifted
+        // ignore can target multiple, because too hard to support
+        component.Targets.Clear();
+        component.Targets.Add(target);
+        _adminLogger.Add(LogType.Action, LogImpact.Low, $"{ToPrettyString(args.User):player} set target of {ToPrettyString(uid):pinpointer} to {ToPrettyString(target):target}");
+        if (component.UpdateTargetName)
+            component.TargetName = Identity.Name(target, EntityManager);
+
+        _popup.PopupPredicted(Loc.GetString("pinpointer-link-success"), uid, args.User);
+        // Goob edit end
     }
 
     /// <summary>
     ///     Set pinpointers target to track
+    ///     Goob edit: If CanTargetMultiple is true in Pinpointer component, then it will be ADDED, not set
     /// </summary>
-    public virtual void SetTarget(Entity<PinpointerComponent?> ent, EntityUid? target)
+    public virtual void SetTarget(EntityUid uid, EntityUid? target, PinpointerComponent? pinpointer = null) // Goob edit
     {
-        if (!Resolve(ent, ref ent.Comp))
+        if (!Resolve(uid, ref pinpointer)) // Goob edit
             return;
 
-        var pinpointer = ent.Comp;
-
-        if (pinpointer.Target == target)
+        // Goob edit start
+        if (target == null || pinpointer.Targets.Contains(target.Value))
+        {
             return;
+        }
 
-        pinpointer.Target = target;
+        if (!pinpointer.CanTargetMultiple)
+        {
+            pinpointer.Targets.Clear();
+        }
+
+        if (TerminatingOrDeleted(target.Value))
+        {
+            TrySetArrowAngle((uid, pinpointer), Angle.Zero);
+            return;
+        }
+
+        pinpointer.Targets.Add(target.Value);
+
         if (pinpointer.UpdateTargetName)
-            pinpointer.TargetName = target == null ? null : Identity.Name(target.Value, EntityManager);
-        if (pinpointer.IsActive)
-            UpdateDirectionToTarget(ent);
+            pinpointer.TargetName = Identity.Name(target.Value, EntityManager);
+        // WD EDIT START - UpdateDirectionToTarget is triggered when updating, no need to run it again
+        // if (pinpointer.IsActive)
+        //    UpdateDirectionToTarget(uid, pinpointer);
+        // WD EDIT END
     }
+
+    /// <summary>
+    /// Goob edit: sets a list of targets for a pinpointer.
+    /// </summary>
+    public virtual void SetTargets(EntityUid uid, List<EntityUid> targets, PinpointerComponent? pinpointer = null)
+    {
+        if (!Resolve(uid, ref pinpointer))
+            return;
+
+        if (!pinpointer.CanTargetMultiple)
+        {
+            return; // No.
+        }
+
+        var targetsList = targets.Where(Exists).ToList();
+
+        pinpointer.Targets = targetsList;
+
+        // WD EDIT START - UpdateDirectionToTarget is triggered when updating, no need to run it again
+        // if (pinpointer.IsActive)
+        //    UpdateDirectionToTarget(uid, pinpointer);
+        // WD EDIT END
+    }
+    // Goob edit end
 
     /// <summary>
     ///     Update direction from pinpointer to selected target (if it was set)

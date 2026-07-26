@@ -118,3 +118,34 @@
     sprite: _LP/Clothing/Head/Hats/salvagerberet.rsi
   - type: Clothing
     sprite: _LP/Clothing/Head/Hats/salvagerberet.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: LPPHelmetHoodExplorer
+  categories: [ HideSpawnMenu ]
+  name: UEG skitarii explorer hood
+  description: Stirdy hood for protecting your head from sunlight and a bit of radiation.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Head/Hats/UEGexplorer.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Head/Hats/UEGexplorer.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 50
+  - type: TemperatureProtection
+    heatingCoefficient: 0.01
+    coolingCoefficient: 0.01
+  - type: Tag
+    tags:
+    - HidesHair
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+        Radiation: 0.7
+  - type: ExplosionResistance
+    damageCoefficient: 0.5

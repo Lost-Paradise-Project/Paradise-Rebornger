@@ -1,3 +1,4 @@
+/* We use Lavaland system now. LP Edit.
 using System.Linq;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
@@ -143,3 +144,4 @@ public sealed class GunUpgradeSystem : EntitySystem
         }
     }
 }
+*/

@@ -1,5 +1,6 @@
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
+using Content.Shared.Whitelist; // Goob edit
 
 namespace Content.Shared.Pinpointer;
 
@@ -11,9 +12,15 @@ namespace Content.Shared.Pinpointer;
 [Access(typeof(SharedPinpointerSystem))]
 public sealed partial class PinpointerComponent : Component
 {
-    // TODO: Type serializer oh god
+    /// <summary>
+    /// Goob edit start: pinpointer now works on EntityWhitelist (actually only on components but nvm)
+    /// </summary>
     [DataField]
-    public string? Component;
+    public EntityWhitelist? Whitelist;
+
+    [DataField]
+    public EntityWhitelist? Blacklist;
+    // Goob edit end
 
     [DataField]
     public float MediumDistance = 16f;
@@ -43,13 +50,33 @@ public sealed partial class PinpointerComponent : Component
     public bool UpdateTargetName;
 
     /// <summary>
+    ///     Goob edit start: pinpointer can retarget only whitelisted entities if specified.
+    /// </summary>
+    [DataField]
+    public EntityWhitelist? RetargetingWhitelist;
+
+    [DataField]
+    public EntityWhitelist? RetargetingBlacklist;
+    // Goob edit end
+
+    /// <summary>
     ///     Whether or not the target can be reassigned.
     /// </summary>
     [DataField]
     public bool CanRetarget;
 
+    /// <summary>
+    ///     Goob edit: if true, this pinpointer will automatically track ANY nearest entity of a specified type.
+    ///     Doesn't work with retargeting, it will always left only one entity in target list.
+    /// </summary>
+    [DataField]
+    public bool CanTargetMultiple = true;
+
+    /// <summary>
+    /// Goob edit: many targets instead of just one
+    /// </summary>
     [ViewVariables]
-    public EntityUid? Target = null;
+    public List<EntityUid> Targets = new();
 
     [ViewVariables, AutoNetworkedField]
     public bool IsActive = false;

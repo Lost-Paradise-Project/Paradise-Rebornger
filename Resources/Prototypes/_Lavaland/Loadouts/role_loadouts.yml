@@ -1,0 +1,18 @@
+- type: roleLoadout
+  id: JobShaftMiner
+  groups:
+  # LP edit start
+  - LPunderwearloadout
+  - LPsocksloadout
+  - LPbraloadout
+  # LP edit end
+  - GroupTankHarness
+  - SalvageSpecialistNeck # TODO add a special cloak specifically for shaft miners
+  - ShaftMinerJumpsuit #Goob
+  - SalvageSpecialistBackpack
+  - SalvageSpecialistOuterClothing
+  - SalvageSpecialistShoes
+  - Glasses
+  - Survival
+  - Trinkets
+  - GroupSpeciesBreathTool

@@ -1,0 +1,35 @@
+- type: entityTable
+  id: LavalandTendrils
+  table: !type:GroupSelector
+    children:
+    - !type:GroupSelector
+      weight: 50
+      children:
+      - id: LavalandTendrilLavaWatcher
+      - id: LavalandTendrilGoliath
+    - !type:GroupSelector
+        weight: 20
+        children:
+        - id: LavalandTendrilSpaceCarp
+    - !type:GroupSelector
+      weight: 30
+      children:
+      - id: LavalandTendrilIcewingWatcher
+      - id: LavalandTendrilMagmawingWatcher
+
+- type: entity
+  name: tendril spawner
+  id: SpawnerRandomTendrilLavaland
+  parent: MarkerBase
+  suffix: Lavaland
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: _Lavaland/Structures/Specific/tendril.rsi
+      state: tendril
+  - type: EntityTableSpawner
+    table: !type:NestedSelector
+      tableId: LavalandTendrils
+  placement:
+    mode: AlignTileAny

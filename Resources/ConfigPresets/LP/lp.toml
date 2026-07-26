@@ -26,7 +26,7 @@ disable_with_admins = true
 
 [server]
 rules_file = "LPPRuleset"
-lobby_name = "Lost Paradise 3.1"
+lobby_name = "Lost Paradise 3.2"
 force_client_hud_version_watermark = true
 
 [hub]
@@ -109,3 +109,5 @@ high_log_playtime = -1
 
 [shuttle]
 mass_limit = 0
+hide_split_grids_under = 15
+recall_turning_point = 0.2

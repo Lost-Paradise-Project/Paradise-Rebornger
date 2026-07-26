@@ -1,0 +1,16 @@
+# Lavaland mob faction to stop gang wars
+- type: npcFaction
+  id: Lavafauna
+  hostile:
+  - NanoTrasen
+  - Mouse
+  - Passive
+  - PetsNT
+  - SimpleHostile
+  - SimpleNeutral
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  friendly:
+  - Dragon

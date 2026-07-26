@@ -6,7 +6,9 @@
   components:
   - type: Sprite
     sprite: Objects/Specific/Mining/ore_bag.rsi
-    state: icon
+    layers: # Lavaland Change
+    - state: icon
+      map: [ "enum.ToggleableVisuals.Layer" ]
   - type: Clothing
     sprite: Objects/Specific/Mining/ore_bag.rsi
     quickEquip: false
@@ -29,6 +31,25 @@
         - ArtifactFragment
         - Ore
   - type: Dumpable
+  # Lavaland Change start
+  - type: OreBag
+  - type: ItemToggle
+    soundActivate:
+      collection: sparks
+      params:
+        variation: 0.250
+    soundDeactivate:
+      collection: sparks
+      params:
+        variation: 0.250
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
+          True: { state: orebag_on }
+          False: { state: icon }
+  # Lavaland Change end
 
 - type: entity
   parent: OreBag

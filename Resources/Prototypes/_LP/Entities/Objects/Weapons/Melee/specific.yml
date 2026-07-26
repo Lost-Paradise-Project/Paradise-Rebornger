@@ -38,3 +38,79 @@
   - type: MeleeThrowOnHit
     speed: 10
     distance: 10
+
+# дилдо-копьё
+- type: entity
+  parent: LPPDildoCanine
+  id: LPPWeaponDildoCanine
+  name: heavy canine dildo
+  description: Very big and heavy rubber dildo.
+  suffix: Weapon, Bitrunning
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Item
+    size: Ginormous
+  - type: Sprite
+    scale: 1.25, 1.25
+  - type: StaminaDamageOnHit
+    damage: 17
+  - type: MeleeWeapon
+    wideAnimationRotation: -180
+    attackRate: 0.8
+    damage:
+      types:
+        Piercing: 15
+    angle: 0
+    animation: WeaponArcThrust
+    soundHit:
+      path: "/Audio/_LP/Effects/whip.ogg"
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 5
+  - type: MultiHandedItem
+
+# дилдо-бита
+- type: entity
+  parent: LPPDildoEquine
+  id: LPPWeaponDildoEquine
+  name: heavy equine dildo
+  description: Very big and heavy rubber dildo.
+  suffix: Weapon, Bitrunning
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Item
+    size: Ginormous
+  - type: Sprite
+    scale: 1.25, 1.25
+  - type: StaminaDamageOnHit
+    damage: 25
+  - type: MeleeWeapon
+    wideAnimationRotation: 0
+    attackRate: 0.7
+    damage:
+      types:
+        Blunt: 25
+    soundHit:
+      path: "/Audio/_LP/Effects/whip.ogg"
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Blunt: 13
+  - type: MultiHandedItem
+
+# плётка-нож
+- type: entity
+  parent: LPPWhips
+  id: LPPWeaponWhips
+  suffix: Weapon, Bitrunning
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StaminaDamageOnHit
+    damage: 12
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    attackRate: 1
+    damage:
+      types:
+        Slash: 8

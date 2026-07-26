@@ -1,0 +1,28 @@
+# эквип вульпы с "битой" (хард)
+- type: startingGear
+  id: LPPPinkVulpkaninBluntGear
+  equipment:
+    eyes: LPPHypnogogglesTeal
+    jumpsuit: UniformJabroni
+  inhand:
+  - LPPWeaponDildoEquine
+
+# эквип вульпы с "копьём" (медиум)
+- type: startingGear
+  id: LPPPinkVulpkaninPiercingGear
+  equipment:
+    mask: LPPMaskPink
+    jumpsuit: LPPLatexCatsuitMale
+    shoes: ClothingShoesBootsLaceup
+  inhand:
+  - LPPWeaponDildoCanine
+
+# эквип вульпы с "ножом" (изи)
+- type: startingGear
+  id: LPPPinkVulpkaninSlashGear
+  equipment:
+    head: LPPClothingHeadHatMaid
+    jumpsuit: ClothingUniformJumpskirtElegantMaid
+    socks: LPPClothingUnderSocksDarkGrid
+  inhand:
+  - LPPWeaponWhips

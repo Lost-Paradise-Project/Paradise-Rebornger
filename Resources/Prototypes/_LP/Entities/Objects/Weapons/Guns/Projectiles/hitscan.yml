@@ -18,3 +18,49 @@
     impactFlash:
       sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
       state: impact_blue
+
+- type: entity
+  parent: BasicHitscan
+  id: LPPArc
+  name: Arc laser
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Shock: 45
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: _LP/Objects/Weapons/Guns/Projectiles/gauss.rsi
+      state: muzzle_gauss
+    travelFlash:
+      sprite: _LP/Objects/Weapons/Guns/Projectiles/gauss.rsi
+      state: gauss
+    impactFlash:
+      sprite: _LP/Objects/Weapons/Guns/Projectiles/gauss.rsi
+      state: impact_gauss
+
+- type: entity
+  parent: BasicHitscan
+  id: LPPXrayLaser
+  name: X-ray pulse beam
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Heat: 20
+        Radiation: 15
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      scale: "1.2,1.2"
+      state: muzzle_xray
+    travelFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      scale: "1.2,1.2"
+      state: xray
+    impactFlash:
+      sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      scale: "1.2,1.2"
+      state: impact_xray

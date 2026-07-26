@@ -90,6 +90,7 @@
   - BorgModuleMining
   - BorgModuleTraversal
   - BorgModuleAppraisal
+  - BorgModulePKA # Lavaland
 
   radioChannels:
   - Supply

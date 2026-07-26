@@ -1,0 +1,9 @@
+- files: ["soft_critical.ogg"]
+  license: "CC-BY-3.0"
+  copyright: "Recorded from Casuilties Unknown by Orsoniks"
+  source: "https://store.steampowered.com/app/4576510/Casualties_Unknown_Demo/"
+
+- files: ["critical.ogg"]
+  license: "CC-BY-3.0"
+  copyright: "Recorded from Casuilties Unknown by Orsoniks"
+  source: "https://store.steampowered.com/app/4576510/Casualties_Unknown_Demo/"

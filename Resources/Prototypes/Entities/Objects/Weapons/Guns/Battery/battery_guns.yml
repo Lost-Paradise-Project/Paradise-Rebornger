@@ -971,7 +971,7 @@
       pacifismAllowedMode: true
   - type: BatterySelfRecharger
     autoRechargeRate: 32 #LP edit чутка снижена самозарядка взамен на снижение в 2 раза цены
-    autoRechargePauseTime: 10
+    autoRechargePauseTime: 25 #LP edit
   # starlight start
   - type: ContainerContainer
     containers:

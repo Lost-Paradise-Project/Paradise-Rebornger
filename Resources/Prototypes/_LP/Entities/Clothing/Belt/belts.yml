@@ -91,3 +91,14 @@
         Slash: 0.9
   - type: ExplosionResistance
     damageCoefficient: 0.5
+
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: LPPClothingBeltSovietWebbing
+  name: Soviet webbing
+  description: Waterproof vest with lots of pockets for your AK mags.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/Belt/soviet_webbing.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/Belt/soviet_webbing.rsi

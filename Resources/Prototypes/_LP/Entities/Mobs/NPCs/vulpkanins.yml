@@ -1,0 +1,107 @@
+# Розовая вульпа
+- type: entity
+  parent: MobVulpkanin
+  id: LPPMobPinkVulpkanin
+  categories: [ HideSpawnMenu ]
+  name: PINK VULP
+  description: OMG!!! IT'S PINK VULP!!!
+  components:
+  - type: HumanoidProfile
+    species: LPPPinkVulpkanin
+
+
+
+# злая розовая вульпа c "битой"
+- type: entity
+  parent: LPPMobPinkVulpkanin
+  id: LPPMobPinkVulpkaninERPBlunt
+  suffix: Бита, AI
+  categories: [ HideSpawnMenu ]
+  name: PINK VULP ERP
+  description: OMG! IT'S PINK VULP!!! SHE WANTS TO DRAG YOU TO THE DORMS! RUN!!!
+  components:
+  - type: Loadout
+    prototypes: [ LPPPinkVulpkaninBluntGear ]
+  - type: NpcFactionMember
+    factions:
+    - AllHostile
+  - type: HTN
+    rootTask:
+      task: SimpleHumanoidHostileCompound
+  - type: Sprite
+    scale: 1.1, 1.1
+    drawdepth: Mobs
+
+# злая розовая вульпа c "копьём"
+- type: entity
+  parent: LPPMobPinkVulpkaninERPBlunt
+  id: LPPMobPinkVulpkaninERPPiercing
+  suffix: Копьё, AI
+  categories: [ HideSpawnMenu ]
+  name: PINK VULP ERP
+  description: OMG! IT'S PINK VULP!!! SHE WANTS TO DRAG YOU TO THE DORMS! RUN!!!
+  components:
+  - type: Loadout
+    prototypes: [ LPPPinkVulpkaninPiercingGear ]
+  - type: Sprite
+    scale: 1, 1
+    drawdepth: Mobs
+
+# злая розовая вульпа c плёткой
+- type: entity
+  parent: LPPMobPinkVulpkaninERPBlunt
+  id: LPPMobPinkVulpkaninERPSlash
+  suffix: Нож, AI
+  categories: [ HideSpawnMenu ]
+  name: PINK VULP ERP
+  description: OMG! IT'S PINK VULP!!! SHE WANTS TO DRAG YOU TO THE DORMS! RUN!!!
+  components:
+  - type: Loadout
+    prototypes: [ LPPPinkVulpkaninSlashGear ]
+  - type: Sprite
+    scale: 0.9, 0.9
+    drawdepth: Mobs
+
+
+
+# злая розовая вульпа для битрана c "битой"
+- type: entity
+  parent: LPPMobPinkVulpkaninERPBlunt
+  id: LPPMobPinkVulpkaninERPBluntBitrunning
+  suffix: Бита, AI, Bitrunning
+  categories: [ HideSpawnMenu ]
+  name: PINK VULP ERP
+  description: OMG! IT'S PINK VULP!!! SHE WANTS TO DRAG YOU TO THE DORMS! RUN!!!
+  components:
+  - type: BitrunningDomainEnemyObjective
+  - type: Sprite
+    scale: 1.1, 1.1
+    drawdepth: Mobs
+
+# злая розовая вульпа для битрана c "копьём"
+- type: entity
+  parent: LPPMobPinkVulpkaninERPPiercing
+  id: LPPMobPinkVulpkaninERPPiercingBitrunning
+  suffix: Копьё, AI, Bitrunning
+  categories: [ HideSpawnMenu ]
+  name: PINK VULP ERP
+  description: OMG! IT'S PINK VULP!!! SHE WANTS TO DRAG YOU TO THE DORMS! RUN!!!
+  components:
+  - type: BitrunningDomainEnemyObjective
+  - type: Sprite
+    scale: 1, 1
+    drawdepth: Mobs
+
+# злая розовая вульпа для битрана c плетью
+- type: entity
+  parent: LPPMobPinkVulpkaninERPSlash
+  id: LPPMobPinkVulpkaninERPSlashBitrunning
+  suffix: Копьё, AI, Bitrunning
+  categories: [ HideSpawnMenu ]
+  name: PINK VULP ERP
+  description: OMG! IT'S PINK VULP!!! SHE WANTS TO DRAG YOU TO THE DORMS! RUN!!!
+  components:
+  - type: BitrunningDomainEnemyObjective
+  - type: Sprite
+    scale: 0.9, 0.9
+    drawdepth: Mobs

@@ -139,6 +139,7 @@
       state: rock_asteroid_west
     - state: rock_coal
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: AsteroidRockCoalCrab
@@ -170,6 +171,7 @@
       state: rock_asteroid_west
     - state: rock_gold
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: AsteroidRockGoldCrab
@@ -201,6 +203,7 @@
       state: rock_asteroid_west
     - state: rock_diamond
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: AsteroidRockPlasma
@@ -223,6 +226,7 @@
       state: rock_asteroid_west
     - state: rock_phoron
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: AsteroidRockQuartz
@@ -246,6 +250,7 @@
       state: rock_asteroid_west
     - state: rock_quartz
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: AsteroidRockQuartzCrab
@@ -277,6 +282,7 @@
       state: rock_asteroid_west
     - state: rock_silver
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: AsteroidRockSilverCrab
@@ -309,6 +315,7 @@
       state: rock_asteroid_west
     - state: rock_tin
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: AsteroidRockTinCrab
@@ -340,6 +347,7 @@
       state: rock_asteroid_west
     - state: rock_uranium
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: AsteroidRockUraniumCrab
@@ -371,6 +379,7 @@
       state: rock_asteroid_west
     - state: rock_bananium
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: AsteroidRockBananiumCrab
@@ -402,6 +411,7 @@
       state: rock_asteroid_west
     - state: rock_salt
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: AsteroidRockArtifactFragment
@@ -425,6 +435,7 @@
       state: rock_asteroid_west
     - state: rock_artifact_fragment
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   parent: [ BaseRockGibtonite, AsteroidRock ]
@@ -548,6 +559,7 @@
       state: ironrock_west
     - state: rock_coal
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: IronRockGold
@@ -571,6 +583,7 @@
       state: ironrock_west
     - state: rock_gold
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: IronRockPlasma
@@ -594,6 +607,7 @@
       state: ironrock_west
     - state: rock_phoron
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: IronRockQuartz
@@ -617,6 +631,7 @@
       state: ironrock_west
     - state: rock_quartz
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: IronRockSilver
@@ -640,6 +655,7 @@
       state: ironrock_west
     - state: rock_silver
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: IronRockIron
@@ -663,6 +679,7 @@
       state: ironrock_west
     - state: rock_tin
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: IronRockUranium
@@ -686,6 +703,7 @@
       state: ironrock_west
     - state: rock_uranium
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: IronRockBananium
@@ -709,6 +727,7 @@
       state: ironrock_west
     - state: rock_bananium
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: IronRockSalt
@@ -732,6 +751,7 @@
       state: ironrock_west
     - state: rock_salt
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: IronRockArtifactFragment
@@ -755,6 +775,7 @@
       state: ironrock_west
     - state: rock_artifact_fragment
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   parent: [ BaseRockGibtonite, IronRock ]
@@ -797,6 +818,7 @@
       state: ironrock_west
     - state: rock_diamond
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 # Rocks and ore veins
 - type: entity
@@ -874,6 +896,7 @@
       state: rock_west
     - state: rock_coal
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockGold
@@ -904,6 +927,7 @@
       state: rock_west
     - state: rock_gold
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockDiamond
@@ -927,6 +951,7 @@
       state: rock_west
     - state: rock_diamond
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockPlasma
@@ -957,6 +982,7 @@
       state: rock_west
     - state: rock_phoron
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockQuartz
@@ -987,6 +1013,7 @@
       state: rock_west
     - state: rock_quartz
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSilver
@@ -1017,6 +1044,7 @@
       state: rock_west
     - state: rock_silver
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 # Yes I know it drops steel but we may get smelting at some point
 - type: entity
@@ -1048,6 +1076,7 @@
       state: rock_west
     - state: rock_tin
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockUranium
@@ -1078,6 +1107,7 @@
       state: rock_west
     - state: rock_uranium
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 
 - type: entity
@@ -1109,6 +1139,7 @@
       state: rock_west
     - state: rock_bananium
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockArtifactFragment
@@ -1139,6 +1170,7 @@
       state: rock_west
     - state: rock_artifact_fragment
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSalt
@@ -1169,6 +1201,7 @@
       state: rock_west
     - state: rock_salt
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 # Basalt variants
 - type: entity
@@ -1214,6 +1247,7 @@
       state: rock_wall_west
     - state: rock_coal
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockBasaltGold
@@ -1237,6 +1271,7 @@
       state: rock_wall_west
     - state: rock_gold
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockBasaltDiamond
@@ -1260,6 +1295,7 @@
       state: rock_wall_west
     - state: rock_diamond
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockBasaltPlasma
@@ -1283,6 +1319,7 @@
       state: rock_wall_west
     - state: rock_phoron
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockBasaltQuartz
@@ -1306,6 +1343,7 @@
       state: rock_wall_west
     - state: rock_quartz
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockBasaltSilver
@@ -1329,6 +1367,7 @@
       state: rock_wall_west
     - state: rock_silver
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockBasaltTin
@@ -1352,6 +1391,7 @@
       state: rock_wall_west
     - state: rock_tin
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockBasaltUranium
@@ -1375,6 +1415,7 @@
       state: rock_wall_west
     - state: rock_uranium
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 
 - type: entity
@@ -1399,6 +1440,7 @@
       state: rock_wall_west
     - state: rock_bananium
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockBasaltArtifactFragment
@@ -1422,6 +1464,7 @@
       state: rock_wall_west
     - state: rock_artifact_fragment
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockBasaltSalt
@@ -1445,6 +1488,7 @@
       state: rock_wall_west
     - state: rock_salt
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 # Snow variants
 - type: entity
@@ -1490,6 +1534,7 @@
       state: rock_snow_west
     - state: rock_coal
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSnowGold
@@ -1513,6 +1558,7 @@
       state: rock_snow_west
     - state: rock_gold
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSnowDiamond
@@ -1536,6 +1582,7 @@
       state: rock_snow_west
     - state: rock_diamond
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSnowPlasma
@@ -1559,6 +1606,7 @@
       state: rock_snow_west
     - state: rock_phoron
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSnowQuartz
@@ -1582,6 +1630,7 @@
       state: rock_snow_west
     - state: rock_quartz
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSnowSilver
@@ -1605,6 +1654,7 @@
       state: rock_snow_west
     - state: rock_silver
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSnowTin
@@ -1628,6 +1678,7 @@
       state: rock_snow_west
     - state: rock_tin
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSnowUranium
@@ -1651,6 +1702,7 @@
       state: rock_snow_west
     - state: rock_uranium
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 
 - type: entity
@@ -1675,6 +1727,7 @@
       state: rock_snow_west
     - state: rock_bananium
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSnowArtifactFragment
@@ -1698,6 +1751,7 @@
       state: rock_snow_west
     - state: rock_artifact_fragment
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSnowSalt
@@ -1721,6 +1775,7 @@
       state: rock_snow_west
     - state: rock_salt
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 # Sand variants
 - type: entity
@@ -1766,6 +1821,7 @@
       state: rock_sand_west
     - state: rock_coal
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSandGold
@@ -1789,6 +1845,7 @@
       state: rock_sand_west
     - state: rock_gold
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSandDiamond
@@ -1812,6 +1869,7 @@
       state: rock_sand_west
     - state: rock_diamond
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSandPlasma
@@ -1835,6 +1893,7 @@
       state: rock_sand_west
     - state: rock_phoron
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSandQuartz
@@ -1858,6 +1917,7 @@
       state: rock_sand_west
     - state: rock_quartz
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSandSilver
@@ -1881,6 +1941,7 @@
       state: rock_sand_west
     - state: rock_silver
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSandTin
@@ -1904,6 +1965,7 @@
       state: rock_sand_west
     - state: rock_tin
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSandUranium
@@ -1927,6 +1989,7 @@
       state: rock_sand_west
     - state: rock_uranium
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSandBananium
@@ -1950,6 +2013,7 @@
       state: rock_sand_west
     - state: rock_bananium
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSandArtifactFragment
@@ -1973,6 +2037,7 @@
       state: rock_sand_west
     - state: rock_artifact_fragment
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockSandSalt
@@ -1996,6 +2061,7 @@
       state: rock_sand_west
     - state: rock_salt
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 # Chromite variants
 - type: entity
@@ -2041,6 +2107,7 @@
       state: rock_chromite_west
     - state: rock_coal
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockChromiteGold
@@ -2064,6 +2131,7 @@
       state: rock_chromite_west
     - state: rock_gold
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockChromiteDiamond
@@ -2087,6 +2155,7 @@
       state: rock_chromite_west
     - state: rock_diamond
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockChromitePlasma
@@ -2110,6 +2179,7 @@
       state: rock_chromite_west
     - state: rock_phoron
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockChromiteQuartz
@@ -2133,6 +2203,7 @@
       state: rock_chromite_west
     - state: rock_quartz
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockChromiteSilver
@@ -2156,6 +2227,7 @@
       state: rock_chromite_west
     - state: rock_silver
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockChromiteTin
@@ -2179,6 +2251,7 @@
       state: rock_chromite_west
     - state: rock_tin
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockChromiteUranium
@@ -2202,6 +2275,7 @@
       state: rock_chromite_west
     - state: rock_uranium
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 
 - type: entity
@@ -2226,6 +2300,7 @@
       state: rock_chromite_west
     - state: rock_bananium
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockChromiteArtifactFragment
@@ -2249,6 +2324,7 @@
       state: rock_chromite_west
     - state: rock_artifact_fragment
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockChromiteSalt
@@ -2272,6 +2348,7 @@
       state: rock_chromite_west
     - state: rock_salt
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 # Andesite variants
 - type: entity
@@ -2317,6 +2394,7 @@
       state: rock_andesite_west
     - state: rock_coal
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockAndesiteGold
@@ -2340,6 +2418,7 @@
       state: rock_andesite_west
     - state: rock_gold
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockAndesiteDiamond
@@ -2363,6 +2442,7 @@
       state: rock_andesite_west
     - state: rock_diamond
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockAndesitePlasma
@@ -2386,6 +2466,7 @@
       state: rock_andesite_west
     - state: rock_phoron
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockAndesiteQuartz
@@ -2409,6 +2490,7 @@
       state: rock_andesite_west
     - state: rock_quartz
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockAndesiteSilver
@@ -2432,6 +2514,7 @@
       state: rock_andesite_west
     - state: rock_silver
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockAndesiteTin
@@ -2455,6 +2538,7 @@
       state: rock_andesite_west
     - state: rock_tin
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockAndesiteUranium
@@ -2478,6 +2562,7 @@
       state: rock_andesite_west
     - state: rock_uranium
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 
 - type: entity
@@ -2502,6 +2587,7 @@
       state: rock_andesite_west
     - state: rock_bananium
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockAndesiteArtifactFragment
@@ -2525,6 +2611,7 @@
       state: rock_andesite_west
     - state: rock_artifact_fragment
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change
 
 - type: entity
   id: WallRockAndesiteSalt
@@ -2548,3 +2635,4 @@
       state: rock_andesite_west
     - state: rock_salt
       map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      visible: false # Lavaland Change

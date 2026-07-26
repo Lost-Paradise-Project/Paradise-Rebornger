@@ -20,4 +20,5 @@
     - LPPSecuritySetPeacemaker
     - LPPSecuritySetEnergyGunMini
     - LPPSecuritySetDominator
+    - LPPSecuritySetSvalinn
     maxSelectedSets: 1

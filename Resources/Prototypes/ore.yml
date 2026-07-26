@@ -94,7 +94,7 @@
 
 - type: ore
   id: OreArtifactFragment
-  oreEntity: ArtifactFragment1
+  oreEntity: ArtifactFragmentOre1Unprocessed # Lavaland Change
   minOreYield: 1
   maxOreYield: 3
 
@@ -112,6 +112,7 @@
     OreBananium: 0.25 # to account for it being a useless meme ore
     OreDiamond: 0.1 # to account for its much higher points (1000), as well as its use in endgame schematics
     OreArtifactFragment: 0.5
+    OreGibtonite: 2 # Spawns often enough but always as a single piece
   # Lavaland Change End
 
 - type: weightedRandomOre

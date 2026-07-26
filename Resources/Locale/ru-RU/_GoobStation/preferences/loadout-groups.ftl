@@ -12,3 +12,5 @@ loadout-group-bso-mask = ОСЩ, маска
 loadout-group-bso-outer = ОСЩ, броня
 loadout-group-bso-neck = ОСЩ, шея
 loadout-group-bso-shoes = ОСЩ, обувь
+
+loadout-group-salvage-specialist-neck = Утилизатор, шея

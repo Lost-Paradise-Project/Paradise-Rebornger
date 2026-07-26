@@ -7,6 +7,8 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using Robust.Shared.Serialization;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Generic;
+using JetBrains.Annotations; // Goobstation edit
+using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.Dictionary; // Goobstation edit
 
 namespace Content.Shared.Damage
 {
@@ -25,6 +27,36 @@ namespace Content.Shared.Damage
         /// </summary>
         [DataField("types")]
         public Dictionary<ProtoId<DamageTypePrototype>, FixedPoint2> DamageDict { get; set; } = new();
+
+        // Goobstation edit start
+
+        // These exist solely so the wiki works. Please do not touch them or use them.
+#pragma warning disable CS0618
+        [JsonPropertyName("types")]
+        [DataField(customTypeSerializer: typeof(PrototypeIdDictionarySerializer<FixedPoint2, DamageTypePrototype>))]
+        [UsedImplicitly]
+        private Dictionary<string, FixedPoint2>? _damageTypeDictionary;
+
+        [JsonPropertyName("groups")]
+        [DataField("groups", customTypeSerializer: typeof(PrototypeIdDictionarySerializer<FixedPoint2, DamageGroupPrototype>))]
+        [UsedImplicitly]
+        private Dictionary<string, FixedPoint2>? _damageGroupDictionary;
+
+        [DataField]
+        public float ArmorPenetration { get; set; }
+
+        // Goobstation edit end
+
+        // LP Edit Start
+
+        public IReadOnlyDictionary<string, FixedPoint2> DamageGroups =>
+            _damageGroupDictionary ?? new Dictionary<string, FixedPoint2>();
+
+        public IReadOnlyDictionary<string, FixedPoint2> DamageTypes =>
+            _damageTypeDictionary ?? new Dictionary<string, FixedPoint2>();
+#pragma warning restore CS0618
+
+        // LP Edit End
 
         /// <summary>
         ///     Returns a sum of the damage values.
@@ -81,12 +113,20 @@ namespace Content.Shared.Damage
         /// </summary>
         public DamageSpecifier() { }
 
+        // Goobstation edit start
+        public DamageSpecifier(float armorPenetration)
+        {
+            ArmorPenetration = armorPenetration;
+        }
+        // Goobstation edit end
+
         /// <summary>
         ///     Constructor that takes another DamageSpecifier instance and copies it.
         /// </summary>
         public DamageSpecifier(DamageSpecifier damageSpec)
         {
             DamageDict = new(damageSpec.DamageDict);
+            ArmorPenetration = damageSpec.ArmorPenetration; // Goobstation
         }
 
         /// <summary>
@@ -128,7 +168,7 @@ namespace Content.Shared.Damage
             // Make a copy of the given data. Don't modify the one passed to this function. I did this before, and weapons became
             // duller as you hit walls. Neat, but not FixedPoint2ended. And confusing, when you realize your fists don't work no
             // more cause they're just bloody stumps.
-            DamageSpecifier newDamage = new();
+            DamageSpecifier newDamage = new(damageSpec.ArmorPenetration); // Goob edit
             newDamage.DamageDict.EnsureCapacity(damageSpec.DamageDict.Count);
 
             foreach (var (key, value) in damageSpec.DamageDict)
@@ -338,10 +378,51 @@ namespace Content.Shared.Damage
             }
         }
 
+        // Goobstation edit start - partial AP. Returns new armor modifier set.
+        public static DamageModifierSet PenetrateArmor(DamageModifierSet modifierSet, float penetration)
+        {
+            if (penetration == 0f)
+                return modifierSet;
+
+            var result = new DamageModifierSet();
+            if (penetration >= 1f)
+                return result;
+
+            var inversePen = 1f - penetration;
+
+            foreach (var (type, coef) in modifierSet.Coefficients)
+            {
+                // Negative coefficients are not modified by this,
+                // coefficients above 1 will actually be lowered which is not desired
+                if (coef is <= 0 or >= 1)
+                {
+                    result.Coefficients.Add(type, coef);
+                    continue;
+                }
+
+                result.Coefficients.Add(type, MathF.Pow(coef, inversePen));
+            }
+
+            foreach (var (type, flat) in modifierSet.FlatReduction)
+            {
+                // Negative flat reductions are not modified by this
+                if (flat <= 0)
+                {
+                    result.FlatReduction.Add(type, flat);
+                    continue;
+                }
+
+                result.FlatReduction.Add(type, flat * inversePen);
+            }
+
+            return result;
+        }
+        // Goobstation edit end
+
         #region Operators
         public static DamageSpecifier operator *(DamageSpecifier damageSpec, FixedPoint2 factor)
         {
-            DamageSpecifier newDamage = new();
+            DamageSpecifier newDamage = new(damageSpec.ArmorPenetration); // Goob edit
             foreach (var entry in damageSpec.DamageDict)
             {
                 newDamage.DamageDict.Add(entry.Key, entry.Value * factor);
@@ -351,7 +432,7 @@ namespace Content.Shared.Damage
 
         public static DamageSpecifier operator *(DamageSpecifier damageSpec, float factor)
         {
-            DamageSpecifier newDamage = new();
+            DamageSpecifier newDamage = new(damageSpec.ArmorPenetration); // Goob edit
             foreach (var entry in damageSpec.DamageDict)
             {
                 newDamage.DamageDict.Add(entry.Key, entry.Value * factor);
@@ -361,7 +442,7 @@ namespace Content.Shared.Damage
 
         public static DamageSpecifier operator /(DamageSpecifier damageSpec, FixedPoint2 factor)
         {
-            DamageSpecifier newDamage = new();
+            DamageSpecifier newDamage = new(damageSpec.ArmorPenetration); // Goob edit
             foreach (var entry in damageSpec.DamageDict)
             {
                 newDamage.DamageDict.Add(entry.Key, entry.Value / factor);
@@ -371,7 +452,7 @@ namespace Content.Shared.Damage
 
         public static DamageSpecifier operator /(DamageSpecifier damageSpec, float factor)
         {
-            DamageSpecifier newDamage = new();
+            DamageSpecifier newDamage = new(damageSpec.ArmorPenetration); // Goob edit
 
             foreach (var entry in damageSpec.DamageDict)
             {

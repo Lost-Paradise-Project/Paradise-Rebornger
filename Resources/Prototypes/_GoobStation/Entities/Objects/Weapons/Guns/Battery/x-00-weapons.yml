@@ -39,6 +39,9 @@
   # starlight end
   - type: StealTarget
     stealGroup: WeaponEnergyMagnum
+  - type: BatterySelfRecharger
+    autoRechargeRate: 20 #LP edit чутка снижена самозарядка взамен на снижение в 2 раза цены
+    autoRechargePauseTime: 5 #LP edit
 
 - type: entity
   name: X-6 "Stitcher"
@@ -74,7 +77,7 @@
     defaultDirection: 1, 0
   - type: BatteryAmmoProvider
     proto: BulletLaserHeavy
-    fireCost: 33
+    fireCost: 30
   - type: StaticPrice
     price: 2500
   # starlight start
@@ -90,6 +93,9 @@
   # starlight end
   - type: StealTarget
     stealGroup: WeaponEnergyMagnum
+  - type: BatterySelfRecharger
+    autoRechargeRate: 30 #LP edit чутка снижена самозарядка взамен на снижение в 2 раза цены
+    autoRechargePauseTime: 15 #LP edit
 
 - type: entity
   name: X-12 "Flambe"
@@ -188,3 +194,6 @@
   # starlight end
   - type: StealTarget
     stealGroup: WeaponEnergyMagnum
+  - type: BatterySelfRecharger
+    autoRechargeRate: 200
+    autoRechargePauseTime: 20

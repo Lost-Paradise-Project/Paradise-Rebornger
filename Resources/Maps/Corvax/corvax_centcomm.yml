@@ -81615,7 +81615,6 @@ entities:
       autoRechargePauseTime: 3
       autoRechargePause: True
       autoRechargeRate: 175
-      autoRecharge: True
     - type: InsideEntityStorage
   - uid: 7031
     components:
@@ -81627,7 +81626,6 @@ entities:
       autoRechargePauseTime: 3
       autoRechargePause: True
       autoRechargeRate: 175
-      autoRecharge: True
     - type: InsideEntityStorage
   - uid: 7032
     components:
@@ -81639,7 +81637,6 @@ entities:
       autoRechargePauseTime: 3
       autoRechargePause: True
       autoRechargeRate: 175
-      autoRecharge: True
     - type: InsideEntityStorage
   - uid: 7033
     components:
@@ -81651,7 +81648,6 @@ entities:
       autoRechargePauseTime: 3
       autoRechargePause: True
       autoRechargeRate: 175
-      autoRecharge: True
     - type: InsideEntityStorage
   - uid: 7035
     components:
@@ -81663,7 +81659,6 @@ entities:
       autoRechargePauseTime: 3
       autoRechargePause: True
       autoRechargeRate: 175
-      autoRecharge: True
     - type: InsideEntityStorage
   - uid: 7036
     components:
@@ -81675,7 +81670,6 @@ entities:
       autoRechargePauseTime: 3
       autoRechargePause: True
       autoRechargeRate: 175
-      autoRecharge: True
     - type: InsideEntityStorage
 - proto: WeaponPulsePistol
   entities:

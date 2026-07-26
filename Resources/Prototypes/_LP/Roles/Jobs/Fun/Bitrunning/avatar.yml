@@ -207,6 +207,74 @@
     outerClothing: LPPClothingOuterVestUrbanPG
     belt: ClothingBeltHolster
 
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  id: BitrunnerAvatarNoirCombat
+  equipment:
+    eyes: ClothingEyesGlassesNoir
+    jumpsuit: ClothingUniformJumpsuitDetectiveGrey
+    gloves: ClothingHandsGlovesLatex
+    shoes: ClothingShoesBootsLaceup
+    head: ClothingHeadHatFedoraGrey
+    outerClothing: ClothingOuterCoatDetectiveDark
+    belt: ClothingBeltHolster
+
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  id: BitrunnerAvatarERTcombat
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitERTSecurity
+    gloves: ClothingHandsGlovesCombat
+    shoes: ClothingShoesBootsJack
+    mask: ClothingMaskGasERT
+    belt: ClothingBeltSecurityWebbingFilled
+
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  id: BitrunnerAvatarUEGSkitariiCombat
+  equipment:
+    eyes: LPPUEGEyehud
+    jumpsuit: LPPClothingUniformJumpsuitOverallsUEG
+    gloves: LPPClothingHandsGlovesUEGCombat
+    shoes: LPPClothingShoesUEGLegsUnremovable
+    mask: LPPClothingMaskUEGExpeditor
+    outerClothing: LPPClothingOuterUEGExpeditor
+    belt: LPPClothingBeltUEGWebbing
+
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  id: BitrunnerAvatarUSSP
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitSoviet
+    gloves: ClothingHandsGlovesMercFingerless
+    shoes: ClothingShoesBootsJack
+    mask: LPPClothingMaskGasSoviet
+    outerClothing: LPPClothingOuterArmorSoviet
+    belt: LPPClothingBeltSovietWebbing
+    head: ClothingHeadHatUshanka
+
+- type: startingGear
+  parent: BitrunnerAvatarGear
+  id: BitrunnerAvatarCounterTerrorist # КТшник для уровней серии "Контрдар"
+  equipment:
+    head: ClothingHeadHelmetSwat
+    mask: ClothingMaskGasSwat
+    jumpsuit: ClothingUniformJumpsuitTurtleneckTactick
+    gloves: ClothingHandsGlovesCombat
+    shoes: ClothingShoesSwat
+    outerClothing: LPPClothingOuterArmorSwat
+    belt: LPPClothingBeltPGWebbing
+  inhand:
+  - WeaponRifleM16A4
+  storage:
+    belt:
+    - MagazineRifle
+    - MagazineRifle
+    - MagazineRifle
+    - MagazineRifle
+    - MagazineBoxRifle
+    - MagazineBoxRifle
+
 # --- КИБЕРПОЛИЦИЯ ---
 
 - type: startingGear
@@ -278,7 +346,7 @@
   parent: BitrunnerCyberPolice
   id: BitrunnerCyberPoliceMedium
   equipment:
-    outerClothing: LPPlothingOuterArmorSwatAlternative
+    outerClothing: LPPClothingOuterArmorSwatAlternative
     head: LPPClothingHeadHelmetSwatAlternative
     pocket1: MagazineRifle
     pocket2: MagazineRifle
@@ -296,7 +364,7 @@
   parent: BitrunnerCyberPolice
   id: BitrunnerCyberPoliceMediumMelee
   equipment:
-    outerClothing: LPPlothingOuterArmorSwat
+    outerClothing: LPPClothingOuterArmorSwat
     head: LPPClothingHeadHelmetSwat
     pocket1: WeaponRevolverFaith
     pocket2: SyringeStimulants

@@ -1,0 +1,19 @@
+# Внешка РОЗОВОЙ ВУЛЬПЫ
+- type: species
+  id: LPPPinkVulpkanin
+  name: species-name-vulpkanin
+  roundStart: False
+  prototype: MobVulpkanin
+  defaultSkinTone:  "#ff4d8e"
+  dollPrototype: AppearanceVulpkanin
+  skinColoration: Hues
+  maleFirstNames: NamesVulpFirstMale
+  femaleFirstNames: NamesVulpFirstFemale
+  maleLastNames: NamesVulpLast
+  femaleLastNames: NamesVulpLast
+  minHeight: 0.75
+  defaultHeight: 0.85
+  maxHeight: 1.0
+  minWidth: 0.75
+  defaultWidth: 0.85
+  maxWidth: 1.0

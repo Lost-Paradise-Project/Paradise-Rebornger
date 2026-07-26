@@ -1,0 +1,57 @@
+# Террористы
+
+# эквип террориста с калашом
+- type: startingGear
+  id: LPPTerroristAutoRifle
+  equipment:
+    eyes: ClothingEyesGlassesCheapSunglasses
+    head: ClothingHeadBandMerc
+    mask: ClothingMaskBandMerc
+    jumpsuit: ClothingUniformJumpsuitQMSummer
+    outerClothing: ClothingOuterArmorBasicSlim
+    belt: ClothingBeltBandolier
+    shoes: ClothingShoesWizard
+  inhand:
+  - LPPWeaponRifleAkBitrunning
+  - LPPKnifeCombatKnife
+
+# эквип террориста с ПП
+- type: startingGear
+  id: LPPTerroristSubmachineGun
+  equipment:
+    eyes: ClothingEyesGlassesJensen
+    jumpsuit: LPPClothingUniformJumpsuitCargoJeansJacket
+    belt: ClothingBeltHolster
+    shoes: ClothingShoesBootsCombat
+  inhand:
+  - LPPWeaponSubMachineGunDrozdBitrunning
+  - LPPKnifeCombatKnife
+
+# эквип террориста с снайпой
+- type: startingGear
+  id: LPPTerroristSniperRifle
+  equipment:
+    outerClothing: ClothingOuterWinterSyndie
+    jumpsuit: ClothingUniformJumpsuitColorGrey
+    shoes: ClothingShoesBootsCombat
+  inhand:
+  - LPPWeaponSniperRifleAWPBitrunning
+  - LPPKnifeCombatKnife
+
+# эквип террориста с дробовиком
+- type: startingGear
+  id: LPPTerroristShotgun
+  equipment:
+    mask: LPPClothingBalaclavawide
+    jumpsuit: ClothingUniformJumpsuitHawaiRed
+    outerClothing: ClothingOuterArmorBasic
+    shoes: ClothingShoesColorBlack
+    socks: LPPClothingUnderSocksThighBlack
+  inhand:
+  - LPPWeaponShotgunKammererBitrunning
+  - LPPKnifeCombatKnife
+
+#
+# Заметка для себя
+# В будущем сделать террориста с пистолетом и "минибосса" с пулемётом
+#

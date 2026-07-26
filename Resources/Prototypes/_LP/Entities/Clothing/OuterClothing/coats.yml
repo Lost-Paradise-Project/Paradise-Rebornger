@@ -194,3 +194,31 @@
     sprite: _LP/Clothing/OuterClothing/Coats/jaybomber.rsi
   - type: Clothing
     sprite: _LP/Clothing/OuterClothing/Coats/jaybomber.rsi
+
+- type: entity
+  parent: [ClothingOuterStorageBase, AllowSuitStorageClothing]
+  id: LPPClothingOuterUEGExpeditor
+  name: UEG skitarii expeditor coat
+  description: Classic coat with light weight armor piece. Masteful combination of protection and mobility.
+  components:
+  - type: Sprite
+    sprite: _LP/Clothing/OuterClothing/Coats/UEGexplorer.rsi
+  - type: Clothing
+    sprite: _LP/Clothing/OuterClothing/Coats/UEGexplorer.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.6
+        Heat: 0.6
+        Radiation: 0.2
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: ToggleableClothing
+    clothingPrototype: LPPHelmetHoodExplorer
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      storagebase: !type:Container
+        ents: []

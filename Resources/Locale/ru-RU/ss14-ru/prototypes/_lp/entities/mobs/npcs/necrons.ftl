@@ -1,0 +1,9 @@
+ent-LPPMobNecron = Некрон
+    .desc = Не самое лучшее время для читания описания.
+    .suffix = AI, Некрон
+ent-LPPMobNecronImmortal = Некрон
+    .desc = Не самое лучшее время для читания описания.
+    .suffix = AI, Некрон бессмертный
+ent-LPPMobNecronFlesher = Некрон
+    .desc = Не самое лучшее время для читания описания.
+    .suffix = AI, Некрон свежеватель

@@ -13,10 +13,10 @@
     cost: 200
   - id: SeismicCharge
     cost: 200
-  # - id: BoxMarkerBeacons
-  #   cost: 300
-  # - id: LavalandJaunter
-  #   cost: 300
+  - id: BoxMarkerBeacons
+    cost: 300
+  - id: LavalandJaunter
+    cost: 300
   - id: Fulton
     cost: 300
   - id: ClothingEyesGlassesMeson
@@ -27,6 +27,9 @@
     cost: 500
   - id: PowerCellHigh
     cost: 500
+  - id: DeathRattleLavalandImplanter
+    cost: 500
+    overrideName: shop-listing-deathrattle-implant-lavaland # stupid implanter structure raagh
   - id: ClothingShoesBootsJack
     cost: 550
   - id: MineralScanner
@@ -47,14 +50,14 @@
     cost: 800
   - id: OreBag
     cost: 800
-  # - id: SurvivalMedipen
-  #   cost: 800
+  - id: SurvivalMedipen
+    cost: 800
   - id: PKAUpgradeRange
     cost: 1000
   - id: PKAUpgradeFireRate
     cost: 1000
-  # - id: ShelterCapsule
-  #   cost: 1000
+  - id: ShelterCapsule
+    cost: 1000
   - id: LavalandEquipmentExplorerSuit
     cost: 1000
   - id: LavalandWeaponKineticMachete
@@ -69,8 +72,8 @@
     cost: 1200
   # - id: ClothingBackpackDuffelSalvageConscription
   #   cost: 1250
-  # - id: LuxuryMedipen
-  #   cost: 1500
+  - id: LuxuryMedipen
+    cost: 1500
   - id: WeaponPlasmaCutter
     cost: 1500
   - id: BorgModuleAdvancedMining
@@ -90,8 +93,8 @@
     cost: 3000 #still costs more than just buying it with spesos you got from vendor but whatever
   - id: MedkitCombatFilled
     cost: 3000
-  # - id: ShelterCapsuleLuxury
-  #   cost: 3000
+  - id: ShelterCapsuleLuxury
+    cost: 3000
   - id: LPPClothingEyesNVG
     cost: 3500
   - id: MiningDrillDiamond

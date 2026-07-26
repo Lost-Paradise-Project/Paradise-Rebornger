@@ -53,7 +53,7 @@
   icon:
     sprite: _Lavaland/Objects/Weapons/Crushers/crusher_hammer.rsi
     state: icon
-  product: LavalandWeaponKineticHammer
+  product: WeaponCrusherHammer
   cost: 14000
   category: cargoproduct-category-name-cargo
   group: SalvageJobReward3

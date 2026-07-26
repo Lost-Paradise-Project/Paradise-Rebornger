@@ -1,0 +1,71 @@
+# Террорист с калашом, сразу для битрана
+# Поскольку террористы наследуются от панков, то у них уже есть компонент цели битрана. Фракция у них "AllHostile", вооот
+- type: entity
+  parent: LPPMobPunk
+  id: LPPMobTerroristAutoRifle
+  name: Terrorist
+  description: There's no time for negotiations, they've planted the bomb!
+  suffix: AI, AutoRifle, Bitrunning
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Loadout
+    prototypes:
+    - LPPTerroristAutoRifle
+  - type: HTN
+    rootTask:
+      task: SimpleHumanoidHostileCompound
+    blackboard:
+      NavClimb: !type:Bool
+        true
+      NavInteract: !type:Bool
+        true
+      NavPry: !type:Bool
+        true
+      NavSmash: !type:Bool
+        true
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+    animation: WeaponArcSlash
+    damage:
+      types:
+        Slash: 15
+
+# Террорист с ППшкой
+- type: entity
+  parent: LPPMobTerroristAutoRifle
+  id: LPPMobTerroristSubmachineGun
+  name: Terrorist
+  suffix: AI, SubmachineGun, Bitrunning
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Loadout
+    prototypes:
+    - LPPTerroristSubmachineGun
+
+# Террорист с снайпой
+- type: entity
+  parent: LPPMobTerroristAutoRifle
+  id: LPPMobTerroristSniper
+  name: Terrorist
+  suffix: AI, Sniper, Bitrunning
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Loadout
+    prototypes:
+    - LPPTerroristSniperRifle
+  - type: HTN
+    rootTask:
+      task: SimpleRangedHostileCompound # Вроде эта настройка должна делать так, чтоб этот снайпер не бежал на передовую, но я хз
+
+# Террорист с дробовиком
+- type: entity
+  parent: LPPMobTerroristAutoRifle
+  id: LPPMobTerroristShotgun
+  name: Terrorist
+  suffix: AI, Shotgun, Bitrunning
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Loadout
+    prototypes:
+    - LPPTerroristShotgun

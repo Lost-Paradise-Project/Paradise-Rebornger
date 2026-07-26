@@ -35,6 +35,8 @@ using Robust.Shared.Random;
 using Robust.Shared.Serialization;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+using Content.Shared.Inventory; // Lavaland Change
+using Content.Shared._GoobStation.Weapons.Multishot; // Goobstation edit
 
 namespace Content.Shared.Weapons.Ranged.Systems;
 
@@ -66,6 +68,7 @@ public abstract partial class SharedGunSystem : EntitySystem
     [Dependency] protected readonly SharedTransformSystem TransformSystem = default!;
     [Dependency] protected readonly TagSystem TagSystem = default!;
     [Dependency] protected readonly ThrowingSystem ThrowingSystem = default!;
+    [Dependency] private readonly InventorySystem _inventory = default!; // Lavaland Change
 
     /// <summary>
     /// Default projectile speed
@@ -143,6 +146,12 @@ public abstract partial class SharedGunSystem : EntitySystem
 
     private void OnShootRequest(RequestShootEvent msg, EntitySessionEventArgs args)
     {
+        // Goobstation - Multishot - Ensures that guns shooting at same time.
+        var gunUid = GetEntity(msg.Gun);
+
+        if (HasComp<MultishotComponent>(gunUid))
+            return;
+        // Goobstation - End
         var user = args.SenderSession.AttachedEntity;
 
         if (user == null ||
@@ -203,6 +212,15 @@ public abstract partial class SharedGunSystem : EntitySystem
             gun = (held, gunComp);
             return true;
         }
+
+        // Lavaland Change start: Check equipped entities for a gun.
+        if (_inventory.TryGetSlotEntity(entity, "gloves", out var gloves) &&
+            TryComp<GunComponent>(gloves.Value, out var glovesGun))
+        {
+            gun = (gloves.Value, glovesGun);
+            return true;
+        }
+        // Lavaland Change end
 
         // Last resort is check if the entity itself is a gun.
         if (TryComp(entity, out gunComp))
@@ -576,7 +594,9 @@ public abstract partial class SharedGunSystem : EntitySystem
             comp.MinAngle,
             comp.ShotsPerBurst,
             comp.FireRate,
-            comp.ProjectileSpeed
+            comp.ProjectileSpeed,
+            comp.BurstFireRate, // Goobstation
+            comp.BurstCooldown // Goobstation
         );
 
         RaiseLocalEvent(gun, ref ev);

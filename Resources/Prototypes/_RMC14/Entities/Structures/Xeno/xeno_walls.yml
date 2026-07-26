@@ -1,0 +1,10 @@
+- type: entity
+  parent: BaseStructure
+  id: CMBaseXenoStructure
+  abstract: true
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: NpcFactionMember
+    factions:
+    - Xeno

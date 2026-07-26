@@ -1,0 +1,126 @@
+##################### CHAIR
+- type: entity
+  name: malign settee
+  id: CosmicChair
+  parent: SeatBase
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _DV/CosmicCult/Tileset/cosmicchair.rsi
+    state: chair
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+##################### PILLAR
+- type: entity
+  parent: BaseStructure
+  id: CosmicObelisk
+  name: malign obelisk
+  description: A mysterious-yet-inert sturcture. Unsettling.
+  components:
+  - type: Sprite
+    sprite: _DV/CosmicCult/Tileset/cosmicpillar.rsi
+    offset: 0, 0.5
+    layers:
+      - state: icon
+    drawdepth: Mobs
+    noRot: true
+  - type: SpriteFade
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.1,0.2,0.375"
+        mask:
+        - LargeMobMask
+        layer:
+        - WallLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+##################### LAMP
+- type: entity
+  id: CosmicLamp
+  description: A mote of un-light shimmers within.
+  suffix: Always Powered
+  name: malign light
+  components:
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        collection: GlassSmash
+  - type: Transform
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Sprite
+    sprite: _DV/CosmicCult/Tileset/cosmiclight.rsi
+    drawdepth: Mobs
+    layers:
+      - state: base
+      - state: glow
+        shader: unshaded
+  - type: PointLight
+    color: "#42a4ae" # 5000K color temp
+    energy: 2
+    radius: 8
+    softness: 1
+    offset: "0, -0.5"
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: RCDDeconstructable
+    deconstructable: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviors: #excess damage, don't spawn entities.
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+  placement:
+    mode: SnapgridCenter
+
+##################### SPIRE
+- type: entity
+  id: CosmicTable
+  parent: CounterBase
+  name: malign table
+  description: Unfathomably, cosmically.. Square.
+  components:
+  - type: Sprite
+    sprite: _DV/CosmicCult/Tileset/cosmictable.rsi
+  - type: Icon
+    sprite: _DV/CosmicCult/Tileset/cosmictable.rsi
+    state: full
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: IconSmooth
+    key: cosmictable
+    base: state_

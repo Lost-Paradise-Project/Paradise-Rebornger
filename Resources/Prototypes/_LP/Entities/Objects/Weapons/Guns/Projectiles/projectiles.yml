@@ -156,3 +156,81 @@
         Structural: 25
   - type: TimedDespawn
     lifetime: 0.2
+
+- type: entity
+  name: galvanic bolt
+  id: LPPBulletLaserHeavy
+  categories: [ HideSpawnMenu ]
+  parent: BulletLaser
+  components:
+  - type: Sprite
+    sprite: _Impstation/Objects/Weapons/Guns/Projectiles/energybolts.rsi
+    layers:
+    - state: lightgold
+      shader: unshaded
+  - type: PointLight
+    enabled: true
+    color: "#c1c734"
+  - type: Projectile
+    impactEffect: BulletImpactEffectOrangeDisabler
+    damage:
+      types:
+        Caustic: 30
+
+- type: entity
+  name: radium bolt
+  id: LPPBulletLaserRadiation
+  categories: [ HideSpawnMenu ]
+  parent: BulletLaser
+  components:
+  - type: Sprite
+    sprite: _Impstation/Objects/Weapons/Guns/Projectiles/energybolts.rsi
+    layers:
+    - state: syndcrossbolt
+      shader: unshaded
+  - type: PointLight
+    enabled: true
+    color: "#39ff2b"
+  - type: Projectile
+    impactEffect: BulletImpactEffectOrangeDisabler
+    damage:
+      types:
+        Radiation: 15
+
+- type: entity
+  name: phosphorus ball
+  id: LPPBulletPhosphorus
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Physics
+    bodyType: Dynamic
+    fixedRotation: false
+  - type: EmbeddableProjectile
+    deleteOnRemove: true
+  - type: Fixtures
+    fixtures:
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.1,-0.1,0.1,0.1"
+        mask:
+          - BulletImpassable
+  - type: Sprite
+    sprite: _Impstation/Objects/Weapons/Guns/Projectiles/energybolts.rsi
+    state: flare
+  - type: IgnitionSource
+    ignited: true
+    temperature: 1000
+  - type: TimedDespawn
+    lifetime: 10
+  - type: PointLight
+    enabled: true
+    color: "#39ff2b"
+    radius: 3.0
+    energy: 2.0
+  - type: Projectile
+    deleteOnCollide: false
+    ignoreResistances: true
+    damage:
+      types:
+        Heat: 15

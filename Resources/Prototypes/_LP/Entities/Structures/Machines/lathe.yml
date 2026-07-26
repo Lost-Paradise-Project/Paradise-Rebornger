@@ -134,6 +134,7 @@
     staticPacks:
     - EngineeringBoardsStatic
     dynamicPacks:
+    - LPPExpandedShuttlecraft
     - LPPEngineeringClothing
     - ReactorCircuitboards
     - ShuttleBoards

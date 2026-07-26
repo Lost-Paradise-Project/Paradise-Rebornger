@@ -659,10 +659,10 @@
   conditions:
     - !type:TileNotBlocked
       failIfSpace: false
-    - !type:TileType
-      targets:
-        - Lattice
-        - Plating
+    #- !type:TileType # lavaland change - catwalks anywhere
+    #  targets:
+    #    - Lattice
+    #    - Plating
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
