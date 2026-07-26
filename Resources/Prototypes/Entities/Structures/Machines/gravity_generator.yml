@@ -48,7 +48,7 @@
     castShadows: false
     color: "#a8ffd9"
   - type: StaticPrice
-    price: 5000
+    price: 11000
 
 - type: entity
   id: GravityGenerator
