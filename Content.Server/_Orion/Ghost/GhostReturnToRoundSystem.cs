@@ -21,8 +21,10 @@ public sealed class GhostReturnToRoundSystem : SharedGhostReturnToRoundSystem
     [Dependency] private readonly IChatManager _chatManager = default!;
     [Dependency] private readonly IConsoleHost _console = default!;
     [Dependency] private readonly IAdminLogManager _adminLogger = default!;
-    [Dependency] private readonly SharedGhostSystem _ghostSystem = default!;
-    [Dependency] private readonly IGameTiming _gameTiming = default!; /// LP edit
+    /// LP edit start
+    // [Dependency] private readonly SharedGhostSystem _ghostSystem = default!;
+    [Dependency] private readonly IGameTiming _gameTiming = default!;
+    /// LP edit end
 
     private int _ghostRespawnMaxPlayers;
     private readonly Dictionary<EntityUid, TimeSpan> _returnToRoundTimes = []; /// LP edit
