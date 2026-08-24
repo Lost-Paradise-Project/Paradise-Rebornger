@@ -65,6 +65,7 @@
 | `_Floof`         | Floof Station        | https://github.com/Floof-Station/Panta-Rhei                 | AGPL 3.0 |
 | `_FunkyStation`  | Funky Station        | https://github.com/funky-station/funky-station              | AGPL 3.0 |
 | `_AruMoon`       | AruMoon              | github.com/Workbench-Team/space-station-14                  | MIT      |
+| `_Moffstation`   | Moff Station         | https://github.com/moff-station/moff-station-14.git         | MIT      |
 
 
 ## Отказ от гарантий
