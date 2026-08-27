@@ -1,13 +1,9 @@
-// SPDX-FileCopyrightText: 2026 Space Station 14 Contributors
-//
-// SPDX-License-Identifier: MIT
-
 using System.Linq;
 using Content.Server.EUI;
 using Content.Server.GameTicking;
 using Content.Server.GameTicking.Events;
 using Content.Server.Preferences.Managers;
-using Content.Server.Station.Systems;
+// using Content.Server.Station.Systems; // LP edit, not used
 using Content.Shared._Moffstation.ReadyManifest;
 using Content.Shared.GameTicking;
 using Content.Shared.Preferences;
