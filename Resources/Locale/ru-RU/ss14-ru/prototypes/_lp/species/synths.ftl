@@ -1,0 +1,17 @@
+species-name-synthoid = Синтойд
+marking-SynthTorsoSintMale = Торс (мужской)
+marking-SynthTorsoSintFemale = Торс (женский)
+marking-SynthTailSint = Хвост с цветной линией
+marking-SynthTail = Хвост
+marking-SynthHeadWin = Голова
+marking-SynthFrillsDivinity = Фриллы 
+marking-SynthFrillsDivinityLight = Фриллы светлые
+marking-SynthAntennas = Антенны
+marking-SynthLArmSint = Левая рука
+marking-SynthRArmSint = Правая рука
+marking-SynthRHandSint = Правая кисть
+marking-SynthLHandSint = Левая кисть
+marking-SynthLLegSint = Левая нога
+marking-SynthRLegSint = Правая нога
+marking-SynthLFootSint = Левая стопа
+marking-SynthRFootSint = Правая стопа
