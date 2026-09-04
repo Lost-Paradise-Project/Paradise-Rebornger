@@ -1,0 +1,67 @@
+<controls:FancyWindow xmlns="https://spacestation14.io"
+                      xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+                      Title="{Loc 'disk-decryptor-title'}"
+                      MinSize="380 660">
+    <PanelContainer Name="MasterFrame">
+    <BoxContainer Orientation="Vertical" Margin="14 14 14 14" SeparationOverride="6">
+
+        <PanelContainer Name="HeaderPanel">
+            <BoxContainer Orientation="Vertical" Margin="6 6 6 6" SeparationOverride="4">
+                <BoxContainer Orientation="Horizontal" SeparationOverride="6">
+                    <PanelContainer Name="StatusLed" MinSize="10 10" />
+                    <Label Name="StatusLabel" StyleClasses="LabelBig" />
+                    <Control HorizontalExpand="True" />
+                    <Label Name="TierLabel" />
+                </BoxContainer>
+                <Label Name="RecipeLabel" StyleClasses="LabelSubText" />
+            </BoxContainer>
+        </PanelContainer>
+
+        <BoxContainer Orientation="Vertical" SeparationOverride="2">
+            <Label Name="IntegrityLabel" StyleClasses="LabelSubText" />
+            <PanelContainer Name="IntegrityTrack" MinSize="1 16" HorizontalExpand="True">
+                <LayoutContainer Name="IntegrityLayout" />
+            </PanelContainer>
+        </BoxContainer>
+
+        <BoxContainer Orientation="Vertical" SeparationOverride="2">
+            <Label Name="TimeLabel" StyleClasses="LabelSubText" />
+            <PanelContainer Name="TimeBarTrack" MinSize="1 16" HorizontalExpand="True">
+                <LayoutContainer Name="TimeBarLayout" />
+            </PanelContainer>
+        </BoxContainer>
+
+        <PanelContainer Name="CalibrationBox" Visible="False">
+            <BoxContainer Orientation="Vertical" Margin="6 6 6 6" SeparationOverride="6">
+                <Label Name="CalibrationHintLabel" StyleClasses="LabelSubText" />
+                <PanelContainer Name="CalibrationTrack" MinSize="1 40" HorizontalExpand="True">
+                    <LayoutContainer Name="CalibrationLayout" />
+                </PanelContainer>
+                <PanelContainer Name="LockFrame" />
+            </BoxContainer>
+        </PanelContainer>
+
+        <PanelContainer Name="GridBox" Visible="False">
+            <BoxContainer Orientation="Vertical" Margin="6 6 6 6" SeparationOverride="6">
+                <Label Name="GridHintLabel" StyleClasses="LabelSubText" />
+                <Label Name="GridInfoLabel" StyleClasses="LabelBig" />
+                <PanelContainer Name="SweepFlagFrame" Visible="False" />
+                <BoxContainer Name="SequenceRow" Orientation="Horizontal" SeparationOverride="2" Visible="False" />
+                <GridContainer Name="PuzzleGrid" Columns="4" HSeparationOverride="5" VSeparationOverride="5" />
+                <PanelContainer Name="FlowCanvasTrack" MinSize="1 280" HorizontalExpand="True" Visible="False">
+                    <LayoutContainer Name="FlowCanvas" />
+                </PanelContainer>
+                <BoxContainer Name="CodeRow" Orientation="Horizontal" SeparationOverride="6" Visible="False" />
+                <PanelContainer Name="CodeSubmitFrame" Visible="False" />
+                <BoxContainer Name="BandsContainer" Orientation="Vertical" SeparationOverride="10" Visible="False" />
+            </BoxContainer>
+        </PanelContainer>
+
+        <BoxContainer Orientation="Horizontal" SeparationOverride="6">
+            <PanelContainer Name="StartManualFrame" HorizontalExpand="True" />
+            <PanelContainer Name="StartAutoFrame" HorizontalExpand="True" />
+        </BoxContainer>
+        <PanelContainer Name="ClaimFrame" />
+    </BoxContainer>
+    </PanelContainer>
+</controls:FancyWindow>

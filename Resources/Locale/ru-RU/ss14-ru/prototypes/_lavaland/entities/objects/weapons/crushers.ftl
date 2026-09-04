@@ -1,5 +1,7 @@
 ent-BaseWeaponCrusher = крушитель
     .desc = Ранняя версия протокинетического ускорителя.
+ent-LPPCrusherMainUpgradeFill = { "" }
+    .desc = { "" }
 ent-WeaponCrusher = крушитель
     .desc = Ранняя версия протокинетического ускорителя.
 ent-WeaponCrusherGlaive = глефа-крушитель

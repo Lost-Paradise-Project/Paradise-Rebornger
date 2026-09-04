@@ -17,3 +17,4 @@ research-technology-grenade-launcher-security = Гранатамёты служ�
 research-technology-inducer = Беспроводная передача энергии
 research-technology-nvg-adv-hud = Продвинутые визоры
 research-technology-base-rnd-point-source = Базовая генерация очков исследований
+research-technology-bluespace-cryptor = Блюспейс шифрование

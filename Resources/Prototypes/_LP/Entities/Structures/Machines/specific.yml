@@ -74,3 +74,59 @@
     range: 0.01
     magnetEnabled: true
     magnetToggle: false
+
+- type: entity
+  id: LPPMachineBluespaceCryptor
+  parent: [ BaseMachinePowered, ConstructibleMachine, BaseSiloUtilizer ]
+  name: bluespace cryptor
+  description: An advanced machine, capable of using bluespace technology to create encrypted disks.
+  components:
+  - type: Sprite
+    sprite: _LP/Structures/Machines/bluespace_cryptor.rsi
+    snapCardinals: true
+    layers:
+    - state: miner
+      map: [ "base" ]
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        base:
+          True: { state: miner_active }
+          False: { state: miner }
+  - type: Machine
+    board: LPPBluespaceCryptorMachineCircuitboard
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.4,0.4,0.4"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:ChangeConstructionNodeBehavior
+        node: machineFrame
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: StaticPrice
+    price: 1500
+  - type: TimedSpawner
+    power: true
+    prototypes:
+    - LPPTreasureDatadiskEncryptedTier1
+    - LPPTreasureDatadiskEncryptedTier2
+    intervalSeconds: 60
+    minimumEntitiesSpawned: 1
+    maximumEntitiesSpawned: 1

@@ -41,8 +41,8 @@ using Robust.Shared.Random;
 using Robust.Shared.Utility;
 using System.Data;
 using System.Linq;
-using Content.Shared.CombatMode.Pacification;
 using System.Text;
+using Content.Shared.CombatMode.Pacification;//Corvax-DionaPacifist
 
 namespace Content.Server.GameTicking.Rules;
 

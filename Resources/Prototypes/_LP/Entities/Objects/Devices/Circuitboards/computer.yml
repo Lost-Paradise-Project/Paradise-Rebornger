@@ -1,0 +1,10 @@
+- type: entity
+  parent: BaseComputerCircuitboard
+  id: LPPDiskDecryptorComputerCircuitboard
+  name: tech disk decryptor board
+  description: A computer printed circuit board for a technology disk decryptor.
+  components:
+  - type: Sprite
+    state: cpu_science
+  - type: ComputerBoard
+    prototype: LPPTechnologyDiskDecryptor

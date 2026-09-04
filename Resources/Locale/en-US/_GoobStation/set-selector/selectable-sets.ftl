@@ -34,3 +34,29 @@ selectable-set-blueshield-french-name = OPZ set
 selectable-set-blueshield-french-description =
     Don't forget to take your baguette, ho-ho-ho.
     Includes: LE-MAS hyperburst rifle and jagdkommando knife
+
+selectable-set-hos-smg-name = X-6 "Сшиватель"
+selectable-set-hos-smg-description = 
+    Эргономичный ПП, стреляющая в автоматическими режиме смертоносными болтами энергии. 
+    Высокая скорострельность при низком уроне.
+
+selectable-set-hos-shotgun-name = X-12 "Фламбэ"
+selectable-set-hos-shotgun-description =
+    Эргономичный дробовик, стреляющий залпом из энергетических болтов.
+    Отлично подойдёт для любителей ближнего боя.
+
+selectable-set-hos-sniper-name = X-18 "Раноут"
+selectable-set-hos-sniper-description =
+    Эргономичная винтовка, созданная на базе Христова. Данное энергетическое оружие стреляет смертоносным лазером.
+    Имеет небольшое бронепробитие за счёт шоковых повреждений.
+
+selectable-set-hos-rifle-name = X-8 "DMR"
+selectable-set-hos-rifle-description = 
+    Эргономичная винтовка, стреляющая энергетическими лучами.
+    Низкая скорость стрельбы при высоком уроне.
+
+selectable-set-hos-revolver-name = энергетический магнум
+selectable-set-hos-revolver-description = 
+    Мощный энергетический пистолет, разработанный для элитных сотрудников службы безопасности.
+    Имеет три режима стрельбы, позволяющие нелетально обезвреживать,
+    стрелять через окна или наносить высокий урон.

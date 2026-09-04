@@ -27,6 +27,9 @@
   - type: Tag
     tags:
     - ExplorerSuit
+  - type: Construction
+    graph: ExplorerSuit
+    node: start
 
 - type: entity
   parent: ClothingHeadBase

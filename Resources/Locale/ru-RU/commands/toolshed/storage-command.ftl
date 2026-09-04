@@ -1,6 +1,6 @@
 command-description-storage-fasttake =
-    Takes the most recently placed item from the piped storage entity.
+    Извлекает последний помещённый предмет из переданного по конвейеру хранилища.
 command-description-storage-insert =
-    Inserts the piped entity into the given storage entity.
-command-description-storage-query =
-    Gets the entities in the storagebase of the piped entities and passes them along.
+    Помещает переданную по конвейеру сущность в указанное хранилище.
+command-description-storage-contents =
+    Получает сущности из основы хранилища переданных сущностей и передаёт их дальше.

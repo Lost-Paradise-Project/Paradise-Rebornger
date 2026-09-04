@@ -81,3 +81,9 @@
 
 - type: Tag
   id: LPPGalvainc
+
+- type: Tag
+  id: EncryptedTechnologyDisk
+
+- type: Tag
+  id: ProcessorModule

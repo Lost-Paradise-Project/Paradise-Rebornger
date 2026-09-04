@@ -1,0 +1,5 @@
+# Science
+- type: latheRecipe
+  parent: [ BaseGoldCircuitboardRecipe, BaseResearchComputerRecipeCategory ]
+  id: LPPDiskDecryptorComputerCircuitboard
+  result: LPPDiskDecryptorComputerCircuitboard

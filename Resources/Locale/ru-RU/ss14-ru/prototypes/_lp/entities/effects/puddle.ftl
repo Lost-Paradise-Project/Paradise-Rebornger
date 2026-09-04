@@ -1,9 +1,6 @@
 ent-LPPPuddleMaleCumBig = { ent-PuddleTemporary }
     .desc = { ent-PuddleTemporary.desc }
-    .suffix = Семя
 ent-LPPPuddleMaleCumMedium = { ent-PuddleTemporary }
     .desc = { ent-PuddleTemporary.desc }
-    .suffix = Семя
 ent-LPPPuddleMaleCumSmall = { ent-PuddleTemporary }
     .desc = { ent-PuddleTemporary.desc }
-    .suffix = Семя

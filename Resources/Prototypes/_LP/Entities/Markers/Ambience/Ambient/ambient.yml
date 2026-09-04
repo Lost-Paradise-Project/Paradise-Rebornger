@@ -1,0 +1,26 @@
+- type: entity
+  parent: MarkerBase
+  id: LPPAmbientMarkerBase
+  name: ambient marker base
+  abstract: true
+  suffix: Ambient
+  categories: [ Spawner ]
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+
+- type: entity
+  parent: LPPAmbientMarkerBase
+  id: LPPAmbientMarkerTemple
+  name: ambient marker temple
+  suffix: Ambient
+  components:
+  - type: Sprite
+    layers:
+    - state: blue
+  - type: AmbientSound
+    volume: 2
+    range: 30
+    sound:
+      path: /Audio/_LP/Ambience/devil_revelation.ogg

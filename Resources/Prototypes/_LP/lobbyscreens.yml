@@ -37,6 +37,13 @@
   title: lobby-state-background-armaturow-title
   artist: lobby-state-background-rewokin-artist
 
+# Timxx7019
+- type: lobbyBackground
+  id: BlackSquadDivision
+  background: /Textures/_LP/LobbyScreens/black_squad_division.webp
+  title: lobby-state-background-black-squad-division-title
+  artist: lobby-state-background-timxx-artist
+
 # Another
 - type: lobbyBackground
   id: Nukies

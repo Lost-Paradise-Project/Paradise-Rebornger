@@ -93,6 +93,13 @@
   id: SalvageTreasureCommon
   table: !type:GroupSelector
     children:
+    # LP Edit Start
+    - !type:GroupSelector
+      children:
+      - id: TreasureCDDrive
+      - id: TreasureHardDiskDrive
+      - id: TreasureFlopDiskDrive
+    # LP Edit End
     - id: SheetPlasma1
       amount: !type:RangeNumberSelector
         range: 3, 5
@@ -136,6 +143,7 @@
   table: !type:GroupSelector
     children:
     - id: MaterialDiamond1
+    - id: TreasureDatadiskEncrypted # LP Edit
     - id: TreasureCPUSupercharged
     - id: TechnologyDiskRare
       weight: 0.5
@@ -168,6 +176,7 @@
   id: SalvageTreasureLegendary
   table: !type:GroupSelector
     children:
+    - id: TreasureDatadiskEncrypted # LP Edit
     - id: ClothingMaskGoldenCursed
     - id: ClothingHeadHatFancyCrown
     - id: GoldenBikeHorn

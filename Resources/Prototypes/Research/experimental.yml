@@ -95,7 +95,7 @@
   - ClothingShoesBootsMagSci
   - ClothingShoesBootsMoon
   - MagnetSuitModule # Corvax-Wega-add
-  position: 7, 24 # LP edit
+  position: 7, 25 # LP edit
   technologyPrerequisites:
   - AlternativeResearch
 
@@ -145,7 +145,7 @@
   recipeUnlocks:
   - WeaponParticleDecelerator
   - HoloprojectorField
-  position: 7, 25 # LP edit
+  position: 7, 26 # LP edit
   technologyPrerequisites:
   - AlternativeResearch
 

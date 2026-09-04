@@ -19,6 +19,10 @@ changeling-devour-consume-complete-others = { CAPITALIZE(POSS-ADJ($user)) } жу
 # transformation
 changeling-transform-attempt-self = Наши кости хрустят, мышцы рвутся, одна плоть превращается в другую.
 changeling-transform-attempt-others = { CAPITALIZE(POSS-ADJ($user)) } кости хрустят, мышцы рвутся, тело превращается в другое.
+changeling-flesh-clothing-removed-popop = { CAPITALIZE(THE($item)) } рассыпается на ошмётки плоти!
+changeling-flesh-clothing-examine-wearer = [color=crimson]Этот предмет — замаскированная часть вашего тела. Он исчезнет, если вы его снимете![/color]
+changeling-flesh-clothing-alert-name = Одежда из плоти
+changeling-flesh-clothing-alert-desc = Включена ли трансформация одежды. Нажмите, чтобы переключить.
 
 # transformation BUI
 changeling-transform-bui-select-entity = { $entity }

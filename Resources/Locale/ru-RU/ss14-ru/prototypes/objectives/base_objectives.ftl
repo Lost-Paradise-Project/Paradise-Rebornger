@@ -20,3 +20,5 @@ ent-BaseCodeObjective = { ent-BaseObjective }
     .desc = { ent-BaseObjective.desc }
 ent-BaseFreeObjective = { ent-BaseObjective }
     .desc = { ent-BaseObjective.desc }
+ent-BaseCounterObjective = { ent-BaseObjective }
+    .desc = Нас интересует корреспонденция Nanotrasen. Нож для вскрытия писем в комплект не входит.

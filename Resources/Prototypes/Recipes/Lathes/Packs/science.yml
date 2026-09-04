@@ -83,6 +83,8 @@
   # LP Edit Start
   - LPPBluespaceMinerMachineCircuitboard
   - LPPBaseResearchAndDevelopmentPointSourceCircuitboard
+  - LPPBluespaceCryptorMachineCircuitboard
+  - LPPDiskDecryptorComputerCircuitboard
   # LP Edit End
   - TurboItemRechargerCircuitboard
   - AutolatheHyperConvectionMachineCircuitboard

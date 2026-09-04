@@ -12,3 +12,19 @@
   position: 9, 24 # LP edit
   technologyPrerequisites:
   - AdvancedAnomalyResearch
+
+- type: technology
+  id: LPPBluespaceCryptor
+  name: research-technology-bluespace-cryptor
+  icon:
+    sprite: _LP/Structures/Machines/bluespace_cryptor.rsi
+    state: miner
+  discipline: Experimental
+  tier: 2
+  cost: 7500
+  recipeUnlocks:
+  - LPPBluespaceCryptorMachineCircuitboard
+  - LPPDiskDecryptorComputerCircuitboard
+  position: 7, 24 # LP edit
+  technologyPrerequisites:
+  - AlternativeResearch

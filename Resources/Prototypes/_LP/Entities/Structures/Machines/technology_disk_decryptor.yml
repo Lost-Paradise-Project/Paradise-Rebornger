@@ -1,0 +1,49 @@
+- type: entity
+  id: LPPTechnologyDiskDecryptor
+  parent: BaseComputer
+  name: technology disk decryptor
+  description: A device for decrypting old encrypted disks. Allows access to recipes hidden inside.
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _LP/Structures/Machines/technology_disk_decryptor.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: icon
+    - map: ["computerLayerScreen"]
+      state: unshaded
+  - type: GenericVisualizer
+    visuals:
+      enum.EdgeConnectionVisuals.ConnectionMask:
+        computerLayerBody:
+          None: { state: icon, sprite: _LP/Structures/Machines/technology_disk_decryptor.rsi }
+  - type: TechnologyDiskDecryptor
+  - type: ItemSlots
+    slots:
+      disk_slot:
+        name: disk-decryptor-disk-slot
+        whitelist:
+          tags:
+          - EncryptedTechnologyDisk
+      processor_slot:
+        name: disk-decryptor-processor-slot
+        whitelist:
+          tags:
+          - ProcessorModule
+  - type: ActivatableUI
+    key: enum.TechnologyDiskDecryptorUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.TechnologyDiskDecryptorUiKey.Key:
+        type: TechnologyDiskDecryptorBoundUserInterface
+  - type: ResearchClient
+  - type: ExtensionCableReceiver
+  - type: Computer
+    board: LPPDiskDecryptorComputerCircuitboard
+  - type: Appearance
+  - type: ContainerContainer
+    containers:
+      board: !type:Container
+        ents: []
+      disk_slot: !type:ContainerSlot
+      processor_slot: !type:ContainerSlot

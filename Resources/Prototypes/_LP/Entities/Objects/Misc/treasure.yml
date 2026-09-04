@@ -1,0 +1,13 @@
+- type: entity
+  parent: TreasureDatadiskEncrypted
+  id: LPPTreasureDatadiskEncryptedTier1
+  components:
+  - type: EncryptedTechnologyDisk
+    tier: 1
+
+- type: entity
+  parent: TreasureDatadiskEncrypted
+  id: LPPTreasureDatadiskEncryptedTier2
+  components:
+  - type: EncryptedTechnologyDisk
+    tier: 2

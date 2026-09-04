@@ -46,3 +46,8 @@
   parent: [ BaseGoldCircuitboardRecipe, BaseSupplyMachineRecipeCategory ]
   id: StationAnchorCircuitboard
   result: StationAnchorCircuitboard
+  
+- type: latheRecipe
+  parent: [ BaseCircuitboardRecipe, BaseResearchMachineRecipeCategory ]
+  id: LPPBluespaceCryptorMachineCircuitboard
+  result: LPPBluespaceCryptorMachineCircuitboard

@@ -18,6 +18,13 @@
     color: "#0000ff"
   - type: StaticPrice
     price: 500
+  # LP Edit Start
+  - type: EncryptedTechnologyDisk
+    tier: 3
+  - type: Tag
+    tags:
+    - EncryptedTechnologyDisk
+  # LP Edit End
 
 - type: entity
   parent: BaseItem
@@ -40,6 +47,13 @@
         harddisk_micro: ""
   - type: StaticPrice
     price: 275
+  # LP Edit Start
+  - type: EncryptedTechnologyDisk
+    tier: 1
+  - type: Tag
+    tags:
+    - EncryptedTechnologyDisk
+  # LP Edit End
 
 - type: entity
   parent: BaseItem
@@ -85,6 +99,11 @@
     size: Tiny
   - type: StaticPrice
     price: 750
+  # LP Edit Start
+  - type: Tag
+    tags:
+    - ProcessorModule
+  # LP Edit End
 
 - type: entity
   parent: BaseItem

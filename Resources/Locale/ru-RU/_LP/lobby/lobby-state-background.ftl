@@ -17,3 +17,5 @@ lobby-state-background-push1nkaa-artist = @push1nkaa
 lobby-state-background-awareness-title = Осознание
 lobby-state-background-armaturow-title = Арматуров
 lobby-state-background-rewokin-artist = rewokin
+lobby-state-background-black-squad-division-title = Black Squad Division
+lobby-state-background-timxx-artist = timxx/Тимикс
