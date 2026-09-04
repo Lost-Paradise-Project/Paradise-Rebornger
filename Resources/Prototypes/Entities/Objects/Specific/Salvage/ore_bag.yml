@@ -14,10 +14,6 @@
     quickEquip: false
     slots:
     - belt
-  # DeltaV Edit Start
-  - type: MagnetPickup
-    range: 1.5
-  # DeltaV Edit End
   - type: Item
     size: Ginormous
   - type: Storage
@@ -43,6 +39,10 @@
       params:
         variation: 0.250
   - type: Appearance
+  - type: ComponentToggler
+    components:
+    - type: MagnetPickup
+    range: 1.5
   - type: GenericVisualizer
     visuals:
       enum.ToggleableVisuals.Enabled:
