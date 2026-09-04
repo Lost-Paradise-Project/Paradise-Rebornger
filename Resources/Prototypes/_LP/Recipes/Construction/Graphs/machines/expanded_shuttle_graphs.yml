@@ -1,0 +1,508 @@
+# Генератор гравитации
+- type: construction
+  id: GravityGen
+  graph: GravityGen
+  startNode: start
+  targetNode: final
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: constructionGraph
+  id: GravityGen
+  start: start
+  graph:
+    - node: start
+      edges:
+      - to: missingWires
+        completed:
+        - !type:SetAnchor
+          value: false
+        steps:
+        - material: Plasteel
+          amount: 20
+          doAfter: 5
+
+    - node: missingWires
+      actions:
+      - !type:AppearanceChange
+      entity: LPPGravityGeneratorConstruction
+      edges:
+      - to: machineFrame
+        completed:
+        - !type:SnapToGrid
+          southRotation: false
+        conditions:
+        - !type:EntityAnchored
+        steps:
+        - material: Cable
+          amount: 5
+          doAfter: 1
+      - to: start
+        completed:
+        - !type:SpawnPrototype
+          prototype: SheetPlasteel1
+          amount: 20
+        - !type:DeleteEntity {}
+        steps:
+        - tool: Welding
+          doAfter: 7
+
+    - node: machineFrame
+      actions:
+      - !type:AppearanceChange
+      edges:
+      - to: circuitInserted
+        conditions:
+        - !type:EntityAnchored
+        steps:
+        - tag: GravityGenControllModule
+          store: board
+          name: construction-graph-tag-gravity-controll-module
+          icon:
+            sprite: "Objects/Misc/module.rsi"
+            state: "mcontroller"
+      - to: missingWires
+        completed:
+        - !type:SpawnPrototype
+          prototype: CableApcStack1
+          amount: 5
+        steps:
+        - tool: Cutting
+          doAfter: 2
+
+    - node: circuitInserted
+      actions:
+      - !type:AppearanceChange
+      edges:
+      - to: circuitFixed
+        conditions:
+        - !type:EntityAnchored
+        steps:
+        - tool: Screwing
+          doAfter: 2
+      - to: machineFrame
+        completed:
+        - !type:DeleteEntitiesInContainer
+          container: board
+        - !type:SpawnPrototype
+          prototype: LPPGravityGeneratorCircuitboard
+          amount: 1
+        steps:
+        - tool: Prying
+          doAfter: 2
+
+    - node: circuitFixed
+      actions:
+      - !type:AppearanceChange
+      edges:
+      - to: beforeUranium
+        conditions:
+        - !type:EntityAnchored
+        steps:
+        - material: MetalRod
+          amount: 4
+          doAfter: 1
+      - to: circuitInserted
+        steps:
+        - tool: Screwing
+          doAfter: 2
+
+    - node: beforeUranium
+      actions:
+      - !type:AppearanceChange
+      edges:
+      - to: Uranium
+        conditions:
+        - !type:EntityAnchored
+        steps:
+        - material: Steel
+          amount: 10
+          doAfter: 1
+        - material: Uranium
+          amount: 5
+          doAfter: 2
+      - to: circuitFixed
+        completed:
+        - !type:SpawnPrototype
+          prototype: PartRodMetal1
+          amount: 4
+        steps:
+        - tool: Cutting
+          doAfter: 3
+
+    - node: Uranium
+      actions:
+      - !type:AppearanceChange
+      edges:
+      - to: beforeAnomaly
+        conditions:
+        - !type:EntityAnchored
+        steps:
+        - tool: Welding
+          doAfter: 5
+      - to: beforeUranium
+        completed:
+        - !type:SpawnPrototype
+          prototype: SheetUranium1
+          amount: 5
+        - !type:SpawnPrototype
+          prototype: SheetSteel1
+          amount: 10
+        steps:
+        - tool: Prying
+          doAfter: 2
+
+    - node: beforeAnomaly
+      actions:
+      - !type:AppearanceChange
+      edges:
+      - to: Anomaly
+        conditions:
+        - !type:EntityAnchored
+        steps:
+        - tag: GravityCore
+          store: anomaly
+          name: construction-graph-tag-gravity-core
+          icon:
+            sprite: "Structures/Specific/Anomalies/Cores/gravity_core.rsi"
+            state: "core"
+      - to: Uranium
+        steps:
+        - tool: Welding
+          doAfter: 6
+
+    - node: Anomaly
+      actions:
+      - !type:AppearanceChange
+      edges:
+      - to: AnomalyFixed
+        conditions:
+        - !type:EntityAnchored
+        steps:
+        - tool: Anchoring
+          doAfter: 3
+      - to: beforeAnomaly
+        completed:
+        - !type:DeleteEntitiesInContainer
+          container: anomaly
+        - !type:SpawnPrototype
+          prototype: AnomalyCoreGravityInert
+          amount: 1
+        steps:
+        - tool: Prying
+          doAfter: 1
+
+    - node: AnomalyFixed
+      actions:
+      - !type:AppearanceChange
+      edges:
+      - to: prefinal
+        conditions:
+        - !type:EntityAnchored
+        steps:
+        - tool: Screwing
+          doAfter: 2
+      - to: Anomaly
+        steps:
+        - tool: Anchoring
+          doAfter: 3
+
+    - node: prefinal
+      actions:
+      - !type:AppearanceChange
+      entity: LPPGravityGeneratorConstruction
+      edges:
+      - to: final
+        conditions:
+        - !type:EntityAnchored
+        steps:
+        - tool: Welding
+          doAfter: 6
+      - to: AnomalyFixed
+        steps:
+        - tool: Screwing
+          doAfter: 2
+
+    - node: final
+      entity: GravityGenerator
+      actions:
+        - !type:AppearanceChange
+      edges:
+        - to: prefinal
+          completed:
+          - !type:SpawnPrototypeAtContainer   #гарантируем, что пвещи будут на месте
+            container: board
+            prototype: LPPGravityGeneratorCircuitboard
+            amount: 1
+          - !type:SpawnPrototypeAtContainer
+            container: anomaly
+            prototype: AnomalyCoreGravity
+            amount: 1
+          conditions:
+          - !type:EntityAnchored
+            anchored: false
+          steps:
+            - tool: Welding
+              doAfter: 10
+
+
+# Большой ракетный двигатель
+- type: construction
+  id: ThrusterLarge
+  graph: ThrusterLarge
+  startNode: start
+  targetNode: final
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: constructionGraph
+  id: ThrusterLarge
+  start: start
+  graph:
+    - node: start
+      edges:
+      - to: missingWires
+        completed:
+        - !type:SetAnchor
+          value: false
+        steps:
+        - material: Steel
+          amount: 15
+          doAfter: 3
+
+    - node: missingWires
+      actions:
+      - !type:AppearanceChange
+      entity: LPPLargeThrusterConstruction
+      edges:
+      - to: machineFrame
+        completed:
+        - !type:SnapToGrid
+          southRotation: false
+        conditions:
+        - !type:EntityAnchored
+        steps:
+        - material: Cable
+          amount: 5
+          doAfter: 1
+      - to: start
+        completed:
+        - !type:SpawnPrototype
+          prototype: SheetSteel1
+          amount: 15
+        - !type:DeleteEntity {}
+        steps:
+        - tool: Welding
+          doAfter: 4
+
+    - node: machineFrame
+      actions:
+      - !type:AppearanceChange
+      edges:
+      - to: circuitInserted
+        conditions:
+        - !type:EntityAnchored
+        steps:
+        - tag: LargeThrusterControll
+          store: board
+          name: construction-graph-tag-largthruster-controll-module
+          icon:
+            sprite: "Objects/Misc/module.rsi"
+            state: "supply"
+      - to: missingWires
+        completed:
+        - !type:SpawnPrototype
+          prototype: CableApcStack1
+          amount: 5
+        steps:
+        - tool: Cutting
+          doAfter: 2
+
+    - node: circuitInserted
+      actions:
+      - !type:AppearanceChange
+      edges:
+      - to: circuitFixed
+        conditions:
+        - !type:EntityAnchored
+        steps:
+        - tool: Screwing
+          doAfter: 2
+      - to: machineFrame
+        completed:
+        - !type:EmptyContainer
+          container: board
+        steps:
+        - tool: Prying
+          doAfter: 2
+
+    - node: circuitFixed
+      actions:
+      - !type:AppearanceChange
+      entity: LPPLargeThrusterConstruction
+      edges:
+      - to: final
+        conditions:
+        - !type:EntityAnchored
+        steps:
+        - material: Plasma
+          amount: 5
+          doAfter: 1
+        - material: MetalRod
+          amount: 2
+          doAfter: 1
+        - tool: Screwing
+          doAfter: 3
+      - to: circuitInserted
+        steps:
+        - tool: Screwing
+          doAfter: 2
+
+    - node: final
+      entity: ThrusterLarge
+      actions:
+        - !type:AppearanceChange
+      edges:
+        - to: circuitFixed
+          completed:
+          - !type:SpawnPrototypeAtContainer   #гарантируем, что пвещи будут на месте
+            container: board
+            prototype: LPPLargeRocketCircuitboard
+            amount: 1
+          - !type:SpawnPrototype
+            prototype: SheetPlasma1
+            amount: 5
+          - !type:SpawnPrototype
+            prototype: PartRodMetal1
+            amount: 2
+          conditions:
+          - !type:EntityAnchored
+          steps:
+          - tool: Screwing
+            doAfter: 3
+          - tool: Cutting
+            doAfter: 1
+
+
+# Большой гироскоп
+- type: construction
+  id: LargeGyroscope
+  graph: LargeGyroscope
+  startNode: start
+  targetNode: final
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: constructionGraph
+  id: LargeGyroscope
+  start: start
+  graph:
+    - node: start
+      edges:
+      - to: missingWires
+        completed:
+        - !type:SetAnchor
+          value: false
+        steps:
+        - material: Steel
+          amount: 10
+          doAfter: 2
+
+    - node: missingWires
+      actions:
+      - !type:AppearanceChange
+      entity: LPPLargeGyroscopeConstruction
+      edges:
+      - to: machineFrame
+        completed:
+        - !type:SnapToGrid
+          southRotation: false
+        conditions:
+        - !type:EntityAnchored
+        steps:
+        - material: Cable
+          amount: 5
+          doAfter: 1
+      - to: start
+        completed:
+        - !type:SpawnPrototype
+          prototype: SheetSteel1
+          amount: 10
+        - !type:DeleteEntity {}
+        steps:
+        - tool: Welding
+          doAfter: 3
+
+    - node: machineFrame
+      actions:
+      - !type:AppearanceChange
+      edges:
+      - to: circuitInserted
+        conditions:
+        - !type:EntityAnchored
+        steps:
+        - tag: LargeGyroscopeControll
+          store: board
+          name: construction-graph-tag-larggyro-controll-module
+          icon:
+            sprite: "Objects/Misc/module.rsi"
+            state: "supply"
+      - to: missingWires
+        completed:
+        - !type:SpawnPrototype
+          prototype: CableApcStack1
+          amount: 5
+        steps:
+        - tool: Cutting
+          doAfter: 2
+
+    - node: circuitInserted
+      actions:
+      - !type:AppearanceChange
+      entity: LPPLargeGyroscopeConstruction
+      edges:
+      - to: final
+        conditions:
+        - !type:EntityAnchored
+        steps:
+        - tool: Screwing
+          doAfter: 2
+      - to: machineFrame
+        completed:
+        - !type:EmptyContainer
+          container: board
+        steps:
+        - tool: Prying
+          doAfter: 2
+
+    - node: final
+      entity: LPPLargeGyroscope
+      actions:
+        - !type:AppearanceChange
+      edges:
+        - to: circuitInserted
+          completed:
+          - !type:SpawnPrototypeAtContainer   #гарантируем, что вещи будут на месте
+            container: board
+            prototype: LPPLargeGyroscopeCircuitboard
+            amount: 1
+          conditions:
+            - !type:EntityAnchored
+          steps:
+            - tool: Screwing
+              doAfter: 3

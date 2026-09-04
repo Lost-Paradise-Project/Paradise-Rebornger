@@ -106,3 +106,8 @@ announce_voice = "glados"
 
 [adminlogs]
 high_log_playtime = -1
+
+[shuttle]
+mass_limit = 0
+hide_split_grids_under = 15
+recall_turning_point = 0.2

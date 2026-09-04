@@ -28,6 +28,26 @@
   result: LPPBluespaceMinerMachineCircuitboard
 
 - type: latheRecipe
+  parent: [ BaseGoldCircuitboardRecipe, BaseSupplyMachineRecipeCategory ]
+  id: LPPGravitygeneratorMachineCircuitboard
+  result: LPPGravityGeneratorCircuitboard
+
+- type: latheRecipe
+  parent: [ BaseGoldCircuitboardRecipe, BaseSupplyMachineRecipeCategory ]
+  id: LPPLPPLargeRocketMachineCircuitboard
+  result: LPPLargeRocketCircuitboard
+
+- type: latheRecipe
+  parent: [ BaseGoldCircuitboardRecipe, BaseSupplyMachineRecipeCategory ]
+  id: LPPLargeGyroscopeMachineCircuitboard
+  result: LPPLargeGyroscopeCircuitboard
+
+- type: latheRecipe
+  parent: [ BaseGoldCircuitboardRecipe, BaseSupplyMachineRecipeCategory ]
+  id: StationAnchorCircuitboard
+  result: StationAnchorCircuitboard
+
+- type: latheRecipe
   parent: [ BaseCircuitboardRecipe, BaseResearchMachineRecipeCategory ]
   id: LPPBluespaceCryptorMachineCircuitboard
   result: LPPBluespaceCryptorMachineCircuitboard

@@ -1,8 +1,7 @@
 ﻿- type: entity
-  id: GravityGenerator
+  abstract: true
   parent: BaseMachinePowered
-  name: gravity generator
-  description: It's what keeps you to the floor.
+  id: GravityGeneratorBase
   placement:
     mode: AlignTileAny
   components:
@@ -13,6 +12,50 @@
     range: 7
     sound:
       path: /Audio/Ambience/Objects/gravity_gen_hum.ogg
+  - type: PowerCharge
+    windowTitle: gravity-generator-window-title
+    idlePower: 50
+    activePower: 2500
+  - type: GravityGenerator
+    lightRadiusMin: 0.75
+    lightRadiusMax: 2.5
+    spriteMap:
+      unpowered: "off"
+      off: "off"
+      on: "on"
+  - type: ActivatableUI
+    key: enum.PowerChargeUiKey.Key
+  - type: ActivatableUIRequiresPower
+  - type: UserInterface
+    interfaces:
+      enum.PowerChargeUiKey.Key:
+        type: PowerChargeBoundUserInterface
+  - type: Transform
+    anchored: true
+  - type: ApcPowerReceiver
+    powerLoad: 2500
+  - type: ExtensionCableReceiver
+  - type: Physics
+    bodyType: Static
+  - type: Repairable
+    fuelCost: 10
+    doAfterDelay: 5
+  - type: Appearance
+  - type: PointLight
+    radius: 2.5
+    energy: 0.5
+    # Gravity generator is a large machine, not casting shadows is fine within the radius set above.
+    castShadows: false
+    color: "#a8ffd9"
+  - type: StaticPrice
+    price: 11000
+
+- type: entity
+  id: GravityGenerator
+  parent: GravityGeneratorBase
+  name: gravity generator
+  description: It's what keeps you to the floor.
+  components:
   - type: Sprite
     sprite: Structures/Machines/gravity_generator.rsi
     layers:
@@ -22,13 +65,6 @@
         state: activated
         shader: unshaded
         map: ["enum.GravityGeneratorVisualLayers.Core"]
-  - type: Transform
-    anchored: true
-  - type: ApcPowerReceiver
-    powerLoad: 2500
-  - type: ExtensionCableReceiver
-  - type: Physics
-    bodyType: Static
   - type: Fixtures
     fixtures:
       fix1:
@@ -40,49 +76,53 @@
         - LargeMobMask
         layer:
         - WallLayer
-  - type: Repairable
-    fuelCost: 10
-    doAfterDelay: 5
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 500         # LP edit
       behaviors:
       - !type:DoActsBehavior
         acts: ["Breakage"]
-  - type: PowerCharge
-    windowTitle: gravity-generator-window-title
-    idlePower: 50
-    activePower: 2500
-  - type: GravityGenerator
-    lightRadiusMin: 0.75
-    lightRadiusMax: 2.5
-    spriteMap:
-      broken: "broken"
-      unpowered: "off"
-      off: "off"
-      on: "on"
-  - type: ActivatableUI
-    key: enum.PowerChargeUiKey.Key
-  - type: ActivatableUIRequiresPower
-  - type: UserInterface
-    interfaces:
-      enum.PowerChargeUiKey.Key:
-        type: PowerChargeBoundUserInterface
-  - type: Appearance
-  - type: PointLight
-    radius: 2.5
-    energy: 0.5
-    # Gravity generator is a large machine, not casting shadows is fine within the radius set above.
-    castShadows: false
-    color: "#a8ffd9"
-  - type: StaticPrice
-    price: 5000
+    # LP edit start
+    - trigger:
+        !type:DamageTrigger
+        damage: 2000
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetUranium1:
+            min: 1
+            max: 5
+          SheetPlasteel1:
+            min: 5
+            max: 15
+          AnomalyCoreGravity:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Construction
+    graph: GravityGen
+    node: final
+  - type: ContainerContainer
+    containers:
+      board: !type:Container
+      anomaly: !type:Container
+  - type: ContainerFill
+    containers:
+      board:
+      - LPPGravityGeneratorCircuitboard
+      anomaly:
+      - AnomalyCoreGravity
+  # LP edit end
 
 - type: entity
   id: GravityGeneratorMini
-  parent: [ GravityGenerator, ConstructibleMachine ]
+  parent: [ GravityGeneratorBase, ConstructibleMachine ]
   name: mini gravity generator
   description: It's what keeps you to the floor, now in fun size.
   components:

@@ -1,0 +1,57 @@
+- type: entity
+  id: LPPLargeThrusterConstruction
+  parent: BaseStructureDynamic
+  name: large thruster construction
+  placement:
+    mode: AlignTileAny
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-1.45,1.45,0.45"
+        density: 150
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Appearance
+  - type: Anchorable
+  - type: Rotatable
+  - type: InteractionOutline
+  - type: Sprite
+    offset: 0.5,-0.5
+    sprite: _LP/Structures/Machines/thruster_large_construction.rsi
+    layers:
+    - map: [ "enum.ConstructionVisuals.Layer" ]
+      state: base
+  - type: GenericVisualizer
+    visuals:
+      enum.ConstructionVisuals.Key:
+        enum.ConstructionVisuals.Layer:
+          missingWires: { state: base }
+          machineFrame: { state: wired }
+          circuitInserted: { state: precompleted }
+          circuitFixed: { state: completed }
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 2
+            max: 10
+  - type: Construction
+    graph: ThrusterLarge
+    node: missingWires
+  - type: ContainerContainer
+    containers:
+      board: !type:Container
+      anomaly: !type:Container

@@ -1,0 +1,141 @@
+# # линтер меня заебал
+- type: entity
+  id: LPPLargeGyroscope
+  parent: [ BaseThruster, ConstructibleMachine ]
+  name: gyroscope but large
+  description: Effectivly increases the shuttle's potential angular rotation.
+  components:
+  - type: Thruster
+    thrusterType: Angular
+    requireSpace: false
+    thrust: 20000
+    machinePartThrust: Manipulator
+  - type: Sprite
+    offset: 0.5,-0.5
+    sprite: _LP/Structures/Machines/large_gyroscope.rsi
+    layers:
+    - state: base
+      map: ["enum.ThrusterVisualLayers.Base"]
+    - state: thrust
+      map: ["enum.ThrusterVisualLayers.ThrustOn"]
+      shader: unshaded
+      visible: false
+    - state: thrust_burn
+      map: [ "enum.ThrusterVisualLayers.Thrusting" ]
+      visible: false
+    - state: thrust_burn_unshaded
+      map: ["enum.ThrusterVisualLayers.ThrustingUnshaded"]
+      shader: unshaded
+      visible: false
+  - type: ExtensionCableReceiver
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-1.45,1.45,0.45"
+        density: 150
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: PointLight
+    radius: 1.9
+    energy: 0.8
+    enabled: false
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    offset: "0, 0.5" # shine from the top, not bottom of the computer
+    color: "#4246b3"
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviors:
+        - !type:DoActsBehavior
+          acts: ["Destruction"]
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+        - !type:DoActsBehavior
+          acts: ["Destruction"]
+        - !type:PlaySoundBehavior
+          sound:
+            collection: MetalBreak
+        - !type:ChangeConstructionNodeBehavior
+          node: machineFrame
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Electronic
+  - type: ApcPowerReceiver
+    powerLoad: 1500
+  - type: Construction
+    graph: LargeGyroscope
+    node: final
+  - type: ContainerContainer
+    containers:
+      board: !type:Container
+  - type: ContainerFill
+    containers:
+      board:
+      - LPPLargeGyroscopeCircuitboard
+
+
+- type: entity
+  id: LPPLargeGyroscopeConstruction
+  parent: BaseStructureDynamic
+  name: large gyroscope construction
+  placement:
+    mode: AlignTileAny
+  components:
+  - type: Appearance
+  - type: Anchorable
+  - type: Rotatable
+  - type: InteractionOutline
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-1.45,1.45,0.45"
+        density: 1750
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Sprite
+    offset: 0.5,-0.5
+    sprite: _LP/Structures/Machines/large_gyroscope.rsi
+    layers:
+    - map: [ "enum.ConstructionVisuals.Layer" ]
+      state: frame_0
+  - type: GenericVisualizer
+    visuals:
+      enum.ConstructionVisuals.Key:
+        enum.ConstructionVisuals.Layer:
+          missingWires: { state: frame_0 }
+          machineFrame: { state: frame_1 }
+          circuitInserted: { state: frame_2 }
+          circuitFixed: { state: frame_3 }
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 2
+            max: 5
+  - type: Construction
+    graph: LargeGyroscope
+    node: missingWires
+  - type: ContainerContainer
+    containers:
+      board: !type:Container
