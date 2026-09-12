@@ -119,7 +119,17 @@
       path: /Audio/Effects/bite.ogg
     damage:
       types:
-        Piercing: 5
+        Piercing: 4
+        Poison: 0.04
+  - type: SolutionContainerManager
+    solutions:
+      melee:
+        reagents:
+        - ReagentId: Mechanotoxin
+          Quantity: 5
+  - type: MeleeChemicalInjector
+    solution: melee
+    transferAmount: 0.12
   - type: DamageVisuals
     damageOverlayGroups:
       Brute:
