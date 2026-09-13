@@ -13,6 +13,19 @@
 
 - type: entity
   parent: [BaseStructureFlatpack, BaseEngineeringContraband]
+  id: SmallNuclearReactorFlatpack
+  name: Small Nuclear Reactor Flatpack
+  description: A flatpack used for constructing a small nuclear reactor. Parts sold separately.
+  components:
+  - type: Sprite
+    sprite: Objects/Devices/flatpack.rsi
+    layers:
+    - state: large
+  - type: Flatpack
+    entity: NuclearReactorSmallEmpty
+
+- type: entity
+  parent: [BaseStructureFlatpack, BaseEngineeringContraband]
   id: GasTurbineFlatpack
   name: Gas Turbine Flatpack
   description: A flatpack used for constructing a gas turbine.
@@ -23,3 +36,16 @@
     - state: large
   - type: Flatpack
     entity: GasTurbineNormal
+
+- type: entity
+  parent: [BaseStructureFlatpack, BaseEngineeringContraband]
+  id: SmallGasTurbineFlatpack
+  name: Small Gas Turbine Flatpack
+  description: A flatpack used for constructing a small gas turbine.
+  components:
+  - type: Sprite
+    sprite: Objects/Devices/flatpack.rsi
+    layers:
+    - state: large
+  - type: Flatpack
+    entity: GasTurbineSmall

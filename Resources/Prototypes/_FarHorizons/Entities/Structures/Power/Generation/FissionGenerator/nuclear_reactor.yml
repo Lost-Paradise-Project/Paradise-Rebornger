@@ -266,6 +266,11 @@
   parent: [BaseNuclearReactorSmall, NuclearReactorCrew, ReactorPrefab5x5Normal]
 
 - type: entity
+  id: NuclearReactorSmallEmpty
+  parent: [BaseNuclearReactorSmall, NuclearReactorCrew, ReactorPrefabEmpty]
+  suffix: "Empty"
+
+- type: entity
   id: NuclearReactorSmallRandom
   parent: [BaseNuclearReactorSmall, NuclearReactorCrew, ReactorPrefabRandom]
   suffix: "Random"
