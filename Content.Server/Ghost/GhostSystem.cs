@@ -45,6 +45,7 @@ using System.Collections.Frozen;
 using Content.Server.Preferences.Managers;
 using Content.Shared._White.CustomGhostSystem;  //WWDP edit
 using Robust.Shared.Network;
+using Content.Shared._Orion.Ghost; // LP edit
 
 namespace Content.Server.Ghost
 {
@@ -511,6 +512,7 @@ namespace Content.Server.Ghost
                 _minds.TransferTo(mind.Owner, ghost, mind: mind.Comp);
             Log.Debug($"Spawned ghost \"{ToPrettyString(ghost)}\" for {mind.Comp.CharacterName}.");
 
+            RaiseLocalEvent(new GhostReturnToRoundTimerStartEvent(ghost)); /// LP edit
             // we changed the entity name above
             // we have to call this after the mind has been transferred since some mind roles modify the ghost's name
             _nameMod.RefreshNameModifiers(ghost);
