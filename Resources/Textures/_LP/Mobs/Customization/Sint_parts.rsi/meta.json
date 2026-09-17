@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Skilets",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "tail",
+      "directions": 4
+    },
+    {
+      "name": "tail_down",
+      "directions": 4
+    },
+    {
+      "name": "tail_sint",
+      "directions": 4
+    },
+    {
+      "name": "tail_down_sint",
+      "directions": 4
+    },
+    {
+      "name": "frills_divinity",
+      "directions": 4
+    },
+    {
+      "name": "frills_divinity_light",
+      "directions": 4
+    },
+    {
+      "name": "antennas",
+      "directions": 4
+    }
+  ]
+}

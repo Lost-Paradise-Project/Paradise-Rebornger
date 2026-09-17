@@ -1,0 +1,434 @@
+# TODO:
+# - Починить хвосты, когда будут исправлены спрайты.
+# - Пересмотреть sponsorOnly.
+
+- type: markingsGroup
+  id: Synthoid
+  limits:
+    enum.HumanoidVisualLayers.Hair: # Полностью скрываем обычные волосы.
+      limit: 0
+      required: false
+      onlyGroupWhitelisted: true
+
+    enum.HumanoidVisualLayers.FacialHair: # Полностью скрываем усы/бороду.
+      limit: 0
+      required: false
+      onlyGroupWhitelisted: true
+
+    enum.HumanoidVisualLayers.Chest: # Дополнительный _sint overlay для торса.
+      limit: 1
+      required: true # Один из вариантов torso overlay должен быть всегда.
+      onlyGroupWhitelisted: true
+      default: [ SynthTorsoSintMale ] # По умолчанию мужской вариант.
+
+    enum.HumanoidVisualLayers.Snout: # Морда / экран.
+      limit: 1
+      required: false
+
+    enum.HumanoidVisualLayers.Head: # Отдельные head-marking'и пока не используем.
+      limit: 0
+      required: false
+
+    enum.HumanoidVisualLayers.HeadTop: # Верх головы: антенны.
+      limit: 1
+      required: false
+      onlyGroupWhitelisted: true
+
+    enum.HumanoidVisualLayers.HeadSide: # Боковые элементы головы: frills + их light overlay.
+      limit: 3
+      required: false
+      onlyGroupWhitelisted: true
+      default: [ SynthFrillsDivinity ] # По умолчанию обычные frills.
+
+    enum.HumanoidVisualLayers.LArm:
+      limit: 1
+      required: true
+      onlyGroupWhitelisted: true
+      default: [ SynthLArmSint ]
+
+    enum.HumanoidVisualLayers.RArm:
+      limit: 1
+      required: true
+      onlyGroupWhitelisted: true
+      default: [ SynthRArmSint ]
+
+    enum.HumanoidVisualLayers.LHand:
+      limit: 1
+      required: true
+      onlyGroupWhitelisted: true
+      default: [ SynthLHandSint ]
+
+    enum.HumanoidVisualLayers.RHand:
+      limit: 1
+      required: true
+      onlyGroupWhitelisted: true
+      default: [ SynthRHandSint ]
+
+    enum.HumanoidVisualLayers.LLeg:
+      limit: 1
+      required: true
+      onlyGroupWhitelisted: true
+      default: [ SynthLLegSint ]
+
+    enum.HumanoidVisualLayers.RLeg:
+      limit: 1
+      required: true
+      onlyGroupWhitelisted: true
+      default: [ SynthRLegSint ]
+
+    enum.HumanoidVisualLayers.LFoot:
+      limit: 1
+      required: true
+      onlyGroupWhitelisted: true
+      default: [ SynthLFootSint ]
+
+    enum.HumanoidVisualLayers.RFoot:
+      limit: 1
+      required: true
+      onlyGroupWhitelisted: true
+      default: [ SynthRFootSint ]
+
+    enum.HumanoidVisualLayers.Tail:
+      limit: 1
+      required: true
+      onlyGroupWhitelisted: true
+      default: [ SynthTail ]
+
+- type: entity
+  parent: BaseSpeciesAppearance
+  id: AppearanceSynthoid
+  name: synthoid appearance
+  components:
+  - type: InitialBody
+    organs:
+      Torso: OrganSynthoidTorso
+      Head: OrganSynthoidHead
+      ArmLeft: OrganSynthoidArmLeft
+      ArmRight: OrganSynthoidArmRight
+      HandRight: OrganSynthoidHandRight
+      HandLeft: OrganSynthoidHandLeft
+      LegLeft: OrganSynthoidLegLeft
+      LegRight: OrganSynthoidLegRight
+      FootLeft: OrganSynthoidFootLeft
+      FootRight: OrganSynthoidFootRight
+  - type: HumanoidProfile
+    species: Synthoid
+
+- type: entity
+  parent: OrganBase
+  id: OrganSynthoid
+  abstract: true
+  suffix: Synthoid
+
+- type: entity
+  parent: OrganSynthoid
+  id: OrganSynthoidExternal
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _LP/Mobs/Sintoid/Sint_parts.rsi
+  - type: VisualOrgan
+    data:
+      sprite: _LP/Mobs/Sintoid/Sint_parts.rsi
+  - type: VisualOrganMarkings
+    markingData:
+      group: Synthoid
+
+- type: entity
+  parent:
+  - AppearanceSynthoid
+  - BaseSpeciesMob
+  id: MobSynthoid
+  name: Urissst Mz'Hand
+  components:
+  - type: Damageable
+    damageContainer: SiliconIpc # Контейнер урона, определяет типы урона и их количество.
+    damageModifierSet: Ipc # Набор модификаторов урона (сопротивления/уязвимости).
+  - type: DamageVisuals # Отображение визуальных эффектов повреждений.
+    damageOverlayGroups:
+      Brute:
+        sprite: Mobs/Effects/brute_damage.rsi
+        color: "#cd7314" # Цвет оверлея для тупого урона.
+      Burn:
+        sprite: Mobs/Effects/burn_damage.rsi
+  - type: SlowOnDamage # Замедление при получении урона.
+    speedModifierThresholds:
+      60: 0.7
+      80: 0.5
+  - type: ZombieImmune # Иммунитет к превращению в зомби.
+  - type: Reactive # Реакции на взаимодействие с окружением.
+    groups:
+      Flammable: [ Touch ]
+      Extinguish: [ Touch ]
+      Acidic: [Touch, Ingestion]
+    reactions:
+    - reagents: [Water, SpaceCleaner]
+      methods: [Touch] # Реакция при контакте с водой или космическим очистителем.
+      effects:
+      - !type:WashCreamPie
+  - type: FireVisuals # Визуальные эффекты горения.
+    alternateState: Standing
+  - type: TypingIndicator # Индикатор печати (иконка робота).
+    proto: robot
+  - type: PowerCellSlot # Слот для батареи.
+    cellSlotId: cell_slot
+    fitsInCharger: true # Возможность зарядки в зарядных станциях.
+  - type: PowerCellDraw # Потребление энергии из батареи.
+    drawRate: 0.8 # Потребление энергии. Можно настроить.
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMedium
+  - type: Lock
+    unlockOnClick: false # Слот нельзя открыть кликом.
+  - type: ItemSlotsLock # Блокировка слота батареи.
+    slots:
+    - cell_slot
+  - type: ContainerContainer # Контейнер для хранения батареи.
+    containers:
+      cell_slot: !type:ContainerSlot { }
+  - type: Repairable # Возможность ремонта сварочным аппаратом.
+    fuelCost: 30
+    doAfterDelay: 20
+    selfRepairPenalty: 2
+  - type: DamagedSiliconAccent # Искажение речи при повреждениях.
+  - type: SleepEmitSound # Звук во сне (механический храп).
+    snore: /Audio/Machines/buzz-two.ogg
+    interval: 30
+    popUp: sleep-ipc # Всплывающая подсказка во сне.
+  - type: Butcherable # Возможность расчленения.
+    butcheringType: Spike
+    spawned:
+      - id: OrganSynthoidHead
+        amount: 1
+  - type: MobThresholds # Изменение состояния при достижении порогов здоровья.
+    thresholds:
+      0: Alive
+      100: Critical
+      200: Dead
+    # Состояния здоровья, как у боргов.
+    stateAlertDict:
+      Alive: BorgHealth
+      Critical: BorgCrit
+      Dead: BorgDead
+  - type: Tag
+    tags:
+    - CanPilot
+    - FootstepSound
+    - DoorBumpOpener
+    - AnomalyHost # Для работы с аномалиями.
+    - Synthoid # Добавляем тег расы
+  - type: Temperature # Температура тела.
+    currentTemperature: 310.15
+    specificHeat: 42
+  - type: TemperatureDamage # Урон от экстремальных температур.
+    heatDamageThreshold: 325
+    coldDamageThreshold: 260
+  - type: TemperatureSpeed # Замедление при переохлаждении.
+    thresholds:
+      293: 0.8
+  - type: ThermalRegulator # Регулировка температуры тела.
+    normalBodyTemperature: 310.15
+    thermalRegulationTemperatureThreshold: 2
+
+# Временная species-конфигурация.
+# Позже можно будет отдельно переработать sponsorOnly, имена и прочее.
+- type: species
+  id: Synthoid
+  name: species-name-synthoid
+  roundStart: true
+  sponsorOnly: false
+  prototype: MobSynthoid
+  defaultSkinTone: "#34a223"
+  dollPrototype: AppearanceSynthoid
+  skinColoration: Hues
+  maleFirstNames: NamesReptilianMale
+  femaleFirstNames: NamesReptilianFemale
+  naming: FirstDashFirst
+  minHeight: 0.9
+  defaultHeight: 1.05
+  maxHeight: 1.22
+  minWidth: 0.9
+  defaultWidth: 1.05
+  maxWidth: 1.22
+
+- type: entity
+  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganSynthoidExternal ]
+  id: OrganSynthoidTorso
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.Tail
+
+- type: entity
+  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganSynthoidExternal ]
+  id: OrganSynthoidHead
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.Snout
+    - enum.HumanoidVisualLayers.HeadTop
+    - enum.HumanoidVisualLayers.HeadSide
+
+- type: entity
+  parent: [ OrganBaseArmLeft, OrganSynthoidExternal ]
+  id: OrganSynthoidArmLeft
+
+- type: entity
+  parent: [ OrganBaseArmRight, OrganSynthoidExternal ]
+  id: OrganSynthoidArmRight
+
+- type: entity
+  parent: [ OrganBaseHandLeft, OrganSynthoidExternal ]
+  id: OrganSynthoidHandLeft
+
+- type: entity
+  parent: [ OrganBaseHandRight, OrganSynthoidExternal ]
+  id: OrganSynthoidHandRight
+
+- type: entity
+  parent: [ OrganBaseLegLeft, OrganSynthoidExternal ]
+  id: OrganSynthoidLegLeft
+
+- type: entity
+  parent: [ OrganBaseLegRight, OrganSynthoidExternal ]
+  id: OrganSynthoidLegRight
+
+- type: entity
+  parent: [ OrganBaseFootLeft, OrganSynthoidExternal ]
+  id: OrganSynthoidFootLeft
+
+- type: entity
+  parent: [ OrganBaseFootRight, OrganSynthoidExternal ]
+  id: OrganSynthoidFootRight
+
+- type: marking
+  id: SynthHeadWin
+  bodyPart: Snout
+  groupWhitelist: [ Synthoid ] # Маркировка доступна только синтойду.
+  sprites:
+  - sprite: _LP/Mobs/Sintoid/Sint_parts.rsi
+    state: head_win
+
+- type: marking
+  id: SynthTorsoSintMale
+  bodyPart: Chest
+  groupWhitelist: [ Synthoid ] # Только синтойдам.
+  sprites:
+  - sprite: _LP/Mobs/Sintoid/Sint_parts.rsi
+    state: torso_m_sint
+
+- type: marking
+  id: SynthTorsoSintFemale
+  bodyPart: Chest
+  groupWhitelist: [ Synthoid ] # Только синтойдам.
+  sprites:
+  - sprite: _LP/Mobs/Sintoid/Sint_parts.rsi
+    state: torso_f_sint
+
+- type: marking
+  id: SynthAntennas # Антенны.
+  bodyPart: HeadTop
+  groupWhitelist: [ Synthoid ] # Только синтойду.
+  sprites:
+  - sprite: _LP/Mobs/Customization/Sint_parts.rsi
+    state: antennas
+
+- type: marking
+  id: SynthFrillsDivinity
+  bodyPart: HeadSide
+  groupWhitelist: [ Synthoid ]
+  sprites:
+  - sprite: _LP/Mobs/Customization/Sint_parts.rsi
+    state: frills_divinity
+
+- type: marking
+  id: SynthFrillsDivinityLight
+  bodyPart: HeadSide
+  groupWhitelist: [ Synthoid ]
+  sprites:
+  - sprite: _LP/Mobs/Customization/Sint_parts.rsi
+    state: frills_divinity_light
+
+- type: marking
+  id: SynthLArmSint
+  bodyPart: LArm
+  groupWhitelist: [ Synthoid ]
+  sprites:
+  - sprite: _LP/Mobs/Sintoid/Sint_parts.rsi
+    state: l_arm_sint
+
+- type: marking
+  id: SynthRArmSint
+  bodyPart: RArm
+  groupWhitelist: [ Synthoid ]
+  sprites:
+  - sprite: _LP/Mobs/Sintoid/Sint_parts.rsi
+    state: r_arm_sint
+
+- type: marking
+  id: SynthLHandSint
+  bodyPart: LHand
+  groupWhitelist: [ Synthoid ]
+  sprites:
+  - sprite: _LP/Mobs/Sintoid/Sint_parts.rsi
+    state: l_hand_sint
+
+- type: marking
+  id: SynthRHandSint
+  bodyPart: RHand
+  groupWhitelist: [ Synthoid ]
+  sprites:
+  - sprite: _LP/Mobs/Sintoid/Sint_parts.rsi
+    state: r_hand_sint
+
+- type: marking
+  id: SynthLLegSint
+  bodyPart: LLeg
+  groupWhitelist: [ Synthoid ]
+  sprites:
+  - sprite: _LP/Mobs/Sintoid/Sint_parts.rsi
+    state: l_leg_sint
+
+- type: marking
+  id: SynthRLegSint
+  bodyPart: RLeg
+  groupWhitelist: [ Synthoid ]
+  sprites:
+  - sprite: _LP/Mobs/Sintoid/Sint_parts.rsi
+    state: r_leg_sint
+
+- type: marking
+  id: SynthLFootSint
+  bodyPart: LFoot
+  groupWhitelist: [ Synthoid ]
+  sprites:
+  - sprite: _LP/Mobs/Sintoid/Sint_parts.rsi
+    state: l_foot_sint
+
+- type: marking
+  id: SynthRFootSint
+  bodyPart: RFoot
+  groupWhitelist: [ Synthoid ]
+  sprites:
+  - sprite: _LP/Mobs/Sintoid/Sint_parts.rsi
+    state: r_foot_sint
+
+- type: marking
+  id: SynthTail
+  bodyPart: Tail
+  groupWhitelist: [ Synthoid ]
+  sprites:
+  - sprite: _LP/Mobs/Customization/Sint_parts.rsi
+    state: tail
+
+- type: marking
+  id: SynthTailSint
+  bodyPart: Tail
+  groupWhitelist: [ Synthoid ]
+  sprites:
+  - sprite: _LP/Mobs/Customization/Sint_parts.rsi
+    state: tail
+  - sprite: _LP/Mobs/Customization/Sint_parts.rsi
+    state: tail_sint

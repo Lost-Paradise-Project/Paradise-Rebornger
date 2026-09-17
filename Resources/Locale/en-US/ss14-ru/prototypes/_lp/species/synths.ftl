@@ -1,0 +1,17 @@
+species-name-synthoid = Synthoid
+marking-SynthTorsoSintMale = Torso (male)
+marking-SynthTorsoSintFemale = Torso (female)
+marking-SynthTailSint = Tail with colored line
+marking-SynthTail = Tail
+marking-SynthHeadWin = Head
+marking-SynthFrillsDivinity = Frills
+marking-SynthFrillsDivinityLight = Light frills
+marking-SynthAntennas = Antennae
+marking-SynthLArmSint = Left arm
+marking-SynthRArmSint = Right arm
+marking-SynthRHandSint = Right hand
+marking-SynthLHandSint = Left hand
+marking-SynthLLegSint = Left leg
+marking-SynthRLegSint = Right leg
+marking-SynthLFootSint = Left foot
+marking-SynthRFootSint = Right foot
