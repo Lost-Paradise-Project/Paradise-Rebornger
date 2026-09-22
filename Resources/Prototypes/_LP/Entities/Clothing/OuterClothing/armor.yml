@@ -1,5 +1,5 @@
 - type: entity
-  parent: ClothingOuterBaseLarge
+  parent: [ClothingOuterBaseLarge, BaseSyndicateContraband]
   id: LPPClothingOuterArmorErengySyndie
   name: anti-energy cuirass
   description: Anti-energy cuirass, that provides, no wonder, good energy protection for wearer, it sometimes can even ricoshet them.
@@ -27,7 +27,7 @@
       - Energy
 
 - type: entity
-  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing]
+  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseSecurityContraband]
   id: LPPClothingOuterArmorSwat
   name: swat suit
   description: Composed of semi-flexible polycarbonate, reinforced materials, and integrated ballistic plating, it offers exceptional protection against melee, bullet, and environmental threats, ensuring officers remain combat-ready in the harshest conditions.
@@ -47,11 +47,11 @@
     damageCoefficient: 0.50
   - type: GroupExamine
   - type: ClothingSpeedModifier
-    walkModifier: 0.8
-    sprintModifier: 0.8
+    walkModifier: 0.9
+    sprintModifier: 0.9
 
 - type: entity
-  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing]
+  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseSecurityContraband]
   id: LPPClothingOuterArmorSwatAlternative
   name: Lightened swat suit
   description: Composed of semi-flexible polycarbonate, reinforced materials, and integrated ballistic plating, it offers exceptional protection against melee, bullet, and environmental threats, ensuring officers remain combat-ready in the harshest conditions.
@@ -75,7 +75,7 @@
     sprintModifier: 1
 
 - type: entity
-  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing]
+  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing, BaseSecurityContraband]
   id: LPPClothingOuterArmorSwatEpistemic
   name: Epistemic swat suit
   description: Composed of semi-flexible polycarbonate, reinforced materials, and integrated ballistic plating, it offers exceptional protection against melee, bullet, and environmental threats, ensuring officers remain combat-ready in the harshest conditions.

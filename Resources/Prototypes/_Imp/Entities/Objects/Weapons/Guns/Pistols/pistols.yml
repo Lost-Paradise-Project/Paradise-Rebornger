@@ -44,8 +44,21 @@
         whitelist:
           tags:
             - CartridgePistol
+#LP edit start
+      flashlight:
+        name: weapon-upgrade-slot-name-flashlight
+        priority: 0
+        insertDelay: 0.8
+        ejectDelay: 0.4
+        ejectOnBreak: true
+        occludesLight: false
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+#LP edit end
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
       firing_pin: !type:Container # starlight
+      flashlight: !type:ContainerSlot #LP edit

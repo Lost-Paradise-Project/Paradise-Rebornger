@@ -9,7 +9,7 @@
     size: Large
     shape:
     - 0,0,4,0
-    - 0,1,0,2
+    - 0,0,4,0
   - type: Sprite
     sprite: _Impstation/Objects/Weapons/Guns/Disablers/disablercarbine.rsi
     layers:
@@ -28,7 +28,7 @@
   - type: Gun
     soundGunshot:
       path: /Audio/_Impstation/Weapons/Guns/Gunshots/stunprojector.ogg
-    fireRate: 1.6
+    fireRate: 1.25
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto

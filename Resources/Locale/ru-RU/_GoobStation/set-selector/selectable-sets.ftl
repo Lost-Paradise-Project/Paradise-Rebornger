@@ -38,7 +38,7 @@ selectable-set-blueshield-french-description =
 
 selectable-set-hos-smg-name = X-6 "Сшиватель"
 selectable-set-hos-smg-description = 
-    Эргономичный ПП, стреляющая в автоматическими режиме смертоносными болтами энергии. 
+    Эргономичный ПП, стреляющая в автоматическими режиме смертоносными болтами энергии.
     Высокая скорострельность при низком уроне.
 
 selectable-set-hos-shotgun-name = X-12 "Фламбэ"

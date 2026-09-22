@@ -62,6 +62,9 @@
   - MagazineBoxSpecial
   - MagazineBoxSpecialPractice
   - LPPC4Low
+  - LPPMagazineRifleMars
+  - LPPMagazineRifleGarand
+  - LPPMagazineBoxLightRifleHunter
   # LP Edit End
 
 - type: latheRecipePack

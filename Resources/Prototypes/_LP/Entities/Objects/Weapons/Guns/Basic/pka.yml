@@ -1,0 +1,39 @@
+- type: entity
+  id: LPPWeaponProtoKineticAcceleratorPressure
+  parent: WeaponProtoKineticAccelerator
+  suffix: Pressure upgrade
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      upgrade_slot_1:
+        id: PKAUpgradePressure
+
+- type: entity
+  id: LPPWeaponProtoKineticShotgunPressure
+  parent: WeaponProtoKineticShotgun
+  suffix: Pressure upgrade
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      upgrade_slot_1:
+        id: PKAUpgradePressure
+
+- type: entity
+  id: LPPWeaponProtoKineticRepeaterPressure
+  parent: WeaponProtoKineticRepeater
+  suffix: Pressure upgrade
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      upgrade_slot_1:
+        id: PKAUpgradePressure
+
+- type: entity
+  id: LPPWeaponProtoKineticPistolPressure
+  parent: WeaponProtoKineticPistol
+  suffix: Pressure upgrade
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      upgrade_slot_1:
+        id: PKAUpgradePressure

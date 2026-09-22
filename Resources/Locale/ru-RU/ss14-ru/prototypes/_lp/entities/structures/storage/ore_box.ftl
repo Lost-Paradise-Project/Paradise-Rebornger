@@ -1,0 +1,9 @@
+ent-LPPOreBoxBig = { ent-OreBox }
+    .desc = { ent-OreBox.desc }
+    .suffix = Big
+ent-LPPOreBoxSmall = { ent-LPPOreBoxBig }
+    .desc = { ent-LPPOreBoxBig.desc }
+    .suffix = Small
+ent-LPPOreBoxWide = { ent-LPPOreBoxBig }
+    .desc = { ent-LPPOreBoxBig.desc }
+    .suffix = Wide

@@ -172,6 +172,33 @@
   - type: Gun # Corvax-Guns
     soundGunshot:
       path: /Audio/Corvax/Weapons/Guns/Gunshots/shotgun_metal.ogg
+#LP edit start
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+      firing_pin: !type:Container
+      flashlight: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      flashlight:
+        name: weapon-upgrade-slot-name-flashlight
+        priority: 0
+        insertDelay: 0.8
+        ejectDelay: 0.4
+        ejectOnBreak: true
+        occludesLight: false
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+  - type: ItemMapper
+    mapLayers:
+      flight:
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+  - type: UpgradeableWeapon
+#LP edit end
 
 - type: entity
   parent: WeaponShotgunEnforcer
@@ -206,6 +233,43 @@
   - type: Tag
     tags:
     - WeaponShotgunKammerer
+#LP edit start
+  - type: ItemSlots
+    slots:
+      bayonet:
+        name: weapon-upgrade-slot-name-bayonet
+        priority: 0
+        insertDelay: 2.0
+        ejectDelay: 1.2
+        ejectOnBreak: true
+        whitelist:
+          components:
+          - GunUpgradeBayonet
+  - type: ItemMapper
+    mapLayers:
+      bayonet:
+        whitelist:
+          components:
+          - GunUpgradeBayonet
+  - type: UpgradeableWeapon
+  - type: MeleeWeapon
+    wideAnimationRotation: 270
+    attackRate: 1
+    angle: 0
+    range: 1.1
+    damage:
+      types:
+        Blunt: 5
+  - type: MeleeWeaponRelay
+  - type: AltFireMelee
+    attackType: Heavy
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+      firing_pin: !type:Container # starlight
+      bayonet: !type:ContainerSlot
+#LP edit end
 
 - type: entity
   name: sawn-off shotgun

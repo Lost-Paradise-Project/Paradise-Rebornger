@@ -56,10 +56,30 @@
         whitelist:
           tags:
             - CartridgePistol
+#LP edit start
+      flashlight:
+        name: weapon-upgrade-slot-name-flashlight
+        priority: 0
+        insertDelay: 0.8
+        ejectDelay: 0.4
+        ejectOnBreak: true
+        occludesLight: false
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+  - type: ItemMapper
+    mapLayers:
+      flight:
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+  - type: UpgradeableWeapon
+#LP edit end
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
+      flashlight: !type:ContainerSlot #LP edit
       firing_pin: !type:Container # Starlight
   - type: AmmoCounter
   - type: MagazineVisuals
@@ -88,6 +108,11 @@
   - type: FiringPinHolder
     supportedPins: [ Pistol, GunUpgrade ]
   # starlight end
+#LP edit start
+  - type: Multishot
+    missChance: 5
+    spreadAddition: 10
+#LP edit end
 
 - type: entity
   name: viper
@@ -116,11 +141,24 @@
         whitelist:
           tags:
             - CartridgePistol
+#LP edit start
+      flashlight:
+        name: weapon-upgrade-slot-name-flashlight
+        priority: 0
+        insertDelay: 0.8
+        ejectDelay: 0.4
+        ejectOnBreak: true
+        occludesLight: false
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+#LP edit end
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
       firing_pin: !type:Container # starlight
+      flashlight: !type:ContainerSlot #LP edit
   - type: StaticPrice
     price: 1000
 
@@ -203,11 +241,24 @@
         whitelist:
           tags:
             - CartridgeCaselessRifle
+#LP edit start
+      flashlight:
+        name: weapon-upgrade-slot-name-flashlight
+        priority: 0
+        insertDelay: 0.8
+        ejectDelay: 0.4
+        ejectOnBreak: true
+        occludesLight: false
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+#LP edit end
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
       firing_pin: !type:Container # starlight
+      flashlight: !type:ContainerSlot #LP edit
   - type: StaticPrice
     price: 1500
 

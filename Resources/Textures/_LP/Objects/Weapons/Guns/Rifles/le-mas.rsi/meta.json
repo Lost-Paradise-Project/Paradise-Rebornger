@@ -42,6 +42,15 @@
         {
             "name": "equipped-SUITSTORAGE",
             "directions": 4
+        },
+        {
+            "name": "bayonet"
+        },
+        {
+            "name": "flight"
+        },
+        {
+            "name": "flight-on"
         }
     ]
 }

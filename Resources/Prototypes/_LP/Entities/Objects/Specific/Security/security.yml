@@ -1,0 +1,24 @@
+- type: entity
+  parent: LPPCentcoin
+  id: LPPCentcoin10
+  suffix: 10 Coins
+  components:
+  - type: Currency
+    price:
+      LPPCentcoin: 10
+
+- type: entity
+  name: CentCoin
+  parent: BaseItem
+  id: LPPCentcoin
+  description: A coin containing a couple of grams of bluespace crystal, as well as disposable modules for teleporting objects.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Specific/Security/Centcoin.rsi
+    state: telecrystal
+  - type: Item
+    sprite: _LP/Objects/Specific/Security/Centcoin.rsi
+    size: Tiny
+  - type: Currency
+    price:
+      LPPCentcoin: 1

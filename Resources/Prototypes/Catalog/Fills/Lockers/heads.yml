@@ -366,6 +366,7 @@
     - id: HeadOfSecurityWeaponUndetermined
     - id: ClothingOuterArmorHoSHeavy
     - id: ClothingHeadHelmetHeavyHoS
+    - id: LPPHOSUplinkShop
 #LP edit end
 
 # Hardsuit table, used for suit storage as well
