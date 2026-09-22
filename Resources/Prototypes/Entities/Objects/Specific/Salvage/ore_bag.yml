@@ -14,10 +14,10 @@
     quickEquip: false
     slots:
     - belt
-  # DeltaV Edit Start
-  - type: MagnetPickup
-    range: 1.5
-  # DeltaV Edit End
+  - type: ComponentToggler # LP edit start
+    components:
+    - type: MagnetPickup
+      range: 1.5 # LP edit end
   - type: Item
     size: Ginormous
   - type: Storage
