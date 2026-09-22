@@ -1,0 +1,63 @@
+- type: entity
+  id: LPPGravityGeneratorConstruction
+  parent: BaseStructureDynamic
+  name: gravity generator construction
+  description: It's what keeps you to the floor but not constructed
+  placement:
+    mode: AlignTileAny
+  components:
+  - type: Appearance
+  - type: Anchorable
+  - type: InteractionOutline
+  - type: WarpPoint
+    blacklist:
+      tags:
+      - GhostOnlyWarp
+  - type: Sprite
+    sprite: _LP/Structures/Machines/gravity_generator_construction.rsi
+    layers:
+    - map: [ "enum.ConstructionVisuals.Layer" ]
+      state: base
+  - type: GenericVisualizer
+    visuals:
+      enum.ConstructionVisuals.Key:
+        enum.ConstructionVisuals.Layer:
+          missingWires: { state: base }
+          machineFrame: { state: wired }
+          circuitInserted: { state: circuited }
+          circuitFixed: { state: circuit_fixed }
+          beforeUranium: { state: rodded }
+          Uranium: { state: off }
+          beforeAnomaly: { state: off }
+          Anomaly: { state: off }
+          AnomalyFixed: { state: off }
+          prefinal: { state: off }
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetPlasteel:
+            min: 2
+            max: 10
+  - type: Fixtures
+    fixtures:
+      fix1:
+        density: 250
+        mask:
+        - LargeMobMask
+        layer:
+        - WallLayer
+  - type: Construction
+    graph: GravityGen
+    node: missingWires
+  - type: ContainerContainer
+    containers:
+      board: !type:Container
+      anomaly: !type:Container

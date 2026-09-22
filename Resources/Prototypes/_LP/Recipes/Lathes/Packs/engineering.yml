@@ -24,3 +24,11 @@
   - ClothingBackpackDuffelHolding
   - ClothingShoesBootsMagSci
   - ClothingShoesBootsSpeed
+
+- type: latheRecipePack
+  id: LPPExpandedShuttlecraft
+  recipes:
+  - LPPGravitygeneratorMachineCircuitboard
+  - LPPLPPLargeRocketMachineCircuitboard
+  - LPPLargeGyroscopeMachineCircuitboard
+  - StationAnchorCircuitboard
