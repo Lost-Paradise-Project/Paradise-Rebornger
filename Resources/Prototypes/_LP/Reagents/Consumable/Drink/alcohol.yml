@@ -35,3 +35,22 @@
         - !type:ReagentCondition
           reagent: Absinthe
           min: 10
+
+- type: reagent
+  id: LPPMiruvor
+  name: reagent-name-miruvor
+  parent: BaseAlcohol
+  desc: reagent-desc-miruvor
+  physicalDesc: reagent-physical-desc-miruvor
+  flavor: arrogantly
+  color: "#CE9C36"
+  metamorphicSprite:
+    sprite: _LP/Objects/Consumable/Drinks/miruvorglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Digestion:
+      metabolites:
+        Ethanol: 0.4
