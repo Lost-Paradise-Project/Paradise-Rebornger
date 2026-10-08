@@ -1,0 +1,4 @@
+- files: ["shower_mid1.ogg", "shower_start.ogg", "shower_end.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from AdventureTimeSS14/space_station_ADT PR #2283, commit 391f35e3f7278404729a0888ef7cd0d8f455d311. No individual author specified upstream; license follows the repository's default asset license."
+  source: "https://github.com/AdventureTimeSS14/space_station_ADT/pull/2283"

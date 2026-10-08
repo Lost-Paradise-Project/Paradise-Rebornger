@@ -1,0 +1,39 @@
+- type: entity
+  id: ADTShower
+  parent: BaseStructure
+  name: shower
+  description: A shower for washing away a long shift.
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wallmount
+  components:
+  - type: Sprite
+    sprite: _ADT/Structures/Furniture/shower.rsi
+    layers:
+    - state: shower
+      map: ["enum.ToggleableVisuals.Layer"]
+  - type: Rotatable
+  - type: Anchorable
+  - type: Transform
+    noRot: false
+  - type: Physics
+    bodyType: Static
+    canCollide: false
+  - type: InteractionOutline
+  - type: Appearance
+  - type: ItemToggle
+    predictable: false
+    soundActivate:
+      path: /Audio/_ADT/Effects/shower_start.ogg
+    soundDeactivate:
+      path: /Audio/_ADT/Effects/shower_end.ogg
+  - type: ItemToggleActiveSound
+    activeSound:
+      path: /Audio/_ADT/Effects/shower_mid1.ogg
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
+          True: {state: shower-on}
+          False: {state: shower}
