@@ -1,0 +1,69 @@
+# Ported from Lost-Paradise, commit 18c80e235dfadb398b85ae7b6bee5a4e5bcf2d08.
+- type: reaction
+  id: Heamotoxic
+  reactants:
+    Iron:
+      amount: 1
+    Aluminium:
+      amount: 1
+    Plasma:
+      amount: 1
+  products:
+    Heamotoxic: 3
+
+- type: reaction
+  id: Lucipherium
+  impact: medium
+  reactants:
+    Heamotoxic:
+      amount: 1
+    Sulfur:
+      amount: 1
+    Plasma:
+      amount: 1
+      catalyst: false
+  products:
+    Lucipherium: 3
+
+- type: reaction
+  id: Necrotoxins
+  reactants:
+    Heamotoxic:
+      amount: 1
+    Lucipherium:
+      amount: 1
+    Radium:
+      amount: 1
+    Plasma:
+      amount: 1
+      catalyst: true
+  products:
+    Necrotoxins: 3
+
+- type: reaction
+  id: LPPAphrodisiac
+  reactants:
+    Necrotoxins:
+      amount: 1
+    Heamotoxic:
+      amount: 1
+    Lucipherium:
+      amount: 1
+    Ethanol:
+      amount: 1
+    Iodine:
+      amount: 1
+  products:
+    LPPAphrodisiac: 5
+
+- type: reaction
+  id: LPPAphrodisiacReduced
+  reactants:
+    OrangeLimeSoda: # KiraSpecial in Lost-Paradise.
+      amount: 5
+    LPPAphrodisiac:
+      amount: 1
+    Martini:
+      amount: 5
+  products:
+    LPPAphrodisiacReduced: 10

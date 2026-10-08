@@ -1,0 +1,38 @@
+# Ported from Lost-Paradise, commit 18c80e235dfadb398b85ae7b6bee5a4e5bcf2d08.
+- type: reagent
+  id: Rubrine
+  name: reagent-name-Rubrine
+  desc: reagent-desc-Rubrine
+  physicalDesc: reagent-physdesc-Rubrine
+  group: Medicine
+  flavor: medicine
+  color: "#ed0e37"
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Asphyxiation: -1
+            Bloodloss: -1
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentCondition
+          reagent: LPPAphrodisiac
+          min: 1
+        reagent: LPPAphrodisiac
+        amount: -3
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentCondition
+          reagent: Lucipherium
+          min: 1
+        reagent: Lucipherium
+        amount: -5
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentCondition
+          reagent: LPPAphrodisiacReduced
+          min: 1
+        reagent: LPPAphrodisiacReduced
+        amount: -8

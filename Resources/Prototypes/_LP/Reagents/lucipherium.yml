@@ -1,0 +1,113 @@
+# Ported from Lost-Paradise, commit 18c80e235dfadb398b85ae7b6bee5a4e5bcf2d08.
+- type: reagent
+  id: Lucipherium
+  name: reagent-name-Lucipherium
+  desc: reagent-desc-Lucipherium
+  physicalDesc: reagent-physdesc-Lucipherium
+  group: Narcotics
+  color: "#000000"
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:AdjustReagent
+        reagent: Lucipherium
+        amount: 0.45
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentCondition
+          reagent: Lucipherium
+          max: 0.5
+        reagent: Lucipherium
+        amount: -1
+      - !type:PopupMessage
+        type: Local
+        conditions:
+        - !type:ReagentCondition
+          reagent: Lucipherium
+          max: 30
+        visualType: Medium
+        messages: [reagent-effect-lucipherium-1-1, reagent-effect-lucipherium-1-2, reagent-effect-lucipherium-1-3, reagent-effect-lucipherium-1-4]
+        probability: 0.25
+      - !type:PopupMessage
+        type: Local
+        conditions:
+        - !type:ReagentCondition
+          reagent: Lucipherium
+          min: 30
+          max: 60
+        visualType: Medium
+        messages: [reagent-effect-lucipherium-2-1, reagent-effect-lucipherium-2-2, reagent-effect-lucipherium-2-3, reagent-effect-lucipherium-2-4]
+        probability: 0.25
+      - !type:PopupMessage
+        type: Local
+        conditions:
+        - !type:ReagentCondition
+          reagent: Lucipherium
+          min: 60
+          max: 80
+        visualType: Large
+        messages: [reagent-effect-lucipherium-3-1, reagent-effect-lucipherium-3-2, reagent-effect-lucipherium-3-3, reagent-effect-lucipherium-3-4]
+        probability: 0.25
+      - !type:PopupMessage
+        type: Local
+        conditions:
+        - !type:ReagentCondition
+          reagent: Lucipherium
+          min: 80
+        visualType: Large
+        messages: [reagent-effect-lucipherium-4-1, reagent-effect-lucipherium-4-2, reagent-effect-lucipherium-4-3]
+        probability: 0.25
+      - !type:PopupMessage
+        type: Pvs
+        conditions:
+        - !type:ReagentCondition
+          reagent: Lucipherium
+          min: 80
+        visualType: Medium
+        messages: [reagent-effect-lucipherium-5-1, reagent-effect-lucipherium-5-2, reagent-effect-lucipherium-5-3]
+        probability: 0.3
+      - !type:Jitter
+        conditions:
+        - !type:ReagentCondition
+          reagent: Lucipherium
+          min: 80
+      - !type:ModifyStatusEffect
+        conditions:
+        - !type:ReagentCondition
+          reagent: Lucipherium
+          min: 80
+        effectProto: StatusEffectForcedSleeping
+        type: Add
+      - !type:MovementSpeedModifier
+        conditions:
+        - !type:ReagentCondition
+          reagent: Lucipherium
+          min: 30
+          max: 60
+        walkSpeedModifier: 1.08
+        sprintSpeedModifier: 1.08
+      - !type:MovementSpeedModifier
+        conditions:
+        - !type:ReagentCondition
+          reagent: Lucipherium
+          min: 60
+        walkSpeedModifier: 1.2
+        sprintSpeedModifier: 1.2
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectStutter
+      - !type:Jitter
+      - !type:ModifyStatusEffect
+        conditions:
+        - !type:ReagentCondition
+          reagent: Lucipherium
+          min: 60
+        effectProto: StatusEffectStunned
+        time: 4
+        type: Remove
+      - !type:ModifyKnockdown
+        conditions:
+        - !type:ReagentCondition
+          reagent: Lucipherium
+          min: 60
+        time: 3
+        type: Remove

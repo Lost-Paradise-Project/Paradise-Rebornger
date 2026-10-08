@@ -1,0 +1,56 @@
+# Ported from Lost-Paradise, commit 18c80e235dfadb398b85ae7b6bee5a4e5bcf2d08.
+- type: reagent
+  id: Necrotoxins
+  name: reagent-name-Necrotoxins
+  desc: reagent-desc-Necrotoxins
+  physicalDesc: reagent-physdesc-Necrotoxins
+  color: "#2F4F4F"
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.5
+            Cellular: 0.2
+      - !type:AdjustReagent
+        reagent: Necrotoxins
+        amount: 0.45
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentCondition
+          reagent: Necrotoxins
+          min: 20
+          max: 40
+        reagent: Necrotoxins
+        amount: 0.2
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentCondition
+          reagent: Necrotoxins
+          min: 40
+        reagent: Necrotoxins
+        amount: 1
+      - !type:PopupMessage
+        type: Local
+        conditions:
+        - !type:ReagentCondition
+          reagent: Necrotoxins
+          max: 20
+        visualType: Medium
+        messages: [reagent-effect-necrotoxins-1-1, reagent-effect-necrotoxins-1-2]
+        probability: 0.2
+
+- type: reagent
+  id: Heamotoxic
+  name: reagent-name-Heamotoxic
+  desc: reagent-desc-Heamotoxic
+  physicalDesc: reagent-physdesc-Heamotoxic
+  color: "#FF7F50"
+  metabolisms:
+    Bloodstream:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 2.5
