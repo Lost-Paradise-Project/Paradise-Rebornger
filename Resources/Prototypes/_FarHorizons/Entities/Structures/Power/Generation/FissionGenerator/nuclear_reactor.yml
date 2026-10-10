@@ -265,6 +265,11 @@
   id: NuclearReactorSmall
   parent: [BaseNuclearReactorSmall, NuclearReactorCrew, ReactorPrefab5x5Normal]
 
+- type: entity # LP edit start
+  id: NuclearReactorSmallEmpty
+  parent: [BaseNuclearReactorSmall, NuclearReactorCrew, ReactorPrefabEmpty]
+  suffix: "Empty" # LP edit start
+
 - type: entity
   id: NuclearReactorSmallRandom
   parent: [BaseNuclearReactorSmall, NuclearReactorCrew, ReactorPrefabRandom]

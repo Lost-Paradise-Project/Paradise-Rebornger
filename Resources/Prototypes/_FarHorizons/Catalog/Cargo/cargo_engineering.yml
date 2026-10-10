@@ -4,9 +4,19 @@
     sprite: _FarHorizons/Interface/FissionGenerator/cargo_icons.rsi
     state: reactor
   product: NuclearReactorFlatpack
-  cost: 15000
+  cost: 35000 # LP edit
   category: cargoproduct-category-name-engineering
   group: market
+
+- type: cargoProduct # LP edit start
+  id: SmallNuclearReactorFlatpackPurchase
+  icon:
+    sprite: _FarHorizons/Interface/FissionGenerator/cargo_icons.rsi
+    state: smallreactor
+  product: SmallNuclearReactorFlatpack
+  cost: 15000
+  category: cargoproduct-category-name-engineering
+  group: market # LP edit end
 
 - type: cargoProduct
   id: GasTurbineFlatpackPurchase
@@ -14,9 +24,19 @@
     sprite: _FarHorizons/Interface/FissionGenerator/cargo_icons.rsi
     state: turbine
   product: GasTurbineFlatpack
-  cost: 10000
+  cost: 30000 # LP edit
   category: cargoproduct-category-name-engineering
   group: market
+
+- type: cargoProduct # LP edit start
+  id: SmallGasTurbineFlatpackPurchase
+  icon:
+    sprite: _FarHorizons/Interface/FissionGenerator/cargo_icons.rsi
+    state: smallturbine
+  product: SmallGasTurbineFlatpack
+  cost: 10000
+  category: cargoproduct-category-name-engineering
+  group: market # LP edit end
 
 - type: cargoProduct
   id: CerenkiteFuelRodPurchase
