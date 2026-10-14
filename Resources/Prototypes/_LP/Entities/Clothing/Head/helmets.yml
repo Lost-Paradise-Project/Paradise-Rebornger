@@ -1,5 +1,5 @@
 - type: entity
-  parent: ClothingHeadHatHardhatBase
+  parent: [ClothingHeadHatHardhatBase, BaseSecurityContraband]
   id: LPPClothingHeadHelmetBasic
   name: helmet with flashlight
   description: Standard protective gear. Protects against impacts and shines in technical tunnels, but now with a flashlight!
@@ -146,7 +146,7 @@
     heldPrefix: open
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: [ClothingHeadBase, BaseSecurityContraband]
   id: LPPClothingHeadHelmetSwat
   name: SWAT armor helmet
   description: A sturdy helmet made of kevlar and plasteel, will protect against small-caliber bullets, as well as shrapnel.
@@ -186,7 +186,7 @@
     heldPrefix: open
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: [ClothingHeadBase, BaseSecurityContraband]
   id: LPPClothingHeadHelmetSwatAlternative
   name: Lightened SWAT armor helmet
   description: A sturdy helmet made of kevlar and plasteel, will protect against small-caliber bullets, as well as shrapnel.
@@ -226,7 +226,7 @@
     heldPrefix: open
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: [ClothingHeadBase, BaseSecurityContraband]
   id: LPPClothingHeadHelmetSwatEpistemic
   name: Epistemic SWAT armor helmet
   description: A sturdy helmet made of kevlar and plasteel, will protect against small-caliber bullets, as well as shrapnel.

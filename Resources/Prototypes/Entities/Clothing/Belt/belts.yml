@@ -64,7 +64,7 @@
 ## Belts without visualizers
 
 - type: entity
-  parent: [ClothingBeltAmmoProviderBase, BaseSecurityBartenderContraband]
+  parent: [ClothingBeltStorageBase, BaseSecurityBartenderContraband] #LP edit
   id: ClothingBeltBandolier
   name: bandolier
   description: A bandolier for holding shotgun ammunition.
@@ -75,11 +75,28 @@
     sprite: Clothing/Belt/bandolier.rsi
   - type: Item
     size: Huge
-  - type: BallisticAmmoProvider
+#LP edit start
+  # - type: BallisticAmmoProvider
+  #   whitelist:
+  #     tags:
+  #       - ShellShotgun
+  #   capacity: 14
+  - type: Storage
+    grid:
+    - 0,0,5,2
+    maxItemSize: Small
     whitelist:
       tags:
-        - ShellShotgun
-    capacity: 14
+      - ShellShotgun
+      - CartridgeAntiMateriel
+      - CartridgeCaselessRifle
+      - CartridgeHeavyRifle
+      - CartridgeLightRifle
+      - CartridgeMagnum
+      - CartridgePistol
+      - CartridgeRifle
+      - CartridgeCap
+#LP edit end
 
 - type: entity
   parent: [ ClothingBeltStorageBase, BaseMagicalContraband ]

@@ -8,8 +8,8 @@
   - type: BitrunningAbilityDisk
     grantMode: Item
     options:
-      bitrunning-disk-option-pka-basic: WeaponProtoKineticAccelerator
-      bitrunning-disk-option-pka-pistol: WeaponProtoKineticPistol
+      bitrunning-disk-option-pka-basic: LPPWeaponProtoKineticAcceleratorPressure
+      bitrunning-disk-option-pka-pistol: LPPWeaponProtoKineticPistolPressure
 
 - type: entity
   parent: BaseBitrunningDisk
@@ -20,8 +20,8 @@
   - type: BitrunningAbilityDisk
     grantMode: Item
     options:
-      bitrunning-disk-option-pka-shotgun: WeaponProtoKineticShotgun
-      bitrunning-disk-option-pka-repeater: WeaponProtoKineticRepeater
+      bitrunning-disk-option-pka-shotgun: LPPWeaponProtoKineticShotgunPressure
+      bitrunning-disk-option-pka-repeater: LPPWeaponProtoKineticRepeaterPressure
 
 - type: entity
   parent: BaseBitrunningDisk

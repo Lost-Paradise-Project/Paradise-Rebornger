@@ -1,0 +1,12 @@
+ent-LPPWeaponProtoKineticAcceleratorPressure = { ent-WeaponProtoKineticAccelerator }
+    .desc = { ent-WeaponProtoKineticAccelerator.desc }
+    .suffix = улучшение давления
+ent-LPPWeaponProtoKineticShotgunPressure = { ent-WeaponProtoKineticShotgun }
+    .desc = { ent-WeaponProtoKineticShotgun.desc }
+    .suffix = улучшение давления
+ent-LPPWeaponProtoKineticRepeaterPressure = { ent-WeaponProtoKineticRepeater }
+    .desc = { ent-WeaponProtoKineticRepeater.desc }
+    .suffix = улучшение давления
+ent-LPPWeaponProtoKineticPistolPressure = { ent-WeaponProtoKineticPistol }
+    .desc = { ent-WeaponProtoKineticPistol.desc }
+    .suffix = улучшение давления

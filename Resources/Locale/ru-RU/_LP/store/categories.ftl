@@ -1,0 +1,14 @@
+store-category-hos-weapon = Вооружение
+store-category-hos-armor = Броня
+store-category-hos-ammo = Боеприпасы
+store-category-hos-brigmed = Первая помощь
+store-category-hos-brigtech = Приспособления
+store-category-contract = Контракты
+store-category-specarmor = Броня
+store-category-specweapon = Вооружение
+store-category-specammo = Боеприпасы
+store-category-specexplosives = Взрывчатка
+store-category-spectools = Инструменты
+store-category-specimplants = Импланты
+store-category-specutilities = Утилиты
+store-category-misc = Разное

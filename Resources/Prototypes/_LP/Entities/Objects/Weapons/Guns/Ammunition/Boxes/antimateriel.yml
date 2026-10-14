@@ -1,0 +1,29 @@
+- type: entity
+  parent: BaseMagazineBoxAntiMateriel
+  id: LPPMagazineBoxAntiMaterielNonleathal
+  name: ammunition box (.60 non-leathal)
+  description: A cardboard box of .60 non-leathal rounds.
+  components:
+  - type: BallisticAmmoProvider
+    proto: LPPCartridgeAntiMaterielNonLethal
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: BaseMagazineBoxAntiMateriel
+  id: LPPMagazineBoxAntiMaterielCP
+  name: ammunition box (.60 CP)
+  description: A cardboard box of .60 CP rounds.
+  components:
+  - type: BallisticAmmoProvider
+    proto: LPPCartridgeAntiMaterielCP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]

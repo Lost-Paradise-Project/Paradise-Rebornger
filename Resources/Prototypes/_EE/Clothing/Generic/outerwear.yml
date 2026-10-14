@@ -24,8 +24,8 @@
       reflects:
         - Energy
     - type: ClothingSpeedModifier
-      walkModifier: 0.8
-      sprintModifier: 0.8
+      walkModifier: 0.9
+      sprintModifier: 0.9
     - type: Item
       size: Huge
     - type: HeldSpeedModifier
@@ -57,8 +57,8 @@
         - Energy
         - NonEnergy
     - type: ClothingSpeedModifier
-      walkModifier: 0.7
-      sprintModifier: 0.7
+      walkModifier: 0.85
+      sprintModifier: 0.85
     - type: Item
       size: Huge
     - type: HeldSpeedModifier
@@ -89,8 +89,8 @@
       reflects:
         - NonEnergy
     - type: ClothingSpeedModifier
-      walkModifier: 0.7
-      sprintModifier: 0.7
+      walkModifier: 0.85
+      sprintModifier: 0.85
     - type: Item
       size: Huge
     - type: HeldSpeedModifier
@@ -127,8 +127,8 @@
         - Energy
         - NonEnergy
     - type: ClothingSpeedModifier
-      walkModifier: 0.8
-      sprintModifier: 0.8
+      walkModifier: 0.85
+      sprintModifier: 0.85
     - type: Item
       size: Huge
     - type: HeldSpeedModifier

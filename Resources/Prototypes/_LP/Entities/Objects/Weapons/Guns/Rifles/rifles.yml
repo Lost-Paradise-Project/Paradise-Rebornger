@@ -42,11 +42,32 @@
         whitelist:
           tags:
             - CartridgeRifle
+      flashlight:
+        name: weapon-upgrade-slot-name-flashlight
+        priority: 0
+        insertDelay: 0.8
+        ejectDelay: 0.4
+        ejectOnBreak: true
+        occludesLight: false
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+      bayonet:
+        name: weapon-upgrade-slot-name-bayonet
+        priority: 0
+        insertDelay: 2.0
+        ejectDelay: 1.2
+        ejectOnBreak: true
+        whitelist:
+          components:
+          - GunUpgradeBayonet
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
       firing_pin: !type:Container # Starlight
+      bayonet: !type:ContainerSlot
+      flashlight: !type:ContainerSlot
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -69,6 +90,28 @@
     containers:
       firing_pin:
       - FiringPin
+  - type: ItemMapper
+    mapLayers:
+      bayonet:
+        whitelist:
+          components:
+          - GunUpgradeBayonet
+      flight:
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+  - type: UpgradeableWeapon
+  - type: MeleeWeapon
+    wideAnimationRotation: 270
+    attackRate: 1
+    angle: 0
+    range: 1.1
+    damage:
+      types:
+        Blunt: 5
+  - type: MeleeWeaponRelay
+  - type: AltFireMelee
+    attackType: Heavy
 
 - type: entity
   name: PA-DE-FAME
@@ -357,3 +400,149 @@
     sprite: Objects/Weapons/Guns/Rifles/ak.rsi
     layers:
       - state: icon
+
+- type: entity
+  id: LPPWeaponM1Garand
+  parent: [BaseWeaponRifle, BaseSecurityContraband]
+  name: Rifle M1 Garand
+  description: A replica of the classic World War II rifle from XenoHuntingArmoury, using cartridges .30 hunting. Ping!
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Guns/Rifles/garand.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _LP/Objects/Weapons/Guns/Rifles/garand.rsi
+  - type: Gun
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: LPPMagazineRifleGarand
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/_LP/Weapons/Guns/MagOut/garandping.ogg
+        priority: 1
+        whitelist:
+          tags:
+            - LPPMagazineGarand
+      bayonet:
+        name: weapon-upgrade-slot-name-bayonet
+        priority: 0
+        insertDelay: 2.0
+        ejectDelay: 1.2
+        ejectOnBreak: true
+        whitelist:
+          components:
+          - GunUpgradeBayonet
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+      firing_pin: !type:Container
+      bayonet: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: ChamberMagazineAmmoProvider
+    autoEject: true
+  - type: ItemMapper
+    mapLayers:
+      bayonet:
+        whitelist:
+          components:
+          - GunUpgradeBayonet
+  - type: UpgradeableWeapon
+  - type: MeleeWeapon
+    wideAnimationRotation: 270
+    attackRate: 1
+    angle: 0
+    range: 1.1
+    damage:
+      types:
+        Blunt: 5
+  - type: MeleeWeaponRelay
+  - type: AltFireMelee
+    attackType: Heavy
+
+- type: entity
+  id: LPPWeaponMarsRifle
+  parent: [BaseWeaponRifle, BaseSecurityContraband]
+  name: Rifle "Mars"
+  description: XenoHuntingArmoury hunting rifle using cartridges .30 hunting. An extremely popular model among planetary and space fauna hunters.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Guns/Rifles/marsrifle.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _LP/Objects/Weapons/Guns/Rifles/marsrifle.rsi
+  - type: Gun
+    fireRate: 1.75
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: LPPMagazineRifleMars
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        priority: 1
+        whitelist:
+          tags:
+            - LPPMagazineMars
+      bayonet:
+        name: weapon-upgrade-slot-name-bayonet
+        priority: 0
+        insertDelay: 2.0
+        ejectDelay: 1.2
+        ejectOnBreak: true
+        whitelist:
+          components:
+          - GunUpgradeBayonet
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+      firing_pin: !type:Container
+      bayonet: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: ItemMapper
+    mapLayers:
+      bayonet:
+        whitelist:
+          components:
+          - GunUpgradeBayonet
+  - type: UpgradeableWeapon
+  - type: MeleeWeapon
+    wideAnimationRotation: 270
+    attackRate: 1
+    angle: 0
+    range: 1.1
+    damage:
+      types:
+        Blunt: 5
+  - type: MeleeWeaponRelay
+  - type: AltFireMelee
+    attackType: Heavy
