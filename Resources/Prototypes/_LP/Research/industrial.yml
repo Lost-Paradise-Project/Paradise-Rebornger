@@ -47,3 +47,24 @@
   technologyPrerequisites:
   - LPPBasicHUD
   position: 2, 21
+
+
+- type: technology
+  id: LPPExpandedShuttlecraft
+  name: research-technology-shuttlecraft
+  icon:
+    sprite: Structures/Machines/station_anchor.rsi
+    state: station_anchor
+  discipline: Industrial
+  tier: 2
+  cost: 12000
+  recipeUnlocks:
+  - LPPGravitygeneratorMachineCircuitboard
+  - LPPLPPLargeRocketMachineCircuitboard
+  - LPPLargeGyroscopeMachineCircuitboard
+  - StationAnchorCircuitboard
+  position: 5, 13
+  technologyPrerequisites:
+  - Shuttlecraft
+  radioChannels:
+  - Engineering
