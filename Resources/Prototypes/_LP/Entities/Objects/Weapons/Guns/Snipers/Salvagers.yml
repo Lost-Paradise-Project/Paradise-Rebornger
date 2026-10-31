@@ -73,7 +73,7 @@
   - type: AltFireMelee
     attackType: Light
   - type: Sharp
-    butcherDelayModifier: 2 #It's a bayonet
+    butcherDelayModifier: 2
 
 - type: entity
   parent: [BaseItem, BaseCargoContraband ]
@@ -300,3 +300,67 @@
       collection: MetalThud
   - type: AltFireMelee
     attackType: Light
+  - type: ItemSlots
+    slots:
+      flashlight:
+        name: weapon-upgrade-slot-name-flashlight
+        priority: 5
+        insertDelay: 0.8
+        ejectDelay: 0.4
+        ejectOnBreak: true
+        occludesLight: false
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+  - type: ItemMapper
+    mapLayers:
+      flight:
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+  - type: UpgradeableWeapon
+
+- type: entity
+  parent: LPPweaponPibodi
+  id: LPPweaponPibodiPressure
+  suffix: Pressure
+  components:
+  - type: PressureDamageChange
+    lowerBound: 0
+    appliedModifier: 1.5
+
+- type: entity
+  parent: LPPweaponLebel
+  id: LPPweaponLebelPressure
+  suffix: Pressure
+  components:
+  - type: PressureDamageChange
+    lowerBound: 0
+    appliedModifier: 1.5
+
+- type: entity
+  parent: LPPweaponShasspo
+  id: LPPweaponShasspoPressure
+  suffix: Pressure
+  components:
+  - type: PressureDamageChange
+    lowerBound: 0
+    appliedModifier: 1.25
+
+- type: entity
+  parent: LPPweaponManlicher
+  id: LPPweaponManlicherPressure
+  suffix: Pressure
+  components:
+  - type: PressureDamageChange
+    lowerBound: 0
+    appliedModifier: 1.25
+
+- type: entity
+  parent: LPPweaponSchwarzlose
+  id: LPPweaponSchwarzlosePressure
+  suffix: Pressure
+  components:
+  - type: PressureDamageChange
+    lowerBound: 0
+    appliedModifier: 1.5

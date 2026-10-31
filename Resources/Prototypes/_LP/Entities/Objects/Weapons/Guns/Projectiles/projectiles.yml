@@ -234,3 +234,42 @@
     damage:
       types:
         Heat: 15
+
+- type: entity
+  id: LPPBulletLightRifleHunting
+  name: Huntingbullet (.30 rifle)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 16
+        Blunt: 9
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: LPPBulletAntiMaterielNonlethal
+  name: bullet (.60 anti-materiel Non-lethal)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 10
+  - type: StaminaDamageOnCollide
+    damage: 75
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: LPPBulletAntiMaterielCP
+  name: bullet (.60 Concrete projectile)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 20
+        Structural: 320
+  - type: StaminaDamageOnCollide
+    damage: 35

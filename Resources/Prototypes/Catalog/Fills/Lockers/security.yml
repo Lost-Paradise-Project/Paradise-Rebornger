@@ -52,6 +52,7 @@
     - id: PlushieLizardJobWarden
       prob: 0.02
     - id: SecApartmentTablet # Corvax-SecApartment
+    - id: WeaponEnergyShotgun #LP edit
 
 - type: entityTable
   id: FillLockerWardenHarduit
@@ -164,6 +165,8 @@
     - id: LPPClothingHandsGlovesCombatNitrile
     - id: LPPWeaponPistolHippocraticoath
     - id: ClothingBeltCorpsmanWebbing
+    - id: LPPClothingOuterArmorSwatEpistemic
+    - id: LPPClothingHeadHelmetSwatEpistemic
 #LP edit end
 
 - type: entity

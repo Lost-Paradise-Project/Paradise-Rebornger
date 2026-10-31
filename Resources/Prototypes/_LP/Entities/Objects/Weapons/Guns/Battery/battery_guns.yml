@@ -125,12 +125,32 @@
   - type: ContainerContainer
     containers:
       firing_pin: !type:Container
+      flashlight: !type:ContainerSlot
   - type: ContainerFill
     containers:
       firing_pin:
       - FiringPinLaser
   - type: FiringPinHolder
     supportedPins: [ Laser ]
+  - type: ItemSlots
+    slots:
+      flashlight:
+        name: weapon-upgrade-slot-name-flashlight
+        priority: 0
+        insertDelay: 0.8
+        ejectDelay: 0.4
+        ejectOnBreak: true
+        occludesLight: false
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+  - type: ItemMapper
+    mapLayers:
+      flight:
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+  - type: UpgradeableWeapon
 
 - type: entity
   name: Galvanic rifle
@@ -372,3 +392,99 @@
     shape:
     - 0,0,2,0
     - 0,1,0,1
+
+- type: entity
+  name: Lasgun
+  parent: [BaseWeaponPowerCell, BaseGunWieldable, BaseSecurityContraband ]
+  id: LPPWeaponLasgun
+  description: Robust laser rifle with detachable battery.
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Guns/Battery/lasgun/big.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+        scale: "0.85,0.85"
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+        scale: "0.85,0.85"
+  - type: Item
+    size: Large
+    sprite: _LP/Objects/Weapons/Guns/Battery/lasgun/tiny.rsi
+    shape:
+    - 0,0,5,0
+  - type: Appearance
+  - type: Clothing
+    sprite: _LP/Objects/Weapons/Guns/Battery/lasgun/tiny.rsi
+    quickEquip: true
+    slots:
+      - Back
+      - suitStorage
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Wieldable
+    unwieldOnUse: true
+  - type: GunRequiresWield
+  - type: Gun
+    angleIncrease: 5
+    angleDecay: 45
+    fireRate: 2.5
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/_Orion/Weapons/Guns/EGE-XR/shot.ogg
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: Magazine
+        startingItem: LPPPowerCellLasgun
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        whitelist:
+          tags:
+            - LPPLasgun
+  - type: Tag
+    tags:
+    - LaserWeapon
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+  - type: ContainerContainer
+    containers:
+      cell_slot: !type:ContainerSlot
+  - type: BatteryAmmoProvider
+    proto: RedMediumLaser
+    fireCost: 50
+  - type: EmitSoundOnPickup
+    sound:
+      collection: LasersPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: LasersDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: LasersDrop
+
+- type: entity
+  name: Lasgun security
+  parent: LPPWeaponLasgun
+  id: LPPWeaponLasgunsec
+  components:
+  - type: Sprite
+    sprite: _LP/Objects/Weapons/Guns/Battery/lasgunsec/big.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+        scale: "0.85,0.85"
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+        scale: "0.85,0.85"
+  - type: Item
+    size: Large
+    sprite: _LP/Objects/Weapons/Guns/Battery/lasgunsec/tiny.rsi
+    shape:
+    - 0,0,5,1
+  - type: Clothing
+    sprite: _LP/Objects/Weapons/Guns/Battery/lasgunsec/tiny.rsi

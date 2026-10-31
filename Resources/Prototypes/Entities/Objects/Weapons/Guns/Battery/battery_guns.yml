@@ -75,6 +75,7 @@
   - type: ContainerContainer
     containers:
       firing_pin: !type:Container
+      flashlight: !type:ContainerSlot #LP edit
   - type: ContainerFill
     containers:
       firing_pin:
@@ -82,6 +83,27 @@
   - type: FiringPinHolder
     supportedPins: [ Laser ]
   # starlight end
+#LP edit start
+  - type: ItemSlots
+    slots:
+      flashlight:
+        name: weapon-upgrade-slot-name-flashlight
+        priority: 0
+        insertDelay: 0.8
+        ejectDelay: 0.4
+        ejectOnBreak: true
+        occludesLight: false
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+  - type: ItemMapper
+    mapLayers:
+      flight:
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+  - type: UpgradeableWeapon
+#LP edit end
 
 - type: entity
   id: BaseWeaponPowerCell
@@ -186,6 +208,11 @@
     tags:
     - Sidearm
     - LaserWeapon
+#LP edit start
+  - type: Multishot
+    missChance: 15
+    spreadAddition: 25
+#LP edit end
 
 - type: entity
   name: retro laser blaster
@@ -226,6 +253,11 @@
   - type: FiringPinHolder
     supportedPins: [ Laser ]
   # starlight end
+#LP edit start
+  - type: Multishot
+    missChance: 15
+    spreadAddition: 25
+#LP edit end
 
 - type: entity
   name: makeshift laser pistol
@@ -260,6 +292,11 @@
     tags:
     - Sidearm
     - LaserWeapon
+#LP edit start
+  - type: Multishot
+    missChance: 15
+    spreadAddition: 25
+#LP edit end
 
 - type: entity
   name: tesla gun
@@ -352,6 +389,33 @@
     tags:
     - Sidearm
     - LaserWeapon
+#LP edit start
+  - type: Multishot
+    missChance: 15
+    spreadAddition: 25
+  - type: ContainerContainer
+    containers:
+      flashlight: !type:ContainerSlot #LP edit
+  - type: ItemSlots
+    slots:
+      flashlight:
+        name: weapon-upgrade-slot-name-flashlight
+        priority: 0
+        insertDelay: 0.8
+        ejectDelay: 0.4
+        ejectOnBreak: true
+        occludesLight: false
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+  - type: ItemMapper
+    mapLayers:
+      flight:
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+  - type: UpgradeableWeapon
+#LP edit end
 
 - type: entity
   name: pulse carbine
@@ -390,6 +454,30 @@
   - type: Battery
     maxCharge: 5000
     startingCharge: 5000
+#LP edit start
+  - type: ContainerContainer
+    containers:
+      flashlight: !type:ContainerSlot #LP edit
+  - type: ItemSlots
+    slots:
+      flashlight:
+        name: weapon-upgrade-slot-name-flashlight
+        priority: 0
+        insertDelay: 0.8
+        ejectDelay: 0.4
+        ejectOnBreak: true
+        occludesLight: false
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+  - type: ItemMapper
+    mapLayers:
+      flight:
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+  - type: UpgradeableWeapon
+#LP edit end
 
 - type: entity
   name: pulse rifle
@@ -426,6 +514,30 @@
   - type: Battery
     maxCharge: 40000
     startingCharge: 40000
+#LP edit start
+  - type: ContainerContainer
+    containers:
+      flashlight: !type:ContainerSlot #LP edit
+  - type: ItemSlots
+    slots:
+      flashlight:
+        name: weapon-upgrade-slot-name-flashlight
+        priority: 0
+        insertDelay: 0.8
+        ejectDelay: 0.4
+        ejectOnBreak: true
+        occludesLight: false
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+  - type: ItemMapper
+    mapLayers:
+      flight:
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+  - type: UpgradeableWeapon
+#LP edit end
 
 - type: entity
   name: laser cannon
@@ -596,6 +708,30 @@
     - Security
     - Antagonists
   - type: PacifismAllowedGun
+#LP edit start
+  - type: ContainerContainer
+    containers:
+      flashlight: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      flashlight:
+        name: weapon-upgrade-slot-name-flashlight
+        priority: 0
+        insertDelay: 0.8
+        ejectDelay: 0.4
+        ejectOnBreak: true
+        occludesLight: false
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+  - type: ItemMapper
+    mapLayers:
+      flight:
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+  - type: UpgradeableWeapon
+#LP edit end
 
 - type: entity
   name: disabler SMG
@@ -748,6 +884,11 @@
   - type: FiringPinHolder
     supportedPins: [ AdvancedLaser ]
   # starlight end
+#LP edit start
+  - type: Multishot
+    missChance: 15
+    spreadAddition: 25
+#LP edit end
 
 - type: entity
   name: advanced laser pistol
@@ -983,6 +1124,11 @@
   - type: FiringPinHolder
     supportedPins: [ AdvancedLaser ]
   # starlight end
+#LP edit start
+  - type: Multishot
+    missChance: 15
+    spreadAddition: 25
+#LP edit end
 
 - type: entity
   name: temperature gun

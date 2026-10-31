@@ -1,0 +1,29 @@
+- type: storeCategory
+  id: LPPhosweapon
+  name: store-category-hos-weapon
+  priority: 0
+
+- type: storeCategory
+  id: LPPhosarmor
+  name: store-category-hos-armor
+  priority: 1
+
+- type: storeCategory
+  id: LPPhosammo
+  name: store-category-hos-ammo
+  priority: 2
+
+- type: storeCategory
+  id: LPPhosbrigmed
+  name: store-category-hos-brigmed
+  priority: 3
+
+- type: storeCategory
+  id: LPPhosbrigtech
+  name: store-category-hos-brigtech
+  priority: 4
+
+- type: storeCategory
+  id: LPPmisc
+  name: store-category-misc
+  priority: 5

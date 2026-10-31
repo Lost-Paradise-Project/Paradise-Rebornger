@@ -110,11 +110,41 @@
         whitelist:
           tags:
             - CartridgeLightRifle
+#LP edit start
+      bayonet:
+        name: weapon-upgrade-slot-name-bayonet
+        priority: 0
+        insertDelay: 2.0
+        ejectDelay: 1.2
+        ejectOnBreak: true
+        whitelist:
+          components:
+          - GunUpgradeBayonet
+  - type: ItemMapper
+    mapLayers:
+      bayonet:
+        whitelist:
+          components:
+          - GunUpgradeBayonet
+  - type: UpgradeableWeapon
+  - type: MeleeWeapon
+    wideAnimationRotation: 270
+    attackRate: 1
+    angle: 0
+    range: 1.1
+    damage:
+      types:
+        Blunt: 5
+  - type: MeleeWeaponRelay
+  - type: AltFireMelee
+    attackType: Heavy
+#LP edit end
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
       firing_pin: !type:Container # starlight
+      bayonet: !type:ContainerSlot #LP edit
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -201,11 +231,31 @@
         whitelist:
           tags:
             - CartridgeRifle
+#LP edit start
+      flashlight:
+        name: weapon-upgrade-slot-name-flashlight
+        priority: 0
+        insertDelay: 0.8
+        ejectDelay: 0.4
+        ejectOnBreak: true
+        occludesLight: false
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+  - type: ItemMapper
+    mapLayers:
+      flight:
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+  - type: UpgradeableWeapon
+#LP edit end
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
       firing_pin: !type:Container # starlight
+      flashlight: !type:ContainerSlot #LP edit
   - type: MagazineVisuals
     magState: mag
     steps: 5

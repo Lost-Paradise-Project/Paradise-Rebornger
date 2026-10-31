@@ -569,3 +569,24 @@
     Plastic: 1500
     Gold: 1000
     Silver: 1000
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: LPPMagazineRifleMars
+  result: LPPMagazineRifleMars
+  materials:
+    Steel: 250
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: LPPMagazineRifleGarand
+  result: LPPMagazineRifleGarand
+  materials:
+    Steel: 275
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: LPPMagazineBoxLightRifleHunter
+  result: LPPMagazineBoxLightRifleHunter
+  materials:
+    Steel: 1250
