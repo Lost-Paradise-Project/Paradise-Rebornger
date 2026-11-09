@@ -14,6 +14,26 @@ public sealed class GhostReturnToRoundSystem : SharedGhostReturnToRoundSystem
     [Dependency] private readonly IGameTiming _gameTiming = default!;
 
     private TimeSpan _lastTimeLeft = TimeSpan.Zero;
+    /// LP edit start
+    /// <summary>
+    /// The moment when the player will be able to return.
+    /// Момент времени, когда игрок смогёт вернуться.
+    /// </summary>
+    private TimeSpan _returnToRoundTime = TimeSpan.Zero;
+
+    public override void Initialize()
+    {
+        base.Initialize();
+
+        SubscribeNetworkEvent<GhostReturnToRoundSendTimerEvent>(GetReturnToRoundTimer);
+    }
+
+    private void GetReturnToRoundTimer(GhostReturnToRoundSendTimerEvent ev)
+    {
+        _returnToRoundTime = ev.ReturnTime;
+        _lastTimeLeft = TimeSpan.Zero;
+    }
+    /// LP edit end
 
     public override void FrameUpdate(float frameTime)
     {
@@ -23,15 +43,25 @@ public sealed class GhostReturnToRoundSystem : SharedGhostReturnToRoundSystem
         if (player == null)
             return;
 
-        if (!TryComp<GhostComponent>(player, out var ghostComponent))
-            return;
+        /// LP edit start
+        // Not required.
+        // Этот пристройка тут нахой не нужен.
+        //
+        // if (!TryComp<GhostComponent>(player, out var ghostComponent))
+        //     return;
+        /// LP edit end
 
         var ui = _userInterfaceManager.GetActiveUIWidgetOrNull<GhostGui>();
         if (ui == null)
             return;
 
-        var timeOffset = _gameTiming.CurTime - ghostComponent.TimeOfDeath;
-        var rawTimeLeft = GhostRespawnTime - timeOffset;
+        /// LP edit start
+        // var timeOffset = _gameTiming.CurTime - ghostComponent.TimeOfDeath;
+        // var rawTimeLeft = GhostRespawnTime - timeOffset;
+        ///
+
+        var rawTimeLeft = _returnToRoundTime - _gameTiming.CurTime;
+        /// LP edit end
         var timeLeft = rawTimeLeft > TimeSpan.Zero ? rawTimeLeft : TimeSpan.Zero;
         var canReturn = timeLeft == TimeSpan.Zero;
 
@@ -53,7 +83,7 @@ public sealed class GhostReturnToRoundSystem : SharedGhostReturnToRoundSystem
 
     private static string FormatTimeLeft(TimeSpan timeLeft)
     {
-        var totalMinutes = (int) timeLeft.TotalMinutes;
+        var totalMinutes = (int)timeLeft.TotalMinutes; /// LP edit
         var seconds = timeLeft.Seconds;
 
         return $"{totalMinutes:00}:{seconds:00}";
