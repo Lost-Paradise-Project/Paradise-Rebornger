@@ -1,0 +1,59 @@
+{
+    "version": 1,
+    "size": {
+        "x": 64,
+        "y": 64
+    },
+    "copyright": "Made originally by Miss Kife with love for Inari_Lustfox <3",
+    "license": "CC-BY-SA-3.0",
+    "states": [
+        {
+            "name": "base",
+            "directions": 1
+        },
+        {
+            "name": "frame_0",
+            "directions": 1
+        },
+        {
+            "name": "frame_1",
+            "directions": 1
+        },
+        {
+            "name": "frame_2",
+            "directions": 1
+        },
+        {
+            "name": "frame_3",
+            "directions": 1
+        },
+        {
+            "name": "thrust",
+            "directions": 1
+        },
+        {
+            "name": "thrust_burn",
+            "directions": 1,
+            "delays": [
+                [
+                    1.5,
+                    3.5,
+                    5.0,
+                    10.0
+                ]
+            ]
+        },
+        {
+            "name": "thrust_burn_unshaded",
+            "directions": 1,
+            "delays": [
+                [
+                    1.5,
+                    3.5,
+                    5.0,
+                    10.0
+                ]
+            ]
+        }
+    ]
+}

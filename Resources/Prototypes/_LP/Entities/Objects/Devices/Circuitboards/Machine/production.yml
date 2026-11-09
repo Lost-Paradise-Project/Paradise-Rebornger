@@ -161,3 +161,50 @@
       AnomalyCore:
         amount: 3
         defaultPrototype: LPPBaseAnomalyCore
+
+
+- type: Tag
+  id: GravityGenControllModule
+
+- type: entity
+  parent: BaseElectronics
+  id: LPPGravityGeneratorCircuitboard
+  name: gravity generator controll circuit
+  description: A machine printed circuit board for a gravity generator.
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/module.rsi
+      state: mcontroller
+    - type: Tag
+      tags:
+      - GravityGenControllModule
+
+- type: Tag
+  id: LargeThrusterControll
+
+- type: entity
+  parent: BaseElectronics
+  id: LPPLargeRocketCircuitboard
+  name: large rocket engine cirtcuitboard
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/module.rsi
+      state: supply
+    - type: Tag
+      tags:
+      - LargeThrusterControll
+
+- type: Tag
+  id: LargeGyroscopeControll
+
+- type: entity
+  parent: BaseElectronics
+  id: LPPLargeGyroscopeCircuitboard
+  name: big gyroscope machine board
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/module.rsi
+      state: supply
+    - type: Tag
+      tags:
+      - LargeGyroscopeControll
