@@ -61,6 +61,11 @@
     sound:
       collection: RevolversDrop
   # Goobstation edit end
+#LP edit start
+  - type: Multishot
+    missChance: 15
+    spreadAddition: 25
+#LP edit end
 
 - type: entity
   name: Deckard

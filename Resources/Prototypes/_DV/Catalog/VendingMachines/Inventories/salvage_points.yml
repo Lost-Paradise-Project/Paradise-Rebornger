@@ -105,3 +105,17 @@
   #   cost: 12500 #TODO: Make modules real
   # TODO: luxury elite bar capsule for 10k
   # TODO: mining drone stuff
+#LP edit start
+  - id: ClothingModularControllerLoaderPreassembled
+    cost: 7500
+  - id: ClothingModularControllerMiningPreassembled
+    cost: 12500
+  - id: LPPClothingHandsGlovesSalvage
+    cost: 500
+  - id: LPPClothingHeadHelmetSalvager
+    cost: 1000
+  - id: LPPClothingOuterVestSalvager
+    cost: 1000
+  - id: LPPClothingOuterHardsuitMiksuit
+    cost: 12500
+#LP edit end

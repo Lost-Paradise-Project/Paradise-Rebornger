@@ -76,7 +76,7 @@
     price: 750
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseMajorContraband]
+  parent: [ClothingOuterHardsuitBase, BaseCargoContraband]
   id: LPPClothingOuterHardsuitMiksuit
   name: discolored hardsuit
   description: GRT-21 "Támadó" is the old restored space suit of the syndicate agents, slightly modified to suit the wishes of the current owner.

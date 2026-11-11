@@ -22,3 +22,13 @@
   #   containers:
   #     upgrades: !type:Container
   # Lavaland Change End
+#LP edit start
+  - type: ContainerContainer
+    containers:
+      bayonet: !type:ContainerSlot
+      flashlight: !type:ContainerSlot
+      upgrade_slot_1: !type:ContainerSlot
+      upgrade_slot_2: !type:ContainerSlot
+      upgrade_slot_3: !type:ContainerSlot
+      upgrade_slot_4: !type:ContainerSlot
+#LP edit end

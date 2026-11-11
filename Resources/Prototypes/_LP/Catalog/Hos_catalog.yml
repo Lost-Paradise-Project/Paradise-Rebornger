@@ -1,0 +1,647 @@
+#weapon
+- type: listing
+  id: LPPHosCatalogWeaponTablet
+  name: lpp-hos-catalog-weapon-tablet-name
+  description: lpp-hos-catalog-weapon-tablet-desc
+  productEntity: LPPSecurityWeaponUndetermined
+  cost:
+    LPPCentcoin: 3
+  categories:
+  - LPPhosweapon
+
+- type: listing
+  id: LPPHosCatalogWeaponJudge
+  name: lpp-hos-catalog-weapon-judge-name
+  description: lpp-hos-catalog-weapon-judge-desc
+  productEntity: LPPWeaponRevolverJudgeNonLethal
+  cost:
+    LPPCentcoin: 7
+  categories:
+  - LPPhosweapon
+
+- type: listing
+  id: LPPHosCatalogWeaponPulsePistol
+  name: lpp-hos-catalog-weapon-pulsepistol-name
+  description: lpp-hos-catalog-weapon-pulsepistol-desc
+  productEntity: WeaponPulsePistol
+  cost:
+    LPPCentcoin: 10
+  categories:
+  - LPPhosweapon
+
+- type: listing
+  id: LPPHosCatalogWeaponPDW-9
+  name: lpp-hos-catalog-weapon-pdw9-name
+  description: lpp-hos-catalog-weapon-pdw9-desc
+  productEntity: WeaponEnergyGunPistol
+  cost:
+    LPPCentcoin: 6
+  categories:
+  - LPPhosweapon
+
+- type: listing
+  id: LPPHosCatalogWeaponEuglaserpistol
+  name: lpp-hos-catalog-weapon-euglaserpistol-name
+  description: lpp-hos-catalog-weapon-euglaserpistol-desc
+  productEntity: WeaponEarthGovLaserPistol
+  cost:
+    LPPCentcoin: 4
+  categories:
+  - LPPhosweapon
+
+- type: listing
+  id: LPPHosCatalogWeaponShotgunSawn
+  name: lpp-hos-catalog-weapon-shotgunsawn-name
+  description: lpp-hos-catalog-weapon-shotgunsawn-desc
+  productEntity: WeaponShotgunSawn
+  cost:
+    LPPCentcoin: 2
+  categories:
+  - LPPhosweapon
+
+- type: listing
+  id: LPPHosCatalogWeaponShotgunKammerer
+  name: lpp-hos-catalog-weapon-shotgunkammerer-name
+  description: lpp-hos-catalog-weapon-shotgunkammerer-desc
+  productEntity: WeaponShotgunKammerer
+  cost:
+    LPPCentcoin: 4
+  categories:
+  - LPPhosweapon
+
+- type: listing
+  id: LPPHosCatalogWeaponShotgunEnforcer
+  name: lpp-hos-catalog-weapon-shotgunenforcer-name
+  description: lpp-hos-catalog-weapon-shotgunenforcer-desc
+  productEntity: WeaponShotgunEnforcer
+  cost:
+    LPPCentcoin: 7
+  categories:
+  - LPPhosweapon
+
+- type: listing
+  id: LPPHosCatalogWeaponMarsRifle
+  name: lpp-hos-catalog-weapon-marsrifle-name
+  description: lpp-hos-catalog-weapon-marsrifle-desc
+  productEntity: LPPWeaponMarsRifle
+  cost:
+    LPPCentcoin: 2
+  categories:
+  - LPPhosweapon
+
+- type: listing
+  id: LPPHosCatalogWeaponM1Garand
+  name: lpp-hos-catalog-weapon-m1garand-name
+  description: lpp-hos-catalog-weapon-m1garand-desc
+  productEntity: LPPWeaponM1Garand
+  cost:
+    LPPCentcoin: 2
+  categories:
+  - LPPhosweapon
+
+- type: listing
+  id: LPPHosCatalogWeaponRifleM1A
+  name: lpp-hos-catalog-weapon-riflem1a-name
+  description: lpp-hos-catalog-weapon-riflem1a-desc
+  productEntity: LPPWeaponRifleM1A
+  cost:
+    LPPCentcoin: 3
+  categories:
+  - LPPhosweapon
+
+- type: listing
+  id: LPPHosCatalogWeaponRifleLecter
+  name: lpp-hos-catalog-weapon-riflelecter-name
+  description: lpp-hos-catalog-weapon-riflelecter-desc
+  productEntity: WeaponRifleLecter
+  cost:
+    LPPCentcoin: 6
+  categories:
+  - LPPhosweapon
+
+- type: listing
+  id: LPPHosCatalogWeaponRifleM16A4
+  name: lpp-hos-catalog-weapon-riflem16a4-name
+  description: lpp-hos-catalog-weapon-riflem16a4-desc
+  productEntity: WeaponRifleM16A4
+  cost:
+    LPPCentcoin: 7
+  categories:
+  - LPPhosweapon
+
+- type: listing
+  id: LPPHosCatalogWeaponSubMachineGunWt550
+  name: lpp-hos-catalog-weapon-submachinegunwt550-name
+  description: lpp-hos-catalog-weapon-submachinegunwt550-desc
+  productEntity: WeaponSubMachineGunWt550
+  cost:
+    LPPCentcoin: 6
+  categories:
+  - LPPhosweapon
+
+- type: listing
+  id: LPPHosCatalogWeaponSubMachineGunDrozd
+  name: lpp-hos-catalog-weapon-submachinegundrozd-name
+  description: lpp-hos-catalog-weapon-submachinegundrozd-desc
+  productEntity: WeaponSubMachineGunDrozd
+  cost:
+    LPPCentcoin: 5
+  categories:
+  - LPPhosweapon
+
+- type: listing
+  id: LPPHosCatalogWeaponLaserCarbine
+  name: lpp-hos-catalog-weapon-lasercarbine-name
+  description: lpp-hos-catalog-weapon-lasercarbine-desc
+  productEntity: WeaponLaserCarbine
+  cost:
+    LPPCentcoin: 2
+  categories:
+  - LPPhosweapon
+
+- type: listing
+  id: LPPHosCatalogWeaponLasgun
+  name: lpp-hos-catalog-weapon-lasgun-name
+  description: lpp-hos-catalog-weapon-lasgun-desc
+  productEntity: LPPWeaponLasgunsec
+  cost:
+    LPPCentcoin: 5
+  categories:
+  - LPPhosweapon
+
+- type: listing
+  id: LPPHosCatalogWeaponEnergyGun
+  name: lpp-hos-catalog-weapon-energygun-name
+  description: lpp-hos-catalog-weapon-energygun-desc
+  productEntity: WeaponEnergyGun
+  cost:
+    LPPCentcoin: 3
+  categories:
+  - LPPhosweapon
+
+- type: listing
+  id: LPPHosCatalogWeaponXrayCannon
+  name: lpp-hos-catalog-weapon-xraycannon-name
+  description: lpp-hos-catalog-weapon-xraycannon-desc
+  productEntity: WeaponXrayCannon
+  cost:
+    LPPCentcoin: 5
+  categories:
+  - LPPhosweapon
+
+- type: listing
+  id: LPPHosCatalogWeaponLaserCannon
+  name: lpp-hos-catalog-weapon-lasercannon-name
+  description: lpp-hos-catalog-weapon-lasercannon-desc
+  productEntity: WeaponLaserCannon
+  cost:
+    LPPCentcoin: 6
+  categories:
+  - LPPhosweapon
+
+- type: listing
+  id: LPPHosCatalogWeaponGunLaserCarbineAutomatic
+  name: lpp-hos-catalog-weapon-gunlasercarbineautomatic-name
+  description: lpp-hos-catalog-weapon-gunlasercarbineautomatic-desc
+  productEntity: WeaponGunLaserCarbineAutomatic
+  cost:
+    LPPCentcoin: 8
+  categories:
+  - LPPhosweapon
+
+#armor
+
+- type: listing
+  id: LPPHosCatalogClothingSecuritySwatlightKit
+  name: lpp-hos-catalog-clothing-outer-lightswatkit-name
+  description: lpp-hos-catalog-clothing-outer-lightswatkit-desc
+  productEntity: LPPClothingBackpackDuffelSecuritySwatlightKit
+  cost:
+    LPPCentcoin: 5
+  categories:
+  - LPPhosarmor
+
+- type: listing
+  id: LPPHosCatalogClothingSecurityAblativeKit
+  name: lpp-hos-catalog-clothing-outer-ablativekit-name
+  description: lpp-hos-catalog-clothing-outer-ablativekit-desc
+  productEntity: LPPClothingBackpackDuffelSecurityAblativeKit
+  cost:
+    LPPCentcoin: 7
+  categories:
+  - LPPhosarmor
+
+- type: listing
+  id: LPPHosCatalogClothingSecuritySecurityHeavyKit
+  name: lpp-hos-catalog-clothing-outer-secheavykit-name
+  description: lpp-hos-catalog-clothing-outer-secheavykit-desc
+  productEntity: LPPClothingBackpackDuffelSecurityHeavyKit
+  cost:
+    LPPCentcoin: 7
+  categories:
+  - LPPhosarmor
+
+- type: listing
+  id: LPPHosCatalogClothingSecuritySecurityRiotKit
+  name: lpp-hos-catalog-clothing-outer-secriotkit-name
+  description: lpp-hos-catalog-clothing-outer-secriotkit-desc
+  productEntity: LPPClothingBackpackDuffelSecurityRiotKit
+  cost:
+    LPPCentcoin: 7
+  categories:
+  - LPPhosarmor
+
+- type: listing
+  id: LPPHosCatalogClothingSecuritySwatKit
+  name: lpp-hos-catalog-clothing-outer-swatkit-name
+  description: lpp-hos-catalog-clothing-outer-swatkit-desc
+  productEntity: LPPClothingBackpackDuffelSecuritySwatKit
+  cost:
+    LPPCentcoin: 9
+  categories:
+  - LPPhosarmor
+
+- type: listing
+  id: LPPHosCatalogClothingSecurityUEGKit
+  name: lpp-hos-catalog-clothing-outer-uegkit-name
+  description: lpp-hos-catalog-clothing-outer-uegkit-desc
+  productEntity: LPPClothingBackpackDuffelSecurityUEGKit
+  cost:
+    LPPCentcoin: 9
+  categories:
+  - LPPhosarmor
+
+- type: listing
+  id: LPPHosCatalogClothingSecurityBallisticKit
+  name: lpp-hos-catalog-clothing-outer-secballistickit-name
+  description: lpp-hos-catalog-clothing-outer-secballistickit-desc
+  productEntity: LPPClothingBackpackDuffelSecurityBallisticKit
+  cost:
+    LPPCentcoin: 12
+  categories:
+  - LPPhosarmor
+
+- type: listing
+  id: LPPHosCatalogClothingOuteSWAT
+  name: lpp-hos-catalog-clothing-outer-hardsuit-swat-name
+  description: lpp-hos-catalog-clothing-outer-hardsuit-swat-desc
+  productEntity: LPPClothingOuterHardsuitSWAT
+  cost:
+    LPPCentcoin: 6
+  categories:
+  - LPPhosarmor
+
+- type: listing
+  id: LPPHosCatalogClothingMaskGasSwat
+  name: lpp-hos-catalog-clothing-maskgasswat-name
+  description: lpp-hos-catalog-clothing-maskgasswat
+  productEntity: ClothingMaskGasSwat
+  cost:
+    LPPCentcoin: 2
+  categories:
+  - LPPhosarmor
+
+#ammo
+- type: listing
+  id: LPPHosCatalogPowerCellLasgun
+  name: lpp-hos-catalog-magazine-lasgun-name
+  description: lpp-hos-catalog-magazine-lasgun-desc
+  productEntity: LPPPowerCellLasgun
+  cost:
+    LPPCentcoin: 1
+  categories:
+  - LPPhosammo
+
+- type: listing
+  id: LPPHosCatalogMagazineBoxAntiMaterielNonleathal
+  name: lpp-hos-catalog-magazine-box-antimaterielnonleathal-name
+  description: lpp-hos-catalog-magazine-box-antimaterielnonleathal-desc
+  productEntity: LPPMagazineBoxAntiMaterielNonleathal
+  cost:
+    LPPCentcoin: 2
+  categories:
+  - LPPhosammo
+
+- type: listing
+  id: LPPHosCatalogMagazineBoxAntiMaterielCP
+  name: lpp-hos-catalog-magazine-box-antimaterielcp-name
+  description: lpp-hos-catalog-magazine-box-antimaterielcp-desc
+  productEntity: LPPMagazineBoxAntiMaterielCP
+  cost:
+    LPPCentcoin: 2
+  categories:
+  - LPPhosammo
+
+#brigmeme
+
+- type: listing
+  id: LPPHosCatalogMedkitFilled
+  name: lpp-hos-catalog-medkit-filled-name
+  description: lpp-hos-catalog-medkit-filled-desc
+  productEntity: MedkitFilled
+  cost:
+    LPPCentcoin: 1
+  categories:
+  - LPPhosbrigmed
+
+- type: listing
+  id: LPPHosCatalogMedkitOxygenFilled
+  name: lpp-hos-catalog-medkit-oxygen-filled-name
+  description: lpp-hos-catalog-medkit-oxygen-filled-desc
+  productEntity: MedkitOxygenFilled
+  cost:
+    LPPCentcoin: 1
+  categories:
+  - LPPhosbrigmed
+
+- type: listing
+  id: LPPHosCatalogMedkitBruteFilled
+  name: lpp-hos-catalog-medkit-brute-filled-name
+  description: lpp-hos-catalog-medkit-brute-filled-desc
+  productEntity: MedkitBruteFilled
+  cost:
+    LPPCentcoin: 2
+  categories:
+  - LPPhosbrigmed
+
+- type: listing
+  id: LPPHosCatalogMedkitToxinFilled
+  name: lpp-hos-catalog-medkit-toxin-filled-name
+  description: lpp-hos-catalog-medkit-toxin-filled-desc
+  productEntity: MedkitToxinFilled
+  cost:
+    LPPCentcoin: 2
+  categories:
+  - LPPhosbrigmed
+
+- type: listing
+  id: LPPHosCatalogMedkitBurnFilled
+  name: lpp-hos-catalog-medkit-burn-filled-name
+  description: lpp-hos-catalog-medkit-burn-filled-desc
+  productEntity: MedkitBurnFilled
+  cost:
+    LPPCentcoin: 2
+  categories:
+  - LPPhosbrigmed
+
+- type: listing
+  id: LPPHosCatalogMedkitAdvancedFilled
+  name: lpp-hos-catalog-medkit-advanced-filled-name
+  description: lpp-hos-catalog-medkit-advanced-filled-desc
+  productEntity: MedkitAdvancedFilled
+  cost:
+    LPPCentcoin: 3
+  categories:
+  - LPPhosbrigmed
+
+- type: listing
+  id: LPPHosCatalogMedkitCombatFilled
+  name: lpp-hos-catalog-medkit-combat-filled-name
+  description: lpp-hos-catalog-medkit-combat-filled-desc
+  productEntity: MedkitCombatFilled
+  cost:
+    LPPCentcoin: 4
+  categories:
+  - LPPhosbrigmed
+
+- type: listing
+  id: LPPHosCatalogChemistryBottleEpinephrine
+  name: lpp-hos-catalog-epinephrine-chemistry-bottle-name
+  description: lpp-hos-catalog-epinephrine-chemistry-bottle-desc
+  productEntity: ChemistryBottleEpinephrine
+  cost:
+    LPPCentcoin: 1
+  categories:
+  - LPPhosbrigmed
+
+- type: listing
+  id: LPPHosCatalogChemistryBottleEphedrine
+  name: lpp-hos-catalog-ephedrine-chemistry-bottle-name
+  description: lpp-hos-catalog-ephedrine-chemistry-bottle-desc
+  productEntity: ChemistryBottleEphedrine
+  cost:
+    LPPCentcoin: 2
+  categories:
+  - LPPhosbrigmed
+
+#memetech
+
+- type: listing
+  id: LPPHosCatalogCrateMaterialSteel
+  name: lpp-hos-catalog-crate-material-steel-name
+  description: lpp-hos-catalog-crate-material-steel-desc
+  productEntity: CrateMaterialSteel
+  cost:
+    LPPCentcoin: 2
+  categories:
+  - LPPhosbrigtech
+
+- type: listing
+  id: LPPHosCatalogCrateMaterialGlass
+  name: lpp-hos-catalog-crate-material-glass-name
+  description: lpp-hos-catalog-crate-material-glass-desc
+  productEntity: CrateMaterialGlass
+  cost:
+    LPPCentcoin: 2
+  categories:
+  - LPPhosbrigtech
+
+- type: listing
+  id: LPPHosCatalogCrateMaterialPlastic
+  name: lpp-hos-catalog-crate-material-plastic-name
+  description: lpp-hos-catalog-crate-material-plastic-desc
+  productEntity: CrateMaterialPlastic
+  cost:
+    LPPCentcoin: 2
+  categories:
+  - LPPhosbrigtech
+
+- type: listing
+  id: LPPHosCatalogCrateMaterialPlasteel
+  name: lpp-hos-catalog-crate-material-plasteel-name
+  description: lpp-hos-catalog-crate-material-plasteel-desc
+  productEntity: CrateMaterialPlasteel
+  cost:
+    LPPCentcoin: 4
+  categories:
+  - LPPhosbrigtech
+
+- type: listing
+  id: LPPHosCatalogPowerCellHyper
+  name: lpp-hos-catalog-powercell-hyper-name
+  description: lpp-hos-catalog-powercell-hyper-desc
+  productEntity: PowerCellHyper
+  cost:
+    LPPCentcoin: 4
+  categories:
+  - LPPhosbrigtech
+
+- type: listing
+  id: LPPHosCatalogRCD
+  name: lpp-hos-catalog-rcd-name
+  description: lpp-hos-catalog-rcd-desc
+  productEntity: RCD
+  cost:
+    LPPCentcoin: 2
+  categories:
+  - LPPhosbrigtech
+
+- type: listing
+  id: LPPHosCatalogRCDAmmo
+  name: lpp-hos-catalog-rcd-ammo-name
+  description: lpp-hos-catalog-rcd-ammo-desc
+  productEntity: RCDAmmo
+  cost:
+    LPPCentcoin: 1
+  categories:
+  - LPPhosbrigtech
+
+- type: listing
+  id: LPPHosCatalogWelderIndustrialAdvanced
+  name: lpp-hos-catalog-welder-industrial-advanced-name
+  description: lpp-hos-catalog-welder-industrial-advanced-desc
+  productEntity: WelderIndustrialAdvanced
+  cost:
+    LPPCentcoin: 2
+  categories:
+  - LPPhosbrigtech
+
+- type: listing
+  id: LPPHosCatalogToolboxMechanicalFilled
+  name: lpp-hos-catalog-toolbox-mechanical-filled-name
+  description: lpp-hos-catalog-toolbox-mechanical-filled-desc
+  productEntity: ToolboxMechanicalFilled
+  cost:
+    LPPCentcoin: 1
+  categories:
+  - LPPhosbrigtech
+
+- type: listing
+  id: LPPHosCatalogSheetRPGlass
+  name: lpp-hos-catalog-sheet-rpglass-name
+  description: lpp-hos-catalog-sheet-rpglass-desc
+  productEntity: SheetRPGlass
+  cost:
+    LPPCentcoin: 4
+  categories:
+  - LPPhosbrigtech
+
+- type: listing
+  id: LPPHosCatalogSheetRUGlass
+  name: lpp-hos-catalog-sheet-ruglass-name
+  description: lpp-hos-catalog-sheet-ruglass-desc
+  productEntity: SheetRUGlass
+  cost:
+    LPPCentcoin: 5
+  categories:
+  - LPPhosbrigtech
+
+- type: listing
+  id: LPPHosCatalogClothingEyesHudSecEng
+  name: lpp-hos-catalog-clothing-eyes-hudseceng-name
+  description: lpp-hos-catalog-clothing-eyes-hudseceng-desc
+  productEntity: LPPClothingEyesHudSecEng
+  cost:
+    LPPCentcoin: 1
+  categories:
+  - LPPhosbrigtech
+
+- type: listing
+  id: LPPHosCatalogClothingEyesHudMedSec
+  name: lpp-hos-catalog-clothing-eyes-hudmedsec-name
+  description: lpp-hos-catalog-clothing-eyes-hudmedsec-desc
+  productEntity: LPPClothingEyesHudSecMed
+  cost:
+    LPPCentcoin: 1
+  categories:
+  - LPPhosbrigmed
+
+- type: listing
+  id: LPPHosCatalogClothingShoesBootsMagSci
+  name: lpp-hos-catalog-clothing-shoes-boots-mag-sci-name
+  description: lpp-hos-catalog-clothing-shoes-boots-mag-sci-desc
+  productEntity: ClothingShoesBootsMagSci
+  cost:
+    LPPCentcoin: 1
+  categories:
+  - LPPmisc
+
+- type: listing
+  id: LPPHosCatalogClothingBackpackHunter
+  name: lpp-hos-catalog-clothing-backpack-hunter-name
+  description: lpp-hos-catalog-clothing-backpack-hunter-desc
+  productEntity: LPPClothingBackpackHunter
+  cost:
+    LPPCentcoin: 4
+  categories:
+  - LPPmisc
+
+- type: listing
+  id: LPPHosCatalogCrateFoodMRE
+  name: lpp-hos-catalog-crate-foodmre-name
+  description: lpp-hos-catalog-crate-foodmre-desc
+  productEntity: CrateFoodMRE
+  cost:
+    LPPCentcoin: 1
+  categories:
+  - LPPmisc
+
+- type: listing
+  id: LPPHosCatalogFireAxe
+  name: lpp-hos-catalog-fireaxe-name
+  description: lpp-hos-catalog-fireaxe-desc
+  productEntity: FireAxe
+  cost:
+    LPPCentcoin: 4
+  categories:
+  - LPPhosbrigtech
+
+- type: listing
+  id: LPPHosCatalogHammer
+  name: lpp-hos-catalog-hammer-name
+  description: lpp-hos-catalog-hammer-desc
+  productEntity: LPPHammer
+  cost:
+    LPPCentcoin: 7
+  categories:
+  - LPPhosbrigtech
+
+- type: listing
+  id: LPPHosPortableFlasher
+  name: lpp-hos-catalog-portableflasher-name
+  description: lpp-hos-catalog-portableflasher-desc
+  productEntity: PortableFlasher
+  cost:
+    LPPCentcoin: 2
+  categories:
+  - LPPhosbrigtech
+
+- type: listing
+  id: LPPHosClothingHeadHatDogEars
+  name: lpp-hos-catalog-head-hatdogears-name
+  description: lpp-hos-catalog-head-hatdogears-desc
+  productEntity: ClothingHeadHatDogEars
+  cost:
+    LPPCentcoin: 6
+  categories:
+  - LPPmisc
+
+- type: listing
+  id: LPPHosHOSPanties
+  name: lpp-hos-catalog-hospanties-name
+  description: lpp-hos-catalog-hospanties-desc
+  productEntity: LPPHOSPanties
+  cost:
+    LPPCentcoin: 1
+  categories:
+  - LPPmisc
+
+- type: listing
+  id: LPPHosDeployableBarrier
+  name: lpp-hos-catalog-deployable-barrier-name
+  description: lpp-hos-catalog-deployable-barrier-desc
+  productEntity: DeployableBarrier
+  cost:
+    LPPCentcoin: 1
+  categories:
+  - LPPhosbrigtech

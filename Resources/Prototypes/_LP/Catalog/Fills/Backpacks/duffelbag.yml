@@ -46,3 +46,107 @@
         - id: ClothingShoesBootsLaceup
         - id: ClothingHeadHatFedoraBrown
         - id: FlippoEngravedLighter
+
+- type: entity
+  parent: ClothingBackpackDuffelSecurity
+  id: LPPClothingBackpackDuffelSecurityHeavyKit
+  name: Security heavy kit
+  description: "Lean and mean: Kit of heavy security armor and kammerer."
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ClothingOuterArmorStandardHeavy
+        - id: ClothingHeadHelmetHeavyStandard
+        - id: WeaponShotgunKammerer
+
+- type: entity
+  parent: ClothingBackpackDuffelSecurity
+  id: LPPClothingBackpackDuffelSecurityBallisticKit
+  name: Security ballistic kit
+  description: "Lean and mean: Kit of heavy ballistic armor and Dragunov."
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ClothingOuterArmorBallisticHeavy
+        - id: ClothingHeadHelmetHeavyBallistic
+        - id: WeaponRifleDragunov
+        - id: MagazineRifle762Sniper
+          amount: 3
+
+- type: entity
+  parent: ClothingBackpackDuffelSecurity
+  id: LPPClothingBackpackDuffelSecurityAblativeKit
+  name: Security ablative kit
+  description: "Lean and mean: Kit of heavy ablative armor and Drozd."
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ClothingOuterArmorAblativeHeavy
+        - id: ClothingHeadHelmetHeavyAblative
+        - id: WeaponRifleLecterXL8
+
+- type: entity
+  parent: ClothingBackpackDuffelSecurity
+  id: LPPClothingBackpackDuffelSecurityRiotKit
+  name: Security riot kit
+  description: "Lean and mean: Kit of heavy riot armor and shieild with magnum stunner."
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ClothingOuterArmorRiotHeavy
+        - id: ClothingHeadHelmetHeavyRiot
+        - id: WeaponStunProjector
+        - id: TelescopicShield
+
+- type: entity
+  parent: ClothingBackpackDuffelSecurity
+  id: LPPClothingBackpackDuffelSecuritySwatlightKit
+  name: Security light SWAT kit
+  description: "Lean and mean: Kit of light swat armor and M1A."
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: LPPClothingOuterArmorSwatAlternative
+        - id: LPPClothingHeadHelmetSwatAlternative
+        - id: LPPWeaponRifleM1A
+
+- type: entity
+  parent: ClothingBackpackDuffelSecurity
+  id: LPPClothingBackpackDuffelSecuritySwatKit
+  name: Security SWAT kit
+  description: "Lean and mean: Kit of swat armor and M16."
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: LPPClothingOuterArmorSwat
+        - id: LPPClothingHeadHelmetSwat
+        - id: WeaponRifleM16A4
+
+- type: entity
+  parent: ClothingBackpackDuffelMilitary
+  id: LPPClothingBackpackDuffelSecurityUEGKit
+  name: Security ueg kit
+  description: "Lean and mean: Kit of ueg armor and laser pistol."
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ClothingOuterVestWebUEG
+        - id: ClothingUniformJumpsuitUEGArmyService
+        - id: LPPClothingEyesGlassesNVG
+        - id: ClothingHandsMercGlovesCombat
+        - id: ClothingHeadHatUEGArmyGarrison
+        - id: WeaponEarthGovLaserPistol

@@ -87,3 +87,12 @@
 
 - type: Tag
   id: ProcessorModule
+
+- type: Tag
+  id: LPPLasgun
+
+- type: Tag
+  id: LPPMagazineMars
+
+- type: Tag
+  id: LPPCartridgeHunting

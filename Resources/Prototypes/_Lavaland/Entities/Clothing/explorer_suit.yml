@@ -90,6 +90,7 @@
   - type: Construction
     graph: ExplorerSuit
     node: reinforced1
+  - type: PressureArmorChange #LP edit
 
 - type: entity
   parent: LavalandEquipmentExplorerHood
@@ -112,6 +113,7 @@
         Piercing: 0.65
         Heat: 0.55
         Caustic: 0.55
+  - type: PressureArmorChange #LP edit
 
 - type: entity
   parent: LavalandEquipmentExplorerSuit
@@ -143,6 +145,7 @@
   - type: Construction
     graph: ExplorerSuit
     node: reinforced2
+  - type: PressureArmorChange #LP edit
 
 - type: entity
   parent: LavalandEquipmentExplorerHood
@@ -165,6 +168,7 @@
         Piercing: 0.6
         Heat: 0.45
         Caustic: 0.45
+  - type: PressureArmorChange #LP edit
 
 - type: entity
   parent: LavalandEquipmentExplorerSuit
@@ -196,6 +200,7 @@
   - type: Construction
     graph: ExplorerSuit
     node: reinforced3
+  - type: PressureArmorChange #LP edit
 
 - type: entity
   parent: LavalandEquipmentExplorerHood
@@ -218,3 +223,4 @@
         Piercing: 0.55
         Heat: 0.35
         Caustic: 0.35
+  - type: PressureArmorChange #LP edit

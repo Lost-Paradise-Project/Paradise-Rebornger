@@ -57,6 +57,7 @@
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
       firing_pin: !type:Container # starlight
+      flashlight: !type:ContainerSlot #LP edit
   - type: StaticPrice
     price: 500
   # starlight start
@@ -78,6 +79,11 @@
     sound:
       collection: SMGDrop
   # Goobstation edit end
+#LP edit start
+  - type: Multishot
+    missChance: 15
+    spreadAddition: 25
+#LP edit end
 
 - type: entity
   name: Atreides
@@ -236,11 +242,32 @@
           whitelist:
             tags:
               - CartridgePistol
+#LP edit start
+        flashlight:
+          name: weapon-upgrade-slot-name-flashlight
+          priority: 0
+          insertDelay: 0.8
+          ejectDelay: 0.4
+          ejectOnBreak: true
+          occludesLight: false
+          whitelist:
+            components:
+            - GunUpgradeFlashlight
+#LP edit end
     - type: MagazineVisuals
       magState: mag
       steps: 5
       zeroVisible: true
     - type: Appearance
+#LP edit start
+    - type: ItemMapper
+      mapLayers:
+        flight:
+          whitelist:
+            components:
+            - GunUpgradeFlashlight
+    - type: UpgradeableWeapon
+#LP edit end
 
 - type: entity
   name: WT550
@@ -297,11 +324,32 @@
         whitelist:
           tags:
             - CartridgePistol
+#LP edit start
+      flashlight:
+        name: weapon-upgrade-slot-name-flashlight
+        priority: 0
+        insertDelay: 0.8
+        ejectDelay: 0.4
+        ejectOnBreak: true
+        occludesLight: false
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+#LP edit end
   - type: MagazineVisuals
     magState: mag
     steps: 6
     zeroVisible: true
   - type: Appearance
+#LP edit start
+  - type: ItemMapper
+    mapLayers:
+      flight:
+        whitelist:
+          components:
+          - GunUpgradeFlashlight
+  - type: UpgradeableWeapon
+#LP edit end
 
 - type: entity
   name: brown briefcase
